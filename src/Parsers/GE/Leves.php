@@ -15,6 +15,7 @@ class Leves implements ParseInterface
     // the wiki output format / template we shall use
     const WIKI_FORMAT = "{Top}{{ARR Infobox Levequest
 |Index = {index}
+{db}
 |Name  = {name}
 |Patch = {patch}
 |Level = {level}{card}
@@ -25,7 +26,7 @@ class Leves implements ParseInterface
 |Header Image       = {header}.png
 
 |Recommended Classes = {classes}
-{trdobjective}{fldobjective}{mobobjectivelist}{mobobjective}{description}{turnins}
+{trdobjective}{fldobjective}{ObjectiveTask}{mobobjectivelist}{objectiveItemTodo}{mobobjective}{description}{turnins}
 
 |EXPReward = {exp}
 |GilReward = ~{gil}{seals}{reward}{npc}
@@ -63,6 +64,7 @@ class Leves implements ParseInterface
         $LeveStringCsv = $this->csv('LeveString');
         $TerritoryTypeCsv = $this->csv('TerritoryType');
         $GatheringLeveRouteCsv = $this->csv('GatheringLeveRoute');
+        $EObjNameCsv = $this->csv('EObjName');
         //$MapCsv = $this->csv('Map');
         //$TownCsv = $this->csv('Town');
         $GatheringPointCsv = $this->csv('GatheringPoint');
@@ -88,6 +90,10 @@ class Leves implements ParseInterface
             if ((empty($Name)) || (preg_match("/[\x{30A0}-\x{30FF}\x{3040}-\x{309F}\x{4E00}-\x{9FBF}]+/u", $Name))) {
                 continue;
             }
+            //fordebug
+            $db = $leve['DataId'];
+            if ($id != 526) continue;
+            //fordebug
 
             //get the Patch and Issuing NPC from a separate file called LevemetePatch.csv which was custom made
             $Patch = $LevemetePatchCsv->at($leve['Name'])['Patch'];
@@ -220,6 +226,10 @@ class Leves implements ParseInterface
             $Map = [];
             $FieldLeveMap = [];
             $MobObjectiveList = [];
+            $objectiveItemTodo = false;
+
+
+            $debugleveid = $leve['DataId'];
 
             // Levequest Reward List. Need a double foreach here.
             foreach(range(0,7) as $i) {
@@ -293,6 +303,14 @@ class Leves implements ParseInterface
                 }
             } elseif ($levetype == "Battlecraft") {
                 foreach(range(0,7) as $i) {
+                	//ToDo Items involved
+                	//at the moment im just overwriting 7 times over which is stupid, ideally i want to make an array and then implode it but array just isnt working for me today.
+                    if ($BattleLeveCsv->at($leve['DataId'])["Objective[0]"] == 2) {
+                    	$objectiveItemTodoName = ucwords(strtolower($EventItemCsv->at($BattleLeveCsv->at($leve['DataId'])["ItemsInvolved[0]"])['Singular']));
+                    	$objectiveItemTodoQty = $BattleLeveCsv->at($leve['DataId'])["ToDoParam[0][0]"];
+                    	$objectiveItemTodo = "\n*". $objectiveItemTodoName ." 0/". $objectiveItemTodoQty ."";
+                    	var_dump($objectiveItemTodo);
+                    }
                     if ($BattleLeveCsv->at($leve['DataId'])["BNpcName[$i]"] > 1) {
                         $BCToDoNumber = false;
                         $BCItemsInvolved = false;
@@ -358,7 +376,7 @@ class Leves implements ParseInterface
                             $ObjectiveText = "Use the /beckon emote to lead [[". $BNpcNameObjective ."]] safely to the specified location.";
                         }
 
-                        $MobObjectiveList[0] = "\n|Objectives =\n*" . $ObjectiveText;
+                        $ObjectiveTask = "\n|Objectives =\n*" . $ObjectiveText ."\n";
                         if ($BattleLeveCsv->at($leve['DataId'])["ToDoNumberInvolved[$i]"] > 0) {
                             $MobObjectiveList[] = "**" . $MobsInvolved . ": 0/" . $BattleLeveCsv->at($leve['DataId'])["ToDoNumberInvolved[$i]"];
                         } //elseif ($BattleLeveCsv->at($leve['DataId'])["ToDoNumberInvolved[$i]"] == 0) {
@@ -371,7 +389,7 @@ class Leves implements ParseInterface
                         //  fixed
                         //$InvolvementObjective[0] = $BattleObjective;
                         $InvolvementObjective[0] = "\n";
-                        $InvolvementObjective[] = "" . $BNpcName . "" . $BCLevel . "" . $BCItemsInvolved . "" . $BCItemQTY . "" . $BCItemDropRate . "" . $BCToDoNumber;
+                        $InvolvementObjective[] = "" . $BNpcName . "" . $BCLevel . "" . $BCItemsInvolved . "" . $BCItemQTY . "" . $BCItemDropRate . "" . $BCToDoNumber ."";
                     }
                 }
             }
@@ -583,6 +601,9 @@ class Leves implements ParseInterface
                 '{FieldLeveMap}' => $FieldLeveMap,
                 '{card}' => $VFXImage,
                 '{turnins}' => $MoreTradein,
+                '{objectiveItemTodo}' => $objectiveItemTodo,
+                '{ObjectiveTask}' => $ObjectiveTask,
+                '{db}' => $db,
                 //'{wanted}' => ($levetype == "Battlecraft") ? "\n|Wanted Target  = <!-- Usually found during Battlecraft leves -->" : "",
             ];
 
