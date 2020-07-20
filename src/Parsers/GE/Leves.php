@@ -44,36 +44,38 @@ class Leves implements ParseInterface
 
     public function parse()
     {
+        include (dirname(__DIR__) . '/Paths.php');
         // grab CSV files we want to use
-        $LeveCsv = $this->csv('Leve');
-        $LeveVfxCsv = $this->csv('LeveVfx');
-        $LeveClientCsv = $this->csv('LeveClient');
-        $LeveAssignmentCsv = $this->csv('LeveAssignmentType');
-        $ItemCsv = $this->csv('Item');
-        $CraftLeveCsv = $this->csv('CraftLeve');
-        $GatheringLeveCsv = $this->csv('GatheringLeve');
-        $BattleLeveCsv = $this->csv('BattleLeve');
-        $BNpcNameCsv = $this->csv('BNpcName');
-        $LevelCsv = $this->csv('Level');
-        $PlaceNameCsv = $this->csv('PlaceName');
-        $ENpcResidentCsv = $this->csv('ENpcResident');
-        $EventItemCsv = $this->csv('EventItem');
-        $LeveRewardItemGroupCsv = $this->csv('LeveRewardItemGroup');
-        $LeveRewardItemCsv = $this->csv('LeveRewardItem');
-        $LeveStringCsv = $this->csv('LeveString');
-        $TerritoryTypeCsv = $this->csv('TerritoryType');
-        $GatheringLeveRouteCsv = $this->csv('GatheringLeveRoute');
-        //$MapCsv = $this->csv('Map');
-        //$TownCsv = $this->csv('Town');
-        $GatheringPointCsv = $this->csv('GatheringPoint');
-        $GatheringPointBaseCsv = $this->csv('GatheringPointBase');
-        $GatheringItemCsv = $this->csv('GatheringItem');
-        $LevemetePatchCsv = $this->csv('LevemetePatch');
+        $LeveCsv = $this->csv("$CurrentPatch/Leve");
+        $LeveVfxCsv = $this->csv("$CurrentPatch/LeveVfx");
+        $LeveClientCsv = $this->csv("$CurrentPatch/LeveClient");
+        $LeveAssignmentCsv = $this->csv("$CurrentPatch/LeveAssignmentType");
+        $ItemCsv = $this->csv("$CurrentPatch/Item");
+        $CraftLeveCsv = $this->csv("$CurrentPatch/CraftLeve");
+        $GatheringLeveCsv = $this->csv("$CurrentPatch/GatheringLeve");
+        $BattleLeveCsv = $this->csv("$CurrentPatch/BattleLeve");
+        $BNpcNameCsv = $this->csv("$CurrentPatch/BNpcName");
+        $LevelCsv = $this->csv("$CurrentPatch/Level");
+        $PlaceNameCsv = $this->csv("$CurrentPatch/PlaceName");
+        $ENpcResidentCsv = $this->csv("$CurrentPatch/ENpcResident");
+        $EventItemCsv = $this->csv("$CurrentPatch/EventItem");
+        $LeveRewardItemGroupCsv = $this->csv("$CurrentPatch/LeveRewardItemGroup");
+        $LeveRewardItemCsv = $this->csv("$CurrentPatch/LeveRewardItem");
+        $LeveStringCsv = $this->csv("$CurrentPatch/LeveString");
+        $TerritoryTypeCsv = $this->csv("$CurrentPatch/TerritoryType");
+        $GatheringLeveRouteCsv = $this->csv("$CurrentPatch/GatheringLeveRoute");
+        //$MapCsv = $this->csv("$CurrentPatch/Map");
+        //$TownCsv = $this->csv("$CurrentPatch/Town");
+        $GatheringPointCsv = $this->csv("$CurrentPatch/GatheringPoint");
+        $GatheringPointBaseCsv = $this->csv("$CurrentPatch/GatheringPointBase");
+        $GatheringItemCsv = $this->csv("$CurrentPatch/GatheringItem");
+        $LevemetePatchCsv = $this->csv("LevemetePatch");
+        $CompanyLeveCsv = $this->csv("$CurrentPatch/CompanyLeve");
+        $CompanyLeveRuleCsv = $this->csv("$CurrentPatch/CompanyLeveRule");
 
         // (optional) start a progress bar
         $this->io->progressStart($LeveCsv->total);
 
-        $patch = '5.21';
 
         // if I want to use pywikibot to create these pages, this should be true. Otherwise if I want to create pages
         // manually, set to false
@@ -90,11 +92,11 @@ class Leves implements ParseInterface
             }
             //fordebug
             //$db = $leve['DataId'];
-            //if ($id != 754) continue;
+            //if ($id != 858) continue;
             //fordebug
 
             //get the Patch and Issuing NPC from a separate file called LevemetePatch.csv which was custom made
-            $Patch = $LevemetePatchCsv->at($leve['Name'])['Patch'];
+            $patch = $LevemetePatchCsv->at($leve['Name'])['Patch'];
             $Npc = $LevemetePatchCsv->at($leve['Name'])['Levemete'];
 
             // change the top and bottom code depending on if I want to bot the pages up or not
@@ -491,6 +493,49 @@ class Leves implements ParseInterface
                 }
                 */
             }
+            ////Guild Leve Output
+            //if ($leve["JournalGenre"] == 200 || $leve["JournalGenre"] == 201 || $leve["JournalGenre"] == 202) {
+            //    $CompanyLeveLink = $leve["DataId"];
+            //    //report to ?
+//
+            //    //objectives
+            //    //switch for stringfix
+            //    $GCRuleParamInterger = $CompanyLeveCsv->at($CompanyLeveLink)['RuleParam'];
+            //    switch ($GCRuleParamInterger) {
+            //        case 1:
+            //            $GCRuleParam = "/poke";
+            //        break;
+            //        case 2:
+            //            $GCRuleParam = "/doubt";
+            //        break;
+            //    }
+            //    //im keeping this very simple and open incase we ever need to modify it.
+            //    if ($CompanyLeveCsv->at($CompanyLeveLink)['Rule'] == 1) {
+            //        $GCRuleObjective = $CompanyLeveCsv->at($CompanyLeveLink)['Rule']
+            //        $GCRuleBNpcName = ucwords($BNpcNameCsv->at($CompanyLeveCsv->at($CompanyLeveLink)['BNpcName[0]'])['Singular']);
+            //        $GCToDoParam01 = ucwords($BNpcNameCsv->at($CompanyLeveCsv->at($CompanyLeveLink)['ToDoParam[0][1]'])['Singular']);
+            //        $GCRuleHelp = "*Objective failed if all ". $GCToDoParam01 ." are lost.";
+            //        foreach(range(0,7) as $n) {
+            //            if (!empty($BNpcNameCsv->at($CompanyLeveCsv->at($CompanyLeveLink)["BNpcName[$n]"])['Singular'])){
+            //                $GCTargets = ucwords($BNpcNameCsv->at($CompanyLeveCsv->at($CompanyLeveLink)["BNpcName[$n]"])['Singular']);
+            //                $GCTargetsAmount = //?????????????????
+            //            }
+            //        }
+            //    }
+            //    if ($CompanyLeveCsv->at($CompanyLeveLink)['Rule'] == 3) {
+            //        $GCRuleEventItem = $EventItemCsv->at($CompanyLeveCsv->at($CompanyLeveLink)['ItemsInvolved[0]'])['Plural'];
+            //        $GCRuleObjective = "*Discover who is carrying the ". $GCRuleEventItem ." and slay the target.";
+            //        $GCRuleHelp = "*Slay enemies that respond to the ". $GCRuleParam ." emote and collect the ". $GCRuleEventItem .".";
+            //        $GCToDoParam00 = $CompanyLeveCsv->at($CompanyLeveLink)['ToDoParam[0][0]'];
+            //        $GCObjective = "*". $GCRuleBNpcName .": 0/". $GCToDoParam00 ."";
+            //    }
+//
+            //    $GCObjectivesString = "|Objectives=\n". $GCReportTo ."\n". $GCRuleObjective ."\n". $GCObjective ."\n". $GCRuleHelp ."";
+            //    //items involved
+            //    //npcs involved
+            //    //mobs involved
+//
+            //}
 
 
             //check to see if there's a "start" before moving to levemete
@@ -575,7 +620,7 @@ class Leves implements ParseInterface
             // Save some data
             $data = [
                 '{Top}' => $Top,
-                '{patch}' => $Patch,
+                '{patch}' => $patch,
                 '{index}' => $leve['id'],
                 '{name}' => $leve['Name'],
                 '{level}' => $leve['ClassJobLevel'],
@@ -620,7 +665,7 @@ class Leves implements ParseInterface
         // save our data to the filename: GeLeveWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');
-        $info = $this->save("GeLeveWiki - ". $patch .".txt", 9999999);
+        $info = $this->save("$CurrentPatchOutput/GeLeveWiki - ". $Patch .".txt", 9999999);
 
         $this->io->table(
             [ 'Filename', 'Data Count', 'File Size' ],
