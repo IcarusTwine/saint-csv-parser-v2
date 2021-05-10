@@ -107,10 +107,10 @@ class Retainer implements ParseInterface
             }
 
         }
-        asort($MINArray);
-        asort($BTNArray);
-        asort($FSHArray);
-        asort($DOWArray);
+        natsort($MINArray);
+        natsort($BTNArray);
+        natsort($FSHArray);
+        natsort($DOWArray);
         $OutputMIN = "\n{{-start-}}\n'''Mining_Exploration/Items'''\n".implode("\n",$MINArray)."\n{{-stop-}}\n";
         $OutputBTN = "\n{{-start-}}\n'''Botany_Exploration/Items'''\n".implode("\n",$BTNArray)."\n{{-stop-}}\n";
         $OutputFSH = "\n{{-start-}}\n'''Fishing_Exploration/Items'''\n".implode("\n",$FSHArray)."\n{{-stop-}}\n";
