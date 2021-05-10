@@ -107,44 +107,10 @@ class Retainer implements ParseInterface
             }
 
         }
-        $HuntingTop = "
-<small><&nbsp;[[Retainer Ventures#Targeted Exploration|Retainer Ventures]]</small>{{disambig2|[[Mining Exploration]], [[Botany Exploration]], or [[Fishing Exploration]]}}
-The following [[Retainer Ventures#Targeted Exploration|ventures]] will task your retainer with procuring a ''specified'' item in a short amount of time.  Disciples of War and Magic will procure the same items from such ventures, regardless of class and engage in ''Hunting''.
-
-The greater the difference between the level of the item requested and the level of your retainer, the shorter the amount of time the venture will take to complete. Venture completion time will decrease from 1 hour, to 50 minutes, and finally to 40 minutes.
-
-{|class=\"itembox\" style=\"color:white; width:100%; cellpadding=0; cellspacing=1;\" border=0
-|-
-| width=\"30%\" align=\"left\"|DoW/DoM Level Beyond Minimum Requirement
-| width=\"30%\" align=\"left\"|Duration
-|-
-|1-10
-|1h
-|-
-|11-20
-|50m
-|-
-|21+
-|40m
-|-
-|}
-
-As your retainer's item level increases (ilvl), the quantity of the items they return will increase. Higher level ventures will have higher ilvl requirements. Increase your retainer's ilvl by upgrading their weapon and gear. Your retainer needs an item level of 428 to get the maximum yield from all ventures.
-
-{| class=\"itembox sortable\" style=\"color:white; width:100%; cellpadding=0; cellspacing=1;\" border=0
-|-
-!Level
-!Item
-!Quantity
-!Duration
-!EXP
-!Cost
-!Average Item Level
-|-";
-        $OutputMIN = "'''Mining_Exploration'''\n".implode("\n",$MINArray);
-        $OutputBTN = "'''Botany_Exploration'''\n".implode("\n",$BTNArray);
-        $OutputFSH = "'''Fishing_Exploration'''\n".implode("\n",$FSHArray);
-        $OutputDOW = "'''Hunting_Exploration'''\n$HuntingTop\n".implode("\n",$DOWArray);
+        $OutputMIN = "\n{{-start-}}\n'''Mining_Exploration/Items'''\n".implode("\n",$MINArray)."\n{{-stop-}}\n";
+        $OutputBTN = "\n{{-start-}}\n'''Botany_Exploration/Items'''\n".implode("\n",$BTNArray)."\n{{-stop-}}\n";
+        $OutputFSH = "\n{{-start-}}\n'''Fishing_Exploration/Items'''\n".implode("\n",$FSHArray)."\n{{-stop-}}\n";
+        $OutputDOW = "\n{{-start-}}\n'''Hunting_Exploration/Items'''\n".implode("\n",$DOWArray)."\n{{-stop-}}\n";
             // Save some data
             $data = [
                 '{OutputMIN}' => $OutputMIN,
