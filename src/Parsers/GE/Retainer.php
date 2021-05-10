@@ -13,7 +13,11 @@ class Retainer implements ParseInterface
     use CsvParseTrait;
 
     // the wiki output format / template we shall use
-    const WIKI_FORMAT = "{Outputdoh}\n\n{Outputdow}";
+    const WIKI_FORMAT = "
+    {OutputMIN}
+    {OutputBTN}
+    {OutputFSH}
+    {OutputDOW}";
 
     public function parse()
     {
@@ -80,15 +84,39 @@ class Retainer implements ParseInterface
             $Quantity1 = $Quantity[0];
             $Quantity2 = $Quantity[1];
             $Quantity3 = $Quantity[2];
-            $OutArraySwitch[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
+            switch ($ClassJobRaw) {
+                case 17: //min
+                    $url = "Mining_Exploration";
+                    $MINArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
+
+                case 18: //btn
+                    $url = "Botany_Exploration";
+                    $BTNArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
+
+                break;
+                case 19: //fsh
+                    $url = "Fishing_Exploration";
+                    $FSHArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
+
+                break;
+                case 34: //DoW
+                    $url = "Hunting_Exploration";
+                    $DOWArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
+
+                break;
+            }
 
         }
-        $Outputdoh = implode("\n",$GatheringArray);
-        $Outputdow = implode("\n",$DoWMArray);
+        $OutputMIN = implode("\n",$MINArray);
+        $OutputBTN = implode("\n",$BTNArray);
+        $OutputFSH = implode("\n",$FSHArray);
+        $OutputDOW = implode("\n",$DOWArray);
             // Save some data
             $data = [
-                '{Outputdoh}' => $Outputdoh,
-                '{Outputdow}' => $Outputdow,
+                '{OutputMIN}' => $OutputMIN,
+                '{OutputBTN}' => $OutputBTN,
+                '{OutputFSH}' => $OutputFSH,
+                '{OutputDOW}' => $OutputDOW,
             ];
 
             // format using Gamer Escape formatter and add to data array
