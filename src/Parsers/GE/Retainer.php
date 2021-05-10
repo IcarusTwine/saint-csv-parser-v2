@@ -108,7 +108,7 @@ class Retainer implements ParseInterface
 
         }
         $HuntingTop = "
-        small><&nbsp;[[Retainer Ventures#Targeted Exploration|Retainer Ventures]]</small>{{disambig2|[[Mining Exploration]], [[Botany Exploration]], or [[Fishing Exploration]]}}
+<small><&nbsp;[[Retainer Ventures#Targeted Exploration|Retainer Ventures]]</small>{{disambig2|[[Mining Exploration]], [[Botany Exploration]], or [[Fishing Exploration]]}}
 The following [[Retainer Ventures#Targeted Exploration|ventures]] will task your retainer with procuring a ''specified'' item in a short amount of time.  Disciples of War and Magic will procure the same items from such ventures, regardless of class and engage in ''Hunting''.
 
 The greater the difference between the level of the item requested and the level of your retainer, the shorter the amount of time the venture will take to complete. Venture completion time will decrease from 1 hour, to 50 minutes, and finally to 40 minutes.
