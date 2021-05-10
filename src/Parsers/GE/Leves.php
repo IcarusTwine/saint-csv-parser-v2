@@ -12,7 +12,7 @@ class Leves implements ParseInterface
 {
     use CsvParseTrait;
 
-    // the wiki output format / template we shall use
+    // the wiki output format / template we shall usetest
     const WIKI_FORMAT = "{Top}{{ARR Infobox Levequest
 |Index = {index}
 |Name  = {name}
