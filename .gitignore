@@ -15,3 +15,6 @@ symfony.lock
 /bin/**
 composer*
 symfony.lock
+vendor/*
+src/Parsers/Paths.php
+src/Parsers/config.ini
