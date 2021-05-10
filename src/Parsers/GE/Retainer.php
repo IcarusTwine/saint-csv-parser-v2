@@ -101,16 +101,16 @@ class Retainer implements ParseInterface
                 break;
                 case 34: //DoW
                     $url = "Hunting_Exploration";
-                    $DOWArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
+                    $DOWArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredItemLevel|Item=$ItemName|Quantity1=$RequiredItemLevel|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
 
                 break;
             }
 
         }
-        $OutputMIN = implode("\n",$MINArray);
-        $OutputBTN = implode("\n",$BTNArray);
-        $OutputFSH = implode("\n",$FSHArray);
-        $OutputDOW = implode("\n",$DOWArray);
+        $OutputMIN = "'''Mining_Exploration'''\n".implode("\n",$MINArray);
+        $OutputBTN = "'''Botany_Exploration'''\n".implode("\n",$BTNArray);
+        $OutputFSH = "'''Fishing_Exploration'''\n".implode("\n",$FSHArray);
+        $OutputDOW = "'''Hunting_Exploration'''\n".implode("\n",$DOWArray);
             // Save some data
             $data = [
                 '{OutputMIN}' => $OutputMIN,
