@@ -13,7 +13,7 @@ class Retainer implements ParseInterface
     use CsvParseTrait;
 
     // the wiki output format / template we shall use
-    const WIKI_FORMAT = "{output}";
+    const WIKI_FORMAT = "{Outputdoh}\n\n{Outputdow}";
 
     public function parse()
     {
@@ -34,6 +34,8 @@ class Retainer implements ParseInterface
         $PatchNumber = $this->getPatch("RetainerTask");
 
         // loop through data
+        $DoWMArray = [];
+        $GatheringArray = [];
         foreach ($RetainerTaskCsv->data as $id => $Task) {
             $this->io->progressAdvance();
             $Quantity = [];
@@ -51,27 +53,20 @@ class Retainer implements ParseInterface
                 case 17: //min
                 case 18: //btn
                     $ClassSwitch = "Gathering{DoL}";
+                    $OutArraySwitch = "DoH";
                 break;
                 case 19: //fsh
                     $ClassSwitch = "Gathering{FSH}";
+                    $OutArraySwitch = "DoH";
                 break;
                 case 34: //DoW
                     $ClassSwitch = "ItemLevel{DoW}";
+                    $OutArraySwitch = "DoW";
                 break;
             }
             $ConditionParam = $Task["ConditionParam[0]"];
-            $ItemLevelParamLow = [];
-            $ItemLevelParamHigh = [];
-            foreach(range(0,1) as $b) {
-                $ItemLevelParamLow[] = $RetainerTaskParameterCsv->at($Unknown3)[$ClassSwitch."[$b]"];
-            }
-            $ItemLevelParamLowImp = implode(" & ", $ItemLevelParamLow);
-            foreach(range(0,1) as $b) {
-                $ItemLevelParamHigh[] = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[$b]"];
-            }
-            $ItemLevelParamHighImp = implode(" & ", $ItemLevelParamHigh);
-            $VentureCost = $Task['VentureCost'];
-            $MaxTime = $Task['MaxTime{min}'];
+            $ItemLevelParam1 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[0]"];
+            $ItemLevelParam2 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[1]"];
             $Experience = $Task['Experience'];
             $RequiredItemLevel = $Task['RequiredItemLevel'];
             $RequiredGathering = $Task["RequiredGathering"];
@@ -79,42 +74,21 @@ class Retainer implements ParseInterface
                 if (empty($RetainerTaskNormalCsv->at($TaskParam)["Quantity[$a]"])) continue;
                 $Quantity[] = $RetainerTaskNormalCsv->at($TaskParam)["Quantity[$a]"];
             }
-            $GatheringLog = "";
-            $FishingLog = "";
-            if (!empty($RetainerTaskNormalCsv->at($TaskParam)["GatheringLog"])){
-                $GLog = $ItemCsv->at($GatheringItemCsv->at($RetainerTaskNormalCsv->at($TaskParam)["GatheringLog"])['Item'])['Name'];
-                $GatheringLog = "|GatheringLog = $GLog";
-            }
-            if (!empty($RetainerTaskNormalCsv->at($TaskParam)["FishingLog"])){
-                $value = $RetainerTaskNormalCsv->at($TaskParam)["FishingLog"];
-                switch (true) {
-                    case ($value < 20000)://FishParam
-                        $FLog = $ItemCsv->at($FishParameterCsv->at($RetainerTaskNormalCsv->at($TaskParam)["FishingLog"])['Item'])['Name'];
-                    break;
-                    case ($value >= 20000)://SpearFishing
-                        $FLog = $ItemCsv->at($SpearfishingItemCsv->at($RetainerTaskNormalCsv->at($TaskParam)["FishingLog"])['Item'])['Name'];
-                    break;
-                }
-                $FishingLog = "|FishingLog = $FLog";
-            }
-            $QuantityImplode = implode(",",$Quantity);
             if (empty($Quantity)){
                 $Quantity = "0";
             }
-
-            $OutputString[] = "{{Venturehuntrow|Level=$RetainerLevel|Item=$ItemName|Quantity=".$Quantity[0]."|Duration={$MaxTime}m|Cost=$VentureCost|Gathering=$RequiredGathering}}";
-            $OutputString[] = "EXTRA:";
-            $OutputString[] = "Quantities = $QuantityImplode|ClassJob = $ClassJob|EXP = $Experience|RequiredItemLevel = $RequiredItemLevel";
-            $OutputString[] = "$FishingLog$GatheringLog";
-            $OutputString[] = "Param1? = $ItemLevelParamLowImp Param2? = $ItemLevelParamHighImp";
-            $OutputString[] = "ConditionParam? $ConditionParam";
-            $OutputString[] = "\n";
+            $Quantity1 = $Quantity[0];
+            $Quantity2 = $Quantity[1];
+            $Quantity3 = $Quantity[2];
+            $OutArraySwitch[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam1|XP=$Experience}}";
 
         }
-        $Output = implode("\n",$OutputString);
+        $Outputdoh = implode("\n",$GatheringArray);
+        $Outputdow = implode("\n",$DoWMArray);
             // Save some data
             $data = [
-                '{output}' => $Output,
+                '{Outputdoh}' => $Outputdoh,
+                '{Outputdow}' => $Outputdow,
             ];
 
             // format using Gamer Escape formatter and add to data array
