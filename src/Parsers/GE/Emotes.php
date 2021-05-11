@@ -89,26 +89,28 @@ class Emotes implements ParseInterface
             }
 
             $OGArray = array(
-                //"<Clickable(<If(Equal(ObjectParameter(1),ObjectParameter(2)))>",
-                //"<Else/><If(PlayerParameter(7))><SheetEn(ObjStr,2,PlayerParameter(7),1,1)/><Else/>ObjectParameter(2)</If></If>)/>",
-                //"<If(Equal(ObjectParameter(1),ObjectParameter(3)))><If(PlayerParameter(8))><SheetEn(ObjStr,2,PlayerParameter(8),1,1)/>",
-                //"<If(Equal(ObjectParameter(1),ObjectParameter(2)))>",
-                //"<Else/>",
-                //"</If>",
-                //"<If(PlayerParameter(8))><SheetEn(ObjStr,2,PlayerParameter(8),1,1)/>/ObjectParameter(3)",
-                //"<If(Equal(ObjectParameter(1),ObjectParameter(2)))>",
-                //"<If(PlayerParameter(7))><SheetEn(ObjStr,2,PlayerParameter(7),1,1)/>/ObjectParameter(2)'s)/> "
+                "<Clickable(<If(Equal(ObjectParameter(1),ObjectParameter(2)))>",
+                "<Else/><If(PlayerParameter(7))><SheetEn(ObjStr,2,PlayerParameter(7),1,1)/><Else/>ObjectParameter(2)</If></If>)/>",
+                "<If(Equal(ObjectParameter(1),ObjectParameter(3)))><If(PlayerParameter(8))><SheetEn(ObjStr,2,PlayerParameter(8),1,1)/>",
+                "<If(Equal(ObjectParameter(1),ObjectParameter(2)))>",
+                "<Else/>",
+                "</If>",
+                "<If(PlayerParameter(8))><SheetEn(ObjStr,2,PlayerParameter(8),1,1)/>/ObjectParameter(3)",
+                "<If(Equal(ObjectParameter(1),ObjectParameter(2)))>",
+                "<If(PlayerParameter(7))><SheetEn(ObjStr,2,PlayerParameter(7),1,1)/>/ObjectParameter(2)'s)/> ",
+                "<If(PlayerParameter(8))><SheetEn(ObjStr,2,PlayerParameter(8),1,1)/>|ObjectParameter(3)"
             );
             $ReplaceArray = array(
-                //"{[Loremtextmale|",
-                //"|playername}}",
-                //"",
-                //"{[Loremtextmale|",
-                //"|",
-                //"}}",
-                //"",
-                //"",
-                //" "
+                "{{Loremtextmale|",
+                "|playername}}",
+                "",
+                "{{Loremtextmale|",
+                "|",
+                "",
+                "",
+                "",
+                " ",
+                ""
             );
             $TargetMessage = str_replace($OGArray, $ReplaceArray, $LogMessageCsv->at($Emote['LogMessage{Targeted}'])['Text']);
             $UnTargetMessage = str_replace($OGArray, $ReplaceArray, $LogMessageCsv->at($Emote['LogMessage{Untargeted}'])['Text']);
@@ -142,8 +144,8 @@ class Emotes implements ParseInterface
             $OutputString .= "\n";
             $OutputString .= "| Item = $Item\n";
             $OutputString .= "\n";
-            $OutputString .= "| TargetMessage = \n";
-            $OutputString .= "| UnTargetMessage = \n";
+            $OutputString .= "| TargetMessage = $TargetMessage\n";
+            $OutputString .= "| UnTargetMessage = $UnTargetMessage\n";
             $OutputString .= "\n";
             $OutputString .= "| Notes =\n";
             $OutputString .= "}}\n";
