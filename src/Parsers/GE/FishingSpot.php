@@ -281,7 +281,7 @@ class FishingSpot implements ParseInterface
             $UniqueZones = array_unique($Teri);
             foreach($UniqueZones as $Zone){
                 $Name = $PlaceNameCsv->at($TerritoryTypeCsv->at($Zone)['PlaceName'])['Name'];
-                $ZoneNames[] = "[[{$Name}_Fishing_Map|$Name]]";
+                $ZoneNames[] = "[[{$Name}/Fishing_Map|$Name]]";
             }
             $ZonesArray[] = "|group$i = $RegionName";
             $ZonesArray[] = "|list$i = ".implode(" - ",$ZoneNames)."\n";
