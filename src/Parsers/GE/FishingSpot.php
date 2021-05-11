@@ -268,7 +268,13 @@ class FishingSpot implements ParseInterface
                     $BorderX = $BorderX + 70;
                 }
                 $MapString .= "}}\n";// EndFish
-                $OutputArray[$Teri][] = $MapString;
+                if ($Type === "Spearfishing"){
+                    $SpearFishingArray[$Teri][] = $MapString;
+                }
+                if ($Type === "Fishing"){
+                    $FishingArray[$Teri][] = $MapString;
+                }
+                $OutputArray[$Teri][] = "out";
             }
         }
         
@@ -295,12 +301,21 @@ class FishingSpot implements ParseInterface
         $NavBoxOutput .= "}}\n";
         foreach($OutputArray as $Teri => $Value){
             $ZoneName = $PlaceNameCsv->at($TerritoryTypeCsv->at($Teri)['PlaceName'])['Name'];
-            $ZoneNameList = 
             $OutString = "{{-start-}}\n";
             $OutString .= "'''$ZoneName/Fishing_Map'''\n";
+            $OutString .= "{{#tag:tabber|\n";
+            $OutString .= "Fishing=\n";
             $OutString .= "<tabber>\n";
-            $OutString .= implode("|-|\n", $Value);
+            $OutString .= implode("|-|\n", $FishingArray[$Teri]);
             $OutString .= "</tabber>\n";
+            if (!empty($SpearFishingArray[$Teri])){
+                $OutString .= "{{!}}-{{!}}\n";
+                $OutString .= "Spearfishing=\n";
+                $OutString .= "<tabber>\n";
+                $OutString .= implode("|-|\n", $SpearFishingArray[$Teri]);
+                $OutString .= "</tabber>\n";
+            }
+            $OutString .= "}}\n";
             $OutString .= "$NavBoxOutput\n";
             $OutString .= "{{-stop-}}\n";
             $FinalOutputArray[] = $OutString;
