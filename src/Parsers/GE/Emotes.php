@@ -112,10 +112,24 @@ class Emotes implements ParseInterface
             );
             $TargetMessage = str_replace($OGArray, $ReplaceArray, $LogMessageCsv->at($Emote['LogMessage{Targeted}'])['Text']);
             $UnTargetMessage = str_replace($OGArray, $ReplaceArray, $LogMessageCsv->at($Emote['LogMessage{Untargeted}'])['Text']);
-
+            $icon = "$Name Emote Icon";
+            $IconRaw = $Emote['Icon'];
+            if (!empty($Emote['Icon'])) {
+                if (!file_exists($this->getOutputFolder() ."/$PatchID/EmoteIcons/$icon.png")) {
+                    $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/EmoteIcons";
+                    if (!is_dir($IconOutputDirectory)) {
+                        mkdir($IconOutputDirectory, 0777, true);
+                    }
+                    $InputIcon = $this->getInputFolder() . '/icon/' . $this->iconize($IconRaw, true);
+                    $IconFileName = "{$IconOutputDirectory}/{$icon}.png";
+                    if (file_exists($InputIcon)){
+                        copy($InputIcon, $IconFileName);
+                    }
+                }
+            }
 
             
-            $OutputString = "{{-start-}}\n'''$Name\n";
+            $OutputString = "{{-start-}}\n'''$Name'''\n";
             $OutputString .= "{{ARR Infobox Emote\n";
             $OutputString .= "| Patch = $Patch\n";
             $OutputString .= "| Name = $Name\n";
@@ -128,8 +142,8 @@ class Emotes implements ParseInterface
             $OutputString .= "\n";
             $OutputString .= "| Item = $Item\n";
             $OutputString .= "\n";
-            $OutputString .= "| TargetMessage = $TargetMessage\n";
-            $OutputString .= "| UnTargetMessage = $UnTargetMessage\n";
+            $OutputString .= "| TargetMessage = \n";
+            $OutputString .= "| UnTargetMessage = \n";
             $OutputString .= "\n";
             $OutputString .= "| Notes =\n";
             $OutputString .= "}}\n";
