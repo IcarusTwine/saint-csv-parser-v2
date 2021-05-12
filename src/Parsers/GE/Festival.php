@@ -29,7 +29,7 @@ class Festival implements ParseInterface
         $FestivalArray = json_decode($jdata, true);
         
         $Paths = array_diff(scandir("cache/$PatchID/lgb/"), array('..', '.'));
-        $JsonArray = [];
+        $NotSetArray = [];
         foreach ($Paths as $Path) {
             $this->io->progressAdvance();
             $url = "cache/$PatchID/lgb/$Path";
@@ -41,16 +41,18 @@ class Festival implements ParseInterface
                 if (!isset($FestivalArray[$Festival])) {
                     $Name = $lgb->Name;
                     $FestivalArray[$Festival] = $Name;
+                    $NotSetArray[$Festival] = $Name;
                 }
             }
         }
         ksort($FestivalArray);
-        $JSONOUTPUT = json_encode($FestivalArray, JSON_PRETTY_PRINT);
+        $JSONOUTPUT = json_encode($FestivalArray,JSON_FORCE_OBJECT|JSON_PRETTY_PRINT);
+        var_dump($JSONOUTPUT);
         if (!file_exists("Patch")) { mkdir("Patch", 0777, true); }
         $JSON_File = fopen("Patch/FestivalNames.json", 'w');
         fwrite($JSON_File, $JSONOUTPUT);
         fclose($JSON_File);
-        $Output = implode("\n",$JsonArray);
+        $Output = implode("\n",$NotSetArray);
 
         $data = [
             '{Output}' => $Output,
