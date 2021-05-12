@@ -46,7 +46,7 @@ class SmallIconConverter implements ParseInterface
             $item['Name'] = strip_tags($item['Name']);
 
             // build icon and hq icon input folder paths
-            $itemIcon = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon']);
+            $itemIcon = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
             //$itemIconHq = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
 
             // if icon doesn't exist (not in the input folder icon list), then skip

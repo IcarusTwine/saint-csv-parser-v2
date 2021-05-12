@@ -124,8 +124,8 @@ class Sightseeing implements ParseInterface
             }
 
             // build icon input folder paths
-            $smallIcon = $this->getInputFolder() .'/icon/'. $this->iconizeHR($item['Icon{List}']);
-            $largeIcon = $this->getInputFolder() .'/icon/'. $this->iconizeHR($item['Icon{Discovered}']);
+            $smallIcon = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon{List}'], true);
+            $largeIcon = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon{Discovered}'], true);
             $smalliconFileName = "{$smallIconOutputDirectory}/{$name} SS Icon.png";
             $largeiconFileName = "{$largeIconOutputDirectory}/{$Vista}";
 

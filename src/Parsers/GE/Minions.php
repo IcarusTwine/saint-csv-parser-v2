@@ -167,8 +167,8 @@ class Minions implements ParseInterface
             }
 
             // build icon input folder paths
-            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconizeHR($LargeIcon);
-            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconizeHR($Minion["Icon"]);
+            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($LargeIcon, true);
+            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($Minion["Icon"], true);
 
             // give correct file names to icons for output
             $LargeIconFileName = "{$IconoutputDirectory}/$Name Patch.png";

@@ -86,8 +86,8 @@ class TripleTriad implements ParseInterface
             }
 
             // build icon input folder paths
-            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($LargeIcon);
-            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($SmallIcon);
+            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($LargeIcon, true);
+            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($SmallIcon, true);
             // give correct file names to icons for output
             $LargeIconFileName = "{$TriadIconoutputDirectory}/$Name (Triple Triad Card) Full.png";
             $SmallIconFileName = "{$TriadIconoutputDirectory}/$Name (Triple Triad Card) icon.png";

@@ -570,7 +570,7 @@ class TestQuest2 implements ParseInterface
                         }
 
                         // build icon input folder paths
-                        $questIcon = $this->getInputFolder() .'/icon/'. $this->iconize($quest['Icon']);
+                        $questIcon = $this->getInputFolder() .'/icon/'. $this->iconize($quest['Icon'], true);
 
                         // if icon doesn't exist (not in the input folder icon list), then skip
                         //if (!file_exists($questIcon)) continue;

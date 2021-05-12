@@ -106,7 +106,7 @@ class MYCItems implements ParseInterface
                 }
 
                 // build icon input folder paths
-                $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($ActionCsv->at($MYCTemporaryItemData['Action'])['Icon']);
+                $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($ActionCsv->at($MYCTemporaryItemData['Action'])['Icon'], true);
 
                 // give correct file names to icons for output
                 $SmallIconFileName = "{$IconoutputDirectory}/$Name (Lost Action) Icon.png";

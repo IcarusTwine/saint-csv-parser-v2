@@ -156,9 +156,9 @@ class Mounts implements ParseInterface
             }
 
             // build icon input folder paths
-            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconizeHR($LargeIcon);
-            $LargeIconPath2 = $this->getInputFolder() .'/icon/'. $this->iconizeHR($LargeIcon2);
-            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconizeHR($Mount["Icon"]);
+            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($LargeIcon, true);
+            $LargeIconPath2 = $this->getInputFolder() .'/icon/'. $this->iconize($LargeIcon2, true);
+            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($Mount["Icon"], true);
 
             // give correct file names to icons for output
             $LargeIconFileName = "{$IconoutputDirectory}/$Name Patch.png";

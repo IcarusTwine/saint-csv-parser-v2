@@ -47,7 +47,7 @@ class Items implements ParseInterface
         $ClassJobCategoryCsv = $this->csv("ClassJobCategory");
         $ClassJobCsv = $this->csv("ClassJob");
         $BuddyEquipCsv = $this->csv("BuddyEquip");
-        $url = "cache/desynth.json";
+        $url = "Resources/desynth.json";
         $jdata = file_get_contents($url);
         $DesynthArray = json_decode($jdata,true);
         $MateriaCsv = $this->csv("Materia");
@@ -788,7 +788,7 @@ class Items implements ParseInterface
             // Icon copying. Uncomment this section if you want icon copying to run while Item parsing is happening.
 
             if ($item['Icon']) {
-                $itemIcon = $this->getInputFolder() .'/icon/'. $this->iconizeHR($item['Icon']);
+                $itemIcon = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
                 //$itemIconHq = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
                 if (!file_exists($itemIcon)) {
                     continue;
