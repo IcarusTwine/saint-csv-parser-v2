@@ -13,7 +13,7 @@ class RetainerEXP implements ParseInterface
     use CsvParseTrait;
 
     //the wiki output format / template we shall use
-    const WIKI_FORMAT = "Level {level} = {exp}";
+    const WIKI_FORMAT = "{Output}";
 
     public function parse()
     {
@@ -35,17 +35,20 @@ class RetainerEXP implements ParseInterface
             // Your parse code here
             //
             $paramGrow = $paramGrowCsv->at($item['id']);
-            $EXP = floor((($item['EXPReward'] / 100) * $paramGrow['ExpToNext']));
-
+            $Percent = $item['unknown_1'];
+            if ($Percent === "0") continue;
+            $EXP = floor((($item['unknown_1'] / 100) * $paramGrow['ExpToNext']));
+            $ExpArray[] = "| $id || $EXP || $Percent%";
+        }
+        $Output = implode("\n|-\n", $ExpArray);
             // Save some data
             $data = [
-                '{level}' => $item['id'],
-                '{exp}' => $EXP,
+                '{Output}' => $Output,
             ];
 
             // format using Gamer Escape formatter and add to data array
             $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
-        }
+        
 
         // save our data to the filename: GeQuestWiki.txt
         $this->io->progressFinish();

@@ -14,6 +14,7 @@ php bin/console app:parse:csv GE:Minions
 php bin/console app:parse:csv GE:Mounts
 php bin/console app:parse:csv GE:Quests
 php bin/console app:parse:csv GE:Retainer
+php bin/console app:parse:csv GE:RetainerEXP
 php bin/console app:parse:csv GE:Satisfaction
 php bin/console app:parse:csv GE:Emotes
 php bin/console app:parse:csv GE:SatisfactionTable
