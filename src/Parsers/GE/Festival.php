@@ -47,7 +47,6 @@ class Festival implements ParseInterface
         }
         ksort($FestivalArray);
         $JSONOUTPUT = json_encode($FestivalArray,JSON_FORCE_OBJECT|JSON_PRETTY_PRINT);
-        var_dump($JSONOUTPUT);
         if (!file_exists("Patch")) { mkdir("Patch", 0777, true); }
         $JSON_File = fopen("Patch/FestivalNames.json", 'w');
         fwrite($JSON_File, $JSONOUTPUT);
