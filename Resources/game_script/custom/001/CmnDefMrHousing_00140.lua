@@ -1,0 +1,57 @@
+(function()
+  print("CmnDefMrHousing")
+  function CmnDefMrHousing.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    if A2_2:GetBaseId() == A0_0.NPC_OF_LIMSA then
+    elseif A2_2:GetBaseId() == A0_0.NPC_OF_ULDAH then
+    elseif A2_2:GetBaseId() == A0_0.NPC_OF_GRIDANIA then
+    else
+    end
+    if A0_0:IsAutoRemoveBuddy() then
+      A0_0:BackAutoRemoveBuddy()
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2, A1_1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_004_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_004_001, false)
+      A0_0:SystemTalk(A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_004_002, true)
+    end
+    while true do
+      if A0_0:Menu(A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1Q1_100_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A1_101_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A2_102_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A3_103_000) == 1 then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2, A1_1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_000_001, true)
+        A0_0:Wait(10)
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_100_001, true)
+        A0_0:Wait(10)
+      elseif A0_0:Menu(A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1Q1_100_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A1_101_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A2_102_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A3_103_000) == 2 then
+        if 4 == 1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME, A1_1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_000_002, true)
+          A0_0:Wait(10)
+        elseif 4 == 2 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME, A1_1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_000_003, true)
+          A0_0:Wait(10)
+        elseif 4 == 3 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME, A1_1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_000_004, true)
+          A0_0:Wait(10)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME, A1_1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFMRHOUSING_00140_MRHOUSING_000_005, true)
+          A0_0:Wait(10)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1Q1_100_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A1_101_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A2_102_000, A0_0.TEXT_CMNDEFMRHOUSING_00140_CHOICE1A3_103_000) == 3 then
+        return
+      else
+        return
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_3
+  L1_3 = CmnDefMrHousing
+  L1_3.SCRIPT_VERSION = 1
+end)()

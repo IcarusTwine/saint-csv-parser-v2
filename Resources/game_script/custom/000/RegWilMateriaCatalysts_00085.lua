@@ -1,0 +1,28 @@
+(function()
+  print("RegWilMateriaCatalysts")
+  function RegWilMateriaCatalysts.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMATERIACATALYSTS_00085_KOKOSAMU_000_1, true)
+  end
+  function RegWilMateriaCatalysts.OnScene00001(A0_3, A1_4, A2_5)
+    while true do
+      if A0_3:Menu(A0_3.TEXT_REGWILMATERIACATALYSTS_00085_SCENE00000Q, A0_3.TEXT_REGWILMATERIACATALYSTS_00085_SCENE00000A1, A0_3.TEXT_REGWILMATERIACATALYSTS_00085_SCENE00000A3) == 1 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMATERIACATALYSTS_00085_KOKOSAMU_000_10, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMATERIACATALYSTS_00085_KOKOSAMU_000_11, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMATERIACATALYSTS_00085_KOKOSAMU_000_12, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMATERIACATALYSTS_00085_KOKOSAMU_000_13, true)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_6
+  L1_6 = RegWilMateriaCatalysts
+  L1_6.SCRIPT_VERSION = 1
+end)()

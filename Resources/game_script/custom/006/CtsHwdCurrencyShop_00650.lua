@@ -1,0 +1,63 @@
+(function()
+  print("CtsHwdCurrencyShop")
+  function CtsHwdCurrencyShop.OnScene00000(A0_0, A1_1, A2_2)
+    return (A0_0:Menu("", A0_0.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_020_000, A0_0.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_020_010, A0_0.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_020_020, A0_0.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_020_040, A0_0.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_020_030))
+  end
+  function CtsHwdCurrencyShop.OnScene01001(A0_3, A1_4, A2_5, A3_6)
+    A2_5:TurnTo(A1_4, false)
+    A2_5:WaitForTurn()
+    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GREETING)
+    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_000, false)
+    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_010, false)
+    A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GREETING)
+    if A0_3:GetHWDDevelopmentLevel() <= 111 then
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_020, false)
+    else
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_021, false)
+    end
+    if A0_3:GetHWDDevelopmentLevel() < 11 then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_030, true)
+      A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+      A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+      A1_4:WaitForActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+      A0_3:Wait(15)
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_040, true)
+      A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    else
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_050, false)
+      A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_010_060, true)
+      A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    end
+  end
+  function CtsHwdCurrencyShop.OnScene09001(A0_7, A1_8, A2_9, A3_10)
+    A2_9:TurnTo(A1_8, true)
+    A2_9:WaitForTurn()
+    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
+    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_000_000, true)
+    A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
+  end
+  function CtsHwdCurrencyShop.OnScene09002(A0_11, A1_12, A2_13)
+    A2_13:TurnTo(A1_12, true)
+    A2_13:WaitForTurn()
+    A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK2)
+    A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSHWDCURRENCYSHOP_00650_ENIE_000_000, true)
+    A2_13:CancelActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK2)
+  end
+end)()
+;(function()
+  local L0_14
+  L0_14 = CtsHwdCurrencyShop
+  L0_14.SCRIPT_VERSION = 2
+  L0_14 = CtsHwdCurrencyShop
+  function L0_14.OnInitialize(A0_15)
+    A0_15:AddNestEventHandler(A0_15.SPSHOP_HANDLER_ID)
+    A0_15:AddNestEventHandler(A0_15.SPSHOP2_HANDLER_ID)
+    A0_15:AddNestEventHandler(A0_15.SPSHOP3_HANDLER_ID)
+    A0_15:AddNestEventHandler(A0_15.SPSHOP4_HANDLER_ID)
+  end
+end)()

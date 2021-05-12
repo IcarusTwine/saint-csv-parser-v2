@@ -1,0 +1,814 @@
+(function()
+  print("CtsDomReconstructTsuranuki")
+  function CtsDomReconstructTsuranuki.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_000, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
+    A0_0:Wait(10)
+    return A0_0.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00001(A0_3, A1_4, A2_5)
+    A2_5:LookAt(A1_4)
+    A2_5:TurnTo(A1_4, false)
+    A2_5:WaitForTurn()
+    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_010, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    A0_3:Wait(10)
+    return A0_3.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00002(A0_6, A1_7, A2_8)
+    A2_8:LookAt(A1_7)
+    A2_8:TurnTo(A1_7, false)
+    A2_8:WaitForTurn()
+    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_020, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+    A0_6:Wait(10)
+    return A0_6.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00003(A0_9, A1_10, A2_11)
+    local L3_12, L4_13, L5_14
+    L4_13 = A1_10
+    L3_12 = A1_10.GetRace
+    L3_12 = L3_12(L4_13)
+    L5_14 = A1_10
+    L4_13 = A1_10.GetSex
+    L4_13 = L4_13(L5_14)
+    L5_14 = A1_10.Position
+    L5_14(A1_10, A2_11, A0_9.ARRANGE_TYPE_BASE_FRONT, 2)
+    L5_14 = A1_10.Direction
+    L5_14(A1_10, A2_11)
+    L5_14 = A1_10.LookAt
+    L5_14(A1_10, A2_11)
+    L5_14 = A0_9.CreateCharacter
+    L5_14 = L5_14(A0_9, A0_9.LOC_ACTOR_001, A2_11, A0_9.ARRANGE_TYPE_BASE_LEFT, 15)
+    L5_14:Position(L5_14, A0_9.ARRANGE_TYPE_FRONT, 7)
+    L5_14:Visible(A0_9.VISIBLE_HIDE)
+    A2_11:LookAt(A1_10)
+    A2_11:Direction(A1_10)
+    A0_9:ChangeBGMVolume(0)
+    A0_9:Wait(30)
+    A0_9:PlayBGM(A0_9.BGM_MUSIC_NO_MUSIC)
+    A0_9:ChangeBGMVolume(0.5)
+    A0_9:Wait(10)
+    A0_9:PlayTwoShotCamera(A0_9.TWOSHOT_TYPE_RIGHT_ZOOM, A2_11, A1_10)
+    A0_9:Wait(10)
+    A0_9:FadeIn(A0_9.FADE_DEFAULT)
+    A0_9:PlayBGM(A0_9.LOC_BGM_EX2_EVENT_EAST_01)
+    A0_9:ChangeBGMVolume(0.5)
+    A0_9:Wait(10)
+    A0_9:WaitForFade()
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_FACIAL_BOSSY)
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_030, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(10)
+    A2_11:CancelActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_THINK)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_031, false, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_032, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(10)
+    A2_11:CancelActionTimeline(A0_9.ACTION_TIMELINE_EVENT_THINK)
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_ADD_NO)
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK2)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_033, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(10)
+    A2_11:CancelActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK2)
+    A2_11:LookAt(L5_14)
+    A0_9:Wait(10)
+    A2_11:TurnTo(L5_14, false)
+    A0_9:Wait(20)
+    A1_10:LookAt(L5_14)
+    A0_9:Wait(10)
+    A1_10:TurnTo(L5_14, false)
+    A0_9:Wait(20)
+    A0_9:PlayTargetRelationCamera(A2_11, -22.5707, 21.7648, 4.019, -12.563, 31.097, 1.7928, 10.6134)
+    A0_9:Orbit(0, 25, 150, 150, 150)
+    A0_9:Wait(20)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_034, false, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_035, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(20)
+    A0_9:PlayTargetRelationCamera(A2_11, -130.4584, 37.2568, 10.3895, 167.4635, 4.6688, -3.9363, 38.1077)
+    A0_9:Orbit(0, 15, 200, 150, 200)
+    A2_11:TurnTo(-150, false)
+    A2_11:LookAt()
+    A1_10:LookAt(-30, 0)
+    A0_9:Wait(8)
+    A1_10:TurnTo(150, false)
+    A0_9:Wait(15)
+    A2_11:WaitForTurn()
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A1_10:PlayActionTimeline(A0_9.LOC_ACTION_003)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_036, false, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_037, false, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(10)
+    A2_11:CancelActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_SPIRIT)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_038, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(10)
+    A2_11:CancelActionTimeline(A0_9.ACTION_TIMELINE_EVENT_SPIRIT)
+    A0_9:Wait(10)
+    A0_9:PlayTargetRelationCamera(A2_11, 27.9475, 1.0381, 1.5069, -151.4679, 0.4527, 1.4595, 1.4916)
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_ARMS)
+    A0_9:Wait(10)
+    A1_10:LookAt()
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_039, false, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_040, false, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A2_11:AutoShake(false)
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_ADD_NO)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_041, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(10)
+    A2_11:CancelActionTimeline(A0_9.ACTION_TIMELINE_EVENT_ARMS)
+    A0_9:PlayTwoShotCamera(A0_9.TWOSHOT_TYPE_RIGHT_ZOOM, A2_11, A1_10)
+    A0_9:Wait(10)
+    A2_11:LookAt(A1_10)
+    A0_9:Wait(10)
+    A2_11:TurnTo(A1_10, false)
+    A1_10:LookAt(A2_11)
+    A0_9:Wait(10)
+    A1_10:TurnTo(A2_11, false)
+    A2_11:WaitForTurn()
+    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_GREETING)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_042, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+    A0_9:Wait(10)
+    A0_9:UpdownDolly(0, -4.3, 100, 50, 100)
+    A0_9:UpdownPan(0, 30, 100, 50, 100)
+    A0_9:SidePan(0, 90, 100, 50, 100)
+    A0_9:Zoom(0, -2.5, 100, 50, 100)
+    A0_9:Wait(10)
+    A1_10:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_9:Wait(40)
+    A0_9:DisableSceneSkip()
+    A0_9:SystemTalk(A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SYSTEM_000_043, false)
+    A0_9:SystemTalk(A0_9.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SYSTEM_000_044, true)
+    A0_9:Wait(10)
+    A0_9:EnableSceneSkip()
+    A0_9:FadeOut(A0_9.FADE_DEFAULT)
+    A0_9:WaitForFade()
+    A0_9:Wait(100)
+    return A0_9.DOMA_EVENT_RESULT_NEXT
+  end
+  function CtsDomReconstructTsuranuki.OnScene00004(A0_15, A1_16, A2_17)
+    A2_17:LookAt(A1_16)
+    A2_17:TurnTo(A1_16, false)
+    A2_17:WaitForTurn()
+    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_050, true, nil, nil, nil, A0_15.SPEAK_NORMAL_MIDDLE)
+    A0_15:Wait(10)
+    return A0_15.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00013(A0_18, A1_19, A2_20)
+    A2_20:LookAt(A1_19)
+    A2_20:TurnTo(A1_19, false)
+    A2_20:WaitForTurn()
+    A2_20:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_060, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    return A0_18.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00005(A0_21, A1_22, A2_23)
+    A2_23:LookAt(A1_22)
+    A2_23:TurnTo(A1_22, false)
+    A2_23:WaitForTurn()
+    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_SPIRIT)
+    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_070, true, nil, nil, nil, A0_21.SPEAK_NORMAL_MIDDLE)
+    A0_21:Wait(10)
+    return A0_21.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00006(A0_24, A1_25, A2_26)
+    local L3_27, L4_28, L5_29, L6_30, L7_31, L8_32, L9_33
+    L4_28 = A1_25
+    L3_27 = A1_25.GetRace
+    L3_27 = L3_27(L4_28)
+    L5_29 = A1_25
+    L4_28 = A1_25.GetSex
+    L4_28 = L4_28(L5_29)
+    L6_30 = A1_25
+    L5_29 = A1_25.Position
+    L7_31 = A2_26
+    L8_32 = A0_24.ARRANGE_TYPE_BASE_BACK
+    L9_33 = 0.1
+    L5_29(L6_30, L7_31, L8_32, L9_33)
+    L6_30 = A1_25
+    L5_29 = A1_25.Direction
+    L7_31 = A2_26
+    L5_29(L6_30, L7_31)
+    L6_30 = A1_25
+    L5_29 = A1_25.Position
+    L7_31 = A1_25
+    L8_32 = A0_24.ARRANGE_TYPE_FRONT
+    L9_33 = 0.1
+    L5_29(L6_30, L7_31, L8_32, L9_33)
+    L6_30 = A1_25
+    L5_29 = A1_25.Position
+    L7_31 = A2_26
+    L8_32 = A0_24.ARRANGE_TYPE_BASE_FRONT
+    L9_33 = 1.935841
+    L5_29(L6_30, L7_31, L8_32, L9_33)
+    L6_30 = A1_25
+    L5_29 = A1_25.Position
+    L7_31 = A1_25
+    L8_32 = A0_24.ARRANGE_TYPE_LEFT
+    L9_33 = 0.7083158
+    L5_29(L6_30, L7_31, L8_32, L9_33)
+    L6_30 = A1_25
+    L5_29 = A1_25.Direction
+    L7_31 = A2_26
+    L5_29(L6_30, L7_31)
+    L6_30 = A1_25
+    L5_29 = A1_25.LookAt
+    L7_31 = A2_26
+    L5_29(L6_30, L7_31)
+    L5_29, L6_30 = nil, nil
+    L8_32 = A0_24
+    L7_31 = A0_24.CreateCharacter
+    L9_33 = A0_24.LOC_ACTOR_002
+    L7_31 = L7_31(L8_32, L9_33, A2_26, A0_24.ARRANGE_TYPE_BASE_FRONT, 2.141544)
+    L9_33 = L7_31
+    L8_32 = L7_31.Position
+    L8_32(L9_33, L7_31, A0_24.ARRANGE_TYPE_RIGHT, 0.7465987)
+    L9_33 = L7_31
+    L8_32 = L7_31.Direction
+    L8_32(L9_33, A2_26)
+    L9_33 = L7_31
+    L8_32 = L7_31.LookAt
+    L8_32(L9_33, A2_26)
+    L9_33 = L7_31
+    L8_32 = L7_31.Visible
+    L8_32(L9_33, A0_24.VISIBLE_HIDE)
+    L9_33 = A0_24
+    L8_32 = A0_24.CreateCharacter
+    L8_32 = L8_32(L9_33, A0_24.LOC_ACTOR_001, A2_26, A0_24.ARRANGE_TYPE_BASE_FRONT, 2.550759)
+    L9_33 = L8_32.Position
+    L9_33(L8_32, L8_32, A0_24.ARRANGE_TYPE_RIGHT, 1.531429)
+    L9_33 = L8_32.Direction
+    L9_33(L8_32, A2_26)
+    L9_33 = L8_32.LookAt
+    L9_33(L8_32, A2_26)
+    L9_33 = L8_32.Idle
+    L9_33(L8_32, A0_24.ACTION_TIMELINE_EVENT_BASE_IDLE4)
+    L9_33 = L8_32.Visible
+    L9_33(L8_32, A0_24.VISIBLE_HIDE)
+    L9_33 = A0_24.CreateCharacter
+    L9_33 = L9_33(A0_24, A0_24.LOC_ACTOR_001, A2_26, A0_24.ARRANGE_TYPE_BASE_FRONT, 3)
+    L9_33:Visible(A0_24.VISIBLE_HIDE)
+    A2_26:LookAt(A1_25)
+    A2_26:Direction(A1_25)
+    A0_24:PlayTwoShotCamera(A0_24.TWOSHOT_TYPE_RIGHT_ZOOM, A2_26, A1_25)
+    A0_24:Wait(10)
+    A0_24:FadeIn(A0_24.FADE_DEFAULT)
+    A0_24:ChangeBGMVolume(0.5)
+    A0_24:Wait(10)
+    A0_24:WaitForFade()
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_080, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_081, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_26:LookAt(-60, 0)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A0_24:Wait(30)
+    A1_25:LookAt(60, 0)
+    A0_24:Wait(10)
+    A0_24:PlayTargetRelationCamera(A2_26, 63.2075, 8.8373, 3.6311, 65.2109, 16.5589, 3.4827, 7.7346)
+    A0_24:Zoom(2, 3, 900, 0, 60)
+    A0_24:SidePan(-5, 15, 900, 0, 60)
+    A0_24:UpdownPan(0, -10, 900, 0, 60)
+    A0_24:UpdownDolly(0, -5, 900, 0, 60)
+    A1_25:Visible(A0_24.VISIBLE_HIDE)
+    A2_26:Visible(A0_24.VISIBLE_HIDE)
+    A2_26:Idle(A0_24.ACTION_TIMELINE_EVENT_BASE_IDLE1)
+    A0_24:Wait(40)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_082, true, nil, nil, nil, A0_24.SPEAK_NONE)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_COMEON)
+    A0_24:Wait(40)
+    A0_24:PlayTwoShotCamera(A0_24.TWOSHOT_TYPE_RIGHT_ZOOM, A2_26, A1_25)
+    A1_25:Visible(A0_24.VISIBLE_SHOW)
+    A2_26:Visible(A0_24.VISIBLE_SHOW)
+    A0_24:Wait(10)
+    A2_26:LookAt(A1_25)
+    A0_24:Wait(10)
+    A1_25:LookAt(A2_26)
+    A0_24:Wait(20)
+    A1_25:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_24:Wait(50)
+    L7_31:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_HOZAN_000_083, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_COMEON)
+    A0_24:ChangeBGMVolume(0)
+    A0_24:Wait(10)
+    A2_26:LookAt(L9_33)
+    A0_24:Wait(8)
+    A1_25:LookAt(L9_33)
+    A0_24:Wait(10)
+    A1_25:TurnTo(30, false)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_SHOCKED)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_WHAT)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_084, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A1_25:PlayActionTimeline(A0_24.LOC_ACTION_004)
+    L7_31:WalkIn(160, 3.5, A0_24.MOVE_WALK)
+    L8_32:WalkIn(150, 4.3, A0_24.MOVE_WALK)
+    L7_31:Visible(A0_24.VISIBLE_SHOW)
+    L8_32:Visible(A0_24.VISIBLE_SHOW)
+    A0_24:Wait(10)
+    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_SHOCKED)
+    A1_25:LookAt(L7_31)
+    A2_26:LookAt(L7_31)
+    A2_26:TurnTo(L7_31, false)
+    L8_32:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_SMILE)
+    A0_24:PlayTargetRelationCamera(L9_33, -157.7004, 4.4957, 1.7728, 160.7223, 0.9602, 0.8955, 3.93)
+    A2_26:WaitForTurn()
+    A0_24:Wait(10)
+    A0_24:PlayBGM(A0_24.BGM_MUSIC_EVENT_MEETING)
+    A0_24:ChangeBGMVolume(0.5)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ADD_NO)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_085, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BIG)
+    L7_31:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_SMILE)
+    L7_31:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
+    L7_31:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_HOZAN_000_086, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    L7_31:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
+    L8_32:LookAt(A1_25)
+    A0_24:Wait(8)
+    A1_25:LookAt(L8_32)
+    L8_32:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
+    L8_32:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_KOZAKURA_000_087, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    L8_32:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_KOZAKURA_000_088, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    L8_32:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
+    L7_31:LookAt(A1_25)
+    A0_24:Wait(8)
+    L7_31:TurnTo(A1_25, false)
+    A1_25:LookAt(L7_31)
+    L7_31:WaitForTurn()
+    L7_31:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L7_31:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_HOZAN_000_089, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    L7_31:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L7_31:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_JP_BOW)
+    L7_31:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_HOZAN_000_090, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    A0_24:PlayTargetRelationCamera(L9_33, -153.0881, 2.2574, 1.5459, 156.0882, 4.8475, 0.8867, 3.8992)
+    A0_24:Wait(10)
+    A1_25:LookAt(A2_26)
+    L7_31:LookAt(A2_26)
+    L7_31:TurnTo(A2_26, false)
+    L8_32:LookAt(A2_26)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_THINK)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_091, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_THINK)
+    A0_24:Wait(10)
+    A2_26:LookAt(L8_32)
+    A0_24:Wait(8)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK2)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_092, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK2)
+    A0_24:PlayTargetRelationCamera(L9_33, -157.7004, 4.4957, 1.7728, 160.7223, 0.9602, 0.8955, 3.93)
+    A0_24:Wait(10)
+    L8_32:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_SMILE)
+    L8_32:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ADD_YES)
+    L8_32:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_32:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_KOZAKURA_000_093, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    L8_32:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_32:PlayActionTimeline(A0_24.ACTION_TIMELINE_EMOTE_JOY)
+    L8_32:Talk(A1_25, A0_24, A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_KOZAKURA_000_094, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    A0_24:Wait(10)
+    A0_24:UpdownDolly(0, -4.3, 100, 50, 100)
+    A0_24:SideDolly(0, 3, 100, 50, 100)
+    A0_24:UpdownPan(0, 30, 100, 50, 100)
+    A0_24:SidePan(0, -60, 100, 50, 100)
+    A0_24:Zoom(0, -2.5, 100, 50, 100)
+    A0_24:Wait(20)
+    L7_31:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
+    A2_26:LookAt(L7_31)
+    L8_32:LookAt(L7_31)
+    A0_24:Wait(10)
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EMOTE_LAUGH)
+    A0_24:Wait(10)
+    A0_24:DisableSceneSkip()
+    A0_24:SystemTalk(A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SYSTEM_000_095, false)
+    A0_24:SystemTalk(A0_24.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SYSTEM_000_096, true)
+    A0_24:Wait(10)
+    A0_24:EnableSceneSkip()
+    A0_24:FadeOut(A0_24.FADE_DEFAULT)
+    A0_24:WaitForFade()
+    A0_24:Wait(100)
+    return A0_24.DOMA_EVENT_RESULT_NEXT
+  end
+  function CtsDomReconstructTsuranuki.OnScene00007(A0_34, A1_35, A2_36)
+    A2_36:LookAt(A1_35)
+    A2_36:TurnTo(A1_35, false)
+    A2_36:WaitForTurn()
+    A2_36:PlayActionTimeline(A0_34.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_100, true, nil, nil, nil, A0_34.SPEAK_NORMAL_MIDDLE)
+    A0_34:Wait(10)
+    return A0_34.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00008(A0_37, A1_38, A2_39)
+    A2_39:LookAt(A1_38)
+    A2_39:TurnTo(A1_38, false)
+    A2_39:WaitForTurn()
+    A2_39:PlayActionTimeline(A0_37.ACTION_TIMELINE_EVENT_SPIRIT)
+    A2_39:Talk(A1_38, A0_37, A0_37.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_110, true, nil, nil, nil, A0_37.SPEAK_NORMAL_MIDDLE)
+    A0_37:Wait(10)
+    return A0_37.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00009(A0_40, A1_41, A2_42)
+    local L3_43, L4_44, L5_45, L6_46, L7_47, L8_48, L9_49, L10_50, L11_51, L12_52
+    L4_44 = A1_41
+    L3_43 = A1_41.GetRace
+    L3_43 = L3_43(L4_44)
+    L5_45 = A1_41
+    L4_44 = A1_41.GetSex
+    L4_44 = L4_44(L5_45)
+    L6_46 = A1_41
+    L5_45 = A1_41.Position
+    L7_47 = A2_42
+    L8_48 = A0_40.ARRANGE_TYPE_BASE_BACK
+    L9_49 = 0.1
+    L5_45(L6_46, L7_47, L8_48, L9_49)
+    L6_46 = A1_41
+    L5_45 = A1_41.Direction
+    L7_47 = A2_42
+    L5_45(L6_46, L7_47)
+    L6_46 = A1_41
+    L5_45 = A1_41.Position
+    L7_47 = A1_41
+    L8_48 = A0_40.ARRANGE_TYPE_FRONT
+    L9_49 = 0.1
+    L5_45(L6_46, L7_47, L8_48, L9_49)
+    L6_46 = A1_41
+    L5_45 = A1_41.Position
+    L7_47 = A2_42
+    L8_48 = A0_40.ARRANGE_TYPE_BASE_FRONT
+    L9_49 = 1.935841
+    L5_45(L6_46, L7_47, L8_48, L9_49)
+    L6_46 = A1_41
+    L5_45 = A1_41.Position
+    L7_47 = A1_41
+    L8_48 = A0_40.ARRANGE_TYPE_LEFT
+    L9_49 = 0.7083158
+    L5_45(L6_46, L7_47, L8_48, L9_49)
+    L6_46 = A1_41
+    L5_45 = A1_41.Direction
+    L7_47 = A2_42
+    L5_45(L6_46, L7_47)
+    L6_46 = A1_41
+    L5_45 = A1_41.LookAt
+    L7_47 = A2_42
+    L5_45(L6_46, L7_47)
+    L5_45, L6_46, L7_47 = nil, nil, nil
+    L9_49 = A0_40
+    L8_48 = A0_40.CreateCharacter
+    L10_50 = A0_40.LOC_ACTOR_003
+    L11_51 = A2_42
+    L12_52 = A0_40.ARRANGE_TYPE_BASE_FRONT
+    L8_48 = L8_48(L9_49, L10_50, L11_51, L12_52, 2.279998)
+    L10_50 = L8_48
+    L9_49 = L8_48.Position
+    L11_51 = L8_48
+    L12_52 = A0_40.ARRANGE_TYPE_RIGHT
+    L9_49(L10_50, L11_51, L12_52, 1.61224)
+    L10_50 = L8_48
+    L9_49 = L8_48.Direction
+    L11_51 = A2_42
+    L9_49(L10_50, L11_51)
+    L10_50 = L8_48
+    L9_49 = L8_48.LookAt
+    L11_51 = A2_42
+    L9_49(L10_50, L11_51)
+    L10_50 = L8_48
+    L9_49 = L8_48.Visible
+    L11_51 = A0_40.VISIBLE_HIDE
+    L9_49(L10_50, L11_51)
+    L10_50 = A0_40
+    L9_49 = A0_40.CreateCharacter
+    L11_51 = A0_40.LOC_ACTOR_001
+    L12_52 = A2_42
+    L9_49 = L9_49(L10_50, L11_51, L12_52, A0_40.ARRANGE_TYPE_BASE_FRONT, 2.692626)
+    L11_51 = L9_49
+    L10_50 = L9_49.Position
+    L12_52 = L9_49
+    L10_50(L11_51, L12_52, A0_40.ARRANGE_TYPE_RIGHT, 0.6445258)
+    L11_51 = L9_49
+    L10_50 = L9_49.Direction
+    L12_52 = A2_42
+    L10_50(L11_51, L12_52)
+    L11_51 = L9_49
+    L10_50 = L9_49.LookAt
+    L12_52 = A2_42
+    L10_50(L11_51, L12_52)
+    L11_51 = L9_49
+    L10_50 = L9_49.Idle
+    L12_52 = A0_40.ACTION_TIMELINE_EVENT_BASE_IDLE4
+    L10_50(L11_51, L12_52)
+    L11_51 = L9_49
+    L10_50 = L9_49.Visible
+    L12_52 = A0_40.VISIBLE_HIDE
+    L10_50(L11_51, L12_52)
+    L11_51 = A0_40
+    L10_50 = A0_40.CreateCharacter
+    L12_52 = A0_40.LOC_ACTOR_004
+    L10_50 = L10_50(L11_51, L12_52, A2_42, A0_40.ARRANGE_TYPE_BASE_FRONT, 0.09000408)
+    L12_52 = L10_50
+    L11_51 = L10_50.Position
+    L11_51(L12_52, L10_50, A0_40.ARRANGE_TYPE_LEFT, 1.41029)
+    L12_52 = L10_50
+    L11_51 = L10_50.Direction
+    L11_51(L12_52, A2_42)
+    L12_52 = L10_50
+    L11_51 = L10_50.LookAt
+    L11_51(L12_52, A2_42)
+    L12_52 = A0_40
+    L11_51 = A0_40.CreateCharacter
+    L11_51 = L11_51(L12_52, A0_40.LOC_ACTOR_001, A2_42, A0_40.ARRANGE_TYPE_BASE_FRONT, 3)
+    L12_52 = L11_51.Visible
+    L12_52(L11_51, A0_40.VISIBLE_HIDE)
+    L12_52 = A0_40.BindCharacter
+    L12_52 = L12_52(A0_40, A0_40.BIND_ACTOR_001)
+    L12_52:Position(A2_42, A0_40.ARRANGE_TYPE_BASE_BACK, 0.1)
+    L12_52:Direction(A2_42)
+    L12_52:Position(L12_52, A0_40.ARRANGE_TYPE_FRONT, 0.1)
+    L12_52:Position(A2_42, A0_40.ARRANGE_TYPE_BASE_BACK, 7.238023)
+    L12_52:Position(L12_52, A0_40.ARRANGE_TYPE_LEFT, 3.890016)
+    L12_52:Direction(165)
+    L12_52:PlayActionTimeline(A0_40.LOC_ACTION_001)
+    A2_42:LookAt(L12_52)
+    A2_42:Direction(L12_52)
+    A2_42:Idle(A0_40.ACTION_TIMELINE_EVENT_BASE_STAND_TALK)
+    A0_40:ChangeBGMVolume(0)
+    A0_40:Wait(30)
+    A0_40:PlayBGM(A0_40.BGM_MUSIC_NO_MUSIC)
+    A0_40:ChangeBGMVolume(0.5)
+    A0_40:Wait(10)
+    A0_40:PlayTargetRelationCamera(L11_51, 83.8163, 28.2097, 3.8545, 89.0059, 34.5322, 2.5083, 7.055)
+    A0_40:Wait(10)
+    A0_40:PlayTargetRelationCamera(L11_51, -5.3091, 36.1014, 3.639, -172.4077, 9.5313, 5.9658, 45.5014)
+    A0_40:UpdownPan(30, 0, 60, 30, 60)
+    A0_40:UpdownDolly(-1.5, 0, 60, 30, 60)
+    A0_40:FadeIn(A0_40.FADE_DEFAULT)
+    A0_40:PlayBGM(A0_40.LOC_BGM_EX2_EVENT_STORMBLOOD_04)
+    A0_40:ChangeBGMVolume(0.5)
+    A0_40:Wait(10)
+    L10_50:WalkIn(180, 8, A0_40.MOVE_WALK)
+    A0_40:WaitForFade()
+    A0_40:Wait(80)
+    A2_42:LookAt(L10_50)
+    A2_42:TurnTo(L10_50, false)
+    A2_42:WaitForTurn()
+    A1_41:LookAt(L10_50)
+    A2_42:Idle(A0_40.ACTION_TIMELINE_EVENT_BASE_STAND_TALK)
+    A0_40:Wait(20)
+    A0_40:PlayTargetRelationCamera(L11_51, 83.8163, 28.2097, 3.8545, 89.0059, 34.5322, 2.5083, 7.055)
+    A0_40:SideDolly(0, 1.5, 100, 100, 100)
+    A0_40:Wait(120)
+    A0_40:PlayTargetRelationCamera(L11_51, -89.0288, 6.2634, 3.6287, -151.5336, 5.7267, 2.182, 6.4031)
+    A0_40:SideDolly(0, 1.5, 100, 100, 100)
+    A0_40:Wait(120)
+    A0_40:PlayTwoShotCamera(A0_40.TWOSHOT_TYPE_RIGHT_ZOOM, A2_42, A1_41)
+    A0_40:Wait(10)
+    L10_50:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_40:Wait(30)
+    A2_42:Idle(A0_40.ACTION_TIMELINE_EVENT_BASE_IDLE)
+    L10_50:TurnTo(180, false)
+    L10_50:LookAt()
+    L10_50:WaitForTurn()
+    L10_50:WalkOut(0, 20, A0_40.MOVE_RUN)
+    A0_40:Wait(30)
+    A2_42:LookAt(A1_41)
+    A0_40:Wait(10)
+    A1_41:LookAt(A2_42)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_120, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A2_42:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_42:LookAt(L12_52)
+    A0_40:Wait(10)
+    A2_42:TurnTo(L12_52, false)
+    A2_42:WaitForTurn()
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_121, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A2_42:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A0_40:PlayTargetRelationCamera(L11_51, 164.6224, 9.6854, 1.818, 153.6521, 12.6654, 1.2738, 3.6959)
+    A0_40:Wait(10)
+    L10_50:Visible(A0_40.VISIBLE_HIDE)
+    L12_52:Idle(A0_40.ACTION_TIMELINE_EVENT_BASE_IDLE)
+    L12_52:LookAt(A2_42)
+    A0_40:Wait(8)
+    L12_52:TurnTo(A2_42, false)
+    L12_52:WaitForTurn()
+    L12_52:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK2)
+    L12_52:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SMITH00488_000_122, false, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L12_52:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK2)
+    L12_52:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK1)
+    L12_52:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SMITH00488_000_123, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L12_52:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK1)
+    A0_40:BindCharacter(A0_40.BIND_ACTOR_002):Visible(A0_40.VISIBLE_HIDE)
+    A0_40:PlayTargetRelationCamera(L11_51, -154.5717, 4.3712, 1.6523, -166.8135, 2.8099, 1.3209, 1.7624)
+    A0_40:Wait(10)
+    L12_52:TurnTo(180, false)
+    A2_42:Idle(A0_40.ACTION_TIMELINE_EVENT_BASE_STAND_TALK)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_124, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    L9_49:WalkIn(180, 5, A0_40.MOVE_WALK)
+    L9_49:Visible(A0_40.VISIBLE_SHOW)
+    A0_40:Wait(10)
+    L9_49:WaitForMove()
+    A1_41:LookAt(L9_49)
+    A0_40:Wait(10)
+    A1_41:TurnTo(50, false)
+    A0_40:Wait(30)
+    L9_49:LookAt(A1_41)
+    A0_40:Wait(20)
+    L9_49:PlayActionTimeline(A0_40.ACTION_TIMELINE_FACIAL_SMILE)
+    L9_49:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L9_49:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_KOZAKURA_000_125, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L9_49:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L12_52:PlayActionTimeline(A0_40.LOC_ACTION_001)
+    A1_41:PlayActionTimeline(A0_40.ACTION_TIMELINE_FACIAL_SMILE)
+    A1_41:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_40:Wait(60)
+    L8_48:WalkIn(150, 4, A0_40.MOVE_WALK)
+    L8_48:Visible(A0_40.VISIBLE_SHOW)
+    A0_40:SidePan(0, 10, 20, 30, 20)
+    A0_40:Zoom(0, -0.5, 20, 30, 20)
+    L8_48:WaitForMove()
+    L8_48:TurnTo(A2_42, false)
+    A1_41:LookAt(L8_48)
+    A0_40:Wait(8)
+    L9_49:LookAt(L8_48)
+    L8_48:WaitForTurn()
+    L8_48:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    L8_48:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_ARARAGI_000_126, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L8_48:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A0_40:PlayTargetRelationCamera(L11_51, -160.9076, 2.9, 1.631, 157.9228, 3.4835, 1.2676, 2.3384)
+    A0_40:Wait(10)
+    A2_42:Idle(A0_40.ACTION_TIMELINE_EVENT_BASE_IDLE)
+    A2_42:LookAt(L8_48)
+    A0_40:Wait(8)
+    A2_42:TurnTo(L8_48, false)
+    A2_42:WaitForTurn()
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EMOTE_DOUBT)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_127, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A2_42:CancelActionTimeline(A0_40.ACTION_TIMELINE_EMOTE_DOUBT)
+    A0_40:PlayTargetRelationCamera(L11_51, -157.6036, 4.6682, 1.5979, 83.6278, 0.645, 0.7526, 5.0814)
+    A0_40:Wait(10)
+    L8_48:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_NO)
+    L8_48:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_48:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_ARARAGI_000_128, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L8_48:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A1_41:LookAt(A2_42)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EMOTE_COMEON)
+    L9_49:LookAt(A2_42)
+    L9_49:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_SHOCKED)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_129, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L9_49:PlayActionTimeline(A0_40.ACTION_TIMELINE_FACIAL_WORRY)
+    A2_42:CancelActionTimeline(A0_40.ACTION_TIMELINE_EMOTE_COMEON)
+    L8_48:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ARMS)
+    A0_40:Wait(35)
+    L9_49:LookAt(L8_48)
+    A0_40:Wait(20)
+    A1_41:LookAt(L8_48)
+    L8_48:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_ARARAGI_000_130, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A0_40:ChangeBGMVolume(0)
+    A0_40:Wait(30)
+    A0_40:PlayBGM(A0_40.BGM_MUSIC_NO_MUSIC)
+    A0_40:ChangeBGMVolume(0.5)
+    A0_40:Wait(10)
+    A0_40:PlayTargetRelationCamera(L11_51, -150.2153, 2.467, 1.5634, 159.8467, 3.9586, 1.0521, 3.0736)
+    A0_40:Wait(10)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_FACIAL_BOSSY)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_131, false, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_132, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A2_42:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A0_40:PlayTargetRelationCamera(L11_51, -141.224, 2.1795, 1.552, -64.8487, 2.3605, 1.346, 2.818)
+    A0_40:Wait(10)
+    L8_48:LookAt(0, -15)
+    A0_40:Wait(10)
+    L8_48:PlayActionTimeline(A0_40.LOC_ACTION_002)
+    L8_48:WaitForActionTimeline(A0_40.LOC_ACTION_002)
+    A0_40:Wait(10)
+    L8_48:LookAt(A2_42)
+    A0_40:Wait(15)
+    L8_48:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_ARARAGI_000_133, false, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:PlayBGM(A0_40.LOC_BGM_003)
+    A0_40:ChangeBGMVolume(0.5)
+    A0_40:Wait(10)
+    L8_48:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_ARARAGI_000_134, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A0_40:PlayTargetRelationCamera(L11_51, -157.6036, 4.6682, 1.5979, 83.6278, 0.645, 0.7526, 5.0814)
+    A0_40:Wait(10)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_SPIRIT)
+    L9_49:LookAt(A2_42)
+    A1_41:LookAt(A2_42)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_135, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A2_42:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_SPIRIT)
+    L9_49:LookAt(A1_41)
+    A0_40:Wait(10)
+    L9_49:TurnTo(A1_41, false)
+    A1_41:LookAt(L9_49)
+    A0_40:Wait(10)
+    L9_49:WaitForTurn()
+    L9_49:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+    L9_49:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L9_49:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_KOZAKURA_000_136, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L9_49:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_48:AutoShake(false)
+    A1_41:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+    A0_40:Wait(30)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK1)
+    L9_49:PlayActionTimeline(A0_40.ACTION_TIMELINE_EMOTE_JOY)
+    L9_49:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_KOZAKURA_000_137, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    L8_48:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK2)
+    A0_40:UpdownDolly(0, -4.3, 100, 50, 100)
+    A0_40:UpdownPan(0, 30, 100, 50, 100)
+    A0_40:SidePan(0, 60, 100, 50, 100)
+    A0_40:Zoom(0, -0.5, 100, 50, 100)
+    A0_40:Wait(8)
+    A0_40:DisableSceneSkip()
+    A0_40:SystemTalk(A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SYSTEM_000_138, false)
+    A0_40:SystemTalk(A0_40.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_SYSTEM_000_139, true)
+    A0_40:Wait(10)
+    A0_40:EnableSceneSkip()
+    A0_40:FadeOut(A0_40.FADE_DEFAULT)
+    A0_40:WaitForFade()
+    A0_40:Wait(100)
+    return A0_40.DOMA_EVENT_RESULT_NEXT
+  end
+  function CtsDomReconstructTsuranuki.OnScene00010(A0_53, A1_54, A2_55)
+    A2_55:LookAt(A1_54)
+    A2_55:TurnTo(A1_54, false)
+    A2_55:WaitForTurn()
+    A2_55:PlayActionTimeline(A0_53.ACTION_TIMELINE_EVENT_SPIRIT)
+    A2_55:Talk(A1_54, A0_53, A0_53.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_140, true, nil, nil, nil, A0_53.SPEAK_NORMAL_MIDDLE)
+    A0_53:Wait(10)
+    return A0_53.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00011(A0_56, A1_57, A2_58)
+    A2_58:LookAt(A1_57)
+    A2_58:TurnTo(A1_57, false)
+    A2_58:WaitForTurn()
+    A2_58:PlayActionTimeline(A0_56.ACTION_TIMELINE_EMOTE_ME)
+    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_150, true, nil, nil, nil, A0_56.SPEAK_NORMAL_MIDDLE)
+    A0_56:Wait(10)
+    return A0_56.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00012(A0_59, A1_60, A2_61)
+    A2_61:LookAt(A1_60)
+    A0_59:Wait(8)
+    A2_61:TurnTo(A1_60, false)
+    A2_61:WaitForTurn()
+    A2_61:PlayActionTimeline(A0_59.ACTION_TIMELINE_EVENT_TALK1)
+    A2_61:Talk(A1_60, A0_59, A0_59.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_108_050, true, nil, nil, nil, A0_59.SPEAK_NORMAL_MIDDLE)
+    A0_59:Wait(10)
+    return A0_59.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00015(A0_62, A1_63, A2_64)
+    A2_64:LookAt(A1_63)
+    A0_62:Wait(8)
+    A2_64:TurnTo(A1_63, false)
+    A2_64:WaitForTurn()
+    A2_64:PlayActionTimeline(A0_62.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A2_64:Talk(A1_63, A0_62, A0_62.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_160, true, nil, nil, nil, A0_62.SPEAK_NORMAL_MIDDLE)
+    A0_62:Wait(10)
+    return A0_62.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructTsuranuki.OnScene00014(A0_65, A1_66, A2_67)
+    A2_67:LookAt(A1_66)
+    A0_65:Wait(8)
+    A2_67:TurnTo(A1_66, false)
+    A2_67:WaitForTurn()
+    if A1_66:IsQuestCompleted(A0_65.CLEAR_QUEST_001) == true then
+      A2_67:PlayActionTimeline(A0_65.ACTION_TIMELINE_EVENT_TALK_BIG)
+      A2_67:Talk(A1_66, A0_65, A0_65.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_180, true, nil, nil, nil, A0_65.SPEAK_NORMAL_MIDDLE)
+      A0_65:Wait(10)
+    else
+      A2_67:PlayActionTimeline(A0_65.ACTION_TIMELINE_EVENT_TALK1)
+      A2_67:Talk(A1_66, A0_65, A0_65.TEXT_CTSDOMRECONSTRUCTTSURANUKI_00488_TSURANUKI_000_170, true, nil, nil, nil, A0_65.SPEAK_NORMAL_MIDDLE)
+      A0_65:Wait(10)
+    end
+    return A0_65.DOMA_EVENT_RESULT_END
+  end
+end)()
+;(function()
+  local L1_68
+  L1_68 = CtsDomReconstructTsuranuki
+  L1_68.SCRIPT_VERSION = 2
+end)()

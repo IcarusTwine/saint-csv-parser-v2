@@ -1,0 +1,151 @@
+(function()
+  print("RegNor4YtcTwins1")
+  function RegNor4YtcTwins1.OnScene00000(A0_0, A1_1, A2_2)
+    if A2_2:GetBaseId() == A0_0.TARGET_ANOG_001 then
+      A0_0:AonogYTC00043(A1_1, A2_2)
+    else
+      if A2_2:GetBaseId() == A0_0.TARGET_KONOG_001 then
+        A0_0:KonogYTC00044(A1_1, A2_2)
+      else
+      end
+    end
+  end
+  function RegNor4YtcTwins1.AonogYTC00043(A0_3, A1_4, A2_5)
+    if A1_4:IsQuestCompleted(A0_3.QST_LUCKTA210) == true then
+      A0_3:AonogVer52(A1_4, A2_5)
+    else
+      A0_3:AonogVer51(A1_4, A2_5)
+    end
+  end
+  function RegNor4YtcTwins1.AonogVer51(A0_6, A1_7, A2_8)
+    local L3_9
+    A2_8:TurnTo(A1_7, false)
+    A2_8:WaitForTurn()
+    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK2)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_001, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+    while true do
+      L3_9 = A0_6:Menu(A0_6.TEXT_REGNOR4YTCTWINS1_00643_Q1_000_000, A0_6.TEXT_REGNOR4YTCTWINS1_00643_A1_000_001, A0_6.TEXT_REGNOR4YTCTWINS1_00643_A1_000_002, A0_6.TEXT_REGNOR4YTCTWINS1_00643_A1_000_003, A0_6.TEXT_REGNOR4YTCTWINS1_00643_A1_000_004)
+      if L3_9 == 1 then
+        A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EMOTE_LAUGH)
+        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_003, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+      elseif L3_9 == 2 then
+        A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EMOTE_YES_STRONG)
+        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_004, false, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_005, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+      elseif L3_9 == 3 then
+        A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_THINK)
+        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_006, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+      else
+        return 0
+      end
+    end
+  end
+  function RegNor4YtcTwins1.AonogVer52(A0_10, A1_11, A2_12)
+    local L3_13
+    A2_12:TurnTo(A1_11, false)
+    A2_12:WaitForTurn()
+    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK2)
+    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_001, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+    while true do
+      L3_13 = A0_10:Menu(A0_10.TEXT_REGNOR4YTCTWINS1_00643_Q1_000_000, A0_10.TEXT_REGNOR4YTCTWINS1_00643_A1_000_001, A0_10.TEXT_REGNOR4YTCTWINS1_00643_A1_000_002, A0_10.TEXT_REGNOR4YTCTWINS1_00643_A1_000_003, A0_10.TEXT_REGNOR4YTCTWINS1_00643_A1_100_003, A0_10.TEXT_REGNOR4YTCTWINS1_00643_A1_000_004)
+      if L3_13 == 1 then
+        A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EMOTE_LAUGH)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_003, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+      elseif L3_13 == 2 then
+        A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EMOTE_YES_STRONG)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_004, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_005, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+      elseif L3_13 == 3 then
+        A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_THINK)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_006, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+      elseif L3_13 == 4 then
+        A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_THINK)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_007, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+        A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_ARMS)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_008, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_009, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+        A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_12:Talk(A1_11, A0_10, A0_10.TEXT_REGNOR4YTCTWINS1_00643_ANOGG_000_010, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
+      else
+        return 0
+      end
+    end
+  end
+  function RegNor4YtcTwins1.KonogYTC00044(A0_14, A1_15, A2_16)
+    if A1_15:IsQuestCompleted(A0_14.QST_LUCKTA210) == true then
+      A0_14:KonogVer52Part2(A1_15, A2_16)
+    elseif A1_15:IsQuestCompleted(A0_14.QST_LUCKTA201) == true then
+      A0_14:KonogVer52Part1(A1_15, A2_16)
+    else
+      A0_14:KonogVer51(A1_15, A2_16)
+    end
+  end
+  function RegNor4YtcTwins1.KonogVer51(A0_17, A1_18, A2_19)
+    local L3_20
+    A2_19:TurnTo(A1_18, false)
+    A2_19:WaitForTurn()
+    A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EVENT_TALK1)
+    A2_19:Talk(A1_18, A0_17, A0_17.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_050, true, nil, nil, nil, A0_17.SPEAK_NORMAL_MIDDLE)
+    while true do
+      L3_20 = A0_17:Menu(A0_17.TEXT_REGNOR4YTCTWINS1_00643_Q2_000_000, A0_17.TEXT_REGNOR4YTCTWINS1_00643_A2_000_001, A0_17.TEXT_REGNOR4YTCTWINS1_00643_A2_000_002, A0_17.TEXT_REGNOR4YTCTWINS1_00643_A2_000_003, A0_17.TEXT_REGNOR4YTCTWINS1_00643_A2_000_004)
+      if L3_20 == 1 then
+        A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EVENT_ARMS)
+        A2_19:Talk(A1_18, A0_17, A0_17.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_052, true, nil, nil, nil, A0_17.SPEAK_NORMAL_MIDDLE)
+      elseif L3_20 == 2 then
+        A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+        A2_19:Talk(A1_18, A0_17, A0_17.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_053, false, nil, nil, nil, A0_17.SPEAK_NORMAL_MIDDLE)
+        A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EVENT_THINK)
+        A2_19:Talk(A1_18, A0_17, A0_17.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_054, true, nil, nil, nil, A0_17.SPEAK_NORMAL_MIDDLE)
+      elseif L3_20 == 3 then
+        A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EVENT_THINK)
+        A2_19:Talk(A1_18, A0_17, A0_17.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_055, true, nil, nil, nil, A0_17.SPEAK_NORMAL_MIDDLE)
+      else
+        return 0
+      end
+    end
+  end
+  function RegNor4YtcTwins1.KonogVer52Part1(A0_21, A1_22, A2_23)
+    A2_23:TurnTo(A1_22, false)
+    A2_23:WaitForTurn()
+    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_ADD_NO)
+    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_ARMS)
+    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_500, true, nil, nil, nil, A0_21.SPEAK_NORMAL_MIDDLE)
+  end
+  function RegNor4YtcTwins1.KonogVer52Part2(A0_24, A1_25, A2_26)
+    local L3_27
+    A2_26:TurnTo(A1_25, false)
+    A2_26:WaitForTurn()
+    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
+    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_050, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+    while true do
+      L3_27 = A0_24:Menu(A0_24.TEXT_REGNOR4YTCTWINS1_00643_Q2_000_000, A0_24.TEXT_REGNOR4YTCTWINS1_00643_A2_000_001, A0_24.TEXT_REGNOR4YTCTWINS1_00643_A2_000_002, A0_24.TEXT_REGNOR4YTCTWINS1_00643_A2_000_003, A0_24.TEXT_REGNOR4YTCTWINS1_00643_A2_100_003, A0_24.TEXT_REGNOR4YTCTWINS1_00643_A2_000_004)
+      if L3_27 == 1 then
+        A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ARMS)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_052, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+      elseif L3_27 == 2 then
+        A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_053, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+        A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_THINK)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_054, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+      elseif L3_27 == 3 then
+        A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_THINK)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_055, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+      elseif L3_27 == 4 then
+        A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_THINK)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_056, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+        A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ARMS)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_057, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_058, false, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+        A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EMOTE_BOW)
+        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGNOR4YTCTWINS1_00643_KONOGG_000_059, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_28
+  L1_28 = RegNor4YtcTwins1
+  L1_28.SCRIPT_VERSION = 2
+end)()

@@ -1,0 +1,58 @@
+(function()
+  print("FesNyr2021")
+  function FesNyr2021.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_000, true)
+    A0_0:Wait(10)
+    while true do
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ME)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      if A0_0:Menu(A0_0.TEXT_FESNYR2021_00645_Q1_000_1, A0_0.TEXT_FESNYR2021_00645_A1_000_1, A0_0.TEXT_FESNYR2021_00645_A1_000_2, A0_0.TEXT_FESNYR2021_00645_A1_000_3, A0_0.TEXT_FESNYR2021_00645_A1_000_4) == 1 then
+        if A2_2:GetBaseId() == A0_0.ENPC_SEA then
+          if A1_1:IsQuestCompleted(A0_0.QUEST_01) == false then
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_YES)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_001, false)
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ME)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_002, true)
+            A0_0:Wait(10)
+          else
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_010, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_011, true)
+            A0_0:Wait(10)
+          end
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_030, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_031, true)
+          A0_0:Wait(10)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2021_00645_Q1_000_1, A0_0.TEXT_FESNYR2021_00645_A1_000_1, A0_0.TEXT_FESNYR2021_00645_A1_000_2, A0_0.TEXT_FESNYR2021_00645_A1_000_3, A0_0.TEXT_FESNYR2021_00645_A1_000_4) == 2 then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_040, false)
+        A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_041, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_042, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_043, true)
+        A0_0:Wait(10)
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2021_00645_Q1_000_1, A0_0.TEXT_FESNYR2021_00645_A1_000_1, A0_0.TEXT_FESNYR2021_00645_A1_000_2, A0_0.TEXT_FESNYR2021_00645_A1_000_3, A0_0.TEXT_FESNYR2021_00645_A1_000_4) == 3 then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_050, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_051, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2021_00645_CUWSERVER_000_052, true)
+        A0_0:Wait(10)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_3
+  L1_3 = FesNyr2021
+  L1_3.SCRIPT_VERSION = 2
+end)()

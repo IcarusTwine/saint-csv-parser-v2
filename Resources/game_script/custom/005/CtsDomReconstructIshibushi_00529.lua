@@ -1,0 +1,675 @@
+(function()
+  print("CtsDomReconstructIshibushi")
+  function CtsDomReconstructIshibushi.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    A0_0:Wait(8)
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_SPEAK_NORMAL_SHORT)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_000, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
+    A0_0:Wait(10)
+    return A0_0.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructIshibushi.OnScene00001(A0_3, A1_4, A2_5)
+    local L3_6, L4_7, L5_8, L6_9, L7_10, L8_11
+    L4_7 = A0_3
+    L3_6 = A0_3.InvisibleStandCharacter
+    L5_8 = A0_3.LOC_ACTOR_100
+    L3_6(L4_7, L5_8)
+    L4_7 = A2_5
+    L3_6 = A2_5.Visible
+    L5_8 = A0_3.VISIBLE_HIDE
+    L3_6(L4_7, L5_8)
+    L4_7 = A1_4
+    L3_6 = A1_4.GetRace
+    L3_6 = L3_6(L4_7)
+    L5_8 = A1_4
+    L4_7 = A1_4.GetSex
+    L4_7 = L4_7(L5_8)
+    L6_9 = A1_4
+    L5_8 = A1_4.Position
+    L7_10 = A2_5
+    L8_11 = A0_3.ARRANGE_TYPE_BASE_BACK
+    L5_8(L6_9, L7_10, L8_11, 0.1)
+    L6_9 = A1_4
+    L5_8 = A1_4.Direction
+    L7_10 = A2_5
+    L5_8(L6_9, L7_10)
+    L6_9 = A1_4
+    L5_8 = A1_4.Position
+    L7_10 = A1_4
+    L8_11 = A0_3.ARRANGE_TYPE_FRONT
+    L5_8(L6_9, L7_10, L8_11, 0.1)
+    L6_9 = A1_4
+    L5_8 = A1_4.Position
+    L7_10 = A2_5
+    L8_11 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L5_8(L6_9, L7_10, L8_11, 0.9529206)
+    L6_9 = A1_4
+    L5_8 = A1_4.Position
+    L7_10 = A1_4
+    L8_11 = A0_3.ARRANGE_TYPE_LEFT
+    L5_8(L6_9, L7_10, L8_11, 2.098083)
+    L6_9 = A1_4
+    L5_8 = A1_4.Direction
+    L7_10 = -104
+    L5_8(L6_9, L7_10)
+    L6_9 = A0_3
+    L5_8 = A0_3.CreateCharacter
+    L7_10 = A0_3.LOC_ACTOR_001
+    L8_11 = A2_5
+    L5_8 = L5_8(L6_9, L7_10, L8_11, A0_3.ARRANGE_TYPE_BASE_FRONT, 8)
+    L7_10 = L5_8
+    L6_9 = L5_8.Visible
+    L8_11 = A0_3.VISIBLE_HIDE
+    L6_9(L7_10, L8_11)
+    L7_10 = A0_3
+    L6_9 = A0_3.CreateCharacter
+    L8_11 = A0_3.LOC_ACTOR_002
+    L6_9 = L6_9(L7_10, L8_11, A2_5, A0_3.ARRANGE_TYPE_BASE_BACK, 0.1)
+    L8_11 = L6_9
+    L7_10 = L6_9.Direction
+    L7_10(L8_11, A1_4)
+    L8_11 = L6_9
+    L7_10 = L6_9.LookAt
+    L7_10(L8_11, A1_4)
+    L8_11 = A0_3
+    L7_10 = A0_3.CreateCharacter
+    L7_10 = L7_10(L8_11, A0_3.LOC_ACTOR_003, A2_5, A0_3.ARRANGE_TYPE_BASE_FRONT, 1.324425)
+    L8_11 = L7_10.Position
+    L8_11(L7_10, L7_10, A0_3.ARRANGE_TYPE_LEFT, 0.01598953)
+    L8_11 = L7_10.Direction
+    L8_11(L7_10, A1_4)
+    L8_11 = L7_10.Visible
+    L8_11(L7_10, A0_3.VISIBLE_HIDE)
+    L8_11 = A1_4.LookAt
+    L8_11(A1_4, L6_9)
+    L8_11 = L7_10.LookAt
+    L8_11(L7_10, A1_4)
+    L8_11 = A0_3.ChangeBGMVolume
+    L8_11(A0_3, 0)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 30)
+    L8_11 = A0_3.PlayBGM
+    L8_11(A0_3, A0_3.BGM_MUSIC_NO_MUSIC)
+    L8_11 = A0_3.ChangeBGMVolume
+    L8_11(A0_3, 0.5)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = A0_3.PlayTwoShotCamera
+    L8_11(A0_3, A0_3.TWOSHOT_TYPE_RIGHT_ZOOM, A2_5, A1_4, 0)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = A0_3.FadeIn
+    L8_11(A0_3, A0_3.FADE_DEFAULT)
+    L8_11 = A0_3.PlayBGM
+    L8_11(A0_3, A0_3.LOC_BGM_002)
+    L8_11 = A0_3.ChangeBGMVolume
+    L8_11(A0_3, 0.5)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = A0_3.WaitForFade
+    L8_11(A0_3)
+    L8_11 = L6_9.PlayActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L8_11 = L6_9.Talk
+    L8_11(L6_9, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_010, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = L6_9.Talk
+    L8_11(L6_9, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_011, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L6_9.CancelActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L8_11 = A0_3.PlayCamera
+    L8_11(A0_3, 14, A1_4)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = A1_4.PlayActionTimeline
+    L8_11(A1_4, A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 55)
+    L8_11 = L7_10.WalkIn
+    L8_11(L7_10, 100, 2, A0_3.MOVE_WALK)
+    L8_11 = L7_10.Visible
+    L8_11(L7_10, A0_3.VISIBLE_SHOW)
+    L8_11 = A0_3.PlayTargetRelationCamera
+    L8_11(A0_3, L5_8, 140.8425, 4.6183, 1.5664, 173.4365, 8.1998, 0.8818, 5.0223)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = A1_4.LookAt
+    L8_11(A1_4, L7_10)
+    L8_11 = L7_10.WaitForMove
+    L8_11(L7_10)
+    L8_11 = L7_10.TurnTo
+    L8_11(L7_10, A1_4, false)
+    L8_11 = L7_10.WaitForTurn
+    L8_11(L7_10)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_012, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L7_10.CancelActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_11 = L6_9.LookAt
+    L8_11(L6_9, L7_10)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK1)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_013, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_014, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_015, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L7_10.CancelActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK1)
+    L8_11 = L7_10.LookAt
+    L8_11(L7_10, L6_9)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 15)
+    L8_11 = A0_3.PlayTargetRelationCamera
+    L8_11(A0_3, L5_8, 166.2253, 6.4738, 1.599, 178.752, 7.2014, 1.4912, 1.6615)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_016, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L7_10.CancelActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L8_11 = L6_9.PlayActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 45)
+    L8_11 = L7_10.LookAt
+    L8_11(L7_10, A1_4)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 15)
+    L8_11 = L6_9.LookAt
+    L8_11(L6_9, A1_4)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_FACIAL_SMILE)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK_BIG)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_017, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_018, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_019, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L7_10.CancelActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK_BIG)
+    L8_11 = L6_9.LookAt
+    L8_11(L6_9, L7_10)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 8)
+    L8_11 = L6_9.PlayActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_11 = L7_10.LookAt
+    L8_11(L7_10, L6_9)
+    L8_11 = L6_9.Talk
+    L8_11(L6_9, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_020, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L6_9.CancelActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L8_11 = A1_4.LookAt
+    L8_11(A1_4, L6_9)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_SHOCKED)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_021, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L7_10.CancelActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_SHOCKED)
+    L8_11 = A0_3.PlayTargetRelationCamera
+    L8_11(A0_3, L5_8, -167.8525, 5.139, 1.5627, 175.4762, 7.0699, 1.2263, 2.626)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L6_9.PlayActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+    L8_11 = L6_9.Talk
+    L8_11(L6_9, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_022, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = L6_9.PlayActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    L8_11 = L6_9.Talk
+    L8_11(L6_9, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_023, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L6_9.CancelActionTimeline
+    L8_11(L6_9, A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_024, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = L7_10.LookAt
+    L8_11(L7_10, A1_4)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 8)
+    L8_11 = L7_10.CancelActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    L8_11 = L7_10.PlayActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L8_11 = A1_4.LookAt
+    L8_11(A1_4, L7_10)
+    L8_11 = L7_10.Talk
+    L8_11(L7_10, A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_025, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = L7_10.CancelActionTimeline
+    L8_11(L7_10, A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L8_11 = L6_9.LookAt
+    L8_11(L6_9, A1_4)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = A0_3.PlayCamera
+    L8_11(A0_3, 14, A1_4)
+    L8_11 = A0_3.Wait
+    L8_11(A0_3, 10)
+    L8_11 = nil
+    L8_11 = A0_3:Menu(A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_Q1_000_000, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_A1_000_001, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_A1_000_002)
+    A0_3:Wait(10)
+    A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_SPEAK_NORMAL_SHORT)
+    A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A1_4:WaitForActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A0_3:Wait(10)
+    if L8_11 == 1 then
+      A0_3:PlayTargetRelationCamera(L5_8, 166.2253, 6.4738, 1.599, 178.752, 7.2014, 1.4912, 1.6615)
+      A0_3:Wait(10)
+      L7_10:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_JOY)
+      L7_10:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_026, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+      L7_10:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_027, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+      A0_3:Wait(10)
+      L7_10:CancelActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_JOY)
+    else
+      A0_3:PlayTargetRelationCamera(L5_8, 166.2253, 6.4738, 1.599, 178.752, 7.2014, 1.4912, 1.6615)
+      A0_3:Wait(10)
+      L7_10:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+      L7_10:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_028, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+      A0_3:Wait(10)
+      L7_10:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+      L7_10:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      L7_10:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_029, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+      A0_3:Wait(10)
+      L7_10:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    end
+    A1_4:Visible(A0_3.VISIBLE_HIDE)
+    L7_10:LookAt(L6_9)
+    A0_3:Wait(15)
+    L7_10:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L6_9:LookAt(L7_10)
+    L7_10:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_030, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    A0_3:Wait(10)
+    L7_10:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    A0_3:Wait(30)
+    L6_9:LookAt()
+    L6_9:TurnTo(130, false)
+    A0_3:Wait(10)
+    L6_9:LookAt(0, 25)
+    A0_3:UpdownPan(0, 35, 75, 50, 75)
+    A0_3:SidePan(0, 50, 75, 50, 75)
+    A0_3:Wait(210)
+    A0_3:PlayTargetRelationCamera(L5_8, 179.0498, 9.0715, 2.3358, -176.4526, 6.8023, 1.2898, 2.5736)
+    A0_3:Zoom(0.2, 0.2, 0, 0, 0)
+    A0_3:UpdownPan(3, 3, 0, 0, 0)
+    A0_3:Wait(10)
+    A1_4:Visible(A0_3.VISIBLE_SHOW)
+    L6_9:WaitForTurn()
+    A0_3:Wait(15)
+    L6_9:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ARMS)
+    A0_3:Wait(65)
+    L6_9:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+    L6_9:WaitForActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ARMS)
+    A0_3:Wait(10)
+    A0_3:PlayTargetRelationCamera(L5_8, -167.8525, 5.139, 1.5627, 175.4762, 7.0699, 1.2263, 2.626)
+    A0_3:Wait(10)
+    L6_9:TurnTo(A1_4, false)
+    A0_3:Wait(10)
+    L6_9:LookAt(L7_10)
+    L6_9:WaitForTurn()
+    L6_9:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_031, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    A0_3:Wait(10)
+    L7_10:LookAt(A1_4)
+    A0_3:Wait(8)
+    L6_9:LookAt(A1_4)
+    L7_10:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    L7_10:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_032, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+    A0_3:Wait(10)
+    L7_10:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+    A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_3:UpdownDolly(0, -5.5, 100, 50, 100)
+    A0_3:UpdownPan(0, 50, 100, 50, 100)
+    A0_3:SidePan(0, -30, 100, 50, 100)
+    A0_3:Zoom(0, -2.5, 100, 50, 100)
+    A0_3:Wait(90)
+    A0_3:DisableSceneSkip()
+    A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_SYSTEM_000_033, false)
+    A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_SYSTEM_000_034, true)
+    A0_3:Wait(10)
+    A0_3:EnableSceneSkip()
+    A0_3:FadeOut(A0_3.FADE_DEFAULT)
+    A0_3:WaitForFade()
+    A1_4:LookAt()
+    A0_3:Wait(100)
+    return A0_3.DOMA_EVENT_RESULT_NEXT
+  end
+  function CtsDomReconstructIshibushi.OnScene00002(A0_12, A1_13, A2_14)
+    A2_14:LookAt(A1_13)
+    A0_12:Wait(8)
+    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_SPEAK_NORMAL_SHORT)
+    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_035, true, nil, nil, nil, A0_12.SPEAK_NORMAL_MIDDLE)
+    A0_12:Wait(10)
+    return A0_12.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructIshibushi.OnScene00003(A0_15, A1_16, A2_17)
+    A2_17:LookAt(A1_16)
+    A0_15:Wait(8)
+    A2_17:TurnTo(A1_16, false)
+    A2_17:WaitForTurn()
+    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_SPEAK_NORMAL_SHORT)
+    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_040, true, nil, nil, nil, A0_15.SPEAK_NORMAL_MIDDLE)
+    A0_15:Wait(10)
+    return A0_15.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructIshibushi.OnScene00004(A0_18, A1_19, A2_20)
+    local L3_21, L4_22, L5_23, L6_24, L7_25, L8_26
+    L4_22 = A0_18
+    L3_21 = A0_18.InvisibleStandCharacter
+    L5_23 = A0_18.LOC_ACTOR_100
+    L3_21(L4_22, L5_23)
+    L4_22 = A2_20
+    L3_21 = A2_20.Visible
+    L5_23 = A0_18.VISIBLE_HIDE
+    L3_21(L4_22, L5_23)
+    L4_22 = A1_19
+    L3_21 = A1_19.GetRace
+    L3_21 = L3_21(L4_22)
+    L5_23 = A1_19
+    L4_22 = A1_19.GetSex
+    L4_22 = L4_22(L5_23)
+    L6_24 = A1_19
+    L5_23 = A1_19.Position
+    L7_25 = A2_20
+    L8_26 = A0_18.ARRANGE_TYPE_BASE_BACK
+    L5_23(L6_24, L7_25, L8_26, 0.1)
+    L6_24 = A1_19
+    L5_23 = A1_19.Direction
+    L7_25 = A2_20
+    L5_23(L6_24, L7_25)
+    L6_24 = A1_19
+    L5_23 = A1_19.Position
+    L7_25 = A1_19
+    L8_26 = A0_18.ARRANGE_TYPE_FRONT
+    L5_23(L6_24, L7_25, L8_26, 0.1)
+    L6_24 = A1_19
+    L5_23 = A1_19.Position
+    L7_25 = A2_20
+    L8_26 = A0_18.ARRANGE_TYPE_BASE_FRONT
+    L5_23(L6_24, L7_25, L8_26, 0.9529206)
+    L6_24 = A1_19
+    L5_23 = A1_19.Position
+    L7_25 = A1_19
+    L8_26 = A0_18.ARRANGE_TYPE_LEFT
+    L5_23(L6_24, L7_25, L8_26, 2.098083)
+    L6_24 = A1_19
+    L5_23 = A1_19.Direction
+    L7_25 = -104
+    L5_23(L6_24, L7_25)
+    L6_24 = A0_18
+    L5_23 = A0_18.CreateCharacter
+    L7_25 = A0_18.LOC_ACTOR_001
+    L8_26 = A2_20
+    L5_23 = L5_23(L6_24, L7_25, L8_26, A0_18.ARRANGE_TYPE_BASE_FRONT, 8)
+    L7_25 = L5_23
+    L6_24 = L5_23.Visible
+    L8_26 = A0_18.VISIBLE_HIDE
+    L6_24(L7_25, L8_26)
+    L7_25 = A0_18
+    L6_24 = A0_18.CreateCharacter
+    L8_26 = A0_18.LOC_ACTOR_001
+    L6_24 = L6_24(L7_25, L8_26, A2_20, A0_18.ARRANGE_TYPE_BASE_FRONT, 2.19439)
+    L8_26 = L6_24
+    L7_25 = L6_24.Position
+    L7_25(L8_26, L6_24, A0_18.ARRANGE_TYPE_LEFT, 1.709052)
+    L8_26 = L6_24
+    L7_25 = L6_24.Direction
+    L7_25(L8_26, -155)
+    L8_26 = L6_24
+    L7_25 = L6_24.Visible
+    L7_25(L8_26, A0_18.VISIBLE_HIDE)
+    L8_26 = A0_18
+    L7_25 = A0_18.CreateCharacter
+    L7_25 = L7_25(L8_26, A0_18.LOC_ACTOR_002, A2_20, A0_18.ARRANGE_TYPE_BASE_BACK, 0.1)
+    L8_26 = L7_25.Direction
+    L8_26(L7_25, A1_19)
+    L8_26 = L7_25.LookAt
+    L8_26(L7_25, A1_19)
+    L8_26 = A0_18.CreateCharacter
+    L8_26 = L8_26(A0_18, A0_18.LOC_ACTOR_003, A2_20, A0_18.ARRANGE_TYPE_BASE_FRONT, 1.324425)
+    L8_26:Position(L8_26, A0_18.ARRANGE_TYPE_LEFT, 0.01598953)
+    L8_26:Direction(A1_19)
+    L8_26:Visible(A0_18.VISIBLE_HIDE)
+    A1_19:LookAt(L7_25)
+    L8_26:LookAt(A1_19)
+    A0_18:ChangeBGMVolume(0)
+    A0_18:Wait(30)
+    A0_18:PlayBGM(A0_18.BGM_MUSIC_NO_MUSIC)
+    A0_18:ChangeBGMVolume(0.5)
+    A0_18:Wait(10)
+    A0_18:PlayTargetRelationCamera(L5_23, 140.8425, 4.6183, 1.5664, 173.4365, 8.1998, 0.8818, 5.0223)
+    A0_18:Wait(10)
+    A0_18:FadeIn(A0_18.FADE_DEFAULT)
+    A0_18:WaitForFade()
+    L7_25:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK2)
+    L7_25:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_045, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L7_25:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK2)
+    L8_26:WalkIn(100, 3, A0_18.MOVE_RUN)
+    L8_26:Visible(A0_18.VISIBLE_SHOW)
+    A0_18:Wait(10)
+    A1_19:LookAt(L8_26)
+    L8_26:WaitForMove()
+    L8_26:TurnTo(A1_19, false)
+    L8_26:WaitForTurn()
+    L8_26:PlayActionTimeline(A0_18.ACTION_TIMELINE_EMOTE_ME)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_046, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L8_26:CancelActionTimeline(A0_18.ACTION_TIMELINE_EMOTE_ME)
+    L8_26:LookAt(-30, 25)
+    A0_18:Wait(10)
+    L8_26:TurnTo(80, false)
+    A0_18:Wait(8)
+    L8_26:LookAt(0, 25)
+    A1_19:LookAt(30, 25)
+    A0_18:Wait(10)
+    A1_19:TurnTo(-65, false)
+    L7_25:LookAt(-30, 25)
+    A0_18:Wait(8)
+    A1_19:LookAt(0, 25)
+    L7_25:TurnTo(130, false)
+    A0_18:Wait(10)
+    L7_25:LookAt(0, 25)
+    A0_18:Wait(10)
+    A0_18:UpdownDolly(0, -46, 200, 100, 200)
+    A0_18:UpdownPan(0, 35, 200, 100, 200)
+    A0_18:Zoom(0, -2, 200, 100, 200)
+    A0_18:SidePan(0, 35, 200, 100, 200)
+    A0_18:Wait(40)
+    A0_18:PlayBGM(A0_18.LOC_BGM_001)
+    A0_18:ChangeBGMVolume(0.5)
+    A0_18:Wait(80)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_047, false, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_048, false, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_049, false, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_050, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    A0_18:WaitForDolly()
+    A0_18:Wait(20)
+    A0_18:PlayTargetRelationCamera(L5_23, 166.2135, 6.5795, 1.6215, -179.4692, 7.408, 1.5176, 1.93)
+    A0_18:Wait(10)
+    L7_25:TurnTo(A1_19, false)
+    A0_18:Wait(10)
+    L7_25:LookAt(L8_26)
+    L7_25:WaitForTurn()
+    A1_19:TurnTo(L8_26, false)
+    A1_19:LookAt(L8_26)
+    L7_25:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    L8_26:LookAt(L7_25)
+    L7_25:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_051, false, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    L7_25:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_052, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L7_25:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    L8_26:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_BIG)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_053, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L8_26:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_BIG)
+    A0_18:PlayTargetRelationCamera(L5_23, -163.0373, 5.2683, 1.7564, 167.9909, 7.8038, 0.985, 4.161)
+    A0_18:SidePan(-9, -9, 30, 30, 30)
+    A0_18:Wait(10)
+    L7_25:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_YES)
+    L7_25:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_054, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L7_25:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_YES)
+    L8_26:PlayActionTimeline(A0_18.ACTION_TIMELINE_EMOTE_CRY)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_055, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    A0_18:SidePan(-9, 0, 30, 30, 30)
+    L6_24:LookAt(A1_19)
+    L6_24:WalkIn(180, 3, A0_18.MOVE_WALK)
+    L6_24:Visible(A0_18.VISIBLE_SHOW)
+    A0_18:Wait(10)
+    A1_19:LookAt(L6_24)
+    L6_24:WaitForMove()
+    L6_24:LookAt(0, 25)
+    A0_18:Wait(20)
+    L7_25:LookAt(L6_24)
+    A0_18:Wait(20)
+    A0_18:PlayTargetRelationCamera(L5_23, 167.424, 6.3494, 1.758, 152.8341, 5.4506, 0.706, 2.0363)
+    A0_18:Wait(10)
+    L8_26:CancelActionTimeline(A0_18.ACTION_TIMELINE_EMOTE_CRY)
+    L8_26:LookAt(L6_24)
+    L8_26:TurnTo(L6_24, false)
+    L7_25:Direction(L6_24)
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_FACIAL_SMILE, nil, A0_18.AUTO_SHAKE_TIMELINE)
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_SHOCKED)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_100_055, false, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_110_055, false, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_000_058, false, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_000_059, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    A0_18:PlayTargetRelationCamera(L5_23, -163.0373, 5.2683, 1.7564, 167.9909, 7.8038, 0.985, 4.161)
+    A0_18:Wait(10)
+    L8_26:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK2)
+    L6_24:LookAt(L8_26)
+    L6_24:TurnTo(L8_26, false)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_061, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L8_26:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK2)
+    L7_25:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ARMS)
+    L6_24:LookAt(L7_25)
+    A1_19:LookAt(L7_25)
+    L7_25:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_062, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_000_063, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L6_24:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L7_25:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ARMS)
+    A0_18:PlayTargetRelationCamera(L5_23, 174.4186, 6.6962, 1.843, -179.3481, 8.4698, 1.6944, 1.9592)
+    A0_18:Wait(10)
+    L6_24:Direction(L7_25)
+    A1_19:Visible(A0_18.VISIBLE_HIDE)
+    L7_25:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_NO)
+    L7_25:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_064, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L7_25:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_NO)
+    A0_18:PlayTargetRelationCamera(L5_23, 173.6736, 6.5613, 1.6882, 153.8099, 5.8153, 0.7211, 2.456)
+    A0_18:Wait(10)
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_EMOTE_JOY)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_000_065, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L6_24:CancelActionTimeline(A0_18.ACTION_TIMELINE_EMOTE_JOY)
+    A0_18:PlayTargetRelationCamera(L5_23, 169.9945, 5.7361, 1.4578, 177.5714, 6.8764, 1.3857, 1.4123)
+    A0_18:Wait(10)
+    A1_19:Visible(A0_18.VISIBLE_SHOW)
+    L7_25:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_YES)
+    L7_25:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_066, true, nil, nil, nil, A0_18.SPEAK_NORMAL_SHORT)
+    A0_18:Wait(10)
+    L7_25:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_YES)
+    L8_26:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_SPIRIT)
+    L8_26:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_HACHISUBA_000_067, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L8_26:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_SPIRIT)
+    A0_18:PlayTargetRelationCamera(L5_23, -163.0373, 5.2683, 1.7564, 167.9909, 7.8038, 0.985, 4.161)
+    A0_18:Wait(10)
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_JP_BOW)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_000_068, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L6_24:WaitForActionTimeline(A0_18.ACTION_TIMELINE_EVENT_JP_BOW)
+    L6_24:LookAt(A1_19)
+    A0_18:Wait(8)
+    A1_19:LookAt(L6_24)
+    L6_24:TurnTo(A1_19, false)
+    L6_24:WaitForTurn()
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK2)
+    A1_19:TurnTo(L6_24, false)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_000_069, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L6_24:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK2)
+    L8_26:LookAt(L7_25)
+    L8_26:TurnTo(L7_25, false)
+    L7_25:LookAt(L8_26)
+    L8_26:WaitForTurn()
+    L8_26:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_BASE_STAND_TALK)
+    A1_19:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_18:Wait(30)
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L6_24:Talk(A1_19, A0_18, A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_KOZAKURA_000_070, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+    A0_18:Wait(10)
+    L6_24:CancelActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L6_24:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_THINK)
+    A0_18:UpdownDolly(0, -6, 100, 50, 100)
+    A0_18:UpdownPan(0, 55, 100, 50, 100)
+    A0_18:SidePan(0, -35, 100, 50, 100)
+    A0_18:Wait(200)
+    A0_18:DisableSceneSkip()
+    A0_18:ScreenImage(A0_18.LOC_SCREENIMAGE_01)
+    A0_18:Wait(120)
+    A0_18:SystemTalk(A0_18.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_SYSTEM_000_071, true)
+    A0_18:Wait(10)
+    A0_18:EnableSceneSkip()
+    A0_18:FadeOut(A0_18.FADE_DEFAULT)
+    A0_18:WaitForFade()
+    A0_18:Wait(100)
+    return A0_18.DOMA_EVENT_RESULT_NEXT
+  end
+  function CtsDomReconstructIshibushi.OnScene00005(A0_27, A1_28, A2_29)
+    A2_29:LookAt(A1_28)
+    A0_27:Wait(8)
+    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_075, true, nil, nil, nil, A0_27.SPEAK_NORMAL_MIDDLE)
+    A0_27:Wait(10)
+    return A0_27.DOMA_EVENT_RESULT_END
+  end
+  function CtsDomReconstructIshibushi.OnScene00006(A0_30, A1_31, A2_32)
+    A2_32:LookAt(A1_31)
+    A0_30:Wait(8)
+    A2_32:TurnTo(A1_31, false)
+    A2_32:WaitForTurn()
+    A2_32:PlayActionTimeline(A0_30.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_CTSDOMRECONSTRUCTISHIBUSHI_00529_ISHIBUSHI_000_080, true, nil, nil, nil, A0_30.SPEAK_NORMAL_MIDDLE)
+    A0_30:Wait(10)
+    return A0_30.DOMA_EVENT_RESULT_END
+  end
+end)()
+;(function()
+  local L1_33
+  L1_33 = CtsDomReconstructIshibushi
+  L1_33.SCRIPT_VERSION = 2
+end)()

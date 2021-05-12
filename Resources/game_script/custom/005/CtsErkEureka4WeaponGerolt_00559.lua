@@ -1,0 +1,1540 @@
+(function()
+  print("CtsErkEureka4WeaponGerolt")
+  function CtsErkEureka4WeaponGerolt.OnScene00001_001(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_020, true)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00001_002(A0_3, A1_4, A2_5, A3_6)
+    if A3_6 == true then
+      while true do
+        if A0_3:Menu(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_Q4_000_000, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_001, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_002, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_003) == 1 then
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_530, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+          A0_3:Wait(10)
+          A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_531, false)
+          A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_532, true)
+        elseif A0_3:Menu(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_Q4_000_000, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_001, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_002, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_003) == 2 then
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_540, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+          A0_3:Wait(10)
+          A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_541, false)
+          A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_542, false)
+          A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_100_543, true)
+        else
+          break
+        end
+      end
+    else
+      while true do
+        if A0_3:Menu(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_Q4_000_000, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_001, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A4_000_003) == 1 then
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_530, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+          A0_3:Wait(10)
+          A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_531, false)
+          A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_532, true)
+          break
+        end
+      end
+    end
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00002_001(A0_7, A1_8, A2_9)
+    A2_9:Idle(A0_7.ACTION_TIMELINE_EVENT_BASE_IDLE1)
+    A2_9:Position(A2_9, A0_7.ARRANGE_TYPE_BACK, 1)
+    A1_8:Position(A2_9, A0_7.ARRANGE_TYPE_RIGHT, 2)
+    A1_8:Direction(A2_9)
+    A1_8:LookAt(A2_9)
+    A2_9:Direction(A1_8)
+    A2_9:LookAt(A1_8)
+    if A1_8:GetRace() == A0_7.RACE_LALAFELL then
+      A0_7:PlayTargetRelationCamera(A2_9, -12.7759, 2.8708, 0.5574, 6.5735, 1.2001, 0.8781, 1.812)
+    else
+      A0_7:PlayTwoShotCamera(A0_7.TWOSHOT_TYPE_RIGHT_ZOOM, A2_9, A1_8)
+      A0_7:Zoom(0.2, 0.2, 0, 0, 0)
+      A0_7:Orbit(-15, -15, 0, 0, 0)
+      A0_7:UpdownDolly(-0.15, -0.15, 0, 0, 0)
+      A0_7:UpdownPan(-5, -5, 0, 0, 0)
+    end
+    A0_7:ChangeBGMVolume(0.5)
+    A0_7:Wait(30)
+    A0_7:FadeIn(A0_7.FADE_DEFAULT)
+    A0_7:WaitForFade()
+    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_010, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
+    A0_7:Wait(10)
+    A1_8:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_ADD_YES)
+    A1_8:WaitForActionTimeline(A0_7.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_011, false, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
+    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_012, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
+    A0_7:Wait(10)
+    A1_8:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_SPIRIT)
+    A1_8:WaitForActionTimeline(A0_7.ACTION_TIMELINE_EVENT_SPIRIT)
+    A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_013, false, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
+    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_014, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
+    A0_7:Wait(10)
+    A1_8:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_ADD_YES)
+    A1_8:WaitForActionTimeline(A0_7.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EMOTE_JOY)
+    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_015, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
+    A0_7:Wait(30)
+    A0_7:DisableSceneSkip()
+    A0_7:SystemTalk(A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_016, false)
+    A0_7:DisableSceneSkip()
+    A0_7:SystemTalk(A0_7.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_017, true)
+    A0_7:EnableSceneSkip()
+    A0_7:FadeOut(A0_7.FADE_DEFAULT)
+    A0_7:WaitForFade()
+    A0_7:DisableSceneSkip()
+    A0_7:Wait(30)
+    A0_7:EnableSceneSkip()
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00003_001(A0_10, A1_11, A2_12)
+    A2_12:LookAt(A1_11)
+    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_000, true)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00004_001(A0_13, A1_14, A2_15)
+    A2_15:LookAt(A1_14)
+    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_020, false)
+    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_110_020, true)
+    A0_13:Wait(30)
+    A0_13:SystemTalk(A0_13.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_120_020, false)
+    A0_13:SystemTalk(A0_13.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_130_020, false)
+    A0_13:SystemTalk(A0_13.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_140_020, true)
+    A0_13:Wait(30)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00010_001(A0_16, A1_17, A2_18)
+    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_100, true)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00011_001(A0_19, A1_20, A2_21, A3_22)
+    local L4_23, L5_24, L6_25, L7_26
+    L4_23 = {}
+    for _FORV_8_ = 1, #A3_22 do
+      if A3_22[_FORV_8_] == A0_19.SWOAD_445_100 then
+        L4_23[#L4_23 + 1] = A0_19:FormatString(A0_19.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A2_001_003, A3_22[_FORV_8_], A0_19.SHIELD_445_100)
+      elseif A3_22[_FORV_8_] == A0_19.SWOAD_455_001 then
+        L4_23[#L4_23 + 1] = A0_19:FormatString(A0_19.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A2_001_003, A3_22[_FORV_8_], A0_19.SHIELD_455_001)
+      elseif A3_22[_FORV_8_] == A0_19.SWOAD_455_002 then
+        L4_23[#L4_23 + 1] = A0_19:FormatString(A0_19.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A2_001_003, A3_22[_FORV_8_], A0_19.SHIELD_455_002)
+      elseif A3_22[_FORV_8_] == A0_19.SWOAD_455_003 then
+        L4_23[#L4_23 + 1] = A0_19:FormatString(A0_19.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A2_001_003, A3_22[_FORV_8_], A0_19.SHIELD_455_003)
+      else
+        L4_23[#L4_23 + 1] = A0_19:FormatString(A0_19.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A2_001_001, A3_22[_FORV_8_])
+      end
+    end
+    L4_23[L5_24] = L6_25
+    if L5_24 > 0 then
+      if L5_24 <= L6_25 then
+        return L7_26, L6_25
+      end
+    end
+    return L6_25
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00012_001(A0_27, A1_28, A2_29, A3_30, A4_31, A5_32, A6_33)
+    local L7_34, L8_35, L9_36, L10_37, L11_38, L12_39
+    L12_39 = A0_27
+    L9_36(L10_37, L11_38, L12_39, A0_27.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_140, true, nil, nil, nil, A0_27.SPEAK_NORMAL_MIDDLE, A3_30[1])
+    L9_36(L10_37, L11_38)
+    L12_39 = A2_29
+    L8_35 = L9_36
+    if L8_35 == 1 then
+      return L9_36
+    else
+    end
+    L12_39 = A0_27
+    L9_36(L10_37, L11_38, L12_39, A0_27.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_200, true, nil, nil, nil, A0_27.SPEAK_NORMAL_MIDDLE)
+    L9_36(L10_37, L11_38)
+    for L12_39 = 1, #A3_30 do
+      A0_27:SetNpcTradeItem(L12_39, unpack(A0_27:GetNpcTradeItemInfo(A3_30[L12_39], A4_31[L12_39])))
+    end
+    L12_39 = nil
+    if L9_36 == 1 then
+      L12_39 = A0_27.ACTION_TIMELINE_EVENT_ITEM
+      L10_37(L11_38, L12_39)
+      L12_39 = A0_27.ACTION_TIMELINE_EVENT_ITEM
+      L10_37(L11_38, L12_39)
+      L12_39 = A1_28
+      L10_37(L11_38, L12_39, A0_27, A0_27.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_210, true, nil, nil, nil, A0_27.SPEAK_NORMAL_MIDDLE)
+      return L10_37
+    end
+    return L10_37
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00013_001(A0_40, A1_41, A2_42, A3_43, A4_44)
+    A0_40:FadeOut(A0_40.FADE_SHORT, A0_40.FADE_LAYER_MIDDLE_NO_LOADING)
+    A0_40:WaitForFade()
+    A0_40:FadeIn(A0_40.FADE_SHORT, A0_40.FADE_LAYER_BACK)
+    A2_42:Idle(A0_40.ACTION_TIMELINE_EVENT_BASE_IDLE)
+    A2_42:Position(A2_42, A0_40.ARRANGE_TYPE_BACK, 1)
+    A1_41:Position(A2_42, A0_40.ARRANGE_TYPE_RIGHT, 3)
+    A1_41:Direction(A2_42)
+    A1_41:Direction(90)
+    A1_41:Position(A1_41, A0_40.ARRANGE_TYPE_FRONT, 1)
+    A1_41:LookAt()
+    A2_42:Direction(A1_41)
+    A2_42:LookAt(A1_41)
+    if A3_43 == A0_40.SWOAD_455_003 then
+      A1_41:Equip(A0_40.EQUIP_TYPE_WEAPON, A3_43, A0_40.WEAPON_SLOT_MAIN)
+      A1_41:Equip(A0_40.EQUIP_TYPE_WEAPON, A4_44, A0_40.WEAPON_SLOT_SUB)
+    elseif A3_43 == A0_40.KNUCKLE_455_003 or A3_43 == A0_40.KNIFE_455_003 then
+      A1_41:Equip(A0_40.EQUIP_TYPE_WEAPON, A3_43, A0_40.WEAPON_SLOT_MAIN, A0_40.WEAPON_SLOT_SUB)
+    else
+      A1_41:Equip(A0_40.EQUIP_TYPE_WEAPON, A3_43, A0_40.WEAPON_SLOT_MAIN)
+      A1_41:Equip(A0_40.EQUIP_TYPE_WEAPON, 0, A0_40.WEAPON_SLOT_SUB)
+    end
+    if A3_43 == A0_40.RAPIER_455_003 then
+      A1_41:EquipQuestModel(39)
+    else
+    end
+    A0_40:ChangeBGMVolume(0)
+    A0_40:Wait(10)
+    A0_40:PlaySE(A0_40.LOC_SE_01)
+    A0_40:Wait(20)
+    A0_40:PlaySE(A0_40.LOC_SE_01)
+    A0_40:Wait(20)
+    A0_40:PlaySE(A0_40.LOC_SE_01)
+    A0_40:Wait(40)
+    A0_40:PlaySE(A0_40.LOC_SE_01)
+    A0_40:Wait(20)
+    A0_40:PlaySE(A0_40.LOC_SE_01)
+    A0_40:Wait(20)
+    A0_40:PlaySE(A0_40.LOC_SE_01)
+    A0_40:Wait(10)
+    A0_40:PlayBGM(A0_40.BGM_MUSIC_NO_MUSIC)
+    A0_40:PlayCamera(1, A1_41)
+    A2_42:Visible(A0_40.VISIBLE_HIDE)
+    A1_41:PlayActionTimeline(A0_40.LOC_ACTION_01, nil, A0_40.AUTO_SHAKE_ENABLE, A0_40.ACTION_NO_INTERPOLATE)
+    A0_40:Wait(10)
+    if A1_41:GetRace() == A0_40.RACE_LALAFELL then
+      A0_40:Zoom(-0.1, -0.8, 90, 0, 30)
+      A0_40:Orbit(45, -5, 90, 0, 30)
+      A0_40:UpdownDolly(-0.5, -0.2, 90, 0, 30)
+      A0_40:UpdownPan(-30, -10, 90, 0, 30)
+      A0_40:SideDolly(0, 0, 90, 0, 30)
+    else
+      A0_40:Zoom(-0.5, -1.5, 90, 0, 30)
+      A0_40:Orbit(45, -10, 90, 0, 30)
+      A0_40:UpdownDolly(-0.6, 0.95, 90, 0, 30)
+      A0_40:UpdownPan(-20, 50, 90, 0, 30)
+      A0_40:SideDolly(-0.4, 0.15, 90, 0, 30)
+    end
+    A0_40:FadeIn(A0_40.FADE_DEFAULT)
+    A0_40:WaitForFade()
+    A0_40:PlayBGM(A0_40.BGM_MUSIC_EVENT_RISE_IN_ARMS)
+    A0_40:ChangeBGMVolume(0.5)
+    A0_40:WaitForOrbit()
+    A0_40:Wait(10)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_260, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(30)
+    if true == true then
+      A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_270, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE, A3_43, A4_44)
+    else
+      A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_280, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE, A3_43)
+    end
+    A0_40:Wait(30)
+    A0_40:PlayCamera(1, A2_42)
+    A0_40:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+    A0_40:UpdownPan(-3, -3, 0, 0, 0)
+    A0_40:Orbit(30, 30, 0, 0, 0)
+    A0_40:SideDolly(0.1, 0.1, 0, 0, 0)
+    A2_42:Visible(A0_40.VISIBLE_SHOW)
+    A1_41:AutoShake(false)
+    A1_41:CancelActionTimeline(A0_40.LOC_ACTION_01)
+    A1_41:Direction(A2_42)
+    A0_40:Wait(5)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_290, false, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A2_42:CancelActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EMOTE_ME)
+    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_291, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
+    A0_40:Wait(10)
+    A0_40:PlayCamera(9, A1_41)
+    A0_40:Zoom(-0.1, -0.1, 0, 0, 0)
+    A0_40:Orbit(-30, -30, 0, 0, 0)
+    A0_40:Wait(5)
+    A1_41:PlayActionTimeline(A0_40.ACTION_TIMELINE_FACIAL_BOSSY)
+    A0_40:Wait(45)
+    A1_41:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_YES)
+    A1_41:WaitForActionTimeline(A0_40.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_40:FadeOut(A0_40.FADE_DEFAULT)
+    A0_40:WaitForFade()
+    A0_40:DisableSceneSkip()
+    A1_41:AutoShake(false)
+    A1_41:CancelActionTimeline(A0_40.LOC_ACTION_01)
+    A0_40:EnableSceneSkip()
+    A0_40:Wait(30)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00013_002(A0_45, A1_46, A2_47, A3_48, A4_49)
+    local L5_50
+    L5_50 = A0_45.FadeOut
+    L5_50(A0_45, A0_45.FADE_SHORT, A0_45.FADE_LAYER_MIDDLE_NO_LOADING)
+    L5_50 = A0_45.WaitForFade
+    L5_50(A0_45)
+    L5_50 = A0_45.FadeIn
+    L5_50(A0_45, A0_45.FADE_SHORT, A0_45.FADE_LAYER_BACK)
+    L5_50 = nil
+    A2_47:Idle(A0_45.ACTION_TIMELINE_EVENT_BASE_IDLE3)
+    A2_47:Position(A2_47, A0_45.ARRANGE_TYPE_BACK, 1)
+    A1_46:Position(A2_47, A0_45.ARRANGE_TYPE_RIGHT, 3)
+    A1_46:Direction(A2_47)
+    A1_46:Direction(90)
+    A1_46:Position(A1_46, A0_45.ARRANGE_TYPE_FRONT, 1)
+    A1_46:LookAt()
+    L5_50 = A0_45:CreateCharacter(A0_45.LOC_ACTOR_01, A2_47, A0_45.ARRANGE_TYPE_BACK, 1.2)
+    L5_50:Direction(A2_47)
+    L5_50:Position(L5_50, A0_45.ARRANGE_TYPE_RIGHT, 1)
+    L5_50:Direction(A2_47)
+    L5_50:LookAt(A2_47)
+    L5_50:Visible(A0_45.VISIBLE_HIDE)
+    A2_47:Direction(A1_46)
+    A2_47:LookAt(A1_46)
+    A0_45:PlayCamera(1, A1_46)
+    if A3_48 == A0_45.SWOAD_455_004 then
+      A1_46:Equip(A0_45.EQUIP_TYPE_WEAPON, A3_48, A0_45.WEAPON_SLOT_MAIN)
+      A1_46:Equip(A0_45.EQUIP_TYPE_WEAPON, A4_49, A0_45.WEAPON_SLOT_SUB)
+    elseif A3_48 == A0_45.KNUCKLE_455_004 or A3_48 == A0_45.KNIFE_455_004 then
+      A1_46:Equip(A0_45.EQUIP_TYPE_WEAPON, A3_48, A0_45.WEAPON_SLOT_MAIN, A0_45.WEAPON_SLOT_SUB)
+    else
+      A1_46:Equip(A0_45.EQUIP_TYPE_WEAPON, A3_48, A0_45.WEAPON_SLOT_MAIN)
+      A1_46:Equip(A0_45.EQUIP_TYPE_WEAPON, 0, A0_45.WEAPON_SLOT_SUB)
+    end
+    if A3_48 == A0_45.RAPIER_455_004 then
+      A1_46:EquipQuestModel(40)
+    else
+    end
+    A0_45:ChangeBGMVolume(0)
+    A0_45:Wait(10)
+    A0_45:PlaySE(A0_45.LOC_SE_01)
+    A0_45:Wait(20)
+    A0_45:PlaySE(A0_45.LOC_SE_01)
+    A0_45:Wait(20)
+    A0_45:PlaySE(A0_45.LOC_SE_01)
+    A0_45:Wait(40)
+    A0_45:PlaySE(A0_45.LOC_SE_01)
+    A0_45:Wait(20)
+    A0_45:PlaySE(A0_45.LOC_SE_01)
+    A0_45:Wait(20)
+    A0_45:PlaySE(A0_45.LOC_SE_01)
+    A0_45:Wait(10)
+    A0_45:PlayBGM(A0_45.BGM_MUSIC_NO_MUSIC)
+    A0_45:SetCamera(A1_46, 1, A2_47)
+    A2_47:Visible(A0_45.VISIBLE_HIDE)
+    A1_46:PlayActionTimeline(A0_45.LOC_ACTION_01, nil, A0_45.AUTO_SHAKE_ENABLE, A0_45.ACTION_NO_INTERPOLATE)
+    A0_45:Wait(10)
+    A0_45:FadeIn(A0_45.FADE_DEFAULT)
+    A0_45:PlayBGM(A0_45.LOC_BGM_01)
+    A0_45:ChangeBGMVolume(0.5)
+    A0_45:WaitForOrbit()
+    A0_45:WaitForFade()
+    A0_45:Wait(90)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_300, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(30)
+    if true == true then
+      A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_310, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE, A3_48, A4_49)
+    else
+      A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_320, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE, A3_48)
+    end
+    A0_45:Wait(30)
+    A1_46:AutoShake(false)
+    A0_45:Wait(30)
+    A0_45:SetCamera(A1_46, 2, A2_47)
+    A2_47:LookAt(0, -15)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_COMEON, nil, A0_45.AUTO_SHAKE_TIMELINE)
+    A0_45:PlaySE(A0_45.LOC_SE_03)
+    A0_45:Wait(60)
+    A0_45:PlayCamera(5, A2_47)
+    A0_45:UpdownDolly(0, -0.1, 20, 0, 20)
+    A2_47:Visible(A0_45.VISIBLE_SHOW)
+    A1_46:Visible(A0_45.VISIBLE_HIDE)
+    A1_46:Equip(A0_45.EQUIP_TYPE_WEAPON, 0, A0_45.WEAPON_SLOT_MAIN)
+    A1_46:Equip(A0_45.EQUIP_TYPE_WEAPON, 0, A0_45.WEAPON_SLOT_SUB)
+    A1_46:Position(L5_50, A0_45.ARRANGE_TYPE_BACK, 1.2)
+    A1_46:Direction(L5_50)
+    A1_46:Position(A1_46, A0_45.ARRANGE_TYPE_RIGHT, 1.2)
+    A1_46:Direction(A2_47)
+    A1_46:LookAt(A2_47)
+    A0_45:WaitForDolly()
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_47:WaitForActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_45:ChangeBGMVolume(0.5)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_330, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A0_45:PlayTargetRelationCamera(A2_47, 101.3011, 1.1011, 1.8503, -28.5527, 0.5446, 1.4684, 1.5567)
+    L5_50:Visible(A0_45.VISIBLE_SHOW)
+    L5_50:WalkIn(150, 3, A0_45.MOVE_WALK)
+    L5_50:WaitForMove()
+    L5_50:TurnTo(A2_47, false)
+    L5_50:WaitForTurn()
+    L5_50:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A1_46:LookAt(L5_50)
+    A2_47:LookAt(L5_50)
+    A2_47:AutoShake(false)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_COMEON)
+    L5_50:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_DRAKE_000_331, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A2_47:TurnTo(L5_50, false)
+    A2_47:WaitForTurn()
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_333, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    L5_50:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ITEM)
+    A0_45:Wait(20)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    A0_45:Wait(3)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ITEM)
+    A2_47:WaitForActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ITEM)
+    A0_45:Wait(3)
+    A2_47:LookAt()
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TAKE_LOOK, nil, A0_45.AUTO_SHAKE_ENABLE)
+    A0_45:Wait(45)
+    A0_45:PlayTargetRelationCamera(A2_47, 31.1383, 0.8008, 1.4953, 21.9322, 0.3859, 1.6043, 0.4381)
+    A1_46:Visible(A0_45.VISIBLE_SHOW)
+    L5_50:Position(L5_50, A0_45.ARRANGE_TYPE_BACK, 0.5)
+    A0_45:Wait(60)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_WHAT)
+    A1_46:LookAt(A2_47)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_303, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A0_45:PlayTwoShotCamera(A0_45.TWOSHOT_TYPE_FRONT, A1_46, L5_50)
+    A0_45:Zoom(0.2, 0.2, 0, 0, 0)
+    A0_45:UpdownDolly(-0.4, -0.4, 0, 0, 0)
+    A0_45:UpdownPan(-5, -5, 0, 0, 0)
+    A2_47:AutoShake(false)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TAKE_LOOK)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_WHAT)
+    A2_47:Direction(70)
+    L5_50:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_AMAZED)
+    A1_46:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_GIRD_UP)
+    A0_45:Wait(60)
+    A0_45:PlayTargetRelationCamera(A2_47, 22.706, 3.8869, 1.3489, -62.8392, 1.5056, 1.0323, 4.0701)
+    A0_45:Zoom(1, 0.3, 15, 0, 5)
+    A0_45:Orbit(-160, -20, 15, 0, 5)
+    A0_45:UpdownDolly(-0.5, -0.05, 15, 0, 5)
+    A0_45:UpdownPan(-10, -2, 15, 0, 5)
+    A0_45:PlaySE(A0_45.LOC_SE_03)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_JOY_STRONG)
+    A1_46:CancelActionTimeline(A0_45.ACTION_TIMELINE_EVENT_GIRD_UP)
+    A1_46:PlayActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_WRYSMILE_CL, nil, A0_45.AUTO_SHAKE_TIMELINE)
+    L5_50:CancelActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_AMAZED)
+    L5_50:PlayActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_SMILE, nil, A0_45.AUTO_SHAKE_TIMELINE)
+    A0_45:WaitForOrbit()
+    A0_45:Zoom(0.3, 0, 90, 0, 30)
+    A0_45:Orbit(-20, 0, 90, 0, 30)
+    A0_45:UpdownDolly(-0.05, 0, 90, 0, 30)
+    A0_45:UpdownPan(-2, 0, 90, 0, 30)
+    L5_50:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_CLAP)
+    A1_46:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_CLAP)
+    A0_45:Wait(45)
+    L5_50:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_DRAKE_000_334, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A2_47:WaitForActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_JOY_STRONG)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_CRY)
+    A0_45:Wait(30)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_335, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A0_45:PlayTargetRelationCamera(A2_47, 31.1383, 0.8008, 1.4953, 21.9322, 0.3859, 1.6043, 0.4381)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_CRY)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_SMILE)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TAKE_LOOK, nil, A0_45.AUTO_SHAKE_ENABLE)
+    A1_46:AutoShake(false)
+    A1_46:CancelActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_WRYSMILE_CL)
+    L5_50:AutoShake(false)
+    L5_50:CancelActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_SMILE)
+    A0_45:Wait(30)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_336, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:ChangeBGMVolume(0)
+    A0_45:Wait(30)
+    A0_45:PlayBGM(A0_45.BGM_MUSIC_NO_MUSIC)
+    A0_45:Wait(10)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_SPEWING)
+    A0_45:Wait(30)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_337, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A2_47:AutoShake(false)
+    A0_45:PlayTargetRelationCamera(A2_47, 66.0926, 1.546, 1.8292, -57.6356, 1.2869, 1.216, 2.5752)
+    A0_45:PlayBGM(A0_45.BGM_MUSIC_EVENT_THEME_BAZAAL)
+    A0_45:ChangeBGMVolume(0.5)
+    A2_47:AutoShake(false)
+    A1_46:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_SURPRISED, nil, A0_45.AUTO_SHAKE_ENABLE)
+    L5_50:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_SHOCKED, nil, A0_45.AUTO_SHAKE_ENABLE)
+    A0_45:Wait(60)
+    A2_47:LookAt(L5_50)
+    L5_50:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_DRAKE_000_338, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TAKE_LOOK)
+    A2_47:TurnTo(L5_50, false)
+    A2_47:WaitForTurn()
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TALK_ANGRY)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_339, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A1_46:AutoShake(false)
+    L5_50:AutoShake(false)
+    L5_50:WaitForActionTimeline(A0_45.ACTION_TIMELINE_EVENT_SHOCKED)
+    L5_50:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_SIGH)
+    A0_45:Wait(30)
+    A1_46:LookAt(L5_50)
+    L5_50:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_DRAKE_000_340, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A0_45:PlayTargetRelationCamera(A2_47, 57.3765, 9.9246, 8.8785, 23.881, 1.2135, 1.1083, 11.8431)
+    A0_45:Zoom(0, -2, 90, 30, 30)
+    A1_46:LookAt(A2_47)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TALK_ANGRY)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_ORZ, nil, A0_45.AUTO_SHAKE_ENABLE)
+    A0_45:Wait(60)
+    A1_46:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_SIGH)
+    A0_45:Wait(90)
+    A0_45:FadeOut(A0_45.FADE_DEFAULT, A0_45.FADE_LAYER_MIDDLE_NO_LOADING)
+    A0_45:WaitForFade()
+    A2_47:AutoShake(false)
+    A0_45:Wait(3)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_ORZ)
+    A0_45:Wait(3)
+    A2_47:Direction(A1_46)
+    A2_47:Idle(A0_45.ACTION_TIMELINE_EVENT_BASE_IDLE1)
+    A2_47:LookAt(0, -30)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_FACIAL_SPEWING, nil, A0_45.AUTO_SHAKE_TIMELINE)
+    A1_46:Position(A2_47, A0_45.ARRANGE_TYPE_FRONT, 1.8)
+    A1_46:Direction(A2_47)
+    A1_46:LookAt(A2_47)
+    L5_50:Visible(A0_45.VISIBLE_HIDE)
+    A0_45:Wait(60)
+    A0_45:PlayCamera(9, A2_47)
+    A0_45:Zoom(-0.2, -0.4, 45, 0, 45)
+    A0_45:Orbit(30, 30, 0, 0, 0)
+    A0_45:UpdownPan(3, 3, 0, 0, 0)
+    A0_45:UpdownDolly(0.1, 0.1, 0, 0, 0)
+    A0_45:FadeIn(A0_45.FADE_DEFAULT)
+    A0_45:WaitForFade()
+    A0_45:WaitForZoom()
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ADD_NO)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_341, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(30)
+    if A1_46:GetRace() == A0_45.RACE_LALAFELL then
+      A0_45:PlayTargetRelationCamera(A2_47, -11.9106, 2.4969, 0.5386, 4.8079, 1.0989, 0.9027, 1.5228)
+    else
+      A0_45:PlayTwoShotCamera(A0_45.TWOSHOT_TYPE_RIGHT_ZOOM, A2_47, A1_46)
+      A0_45:Zoom(0.2, 0.2, 0, 0, 0)
+      A0_45:Orbit(-10, -10, 0, 0, 0)
+      A0_45:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+      A0_45:UpdownPan(-5, -5, 0, 0, 0)
+    end
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ADD_NO)
+    A2_47:LookAt(A1_46)
+    A0_45:Wait(10)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_DOUBT)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_343, false, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_345, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(10)
+    A1_46:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ADD_YES)
+    A1_46:WaitForActionTimeline(A0_45.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_47:CancelActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_DOUBT)
+    A0_45:Wait(3)
+    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EMOTE_YES_STRONG)
+    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_346, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+    A0_45:Wait(30)
+    A0_45:DisableSceneSkip()
+    A0_45:SystemTalk(A0_45.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_349, true, 598)
+    A0_45:Wait(10)
+    A0_45:EnableSceneSkip()
+    A0_45:FadeOut(A0_45.FADE_DEFAULT)
+    A0_45:WaitForFade()
+    A0_45:DisableSceneSkip()
+    A1_46:AutoShake(false)
+    A1_46:CancelActionTimeline(A0_45.LOC_ACTION_01)
+    A0_45:Wait(30)
+    A0_45:EnableSceneSkip()
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00013_003(A0_51, A1_52, A2_53, A3_54, A4_55)
+    local L5_56
+    A0_51:FadeOut(A0_51.FADE_SHORT, A0_51.FADE_LAYER_MIDDLE_NO_LOADING)
+    A0_51:WaitForFade()
+    A0_51:FadeIn(A0_51.FADE_SHORT, A0_51.FADE_LAYER_BACK)
+    A2_53:Idle(A0_51.ACTION_TIMELINE_EVENT_BASE_IDLE)
+    A2_53:Position(A2_53, A0_51.ARRANGE_TYPE_BACK, 1)
+    A1_52:Position(A2_53, A0_51.ARRANGE_TYPE_RIGHT, 3)
+    A1_52:Direction(A2_53)
+    A1_52:Direction(90)
+    A1_52:Position(A1_52, A0_51.ARRANGE_TYPE_FRONT, 1)
+    A1_52:LookAt()
+    L5_56 = A0_51:CreateCharacter(A0_51.LOC_ACTOR_01, A2_53, A0_51.ARRANGE_TYPE_BACK, 1.2)
+    L5_56:Direction(A2_53)
+    L5_56:Position(L5_56, A0_51.ARRANGE_TYPE_RIGHT, 1)
+    L5_56:Direction(A2_53)
+    L5_56:LookAt(A2_53)
+    L5_56:Visible(A0_51.VISIBLE_HIDE)
+    A2_53:Direction(A1_52)
+    A2_53:LookAt(A1_52)
+    A0_51:PlayCamera(1, A1_52)
+    if A3_54 == A0_51.SWOAD_455_004 then
+      A1_52:Equip(A0_51.EQUIP_TYPE_WEAPON, A3_54, A0_51.WEAPON_SLOT_MAIN)
+      A1_52:Equip(A0_51.EQUIP_TYPE_WEAPON, A4_55, A0_51.WEAPON_SLOT_SUB)
+    elseif A3_54 == A0_51.KNUCKLE_455_004 or A3_54 == A0_51.KNIFE_455_004 then
+      A1_52:Equip(A0_51.EQUIP_TYPE_WEAPON, A3_54, A0_51.WEAPON_SLOT_MAIN, A0_51.WEAPON_SLOT_SUB)
+    else
+      A1_52:Equip(A0_51.EQUIP_TYPE_WEAPON, A3_54, A0_51.WEAPON_SLOT_MAIN)
+      A1_52:Equip(A0_51.EQUIP_TYPE_WEAPON, 0, A0_51.WEAPON_SLOT_SUB)
+    end
+    if A3_54 == A0_51.RAPIER_455_004 then
+      A1_52:EquipQuestModel(40)
+    else
+    end
+    A0_51:ChangeBGMVolume(0)
+    A0_51:Wait(10)
+    A0_51:PlaySE(A0_51.LOC_SE_01)
+    A0_51:Wait(20)
+    A0_51:PlaySE(A0_51.LOC_SE_01)
+    A0_51:Wait(20)
+    A0_51:PlaySE(A0_51.LOC_SE_01)
+    A0_51:Wait(40)
+    A0_51:PlaySE(A0_51.LOC_SE_01)
+    A0_51:Wait(20)
+    A0_51:PlaySE(A0_51.LOC_SE_01)
+    A0_51:Wait(20)
+    A0_51:PlaySE(A0_51.LOC_SE_01)
+    A0_51:Wait(10)
+    A0_51:PlayBGM(A0_51.BGM_MUSIC_NO_MUSIC)
+    A0_51:SetCamera(A1_52, 1, A2_53)
+    A2_53:Visible(A0_51.VISIBLE_HIDE)
+    A1_52:PlayActionTimeline(A0_51.LOC_ACTION_01, nil, A0_51.AUTO_SHAKE_ENABLE, A0_51.ACTION_NO_INTERPOLATE)
+    A0_51:Wait(10)
+    A0_51:FadeIn(A0_51.FADE_DEFAULT)
+    A0_51:PlayBGM(A0_51.LOC_BGM_01)
+    A0_51:ChangeBGMVolume(0.5)
+    A0_51:WaitForOrbit()
+    A0_51:WaitForFade()
+    A0_51:Wait(90)
+    A2_53:Talk(A1_52, A0_51, A0_51.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_300, true, nil, nil, nil, A0_51.SPEAK_NORMAL_MIDDLE)
+    A0_51:Wait(30)
+    if true == true then
+      A2_53:Talk(A1_52, A0_51, A0_51.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_310, true, nil, nil, nil, A0_51.SPEAK_NORMAL_MIDDLE, A3_54, A4_55)
+    else
+      A2_53:Talk(A1_52, A0_51, A0_51.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_320, true, nil, nil, nil, A0_51.SPEAK_NORMAL_MIDDLE, A3_54)
+    end
+    A0_51:Wait(30)
+    A1_52:AutoShake(false)
+    A0_51:Wait(30)
+    A0_51:SetCamera(A1_52, 2, A2_53)
+    A0_51:PlaySE(A0_51.LOC_SE_03)
+    A0_51:Wait(65)
+    A0_51:PlayCamera(5, A2_53)
+    A0_51:Zoom(-0.4, -0.4, 0, 0, 0)
+    A0_51:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+    A0_51:Orbit(-25, -25, 0, 0, 0)
+    A0_51:SideDolly(0.15, 0.15, 0, 0, 0)
+    A2_53:Visible(A0_51.VISIBLE_SHOW)
+    A1_52:Direction(A2_53)
+    A1_52:LookAt()
+    A2_53:PlayActionTimeline(A0_51.ACTION_TIMELINE_EVENT_SIGH)
+    A0_51:Wait(30)
+    A2_53:Talk(A1_52, A0_51, A0_51.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_350, false, nil, nil, nil, A0_51.SPEAK_NORMAL_MIDDLE)
+    A2_53:CancelActionTimeline(A0_51.ACTION_TIMELINE_EVENT_SIGH)
+    A2_53:PlayActionTimeline(A0_51.ACTION_TIMELINE_EMOTE_DOUBT)
+    A2_53:Talk(A1_52, A0_51, A0_51.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_351, true, nil, nil, nil, A0_51.SPEAK_NORMAL_MIDDLE)
+    A0_51:Wait(10)
+    A0_51:PlayCamera(6, A1_52)
+    A0_51:Zoom(0.1, 0.1, 0, 0, 0)
+    A0_51:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+    A0_51:UpdownPan(-2, -2, 0, 0, 0)
+    A0_51:Orbit(10, 10, 0, 0, 0)
+    A0_51:Wait(5)
+    A1_52:PlayActionTimeline(A0_51.ACTION_TIMELINE_FACIAL_BOSSY)
+    A0_51:Wait(45)
+    A1_52:PlayActionTimeline(A0_51.ACTION_TIMELINE_EVENT_SIGH)
+    A0_51:Wait(60)
+    A0_51:FadeOut(A0_51.FADE_DEFAULT)
+    A0_51:WaitForFade()
+    A0_51:DisableSceneSkip()
+    A1_52:AutoShake(false)
+    A1_52:CancelActionTimeline(A0_51.LOC_ACTION_01)
+    A0_51:EnableSceneSkip()
+    A0_51:Wait(30)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00013_004(A0_57, A1_58, A2_59, A3_60, A4_61)
+    A0_57:FadeOut(A0_57.FADE_SHORT, A0_57.FADE_LAYER_MIDDLE_NO_LOADING)
+    A0_57:WaitForFade()
+    if A3_60 == A0_57.SWOAD_455_001 or A3_60 == A0_57.SWOAD_455_002 then
+    else
+    end
+    A2_59:Visible(A0_57.VISIBLE_HIDE)
+    A0_57:Wait(45)
+    A0_57:PlaySE(A0_57.LOC_SE_01)
+    A0_57:Wait(20)
+    A0_57:PlaySE(A0_57.LOC_SE_01)
+    A0_57:Wait(20)
+    A0_57:PlaySE(A0_57.LOC_SE_01)
+    A0_57:Wait(30)
+    A0_57:PlaySE(A0_57.LOC_SE_02)
+    A0_57:Wait(60)
+    A2_59:Visible(A0_57.VISIBLE_SHOW)
+    A0_57:FadeIn(A0_57.FADE_DEFAULT)
+    A0_57:WaitForFade()
+    A2_59:Talk(A1_58, A0_57, A0_57.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_220, true, nil, nil, nil, A0_57.SPEAK_NORMAL_MIDDLE)
+    A0_57:Wait(30)
+    if true == true then
+      A2_59:Talk(A1_58, A0_57, A0_57.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_230, true, nil, nil, nil, A0_57.SPEAK_NORMAL_MIDDLE, A3_60, A4_61)
+    else
+      A2_59:Talk(A1_58, A0_57, A0_57.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_240, true, nil, nil, nil, A0_57.SPEAK_NORMAL_MIDDLE, A3_60)
+    end
+    A0_57:Wait(30)
+    A2_59:Talk(A1_58, A0_57, A0_57.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_250, true, nil, nil, nil, A0_57.SPEAK_NORMAL_MIDDLE)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00020_001(A0_62, A1_63, A2_64)
+    local L3_65, L4_66
+    L4_66 = A1_63
+    L3_65 = A1_63.GetNumOfItems
+    L3_65 = L3_65(L4_66, A0_62.ENHANCE_ITEM_03)
+    L4_66 = 100 - L3_65
+    if L3_65 == 0 then
+      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_050_370, true, nil, nil, nil, A0_62.SPEAK_NORMAL_MIDDLE, L4_66)
+      A0_62:Wait(10)
+      A0_62:SystemTalk(A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_055_370, true)
+    elseif L3_65 < 100 then
+      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_370, false, nil, nil, nil, A0_62.SPEAK_NORMAL_MIDDLE)
+      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_380, true, nil, nil, nil, A0_62.SPEAK_NORMAL_MIDDLE, L4_66)
+      A0_62:Wait(10)
+      A0_62:SystemTalk(A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_100_381, true)
+    else
+      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_370, false, nil, nil, nil, A0_62.SPEAK_NORMAL_MIDDLE)
+      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_390, true, nil, nil, nil, A0_62.SPEAK_NORMAL_MIDDLE, 100)
+      A0_62:Wait(30)
+      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_400, true, nil, nil, nil, A0_62.SPEAK_NORMAL_MIDDLE)
+      A0_62:Wait(10)
+      A0_62:SystemTalk(A0_62.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_100_401, true)
+    end
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00021_001(A0_67, A1_68, A2_69, A3_70)
+    local L4_71, L5_72, L6_73, L7_74, L8_75
+    L4_71 = {}
+    L6_73 = A1_68
+    L5_72 = A1_68.GetNumOfItems
+    L5_72 = L5_72(L6_73, L7_74)
+    L6_73 = 100 - L5_72
+    if L5_72 == 0 then
+      L7_74(L8_75, A1_68, A0_67, A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_050_370, true, nil, nil, nil, A0_67.SPEAK_NORMAL_MIDDLE, L6_73)
+      L7_74(L8_75, 10)
+      L7_74(L8_75, A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_055_370, true)
+      L7_74(L8_75)
+    elseif L5_72 < 100 then
+      L7_74(L8_75, A1_68, A0_67, A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_370, false, nil, nil, A0_67.SPEAK_NORMAL_MIDDLE)
+      L7_74(L8_75, A1_68, A0_67, A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_380, true, nil, nil, nil, A0_67.SPEAK_NORMAL_MIDDLE, L6_73)
+      L7_74(L8_75, 10)
+      L7_74(L8_75, A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_100_381, true)
+      L7_74(L8_75)
+    else
+      L7_74(L8_75, A1_68, A0_67, A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_370, false, nil, nil, A0_67.SPEAK_NORMAL_MIDDLE)
+      L7_74(L8_75, A1_68, A0_67, A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_390, true, nil, nil, nil, A0_67.SPEAK_NORMAL_MIDDLE, 100)
+      L7_74(L8_75, 10)
+    end
+    for _FORV_10_ = 1, #A3_70 do
+      if A3_70[_FORV_10_] == A0_67.SWOAD_455_004 then
+        L4_71[#L4_71 + 1] = A0_67:FormatString(A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A3_001_003, A3_70[_FORV_10_], A0_67.SHIELD_455_004)
+      else
+        L4_71[#L4_71 + 1] = A0_67:FormatString(A0_67.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A3_001_001, A3_70[_FORV_10_])
+      end
+    end
+    L4_71[L7_74] = L8_75
+    if L7_74 > 0 then
+      if L7_74 <= L8_75 then
+        return true, L8_75
+      end
+    end
+    return L8_75
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00022_001(A0_76, A1_77, A2_78, A3_79, A4_80, A5_81, A6_82)
+    local L7_83, L8_84, L9_85, L10_86, L11_87, L12_88, L13_89
+    L9_85 = A0_76.ElementEnhanceItemNum
+    L9_85 = L9_85(L10_86, L11_87)
+    if L9_85 <= 1 then
+      if L10_86 == 0 then
+        L13_89 = A2_78
+        L12_88(L13_89, A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_050_370, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE, L11_87)
+        L13_89 = A0_76
+        L12_88(L13_89, 10)
+        L13_89 = A0_76
+        L12_88(L13_89, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_055_370, true)
+        L13_89 = A0_76
+        L12_88(L13_89)
+      elseif L10_86 < 100 then
+        L13_89 = A2_78
+        L12_88(L13_89, A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_370, false, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
+        L13_89 = A2_78
+        L12_88(L13_89, A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_380, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE, L11_87)
+        L13_89 = A0_76
+        L12_88(L13_89, 10)
+        L13_89 = A0_76
+        L12_88(L13_89, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_100_381, true)
+        L13_89 = A0_76
+        L12_88(L13_89)
+      else
+        L13_89 = A2_78
+        L12_88(L13_89, A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_370, false, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
+        L13_89 = A2_78
+        L12_88(L13_89, A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_100_390, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE, 100)
+        L13_89 = A0_76
+        L12_88(L13_89, 30)
+      end
+    end
+    L13_89 = A2_78
+    L8_84 = L10_86
+    if L8_84 == 1 then
+      return L10_86
+    else
+    end
+    L13_89 = A0_76
+    L10_86(L11_87, L12_88, L13_89, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_470, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE, A3_79[1])
+    L10_86(L11_87, L12_88)
+    for L13_89 = 1, #A3_79 do
+      A0_76:SetNpcTradeItem(L13_89, unpack(A0_76:GetNpcTradeItemInfo(A3_79[L13_89], A4_80[L13_89])))
+    end
+    L13_89 = nil
+    if L10_86 == 1 then
+      L13_89 = A0_76.ACTION_TIMELINE_EVENT_ITEM
+      L11_87(L12_88, L13_89)
+      L13_89 = A0_76.ACTION_TIMELINE_EVENT_ITEM
+      L11_87(L12_88, L13_89)
+      L13_89 = A1_77
+      L11_87(L12_88, L13_89, A0_76, A0_76.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_480, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
+      return L11_87
+    end
+    return L11_87
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00023_001(A0_90, A1_91, A2_92, A3_93, A4_94)
+    A0_90:FadeOut(A0_90.FADE_SHORT, A0_90.FADE_LAYER_MIDDLE_NO_LOADING)
+    A0_90:WaitForFade()
+    A0_90:FadeIn(A0_90.FADE_SHORT, A0_90.FADE_LAYER_BACK)
+    A2_92:Idle(A0_90.ACTION_TIMELINE_EVENT_BASE_IDLE3)
+    A2_92:Position(A2_92, A0_90.ARRANGE_TYPE_BACK, 1)
+    A1_91:Position(A2_92, A0_90.ARRANGE_TYPE_RIGHT, 3)
+    A1_91:Direction(A2_92)
+    A1_91:Direction(90)
+    A1_91:Position(A1_91, A0_90.ARRANGE_TYPE_FRONT, 1)
+    A1_91:LookAt()
+    A2_92:Direction(A1_91)
+    A2_92:LookAt(A1_91)
+    if A3_93 == A0_90.SWOAD_455_005 then
+      A1_91:Equip(A0_90.EQUIP_TYPE_WEAPON, A3_93, A0_90.WEAPON_SLOT_MAIN)
+      A1_91:Equip(A0_90.EQUIP_TYPE_WEAPON, A4_94, A0_90.WEAPON_SLOT_SUB)
+    elseif A3_93 == A0_90.KNUCKLE_455_005 or A3_93 == A0_90.KNIFE_455_005 then
+      A1_91:Equip(A0_90.EQUIP_TYPE_WEAPON, A3_93, A0_90.WEAPON_SLOT_MAIN, A0_90.WEAPON_SLOT_SUB)
+    else
+      A1_91:Equip(A0_90.EQUIP_TYPE_WEAPON, A3_93, A0_90.WEAPON_SLOT_MAIN)
+      A1_91:Equip(A0_90.EQUIP_TYPE_WEAPON, 0, A0_90.WEAPON_SLOT_SUB)
+    end
+    if A3_93 == A0_90.RAPIER_455_005 then
+      A1_91:EquipQuestModel(40)
+    else
+    end
+    A0_90:ChangeBGMVolume(0)
+    A0_90:Wait(10)
+    A0_90:PlaySE(A0_90.LOC_SE_01)
+    A0_90:Wait(20)
+    A0_90:PlaySE(A0_90.LOC_SE_01)
+    A0_90:Wait(20)
+    A0_90:PlaySE(A0_90.LOC_SE_01)
+    A0_90:Wait(40)
+    A0_90:PlaySE(A0_90.LOC_SE_01)
+    A0_90:Wait(20)
+    A0_90:PlaySE(A0_90.LOC_SE_01)
+    A0_90:Wait(20)
+    A0_90:PlaySE(A0_90.LOC_SE_01)
+    A0_90:Wait(10)
+    A0_90:PlayBGM(A0_90.BGM_MUSIC_NO_MUSIC)
+    A0_90:PlayCamera(1, A1_91)
+    A2_92:Visible(A0_90.VISIBLE_HIDE)
+    A1_91:PlayActionTimeline(A0_90.LOC_ACTION_01, nil, A0_90.AUTO_SHAKE_ENABLE, A0_90.ACTION_NO_INTERPOLATE)
+    A0_90:Wait(10)
+    if A1_91:GetRace() == A0_90.RACE_LALAFELL then
+      A0_90:Zoom(-0.1, -0.8, 90, 0, 30)
+      A0_90:Orbit(45, -5, 90, 0, 30)
+      A0_90:UpdownDolly(-0.5, -0.2, 90, 0, 30)
+      A0_90:UpdownPan(-30, -10, 90, 0, 30)
+      A0_90:SideDolly(0, 0, 90, 0, 30)
+    else
+      A0_90:Zoom(-0.5, -1.5, 90, 0, 30)
+      A0_90:Orbit(45, -10, 90, 0, 30)
+      A0_90:UpdownDolly(-0.6, 0.95, 90, 0, 30)
+      A0_90:UpdownPan(-20, 50, 90, 0, 30)
+      A0_90:SideDolly(-0.4, 0.15, 90, 0, 30)
+    end
+    A0_90:FadeIn(A0_90.FADE_DEFAULT)
+    A0_90:WaitForFade()
+    A0_90:PlayBGM(A0_90.BGM_MUSIC_EVENT_RISE_IN_ARMS)
+    A0_90:ChangeBGMVolume(0.5)
+    A0_90:WaitForOrbit()
+    A0_90:Wait(10)
+    A2_92:Talk(A1_91, A0_90, A0_90.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_490, true, nil, nil, nil, A0_90.SPEAK_NORMAL_SHORT)
+    A0_90:Wait(30)
+    if true == true then
+      A2_92:Talk(A1_91, A0_90, A0_90.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_500, true, nil, nil, nil, A0_90.SPEAK_NORMAL_SHORT, A3_93, A4_94)
+    else
+      A2_92:Talk(A1_91, A0_90, A0_90.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_510, true, nil, nil, nil, A0_90.SPEAK_NORMAL_SHORT, A3_93)
+    end
+    A0_90:Wait(30)
+    A0_90:PlayCamera(1, A2_92)
+    A0_90:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+    A0_90:UpdownPan(-3, -3, 0, 0, 0)
+    A0_90:Orbit(30, 30, 0, 0, 0)
+    A0_90:SideDolly(0.1, 0.1, 0, 0, 0)
+    A2_92:Visible(A0_90.VISIBLE_SHOW)
+    A1_91:AutoShake(false)
+    A1_91:CancelActionTimeline(A0_90.LOC_ACTION_01)
+    A1_91:Direction(A2_92)
+    A0_90:Wait(5)
+    A2_92:PlayActionTimeline(A0_90.ACTION_TIMELINE_FACIAL_BOSSY, nil, A0_90.AUTO_SHAKE_TIMELINE)
+    A0_90:Wait(30)
+    A2_92:PlayActionTimeline(A0_90.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_90:Wait(60)
+    A2_92:Talk(A1_91, A0_90, A0_90.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_520, false, nil, nil, nil, A0_90.SPEAK_NORMAL_MIDDLE)
+    A2_92:Talk(A1_91, A0_90, A0_90.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_521, true, nil, nil, nil, A0_90.SPEAK_NORMAL_MIDDLE)
+    A0_90:Wait(10)
+    A0_90:PlayCamera(1, A1_91)
+    A0_90:UpdownDolly(-0.15, -0.15, 0, 0, 0)
+    A0_90:UpdownPan(-4, -4, 0, 0, 0)
+    A0_90:Orbit(-30, -30, 0, 0, 0)
+    A0_90:SideDolly(-0.1, -0.1, 0, 0, 0)
+    A0_90:Wait(5)
+    A1_91:PlayActionTimeline(A0_90.ACTION_TIMELINE_FACIAL_BOSSY)
+    A0_90:Wait(45)
+    A1_91:PlayActionTimeline(A0_90.ACTION_TIMELINE_EVENT_ADD_YES)
+    A1_91:WaitForActionTimeline(A0_90.ACTION_TIMELINE_EVENT_ADD_YES)
+    A0_90:FadeOut(A0_90.FADE_DEFAULT)
+    A0_90:WaitForFade()
+    A0_90:DisableSceneSkip()
+    A1_91:AutoShake(false)
+    A1_91:CancelActionTimeline(A0_90.LOC_ACTION_01)
+    A0_90:EnableSceneSkip()
+    A0_90:Wait(30)
+  end
+  function CtsErkEureka4WeaponGerolt.ElementEnhanceItemNum(A0_95, A1_96)
+    local L2_97
+    L2_97 = 0
+    if 0 < A1_96:GetNumOfItems(A0_95.SWOAD_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.AXE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.DIVIDER_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.KNUCKLE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.LANCE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.KNIFE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.BLADE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.BOW_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.GUN_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.ROD_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.GRIMOIRE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.RAPIER_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.CANE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.CODEX_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    if 0 < A1_96:GetNumOfItems(A0_95.GLOBE_455_004) then
+      L2_97 = L2_97 + 1
+    end
+    return L2_97
+  end
+  function CtsErkEureka4WeaponGerolt.CheckBeforeTrade(A0_98, A1_99, A2_100, A3_101, A4_102, A5_103, A6_104)
+    local L7_105, L8_106, L9_107, L10_108
+    L8_106 = false
+    L9_107 = 0
+    if L10_108 > 0 then
+      L9_107 = A5_103
+    else
+      if L10_108 > 0 then
+        L9_107 = A6_104
+      else
+      end
+    end
+    for _FORV_13_ = 1, #A3_101 do
+      if A3_101[_FORV_13_] == A0_98.ENHANCE_ITEM_01 or A3_101[_FORV_13_] == A0_98.ENHANCE_ITEM_02 or A3_101[_FORV_13_] == A0_98.ENHANCE_ITEM_03 then
+        if A3_101[_FORV_13_] == A0_98.ENHANCE_ITEM_03 then
+          L8_106 = true
+        end
+        L7_105 = A4_102[_FORV_13_] - A1_99:GetNumOfItems(A3_101[_FORV_13_])
+        if L7_105 > 0 then
+          if A3_101[_FORV_13_] == A0_98.ENHANCE_ITEM_01 then
+            A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_150, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, L7_105)
+            A0_98:Wait(10)
+            A0_98:SystemTalk(A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_151, false, A3_101[1])
+            A0_98:SystemTalk(A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_152, true)
+          elseif A3_101[_FORV_13_] == A0_98.ENHANCE_ITEM_02 then
+            if A1_99:GetNumOfItems(A3_101[_FORV_13_]) == 0 then
+              A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_160, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE)
+              A0_98:Wait(10)
+              A0_98:SystemTalk(A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_161, true, A3_101[1])
+            else
+              A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_170, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, A3_101[_FORV_13_], L7_105)
+              A0_98:Wait(10)
+              A0_98:SystemTalk(A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_171, true, A3_101[1], A3_101[_FORV_13_])
+            end
+          elseif A1_99:GetNumOfItems(A3_101[_FORV_13_]) == 0 then
+            A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_430, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE)
+            A0_98:Wait(10)
+            A0_98:SystemTalk(A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_431, true)
+          else
+            A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_440, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, L7_105)
+            A0_98:Wait(10)
+            A0_98:SystemTalk(A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_441, true, A3_101[1], A3_101[_FORV_13_])
+          end
+          return 1
+        end
+      else
+      end
+    end
+    if L9_107 ~= 0 then
+      if L8_106 == true then
+        L10_108(A2_100, A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_460, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, L9_107)
+        L10_108(A0_98, 10)
+        L10_108(A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_461, true, L9_107)
+      else
+        L10_108(A2_100, A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_190, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, L9_107)
+        L10_108(A0_98, 10)
+        L10_108(A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_191, true, L9_107)
+      end
+      return L10_108
+    else
+    end
+    if A5_103 ~= L10_108 then
+    else
+      if A5_103 == L10_108 then
+        if L10_108 == 0 then
+          if L8_106 == true then
+            L10_108(A2_100, A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_450, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, A3_101[2])
+            L10_108(A0_98, 10)
+            L10_108(A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_451, true, A3_101[1], A3_101[2])
+          else
+            L10_108(A2_100, A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_180, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, A3_101[2])
+            L10_108(A0_98, 10)
+            L10_108(A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_SYSTEM_000_181, true, A3_101[1], A3_101[2])
+          end
+          return L10_108
+        else
+        end
+      else
+      end
+    end
+    if A1_99:GetEquippedItem(0) == A3_101[1] then
+    else
+      if A1_99:GetEquippedItem(1) == A3_101[2] then
+      else
+      end
+    end
+    if L10_108 ~= nil then
+      if L8_106 == true then
+        A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_410, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, L10_108)
+      else
+        A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_GEROLT_000_130, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE, L10_108)
+      end
+      return 1
+    else
+    end
+    return 0
+  end
+  function CtsErkEureka4WeaponGerolt.SetCamera(A0_109, A1_110, A2_111, A3_112, A4_113, A5_114, A6_115, A7_116)
+    A3_112:Visible(A0_109.VISIBLE_HIDE)
+    if A2_111 == 1 then
+      A0_109:PlayCamera(1, A1_110)
+      if A1_110:GetRace() == A0_109.RACE_HYURAN then
+        A0_109:Zoom(-1.1, -1.1, 0, 0, 0)
+        A0_109:UpdownDolly(-0.3, -0.3, 0, 0, 0)
+        A0_109:UpdownPan(15, -10, 0, 30, 240)
+        A0_109:Orbit(-5, -5, 0, 0, 0)
+      elseif A1_110:GetRace() == A0_109.RACE_ELEZEN then
+        A0_109:Zoom(-1.3, -1.3, 0, 0, 0)
+        A0_109:UpdownPan(25, 5, 0, 45, 240)
+      elseif A1_110:GetRace() == A0_109.RACE_LALAFELL then
+        A0_109:Zoom(-0.7, -0.7, 0, 0, 0)
+        A0_109:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+        A0_109:UpdownPan(20, -5, 0, 30, 240)
+        A0_109:Orbit(-10, -10, 0, 0, 0)
+      elseif A1_110:GetRace() == A0_109.RACE_MICOTTAE then
+        A0_109:Zoom(-1.2, -1.2, 0, 0, 0)
+        A0_109:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+        A0_109:UpdownPan(15, 2, 0, 30, 240)
+      elseif A1_110:GetRace() == A0_109.RACE_ROEGADYN then
+        A0_109:Zoom(-1.6, -1.6, 0, 0, 0)
+        A0_109:UpdownDolly(-0.25, -0.25, 0, 0, 0)
+        A0_109:UpdownPan(35, -7, 0, 45, 240)
+        A0_109:SideDolly(0.1, 0.1, 0, 0, 0)
+      elseif A1_110:GetRace() == A0_109.RACE_AURA then
+        if A1_110:GetSex() == 0 then
+          A0_109:Zoom(-1.2, -1.2, 0, 0, 0)
+          A0_109:UpdownDolly(-0.4, -0.4, 0, 0, 0)
+          A0_109:UpdownPan(30, -15, 0, 45, 240)
+        else
+          A0_109:Zoom(-1, -1, 0, 0, 0)
+          A0_109:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+          A0_109:UpdownPan(20, -15, 0, 30, 240)
+        end
+      elseif A1_110:GetRace() == A0_109.RACE_JJM then
+        A0_109:Zoom(-1.6, -1.6, 0, 0, 0)
+        A0_109:UpdownDolly(-0.25, -0.25, 0, 0, 0)
+        A0_109:UpdownPan(35, -7, 0, 45, 240)
+        A0_109:SideDolly(0.1, 0.1, 0, 0, 0)
+      elseif A1_110:GetRace() == A0_109.RACE_JJF then
+        A0_109:Zoom(-1.3, -1.3, 0, 0, 0)
+        A0_109:UpdownPan(25, 5, 0, 45, 240)
+      else
+        A0_109:Zoom(-0.7, -0.7, 0, 0, 0)
+        A0_109:SideDolly(-0.2, -0.2, 0, 0, 0)
+        A0_109:UpdownPan(15, 5, 0, 30, 240)
+      end
+      A0_109:Wait(15)
+    else
+      if A2_111 == 2 then
+        A0_109:PlayCamera(33, A1_110)
+        if A1_110:GetRace() == A0_109.RACE_HYURAN then
+          if A1_110:GetTribe() == A0_109.TRIBE_HIGHLANDER then
+            A0_109:Zoom(6.1, 6.1, 0, 0, 0)
+            A0_109:UpdownPan(7.2, 7.2, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(6.1, 4, 0, 5, 5)
+            A0_109:UpdownPan(7.2, 10, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          elseif A1_110:GetSex() == 0 then
+            A0_109:Zoom(6.4, 6.4, 0, 0, 0)
+            A0_109:UpdownPan(7, 7, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(6.4, 4.9, 0, 5, 5)
+            A0_109:UpdownPan(7, 10, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          else
+            A0_109:Zoom(6.4, 6.4, 0, 0, 0)
+            A0_109:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+            A0_109:UpdownPan(5, 5, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(6.4, 4.4, 0, 5, 5)
+            A0_109:UpdownPan(5, 7, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          end
+        elseif A1_110:GetRace() == A0_109.RACE_ELEZEN then
+          A0_109:SideDolly(-0.2, -0.2, 0, 0, 0)
+          A0_109:Zoom(5.8, 5.8, 0, 0, 0)
+          A0_109:UpdownPan(8, 8, 0, 0, 0)
+          A0_109:Wait(20)
+          if A7_116 == true then
+          else
+            A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+          end
+          A0_109:Zoom(5.8, 4, 0, 5, 5)
+          A0_109:UpdownPan(8, 12, 0, 5, 5)
+          A0_109:Gyro(0, -20, 0, 5, 5)
+        elseif A1_110:GetRace() == A0_109.RACE_LALAFELL then
+          A0_109:Zoom(6, 6, 0, 0, 0)
+          A0_109:UpdownPan(4.2, 4.2, 0, 0, 0)
+          A0_109:Wait(20)
+          if A7_116 == true then
+          else
+            A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+          end
+          A0_109:Zoom(6, 4.8, 0, 5, 5)
+          A0_109:UpdownPan(4.2, 5, 0, 5, 5)
+          A0_109:Gyro(0, -20, 0, 5, 5)
+        elseif A1_110:GetRace() == A0_109.RACE_MICOTTAE then
+          if A1_110:GetSex() == 0 then
+            A0_109:SideDolly(0.1, 0.1, 0, 0, 0)
+            A0_109:Zoom(6.2, 6.2, 0, 0, 0)
+            A0_109:UpdownPan(6.5, 6.5, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(6.2, 4.5, 0, 5, 5)
+            A0_109:UpdownPan(6.5, 8, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          else
+            A0_109:SideDolly(-0.2, -0.2, 0, 0, 0)
+            A0_109:Zoom(6, 6, 0, 0, 0)
+            A0_109:UpdownPan(7, 7, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(6, 4.9, 0, 5, 5)
+            A0_109:UpdownPan(7, 9.2, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          end
+        elseif A1_110:GetRace() == A0_109.RACE_ROEGADYN or A1_110:GetRace() == A0_109.RACE_JJM then
+          if A1_110:GetSex() == 0 then
+            A0_109:SideDolly(0.2, 0.2, 0, 0, 0)
+            A0_109:Zoom(5.2, 5.2, 0, 0, 0)
+            A0_109:UpdownPan(10, 10, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(5.2, 3, 0, 5, 5)
+            A0_109:UpdownPan(10, 15, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          else
+            A0_109:SideDolly(-0.2, -0.2, 0, 0, 0)
+            A0_109:Zoom(5.3, 5.3, 0, 0, 0)
+            A0_109:UpdownPan(7.2, 7, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(5.3, 4, 0, 5, 5)
+            A0_109:UpdownPan(7.2, 12, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          end
+        elseif A1_110:GetRace() == A0_109.RACE_AURA then
+          if A1_110:GetSex() == 0 then
+            A0_109:Zoom(6.1, 6.1, 0, 0, 0)
+            A0_109:UpdownPan(8, 8, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(6.1, 3.8, 0, 5, 5)
+            A0_109:UpdownPan(8, 12, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          else
+            A0_109:SideDolly(0.05, 0.05, 0, 0, 0)
+            A0_109:Zoom(6, 6, 0, 0, 0)
+            A0_109:UpdownPan(3, 3, 0, 0, 0)
+            A0_109:Wait(20)
+            if A7_116 == true then
+            else
+              A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+            end
+            A0_109:Zoom(6, 4.5, 0, 5, 5)
+            A0_109:UpdownPan(3, 7, 0, 5, 5)
+            A0_109:Gyro(0, -20, 0, 5, 5)
+          end
+        elseif A1_110:GetRace() == A0_109.RACE_JJM then
+          A0_109:SideDolly(0.2, 0.2, 0, 0, 0)
+          A0_109:Zoom(5.2, 5.2, 0, 0, 0)
+          A0_109:UpdownPan(10, 10, 0, 0, 0)
+          A0_109:Wait(20)
+          if A7_116 == true then
+          else
+            A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+          end
+          A0_109:Zoom(5.2, 3, 0, 5, 5)
+          A0_109:UpdownPan(10, 15, 0, 5, 5)
+          A0_109:Gyro(0, -20, 0, 5, 5)
+        elseif A1_110:GetRace() == A0_109.RACE_JJF then
+          A0_109:SideDolly(-0.2, -0.2, 0, 0, 0)
+          A0_109:Zoom(5.8, 5.8, 0, 0, 0)
+          A0_109:UpdownPan(8, 8, 0, 0, 0)
+          A0_109:Wait(20)
+          if A7_116 == true then
+          else
+            A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+          end
+          A0_109:Zoom(5.8, 4, 0, 5, 5)
+          A0_109:UpdownPan(8, 12, 0, 5, 5)
+          A0_109:Gyro(0, -20, 0, 5, 5)
+        else
+          A0_109:SideDolly(-0.2, -0.2, 0, 0, 0)
+          A0_109:Zoom(7, 7, 0, 0, 0)
+          A0_109:UpdownPan(7, 7, 0, 0, 0)
+          A0_109:Wait(20)
+          if A7_116 == true then
+          else
+            A1_110:PlayVfx(A0_109.VFX_WEAPON_SKILL_GET)
+          end
+          A0_109:Zoom(7, 5, 0, 5, 5)
+          A0_109:UpdownPan(7, 10, 0, 5, 5)
+          A0_109:Gyro(0, -20, 0, 5, 5)
+        end
+      else
+      end
+    end
+    A0_109:Wait(40)
+  end
+end)()
+;(function()
+  local L0_117, L1_118
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SWOAD_445_100 = 24071
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SWOAD_455_001 = 24643
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SWOAD_455_002 = 24659
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SWOAD_455_003 = 24675
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SWOAD_455_004 = 24691
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SWOAD_455_005 = 24707
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SHIELD_445_100 = 24086
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SHIELD_455_001 = 24658
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SHIELD_455_002 = 24674
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SHIELD_455_003 = 24690
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SHIELD_455_004 = 24706
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SHIELD_455_005 = 24722
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.KNUCKLE_455_003 = 24676
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.KNUCKLE_455_004 = 24692
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.KNUCKLE_455_005 = 24708
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.KNIFE_455_003 = 24680
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.KNIFE_455_004 = 24696
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.KNIFE_455_005 = 24712
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.RAPIER_455_003 = 24689
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.RAPIER_455_004 = 24705
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.RAPIER_455_005 = 24721
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.AXE_455_004 = 24693
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.DIVIDER_455_004 = 24697
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.LANCE_455_004 = 24694
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.BLADE_455_004 = 24704
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.BOW_455_004 = 24695
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.GUN_455_004 = 24698
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.ROD_455_004 = 24700
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.GRIMOIRE_455_004 = 24701
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.CANE_455_004 = 24699
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.CODEX_455_004 = 24702
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.GLOBE_455_004 = 24703
+  L0_117 = CtsErkEureka4WeaponGerolt
+  L0_117.SCRIPT_VERSION = 2
+end)()
+;(function()
+  print("CtsErkEureka4WeaponGerolt")
+  function CtsErkEureka4WeaponGerolt.OnScene00000(A0_119, A1_120, A2_121)
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00001(A0_122, A1_123, A2_124, A3_125)
+    local L4_126, L5_127, L6_128
+    L4_126 = A3_125 ~= 0
+    L5_127 = {}
+    L6_128 = {}
+    L5_127[#L5_127 + 1] = A0_122.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A1_000_001
+    L6_128[#L6_128 + 1] = 1
+    if L4_126 == true then
+      L5_127[#L5_127 + 1] = A0_122.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A1_000_002
+      L6_128[#L6_128 + 1] = 2
+    end
+    L5_127[#L5_127 + 1] = A0_122.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A1_000_003
+    L6_128[#L6_128 + 1] = 3
+    L5_127[#L5_127 + 1] = A0_122.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_A1_000_004
+    L6_128[#L6_128 + 1] = 4
+    A0_122:OnScene00001_001(A1_123, A2_124)
+    while true do
+      if L6_128[A0_122:Menu(A0_122.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_Q1_000_000, unpack(L5_127))] == 1 then
+        return A0_122.EUREKA_EVENT_RESULT_NEXT, 1
+      elseif L6_128[A0_122:Menu(A0_122.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_Q1_000_000, unpack(L5_127))] == 2 then
+        return A0_122.EUREKA_EVENT_RESULT_NEXT, 2
+      elseif L6_128[A0_122:Menu(A0_122.TEXT_CTSERKEUREKA4WEAPONGEROLT_00559_Q1_000_000, unpack(L5_127))] == 3 then
+        A0_122:OnScene00001_002(A1_123, A2_124, L4_126)
+      else
+        break
+      end
+    end
+    return A0_122.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00002(A0_129, A1_130, A2_131)
+    A0_129:OnScene00002_001(A1_130, A2_131)
+    return A0_129.EUREKA_EVENT_RESULT_NEXT
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00003(A0_132, A1_133, A2_134)
+    A0_132:OnScene00003_001(A1_133, A2_134)
+    return A0_132.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00004(A0_135, A1_136, A2_137)
+    A0_135:OnScene00004_001(A1_136, A2_137)
+    return A0_135.EUREKA_EVENT_RESULT_NEXT
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00010(A0_138, A1_139, A2_140)
+    A0_138:OnScene00010_001(A1_139, A2_140)
+    return A0_138.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00011(A0_141, A1_142, A2_143, ...)
+    local L4_145, L5_146, L6_147
+    L4_145 = {
+      [3] = ...
+    }
+    L6_147 = ...
+    ;({
+      [3] = ...
+    })[1] = L5_146
+    ;({
+      [3] = ...
+    })[2] = L6_147
+    L6_147 = A0_141
+    L5_146 = A0_141.OnScene00011_001
+    L6_147 = L5_146(L6_147, A1_142, A2_143, L4_145)
+    if L5_146 == true then
+      return A0_141.EUREKA_EVENT_RESULT_NEXT, L6_147
+    end
+    return A0_141.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00012(A0_148, A1_149, A2_150, ...)
+    local L4_152, L5_153, L6_154, L7_155, L8_156, L9_157, L10_158, L11_159, L12_160, L13_161
+    L11_159 = ...
+    L12_160 = {}
+    L13_161 = {}
+    if L4_152 > 0 then
+      L12_160[#L12_160 + 1] = L4_152
+      L13_161[#L13_161 + 1] = 1
+    end
+    if L5_153 > 0 then
+      L12_160[#L12_160 + 1] = L5_153
+      L13_161[#L13_161 + 1] = 1
+    end
+    if L6_154 > 0 and L7_155 > 0 then
+      L12_160[#L12_160 + 1] = L6_154
+      L13_161[#L13_161 + 1] = L7_155
+    end
+    if L8_156 > 0 and L9_157 > 0 then
+      L12_160[#L12_160 + 1] = L8_156
+      L13_161[#L13_161 + 1] = L9_157
+    end
+    if A0_148:OnScene00012_001(A1_149, A2_150, L12_160, L13_161, L10_158, L11_159) == true then
+      return A0_148.EUREKA_EVENT_RESULT_NEXT, L4_152
+    end
+    return A0_148.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00013(A0_162, A1_163, A2_164, ...)
+    local L4_166, L5_167, L6_168
+    L6_168 = ...
+    if ... ~= 0 == true then
+      A0_162:OnScene00013_001(A1_163, A2_164, L5_167, L6_168)
+    elseif ... ~= 0 == true then
+      if ... ~= 0 == false then
+        A0_162:OnScene00013_002(A1_163, A2_164, L5_167, L6_168)
+      else
+        A0_162:OnScene00013_003(A1_163, A2_164, L5_167, L6_168)
+      end
+    else
+      A0_162:OnScene00013_004(A1_163, A2_164, L5_167, L6_168)
+    end
+    return A0_162.EUREKA_EVENT_RESULT_NEXT, L4_166
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00020(A0_169, A1_170, A2_171)
+    A0_169:OnScene00020_001(A1_170, A2_171)
+    return A0_169.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00021(A0_172, A1_173, A2_174, ...)
+    local L4_176, L5_177, L6_178
+    L4_176 = {
+      [3] = ...
+    }
+    L6_178 = ...
+    ;({
+      [3] = ...
+    })[1] = L5_177
+    ;({
+      [3] = ...
+    })[2] = L6_178
+    L6_178 = A0_172
+    L5_177 = A0_172.OnScene00021_001
+    L6_178 = L5_177(L6_178, A1_173, A2_174, L4_176)
+    if L5_177 == true then
+      return A0_172.EUREKA_EVENT_RESULT_NEXT, L6_178
+    end
+    return A0_172.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00022(A0_179, A1_180, A2_181, ...)
+    local L4_183, L5_184, L6_185, L7_186, L8_187, L9_188, L10_189, L11_190, L12_191, L13_192
+    L11_190 = ...
+    L12_191 = {}
+    L13_192 = {}
+    if L4_183 > 0 then
+      L12_191[#L12_191 + 1] = L4_183
+      L13_192[#L13_192 + 1] = 1
+    end
+    if L5_184 > 0 then
+      L12_191[#L12_191 + 1] = L5_184
+      L13_192[#L13_192 + 1] = 1
+    end
+    if L6_185 > 0 and L7_186 > 0 then
+      L12_191[#L12_191 + 1] = L6_185
+      L13_192[#L13_192 + 1] = L7_186
+    end
+    if L8_187 > 0 and L9_188 > 0 then
+      L12_191[#L12_191 + 1] = L8_187
+      L13_192[#L13_192 + 1] = L9_188
+    end
+    if A0_179:OnScene00022_001(A1_180, A2_181, L12_191, L13_192, L10_189, L11_190) == true then
+      return A0_179.EUREKA_EVENT_RESULT_NEXT, L4_183
+    end
+    return A0_179.EUREKA_EVENT_RESULT_END
+  end
+  function CtsErkEureka4WeaponGerolt.OnScene00023(A0_193, A1_194, A2_195, ...)
+    local L4_197, L5_198, L6_199
+    L6_199 = ...
+    A0_193:OnScene00023_001(A1_194, A2_195, L5_198, L6_199)
+    return A0_193.EUREKA_EVENT_RESULT_NEXT, L4_197
+  end
+  function CtsErkEureka4WeaponGerolt.GetNpcTradeItemInfo(A0_200, A1_201, A2_202)
+    local L3_203
+    L3_203 = {
+      A1_201,
+      A2_202,
+      false,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    }
+    return L3_203
+  end
+end)()

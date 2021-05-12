@@ -1,0 +1,68 @@
+(function()
+  print("RegSeaPvpDuelGuide")
+  function RegSeaPvpDuelGuide.OnScene00000(A0_0, A1_1, A2_2)
+    local L3_3
+    L3_3 = A2_2.LookAt
+    L3_3(A2_2, A1_1)
+    L3_3 = A1_1.IsQuestCompleted
+    L3_3 = L3_3(A1_1, A0_0.QST_HEAVNY816)
+    if L3_3 == true then
+      L3_3 = A2_2.PlayActionTimeline
+      L3_3(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK_ONEHAND, A1_1)
+      L3_3 = A2_2.Talk
+      L3_3(A2_2, A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_000, true)
+    else
+      L3_3 = A2_2.PlayActionTimeline
+      L3_3(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK1, A1_1)
+      L3_3 = A2_2.Talk
+      L3_3(A2_2, A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_005, false)
+      L3_3 = A2_2.Talk
+      L3_3(A2_2, A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_006, true)
+    end
+    L3_3 = A0_0.Wait
+    L3_3(A0_0, 10)
+    L3_3 = 0
+    while true do
+      L3_3 = A0_0:Menu(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_Q1_000_000, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_A1_000_001, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_A1_000_002, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_A1_000_003, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_A1_000_004, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_A1_000_006)
+      if L3_3 == 1 then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1, A1_1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_010, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_011, true)
+        A0_0:Wait(10)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_012, false)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_013, true)
+        A0_0:Wait(10)
+      elseif L3_3 == 2 then
+        A2_2:PlayActionTimeline(A0_0.EVENT_ARMS, A1_1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_020, true)
+        A0_0:Wait(10)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_021, false)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_022, true)
+        A0_0:Wait(10)
+      elseif L3_3 == 3 then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_030, true)
+        A0_0:Wait(10)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_031, false)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_032, false)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_033, false)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_034, true)
+        A0_0:Wait(10)
+      elseif L3_3 == 4 then
+        A2_2:PlayActionTimeline(A0_0.EVENT_SPIRIT, A1_1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_DUELOFFICER_000_040, true)
+        A0_0:Wait(10)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_041, false)
+        A0_0:SystemTalk(A0_0.TEXT_REGSEAPVPDUELGUIDE_00368_SYSTEM_000_042, true)
+        A0_0:Wait(10)
+      else
+        break
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_4
+  L1_4 = RegSeaPvpDuelGuide
+  L1_4.SCRIPT_VERSION = 1
+end)()

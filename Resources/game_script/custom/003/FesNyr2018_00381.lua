@@ -1,0 +1,95 @@
+(function()
+  print("FesNyr2018")
+  function FesNyr2018.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    if A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      if A2_2:GetBaseId() == A0_0.ENPC0 then
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_001, true)
+      elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_001, true)
+      else
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_001, true)
+      end
+    elseif A2_2:GetBaseId() == A0_0.ENPC0 then
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_000, true)
+    elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_000, true)
+    else
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_000, true)
+    end
+    while true do
+      if A0_0:Menu(A0_0.TEXT_FESNYR2018_00381_Q1_000_001, A0_0.TEXT_FESNYR2018_00381_A1_000_001, A0_0.TEXT_FESNYR2018_00381_A1_000_002, A0_0.TEXT_FESNYR2018_00381_A1_000_003, A0_0.TEXT_FESNYR2018_00381_A1_000_004) == 1 then
+        if A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+          if A2_2:GetBaseId() == A0_0.ENPC0 then
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_005, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_006, true)
+          elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_005, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_006, true)
+          else
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_005, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_006, true)
+          end
+        elseif A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_002, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_003, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_002, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_003, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_002, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_003, true)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2018_00381_Q1_000_001, A0_0.TEXT_FESNYR2018_00381_A1_000_001, A0_0.TEXT_FESNYR2018_00381_A1_000_002, A0_0.TEXT_FESNYR2018_00381_A1_000_003, A0_0.TEXT_FESNYR2018_00381_A1_000_004) == 2 then
+        if A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_010, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_011, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_012, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_010, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_011, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_012, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_010, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_011, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_012, true)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2018_00381_Q1_000_001, A0_0.TEXT_FESNYR2018_00381_A1_000_001, A0_0.TEXT_FESNYR2018_00381_A1_000_002, A0_0.TEXT_FESNYR2018_00381_A1_000_003, A0_0.TEXT_FESNYR2018_00381_A1_000_004) == 3 then
+        if A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_020, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_021, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_100_022, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_020, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_021, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_000_022, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_020, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_021, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2018_00381_DOGSERVER_200_022, true)
+        end
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_3
+  L1_3 = FesNyr2018
+  L1_3.SCRIPT_VERSION = 1
+end)()

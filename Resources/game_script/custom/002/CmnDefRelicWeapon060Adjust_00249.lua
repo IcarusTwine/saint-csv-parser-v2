@@ -1,0 +1,145 @@
+(function()
+  print("CmnDefRelicWeapon060Adjust")
+  function CmnDefRelicWeapon060Adjust.OnScene00000(A0_0, A1_1, A2_2)
+    local L3_3, L4_4
+    L3_3 = {
+      [2] = L4_4(A1_1)
+    }
+    L4_4 = A1_1.GetRelicWeapon060CatalogIdsOwned
+    L4_4 = L4_4(A1_1)
+    ;({
+      [2] = L4_4(A1_1)
+    })[1] = L4_4
+    L4_4 = {}
+    if #L3_3 <= 0 then
+      return 0
+    end
+    A2_2:LookAt(A1_1)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_000, true)
+    A0_0:Wait(10)
+    for _FORV_8_ = 1, #L3_3 do
+      L4_4[_FORV_8_] = A0_0:FormatString(A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_A1_000_010, L3_3[_FORV_8_])
+    end
+    _FOR_.insert(L4_4, A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_A1_000_015)
+    table.insert(L4_4, A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_A1_000_020)
+    if A0_0:Menu(A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_Q1_000_000, unpack(L4_4)) == #L3_3 + 1 then
+      A2_2:LookAt(A1_1)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_200, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_201, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A0_0:Wait(10)
+      A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_SYSTEM_000_210, false)
+      A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_SYSTEM_000_211, true)
+      A0_0:Wait(10)
+    end
+    if A0_0:Menu(A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_Q1_000_000, unpack(L4_4)) > #L3_3 or 0 > A0_0:Menu(A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_Q1_000_000, unpack(L4_4)) then
+      return 0
+    end
+    return L3_3[A0_0:Menu(A0_0.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_Q1_000_000, unpack(L4_4))]
+  end
+  function CmnDefRelicWeapon060Adjust.OnScene00002(A0_5, A1_6, A2_7, ...)
+    local L4_9
+    L4_9 = (...)
+    A2_7:LookAt(A1_6)
+    A2_7:PlayActionTimeline(A0_5.ACTION_TIMELINE_EVENT_THINK, A1_6)
+    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_080, true)
+    A0_5:SystemTalk(A0_5.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_SYSTEM_000_081, false, L4_9)
+    A0_5:Wait(10)
+  end
+  function CmnDefRelicWeapon060Adjust.OnScene00003(A0_10, A1_11, A2_12, ...)
+    local L4_14
+    L4_14 = (...)
+    A2_12:LookAt(A1_11)
+    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_130, true)
+    A0_10:Wait(10)
+    A0_10:SystemTalk(A0_10.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_SYSTEM_000_135, true, L4_14)
+    A0_10:Wait(10)
+  end
+  function CmnDefRelicWeapon060Adjust.OnScene00004(A0_15, A1_16, A2_17, ...)
+    local L4_19, L5_20
+    L5_20 = ...
+    A2_17:LookAt(A1_16)
+    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK1, A1_16)
+    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_150, false)
+    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_151, true)
+    A2_17:CancelActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK1)
+    A0_15:Wait(10)
+    if A0_15:YesNo(A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_YESNO_Q1, A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_YESNO_YES, A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_YESNO_NO, A0_15.DEFAULT_NO, L5_20) == true then
+      A2_17:PlayActionTimeline(A0_15.ACTION1)
+      A2_17:WaitForActionTimeline(A0_15.ACTION1)
+      A0_15:SystemTalk(A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_SYSTEM_000_155, false)
+      A0_15:SystemTalk(A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_SYSTEM_000_156, false)
+      A0_15:SystemTalk(A0_15.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_SYSTEM_000_157, true)
+      return L4_19, L5_20
+    end
+    return 0, 0
+  end
+  function CmnDefRelicWeapon060Adjust.OnScene00005(A0_21, A1_22, A2_23, ...)
+    local L4_25, L5_26
+    L5_26 = ...
+    A2_23:LookAt(A1_22)
+    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_THINK, A1_22)
+    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_160, true)
+    A2_23:CancelActionTimeline(A0_21.ACTION_TIMELINE_EVENT_THINK)
+    A0_21:Wait(10)
+    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK2, A1_22)
+    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_161, true)
+    A2_23:CancelActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK2)
+    A0_21:Wait(10)
+    A0_21:RelicSphereUpgrade(L5_26, L5_26)
+    return 0
+  end
+  function CmnDefRelicWeapon060Adjust.OnScene00010(A0_27, A1_28, A2_29, ...)
+    local L4_31, L5_32, L6_33, L7_34
+    L5_32 = A2_29
+    L4_31 = A2_29.LookAt
+    L6_33 = A1_28
+    L4_31(L5_32, L6_33)
+    L5_32 = A2_29
+    L4_31 = A2_29.PlayActionTimeline
+    L6_33 = A0_27.ACTION_TIMELINE_EVENT_TALK2
+    L7_34 = A1_28
+    L4_31(L5_32, L6_33, L7_34)
+    L5_32 = A2_29
+    L4_31 = A2_29.Talk
+    L6_33 = A1_28
+    L7_34 = A0_27
+    L4_31(L5_32, L6_33, L7_34, A0_27.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_170, false)
+    L5_32 = A2_29
+    L4_31 = A2_29.Talk
+    L6_33 = A1_28
+    L7_34 = A0_27
+    L4_31(L5_32, L6_33, L7_34, A0_27.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_171, true)
+    L5_32 = A2_29
+    L4_31 = A2_29.CancelActionTimeline
+    L6_33 = A0_27.ACTION_TIMELINE_EVENT_TALK1
+    L4_31(L5_32, L6_33)
+    L5_32 = A0_27
+    L4_31 = A0_27.Wait
+    L6_33 = 10
+    L4_31(L5_32, L6_33)
+    L6_33 = ...
+    L7_34 = A0_27.RelicSphereUpgrade
+    L7_34 = L7_34(A0_27, L5_32, L5_32)
+    if L7_34 == true then
+      A2_29:PlayActionTimeline(A0_27.ACTION1)
+      A2_29:WaitForActionTimeline(A0_27.ACTION1)
+      A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_EVENT_ITEM, A1_28)
+      A2_29:Talk(A1_28, A0_27, A0_27.TEXT_CMNDEFRELICWEAPON060ADJUST_00249_JALZAHN_000_172, true, nil, nil, nil, A0_27.SPEAK_NORMAL_MIDDLE, L5_32)
+      A2_29:CancelActionTimeline(A0_27.ACTION_TIMELINE_EVENT_ITEM)
+      A0_27:Wait(10)
+    end
+    return L7_34, L4_31, L5_32
+  end
+end)()
+;(function()
+  local L0_35
+  L0_35 = CmnDefRelicWeapon060Adjust
+  L0_35.SCRIPT_VERSION = 1
+  L0_35 = CmnDefRelicWeapon060Adjust
+  function L0_35.IsAcceptEvent(A0_36, A1_37, A2_38, A3_39, A4_40, A5_41)
+    return A1_37:HaveAnyRelicWeapon060() == true
+  end
+end)()

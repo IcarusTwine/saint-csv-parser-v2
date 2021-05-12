@@ -1,0 +1,94 @@
+(function()
+  print("RegWilMinGuild loaded")
+  function RegWilMinGuild.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    if A1_1:IsQuestCompleted(A0_0.QUEST7) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_050, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_051, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST5) == true then
+      if A1_1:IsQuestCompleted(A0_0.QUEST6) == true then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_060, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_061, true)
+      else
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_040, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_041, true)
+      end
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST3) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_035, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_036, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST2) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_030, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_031, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      if A1_1:IsQuestCompleted(A0_0.QUEST1) == true and A1_1:IsQuestCompleted(A0_0.QUEST4) == false then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_SHOCKED)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_020, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_021, true)
+      else
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_SHOCKED)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_010, true)
+      end
+    else
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_1, true)
+    end
+  end
+  function RegWilMinGuild.OnScene00001(A0_3, A1_4, A2_5)
+    if A1_4:IsQuestCompleted(A0_3.QUEST0) == true then
+      while true do
+        if A0_3:Menu(A0_3.TEXT_REGWILMINGUILD_00065_Q2_000_001, A0_3.TEXT_REGWILMINGUILD_00065_A2_000_001, A0_3.TEXT_REGWILMINGUILD_00065_A2_000_002, A0_3.TEXT_REGWILMINGUILD_00065_A2_000_003) == 1 then
+          if A1_4:IsQuestCompleted(A0_3.QUEST7) == true then
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_200, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_201, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_202, true)
+          else
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_100, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_101, true)
+          end
+        elseif A0_3:Menu(A0_3.TEXT_REGWILMINGUILD_00065_Q2_000_001, A0_3.TEXT_REGWILMINGUILD_00065_A2_000_001, A0_3.TEXT_REGWILMINGUILD_00065_A2_000_002, A0_3.TEXT_REGWILMINGUILD_00065_A2_000_003) == 2 then
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK, A1_4)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_110, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_111, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_112, false)
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_113, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_114, true)
+        else
+          return 0
+        end
+      end
+    while true do
+      elseif A0_3:Menu(A0_3.TEXT_REGWILMINGUILD_00065_Q1_000_1, A0_3.TEXT_REGWILMINGUILD_00065_A1_000_1, A0_3.TEXT_REGWILMINGUILD_00065_A1_000_2, A0_3.TEXT_REGWILMINGUILD_00065_A1_000_3) == 1 then
+        A2_5:TurnTo(A1_4)
+        A2_5:WaitForTurn()
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES, A1_4)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_2, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_3, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_SHRUG, A1_4)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_4, true)
+      elseif A0_3:Menu(A0_3.TEXT_REGWILMINGUILD_00065_Q1_000_1, A0_3.TEXT_REGWILMINGUILD_00065_A1_000_1, A0_3.TEXT_REGWILMINGUILD_00065_A1_000_2, A0_3.TEXT_REGWILMINGUILD_00065_A1_000_3) == 2 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK, A1_4)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_5, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_6, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_7, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_YES, A1_4)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILMINGUILD_00065_ADALBERTA_000_8, true)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_6
+  L1_6 = RegWilMinGuild
+  L1_6.SCRIPT_VERSION = 1
+end)()

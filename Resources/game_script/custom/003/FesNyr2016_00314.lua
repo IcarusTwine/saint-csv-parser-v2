@@ -1,0 +1,100 @@
+(function()
+  print("FesNyr2016")
+  function FesNyr2016.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    if A2_2:GetBaseId() == A0_0.ENPC0 then
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_100, true)
+    elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_100, true)
+    else
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_100, true)
+    end
+    while true do
+      if A0_0:Menu(A0_0.TEXT_FESNYR2016_00314_000_1, A0_0.TEXT_FESNYR2016_00314_A1_000_1, A0_0.TEXT_FESNYR2016_00314_A1_000_2, A0_0.TEXT_FESNYR2016_00314_A1_000_3, A0_0.TEXT_FESNYR2016_00314_A1_000_4) == 1 then
+        if A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+          if A2_2:GetBaseId() == A0_0.ENPC0 then
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_110, false)
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_112, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_113, true)
+          elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_110, false)
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_112, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_113, true)
+          else
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_110, false)
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_112, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_113, true)
+          end
+        elseif A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_110, false)
+          A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_111, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_110, false)
+          A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_111, true)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_110_111, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_110, false)
+          A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_111, false)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_210_111, true)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2016_00314_000_1, A0_0.TEXT_FESNYR2016_00314_A1_000_1, A0_0.TEXT_FESNYR2016_00314_A1_000_2, A0_0.TEXT_FESNYR2016_00314_A1_000_3, A0_0.TEXT_FESNYR2016_00314_A1_000_4) == 2 then
+        if A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_120, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_121, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_122, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_120, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_121, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_122, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_120, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_121, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_122, true)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2016_00314_000_1, A0_0.TEXT_FESNYR2016_00314_A1_000_1, A0_0.TEXT_FESNYR2016_00314_A1_000_2, A0_0.TEXT_FESNYR2016_00314_A1_000_3, A0_0.TEXT_FESNYR2016_00314_A1_000_4) == 3 then
+        if A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_130, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_000_131, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_130, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_100_131, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_130, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2016_00314_HOSAKANN_200_131, true)
+        end
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_3
+  L1_3 = FesNyr2016
+  L1_3.SCRIPT_VERSION = 1
+end)()

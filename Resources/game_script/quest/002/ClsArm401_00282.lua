@@ -1,0 +1,356 @@
+(function()
+  print("ClsArm401 loaded")
+  function ClsArm401.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    if A0_0:QuestOffer(A2_2, A1_1) then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:WaitForTurn()
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM401_00282_HNAANZA_000_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM401_00282_HNAANZA_000_001, false)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ANGRY)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM401_00282_HNAANZA_000_002, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM401_00282_HNAANZA_000_003, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM401_00282_HNAANZA_000_004, false)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM401_00282_HNAANZA_000_005, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM401_00282_HNAANZA_000_006, true)
+      A0_0:QuestAccepted()
+      return 1
+    else
+      return 0
+    end
+  end
+  function ClsArm401.OnScene00001(A0_3, A1_4, A2_5)
+  end
+  function ClsArm401.OnScene00002(A0_6, A1_7, A2_8)
+    A2_8:LookAt(A1_7)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CLSARM401_00282_BLANSTYR_000_010, false)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CLSARM401_00282_BLANSTYR_000_011, false)
+    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ADD_NO)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CLSARM401_00282_BLANSTYR_000_012, false)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CLSARM401_00282_BLANSTYR_000_013, false)
+    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CLSARM401_00282_BLANSTYR_000_014, false)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CLSARM401_00282_BLANSTYR_000_015, false)
+    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CLSARM401_00282_BLANSTYR_000_016, true)
+  end
+  function ClsArm401.OnScene00003(A0_9, A1_10, A2_11)
+    local L3_12, L4_13, L5_14, L6_15, L7_16, L8_17, L9_18
+    L4_13 = A2_11
+    L3_12 = A2_11.TurnTo
+    L5_14 = A1_10
+    L3_12(L4_13, L5_14, L6_15)
+    L4_13 = A2_11
+    L3_12 = A2_11.WaitForTurn
+    L3_12(L4_13)
+    L4_13 = A2_11
+    L3_12 = A2_11.PlayActionTimeline
+    L5_14 = A0_9.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_12(L4_13, L5_14)
+    L4_13 = A2_11
+    L3_12 = A2_11.Talk
+    L5_14 = A1_10
+    L3_12(L4_13, L5_14, L6_15, L7_16, L8_17)
+    L4_13 = A0_9
+    L3_12 = A0_9.GetQuestId
+    L3_12 = L3_12(L4_13)
+    L5_14 = A1_10
+    L4_13 = A1_10.GetQuestSequence
+    L4_13 = L4_13(L5_14, L6_15)
+    L5_14 = 1
+    for L9_18 = 1, L5_14 do
+      A0_9:SetNpcTradeItem(L9_18, unpack(A0_9:GetNpcTradeItemInfo(L9_18, L4_13, A2_11:GetBaseId())))
+    end
+    L9_18 = nil
+    if L6_15 == 1 then
+      return L6_15
+    else
+    end
+  end
+  function ClsArm401.OnScene00004(A0_19, A1_20, A2_21)
+    local L3_22, L4_23
+    L4_23 = A0_19
+    L3_22 = A0_19.LoadMovePosition
+    L3_22(L4_23, A0_19.LOC_POS_MAN1)
+    L3_22 = nil
+    L4_23 = A0_19.CreateCharacter
+    L4_23 = L4_23(A0_19, A0_19.LOC_MAN1, A0_19.LOC_POS_MAN1)
+    L3_22 = L4_23
+    L4_23 = L3_22.Equip
+    L4_23(L3_22, A0_19.EQUIP_TYPE_ARMOR, A0_19.LOC_ITEM1, A0_19.ARMOR_SLOT_BODY)
+    L4_23 = L3_22.Idle
+    L4_23(L3_22, A0_19.LOC_ACTION1)
+    L4_23 = L3_22.PlayActionTimeline
+    L4_23(L3_22, A0_19.LOC_ACTION1)
+    L4_23 = nil
+    L4_23 = A0_19:CreateCharacter(A0_19.LOC_MAN1, L3_22, A0_19.ARRANGE_TYPE_FRONT, 1)
+    L4_23:Visible(A0_19.VISIBLE_HIDE)
+    A2_21:Position(L4_23, A0_19.ARRANGE_TYPE_LEFT, 1)
+    A2_21:Idle(A0_19.ACTION_TIMELINE_EVENT_BASE_IDLE)
+    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EVENT_BASE_IDLE1)
+    A2_21:Direction(L3_22)
+    A2_21:LookAt(L3_22)
+    A1_20:Position(L4_23, A0_19.ARRANGE_TYPE_RIGHT, 1)
+    A1_20:Direction(A2_21)
+    A1_20:LookAt(A2_21)
+    A1_20:Visible(A0_19.VISIBLE_HIDE)
+    A0_19:PlayCamera(9, L3_22)
+    A0_19:Zoom(-0.2, -0.2, 0, 0, 0)
+    A0_19:UpdownDolly(0.3, 0.3, 0, 0, 0)
+    A0_19:Wait(30)
+    A0_19:ChangeBGMVolume(0.5)
+    A0_19:FadeIn(A0_19.FADE_DEFAULT)
+    A0_19:WaitForFade()
+    A0_19:Wait(10)
+    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CLSARM401_00282_HNAANZA_000_021, false, nil, nil, nil, A0_19.LIP_TYPE_NONE)
+    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CLSARM401_00282_HNAANZA_000_022, true, nil, nil, nil, A0_19.LIP_TYPE_NONE)
+    A0_19:Wait(10)
+    A0_19:PlayTwoShotCamera(A0_19.TWOSHOT_TYPE_FRONT, A1_20, A2_21, 0.5)
+    A0_19:FollowLookAt(A0_19.FOLLOW_LOOKAT_ON)
+    A0_19:SideDolly(-2, -2, 0, 0, 0)
+    A1_20:Visible(A0_19.VISIBLE_SHOW)
+    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_21:WaitForActionTimeline(A0_19.ACTION_TIMELINE_EVENT_ADD_YES)
+    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EVENT_ADD_TALK)
+    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CLSARM401_00282_HNAANZA_000_023, true, nil, nil, nil, A0_19.SPEAK_NORMAL_MIDDLE)
+    A0_19:Wait(10)
+    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CLSARM401_00282_HNAANZA_000_024, true, nil, nil, nil, A0_19.SPEAK_NORMAL_MIDDLE)
+    A2_21:WaitForActionTimeline(A0_19.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    A2_21:LookAt(A1_20)
+    A0_19:Wait(10)
+    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EVENT_TALK2)
+    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CLSARM401_00282_HNAANZA_000_025, true, nil, nil, nil, A0_19.SPEAK_NORMAL_MIDDLE)
+    A2_21:CancelActionTimeline(A0_19.ACTION_TIMELINE_EVENT_TALK2)
+    A0_19:Wait(10)
+    A2_21:TurnTo(A1_20, false)
+    A2_21:WaitForTurn()
+    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EMOTE_POINT, nil, A0_19.AUTO_SHAKE_ENABLE)
+    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CLSARM401_00282_HNAANZA_000_026, true, nil, nil, nil, A0_19.SPEAK_NORMAL_MIDDLE)
+    A2_21:AutoShake(false)
+    A0_19:Wait(10)
+    A0_19:FadeOut(A0_19.FADE_DEFAULT)
+    A0_19:WaitForFade()
+    A1_20:LookAt()
+    A2_21:LookAt()
+  end
+  function ClsArm401.OnScene00005(A0_24, A1_25, A2_26)
+    local L3_27, L4_28, L5_29, L6_30, L7_31, L8_32, L9_33
+    L4_28 = A2_26
+    L3_27 = A2_26.LookAt
+    L5_29 = A1_25
+    L3_27(L4_28, L5_29)
+    L4_28 = A2_26
+    L3_27 = A2_26.Talk
+    L5_29 = A1_25
+    L3_27(L4_28, L5_29, L6_30, L7_31, L8_32)
+    L4_28 = A0_24
+    L3_27 = A0_24.GetQuestId
+    L3_27 = L3_27(L4_28)
+    L5_29 = A1_25
+    L4_28 = A1_25.GetQuestSequence
+    L4_28 = L4_28(L5_29, L6_30)
+    L5_29 = 1
+    for L9_33 = 1, L5_29 do
+      A0_24:SetNpcTradeItem(L9_33, unpack(A0_24:GetNpcTradeItemInfo(L9_33, L4_28, A2_26:GetBaseId())))
+    end
+    L9_33 = nil
+    if L6_30 == 1 then
+      return L6_30
+    else
+    end
+  end
+  function ClsArm401.OnScene00006(A0_34, A1_35, A2_36)
+    local L3_37, L4_38
+    L4_38 = A2_36
+    L3_37 = A2_36.PlayActionTimeline
+    L3_37(L4_38, A0_34.ACTION_TIMELINE_EVENT_ADD_YES)
+    L4_38 = A2_36
+    L3_37 = A2_36.Talk
+    L3_37(L4_38, A1_35, A0_34, A0_34.TEXT_CLSARM401_00282_BLANSTYR_000_031, true)
+    L4_38 = A0_34
+    L3_37 = A0_34.QuestReward
+    L4_38 = L3_37(L4_38, A2_36, A1_35)
+    if L3_37 then
+      A0_34:QuestCompleted()
+    else
+      A0_34:CancelNpcTrade()
+    end
+    return L3_37, L4_38
+  end
+  function ClsArm401.IsTodoChecked(A0_39, A1_40, A2_41)
+    local L3_42
+    L3_42 = A0_39.GetQuestId
+    L3_42 = L3_42(A0_39)
+    if A1_40:GetQuestSequence(L3_42) == A0_39.SEQ_0 then
+      return false
+    end
+    if A2_41 == 0 then
+      return A1_40:GetQuestUI8AL(L3_42) >= 1
+    elseif A2_41 == 1 then
+      return A1_40:GetQuestUI8AL(L3_42) >= 1
+    elseif A2_41 == 2 then
+      return false
+    end
+  end
+end)()
+;(function()
+  local L0_43, L1_44
+  L0_43 = ClsArm401
+  L0_43.SCRIPT_VERSION = 1
+  L0_43 = ClsArm401
+  function L1_44(A0_45)
+    local L1_46
+  end
+  L0_43.OnInitialize = L1_44
+  L0_43 = ClsArm401
+  function L1_44(A0_47, A1_48, A2_49)
+    local L3_50
+    L3_50 = A0_47.GetQuestId
+    L3_50 = L3_50(A0_47)
+    if A1_48:GetQuestSequence(L3_50) == A0_47.SEQ_0 then
+      return 0, 0
+    end
+    if A2_49 == 0 then
+      return 0, 0
+    elseif A2_49 == 1 then
+      return A1_48:GetNumOfItems(A0_47.RITEM0, A0_47.NUM_OF_ITEMS_FILTER_HQ, false, true), 1
+    elseif A2_49 == 2 then
+      return A1_48:GetNumOfItems(A0_47.RITEM0, A0_47.NUM_OF_ITEMS_FILTER_HQ, false, true), 1
+    end
+  end
+  L0_43.GetTodoArgs = L1_44
+  L0_43 = ClsArm401
+  function L1_44(A0_51, A1_52, A2_53)
+    local L3_54
+    L3_54 = A0_51.GetQuestId
+    L3_54 = L3_54(A0_51)
+    if A1_52:GetQuestSequence(L3_54) == A0_51.SEQ_2 then
+      if A2_53 == A0_51.ACTOR0 then
+        return A0_51.RITEM0, true
+      end
+    elseif A1_52:GetQuestSequence(L3_54) == A0_51.SEQ_FINISH and A2_53 == A0_51.ACTOR1 then
+      return A0_51.RITEM0, true
+    end
+  end
+  L0_43.GetListenItems = L1_44
+  L0_43 = ClsArm401
+  function L1_44(A0_55, A1_56, A2_57, A3_58, A4_59, A5_60, A6_61)
+    local L7_62
+    L7_62 = A0_55.GetQuestId
+    L7_62 = L7_62(A0_55)
+    if A1_56:GetQuestSequence(L7_62) == A0_55.SEQ_OFFER then
+    elseif A1_56:GetQuestSequence(L7_62) == A0_55.SEQ_1 then
+    elseif A1_56:GetQuestSequence(L7_62) == A0_55.SEQ_2 then
+      if A3_58 == A0_55.ACTOR0 and A1_56:GetNumOfItems(A0_55.RITEM0, A0_55.NUM_OF_ITEMS_FILTER_HQ, false, true) < 1 then
+        return false, A0_55.QUALIFICATION_ITEM
+      end
+    elseif A1_56:GetQuestSequence(L7_62) == A0_55.SEQ_FINISH and A3_58 == A0_55.ACTOR1 and A1_56:GetNumOfItems(A0_55.RITEM0, A0_55.NUM_OF_ITEMS_FILTER_HQ, false, true) < 1 and 1 > A1_56:GetQuestUI8AH(L7_62) then
+      return false, A0_55.QUALIFICATION_ITEM
+    end
+    return true, 0
+  end
+  L0_43.IsQualified = L1_44
+  L0_43 = ClsArm401
+  function L1_44(A0_63, A1_64, A2_65)
+    local L3_66
+    L3_66 = A0_63.GetQuestId
+    L3_66 = L3_66(A0_63)
+    if A1_64:GetQuestSequence(L3_66) == A0_63.SEQ_1 then
+    elseif A1_64:GetQuestSequence(L3_66) == A0_63.SEQ_2 then
+    elseif A1_64:GetQuestSequence(L3_66) == A0_63.SEQ_FINISH then
+    end
+    return A0_63:IsBattleNpcTriggerOwner(A1_64, A2_65, false), false
+  end
+  L0_43.GetGimmickState = L1_44
+  L0_43 = ClsArm401
+  function L1_44(A0_67, A1_68, A2_69, A3_70)
+    if A2_69 == A0_67.SEQ_0 then
+    elseif A2_69 == A0_67.SEQ_1 then
+    elseif A2_69 == A0_67.SEQ_2 then
+      if A3_70 == A0_67.ACTOR0 then
+        ({})[1] = {
+          A0_67.RITEM0,
+          1,
+          true,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        }
+        return ({})[A1_68]
+      end
+    elseif A2_69 == A0_67.SEQ_FINISH and A3_70 == A0_67.ACTOR1 then
+      ({})[1] = {
+        A0_67.RITEM0,
+        1,
+        true,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      }
+      return ({})[A1_68]
+    end
+  end
+  L0_43.GetNpcTradeItemInfo = L1_44
+  L0_43 = ClsArm401
+  function L1_44(A0_71, A1_72, A2_73)
+    local L3_74, L4_75, L5_76, L6_77, L7_78, L8_79, L9_80, L10_81
+    L3_74 = {}
+    L4_75 = A0_71.SEQ_0
+    if A1_72 == L4_75 then
+    else
+      L4_75 = A0_71.SEQ_1
+      if A1_72 == L4_75 then
+      else
+        L4_75 = A0_71.SEQ_2
+        if A1_72 == L4_75 then
+          L4_75 = A0_71.ACTOR0
+          if A2_73 == L4_75 then
+            L4_75 = 1
+            L5_76 = 1
+            for L9_80 = 1, L4_75 do
+              for _FORV_13_ = 1, #A0_71:GetNpcTradeItemInfo(L9_80, A1_72, A2_73) do
+                L3_74[L5_76] = A0_71:GetNpcTradeItemInfo(L9_80, A1_72, A2_73)[_FORV_13_]
+                L5_76 = L5_76 + 1
+              end
+            end
+          end
+        else
+          L4_75 = A0_71.SEQ_FINISH
+          if A1_72 == L4_75 then
+            L4_75 = A0_71.ACTOR1
+            if A2_73 == L4_75 then
+              L4_75 = 1
+              L5_76 = 1
+              for L9_80 = 1, L4_75 do
+                for _FORV_13_ = 1, #A0_71:GetNpcTradeItemInfo(L9_80, A1_72, A2_73) do
+                  L3_74[L5_76] = A0_71:GetNpcTradeItemInfo(L9_80, A1_72, A2_73)[_FORV_13_]
+                  L5_76 = L5_76 + 1
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    return L3_74
+  end
+  L0_43.GetNpcTradeItems = L1_44
+end)()

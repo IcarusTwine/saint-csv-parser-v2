@@ -1,0 +1,71 @@
+(function()
+  print("CtsErkEureka1LotteryExchangeShop")
+  function CtsErkEureka1LotteryExchangeShop.OnScene00000(A0_0, A1_1, A2_2)
+  end
+  function CtsErkEureka1LotteryExchangeShop.OnScene00001(A0_3, A1_4, A2_5)
+    A2_5:TurnTo(A1_4, false)
+    A2_5:WaitForTurn()
+    if A1_4:IsQuestCompleted(A0_3.QUEST_01) == false then
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_UPSET)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_RGHONATI_100_000, true)
+    elseif A2_5:GetBaseId() == A0_3.ENPC_01 then
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_ME)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_RGHONATI_110_000, true)
+    else
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_EXS00449_000_000, true)
+    end
+    return A0_3.EUREKA_EVENT_RESULT_NEXT
+  end
+  function CtsErkEureka1LotteryExchangeShop.OnScene00002(A0_6, A1_7, A2_8)
+    local L3_9
+    L3_9 = A0_6.EUREKA_EVENT_RESULT_NEXT
+    return L3_9
+  end
+  function CtsErkEureka1LotteryExchangeShop.OnScene00003(A0_10, A1_11, A2_12)
+    local L3_13
+    L3_13 = A0_10.EUREKA_EVENT_RESULT_NEXT
+    return L3_13
+  end
+  function CtsErkEureka1LotteryExchangeShop.OnScene00004(A0_14, A1_15, A2_16)
+    A2_16:TurnTo(A1_15, false)
+    A2_16:WaitForTurn()
+    while true do
+      if A0_14:Menu(A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_Q1_000_000, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_A1_000_001, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_A1_000_002, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_A1_000_003) == 1 then
+        return A0_14.SCENE_RESULT_START_SHOP
+      elseif A0_14:Menu(A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_Q1_000_000, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_A1_000_001, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_A1_000_002, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_A1_000_003) == 2 then
+        if A2_16:GetBaseId() == A0_14.ENPC_01 then
+          A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_ME)
+          A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_RGHONATI_100_010, true)
+          A0_14:Wait(10)
+          A0_14:SystemTalk(A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_SYSTEM_000_011, false)
+          A0_14:SystemTalk(A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_SYSTEM_000_012, true)
+          A0_14:Wait(10)
+          A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_ME)
+        else
+          A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_ME)
+          A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_EXS00449_000_010, true)
+          A0_14:Wait(10)
+          A0_14:SystemTalk(A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_SYSTEM_000_011, false)
+          A0_14:SystemTalk(A0_14.TEXT_CTSERKEUREKA1LOTTERYEXCHANGESHOP_00449_SYSTEM_000_012, true)
+          A0_14:Wait(10)
+          A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_ME)
+        end
+      else
+        return 0
+      end
+    end
+    return A0_14.EUREKA_EVENT_RESULT_END
+  end
+end)()
+;(function()
+  local L0_17
+  L0_17 = CtsErkEureka1LotteryExchangeShop
+  L0_17.SCRIPT_VERSION = 2
+  L0_17 = CtsErkEureka1LotteryExchangeShop
+  L0_17.SCENE_RESULT_START_SHOP = 1
+  L0_17 = CtsErkEureka1LotteryExchangeShop
+  function L0_17.OnInitialize(A0_18)
+    A0_18:AddNestEventHandler(A0_18.SHOP_HANDLER_ID)
+  end
+end)()

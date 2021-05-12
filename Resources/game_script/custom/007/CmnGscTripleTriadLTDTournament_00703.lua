@@ -1,0 +1,84 @@
+(function()
+  print("CmnGscTripleTriadLTDTournament")
+  function CmnGscTripleTriadLTDTournament.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_CARDTOURNAMENT_000, true)
+  end
+  function CmnGscTripleTriadLTDTournament.OnScene00001(A0_3, A1_4, A2_5, A3_6, A4_7)
+    local L5_8, L6_9, L7_10, L8_11
+    L6_9 = A4_7 / 3600
+    L7_10 = A4_7 % 3600
+    L7_10 = L7_10 / 60
+    if A3_6 == 1 then
+      L8_11 = A0_3.FormatString
+      L8_11 = L8_11(A0_3, A0_3.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_SYSTEM_002)
+      L5_8 = L8_11
+    else
+      L8_11 = A0_3.FormatString
+      L8_11 = L8_11(A0_3, A0_3.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_SYSTEM_003, L6_9, L7_10)
+      L5_8 = L8_11
+    end
+    L8_11 = A0_3.Menu
+    L8_11 = L8_11(A0_3, L5_8, A0_3.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_Q1_000, A0_3.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_Q1_001, A0_3.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_Q1_002, A0_3.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_Q1_003)
+    if L8_11 == 2 then
+      A0_3:OpenLuaUI(A0_3.OPEN_LUA_UI_TRIPLE_TRIAD_SCHEDULE)
+    elseif L8_11 == 3 then
+      return L8_11, A0_3.DESCRIPTION
+    end
+    return L8_11
+  end
+  function CmnGscTripleTriadLTDTournament.OnScene00002(A0_12, A1_13, A2_14)
+    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK2)
+    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_CARDTOURNAMENT_007, false)
+    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EMOTE_ME)
+    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_CARDTOURNAMENT_008, true)
+  end
+  function CmnGscTripleTriadLTDTournament.OnScene00003(A0_15, A1_16, A2_17)
+    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_FACIAL_WORRY)
+    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_CARDTOURNAMENT_006, true)
+  end
+  function CmnGscTripleTriadLTDTournament.OnScene00004(A0_18, A1_19, A2_20)
+    A2_20:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK2)
+    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_CARDTOURNAMENT_009, true)
+    A0_18:Wait(10)
+    A0_18:SystemTalk(A0_18.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_SYSTEM_010, true)
+  end
+  function CmnGscTripleTriadLTDTournament.OnScene00005(A0_21, A1_22, A2_23, A3_24, A4_25, A5_26, A6_27)
+    local L7_28, L8_29, L9_30
+    if A4_25 == 0 and A5_26 == 0 and A6_27 == 0 then
+      L9_30 = A0_21
+      L8_29 = A0_21.FormatString
+      L8_29 = L8_29(L9_30, A0_21.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_SYSTEM_005)
+      L7_28 = L8_29
+    else
+      L9_30 = A0_21
+      L8_29 = A0_21.FormatString
+      L8_29 = L8_29(L9_30, A0_21.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_SYSTEM_105, A4_25, A5_26, A6_27)
+      L7_28 = L8_29
+    end
+    L9_30 = A0_21
+    L8_29 = A0_21.YesNo
+    L8_29 = L8_29(L9_30, L7_28)
+    L9_30 = A0_21.GetCFLanguage
+    L9_30 = L9_30(A0_21)
+    return L8_29, L9_30
+  end
+  function CmnGscTripleTriadLTDTournament.OnScene00006(A0_31, A1_32, A2_33)
+    A2_33:TurnTo(A1_32, false)
+    A2_33:WaitForTurn()
+    A2_33:PlayActionTimeline(A0_31.ACTION_TIMELINE_EMOTE_WELCOME)
+    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_CMNGSCTRIPLETRIADLTDTOURNAMENT_00703_CARDTOURNAMENT_001, true)
+  end
+end)()
+;(function()
+  local L0_34
+  L0_34 = CmnGscTripleTriadLTDTournament
+  L0_34.SCRIPT_VERSION = 2
+  L0_34 = CmnGscTripleTriadLTDTournament
+  function L0_34.OnInitialize(A0_35)
+    A0_35:AddNestEventHandler(A0_35.DESCRIPTION)
+  end
+end)()

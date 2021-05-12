@@ -1,0 +1,376 @@
+(function()
+  print("JobDefMnk")
+  function JobDefMnk.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    if A1_1:IsQuestCompleted(A0_0.LUCKMI112) == true and A0_0:isMnk300(A1_1) then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_070, true)
+    elseif A1_1:IsQuestCompleted(A0_0.LUCKMA103) == true and A0_0:isMnk300(A1_1) then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_060, true)
+    elseif A1_1:IsQuestCompleted(A0_0.STMBDF101) == true and A0_0:isMnk300(A1_1) then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_050, true)
+    elseif A1_1:IsQuestCompleted(A0_0.MNK700) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_040, true)
+    elseif A1_1:IsQuestCompleted(A0_0.MNK680) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_030, true)
+    elseif A1_1:IsQuestCompleted(A0_0.MNK650) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_020, true)
+    elseif A1_1:IsQuestCompleted(A0_0.MNK601) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_010, true)
+    elseif A1_1:IsQuestAccepted(A0_0.MNK601) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_100_001, true)
+    elseif A1_1:IsQuestCompleted(A0_0.MNK600) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_000_004, true)
+    elseif A1_1:IsQuestCompleted(A0_0.MNK501) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_000_003, true)
+    elseif A0_0:completeMnk500(A1_1) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_000_002, true)
+    elseif A0_0:isMnk300(A1_1) == true then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_000_001, true)
+    else
+      A2_2:LookAt(0, 0)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDEFMNK_00093_ERIK_000_000, true)
+    end
+  end
+  function JobDefMnk.OnScene00001(A0_3, A1_4, A2_5)
+    local L3_6
+    while true do
+      L3_6 = 0
+      if A1_4:IsQuestCompleted(A0_3.MNK700) == true then
+        L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_100_000, A0_3.TEXT_JOBDEFMNK_00093_A3_000_000, A0_3.TEXT_JOBDEFMNK_00093_A4_000_000, A0_3.TEXT_JOBDEFMNK_00093_A5_000_000, A0_3.TEXT_JOBDEFMNK_00093_A6_000_000, A0_3.TEXT_JOBDEFMNK_00093_A7_000_000, A0_3.TEXT_JOBDEFMNK_00093_A8_000_000, A0_3.TEXT_JOBDEFMNK_00093_A10_000_000, A0_3.TEXT_JOBDEFMNK_00093_A11_000_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+        if L3_6 == 12 then
+          L3_6 = 0
+        end
+      elseif A0_3:completeMnk500(A1_4) == true then
+        L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_100_000, A0_3.TEXT_JOBDEFMNK_00093_A3_000_000, A0_3.TEXT_JOBDEFMNK_00093_A4_000_000, A0_3.TEXT_JOBDEFMNK_00093_A5_000_000, A0_3.TEXT_JOBDEFMNK_00093_A6_000_000, A0_3.TEXT_JOBDEFMNK_00093_A7_000_000, A0_3.TEXT_JOBDEFMNK_00093_A8_000_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+        if L3_6 == 10 then
+          L3_6 = 0
+        end
+      elseif A0_3:acceptMnk500(A1_4) == true then
+        L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_100_000, A0_3.TEXT_JOBDEFMNK_00093_A3_000_000, A0_3.TEXT_JOBDEFMNK_00093_A4_000_000, A0_3.TEXT_JOBDEFMNK_00093_A5_000_000, A0_3.TEXT_JOBDEFMNK_00093_A6_000_000, A0_3.TEXT_JOBDEFMNK_00093_A7_000_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+        if L3_6 == 9 then
+          L3_6 = 0
+        end
+      elseif A0_3:isMnk451(A1_4) == true then
+        L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_100_000, A0_3.TEXT_JOBDEFMNK_00093_A3_000_000, A0_3.TEXT_JOBDEFMNK_00093_A4_000_000, A0_3.TEXT_JOBDEFMNK_00093_A5_000_000, A0_3.TEXT_JOBDEFMNK_00093_A6_000_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+        if L3_6 == 8 then
+          L3_6 = 0
+        end
+      elseif A0_3:isMnk450(A1_4) == true then
+        L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_100_000, A0_3.TEXT_JOBDEFMNK_00093_A3_000_000, A0_3.TEXT_JOBDEFMNK_00093_A4_000_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+        if L3_6 == 6 then
+          L3_6 = 0
+        end
+      elseif A0_3:isMnk400(A1_4) == true then
+        L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_100_000, A0_3.TEXT_JOBDEFMNK_00093_A3_000_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+        if L3_6 == 5 then
+          L3_6 = 0
+        end
+      elseif A0_3:isMnk350(A1_4) == true then
+        L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_000_000, A0_3.TEXT_JOBDEFMNK_00093_A2_100_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+        if L3_6 == 4 then
+          L3_6 = 0
+        end
+      else
+        if A0_3:isMnk300(A1_4) == true then
+          L3_6 = A0_3:Menu(A0_3.TEXT_JOBDEFMNK_00093_Q1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A1_000_000, A0_3.TEXT_JOBDEFMNK_00093_A9_000_000)
+          if L3_6 == 2 then
+            L3_6 = 0
+          end
+        else
+        end
+      end
+      if L3_6 == 1 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_010, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_011, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_100_011, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_101_011, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_012, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_100_012, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_013, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_100_013, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_014, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_015, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_016, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_017, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_018, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_019, true)
+      elseif L3_6 == 2 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_020, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_021, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_022, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_023, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_024, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_025, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_026, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_027, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_028, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_029, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_030, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_031, true)
+      elseif L3_6 == 3 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_032, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_033, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_034, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_035, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_036, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_037, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_038, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_039, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_100_039, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_101_039, true)
+      elseif L3_6 == 4 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_040, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_041, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_042, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_043, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_044, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_045, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_046, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_047, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_048, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_049, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_050, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_051, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_052, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_053, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_054, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_055, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_056, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_057, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_058, true)
+      elseif L3_6 == 5 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_060, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_061, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_062, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_063, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_064, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_065, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_066, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_067, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_068, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_069, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_070, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_071, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_072, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_073, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_074, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_075, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_076, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_077, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_078, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_079, true)
+      elseif L3_6 == 6 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_090, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_091, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_092, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_093, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_094, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_095, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_096, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_097, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_098, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_099, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_100, true)
+      elseif L3_6 == 7 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_110, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_111, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_112, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_113, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_114, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_115, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_116, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_117, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_118, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_119, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_120, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_121, true)
+      elseif L3_6 == 8 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_130, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_131, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_132, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_133, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_134, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_135, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_136, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_HUH)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_137, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_138, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_139, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_140, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_141, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_142, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_143, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_144, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_145, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_146, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_147, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_148, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_149, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_150, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_151, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_152, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_153, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_154, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_155, true)
+      elseif L3_6 == 9 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_160, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_161, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_162, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_163, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_164, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_165, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_166, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_167, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_168, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_HUH)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_169, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_170, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_171, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_172, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_173, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_174, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_175, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_176, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_177, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_178, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_179, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_180, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_181, true)
+      elseif L3_6 == 10 then
+        if A1_4:IsQuestCompleted(A0_3.LUCKBC002) == true then
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ARMS)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_205, false)
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_206, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_207, false)
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_208, true)
+        else
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_200, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_201, false)
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ARMS)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_202, true)
+        end
+      elseif L3_6 == 11 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_210, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_211, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_212, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_213, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_214, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_215, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_NO)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBDEFMNK_00093_ERIK_000_216, true)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L0_7, L1_8
+  L0_7 = JobDefMnk
+  L0_7.SCRIPT_VERSION = 1
+  L0_7 = JobDefMnk
+  function L1_8(A0_9, A1_10)
+    return A1_10:IsQuestCompleted(A0_9.MNK300) == true or A1_10:IsQuestAccepted(A0_9.MNK300) == true
+  end
+  L0_7.isMnk300 = L1_8
+  L0_7 = JobDefMnk
+  function L1_8(A0_11, A1_12)
+    return A1_12:IsQuestCompleted(A0_11.MNK350) == true or A1_12:IsQuestAccepted(A0_11.MNK350) == true
+  end
+  L0_7.isMnk350 = L1_8
+  L0_7 = JobDefMnk
+  function L1_8(A0_13, A1_14)
+    return A1_14:IsQuestCompleted(A0_13.MNK400) == true or A1_14:IsQuestAccepted(A0_13.MNK400) == true
+  end
+  L0_7.isMnk400 = L1_8
+  L0_7 = JobDefMnk
+  function L1_8(A0_15, A1_16)
+    return A1_16:IsQuestCompleted(A0_15.MNK450) == true or A1_16:IsQuestAccepted(A0_15.MNK450) == true
+  end
+  L0_7.isMnk450 = L1_8
+  L0_7 = JobDefMnk
+  function L1_8(A0_17, A1_18)
+    return A1_18:IsQuestCompleted(A0_17.MNK451) == true or A1_18:IsQuestAccepted(A0_17.MNK451) == true
+  end
+  L0_7.isMnk451 = L1_8
+  L0_7 = JobDefMnk
+  function L1_8(A0_19, A1_20)
+    return A1_20:IsQuestAccepted(A0_19.MNK500) == true
+  end
+  L0_7.acceptMnk500 = L1_8
+  L0_7 = JobDefMnk
+  function L1_8(A0_21, A1_22)
+    return A1_22:IsQuestCompleted(A0_21.MNK500) == true
+  end
+  L0_7.completeMnk500 = L1_8
+end)()

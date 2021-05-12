@@ -1,0 +1,145 @@
+(function()
+  print("RegFstArmorCraftsmanLegendary")
+  function RegFstArmorCraftsmanLegendary.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_000, true)
+    A0_0:Wait(10)
+    if A1_1:IsQuestCompleted(66241) == true and true == false then
+      A0_0:SystemTalk(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_SYSTEM_000_001, true)
+      A0_0:Wait(10)
+    end
+    if A0_0:isRelicCheck(A1_1) >= 1 == true and A1_1:IsQuestCompleted(A0_0.QUEST_JOB_REL_103) == true and A1_1:IsQuestCompleted(A0_0.QUEST_SUB_FST_980) == true then
+      while true do
+        if A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_2, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_3, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 1 then
+          A0_0:TalkZodiac(A1_1, A2_2)
+        elseif A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_2, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_3, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 2 then
+          A0_0:TalkAnima(A1_1, A2_2)
+        elseif A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_2, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_3, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 3 then
+          A0_0:TalkKettle(A1_1, A2_2)
+        else
+          return 0
+        end
+      end
+    elseif A0_0:isRelicCheck(A1_1) >= 1 == true and A1_1:IsQuestCompleted(A0_0.QUEST_JOB_REL_103) == false and A1_1:IsQuestCompleted(A0_0.QUEST_SUB_FST_980) == false then
+      while true do
+        if A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 1 then
+          A0_0:TalkZodiac(A1_1, A2_2)
+        else
+          return 0
+        end
+      end
+    elseif A0_0:isRelicCheck(A1_1) >= 1 == true and A1_1:IsQuestCompleted(A0_0.QUEST_JOB_REL_103) == true and A1_1:IsQuestCompleted(A0_0.QUEST_SUB_FST_980) == false then
+      while true do
+        if A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_2, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 1 then
+          A0_0:TalkZodiac(A1_1, A2_2)
+        elseif A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_2, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 2 then
+          A0_0:TalkAnima(A1_1, A2_2)
+        else
+          return 0
+        end
+      end
+    elseif A0_0:isRelicCheck(A1_1) >= 1 == true and A1_1:IsQuestCompleted(A0_0.QUEST_JOB_REL_103) == false and A1_1:IsQuestCompleted(A0_0.QUEST_SUB_FST_980) == true then
+      while true do
+        if A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_3, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 1 then
+          A0_0:TalkZodiac(A1_1, A2_2)
+        elseif A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_3, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 2 then
+          A0_0:TalkKettle(A1_1, A2_2)
+        else
+          return 0
+        end
+      end
+    else
+      while true do
+        if A0_0:isRelicCheck(A1_1) >= 1 == false and A1_1:IsQuestCompleted(A0_0.QUEST_JOB_REL_103) == true and A1_1:IsQuestCompleted(A0_0.QUEST_SUB_FST_980) == false then
+          if A0_0:Menu(A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_Q1_000_1, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_2, A0_0.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_A1_000_4) == 1 then
+            A0_0:TalkAnima(A1_1, A2_2)
+          else
+            return 0
+          end
+        end
+      end
+    end
+  end
+  function RegFstArmorCraftsmanLegendary.TalkZodiac(A0_3, A1_4, A2_5)
+    if A1_4:IsQuestCompleted(A0_3.QUEST_JOB_REL_017) == true then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_075, true)
+    elseif A1_4:IsQuestCompleted(A0_3.QUEST_JOB_REL_016) == true then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_070, true)
+    elseif A1_4:IsQuestCompleted(A0_3.QUEST_JOB_REL_010) == true then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_065, true)
+    elseif A1_4:IsQuestCompleted(A0_3.QUEST_JOB_REL_007) == true then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_060, true)
+    elseif A1_4:IsQuestCompleted(A0_3.QUEST_JOB_REL_004) == true then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_050, true)
+    elseif A1_4:IsQuestCompleted(A0_3.QUEST_JOB_REL_002) == true then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_040, true)
+    elseif A1_4:IsQuestCompleted(A0_3.QUEST_JOB_REL_001) == true then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_030, true)
+    elseif A0_3:isRelicCheck(A1_4) >= 9 then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_020, true)
+    elseif A0_3:isRelicCheck(A1_4) >= 1 then
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_010, true)
+    end
+  end
+  function RegFstArmorCraftsmanLegendary.TalkAnima(A0_6, A1_7, A2_8)
+    if A1_7:IsQuestCompleted(A0_6.QUEST_JOB_REL_510) == true then
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_110, true)
+    elseif A1_7:IsQuestCompleted(A0_6.QUEST_JOB_REL_400) == true then
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_101, false)
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_102, true)
+    elseif A1_7:IsQuestCompleted(A0_6.QUEST_JOB_REL_300) == true then
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_091, false)
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_092, true)
+    elseif A1_7:IsQuestCompleted(A0_6.QUEST_JOB_REL_200) == true then
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_079, false)
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_090, true)
+    elseif A1_7:IsQuestCompleted(A0_6.QUEST_JOB_REL_103) == true then
+      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_078, true)
+    end
+  end
+  function RegFstArmorCraftsmanLegendary.TalkKettle(A0_9, A1_10, A2_11)
+    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTARMORCRAFTSMANLEGENDARY_00159_GEROLT_000_080, true)
+  end
+  function RegFstArmorCraftsmanLegendary.OnScene00001(A0_12, A1_13, A2_14)
+  end
+end)()
+;(function()
+  local L0_15
+  L0_15 = RegFstArmorCraftsmanLegendary
+  L0_15.SCRIPT_VERSION = 1
+  L0_15 = RegFstArmorCraftsmanLegendary
+  function L0_15.isRelicCheck(A0_16, A1_17)
+    local L2_18
+    L2_18 = 0
+    if A1_17:IsQuestCompleted(A0_16.QUEST0) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST1) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST2) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST3) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST4) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST5) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST6) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST7) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST8) == true then
+      L2_18 = L2_18 + 1
+    end
+    if A1_17:IsQuestCompleted(A0_16.QUEST9) == true then
+      L2_18 = L2_18 + 1
+    end
+    return L2_18
+  end
+end)()

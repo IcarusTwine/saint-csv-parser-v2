@@ -1,0 +1,41 @@
+(function()
+  print("RegSeaCampOverlook")
+  function RegSeaCampOverlook.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_000, true)
+  end
+  function RegSeaCampOverlook.OnScene00001(A0_3, A1_4, A2_5)
+    while true do
+      if A0_3:Menu(A0_3.TEXT_REGSEACAMPOVERLOOK_00117_Q1_000_000, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_A1_000_001, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_A1_000_002, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_A1_000_003) == 1 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_010, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_011, false)
+        if A1_4:IsQuestCompleted(A0_3.QST_CHECK0) == true then
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_100_012, true)
+        else
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_012, true)
+        end
+      elseif A0_3:Menu(A0_3.TEXT_REGSEACAMPOVERLOOK_00117_Q1_000_000, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_A1_000_001, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_A1_000_002, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_A1_000_003) == 2 then
+        if A1_4:IsQuestCompleted(A0_3.QST_CHECK0) == true then
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_030, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_031, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_032, true)
+        else
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_020, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEACAMPOVERLOOK_00117_SWYGRAE_000_021, true)
+        end
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_6
+  L1_6 = RegSeaCampOverlook
+  L1_6.SCRIPT_VERSION = 1
+end)()

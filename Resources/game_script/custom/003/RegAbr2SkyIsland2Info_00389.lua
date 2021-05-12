@@ -1,0 +1,49 @@
+(function()
+  print("RegAbr2SkyIsland2Info")
+  function RegAbr2SkyIsland2Info.OnScene00000(A0_0, A1_1, A2_2)
+    if A2_2:GetBaseId() == A0_0.ENPC_01 then
+      A2_2:LookAt(A1_1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_MAUNIE_000_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_MAUNIE_000_001, true)
+    elseif A2_2:GetBaseId() == A0_0.ENPC_02 then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:WaitForTurn()
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_BARNABAIX_110_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_BARNABAIX_110_001, false)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_BARNABAIX_110_002, true)
+    elseif A2_2:GetBaseId() == A0_0.ENPC_03 then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:WaitForTurn()
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_DENNIA_210_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_DENNIA_210_001, false)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_DENNIA_210_002, true)
+    elseif A2_2:GetBaseId() == A0_0.ENPC_04 then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:WaitForTurn()
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_LYOLF_310_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_LYOLF_310_001, true)
+      A0_0:Wait(15)
+      A0_0:SystemTalk(A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_SYSTEM_310_010, false)
+      A0_0:SystemTalk(A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_SYSTEM_310_011, false)
+      A0_0:SystemTalk(A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_SYSTEM_310_012, true)
+    elseif A2_2:GetBaseId() == A0_0.ENPC_05 then
+      A2_2:TurnTo(A1_1, false)
+      A2_2:WaitForTurn()
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_IOFA_410_000, false)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_IOFA_410_001, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGABR2SKYISLAND2INFO_00389_IOFA_410_002, true)
+    end
+  end
+end)()
+;(function()
+  local L1_3
+  L1_3 = RegAbr2SkyIsland2Info
+  L1_3.SCRIPT_VERSION = 1
+end)()

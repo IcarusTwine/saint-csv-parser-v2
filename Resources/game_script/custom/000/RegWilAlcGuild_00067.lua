@@ -1,0 +1,113 @@
+(function()
+  print("RegWilAlcGuild")
+  function RegWilAlcGuild.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    if A1_1:IsQuestCompleted(A0_0.QUEST10) == true and A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_091, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST9) == true and A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHRUG)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_090, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST8) == true and A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_085, false)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_LAUGH)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_086, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST7) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_083, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_084, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST6) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_082, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST5) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_081, true)
+    elseif A1_1:IsQuestAccepted(A0_0.QUEST5) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_UPSET)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_080, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST3) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_070, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_071, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST2) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_065, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_066, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      if A1_1:IsQuestCompleted(A0_0.QUEST1) == true and A1_1:IsQuestCompleted(A0_0.QUEST4) == false then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_060, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_061, true)
+      else
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_050, true)
+      end
+    else
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILALCGUILD_00067_SEVERIAN_000, true)
+    end
+  end
+  function RegWilAlcGuild.OnScene00001(A0_3, A1_4, A2_5)
+    if A1_4:IsQuestCompleted(A0_3.QUEST0) == true then
+      while true do
+        if A0_3:Menu(A0_3.TEXT_REGWILALCGUILD_00067_Q2_000_001, A0_3.TEXT_REGWILALCGUILD_00067_A2_000_001, A0_3.TEXT_REGWILALCGUILD_00067_A2_000_002, A0_3.TEXT_REGWILALCGUILD_00067_A2_000_003) == 1 then
+          if A1_4:IsQuestCompleted(A0_3.QUEST7) == true then
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FINGER)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_200, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_201, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_202, true)
+          elseif A1_4:IsQuestCompleted(A0_3.QUEST3) == true then
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_105, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_LAUGH)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_106, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_107, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_108, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_109, true)
+          else
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_LAUGH)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_100, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_101, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_102, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_103, true)
+          end
+        elseif A0_3:Menu(A0_3.TEXT_REGWILALCGUILD_00067_Q2_000_001, A0_3.TEXT_REGWILALCGUILD_00067_A2_000_001, A0_3.TEXT_REGWILALCGUILD_00067_A2_000_002, A0_3.TEXT_REGWILALCGUILD_00067_A2_000_003) == 2 then
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_110, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_111, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_112, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_000_113, true)
+        else
+          return 0
+        end
+      end
+    while true do
+      elseif A0_3:Menu(A0_3.TEXT_REGWILALCGUILD_00067_Q1_000_1, A0_3.TEXT_REGWILALCGUILD_00067_A1_000_1, A0_3.TEXT_REGWILALCGUILD_00067_A1_000_2, A0_3.TEXT_REGWILALCGUILD_00067_A1_000_3) == 1 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_NO)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_010, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2, A1_4)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_011, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_012, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_013, true)
+      elseif A0_3:Menu(A0_3.TEXT_REGWILALCGUILD_00067_Q1_000_1, A0_3.TEXT_REGWILALCGUILD_00067_A1_000_1, A0_3.TEXT_REGWILALCGUILD_00067_A1_000_2, A0_3.TEXT_REGWILALCGUILD_00067_A1_000_3) == 2 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_020, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1, A1_4)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_021, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILALCGUILD_00067_SEVERIAN_022, true)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_6
+  L1_6 = RegWilAlcGuild
+  L1_6.SCRIPT_VERSION = 1
+end)()

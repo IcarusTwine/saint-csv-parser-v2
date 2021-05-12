@@ -1,0 +1,96 @@
+(function()
+  print("FesNyr2017")
+  function FesNyr2017.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    if A2_2:GetBaseId() == A0_0.ENPC0 then
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_100, true)
+    elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_000, true)
+    else
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_100, true)
+    end
+    while true do
+      if A0_0:Menu(A0_0.TEXT_FESNYR2017_00365_Q1_000_1, A0_0.TEXT_FESNYR2017_00365_A1_000_1, A0_0.TEXT_FESNYR2017_00365_A1_000_2, A0_0.TEXT_FESNYR2017_00365_A1_000_3, A0_0.TEXT_FESNYR2017_00365_A1_000_4) == 1 then
+        if A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+          if A2_2:GetBaseId() == A0_0.ENPC0 then
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_001, false)
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_003, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_004, true)
+          elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_001, false)
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_003, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_004, true)
+          else
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_001, false)
+            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_003, false)
+            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_004, true)
+          end
+        elseif A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_001, false)
+          A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_002, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_001, false)
+          A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_002, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_001, false)
+          A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_002, true)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2017_00365_Q1_000_1, A0_0.TEXT_FESNYR2017_00365_A1_000_1, A0_0.TEXT_FESNYR2017_00365_A1_000_2, A0_0.TEXT_FESNYR2017_00365_A1_000_3, A0_0.TEXT_FESNYR2017_00365_A1_000_4) == 2 then
+        if A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_010, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_011, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_012, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_010, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_011, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_012, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_010, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_011, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_012, true)
+        end
+      elseif A0_0:Menu(A0_0.TEXT_FESNYR2017_00365_Q1_000_1, A0_0.TEXT_FESNYR2017_00365_A1_000_1, A0_0.TEXT_FESNYR2017_00365_A1_000_2, A0_0.TEXT_FESNYR2017_00365_A1_000_3, A0_0.TEXT_FESNYR2017_00365_A1_000_4) == 3 then
+        if A2_2:GetBaseId() == A0_0.ENPC0 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_020, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_100_021, true)
+        elseif A2_2:GetBaseId() == A0_0.ENPC1 then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_020, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_000_021, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_020, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESNYR2017_00365_BIRDSERVER_200_021, true)
+        end
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_3
+  L1_3 = FesNyr2017
+  L1_3.SCRIPT_VERSION = 1
+end)()

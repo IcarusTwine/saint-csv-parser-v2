@@ -1,0 +1,310 @@
+(function()
+  print("CtsHwdInformation")
+  function CtsHwdInformation.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, true)
+    A2_2:WaitForTurn()
+    if A1_1:IsReward(A0_0.REWARD_HWD_GATHERER) == false then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      if A0_0:GetHWDDevelopmentLevel() < 11 then
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_120_000, true)
+      else
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_120_010, true)
+      end
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A0_0:GetHWDDevelopmentLevel() == 0 or A0_0:GetHWDDevelopmentLevel() == 1 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_050_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_050_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A0_0:GetHWDDevelopmentLevel() == 2 or A0_0:GetHWDDevelopmentLevel() == 3 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_060_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() == 4 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_070_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_070_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    elseif A0_0:GetHWDDevelopmentLevel() == 5 or A0_0:GetHWDDevelopmentLevel() == 6 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_080_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A0_0:GetHWDDevelopmentLevel() == 7 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_090_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_090_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+    elseif A0_0:GetHWDDevelopmentLevel() == 8 or A0_0:GetHWDDevelopmentLevel() == 9 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_100_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() == 10 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_110_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_110_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 11 and A0_0:GetHWDDevelopmentLevel() <= 20 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_170_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_170_010, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_170_020, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 21 and A0_0:GetHWDDevelopmentLevel() <= 29 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_180_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_180_010, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_180_020, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 30 and A0_0:GetHWDDevelopmentLevel() <= 38 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_190_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_190_010, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_190_020, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 39 and A0_0:GetHWDDevelopmentLevel() <= 47 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_200_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_200_010, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_200_020, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    elseif A0_0:GetHWDDevelopmentLevel() == 48 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_210_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_210_010, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_210_020, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 49 and A0_0:GetHWDDevelopmentLevel() <= 57 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_220_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 58 and A0_0:GetHWDDevelopmentLevel() <= 66 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_230_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_230_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 67 and A0_0:GetHWDDevelopmentLevel() <= 73 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_240_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_240_010, false)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_240_020, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 74 and A0_0:GetHWDDevelopmentLevel() <= 78 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_250_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_250_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    elseif A0_0:GetHWDDevelopmentLevel() == 79 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_260_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_260_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 80 and A0_0:GetHWDDevelopmentLevel() <= 84 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_270_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_270_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 85 and A0_0:GetHWDDevelopmentLevel() <= 93 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_280_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 94 and A0_0:GetHWDDevelopmentLevel() <= 96 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_290_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 97 and A0_0:GetHWDDevelopmentLevel() <= 101 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_300_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 102 and A0_0:GetHWDDevelopmentLevel() <= 107 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_310_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+    elseif A0_0:GetHWDDevelopmentLevel() >= 108 and A0_0:GetHWDDevelopmentLevel() <= 110 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_320_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    elseif A0_0:GetHWDDevelopmentLevel() == 111 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_330_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+    elseif A0_0:GetHWDDevelopmentLevel() == 112 then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_340_000, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    else
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_350_000, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_240, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_350_010, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    end
+  end
+  function CtsHwdInformation.OnScene01001(A0_3, A1_4, A2_5, A3_6)
+    A2_5:TurnTo(A1_4, false)
+    A2_5:WaitForTurn()
+    if A3_6 == 0 == true then
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GREETING)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_000, false)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_010, false)
+      A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GREETING)
+      if A0_3:GetHWDDevelopmentLevel() <= 111 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_020, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_030, false)
+        A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      else
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_021, false)
+        A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      end
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_040, false)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_050, true)
+      A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+    else
+      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_060, false)
+      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_070, true)
+      A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+    end
+  end
+  function CtsHwdInformation.OnScene01002(A0_7, A1_8, A2_9, A3_10, A4_11)
+    local L5_12
+    L5_12 = A3_10 == 0
+    A2_9:TurnTo(A1_8, false)
+    A2_9:WaitForTurn()
+    if L5_12 == true then
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_000, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_010, false)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      if A0_7:GetHWDDevelopmentLevel() <= 111 then
+        A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_THINK)
+        A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_020, false)
+        A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_THINK)
+        A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+        A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_030, false)
+        A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_040, false)
+        A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_050, false)
+        A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+      else
+      end
+    elseif A0_7:GetHWDDevelopmentLevel() < 49 then
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_100, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_110, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_120, true)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+      A0_7:Wait(10)
+      A0_7:SystemTalk(A0_7.TEXT_CTSHWDINFORMATION_00633_SYSTEM_040_090, true)
+      A0_7:Wait(10)
+    elseif A0_7:GetHWDDevelopmentLevel() < 80 then
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_130, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_140, false)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_150, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_160, true)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+    elseif A0_7:GetHWDDevelopmentLevel() < 112 then
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_170, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_180, false)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_190, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_200, false)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_210, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_220, true)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+    else
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_230, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_240, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_250, false)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_260, false)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_270, true)
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1)
+    end
+    if A1_8:IsReward(A0_7.REWARD_HWD_GATHERER) == false then
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
+      if A0_7:GetHWDDevelopmentLevel() < 11 then
+        A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_120_000, false)
+      elseif L5_12 == true then
+        A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_120_010, false)
+      else
+        A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_120_010, true)
+      end
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
+    else
+    end
+    if L5_12 == true then
+      A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_040_060, true)
+      if A0_7:GetHWDDevelopmentLevel() <= 111 then
+        A0_7:Wait(10)
+        A0_7:SystemTalk(A0_7.TEXT_CTSHWDINFORMATION_00633_SYSTEM_040_070, false)
+        A0_7:SystemTalk(A0_7.TEXT_CTSHWDINFORMATION_00633_SYSTEM_040_080, true)
+      else
+      end
+      A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_GREETING)
+    else
+    end
+  end
+  function CtsHwdInformation.OnScene09001(A0_13, A1_14, A2_15, A3_16)
+    A2_15:TurnTo(A1_14, true)
+    A2_15:WaitForTurn()
+    if A3_16 == 2 then
+      A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+      A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_020_000, true)
+      A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    elseif A3_16 == 4 then
+      A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+      A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_030_000, false)
+      A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_030_010, true)
+      A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A3_16 == 3 or A3_16 == 8 then
+      A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+      A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_130_000, true)
+      A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A3_16 == 7 then
+      A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+      A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_010_070, true)
+      A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A3_16 == 9 then
+      A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+      A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_140_000, true)
+      A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+    elseif A3_16 == 10 then
+      A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+      A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_150_000, true)
+      A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+    else
+      if A3_16 == 11 then
+        A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+        A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_160_000, true)
+        A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+      else
+      end
+    end
+  end
+  function CtsHwdInformation.OnScene09002(A0_17, A1_18, A2_19)
+    A2_19:TurnTo(A1_18, true)
+    A2_19:WaitForTurn()
+    A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EVENT_TALK2)
+    A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CTSHWDINFORMATION_00633_AUGEBERT_000_000, true)
+    A2_19:CancelActionTimeline(A0_17.ACTION_TIMELINE_EVENT_TALK2)
+  end
+end)()
+;(function()
+  local L1_20
+  L1_20 = CtsHwdInformation
+  L1_20.SCRIPT_VERSION = 2
+end)()

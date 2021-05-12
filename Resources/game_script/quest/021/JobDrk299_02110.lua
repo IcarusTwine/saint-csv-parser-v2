@@ -1,0 +1,54 @@
+(function()
+  print("JobDrk299 loaded")
+  function JobDrk299.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK, A1_1)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_000, true)
+    A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
+    A0_0:Wait(10)
+    A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+    A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1, A1_1)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_001, false)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_002, true)
+    A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+    A0_0:Wait(10)
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_NO)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_003, true)
+    A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_NO)
+    A0_0:Wait(10)
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_SURPRISED)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_004, true)
+    A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_SURPRISED)
+    A0_0:Wait(10)
+    if A0_0:YesNo(A0_0.TEXT_JOBDRK299_02110_Q1_000_005, A0_0.TEXT_JOBDRK299_02110_A1_000_006, A0_0.TEXT_JOBDRK299_02110_A2_000_007, A0_0.DEFAULT_NO) then
+      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+      A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHOCKED, A1_1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_010, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_011, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHOCKED)
+      A0_0:Wait(10)
+      return 1, 0
+    else
+      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHRUG)
+      A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHRUG)
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2, A1_1)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBDRK299_02110_CITIZEN02053_000_015, true)
+      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A0_0:Wait(10)
+      return 0, 0
+    end
+  end
+end)()
+;(function()
+  local L0_3
+  L0_3 = JobDrk299
+  L0_3.SCRIPT_VERSION = 1
+  L0_3 = JobDrk299
+  function L0_3.OnInitialize(A0_4)
+    local L1_5
+  end
+end)()

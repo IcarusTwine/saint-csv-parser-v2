@@ -1,0 +1,67 @@
+(function()
+  print("RegWilPglGuild")
+  function RegWilPglGuild.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    if A1_1:IsQuestCompleted(A0_0.QUEST4) and A1_1:IsQuestCompleted(A0_0.QUEST3) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILPGLGUILD_00064_HAMON_000_071, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST2) and A1_1:IsQuestCompleted(A0_0.QUEST3) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILPGLGUILD_00064_HAMON_000_070, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST1) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILPGLGUILD_00064_HAMON_000_060, false)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILPGLGUILD_00064_HAMON_000_061, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILPGLGUILD_00064_HAMON_000_050, true)
+    else
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILPGLGUILD_00064_HAMON_000, true)
+    end
+  end
+  function RegWilPglGuild.OnScene00001(A0_3, A1_4, A2_5)
+    if A1_4:IsQuestCompleted(A0_3.QUEST0) or A1_4:IsQuestCompleted(A0_3.QUEST1) == true then
+      while true do
+        if A0_3:Menu(A0_3.TEXT_REGWILPGLGUILD_00064_Q2_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A2_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A2_000_2, A0_3.TEXT_REGWILPGLGUILD_00064_A2_000_3) == 1 then
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_000_100, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_000_101, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_000_102, true)
+        elseif A0_3:Menu(A0_3.TEXT_REGWILPGLGUILD_00064_Q2_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A2_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A2_000_2, A0_3.TEXT_REGWILPGLGUILD_00064_A2_000_3) == 2 then
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_000_110, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_000_111, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_000_112, false)
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_LAUGH)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_000_113, true)
+        else
+          return 0
+        end
+      end
+    while true do
+      elseif A0_3:Menu(A0_3.TEXT_REGWILPGLGUILD_00064_Q1_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A1_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A1_000_2, A0_3.TEXT_REGWILPGLGUILD_00064_A1_000_3) == 1 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_ME)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_010, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_011, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_012, true)
+      elseif A0_3:Menu(A0_3.TEXT_REGWILPGLGUILD_00064_Q1_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A1_000_1, A0_3.TEXT_REGWILPGLGUILD_00064_A1_000_2, A0_3.TEXT_REGWILPGLGUILD_00064_A1_000_3) == 2 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_020, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_021, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_022, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_LAUGH)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILPGLGUILD_00064_HAMON_023, true)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_6
+  L1_6 = RegWilPglGuild
+  L1_6.SCRIPT_VERSION = 1
+end)()

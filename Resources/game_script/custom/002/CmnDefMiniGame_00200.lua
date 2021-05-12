@@ -1,0 +1,46 @@
+(function()
+  print("CmnDefMiniGame")
+  function CmnDefMiniGame.OnScene00000(A0_0, A1_1, A2_2)
+    local L3_3, L4_4
+    L3_3 = {}
+    L4_4 = {}
+    if A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV001) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV101) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV203) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV301) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV401) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV501) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV602) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV701) then
+      table.insert(L3_3, A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0001)
+      table.insert(L4_4, A0_0.MINIGAME_TYPE_PAZZLE)
+    end
+    if A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV101) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV203) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV301) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV401) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV501) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV602) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV701) then
+      table.insert(L3_3, A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0006)
+      table.insert(L4_4, A0_0.MINIGAME_TYPE_CONCENTRATION)
+    end
+    if A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV301) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV401) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV501) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV602) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV701) then
+      table.insert(L3_3, A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0007)
+      table.insert(L4_4, A0_0.MINIGAME_TYPE_MINI_DUNGEON)
+    end
+    if A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV602) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_ANV701) then
+      table.insert(L3_3, A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0009)
+      table.insert(L4_4, A0_0.MINIGAME_TYPE_JIGSAW)
+    end
+    if A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_EST401) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_EST503) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_EST602) or A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_EST702) then
+      table.insert(L3_3, A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0008)
+      table.insert(L4_4, A0_0.MINIGAME_TYPE_SCROLL_ACTION)
+    end
+    if A1_1:IsQuestCompleted(A0_0.QUEST_COMP_MINIGAME_NEGOTIATION) then
+      table.insert(L3_3, A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0002)
+      table.insert(L4_4, A0_0.MINIGAME_TYPE_NEGOTIATION)
+    end
+    if #L3_3 == 0 then
+      A0_0:SystemTalk(A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0003, false)
+      return
+    end
+    table.insert(L3_3, A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0004)
+    if A0_0:Menu(A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0005, unpack(L3_3)) > #L3_3 - 1 or 0 >= A0_0:Menu(A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0005, unpack(L3_3)) then
+      return
+    end
+    A0_0:MiniGame(L4_4[A0_0:Menu(A0_0.TEXT_CMNDEFMINIGAME_00200_TALK_ACTOR_000_0005, unpack(L3_3))])
+  end
+end)()
+;(function()
+  local L1_5
+  L1_5 = CmnDefMiniGame
+  L1_5.SCRIPT_VERSION = 1
+end)()

@@ -1,0 +1,103 @@
+(function()
+  print("RegSeaAcnGuild")
+  function RegSeaAcnGuild.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    if A1_1:IsQuestCompleted(A0_0.QUEST6) == true and A1_1:IsQuestCompleted(A0_0.QUEST4) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_051, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST6) == true and A1_1:IsQuestCompleted(A0_0.QUEST5) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_051, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST3) == true and A1_1:IsQuestCompleted(A0_0.QUEST4) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_050, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST3) == true and A1_1:IsQuestCompleted(A0_0.QUEST5) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_050, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST1) and A1_1:IsQuestCompleted(A0_0.QUEST2) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_040, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST2) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_030, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST1) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_020, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_010, true)
+    else
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_1, true)
+    end
+  end
+  function RegSeaAcnGuild.OnScene00001(A0_3, A1_4, A2_5)
+    if A1_4:IsQuestCompleted(A0_3.QUEST0) == true then
+      while true do
+        if A0_3:Menu(A0_3.TEXT_REGSEAACNGUILD_00089_Q2_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A2_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A2_000_2, A0_3.TEXT_REGSEAACNGUILD_00089_A2_000_3) == 1 then
+          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_100, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_101, false)
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_102, true)
+        elseif A0_3:Menu(A0_3.TEXT_REGSEAACNGUILD_00089_Q2_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A2_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A2_000_2, A0_3.TEXT_REGSEAACNGUILD_00089_A2_000_3) == 2 then
+          if A1_4:IsQuestCompleted(A0_3.QUEST1) and A1_4:IsQuestCompleted(A0_3.QUEST2) == true then
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_140, true)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_141, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_142, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_143, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_144, true)
+          elseif A1_4:IsQuestCompleted(A0_3.QUEST2) == true then
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_130, true)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_131, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_132, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_133, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_134, true)
+          elseif A1_4:IsQuestCompleted(A0_3.QUEST1) == true then
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_120, true)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_121, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_122, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_123, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_124, true)
+          else
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_110, true)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_111, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_112, false)
+            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_113, false)
+            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_114, true)
+          end
+        else
+          return 0
+        end
+      end
+    while true do
+      elseif A0_3:Menu(A0_3.TEXT_REGSEAACNGUILD_00089_Q1_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A1_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A1_000_2, A0_3.TEXT_REGSEAACNGUILD_00089_A1_000_3) == 1 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_2, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_3, true)
+      elseif A0_3:Menu(A0_3.TEXT_REGSEAACNGUILD_00089_Q1_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A1_000_1, A0_3.TEXT_REGSEAACNGUILD_00089_A1_000_2, A0_3.TEXT_REGSEAACNGUILD_00089_A1_000_3) == 2 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_5, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_6, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_7, false)
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAACNGUILD_00089_THUBYRGEIM_000_8, true)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_6
+  L1_6 = RegSeaAcnGuild
+  L1_6.SCRIPT_VERSION = 1
+end)()

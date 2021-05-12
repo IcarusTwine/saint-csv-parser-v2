@@ -1,0 +1,49 @@
+(function()
+  print("RegOthDhoroIroh")
+  function RegOthDhoroIroh.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:LookAt(A1_1)
+    A2_2:TurnTo(A1_1, false)
+    A2_2:WaitForTurn()
+    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_000, true)
+    while true do
+      if A0_0:Menu(A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_Q1_000_000, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_A1_000_001, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_A1_000_002, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_A1_000_004) == 1 then
+        A2_2:PlayActionTimeline(A0_0.LOC_EVENT_ACTION_SAD)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_001, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_002, true)
+      elseif A0_0:Menu(A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_Q1_000_000, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_A1_000_001, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_A1_000_002, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_A1_000_004) == 2 then
+        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_010, false)
+        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_011, false)
+        if A1_1:IsQuestCompleted(A0_0.QUEST_ID_BANNAM006) == true then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BIG)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_070, true)
+        elseif A1_1:IsQuestCompleted(A0_0.QUEST_ID_BANNAM005) == true then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BIG)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_060, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_061, true)
+        elseif A1_1:IsQuestCompleted(A0_0.QUEST_ID_BANNAM004) == true then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_050, false)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_051, true)
+        elseif A1_1:IsQuestCompleted(A0_0.QUEST_ID_BANNAM003) == true then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BIG)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_040, true)
+        elseif A1_1:IsQuestCompleted(A0_0.QUEST_ID_BANNAM002) == true then
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_030, true)
+        else
+          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
+          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTHDHOROIROH_00480_GYOFUKU_000_020, true)
+        end
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_3
+  L1_3 = RegOthDhoroIroh
+  L1_3.SCRIPT_VERSION = 2
+end)()

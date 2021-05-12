@@ -1,0 +1,51 @@
+(function()
+  print("RegRocObservatory")
+  function RegRocObservatory.OnScene00000(A0_0, A1_1, A2_2)
+    A2_2:TurnTo(A1_1)
+    A2_2:WaitForTurn()
+    if A1_1:IsQuestCompleted(A0_0.QUEST3) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_003, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST2) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_100_001, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST1) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_002, true)
+    elseif A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_001, true)
+    else
+      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_000, true)
+    end
+  end
+  function RegRocObservatory.OnScene00001(A0_3, A1_4, A2_5)
+    while true do
+      if A0_3:Menu(A0_3.TEXT_REGROCOBSERVATORY_00110_Q1_000_000, A0_3.TEXT_REGROCOBSERVATORY_00110_A1_000_001, A0_3.TEXT_REGROCOBSERVATORY_00110_A1_000_002, A0_3.TEXT_REGROCOBSERVATORY_00110_A1_000_003) == 1 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_010, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_011, false)
+        if A1_4:IsQuestCompleted(A0_3.QUEST3) == true then
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_014, true)
+        elseif A1_4:IsQuestCompleted(A0_3.QUEST1) == true then
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_013, true)
+        else
+          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_012, true)
+        end
+      elseif A0_3:Menu(A0_3.TEXT_REGROCOBSERVATORY_00110_Q1_000_000, A0_3.TEXT_REGROCOBSERVATORY_00110_A1_000_001, A0_3.TEXT_REGROCOBSERVATORY_00110_A1_000_002, A0_3.TEXT_REGROCOBSERVATORY_00110_A1_000_003) == 2 then
+        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_020, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_021, false)
+        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROCOBSERVATORY_00110_FORLEMORT_000_022, true)
+      else
+        return 0
+      end
+    end
+  end
+end)()
+;(function()
+  local L1_6
+  L1_6 = RegRocObservatory
+  L1_6.SCRIPT_VERSION = 1
+end)()
