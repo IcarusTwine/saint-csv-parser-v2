@@ -543,9 +543,9 @@ class BlueMageContent implements ParseInterface
         !colspan="1" {{!}} Bonus !! Description\n`;
         $ScoreArray = [];
         foreach ($AOZScoreCsv->data as $id => $Score) {
-            $Name = $Score["unknown_3"];
-            $Description = $Score["unknown_4"];
-            $Hidden = $Score["unknown_1"];
+            $Name = $Score["Score"];
+            $Description = $Score["IsHidden"];
+            $Hidden = $Score["Name"];
             switch ($Hidden) {
                 case 'False':
                     $HiddenCheck = " (Hidden)";
@@ -554,7 +554,7 @@ class BlueMageContent implements ParseInterface
                 $HiddenCheck = "";
                 break;
             }
-            $Points = $Score["unknown_2"];
+            $Points = $Score["Description"];
             $ScoreString = "{{!}}-\n";
             $ScoreString .= "{{!}}'''$Name'''$HiddenCheck\n";
             $ScoreString .= "{{!}}$Description\n";

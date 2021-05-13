@@ -98,23 +98,23 @@ trait CsvParseTrait
         }
         switch ($FileName) {
             case 'Item':
-                $offset = '"Name"';
+                $offset = "Name";
             break;
             case 'Quest':
-                $offset = '"Name"';
+                $offset = "Name";
             break;
             case 'Emote':
-                $offset = '"Name"';
+                $offset = "Name";
             break;
             case 'ENpcResident':
-                $offset = '"Singular"';
+                $offset = "Singular";
             break;
             case 'Description':
-                $offset = '"Text[Long]"';
+                $offset = "Text[Long]";
             break;
             
             default:
-                $offset = '"id"';
+                $offset = "id";
             break;
         }
         $jdata = file_get_contents("Patch/$FileName.json");
@@ -1064,7 +1064,7 @@ trait CsvParseTrait
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $LuaFile = "$Resources/game_script/custom/{$folder}/{$LuaName}.lua";
+        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";
             $SkipLuaArray = array(
                 "CmnGscTripleTriadRoomMove_00371",
                 "RegDra2TomestoneWarTrade_00298",
@@ -1102,6 +1102,9 @@ trait CsvParseTrait
                 $AdditionalArray = [];
                 $MenuResponse = [];
                 $ResponseArray = [];
+                $MenuArray = [];
+                $outarray = [];
+                $FinalArray = [];
                 $typearray = array("if", "else", "function");
                 if ($handle) {
                     while (($line = fgets($handle)) !== false) {
@@ -1128,6 +1131,9 @@ trait CsvParseTrait
                             if (!empty($UnkArray[0])){
                                 unset($UnkArray);
                                 if(!empty($CsvTextArray[$AnswerReplace])) {
+                                    if(empty($lineexp[1])) {
+                                        $lineexp[1] = "null";
+                                    }
                                     $AnswerArray[$lineexp[1]] = $CsvTextArray[$AnswerReplace];
                                     $FuncTextArray[$LastFuncVal]["Title"] = $AnswerArray[$lineexp[1]];
                                 }
@@ -1146,17 +1152,24 @@ trait CsvParseTrait
                             }
                         }
                         if (stripos($line,"ScreenImage")){
-                            var_dump($line);
                             if (preg_match('/\.(.*?)\)/', $line, $match) == 1) {
                                 $value = $match[1];
                                 if (!empty($ArgArray[$value])){
                                     $Image = $ArgArray[$value];
-                                    var_dump($Image);
                                     $AdditionalArray[] = "{{Dialoguebox3|Intro=Image|3=collapsed|Dialogue=[[File:$Image]]}}<br>\n";
 
                                 }
                             }
                         }
+                        //if ((str_replace($ArgArray, '', $line) != $line) != false){
+                        //    if (preg_match('/\.(.*?)\)/', $line, $match) == 1) {
+                        //        $value = $match[1];
+                        //        if (!empty($ArgArray[$value])){
+                        //            $Image = $ArgArray[$value];
+                        //            $AdditionalArray[] = "{{Dialoguebox3|Intro=$value|3=collapsed|Dialogue=$line}}<br>\n";
+                        //        }
+                        //    }
+                        //}
                         if (stripos($line,"TEXT")){
                             //menu
                             if (stripos($line,":Menu")){ //MENU TITLES
@@ -1176,8 +1189,10 @@ trait CsvParseTrait
                             }
                             if ( (stripos($line," = ")) && (strpos($line, ':') == false) ) { // get question of text
                                 $AnswerExplode = explode(".",$line);
-                                $UnkArray[] = $AnswerExplode[1];
-                                $AnswerReplace = $AnswerExplode[1];
+                                if(!empty($AnswerExplode[1])){
+                                    $UnkArray[] = $AnswerExplode[1];
+                                    $AnswerReplace = $AnswerExplode[1];
+                                }
                             }
                             if (preg_match('/\.(.*?)\,/', $line, $match) == 1) {
                                 //get last value:
@@ -1205,11 +1220,18 @@ trait CsvParseTrait
                         $MenuImplode = implode("\n",$MenuNewUnique);
                         $FinalArray[] = "{{Dialoguebox3|Intro=Menu|Dialogue=$MenuImplode}}";
                         foreach($MenuResponse as $i => $MenuResponses){
+                            $Text = "";
+                            if (empty($MenuResponses[0])) continue;
                             $Textraw = $MenuResponses[0];
-                            $Text = $CsvTextArray[$Textraw];
-                            if ($MenuResponses[1] === "true"){
+                            if(!empty($CsvTextArray[$Textraw])){
+                                $Text = $CsvTextArray[$Textraw];
+                            } 
+                            if (empty($MenuResponses[1])) {
+                                $EndChat = "";
+                            } elseif ($MenuResponses[1] === "true"){
                                 $EndChat = " (Ends Chat)";
                             }
+                            
                             $ResponseArray[] = "$i. $Text$EndChat<br>";
                         }
                         $FinalArray[] = "{{Dialoguebox3|Intro=Responses|3=collapsed|Dialogue=".implode("\n",$ResponseArray)."}}";
@@ -1263,13 +1285,13 @@ trait CsvParseTrait
                     //var_dump($FinalArray);
                     //var_dump($FuncTextArray);
                     //var_dump($AnswerArray);
-                    $this->saveExtra("LUA.txt", $FinalOut);
+                    //$this->saveExtra("LUA.txt", $FinalOut);
                     fclose($handle);
                 } else {
                     $this->io->text("Lua file $LuaName is not readable.");
                 } 
             }
-            //return
+            return $FinalOut;
     }   
 
     /**

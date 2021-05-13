@@ -739,9 +739,9 @@ class NpcsPagesAll implements ParseInterface
                         $DialogueCheck[] = $DataValue.",";
                         $CraftLeveTalkArray = [];
                         $CraftLeveTalkType = $LeveCsv->at($CraftLeveCsv->at($DataValue)['Leve'])['Name'];
-                        foreach(range(37,42) as $a) {
-                            if ($CraftLeveTalkCsv->at($CraftLeveCsv->at($DataValue)['CraftLeveTalk'])["unknown_$a"] != "0"){
-                                $CraftLeveTalkStringSub .= $CraftLeveTalkCsv->at($CraftLeveCsv->at($DataValue)['CraftLeveTalk'])["Talk[$a]"];
+                        foreach(range(0,5) as $a) {
+                            if ($CraftLeveTalkCsv->at($CraftLeveCsv->at($DataValue)['CraftLeveTalk'])["Talk[$a]"] != "0"){
+                                $CraftLeveTalkStringSub = $CraftLeveTalkCsv->at($CraftLeveCsv->at($DataValue)['CraftLeveTalk'])["Talk[$a]"];
                                 $CraftLeveTalkStringSub .= "\n";
                                 $CraftLeveTalkArray[] = $CraftLeveTalkStringSub;
                             }
