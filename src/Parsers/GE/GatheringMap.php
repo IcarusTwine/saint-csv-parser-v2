@@ -49,14 +49,15 @@ class GatheringMap implements ParseInterface
             $GatheringLevel = $GatheringPointBaseCsv->at($BaseRaw)['GatheringLevel'];
             $IsLimited = $GatheringPointBaseCsv->at($BaseRaw)['IsLimited'];
             $Type = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($BaseRaw)['GatheringType'])['Name'];
+            
+            if (!empty($SpotArray[$TerritoryType][$PlaceName]['X'])) {
+                continue;
+            }
             foreach(range(0,7) as $i) {
                 if (!empty($ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name'])) {
                     $Item = str_ireplace($BadArray,$GoodArray,$ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name']);
                     $SpotArray[$TerritoryType][$PlaceName]['Items'][] = $Item;
                 }
-            }
-            if (!empty($SpotArray[$TerritoryType][$PlaceName]['X'])) {
-                var_dump("$PlaceName");
             }
             $SpotArray[$TerritoryType][$PlaceName]['X'] = $X;
             $SpotArray[$TerritoryType][$PlaceName]['Y'] = $Y;
