@@ -93,7 +93,7 @@ trait CsvParseTrait
     public function PatchCheck($PatchNoData, $FileName, $CSV) {
         if (!file_exists("Patch/$FileName.json")) { 
             $MakeFile = fopen("Patch/$FileName.json", 'w');
-            fwrite($MakeFile, "");
+            fwrite($MakeFile, NULL);
             fclose($MakeFile);
         }
         switch ($FileName) {
@@ -395,16 +395,13 @@ trait CsvParseTrait
             $NPCSwitch = " (NPC)";
         }
         switch ($NameFormatted) {
-            case "airship ticketer":
             case "Ala Mhigan Resistance gate guard":
             case "alehouse wench":
             case "Alisaie's assistant":
             case "apartment caretaker":
             case "arms supplier":
             case "arms supplier & mender":
-            case "arrivals attendant":
             case "calamity salvager":
-            case "Celestine":
             case "chocobokeep":
             case "collectable appraiser":
             case "concerned mother":
@@ -562,7 +559,6 @@ trait CsvParseTrait
             case "Moonfire marine":
             case "Moonfire Faire chaperone":
             case "enthralling illusionist":
-            case "Faire crier":
             case "unsavory illusionist":
             case "malevolent mummer":
             case "long-haired pirate":
@@ -601,6 +597,7 @@ trait CsvParseTrait
             //title 
             case "storm sergeant":
             case "storm private":
+            case "eggsaminer":
                 if (!empty($ENpcResidentCsv->at($NPCID)['Title'])){
                     $Title = $ENpcResidentCsv->at($NPCID)['Title'];
                     $PLAddition = " ($Title)";
@@ -632,6 +629,9 @@ trait CsvParseTrait
             case "spoils collector":
             case "Resistance supplier":
             case "recompense officer":
+            case "airship ticketer":
+            case "arrivals attendant":
+            case "Faire crier":
                 $oldzone = array("Ul'dah - Steps of Nald",
                 "Limsa Lominsa Upper Decks",
                 "Old Gridania",
@@ -668,13 +668,12 @@ trait CsvParseTrait
                     }
                 }
             break;
-            case "eggsaminer":
-                $RaceCsv = $this->csv('Race');
-                $nameRace = $RaceCsv->at($ENpcBaseCsv->at($NPCID)['Race'])['Masculine'];
-                $PLAddition = " ($nameRace)";
-            break;
+            //case "eggsaminer":
+            //    $RaceCsv = $this->csv('Race');
+            //    $nameRace = $RaceCsv->at($ENpcBaseCsv->at($NPCID)['Race'])['Masculine'];
+            //    $PLAddition = " ($nameRace)";
+            //break;
             case "Hydaelyn":
-            case "Celestine ":
             case "giant beaver ":
             case "Komainu":
             case "Lightning":
@@ -896,8 +895,8 @@ trait CsvParseTrait
     /**
      * Format dialogue for luasheets
      */
-    public function getLuaDialogue($LuaName) { 
-        //broke/empty lua files
+    public function getLuaDialogue($LuaName, $NpcNameRaw) { 
+    //broke/empty lua files
         $SkipLuaArray = array(
             "CmnGscTripleTriadRoomMove_00371",
             "RegDra2TomestoneWarTrade_00298",
@@ -908,47 +907,54 @@ trait CsvParseTrait
             "ComArmGcArmyCaptureRefund_00436",
             "CmnDefMateriaMeld_00357",
             "CtsHwdDevLevelInvisible_00661",
+            "CmnDefGroupPose_00297",
             "CtsHwdLively_00638"
         );
+        $NpcName = str_replace(" ", "", strtoupper($NpcNameRaw));
         if (in_array($LuaName, $SkipLuaArray)){
+            $this->io->text("Lua file $LuaName is not readable.");
             return "";
         }
         if (!in_array($LuaName, $SkipLuaArray)){
+            $newnewout = [];
             $folder = substr(explode('_', $LuaName)[1], 0, 3);
             $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+            $PreviousNumber = 10;
+            $a = 0;
+            $b = 0;
+            $QuestionArray = [];
+            $LineArrayOut = [];
             $LineArray = [];
-            $a = (-1);
-            $lastcommand = null;
-            $AnswerNo1 = 0;
-            $AnswerNo2 = 0;
-            $AnswerNo3 = 0;
-            $ResponseNo = 0;
-            foreach ($textdata->data as $i => $entry) {
-                $command = $entry['unknown_1'];
-                $command = explode('_', $command);
-                if (empty($entry['unknown_2'])) continue;
-                $Text = $entry['unknown_2'];
-                $spacer = "";
-                if (empty($command[5])) {
-                    if (empty($command[4])) {
-                        $lastcommand = $command[3];
-                    } else {
-                        $lastcommand = $command[4];
-                    }
-                }
-                if (!empty($command[5])) {
-                    $lastcommand = $command[5];
-                }
-                if (!empty($lastcommand)) {
-                    if (!is_numeric($lastcommand)){
-                        $lastcommand = -1;
-                    }
-                    if (($lastcommand - 1) != $a) {
-                        $spacer = "\n";
-                    }
-                }
-                $a = $lastcommand;
+            $AnswerTextArray = [];
+            $first = null;
+            $typearray = array("SYSTEM");
+            foreach ($textdata->data as $key => $textdataCsv) {
+                $command = preg_replace('/(\r\n|\n|\r)/','<br/>',$textdataCsv["unknown_1"]);//needs fixing
+                $argument = $textdataCsv["unknown_2"];
+                if (empty($argument)) continue;
+                $commandExplode = explode("_", $command);
+                //$textarray[$instruction] = $argument;
+                //$lua = "cache/~393ae41e.luab.lua";
+                //$input_str = file_get_contents($lua);
+                //$handle = fopen($lua, "r");
+                //$LineArray = [];
+                $lastcommand = null;
+                $Text = $argument;
                 switch (true) {
+                    //PlayerParams:
+                    //4 - Gender
+                    //11 - time of day (24 hours)
+                    //52 - Limsa Grand Company Rank
+                    //53 - Gridania Grand Compay Rank
+                    //54 - Ul'dah Grand Company Rank
+                    //68 - ClassJob
+                    //70 - Starting Town
+                    //71 - Player Race (Race)
+                    //75 - (0)GamePad, (>)Controller
+                    //77 - ? possibly day ? Birthday?
+                    //78 - PC / Mac?
+                    //80 - (0)keyboard?
+                    //ObjectParameter(1) = Player First Name
                     case (stripos($Text, 'PlayerParameter(71)') !== false): //Player Race
                         $incorrectformattingarray = array("<Switch(PlayerParameter(71))>", "<Case(1)>", "<Case(2)>", "<Case(3)>", "<Case(4)>", "<Case(5)>", "<Case(6)>", "<Case(7)>", "<Case(8)>", "<Case(9)>","</Case>", "</Switch>");
                         $correctformattingarray = array("{{Loremtextconditional|", "", "|or '", "' or '", "' or '", "' or '", "' or '", "' or '", "' or '", "' or '", "", "', depending on Race}}");
@@ -969,35 +975,302 @@ trait CsvParseTrait
                         # code...
                     break;
                 }
-                switch (true) {
-                    case (strpos($command[3], 'Q1') !== false):
-                    case (strpos($command[3], 'Q2') !== false):
-                    case (strpos($command[3], 'Q3') !== false):
-                        $i = 1;
-                        $LineArray[] = "|Question $i = $Text";
-                    break;
-                    case (strpos($command[3], 'A1') !== false):
-                        $AnswerNo1 = $AnswerNo1 + 1;
-                        $LineArray[] = "|Answer$AnswerNo1 = $Text";
-                    break;
-                    case (strpos($command[3], 'A2') !== false):
-                        $AnswerNo2 = $AnswerNo2 + 1;
-                        $LineArray[] = "|Answer$AnswerNo2 = $Text";
-                    break;
-                    case (strpos($command[3], 'A3') !== false):
-                        $AnswerNo3 = $AnswerNo3 + 1;
-                        $LineArray[] = "|Answer$AnswerNo3 = $Text";
-                    break;
-                    
-                    default:
-                        $LineArray[] = "$spacer$Text";
-                    break;
+                $idnumber = abs(end($commandExplode)); //TEXT_REGOTH4MYCLILJA_00693_A30_000_(000)
+                $idDistance = abs($idnumber - $PreviousNumber); //distance between (000) and (00X)
+                $stringlength = end($commandExplode); //length of the last end (00x) = normal chat, (000x) = end dialogue
+                $Reader = $commandExplode[3]; //TEXT_REGOTH4MYCLILJA_00693_(LILJA)_100_000
+                $FormatterStart = "";
+                $FormatterEnd = "";
+                //add NPC name, remove spaces + make all upper case to match and only output
+                //chat from the specific npc
+                if (empty($commandExplode[5])) {
+                    $CommandSwitched = $commandExplode[3];//move it back one
+                } else {
+                    $CommandSwitched = $commandExplode[4];
                 }
+                //TEXT_REGOTH4MYCLILJA_00693_A30_000_000
+                //TEXT_REGOTH4MYCLILJA_00693_A30_000_001
+                //match TEXT_REGOTH4MYCLILJA_00693_LILJA_100_000
+                //match TEXT_REGOTH4MYCLILJA_00693_LILJA_100_100
+                //match TEXT_REGOTH4MYCSTORAGESYSTEM_00692_Q1_000_000
+                if (!empty($CommandSwitched)) {
+                    switch (true) {
+                        case (($CommandSwitched <= 99) && ($idDistance > 4) && (strlen($stringlength) < 4) && (strlen($Reader) > 3)): 
+                            $a++;//make new array due to iddidstance and not a question
+                            $LineArray[$a][] = $Text; 
+                        break;
+                        case ($CommandSwitched >= 100)://produce array of answers:
+                            if (in_array($Reader,$typearray)) {
+                                $FormatterStart = "{{PGH|$Reader: ";
+                                $FormatterEnd = "}}";
+                            } 
+                            if (empty($first)){
+                               $first = end($commandExplode);
+                            }
+                            if (!empty($first)){
+                                $second = abs(end($commandExplode));
+                                $third = abs($second - $first);
+                                $first = end($commandExplode);
+                            }
+                            if ($third < 4){
+                                $AnswerTextArray[$b][] = "$FormatterStart$Text$FormatterEnd";
+                            }
+                            if ($third > 4){
+                                $AnswerTextArray[$b][] = "$FormatterStart$Text$FormatterEnd";
+                                $b++;
+                            }
+                        break;
+                        case (strlen($Reader) < 4): // if (A40) is less than 4 character long then it's a Q & A
+                            if (stripos($Reader, "Q")!== false) {
+                                $QuestionArray[] = $Text."";
+                            }
+                            if (stripos($Reader, "A")!== false) { //possibly use (A30) as a key?
+                                $roundLast = (int)(end($commandExplode));//todo: maybe combine 4 + 5? 
+                                //todo : attach questions to answers
+                                //var_dump($roundLast);
+                                $QuestionArray[$roundLast] = $Text;
+                            }
+                        break;
+                        default: //add to array
+                                $LineArray[$a][] = $Text; 
+                        break;
+                    }
+                }
+                $PreviousNumber = $idnumber;
 
             }
-            return implode("\n", $LineArray);
+            //var_dump($QuestionArray);
+            //var_dump($AnswerTextArray);
+            foreach ($LineArray as $key => $value){
+                $LineArrayOut[] = "{{Dialoguebox3|Intro=$NpcNameRaw|Dialogue=".implode("\n<br>",$value)."\n}}";
+            }
+            foreach ($QuestionArray as $key => $value){
+                if (empty($AnswerTextArray[$key])){
+                    $LineArrayOut[] = "";
+                } else {
+                    $LineArrayOut[] = "{{Dialoguebox3|Intro=$value|3=collapsed|Dialogue=".implode("\n<br>",$AnswerTextArray[$key])."}}";
+                }
+            }
+            //var_dump($QuestionArray);
+            return implode("\n", $LineArrayOut);
         }
     }
+
+    /**
+     * Format dialogue for luasheets
+     */
+    public function getLuaDialogue2($LuaName, $ArgArray, $NpcNameRaw) { 
+        //broke/empty lua files
+        $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $LuaFile = "$Resources/game_script/custom/{$folder}/{$LuaName}.lua";
+            $SkipLuaArray = array(
+                "CmnGscTripleTriadRoomMove_00371",
+                "RegDra2TomestoneWarTrade_00298",
+                "RegDra2TomestoneEsotericsTrade_00295",
+                "RegDra2TomestoneFolkloreTrade_00333",
+                "JobRelAnimaWeaponQuestSelect_00334",
+                "ComArmGcArmyMember_00343",
+                "ComArmGcArmyCaptureRefund_00436",
+                "CmnDefMateriaMeld_00357",
+                "CtsHwdDevLevelInvisible_00661",
+                "CmnDefGroupPose_00297",
+                "CtsHwdLively_00638"
+            );
+            $NpcName = str_replace(" ", "", strtoupper($NpcNameRaw));
+            if (in_array($LuaName, $SkipLuaArray)){
+                $this->io->text("Lua file $LuaName is not readable.");
+                return "";
+            }
+            if (!in_array($LuaName, $SkipLuaArray)){
+                $newnewout = [];
+                $folder = substr(explode('_', $LuaName)[1], 0, 3);
+                $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+                $CsvTextArray = [];
+                foreach ($textdata->data as $key => $textdataCsv) {
+                    $command = $textdataCsv["unknown_1"];
+                    if(!empty($textdataCsv["unknown_2"])){
+                        $argument = $textdataCsv["unknown_2"];
+                        $CsvTextArray[$command] = $argument;
+                    }
+                }
+                $handle = fopen($LuaFile, "r");
+                $a = 0;
+                $aswitch = null;
+                $Var = "";
+                $AdditionalArray = [];
+                $MenuResponse = [];
+                $ResponseArray = [];
+                $typearray = array("if", "else", "function");
+                if ($handle) {
+                    while (($line = fgets($handle)) !== false) {
+                        $line = str_ireplace("\r\n","",$line);
+                        if (stripos($line,"function")){
+                            $FuncName = "";
+                            if (preg_match('/\.(.*?)\(/', $line, $match) == 1) {
+                                $FuncName = $match[1];
+                            }
+                            $getvalufuncarray = str_replace(")","",$line);
+                            $GetLastFuncValue = explode(", ",$getvalufuncarray);
+                            $LastFuncVal = end($GetLastFuncValue);
+                            $PreviousFuncVal = prev($GetLastFuncValue);
+                            foreach($GetLastFuncValue as $i){
+                                $FuncTextArray[$i]["Title"] = $FuncName;
+                            }
+                            //$FuncTextArray[$LastFuncVal]["Title"] = $FuncName;
+                        }
+                        if (preg_match('^\"\w*$^', $line, $match) == 1) {
+                            $line = str_ireplace("\"","",$line);
+                            $lineexp = explode("= ", $line);
+                            //var_dump($lineexp[1]);
+                            $header = true;
+                            if (!empty($UnkArray[0])){
+                                unset($UnkArray);
+                                if(!empty($CsvTextArray[$AnswerReplace])) {
+                                    $AnswerArray[$lineexp[1]] = $CsvTextArray[$AnswerReplace];
+                                    $FuncTextArray[$LastFuncVal]["Title"] = $AnswerArray[$lineexp[1]];
+                                }
+                            }
+                        } else {
+                            $header = false;
+                        }
+                        if ((str_replace($typearray, '', $line) != $line) != false){
+                            if (!empty($newarray)){
+                                $outarray = $newarray;
+                                $a++;
+                            }
+                        }
+                        if (preg_match('/\.(.*?)\(/', $line, $match) == 1) {
+                            if(!empty($AnswerArray[$match[1]])){
+                            }
+                        }
+                        if (stripos($line,"ScreenImage")){
+                            var_dump($line);
+                            if (preg_match('/\.(.*?)\)/', $line, $match) == 1) {
+                                $value = $match[1];
+                                if (!empty($ArgArray[$value])){
+                                    $Image = $ArgArray[$value];
+                                    var_dump($Image);
+                                    $AdditionalArray[] = "{{Dialoguebox3|Intro=Image|3=collapsed|Dialogue=[[File:$Image]]}}<br>\n";
+
+                                }
+                            }
+                        }
+                        if (stripos($line,"TEXT")){
+                            //menu
+                            if (stripos($line,":Menu")){ //MENU TITLES
+                                $AnswerSplit = preg_split('/\\) \\(|\\(|\\)/', $line, -1, PREG_SPLIT_NO_EMPTY);
+                                $AnswerExplode = explode(",",$AnswerSplit[1]);
+                                foreach($AnswerExplode as $i){
+                                    $Var = str_replace(" ","",strstr($i,".", true));
+                                    $AnswerExplode = str_replace(".","",strstr($i,"."));
+                                    if(!empty($CsvTextArray[$AnswerExplode])){
+                                        $MenuArray[] = $CsvTextArray[$AnswerExplode];
+                                    }
+                                }
+                            }
+                            if (stripos($line,"$Var:SystemTalk")){ //MENU RESPONSE
+                                $ResponseSplit = preg_split('/\\) \\(|\\(|\\)/', $line, -1, PREG_SPLIT_NO_EMPTY);
+                                $MenuResponse[] = explode(", ",str_replace(".","",strstr($ResponseSplit[1],".")));
+                            }
+                            if ( (stripos($line," = ")) && (strpos($line, ':') == false) ) { // get question of text
+                                $AnswerExplode = explode(".",$line);
+                                $UnkArray[] = $AnswerExplode[1];
+                                $AnswerReplace = $AnswerExplode[1];
+                            }
+                            if (preg_match('/\.(.*?)\,/', $line, $match) == 1) {
+                                //get last value:
+                                if (stripos($line, ":Talk")){
+                                    $LineRemove = preg_replace("/\s+/", "", $line);
+                                    $ExplodeSelector = explode(":Talk",$LineRemove);
+                                    if (preg_match('/\.(.*?)\,/', $line, $Textmatch) == 1) {
+                                        $FuncTextArray[$ExplodeSelector[0]]["Text"][] = $Textmatch[1];
+                                    }
+                                } else {
+                                    if(!empty($CsvTextArray[$match[1]])) {
+                                        $newarray[$a][] = $CsvTextArray[$match[1]];
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                    $MenuUnique = array_unique($MenuArray);
+                    //get all text proper: 
+                    if (!empty($MenuUnique)){
+                        $EndChat = "";
+                        foreach($MenuUnique as $key => $value){
+                            $MenuNewUnique[] = "$key. $value<br>";
+                        }
+                        $MenuImplode = implode("\n",$MenuNewUnique);
+                        $FinalArray[] = "{{Dialoguebox3|Intro=Menu|Dialogue=$MenuImplode}}";
+                        foreach($MenuResponse as $i => $MenuResponses){
+                            $Textraw = $MenuResponses[0];
+                            $Text = $CsvTextArray[$Textraw];
+                            if ($MenuResponses[1] === "true"){
+                                $EndChat = " (Ends Chat)";
+                            }
+                            $ResponseArray[] = "$i. $Text$EndChat<br>";
+                        }
+                        $FinalArray[] = "{{Dialoguebox3|Intro=Responses|3=collapsed|Dialogue=".implode("\n",$ResponseArray)."}}";
+                    }
+                    $QAArray = [];
+                    foreach($FuncTextArray as $key => $value){
+                        if (empty($value["Text"])) continue;
+                        $TextCheck = $value["Text"][0];
+                        if (empty($CsvTextArray[$TextCheck])) continue;
+                        $Title = "";
+                        $FormatTextImp = "";
+                        $FmtText = [];
+                        if(!empty($value["Title"])){
+                            $TitleKey = $value["Title"];
+                            if(!empty($AnswerArray[$TitleKey])){
+                                $Title = $AnswerArray[$TitleKey];
+                            }
+                            if (empty($AnswerArray[$TitleKey])){
+                                $Title = $TitleKey;
+                            }
+                            if(!empty ($value["Text"])){
+                                $Text = $value["Text"];
+                                foreach($Text as $TextKey => $TextValue){
+                                    if (!empty($CsvTextArray[$TextValue])){
+                                        $FmtText[] = $CsvTextArray[$TextValue];
+                                    }
+                                }
+                                $FormatTextImp = implode("<br>\n",$FmtText);
+                            }
+                            if (!empty($Title)){
+                                $QAArray[] = "{{Dialoguebox3|Intro=$Title|3=collapsed|Dialogue=$FormatTextImp}}";
+                            }
+                        }
+                        //var_dump($Title);
+                    }
+                    foreach($outarray as $key => $value){
+                        $TextValue = implode("<br>\n", $value);
+                        $TypeSwitch = $NpcNameRaw;
+                        if (strpos($TextValue,"[[")){
+                            $TypeSwitch = "Image";
+                        }
+                        if (empty($TextValue)) continue;
+                        $FinalArray[] = "{{Dialoguebox3|Intro=$TypeSwitch|Dialogue=".$TextValue."}}";
+                        //var_dump($value);
+                    }
+                    //var_dump($FuncTextArray);
+                    $TextOut = implode($FinalArray);
+                    $QAOut = implode($QAArray);
+                    $Additional = implode("\n",$AdditionalArray);
+                    $FinalOut = "$TextOut\n$QAOut\n$Additional";
+                    //var_dump($FinalArray);
+                    //var_dump($FuncTextArray);
+                    //var_dump($AnswerArray);
+                    $this->saveExtra("LUA.txt", $FinalOut);
+                    fclose($handle);
+                } else {
+                    $this->io->text("Lua file $LuaName is not readable.");
+                } 
+            }
+            //return
+    }   
 
     /**
      * Get Specialshop items and name
@@ -1014,6 +1287,9 @@ trait CsvParseTrait
         $Other = "";
         $ShopOutput = [];
         $NumberItems = 0;
+        if (empty($NpcPlaceName)){
+            $NpcPlaceName = "Unknown";
+        }
         $oldarray = array("/",",",);
         $newarray = array(" and ","");
         $TopicSelectName = "";
@@ -1243,6 +1519,7 @@ trait CsvParseTrait
                                 $RewardSheetLink = $CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopRewardScrip'];
                                 $Currency = $ItemCsv->at($CurrencyArray[$CollectablesShopRewardScripCsv->at($RewardSheetLink)['Currency']])['Name'];
                                 $RewardAmt = $CollectablesShopRewardScripCsv->at($RewardSheetLink)['LowReward'];
+                                if ($RewardAmt === "0") continue;
                                 $Collectability = $CollectablesShopRefineCsv->at($CollectabilityLink)['LowCollectability'];
                                 if ($CountCheck === false){
                                     $OtherArray[] = "{{Sells3|$Currency|Quantity=$RewardAmt+|Cost1=$Item|Count1=1$QuestRequired|Collectable=$Collectability+}}";
@@ -1254,6 +1531,7 @@ trait CsvParseTrait
                             if ($RewardType === "2") {
                                 $RewardSheetLink = $CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopRewardScrip'];
                                 $RewardAmt = $CollectablesShopRewardItemCsv->at($RewardSheetLink)['RewardLow'];
+                                if ($RewardAmt === "0") continue;
                                 $collect1 = $CollectablesShopRefineCsv->at($CollectabilityLink)['LowCollectability'];
                                 $ItemReward = $ItemCsv->at($CollectablesShopRewardItemCsv->at($RewardSheetLink)['Item'])['Name'];
                                 if ($CountCheck === false){
@@ -1277,6 +1555,7 @@ trait CsvParseTrait
                                     switch ($a) {
                                         case 0:
                                             $RewardAmt = $CollectablesShopRewardScripCsv->at($RewardSheetLink)['LowReward'];
+                                            if ($RewardAmt === "0") continue;
                                             $collect1 = $CollectablesShopRefineCsv->at($CollectabilityLink)['LowCollectability'];
                                             $collect2 = intval($CollectablesShopRefineCsv->at($CollectabilityLink)['MidCollectability']);
                                             if ($collect2 > 0){
@@ -1288,6 +1567,7 @@ trait CsvParseTrait
                                         break;
                                         case 1:
                                             $RewardAmt = $CollectablesShopRewardScripCsv->at($RewardSheetLink)['MidReward'];
+                                            if ($RewardAmt === "0") continue;
                                             $collect1 = $CollectablesShopRefineCsv->at($CollectabilityLink)['MidCollectability'];
                                             $collect2 = intval($CollectablesShopRefineCsv->at($CollectabilityLink)['HighCollectability']);
                                             if ($collect2 > 0){
@@ -1299,6 +1579,7 @@ trait CsvParseTrait
                                         break;
                                         case 2:
                                             $RewardAmt = $CollectablesShopRewardScripCsv->at($RewardSheetLink)['HighReward'];
+                                            if ($RewardAmt === "0") continue;
                                             $collect1 = $CollectablesShopRefineCsv->at($CollectabilityLink)['HighCollectability'];
                                             $Collectability = "$collect1+";
                                         break;
@@ -1315,6 +1596,7 @@ trait CsvParseTrait
                                     switch ($a) {
                                         case 0:
                                             $RewardAmt = $CollectablesShopRewardItemCsv->at($RewardSheetLink)['RewardLow'];
+                                            if ($RewardAmt === "0") continue;
                                             $collect1 = $CollectablesShopRefineCsv->at($CollectabilityLink)['LowCollectability'];
                                             $collect2 = intval($CollectablesShopRefineCsv->at($CollectabilityLink)['MidCollectability']);
                                             if ($collect2 > 0){
@@ -1326,6 +1608,7 @@ trait CsvParseTrait
                                         break;
                                         case 1:
                                             $RewardAmt = $CollectablesShopRewardItemCsv->at($RewardSheetLink)['RewardMid'];
+                                            if ($RewardAmt === "0") continue;
                                             $collect1 = $CollectablesShopRefineCsv->at($CollectabilityLink)['MidCollectability'];
                                             $collect2 = intval($CollectablesShopRefineCsv->at($CollectabilityLink)['HighCollectability']);
                                             if ($collect2 > 0){
@@ -1337,6 +1620,7 @@ trait CsvParseTrait
                                         break;
                                         case 2:
                                             $RewardAmt = $CollectablesShopRewardItemCsv->at($RewardSheetLink)['RewardHigh'];
+                                            if ($RewardAmt === "0") continue;
                                             $collect1 = $CollectablesShopRefineCsv->at($CollectabilityLink)['HighCollectability'];
                                             $Collectability = "$collect1+";
                                         break;
@@ -1660,8 +1944,8 @@ trait CsvParseTrait
                 foreach(range(0,23) as $b) {
                     if (empty($ItemCsv->at($LotteryExchangeShopCsv->at($DataValue)["ItemAccepted[$b]"]))) continue;
                     $NumberItems = $b + 1;
-                    $CategoryPre = $ItemCsv->at($LotteryExchangeShopCsv->at($DataValue)["ItemAccepted$b]"])["EquipSlotCategory"];
-                    $ShopAcceptsItem = $ItemCsv->at($LotteryExchangeShopCsv->at($DataValue)["ItemAccepted$b]"])["Name"];
+                    $CategoryPre = $ItemCsv->at($LotteryExchangeShopCsv->at($DataValue)["ItemAccepted[$b]"])["EquipSlotCategory"];
+                    $ShopAcceptsItem = $ItemCsv->at($LotteryExchangeShopCsv->at($DataValue)["ItemAccepted[$b]"])["Name"];
                     $ShopAcceptsItemAmt = $LotteryExchangeShopCsv->at($DataValue)["AmountAccepted[$b]"];
                     switch ($CategoryPre) {
                         case '0':
@@ -1997,13 +2281,13 @@ trait CsvParseTrait
         $data = str_ireplace("        \n","\n", $data);
         $data = str_ireplace('        }}','}}', $data);
         $data = str_ireplace('        {{','{{', $data);
-        $data = preg_replace("/(.*)dammy(.*)\n/", "", $data);
-        $data = preg_replace("/(.*)★未使用(.*)削除予定★(.*)\n/","", $data);
-        $data = preg_replace("/{{Loremquote\\|Todo\d\d+\\|link=y\\|(.*)\n/", "", $data);
+        $data = preg_replace("/(.*)dammy(.*)\n/", null, $data);
+        $data = preg_replace("/(.*)★未使用(.*)削除予定★(.*)\n/",null, $data);
+        $data = preg_replace("/{{Loremquote\\|Todo\d\d+\\|link=y\\|(.*)\n/", null, $data);
         //$data = preg_replace("/\n\n\n+/", "\n\n", $data);
         $data = preg_replace("/(QuestReward.*)\n\n(?!\\|Issuing NPC)/", "$1\n", $data);
         $data = preg_replace("/(QuestReward.*)\n(\\|Issuing NPC.*)/", "$1\n\n$2", $data);
-        $data = preg_replace("/\s*|\s*/", "", $data);
+        $data = preg_replace("/\s*|\s*/", null, $data);
         $data = preg_replace("/<Emphasis>|<\\/Emphasis>/", "", $data);
         $data = preg_replace("/<If\\(LessThan\\(PlayerParameter\\(11\\),12\\)\\)><If\\(LessThan\\(PlayerParameter\\(11\\),4\\)\\)>([^>]+)<Else\\/>([^>]+)<\\/If><Else\\/><If\\(LessThan\\(PlayerParameter\\(11\\),17\\)\\)>([^>]+)<Else\\/>([^>]+)<\\/If><\\/If>/", "{{Loremtextconditional|$1|or '$2' or '$3', depending on the time of day.}}", $data);
         $data = preg_replace("/{{Loremquote\\|Q\d+\\|link=y\\|(.*)}}/","\n{| class=\"datatable-GEtable\"\n|+$1\n|Place an answer Here <!--(Not all questions have answers and thus don't need a table, please evaluate and delete this if necessary.)-->\n|}\n", $data);
@@ -2012,7 +2296,7 @@ trait CsvParseTrait
         $data = preg_replace("/<Color\\(-3917469\\)>(.*)<\\/Color>/", "{{Loremascianspeak|$1}}", $data);
         $data = preg_replace("/<If\\(PlayerParameter\\(4\\)\\)>([\w\s']+)<Else\\/>([\w\s']+)<\\/If>/", "{{Loremtextmale|$2|$1}}", $data);
         $data = preg_replace("/<Color\\(-34022\\)>([\w\s,.\\/<>&'-]+)<\\/Color>/", "{{Color|Orange|$1}}", $data);
-        $data = str_replace("(-???-)", "", $data);
+        $data = str_replace("(-???-)", null, $data);
         $data = preg_replace("/{{Loremquote\\|.*\\|link=y\\|\\(-(.*)-\\)/", "{{Loremquote|$1|link=y|", $data);
         $data = str_replace("<If(GreaterThan(PlayerParameter(52),0))><Clickable(<If(GreaterThan(PlayerParameter(52),0))><Sheet(GCRankLimsaMaleText,PlayerParameter(52),8)/><Else/></If><If(GreaterThan(PlayerParameter(53),0))><Sheet(GCRankGridaniaMaleText,PlayerParameter(53),8)/><Else/></If><If(GreaterThan(PlayerParameter(54),0))><Sheet(GCRankUldahMaleText,PlayerParameter(54),8)/><Else/></If>)/> <Split(<Highlight>ObjectParameter(1)</Highlight>, ,2)/><Else/><If(GreaterThan(PlayerParameter(53),0))><Split(<Highlight>ObjectParameter(1)</Highlight>, ,1)/><Else/><Split(<Highlight>ObjectParameter(1)</Highlight>, ,1)/></If></If>", "{{Loremtextconditional|<GC Rank/Surname>|The player's Grand Company Rank. If not in a GC, then their last name}}", $data);
         $data = preg_replace("/<If\(GreaterThan\(PlayerParameter\(52\),0\)\)>([^<]+)<Clickable\(<If\(GreaterThan\(PlayerParameter\(52\),0\)\)><Sheet\(GCRankLimsaMaleText,PlayerParameter\(52\),8\)\/><Else\/><\/If><If\(GreaterThan\(PlayerParameter\(53\),0\)\)><Sheet\(GCRankGridaniaMaleText,PlayerParameter\(53\),8\)\/><Else\/><\/If><If\(GreaterThan\(PlayerParameter\(54\),0\)\)><Sheet\(GCRankUldahMaleText,PlayerParameter\(54\),8\)\/><Else\/><\/If>\)\/> <Split\(<Highlight>ObjectParameter\(1\)<\/Highlight>, ,2\)\/><Else\/><If\(GreaterThan\(PlayerParameter\(53\),0\)\)>([^<]+)<Split\(<Highlight>ObjectParameter\(1\)<\/Highlight>, ,1\)\/><Else\/>[^<]+<Split\(<Highlight>ObjectParameter\(1\)<\/Highlight>, ,1\)\/><\/If><\/If>/", "{{Loremtextconditional|$1|If player is in a Grand Company. Otherwise, this will say \"$2\"", $data);
@@ -2040,9 +2324,14 @@ trait CsvParseTrait
     /**
      * Save to output file for extra
      */
-    public function saveExtra($filename, $SourceData)
+    public function saveExtra($filename, $SourceData, $dontformat = false)
     {   
-        $data = $this->GEformat($SourceData);
+        if ($dontformat === true){
+            $data = $SourceData;
+        }
+        if ($dontformat === false){
+            $data = $this->GEformat($SourceData);
+        }
         $ini = parse_ini_file('config.ini');
         $PatchID = file_get_contents("{$ini['MainPath']}\game\\ffxivgame.ver");
         $folder = $this->projectDirectory . getenv('OUTPUT_DIRECTORY');
@@ -2120,6 +2409,8 @@ trait CsvParseTrait
 
         return $icon;
     }
+
+    
     /**
      * Array of currencies. Usage: $GetCurrency[1]; will give the item ID of the currency
      */

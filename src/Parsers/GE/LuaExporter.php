@@ -48,7 +48,7 @@ class LuaExporter implements ParseInterface
             if (empty($CustomTalk['Name'])) continue;
             $LuaName = $CustomTalk['Name'];
             $folder = substr(explode('_', $LuaName)[1], 0, 3);
-            if (!file_exists("$Resources/game_script/quest/$folder/$LuaName.lua")) {
+            if (!file_exists("$Resources/game_script/custom/$folder/$LuaName.lua")) {
                 $LuaArray[] = "custom/{$folder}/{$LuaName}";
             }
             if (!is_dir("$Resources/game_script/custom/$folder")) {
@@ -63,6 +63,9 @@ class LuaExporter implements ParseInterface
             shell_exec("cd $SaintPath && SaintCoinach.Cmd.exe \"$MainPath\" \"raw game_script/$LuaPath.luab\"");
             $console->overwrite(" Convert -> $LuaPath -> $i / $Total");
             shell_exec("cd $Resources && java -jar unluac.jar $SaintPath/$PatchID/game_script/$LuaPath.luab > $Resources/game_script/$LuaPath.lua");
+        }
+        if (!empty($LuaArrayUnique)) {
+            var_dump("New Lua files : ".$LuaArrayUnique);
         }
         //Delete the folder in saint C
         exec(sprintf("rd /s /q %s", escapeshellarg("$SaintPath/$PatchID/game_script")));

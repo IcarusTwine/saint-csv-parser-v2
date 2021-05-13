@@ -97,6 +97,7 @@ class NpcsPagesAll implements ParseInterface
         //get mius ups and downs
         $MiuUpsDownsArray = json_decode("https://raw.githubusercontent.com/ffxiv-teamcraft/ffxiv-teamcraft/staging/apps/client/src/assets/data/territory-layers.json");
 
+        $BadNames = $this->NameChecker($EventItemCsv, $ItemCsv);
         //bad subdivisions:
         $BadSubs = array("192", "193", "194", "365");
         //get GC Shop
@@ -191,8 +192,10 @@ class NpcsPagesAll implements ParseInterface
                         if ($Object->Object->PlaceNameEnabled == 0) continue;
                         $x = $Object->Transform->Translation->x;
                         $y = $Object->Transform->Translation->z;
+                        $z = $Object->Transform->Translation->y;
                         $NpcLocX = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["X"];
                         $NpcLocY = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["Y"];
+                        $NpcLocZ = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["Y"];
                         $PlaceName = $PlaceNameCsv->at($Object->Object->PlaceNameSpot)['Name'];
                         if (empty($PlaceName)) {
                             $PlaceName = $PlaceNameCsv->at($Object->Object->PlaceNameBlock)['Name'];
@@ -202,6 +205,7 @@ class NpcsPagesAll implements ParseInterface
                             'placename' => $PlaceName,
                             'x' => $NpcLocX,
                             'y' => $NpcLocY,
+                            'z' => $z,
                             'code' => $code,
                             'id' => $id
                         );
@@ -281,6 +285,7 @@ class NpcsPagesAll implements ParseInterface
                             $BaseId = "". $Object->Object->ParentData->ParentData->BaseId ."";
                             $x = $Object->Transform->Translation->x;
                             $y = $Object->Transform->Translation->z;
+                            $z = $Object->Transform->Translation->y;
                             $NPCID = $BaseId;
                             if (empty($NpcFestivalQuestArray[$NPCID])){
                                 if(!empty($Festival)){
@@ -296,6 +301,7 @@ class NpcsPagesAll implements ParseInterface
                                 'Territory' => $id,
                                 'x' => $x,
                                 'y' => $y,
+                                'z' => $z,
                                 'id' => $InstanceID,
                                 'festivalID' => $Festival,
                                 'festivalName' => $Name
@@ -325,6 +331,7 @@ class NpcsPagesAll implements ParseInterface
                 'Territory' => $Level['Territory'],
                 'x' => $Level['X'],
                 'y' => $Level['Z'],
+                'z' => $Level['Y'],
                 'id' => $id,
                 'festivalID' => $Festival,
                 'festivalName' => $Name
@@ -348,6 +355,7 @@ class NpcsPagesAll implements ParseInterface
                 //$Y = $LGBArray[$id]['y'];
                 $X = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["X"];
                 $Y = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["Y"];
+                $Z = $LGBArray[$id]['z'];
                 foreach (range(0, 1000) as $i) {
                     if (empty($JSONTeriArray[$Territory][$i]["x"])) break;
                     $calcA = ($X - $JSONTeriArray[$Territory][$i]["x"]); 
@@ -596,6 +604,17 @@ class NpcsPagesAll implements ParseInterface
                             $ShopOutputArray[] = $FuncShop["Shop"];
                             $TotalItems[$NameFormatted][] = $FuncShop["Number"];
                         } 
+                        //output customtalk check
+                        $Lua = $CustomTalkCsv->at($DataValue)['Name'];
+                        $NameRaw = $NPCs['Singular'];
+                        foreach(range(0,29) as $a) {
+                            $Instruction = $CustomTalkCsv->at($DataValue)["Script{Instruction}[$a]"];
+                            $Argument = $CustomTalkCsv->at($DataValue)["Script{Arg}[$a]"];
+                            $ArgArray[$Instruction] = $Argument;
+                        }
+                        $LuaOut = $this->getLuaDialogue2($Lua, $ArgArray, $NameRaw);
+
+                        $CustomTalkCheck[] = "$NameFormatted - $Lua - $DataValue\n$LuaOut";
                             
                         foreach(range(0,29) as $a) {
                             if (empty($CustomTalkCsv->at($DataValue)["Script{Instruction}[$a]"])) continue;
@@ -667,10 +686,11 @@ class NpcsPagesAll implements ParseInterface
                                 break;
                             }
                         }
-                        if (!empty($CustomTalkNestHandlersCsv->at("". $DataValue. ".1")['NestHandler'])){
+                        if (!empty($CustomTalkCsv->at($DataValue)["SpecialLinks"])){
+                            $SpecialLinksValue = $CustomTalkCsv->at($DataValue)["SpecialLinks"];
                             foreach(range(1,99) as $b) {
-                                if (empty($CustomTalkNestHandlersCsv->at("". $DataValue. ".". $b ."")['NestHandler'])) break;
-                                $NestDataValue = $CustomTalkNestHandlersCsv->at("". $DataValue. ".". $b ."")['NestHandler'];
+                                if (empty($CustomTalkNestHandlersCsv->at("". $SpecialLinksValue. ".". $b ."")['NestHandler'])) break;
+                                $NestDataValue = $CustomTalkNestHandlersCsv->at("". $SpecialLinksValue. ".". $b ."")['NestHandler'];
                                 switch (true) {
                                     case ($NestDataValue > 262100) && ($NestDataValue < 269999)://Gilshop
                                         $FuncShop = $this->getShop($NameFormatted, "GilShop", $ItemCsv, $AchievementCsv, $QuestCsv, $SpecialShopCsv, $NestDataValue, $DefaultTalkCsv, $GilShopCsv, $GilShopItemCsv, $NpcPlaceName, $CoordLocation,"");
@@ -703,6 +723,10 @@ class NpcsPagesAll implements ParseInterface
                                         $ShopCheck[] = $FuncShop["Name"].",";
                                         $ShopOutputArray[] = $FuncShop["Shop"];
                                         $TotalItems[$NameFormatted][] = $FuncShop["Number"];
+                                    break;
+                                    case ($NestDataValue >= 3604400 && $NestDataValue < 3609999): //Description
+                                        $DescriptionTitle = $DescriptionCsv->at($NestDataValue)['Text[Long]'];
+                                        $HowToCheck[] = $DescriptionTitle.",";
                                     break;
                                     default:
                                     break;
@@ -1971,6 +1995,71 @@ class NpcsPagesAll implements ParseInterface
             if (!empty($NPCIds[$NameFormatted])){
                 $ListofIDS = $NPCIds[$NameFormatted];
             }
+            //DEBUG INFO:
+            $EventHandler = $ENpcBaseCsv->at($id)['EventHandler'];
+            $Important = $ENpcBaseCsv->at($id)['Important'];
+            $Unknown62 = $ENpcBaseCsv->at($id)['unknown_63'];
+            $Behavior = $ENpcBaseCsv->at($id)['Behavior'];
+            $BehaviourOutArray = [];
+            foreach (range(0, 1000) as $i) {
+                $BehaviorCalc = "$Behavior.$i";
+                if (empty($BehaviourCsv->at($BehaviorCalc)['Balloon'])) break;
+                $BUnknown0 = $BehaviourCsv->at($BehaviorCalc)['unknown_1'];
+                $BUnknown1 = $BehaviourCsv->at($BehaviorCalc)['unknown_2'];
+                $Condition0Target = $BehaviourCsv->at($BehaviorCalc)['Condition[0]Target'];
+                $Condition0Type = $BehaviourCsv->at($BehaviorCalc)['Condition[0]Type'];
+                $BBalloon = $BehaviourCsv->at($BehaviorCalc)['Balloon']."- ". $BalloonCsv->at($BehaviourCsv->at($BehaviorCalc)['Balloon'])['Dialogue'];
+                $BUnknown5 = $BehaviourCsv->at($BehaviorCalc)['unknown_6'];
+                $BUnknown6 = $BehaviourCsv->at($BehaviorCalc)['unknown_7'];
+                $BUnknown7 = $BehaviourCsv->at($BehaviorCalc)['unknown_8'];
+                $Condition1Target = $BehaviourCsv->at($BehaviorCalc)['Condition[1]Target'];
+                $Condition1Type = $BehaviourCsv->at($BehaviorCalc)['Condition[1]Type'];
+                $ContentArgument0 = $BehaviourCsv->at($BehaviorCalc)['ContentArgument[0]'];
+                $ContentArgument1 = $BehaviourCsv->at($BehaviorCalc)['ContentArgument[1]'];
+                $BUnknown13 = $BehaviourCsv->at($BehaviorCalc)['unknown_14'];
+                $BUnknown14 = $BehaviourCsv->at($BehaviorCalc)['unknown_15'];
+                $BUnknown15 = $BehaviourCsv->at($BehaviorCalc)['unknown_16'];
+                $BUnknown16 = $BehaviourCsv->at($BehaviorCalc)['unknown_17'];
+                $BehaviourOutArray[] = "BEHAVIOUR - [$i] \nBUnknown0 = $BUnknown0\n
+                BUnknown1 = $BUnknown1\n
+                Condition0Target = $Condition0Target\n
+                Condition0Type = $Condition0Type\n
+                BBalloon = $BBalloon\n
+                BUnknown5 = $BUnknown5\n
+                BUnknown6 = $BUnknown6\n
+                BUnknown7 = $BUnknown7\n
+                Condition1Target = $Condition1Target\n
+                Condition1Type = $Condition1Type\n
+                ContentArgument0 = $ContentArgument0\n
+                ContentArgument1 = $ContentArgument1\n
+                BUnknown13 = $BUnknown13\n
+                BUnknown14 = $BUnknown14\n
+                BUnknown15 = $BUnknown15\n
+                BUnknown16 = $BUnknown16\n";
+            }
+            $BehaviorOut = implode("\n",$BehaviourOutArray);
+            $Invisible = $ENpcBaseCsv->at($id)['Invisibility'];
+            $Balloon = $ENpcBaseCsv->at($id)['Balloon'];
+            $BalloonOut = "";
+            if (!empty($Balloon)){
+                $Slowly = $BalloonCsv->at($Balloon)['Slowly'];
+                $BalloonDialogue = $BalloonCsv->at($Balloon)['Dialogue'];
+                $BalloonOut = "Slowly? = $Slowly\nBalloon = $BalloonDialogue";
+            }
+            $NotRewriteHeight = $ENpcBaseCsv->at($id)['NotRewriteHeight'];
+            $DefaultBalloon = $ENpcBaseCsv->at($id)['DefaultBalloon'];
+            $Unknown94 = $ENpcBaseCsv->at($id)['unknown_95'];
+            $DebugOut[] = "$id / $NameFormatted\nEventHandler = $EventHandler\n
+            Important = $Important\n
+            Unknown62 = $Unknown62\n
+            Behavior = $Behavior\n
+            BehaviorOut = $BehaviorOut\n
+            Invisible = $Invisible\n
+            BalloonOut = $BalloonOut\n
+            NotRewriteHeight = $NotRewriteHeight\n
+            DefaultBalloon = $DefaultBalloon\n
+            Unknown94 = $Unknown94\n
+            ";
             $Npcarray2[$NameFormatted][0] = "{{-start-}}\n'''". $NameFormatted ."'''
             {{Infobox NPC
             <!-- 
@@ -1984,7 +2073,7 @@ class NpcsPagesAll implements ParseInterface
             $Race$Gender$Tribe
             | Title = ". $NPCs["Title"] ."
             | IDs = $ListofIDS
-            | Apperance IDs = $UniqueApperances
+            | Appearance IDs = $UniqueApperances
             | Shop = ".substr($Shoparrayimplode[$NameFormatted],0,-1)."
             | TotalItems = $ShopItemsTotalNo
             | Warp = ".substr($Warparrayimplode[$NameFormatted],0,-1)."
@@ -2035,8 +2124,12 @@ class NpcsPagesAll implements ParseInterface
         $Output = implode("\n", $finaloutput);
 
         $MapOutput = implode("\n", $MapArray);
+        $DebugOutim = implode("\n", $DebugOut);
 
         //$GetHowToOut = implode("\n", array_unique($GetHowToArray));
+
+        //getcustomtalk
+        $CustomTalkCheckOut = implode("\n", $CustomTalkCheck);
         
         $data = [
             '{Output}' => $Output,
@@ -2063,5 +2156,7 @@ class NpcsPagesAll implements ParseInterface
         $this->saveExtra("NPC_Dialogue.txt", $DialoguePages);
         $this->saveExtra("NPC_Appearance.txt", $EquipmentOut);
         $this->saveExtra("NPC_Player_Data.txt", $FinalNpcPlayerData);
+        $this->saveExtra("NPC_Custom_Talk.txt", $CustomTalkCheckOut, true);
+        $this->saveExtra("NPC_Debug.txt", $DebugOutim);
     }
 }
