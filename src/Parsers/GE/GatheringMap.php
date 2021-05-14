@@ -41,6 +41,7 @@ class GatheringMap implements ParseInterface
             if ($TerritoryType < 2) continue;
             $PlaceName = $Point['PlaceName'];
             $BaseRaw = $Point['GatheringPointBase'];
+            $NodeCountAmt = $Point['Count'];
             $XRaw = $ExportedGatheringPointCsv->at($BaseRaw)['X'];
             $YRaw = $ExportedGatheringPointCsv->at($BaseRaw)['Y'];
             $X = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9;
@@ -62,6 +63,7 @@ class GatheringMap implements ParseInterface
                     $SpotArray[$TerritoryType][$Item]['Level'][] = $GatheringLevel;
                     $SpotArray[$TerritoryType][$Item]['Rare'][] = $IsLimited;
                     $SpotArray[$TerritoryType][$Item]['Type'][] = $Type;
+                    $SpotArray[$TerritoryType][$Item]['Count'][] = $NodeCountAmt;
                 }
             }
         }
@@ -72,11 +74,14 @@ class GatheringMap implements ParseInterface
                 $MapArray = [];
                 $Type = $ItemData['Type'][0];
                 $MapCount = count($ItemData['X']) - 1;
-                $KeyNo = 6;
+                $ItemCount = count($ItemData['X']);
+                $KeyNo = 2;
                 $FirstX = 11;
-                $FirstY = 604;
+                $FirstY = 574;
+                $TextX = 90;
+                $TextY = 554;
                 $BorderX = 5;
-                $BorderY = 600;
+                $BorderY = 570;
                 $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($Teri)['PlaceName'])['Name'];
                 $NpcMapCodeName = $TerritoryTypeCsv->at($Teri)['Name'];
                 $MapID = $TerritoryTypeCsv->at($Teri)['Map'];
@@ -94,6 +99,8 @@ class GatheringMap implements ParseInterface
                 if ($code == "f1d9") {
                     $MapName = "The Haunted Manor";
                 }
+                //get levels
+                $Levels = "Lv.".implode("<br>\nLv.",array_unique($ItemData['Level']));
                 $ImageSwitch = "060445_hr1.png";
                 $BasePlaceName = "$code - {$MapName}{$sub}";
                 $MapString = "";
@@ -104,9 +111,9 @@ class GatheringMap implements ParseInterface
                 $MapString .= "| base = $BasePlaceName.png\n";
                 $MapString .= "| base_width = 682px\n";
                 $MapString .= "| base_style = float: left\n";
-                $MapString .= "| base_alt = \n";
+                $MapString .= "| base_alt = {$MapName}{$sub}\n";
                 $MapString .= "| base_caption = \n";
-                $MapString .= "| base_link = \n";
+                $MapString .= "| base_link = {$MapName}{$sub}\n";
                 $MapString .= "\n";// dimbar
                 $MapString .= "| float = dimbar002.png\n";
                 $MapString .= "| float_width = 682px\n";
@@ -116,31 +123,80 @@ class GatheringMap implements ParseInterface
                 $MapString .= "| x = 0\n";
                 $MapString .= "| y = 530\n";
                 $MapString .= "| t = \n";
+                $MapString .= "\n";// NewNode
+                $MapString .= "| float$KeyNo = {$ItemName}_Icon.png\n";
+                $MapString .= "| float".$KeyNo."_width = 64px\n";
+                $MapString .= "| float".$KeyNo."_alt = $ItemName\n";
+                $MapString .= "| float".$KeyNo."_caption = $ItemName\n";
+                $MapString .= "| link$KeyNo = $ItemName\n";
+                $MapString .= "| x$KeyNo = $FirstX\n";
+                $MapString .= "| y$KeyNo = $FirstY\n";
+                $MapString .= "| t$KeyNo = <b><p style=\"font-size:18px;color:white;text-shadow:-1px -1px 0 #000,  1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;\">$ItemCount Locations</b>\n";
+                $MapString .= "\n";
+                $KeyNo++;
+                $MapString .= "\n";// text
+                $MapString .= "| float$KeyNo =\n";
+                $MapString .= "| float".$KeyNo."_width =\n";
+                $MapString .= "| float".$KeyNo."_alt =\n";
+                $MapString .= "| float".$KeyNo."_caption =\n";
+                $MapString .= "| link$KeyNo =\n";
+                $MapString .= "| x$KeyNo = $TextX\n";
+                $MapString .= "| y$KeyNo = $TextY\n";
+                $MapString .= "| t$KeyNo = <b><p style=\"font-size:18px;color:white;\">$Levels</b>\n";
+                $MapString .= "\n";// overlay
+                $KeyNo++;
+                $MapString .= "| float$KeyNo = Fishguide.uld-9-0-hr.png\n";
+                $MapString .= "| float".$KeyNo."_width = 76px\n";
+                $MapString .= "| float".$KeyNo."_alt = $ItemName\n";
+                $MapString .= "| float".$KeyNo."_caption = $ItemName\n";
+                $MapString .= "| link$KeyNo = $ItemName\n";
+                $MapString .= "| x$KeyNo = $BorderX\n";
+                $MapString .= "| y$KeyNo = $BorderY\n";
+                $MapString .= "| t$KeyNo = \n";
                 
                 foreach(range(0,$MapCount) as $i) {
-                    $Px = $ItemData['X'][$i] / 3;
-                    $Py = $ItemData['Y'][$i] / 3;
+                    $Px = ($ItemData['X'][$i] / 3) - 32;
+                    $Py = ($ItemData['Y'][$i] / 3) - 32;
+                    $TextX = $Px + 34;
+                    $TextY = $Py - 4;
                     $Level = $ItemData['Level'][$i];
+                    $Type = $ItemData['Type'][$i];
+                    $NodeCount = $ItemData['Count'][$i];
                     $KeyNo++;
                     //background
-                    //$Rare = $ItemData['Rare'][$i];
-                    //switch ($Rare) {
-                    //    case "true":
-                    //        $ImageSwitch = "060930_hr1.png";
-                    //    break;
-                    //    case "false":
-                    //        $ImageSwitch = "060445_hr1.png";
-                    //    break;
-                    //}
+                    switch ($Type) {
+                        case "Mining":
+                            $ImageSwitch = "060438_hr1.png";
+                        break;
+                        case "Quarrying":
+                            $ImageSwitch = "060437_hr1.png";
+                        break;
+                        case "Logging":
+                            $ImageSwitch = "060433_hr1.png";
+                        break;
+                        case "Harvesting":
+                            $ImageSwitch = "060432_hr1.png";
+                        break;
+                    }
                     $MapString .= "\n";// NewNode
-                    $MapString .= "| float$KeyNo = Map41_Icon.png\n";
+                    $MapString .= "| float$KeyNo = $ImageSwitch\n";
                     $MapString .= "| float".$KeyNo."_width = 64px\n";
                     $MapString .= "| float".$KeyNo."_alt = $ItemName\n";
                     $MapString .= "| float".$KeyNo."_caption = $ItemName\n";
                     $MapString .= "| link$KeyNo = $ItemName\n";
-                    $MapString .= "| x$KeyNo = $Px\n";
-                    $MapString .= "| y$KeyNo = $Py\n";
+                    $MapString .= "| x$KeyNo = ".$Px."\n";
+                    $MapString .= "| y$KeyNo = ".$Py."\n";
                     $MapString .= "| t$KeyNo = <b><p style=\"font-size:18px;color:white;text-shadow:-1px -1px 0 #000,  1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;\">Lv. $Level</b>\n";
+                    $MapString .= "\n";//amount X
+                    $KeyNo++;
+                    $MapString .= "| float$KeyNo =\n";
+                    $MapString .= "| float".$KeyNo."_width =\n";
+                    $MapString .= "| float".$KeyNo."_alt =\n";
+                    $MapString .= "| float".$KeyNo."_caption =\n";
+                    $MapString .= "| link$KeyNo =\n";
+                    $MapString .= "| x$KeyNo = ".$TextX."\n";
+                    $MapString .= "| y$KeyNo = ".$TextY."\n";
+                    $MapString .= "| t$KeyNo = <b><p style=\"font-size:8px;color:white;text-shadow:-1px -1px 0 #000,  1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;\">x $NodeCount</b>\n";
                     $MapString .= "\n";
                 }
 
@@ -186,36 +242,38 @@ class GatheringMap implements ParseInterface
             $ZoneName = $PlaceNameCsv->at($TerritoryTypeCsv->at($Teri)['PlaceName'])['Name'];
             $OutString = "{{-start-}}\n";
             $OutString .= "'''$ZoneName/Gathering_Map'''\n";
-            $OutString .= "{{#tag:tabber|\n";
+            $OutString .= "{| class=\"itembox shadowed\" style=\"color:white; width:100%; cellpadding=0; cellspacing=1;\" border={{{border|0}}}\n";
+            $OutString .= "|-\n";
+            $OutString .= "|{{#tag:tabber|\n";
                 
             if (!empty($MiningArray[$Teri])){
                 $OutString .= "Mining=\n";
-                $OutString .= "<tabber>\n";
+                $OutString .= "{{V-tabber|\n<tabber>\n";
                 $OutString .= implode("|-|\n", $MiningArray[$Teri]);
-                $OutString .= "</tabber>\n";
+                $OutString .= "</tabber>\n}}\n";
             }
             if (!empty($QuarryingArray[$Teri])){
                 $OutString .= "{{!}}-{{!}}\n";
                 $OutString .= "Quarrying=\n";
-                $OutString .= "<tabber>\n";
+                $OutString .= "{{V-tabber|\n<tabber>\n";
                 $OutString .= implode("|-|\n", $QuarryingArray[$Teri]);
-                $OutString .= "</tabber>\n";
+                $OutString .= "</tabber>\n}}\n";
             }
             if (!empty($LoggingArray[$Teri])){
                 $OutString .= "{{!}}-{{!}}\n";
                 $OutString .= "Logging=\n";
-                $OutString .= "<tabber>\n";
+                $OutString .= "{{V-tabber|\n<tabber>\n";
                 $OutString .= implode("|-|\n", $LoggingArray[$Teri]);
-                $OutString .= "</tabber>\n";
+                $OutString .= "</tabber>\n}}\n";
             }
             if (!empty($HarvestingArray[$Teri])){
                 $OutString .= "{{!}}-{{!}}\n";
                 $OutString .= "Harvesting=\n";
-                $OutString .= "<tabber>\n";
+                $OutString .= "{{V-tabber|\n<tabber>\n";
                 $OutString .= implode("|-|\n", $HarvestingArray[$Teri]);
-                $OutString .= "</tabber>\n";
+                $OutString .= "</tabber>\n}}\n";
             }
-            $OutString .= "}}\n";
+            $OutString .= "}}\n|}\n";
             $OutString .= "$NavBoxOutput\n";
             $OutString .= "{{-stop-}}\n";
             $FinalOutputArray[] = $OutString;
