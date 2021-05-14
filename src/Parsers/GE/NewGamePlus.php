@@ -23,6 +23,8 @@ class NewGamePlus implements ParseInterface
         $QuestRedoChapterUICsv = $this->csv('QuestRedoChapterUI');
         $QuestRedoChapterUICategoryCsv = $this->csv('QuestRedoChapterUICategory');
         $QuestRedoChapterUITabCsv = $this->csv('QuestRedoChapterUITab');
+        $QuestCsv = $this->csv('Quest');
+        $QuestRedoCsv = $this->csv('QuestRedo');
 
         // (optional) start a progress bar
         $this->io->progressStart($QuestRedoChapterUICsv->total);
@@ -32,6 +34,17 @@ class NewGamePlus implements ParseInterface
 
         // loop through data
         $OutputArray = [];
+        foreach ($QuestRedoCsv->data as $id => $QuestRedo) {
+            $Chapter = $QuestRedo['Chapter'];
+            $FinalQuest = $QuestCsv->at($QuestRedo['FinalQuest'])['Name'];
+            $StartQuest = $QuestCsv->at($QuestRedo['Quest[0]'])['Name'];
+            if (empty($QuestArray[$Chapter]['StartQuest'])){
+                $QuestArray[$Chapter]['StartQuest'] = $StartQuest;
+            }
+            if (empty($QuestArray[$Chapter]['EndQuest'])){
+                $QuestArray[$Chapter]['EndQuest'] = $FinalQuest;
+            }
+        }
         foreach ($QuestRedoChapterUICsv->data as $id => $QuestRedoChapterUI) {
             $this->io->progressAdvance();
             if (empty($QuestRedoChapterUI['ChapterName'])) continue;
@@ -55,7 +68,8 @@ class NewGamePlus implements ParseInterface
                 'Quest' => $Quest, 
                 'QuestRedoUISmall' => $QuestRedoUISmall, 
                 'QuestRedoUILarge' => $QuestRedoUILarge, 
-                'QuestRedoUIWide' => $QuestRedoUIWide
+                'QuestRedoUIWide' => $QuestRedoUIWide,
+                'QuestCatID' => $id
             );
             $NewGameArray[$TabName]['Icon'] = $TabIcon;
             $NewGameArray[$TabName]['Categories'][$CategoryName][] = $SingleArray;
@@ -63,38 +77,108 @@ class NewGamePlus implements ParseInterface
         $Each = "{| class=\"itembox shadowed\" style=\"color:white; width:100%; cellpadding=0; cellspacing=1;\" border={{{border|0}}}\n";
         $Each .= "|-\n";
         $Each .= "|{{#tag:tabber|\n";
+        $Wiki = "{| class=\"itembox shadowed\" style=\"color:white; width:100%; \"\n"; 
+        $Wiki .= "|-\n";
+        $Wiki .= "|[[File:MainIcon84.png|left|55px|link=]]'''New Game+''' is a system that makes it possible to relive adventures past with your current character data. The story is divided into various chapters, which can be viewed in the New Game+ menu located in the Duty menu. Unlocked via [[Memories Rekindled]].\n";
+        $Wiki .= "|-\n";
+        $Wiki .= "|style=\"color:#D2DD7F\" | ※Due to the nature of how NG+ works, players will not have access to a multitude of features while in NG+ mode. To use these features, suspend your progress and return to the standard game mode.\n";
+        $Wiki .= "|}\n";
+        $Wiki .= "== Chapter Listings ==\n";
+        $Wiki .= "{{#tag:tabber|\n";
+        
         foreach($NewGameArray as $Tab => $Value){
             $Icon = $Value['Icon'];
             $Each .= "$Tab=\n";
             $Each .= "<tabber>\n";
+            $Wiki .= "$Tab=\n";
+            $Wiki .= "<tabber>\n";
                 foreach($Value['Categories'] as $Category => $CatValue){
                     $Each .= "$Category=\n";
                     $Each .= "{{V-tabber|\n";
                     $Each .= "{{#tag:tabber|\n";
+                    $Wiki .= "$Category=\n";
+                    $Wiki .= "{{{!}} class=\"GEtable\" width=\"100%\"\n";
+                    $Wiki .= "!colspan=\"1\" width=\"170px\" {{!}} Part !! Description\n";
+                    
                     $EachArray = [];
+                    $WikiArray = [];
                     foreach($CatValue as $Part){
                         $ChapterName = $Part['ChapterName'];
                         $ChapterPart = $Part['ChapterPart'];
+                        $QuestCatID = $Part['QuestCatID'];
+                        $StartQuest = $QuestArray[$QuestCatID]['StartQuest'];
+                        $EndQuest = $QuestArray[$QuestCatID]['EndQuest'];
                         $ChapterSwitch = $ChapterPart;
                         if (empty($ChapterPart)) {
                             $ChapterSwitch = $ChapterName;
                         }
+                        $TransientWrap = wordwrap($Part['Transient'],65,'<br>');
                         $Transient = $Part['Transient'];
-                        $Quest = $Part['Quest'];
+                        $Quest = $QuestCsv->at($Part['Quest'])['Name'];
                         $QuestRedoUISmall = $Part['QuestRedoUISmall'];
                         $QuestRedoUILarge = $Part['QuestRedoUILarge'];
                         $QuestRedoUIWide = $Part['QuestRedoUIWide'];
-                        $EachString = "";
-                        $EachArray[] = "$ChapterSwitch=\n$Transient\n";
+                        $WikiString = "{{NewGameRow | Title = $ChapterName | Image = $QuestRedoUILarge.png\n";
+                        $WikiString .= "| Description = $Transient\n";
+                        $WikiString .= "| Start Quest = $StartQuest | End Quest = $EndQuest | Unlock Quest = $Quest}}\n";
+
+                        $EachString = "{{Superimpose2
+                            | border = 
+                            | collapse = 
+                            | base = 114466.png
+                            | base_width = 750px
+                            | base_style = float: left
+                            | base_alt = 
+                            | base_caption = 
+                            | base_link = 
+                            
+                            | float = dimbar002.png
+                            | float_width = 682px
+                            | float_alt =
+                            | float_caption = 
+                            | link = 
+                            | x = 100
+                            | y = 0
+                            | t = 
+
+                            | float2 = 114190_hr1.png
+                            | float2_width = 271px
+                            | float2_alt =
+                            | float2_caption = 
+                            | link2 = 
+                            | x2 = 0
+                            | y2 = 0
+                            | t2 = 
+                            
+                            | float3 = 
+                            | float3_width = 
+                            | float3_alt =
+                            | float3_caption = 
+                            | link3 = 
+                            | x3 = 280
+                            | y3 = -15
+                            | t3 = <b style=\"font-size:18px;color:#fef5e0;text-shadow:-1px -1px 0 #75654e,  1px -1px 0 #75654e,-1px 1px 0 #75654e,1px 1px 0 #75654e;\">$ChapterName</b><br><b style=\"font-size:14px;color:white;text-shadow:-1px -1px 0 #000,  1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;\">$TransientWrap</b>
+                            
+                        }}";
+                        $EachArray[] = "$ChapterSwitch=\n$EachString\n";
+                        $WikiArray[] = $WikiString;
                     }
+                    $Wiki .= implode("\n", $WikiArray);
+                    $Wiki .= "\n|-|\n";
                     $Each .= implode("{{!}}-{{!}}\n",$EachArray);
                     $Each .= "}}\n}}\n";
                     $Each .= "|-|\n";
                 }
+            $Wiki .= "</tabber>\n";
+            $Wiki .= "{{!}}-{{!}}\n";
             $Each .= "</tabber>\n";
             $Each .= "{{!}}-{{!}}\n";
         }
-        $Output = "$Each\n}}\n|}\n";
+        //$Output = "$Each\n}}\n|}\n";
+        $Output = "$Wiki\n}}\n__NOEDITSECTION__";
+
+
+        
 
         $data = [
             '{Output}' => $Output,
