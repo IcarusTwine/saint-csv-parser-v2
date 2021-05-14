@@ -43,8 +43,8 @@ class GatheringMap implements ParseInterface
             $BaseRaw = $Point['GatheringPointBase'];
             $XRaw = $ExportedGatheringPointCsv->at($BaseRaw)['X'];
             $YRaw = $ExportedGatheringPointCsv->at($BaseRaw)['Y'];
-            $X = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PX"];
-            $Y = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PY"];
+            $X = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9;
+            $Y = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9;
             $Radius = $ExportedGatheringPointCsv->at($BaseRaw)['unknown_5'];
             $GatheringLevel = $GatheringPointBaseCsv->at($BaseRaw)['GatheringLevel'];
             $IsLimited = $GatheringPointBaseCsv->at($BaseRaw)['IsLimited'];
@@ -56,30 +56,27 @@ class GatheringMap implements ParseInterface
             foreach(range(0,7) as $i) {
                 if (!empty($ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name'])) {
                     $Item = str_ireplace($BadArray,$GoodArray,$ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name']);
-                    $SpotArray[$TerritoryType][$PlaceName]['Items'][] = $Item;
+                    $SpotArray[$TerritoryType][$Item]['X'][] = $X;
+                    $SpotArray[$TerritoryType][$Item]['Y'][] = $Y;
+                    $SpotArray[$TerritoryType][$Item]['Radius'][] = $Radius;
+                    $SpotArray[$TerritoryType][$Item]['Level'][] = $GatheringLevel;
+                    $SpotArray[$TerritoryType][$Item]['Rare'][] = $IsLimited;
+                    $SpotArray[$TerritoryType][$Item]['Type'][] = $Type;
                 }
             }
-            $SpotArray[$TerritoryType][$PlaceName]['X'] = $X;
-            $SpotArray[$TerritoryType][$PlaceName]['Y'] = $Y;
-            $SpotArray[$TerritoryType][$PlaceName]['Radius'] = $Radius;
-            $SpotArray[$TerritoryType][$PlaceName]['Level'] = $GatheringLevel;
-            $SpotArray[$TerritoryType][$PlaceName]['Rare'] = $IsLimited;
-            $SpotArray[$TerritoryType][$PlaceName]['Type'] = $Type;
         }
-        
+
         foreach($SpotArray as $Teri => $Value){
             $ZoneName = $PlaceNameCsv->at($TerritoryTypeCsv->at($Teri)['PlaceName'])['Name'];
-            foreach($Value as $PN => $PNValue){
-                $LocalAreaName = $PlaceNameCsv->at($PN)['Name'];
-                if (empty($PNValue['Items'])) continue;
-                if (empty($PNValue['X'])) continue;
-                $PxX = $PNValue['X'] / 3;
-                $PxY = $PNValue['Y'] / 3;
-                $Radius = $PNValue['Radius'] / 4;
-                $Level = $PNValue['Level'];
-                $Rare = $PNValue['Rare'];
-                $Type = $PNValue['Type'];
-                $FishArray = $PNValue['Items'];
+            foreach($Value as $ItemName => $ItemData){
+                $MapArray = [];
+                $Type = $ItemData['Type'][0];
+                $MapCount = count($ItemData['X']) - 1;
+                $KeyNo = 6;
+                $FirstX = 11;
+                $FirstY = 604;
+                $BorderX = 5;
+                $BorderY = 600;
                 $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($Teri)['PlaceName'])['Name'];
                 $NpcMapCodeName = $TerritoryTypeCsv->at($Teri)['Name'];
                 $MapID = $TerritoryTypeCsv->at($Teri)['Map'];
@@ -98,16 +95,9 @@ class GatheringMap implements ParseInterface
                     $MapName = "The Haunted Manor";
                 }
                 $ImageSwitch = "060445_hr1.png";
-                switch ($Rare) {
-                    case "true":
-                        $ImageSwitch = "060930_hr1.png";
-                    break;
-                    case "false":
-                        $ImageSwitch = "060445_hr1.png";
-                    break;
-                }
                 $BasePlaceName = "$code - {$MapName}{$sub}";
-                $MapString = "$LocalAreaName =\n";
+                $MapString = "";
+                $MapString = "$ItemName =\n";
                 $MapString .= "{{Superimpose2\n";
                 $MapString .= "| border = \n";
                 $MapString .= "| collapse = \n";
@@ -126,65 +116,35 @@ class GatheringMap implements ParseInterface
                 $MapString .= "| x = 0\n";
                 $MapString .= "| y = 530\n";
                 $MapString .= "| t = \n";
-                $MapString .= "\n";// AOE Marker
-                $MapString .= "| float2 = 060497_hr1.png\n";
-                $MapString .= "| float2_width = ".$Radius."px\n";
-                $MapString .= "| float2_alt =\n";
-                $MapString .= "| float2_caption = $LocalAreaName\n";
-                $MapString .= "| link2 = $LocalAreaName\n";
-                $MapString .= "| x2 = ".($PxX - ($Radius / 2))."\n";
-                $MapString .= "| y2 = ".($PxY - ($Radius / 2))."\n";
-                $MapString .= "| t2 = \n";
-                $MapString .= "\n";// typeAOE
-                $MapString .= "| float3 = $ImageSwitch\n";
-                $MapString .= "| float3_width = 64px\n";
-                $MapString .= "| float3_alt =\n";
-                $MapString .= "| float3_caption = $LocalAreaName\n";
-                $MapString .= "| link3 = $LocalAreaName\n";
-                $MapString .= "| x3 = ".($PxX - 32)."\n";
-                $MapString .= "| y3 = ".($PxY - 32)."\n";
-                $MapString .= "| t3 = \n";
-                $MapString .= "\n";//placename text
-                $MapString .= "| float4 = \n";
-                $MapString .= "| float4_width = \n";
-                $MapString .= "| float4_alt = \n";
-                $MapString .= "| float4_caption = \n";
-                $MapString .= "| link4 = \n";
-                $MapString .= "| x4 = 15\n";
-                $MapString .= "| y4 = 520\n";
-                $MapString .= "| t4 = <b><p style=\"font-size:18px;color:white;text-shadow:-1px -1px 0 #000,  1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;\">$LocalAreaName<br>Lv. $Level</b>\n";
-                $MapString .= "\n";// EachFish
-                $KeyNo = 6;
-                $FirstX = 11;
-                $FirstY = 604;
-                $BorderX = 5;
-                $BorderY = 600;
-                foreach($FishArray as $FishKey => $FishName){
+                
+                foreach(range(0,$MapCount) as $i) {
+                    $Px = $ItemData['X'][$i] / 3;
+                    $Py = $ItemData['Y'][$i] / 3;
+                    $Level = $ItemData['Level'][$i];
                     $KeyNo++;
                     //background
-                    $MapString .= "\n";// NewFish
-                    $MapString .= "| float$KeyNo = ".$FishName."_Icon.png\n";
+                    //$Rare = $ItemData['Rare'][$i];
+                    //switch ($Rare) {
+                    //    case "true":
+                    //        $ImageSwitch = "060930_hr1.png";
+                    //    break;
+                    //    case "false":
+                    //        $ImageSwitch = "060445_hr1.png";
+                    //    break;
+                    //}
+                    $MapString .= "\n";// NewNode
+                    $MapString .= "| float$KeyNo = Map41_Icon.png\n";
                     $MapString .= "| float".$KeyNo."_width = 64px\n";
-                    $MapString .= "| float".$KeyNo."_alt = $FishName\n";
-                    $MapString .= "| float".$KeyNo."_caption = $FishName\n";
-                    $MapString .= "| link$KeyNo = $FishName\n";
-                    $MapString .= "| x$KeyNo = $FirstX\n";
-                    $MapString .= "| y$KeyNo = $FirstY\n";
-                    $MapString .= "| t$KeyNo = \n";
-                    $MapString .= "\n";// overlay
-                    $KeyNo++;
-                    $MapString .= "| float$KeyNo = Fishguide.uld-9-0-hr.png\n";
-                    $MapString .= "| float".$KeyNo."_width = 76px\n";
-                    $MapString .= "| float".$KeyNo."_alt = $FishName\n";
-                    $MapString .= "| float".$KeyNo."_caption = $FishName\n";
-                    $MapString .= "| link$KeyNo = $FishName\n";
-                    $MapString .= "| x$KeyNo = $BorderX\n";
-                    $MapString .= "| y$KeyNo = $BorderY\n";
-                    $MapString .= "| t$KeyNo = \n";
-                    $FirstX = $FirstX + 70;
-                    $BorderX = $BorderX + 70;
+                    $MapString .= "| float".$KeyNo."_alt = $ItemName\n";
+                    $MapString .= "| float".$KeyNo."_caption = $ItemName\n";
+                    $MapString .= "| link$KeyNo = $ItemName\n";
+                    $MapString .= "| x$KeyNo = $Px\n";
+                    $MapString .= "| y$KeyNo = $Py\n";
+                    $MapString .= "| t$KeyNo = <b><p style=\"font-size:18px;color:white;text-shadow:-1px -1px 0 #000,  1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;\">Lv. $Level</b>\n";
+                    $MapString .= "\n";
                 }
-                $MapString .= "}}\n";// EndFish
+
+                $MapString .= "}}\n";// End
                 if ($Type === "Mining"){
                     $MiningArray[$Teri][] = $MapString;
                 }

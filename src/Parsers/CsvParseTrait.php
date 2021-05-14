@@ -93,7 +93,7 @@ trait CsvParseTrait
     public function PatchCheck($PatchNoData, $FileName, $CSV) {
         if (!file_exists("Patch/$FileName.json")) { 
             $MakeFile = fopen("Patch/$FileName.json", 'w');
-            fwrite($MakeFile, NULL);
+            fwrite($MakeFile, "");
             fclose($MakeFile);
         }
         switch ($FileName) {
