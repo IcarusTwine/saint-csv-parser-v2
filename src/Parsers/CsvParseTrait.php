@@ -930,18 +930,41 @@ trait CsvParseTrait
                 switch (true) {
                     //PlayerParams:
                     //4 - Gender
+                    //5 - Gender
+                    //6 - Gender
+                    //7 - PlayerName
+                    //8 - FCName
                     //11 - time of day (24 hours)
+                    //12 - time of day (24 hours)
+                    //13 to 44 - User set text colour
                     //52 - Limsa Grand Company Rank
                     //53 - Gridania Grand Compay Rank
                     //54 - Ul'dah Grand Company Rank
+                    //57 to 65 - User set text colour
                     //68 - ClassJob
+                    //69 - ClassJob Level
                     //70 - Starting Town
                     //71 - Player Race (Race)
+                    //72 - ClassJob Level
+                    //74 - Player knows Alphinaud/Alisaie (maybe legacy player) ?
                     //75 - (0)GamePad, (>)Controller
+                    //76 - (maybe legacy player)?
                     //77 - ? possibly day ? Birthday?
                     //78 - PC / Mac?
-                    //80 - (0)keyboard?
+                    //79 - Birth Month 
+                    /**
+                    1. First Astral Moon
+                    2. First Umbral Moon
+                    3. Second Astral Moon
+                    4. Second Umbral Moon
+                    etc
+                    **/
+                    //80 - (0)keyboard / Gamepad
+                    //83 - Timezone?
+                    //84 to 90 - User set text colour
                     //ObjectParameter(1) = Player First Name
+                    //ObjectParameter(2) = Player Second Name
+                    //ObjectParameter(3) = Player Both Names??
                     case (stripos($Text, 'PlayerParameter(71)') !== false): //Player Race
                         $incorrectformattingarray = array("<Switch(PlayerParameter(71))>", "<Case(1)>", "<Case(2)>", "<Case(3)>", "<Case(4)>", "<Case(5)>", "<Case(6)>", "<Case(7)>", "<Case(8)>", "<Case(9)>","</Case>", "</Switch>");
                         $correctformattingarray = array("{{Loremtextconditional|", "", "|or '", "' or '", "' or '", "' or '", "' or '", "' or '", "' or '", "' or '", "", "', depending on Race}}");
