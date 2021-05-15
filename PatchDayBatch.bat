@@ -1,4 +1,5 @@
 @echo off
+php bin/console app:parse:csv GE:PatchPopulate
 php bin/console app:parse:csv GE:Achievement
 php bin/console app:parse:csv GE:Festival
 php bin/console app:parse:csv GE:ActiveHelp
