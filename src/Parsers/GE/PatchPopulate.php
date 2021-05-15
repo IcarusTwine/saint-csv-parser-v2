@@ -48,8 +48,13 @@ class PatchPopulate implements ParseInterface
         $console = $console->section();
         $linecount = 0;
         while (($line = fgets($handleCount)) !== false) {
-          $line = fgets($handleCount);
-          $linecount++;
+            $SplitLine = explode(",",$line);
+            if ($SplitLine[1] != 2){
+                if ($SplitLine[1] != -1){
+                    $line = fgets($handleCount);
+                    $linecount++;
+                }
+            }
         }
         $Currentcount = 0;
         if ($handle) {
