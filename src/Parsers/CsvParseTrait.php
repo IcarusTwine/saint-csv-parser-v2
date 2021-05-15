@@ -22,7 +22,7 @@ trait CsvParseTrait
     /**
      * Query CSV file from SaintC extraction folder
      */
-    public function csv($content): ParseWrapper
+    public function csv($content, $Old = false): ParseWrapper
     {
         if (isset($this->internal[$content])) {
             return $this->internal[$content];
@@ -33,34 +33,18 @@ trait CsvParseTrait
         //get the current patch long ID
         $ini = parse_ini_file('config.ini');
         $MainPath = $ini['MainPath'];
-        $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
+        if ($Old === false){
+            var_dump(($Old));
+            $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
+        }
+        if ($Old === true){
+            var_dump(($Old));
+            $PatchID = $ini['PreviousVer'];
+        }
         $cache = "{$ini['Cache']}/$PatchID/rawexd";
 
         //$cache = $this->projectDirectory . getenv('CACHE_DIRECTORY');
         $filename = "{$cache}/{$content}.csv";
-        // check cache and download if it does not exist. Ignoring now since Icarus rewrite in July 2020
-        /*
-        if (!file_exists($filename)) {
-            $this->io->text("Downloading: '{$content}.csv' for the first time ...");
-            $githubFilename = str_ireplace('{content}', $content, getenv('GITHUB_CSV_FILE'));
-            try {
-                $githubFiledata = file_get_contents($githubFilename);
-            } catch (\Exception $ex) {
-                $this->io->error("Could not get the file: {$githubFilename} from GITHUB, are you sure it exists? Filenames are case-sensitive.");
-                die;
-            }
-            if (!$githubFiledata) {
-                $this->io->text('<error>Could not download file from github: '. $githubFilename);die;
-            }
-            $pi = pathinfo($filename);
-            if (!is_dir($pi['dirname'])) {
-                mkdir($pi['dirname'], 0777, true);
-            }
-            file_put_contents($filename, $githubFiledata);
-            $this->io->text('✓ Download complete');
-        }
-        */
-        // grab wrapper
         $parser = new ParseWrapper($content, $filename);
         file_put_contents($filename.'.columns', json_encode($parser->columns, JSON_PRETTY_PRINT));
         file_put_contents($filename.'.offsets', json_encode($parser->offsets, JSON_PRETTY_PRINT));
@@ -2353,10 +2337,10 @@ trait CsvParseTrait
      */
     public function saveExtra($filename, $SourceData, $dontformat = false)
     {   
-        if ($dontformat === true){
+        if ($dontformat = true){
             $data = $SourceData;
         }
-        if ($dontformat === false){
+        if ($dontformat = false){
             $data = $this->GEformat($SourceData);
         }
         $ini = parse_ini_file('config.ini');
