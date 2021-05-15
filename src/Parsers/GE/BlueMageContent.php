@@ -537,10 +537,10 @@ class BlueMageContent implements ParseInterface
         $ContentOutput = implode("\n",$ContentArray);
         
         //bonus list:
-        $BonusHeader = `        === Bonus List ===
-        The Bonus List details various predetermined conditions and is accessed through the "Bonus Details" beside the "Challenge" button in the Masked Carnivale menu. Each week when a stage is selected for bonus rewards, it will be assigned conditions required to complete it to receive the bonus rewards. Novice rating doesn't require any conditions, Moderate requires 1 condition to complete, and Advanced requires 2 conditions to complete. It's possible to complete the conditions in other stages, but it will only increase your points instead of giving bonus rewards. Some achievements require players to fulfill certain conditions in specific stages to get them. 
-        {{{!}} class="GEtable" width="100%" 
-        !colspan="1" {{!}} Bonus !! Description\n`;
+        $BonusHeader = "        === Bonus List ===
+        The Bonus List details various predetermined conditions and is accessed through the \"Bonus Details\" beside the \"Challenge\" button in the Masked Carnivale menu. Each week when a stage is selected for bonus rewards, it will be assigned conditions required to complete it to receive the bonus rewards. Novice rating doesn't require any conditions, Moderate requires 1 condition to complete, and Advanced requires 2 conditions to complete. It's possible to complete the conditions in other stages, but it will only increase your points instead of giving bonus rewards. Some achievements require players to fulfill certain conditions in specific stages to get them. 
+        {{{!}} class=\"GEtable\" width=\"100%\" 
+        !colspan=\"1\" {{!}} Bonus !! Description\n";
         $ScoreArray = [];
         foreach ($AOZScoreCsv->data as $id => $Score) {
             $Name = $Score["Score"];
@@ -572,7 +572,7 @@ class BlueMageContent implements ParseInterface
             if (empty($Name)) continue;
             $Patch = $PatchNumberAction[$id];
             $Type = $ActionCategoryCsv->at($ActionCsv->at($ActionID)['ActionCategory'])['Name'];
-            $Rank = $Action['unknown_2'];
+            $Rank = $Action['Rank'];
             $StatsString = $AozActionTransientCsv->at($id)['Stats'];
             $StatsString = str_ireplace("<UIForeground>F201F8</UIForeground><UIGlow>F201F9</UIGlow>", "", $StatsString);
             $StatsString = str_ireplace("<UIGlow>01</UIGlow><UIForeground>01</UIForeground>", "", $StatsString);
@@ -699,7 +699,7 @@ class BlueMageContent implements ParseInterface
             }
 
             // build icon input folder paths
-            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($AozActionTransientCsv->at($id)['Icon']);
+            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($AozActionTransientCsv->at($id)['Icon'], true);
 
             // give correct file names to icons for output
             $SmallIconFileName = "{$IconoutputDirectory}/$Name Icon.png";
@@ -726,8 +726,8 @@ class BlueMageContent implements ParseInterface
             }
 
             // build icon input folder paths
-            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($SmallIcon);
-            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($LargeIcon);
+            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($SmallIcon, true);
+            $LargeIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($LargeIcon, true);
             // give correct file names to icons for output
             $SmallIconFileName = "{$IconoutputDirectory}/{$Name}_Carnivale_Mini.png";
             $LargeIconFileName = "{$IconoutputDirectory}/{$Name}_Carnivale.png";
@@ -737,13 +737,13 @@ class BlueMageContent implements ParseInterface
 
         }
 
-
+        
+        $this->saveExtra("BLU_Content.txt", $ContentOutput, true);
+        $this->saveExtra("BLU_Score.txt", $ScoreOutput, true);
+        $this->saveExtra("BLU_Actions.txt", $ActionOutput, true);
+        $this->saveExtra("BLU_SpellBook.txt", $SpellBookOutput, true);
         // Save some data
         $data = [
-            '{Content}' => $ContentOutput,
-            '{Score}' => $ScoreOutput,
-            '{Action}' => $ActionOutput,
-            '{SpellBook}' => $SpellBookOutput,
         ];
 
         // format using Gamer Escape formatter and add to data array
@@ -753,11 +753,11 @@ class BlueMageContent implements ParseInterface
         // save our data to the filename: GeRecipeWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');
-        $info = $this->save("BlueMageContent.txt", 999999999);
-
-        $this->io->table(
-            [ 'Filename', 'Data Count', 'File Size' ],
-            $info
-        );
+        //$info = $this->save("BlueMageContent.txt", 999999999);
+//
+        //$this->io->table(
+        //    [ 'Filename', 'Data Count', 'File Size' ],
+        //    $info
+        //);
     }
 }

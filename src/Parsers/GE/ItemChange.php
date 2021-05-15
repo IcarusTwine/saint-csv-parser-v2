@@ -19,8 +19,9 @@ class ItemChange implements ParseInterface
         $MainPath = $ini['MainPath'];
         $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
         $PreviousPatchID = $ini['PreviousVer'];
-        echo "Current PatchID is: $PatchID \n";
+        $Cache = $ini['Cache'];
         echo "Previous PatchID is: $PreviousPatchID\n";
+        echo "Current PatchID is: $PatchID \n";
         echo "Type 'yes' if this is correct and to continue: \n";
         $handle = fopen ("php://stdin","r");
         $line = fgets($handle);
@@ -34,33 +35,40 @@ class ItemChange implements ParseInterface
 
         // (optional) start a progress bar
         $CurrentItemCsv = $this->csv('Item');
-        $this->io->progressStart($CurrentItemCsv->total);
 
         // loop through data
+        //generate the data files if they dont exist
         $FixArray = [];
-        foreach ($CurrentItemCsv->data as $id => $Item) {
-            $this->io->progressAdvance();
-            $Name = $Item['Name'];
-            if (empty($Name)) continue;
-            //$OldName = $OldItemCsv->at($id)['Name'];
-            //if ($Name != $OldName){
-            $newArray[$id] = $Name;
-            //}
-        }
-        $OldItemCsv = $this->csv('Item',true);
-        foreach ($OldItemCsv->data as $id => $Item) {
-            $this->io->progressAdvance();
-            $Name = $Item['Name'];
-            if (empty($Name)) continue;
-            //$OldName = $OldItemCsv->at($id)['Name'];
-            //if ($Name != $OldName){
+        $OldCache = "$Cache/$PreviousPatchID/rawexd/Item.csv.data";
+        $Oldhandle = file_get_contents("$OldCache");
+        $OldJson = json_decode($Oldhandle, true);
+        $NewCache = "$Cache/$PatchID/rawexd/Item.csv.data";
+        $Newhandle = file_get_contents("$NewCache");
+        $NewJson = json_decode($Newhandle, true);
+        foreach($OldJson as $key => $Value){
+            if (empty($Value['Name'])) continue;
+            $id = $Value['id'];
+            $Name = $Value['Name'];
             $OldArray[$id] = $Name;
-            //}
         }
-        $Old = json_encode($OldArray, JSON_PRETTY_PRINT);
-        $New = json_encode($newArray, JSON_PRETTY_PRINT);
-        $this->saveExtra("Old.json", $Old);
-        $this->saveExtra("New.json", $New);
+        $JobArray = array("Carpenter","Blacksmith","Armorer","Goldsmith","Leatherworker","Weaver","Alchemist","Culinarian");
+        foreach($NewJson as $key => $Value){
+            if (empty($Value['Name'])) continue;
+            $id = $Value['id'];
+            $Name = $Value['Name'];
+            $NewArray[$id] = $Name;
+            if (!empty($OldArray[$id])){
+                if ($OldArray[$id] != $NewArray[$id]){
+                    $ItemNameOld = str_replace("'", "%27",str_replace(" ", "_",$OldArray[$id]));
+                    $ItemNameNew = str_replace(" ", "_",$NewArray[$id]);
+                    $FixString = "https://ffxiv.gamerescape.com/wiki/Special:MovePage/$ItemNameOld\n";
+                    $FixString .= "$ItemNameNew\n";
+                    $FixArray[] = $FixString;
+                }
+            }
+        }
+        $Out = implode("\n", $FixArray);
+        $this->saveExtra("NameFix.txt", $Out);
 
         // Save some data
         //$this->save('ItemDescriptions', [
@@ -72,7 +80,6 @@ class ItemChange implements ParseInterface
         //
 
         // (optional) finish progress bar
-        $this->io->progressFinish();
 
         // save
         $this->io->text('Saving data ...');
