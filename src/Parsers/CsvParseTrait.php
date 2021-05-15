@@ -119,6 +119,7 @@ trait CsvParseTrait
         }
         $jdata = file_get_contents("Patch/$FileName.json");
         $PatchArray = json_decode($jdata, true);
+        $PatchCount = 0;
         foreach ($CSV->data as $id => $CsvData) {
             $Key = $CsvData["id"];
             if (empty($Key)) continue;
@@ -127,7 +128,11 @@ trait CsvParseTrait
             if (isset($PatchArray[$Key])) continue;
             if (!isset($PatchArray[$Key])) {
                 $PatchArray[$Key] = $PatchNo;
+                $PatchCount++;
             }
+        }
+        if ($PatchCount != 0){
+            $this->io->text(" $PatchCount new rows added to $FileName");
         }
         $JSONOUTPUT = json_encode($PatchArray, JSON_PRETTY_PRINT);
         //write Api file
