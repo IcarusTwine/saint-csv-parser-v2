@@ -23,18 +23,30 @@ class LuaTest implements ParseInterface
         $console = new ConsoleOutput();
         $console->writeln(" Loading CSVs");
 
-        ///$dialoguecsv = $this->csv("CmnBhtEnterLv020St0003_00013");
+        $ENpcBaseCsv = $this->csv("ENpcBase");
+        $ENpcResidentCsv = $this->csv("ENpcResident");
+        $CustomTalkCsv = $this->csv("CustomTalk");
+        foreach ($ENpcBaseCsv->data as $id => $ENpcBase) {
+            if ($id != 1000128) continue;
+            $Name = $ENpcResidentCsv->at($id)['Singular'];
+            foreach(range(0,31) as $i) {
+                if (empty($ENpcBase["ENpcData[$i]"])) continue;
+                if (($ENpcBase["ENpcData[$i]"] > 720000) && ($ENpcBase["ENpcData[$i]"] < 729999)){
+                    $CustomTalkID = $ENpcBase["ENpcData[$i]"];
+                    $LuaName = $CustomTalkCsv->at($CustomTalkID)['Name'];
+                    $MainOption = $CustomTalkCsv->at($CustomTalkID)['MainOption'];
+                    foreach(range(0,29) as $a) {
+                        $Instruction = $CustomTalkCsv->at($CustomTalkID)["Script{Instruction}[$a]"];
+                        if (empty($Instruction)) continue;
+                        $Argument = $CustomTalkCsv->at($CustomTalkID)["Script{Arg}[$a]"];
+                        $ArgArray[$Instruction] = $Argument; 
+                    }
+                $LuaFormat = $this->getLuaDialogue($LuaName, $ArgArray, $Name, $MainOption);
+                }
+            }
+        }
+        var_dump($ArgArray);
         $console = $console->section();
-        $NpcName = "Mikoto";
-        $ArgArray["SCREEN_IMAGE_01"] = "0281929.png";
-        //$LuaName = "RegOth4MycMikoto_00659";
-        //$LuaFile = "cache/~57bacb98.luab.lua";
-        //$LuaName = "RegOth4MycLilja_00693";
-        //$LuaFile = "cache/~393ae41e.luab.lua";
-        //$LuaName = "CmnRadEnterJungle_00080";
-        //$LuaFile = "cache/cmnradenterjungle_00080.luab.luab.lua";
-        $LuaName = "ctserkeureka1spweapon_00450";
-        $LuaFile = "cache/ctserkeureka1spweapon_00450.lua";
         $LuaFormat = $this->getLuaDialogue2($LuaName, $LuaFile, $ArgArray, $NpcName);
         
         //print_r($LuaFormat);

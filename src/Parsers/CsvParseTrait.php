@@ -882,7 +882,7 @@ trait CsvParseTrait
     /**
      * Format dialogue for luasheets
      */
-    public function getLuaDialogue($LuaName, $NpcNameRaw) { 
+    public function getLuaDialogue1($LuaName, $NpcNameRaw) { 
     //broke/empty lua files
         $SkipLuaArray = array(
             "CmnGscTripleTriadRoomMove_00371",
@@ -1066,6 +1066,63 @@ trait CsvParseTrait
         }
     }
 
+    /**
+     * Format dialogue for luasheets
+     */
+    public function getLuaDialogue($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
+        $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";
+        //broke/empty lua files
+        $SkipLuaArray = array(
+            "CmnGscTripleTriadRoomMove_00371",
+            "RegDra2TomestoneWarTrade_00298",
+            "RegDra2TomestoneEsotericsTrade_00295",
+            "RegDra2TomestoneFolkloreTrade_00333",
+            "JobRelAnimaWeaponQuestSelect_00334",
+            "ComArmGcArmyMember_00343",
+            "ComArmGcArmyCaptureRefund_00436",
+            "CmnDefMateriaMeld_00357",
+            "CtsHwdDevLevelInvisible_00661",
+            "CmnDefGroupPose_00297",
+            "CtsHwdLively_00638"
+        );
+        $VariableArray = array(
+            "A0_0",
+            "A1_1",
+            "A2_2"
+        );
+        $CorrectArray = array(
+            "Self",
+            "Player",
+            "Target"
+        );
+        $NpcName = str_replace(" ", "", strtoupper($NpcNameRaw));
+        if (in_array($LuaName, $SkipLuaArray)){
+            $this->io->text("Lua file $LuaName is not readable.");
+            return "";
+        }
+        if (!in_array($LuaName, $SkipLuaArray)){
+            $folder = substr(explode('_', $LuaName)[1], 0, 3);
+            $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+            $CsvTextArray = [];
+            foreach ($textdata->data as $key => $textdataCsv) {
+                $command = $textdataCsv["unknown_1"];
+                if(!empty($textdataCsv["unknown_2"])){
+                    $argument = $textdataCsv["unknown_2"];
+                    $CsvTextArray[$command] = $argument;
+                }
+            }
+            $LuaRead = fopen($LuaFile, "r");
+            if ($LuaRead) {
+                while (($line = fgets($LuaRead)) !== false) {
+                    $Line = str_ireplace($VariableArray,$CorrectArray,$line);
+                    var_dump($Line);
+                }
+            }
+        }
+    }
     /**
      * Format dialogue for luasheets
      */
