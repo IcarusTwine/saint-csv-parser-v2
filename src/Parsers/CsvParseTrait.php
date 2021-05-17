@@ -1116,7 +1116,7 @@ trait CsvParseTrait
             $Text = $CsvTextArray[$String[1]];
             return $Text;
         };
-        $LUATalk = function ($pc, $self, $Instruction, $bool) use ($CsvTextArray){
+        $LUATalk = function ($pc, $self, $Instruction, $bool) use ($CsvTextArray, &$IfImp){
             //get string
             $String = explode(".", $Instruction);
             $Text = $CsvTextArray[$String[1]];
@@ -1147,11 +1147,13 @@ trait CsvParseTrait
             }
             return $QAArray;
         };
-        $IfArray = [];
         //Menu
-        $LUAMenu = function (...$InputArray) use ($CsvTextArray, $IfArray){
+        $LUAMenu = function (...$InputArray) use ($CsvTextArray, &$EndIf){
             $i = 0;
-            var_dump($IfArray);
+            $NewEndIf = $EndIf;
+            $FuncSelectExplode = explode(" ",$NewEndIf);
+            $FuncSelect = $InputArray[$FuncSelectExplode[2]];
+            $SelectText = explode(".",$FuncSelect);
             foreach($InputArray as $Text){
                 $String = explode(".", $Text);
                 if (strpos($String[1], "DEFAULT_YES")) continue;
@@ -1165,6 +1167,7 @@ trait CsvParseTrait
                 $TextString = $CsvTextArray[$String[1]];
                 $MenuArray["Menu"][$QA] = $TextString;
             }
+            $MenuArray["Choice"] = $CsvTextArray[$SelectText[1]];
             return $MenuArray;
         };
         $LUAScreenImage = function ($Input) use ($ArgArray){
@@ -1174,7 +1177,9 @@ trait CsvParseTrait
             $Image = $CSV->at($Arg)['Image'];
             return $Image.".png";
         };
-        $LUAGetSex = function (){
+        $LUAGetSex = function () use (&$EndIf){
+            $yes = $EndIf;
+            //var_dump($yes);
             return null;
         };
         $LUAGetRace = function (){
@@ -1259,6 +1264,7 @@ trait CsvParseTrait
                 $SplitFunction = explode("\n", $Function['String']);
                 $CleanedFuntion = str_ireplace("  ","",$SplitFunction);
                 foreach($CleanedFuntion as $Line){
+                    $IfImp = "";
                     $IfArray = [];
                     //is function
                     if (strpos($Line,":")){
@@ -1266,9 +1272,8 @@ trait CsvParseTrait
                         //get if / elseif
                         $IfArray[] = $ExplodeLine[0];
                         $EndExplode = explode(")", $Line);
-                        $IfArray[] = $EndExplode[1];
+                        $EndIf = $EndExplode[1];
                         
-
                         $CleanEnd = explode(")",$ExplodeLine[1]);
                         $ExplodevarsFromFunc = explode("(",$CleanEnd[0]);
                         $ExplodeVars = explode(",",$ExplodevarsFromFunc[1]);
@@ -1290,10 +1295,10 @@ trait CsvParseTrait
                 }
             }
         }
+        var_dump($OutArray);
         foreach ($OutArray as $FuncName => $Value){
 
         }
-        //var_dump($OutArray);
     }
     /**
      * Format dialogue for luasheets
