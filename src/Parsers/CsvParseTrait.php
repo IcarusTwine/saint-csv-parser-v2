@@ -1080,22 +1080,20 @@ trait CsvParseTrait
     public function LUAYesNo(...$YesNoArray){
         foreach($YesNoArray as $Text){
             $String = explode(".", $Text);
-            $QAArray[] = $String[1];
+            $QAArray["QA"][] = $String[1];
         }
         return $QAArray;
     }
     public function LUAMenu(...$InputArray){
         foreach($InputArray as $Text){
             $String = explode(".", $Text);
-            $MenuArray[] = $String[1];
+            $MenuArray["Menu"][] = $String[1];
         }
         return $MenuArray;
     }
     public function LUAScreenImage($Input){
-        $CSV = $this->csv("ScreenImage");
         $String = explode(".", $Input);
-        $Icon = $CSV->at($String[1])['Image'];
-        return $Icon;
+        return "ScreenImage.".$String[1];
     }
     public function LUAGetRace(){
         return "Player Race";
@@ -1134,10 +1132,8 @@ trait CsvParseTrait
         return "";
     }
     public function LUALogMessage($Input){
-        $CSV = $this->csv("LogMessage");
         $String = explode(".", $Input);
-        $Output = $CSV->at($String[1])['Text'];
-        return $Output;
+        return "LogMessage.".$String[1];
     }
     /**
      * Format dialogue for luasheets
@@ -1243,7 +1239,7 @@ trait CsvParseTrait
                         $CleanedRun = "$FunctionType($ImplodeVars)";
 
                         $RunFunction = "return \$this->LUA".$CleanedRun.";";
-                        $OutArray[] = eval($RunFunction);
+                        $OutArray[$FunctionName][] = eval($RunFunction);
                     }
                 }
             }
@@ -1324,13 +1320,13 @@ trait CsvParseTrait
                             $header = true;
                             if (!empty($UnkArray[0])){
                                 unset($UnkArray);
-                                if(!empty($CsvTextArray[$AnswerReplace])) {
-                                    if(empty($lineexp[1])) {
-                                        $lineexp[1] = "null";
-                                    }
-                                    $AnswerArray[$lineexp[1]] = $CsvTextArray[$AnswerReplace];
-                                    $FuncTextArray[$LastFuncVal]["Title"] = $AnswerArray[$lineexp[1]];
-                                }
+                                //if(!empty($CsvTextArray[$AnswerReplace])) {
+                                //    if(empty($lineexp[1])) {
+                                //        $lineexp[1] = "null";
+                                //    }
+                                //    $AnswerArray[$lineexp[1]] = $CsvTextArray[$AnswerReplace];
+                                //    $FuncTextArray[$LastFuncVal]["Title"] = $AnswerArray[$lineexp[1]];
+                                //}
                             }
                         } else {
                             $header = false;
