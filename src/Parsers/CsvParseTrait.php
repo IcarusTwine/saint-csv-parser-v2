@@ -1070,6 +1070,7 @@ trait CsvParseTrait
      * Format dialogue for luasheets
      */
     public function getLuaDialogue($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
+        var_dump($ArgArray);
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
@@ -1106,26 +1107,46 @@ trait CsvParseTrait
                 }
             }
         }
-        foreach($CsvTextArray as $Key => $CSVText){
-            define($Key,$CSVText);
-        }
         //Lua functions
-        $LUASystemTalk = function ($Instruction, $bool) use ($CsvTextArray){
+        $LUASystemTalk = function ($Instruction, $bool) use ($CsvTextArray, &$EndIf){
             //get string
+            $IfCheck = &$EndIf;
+            if (empty($IfCheck)){
+                $IfBool = false;
+            }
+            if (!empty($IfCheck)){
+                $IfBool = true;
+            }
             $String = explode(".", $Instruction);
-            $Text = $CsvTextArray[$String[1]];
+            $Text['String'] = $CsvTextArray[$String[1]];
             return $Text;
         };
         $LUATalk = function ($pc, $self, $Instruction, $bool) use ($CsvTextArray, &$IfImp){
             //get string
+            $IfCheck = &$EndIf;
+            if (empty($IfCheck)){
+                $IfBool = false;
+            }
+            if (!empty($IfCheck)){
+                $IfBool = true;
+            }
             $String = explode(".", $Instruction);
-            $Text = $CsvTextArray[$String[1]];
+            $Text['If'] = $IfBool;
+            $Text['String'] = $CsvTextArray[$String[1]];
             return $Text;
         };
-        $LUAYesNo = function (...$YesNoArray) use ($CsvTextArray){
+        $LUAYesNo = function (...$YesNoArray) use ($CsvTextArray, &$EndIf){
             $i = 0;
+            $IfCheck = &$EndIf;
+            if (empty($IfCheck)){
+                $IfBool = false;
+            }
+            if (!empty($IfCheck)){
+                $IfBool = true;
+            }
             foreach($YesNoArray as $Text){
                 if (strpos($Text, "DEFAULT_YES")) continue;
+                if (strpos($Text, "DEFAULT_NO")) continue;
                 switch($i){
                     case 0:
                         $QA = "Q";
@@ -1215,12 +1236,41 @@ trait CsvParseTrait
         $LUAIsBattleNpcTriggerOwner = function ($Input){
             return "";
         };
+        $LUAIsHousingIndoorTerritory = function (){
+            return "";
+        };
+        $LUAPlaySharedGroupTimeline = function (){
+            return "";
+        };
+        $LUAWait = function (){
+            return "";
+        };
         $LUALogMessage = function ($Input) use ($ArgArray){
-            $String = explode(".", $Input);
-            $CSV = $this->csv('LogMessage');
-            $Arg = $ArgArray[$String[1]];
-            $Message = $CSV->at($Arg)['Text'];
+            $Inputs = explode(",",$Input);
+            foreach($Inputs as $Variable) {
+                $String = explode(".", $Variable);
+                $CSV = $this->csv('LogMessage');
+                $Arg = $ArgArray[$String[1]];
+                $Message = $CSV->at($Arg)['Text'];
+                $MessageArray[] = $Message;
+            }
+            $Message = implode(",",$MessageArray);
             return $Message;
+        };
+        $LUAIsReward = function ($Input) use ($ArgArray, &$EndIf){
+            return "";
+        };
+        $LUAGetNumOfItems = function ($Input) use ($ArgArray, &$EndIf, &$StartIf){
+            $Endpre = str_replace("==","=",$EndIf);
+            $Endexplode = explode("and", $Endpre);
+            $End = $Endexplode[0];
+            $StartExp = explode(" ",$StartIf);
+            $Start = $StartExp[0];
+            $String = explode(".", $Input);
+            $CSV = $this->csv('Item');
+            $Arg = $ArgArray[$String[1]];
+            $Item = $CSV->at($Arg)['Plural'];
+            return "$Start Players $Item $End";
         };
         if (!in_array($LuaName, $SkipLuaArray)){
             $LuaRead = fopen($LuaFile, "r");
@@ -1270,7 +1320,7 @@ trait CsvParseTrait
                     if (strpos($Line,":")){
                         $ExplodeLine = explode(":",$Line);
                         //get if / elseif
-                        $IfArray[] = $ExplodeLine[0];
+                        $StartIf = $ExplodeLine[0];
                         $EndExplode = explode(")", $Line);
                         $EndIf = $EndExplode[1];
                         
