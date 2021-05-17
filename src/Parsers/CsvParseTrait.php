@@ -1066,75 +1066,6 @@ trait CsvParseTrait
         }
     }
 
-    //LuaFunctions:
-    public function LUASystemTalk($Instruction, $bool){
-        //get string
-        $String = explode(".", $Instruction);
-        return $String[1];
-    }
-    public function LUATalk($pc, $self, $Instruction, $bool){
-        //get string
-        $String = explode(".", $Instruction);
-        return $String[1];
-    }
-    public function LUAYesNo(...$YesNoArray){
-        foreach($YesNoArray as $Text){
-            $String = explode(".", $Text);
-            $QAArray["QA"][] = $String[1];
-        }
-        return $QAArray;
-    }
-    public function LUAMenu(...$InputArray){
-        foreach($InputArray as $Text){
-            $String = explode(".", $Text);
-            $MenuArray["Menu"][] = $String[1];
-        }
-        return $MenuArray;
-    }
-    public function LUAScreenImage($Input){
-        $String = explode(".", $Input);
-        return "ScreenImage.".$String[1];
-    }
-    public function LUAGetRace(){
-        return "Player Race";
-    }
-    public function LUAGetSex(){
-        return "Player Gender";
-    }
-    public function LUALookAt($Input){
-        return "";
-    }
-    public function LUATurnTo($Input, $bool){
-        return "";
-    }
-    public function LUAQuestOffer($Input){
-        return "NPC Offers Quest";
-    }
-    public function LUAPlayActionTimeline($Input){
-        return "";
-    }
-    public function LUAQuestAccepted($Input){
-        return "Player Accepts Quest";
-    }
-    public function LUAWaitForTurn($Input){
-        return "";
-    }
-    public function LUAQuestCompleted($Input){
-        return "Player Completes Quest";
-    }
-    public function LUAGetQuestSequence($Input){
-        return "";
-    }
-    public function LUAGetQuestUI8AL($Input){
-        return "";
-    }
-    public function LUAIsBattleNpcTriggerOwner($Input){
-        return "";
-    }
-    public function LUALogMessage($Input){
-        $String = explode(".", $Input);
-        return "LogMessage.".$String[1];
-    }
     /**
      * Format dialogue for luasheets
      */
@@ -1178,6 +1109,114 @@ trait CsvParseTrait
         foreach($CsvTextArray as $Key => $CSVText){
             define($Key,$CSVText);
         }
+        //Lua functions
+        $LUASystemTalk = function ($Instruction, $bool) use ($CsvTextArray){
+            //get string
+            $String = explode(".", $Instruction);
+            $Text = $CsvTextArray[$String[1]];
+            return $Text;
+        };
+        $LUATalk = function ($pc, $self, $Instruction, $bool) use ($CsvTextArray){
+            //get string
+            $String = explode(".", $Instruction);
+            $Text = $CsvTextArray[$String[1]];
+            return $Text;
+        };
+        $LUAYesNo = function (...$YesNoArray) use ($CsvTextArray){
+            $i = 0;
+            foreach($YesNoArray as $Text){
+                if (strpos($Text, "DEFAULT_YES")) continue;
+                switch($i){
+                    case 0:
+                        $QA = "Q";
+                    break;
+                    case 1:
+                        $QA = "Yes";
+                    break;
+                    case 2:
+                        $QA = "No";
+                    break;
+                    case 3:
+                        $QA = "Default";
+                    break;
+                }
+                $i++;
+                $String = explode(".", $Text);
+                $TextString = $CsvTextArray[$String[1]];
+                $QAArray["YN"][$QA] = $TextString;
+            }
+            return $QAArray;
+        };
+        $IfArray = [];
+        //Menu
+        $LUAMenu = function (...$InputArray) use ($CsvTextArray, $IfArray){
+            $i = 0;
+            var_dump($IfArray);
+            foreach($InputArray as $Text){
+                $String = explode(".", $Text);
+                if (strpos($String[1], "DEFAULT_YES")) continue;
+                if ($i === 0) {
+                    $QA = "Q";
+                } 
+                if ($i != 0) {
+                    $QA = "A$i";
+                }
+                $i++;
+                $TextString = $CsvTextArray[$String[1]];
+                $MenuArray["Menu"][$QA] = $TextString;
+            }
+            return $MenuArray;
+        };
+        $LUAScreenImage = function ($Input) use ($ArgArray){
+            $String = explode(".", $Input);
+            $CSV = $this->csv('ScreenImage');
+            $Arg = $ArgArray[$String[1]];
+            $Image = $CSV->at($Arg)['Image'];
+            return $Image.".png";
+        };
+        $LUAGetSex = function (){
+            return null;
+        };
+        $LUAGetRace = function (){
+            return null;
+        };
+        $LUALookAt = function ($Input){
+            return "";
+        };
+        $LUATurnTo = function ($Input, $bool){
+            return "";
+        };
+        $LUAQuestOffer = function ($Input){
+            return "NPC Offers Quest";
+        };
+        $LUAPlayActionTimeline = function ($Input){
+            return "";
+        };
+        $LUAQuestAccepted = function ($Input){
+            return "Player Accepts Quest";
+        };
+        $LUAWaitForTurn = function ($Input){
+            return "";
+        };
+        $LUAQuestCompleted = function ($Input){
+            return "Player Completes Quest";
+        };
+        $LUAGetQuestSequence = function ($Input){
+            return "";
+        };
+        $LUAGetQuestUI8AL = function ($Input){
+            return "";
+        };
+        $LUAIsBattleNpcTriggerOwner = function ($Input){
+            return "";
+        };
+        $LUALogMessage = function ($Input) use ($ArgArray){
+            $String = explode(".", $Input);
+            $CSV = $this->csv('LogMessage');
+            $Arg = $ArgArray[$String[1]];
+            $Message = $CSV->at($Arg)['Text'];
+            return $Message;
+        };
         if (!in_array($LuaName, $SkipLuaArray)){
             $LuaRead = fopen($LuaFile, "r");
             $LuaGet = file_get_contents($LuaFile);
@@ -1220,9 +1259,16 @@ trait CsvParseTrait
                 $SplitFunction = explode("\n", $Function['String']);
                 $CleanedFuntion = str_ireplace("  ","",$SplitFunction);
                 foreach($CleanedFuntion as $Line){
+                    $IfArray = [];
                     //is function
                     if (strpos($Line,":")){
                         $ExplodeLine = explode(":",$Line);
+                        //get if / elseif
+                        $IfArray[] = $ExplodeLine[0];
+                        $EndExplode = explode(")", $Line);
+                        $IfArray[] = $EndExplode[1];
+                        
+
                         $CleanEnd = explode(")",$ExplodeLine[1]);
                         $ExplodevarsFromFunc = explode("(",$CleanEnd[0]);
                         $ExplodeVars = explode(",",$ExplodevarsFromFunc[1]);
@@ -1238,13 +1284,16 @@ trait CsvParseTrait
                         $FunctionType = $ExplodevarsFromFunc[0];
                         $CleanedRun = "$FunctionType($ImplodeVars)";
 
-                        $RunFunction = "return \$this->LUA".$CleanedRun.";";
+                        $RunFunction = "return \$LUA".$CleanedRun.";";
                         $OutArray[$FunctionName][] = eval($RunFunction);
                     }
                 }
             }
         }
-        var_dump($OutArray);
+        foreach ($OutArray as $FuncName => $Value){
+
+        }
+        //var_dump($OutArray);
     }
     /**
      * Format dialogue for luasheets
