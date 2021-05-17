@@ -45,7 +45,7 @@ class LuaTest implements ParseInterface
                 }
             }
         }
-        var_dump($ArgArray);
+        //var_dump($ArgArray);
         $console = $console->section();
         $LuaFormat = $this->getLuaDialogue2($LuaName, $LuaFile, $ArgArray, $NpcName);
         

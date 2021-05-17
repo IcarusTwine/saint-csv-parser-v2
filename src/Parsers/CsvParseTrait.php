@@ -1066,6 +1066,79 @@ trait CsvParseTrait
         }
     }
 
+    //LuaFunctions:
+    public function LUASystemTalk($Instruction, $bool){
+        //get string
+        $String = explode(".", $Instruction);
+        return $String[1];
+    }
+    public function LUATalk($pc, $self, $Instruction, $bool){
+        //get string
+        $String = explode(".", $Instruction);
+        return $String[1];
+    }
+    public function LUAYesNo(...$YesNoArray){
+        foreach($YesNoArray as $Text){
+            $String = explode(".", $Text);
+            $QAArray[] = $String[1];
+        }
+        return $QAArray;
+    }
+    public function LUAMenu(...$InputArray){
+        foreach($InputArray as $Text){
+            $String = explode(".", $Text);
+            $MenuArray[] = $String[1];
+        }
+        return $MenuArray;
+    }
+    public function LUAScreenImage($Input){
+        $CSV = $this->csv("ScreenImage");
+        $String = explode(".", $Input);
+        $Icon = $CSV->at($String[1])['Image'];
+        return $Icon;
+    }
+    public function LUAGetRace(){
+        return "Player Race";
+    }
+    public function LUAGetSex(){
+        return "Player Gender";
+    }
+    public function LUALookAt($Input){
+        return "";
+    }
+    public function LUATurnTo($Input, $bool){
+        return "";
+    }
+    public function LUAQuestOffer($Input){
+        return "NPC Offers Quest";
+    }
+    public function LUAPlayActionTimeline($Input){
+        return "";
+    }
+    public function LUAQuestAccepted($Input){
+        return "Player Accepts Quest";
+    }
+    public function LUAWaitForTurn($Input){
+        return "";
+    }
+    public function LUAQuestCompleted($Input){
+        return "Player Completes Quest";
+    }
+    public function LUAGetQuestSequence($Input){
+        return "";
+    }
+    public function LUAGetQuestUI8AL($Input){
+        return "";
+    }
+    public function LUAIsBattleNpcTriggerOwner($Input){
+        return "";
+    }
+    public function LUALogMessage($Input){
+        $CSV = $this->csv("LogMessage");
+        $String = explode(".", $Input);
+        $Output = $CSV->at($String[1])['Text'];
+        return $Output;
+    }
     /**
      * Format dialogue for luasheets
      */
@@ -1073,7 +1146,7 @@ trait CsvParseTrait
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";
+        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";  
         //broke/empty lua files
         $SkipLuaArray = array(
             "CmnGscTripleTriadRoomMove_00371",
@@ -1088,16 +1161,7 @@ trait CsvParseTrait
             "CmnDefGroupPose_00297",
             "CtsHwdLively_00638"
         );
-        $VariableArray = array(
-            "A0_0",
-            "A1_1",
-            "A2_2"
-        );
-        $CorrectArray = array(
-            "Self",
-            "Player",
-            "Target"
-        );
+
         $NpcName = str_replace(" ", "", strtoupper($NpcNameRaw));
         if (in_array($LuaName, $SkipLuaArray)){
             $this->io->text("Lua file $LuaName is not readable.");
@@ -1114,14 +1178,77 @@ trait CsvParseTrait
                     $CsvTextArray[$command] = $argument;
                 }
             }
+        }
+        foreach($CsvTextArray as $Key => $CSVText){
+            define($Key,$CSVText);
+        }
+        if (!in_array($LuaName, $SkipLuaArray)){
             $LuaRead = fopen($LuaFile, "r");
-            if ($LuaRead) {
-                while (($line = fgets($LuaRead)) !== false) {
-                    $Line = str_ireplace($VariableArray,$CorrectArray,$line);
-                    var_dump($Line);
+            $LuaGet = file_get_contents($LuaFile);
+            $LuaChunked = explode("function",$LuaGet);
+            foreach($LuaChunked as $key){
+                //get function name
+                if (preg_match('/\((.*?)\)/', $key, $match) == 1) {
+                    $Variables = explode(", ",$match[1]);
+                    foreach($Variables as $i => $Variable) {
+                        switch ($i) {
+                            case 0:
+                                $VarName = "self";
+                            break;
+                            case 1:
+                                $VarName = "pc";
+                            break;
+                            case 2:
+                                $VarName = "target";
+                            break;
+                            default:
+                                $VarName = $Variable;
+                            break;
+                        }
+                        $LuaFuncs[$match[1]]["Variables"][$Variable] = $VarName;
+                    }
+                }
+                if (preg_match('/\.(.*?)\(/', $key, $match) == 1) {
+                    $FuncName = $match[1];
+                    $LuaFuncs[$FuncName]['String'] = $key;
                 }
             }
         }
+        foreach($LuaFuncs as $FunctionName => $Function){
+            if (!empty($Function['Variables'])) {
+                foreach($Function['Variables'] as $Key => $Variable){
+                    define($Key,"$Variable");
+                }
+            }
+            if (!empty($Function['String'])) {
+                $SplitFunction = explode("\n", $Function['String']);
+                $CleanedFuntion = str_ireplace("  ","",$SplitFunction);
+                foreach($CleanedFuntion as $Line){
+                    //is function
+                    if (strpos($Line,":")){
+                        $ExplodeLine = explode(":",$Line);
+                        $CleanEnd = explode(")",$ExplodeLine[1]);
+                        $ExplodevarsFromFunc = explode("(",$CleanEnd[0]);
+                        $ExplodeVars = explode(",",$ExplodevarsFromFunc[1]);
+                        $Variables = [];
+                        if (!empty($ExplodeVars[0])) {
+                            foreach($ExplodeVars as $Vars){
+                                $Variables[] = "'".$Vars."'";
+                            }
+                            $ImplodeVars = str_replace(" ","",implode(",",$Variables));
+                        } else {
+                            $ImplodeVars = "";
+                        }
+                        $FunctionType = $ExplodevarsFromFunc[0];
+                        $CleanedRun = "$FunctionType($ImplodeVars)";
+
+                        $RunFunction = "return \$this->LUA".$CleanedRun.";";
+                        $OutArray[] = eval($RunFunction);
+                    }
+                }
+            }
+        }
+        var_dump($OutArray);
     }
     /**
      * Format dialogue for luasheets
