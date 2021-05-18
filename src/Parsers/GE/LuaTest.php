@@ -27,15 +27,15 @@ class LuaTest implements ParseInterface
         $ENpcResidentCsv = $this->csv("ENpcResident");
         $CustomTalkCsv = $this->csv("CustomTalk");
         foreach ($ENpcBaseCsv->data as $id => $ENpcBase) {
-            if ($id != 1005065) continue;
             $ArgArray["BaseId"] = $id;
             $Name = $ENpcResidentCsv->at($id)['Singular'];
             foreach(range(0,31) as $i) {
                 if (empty($ENpcBase["ENpcData[$i]"])) continue;
                 if (($ENpcBase["ENpcData[$i]"] > 720000) && ($ENpcBase["ENpcData[$i]"] < 729999)){
-                    //$CustomTalkID = $ENpcBase["ENpcData[$i]"];
-                    $CustomTalkID = 720925;
+                    $CustomTalkID = $ENpcBase["ENpcData[$i]"];
+                    var_dump($CustomTalkID);
                     $LuaName = $CustomTalkCsv->at($CustomTalkID)['Name'];
+                    var_dump($LuaName);
                     $MainOption = $CustomTalkCsv->at($CustomTalkID)['MainOption'];
                     foreach(range(0,29) as $a) {
                         $Instruction = $CustomTalkCsv->at($CustomTalkID)["Script{Instruction}[$a]"];
@@ -43,13 +43,16 @@ class LuaTest implements ParseInterface
                         $Argument = $CustomTalkCsv->at($CustomTalkID)["Script{Arg}[$a]"];
                         $ArgArray[$Instruction] = $Argument; 
                     }
-                $LuaFormat = $this->getLuaDialogue($LuaName, $ArgArray, $Name, $MainOption);
+                    $Option = "";
+                    if (!empty($MainOption)){
+                        $Option = "=== $MainOption ===";
+                    }
+                $LuaFormat = "$Option\n".$this->getLuaDialogue($LuaName, $ArgArray, $Name, $MainOption);
                 }
             }
         }
         //var_dump($ArgArray);
         $console = $console->section();
-        $LuaFormat = $this->getLuaDialogue2($LuaName, $LuaFile, $ArgArray, $NpcName);
         
         //print_r($LuaFormat);
 
