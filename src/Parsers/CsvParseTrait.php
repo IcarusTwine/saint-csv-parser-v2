@@ -401,7 +401,6 @@ trait CsvParseTrait
             case "flame soldier":
             case "gate keeper":
             case "Gridanian merchant":
-            case "Haermaga":
             case "housing enthusiast":
             case "Hunt billmaster":
             case "hunter-scholar":
@@ -521,7 +520,6 @@ trait CsvParseTrait
                         case "suspicious Coerthan":
                         case "Keeper of the Entwined Serpents":
                         case "Saucer attendant":
-                        case "Haermaga":
                         case "Resistance fighter":
                         case "Sultansworn Elite":
                             $PLAddition = " (Unknown)";
@@ -595,6 +593,7 @@ trait CsvParseTrait
             case "Moonfire Faire vendor":
             case 'royal handmaiden':
             case "shady smock":
+            case "Haermaga":
                 if (!empty($LGBArray[$NPCID]['festivalID'])){
                     $FestivalNameAddition = $LGBArray[$NPCID]['festivalID'];
                     $splitfes = explode("_", $FestivaldecodeJdata[$FestivalNameAddition]);
@@ -602,6 +601,28 @@ trait CsvParseTrait
                     $PLAddition = " ($splitfes[1])";
                 }
             break; 
+                //set placename to zone and add placename
+            case "airship ticketer":
+                $oldzone = array("Ul'dah - Steps of Nald",
+                "Limsa Lominsa Upper Decks",
+                "Old Gridania",
+                "Shirogane Shores",
+                "The Lavender Beds",
+                "Limsa Lominsa Lower Decks",
+                "Eureka "
+                );
+                $newzone = array("Ul'dah",
+                "Limsa Lominsa",
+                "Gridania",
+                "Shirogane",
+                "Lavender Beds",
+                "Limsa Lominsa",
+                ""
+                );
+                if (!empty($ZoneLocation)) {
+                        $PLAddition = " ($PlaceNameLocation) (".str_ireplace($oldzone, $newzone, $ZoneLocation).")";
+                }
+            break;
                 //Set placename to zone
             case "Starlight celebrant":
             case "Starlight Celebration crier":
@@ -616,7 +637,6 @@ trait CsvParseTrait
             case "spoils collector":
             case "Resistance supplier":
             case "recompense officer":
-            case "airship ticketer":
             case "arrivals attendant":
             case "Faire crier":
                 $oldzone = array("Ul'dah - Steps of Nald",

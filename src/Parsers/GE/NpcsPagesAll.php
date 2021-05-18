@@ -1930,6 +1930,9 @@ class NpcsPagesAll implements ParseInterface
                     $MapName = "The Haunted Manor";
                 }
                 $BasePlaceName = "$code - {$MapName}{$sub}";
+                if ($subLocation === "Airship Landing"){
+                    $subLoaction = "Airship Landing ($MapName)"; 
+                }
     
                 $LevelID = $LGBArray[$id]['id'];
                 $Patch = $PatchNumber[$id];
