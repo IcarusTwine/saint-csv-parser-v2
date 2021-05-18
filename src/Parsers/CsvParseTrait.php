@@ -1090,7 +1090,7 @@ trait CsvParseTrait
      * Format dialogue for luasheets
      */
     public function getLuaDialogue($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
-        var_dump($ArgArray);
+        //var_dump($ArgArray);
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
@@ -1151,7 +1151,6 @@ trait CsvParseTrait
                 $IfBool = true;
             }
             $String = explode(".", $Instruction);
-            $Text['If'] = $IfBool;
             $Text['String'] = $CsvTextArray[$String[1]];
             return $Text;
         };
@@ -1187,6 +1186,26 @@ trait CsvParseTrait
                 $QAArray["YN"][$QA] = $TextString;
             }
             return $QAArray;
+        };
+        //IsQuestCompleted
+        $LUAIsQuestCompleted = function (...$InputArray) use ($ArgArray, &$EndIf){
+            foreach($InputArray as $QuestArg){
+                $GetArg = explode(".",$QuestArg);
+                $CSV = $this->csv('Quest');
+                $Arg = $ArgArray[$GetArg[1]];
+                $Quests[] = "{{Dialoguebox3|Intro=If [[".$CSV->at($Arg)['Name']."]] is completed|";
+            }
+            return implode(",",$Quests);
+        };
+        //IsQuestAccepted
+        $LUAIsQuestAccepted = function (...$InputArray) use ($ArgArray, &$EndIf){
+            foreach($InputArray as $QuestArg){
+                $GetArg = explode(".",$QuestArg);
+                $CSV = $this->csv('Quest');
+                $Arg = $ArgArray[$GetArg[1]];
+                $Quests[] = "{{Dialoguebox3|Intro=If [[".$CSV->at($Arg)['Name']." is accepted|";
+            }
+            return implode(",",$Quests);
         };
         //Menu
         $LUAMenu = function (...$InputArray) use ($CsvTextArray, &$EndIf){
@@ -1241,7 +1260,7 @@ trait CsvParseTrait
         $LUAQuestAccepted = function ($Input){
             return "Player Accepts Quest";
         };
-        $LUAWaitForTurn = function ($Input){
+        $LUAWaitForTurn = function (){
             return "";
         };
         $LUAQuestCompleted = function ($Input){
@@ -1340,11 +1359,15 @@ trait CsvParseTrait
                     if (strpos($Line,":")){
                         $ExplodeLine = explode(":",$Line);
                         //get if / elseif
-                        $StartIf = $ExplodeLine[0];
+                        $ExplodeLine0 = $ExplodeLine[0];
+                        if (stripos($ExplodeLine0,"else") !== false){
+                            $OutArray[$FunctionName][] = "end";
+                        }
                         //extract only "if/else"
                         $EndExplode = explode(")", $Line);
                         $EndIf = $EndExplode[1];
-                        //extract only "if/else"
+                        //extract only "then"
+                        //consider if adding and "end" if "elseif" is found
                         
                         $CleanEnd = explode(")",$ExplodeLine[1]);
                         $ExplodevarsFromFunc = explode("(",$CleanEnd[0]);
@@ -1361,15 +1384,35 @@ trait CsvParseTrait
                         $FunctionType = $ExplodevarsFromFunc[0];
                         $CleanedRun = "$FunctionType($ImplodeVars)";
 
-                        $RunFunction = "return \$LUA".$CleanedRun.";";
-                        $OutArray[$FunctionName][] = eval($RunFunction);
+                        $RunFunction = eval("return \$LUA".$CleanedRun.";");
+                        //var_dump($RunFunction);
+                        //if its a menu then add to [menu] so we can use in data
+                        $OutArray[$FunctionName]["Out"][] = eval($RunFunction);
+
                     }
                 }
             }
         }
-        var_dump($OutArray);
+        //var_dump($OutArray);
         foreach ($OutArray as $FuncName => $Value){
+            $Dialogue = [];
+            foreach ($Value as $Data) {
+                if (empty($Data)) continue;
+                if (is_array($Data)){
 
+                } else {
+                    if (stripos($Data,"{{") !== false){
+                        $Dialogue[] = $Data;
+                    }
+                    if ($Data === "end"){
+                        $Dialogue[] = "}}";
+                    } 
+                }
+                if (!empty($Data["String"])){
+                    $Dialogue[] = $Data["String"]."<br>";
+                }
+                var_dump($Data);
+            }
         }
     }
     /**

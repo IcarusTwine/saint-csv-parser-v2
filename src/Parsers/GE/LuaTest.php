@@ -34,7 +34,7 @@ class LuaTest implements ParseInterface
                 if (empty($ENpcBase["ENpcData[$i]"])) continue;
                 if (($ENpcBase["ENpcData[$i]"] > 720000) && ($ENpcBase["ENpcData[$i]"] < 729999)){
                     //$CustomTalkID = $ENpcBase["ENpcData[$i]"];
-                    $CustomTalkID = 721044;
+                    $CustomTalkID = 720925;
                     $LuaName = $CustomTalkCsv->at($CustomTalkID)['Name'];
                     $MainOption = $CustomTalkCsv->at($CustomTalkID)['MainOption'];
                     foreach(range(0,29) as $a) {
