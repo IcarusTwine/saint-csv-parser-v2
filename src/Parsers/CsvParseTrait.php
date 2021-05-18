@@ -1141,7 +1141,7 @@ trait CsvParseTrait
             $Text['String'] = $CsvTextArray[$String[1]];
             return $Text;
         };
-        $LUATalk = function ($pc, $self, $Instruction, $bool) use ($CsvTextArray, &$IfImp){
+        $LUATalk = function ($pc, $self, $Instruction, $bool) use ($CsvTextArray, &$EndIf){
             //get string
             $IfCheck = &$EndIf;
             if (empty($IfCheck)){
@@ -1341,8 +1341,10 @@ trait CsvParseTrait
                         $ExplodeLine = explode(":",$Line);
                         //get if / elseif
                         $StartIf = $ExplodeLine[0];
+                        //extract only "if/else"
                         $EndExplode = explode(")", $Line);
                         $EndIf = $EndExplode[1];
+                        //extract only "if/else"
                         
                         $CleanEnd = explode(")",$ExplodeLine[1]);
                         $ExplodevarsFromFunc = explode("(",$CleanEnd[0]);
@@ -2076,18 +2078,18 @@ trait CsvParseTrait
                         $GilShopSellsItemCost = $ItemCsv->at($GilShopItemCsv->at($GilShopSubArray)["Item"])["Price{Mid}"];
                         $RowRequiredArray = [];
                         foreach(range(0,1) as $c) {
-                            if (empty($QuestCsv->at($GilShopItemCsv->at($GilShopSubArray)["Row{Required}[$c]"])["Name"])) continue;
+                            if (empty($QuestCsv->at($GilShopItemCsv->at($GilShopSubArray)["Quest{Required}[$c]"])["Name"])) continue;
                             if ($c === 0) {
-                                $RequiredQuest = $QuestCsv->at($GilShopItemCsv->at($GilShopSubArray)["Row{Required}[$c]"])["Name"];
+                                $RequiredQuest = $QuestCsv->at($GilShopItemCsv->at($GilShopSubArray)["Quest{Required}[$c]"])["Name"];
                                 $RowRequiredArray[] = "|Requires Quest = ". $RequiredQuest;
                             }
                             if ($c === 1) {
-                                $RequiredQuest = $QuestCsv->at($GilShopItemCsv->at($GilShopSubArray)["Row{Required}[$c]"])["Name"];
+                                $RequiredQuest = $QuestCsv->at($GilShopItemCsv->at($GilShopSubArray)["Quest{Required}[$c]"])["Name"];
                                 $RowRequiredArray[] = ",". $RequiredQuest;
                             }
                         }
-                        if (!empty($AchievementCsv->at($GilShopItemCsv->at($GilShopSubArray)["Row{Required}[2]"])["Name"])){
-                            $Requiredachievement = $AchievementCsv->at($GilShopItemCsv->at($GilShopSubArray)["Row{Required}[2]"])["Name"];
+                        if (!empty($AchievementCsv->at($GilShopItemCsv->at($GilShopSubArray)["Achievement{Required}"])["Name"])){
+                            $Requiredachievement = $AchievementCsv->at($GilShopItemCsv->at($GilShopSubArray)["Achievement{Required}"])["Name"];
                             $RowRequiredArray[] = "|Requires Achievement = ". $Requiredachievement;
                         }
                         $NumberItems = $b + 1;
