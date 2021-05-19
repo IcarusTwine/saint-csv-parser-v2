@@ -1303,6 +1303,10 @@ trait CsvParseTrait
         $LUAWait = function (){
             return "";
         };
+        $LUAGetBaseId = function () use ($ArgArray){
+            $NpcID = $ArgArray['BaseId'];
+            return $NpcID;
+        };
         $LUALogMessage = function ($Input) use ($ArgArray){
             $Inputs = explode(",",$Input);
             foreach($Inputs as $Variable) {
@@ -1368,36 +1372,7 @@ trait CsvParseTrait
                 
             }
         }
-        //Create Function List:
-        foreach($FunctionsList as $FunctionName => $Data){
-            $Function = "LUA$FunctionName";
-            $FixedData = $Data;
-            $ExpData = explode("\n",$Data);
-            //remove function name 
-            $ExpData[0] = "";
-            $DataOut = [];
-            foreach($ExpData as $DataLine){
-                if (strpos($DataLine,"local") !== false) continue;
-                $DataLine = str_replace(" L"," \$L",$DataLine);
-                $DataLine = str_replace("{","array(",$DataLine);
-                $DataLine = str_replace("}",");",$DataLine);
-                if (strpos($DataLine,".") !== false) {
-                    $DataExplode = explode(".",$DataLine);
-                    $DataLine = $DataExplode[1];
-                }
-                $DataLine = str_replace("for ","for (",$DataLine);
-                $DataLine = str_replace("_FORV_8_","\$i",$DataLine);
-                $DataLine = str_replace("#","\$",$DataLine);
-                $DataLine = str_replace("_FOR_","\$i",$DataLine);
-                $DataOut[] = $DataLine;
-            }
-            print_r($DataOut);
-            $FixedData = implode("\n",$DataOut);
-            $$Function = eval("function(){
-                $FixedData
-            };");
-        }
-        var_dump($LUAIsEnpcBelongsToThe1st());
+        include "LuaFunctions.php";
         foreach($LuaFuncs as $FunctionName => $Function){
             if (!empty($Function['Variables'])) {
                 foreach($Function['Variables'] as $Key => $Variable){
@@ -1470,7 +1445,7 @@ trait CsvParseTrait
                         }
                         $FunctionType = $ExplodevarsFromFunc[0];
                         $CleanedRun = "$FunctionType($ImplodeVars)";
-
+                        var_dump($CleanedRun);
                         $RunFunction = eval("return \$LUA".$CleanedRun.";");
                         //var_dump($RunFunction);
                         //if its a menu then add to per function [menu] so we can use in data
