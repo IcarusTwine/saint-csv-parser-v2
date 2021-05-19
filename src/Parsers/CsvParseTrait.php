@@ -1085,11 +1085,105 @@ trait CsvParseTrait
             return implode("\n", $LineArrayOut);
         }
     }
+    /**
+     * TestLua
+     */
+    public function getLuaDialogue($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
+        //var_dump($ArgArray);
+        $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";  
+        //broke/empty lua files
+        $SkipLuaArray = array(
+            "CmnGscTripleTriadRoomMove_00371",
+            "RegDra2TomestoneWarTrade_00298",
+            "RegDra2TomestoneEsotericsTrade_00295",
+            "RegDra2TomestoneFolkloreTrade_00333",
+            "JobRelAnimaWeaponQuestSelect_00334",
+            "ComArmGcArmyMember_00343",
+            "ComArmGcArmyCaptureRefund_00436",
+            "CmnDefMateriaMeld_00357",
+            "CtsHwdDevLevelInvisible_00661",
+            "CmnDefGroupPose_00297",
+            "CtsHwdLively_00638"
+        );
 
+        $NpcName = str_replace(" ", "", strtoupper($NpcNameRaw));
+        if (in_array($LuaName, $SkipLuaArray)){
+            $this->io->text("Lua file $LuaName is not readable.");
+            return "";
+        }
+        if (!in_array($LuaName, $SkipLuaArray)){
+            $folder = substr(explode('_', $LuaName)[1], 0, 3);
+            $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+            $CsvTextArray = [];
+            foreach ($textdata->data as $key => $textdataCsv) {
+                $command = $textdataCsv["unknown_1"];
+                if(!empty($textdataCsv["unknown_2"])){
+                    $argument = $textdataCsv["unknown_2"];
+                    $CsvTextArray[$command] = $argument;
+                }
+            }
+        }
+        if (!in_array($LuaName, $SkipLuaArray)){
+            $LuaRead = fopen($LuaFile, "r");
+            $LuaGet = file_get_contents($LuaFile);
+            $LuaChunked = explode("function",$LuaGet);
+            //get luaname for cutting out
+            $LuaExplode = explode("_", $LuaName);
+            //var_dump($LuaChunked);
+            foreach($LuaChunked as $key){
+                $LuaFuncs = [];
+                $VariableList = [];
+                $key = str_ireplace($LuaExplode[0].".","",$key);
+                $text = explode("\n", $key);
+                if (preg_match('/\((.*?)\)/', $text[0], $match) == 1) {
+                    $Variables = explode(", ",$match[1]);
+                    foreach($Variables as $i => $Variable) {
+                        switch ($i) {
+                            case 0:
+                                $VarName = "\$ArgArray";
+                            break;
+                            case 1:
+                                $VarName = "\$ArgArray";
+                            break;
+                            case 2:
+                                $VarName = "\$ArgArray";
+                            break;
+                            default:
+                                $VarName = $Variable;
+                            break;
+                        }
+                        $VariableList[$Variable] = $VarName;
+                    }
+                }
+                $text[0] = "";
+                foreach ($text as $line){
+                    foreach ($VariableList as $VKey => $Variable){
+                        $line = str_replace($VKey,$Variable,$line);
+                    }
+                    if (preg_match_all("/[A-Z][0-99]_[0-99]+/", $line, $match)) {
+                        $Matches = array_unique($match[0]);
+                        foreach ($Matches as $var){
+                            $line = str_replace($var,"$$var", $line);
+                        }
+                    }
+                    if (strpos($line,".") !== false){
+                        $line = str_replace("\$ArgArray.",".",$line);
+                        $line = str_replace(".","",$line);
+                    }
+                    $line = str_replace("$,","",$line);
+                    $line = str_replace("\$ArgArrayArgArray", "\$ArgArray", $line);
+                    var_dump($line);
+                }
+            }
+        }
+    }
     /**
      * Format dialogue for luasheets
      */
-    public function getLuaDialogue($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
+    public function getLuaDialogue4($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
         //var_dump($ArgArray);
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
