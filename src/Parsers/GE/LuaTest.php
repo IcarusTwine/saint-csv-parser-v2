@@ -55,6 +55,7 @@ class LuaTest implements ParseInterface
         //var_dump($ArgArray);
         $console = $console->section();
         
+        
         //print_r($LuaFormat);
 
         $data = GeFormatter::format(self::WIKI_FORMAT, [
