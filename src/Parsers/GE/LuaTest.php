@@ -27,7 +27,8 @@ class LuaTest implements ParseInterface
         $ENpcResidentCsv = $this->csv("ENpcResident");
         $CustomTalkCsv = $this->csv("CustomTalk");
         foreach ($ENpcBaseCsv->data as $id => $ENpcBase) {
-            if ($id != 1000063) continue;
+            //if ($id != 1000063) continue;
+            if ($id != 1027997) continue;
             $ArgArray["BaseId"] = $id;
             $Name = $ENpcResidentCsv->at($id)['Singular'];
             foreach(range(0,31) as $i) {
@@ -48,7 +49,7 @@ class LuaTest implements ParseInterface
                     if (!empty($MainOption)){
                         $Option = "=== $MainOption ===";
                     }
-                $LuaFormat = "$Option\n".$this->getLuaDialogue($LuaName, $ArgArray, $Name, $MainOption);
+                $LuaFormat = $this->getLuaDialogue($LuaName, $ArgArray, $Name, $MainOption);
                 }
             }
         }
@@ -59,13 +60,13 @@ class LuaTest implements ParseInterface
         //print_r($LuaFormat);
 
         $data = GeFormatter::format(self::WIKI_FORMAT, [
-            '{Output}'  => $LuaFormat,
+            '{Output}'  => json_encode($LuaFormat,JSON_PRETTY_PRINT),
 
         ]);
         $this->data[] = $data;
         // save
         $console->writeln(" Saving... ");
-        $info = $this->save("LuaTest.txt", 999999);
+        $info = $this->save("LuaTest.json", 999999);
 
     }
 }

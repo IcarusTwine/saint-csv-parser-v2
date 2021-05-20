@@ -1114,56 +1114,114 @@ trait CsvParseTrait
                 $CsvTextArray[$command] = $argument;
             }
         }
-        $LuaRead = fopen($LuaFile, "r");
         $LuaGet = file_get_contents($LuaFile);
-        $_lua = explode("\n", $LuaGet);
+        $_lua = explode("\n", str_replace("\r","",str_replace("  ","",$LuaGet)));
         $_lines = count($_lua);
 		$luadata = array();
 		$end = false;
         $if1 = false;
         if($_pos < $_lines){
             while($end === false) {
-                $if1 = false;
-                $if2 = false;
                 if($_pos >= $_lines){
                     break;
                 }
-                $testarray = [];
+                $Level1End = false;
                 if (strpos($_lua[$_pos],"if") !== false){
-                    $testarray[] = $_lua[$_pos];
-                    $if = true;
-                    while($if === true){
+                    //level 1 array
+                    $Level1[] = $_lua[$_pos];
+                    while($Level1End === false) {
                         $_pos++;
+                        $Level2End = false;
                         if (strpos($_lua[$_pos],"if") !== false){
-                            $if1 = true;
-                            $testarray1 = [];
-                            $testarray1[] = $_lua[$_pos];
-                            while($if1 === true){
+                            //level 2 array
+                            $Level2[] = $_lua[$_pos];
+                            while($Level2End === false) {
                                 $_pos++;
-                                $testarray1[] = $_lua[$_pos];
+                                $Level3End = false;
+                                if (strpos($_lua[$_pos],"if") !== false){
+                                    //level 3 array
+                                    $Level3[] = $_lua[$_pos];
+                                    while($Level3End === false) {
+                                        $_pos++;
+                                        $Level4End = false;
+                                        if (strpos($_lua[$_pos],"if") !== false){
+                                            //level 4 array
+                                            $Level4[] = $_lua[$_pos];
+                                            while($Level4End === false) {
+                                                $_pos++;
+                                                $Level5End = false;
+                                                if (strpos($_lua[$_pos],"if") !== false){
+                                                    //level 5 array
+                                                    $Level5[] = $_lua[$_pos];
+                                                    while($Level5End === false) {
+                                                        $_pos++;
+                                                        if (strpos($_lua[$_pos],"end") !== false){
+                                                            $Level5[] = $_lua[$_pos];
+                                                            $Level5End = true;
+                                                        } else {
+                                                            $Level5[] = $_lua[$_pos];
+                                                        }
+                                                    }
+                                                }
+                                                if (!empty($Level5)){
+                                                    $Level4[] = $Level5;
+                                                    $Level5 = [];
+                                                }
+                                                if (strpos($_lua[$_pos],"end") !== false){
+                                                    $Level4[] = $_lua[$_pos];
+                                                    $Level4End = true;
+                                                } else {
+                                                    $Level4[] = $_lua[$_pos];
+                                                }
+                                            }
+                                        }
+                                        if (!empty($Level4)){
+                                            $Level3[] = $Level4;
+                                            $Level4 = [];
+                                        }
+                                        if (strpos($_lua[$_pos],"end") !== false){
+                                            $Level3[] = $_lua[$_pos];
+                                            $Level3End = true;
+                                        } else {
+                                            $Level3[] = $_lua[$_pos];
+                                        }
+                                    }
+                                }
+                                if (!empty($Level3)){
+                                    $Level2[] = $Level3;
+                                    $Level3 = [];
+                                }
                                 if (strpos($_lua[$_pos],"end") !== false){
-                                    $if1 = false;
-                                    $testarray[] = $testarray1;
-                                    $_pos++;
+                                    $Level2[] = $_lua[$_pos];
+                                    $Level2End = true;
+                                } else {
+                                    $Level2[] = $_lua[$_pos];
                                 }
                             }
-                            if (strpos($_lua[$_pos],"end") !== false){
-                                $if = false;
-                            }
+                        } elseif (!empty($Level2)){
+                            $Level1[] = $Level2;
+                            $Level2 = [];
+                        } elseif (strpos($_lua[$_pos],"end") !== false){
+                            $Level1[] = $_lua[$_pos];
+                            $Level1End = true;
                         } else {
-                            $testarray[] = $_lua[$_pos];
+                            $Level1[] = $_lua[$_pos];
                         }
                     }
-                    var_dump($testarray);
-
+                    if (!empty($Level1)){
+                        $luadata[] = $Level1;
+                        $Level1 = [];
+                    }
                 }
-                var_dump($_lua[$_pos]);
+                else {
+                    $luadata[] = $_lua[$_pos];
+                }
                 // Increase position
 				$_pos++;
             }
         }
 
-        //var_dump($LineArray);
+        return $luadata;
     }
     /**
      * Format dialogue for luasheets
