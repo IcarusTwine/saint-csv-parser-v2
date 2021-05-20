@@ -1091,428 +1091,79 @@ trait CsvParseTrait
      */
     public function getLuaDialogue($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
         //var_dump($ArgArray);
-        include "LUAFunctions.php";
+        //include "LUAFunctions.php";
+        // Initialise/reset vars
+		$_lua = array();
+		$data = array();
+		$_pos = 0;
+		$_lines = 0;
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
         $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";  
-        //broke/empty lua files
-        $SkipLuaArray = array(
-            "CmnGscTripleTriadRoomMove_00371",
-            "RegDra2TomestoneWarTrade_00298",
-            "RegDra2TomestoneEsotericsTrade_00295",
-            "RegDra2TomestoneFolkloreTrade_00333",
-            "JobRelAnimaWeaponQuestSelect_00334",
-            "ComArmGcArmyMember_00343",
-            "ComArmGcArmyCaptureRefund_00436",
-            "CmnDefMateriaMeld_00357",
-            "CtsHwdDevLevelInvisible_00661",
-            "CmnDefGroupPose_00297",
-            "CtsHwdLively_00638"
-        );
+        
 
         $NpcName = str_replace(" ", "", strtoupper($NpcNameRaw));
-        if (in_array($LuaName, $SkipLuaArray)){
-            $this->io->text("Lua file $LuaName is not readable.");
-            return "";
-        }
-        if (!in_array($LuaName, $SkipLuaArray)){
-            $folder = substr(explode('_', $LuaName)[1], 0, 3);
-            $textdata = $this->csv("custom/{$folder}/{$LuaName}");
-            $CsvTextArray = [];
-            foreach ($textdata->data as $key => $textdataCsv) {
-                $command = $textdataCsv["unknown_1"];
-                if(!empty($textdataCsv["unknown_2"])){
-                    $argument = $textdataCsv["unknown_2"];
-                    $CsvTextArray[$command] = $argument;
-                }
+        $folder = substr(explode('_', $LuaName)[1], 0, 3);
+        $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+        $CsvTextArray = [];
+        foreach ($textdata->data as $key => $textdataCsv) {
+            $command = $textdataCsv["unknown_1"];
+            if(!empty($textdataCsv["unknown_2"])){
+                $argument = $textdataCsv["unknown_2"];
+                $CsvTextArray[$command] = $argument;
             }
         }
-        //Lua functions
-        $LUASystemTalk = function ($Instruction, $bool) use ($CsvTextArray, &$EndIf){
-            //get string
-            $IfCheck = &$EndIf;
-            if (empty($IfCheck)){
-                $IfBool = false;
-            }
-            if (!empty($IfCheck)){
-                $IfBool = true;
-            }
-            $String = explode(".", $Instruction);
-            $Text['String'] = $CsvTextArray[$String[1]];
-            return $Text;
-        };
-        $LUAHowTo = function ($Check){
-            $HowTo = $this->csv("HowTo");
-            foreach ($HowTo->data as $key => $HowToData) {
-            }
-            if (empty($HowToData[$Check])) {
-                return false;
-            } else{
-                return true;
-            }
-        };
-        $LUATalk = function ($pc, $self, $Instruction, $bool) use ($CsvTextArray, &$EndIf){
-            //get string
-            $IfCheck = &$EndIf;
-            if (empty($IfCheck)){
-                $IfBool = false;
-            }
-            if (!empty($IfCheck)){
-                $IfBool = true;
-            }
-            $String = explode(".", $Instruction);
-            $Text['String'] = $CsvTextArray[$String[1]];
-            return $Text;
-        };
-        $LUAYesNo = function (...$YesNoArray) use ($CsvTextArray, &$EndIf){
-            $i = 0;
-            $IfCheck = &$EndIf;
-            if (empty($IfCheck)){
-                $IfBool = false;
-            }
-            if (!empty($IfCheck)){
-                $IfBool = true;
-            }
-            foreach($YesNoArray as $Text){
-                if (strpos($Text, "DEFAULT_YES")) continue;
-                if (strpos($Text, "DEFAULT_NO")) continue;
-                switch($i){
-                    case 0:
-                        $QA = "Q";
-                    break;
-                    case 1:
-                        $QA = "Yes";
-                    break;
-                    case 2:
-                        $QA = "No";
-                    break;
-                    case 3:
-                        $QA = "Default";
+        $LuaRead = fopen($LuaFile, "r");
+        $LuaGet = file_get_contents($LuaFile);
+        $_lua = explode("\n", $LuaGet);
+        $_lines = count($_lua);
+		$luadata = array();
+		$end = false;
+        $if1 = false;
+        if($_pos < $_lines){
+            while($end === false) {
+                $if1 = false;
+                $if2 = false;
+                if($_pos >= $_lines){
                     break;
                 }
-                $i++;
-                $String = explode(".", $Text);
-                $TextString = $CsvTextArray[$String[1]];
-                $QAArray["YN"][$QA] = $TextString;
-            }
-            return $QAArray;
-        };
-        //IsQuestCompleted
-        $LUAIsQuestCompleted = function (...$InputArray) use ($ArgArray, &$EndIf){
-            $EndCheck = &$EndIf;
-            foreach($InputArray as $QuestArg){
-                $GetArg = explode(".",$QuestArg);
-                $CSV = $this->csv('Quest');
-                $Arg = $ArgArray[$GetArg[1]];
-                $Start = "";
-                if (stripos($EndCheck," and ") !== false){
-                    $Start = "3=collapsed|Dialogue=This requires the below check.}}\n";
-                }
-                if (stripos($EndCheck," or ") !== false){
-                    $Start = "3=collapsed|Dialogue=This requires the this quest or the below.}}\n";
-                }
-                $End = "";
-                $Quests[] = "$Start{{Dialoguebox3|Intro=If [[".$CSV->at($Arg)['Name']."]] is completed|$End";
-            }
-            return implode(",",$Quests);
-        };
-        //IsQuestAccepted
-        $LUAIsQuestAccepted = function (...$InputArray) use ($ArgArray, &$EndIf){
-            $EndCheck = &$EndIf;
-            foreach($InputArray as $QuestArg){
-                $GetArg = explode(".",$QuestArg);
-                $CSV = $this->csv('Quest');
-                $Arg = $ArgArray[$GetArg[1]];
-                $Start = "";
-                if (stripos($EndCheck," and ") !== false){
-                    $Start = "3=collapsed|Dialogue=This requires the below check.}}\n";
-                }
-                if (stripos($EndCheck," or ") !== false){
-                    $Start = "3=collapsed|Dialogue=This requires the this quest or the below.}}\n";
-                }
-                $Quests[] = "$Start{{Dialoguebox3|Intro=If [[".$CSV->at($Arg)['Name']."]] is accepted|";
-            }
-            return implode(",",$Quests);
-        };
-        //Menu
-        $LUAMenu = function (...$InputArray) use ($CsvTextArray, &$EndIf){
-            $i = 0;
-            $NewEndIf = $EndIf;
-            $FuncSelectExplode = explode(" ",$NewEndIf);
-            $FuncSelect = $InputArray[$FuncSelectExplode[2]];
-            $SelectText = explode(".",$FuncSelect);
-            $QAArray = [];
-            foreach($InputArray as $Text){
-                $i++;
-                $String = explode(".", $Text);
-                if (strpos($String[1], "DEFAULT_YES")) continue;
-                $TextString = $CsvTextArray[$String[1]];
-                if ($i === 1) {
-                    $Question = $TextString;
-                } else {
-                    $QAArray[] = $TextString;
-                }
-            }
-            $Options = implode("<br>\n*",$QAArray);
-            $MenuArray["Menu"] = "{{Dialoguebox3|Intro=$Question|Dialogue=*$Options}}";
-            $MenuArray["Choice"]["IsChoice"] = true;
-            $MenuArray["Choice"]["Answer"] = "{{Dialoguebox3|Intro=Menu Option = ".$CsvTextArray[$SelectText[1]]."|";
-            return $MenuArray;
-        };
-        $LUAScreenImage = function ($Input) use ($ArgArray){
-            $String = explode(".", $Input);
-            $CSV = $this->csv('ScreenImage');
-            $Arg = $ArgArray[$String[1]];
-            $Image = $CSV->at($Arg)['Image'];
-            return $Image.".png";
-        };
-        $LUAGetSex = function () use (&$EndIf){
-            $yes = $EndIf;
-            //var_dump($yes);
-            return null;
-        };
-        $LUAGetRace = function (){
-            return null;
-        };
-        $LUALookAt = function ($Input){
-            return "";
-        };
-        $LUATurnTo = function ($Input, $bool){
-            return "";
-        };
-        $LUAQuestOffer = function ($Input){
-            return "NPC Offers Quest";
-        };
-        $LUAPlayActionTimeline = function ($Input){
-            return "";
-        };
-        $LUAQuestAccepted = function ($Input){
-            return "Player Accepts Quest";
-        };
-        $LUAWaitForTurn = function (){
-            return "";
-        };
-        $LUAQuestCompleted = function ($Input){
-            return "Player Completes Quest";
-        };
-        $LUAGetQuestSequence = function ($Input){
-            return "";
-        };
-        $LUAGetQuestUI8AL = function ($Input){
-            return "";
-        };
-        $LUAIsBattleNpcTriggerOwner = function ($Input){
-            return "";
-        };
-        $LUAIsHousingIndoorTerritory = function (){
-            return "";
-        };
-        $LUAPlaySharedGroupTimeline = function (){
-            return "";
-        };
-        $LUAWait = function (){
-            return "";
-        };
-        $LUALogMessage = function ($Input) use ($ArgArray){
-            $Inputs = explode(",",$Input);
-            foreach($Inputs as $Variable) {
-                $String = explode(".", $Variable);
-                $CSV = $this->csv('LogMessage');
-                $Arg = $ArgArray[$String[1]];
-                $Message = $CSV->at($Arg)['Text'];
-                $MessageArray[] = $Message;
-            }
-            $Message = implode(",",$MessageArray);
-            return $Message;
-        };
-        $LUAIsReward = function ($Input) use ($ArgArray, &$EndIf){
-            return "";
-        };
-        $LUAGetNumOfItems = function ($Input) use ($ArgArray, &$EndIf, &$StartIf){
-            $Endpre = str_replace("==","=",$EndIf);
-            $Endexplode = explode("and", $Endpre);
-            $End = $Endexplode[0];
-            $StartExp = explode(" ",$StartIf);
-            $Start = $StartExp[0];
-            $String = explode(".", $Input);
-            $CSV = $this->csv('Item');
-            $Arg = $ArgArray[$String[1]];
-            $Item = $CSV->at($Arg)['Plural'];
-            return "$Start Players $Item $End";
-        };
-        if (!in_array($LuaName, $SkipLuaArray)){
-            $LuaRead = fopen($LuaFile, "r");
-            $LuaGet = file_get_contents($LuaFile);
-            $LuaChunked = explode("function",$LuaGet);
-            foreach($LuaChunked as $key){
-                //get function name
-                if (preg_match('/\((.*?)\)/', $key, $match) == 1) {
-                    $Variables = explode(", ",$match[1]);
-                    foreach($Variables as $i => $Variable) {
-                        switch ($i) {
-                            case 0:
-                                $VarName = "self";
-                            break;
-                            case 1:
-                                $VarName = "pc";
-                            break;
-                            case 2:
-                                $VarName = "target";
-                            break;
-                            default:
-                                $VarName = $Variable;
-                            break;
-                        }
-                        $LuaFuncs[$match[1]]["Variables"][$Variable] = $VarName;
-                    }
-                }
-                if (preg_match('/\.(.*?)\(/', $key, $match) == 1) {
-                    $FuncName = $match[1];
-                    $LuaFuncs[$FuncName]['String'] = $key;
-                    //create function names:
-                    if(stripos($FuncName,"OnScene") !== false){
-                    } else {
-                        $FunctionsList[$FuncName] = $key;
-                    }
-                }
-                
-            }
-        }
-        foreach($LuaFuncs as $FunctionName => $Function){
-            if (!empty($Function['Variables'])) {
-                foreach($Function['Variables'] as $Key => $Variable){
-                    define($Key,"$Variable");
-                }
-            }
-            if (!empty($Function['String'])) {
-                $SplitFunction = explode("\n", $Function['String']);
-                $CleanedFuntion = str_ireplace("  ","",$SplitFunction);
-                foreach($CleanedFuntion as $Line){
-                    $IfImp = "";
-                    $IfArray = [];
-                    //is function
-                    if (strpos($Line,":")){
-                        $ExplodeLine = explode(":",$Line);
-                        //get if / elseif
-                        $ExplodeLine0 = $ExplodeLine[0];
-                        if (stripos($ExplodeLine0,"else") !== false){
-                            $OutArray[$FunctionName]["Out"][] = "end";
-                        }
-                        //extract only "if/else"
-                        $EndExplode = explode(")", $Line);
-                        $EndIf2 = $EndExplode[1];
-                        if (!empty($EndIf2)){
-                            $ExplodeLine2 = explode(":",$EndIf2);
-                            if (!empty($ExplodeLine2[1])){
-                                $CleanEnd = explode(")",$ExplodeLine2[1]);
-                                $ExplodevarsFromFunc = explode("(",$CleanEnd[0]);
-                                $ExplodeVars = explode(",",$ExplodevarsFromFunc[1]);
-                                $Variables = [];
-                                if (!empty($ExplodeVars[0])) {
-                                    foreach($ExplodeVars as $Vars){
-                                        $Variables[] = "'".$Vars."'";
-                                    }
-                                    $ImplodeVars = str_replace(" ","",implode(",",$Variables));
-                                } else {
-                                    $ImplodeVars = "";
+                $testarray = [];
+                if (strpos($_lua[$_pos],"if") !== false){
+                    $testarray[] = $_lua[$_pos];
+                    $if = true;
+                    while($if === true){
+                        $_pos++;
+                        if (strpos($_lua[$_pos],"if") !== false){
+                            $if1 = true;
+                            $testarray1 = [];
+                            $testarray1[] = $_lua[$_pos];
+                            while($if1 === true){
+                                $_pos++;
+                                $testarray1[] = $_lua[$_pos];
+                                if (strpos($_lua[$_pos],"end") !== false){
+                                    $if1 = false;
+                                    $testarray[] = $testarray1;
+                                    $_pos++;
                                 }
-                                $FunctionType = $ExplodevarsFromFunc[0];
-                                $CleanedRun = "$FunctionType($ImplodeVars)";
-                                $RunFunction = eval("return \$LUA".$CleanedRun.";");
-                                //var_dump($RunFunction);
-                                //if its a menu then add to per function [menu] so we can use in data
-                                if (stripos($CleanedRun,"menu") !== false){
-                                    $OutArray[$FunctionName]["Menu"] = $RunFunction["Menu"];
-                                    if($RunFunction["Choice"]["IsChoice"] === true){
-                                        $OutArray[$FunctionName]["Out"][] = $RunFunction["Choice"];
-                                    }
-                                } else {
-                                    $OutArray[$FunctionName]["Out"][] = $RunFunction;
-                                }
-                                
                             }
-                        }
-                        $EndIf = $EndExplode[1];
-                        //extract only "then"
-                        //consider if adding and "end" if "elseif" is found
-                        
-                        $CleanEnd = explode(")",$ExplodeLine[1]);
-                        $ExplodevarsFromFunc = explode("(",$CleanEnd[0]);
-                        $ExplodeVars = explode(",",$ExplodevarsFromFunc[1]);
-                        $Variables = [];
-                        if (!empty($ExplodeVars[0])) {
-                            foreach($ExplodeVars as $Vars){
-                                $Variables[] = "'".$Vars."'";
-                            }
-                            $ImplodeVars = str_replace(" ","",implode(",",$Variables));
-                        } else {
-                            $ImplodeVars = "";
-                        }
-                        $FunctionType = $ExplodevarsFromFunc[0];
-                        $CleanedRun = "$FunctionType($ImplodeVars)";
-
-                        $RunFunction = eval("return \$LUA".$CleanedRun.";");
-                        //var_dump($RunFunction);
-                        //if its a menu then add to per function [menu] so we can use in data
-                        if (stripos($CleanedRun,"menu") !== false){
-                            $OutArray[$FunctionName]["Menu"] = $RunFunction["Menu"];
-                            if($RunFunction["Choice"]["IsChoice"] === true){
-                                $OutArray[$FunctionName]["Out"][] = $RunFunction["Choice"];
+                            if (strpos($_lua[$_pos],"end") !== false){
+                                $if = false;
                             }
                         } else {
-                            $OutArray[$FunctionName]["Out"][] = $RunFunction;
+                            $testarray[] = $_lua[$_pos];
                         }
-
                     }
+                    var_dump($testarray);
+
                 }
+                var_dump($_lua[$_pos]);
+                // Increase position
+				$_pos++;
             }
         }
-        if (empty($OutArray)){
-            return null;
-        }
-        //var_dump($OutArray);
-        foreach ($OutArray as $FuncName => $Value){
-            $Dialogue = [];
-            $OutStuff = $Value["Out"];
-            if (!empty($Value["Menu"])){
-                $Dialogue[] = $Value["Menu"];
-            }
-           // var_dump($Value);
-            $DialogueString = [];
-            foreach ($OutStuff as $Out) {
-                if (empty($Out)) continue;
-                if (is_array($Out)){
-                    if (!empty($Out['Answer'])){
-                        $Dialogue[] = $Out['Answer'];
-                    }
-                } else 
-                {
-                    if (stripos($Out,"{{") !== false){
-                        $Dialogue[] = $Out;
-                    } else {
-                        if ($Out === "end"){
-                            $Dialogue[] = "3=collapsed|Dialogue=".implode("\n<br>",$DialogueString);
-                            $Dialogue[] = "}}";
-                            $DialogueString = [];
-                        } else {
-                            $Dialogue[] = "}}";
-                        }
-                    } 
-                }
-                if (!empty($Out["String"])){
-                    $DialogueString[] = $Out["String"];
-                }
-            }
-            //clean up dialoguestring
-            if (!empty($DialogueString)){
-                $Dialogue[] = "3=collapsed|Dialogue=".implode("\n<br>",$DialogueString);
-                $Dialogue[] = "}}";
-                $DialogueString = [];
-            }
-            $FinalOut[] = implode("\n",$Dialogue);
-        }
-        return str_replace("|\n{{","|3=collapsed|Dialogue = Unlocks :}}\n{{",implode("\n", $FinalOut));
+
+        //var_dump($LineArray);
     }
     /**
      * Format dialogue for luasheets
