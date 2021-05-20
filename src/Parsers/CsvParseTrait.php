@@ -1085,6 +1085,80 @@ trait CsvParseTrait
             return implode("\n", $LineArrayOut);
         }
     }
+    
+    public function basicFormatDialogue($LuaOut,$CsvTextArray) { 
+        foreach($LuaOut as $line){
+            if (is_array($line)){
+                foreach ($line as $a){
+                    if (is_array($a)){
+                        foreach ($a as $b){
+                            if (is_array($b)){
+                                foreach ($b as $c){
+                                    if (is_array($c)){
+                                        foreach ($c as $d){
+                                            if (is_array($d)){
+                                                foreach ($d as $e){
+                                                    if (strpos($e,"TEXT") !== false){
+                                                        if (preg_match('/\.(.*?)\,/', $e, $match) == 1) {
+                                                            $value = $match[1];
+                                                            $Output[] = $CsvTextArray[$value];
+                                                        }
+                                                    }                                                    
+                                                }
+                                            } 
+                                            else {
+                                                if (strpos($d,"TEXT") !== false){
+                                                    if (preg_match('/\.(.*?)\,/', $d, $match) == 1) {
+                                                        $value = $match[1];
+                                                        $Output[] = $CsvTextArray[$value];
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    } 
+                                    else {
+                                        if (strpos($c,"TEXT") !== false){
+                                            if (preg_match('/\.(.*?)\,/', $c, $match) == 1) {
+                                                $value = $match[1];
+                                                $Output[] = $CsvTextArray[$value];
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            } 
+                            else {
+                                if (strpos($b,"TEXT") !== false){
+                                    if (preg_match('/\.(.*?)\,/', $b, $match) == 1) {
+                                        $value = $match[1];
+                                        $Output[] = $CsvTextArray[$value];
+                                    }
+                                }
+                            }
+                            
+                        }
+                    } 
+                    else {
+                        if (strpos($a,"TEXT") !== false){
+                            if (preg_match('/\.(.*?)\,/', $a, $match) == 1) {
+                                $value = $match[1];
+                                $Output[] = $CsvTextArray[$value];
+                            }
+                        }
+                    }
+                }
+            } 
+            else {
+                if (strpos($line,"TEXT") !== false){
+                    if (preg_match('/\.(.*?)\,/', $line, $match) == 1) {
+                        $value = $match[1];
+                        $Output[] = $CsvTextArray[$value];
+                    }
+                }
+            }
+        }
+        var_dump(($Output));
+    }
 
     /**
      * Format dialogue for luasheets
@@ -1126,31 +1200,31 @@ trait CsvParseTrait
                     break;
                 }
                 $Level1End = false;
-                if (strpos($_lua[$_pos],"if") !== false){
+                if (strpos($_lua[$_pos],"if") !== false || strpos($_lua[$_pos],"else") !== false){
                     //level 1 array
                     $Level1[] = $_lua[$_pos];
                     while($Level1End === false) {
                         $_pos++;
                         $Level2End = false;
-                        if (strpos($_lua[$_pos],"if") !== false){
+                        if (strpos($_lua[$_pos],"if") !== false || strpos($_lua[$_pos],"else") !== false){
                             //level 2 array
                             $Level2[] = $_lua[$_pos];
                             while($Level2End === false) {
                                 $_pos++;
                                 $Level3End = false;
-                                if (strpos($_lua[$_pos],"if") !== false){
+                                if (strpos($_lua[$_pos],"if") !== false || strpos($_lua[$_pos],"else") !== false){
                                     //level 3 array
                                     $Level3[] = $_lua[$_pos];
                                     while($Level3End === false) {
                                         $_pos++;
                                         $Level4End = false;
-                                        if (strpos($_lua[$_pos],"if") !== false){
+                                        if (strpos($_lua[$_pos],"if") !== false || strpos($_lua[$_pos],"else") !== false){
                                             //level 4 array
                                             $Level4[] = $_lua[$_pos];
                                             while($Level4End === false) {
                                                 $_pos++;
                                                 $Level5End = false;
-                                                if (strpos($_lua[$_pos],"if") !== false){
+                                                if (strpos($_lua[$_pos],"if") !== false || strpos($_lua[$_pos],"else") !== false){
                                                     //level 5 array
                                                     $Level5[] = $_lua[$_pos];
                                                     while($Level5End === false) {
@@ -1220,7 +1294,7 @@ trait CsvParseTrait
 				$_pos++;
             }
         }
-
+        $FormatTest = $this->basicFormatDialogue($luadata,$CsvTextArray);
         return $luadata;
     }
     /**
