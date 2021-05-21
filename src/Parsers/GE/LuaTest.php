@@ -60,13 +60,13 @@ class LuaTest implements ParseInterface
         //print_r($LuaFormat);
 
         $data = GeFormatter::format(self::WIKI_FORMAT, [
-            '{Output}'  => json_encode($LuaFormat,JSON_PRETTY_PRINT),
+            '{Output}'  => $LuaFormat,
 
         ]);
         $this->data[] = $data;
         // save
         $console->writeln(" Saving... ");
-        $info = $this->save("LuaTest.json", 999999);
+        $info = $this->save("LuaTest.txt", 999999);
 
     }
 }
