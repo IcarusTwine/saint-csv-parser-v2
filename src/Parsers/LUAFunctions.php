@@ -251,3 +251,16 @@ $LUAGetNumOfItems = function ($Input) use ($ArgArray, &$EndIf, &$StartIf){
     $Item = $CSV->at($Arg)['Plural'];
     return "$Start Players $Item $End";
 };
+
+
+elseif IsQuestAccepted(THE1ST_OPEN_QUEST) == true and GetQuestSequence(THE1ST_OPEN_QUEST) >= THE1ST_OPEN_QUEST_SEQ then
+
+elseif (IsQuestAccepted(THE1ST_OPEN_QUEST) == true) and (GetQuestSequence(THE1ST_OPEN_QUEST) >= THE1ST_OPEN_QUEST_SEQ){
+
+}
+
+if $L6_6 == true then 
+
+if ($L6_6 == true){
+
+}
