@@ -1001,9 +1001,28 @@ trait CsvParseTrait
         if ($CountArray === 9) {
             //elseif IsQuestAccepted(THE1ST_OPEN_QUEST) == true and GetQuestSequence(THE1ST_OPEN_QUEST) >= THE1ST_OPEN_QUEST_SEQ then
             $ConstructorStart = "{$i[0]} ({$i[1]} {$i[2]} {$i[3]}) {$i[4]} ({$i[5]} {$i[6]} {$i[7]}) {\n";
-            $ConstructorEnd = "}\n";
-            $null = true;
-            $ifdata['out'] = "$ConstructorStart$ConstructorEnd";
+                $_pos++;
+                while($Ifend === false) {
+                    $line = $_lua[$_pos];
+                    if (strpos($line, "end") !== false){
+                        $Ifarray[] = $tab."}";
+                        $Ifend = true;
+                        break;
+                    }
+                    if ($Ifend === false){
+                        $Ifarray[] = "$tab".$line;
+                        $_pos++;
+                    }
+                    if (preg_match('/if|elseif/', $_lua[$_pos])) {
+                        $funccount++;
+                        $nested = $this->getLuaIf($_lua, $_pos, $funccount);
+                        $Ifarray[] = "$tab".$nested['out'];
+                        $_pos = $nested['pos'];
+                    }
+                }
+                $IfOut = implode("\n",$Ifarray);
+                $null = true;
+                $ifdata['out'] = "$ConstructorStart$IfOut";
         }
         //unknown
         if ($CountArray > 9) {
@@ -1040,6 +1059,12 @@ trait CsvParseTrait
                 $CsvTextArray[$command] = $argument;
             }
         }
+        //define all args
+        foreach($ArgArray as $key => $value){
+            $$key = $value;
+            $oldarray[] = "$key";
+            $newarray[] = "$$key";
+        }
         $LuaGet = file_get_contents($LuaFile);
         $_lua = explode("\n", str_replace("\r","",str_replace("  ","",$LuaGet)));
         $_lines = count($_lua);
@@ -1051,7 +1076,6 @@ trait CsvParseTrait
                 if($_pos >= $_lines){
                     break;
                 };
-                $_lua[$_pos] = $_lua[$_pos];
                 //convert if statements to correct php
                 if (preg_match('/if|elseif/', $_lua[$_pos])) {
                     $startPos = $_pos;
@@ -1074,16 +1098,21 @@ trait CsvParseTrait
                     break;
                 };
                 //make all L6_6. to "";
-                $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
+                if (preg_match('/[A-Z][0-9]_[0-9]+\./', $_lua[$_pos])) {
+                    if (preg_match('/\.(.*?)\w+/', $_lua[$_pos], $match) == 1) {
+                        $match = str_replace(".","",$match[0]);
+                        $newstring = "\"$match\"";
+                        $_lua[$_pos] = str_replace($match,$newstring,$_lua[$_pos]);
+                        $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
+                    }
+                }
                 //remove line with local
                 if (strpos($_lua[$_pos], "local ") !== false){
                     $null = true;
-                    $_pos++;
                 }
                 //remove line with print
                 if (strpos($_lua[$_pos], "print(") !== false){
                     $null = true;
-                    $_pos++;
                 }
                 // set CmnDefMogLetter.LETTER_BOX_USAGE_THERESHOLD = 80 to
                 // $LETTER_BOX_USAGE_THERESHOLD = 80
@@ -1093,6 +1122,7 @@ trait CsvParseTrait
                     $ReplaceArray[] = $match;
                     $match = "$".$match.";";
                     eval("return $match");
+                    $null = true;
                 }
                 //find and make array of data
                 if (preg_match('/[A-Z][0-9]_[0-9]+\s=\s{/', $_lua[$_pos])) {
@@ -1134,13 +1164,13 @@ trait CsvParseTrait
                 if (preg_match_all("/\\$[A-Z][0-9]_[0-9]+\(+/", $_lua[$_pos], $match)) {
                     $Matches = array_unique($match[0]);
                     foreach ($Matches as $var){
-                        $_lua[$_pos] = str_replace($var,"eval(return $var", $_lua[$_pos]);
-                        $_lua[$_pos] = str_replace(")", "))", $_lua[$_pos]);
+                        $_lua[$_pos] = str_replace($var,"eval(\"return $var", $_lua[$_pos]);
+                        $_lua[$_pos] = str_replace(")", ")\")", $_lua[$_pos]);
                     }
                 }
                 if ($null === false) {
                     if (!empty($_lua[$_pos])){
-                        $luadata[] = $_lua[$_pos];
+                        $luadata[] = $_lua[$_pos].";";
                     }
                 }
                 //print_r($_lua[$_pos]."\n");
@@ -1149,10 +1179,14 @@ trait CsvParseTrait
                 $null = false;
             }
         }
+        
         //$FormatTest = $this->basicFormatDialogue($luadata,$CsvTextArray);
         //var_dump($luadata);
-        return implode("\n",$luadata);
+        $output = implode("\n",$luadata);
+        var_dump(eval("return $output"));
+        return $output;
     }
+    
 
     /**
      * Get Specialshop items and name
