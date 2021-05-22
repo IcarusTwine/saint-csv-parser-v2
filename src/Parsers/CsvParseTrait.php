@@ -966,6 +966,7 @@ trait CsvParseTrait
 
     public function getLuaIf($_lua, $_pos, &$funccount){
         $tab = str_repeat("    ",$funccount);
+        $tabshort = str_repeat("    ",($funccount - 1));
         $i = explode(" ",$_lua[$_pos]);
         $CountArray = count($i);
         $Ifend = false;
@@ -975,12 +976,29 @@ trait CsvParseTrait
             //if $L6_6 == true then 
             $ConstructorStart = "{$i[0]} ({$i[1]} {$i[2]} {$i[3]}) {\n";
             $_pos++;
+            //make all L6_6. to "";
+            if (preg_match('/[A-Z][0-9]_[0-9]+\./', $_lua[$_pos])) {
+                if (preg_match('/\.(.*?)\w+/', $_lua[$_pos], $match) == 1) {
+                    $match = str_replace(".","",$match[0]);
+                    $newstring = "\"$match\"";
+                    $_lua[$_pos] = str_replace($match,$newstring,$_lua[$_pos]);
+                    $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
+                }
+            }
             while($Ifend === false) {
                 $line = $_lua[$_pos];
                 if (strpos($line, "end") !== false){
                     $Ifarray[] = $tab."}";
                     $Ifend = true;
                     break;
+                }
+                if (strpos($line,"else") !== false){
+                    $temppos = $_pos - 1;
+                    if (strpos($_lua[$temppos],"end") !== false){
+                        $Ifarray[] = str_replace("else",$tabshort."else{",$line);
+                    }else{
+                        $Ifarray[] = str_replace("else",$tabshort."}else{",$line);
+                    }
                 }
                 if ($Ifend === false){
                     $Ifarray[] = "$tab".$line;
@@ -1008,6 +1026,9 @@ trait CsvParseTrait
                         $Ifarray[] = $tab."}";
                         $Ifend = true;
                         break;
+                    }
+                    if (strpos($line,"else") !== false){
+                        $Ifarray[] = str_replace("else",$tabshort."}else{",$line);
                     }
                     if ($Ifend === false){
                         $Ifarray[] = "$tab".$line;
@@ -1164,13 +1185,14 @@ trait CsvParseTrait
                 if (preg_match_all("/\\$[A-Z][0-9]_[0-9]+\(+/", $_lua[$_pos], $match)) {
                     $Matches = array_unique($match[0]);
                     foreach ($Matches as $var){
-                        $_lua[$_pos] = str_replace($var,"eval(\"return $var", $_lua[$_pos]);
-                        $_lua[$_pos] = str_replace(")", ")\")", $_lua[$_pos]);
+                        $_lua[$_pos] = str_replace($var,"eval('return $var", $_lua[$_pos]);
+                    }
+                    if (preg_match('/eval\((.*?)\)/', $_lua[$_pos], $match) == 1) {
                     }
                 }
                 if ($null === false) {
                     if (!empty($_lua[$_pos])){
-                        $luadata[] = $_lua[$_pos].";";
+                        $luadata[] = $_lua[$_pos]."";
                     }
                 }
                 //print_r($_lua[$_pos]."\n");
@@ -1179,12 +1201,40 @@ trait CsvParseTrait
                 $null = false;
             }
         }
-        
+        //cleanup
         //$FormatTest = $this->basicFormatDialogue($luadata,$CsvTextArray);
         //var_dump($luadata);
         $output = implode("\n",$luadata);
-        var_dump(eval("return $output"));
+        $output = explode("\n",$output);
+        foreach($output as $outputline){
+            if (preg_match('/eval\((.*?)\)/', $outputline, $match) == 1) {
+                $match1 = $match[0];
+                $match2 = str_replace("$","\\$",$match1);
+                $outputline = str_replace($match1,$match2,$outputline);
+                if (strpos($outputline,"if") == false){
+                    $outputline = str_replace(")", ")')", $outputline);
+
+                }
+            }
+            if ($outputline === "else"){
+                $outputline = "else{";
+            }
+            if (strpos($outputline,"    else") !== false){
+                continue;
+            }
+            if (strpos($outputline,"end") !== false){
+                continue;
+            }
+            if ((strpos($outputline,"{") !== false) or (strpos($outputline,"}") !== false)){
+            } else {
+                $outputline = $outputline.";";
+            }
+            $finaloutput[] = $outputline;
+        }
+        $output = implode("\n",$finaloutput);
         return $output;
+        var_dump(eval("return $output"));
+        
     }
     
 
