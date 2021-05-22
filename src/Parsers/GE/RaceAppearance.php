@@ -27,6 +27,8 @@ class RaceAppearance implements ParseInterface
         $CharaMakeCustomizeCsv = $this->csv("CharaMakeCustomize");
         $RaceCsv = $this->csv("Race");
         $TribeCsv = $this->csv("Tribe");
+        $LobbyCsv = $this->csv("Lobby");
+        
         //gen hairs
         foreach ($CharaMakeCustomizeCsv->data as $id => $CharaMakeCustomize) {
             $roundId = floor($CharaMakeCustomize['id'] / 100) * 100;
@@ -119,10 +121,10 @@ class RaceAppearance implements ParseInterface
             $PaintToRange = ($paintCode + 50);
             foreach(range($paintCode,$PaintToRange) as $i) {
                 $FacePaintGrab = [];
+                if ($CharaMakeCustomizeCsv->at($i)['FeatureID'] == "0") continue;
                 $FacePaintGrab['id'] = $CharaMakeCustomizeCsv->at($i)['id'];
-                if (empty($CharaMakeCustomizeCsv->at($i)['FeatureID'])) continue;
                 $FacePaintGrab['FeatureID'] = $CharaMakeCustomizeCsv->at($i)['FeatureID'];
-                $FeatureID = $FacePaintGrab['FeatureID'];
+                $FeatureID = $CharaMakeCustomizeCsv->at($i)['FeatureID'];
                 $FacePaintGrab['Icon'] = $CharaMakeCustomizeCsv->at($i)['Icon'];
                 $FacePaintGrab['Data'] = $CharaMakeCustomizeCsv->at($i)['Data'];
                 $FacePaintGrab['IsPurchasable'] = $CharaMakeCustomizeCsv->at($i)['IsPurchasable'];
@@ -131,9 +133,38 @@ class RaceAppearance implements ParseInterface
                 $OutArray[$Race][$Tribe][$Gender]['Face Paint'][$FeatureID] = $FacePaintGrab;
             }
             $OutArray[$Race][$Tribe][$Gender]['Hairstyle'] = $hairStyles[$tribeCode];
+            foreach(range(0,27) as $i){
+                //if ($Chara["SubMenuType[$i]"] == "2"){ //colors
+                //    $SubMenuType = $LobbyCsv->at($Chara["Menu[$i]"])['Text'];
+                //    $OutArray[$Race][$Tribe][$Gender][$SubMenuType] = "";
+                //    if (empty($SubMenuType)) continue;
+                //}
+                if ($Chara["SubMenuType[$i]"] == "1"){ //images
+                    $SubMenuType = $LobbyCsv->at($Chara["Menu[$i]"])['Text'];
+                    if (empty($SubMenuType)) continue;
+                    foreach(range(0,99) as $a) {
+                        if (empty($Chara["SubMenuParam[$i][$a]"])) break;
+                        $OutArray[$Race][$Tribe][$Gender][$SubMenuType][] = $Chara["SubMenuParam[$i][$a]"];
+                    }
+                }
+            }
 
         }
-        print_r($OutArray);
+        foreach($OutArray as $Race => $data1){
+            //race
+            foreach($data1 as $Tribe => $data2){
+                //tribe
+                foreach($data2 as $Gender => $data3){
+                    //Gender
+                    foreach($data3 as $Menu => $data4){
+                        //Menus
+                        var_dump($Menu);
+                    }
+                }
+            }
+        }
+        $Output = "";
+        //print_r($OutArray);
         $console = $console->section();
 
         $data = GeFormatter::format(self::WIKI_FORMAT, [
