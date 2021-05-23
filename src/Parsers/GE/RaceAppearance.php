@@ -37,7 +37,6 @@ class RaceAppearance implements ParseInterface
             if (empty($featureId)) continue;
             $hairStyles[$roundId][$featureId] = $CharaMakeCustomize;
         }
-        //$hairStyles[$tribeCode][$hairStyleBase]
         //gen data
         foreach ($CharaMakeTypeCsv->data as $id => $Chara) {
             $Race = $RaceCsv->at($Chara['Race'])['Masculine'];
@@ -136,11 +135,6 @@ class RaceAppearance implements ParseInterface
             }
             $OutArray[$Race][$Tribe][$Gender]['Hairstyle'] = $hairStyles[$tribeCode];
             foreach(range(0,27) as $i){
-                //if ($Chara["SubMenuType[$i]"] == "2"){ //colors
-                //    $SubMenuType = $LobbyCsv->at($Chara["Menu[$i]"])['Text'];
-                //    $OutArray[$Race][$Tribe][$Gender][$SubMenuType] = "";
-                //    if (empty($SubMenuType)) continue;
-                //}
                 if ($Chara["SubMenuType[$i]"] == "1"){ //images
                     $SubMenuType = $LobbyCsv->at($Chara["Menu[$i]"])['Text'];
                     if (empty($SubMenuType)) continue;
@@ -152,7 +146,6 @@ class RaceAppearance implements ParseInterface
             }
 
         }
-        //var_dump($OutArray["Hyur"]["Midlander"]["Male"]["Face"]);
         foreach($OutArray as $Race => $data1){
             //race
             $OutputArray[] = "===$Race===\n";
@@ -178,7 +171,6 @@ class RaceAppearance implements ParseInterface
                         foreach($data4 as $MenuData){
                             //data inside each Menu
                             if (is_array($MenuData)){
-                                //var_dump($MenuData);
                                 $Hint = "";
                                 $Item = "";
                                 if ($MenuData['Icon'] == "0") continue;
@@ -267,7 +259,6 @@ class RaceAppearance implements ParseInterface
         }
         
         $Output = implode($OutputArray);
-        //print_r($OutArray);
         $console = $console->section();
 
         $data = GeFormatter::format(self::WIKI_FORMAT, [
