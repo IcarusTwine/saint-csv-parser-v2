@@ -29,6 +29,10 @@ class RaceAppearance implements ParseInterface
         $TribeCsv = $this->csv("Tribe");
         $LobbyCsv = $this->csv("Lobby");
         $ItemCsv = $this->csv("Item");
+
+                
+        $this->PatchCheck($Patch, "CharaMakeCustomize", $CharaMakeCustomizeCsv);
+        $PatchNumber = $this->getPatch("CharaMakeCustomize");
         
         //gen hairs
         foreach ($CharaMakeCustomizeCsv->data as $id => $CharaMakeCustomize) {
@@ -36,6 +40,13 @@ class RaceAppearance implements ParseInterface
             $featureId = $CharaMakeCustomize['FeatureID'];
             if (empty($featureId)) continue;
             $hairStyles[$roundId][$featureId] = $CharaMakeCustomize;
+        }
+        //gen patchnumbers
+        foreach ($CharaMakeCustomizeCsv->data as $id => $CharaMakeCustomize) {
+            $featureId = $CharaMakeCustomize['FeatureID'];
+            if (empty($featureId)) continue;
+            $Icon = $CharaMakeCustomize['Icon'];
+            $IconPatchArray[$Icon] = $PatchNumber[$id];
         }
         //gen data
         foreach ($CharaMakeTypeCsv->data as $id => $Chara) {
@@ -148,7 +159,8 @@ class RaceAppearance implements ParseInterface
         }
         foreach($OutArray as $Race => $data1){
             //race
-            $OutputArray[] = "===$Race===\n";
+            $OutputArray[] = "{{-start-}}\n";
+            $OutputArray[] = "'''$Race/Appearance'''\n";
             $RaceInfoArray = [];
             $RaceInfoArray[] = "{| class=\"itembox shadowed\" style=\"color:white; width:100%; cellpadding=0; cellspacing=1;\" border={{{border|0}}}\n";
             $RaceInfoArray[] = "|-\n";
@@ -173,6 +185,7 @@ class RaceAppearance implements ParseInterface
                             if (is_array($MenuData)){
                                 $Hint = "";
                                 $Item = "";
+                                $NewIcon = "";
                                 if ($MenuData['Icon'] == "0") continue;
                                 if ($MenuData['Icon'] < 100000){
                                     if (!empty($MenuData['Hint'])){
@@ -188,7 +201,14 @@ class RaceAppearance implements ParseInterface
                                     }
                                     if ($CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon'] == "0") continue;
                                     $IconArray[] = $CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon'];
-                                    $MenuInfoArray[] = "{{CharaMake|Icon=".$CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon']."$Hint$Item}}\n";
+                                    $IconRaw = $CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon'];
+                                    if (!empty($IconPatchArray[$IconRaw])){
+                                        $PatchCheck = $IconPatchArray[$IconRaw];
+                                        if ($PatchCheck == $Patch){
+                                            $NewIcon = "|New = true";
+                                        }
+                                    }
+                                    $MenuInfoArray[] = "{{CharaMake|Icon=".$CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon']."$Hint$Item$NewIcon}}\n";
                                 } else {
                                     if (!empty($MenuData['Hint'])){
                                         $Hint = $LobbyCsv->at($MenuData['Hint'])['Text'];
@@ -202,7 +222,14 @@ class RaceAppearance implements ParseInterface
                                         }
                                     }
                                     $IconArray[] = $MenuData['Icon'];
-                                    $MenuInfoArray[] = "{{CharaMake|Icon=".$MenuData['Icon']."$Hint$Item}}\n";
+                                    $IconRaw = $MenuData['Icon'];
+                                    if (!empty($IconPatchArray[$IconRaw])){
+                                        $PatchCheck = $IconPatchArray[$IconRaw];
+                                        if ($PatchCheck == $Patch){
+                                            $NewIcon = "|New = true";
+                                        }
+                                    }
+                                    $MenuInfoArray[] = "{{CharaMake|Icon=".$MenuData['Icon']."$Hint$Item$NewIcon}}\n";
                                 }
                             }
                         }
@@ -224,6 +251,7 @@ class RaceAppearance implements ParseInterface
             }
             $RaceInfoArray[] = "}}\n";
             $RaceInfoArray[] = "|}\n";
+            $RaceInfoArray[] = "{{-stop-}}\n";
             $OutputArray[] = implode($RaceInfoArray);
         }
         $IconArray = array_unique($IconArray);

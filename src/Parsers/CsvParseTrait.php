@@ -94,6 +94,9 @@ trait CsvParseTrait
             case 'Description':
                 $offset = "Text[Long]";
             break;
+            case 'CharaMakeCustomize':
+                $offset = "FeatureID";
+            break;
             
             default:
                 $offset = "id";
