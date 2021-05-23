@@ -28,6 +28,7 @@ class RaceAppearance implements ParseInterface
         $RaceCsv = $this->csv("Race");
         $TribeCsv = $this->csv("Tribe");
         $LobbyCsv = $this->csv("Lobby");
+        $ItemCsv = $this->csv("Item");
         
         //gen hairs
         foreach ($CharaMakeCustomizeCsv->data as $id => $CharaMakeCustomize) {
@@ -41,6 +42,7 @@ class RaceAppearance implements ParseInterface
         foreach ($CharaMakeTypeCsv->data as $id => $Chara) {
             $Race = $RaceCsv->at($Chara['Race'])['Masculine'];
             $Tribe = $TribeCsv->at($Chara['Tribe'])['Masculine'];
+            if (empty($Tribe)) continue;
             switch ($Chara['Gender']) {
                 case '0':
                     $Gender = "Male";
@@ -144,26 +146,127 @@ class RaceAppearance implements ParseInterface
                     if (empty($SubMenuType)) continue;
                     foreach(range(0,99) as $a) {
                         if (empty($Chara["SubMenuParam[$i][$a]"])) break;
-                        $OutArray[$Race][$Tribe][$Gender][$SubMenuType][] = $Chara["SubMenuParam[$i][$a]"];
+                        $OutArray[$Race][$Tribe][$Gender][$SubMenuType][]["Icon"] = $Chara["SubMenuParam[$i][$a]"];
                     }
                 }
             }
 
         }
+        //var_dump($OutArray["Hyur"]["Midlander"]["Male"]["Face"]);
         foreach($OutArray as $Race => $data1){
             //race
+            $OutputArray[] = "===$Race===\n";
+            $RaceInfoArray = [];
+            $RaceInfoArray[] = "{| class=\"itembox shadowed\" style=\"color:white; width:100%; cellpadding=0; cellspacing=1;\" border={{{border|0}}}\n";
+            $RaceInfoArray[] = "|-\n";
+            $RaceInfoArray[] = "|{{#tag:tabber|\n";
             foreach($data1 as $Tribe => $data2){
                 //tribe
+                $TribeInfoArray = [];
+                $TribeInfoArray[] = "$Tribe=\n";
+                $TribeInfoArray[] = "<tabber>\n";
                 foreach($data2 as $Gender => $data3){
                     //Gender
+                    $GenderInfoArray = [];
+                    $GenderInfoArray[] = "$Gender=\n";
+                    $GenderInfoArray[] = "{{V-tabber|\n";
+                    $GenderInfoArray[] = "{{#tag:tabber|\n";
                     foreach($data3 as $Menu => $data4){
                         //Menus
-                        var_dump($Menu);
+                        $MenuInfoArray = [];
+                        $MenuInfoArray[] = "$Menu=\n";
+                        foreach($data4 as $MenuData){
+                            //data inside each Menu
+                            if (is_array($MenuData)){
+                                //var_dump($MenuData);
+                                $Hint = "";
+                                $Item = "";
+                                if ($MenuData['Icon'] == "0") continue;
+                                if ($MenuData['Icon'] < 100000){
+                                    if (!empty($MenuData['Hint'])){
+                                        $Hint = $LobbyCsv->at($MenuData['Hint'])['Text'];
+                                        if (preg_match('/\<(.*?)\>/', $Hint, $match) == 1) {
+                                            $ItemRaw = $ItemCsv->at($MenuData['HintItem'])['Name'];
+                                            $Hint = str_replace($match[0],$ItemRaw,$Hint);
+                                        }
+                                        $Hint = "|Hint = ".$Hint."";
+                                        if (!empty($MenuData['HintItem'])){
+                                            $Item = "|Item = ".$ItemCsv->at($MenuData['HintItem'])['Name']."";
+                                        }
+                                    }
+                                    if ($CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon'] == "0") continue;
+                                    $IconArray[] = $CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon'];
+                                    $MenuInfoArray[] = "{{CharaMake|Icon=".$CharaMakeCustomizeCsv->at($MenuData['Icon'])['Icon']."$Hint$Item}}\n";
+                                } else {
+                                    if (!empty($MenuData['Hint'])){
+                                        $Hint = $LobbyCsv->at($MenuData['Hint'])['Text'];
+                                        if (preg_match('/\<(.*?)\>/', $Hint, $match) == 1) {
+                                            $ItemRaw = $ItemCsv->at($MenuData['HintItem'])['Name'];
+                                            $Hint = str_replace($match[0],$ItemRaw,$Hint);
+                                        }
+                                        $Hint = "|Hint = ".$Hint."";
+                                        if (!empty($MenuData['HintItem'])){
+                                            $Item = "|Item = ".$ItemCsv->at($MenuData['HintItem'])['Name']."";
+                                        }
+                                    }
+                                    $IconArray[] = $MenuData['Icon'];
+                                    $MenuInfoArray[] = "{{CharaMake|Icon=".$MenuData['Icon']."$Hint$Item}}\n";
+                                }
+                            }
+                        }
+                        $MenuInfoArray = array_unique($MenuInfoArray);
+                        $MenuInfoArray[] = "{{!}}-{{!}}\n";
+                        $MenuInfo = implode($MenuInfoArray);
+                        $GenderInfoArray[] = $MenuInfo;
+                    }
+                    $GenderInfoArray[] = "}}\n";
+                    $GenderInfoArray[] = "}}\n";
+                    $GenderInfoArray[] = "|-|\n";
+                    $GenderInfo = implode($GenderInfoArray);
+                    $TribeInfoArray[] = $GenderInfo;
+                }
+                $TribeInfoArray[] = "</tabber>\n";
+                $TribeInfoArray[] = "{{!}}-{{!}}\n";
+                $TribeInfo = implode($TribeInfoArray);
+                $RaceInfoArray[] = $TribeInfo;
+            }
+            $RaceInfoArray[] = "}}\n";
+            $RaceInfoArray[] = "|}\n";
+            $OutputArray[] = implode($RaceInfoArray);
+        }
+        $IconArray = array_unique($IconArray);
+        if (!empty($IconArray)) {
+            $this->io->text('Copying Appearance Icons ...');
+            foreach ($IconArray as $value){
+                $IconID = sprintf("%06d", $value);
+                if (!file_exists($this->getOutputFolder() ."/$PatchID/AppearanceIcons/$IconID.png")) {
+                    // ensure output directory exists
+                    $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/AppearanceIcons/";
+                    if (!is_dir($IconOutputDirectory)) {
+                        mkdir($IconOutputDirectory, 0777, true);
+                    }
+    
+                    // build icon input folder paths
+                    if ($IconID === "000000") continue;
+                    $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
+    
+                    $iconFileName = "{$IconOutputDirectory}/$IconID.png";
+    
+                    // copy the input icon to the output filename
+                    if(file_exists($GetIcon)){
+                        copy($GetIcon, $iconFileName);
+                    } else {
+                        $MissingIconArray[] = $value;
                     }
                 }
             }
         }
-        $Output = "";
+        if (!empty($MissingIconArray)){
+            $this->io->text('Missing Icons ...');
+            print_r($MissingIconArray);
+        }
+        
+        $Output = implode($OutputArray);
         //print_r($OutArray);
         $console = $console->section();
 

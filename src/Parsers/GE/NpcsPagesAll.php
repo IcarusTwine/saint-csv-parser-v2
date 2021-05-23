@@ -1803,30 +1803,6 @@ class NpcsPagesAll implements ParseInterface
 
 
         }
-        // output icons for face/hair pictures
-        $IconArray = array_unique($IconArray);
-        $this->io->text('Copying Appearance Icons ...');
-        if (!empty($IconArray)) {
-            foreach ($IconArray as $value){
-                $IconID = sprintf("%06d", $value);
-                if (!file_exists($this->getOutputFolder() ."/$PatchID/AppearanceIcons/$IconID.png")) {
-                    // ensure output directory exists
-                    $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/AppearanceIcons/";
-                    if (!is_dir($IconOutputDirectory)) {
-                        mkdir($IconOutputDirectory, 0777, true);
-                    }
-    
-                    // build icon input folder paths
-                    if ($IconID === "000000") continue;
-                    $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
-    
-                    $iconFileName = "{$IconOutputDirectory}/$IconID.png";
-    
-                    // copy the input icon to the output filename
-                    copy($GetIcon, $iconFileName);
-                }
-            }
-        }
         $this->io->text('Done ...');
         $NPCUniqueApperanceIDs = [];
         $EquipmentarrayUnique = [];
