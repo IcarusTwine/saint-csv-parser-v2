@@ -7,6 +7,7 @@ php bin/console app:parse:csv GE:Actions
 php bin/console app:parse:csv GE:AquariumFish
 php bin/console app:parse:csv GE:Collectable
 php bin/console app:parse:csv GE:CompanyCraft
+php bin/console app:parse:csv GE:RaceAppearance
 php bin/console app:parse:csv GE:FishingSpot
 php bin/console app:parse:csv GE:EquipmentImageBot
 php bin/console app:parse:csv GE:Items
@@ -22,6 +23,8 @@ php bin/console app:parse:csv GE:Emotes
 php bin/console app:parse:csv GE:SatisfactionTable
 php bin/console app:parse:csv GE:SpecialShop
 php bin/console app:parse:csv GE:TripleTriad
+php bin/console app:parse:csv GE:MYCItems
+php bin/console app:parse:csv GE:MYCWarResultNotebook
 php bin/console app:parse:csv GE:Translator
 php bin/console app:parse:csv GE:FishParameter
 php bin/console app:parse:csv GE:Instances
