@@ -1115,6 +1115,7 @@ trait CsvParseTrait
             $newarray[] = "$$key";
         }
         $LuaGet = file_get_contents($LuaFile);
+        
         $_lua = explode("\n", str_replace("\r","",str_replace("  ","",$LuaGet)));
         $_lines = count($_lua);
 		$luadata = array();
