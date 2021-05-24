@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Parsers;
-
+use PhpParser\Error;
+use PhpParser\ParserFactory;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
@@ -979,10 +980,10 @@ trait CsvParseTrait
             //if $L6_6 == true then 
             $ConstructorStart = "{$i[0]} ({$i[1]} {$i[2]} {$i[3]}) {\n";
             $_pos++;
-            //make all L6_6. to "";
             if (preg_match('/[A-Z][0-9]_[0-9]+\./', $_lua[$_pos])) {
                 if (preg_match('/\.(.*?)\w+/', $_lua[$_pos], $match) == 1) {
                     $match = str_replace(".","",$match[0]);
+                    var_dump($_lua[$_pos]);
                     $newstring = "\"$match\"";
                     $_lua[$_pos] = str_replace($match,$newstring,$_lua[$_pos]);
                     $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
@@ -990,8 +991,16 @@ trait CsvParseTrait
             }
             while($Ifend === false) {
                 $line = $_lua[$_pos];
+                if (preg_match('/[A-Z][0-9]_[0-9]+\./', $line)) {
+                    if (preg_match('/\.(.*?)\w+/', $line, $match) == 1) {
+                        $match = str_replace(".","",$match[0]);
+                        $newstring = "\"$match\"";
+                        $line = str_replace($match,$newstring,$line);
+                        $line = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $line);
+                    }
+                }
                 if (strpos($line, "end") !== false){
-                    $Ifarray[] = $tab."}";
+                    $Ifarray[] = $tabshort."}";
                     $Ifend = true;
                     break;
                 }
@@ -1025,6 +1034,22 @@ trait CsvParseTrait
                 $_pos++;
                 while($Ifend === false) {
                     $line = $_lua[$_pos];
+                    if (preg_match('/[A-Z][0-9]_[0-9]+\./', $_lua[$_pos])) {
+                        if (preg_match('/\.(.*?)\w+/', $_lua[$_pos], $match) == 1) {
+                            $match = str_replace(".","",$match[0]);
+                            $newstring = "\"$match\"";
+                            $_lua[$_pos] = str_replace($match,$newstring,$_lua[$_pos]);
+                            $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
+                        }
+                    }
+                    if (preg_match('/[A-Z][0-9]_[0-9]+\./', $line)) {
+                        if (preg_match('/\.(.*?)\w+/', $line, $match) == 1) {
+                            $match = str_replace(".","",$match[0]);
+                            $newstring = "\"$match\"";
+                            $line = str_replace($match,$newstring,$line);
+                            $line = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $line);
+                        }
+                    }
                     if (strpos($line, "end") !== false){
                         $Ifarray[] = $tab."}";
                         $Ifend = true;
@@ -1222,6 +1247,9 @@ trait CsvParseTrait
             if ($outputline === "else"){
                 $outputline = "else{";
             }
+            if (strpos($outputline,"elseif") !== false){
+                $outputline = str_replace("elseif","}if",$outputline);
+            }
             if (strpos($outputline,"    else") !== false){
                 continue;
             }
@@ -1234,9 +1262,22 @@ trait CsvParseTrait
             }
             $finaloutput[] = $outputline;
         }
-        $output = implode("\n",$finaloutput);
+        $output = "<?php ".implode("\n",$finaloutput);
+        try {
+            $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
+            $logic = $parser->parse($output);
+        
+            // dump the tree, it'll be big 
+            //print_r($logic);
+            
+            // optional: 
+             $json = json_decode(json_encode($logic));
+             print_r($json);
+        } catch (Error $error) {
+            die("\n\n Parse error: {$error->getMessage()}\n\n");
+        }
         return $output;
-        var_dump(eval("return $output"));
+        //var_dump(eval("return $output"));
         
     }
     
