@@ -35,9 +35,9 @@ class RetainerEXP implements ParseInterface
             // Your parse code here
             //
             $paramGrow = $paramGrowCsv->at($item['id']);
-            $Percent = $item['unknown_1'];
+            $Percent = $item['PercentOfLevel'];
             if ($Percent === "0") continue;
-            $EXP = floor((($item['unknown_1'] / 100) * $paramGrow['ExpToNext']));
+            $EXP = floor((($item['PercentOfLevel'] / 100) * $paramGrow['ExpToNext']));
             $ExpArray[] = "| $id || $EXP || $Percent%";
         }
         $Output = implode("\n|-\n", $ExpArray);

@@ -146,7 +146,7 @@ class FishingSpot implements ParseInterface
             $FishingSpotArray[$TerritoryType][$PlaceName]['Level'] = $GatheringLevel;
             $FishingSpotArray[$TerritoryType][$PlaceName]['Type'] = "Spearfishing";
             $FishingSpotArray[$TerritoryType][$PlaceName]['Rare'] = "false";
-            if ($Spearfishing["unknown_2"] === "True"){
+            if ($Spearfishing["IsShadowNode"] === "True"){
                 $FishingSpotArray[$TerritoryType][$PlaceName]['Rare'] = "true";
             }
         }

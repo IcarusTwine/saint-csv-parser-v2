@@ -612,9 +612,9 @@ class NpcsPagesAll implements ParseInterface
                             $Argument = $CustomTalkCsv->at($DataValue)["Script{Arg}[$a]"];
                             $ArgArray[$Instruction] = $Argument;
                         }
-                        $LuaOut = $this->getLuaDialogue2($Lua, $ArgArray, $NameRaw);
+                        //$LuaOut = $this->getLuaDialogue2($Lua, $ArgArray, $NameRaw);
 
-                        $CustomTalkCheck[] = "$NameFormatted - $Lua - $DataValue\n$LuaOut";
+                        //$CustomTalkCheck[] = "$NameFormatted - $Lua - $DataValue\n$LuaOut";
                             
                         foreach(range(0,29) as $a) {
                             if (empty($CustomTalkCsv->at($DataValue)["Script{Instruction}[$a]"])) continue;
