@@ -57,6 +57,7 @@ class LuaExporter implements ParseInterface
         }
         $LuaArrayUnique = array_unique($LuaArray);
         $Total = count($LuaArrayUnique);
+        var_dump($LuaArrayUnique);
         $console->writeln(" Extracting and converting Lua files then saving. This can take a long time");
         foreach ($LuaArrayUnique as $i => $LuaPath){
             $console->overwrite(" Extract -> $LuaPath -> $i / $Total");
@@ -66,8 +67,11 @@ class LuaExporter implements ParseInterface
         }
         if (!empty($LuaArrayUnique)) {
             var_dump("New Lua files : ".$LuaArrayUnique);
+            //Delete the folder in saint C
+            exec(sprintf("rd /s /q %s", escapeshellarg("$SaintPath/$PatchID/game_script")));
         }
-        //Delete the folder in saint C
-        exec(sprintf("rd /s /q %s", escapeshellarg("$SaintPath/$PatchID/game_script")));
+        if (empty($LuaArrayUnique)){
+            $console->writeln(" There are no new lua files to extract");
+        }
     }
 }

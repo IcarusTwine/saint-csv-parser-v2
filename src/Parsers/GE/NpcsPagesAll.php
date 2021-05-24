@@ -2108,7 +2108,7 @@ class NpcsPagesAll implements ParseInterface
         //$GetHowToOut = implode("\n", array_unique($GetHowToArray));
 
         //getcustomtalk
-        $CustomTalkCheckOut = implode("\n", $CustomTalkCheck);
+        //$CustomTalkCheckOut = implode("\n", $CustomTalkCheck);
         
         $data = [
             '{Output}' => $Output,
@@ -2135,7 +2135,7 @@ class NpcsPagesAll implements ParseInterface
         $this->saveExtra("NPC_Dialogue.txt", $DialoguePages);
         $this->saveExtra("NPC_Appearance.txt", $EquipmentOut);
         $this->saveExtra("NPC_Player_Data.txt", $FinalNpcPlayerData);
-        $this->saveExtra("NPC_Custom_Talk.txt", $CustomTalkCheckOut, true);
+        //$this->saveExtra("NPC_Custom_Talk.txt", $CustomTalkCheckOut, true);
         $this->saveExtra("NPC_Debug.txt", $DebugOutim);
     }
 }
