@@ -85,6 +85,10 @@ class EquipmentImageBot implements ParseInterface
         $GNBOut = "";
         $DNCOut = "";
         $SMNOut = "";
+        $NecklaceArray = [];
+        $EarringArray = [];
+        $BraceletArray = [];
+        $RingArray = [];
         foreach ($ItemCsv->data as $id => $Item) {
             // ---------------------------------------------------------
             $this->io->progressAdvance();

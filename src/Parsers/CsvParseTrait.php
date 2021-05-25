@@ -83,6 +83,15 @@ trait CsvParseTrait
             case 'Item':
                 $offset = "Name";
             break;
+            case 'Minion':
+                $offset = "Name";
+            break;
+            case 'Mount':
+                $offset = "Name";
+            break;
+            case 'Achievement':
+                $offset = "Name";
+            break;
             case 'Quest':
                 $offset = "Name";
             break;
@@ -475,6 +484,7 @@ trait CsvParseTrait
             case "Namazu junkmonger":
             case "falcon porter":
             case "housing merchant":
+            case "Resistance appraiser":
                 $PLAddition = " ($PlaceNameLocation)";
                 if (empty($PlaceNameLocation)){
                     switch ($NameFormatted) {

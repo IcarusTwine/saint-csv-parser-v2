@@ -10,6 +10,7 @@ php bin/console app:parse:csv GE:CompanyCraft
 php bin/console app:parse:csv GE:RaceAppearance
 php bin/console app:parse:csv GE:FishingSpot
 php bin/console app:parse:csv GE:EquipmentImageBot
+php bin/console app:parse:csv GE:ItemChange
 php bin/console app:parse:csv GE:Items
 php bin/console app:parse:csv GE:KhloeShop
 php bin/console app:parse:csv GE:LuaExporter

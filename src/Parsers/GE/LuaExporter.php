@@ -66,7 +66,7 @@ class LuaExporter implements ParseInterface
             shell_exec("cd $Resources && java -jar unluac.jar $SaintPath/$PatchID/game_script/$LuaPath.luab > $Resources/game_script/$LuaPath.lua");
         }
         if (!empty($LuaArrayUnique)) {
-            var_dump("New Lua files : ".$LuaArrayUnique);
+            var_dump("New Lua files : ".implode("\n",$LuaArrayUnique));
             //Delete the folder in saint C
             exec(sprintf("rd /s /q %s", escapeshellarg("$SaintPath/$PatchID/game_script")));
         }
