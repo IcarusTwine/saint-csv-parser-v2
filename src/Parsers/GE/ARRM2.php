@@ -310,12 +310,12 @@ export { mapswitch };
         //fclose($htmllink);
 
         foreach ($territoryTypeCsv->data as $id => $territoryType) {
-        	if ($id != 641) continue;
+        	if ($id != 975) continue;
         $teriID = $territoryType['id'];
         $this->io->progressAdvance();
         $teriName = $territoryType['Name'];
-        //$mapLink = $territoryType['Map'];
-        $mapLink = 365;
+        $mapLink = $territoryType['Map'];
+        //$mapLink = 365;
         $mapLinkToTeri = $mapCsv->at($mapLink)['TerritoryType'];
         $mapMarkerLink = $mapCsv->at($mapLink)['MapMarkerRange'];
         $bgPath = $territoryType['Bg'];
@@ -657,37 +657,40 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
         $FATELayerVar = [];
         $FATELayerStringVar = [];
         $FATELayerArrayVar = [];
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $MainPath = $ini['MainPath'];
+        $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
         foreach(range(0,5) as $range) {
             if ($range == 0) {
-                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planlive.lgb.json')) {
-                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planlive.lgb.json';
+                if (file_exists('cache/'.$PatchID.'/lgb/'. $code .'_planlive.lgb.json')) {
+                    $url = 'cache/'.$PatchID.'/lgb/'. $code .'_planlive.lgb.json';
                 }
             } elseif ($range == 1) {
-                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planevent.lgb.json')) {
-                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planevent.lgb.json';
+                if (file_exists('cache/'.$PatchID.'/lgb/'. $code .'_planevent.lgb.json')) {
+                    $url = 'cache/'.$PatchID.'/lgb/'. $code .'_planevent.lgb.json';
                 }
             } elseif ($range == 2) {
-                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planmap.lgb.json')) {
-                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planmap.lgb.json';
+                if (file_exists('cache/'.$PatchID.'/lgb/'. $code .'_planmap.lgb.json')) {
+                    $url = 'cache/'.$PatchID.'/lgb/'. $code .'_planmap.lgb.json';
                 }
             } elseif ($range == 3) {
-                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_sound.lgb.json')) {
-                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_sound.lgb.json';
+                if (file_exists('cache/'.$PatchID.'/lgb/'. $code .'_sound.lgb.json')) {
+                    $url = 'cache/'.$PatchID.'/lgb/'. $code .'_sound.lgb.json';
                 }
             } elseif ($range == 4) {
-                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_vfx.lgb.json')) {
-                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_vfx.lgb.json';
+                if (file_exists('cache/'.$PatchID.'/lgb/'. $code .'_vfx.lgb.json')) {
+                    $url = 'cache/'.$PatchID.'/lgb/'. $code .'_vfx.lgb.json';
                 }
             } elseif ($range == 5) {
-                if (file_exists('cache/2020.10.06.0000.0000/lgb/'. $code .'_planner.lgb.json')) {
-                    $url = 'cache/2020.10.06.0000.0000/lgb/'. $code .'_planner.lgb.json';
+                if (file_exists('cache/'.$PatchID.'/lgb/'. $code .'_planner.lgb.json')) {
+                    $url = 'cache/'.$PatchID.'/lgb/'. $code .'_planner.lgb.json';
                 }
             }
             if (empty($url)) continue;
         $jdata = file_get_contents($url);
         $decodeJdata = json_decode($jdata);
         foreach ($decodeJdata as $lgb) {
-                $LayerID = $lgb->LayerID;
+                $LayerID = $lgb->LayerId;
                 $InstanceObjects = $lgb->InstanceObjects;
                 $AssetType = "";
                 $scale = $mapCsv->at($mapLink)['SizeFactor'];
@@ -712,8 +715,8 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                 foreach($InstanceObjects as $Object) {
                     $AssetType = $Object->AssetType;
                     $InstanceID = "";
-                    if (!empty($Object->InstanceID)) {
-                        $InstanceID = $Object->InstanceID;
+                    if (!empty($Object->InstanceId)) {
+                        $InstanceID = $Object->InstanceId;
                     }
                     //notes:
                     //public enum eTriggerBoxShapeLayer
@@ -725,7 +728,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                     //    TriggerBoxShapeMesh = 0x5,
                     //    TriggerBoxShapeBoardBothSides = 0x6,
                     //}
-                    $Name = $lgb->strName;
+                    $Name = $lgb->Name;
                     $BaseId = "";
                     $x = "";
                     $y = "";
@@ -794,7 +797,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $y = $Object->Transform->Translation->z;
                             $AssetSort = "Vfx";
                             $lgbIcon = "060914";
-                            $AssetPath = $Object->Object->strAssetPath;
+                            $AssetPath = $Object->Object->AssetPath;
                             $colorRed = $Object->Object->Color->Red;
                             $colorGreen = $Object->Object->Color->Green;
                             $colorBlue = $Object->Object->Color->Blue;
@@ -889,7 +892,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $AssetSort = "Gimmick";
                             $lgbIcon = "060071";
                             $doorCheck = $Object->Object->InitialDoorState;
-                            $AssetPath = $Object->Object->strAssetPath;
+                            $AssetPath = $Object->Object->AssetPath;
                             $doorCheckStr = "";
                             $popupInfo = "<center><span class='sptitle'>". $doorCheckStr ."</span></center>". $Name ."<br>". $AssetPath ."";
                             if (!empty($x)) {
@@ -944,7 +947,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
                             $NpcPixelY = (($NpcLocY - 1) * 50 * $c * 2);
                             //data
-                            $AssetPath = $Object->Object->strAssetPath;
+                            $AssetPath = $Object->Object->AssetPath;
                             $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $lgbScale ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span></center><br>Path: ". $AssetPath ."<br>". $InstanceID ."\").openPopup().addTo(". $AssetSort .")";
                             $polygonCheck = true;
                             //$popupInfo = "<center><span class='sptitle'>". $Name ."</span></center><br>". $AssetPath ."";
@@ -1093,7 +1096,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $InterpolationTime = $Object->Object->InterpolationTime;
                             $Reverb = $Object->Object->Reverb;
                             $Filter = $Object->Object->Filter;
-                            $strSoundAssetPath = $Object->Object->strSoundAssetPath;
+                            $SoundAssetPath = $Object->Object->SoundAssetPath;
                             $lgbIcon = "060711";
                             $JSON_EnvSpace[] = array(
                                 'LGB_ID' => $InstanceID,
@@ -1103,7 +1106,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                                 'InterpolationTime' => $InterpolationTime,
                                 'Reverb' => $Reverb,
                                 'Filter' => $Filter,
-                                'SoundAssetPath' => $strSoundAssetPath,
+                                'SoundAssetPath' => $SoundAssetPath,
                                 'Transform' => array(  
                                     'X' => $x,
                                     'Y' => $y,
@@ -1118,7 +1121,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                                     ),
                                 )
                             );
-                            $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $EnvSpaceScale ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span></center><br>EffectiveRange: ". $EffectiveRange ."<br>InterpolationTime: ". $InterpolationTime ."<br>Reverb: ". $Reverb ."<br>Filter: ". $Filter ."<br>SoundAssetPath: ". $strSoundAssetPath ."<br>". $InstanceID ."\").openPopup().addTo(". $AssetSort .")";
+                            $polygonData = "\nvar ". $AssetSort ."poly". $InstanceID ." = new L.circle(map.unproject([". $NpcPixelX .", ". $NpcPixelY ."], map.getMaxZoom()), {radius: ". $EnvSpaceScale ."}).bindPopup(\"<center><span class='sptitle'>". $Name ."</span></center><br>EffectiveRange: ". $EffectiveRange ."<br>InterpolationTime: ". $InterpolationTime ."<br>Reverb: ". $Reverb ."<br>Filter: ". $Filter ."<br>SoundAssetPath: ". $SoundAssetPath ."<br>". $InstanceID ."\").openPopup().addTo(". $AssetSort .")";
                             $polygonCheck = true;
                         break;
                         case 40:
@@ -1346,6 +1349,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                             $extradebuginfo = "";
                             $EobjName = ucwords($EObjNameCsv->at($BaseId)['Singular']);
                             if (strpos($Name, 'LVD_DE') !== false) {
+                                var_dump($InstanceID);
                                 if (empty($DynamicFateArray[$InstanceID]["id"])) continue;
                                 $AssetSort = "fate";
                                 $FateID = $DynamicFateArray[$InstanceID]["id"];
@@ -1785,7 +1789,7 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                                 $offsetValueY = ($PointYnew + $offsety) * $c;
                                 $NpcLocY = ((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1);
                                 $PointPixelY = (($NpcLocY - 1) * 50 * $c * 2);
-                                $PointID = $ControlPoints->PointID;
+                                $PointID = $ControlPoints->PointId;
 
                                 //$xsave = $PointXnew;
                                 //$ysave = $PointYnew;

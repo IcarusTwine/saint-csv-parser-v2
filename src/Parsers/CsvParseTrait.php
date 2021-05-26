@@ -6,7 +6,6 @@ use PhpParser\ParserFactory;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-
 trait CsvParseTrait
 {
     /** @var SymfonyStyle */
@@ -1289,6 +1288,16 @@ trait CsvParseTrait
         }
         return $output;
         //var_dump(eval("return $output"));
+        
+    }
+    public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
+        //include "LuaParser.php";
+        $logfile = __DIR__ .'/app.log';
+unlink($logfile); // reset;
+
+$log = new Logger('lua');
+$log->pushHandler(new StreamHandler($logfile, Logger::DEBUG));
+$log->pushHandler(new StreamHandler('php://stdout', Logger::DEBUG));
         
     }
     

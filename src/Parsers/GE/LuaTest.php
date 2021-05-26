@@ -1,7 +1,12 @@
 <?php
 
 namespace App\Parsers\GE;
+require 'vendor/autoload.php';
 
+use PhpParser\ParserFactory;
+use ForceUTF8\Encoding;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 use App\Parsers\CsvParseTrait;
 use App\Parsers\ParseInterface;
 use Symfony\Component\Console\Output\ConsoleOutput;
@@ -49,7 +54,7 @@ class LuaTest implements ParseInterface
                     if (!empty($MainOption)){
                         $Option = "=== $MainOption ===";
                     }
-                $LuaFormat = $this->getLuaDialogue($LuaName, $ArgArray, $Name, $MainOption);
+                $LuaFormat = $this->getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption);
                 }
             }
         }
