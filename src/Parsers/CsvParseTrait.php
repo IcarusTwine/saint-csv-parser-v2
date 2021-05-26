@@ -6,6 +6,9 @@ use PhpParser\ParserFactory;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use ForceUTF8\Encoding;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 trait CsvParseTrait
 {
     /** @var SymfonyStyle */
@@ -1291,13 +1294,87 @@ trait CsvParseTrait
         
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
-        //include "LuaParser.php";
-        $logfile = __DIR__ .'/app.log';
-unlink($logfile); // reset;
+        include_once "LuaParser.php";
+        include_once "print_tree.php";
+        
+        $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";  
+        
 
-$log = new Logger('lua');
-$log->pushHandler(new StreamHandler($logfile, Logger::DEBUG));
-$log->pushHandler(new StreamHandler('php://stdout', Logger::DEBUG));
+        $NpcName = str_replace(" ", "", strtoupper($Name));
+        $folder = substr(explode('_', $LuaName)[1], 0, 3);
+        $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+        $CsvTextArray = [];
+        foreach ($textdata->data as $key => $textdataCsv) {
+            $command = $textdataCsv["unknown_1"];
+            if(!empty($textdataCsv["unknown_2"])){
+                $argument = $textdataCsv["unknown_2"];
+                $CsvTextArray[$command] = $argument;
+            }
+        }
+        $code = file_get_contents($LuaFile);
+
+        $log = new Logger('lua');
+        $log->pushHandler(new StreamHandler('php://stdout', Logger::DEBUG));
+        $log->info("Starting Lua Script conversion...");
+
+        $code = explode("\n", $code);
+        
+        $log->info("Parsing code...");
+        $log->info(count($code) ." lines");
+        
+        foreach ($code as $i => $line) {
+            $line = trim($line);
+            $line = Encoding::fixUTF8($line);
+            $line = variableReplacement($line);
+            $line = basicCodeReplacement($line);
+        
+            $code[$i] = $line;
+        }
+        $log->info("Converted lua to php");$code = implode("\n", $code);
+
+        $log->info("Indenting code...");
+        $code = indentCode($code);
+        $code = "<?php \n\n". $code;
+        
+        $log->info("Saving to lua.php");
+        file_put_contents(__DIR__ ."/lua.php", $code);
+        
+        //$this->saveExtra("Test.php","<?php\n".$CodeImp);
+        //$out = simplejson($code);
+        // parse the php
+        $log->info("Parsing PHP using parser factory...");
+        $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
+        $logic = $parser->parse($code);
+
+        // dump the tree, it'll be big
+        $log->info("Saving lua parsed tree to lua_tree.txt");
+        $logicExport = print_r($logic, true);
+        file_put_contents(__DIR__ ."/lua_tree.txt", $logicExport);
+
+        // save big json version
+        $log->info("Saving lua parsed tree in JSON format to lua.json");
+        $json = json_decode(json_encode($logic));
+        file_put_contents(__DIR__ ."/lua.json", json_encode($json, JSON_PRETTY_PRINT));
+
+        $log->info("------------------------------------------------------------");
+
+        $log->info("Attempting to simplify the json structure...");
+        $json = simplejson($json);
+
+        $log->info("Saving simplified json structure...");
+        file_put_contents(__DIR__ ."/lua_simple.json", json_encode($json, JSON_PRETTY_PRINT));
+
+        $log->info("------------------------------------------------------------");
+
+        $log->info("All done, check out the files:");
+        $log->info("- lua_simple.json");
+        $log->info("Run php print_tree.php for a nice flow tree");
+        //$Return = eval("return $CodeImp");
+        $ech = exec("php E:\saint-csv-parser-v2\src\Parsers\print_tree.php");
+        echo ($ech);
         
     }
     

@@ -1920,7 +1920,7 @@ class NpcsPagesAll implements ParseInterface
                 }
                 $QuestIssuer = "";
                 if (!empty($Issuers[$id])){
-                    $QuestIssuer = "  | Issuer = ".$Issuers[$id]."\n";
+                    $QuestIssuer = "  | Issuer = ".str_replace("","",$Issuers[$id])."\n";
                 }
                 //MapOutput = 
                 $MapOutputString = "{{-start-}}\n'''". $NameFormatted ."/Map/". $id ."'''\n";

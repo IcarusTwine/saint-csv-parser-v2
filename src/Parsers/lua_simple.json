@@ -1,0 +1,2359 @@
+[
+    {
+        "type": "Stmt_Function",
+        "name": "ffxiv_function_yqgcperxnf",
+        "params": [],
+        "statements": [
+            {
+                "type": "Stmt_Echo",
+                "value": "CmnDefMogLetter loaded"
+            },
+            {
+                "type": "Expr_Assign",
+                "var": {
+                    "type": "Expr_StaticPropertyFetch",
+                    "name": "LETTER_BOX_USAGE_THERESHOLD",
+                    "class": "CmnDefMogLetter"
+                },
+                "expr": 80
+            },
+            {
+                "type": "Stmt_Function",
+                "name": "OnScene00000",
+                "params": [
+                    "A0_0",
+                    "ffxiv_core",
+                    "A2_2"
+                ],
+                "statements": [
+                    {
+                        "type": "Stmt_Global",
+                        "vars": [
+                            {
+                                "type": "Expr_Variable",
+                                "name": "L3_3"
+                            },
+                            {
+                                "type": "Expr_Variable",
+                                "name": "L4_4"
+                            },
+                            {
+                                "type": "Expr_Variable",
+                                "name": "L5_5"
+                            },
+                            {
+                                "type": "Expr_Variable",
+                                "name": "L6_6"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L4_4"
+                        },
+                        "expr": {
+                            "type": "Expr_Variable",
+                            "name": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L3_3"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "GetNumOfNewLetters",
+                            "class": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L3_3"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L3_3",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "L4_4"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L5_5"
+                        },
+                        "expr": {
+                            "type": "Expr_Variable",
+                            "name": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L4_4"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "GetNumOfDeniedLetters",
+                            "class": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L4_4"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L4_4",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "L5_5"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_Variable",
+                            "name": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L5_5"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "GetLetterBoxUsage",
+                            "class": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L5_5"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L5_5",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "TurnTo",
+                            "class": "A2_2"
+                        }
+                    },
+                    {
+                        "type": "Expr_FuncCall",
+                        "name": "L6_6",
+                        "args": [
+                            {
+                                "type": "Expr_Variable",
+                                "name": "A2_2"
+                            },
+                            {
+                                "type": "Expr_Variable",
+                                "name": "ffxiv_core"
+                            },
+                            {
+                                "type": "Expr_ConstFetch",
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "IsEnpcBelongsToThe1st",
+                            "class": "A0_0"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L6_6",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "A0_0"
+                                },
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "A2_2"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": "==",
+                        "left": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "right": {
+                            "type": "Expr_ConstFetch",
+                            "value": "true"
+                        },
+                        "statements": [
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "IsEnableThe1stLetterMoogle",
+                                    "class": "A0_0"
+                                }
+                            },
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_FuncCall",
+                                    "name": "L6_6",
+                                    "args": [
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "A0_0"
+                                        },
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "ffxiv_core"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "Stmt_If",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "right": {
+                                    "type": "Expr_ConstFetch",
+                                    "value": "false"
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "PlayActionTimeline",
+                                            "class": "A2_2"
+                                        }
+                                    },
+                                    {
+                                        "type": "Expr_FuncCall",
+                                        "name": "L6_6",
+                                        "args": [
+                                            {
+                                                "type": "Expr_Variable",
+                                                "name": "A2_2"
+                                            },
+                                            {
+                                                "type": "Expr_StaticPropertyFetch",
+                                                "name": "ACTION_TIMELINE_EVENT_GREETING",
+                                                "class": "A0_0"
+                                            },
+                                            {
+                                                "type": "Expr_Variable",
+                                                "name": "ffxiv_core"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "Talk",
+                                            "class": "A2_2"
+                                        }
+                                    },
+                                    {
+                                        "type": "Expr_FuncCall",
+                                        "name": "L6_6",
+                                        "args": [
+                                            {
+                                                "type": "Expr_Variable",
+                                                "name": "A2_2"
+                                            },
+                                            {
+                                                "type": "Expr_Variable",
+                                                "name": "ffxiv_core"
+                                            },
+                                            {
+                                                "type": "Expr_Variable",
+                                                "name": "A0_0"
+                                            },
+                                            {
+                                                "type": "Expr_StaticPropertyFetch",
+                                                "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_102_030",
+                                                "class": "A0_0"
+                                            },
+                                            {
+                                                "type": "Expr_ConstFetch",
+                                                "value": "true"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Stmt_Return",
+                                        "value": false
+                                    }
+                                ],
+                                "elseifs": [],
+                                "else": null
+                            }
+                        ],
+                        "elseifs": [],
+                        "else": null
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "IsHowTo",
+                            "class": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L6_6",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "ffxiv_core"
+                                },
+                                {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "HOWTO_MOGLETTER",
+                                    "class": "A0_0"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": "==",
+                        "left": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "right": {
+                            "type": "Expr_ConstFetch",
+                            "value": "false"
+                        },
+                        "statements": [
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "IsQuestCompleted",
+                                    "class": "ffxiv_core"
+                                }
+                            },
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_FuncCall",
+                                    "name": "L6_6",
+                                    "args": [
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "ffxiv_core"
+                                        },
+                                        {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "CLEAR_QUEST0",
+                                            "class": "A0_0"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "Stmt_If",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "right": {
+                                    "type": "Expr_ConstFetch",
+                                    "value": "false"
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "IsEnpcBelongsToThe1st",
+                                            "class": "A0_0"
+                                        }
+                                    },
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_FuncCall",
+                                            "name": "L6_6",
+                                            "args": [
+                                                {
+                                                    "type": "Expr_Variable",
+                                                    "name": "A0_0"
+                                                },
+                                                {
+                                                    "type": "Expr_Variable",
+                                                    "name": "A2_2"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "Stmt_If",
+                                        "operator": "==",
+                                        "left": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "right": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "false"
+                                        },
+                                        "statements": [
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "PlayActionTimeline",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "ACTION_TIMELINE_EVENT_GREETING",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_10",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "true"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Wait",
+                                                    "class": "A0_0"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    15
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "PlayActionTimeline",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "ACTION_TIMELINE_EVENT_TALK1",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_11",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_12",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_13",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "PlayActionTimeline",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "ACTION_TIMELINE_EVENT_TALK1",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_14",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_000_15",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "true"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "elseifs": [],
+                                        "else": null
+                                    },
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "Wait",
+                                            "class": "A0_0"
+                                        }
+                                    },
+                                    {
+                                        "type": "Expr_FuncCall",
+                                        "name": "L6_6",
+                                        "args": [
+                                            {
+                                                "type": "Expr_Variable",
+                                                "name": "A0_0"
+                                            },
+                                            15
+                                        ]
+                                    }
+                                ],
+                                "elseifs": [],
+                                "else": null
+                            }
+                        ],
+                        "elseifs": [],
+                        "else": null
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "PlayActionTimeline",
+                            "class": "A2_2"
+                        }
+                    },
+                    {
+                        "type": "Expr_FuncCall",
+                        "name": "L6_6",
+                        "args": [
+                            {
+                                "type": "Expr_Variable",
+                                "name": "A2_2"
+                            },
+                            {
+                                "type": "Expr_StaticPropertyFetch",
+                                "name": "ACTION_TIMELINE_EVENT_GREETING",
+                                "class": "A0_0"
+                            },
+                            {
+                                "type": "Expr_Variable",
+                                "name": "ffxiv_core"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": "==",
+                        "left": {
+                            "type": "Expr_Variable",
+                            "name": "L3_3"
+                        },
+                        "right": 0,
+                        "statements": [
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "IsEnpcBelongsToThe1st",
+                                    "class": "A0_0"
+                                }
+                            },
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_FuncCall",
+                                    "name": "L6_6",
+                                    "args": [
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "A0_0"
+                                        },
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "A2_2"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "Stmt_If",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "right": {
+                                    "type": "Expr_ConstFetch",
+                                    "value": "false"
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "IsQuestCompleted",
+                                            "class": "ffxiv_core"
+                                        }
+                                    },
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_FuncCall",
+                                            "name": "L6_6",
+                                            "args": [
+                                                {
+                                                    "type": "Expr_Variable",
+                                                    "name": "ffxiv_core"
+                                                },
+                                                {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "CLEAR_QUEST2",
+                                                    "class": "A0_0"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "Stmt_If",
+                                        "operator": "==",
+                                        "left": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "right": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "true"
+                                        },
+                                        "statements": [
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_101_001",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "elseifs": [],
+                                        "else": null
+                                    }
+                                ],
+                                "elseifs": [],
+                                "else": null
+                            }
+                        ],
+                        "elseifs": [
+                            {
+                                "type": "Stmt_ElseIf",
+                                "operator": ">",
+                                "left": {
+                                    "type": "Expr_Variable",
+                                    "name": "L3_3"
+                                },
+                                "right": 0,
+                                "statements": [
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "IsEnpcBelongsToThe1st",
+                                            "class": "A0_0"
+                                        }
+                                    },
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_FuncCall",
+                                            "name": "L6_6",
+                                            "args": [
+                                                {
+                                                    "type": "Expr_Variable",
+                                                    "name": "A0_0"
+                                                },
+                                                {
+                                                    "type": "Expr_Variable",
+                                                    "name": "A2_2"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "Stmt_If",
+                                        "operator": "==",
+                                        "left": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "right": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "false"
+                                        },
+                                        "statements": [
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "IsQuestCompleted",
+                                                    "class": "ffxiv_core"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_FuncCall",
+                                                    "name": "L6_6",
+                                                    "args": [
+                                                        {
+                                                            "type": "Expr_Variable",
+                                                            "name": "ffxiv_core"
+                                                        },
+                                                        {
+                                                            "type": "Expr_StaticPropertyFetch",
+                                                            "name": "CLEAR_QUEST2",
+                                                            "class": "A0_0"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "type": "Stmt_If",
+                                                "operator": "==",
+                                                "left": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "right": {
+                                                    "type": "Expr_ConstFetch",
+                                                    "value": "true"
+                                                },
+                                                "statements": [
+                                                    {
+                                                        "type": "Expr_Assign",
+                                                        "var": {
+                                                            "type": "Expr_Variable",
+                                                            "name": "L6_6"
+                                                        },
+                                                        "expr": {
+                                                            "type": "Expr_StaticPropertyFetch",
+                                                            "name": "Talk",
+                                                            "class": "A2_2"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "Expr_FuncCall",
+                                                        "name": "L6_6",
+                                                        "args": [
+                                                            {
+                                                                "type": "Expr_Variable",
+                                                                "name": "A2_2"
+                                                            },
+                                                            {
+                                                                "type": "Expr_Variable",
+                                                                "name": "ffxiv_core"
+                                                            },
+                                                            {
+                                                                "type": "Expr_Variable",
+                                                                "name": "A0_0"
+                                                            },
+                                                            {
+                                                                "type": "Expr_StaticPropertyFetch",
+                                                                "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_101_002",
+                                                                "class": "A0_0"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "false"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_Variable",
+                                                                "name": "L3_3"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "elseifs": [],
+                                                "else": null
+                                            }
+                                        ],
+                                        "elseifs": [],
+                                        "else": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "else": null
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "IsHowTo",
+                            "class": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L6_6",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "ffxiv_core"
+                                },
+                                {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "HOWTO_MOGLETTER",
+                                    "class": "A0_0"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": "==",
+                        "left": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "right": {
+                            "type": "Expr_ConstFetch",
+                            "value": "false"
+                        },
+                        "statements": [
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "HowTo",
+                                    "class": "A0_0"
+                                }
+                            },
+                            {
+                                "type": "Expr_FuncCall",
+                                "name": "L6_6",
+                                "args": [
+                                    {
+                                        "type": "Expr_Variable",
+                                        "name": "A0_0"
+                                    },
+                                    {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "HOWTO_MOGLETTER",
+                                        "class": "A0_0"
+                                    }
+                                ]
+                            }
+                        ],
+                        "elseifs": [],
+                        "else": null
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": ">",
+                        "left": {
+                            "type": "Expr_Variable",
+                            "name": "L4_4"
+                        },
+                        "right": 0,
+                        "statements": [
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "IsEnpcBelongsToThe1st",
+                                    "class": "A0_0"
+                                }
+                            },
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_FuncCall",
+                                    "name": "L6_6",
+                                    "args": [
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "A0_0"
+                                        },
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "A2_2"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "Stmt_If",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "right": {
+                                    "type": "Expr_ConstFetch",
+                                    "value": "false"
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_StaticPropertyFetch",
+                                            "name": "IsQuestCompleted",
+                                            "class": "ffxiv_core"
+                                        }
+                                    },
+                                    {
+                                        "type": "Expr_Assign",
+                                        "var": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "expr": {
+                                            "type": "Expr_FuncCall",
+                                            "name": "L6_6",
+                                            "args": [
+                                                {
+                                                    "type": "Expr_Variable",
+                                                    "name": "ffxiv_core"
+                                                },
+                                                {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "CLEAR_QUEST2",
+                                                    "class": "A0_0"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "Stmt_If",
+                                        "operator": "==",
+                                        "left": {
+                                            "type": "Expr_Variable",
+                                            "name": "L6_6"
+                                        },
+                                        "right": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "true"
+                                        },
+                                        "statements": [
+                                            {
+                                                "type": "Expr_Assign",
+                                                "var": {
+                                                    "type": "Expr_Variable",
+                                                    "name": "L6_6"
+                                                },
+                                                "expr": {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "Talk",
+                                                    "class": "A2_2"
+                                                }
+                                            },
+                                            {
+                                                "type": "Expr_FuncCall",
+                                                "name": "L6_6",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A2_2"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_101_004",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "L4_4"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "elseifs": [],
+                                        "else": null
+                                    }
+                                ],
+                                "elseifs": [],
+                                "else": null
+                            }
+                        ],
+                        "elseifs": [],
+                        "else": null
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "IsQuestCompleted",
+                            "class": "ffxiv_core"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L6_6",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "ffxiv_core"
+                                },
+                                {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "CLEAR_QUEST0",
+                                    "class": "A0_0"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": "==",
+                        "left": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "right": {
+                            "type": "Expr_ConstFetch",
+                            "value": "true"
+                        },
+                        "statements": [
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "CloseTalk",
+                                    "class": "A2_2"
+                                }
+                            },
+                            {
+                                "type": "Expr_FuncCall",
+                                "name": "L6_6",
+                                "args": [
+                                    {
+                                        "type": "Expr_Variable",
+                                        "name": "A2_2"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "Wait",
+                                    "class": "A0_0"
+                                }
+                            },
+                            {
+                                "type": "Expr_FuncCall",
+                                "name": "L6_6",
+                                "args": [
+                                    {
+                                        "type": "Expr_Variable",
+                                        "name": "A0_0"
+                                    },
+                                    10
+                                ]
+                            },
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "GetDeliveryLevel",
+                                    "class": "ffxiv_core"
+                                }
+                            },
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "L6_6"
+                                },
+                                "expr": {
+                                    "type": "Expr_FuncCall",
+                                    "name": "L6_6",
+                                    "args": [
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "ffxiv_core"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "Stmt_If",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Expr_StaticCall",
+                                    "name": "IsEnpcBelongsToThe1st",
+                                    "class": "A0_0",
+                                    "args": [
+                                        {
+                                            "type": "Expr_Variable",
+                                            "name": "A2_2"
+                                        }
+                                    ]
+                                },
+                                "right": {
+                                    "type": "Expr_ConstFetch",
+                                    "value": "false"
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Stmt_If",
+                                        "operator": "==",
+                                        "left": {
+                                            "type": "Expr_StaticCall",
+                                            "name": "IsQuestCompleted",
+                                            "class": "ffxiv_core",
+                                            "args": [
+                                                {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "CLEAR_QUEST2",
+                                                    "class": "A0_0"
+                                                }
+                                            ]
+                                        },
+                                        "right": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "true"
+                                        },
+                                        "statements": [
+                                            {
+                                                "type": "Expr_StaticCall",
+                                                "name": "Talk",
+                                                "class": "A2_2",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_101_020",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "L6_6"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "elseifs": [
+                                            {
+                                                "type": "Stmt_ElseIf",
+                                                "operator": "==",
+                                                "left": {
+                                                    "type": "Expr_StaticCall",
+                                                    "name": "IsQuestCompleted",
+                                                    "class": "ffxiv_core",
+                                                    "args": [
+                                                        {
+                                                            "type": "Expr_StaticPropertyFetch",
+                                                            "name": "CLEAR_QUEST1",
+                                                            "class": "A0_0"
+                                                        }
+                                                    ]
+                                                },
+                                                "right": {
+                                                    "type": "Expr_ConstFetch",
+                                                    "value": "true"
+                                                },
+                                                "statements": [
+                                                    {
+                                                        "type": "Expr_StaticCall",
+                                                        "name": "Talk",
+                                                        "class": "A2_2",
+                                                        "args": [
+                                                            {
+                                                                "type": "Expr_Variable",
+                                                                "name": "ffxiv_core"
+                                                            },
+                                                            {
+                                                                "type": "Expr_Variable",
+                                                                "name": "A0_0"
+                                                            },
+                                                            {
+                                                                "type": "Expr_StaticPropertyFetch",
+                                                                "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_100_020",
+                                                                "class": "A0_0"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "false"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_ConstFetch",
+                                                                "value": "nil"
+                                                            },
+                                                            {
+                                                                "type": "Expr_Variable",
+                                                                "name": "L6_6"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "else": null
+                                    }
+                                ],
+                                "elseifs": [
+                                    {
+                                        "type": "Stmt_ElseIf",
+                                        "operator": "==",
+                                        "left": {
+                                            "type": "Expr_StaticCall",
+                                            "name": "IsQuestCompleted",
+                                            "class": "ffxiv_core",
+                                            "args": [
+                                                {
+                                                    "type": "Expr_StaticPropertyFetch",
+                                                    "name": "CLEAR_QUEST2",
+                                                    "class": "A0_0"
+                                                }
+                                            ]
+                                        },
+                                        "right": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "true"
+                                        },
+                                        "statements": [
+                                            {
+                                                "type": "Expr_StaticCall",
+                                                "name": "Talk",
+                                                "class": "A2_2",
+                                                "args": [
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "ffxiv_core"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_StaticPropertyFetch",
+                                                        "name": "TEXT_CMNDEFMOGLETTER_00002_LETTERMOOGLE_102_021",
+                                                        "class": "A0_0"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "false"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_ConstFetch",
+                                                        "value": "nil"
+                                                    },
+                                                    {
+                                                        "type": "Expr_Variable",
+                                                        "name": "L6_6"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "else": null
+                            }
+                        ],
+                        "elseifs": [],
+                        "else": null
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "CloseTalk",
+                            "class": "A2_2"
+                        }
+                    },
+                    {
+                        "type": "Expr_FuncCall",
+                        "name": "L6_6",
+                        "args": [
+                            {
+                                "type": "Expr_Variable",
+                                "name": "A2_2"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L6_6"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "Letter",
+                            "class": "A0_0"
+                        }
+                    },
+                    {
+                        "type": "Expr_FuncCall",
+                        "name": "L6_6",
+                        "args": [
+                            {
+                                "type": "Expr_Variable",
+                                "name": "A0_0"
+                            }
+                        ]
+                    }
+                ],
+                "return": null
+            },
+            {
+                "type": "Stmt_Function",
+                "name": "OnScene00001",
+                "params": [
+                    "A0_7",
+                    "A1_8",
+                    "A2_9"
+                ],
+                "statements": [
+                    {
+                        "type": "Stmt_Global",
+                        "vars": [
+                            {
+                                "type": "Expr_Variable",
+                                "name": "L3_10"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L3_10"
+                        },
+                        "expr": {
+                            "type": "Expr_StaticPropertyFetch",
+                            "name": "GetNumOfDeniedLetters",
+                            "class": "A1_8"
+                        }
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L3_10"
+                        },
+                        "expr": {
+                            "type": "Expr_FuncCall",
+                            "name": "L3_10",
+                            "args": [
+                                {
+                                    "type": "Expr_Variable",
+                                    "name": "A1_8"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": "==",
+                        "left": {
+                            "type": "Expr_StaticCall",
+                            "name": "IsHowTo",
+                            "class": "A1_8",
+                            "args": [
+                                {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "HOWTO_MOGLETTER",
+                                    "class": "A0_7"
+                                }
+                            ]
+                        },
+                        "right": {
+                            "type": "Expr_ConstFetch",
+                            "value": "false"
+                        },
+                        "statements": [
+                            {
+                                "type": "Expr_StaticCall",
+                                "name": "HowTo",
+                                "class": "A0_7",
+                                "args": [
+                                    {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "HOWTO_MOGLETTER",
+                                        "class": "A0_7"
+                                    }
+                                ]
+                            }
+                        ],
+                        "elseifs": [],
+                        "else": null
+                    },
+                    {
+                        "type": "Stmt_If",
+                        "operator": ">",
+                        "left": {
+                            "type": "Expr_Variable",
+                            "name": "L3_10"
+                        },
+                        "right": 0,
+                        "statements": [
+                            {
+                                "type": "Expr_StaticCall",
+                                "name": "LogMessage",
+                                "class": "A0_7",
+                                "args": [
+                                    {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "DENINED_LETTERS",
+                                        "class": "A0_7"
+                                    },
+                                    {
+                                        "type": "Expr_Variable",
+                                        "name": "L3_10"
+                                    }
+                                ]
+                            }
+                        ],
+                        "elseifs": [
+                            {
+                                "type": "Stmt_ElseIf",
+                                "operator": ">=",
+                                "left": {
+                                    "type": "Expr_StaticCall",
+                                    "name": "GetLetterBoxUsage",
+                                    "class": "A1_8",
+                                    "args": []
+                                },
+                                "right": {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "LETTER_BOX_USAGE_THERESHOLD",
+                                    "class": "A0_7"
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Expr_StaticCall",
+                                        "name": "LogMessage",
+                                        "class": "A0_7",
+                                        "args": [
+                                            {
+                                                "type": "Expr_StaticPropertyFetch",
+                                                "name": "LETTER_BOX_USAGE",
+                                                "class": "A0_7"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "else": null
+                    },
+                    {
+                        "type": "Expr_StaticCall",
+                        "name": "Letter",
+                        "class": "A0_7",
+                        "args": []
+                    }
+                ],
+                "return": null
+            },
+            {
+                "type": "Stmt_Function",
+                "name": "IsEnpcBelongsToThe1st",
+                "params": [
+                    "A0_11",
+                    "A1_12"
+                ],
+                "statements": [
+                    {
+                        "type": "Stmt_Global",
+                        "vars": [
+                            {
+                                "type": "Expr_Variable",
+                                "name": "L2_13"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Expr_Assign",
+                        "var": {
+                            "type": "Expr_Variable",
+                            "name": "L2_13"
+                        },
+                        "expr": {
+                            "type": "Expr_Array",
+                            "items": [
+                                {
+                                    "key": null,
+                                    "value": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_MOOGLE_01",
+                                        "class": "A0_11"
+                                    }
+                                },
+                                {
+                                    "key": null,
+                                    "value": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_MOOGLE_02",
+                                        "class": "A0_11"
+                                    }
+                                },
+                                {
+                                    "key": null,
+                                    "value": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_MOOGLE_03",
+                                        "class": "A0_11"
+                                    }
+                                },
+                                {
+                                    "key": null,
+                                    "value": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_MOOGLE_04",
+                                        "class": "A0_11"
+                                    }
+                                },
+                                {
+                                    "key": null,
+                                    "value": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_MOOGLE_05",
+                                        "class": "A0_11"
+                                    }
+                                },
+                                {
+                                    "key": null,
+                                    "value": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_MOOGLE_06",
+                                        "class": "A0_11"
+                                    }
+                                },
+                                {
+                                    "key": null,
+                                    "value": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_MOOGLE_07",
+                                        "class": "A0_11"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "Stmt_For",
+                        "initials": [
+                            {
+                                "type": "Expr_Assign",
+                                "var": {
+                                    "type": "Expr_Variable",
+                                    "name": "sv_FORV_8_"
+                                },
+                                "expr": 1
+                            }
+                        ],
+                        "conditions": [
+                            {
+                                "type": "Expr_FuncCall",
+                                "name": "count",
+                                "args": [
+                                    {
+                                        "type": "Expr_Variable",
+                                        "name": "L2_13"
+                                    }
+                                ]
+                            }
+                        ],
+                        "loop": [
+                            {
+                                "type": "Expr_PostInc",
+                                "name": "i"
+                            }
+                        ],
+                        "statements": [
+                            {
+                                "type": "Stmt_If",
+                                "operator": "==",
+                                "left": {
+                                    "type": "Expr_ArrayDimFetch",
+                                    "name": "L2_13",
+                                    "dim": "sv_FORV_8_"
+                                },
+                                "right": {
+                                    "type": "Expr_StaticCall",
+                                    "name": "GetBaseId",
+                                    "class": "A1_12",
+                                    "args": []
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Stmt_Return",
+                                        "value": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "true"
+                                        }
+                                    }
+                                ],
+                                "elseifs": [],
+                                "else": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Stmt_Return",
+                        "value": {
+                            "type": "Expr_ConstFetch",
+                            "value": "false"
+                        }
+                    }
+                ],
+                "return": null
+            },
+            {
+                "type": "Stmt_Function",
+                "name": "IsEnableThe1stLetterMoogle",
+                "params": [
+                    "A0_14",
+                    "A1_15"
+                ],
+                "statements": [
+                    {
+                        "type": "Stmt_If",
+                        "operator": "==",
+                        "left": {
+                            "type": "Expr_StaticCall",
+                            "name": "IsQuestCompleted",
+                            "class": "A1_15",
+                            "args": [
+                                {
+                                    "type": "Expr_StaticPropertyFetch",
+                                    "name": "THE1ST_OPEN_QUEST",
+                                    "class": "A0_14"
+                                }
+                            ]
+                        },
+                        "right": {
+                            "type": "Expr_ConstFetch",
+                            "value": "true"
+                        },
+                        "statements": [
+                            {
+                                "type": "Stmt_Return",
+                                "value": {
+                                    "type": "Expr_ConstFetch",
+                                    "value": "true"
+                                }
+                            }
+                        ],
+                        "elseifs": [
+                            {
+                                "type": "Stmt_ElseIf",
+                                "operator": "&&",
+                                "left": {
+                                    "type": "Expr_BinaryOp_Equal",
+                                    "operator": "==",
+                                    "left": {
+                                        "type": "Expr_StaticCall",
+                                        "name": "IsQuestAccepted",
+                                        "class": "A1_15",
+                                        "args": [
+                                            {
+                                                "type": "Expr_StaticPropertyFetch",
+                                                "name": "THE1ST_OPEN_QUEST",
+                                                "class": "A0_14"
+                                            }
+                                        ]
+                                    },
+                                    "right": {
+                                        "type": "Expr_ConstFetch",
+                                        "value": "true"
+                                    }
+                                },
+                                "right": {
+                                    "type": "Expr_BinaryOp_GreaterOrEqual",
+                                    "operator": ">=",
+                                    "left": {
+                                        "type": "Expr_StaticCall",
+                                        "name": "GetQuestSequence",
+                                        "class": "A1_15",
+                                        "args": [
+                                            {
+                                                "type": "Expr_StaticPropertyFetch",
+                                                "name": "THE1ST_OPEN_QUEST",
+                                                "class": "A0_14"
+                                            }
+                                        ]
+                                    },
+                                    "right": {
+                                        "type": "Expr_StaticPropertyFetch",
+                                        "name": "THE1ST_OPEN_QUEST_SEQ",
+                                        "class": "A0_14"
+                                    }
+                                },
+                                "statements": [
+                                    {
+                                        "type": "Stmt_Return",
+                                        "value": {
+                                            "type": "Expr_ConstFetch",
+                                            "value": "true"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "else": null
+                    },
+                    {
+                        "type": "Stmt_Return",
+                        "value": {
+                            "type": "Expr_ConstFetch",
+                            "value": "false"
+                        }
+                    }
+                ],
+                "return": null
+            }
+        ],
+        "return": null
+    },
+    {
+        "type": "Stmt_Function",
+        "name": "ffxiv_function_ijufxkmvnh",
+        "params": [],
+        "statements": [
+            {
+                "type": "Stmt_Global",
+                "vars": [
+                    {
+                        "type": "Expr_Variable",
+                        "name": "L0_16"
+                    }
+                ]
+            },
+            {
+                "type": "Expr_Assign",
+                "var": {
+                    "type": "Expr_Variable",
+                    "name": "L0_16"
+                },
+                "expr": {
+                    "type": "Expr_ConstFetch",
+                    "value": "CmnDefMogLetter"
+                }
+            },
+            {
+                "type": "Expr_Assign",
+                "var": {
+                    "type": "Expr_StaticPropertyFetch",
+                    "name": "SCRIPT_VERSION",
+                    "class": "L0_16"
+                },
+                "expr": 1
+            },
+            {
+                "type": "Expr_Assign",
+                "var": {
+                    "type": "Expr_Variable",
+                    "name": "L0_16"
+                },
+                "expr": {
+                    "type": "Expr_ConstFetch",
+                    "value": "CmnDefMogLetter"
+                }
+            },
+            {
+                "type": "Expr_Assign",
+                "var": {
+                    "type": "Expr_PropertyFetch",
+                    "var": "L0_16",
+                    "name": "GetConditionId"
+                },
+                "expr": null
+            }
+        ],
+        "return": null
+    }
+]
