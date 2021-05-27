@@ -49,7 +49,9 @@ class FishingSpot implements ParseInterface
 
         // loop through data
         $this->io->progressStart($FishingSpotCsv->total);
+        $JSON_FishArray = [];
         foreach ($FishingSpotCsv->data as $id => $fishingspot) {
+            
             $this->io->progressAdvance();
 
             //skip ones with no data
@@ -60,6 +62,7 @@ class FishingSpot implements ParseInterface
             $Location = $PlaceNameCsv->at($fishingspot['PlaceName'])['Name'];
             $PlaceName = $fishingspot['PlaceName'];
             $TerritoryType = $fishingspot['TerritoryType'];
+            $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
             $X = $fishingspot['X'];
             $Y = $fishingspot['Z'];
             $GatheringLevel = $fishingspot['GatheringLevel'];
@@ -79,6 +82,30 @@ class FishingSpot implements ParseInterface
                     $string .= "|HoleBait        = \n|HoleConditions  = \n|Normal Weather  = \n|Weather Chain   = \n";
                     $string .= "|Mooch           = \n|Mooch Chain     = \n|Intuition       = \n|Intuition Count = \n}}";
                     $Fish[] = $string;
+                    $FishRaw = $fishingspot["Item[$i]"];
+                    switch ($Rare) {
+                        case "True":
+                            $ImageSwitch = "060930_hr1.png";
+                        break;
+                        case "False":
+                            $ImageSwitch = "060445_hr1.png";
+                        break;
+                    }
+                    $JSON_FishArray[$FishRaw][] = array(
+                        'FishName' => $ItemCsv->at($fishingspot["Item[$i]"])['Name'],
+                        'Type' => "Fishing",
+                        'TerritoryType' => $TerritoryType,
+                        'Map' => $Map,
+                        'PlaceName' => $PlaceName,
+                        'Icon' => $ImageSwitch,
+                        'GatheringLevel' => $GatheringLevel,
+                        'Rare' => $Rare,
+                        'Position' => array(
+                            'x' => $X,
+                            'y' => $Y,
+                            'Radius' => $Radius
+                        ),
+                    );
                     $FishingSpotArray[$TerritoryType][$PlaceName]['Fish'][] = $Item;
                 }
             }
@@ -129,15 +156,40 @@ class FishingSpot implements ParseInterface
             $PlaceName = $Spearfishing['PlaceName'];
             if (empty($PlaceName)) continue;
             $TerritoryType = $Spearfishing['TerritoryType'];
+            $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
             $X = $Spearfishing['X'];
             $Y = $Spearfishing['Y'];
             $GatheringLevel = $Spearfishing['GatheringLevel'];
             $Radius = $Spearfishing['Radius'];
             $Gpoint = $Spearfishing['GatheringPointBase'];
+            switch ($Rare) {
+                case "True":
+                    $ImageSwitch = "060930_hr1.png";
+                break;
+                case "False":
+                    $ImageSwitch = "060445_hr1.png";
+                break;
+            }
             foreach(range(0,7) as $i) {
                 if (!empty($ItemCsv->at($SpearfishingItemCsv->at($GatheringPointBaseCsv->at($Gpoint)["Item[$i]"])['Item'])['Name'])) {
                     $Item = str_ireplace($BadArray,$GoodArray,$ItemCsv->at($SpearfishingItemCsv->at($GatheringPointBaseCsv->at($Gpoint)["Item[$i]"])['Item'])['Name']);
+                    $FishRaw = $SpearfishingItemCsv->at($GatheringPointBaseCsv->at($Gpoint)["Item[$i]"])['Item'];
                     $FishingSpotArray[$TerritoryType][$PlaceName]['Fish'][] = $Item;
+                    $JSON_FishArray[$FishRaw][] = array(
+                        'FishName' => $ItemCsv->at($SpearfishingItemCsv->at($GatheringPointBaseCsv->at($Gpoint)["Item[$i]"])['Item'])['Name'],
+                        'Type' => "SpearFishing",
+                        'TerritoryType' => $TerritoryType,
+                        'Map' => $Map,
+                        'PlaceName' => $PlaceName,
+                        'Icon' => $ImageSwitch,
+                        'GatheringLevel' => $GatheringLevel,
+                        'ShadowNode' => $Spearfishing["IsShadowNode"],
+                        'Position' => array(
+                            'x' => $X,
+                            'y' => $Y,
+                            'Radius' => $Radius
+                        ),
+                    );
                 }
             }
             $FishingSpotArray[$TerritoryType][$PlaceName]['X'] = $X;
@@ -321,6 +373,8 @@ class FishingSpot implements ParseInterface
             $FinalOutputArray[] = $OutString;
         }
         $Output = implode("\n",$FinalOutputArray);
+        $JSON_Out = json_encode($JSON_FishArray,JSON_PRETTY_PRINT);
+        $this->saveExtra("Fishing.json", $JSON_Out, true, true);
         $this->saveExtra("Fishing_Maps.txt", $Output);
 
         // (optional) finish progress bar
