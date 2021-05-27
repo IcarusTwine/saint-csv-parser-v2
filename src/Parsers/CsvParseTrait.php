@@ -97,6 +97,9 @@ trait CsvParseTrait
             case 'Quest':
                 $offset = "Name";
             break;
+            case 'Action':
+                $offset = "Name";
+            break;
             case 'Emote':
                 $offset = "Name";
             break;

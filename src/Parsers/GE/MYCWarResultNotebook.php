@@ -85,7 +85,8 @@ class MYCWarResultNotebook implements ParseInterface
             }
     
             foreach($Array as $Value){
-                $NameArray[] = $Value["NameURL"];
+                $no = $Value["Number"];
+                $NameArray[$no] = $Value["NameURL"];
                 $OutputString = "{{-start-}}\n";
                 $OutputString .= "'''".$Value["NameURL"]."_(Field_Record)'''\n";
                 $OutputString .= "{{Field Record\n";
@@ -101,7 +102,7 @@ class MYCWarResultNotebook implements ParseInterface
                 $OutputString .= "{{-stop-}}\n";
                 $Output[] = $OutputString;
             }
-            
+            ksort($NameArray);
             $Output[] = "\n\nhttps://ffxiv.gamerescape.com/w/index.php?title=Category:Field_Record&action=edit\n\n{{#arraydefine:fieldrecords|".implode(",",$NameArray)."|,}}\n\n";
             $Output = implode("\n",$Output);
             // Save some data

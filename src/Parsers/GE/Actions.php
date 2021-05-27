@@ -13,7 +13,7 @@ class Actions implements ParseInterface
     use CsvParseTrait;
 
     // the wiki output format / template we shall use
-    const WIKI_FORMAT = "{{ARR Infobox Action
+    const WIKI_FORMAT = "{{TemplateSwitch}
 |Patch = {patch}
 
 |Index = {index}
@@ -22,10 +22,8 @@ class Actions implements ParseInterface
 |Type = {type}
 {npcif}
 
-|Acquired = {classjoblong}
-|Acquired Level = {level}
-|Affinity = {classjobshort}     <!-- Comma separated -->
 
+{AffinitySwitch}
 |Range = {range}
 |Radius = {radius}
 
@@ -67,7 +65,7 @@ class Actions implements ParseInterface
             if (empty($Action['Name'])) continue;
             $index = $Action['id'];
             $Patch = $PatchNumber[$id];
-            //$Name = $Action['Name'];
+            $Name = $Action['Name'];
 
             //commenting this code out. Will need to uncomment out the '{name}' code at bottom if $Name actually needs using
             /*if ($Bot == "true") {
@@ -77,8 +75,6 @@ class Actions implements ParseInterface
                 $Top = "http://ffxiv.gamerescape.com/wiki/$Name?action=edit\n";
                 $Bottom = "";
             };*/
-
-            $Type = $ActionCategoryCsv->at($Action['ActionCategory'])['Name'];
             //add "NPC SKILL" if it's an npc so we can sort
             if ($Action['ClassJob'] == "-1") {
               $npcif = "|Player Allowed = False";
@@ -103,9 +99,9 @@ class Actions implements ParseInterface
               $CastTimeRaw = $Action['Cast<100ms>'];
                 $CastTimeMins = floor(($CastTimeRaw / 60) % 60);
                 $CastSeconds = $CastTimeRaw % 60;
-                $CastString = " ". $CastTimeMins ."m". $CastSeconds ."s";
+                $CastString = " ". $CastTimeMins ."m". $CastSeconds ."";
                 $CastFormat1 = str_replace(" 0m", " ", $CastString);
-                $CastTime = str_replace("m0s", "m", $CastFormat1);
+                $CastTime = str_replace("m0", "m", $CastFormat1);
             }
 
             if ($Action['Recast<100ms>'] == "0") {
@@ -114,9 +110,9 @@ class Actions implements ParseInterface
               $ReCastTimeRaw = $Action['Recast<100ms>'];
                 $ReCastTimeMins = floor(($ReCastTimeRaw / 60) % 60);
                 $ReCastSeconds = $ReCastTimeRaw % 60;
-                $ReCastString = " ". $ReCastTimeMins ."m". $ReCastSeconds ."s";
+                $ReCastString = " ". $ReCastTimeMins ."m". $ReCastSeconds ."";
                 $ReCastFormat1 = str_replace(" 0m", " ", $ReCastString);
-                $Recast = str_replace("m0s", "m", $ReCastFormat1);
+                $Recast = str_replace("m0", "m", $ReCastFormat1);
                 //$Recast = $ReCastTimeRaw;
             }
 
@@ -127,6 +123,14 @@ class Actions implements ParseInterface
 
             $Combo = $ActionCsv->at($Action['Action{Combo}'])['Name'];
 
+            $TemplateSwitch = "{{ARR Infobox Action";
+            $AffinitySwitch = "|Acquired = $ClassJobLong\n|Acquired Level = $Level\n|Affinity = $ClassJobShort     <!-- Comma separated -->\n";
+            $Type = $ActionCategoryCsv->at($Action['ActionCategory'])['Name'];
+            if ($Type === "Mount") {
+              $TemplateSwitch = "{{Mount Action";
+              $AffinitySwitch = "|Acquired = Mount\n";
+              $IconArray[$Name] = $Action['Icon'];
+            }
 
             // Save some data
             $data = [
@@ -136,9 +140,7 @@ class Actions implements ParseInterface
                 //'{name}' => $Name,
                 '{name}' => $Action['Name'],
                 '{type}' => $Type,
-                '{classjoblong}' => $ClassJobLong,
-                '{level}' => $Level,
-                '{classjobshort}' => $ClassJobShort,
+                '{AffinitySwitch}' => $AffinitySwitch,
                 '{range}' => $Range,
                 '{radius}' => $Radius,
                 '{casttime}' => $CastTime,
@@ -147,13 +149,33 @@ class Actions implements ParseInterface
                 '{npcif}' => $npcif,
                 '{index}' => $index,
                 '{combo}' => $Combo,
+                '{TemplateSwitch}' => $TemplateSwitch
             ];
 
             // format using Gamer Escape formatter and add to data array
             // need to look into using item-specific regex, if required.
             $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
         }
-
+        $IconArray = array_unique($IconArray);
+        $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/ActionIcons/";
+        if (!is_dir($IconOutputDirectory)) {
+            mkdir($IconOutputDirectory, 0777, true);
+        }
+        if (!empty($IconArray)) {
+            $this->io->text('Copying Action Icons ...');
+            foreach ($IconArray as $key => $value){
+                $IconID = sprintf("%06d", $value);
+                $IconName = $key." Icon";
+                if (!file_exists($this->getOutputFolder() ."/$PatchID/ActionIcons/$IconName.png")) {
+                    if ($IconID === "000000") continue;
+                    $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
+                    $iconFileName = "{$IconOutputDirectory}/$IconName.png";
+                    if(file_exists($GetIcon)){
+                        copy($GetIcon, $iconFileName);
+                    }
+                }
+            }
+        }
         // save our data to the filename: GeRecipeWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');
