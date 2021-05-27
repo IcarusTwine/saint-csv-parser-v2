@@ -42,6 +42,13 @@ class NewGamePlus implements ParseInterface
                 $QuestArray[$Chapter]['StartQuest'] = $StartQuest;
             }
             if (empty($QuestArray[$Chapter]['EndQuest'])){
+                if ($QuestRedo['unknown_2'] !== "0"){
+                    $QuestRedirect = $QuestRedo['unknown_2'];
+                    foreach(range(0,31) as $i){
+                        if (empty($QuestCsv->at($QuestRedoCsv->at($QuestRedirect)["Quest[$i]"])['Name'])) break;
+                        $FinalQuest = $QuestCsv->at($QuestRedoCsv->at($QuestRedirect)["Quest[$i]"])['Name'];
+                    }
+                }
                 $QuestArray[$Chapter]['EndQuest'] = $FinalQuest;
             }
         }
@@ -55,10 +62,11 @@ class NewGamePlus implements ParseInterface
             $Quest = $QuestRedoChapterUI['Quest'];
             $QuestRedoUISmall = $QuestRedoChapterUI['QuestRedoUISmall'];
             $QuestRedoUILarge = $QuestRedoChapterUI['QuestRedoUILarge'];
+            $ImageArray[] = $QuestRedoUILarge;
             $QuestRedoUIWide = $QuestRedoChapterUI['QuestRedoUIWide'];
             $Category = $QuestRedoChapterUI['Category'];
             $CategoryName = $QuestRedoChapterUICategoryCsv->at($Category)['Expac'];
-            $UITab = $QuestRedoChapterUI['unknown_2'];
+            $UITab = $QuestRedoChapterUI['UITab'];
             $TabName = $QuestRedoChapterUITabCsv->at($UITab)['Text'];
             $TabIcon = $QuestRedoChapterUITabCsv->at($UITab)['Icon2'];
             $SingleArray = array(
@@ -177,6 +185,16 @@ class NewGamePlus implements ParseInterface
         //$Output = "$Each\n}}\n|}\n";
         $Output = "$Wiki\n}}\n__NOEDITSECTION__";
 
+        $ImageArray = array_unique($ImageArray);
+        $IconoutputDirectory = $this->getOutputFolder() . "/$PatchID/NewGamePlusIcons";
+        if (!is_dir($IconoutputDirectory)) {
+            mkdir($IconoutputDirectory, 0777, true);
+        }
+        foreach($ImageArray as $Icon){
+            $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($Icon, true);
+            $SmallIconFileName = "{$IconoutputDirectory}/$Icon.png";
+            copy($SmallIconPath, $SmallIconFileName);
+        }
 
         
 
