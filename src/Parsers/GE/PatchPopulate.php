@@ -59,11 +59,11 @@ class PatchPopulate implements ParseInterface
         $Currentcount = 0;
         if ($handle) {
             while (($line = fgets($handle)) !== false) {
-                $console->overwrite(" > Reading EXD: {$line} --> $Currentcount/$linecount}");
                 $SplitLine = explode(",",$line);
                 if ($SplitLine[1] != 2){
                     if ($SplitLine[1] != -1){
                         $Currentcount++;
+                        $console->overwrite(" > Reading EXD: {$line} --> $Currentcount/$linecount}");
                         $SheetName = $SplitLine[0];
                         $SheetCsv = $this->csv("$SheetName");
                         $this->PatchCheck($Patch, "$SheetName", $SheetCsv);
