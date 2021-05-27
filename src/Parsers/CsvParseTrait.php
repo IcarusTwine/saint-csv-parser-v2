@@ -2428,7 +2428,7 @@ trait CsvParseTrait
     /**
      * Save to output file for extra
      */
-    public function saveExtra($filename, $SourceData, $dontformat = false)
+    public function saveExtra($filename, $SourceData, $dontformat = false, $CustomPath = false)
     {   
         if ($dontformat = true){
             $data = $SourceData;
@@ -2438,11 +2438,20 @@ trait CsvParseTrait
         }
         $ini = parse_ini_file('config.ini');
         $PatchID = file_get_contents("{$ini['MainPath']}\game\\ffxivgame.ver");
-        $folder = $this->projectDirectory . getenv('OUTPUT_DIRECTORY');
-        if (!file_exists("{$folder}/{$PatchID}/")) {
-            mkdir("{$folder}/{$PatchID}/", 0777, true);
+        if ($CustomPath === false){
+            $folder = $this->projectDirectory . getenv('OUTPUT_DIRECTORY');
+            var_dump($folder);
+            if (!file_exists("{$folder}/{$PatchID}/")) {
+                mkdir("{$folder}/{$PatchID}/", 0777, true);
+            }
+            $fileopen = fopen("{$folder}/{$PatchID}/{$filename}", 'w');
+        } else {
+            $folder = str_replace("/output","",$this->projectDirectory . getenv('OUTPUT_DIRECTORY'));
+            if (!file_exists("{$folder}/Resources/")) {
+                mkdir("{$folder}/Resources/", 0777, true);
+            }
+            $fileopen = fopen("{$folder}/Resources/{$filename}", 'w');
         }
-        $fileopen = fopen("{$folder}/{$PatchID}/{$filename}", 'w');
         fwrite($fileopen, $data);
         fclose($fileopen);
 
