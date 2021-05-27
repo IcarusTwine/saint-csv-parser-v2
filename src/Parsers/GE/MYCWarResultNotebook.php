@@ -13,18 +13,7 @@ class MYCWarResultNotebook implements ParseInterface
     use CsvParseTrait;
 
     // the wiki output format / template we shall use
-    const WIKI_FORMAT = "{{-start-}}
-'''{NameURL}_(Field_Record)'''
-{{Field Record
-| Patch       = {Patch}
-| Icon        = 0{Icon}.png
-| Image       = 0{Image}.png
-| Name        = {Name}
-| Number      = {Number}
-| Rarity      = {Rarity}
-| Description = {Description}
-}}
-{{-stop-}}";
+    const WIKI_FORMAT = "{Output}";
 
     public function parse()
     {
@@ -32,32 +21,97 @@ class MYCWarResultNotebook implements ParseInterface
 
         // grab CSV files we want to use
         $MYCWarResultNotebookCsv = $this->csv('MYCWarResultNotebook');
+        $ItemCsv = $this->csv('Item');
+        $ItemActionCsv = $this->csv('ItemAction');
+        //19743
+        foreach ($ItemCsv->data as $id => $Item) {
+            $ItemAction = $ItemActionCsv->at($Item['ItemAction'])['Type'];
+            if ($ItemAction === "19743"){
+                $ItemName = $Item['Name'];
+                $Data = $ItemActionCsv->at($Item['ItemAction'])['Data[0]'];
+                $ItemArray[$Data] = $ItemName;
+            }
+        }
         // (optional) start a progress bar
         $this->io->progressStart($MYCWarResultNotebookCsv->total);
         
         $this->PatchCheck($Patch, "MYCWarResultNotebook", $MYCWarResultNotebookCsv);
         $PatchNumber = $this->getPatch("MYCWarResultNotebook");
-
+        $Array = [];
         // loop through data
             foreach ($MYCWarResultNotebookCsv->data as $id => $MYCWarResultNotebookData) {
                 if (empty($MYCWarResultNotebookData['Name'])) continue;
                 $Patch = $PatchNumber[$id];
+                $Icon = $MYCWarResultNotebookData['Icon'];
+                $ImageArray[] = $Icon;
+                $Image = $MYCWarResultNotebookData['Image'];
+                $ImageArray[] = $Image;
+                $Number = $MYCWarResultNotebookData['Number'];
+                $NameURL = str_replace(' ', '_', $MYCWarResultNotebookData['Name']);
+                if (empty($Array[$NameURL])){
+                    $NameURL = str_replace(' ', '_', $MYCWarResultNotebookData['Name']);
+                } 
+                if (!empty($Array[$NameURL])){
+                    $NameURL = str_replace(' ', '_', $MYCWarResultNotebookData['Name'])."_II";
+                    if (!empty($Array[$NameURL])){
+                        $NameURL = str_replace(' ', '_', $MYCWarResultNotebookData['Name'])."_III";
+                    }
+                }
+                $Name = $MYCWarResultNotebookData['Name'];
+                $Rarity = $MYCWarResultNotebookData['Rarity'];
+                $Description = str_replace("Birthplace:", "\nBirthplace:", str_replace("Age:", "\nAge:", str_replace("Race:", "\nRace:", $MYCWarResultNotebookData['Description'])));
+                $Taught = $ItemArray[$id];
+                $Array[$NameURL] = array(
+                    'Patch' => $Patch,
+                    'Icon' => $Icon,
+                    'Image' => $Image,
+                    'Number' => $Number,
+                    'NameURL' => $NameURL,
+                    'Name' => $Name,
+                    'Rarity' => $Rarity,
+                    'Description' => $Description,
+                    'Taught' => $Taught
+                );
+            }
+            $ImageArray = array_unique($ImageArray);
+            $IconoutputDirectory = $this->getOutputFolder() . "/$PatchID/MYCWarResultNotebookImages";
+            if (!is_dir($IconoutputDirectory)) {
+                mkdir($IconoutputDirectory, 0777, true);
+            }
+            foreach($ImageArray as $Icon){
+                $SmallIconPath = $this->getInputFolder() .'/icon/'. $this->iconize($Icon, true);
+                $SmallIconFileName = "{$IconoutputDirectory}/$Icon.png";
+                copy($SmallIconPath, $SmallIconFileName);
+            }
+    
+            foreach($Array as $Value){
+                $NameArray[] = $Value["NameURL"];
+                $OutputString = "{{-start-}}\n";
+                $OutputString .= "'''".$Value["NameURL"]."_(Field_Record)'''\n";
+                $OutputString .= "{{Field Record\n";
+                $OutputString .= "| Patch       = ".$Value["Patch"]."\n";
+                $OutputString .= "| Icon        = ".$Value["Icon"].".png\n";
+                $OutputString .= "| Image       = ".$Value["Image"].".png\n";
+                $OutputString .= "| Name        = ".$Value["Name"]."\n";
+                $OutputString .= "| Number      = ".$Value["Number"]."\n";
+                $OutputString .= "| Rarity      = ".$Value["Rarity"]."\n";
+                $OutputString .= "| Description = ".$Value["Description"]."\n";
+                $OutputString .= "| Taught = ".$Value["Taught"]."\n";
+                $OutputString .= "}}\n";
+                $OutputString .= "{{-stop-}}\n";
+                $Output[] = $OutputString;
+            }
+            
+            $Output[] = "\n\nhttps://ffxiv.gamerescape.com/w/index.php?title=Category:Field_Record&action=edit\n\n{{#arraydefine:fieldrecords|".implode(",",$NameArray)."|,}}\n\n";
+            $Output = implode("\n",$Output);
             // Save some data
             $data = [
-                '{Icon}' => $MYCWarResultNotebookData['Icon'],
-                '{Image}' => $MYCWarResultNotebookData['Image'],
-                '{Number}' => $MYCWarResultNotebookData['Number'],
-                '{Name}' => $MYCWarResultNotebookData['Name'],
-                '{NameURL}' => str_replace(' ', '_', $MYCWarResultNotebookData['Name']),
-                '{Rarity}' => $MYCWarResultNotebookData['Rarity'],
-                '{Description}' => str_replace("Birthplace:", "\nBirthplace:", str_replace("Age:", "\nAge:", str_replace("Race:", "\nRace:", $MYCWarResultNotebookData['Description']))),
-                '{Patch}' => $Patch,
+                '{Output}' => $Output,
             ];
 
             // format using Gamer Escape formatter and add to data array
             // need to look into using item-specific regex, if required.
             $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
-        }
         
 
         // save our data to the filename: GeEventItemWiki.txt
