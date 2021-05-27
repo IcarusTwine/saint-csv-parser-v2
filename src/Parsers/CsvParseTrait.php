@@ -1275,27 +1275,27 @@ trait CsvParseTrait
             }
             $finaloutput[] = $outputline;
         }
-        $output = "<?php ".implode("\n",$finaloutput);
-        try {
-            $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
-            $logic = $parser->parse($output);
-        
-            // dump the tree, it'll be big 
-            //print_r($logic);
-            
-            // optional: 
-             $json = json_decode(json_encode($logic));
-             print_r($json);
-        } catch (Error $error) {
-            die("\n\n Parse error: {$error->getMessage()}\n\n");
-        }
+        $output = "".implode("\n",$finaloutput);
+        //try {
+        //    $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
+        //    $logic = $parser->parse($output);
+        //
+        //    // dump the tree, it'll be big 
+        //    //print_r($logic);
+        //    
+        //    // optional: 
+        //     $json = json_decode(json_encode($logic));
+        //     print_r($json);
+        //} catch (Error $error) {
+        //    die("\n\n Parse error: {$error->getMessage()}\n\n");
+        //}
         return $output;
         //var_dump(eval("return $output"));
         
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
-        include_once "LuaParser.php";
-        include_once "print_tree.php";
+        //include_once "LuaParser.php";
+        //include_once "print_tree.php";
         
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
@@ -1372,9 +1372,6 @@ trait CsvParseTrait
         $log->info("All done, check out the files:");
         $log->info("- lua_simple.json");
         $log->info("Run php print_tree.php for a nice flow tree");
-        //$Return = eval("return $CodeImp");
-        $ech = exec("php E:\saint-csv-parser-v2\src\Parsers\print_tree.php");
-        echo ($ech);
         
     }
     

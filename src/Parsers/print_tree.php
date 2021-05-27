@@ -7,7 +7,6 @@ $showExpressions = true;
 function line($indent, $string) {
     global $treefile;
     $line = str_pad("", $indent * 4, " ") ." ". $string . PHP_EOL;
-    echo $line;
     file_put_contents($treefile, $line);
 }
 
