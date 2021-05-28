@@ -64,6 +64,7 @@ class StartUp implements ParseInterface
         $GameVer = file_get_contents("$SaintPath/Definitions/game.ver");
         $Resources = str_replace("cache","Resources",$ini['Cache']);
         $MainDir = str_replace("cache","",$ini['Cache']);
+        $PreviousVer = $ini['PreviousVer'];
         if ($GameVer != $PatchID) {
             $console->writeln("<error>WARNING: Game version and SaintCoinach version differ</error>");
             $console->writeln("Game Version is: <fg=black;bg=yellow> $PatchID </>");
@@ -94,6 +95,15 @@ class StartUp implements ParseInterface
             exit;
         }
         fclose($handle);
+        $console->writeln("The current set <error>Previous Patch</error> in config.ini is: <fg=black;bg=yellow> $PreviousVer </>");
+        $console->writeln("<question>If this is correct then please press any key</question>");
+        $console->writeln("<question>If this needs changing then please change it at config.ini and then press anykey</question>");
+        $handle2 = fopen ("php://stdin","r");
+        $line2 = fgets($handle2);
+        if(trim($line) !== 'no'){
+            exit;
+        }
+        fclose($handle2);
         $SaintCommands = array(
             "rawexd",
             "maps",
