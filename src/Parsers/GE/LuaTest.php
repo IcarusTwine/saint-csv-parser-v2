@@ -54,7 +54,7 @@ class LuaTest implements ParseInterface
                     if (!empty($MainOption)){
                         $Option = "=== $MainOption ===";
                     }
-                $LuaFormat = $this->getLuaDialogue($LuaName, $ArgArray, $Name, $MainOption);
+                $LuaFormat = $this->getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption);
                 }
             }
         }

@@ -65,6 +65,13 @@ class FishingSpot implements ParseInterface
             $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
             $X = $fishingspot['X'];
             $Y = $fishingspot['Z'];
+            $scale = $MapCsv->at($Map)['SizeFactor'];
+            $c = $scale / 100.0;
+            if ($c < 1) {
+                $c = 1;
+            }
+            $CX = round(($X / 50) / $c,1);
+            $CY = round(($Y / 50) / $c,1);
             $GatheringLevel = $fishingspot['GatheringLevel'];
             $Rare = $fishingspot['Rare'];
             $Radius = $fishingspot['Radius'];
@@ -94,15 +101,20 @@ class FishingSpot implements ParseInterface
                     $JSON_FishArray[$FishRaw][] = array(
                         'FishName' => $ItemCsv->at($fishingspot["Item[$i]"])['Name'],
                         'Type' => "Fishing",
-                        'TerritoryType' => $TerritoryType,
+                        'TerritoryType' => array(
+                            'id' => $TerritoryType,
+                            'Name' => $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryType)['PlaceName'])['Name'],
+                        ),
                         'Map' => $Map,
-                        'PlaceName' => $PlaceName,
+                        'PlaceName' => $PlaceNameCsv->at($PlaceName)['Name'],
                         'Icon' => $ImageSwitch,
                         'GatheringLevel' => $GatheringLevel,
                         'Rare' => $Rare,
                         'Position' => array(
-                            'x' => $X,
-                            'y' => $Y,
+                            'px' => $X,
+                            'py' => $Y,
+                            'cx' => $CX,
+                            'cy' => $CY,
                             'Radius' => $Radius
                         ),
                     );
@@ -159,6 +171,13 @@ class FishingSpot implements ParseInterface
             $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
             $X = $Spearfishing['X'];
             $Y = $Spearfishing['Y'];
+            $scale = $MapCsv->at($Map)['SizeFactor'];
+            $c = $scale / 100.0;
+            if ($c < 1) {
+                $c = 1;
+            }
+            $CX = round(($X / 50) / $c,1);
+            $CY = round(($Y / 50) / $c,1);
             $GatheringLevel = $Spearfishing['GatheringLevel'];
             $Radius = $Spearfishing['Radius'];
             $Gpoint = $Spearfishing['GatheringPointBase'];
@@ -178,15 +197,20 @@ class FishingSpot implements ParseInterface
                     $JSON_FishArray[$FishRaw][] = array(
                         'FishName' => $ItemCsv->at($SpearfishingItemCsv->at($GatheringPointBaseCsv->at($Gpoint)["Item[$i]"])['Item'])['Name'],
                         'Type' => "SpearFishing",
-                        'TerritoryType' => $TerritoryType,
+                        'TerritoryType' => array(
+                            'id' => $TerritoryType,
+                            'Name' => $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryType)['PlaceName'])['Name'],
+                        ),
                         'Map' => $Map,
-                        'PlaceName' => $PlaceName,
+                        'PlaceName' => $PlaceNameCsv->at($PlaceName)['Name'],
                         'Icon' => $ImageSwitch,
                         'GatheringLevel' => $GatheringLevel,
                         'ShadowNode' => $Spearfishing["IsShadowNode"],
                         'Position' => array(
-                            'x' => $X,
-                            'y' => $Y,
+                            'px' => $X,
+                            'py' => $Y,
+                            'cx' => $CX,
+                            'cy' => $CY,
                             'Radius' => $Radius
                         ),
                     );

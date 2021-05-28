@@ -1095,6 +1095,83 @@ trait CsvParseTrait
         $ifdata['pos'] = $_pos;
         return $ifdata;
     }
+    
+    public function getLuaIfNew($_lua, $_pos, &$funccount){
+        $i = explode(" ",$_lua[$_pos]);
+        $CountArray = count($i);
+        $Ifend = false;
+        $Ifarray = [];
+        //simple if then
+        if ($CountArray <= 5) {
+            //if $L6_6 == true then 
+            $ConstructorStart = "{$i[0]} ({$i[1]} {$i[2]} {$i[3]}) {\n";
+            $_pos++;
+            while($Ifend === false) {
+                $line = $_lua[$_pos];
+                if (preg_match('/if|elseif/', $_lua[$_pos])) {
+                    $funccount++;
+                    $nested = $this->getLuaIf($_lua, $_pos, $funccount);
+                    $Ifarray[] = "$tab".$nested['out'];
+                    $_pos = $nested['pos'];
+                }
+            }
+            $IfOut = implode("\n",$Ifarray);
+            $null = true;
+            $ifdata['out'] = "$ConstructorStart$IfOut";
+        }
+        //two questions if then
+        if ($CountArray === 9) {
+            //elseif IsQuestAccepted(THE1ST_OPEN_QUEST) == true and GetQuestSequence(THE1ST_OPEN_QUEST) >= THE1ST_OPEN_QUEST_SEQ then
+            $ConstructorStart = "{$i[0]} ({$i[1]} {$i[2]} {$i[3]}) {$i[4]} ({$i[5]} {$i[6]} {$i[7]}) {\n";
+                $_pos++;
+                while($Ifend === false) {
+                    $line = $_lua[$_pos];
+                    if (preg_match('/[A-Z][0-9]_[0-9]+\./', $_lua[$_pos])) {
+                        if (preg_match('/\.(.*?)\w+/', $_lua[$_pos], $match) == 1) {
+                            $match = str_replace(".","",$match[0]);
+                            $newstring = "\"$match\"";
+                            $_lua[$_pos] = str_replace($match,$newstring,$_lua[$_pos]);
+                            $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
+                        }
+                    }
+                    if (preg_match('/[A-Z][0-9]_[0-9]+\./', $line)) {
+                        if (preg_match('/\.(.*?)\w+/', $line, $match) == 1) {
+                            $match = str_replace(".","",$match[0]);
+                            $newstring = "\"$match\"";
+                            $line = str_replace($match,$newstring,$line);
+                            $line = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $line);
+                        }
+                    }
+                    if (strpos($line, "end") !== false){
+                        $Ifarray[] = $tab."}";
+                        $Ifend = true;
+                        break;
+                    }
+                    if (strpos($line,"else") !== false){
+                        $Ifarray[] = str_replace("else",$tabshort."}else{",$line);
+                    }
+                    if ($Ifend === false){
+                        $Ifarray[] = "$tab".$line;
+                        $_pos++;
+                    }
+                    if (preg_match('/if|elseif/', $_lua[$_pos])) {
+                        $funccount++;
+                        $nested = $this->getLuaIf($_lua, $_pos, $funccount);
+                        $Ifarray[] = "$tab".$nested['out'];
+                        $_pos = $nested['pos'];
+                    }
+                }
+                $IfOut = implode("\n",$Ifarray);
+                $null = true;
+                $ifdata['out'] = "$ConstructorStart$IfOut";
+        }
+        //unknown
+        if ($CountArray > 9) {
+            var_dump(($i));
+        }
+        $ifdata['pos'] = $_pos;
+        return $ifdata;
+    }
     /**
      * Format dialogue for luasheets
      */
@@ -1321,60 +1398,37 @@ trait CsvParseTrait
 
         $log = new Logger('lua');
         $log->pushHandler(new StreamHandler('php://stdout', Logger::DEBUG));
-        $log->info("Starting Lua Script conversion...");
-
         $code = explode("\n", $code);
-        
-        $log->info("Parsing code...");
-        $log->info(count($code) ." lines");
-        
         foreach ($code as $i => $line) {
             $line = trim($line);
             $line = Encoding::fixUTF8($line);
             $line = variableReplacement($line);
             $line = basicCodeReplacement($line);
-        
             $code[$i] = $line;
         }
-        $log->info("Converted lua to php");$code = implode("\n", $code);
-
-        $log->info("Indenting code...");
+        $code = implode("\n", $code);
         $code = indentCode($code);
-        $code = "<?php \n\n". $code;
         
-        $log->info("Saving to lua.php");
-        file_put_contents(__DIR__ ."/lua.php", $code);
-        
-        //$this->saveExtra("Test.php","<?php\n".$CodeImp);
-        //$out = simplejson($code);
-        // parse the php
-        $log->info("Parsing PHP using parser factory...");
-        $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
-        $logic = $parser->parse($code);
+        $_lua = explode("\n", str_replace("\r","",str_replace("  ","",$code)));
+        $_lines = count($_lua);
+        $_pos = 0;
+        $end = false;
+        if($_pos < $_lines){
+            $line = $_lua[$_pos];
+            while($end === false) {
+                if($_pos >= $_lines){
+                    break;
+                };
 
-        // dump the tree, it'll be big
-        $log->info("Saving lua parsed tree to lua_tree.txt");
-        $logicExport = print_r($logic, true);
-        file_put_contents(__DIR__ ."/lua_tree.txt", $logicExport);
+                //if (strpos($line,"{"){
+//
+                //};
 
-        // save big json version
-        $log->info("Saving lua parsed tree in JSON format to lua.json");
-        $json = json_decode(json_encode($logic));
-        file_put_contents(__DIR__ ."/lua.json", json_encode($json, JSON_PRETTY_PRINT));
+                $_pos++;
+            }
+        }
 
-        $log->info("------------------------------------------------------------");
-
-        $log->info("Attempting to simplify the json structure...");
-        $json = simplejson($json);
-
-        $log->info("Saving simplified json structure...");
-        file_put_contents(__DIR__ ."/lua_simple.json", json_encode($json, JSON_PRETTY_PRINT));
-
-        $log->info("------------------------------------------------------------");
-
-        $log->info("All done, check out the files:");
-        $log->info("- lua_simple.json");
-        $log->info("Run php print_tree.php for a nice flow tree");
+        return($code);
         
     }
     
