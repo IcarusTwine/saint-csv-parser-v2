@@ -1,0 +1,512 @@
+[
+  {
+    "LayerId": 121164,
+    "Name": "FISHING_SKYISLAND_EASY",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 328,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 348,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 348,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 6167278,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 472.0949,
+            "y": -38.37118,
+            "z": 201.6306
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 71.5986,
+            "y": 0.6124791,
+            "z": 47.01929
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 6167280,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -315.4072,
+            "y": -215.9769,
+            "z": -338.6537
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 64.80004,
+            "y": 1.0,
+            "z": 30.23866
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 6167283,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 518.4041,
+            "y": 184.0719,
+            "z": -509.1075
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 14.12808,
+            "y": 0.5767785,
+            "z": 25.4213
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 3
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 121161,
+    "Name": "FISHING_SKYISLAND_HARD",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 328,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 344,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 344,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 6167245,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -397.2922,
+            "y": 302.645,
+            "z": -596.6871
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 23.21824,
+            "y": 1.0,
+            "z": 38.11151
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 6167247,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 314.6671,
+            "y": 326.5511,
+            "z": -621.8578
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 27.94882,
+            "y": 1.0,
+            "z": 28.20734
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 6167250,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 327.2946,
+            "y": 243.7173,
+            "z": 593.1245
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.94997,
+            "y": 0.6124791,
+            "z": 64.92802
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 3
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 121162,
+    "Name": "FISHING_SKYISLAND_NORMAL",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 328,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 348,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 348,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 6167263,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -57.64495,
+            "y": 138.8226,
+            "z": 548.1023
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 28.33001,
+            "y": 0.6124791,
+            "z": 31.2803
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 6167266,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -411.8192,
+            "y": -219.6473,
+            "z": 144.0193
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 36.15428,
+            "y": 1.0,
+            "z": 94.74866
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 6167269,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 606.921,
+            "y": 247.9433,
+            "z": -412.189
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 7.692463,
+            "y": 0.5767785,
+            "z": 19.78417
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 33792,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 3
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 121170,
+    "Name": "GATHERING_SKYISLAND_EASY",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 120502,
+    "Name": "GATHERING_SKYISLAND_HARD",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 121172,
+    "Name": "GATHERING_SKYISLAND_NORMAL",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

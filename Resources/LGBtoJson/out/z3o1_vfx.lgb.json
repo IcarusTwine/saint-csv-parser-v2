@@ -1,0 +1,356 @@
+[
+  {
+    "LayerId": 133979,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 796,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 808,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 808,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 6941775,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 826.127,
+            "y": 426.0,
+            "z": 943.76
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/05_zon_z3/shared/for_vfx/sgvf_z3o1_b1211.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6989691,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/05_zon_z3/common/vfx/eff/z3o1tunag1_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 1000.0,
+          "FadeFarEnd": 1200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6990085,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 1000.0,
+            "y": 650.0,
+            "z": 1000.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/05_zon_z3/common/vfx/eff/z3o1tunag1_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 1000.0,
+          "FadeFarEnd": 1200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6990125,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -173.873,
+            "y": -208.0,
+            "z": -56.24
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.0471976,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/05_zon_z3/common/vfx/eff/z3o1scr001_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 6992687,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -71.81525,
+            "y": -215.849,
+            "z": 282.8181
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/05_zon_z3/shared/for_vfx/sgvf_z3o1_b1226.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 6992996,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -222.8683,
+            "y": -198.1268,
+            "z": -102.857
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/05_zon_z3/shared/for_vfx/sgvf_z3o1_b1226.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

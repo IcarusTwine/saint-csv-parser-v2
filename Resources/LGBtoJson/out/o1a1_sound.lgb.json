@@ -1,0 +1,1970 @@
+[
+  {
+    "LayerId": 254116,
+    "Name": "Spot_Coerthas",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1364,
+    "FestivalID": 101,
+    "FestivalPhaseID": 4,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1376,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1388,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359375,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359376,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 4.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAIBAAACAQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359452,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359453,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359454,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359455,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359453,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 258715,
+    "Name": "Spot_Dravanian",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": -24,
+    "FestivalID": 101,
+    "FestivalPhaseID": 7,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1364,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8638408,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638409,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638410,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638411,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638412,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638413,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8638411,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 258714,
+    "Name": "Spot_Hullbreaker",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": -1400,
+    "FestivalID": 101,
+    "FestivalPhaseID": 6,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1364,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8638402,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638403,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638404,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638405,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638406,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638407,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8638405,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 254114,
+    "Name": "Spot_LaNoscea_E",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": -2776,
+    "FestivalID": 101,
+    "FestivalPhaseID": 3,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1364,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359369,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359370,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359368,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359445,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359450,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359451,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359445,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 254113,
+    "Name": "Spot_LaNoscea_W",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": -4152,
+    "FestivalID": 101,
+    "FestivalPhaseID": 2,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1364,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359365,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359366,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359456,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359457,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359458,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359459,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359457,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 254109,
+    "Name": "Spot_LimsaLominsa",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": -5528,
+    "FestivalID": 101,
+    "FestivalPhaseID": 1,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1364,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359097,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359105,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359460,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359461,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359462,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359463,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359461,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 258716,
+    "Name": "Spot_Rothlyt",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": -6904,
+    "FestivalID": 101,
+    "FestivalPhaseID": 8,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1364,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8638415,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638416,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638417,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638418,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638419,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8638420,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8638418,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 254115,
+    "Name": "Spot_Thanalan_W",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": -8280,
+    "FestivalID": 101,
+    "FestivalPhaseID": 5,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1364,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 1376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359372,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.1691,
+            "y": 0.0,
+            "z": -335.3262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8prQhCAAAAAMGpp8MAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359373,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.8166,
+            "y": 0.0,
+            "z": 324.4874
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 5.0,
+            "z": 450.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Wave_sea_far.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8zRC/CAAAAAGM+okMAAIA/AACWQwAA4UMAAKBAAACgQAAAgD/NzAw/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359464,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wtr/spot_wtr_Lake_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAMjDAAAAAAAAyEMAAIA/AADIQwAAAAAAAMhDAACAPwAAyEMAAAAAAADIwwAAgD8AAMjDAAAAAAAAyMMAAIA/AAAAQAAAcEIAAKBAAACgQAAAgD/helQ/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359465,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_evt/spot_evt_EC_GoldWind.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sAyDCikH7OxT8H0IAAIA/FPwfQgJAxTTsAyBCAACAP+wDIEKKQfu7FPwfwgAAgD8U/B/CAkDFtOwDIMIAAIA/AACgQQAAoEIAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359466,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -20.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_boat.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAoMEAAIA/AABwQQAASEIAAKBAAACgQAAAgD9eQdg+ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8359467,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.0,
+            "z": 25.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_etc/spot_etc_Creak_ship_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAAAAAACAQAAAyEEAAIA/AACgQQAASEIAAKBAAACgQAAAgD+uR+E+AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8359465,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_ang/obset_o1a1_vfx1.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

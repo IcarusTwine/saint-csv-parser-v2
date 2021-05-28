@@ -1,0 +1,5489 @@
+[
+  {
+    "LayerId": 149925,
+    "Name": "LVD_gimmick_0",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 12,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1912,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1928,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1928,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 45,
+        "InstanceId": 7585377,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 187.8692,
+            "y": 8.108603,
+            "z": 250.084
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005325
+          },
+          "BoundInstanceId": 7585378
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585378,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 180.6945,
+            "y": 8.24277,
+            "z": 246.3079
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0286.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585379,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 57.05325,
+            "y": 17.16545,
+            "z": -249.9047
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005326
+          },
+          "BoundInstanceId": 7585380
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585380,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 49.44424,
+            "y": 17.00002,
+            "z": -247.6138
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0286.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585381,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -314.465,
+            "y": 41.65789,
+            "z": 126.6358
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005327
+          },
+          "BoundInstanceId": 7585382
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585382,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -312.933,
+            "y": 41.74071,
+            "z": 124.8722
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0286.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 7585383,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 175.4984,
+            "y": 8.323575,
+            "z": 239.5396
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.7734648,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 2.888189,
+            "y": 1.0,
+            "z": 2.888189
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": 239.5396,
+              "y": -3.1415927,
+              "z": -0.7734648
+            },
+            {
+              "x": -3.1415927,
+              "y": 2.888189,
+              "z": 1.0
+            },
+            {
+              "x": 2.888189,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 1.197,
+              "z": 0.132
+            },
+            {
+              "x": 1.099,
+              "y": 0.007,
+              "z": 0.094
+            },
+            {
+              "x": 0.006,
+              "y": 0.889,
+              "z": 0.081
+            },
+            {
+              "x": 1.756,
+              "y": -0.21,
+              "z": -0.029
+            },
+            {
+              "x": 0.992,
+              "y": -1.522,
+              "z": 0.231
+            },
+            {
+              "x": -2.036,
+              "y": 0.343,
+              "z": 0.166
+            },
+            {
+              "x": 0.012,
+              "y": -0.161,
+              "z": -0.06
+            },
+            {
+              "x": 2.812,
+              "y": -1.52,
+              "z": -0.285
+            },
+            {
+              "x": 0.604,
+              "y": -0.588,
+              "z": 0.01
+            },
+            {
+              "x": -0.506,
+              "y": 0.311,
+              "z": 0.166
+            },
+            {
+              "x": -0.077,
+              "y": 0.118,
+              "z": 0.333
+            },
+            {
+              "x": -2.257,
+              "y": 0.116,
+              "z": 0.129
+            },
+            {
+              "x": -0.123,
+              "y": 0.472,
+              "z": 0.175
+            },
+            {
+              "x": 0.235,
+              "y": 0.094,
+              "z": 0.342
+            },
+            {
+              "x": -1.702,
+              "y": 1.772,
+              "z": 0.08
+            },
+            {
+              "x": 1.762,
+              "y": 0.377,
+              "z": 0.301
+            }
+          ]
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 7585384,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 49.04765,
+            "y": 17.0,
+            "z": -248.6775
+          },
+          "Rotation": {
+            "x": -1.206935E-07,
+            "y": -0.4620679,
+            "z": 3.1028955E-07
+          },
+          "Scale": {
+            "x": 2.888189,
+            "y": 1.0,
+            "z": 2.888189
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -248.6775,
+              "y": -1.206935E-07,
+              "z": -0.4620679
+            },
+            {
+              "x": 3.1028955E-07,
+              "y": 2.888189,
+              "z": 1.0
+            },
+            {
+              "x": 2.888189,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 1.197,
+              "z": 0.01
+            },
+            {
+              "x": 1.099,
+              "y": 0.007,
+              "z": 0.01
+            },
+            {
+              "x": 0.006,
+              "y": 0.763,
+              "z": 0.01
+            },
+            {
+              "x": 1.799,
+              "y": -0.21,
+              "z": 0.01
+            },
+            {
+              "x": 0.991,
+              "y": -1.523,
+              "z": 0.01
+            },
+            {
+              "x": -2.035,
+              "y": 0.465,
+              "z": 0.01
+            },
+            {
+              "x": -2.282,
+              "y": -0.282,
+              "z": 0.01
+            },
+            {
+              "x": 2.808,
+              "y": -1.697,
+              "z": 0.01
+            },
+            {
+              "x": 0.674,
+              "y": -0.809,
+              "z": 0.01
+            },
+            {
+              "x": -0.697,
+              "y": 0.156,
+              "z": 0.01
+            },
+            {
+              "x": 0.226,
+              "y": 0.106,
+              "z": 0.01
+            },
+            {
+              "x": -2.111,
+              "y": 0.613,
+              "z": 0.01
+            },
+            {
+              "x": -0.431,
+              "y": 2.181,
+              "z": 0.01
+            },
+            {
+              "x": 1.125,
+              "y": -1.07,
+              "z": 0.01
+            },
+            {
+              "x": -1.348,
+              "y": 2.067,
+              "z": 0.01
+            },
+            {
+              "x": 1.864,
+              "y": 2.197,
+              "z": 0.01
+            }
+          ]
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 7585385,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -305.4301,
+            "y": 41.85565,
+            "z": 119.5554
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.6025215,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 2.888189,
+            "y": 1.0,
+            "z": 2.888189
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": 119.5554,
+              "y": 3.1415927,
+              "z": 0.6025215
+            },
+            {
+              "x": 3.1415927,
+              "y": 2.888189,
+              "z": 1.0
+            },
+            {
+              "x": 2.888189,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 1.197,
+              "z": -0.131
+            },
+            {
+              "x": 1.099,
+              "y": 0.007,
+              "z": -0.146
+            },
+            {
+              "x": 0.006,
+              "y": 0.753,
+              "z": -0.131
+            },
+            {
+              "x": 1.807,
+              "y": -0.21,
+              "z": -0.133
+            },
+            {
+              "x": 0.991,
+              "y": -1.523,
+              "z": -0.202
+            },
+            {
+              "x": -2.035,
+              "y": 1.516,
+              "z": -0.168
+            },
+            {
+              "x": -2.0,
+              "y": -0.316,
+              "z": -0.13
+            },
+            {
+              "x": 2.807,
+              "y": -1.731,
+              "z": -0.155
+            },
+            {
+              "x": 0.688,
+              "y": -0.792,
+              "z": -0.171
+            },
+            {
+              "x": -0.682,
+              "y": 0.099,
+              "z": -0.139
+            },
+            {
+              "x": 0.304,
+              "y": 0.277,
+              "z": -0.176
+            },
+            {
+              "x": -1.595,
+              "y": -0.053,
+              "z": -0.132
+            },
+            {
+              "x": 1.304,
+              "y": 1.007,
+              "z": -0.132
+            },
+            {
+              "x": 0.63,
+              "y": -1.08,
+              "z": -0.189
+            },
+            {
+              "x": -1.411,
+              "y": -1.867,
+              "z": -0.132
+            },
+            {
+              "x": 2.068,
+              "y": 0.672,
+              "z": -0.182
+            }
+          ]
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7585386,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 180.258,
+            "y": 6.504384,
+            "z": 256.8969
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 28.85345,
+            "y": 10.65278,
+            "z": 28.85345
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7585387,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 48.95317,
+            "y": 23.13307,
+            "z": -249.1535
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.54584,
+            "y": 9.664181,
+            "z": 15.54584
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7585388,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -315.5414,
+            "y": 38.13686,
+            "z": 133.524
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 31.17966,
+            "y": 15.8821,
+            "z": 31.17966
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 12
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 149926,
+    "Name": "LVD_gimmick_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 63,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 7120,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 7136,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 7136,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 49,
+        "InstanceId": 7585389,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 192.5762,
+            "y": 25.73266,
+            "z": 244.8121
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 149.887,
+            "y": 23.18449,
+            "z": 149.887
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7585390,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 48.85426,
+            "y": 17.0,
+            "z": -248.3205
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 149.887,
+            "y": 23.18449,
+            "z": 149.887
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7585391,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -309.6279,
+            "y": 34.60055,
+            "z": 121.368
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 149.887,
+            "y": 23.18449,
+            "z": 149.887
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585392,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.1257,
+            "y": 15.0,
+            "z": 267.2749
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.9642124,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585393,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.1257,
+            "y": 15.0,
+            "z": 267.2749
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.9642124,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585394,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.14853,
+            "y": 18.8491,
+            "z": 267.5727
+          },
+          "Rotation": {
+            "x": -4.7922153E-05,
+            "y": -4.7922153E-05,
+            "z": -4.7922153E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005338
+          },
+          "BoundInstanceId": 7585392
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585395,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.25523,
+            "y": 16.80485,
+            "z": 267.2278
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005502
+          },
+          "BoundInstanceId": 7585393
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585396,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.12097,
+            "y": 17.47063,
+            "z": 167.4351
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.93137103,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585397,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.121,
+            "y": 17.4706,
+            "z": 167.4351
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.93137056,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585398,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.120948,
+            "y": 21.01382,
+            "z": 167.7727
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005339
+          },
+          "BoundInstanceId": 7585396
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585399,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.225257,
+            "y": 19.76335,
+            "z": 167.3122
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005503
+          },
+          "BoundInstanceId": 7585397
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585400,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 96.39795,
+            "y": 30.24575,
+            "z": 107.9038
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.3791646,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585401,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 96.398,
+            "y": 30.2458,
+            "z": 107.9038
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.3791645,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585402,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 96.41483,
+            "y": 34.1359,
+            "z": 108.177
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005340
+          },
+          "BoundInstanceId": 7585400
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585403,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 96.32299,
+            "y": 33.28856,
+            "z": 107.9724
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005504
+          },
+          "BoundInstanceId": 7585401
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585404,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 200.1768,
+            "y": 28.0,
+            "z": 67.93306
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.95206,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585405,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 200.1768,
+            "y": 28.0,
+            "z": 67.9331
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.9519026,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585406,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 200.3357,
+            "y": 30.77514,
+            "z": 68.23473
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005341
+          },
+          "BoundInstanceId": 7585404
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585407,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 200.3106,
+            "y": 29.68854,
+            "z": 68.21754
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005505
+          },
+          "BoundInstanceId": 7585405
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585408,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 157.7928,
+            "y": 0.1265554,
+            "z": -49.40284
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.29920545,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585409,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 157.7928,
+            "y": 0.1266,
+            "z": -49.4028
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.2992053,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585410,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 157.7331,
+            "y": 4.437783,
+            "z": -49.08792
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005342
+          },
+          "BoundInstanceId": 7585408
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585411,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 157.6968,
+            "y": 2.356474,
+            "z": -49.15909
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005506
+          },
+          "BoundInstanceId": 7585409
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585412,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 51.30129,
+            "y": 30.84896,
+            "z": -82.94418
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.2326536,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585413,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 51.3013,
+            "y": 30.849,
+            "z": -82.9442
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.23265414,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585414,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 51.29097,
+            "y": 32.73375,
+            "z": -82.67361
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005343
+          },
+          "BoundInstanceId": 7585412
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585415,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 51.31007,
+            "y": 31.15404,
+            "z": -82.93513
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005507
+          },
+          "BoundInstanceId": 7585413
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585416,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 74.83097,
+            "y": 9.731915,
+            "z": -16.69943
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.13082856,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585417,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 74.831,
+            "y": 9.7319,
+            "z": -16.6994
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.13082814,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585418,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 74.82906,
+            "y": 13.97615,
+            "z": -16.41293
+          },
+          "Rotation": {
+            "x": -4.7922153E-05,
+            "y": -4.7922153E-05,
+            "z": -4.7922153E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005344
+          },
+          "BoundInstanceId": 7585416
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585419,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 74.84678,
+            "y": 11.29481,
+            "z": -16.71972
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005508
+          },
+          "BoundInstanceId": 7585417
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585420,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -47.15389,
+            "y": 27.36375,
+            "z": -92.47937
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.018946,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585421,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -47.1539,
+            "y": 27.3638,
+            "z": -92.4794
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.0189459,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585422,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -47.22263,
+            "y": 31.70893,
+            "z": -92.24072
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005345
+          },
+          "BoundInstanceId": 7585420
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585423,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -47.17587,
+            "y": 29.27276,
+            "z": -92.57378
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005509
+          },
+          "BoundInstanceId": 7585421
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585424,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -163.8167,
+            "y": 43.37606,
+            "z": 1.166089
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.0423422,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585425,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -163.8167,
+            "y": 43.3761,
+            "z": 1.1661
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.0423421,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585426,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -163.8688,
+            "y": 46.92002,
+            "z": 1.751138
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005346
+          },
+          "BoundInstanceId": 7585424
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585427,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -164.0554,
+            "y": 45.55704,
+            "z": 1.093665
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005510
+          },
+          "BoundInstanceId": 7585425
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585428,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -32.93181,
+            "y": 14.93199,
+            "z": 18.81635
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.4478197,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585429,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -32.9318,
+            "y": 14.932,
+            "z": 18.8164
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.4478205,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585430,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -32.93042,
+            "y": 18.64505,
+            "z": 19.14104
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005347
+          },
+          "BoundInstanceId": 7585428
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585431,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -32.98658,
+            "y": 17.32863,
+            "z": 18.98167
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005511
+          },
+          "BoundInstanceId": 7585429
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585432,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -62.15162,
+            "y": 36.97105,
+            "z": 48.55099
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.59862316,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585433,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -62.1516,
+            "y": 36.9711,
+            "z": 48.551
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.5986235,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585434,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -62.11957,
+            "y": 40.36011,
+            "z": 48.8136
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005348
+          },
+          "BoundInstanceId": 7585432
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585435,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -62.18711,
+            "y": 38.49342,
+            "z": 48.44048
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005512
+          },
+          "BoundInstanceId": 7585433
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585436,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -148.5158,
+            "y": 39.35337,
+            "z": 161.1562
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.09858082,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585437,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -148.5158,
+            "y": 39.3534,
+            "z": 161.1562
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.09858144,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585438,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -148.5085,
+            "y": 43.28034,
+            "z": 161.4586
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005349
+          },
+          "BoundInstanceId": 7585436
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585439,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -148.5192,
+            "y": 41.33355,
+            "z": 161.0709
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005513
+          },
+          "BoundInstanceId": 7585437
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585440,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -167.0,
+            "y": 23.03918,
+            "z": 70.80112
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.6318047,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585441,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -167.0,
+            "y": 23.0392,
+            "z": 70.8011
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.631804,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585442,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -167.073,
+            "y": 26.48757,
+            "z": 71.0599
+          },
+          "Rotation": {
+            "x": -4.366222E-05,
+            "y": -0.08870772,
+            "z": -4.8111364E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005350
+          },
+          "BoundInstanceId": 7585440
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585443,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -167.0893,
+            "y": 24.4494,
+            "z": 70.68321
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005514
+          },
+          "BoundInstanceId": 7585441
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585444,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -120.0835,
+            "y": 24.81767,
+            "z": -47.14059
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.3800193,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585445,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -120.0835,
+            "y": 24.8177,
+            "z": -47.1406
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.3800197,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585446,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -120.0872,
+            "y": 28.01911,
+            "z": -46.85977
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005351
+          },
+          "BoundInstanceId": 7585444
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585447,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -120.1226,
+            "y": 27.12212,
+            "z": -47.06198
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005515
+          },
+          "BoundInstanceId": 7585445
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585448,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.82265,
+            "y": 16.16634,
+            "z": 101.2945
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0919214,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585449,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.8227,
+            "y": 16.1663,
+            "z": 101.2945
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0919217,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_ocup1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585450,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.84111,
+            "y": 19.79777,
+            "z": 101.5913
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005352
+          },
+          "BoundInstanceId": 7585448
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7585451,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.8126,
+            "y": 18.74822,
+            "z": 101.4357
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2005516
+          },
+          "BoundInstanceId": 7585449
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 63
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 149927,
+    "Name": "LVD_maprange_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 9,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1060,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1072,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1072,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 43,
+        "InstanceId": 7585452,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -61.32944,
+            "y": 28.08072,
+            "z": 22.51933
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 208.7889,
+            "y": 47.45849,
+            "z": 358.7758
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1588,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585453,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 218.1794,
+            "y": 19.16043,
+            "z": 77.77366
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 79.38795,
+            "y": 56.41202,
+            "z": 209.2343
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 110,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1587,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585454,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -197.3149,
+            "y": 33.33063,
+            "z": 110.6485
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 130.6939,
+            "y": 48.12438,
+            "z": 160.735
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 120,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1584,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585455,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -190.857,
+            "y": 28.69676,
+            "z": -26.36025
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.7249267,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 77.30914,
+            "y": 42.68759,
+            "z": 85.85172
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 120,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1584,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585456,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -82.64436,
+            "y": 23.64826,
+            "z": 53.68843
+          },
+          "Rotation": {
+            "x": 3.13761,
+            "y": -1.1152065,
+            "z": -3.1387093
+          },
+          "Scale": {
+            "x": 23.27925,
+            "y": 39.92778,
+            "z": 26.49741
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 120,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1584,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585457,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 49.17696,
+            "y": 20.5,
+            "z": -249.3011
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.24343,
+            "y": 10.0,
+            "z": 15.24343
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 120,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1583,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585458,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 195.7517,
+            "y": 20.46366,
+            "z": 258.2474
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.65397036,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 61.3894,
+            "y": 62.21579,
+            "z": 42.11627
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 120,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1585,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585459,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -29.98933,
+            "y": 29.45693,
+            "z": -5.402652
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 52.02178,
+            "y": 45.56632,
+            "z": 41.1243
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 130,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1586,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 7585460,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.62102,
+            "y": 29.36395,
+            "z": 59.05045
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 47.73674,
+            "y": 45.56632,
+            "z": 32.35733
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 130,
+            "Enabled": 1
+          },
+          "Map": 0,
+          "PlaceNameBlock": 1586,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 0,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 149928,
+    "Name": "LVD_navimesh_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 149929,
+    "Name": "LVD_position_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 149930,
+    "Name": "LVD_position_02",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 149931,
+    "Name": "LVD_Tomelith_only",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 15,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 2392,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 2408,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 2408,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7585467,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.82265,
+            "y": 16.16634,
+            "z": 101.2945
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0919214,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585468,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -120.0835,
+            "y": 24.81767,
+            "z": -47.14059
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.3800193,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585469,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -167.0,
+            "y": 23.03918,
+            "z": 70.80112
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.6318047,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585470,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -148.5158,
+            "y": 39.35337,
+            "z": 161.1562
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.09858082,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585471,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -62.15162,
+            "y": 36.97105,
+            "z": 48.55099
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.59862316,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585472,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -32.93181,
+            "y": 14.93199,
+            "z": 18.81635
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.4478197,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585473,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -163.8167,
+            "y": 43.37606,
+            "z": 1.166089
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.0423422,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585474,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -47.15389,
+            "y": 27.36375,
+            "z": -92.47937
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.018946,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585475,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 74.83097,
+            "y": 9.731915,
+            "z": -16.69943
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.13082856,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585476,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 51.30129,
+            "y": 30.84896,
+            "z": -82.94418
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.2326536,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585477,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 157.7928,
+            "y": 0.1265554,
+            "z": -49.40284
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.29920545,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585478,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 200.1768,
+            "y": 28.0,
+            "z": 67.93306
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.95206,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585479,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 96.39795,
+            "y": 30.24575,
+            "z": 107.9038
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.3791646,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585480,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.12097,
+            "y": 17.47063,
+            "z": 167.4351
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.93137103,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7585481,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.1257,
+            "y": 15.0,
+            "z": 267.2749
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.9642124,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/pvp_xx/shared/for_bg/sgbg_s2p1_q1_swic1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 15
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 149932,
+    "Name": "LVD_zone_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

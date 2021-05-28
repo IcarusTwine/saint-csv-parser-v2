@@ -1,0 +1,237 @@
+[
+  {
+    "LayerId": 116839,
+    "Name": "obstruction",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 628,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 640,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 640,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 5916133,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 52.62186,
+            "y": -1.261164,
+            "z": 7.939411
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 8,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAIAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9SLHjAfMxIQscunUEAAIA/5O+sQnzMSELA42w/AACAP+TvrEIWZ6nCwONsPwAAgD9SLHjAF2epwscunUEAAIA/AACAPwAAgD8HAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 5916134,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -53.89666,
+            "y": -4.728539,
+            "z": 21.42474
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 8,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAIAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8UkQnBfMxIQkXYq0EAAIA/ePqbwn7MSEIAKatBAACAP3j6m8IXZ6nCACmrQQAAgD8UkQnBGmepwkXYq0EAAIA/AACAPwAAgD8HAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 5916136,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.48796,
+            "y": -31.33977,
+            "z": -10.44743
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 8,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAIAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+40pHBcsC+v+QMCsIAAIA/W8gcQuS/vr9cZalAAACAP1vIHELBkqnCWmWpQAAAgD+u0pHBwpKpwuQMCsIAAIA/AACAPwAAgD8EAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 116838,
+    "Name": "Sound",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 436,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 448,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 448,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 5916135,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 21.30166,
+            "y": -46.49003,
+            "z": -23.56856
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 200.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/dra/dra_spot_river_mono.scd",
+          "SEParam": {
+            "SoundEffectType": 5,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAFAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9YHKhAyvU5wtKyEcIAAIA/QmYVQsr1OcJcZivBAACAPwAAIEEAAEhDAACgQAAAoEAAAIA/ZmYmP83MTD8AAIA/AAAAAAAAgD8AAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 5916137,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 21.30166,
+            "y": -13.65347,
+            "z": -23.56856
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/dra/dra_spot_river_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 5,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAFAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9YHKhAnXRawdKyEcIAAIA/QmYVQp10WsFcZivBAACAPwAAIEEAAHBCAACgQAAAoEAAAIA/MzMzPwAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

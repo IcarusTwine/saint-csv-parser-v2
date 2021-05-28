@@ -1,0 +1,110 @@
+[
+  {
+    "LayerId": 149924,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 236,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 248,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 248,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 7585366,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 78.21697,
+            "y": -0.07736607,
+            "z": -217.8051
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.0102992,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 97,
+            "Green": 97,
+            "Blue": 97,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 7585367,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 78.31332,
+            "y": -0.07736609,
+            "z": -217.836
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.2599951,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 0.314073,
+            "y": 1.0,
+            "z": 0.4030499
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr004_2y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 67,
+            "Green": 67,
+            "Blue": 67,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "LayerId": 98305,
+    "Name": "envbox",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 140,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 152,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 152,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 13,
+        "InstanceId": 4620626,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -138.8865,
+            "y": 6.778584,
+            "z": -0.008245707
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 12.17203,
+            "y": 10.64241,
+            "z": 12.60512
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 110,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.4,
+          "Filter": 1.0,
+          "SoundAssetPath": "bgcommon/env/sound/roc_r1/r1_fld/sound_r1fb.essb"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

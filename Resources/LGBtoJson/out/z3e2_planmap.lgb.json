@@ -1,0 +1,101 @@
+[
+  {
+    "LayerId": 136866,
+    "Name": "LVD_Position_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 137204,
+    "Name": "LVD_Position_02",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 108,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 108,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 11
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      },
+      {
+        "LayerSetId": 52
+      },
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 108
+      },
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 108
+      },
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

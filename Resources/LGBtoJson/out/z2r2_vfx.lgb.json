@@ -1,0 +1,1250 @@
+[
+  {
+    "LayerId": 122699,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 17,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1616,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1628,
+    "ObSetReferencedListCount": 10,
+    "ObSetEnableReferencedList": 1748,
+    "ObSetEnableReferencedListCount": 5,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 6256760,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -386.1517,
+            "y": -113.9232,
+            "z": -240.8994
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen1_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 230.0,
+          "FadeFarEnd": 300.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6261048,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 279.831,
+            "y": -442.1391,
+            "z": -410.1144
+          },
+          "Rotation": {
+            "x": 8.235043E-22,
+            "y": 3.3113697E-08,
+            "z": 2.3528697E-22
+          },
+          "Scale": {
+            "x": 0.45,
+            "y": 0.45,
+            "z": 0.45
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_cloud_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 157,
+            "Blue": 141,
+            "Alpha": 192
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 1.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 170.0,
+          "FadeFarEnd": 180.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6263667,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 298.7595,
+            "y": -329.9167,
+            "z": 218.4048
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_clud1_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 400.0,
+          "FadeFarEnd": 450.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6280401,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 64.17924,
+            "y": -0.6621008,
+            "z": -107.4288
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2fire03_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 300.0,
+          "FadeFarEnd": 400.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6279763,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 83.68336,
+            "y": -3.613426,
+            "z": -118.4864
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.4077708,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2fire03_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 180.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6256910,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -327.9873,
+            "y": -132.6186,
+            "z": -154.8702
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.200619,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen1_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6331867,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -288.509,
+            "y": -104.6706,
+            "z": -330.9676
+          },
+          "Rotation": {
+            "x": -0.043383513,
+            "y": -0.014422143,
+            "z": -0.060973864
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 1.8,
+            "z": 2.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen1_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 180.0,
+          "FadeFarEnd": 220.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6339863,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -347.2234,
+            "y": -122.6416,
+            "z": -231.0397
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen3_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6339872,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -436.629,
+            "y": -82.09876,
+            "z": -261.7209
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.289021,
+            "y": 1.289021,
+            "z": 1.289021
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen1_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 280.0,
+          "FadeFarEnd": 350.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6352844,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -255.4304,
+            "y": -120.0164,
+            "z": -238.2699
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.0718278,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen2_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 100
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6352846,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -253.759,
+            "y": -123.7804,
+            "z": -235.5725
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.0718278,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen2_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 100
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6353014,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -239.1419,
+            "y": -118.0165,
+            "z": -187.218
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen3_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6248808,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -381.9413,
+            "y": -155.8902,
+            "z": -155.3012
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.9760534,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 2.605978,
+            "y": 4.0,
+            "z": 2.605978
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen1_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6248818,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -330.9347,
+            "y": -128.1001,
+            "z": -162.9023
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.5792258,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.329601,
+            "y": 2.329601,
+            "z": 2.329601
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen3_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 200.0,
+          "FadeFarEnd": 250.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6353012,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -371.9202,
+            "y": -120.0658,
+            "z": -222.039
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_onen3_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6405615,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -118.1126,
+            "y": -7.657385,
+            "z": -154.502
+          },
+          "Rotation": {
+            "x": 3.1171038,
+            "y": -1.0326407,
+            "z": -3.1270647
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_taki_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6406488,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -300.0,
+            "y": -420.0,
+            "z": 339.8
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/common/vfx/eff/z2r2_thud1_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 6256760,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6256910,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6331867,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6339863,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6339872,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6352846,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6353014,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6248808,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6248818,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6353012,
+        "OBSetAssetPath": "bgcommon/env/obset/ex1_obset/obset_zon_z2/obset_zon_z2_rad/obset_z2r2_vfx_p2.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 6256760,
+        "OBSetEnable": 1,
+        "OBSetEmissiveEnable": 0
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6261048,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 0
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6256910,
+        "OBSetEnable": 1,
+        "OBSetEmissiveEnable": 0
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6248808,
+        "OBSetEnable": 1,
+        "OBSetEmissiveEnable": 0
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 6248818,
+        "OBSetEnable": 1,
+        "OBSetEmissiveEnable": 0
+      }
+    ]
+  },
+  {
+    "LayerId": 123550,
+    "Name": "VFX_002",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 7,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1064,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1076,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1076,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 6259793,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 55.78494,
+            "y": -6.508401,
+            "z": -156.1653
+          },
+          "Rotation": {
+            "x": 1.6895087E-13,
+            "y": -1.4017681,
+            "z": 3.0065863E-07
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/shared/for_vfx/sgvf_z2r2_b0832.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 6263658,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -300.0,
+            "y": -74.0,
+            "z": -416.5
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/shared/for_vfx/sgvf_z2r2_b0917.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 6265721,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -298.5995,
+            "y": 52.4743,
+            "z": -609.5905
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/shared/for_vfx/sgvf_z2r2_b0914.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 6264911,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -170.8661,
+            "y": -394.4557,
+            "z": 226.4457
+          },
+          "Rotation": {
+            "x": -7.5495166E-15,
+            "y": 6.705318E-30,
+            "z": 1.776356E-15
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/shared/for_vfx/sgvf_z2r2_b0913.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 6384147,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -168.5379,
+            "y": -393.7298,
+            "z": 225.0555
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 2.2252406E-07,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 1.770234,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 6404242,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -170.8661,
+            "y": -394.4557,
+            "z": 226.4457
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/shared/for_vfx/sgvf_z2r2_b0956.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 6404243,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -170.8661,
+            "y": -394.4557,
+            "z": 226.4457
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/05_zon_z2/shared/for_vfx/sgvf_z2r2_b0957.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

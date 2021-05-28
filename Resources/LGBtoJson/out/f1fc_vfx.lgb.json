@@ -1,0 +1,2274 @@
+[
+  {
+    "LayerId": 109683,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 54,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 5020,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 5032,
+    "ObSetReferencedListCount": 27,
+    "ObSetEnableReferencedList": 5356,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 5425140,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 660.2803,
+            "y": 21.9306,
+            "z": 70.31923
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5277383,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.716711,
+            "y": 0.716711,
+            "z": 0.716711
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 150,
+            "Green": 150,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425141,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 656.0668,
+            "y": 21.97644,
+            "z": 84.67484
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.1890742,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 0.3452305,
+            "y": 0.435572,
+            "z": 0.435572
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.5,
+          "Color": {
+            "Red": 150,
+            "Green": 150,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425142,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 653.2023,
+            "y": 21.85909,
+            "z": 54.17341
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.30786368,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.5,
+          "Color": {
+            "Red": 124,
+            "Green": 124,
+            "Blue": 124,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425143,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 657.3871,
+            "y": 21.94903,
+            "z": 57.42855
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.8548878,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.8841253,
+            "y": 0.8841253,
+            "z": 0.7332373
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 145,
+            "Green": 145,
+            "Blue": 145,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425144,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 537.9649,
+            "y": 14.38069,
+            "z": 131.8414
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.8544975,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 120,
+            "Green": 120,
+            "Blue": 120,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425145,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 484.4814,
+            "y": 0.6682284,
+            "z": 144.2433
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.1914209,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.4326109,
+            "y": 0.4326109,
+            "z": 0.4326109
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 150,
+            "Green": 150,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425146,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 497.2959,
+            "y": 0.6721279,
+            "z": 156.1908
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.6812303,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.4362365,
+            "y": 0.4362365,
+            "z": 0.4362365
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 120,
+            "Green": 120,
+            "Blue": 120,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425147,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 428.5064,
+            "y": -1.935564,
+            "z": 199.927
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.102551445,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 120,
+            "Green": 120,
+            "Blue": 120,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425148,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 436.7094,
+            "y": -1.962544,
+            "z": 203.7957
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.48056072,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 120,
+            "Green": 120,
+            "Blue": 120,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425149,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 512.4436,
+            "y": 14.18237,
+            "z": 108.2041
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.93465054,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 120,
+            "Green": 120,
+            "Blue": 120,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425150,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 529.1405,
+            "y": 14.43839,
+            "z": 120.4938
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -1.0566541,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 0.3502809,
+            "y": 0.3502809,
+            "z": 0.3502809
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 150,
+            "Green": 150,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425151,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 534.3986,
+            "y": 18.11191,
+            "z": 101.2406
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.414358,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 0.5798397,
+            "y": 0.5798397,
+            "z": 0.5798397
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.8,
+          "Color": {
+            "Red": 150,
+            "Green": 150,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425152,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -122.4908,
+            "y": 2.013961,
+            "z": -77.11723
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.78249955,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.7446888,
+            "y": 0.7446888,
+            "z": 0.7446888
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 120,
+            "Green": 120,
+            "Blue": 120,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425153,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 643.3497,
+            "y": 21.8651,
+            "z": 122.7814
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -1.3821025,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 0.3022388,
+            "y": 0.3022388,
+            "z": 0.3022388
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_5y.avfx",
+          "SoftParticleFadeRange": 1.0,
+          "Color": {
+            "Red": 150,
+            "Green": 150,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425154,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 592.8846,
+            "y": 21.84614,
+            "z": 101.903
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.8301027,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.2,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425155,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 606.2654,
+            "y": 21.84591,
+            "z": 58.10196
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.65648663,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.1,
+          "Color": {
+            "Red": 153,
+            "Green": 157,
+            "Blue": 155,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425156,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 595.5278,
+            "y": 21.84614,
+            "z": 71.14967
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.39149708,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1.6
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.1,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425157,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 622.8268,
+            "y": 21.712,
+            "z": 108.2015
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.122948,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.2,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425158,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 611.9476,
+            "y": 21.84615,
+            "z": 113.1856
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.22079776,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.8,
+            "y": 1.8,
+            "z": 1.8
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.1,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425159,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 615.8518,
+            "y": 21.84615,
+            "z": 72.48241
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.16746993,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.1,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425160,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 614.7628,
+            "y": 21.84615,
+            "z": 74.29073
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.40773964,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.1,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425161,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 494.0872,
+            "y": 0.5526592,
+            "z": 151.8098
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.6812303,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.4362365,
+            "y": 0.4362365,
+            "z": 0.4362365
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_watr003_4y.avfx",
+          "SoftParticleFadeRange": 0.5,
+          "Color": {
+            "Red": 120,
+            "Green": 120,
+            "Blue": 120,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 40.0,
+          "FadeFarEnd": 50.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425163,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -398.4016,
+            "y": 0.0,
+            "z": 243.5966
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_kiri001_1y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 142,
+            "Green": 144,
+            "Blue": 164,
+            "Alpha": 91
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 100.0,
+          "FadeNearEnd": 80.0,
+          "FadeFarStart": 200.0,
+          "FadeFarEnd": 300.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425164,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -126.3435,
+            "y": 0.3492675,
+            "z": 372.1053
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.2,
+            "y": 0.2,
+            "z": 0.2
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_kiri001_1y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 90
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 50.0,
+          "FadeNearEnd": 30.0,
+          "FadeFarStart": 80.0,
+          "FadeFarEnd": 150.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425165,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 161.1328,
+            "y": 20.65314,
+            "z": -145.3639
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425166,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 157.2183,
+            "y": 19.65307,
+            "z": -139.1135
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.94122726,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425167,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 164.9458,
+            "y": 18.8326,
+            "z": -143.4807
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.5235988,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425168,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 162.4327,
+            "y": 18.63624,
+            "z": -148.6169
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425169,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 83.05475,
+            "y": 8.069507,
+            "z": 60.33202
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0471972,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425170,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 75.36316,
+            "y": 6.651823,
+            "z": 65.55556
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.87266463,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425171,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 99.57532,
+            "y": 6.70692,
+            "z": 49.83816
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0471972,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425172,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 106.8511,
+            "y": 6.800704,
+            "z": 51.2119
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425173,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 114.3795,
+            "y": 6.899184,
+            "z": 47.77707
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.0471972,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425174,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 91.28548,
+            "y": 6.229431,
+            "z": 54.71495
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.3962636,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425175,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 102.6887,
+            "y": 8.291879,
+            "z": 53.72438
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.34906587,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425176,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 299.1009,
+            "y": 3.340262,
+            "z": -0.4059708
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425177,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 304.1568,
+            "y": 2.159886,
+            "z": -2.166969
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0471972,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425178,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 304.9189,
+            "y": 1.967558,
+            "z": 4.768337
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.0471972,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425179,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 311.0743,
+            "y": 1.478579,
+            "z": -0.5276976
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.5235988,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425180,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 309.3209,
+            "y": 2.898813,
+            "z": 3.209299
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425181,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 309.0701,
+            "y": 2.492847,
+            "z": -7.488626
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425182,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 491.1155,
+            "y": 3.986784,
+            "z": 157.5188
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425183,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 499.0067,
+            "y": 9.474081,
+            "z": 151.804
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425184,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 480.9515,
+            "y": 4.700511,
+            "z": 152.216
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425185,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 483.4457,
+            "y": 3.890257,
+            "z": 163.2425
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425186,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 491.7838,
+            "y": 8.957769,
+            "z": 150.7808
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425187,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -267.3317,
+            "y": 2.586544,
+            "z": 411.5817
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425188,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -270.7962,
+            "y": 3.866589,
+            "z": 406.9926
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425189,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -278.3799,
+            "y": 2.86708,
+            "z": 405.4624
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 3.1415927,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425190,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -270.8664,
+            "y": 2.001491,
+            "z": 405.1106
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.5235988,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425191,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -276.5597,
+            "y": 2.219594,
+            "z": 401.1048
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.7853982,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_hotaru01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 211,
+            "Green": 255,
+            "Blue": 9,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 32.0,
+          "FadeFarEnd": 40.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425192,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 624.9795,
+            "y": 21.84221,
+            "z": 106.7206
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.97321254,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.2,
+          "Color": {
+            "Red": 216,
+            "Green": 255,
+            "Blue": 228,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 30.0,
+          "FadeFarEnd": 45.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425193,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 608.0717,
+            "y": 21.84615,
+            "z": 92.4061
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.238294,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/common/vfx/eff/f1f3odin01by.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5570901,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 139.6145,
+            "y": 9.146198,
+            "z": -52.38847
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/common/vfx_for_bg/eff/chob_goal1y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 5425165,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425166,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425167,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425168,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425169,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425170,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425171,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425172,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425173,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425174,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425175,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425176,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425177,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425178,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425179,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425180,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425181,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425182,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425183,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425184,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425185,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425186,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425187,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425188,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425189,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425190,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5425191,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

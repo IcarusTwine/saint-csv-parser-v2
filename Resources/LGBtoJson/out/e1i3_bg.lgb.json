@@ -1,0 +1,6639 @@
+[
+  {
+    "LayerId": 130057,
+    "Name": "BG_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 120,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 11572,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 11584,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 11584,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 6673602,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_f1_rom0000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_f1_rom0000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 6673607,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 9.536743E-07,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_f2_rom0000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_f2_rom0000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 6673617,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_slp0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_slp0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008597,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.0,
+            "y": -7.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_slp0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_slp0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008598,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_ter0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_ter0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008599,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -15.0,
+            "y": 0.0,
+            "z": -7.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_ter0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_ter0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008601,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008602,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008603,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008604,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008605,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": -7.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008621,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": -7.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008624,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": -7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008625,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": -7.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008626,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": -7.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008628,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.00001,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008629,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -12.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008630,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008631,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008632,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008633,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008634,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008635,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 12.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008636,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.0,
+            "y": -7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008637,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": -7.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008638,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": -7.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008639,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": -7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008640,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": -7.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008641,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": -7.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008642,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008643,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -12.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008644,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008645,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008646,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008647,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008648,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008649,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 12.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008650,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.0,
+            "y": -7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008651,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008652,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008653,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008655,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008656,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008657,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 0.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008658,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 0.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008659,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008660,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008663,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008664,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -12.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008665,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008666,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.00001,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008667,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 12.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008668,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008669,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008670,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008671,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008672,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008673,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008674,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008675,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008676,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008677,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -12.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008681,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 12.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008682,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008684,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008685,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008688,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0001.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008689,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008692,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001b.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 6673598,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_b1_rom0000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_b1_rom0000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008695,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0001.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008696,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008697,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001b.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008699,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0001.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008700,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0001.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008701,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008702,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001b.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008703,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008704,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 0.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001b.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008823,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008824,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008825,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008826,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0002.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0002.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008833,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008834,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 12.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008835,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0001.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008836,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001c.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008837,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.0,
+            "y": 7.0,
+            "z": 14.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008838,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.0,
+            "y": 7.0,
+            "z": 14.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008839,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 7.0,
+            "z": 14.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008840,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0001.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008841,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0001c.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008842,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.00001,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008843,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -12.0,
+            "y": 7.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008844,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 7.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008845,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008846,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 7.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008847,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 7.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008848,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 7.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008849,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -12.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008850,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008851,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -8.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008852,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -9.85,
+            "y": 7.0,
+            "z": -7.999998
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008853,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -9.85,
+            "y": 7.0,
+            "z": 7.999999
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008854,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -9.85,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008855,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.15,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008856,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.15,
+            "y": 7.0,
+            "z": 7.999999
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008857,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.15,
+            "y": 7.0,
+            "z": -7.999998
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008858,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008859,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 12.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008860,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.0,
+            "y": 7.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008861,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 7.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008862,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008863,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 7.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008864,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 7.0,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008865,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 7.0,
+            "z": -4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0003.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0003.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008866,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 9.850001,
+            "y": 7.0,
+            "z": -7.999999
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008867,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 9.85,
+            "y": 7.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008868,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 10.15,
+            "y": 7.0,
+            "z": -7.999999
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7008869,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 10.15,
+            "y": 7.0,
+            "z": 8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i0_c0_pil0004.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i0_c0_pil0004.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 130497,
+    "Name": "BG_002",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 208,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 220,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 220,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 6718459,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -6.0,
+            "y": 0.0,
+            "z": -12.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/shared/for_hou/sgho_e1i0_a0_door1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135129,
+    "Name": "BG_003",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 148,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 160,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 160,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 6673611,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_lightgard.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135130,
+    "Name": "BG_004",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 244,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 256,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 256,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 6673597,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_b1_fl_00000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_b1_fl_00000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 6673600,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_b1_wl_00000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_b1_wl_00000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135131,
+    "Name": "BG_005",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 244,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 256,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 256,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 6673601,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_f1_fl_0000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_f1_fl_0000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 6673604,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_f1_wl_0000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_f1_wl_0000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135132,
+    "Name": "BG_006",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 244,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 256,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 256,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 6673609,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_f2_wl_0000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_f2_wl_0000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 6673606,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 7.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/est_e1/ind/common/bgparts/e1i3_l_f2_fl_0000.mdl",
+          "CollisionAssetPath": "bg/ffxiv/est_e1/ind/common/collision/e1i3_l_f2_fl_0000.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135135,
+    "Name": "BG_007",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 16,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 2548,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 2560,
+    "ObSetReferencedListCount": 16,
+    "ObSetEnableReferencedList": 2752,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7008526,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -2.0,
+            "y": 7.0,
+            "z": 14.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/dor/0001/asset/e1h0_cb_dor0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008525,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/dor/0001/asset/e1h0_ci_dor0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008527,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 6.0,
+            "y": 1.0,
+            "z": 12.00018
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 3.1415927,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008528,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 14.0,
+            "y": 1.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008529,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -6.0,
+            "y": 1.0,
+            "z": 12.00018
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008530,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -14.0,
+            "y": 1.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008531,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 1.0,
+            "z": 6.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008532,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 1.0,
+            "z": -6.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008533,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 1.0,
+            "z": 6.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008534,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 1.0,
+            "z": -6.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008535,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 14.0,
+            "y": 8.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008536,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -14.0,
+            "y": 8.0,
+            "z": 12.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008537,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 8.0,
+            "z": 6.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008538,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.0,
+            "y": 8.0,
+            "z": -6.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008539,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 8.0,
+            "z": 6.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008540,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.0,
+            "y": 8.0,
+            "z": -6.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/e1h0/wid/0001/asset/e1h0_ci_wid0001.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7008526,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008525,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008527,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008528,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008529,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008530,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008531,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008532,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008533,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008534,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008535,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008536,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008537,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008538,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008539,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7008540,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135136,
+    "Name": "BG_008",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 244,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 256,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 256,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7032730,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 13.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135137,
+    "Name": "BG_009",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 628,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 640,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 640,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7032667,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -14.0,
+            "y": -0.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7032677,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -0.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7032695,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 14.0,
+            "y": -0.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135138,
+    "Name": "BG_010",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 436,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 448,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 448,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7032713,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -14.0,
+            "y": 6.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7032717,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 14.0,
+            "y": 6.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135139,
+    "Name": "BG_011",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 436,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 1,
+    "VersionMask": 0,
+    "ObSetReferencedList": 448,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 448,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7032719,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -14.0,
+            "y": 13.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 7032720,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 14.0,
+            "y": 13.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/hou/dyna/lmp/lp/0030/asset/lmp_s0_m0030.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 1,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 128,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 135140,
+    "Name": "BG_012",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 112,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 124,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 124,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 47,
+        "InstanceId": 7008558,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SHAmbientLightAssetPath": "bg/ffxiv/est_e1/ind/e1i3/level/envl/evl7008558.amb",
+          "EnvMapAssetPath": "bg/ffxiv/est_e1/ind/e1i3/level/envl/evl7008558.tex"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

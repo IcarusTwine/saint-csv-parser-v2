@@ -1,0 +1,4365 @@
+[
+  {
+    "LayerId": 110526,
+    "Name": "env_location",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 112,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 124,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 124,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 47,
+        "InstanceId": 5580746,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 1.489759,
+            "z": 3.936431
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SHAmbientLightAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/level/envl/evl5580746.amb",
+          "EnvMapAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/level/envl/evl5580746.tex"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 110555,
+    "Name": "position_marker",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 64,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 64,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 111822,
+    "Name": "r2e3_bg_chair_sg",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 988,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1000,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1000,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 5572801,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.02,
+            "z": -6.657732
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/shared/for_bg/sgbg_r2e3_a1_char1.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5687657,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.246169,
+            "y": 0.0,
+            "z": 4.124307
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/shared/for_bg/sgbg_r2e0_a1_cha01.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5687658,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.245909,
+            "y": 0.0,
+            "z": 3.373435
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/shared/for_bg/sgbg_r2e0_a1_cha01.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5687659,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.245059,
+            "y": 0.0,
+            "z": 0.9104068
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/shared/for_bg/sgbg_r2e0_a1_cha01.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5687660,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.24532,
+            "y": 0.0,
+            "z": 1.667234
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/shared/for_bg/sgbg_r2e0_a1_cha01.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5687661,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.245621,
+            "y": 0.0,
+            "z": 2.540117
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/shared/for_bg/sgbg_r2e0_a1_cha01.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 116030,
+    "Name": "r2e3_door",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 208,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 220,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 220,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 5392086,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 2.855096E-15,
+            "z": 10.24936
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/shared/for_bg/sgbg_r2e3_a0_door1.sgb",
+          "InitialDoorState": 3,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 109399,
+    "Name": "r2e3_furniture",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 36,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 3504,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 3516,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 3528,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 5392087,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.05489636,
+            "y": 1.813505,
+            "z": -9.822086
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_deco1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392088,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.625,
+            "y": 4.43335,
+            "z": 5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392089,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.625,
+            "y": 4.43335,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392090,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.625,
+            "y": 4.43335,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392092,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.625,
+            "y": 4.433349,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392093,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.625,
+            "y": 4.433349,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392094,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.625,
+            "y": 4.433349,
+            "z": 5.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5395113,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.614,
+            "y": 3.0,
+            "z": 5.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392121,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.614,
+            "y": 3.0,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392122,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.614,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392123,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.614,
+            "y": 3.0,
+            "z": 5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5404454,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.613147,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5404455,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.611458,
+            "y": 3.0,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572795,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.01999974,
+            "z": -5.284422
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_desk1.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_desk1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572798,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.399685,
+            "y": 0.01999998,
+            "z": -6.6135
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_chst1.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_chst1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572799,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.790163
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_carp1.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_carp1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29706,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572800,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 8.195105
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_carp2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_carp2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29706,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572802,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.1007509,
+            "z": -9.146333
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_clot1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572803,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 2.1,
+            "y": 0.01999998,
+            "z": -7.3
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_flag2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 9216,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572804,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -2.1,
+            "y": 0.0200001,
+            "z": -7.3
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_flag2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_flag2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 9216,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572807,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 1.5,
+            "y": 0.8469999,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_ligh1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572810,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -1.5,
+            "y": 0.85,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_ligh1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572813,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.838949,
+            "z": -6.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_ligh2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572829,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.410794,
+            "y": 0.01999998,
+            "z": -6.613525
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_chst1.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_chst1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572831,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.241446,
+            "y": 0.01999998,
+            "z": -9.213524
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_desk2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_desk2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572833,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.2414,
+            "y": 0.01999998,
+            "z": -9.213524
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_desk2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_desk2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572834,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.35077,
+            "y": 0.01999998,
+            "z": -2.493951
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_desk2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_desk2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5572836,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.359831,
+            "y": 0.01999998,
+            "z": 7.499949
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_desk2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_desk2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5578174,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.415675,
+            "y": 0.01999998,
+            "z": 7.521524
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_chst1.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_chst1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579290,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.40817,
+            "y": 0.0,
+            "z": 2.509045
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_desk3.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_desk3.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579291,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.354305,
+            "y": 0.01999998,
+            "z": -2.469566
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_desk2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_a1_desk2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 1024,
+          "Attribute": 29701,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5580772,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.838949,
+            "z": 4.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a1_ligh2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5582703,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_w0_lsft1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895487,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.998835,
+            "y": 3.0,
+            "z": 10.90022
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895490,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.952641,
+            "y": 3.0,
+            "z": 10.9002
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 5941176,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.01999974,
+            "z": -5.284422
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 5,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 1,
+        "InstanceId": 5582703,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 110498,
+    "Name": "r2e3_komono",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 18,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1840,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1852,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1852,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 5579294,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.5525731,
+            "y": 0.8470001,
+            "z": -5.309467
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/012/bgparts/w_itm_012_22a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579293,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.7044252,
+            "y": 0.847,
+            "z": -5.08397
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/012/bgparts/w_itm_012_24a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579805,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.692575,
+            "y": 0.8470001,
+            "z": -5.314837
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.4420849,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_01a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579806,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -1.092622,
+            "y": 0.8470002,
+            "z": -5.498159
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_01b.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579807,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -1.451577,
+            "y": 0.8480253,
+            "z": -5.589815
+          },
+          "Rotation": {
+            "x": 1.537543,
+            "y": -0.0,
+            "z": 1.5707963
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_02d.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579812,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.47776,
+            "y": 0.9644001,
+            "z": -2.779171
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_03b.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579813,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.495719,
+            "y": 0.9644001,
+            "z": -2.553424
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_03c.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579816,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.514013,
+            "y": 0.9742148,
+            "z": -2.431663
+          },
+          "Rotation": {
+            "x": -1.5707959,
+            "y": 1.3197699,
+            "z": -1.5707959
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_02e.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579817,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.770032,
+            "y": 0.9644001,
+            "z": -9.399868
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_03e.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579819,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.526176,
+            "y": 0.9644001,
+            "z": -2.044641
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_03d.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579846,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.29251,
+            "y": 1.015584,
+            "z": 2.124538
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.1514039,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.35,
+            "y": 0.35,
+            "z": 0.35
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/twn/common/bgparts/r2t0_e1_obj1a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579871,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.452419,
+            "y": 1.015584,
+            "z": 2.847912
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.31340513,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/041/bgparts/w_itm_041_01a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579876,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.502664,
+            "y": 0.9644001,
+            "z": -9.382911
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.2903872
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_02e.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579877,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -3.641748,
+            "y": 0.9644001,
+            "z": -9.159428
+          },
+          "Rotation": {
+            "x": -0.5464394,
+            "y": -0.0,
+            "z": 1.5707963
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_02f.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579878,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.735255,
+            "y": 0.9644001,
+            "z": -9.376984
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_03c.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579887,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.439371,
+            "y": 0.9644001,
+            "z": -2.340142
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.4031621,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/042/bgparts/w_itm_042_01c.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5580532,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 1.44727,
+            "z": -9.251592
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/itm/shared/for_bg/sgbg_w_itm_043_01a.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5579863,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.333322,
+            "y": 0.9644001,
+            "z": -1.802934
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.1458328,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_a0_lamp3.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 109416,
+    "Name": "r2e3_lights",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 26,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 2964,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 2976,
+    "ObSetReferencedListCount": 7,
+    "ObSetEnableReferencedList": 3060,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 3,
+        "InstanceId": 5392695,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.008816,
+            "y": 3.4,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.3
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5404449,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.008816,
+            "y": 3.4,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.3
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5404450,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.008816,
+            "y": 3.4,
+            "z": 5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.3
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5404451,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.914083,
+            "y": 3.4,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.3
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5404453,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.914083,
+            "y": 3.4,
+            "z": 5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.3
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5579502,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -2.106454,
+            "y": 3.4,
+            "z": -7.29959
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.5
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5579505,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 2.105007,
+            "y": 3.435474,
+            "z": -7.29959
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.5
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5607816,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.05345631,
+            "y": 5.627732,
+            "z": 4.353931
+          },
+          "Rotation": {
+            "x": 1.570796,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 3,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 9.88678,
+          "ConeDegree": 80.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 226,
+            "Blue": 168,
+            "Alpha": 255,
+            "Intensity": 8.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5774831,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.715452,
+            "z": -9.200756
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 184,
+            "Blue": 78,
+            "Alpha": 255,
+            "Intensity": 1.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5895496,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.2909856,
+            "y": 4.209956,
+            "z": 13.3603
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.0,
+          "ConeDegree": 31.11145,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 204,
+            "Blue": 137,
+            "Alpha": 255,
+            "Intensity": 2.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5898066,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.03573751,
+            "y": 2.055372,
+            "z": 17.2331
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.0,
+          "ConeDegree": 31.11145,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 1.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5898067,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 7.801657,
+            "y": 2.055372,
+            "z": 17.2331
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.0,
+          "ConeDegree": 31.11145,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 1.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5898068,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -7.937016,
+            "y": 2.055372,
+            "z": 17.2331
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.0,
+          "ConeDegree": 31.11145,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 1.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5899198,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.340826,
+            "y": 1.35746,
+            "z": -1.80304
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 3.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 1.5
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5579622,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.009014443,
+            "y": 4.104021,
+            "z": 7.07165
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.0,
+          "ConeDegree": 31.11145,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 204,
+            "Blue": 137,
+            "Alpha": 255,
+            "Intensity": 2.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5404452,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.914083,
+            "y": 3.4,
+            "z": -5.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.3
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5579513,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 3.034487,
+            "z": -9.117871
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 184,
+            "Blue": 78,
+            "Alpha": 255,
+            "Intensity": 2.5
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5607815,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.05345654,
+            "y": 5.6088,
+            "z": -5.502132
+          },
+          "Rotation": {
+            "x": 1.570796,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 3,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 9.88678,
+          "ConeDegree": 80.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 226,
+            "Blue": 168,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5580796,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.24,
+            "y": 5.328904,
+            "z": -9.837857
+          },
+          "Rotation": {
+            "x": 0.87266463,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 3.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 4,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 35.0,
+          "ConeDegree": 1.276245,
+          "TexturePath": "bg/ex1/01_roc_r2/evt/r2e3/texture/r2e3_a1_lmsk1_i.tex",
+          "DiffuseColorHDRI": {
+            "Red": 249,
+            "Green": 255,
+            "Blue": 249,
+            "Alpha": 255,
+            "Intensity": 15.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": -0.05235988,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5580807,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.272155,
+            "y": 5.328904,
+            "z": -9.837857
+          },
+          "Rotation": {
+            "x": 0.87266463,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 3.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 4,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 35.0,
+          "ConeDegree": 1.276245,
+          "TexturePath": "bg/ex1/01_roc_r2/evt/r2e3/texture/r2e3_a1_lmsk1_i.tex",
+          "DiffuseColorHDRI": {
+            "Red": 249,
+            "Green": 255,
+            "Blue": 249,
+            "Alpha": 255,
+            "Intensity": 15.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5899222,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.956238,
+            "y": 3.4,
+            "z": 11.71334
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5899225,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 6.005275,
+            "y": 3.4,
+            "z": 11.71334
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 2.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 2.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.1,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5579729,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -1.499893,
+            "y": 1.105355,
+            "z": -4.99744
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 1.5
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5579731,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 1.501487,
+            "y": 1.105355,
+            "z": -4.99744
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 242,
+            "Blue": 193,
+            "Alpha": 255,
+            "Intensity": 1.5
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5899230,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.05345631,
+            "y": 6.591893,
+            "z": 0.0586389
+          },
+          "Rotation": {
+            "x": 1.570796,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 3,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 9.88678,
+          "ConeDegree": 60.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 226,
+            "Blue": 168,
+            "Alpha": 255,
+            "Intensity": 8.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 6241436,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 14.92836,
+            "y": 2.055372,
+            "z": 13.45631
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.0,
+          "ConeDegree": 31.11145,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 1.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 3,
+        "InstanceId": 5898066,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5898067,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5898068,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5579513,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_all_fire.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5580796,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 5580807,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 6241436,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 109396,
+    "Name": "r2e3_room",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 12,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1204,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1216,
+    "ObSetReferencedListCount": 3,
+    "ObSetEnableReferencedList": 1252,
+    "ObSetEnableReferencedListCount": 3,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 5392075,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_tnjo1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392079,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall3.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392083,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_yuka1.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_b1_yuka1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392680,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall4.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392688,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5392689,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895474,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall5.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895475,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall6.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895479,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -2.384186E-07,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_yuka2.mdl",
+          "CollisionAssetPath": "bg/ex1/01_roc_r2/evt/r2e3/collision/r2e3_b1_yuka2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895480,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_tnjo2.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895500,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall7.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5910389,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/01_roc_r2/evt/r2e3/bgparts/r2e3_b1_wall8.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 1,
+        "InstanceId": 5392079,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895474,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895500,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_noon.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": [
+      {
+        "AssetType": 1,
+        "InstanceId": 5392079,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895474,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 5895500,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "LayerId": 93106,
+    "Name": "QB_JobWar001_002",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 208,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 224,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 224,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 4329091,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -228.6964,
+            "y": 17.57531,
+            "z": 16.68218
+          },
+          "Rotation": {
+            "x": -0.0021747658,
+            "y": 0.08311136,
+            "z": -3.4688386E-05
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 7.143756,
+            "z": 9.418715
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 4329092,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -228.8445,
+            "y": 17.57537,
+            "z": 16.71949
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.4600807,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 7.863043,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 2
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 98982,
+    "Name": "QST_JobXxx001_QM",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

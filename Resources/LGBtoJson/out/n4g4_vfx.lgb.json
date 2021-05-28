@@ -1,0 +1,165 @@
+[
+  {
+    "LayerId": 247046,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 328,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 340,
+    "ObSetReferencedListCount": 3,
+    "ObSetEnableReferencedList": 376,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 7990693,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -150.0,
+            "y": -10.0,
+            "z": 180.0
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.2985806,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex3/01_nvt_n4/common/vfx/eff/b1666smok1_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 500.0,
+          "FadeFarEnd": 800.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 7990694,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 100.0,
+            "y": 0.0,
+            "z": 100.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex3/01_nvt_n4/common/vfx/eff/b1666smok2_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 8035435,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 100.0,
+            "y": -43.0,
+            "z": 100.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex3/01_nvt_n4/common/vfx/eff/b1666smok4_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 300.0,
+          "FadeFarEnd": 500.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 7990693,
+        "OBSetAssetPath": "bgcommon/env/obset/ex3_obset/obset_nvt_n4/obset_n4_goe/obset_n4g4_kiri02.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 7990694,
+        "OBSetAssetPath": "bgcommon/env/obset/ex3_obset/obset_nvt_n4/obset_n4_goe/obset_n4g4_kiri02.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 8035435,
+        "OBSetAssetPath": "bgcommon/env/obset/ex3_obset/obset_nvt_n4/obset_n4_goe/obset_n4g4_kiri02.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

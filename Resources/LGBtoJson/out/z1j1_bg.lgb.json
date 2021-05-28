@@ -1,0 +1,793 @@
+[
+  {
+    "LayerId": 83644,
+    "Name": "bg_FakeSpecilar",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 388,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 400,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 400,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 3,
+        "InstanceId": 3851222,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.002728939,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.33983308,
+            "y": -1.0471976,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 6,
+          "Attenuation": 2.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 0.12
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 3851225,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 2.825538E-08,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": -0.33983308,
+            "y": 1.0471972,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 6,
+          "Attenuation": 2.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 0.12
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 3851220,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -2.736605E-17
+          },
+          "Rotation": {
+            "x": -1.5707963,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 6,
+          "Attenuation": 2.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.0,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 0.12
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 67387,
+    "Name": "bg_Instans",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 708,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 720,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 720,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 4979133,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.9508637,
+            "y": 0.1312106,
+            "z": 8.080459
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/zon_z1/jai/z1j1/bgparts/z1j1_b1_door1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 2,
+          "AttributeMask": 0,
+          "Attribute": 29702,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 1.29E-43
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4979134,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.005,
+            "y": 1.0,
+            "z": 1.005
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/zon_z1/jai/z1j1/bgparts/z1j1_b1_iron1.mdl",
+          "CollisionAssetPath": "bg/ffxiv/zon_z1/jai/z1j1/collision/z1j1_b1_iron1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4979135,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.001534,
+            "y": 2.521787,
+            "z": -8.202347
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/zon_z1/jai/z1j1/bgparts/z1j1_b1_lamp1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28678,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4979136,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -3.998463,
+            "y": 2.527956,
+            "z": -8.201948
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/zon_z1/jai/z1j1/bgparts/z1j1_b1_lamp1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28678,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4979137,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -3.997632,
+            "y": 2.53975,
+            "z": 8.198704
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/zon_z1/jai/z1j1/bgparts/z1j1_b1_lamp1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28678,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4979138,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 3.998075,
+            "y": 2.533584,
+            "z": 8.198302
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 3.1415927,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/zon_z1/jai/z1j1/bgparts/z1j1_b1_lamp1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28678,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 67388,
+    "Name": "bg_PointLight",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 724,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 736,
+    "ObSetReferencedListCount": 4,
+    "ObSetEnableReferencedList": 784,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 3,
+        "InstanceId": 4979139,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.000896,
+            "y": 2.988962,
+            "z": -7.533491
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 144,
+            "Blue": 63,
+            "Alpha": 255,
+            "Intensity": 3.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4979140,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.073487,
+            "y": 3.209879,
+            "z": 7.420016
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.020000007,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 144,
+            "Blue": 63,
+            "Alpha": 255,
+            "Intensity": 3.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4979141,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.051524,
+            "y": 3.217089,
+            "z": 7.483496
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 7.0,
+            "y": 7.0,
+            "z": 7.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 144,
+            "Blue": 63,
+            "Alpha": 255,
+            "Intensity": 3.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4979142,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.013488,
+            "y": 3.206102,
+            "z": -7.540207
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 6.0,
+            "y": 6.0,
+            "z": 6.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 144,
+            "Blue": 63,
+            "Alpha": 255,
+            "Intensity": 3.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 1,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4102062,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 4.915964,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 2.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 191,
+            "Green": 247,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 2.25
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 1,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4979143,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.1094161,
+            "y": 4.915964,
+            "z": 14.37518
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 191,
+            "Green": 247,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 3.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.5,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 3,
+        "InstanceId": 4979139,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_all_fire.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4979140,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_all_fire.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4979141,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_all_fire.obsb"
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4979142,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_all_fire.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 82600,
+    "Name": "bg_SpotLight",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 112,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 124,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 124,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 47,
+        "InstanceId": 4127695,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.6276584,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SHAmbientLightAssetPath": "bg/ffxiv/zon_z1/jai/z1j1/level/envl/evl4127695.amb",
+          "EnvMapAssetPath": "bg/ffxiv/zon_z1/jai/z1j1/level/envl/evl4127695.tex"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

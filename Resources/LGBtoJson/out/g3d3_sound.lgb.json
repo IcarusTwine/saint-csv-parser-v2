@@ -1,0 +1,967 @@
+[
+  {
+    "LayerId": 134916,
+    "Name": "EnvBox",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 5,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 492,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 504,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 504,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 13,
+        "InstanceId": 6997921,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 398.9054,
+            "y": 53.48928,
+            "z": 203.274
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 31.49765,
+            "y": 20.0,
+            "z": 78.75461
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.4,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/sea_s1/s1_dun/sound_s1d5_cave.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 6997922,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -444.7011,
+            "y": 276.078,
+            "z": 196.7877
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 21.09118,
+            "z": 14.22853
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.5,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/sea_s1/s1_dun/sound_s1d5_cave.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 6997923,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -255.003,
+            "y": 293.7094,
+            "z": -436.848
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 69.54807,
+            "y": 60.88622,
+            "z": 92.78173
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.5,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/sea_s1/s1_dun/sound_s1d3_in_wide.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 6997924,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -159.8158,
+            "y": 314.9859,
+            "z": -295.7189
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 66.63043,
+            "y": 34.98569,
+            "z": 105.3741
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 102,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.5,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/sea_s1/s1_dun/sound_s1d3_in_small.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 6997925,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -243.9056,
+            "y": 308.0723,
+            "z": -228.8584
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.96334,
+            "y": 28.07204,
+            "z": 72.98876
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 102,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.5,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/sea_s1/s1_dun/sound_s1d3_in_small.essb"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 134917,
+    "Name": "Obstruction",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 64,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 64,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 134919,
+    "Name": "Spot",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 7,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1716,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1728,
+    "ObSetReferencedListCount": 2,
+    "ObSetEnableReferencedList": 1752,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 6997933,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -399.4737,
+            "y": 279.5645,
+            "z": 71.73634
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 7.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_wind_blow_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8GerDD1FOQQ4DCqMEAAIA/F9G/w9RTkEPSr4XBAACAPxnCw8PUU5BDvto2wAAAgD9958DD1FOQQ3VlXkEAAIA/PfzBwwdwjkNj/8NBAACAP/RlysOz44xDerlOQgAAgD+1ZcTDWDiKQ2Djj0IAAIA/unvAw4xph0PQhLFCAACAP+O/wsOMaYdDrdriQgAAgD8OD8jDYhmGQzFZ+kIAAIA/8G7Ow+IJhkNhMg1DAACAPy6n4sO7b4tDXistQwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AADgQAAASEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAADAAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7010332,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -270.9961,
+            "y": 276.0162,
+            "z": -441.0094
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_torch_blue.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+Af4fDEwKKQzSB3MMAAIA/AACAPwAAoEEAAKBAAACgQAAAgD8AAIA/zcxMPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7010333,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -270.8998,
+            "y": 276.0162,
+            "z": -483.0664
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_torch_blue.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8tc4fDEwKKQ4CI8cMAAIA/AACAPwAAoEEAAKBAAACgQAAAgD8AAIA/AR1HPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7010334,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -229.0896,
+            "y": 276.0161,
+            "z": -482.7664
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_torch_blue.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/wFmXDEAKKQxli8cMAAIA/AACAPwAAoEEAAKBAAACgQAAAgD8AAIA/ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7010335,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -228.9355,
+            "y": 276.0161,
+            "z": -440.9563
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_torch_blue.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9972TDEAKKQ2h63MMAAIA/AACAPwAAoEEAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7020486,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 464.8639,
+            "y": 73.47587,
+            "z": 454.5826
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_torch_s.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+UbuhDpfOSQpNK40MAAIA/AAAAQAAAoEEAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7020488,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 464.8648,
+            "y": 73.44363,
+            "z": 467.643
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_torch_s.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+ybuhDI+OSQk7S6UMAAIA/AAAAQAAAoEEAAKBAAACgQAAAgD8AAIA/ZmZmPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 7020486,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7020488,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_all/obset_day/obset_day_night.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 134918,
+    "Name": "Spot_Water",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 12,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 5652,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 5664,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 5664,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 6997926,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -256.9551,
+            "y": 293.0,
+            "z": -92.19211
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 30.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_mizutamari_mono.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD90dIrDAICSQ+wv78IAAIA/fXiKwwCAkkMjw47CAACAP7fhXsMAgJJDqMqOwgAAgD9vIF/DAICSQysW+sIAAIA/B3iKwwCAkkNqbfrCAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAQAAA8EEAAKBAAACgQAAAgD/NzEw/AACAPwAAgD8AAAAABQAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997929,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -312.9265,
+            "y": 282.8289,
+            "z": -27.94246
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_calm_4ch_nofilter.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/Sd6zDQWqNQyaN0MEAAIA/XrKYw9VpjUN/MO3BAACAPxZrjMNBao1DaEvhwQAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AACgQAAASEIAAKBAAACgQAAAgD/NzEw/AACAPwAAgD8AAAAAAwAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997931,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -354.0692,
+            "y": 196.4473,
+            "z": -26.16925
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 100.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_mono.scd",
+          "SEParam": {
+            "SoundEffectType": 5,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAFAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+0qazDNJGMQ+NNz8EAAIA/AGi1wyyF30JiZ9PBAACAPwAAIEEAAMhCAACgQAAAoEAAAIA/zcxMPwAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997936,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -382.0979,
+            "y": 222.614,
+            "z": -25.54411
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 200.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_fall_far.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8iFtvDmnhEQxo6zMEAAIA/OQWqw5p4REP+4M3BAACAPzkFqsPgPoxDVuXKwQAAgD8iFtvD4D6MQ3qNysEAAIA/AAAgQQAASEMAAKBAAACgQAAAgD+amRk/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997946,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 396.0286,
+            "y": 48.37697,
+            "z": 255.22
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 25.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_calm_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9mxrZDBIJBQj0Kb0MAAIA/7NG6QwSCQUIfBW9DAACAP5rZukMEgkFCuJ4yQwAAgD/husVDBIJBQhSuMkMAAIA/uL7FQwSCQUJSOH9DAACAP+zRtkMEgkFCUjh/QwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAQAAAyEEAAKBAAACgQAAAgD+amRk/zcxMPwAAgD8AAAAABgAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997948,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 362.8896,
+            "y": 49.16325,
+            "z": 309.8447
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 25.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_calm_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 14,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 608,
+            "PointSelection": 0,
+            "Binaries": "YAILAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAABAAADIQQAAoEAAAKBAAACAP5qZGT/NzEw/AACAPwAAAAAAAIA/AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAIj2zQyVPTUKXyIZDAACAP0uyrEMlT01C1t2GQwAAgD/BeLJDBIJBQvXKi0MAAIA/EuysQwSCQULtVZ5DAACAPwAPukMEgkFCBrKPQwAAgD8XAbtDBIJBQtBlpEMAAIA/xgXCQwSCQUKKAKJDAACAP3eFw0MEgkFC3ruwQwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997951,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 317.4734,
+            "y": 50.99986,
+            "z": 340.9085
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 25.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_calm_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 14,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 608,
+            "PointSelection": 0,
+            "Binaries": "YAILAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAABAAADIQQAAoEAAAKBAAACAP5qZGT/NzEw/AACAPwAAAAAAAIA/AAAAAAAAFwAAAAAAAAAAAAAAAAAAAAAAjNGjQyVPTUKS1IZDAACAPw8LjkMlT01C2d2GQwAAgD/wvaNDJU9NQrEJm0MAAIA/p/CKQ+xRTUJVaJxDAACAP3i6okMlT01CABmfQwAAgD91kpFD7FFNQpMKuUMAAIA/mMyiQyVPTUKWGaxDAACAP8GBkUPsUU1C2W3CQwAAgD93zqNDJU9NQgsdrEMAAIA/V0ScQyVPTUILrMNDAACAP3jqo0MlT01C54O0QwAAgD/nbKtDJU9NQn2gw0MAAIA/3NapQ+xRTUK2G7JDAACAP0RitEPsUU1CCCzNQwAAgD9Mv6xDJU9NQqWGsUMAAIA/8rm/Q+xRTULjVtFDAACAP9nnrEMlT01Ci/yrQwAAgD9oQcJDJU9NQk1TxEMAAIA/guOtQyVPTUIx+KtDAACAP+AUu0MlT01C3Pe1QwAAgD/a1K1DJU9NQtBtqEMAAIA/UXK5QyVPTUL69a9DAACAP5dQtEMlT01Cp1mqQwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997954,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 426.8641,
+            "y": 58.48989,
+            "z": 384.424
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 25.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_calm_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 14,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 608,
+            "PointSelection": 0,
+            "Binaries": "YAILAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAABAAADIQQAAoEAAAKBAAACAP5qZGT/NzEw/AACAPwAAAAAAAIA/AAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAfrzTQ0pHeUK4v6dDAACAPzBqxUOuR3lC81eiQwAAgD/ry9VDrkd5QnTNq0MAAIA/BYXGQ65HeUKwsq9DAACAPzn910OuR3lCZh6vQwAAgD8wPMdDrkd5QpbjtEMAAIA/Ky7ZQ65HeULZNbJDAACAPxAR2EOuR3lCyuO0QwAAgD9aNd1Drkd5QlecuUMAAIA/xvXXQ65HeUKiPc9DAACAP6Qn4UOuR3lCLh/HQwAAgD/rEtlDrkd5QnEr00MAAIA/6a7jQ65HeUJQzc9DAACAP8Mr2UOuR3lCT8jcQwAAgD8eh+VDrkd5QsNs0kMAAIA/ni/eQ65HeUL6BeNDAACAP2rl5UOuR3lCbADjQwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997955,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 400.7708,
+            "y": 58.26963,
+            "z": 438.1246
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 25.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_calm_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 14,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 608,
+            "PointSelection": 0,
+            "Binaries": "YAILAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAABAAADIQQAAoEAAAKBAAACAP5qZGT/NzEw/AACAPwAAAAAAAIA/AAAAAAAADgAAAAAAAAAAAAAAAAAAAAAAQATPQ65HeUJ+9L9DAACAP/KpxUOuR3lC7vy/QwAAgD9/C89Drkd5Qk3zzkMAAIA/3ADDQ65HeUJpcM9DAACAP0P9zUOuR3lCxYjSQwAAgD8hZ8RDrkd5QriX2kMAAIA/8A3OQ65HeUKLbdxDAACAP5BwwUOuR3lCrubjQwAAgD+Wi8hDrkd5Qikd40MAAIA/bU3BQ65HeUJzv/FDAACAP0OFyEOuR3lCWODpQwAAgD9vSMZDrkd5QgSP9EMAAIA/vfvNQ65HeUK4JvBDAACAP9yP00OuR3lC4IT6QwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997964,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 446.8994,
+            "y": 62.33607,
+            "z": 476.5494
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 5.0,
+            "z": 25.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_river_calm_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 14,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 608,
+            "PointSelection": 0,
+            "Binaries": "YAILAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAABAAADIQQAAoEAAAKBAAACAP5qZGT/NzEw/AACAPwAAAAAAAIA/AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAcK7eQ6dZeUJx/OlDAACAPyDy5UO3V3lCHenpQwAAgD9wZt1Dt1d5Qs6g7EMAAIA/eublQ7dXeULZjfFDAACAP6AZ2UO3V3lCviDwQwAAgD+DoeBDt1d5Qit/8kMAAIA/RqXYQ7dXeUIyFfZDAACAP5Za3kNKR3lCihj1QwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997966,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 392.0419,
+            "y": 57.75997,
+            "z": 344.3166
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_fall-thin.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/nvMNDS9NNQmELr0MAAIA/mWvEQ+dMdkK48K5DAACAP8IOxEPnTHZC7pOnQwAAgD8gU8NDS9NNQu6Tp0MAAIA/AACgQAAAcEIAAKBAAACgQAAAgD9mZmY/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 6997967,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 386.1259,
+            "y": 57.45566,
+            "z": 425.8245
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 60.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_fall-thin.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/S+MBDS9NNQtX51kMAAIA/g6fBQ+dMdkIo39ZDAACAP0jIwEPnTHZCsUDRQwAAgD+lDMBDS9NNQrFA0UMAAIA/AACgQAAAcEIAAKBAAACgQAAAgD9mZmY/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

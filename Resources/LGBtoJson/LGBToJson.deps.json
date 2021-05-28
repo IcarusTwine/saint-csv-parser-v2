@@ -1,0 +1,112 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LGBToJson/1.0.0": {
+        "dependencies": {
+          "Lumina": "2.5.1",
+          "Lumina.Excel": "5.40.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "LGBToJson.dll": {}
+        }
+      },
+      "IndexRange/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/IndexRange.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Lumina/2.5.1": {
+        "dependencies": {
+          "IndexRange": "1.0.0",
+          "System.ComponentModel.Annotations": "4.7.0",
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lumina.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.5.1.0"
+          }
+        }
+      },
+      "Lumina.Excel/5.40.0": {
+        "dependencies": {
+          "Lumina": "2.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lumina.Excel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "5.40.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "System.ComponentModel.Annotations/4.7.0": {},
+      "System.Memory/4.5.3": {}
+    }
+  },
+  "libraries": {
+    "LGBToJson/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IndexRange/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FqAcAww0WM+bL05V+RziStxCQwX7x5Qv48KRewnikGGcZJl7+GKxFZ/pHKcvBDnHuzESEGoJoRGxvE6wLfnuQA==",
+      "path": "indexrange/1.0.0",
+      "hashPath": "indexrange.1.0.0.nupkg.sha512"
+    },
+    "Lumina/2.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vdnPn253WByN7D/DKy6AeYZxKUzUL3I4rQFtyrcyYJAfm/ZCPz/bM1aBoCQ3zr083nY5M7wZ/0FMceY/UyFtjQ==",
+      "path": "lumina/2.5.1",
+      "hashPath": "lumina.2.5.1.nupkg.sha512"
+    },
+    "Lumina.Excel/5.40.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DYriO6jAviBNfo5SQTOed2u8lv/nRtZyri8S/9auKKj4Gu0bfpdE9AYA29nJ75PL8TzvsCwmVRXz4Ft7cpB/Ig==",
+      "path": "lumina.excel/5.40.0",
+      "hashPath": "lumina.excel.5.40.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oG58v7FkIMewZU1tNyqKbnilEobW6I4W0xy0Q/hztjVbTVr83oXNPHwrvS24JJKrDylLingIlI/zmCHCZ5vq1A==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cPzhWlLMdqrLrgXI6J4uOY0dMpA/Y/ZAp91KPldH8seoh9S/0i8qLkAnSQbPkWSN/RaXNPt8dOubT3JhQITh2w==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    }
+  }
+}

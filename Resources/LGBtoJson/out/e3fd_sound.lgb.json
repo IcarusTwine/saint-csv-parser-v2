@@ -1,0 +1,73 @@
+[
+  {
+    "LayerId": 144511,
+    "Name": "Spot",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 292,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 304,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 316,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 7515323,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 104.565,
+            "y": -7.290798,
+            "z": 109.5188
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 5.0,
+            "z": 15.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/fst/fst_spot_mizutamari_4ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8Pi4xCOE7pwO4MAkMAAIA/rP0CQzhO6cB5GQJDAACAP4JSAUM4TunAVKeMQgAAgD8+nolCOE7pwPK+iUIAAIA/AACAPwAAcEEAAKBAAACgQAAAgD8AAAA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 7515323,
+        "OBSetAssetPath": "bgcommon/env/obset/ex2_obset/obset_est_e3/obset_e3_fld/obset_e3fd_bg_02.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

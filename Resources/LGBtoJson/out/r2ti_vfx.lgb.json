@@ -1,0 +1,71 @@
+[
+  {
+    "LayerId": 113405,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 144,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 156,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 156,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 5797371,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -7.601494,
+            "y": 0.09346346,
+            "z": 0.07769392
+          },
+          "Rotation": {
+            "x": 0.051674124,
+            "y": 1.4956516,
+            "z": 0.0512943
+          },
+          "Scale": {
+            "x": 1.057111,
+            "y": 0.7213435,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/vfx/eff/w_fire101_4y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

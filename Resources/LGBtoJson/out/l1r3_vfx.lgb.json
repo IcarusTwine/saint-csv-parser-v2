@@ -1,0 +1,600 @@
+[
+  {
+    "LayerId": 109965,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 11,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1256,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1268,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1268,
+    "ObSetEnableReferencedListCount": 8,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 5476812,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 95.3,
+            "z": 15.2
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/lak_l1/shared/for_vfx/sgvf_l1r3_b0567.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5499560,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 111.25,
+            "z": -75.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/lak_l1/shared/for_vfx/sgvf_l1r3_b0568.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 5489265,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 90.25,
+            "z": 20.657
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/lak_l1/shared/for_vfx/sgvf_l1r3_b0586.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572037,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 90.31079,
+            "y": 69.90141,
+            "z": 826.3213
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.225051,
+            "y": 3.225051,
+            "z": 3.225051
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 134
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572040,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 386.9219,
+            "y": 136.2475,
+            "z": -273.3212
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.9060673,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 3.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 111
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572041,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 431.4836,
+            "y": 125.2999,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.415921,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 3.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572042,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 282.4646,
+            "y": 132.762,
+            "z": 809.6294
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.77398044,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.33743,
+            "y": 3.33743,
+            "z": 3.33743
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572043,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 508.572,
+            "y": 74.13993,
+            "z": 766.519
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.2852633,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 2.5,
+            "y": 2.5,
+            "z": 2.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 142
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572044,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 844.5537,
+            "y": 170.6914,
+            "z": -73.19128
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.2731551,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 4.0,
+            "z": 4.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 69
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572077,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -658.5519,
+            "y": 151.8039,
+            "z": 525.882
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.0898498,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.619439,
+            "y": 4.619439,
+            "z": 4.619439
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572078,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -805.931,
+            "y": 118.6826,
+            "z": 240.1665
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.309212,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 4.0,
+            "z": 4.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_aura01f_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 153
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 5572037,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572040,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572041,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572042,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572043,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572044,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572077,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5572078,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      }
+    ]
+  }
+]

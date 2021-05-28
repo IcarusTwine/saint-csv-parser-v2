@@ -1,0 +1,2077 @@
+[
+  {
+    "LayerId": 141120,
+    "Name": "e3e9_tikei",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 56,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 5428,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 5440,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 5440,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 7348190,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.496724,
+            "y": 8.983767,
+            "z": -92.21922
+          },
+          "Rotation": {
+            "x": 0.83347,
+            "y": -0.70703256,
+            "z": -0.7699243
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/emp/035/bgparts/w_emp_035_01a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7371900,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -4.496724,
+            "y": 8.424184,
+            "z": -92.21922
+          },
+          "Rotation": {
+            "x": 0.8334701,
+            "y": -0.70703256,
+            "z": -0.7699241
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/emp/035/bgparts/w_emp_035_02a.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7397061,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -205.7335,
+            "y": 33.3476,
+            "z": -793.498
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.1170583,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_nat01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7397069,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -818.2969,
+            "y": 52.63608,
+            "z": -109.5739
+          },
+          "Rotation": {
+            "x": 0.012788324,
+            "y": 1.3449142,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_nat01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7398836,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -709.7396,
+            "y": 55.66142,
+            "z": 952.693
+          },
+          "Rotation": {
+            "x": 3.0738826,
+            "y": 1.2296822,
+            "z": 3.0745687
+          },
+          "Scale": {
+            "x": 1.452389,
+            "y": 1.252388,
+            "z": 1.452389
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_nat01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7398837,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 703.5483,
+            "y": 30.04663,
+            "z": 288.4203
+          },
+          "Rotation": {
+            "x": -0.14246322,
+            "y": 1.3351753,
+            "z": -0.14201799
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_nat01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7413339,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 703.5483,
+            "y": 27.46056,
+            "z": -251.3082
+          },
+          "Rotation": {
+            "x": 3.0205193,
+            "y": 1.1721044,
+            "z": 3.0444949
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.8,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_nat01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7424429,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -34.77184,
+            "y": 1.46135,
+            "z": -73.2262
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_san01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7424430,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.2336676,
+            "y": -0.3345217,
+            "z": -90.86662
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_san01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7445237,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 304.7815,
+            "y": 36.31328,
+            "z": -535.6021
+          },
+          "Rotation": {
+            "x": 3.0808396,
+            "y": 0.44838905,
+            "z": -3.123984
+          },
+          "Scale": {
+            "x": 0.75,
+            "y": 0.75,
+            "z": 0.75
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_nat01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7419062,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 119.0626,
+            "y": 46.43579,
+            "z": 479.1945
+          },
+          "Rotation": {
+            "x": -0.16382177,
+            "y": -0.14631501,
+            "z": 0.10527847
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_u1_nat02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510232,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 21.31496,
+            "y": 0.07259819,
+            "z": 5.438803
+          },
+          "Rotation": {
+            "x": 1.2596232E-06,
+            "y": -1.5366864,
+            "z": -1.2173734E-06
+          },
+          "Scale": {
+            "x": 0.7005749,
+            "y": 0.7005749,
+            "z": 0.7005749
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510234,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -24.03164,
+            "y": 0.06800111,
+            "z": 4.817786
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.8098295,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk03.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510235,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -26.28127,
+            "y": 0.07964713,
+            "z": 11.6394
+          },
+          "Rotation": {
+            "x": 3.1140149,
+            "y": 1.5031807,
+            "z": -3.101506
+          },
+          "Scale": {
+            "x": 0.8905995,
+            "y": 0.8905995,
+            "z": 0.8905995
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk04.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510236,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 7.714859,
+            "y": 0.04097674,
+            "z": 27.79664
+          },
+          "Rotation": {
+            "x": 0.09951076,
+            "y": -0.2070163,
+            "z": -0.111439444
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510237,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 6.570747,
+            "y": 0.01584032,
+            "z": 26.07342
+          },
+          "Rotation": {
+            "x": -4.8711653E-23,
+            "y": 0.28967246,
+            "z": -7.104965E-24
+          },
+          "Scale": {
+            "x": 1.134042,
+            "y": 1.134042,
+            "z": 1.134042
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk10.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510238,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -11.69413,
+            "y": 0.004203409,
+            "z": 21.48161
+          },
+          "Rotation": {
+            "x": -0.06926231,
+            "y": -0.7081939,
+            "z": 0.36307806
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk09.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510239,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 7.641191,
+            "y": 0.100901,
+            "z": 28.21946
+          },
+          "Rotation": {
+            "x": -0.06238374,
+            "y": -0.5541351,
+            "z": 0.1287321
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510240,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.272578,
+            "y": 0.03714487,
+            "z": 28.23373
+          },
+          "Rotation": {
+            "x": 7.2164497E-16,
+            "y": 8.51261E-32,
+            "z": -2.3592245E-16
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk08.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510243,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -11.10943,
+            "y": 0.04626357,
+            "z": 21.25942
+          },
+          "Rotation": {
+            "x": 0.15634458,
+            "y": 1.3079786,
+            "z": 0.23192912
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510244,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.50739,
+            "y": 0.0406306,
+            "z": 10.84553
+          },
+          "Rotation": {
+            "x": 0.0544622,
+            "y": -0.45490158,
+            "z": -0.056748983
+          },
+          "Scale": {
+            "x": 0.9117577,
+            "y": 0.9117577,
+            "z": 0.9117577
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510246,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.81136,
+            "y": 0.0,
+            "z": 5.036898
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk06.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510247,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -12.3186,
+            "y": 0.08938958,
+            "z": 17.59482
+          },
+          "Rotation": {
+            "x": -2.7525938,
+            "y": 1.265475,
+            "z": -2.76893
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk03.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510248,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.92964,
+            "y": -0.00154971,
+            "z": 21.33025
+          },
+          "Rotation": {
+            "x": -3.3011332E-08,
+            "y": 0.71637726,
+            "z": -3.9964828E-08
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk04.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510249,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.5436,
+            "y": 0.0286976,
+            "z": -25.51831
+          },
+          "Rotation": {
+            "x": 0.068552606,
+            "y": -1.5053914,
+            "z": -0.11397454
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510251,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 24.26947,
+            "y": 1.192093E-07,
+            "z": 11.41492
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510252,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -27.19715,
+            "y": 0.07824852,
+            "z": -6.056766
+          },
+          "Rotation": {
+            "x": -0.23995294,
+            "y": 1.0275254,
+            "z": -0.159449
+          },
+          "Scale": {
+            "x": 0.8802343,
+            "y": 0.8802343,
+            "z": 0.8802343
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk08.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510253,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 22.89662,
+            "y": 1.107544E-06,
+            "z": 10.63594
+          },
+          "Rotation": {
+            "x": -2.7146623E-07,
+            "y": 1.2407637,
+            "z": -1.939588E-07
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk09.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510254,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 21.02389,
+            "y": 0.1286521,
+            "z": 4.636786
+          },
+          "Rotation": {
+            "x": -0.25159532,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk10.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510255,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -26.22115,
+            "y": -0.05087419,
+            "z": 11.14457
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk06.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510297,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -19.00376,
+            "y": -0.09207878,
+            "z": -14.42357
+          },
+          "Rotation": {
+            "x": 0.20896932,
+            "y": -0.0074711824,
+            "z": -0.0010936639
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk06.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510298,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -18.90958,
+            "y": 0.1135841,
+            "z": -14.91615
+          },
+          "Rotation": {
+            "x": -1.1405813,
+            "y": -1.3807653,
+            "z": 1.0488663
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510300,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.58065,
+            "y": 0.09731396,
+            "z": -21.06124
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510445,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 17.64757,
+            "y": 0.06631821,
+            "z": -21.65101
+          },
+          "Rotation": {
+            "x": 2.8228886,
+            "y": 0.89862674,
+            "z": 3.0069406
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk09.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510446,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.49863,
+            "y": -5.250944E-08,
+            "z": -21.45965
+          },
+          "Rotation": {
+            "x": -0.06894958,
+            "y": 0.30872607,
+            "z": -0.02135955
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk10.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510447,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.51074,
+            "y": 0.04079446,
+            "z": -22.17065
+          },
+          "Rotation": {
+            "x": -6.4296444E-07,
+            "y": 1.5650291,
+            "z": -6.4296444E-07
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk08.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510448,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.58286,
+            "y": 0.1341383,
+            "z": 20.82693
+          },
+          "Rotation": {
+            "x": -8.1927574E-08,
+            "y": 1.2323191,
+            "z": -1.1569619E-07
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510450,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.27287,
+            "y": 0.01483393,
+            "z": 29.30866
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk04.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510451,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -11.36333,
+            "y": 0.09157087,
+            "z": 19.39142
+          },
+          "Rotation": {
+            "x": -2.0804046E-08,
+            "y": 0.4358112,
+            "z": -3.324891E-08
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk08.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510453,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -17.70982,
+            "y": 3.87795E-09,
+            "z": 11.63521
+          },
+          "Rotation": {
+            "x": -2.8818562,
+            "y": -1.500382,
+            "z": 2.8000073
+          },
+          "Scale": {
+            "x": 1.40376,
+            "y": 1.40376,
+            "z": 1.40376
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk10.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510454,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 11.74927,
+            "y": 0.1245267,
+            "z": 24.20283
+          },
+          "Rotation": {
+            "x": 0.0026974813,
+            "y": 0.22151893,
+            "z": -0.0096687265
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510456,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -18.10497,
+            "y": 0.07511159,
+            "z": 23.39936
+          },
+          "Rotation": {
+            "x": -8.77752E-09,
+            "y": 0.066566736,
+            "z": -3.0207968E-08
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510457,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 18.53424,
+            "y": 0.1083696,
+            "z": -22.68336
+          },
+          "Rotation": {
+            "x": -2.635126,
+            "y": 0.7937,
+            "z": -2.9104257
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk04.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510458,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -9.306697,
+            "y": 0.02562564,
+            "z": 22.2084
+          },
+          "Rotation": {
+            "x": -3.3011332E-08,
+            "y": 0.71637726,
+            "z": -3.9964828E-08
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510459,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.57362,
+            "y": -3.017485E-07,
+            "z": 20.47621
+          },
+          "Rotation": {
+            "x": -3.3011332E-08,
+            "y": 0.71637726,
+            "z": -3.9964828E-08
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk06.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510480,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -27.06968,
+            "y": 2.384186E-07,
+            "z": -5.634393
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.1309416,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk09.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510526,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -23.1679,
+            "y": -0.04067033,
+            "z": -6.660414
+          },
+          "Rotation": {
+            "x": 1.7615242,
+            "y": 1.0268123,
+            "z": 1.2136302
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk03.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510533,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -23.20157,
+            "y": 0.03114502,
+            "z": -6.545738
+          },
+          "Rotation": {
+            "x": -0.039768375,
+            "y": -0.060438607,
+            "z": -0.07176379
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk04.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510558,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 14.52861,
+            "y": 0.1021725,
+            "z": -16.39462
+          },
+          "Rotation": {
+            "x": 0.03618272,
+            "y": -0.0007113697,
+            "z": 0.048212886
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510575,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -21.16275,
+            "y": 0.04131097,
+            "z": -4.265735
+          },
+          "Rotation": {
+            "x": 3.5220413E-10,
+            "y": -0.12969808,
+            "z": 0.028859213
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510577,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -22.51823,
+            "y": 0.05644463,
+            "z": -2.811314
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510579,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -18.50644,
+            "y": 0.1143343,
+            "z": -12.31946
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk06.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510580,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -22.81849,
+            "y": 0.1302558,
+            "z": -6.395518
+          },
+          "Rotation": {
+            "x": -0.9885971,
+            "y": -1.320797,
+            "z": 1.0044278
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510594,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 24.76645,
+            "y": 0.0,
+            "z": -21.72727
+          },
+          "Rotation": {
+            "x": -0.013888253,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk09.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510595,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -37.01111,
+            "y": 0.1094179,
+            "z": 5.671067
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.3766936,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.8172146,
+            "y": 0.8172146,
+            "z": 0.8172146
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk06.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 7510662,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.489196,
+            "y": 0.04977448,
+            "z": -24.74022
+          },
+          "Rotation": {
+            "x": 0.095645495,
+            "y": -0.0,
+            "z": -0.04869359
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex2/02_est_e3/evt/e3e9/bgparts/e3e9_a1_grk05.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 142432,
+    "Name": "env_location",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 112,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 124,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 124,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 47,
+        "InstanceId": 7401613,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -1.130275,
+            "y": 1.028367,
+            "z": 3.325962
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SHAmbientLightAssetPath": "bg/ex2/02_est_e3/evt/e3e9/level/envl/evl7401613.amb",
+          "EnvMapAssetPath": "bg/ex2/02_est_e3/evt/e3e9/level/envl/evl7401613.tex"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 141121,
+    "Name": "position_marker",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 64,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 64,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

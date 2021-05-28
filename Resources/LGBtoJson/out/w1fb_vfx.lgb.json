@@ -1,0 +1,686 @@
+[
+  {
+    "LayerId": 93225,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 16,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1588,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1600,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1600,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 4977047,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 60.5546,
+            "y": -19.013,
+            "z": 33.28229
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 4.0,
+            "z": 4.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5smok_2sy.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977048,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -6.906403,
+            "y": -10.5269,
+            "z": -98.33807
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 5.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5smok_2sy.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977049,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -36.39972,
+            "y": -17.14861,
+            "z": 127.0842
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 6.0,
+            "y": 5.0,
+            "z": 6.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5smok_2sy.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977050,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -101.5631,
+            "y": -15.79179,
+            "z": -131.8635
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 9.0,
+            "z": 10.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5smok_2sy.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977051,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -170.5209,
+            "y": 12.69769,
+            "z": -68.88892
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 7.0,
+            "y": 5.0,
+            "z": 7.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977052,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 167.6784,
+            "y": -0.4992981,
+            "z": -94.20361
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 5.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977053,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 165.9614,
+            "y": -1.519104,
+            "z": 23.86963
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 4.684183,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 7.0,
+            "y": 6.0,
+            "z": 7.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977054,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 1.255707,
+            "y": 0.8081055,
+            "z": 0.9954224
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire03_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977055,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -53.53992,
+            "y": -0.821701,
+            "z": -186.3928
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire04_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977056,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.08081055,
+            "y": -0.9886017,
+            "z": -196.914
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.687104,
+            "y": 2.687104,
+            "z": 2.687104
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire04_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977057,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -100.813,
+            "y": -11.5352,
+            "z": 58.05267
+          },
+          "Rotation": {
+            "x": -1.0697064,
+            "y": -0.58376026,
+            "z": 1.2251917
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire04_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977058,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -187.2632,
+            "y": 9.0047,
+            "z": -2.750122
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire04_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977059,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -53.35602,
+            "y": -0.628006,
+            "z": -174.965
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 8.0,
+            "y": 8.0,
+            "z": 8.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977060,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 136.7134,
+            "y": -20.63071,
+            "z": -47.47192
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": -1.5707964,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 8.0,
+            "y": 8.0,
+            "z": 8.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5smok_2sy.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4977061,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 54.2692,
+            "y": -0.3630981,
+            "z": 194.129
+          },
+          "Rotation": {
+            "x": -2.992753,
+            "y": -0.06509389,
+            "z": 3.1400776
+          },
+          "Scale": {
+            "x": 6.5,
+            "y": 7.5,
+            "z": 6.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1d5fire05_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4391384,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/shared/for_vfx/sgvf_w1d5_b0259.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

@@ -1,0 +1,169 @@
+[
+  {
+    "LayerId": 122106,
+    "Name": "QST_HeaVnr204",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 368,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 384,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 384,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 40,
+        "InstanceId": 6213208,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 7.128586,
+            "y": -66.90001,
+            "z": 11.92141
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.5294263,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 1.0,
+            "z": 4.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": 11.92141,
+              "y": -3.1415927,
+              "z": -0.5294263
+            },
+            {
+              "x": -3.1415927,
+              "y": 4.0,
+              "z": 1.0
+            },
+            {
+              "x": 4.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 1.657,
+              "z": -0.038
+            },
+            {
+              "x": 1.523,
+              "y": 0.629,
+              "z": -0.015
+            },
+            {
+              "x": 0.512,
+              "y": 2.257,
+              "z": -0.007
+            },
+            {
+              "x": 1.249,
+              "y": -0.512,
+              "z": -0.1
+            },
+            {
+              "x": 2.409,
+              "y": 1.768,
+              "z": -0.1
+            },
+            {
+              "x": 0.681,
+              "y": 0.475,
+              "z": 0.0
+            },
+            {
+              "x": -0.83,
+              "y": -2.142,
+              "z": -0.095
+            },
+            {
+              "x": 3.27,
+              "y": 2.462,
+              "z": 0.0
+            },
+            {
+              "x": -1.594,
+              "y": -0.354,
+              "z": -0.082
+            },
+            {
+              "x": 1.529,
+              "y": 0.236,
+              "z": 0.0
+            },
+            {
+              "x": 0.557,
+              "y": 1.228,
+              "z": -0.1
+            },
+            {
+              "x": 0.59,
+              "y": -1.839,
+              "z": 0.0
+            },
+            {
+              "x": -2.059,
+              "y": -1.165,
+              "z": 0.0
+            },
+            {
+              "x": -0.047,
+              "y": -0.013,
+              "z": -0.1
+            },
+            {
+              "x": 2.094,
+              "y": -0.03,
+              "z": 0.0
+            },
+            {
+              "x": 0.097,
+              "y": -0.677,
+              "z": 0.0
+            }
+          ]
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

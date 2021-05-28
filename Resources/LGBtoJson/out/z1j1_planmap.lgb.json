@@ -1,0 +1,205 @@
+[
+  {
+    "LayerId": 67391,
+    "Name": "LVD_position_0102",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 91099,
+    "Name": "LVD_zone_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 368,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 384,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 384,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 40,
+        "InstanceId": 4979146,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 3.153162,
+            "y": -0.1173135,
+            "z": -0.0505221
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -0.0505221,
+              "y": 0.0,
+              "z": -1.5704509
+            },
+            {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            {
+              "x": 1.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.414,
+              "z": 0.0
+            },
+            {
+              "x": 0.381,
+              "y": 0.47,
+              "z": 0.0
+            },
+            {
+              "x": 0.381,
+              "y": -0.112,
+              "z": -0.001
+            },
+            {
+              "x": -0.651,
+              "y": -0.198,
+              "z": 0.001
+            },
+            {
+              "x": 0.926,
+              "y": 0.178,
+              "z": 0.0
+            },
+            {
+              "x": -0.102,
+              "y": -0.102,
+              "z": 0.0
+            },
+            {
+              "x": 0.63,
+              "y": 0.446,
+              "z": 0.0
+            },
+            {
+              "x": 0.223,
+              "y": -0.261,
+              "z": 0.0
+            },
+            {
+              "x": -0.617,
+              "y": -0.214,
+              "z": 0.0
+            },
+            {
+              "x": -0.628,
+              "y": 0.952,
+              "z": -0.001
+            },
+            {
+              "x": 0.296,
+              "y": 0.829,
+              "z": -0.001
+            },
+            {
+              "x": -0.205,
+              "y": 0.812,
+              "z": -0.001
+            },
+            {
+              "x": -0.529,
+              "y": -0.716,
+              "z": 0.0
+            },
+            {
+              "x": -0.512,
+              "y": -0.011,
+              "z": 0.0
+            },
+            {
+              "x": 0.45,
+              "y": 0.008,
+              "z": 0.0
+            },
+            {
+              "x": -0.005,
+              "y": -0.165,
+              "z": 0.0
+            }
+          ]
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

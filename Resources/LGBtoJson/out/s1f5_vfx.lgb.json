@@ -1,0 +1,1504 @@
+[
+  {
+    "LayerId": 73526,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 37,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 3456,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 3468,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 3468,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 2772165,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 211.6001,
+            "y": 367.2263,
+            "z": -1519.079
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.5,
+            "y": 2.5,
+            "z": 2.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1bigsmok1_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 2600.0,
+          "FadeFarEnd": 2800.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4012957,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -597.6,
+            "y": 40.256,
+            "z": -118.8
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5taki01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 108,
+            "Green": 108,
+            "Blue": 108,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 370.0,
+          "FadeFarEnd": 430.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4013384,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -632.833,
+            "y": -2.978,
+            "z": -78.512
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5taki02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 108,
+            "Green": 108,
+            "Blue": 108,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 370.0,
+          "FadeFarEnd": 430.0,
+          "ZCorrect": 0.3
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015139,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 467.9128,
+            "y": 3.909009,
+            "z": 106.6228
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.5148847,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.1,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 55,
+            "Green": 60,
+            "Blue": 58,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015145,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 474.5307,
+            "y": 6.509699,
+            "z": 106.9058
+          },
+          "Rotation": {
+            "x": 3.0353668,
+            "y": 1.4614623,
+            "z": 3.0366688
+          },
+          "Scale": {
+            "x": 1.2,
+            "y": 0.8,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 100,
+            "Green": 110,
+            "Blue": 107,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015166,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 508.0707,
+            "y": 16.26403,
+            "z": 58.36715
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.0929056,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 142,
+            "Green": 155,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.05
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015356,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 510.8371,
+            "y": 16.30324,
+            "z": 85.31475
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.55045474,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.9,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 142,
+            "Green": 155,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015453,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 426.8986,
+            "y": 3.908909,
+            "z": 125.1585
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.2924212,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.62,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 142,
+            "Green": 155,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015469,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 397.0792,
+            "y": -0.08769947,
+            "z": 86.46626
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.275779,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.1,
+            "y": 0.6,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 142,
+            "Green": 155,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015390,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 492.5557,
+            "y": 8.812325,
+            "z": 95.0032
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.2030892,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.03,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr03_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 219,
+            "Green": 255,
+            "Blue": 227,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4015436,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 468.9145,
+            "y": 3.902843,
+            "z": 71.42591
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.5033041,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr03_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 217,
+            "Green": 224,
+            "Blue": 219,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 3986921,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 523.1007,
+            "y": 22.58439,
+            "z": 45.94872
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.8940214,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.3125104,
+            "y": 0.45,
+            "z": 0.3804165
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5taki03_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 132,
+            "Green": 132,
+            "Blue": 132,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 400.0,
+          "FadeFarEnd": 350.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031284,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 217.8269,
+            "y": 3.028856,
+            "z": 65.31661
+          },
+          "Rotation": {
+            "x": -0.0032111825,
+            "y": -1.0465431,
+            "z": 0.0037179005
+          },
+          "Scale": {
+            "x": 1.8,
+            "y": 1.0,
+            "z": 0.8
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031299,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 221.0453,
+            "y": 3.114698,
+            "z": 68.4388
+          },
+          "Rotation": {
+            "x": -0.0018774368,
+            "y": -0.54297984,
+            "z": 0.0019080342
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.0,
+            "z": 0.7
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031318,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 217.9073,
+            "y": 3.04193,
+            "z": 56.55821
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.0336186,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.7,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031323,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 221.1696,
+            "y": 3.354539,
+            "z": 53.46562
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.7146619,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 0.7
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031326,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 229.8119,
+            "y": 3.23812,
+            "z": 68.45155
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.5182848,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.4,
+            "y": 0.5,
+            "z": 0.4
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031340,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 232.9697,
+            "y": 3.246957,
+            "z": 56.53518
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.0345856,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.4,
+            "y": 0.45,
+            "z": 0.45
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031345,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 229.778,
+            "y": 3.341596,
+            "z": 53.52917
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.5470944,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.3,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4056852,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 389.3987,
+            "y": -2.844225,
+            "z": 50.37411
+          },
+          "Rotation": {
+            "x": -0.00018565853,
+            "y": -1.007571,
+            "z": 0.00019933721
+          },
+          "Scale": {
+            "x": 1.3,
+            "y": 0.9,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr03_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 241,
+            "Green": 255,
+            "Blue": 240,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4056857,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 383.8086,
+            "y": -3.100019,
+            "z": 59.146
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.9451546,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.1,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5watr01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 174,
+            "Green": 174,
+            "Blue": 174,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816014,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 411.7865,
+            "y": 8.326757,
+            "z": 42.77714
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816019,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 413.7378,
+            "y": 3.990296,
+            "z": 69.9749
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816022,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 425.8904,
+            "y": 3.861616,
+            "z": 122.9184
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816024,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 394.0691,
+            "y": 0.02002487,
+            "z": 84.42385
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816026,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 435.2277,
+            "y": 7.916398,
+            "z": 145.9566
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816028,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 482.6736,
+            "y": 16.43291,
+            "z": 65.34824
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 150,
+            "Green": 150,
+            "Blue": 150,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816029,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 502.3885,
+            "y": 16.2965,
+            "z": 77.83247
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816031,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 469.5593,
+            "y": 6.606825,
+            "z": 109.002
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816032,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 408.5875,
+            "y": 4.079839,
+            "z": 99.29436
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2816035,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 502.0197,
+            "y": 20.34324,
+            "z": 36.68112
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 2824952,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 385.9222,
+            "y": 0.07566553,
+            "z": 60.59336
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4081244,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 433.9773,
+            "y": 3.990295,
+            "z": 94.7056
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4081245,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 513.1622,
+            "y": 23.04897,
+            "z": 57.09065
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1_onsmk01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 150.0,
+          "FadeFarEnd": 200.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4175114,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 236.949,
+            "y": 1.589,
+            "z": 60.589
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01by.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4031335,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 233.0263,
+            "y": 3.23812,
+            "z": 65.27391
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0404252,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.4,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4174820,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 216.7437,
+            "y": -2.92,
+            "z": 61.04109
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/sea_s1/common/vfx/eff/s1f5wasn01ao.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 90540,
+    "Name": "VFX_002",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 64,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 64,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

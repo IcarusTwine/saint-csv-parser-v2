@@ -1,0 +1,73 @@
+[
+  {
+    "LayerId": 253945,
+    "Name": "Spot_Poison",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 292,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 304,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 316,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8341215,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 104.3937,
+            "y": 0.0,
+            "z": 108.3995
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.0,
+            "y": 5.0,
+            "z": 40.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/spot_wnd/spot_wnd_Weather_PoisonGas.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD90vpRCAAAAAOYf+0IAAIA/aBH7QgAAAADmH/tCAACAP2gR+0IAAAAADKqUQgAAgD90vpRCAAAAAAyqlEIAAIA/AABAQAAAIEIAAKBAAACgQAAAgD9mZuY+AABAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8341215,
+        "OBSetAssetPath": "bgcommon/env/obset/ex3_obset/obset_nvt_n4/obset_n4_btl/obset_n4b3.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "LayerId": 99195,
+    "Name": "obstruction",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 244,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 256,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 256,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 4660316,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 41.42795,
+            "y": -4.042346,
+            "z": -87.03747
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 8,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAIAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8kiX7D5lqBwH5tfMMAAIA/lWR7Q+ZagcB+bXzDAACAP5Vke0PmWoHAVSB1QwAAgD8kiX7D5lqBwFUgdUMAAIA/AACAPwAAgD8PAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 99194,
+    "Name": "Sound",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 5,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1252,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1264,
+    "ObSetReferencedListCount": 2,
+    "ObSetEnableReferencedList": 1288,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 4660315,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.20426,
+            "y": -3.408546,
+            "z": 22.816
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 5.0,
+            "z": 700.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/ocn/ocn_spot_ship_creak_and_wave_4ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9sVpXCniVawHAYrEIAAIA/9CqUQp4lWsBwGKxCAACAP/QqlEKeJVrApkK1wgAAgD9sVpXCniVawKZCtcIAAIA/AAAAPwAAL0QAAKBAAACgQAAAgD+amVk/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4660317,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.50426,
+            "y": -4.63841,
+            "z": 23.116
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 5.0,
+            "z": 700.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/ocn/ocn_spot_underwater_4ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9sVpXC222UwHAYrEIAAIA/9CqUQtttlMBwGKxCAACAP/QqlELbbZTApkK1wgAAgD9sVpXC222UwKZCtcIAAIA/AAAAPwAAL0QAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4660318,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.50426,
+            "y": 25.47378,
+            "z": 23.116
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.1,
+            "y": 5.0,
+            "z": 700.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/ocn/ocn_bg_levia_spot.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9sVpXCTcrLQXAYrEIAAIA/9CqUQk3Ky0FwGKxCAACAP/QqlEJNystBpkK1wgAAgD9sVpXCTcrLQaZCtcIAAIA/zczMPQAAL0QAAKBAAACgQAAAgD9mZmY/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4660321,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.80426,
+            "y": 25.40123,
+            "z": 23.416
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.1,
+            "y": 5.0,
+            "z": 850.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/ocn/ocn_bg_levia_1_loop.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9sVpXCuDXLQXAYrEIAAIA/9CqUQrg1y0FwGKxCAACAP/QqlEK4NctBpkK1wgAAgD9sVpXCuDXLQaZCtcIAAIA/zczMPQCAVEQAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4660322,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.10426,
+            "y": 25.35808,
+            "z": 23.716
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.1,
+            "y": 5.0,
+            "z": 850.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/ocn/ocn_bg_levia_2_loop.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9sVpXCXt3KQXAYrEIAAIA/9CqUQl7dykFwGKxCAACAP/QqlEJe3cpBpkK1wgAAgD9sVpXCXt3KQaZCtcIAAIA/zczMPQCAVEQAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 4660321,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_snd/obset_o1fa_snd_levia_1.obsb"
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4660322,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_ocn_o1/obset_o1_snd/obset_o1fa_snd_levia_2.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

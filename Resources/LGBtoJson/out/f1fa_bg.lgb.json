@@ -1,0 +1,6649 @@
+[
+  {
+    "LayerId": 85109,
+    "Name": "bgparts",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 64,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 64,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 94910,
+    "Name": "enkei",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 5,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 532,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 544,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 544,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 4404971,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -70.63743,
+            "y": 3.319484,
+            "z": 132.5293
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_a1_enk01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4404974,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 134.9328,
+            "y": -14.23943,
+            "z": 139.8045
+          },
+          "Rotation": {
+            "x": 0.050642334,
+            "y": 0.89473003,
+            "z": 0.027995605
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_a1_enk01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4404977,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 163.554,
+            "y": 9.03015,
+            "z": -38.53281
+          },
+          "Rotation": {
+            "x": 3.108248,
+            "y": 0.60334045,
+            "z": 3.096722
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_a1_enk01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4404982,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -7.865822,
+            "y": 11.92463,
+            "z": -139.2261
+          },
+          "Rotation": {
+            "x": 3.1106324,
+            "y": -0.48035738,
+            "z": 3.1299565
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_a1_enk01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4404983,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -154.3879,
+            "y": -6.268619,
+            "z": 4.146795
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.4838123,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_a1_enk01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 85815,
+    "Name": "envlocation",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 112,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 124,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 124,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 47,
+        "InstanceId": 4039162,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 1.5,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SHAmbientLightAssetPath": "bg/ffxiv/fst_f1/fld/f1fa/level/envl/evl4039162.amb",
+          "EnvMapAssetPath": "bg/ffxiv/fst_f1/fld/f1fa/level/envl/evl4039162.tex"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 94868,
+    "Name": "ibara",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 29,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 2836,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 2848,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 2848,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 4395087,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.5231,
+            "y": -4.261726,
+            "z": -25.72161
+          },
+          "Rotation": {
+            "x": -3.0076563,
+            "y": -0.16096884,
+            "z": -3.041793
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395084,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -18.85785,
+            "y": -4.04891,
+            "z": -19.03627
+          },
+          "Rotation": {
+            "x": 3.032548,
+            "y": -0.5891101,
+            "z": -3.108168
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395308,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -23.87594,
+            "y": 0.0,
+            "z": -5.659577
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock1.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395081,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -23.23164,
+            "y": -4.338086,
+            "z": 6.326078
+          },
+          "Rotation": {
+            "x": -0.033464387,
+            "y": 1.1547911,
+            "z": -0.399712
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397007,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -22.50817,
+            "y": -0.6553929,
+            "z": 4.84331
+          },
+          "Rotation": {
+            "x": 1.5155133,
+            "y": 1.071382,
+            "z": 2.3131006
+          },
+          "Scale": {
+            "x": 0.9241382,
+            "y": 0.9241382,
+            "z": 0.9241382
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395079,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -24.40499,
+            "y": -2.353528,
+            "z": 4.144153
+          },
+          "Rotation": {
+            "x": 1.802248,
+            "y": -1.401452,
+            "z": -1.6300422
+          },
+          "Scale": {
+            "x": 0.8392034,
+            "y": 0.8392034,
+            "z": 0.8392034
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4394962,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.01837461,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.92,
+            "y": 0.92,
+            "z": 0.92
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_p1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397309,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -7.047691,
+            "y": -1.595748,
+            "z": 19.17726
+          },
+          "Rotation": {
+            "x": 2.3383207,
+            "y": -0.99134755,
+            "z": -0.705659
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395078,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.400905,
+            "y": -5.838766,
+            "z": 23.87667
+          },
+          "Rotation": {
+            "x": -2.9369023,
+            "y": 1.0693674,
+            "z": 3.10555
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395077,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 6.107585,
+            "y": -4.344152,
+            "z": 19.03445
+          },
+          "Rotation": {
+            "x": 2.801894,
+            "y": 0.36238116,
+            "z": 2.9078863
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395065,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 2.231037,
+            "y": -4.369816,
+            "z": 26.36142
+          },
+          "Rotation": {
+            "x": 0.11644776,
+            "y": -0.0016768116,
+            "z": -0.023911202
+          },
+          "Scale": {
+            "x": 0.9119473,
+            "y": 0.9119473,
+            "z": 0.9119473
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395074,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.55864,
+            "y": -4.452703,
+            "z": 18.93542
+          },
+          "Rotation": {
+            "x": 0.15497556,
+            "y": 0.3948947,
+            "z": -0.20412952
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397311,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 17.00669,
+            "y": -0.6910748,
+            "z": 16.07899
+          },
+          "Rotation": {
+            "x": 2.9641085,
+            "y": -1.0912209,
+            "z": 2.3358264
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395075,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 22.4393,
+            "y": -2.092919,
+            "z": -0.6598108
+          },
+          "Rotation": {
+            "x": 2.8026779,
+            "y": -0.7719452,
+            "z": -2.8384063
+          },
+          "Scale": {
+            "x": 0.89779,
+            "y": 0.89779,
+            "z": 0.89779
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397314,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.98071,
+            "y": -1.394736,
+            "z": -2.424326
+          },
+          "Rotation": {
+            "x": 1.605821,
+            "y": 0.47596228,
+            "z": -0.37005132
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395076,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 16.59246,
+            "y": -4.601116,
+            "z": -12.33475
+          },
+          "Rotation": {
+            "x": -1.5373623,
+            "y": -1.4861666,
+            "z": 1.291956
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395085,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 22.34563,
+            "y": -2.434811,
+            "z": -12.30743
+          },
+          "Rotation": {
+            "x": -2.995226,
+            "y": 1.4056215,
+            "z": -2.8403697
+          },
+          "Scale": {
+            "x": 0.8209739,
+            "y": 0.8209739,
+            "z": 0.8209739
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395091,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 11.84275,
+            "y": -2.409021,
+            "z": -21.67893
+          },
+          "Rotation": {
+            "x": -2.6686697,
+            "y": 0.48692054,
+            "z": -2.6121278
+          },
+          "Scale": {
+            "x": 0.909246,
+            "y": 0.909246,
+            "z": 0.909246
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397312,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 2.761779,
+            "y": -1.340233,
+            "z": -21.32777
+          },
+          "Rotation": {
+            "x": -0.40103862,
+            "y": 1.2919486,
+            "z": -2.142786
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397009,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.37886,
+            "y": -1.340233,
+            "z": -15.29613
+          },
+          "Rotation": {
+            "x": -1.0312755,
+            "y": 0.93022805,
+            "z": -2.759671
+          },
+          "Scale": {
+            "x": 0.7815996,
+            "y": 0.7815996,
+            "z": 0.7815996
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395089,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.4767,
+            "y": -3.080348,
+            "z": -21.61257
+          },
+          "Rotation": {
+            "x": 0.26772812,
+            "y": -0.23741803,
+            "z": -0.2533527
+          },
+          "Scale": {
+            "x": 0.9660397,
+            "y": 0.9660397,
+            "z": 0.9660397
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395280,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.43289,
+            "y": 0.1896515,
+            "z": -21.09764
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock1.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397962,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -0.07768044,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_p1_ibr02.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395252,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 7.413562,
+            "y": -1.81321,
+            "z": 22.35739
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.32940856,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.490949,
+            "y": 1.490949,
+            "z": 1.490949
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395073,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -9.585902,
+            "y": -0.8220612,
+            "z": 22.32067
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.35680798,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.490949,
+            "y": 1.105592,
+            "z": 1.490949
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395262,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.0775,
+            "y": -1.416102,
+            "z": -18.75976
+          },
+          "Rotation": {
+            "x": 3.1070998,
+            "y": 0.57527137,
+            "z": -3.1295464
+          },
+          "Scale": {
+            "x": 1.490949,
+            "y": 1.490949,
+            "z": 1.490949
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395257,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.2823786,
+            "y": -1.993488,
+            "z": -25.32827
+          },
+          "Rotation": {
+            "x": -3.0681162,
+            "y": -0.06646837,
+            "z": 3.055342
+          },
+          "Scale": {
+            "x": 1.490949,
+            "y": 1.490949,
+            "z": 1.490949
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395253,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 23.30107,
+            "y": -1.399367,
+            "z": 2.804394
+          },
+          "Rotation": {
+            "x": -0.65143526,
+            "y": 1.3209103,
+            "z": -0.65391034
+          },
+          "Scale": {
+            "x": 1.490949,
+            "y": 1.490949,
+            "z": 1.490949
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395256,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.96454,
+            "y": -1.510717,
+            "z": -12.67565
+          },
+          "Rotation": {
+            "x": -2.9923286,
+            "y": -1.0879475,
+            "z": 3.0420408
+          },
+          "Scale": {
+            "x": 1.490949,
+            "y": 1.490949,
+            "z": 1.490949
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1fa/bgparts/f1fa_c1_ibr01.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 94881,
+    "Name": "light",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 17,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1956,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1968,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1968,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 3,
+        "InstanceId": 4400469,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.34145,
+            "y": 8.440452,
+            "z": -44.62696
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 23,
+            "Green": 227,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400473,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 47.90623,
+            "y": 6.482688,
+            "z": -24.62444
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 102,
+            "Blue": 82,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400475,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 37.79425,
+            "y": 9.863731,
+            "z": 43.76588
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 62,
+            "Green": 78,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 19.21569
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400478,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 1.729853,
+            "y": 11.9473,
+            "z": 48.98178
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 197,
+            "Green": 64,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400481,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -35.73787,
+            "y": 4.507332,
+            "z": 31.41936
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 63,
+            "Green": 121,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400483,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -35.29207,
+            "y": 5.579744,
+            "z": -24.3576
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 89,
+            "Blue": 125,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400495,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 25.27398,
+            "y": 0.7715127,
+            "z": -8.661648
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 6,
+          "Attenuation": 1.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 41.56863
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 1,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400502,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -48.10792,
+            "y": 15.58238,
+            "z": -0.2012434
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 0,
+            "Blue": 216,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400506,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.72409,
+            "y": 10.44738,
+            "z": -46.48982
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 197,
+            "Green": 64,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400509,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -46.79367,
+            "y": 8.893802,
+            "z": -16.40038
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 16,
+            "Green": 255,
+            "Blue": 127,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400518,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 59.91061,
+            "y": 7.080619,
+            "z": 20.05922
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 46,
+            "Green": 255,
+            "Blue": 188,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400520,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 55.71452,
+            "y": 13.59659,
+            "z": -8.929878
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 237,
+            "Blue": 44,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400524,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 33.68273,
+            "y": 17.64674,
+            "z": -38.51373
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 197,
+            "Green": 64,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400526,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 9.91566,
+            "y": 15.87551,
+            "z": -65.02887
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 255,
+            "Green": 206,
+            "Blue": 83,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400527,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -41.51146,
+            "y": 15.31261,
+            "z": -42.65481
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 108,
+            "Green": 255,
+            "Blue": 225,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400530,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.79858,
+            "y": 16.98237,
+            "z": 36.80323
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 233,
+            "Green": 35,
+            "Blue": 255,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      },
+      {
+        "AssetType": 3,
+        "InstanceId": 4400533,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 20.02589,
+            "y": 15.05807,
+            "z": 43.96357
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "LightType": 2,
+          "Attenuation": 3.0,
+          "RangeRate": 1.0,
+          "PointLightType": 0,
+          "AttenuationConeCoefficient": 0.5,
+          "ConeDegree": 45.0,
+          "TexturePath": "",
+          "DiffuseColorHDRI": {
+            "Red": 204,
+            "Green": 255,
+            "Blue": 110,
+            "Alpha": 255,
+            "Intensity": 10.0
+          },
+          "FollowsDirectionalLight": 0,
+          "SpecularEnabled": 0,
+          "BGShadowEnabled": 0,
+          "CharacterShadowEnabled": 0,
+          "ShadowClipRange": 0.01,
+          "PlaneLightRotationX": 0.0,
+          "PlaneLightRotationY": 0.0,
+          "MergeGroupID": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 94872,
+    "Name": "rock",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 42,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 4084,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 4096,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 4096,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 4398863,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 22.61465,
+            "y": 1.685474,
+            "z": -42.55289
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398864,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 26.29292,
+            "y": 3.189674,
+            "z": -39.57875
+          },
+          "Rotation": {
+            "x": 0.4199006,
+            "y": -0.18667309,
+            "z": 0.024842057
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock3.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock3.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398865,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 10.55072,
+            "y": 2.517222,
+            "z": -51.22461
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398866,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -33.03401,
+            "y": 2.660561,
+            "z": -39.00137
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398867,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -39.25401,
+            "y": 2.450739,
+            "z": -26.70358
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398868,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -41.58566,
+            "y": 1.429401,
+            "z": -11.51683
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.45366886
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock3.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock3.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398869,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -35.3991,
+            "y": -0.988047,
+            "z": 24.18014
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398870,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -28.47176,
+            "y": -1.311911,
+            "z": 35.85226
+          },
+          "Rotation": {
+            "x": -0.371926,
+            "y": -0.0,
+            "z": 0.20872726
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398872,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -2.367454,
+            "y": -0.1921208,
+            "z": 25.70652
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock1.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock1.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398874,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 9.943268,
+            "y": 0.3444264,
+            "z": 35.03404
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398875,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 7.086962,
+            "y": 0.5217534,
+            "z": 35.24977
+          },
+          "Rotation": {
+            "x": -0.101542756,
+            "y": -0.0,
+            "z": 0.25380805
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock3.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock3.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398877,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 37.20486,
+            "y": 0.1375144,
+            "z": 36.11024
+          },
+          "Rotation": {
+            "x": -0.41753933,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398878,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 60.69548,
+            "y": 2.14715,
+            "z": -1.426558
+          },
+          "Rotation": {
+            "x": 0.1452141,
+            "y": 0.3074277,
+            "z": 1.1116534
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398879,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 55.50613,
+            "y": 1.084501,
+            "z": -4.5075
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398880,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 35.70865,
+            "y": 2.712495,
+            "z": -26.49851
+          },
+          "Rotation": {
+            "x": -2.7573497,
+            "y": 0.025074884,
+            "z": 0.2831898
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock3.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock3.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398881,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 33.77459,
+            "y": 1.302152,
+            "z": -32.63337
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398882,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 37.0842,
+            "y": 9.140758,
+            "z": -42.52525
+          },
+          "Rotation": {
+            "x": -0.1042667,
+            "y": -0.0507968,
+            "z": 0.3642666
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398883,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.06357,
+            "y": 22.10261,
+            "z": -71.30317
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398885,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -46.92873,
+            "y": 8.507004,
+            "z": -39.43361
+          },
+          "Rotation": {
+            "x": 1.0991657,
+            "y": -1.3408383,
+            "z": -1.7161969
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398886,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -63.53833,
+            "y": 17.90623,
+            "z": -25.36836
+          },
+          "Rotation": {
+            "x": -0.24867854,
+            "y": -0.03530766,
+            "z": -0.056516327
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398887,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -39.21824,
+            "y": 3.530398,
+            "z": 47.84765
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398888,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 27.7633,
+            "y": 8.366532,
+            "z": 55.42624
+          },
+          "Rotation": {
+            "x": -0.9746622,
+            "y": 0.98756474,
+            "z": -0.27066654
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398889,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -5.072576,
+            "y": 12.45997,
+            "z": 75.51918
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398890,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 85.82733,
+            "y": 25.5648,
+            "z": 0.4631548
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398892,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 63.7296,
+            "y": 13.73704,
+            "z": -25.13221
+          },
+          "Rotation": {
+            "x": -0.14255576,
+            "y": 1.8626451E-09,
+            "z": 0.30829448
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock3.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock3.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398894,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 41.86728,
+            "y": 28.10945,
+            "z": -64.69698
+          },
+          "Rotation": {
+            "x": 2.384097,
+            "y": 0.5344558,
+            "z": 2.730128
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398895,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 26.19384,
+            "y": 15.84798,
+            "z": -61.67647
+          },
+          "Rotation": {
+            "x": 0.30513242,
+            "y": -0.012712927,
+            "z": 0.5765008
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398897,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 29.26163,
+            "y": 16.18595,
+            "z": -57.10689
+          },
+          "Rotation": {
+            "x": 0.3730186,
+            "y": 0.10668913,
+            "z": -0.3428291
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398898,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 48.51895,
+            "y": 27.78827,
+            "z": -63.09205
+          },
+          "Rotation": {
+            "x": 0.060612075,
+            "y": -0.0071009193,
+            "z": -0.36993006
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4399943,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 65.77972,
+            "y": 13.49066,
+            "z": -20.45309
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4399944,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 24.43754,
+            "y": 2.468666,
+            "z": -44.64968
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4399945,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -52.62167,
+            "y": 7.838734,
+            "z": 20.61549
+          },
+          "Rotation": {
+            "x": -2.215589,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400032,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 122.1817,
+            "y": -2.527829,
+            "z": 83.10787
+          },
+          "Rotation": {
+            "x": -0.3418168,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.650108,
+            "y": 3.650108,
+            "z": 3.650108
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400281,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -55.06764,
+            "y": 20.98519,
+            "z": -37.26168
+          },
+          "Rotation": {
+            "x": 0.19597238,
+            "y": 0.72526026,
+            "z": -0.28707752
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock3.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock3.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4402374,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 50.83384,
+            "y": -0.1055159,
+            "z": -9.971304
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407191,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 82.69013,
+            "y": -0.105515,
+            "z": 46.90389
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407192,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 87.36243,
+            "y": 0.7656589,
+            "z": 46.0228
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407193,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 120.0209,
+            "y": 3.704718,
+            "z": 40.249
+          },
+          "Rotation": {
+            "x": 0.6862103,
+            "y": 0.3074277,
+            "z": 1.1116538
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407194,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 82.83026,
+            "y": 8.719946,
+            "z": 24.06427
+          },
+          "Rotation": {
+            "x": 0.30343089,
+            "y": 0.024976099,
+            "z": 0.85170865
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock5.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock5.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407206,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 103.3173,
+            "y": 5.009374,
+            "z": 33.37928
+          },
+          "Rotation": {
+            "x": 0.2998931,
+            "y": 0.7667052,
+            "z": 0.30275077
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407209,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 113.6803,
+            "y": 0.8127211,
+            "z": 57.03916
+          },
+          "Rotation": {
+            "x": 2.9711072,
+            "y": -0.12823603,
+            "z": -2.6111262
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock4.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock4.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407222,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 93.31574,
+            "y": 0.2131024,
+            "z": 60.57867
+          },
+          "Rotation": {
+            "x": -0.20809719,
+            "y": -0.15809672,
+            "z": -1.0731108
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_rock2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_rock2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 94871,
+    "Name": "toge",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 33,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 3220,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 3232,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 3232,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 4398801,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 28.88126,
+            "y": 0.6674719,
+            "z": 42.90854
+          },
+          "Rotation": {
+            "x": 0.66559464,
+            "y": 0.74725646,
+            "z": 1.0092651
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr02.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr02.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398803,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.041902,
+            "y": 0.1995795,
+            "z": 49.95472
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.76646733
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr03.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr03.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398806,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -7.711664,
+            "y": -0.1202395,
+            "z": 50.04247
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr04.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr04.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398809,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -36.32681,
+            "y": -0.7000008,
+            "z": 35.3794
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr05.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr05.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398814,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -45.88664,
+            "y": 0.6532962,
+            "z": -7.712812
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.535165,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr02.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr02.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398815,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -34.38194,
+            "y": -0.7000008,
+            "z": -33.86731
+          },
+          "Rotation": {
+            "x": 0.73389333,
+            "y": 0.27979547,
+            "z": 1.0630188
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr03.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr03.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398817,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -19.9168,
+            "y": 2.295644,
+            "z": -45.83499
+          },
+          "Rotation": {
+            "x": 2.843803,
+            "y": -1.4709812,
+            "z": -2.855975
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr04.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr04.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398820,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 17.31053,
+            "y": 0.8936218,
+            "z": -52.04885
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr05.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr05.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398822,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 36.77578,
+            "y": 1.075053,
+            "z": -29.36687
+          },
+          "Rotation": {
+            "x": -0.49544942,
+            "y": -0.82608056,
+            "z": 0.7313038
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr02.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr02.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398823,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 49.76408,
+            "y": 1.820969,
+            "z": -15.25563
+          },
+          "Rotation": {
+            "x": 1.2221606,
+            "y": 0.82101166,
+            "z": 1.6831611
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr03.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr03.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398825,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 58.4131,
+            "y": -0.507283,
+            "z": 12.1019
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr04.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr04.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398826,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 56.39925,
+            "y": -0.7000055,
+            "z": 22.60144
+          },
+          "Rotation": {
+            "x": 0.35390425,
+            "y": 0.70340085,
+            "z": 0.31698442
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr05.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr05.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398828,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 43.28107,
+            "y": 13.60254,
+            "z": -19.74138
+          },
+          "Rotation": {
+            "x": 1.045809,
+            "y": -0.42040375,
+            "z": -0.32716775
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398830,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 53.77411,
+            "y": 18.99965,
+            "z": 36.48551
+          },
+          "Rotation": {
+            "x": -0.9658419,
+            "y": -0.6058071,
+            "z": 1.4807508
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398832,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -27.40172,
+            "y": 0.7957313,
+            "z": 41.18261
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.2930701,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398834,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -38.32291,
+            "y": 3.531792,
+            "z": -22.69958
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -1.2531068,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398837,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -29.59754,
+            "y": 17.11574,
+            "z": -37.31419
+          },
+          "Rotation": {
+            "x": 0.2513372,
+            "y": 1.0352793,
+            "z": -0.013116698
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398843,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -19.01223,
+            "y": -0.4111633,
+            "z": 43.1649
+          },
+          "Rotation": {
+            "x": -0.029623386,
+            "y": -0.04102819,
+            "z": 0.64273196
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr01.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398846,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 23.62595,
+            "y": -0.5827005,
+            "z": -48.2986
+          },
+          "Rotation": {
+            "x": 1.081902,
+            "y": -0.18365629,
+            "z": 0.6593524
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr01.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400012,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -43.328,
+            "y": -2.071535,
+            "z": 20.0248
+          },
+          "Rotation": {
+            "x": 1.0331442,
+            "y": 0.50487685,
+            "z": 1.0442417
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr03.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr03.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400014,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -20.42654,
+            "y": 2.552982,
+            "z": -46.05833
+          },
+          "Rotation": {
+            "x": 1.482755,
+            "y": -0.114010915,
+            "z": 1.4015722
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr01.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr01.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 28672,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401846,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 29.74126,
+            "y": 0.4147748,
+            "z": -36.67932
+          },
+          "Rotation": {
+            "x": 0.25981042,
+            "y": -1.3998016,
+            "z": 0.12794831
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr04.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr04.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401848,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 54.17117,
+            "y": -1.355907,
+            "z": -7.27958
+          },
+          "Rotation": {
+            "x": -2.3127234,
+            "y": -0.5692102,
+            "z": 2.0296593
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr03.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr03.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401851,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 21.99548,
+            "y": -1.671884,
+            "z": 44.24004
+          },
+          "Rotation": {
+            "x": 3.1201217,
+            "y": -0.35972214,
+            "z": -2.8782556
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr05.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr05.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401852,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -26.5985,
+            "y": -1.456787,
+            "z": 42.29404
+          },
+          "Rotation": {
+            "x": 1.9283551,
+            "y": 0.9110689,
+            "z": 2.3432426
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr02.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr02.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401855,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -41.60061,
+            "y": 0.8936219,
+            "z": -24.75454
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr05.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr05.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401858,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -40.18985,
+            "y": 22.76736,
+            "z": -25.9065
+          },
+          "Rotation": {
+            "x": 2.3057826,
+            "y": -0.29225034,
+            "z": -2.8721313
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401862,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 23.84301,
+            "y": 30.79543,
+            "z": -49.90049
+          },
+          "Rotation": {
+            "x": 0.8332321,
+            "y": -0.35103196,
+            "z": 0.36561593
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401875,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 57.23151,
+            "y": -1.671884,
+            "z": -15.71839
+          },
+          "Rotation": {
+            "x": 3.0467813,
+            "y": 0.56225765,
+            "z": -3.013353
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr05.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr05.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401878,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.84119,
+            "y": -1.671883,
+            "z": 44.24004
+          },
+          "Rotation": {
+            "x": -0.20482104,
+            "y": 0.9846397,
+            "z": -0.80359375
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr05.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr05.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401882,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 3.597201,
+            "y": 1.075051,
+            "z": -52.03329
+          },
+          "Rotation": {
+            "x": -0.44430342,
+            "y": -0.5718315,
+            "z": 0.4444996
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr02.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr02.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401884,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -42.48725,
+            "y": -1.015732,
+            "z": -1.846381
+          },
+          "Rotation": {
+            "x": -2.9257915,
+            "y": -0.17750575,
+            "z": 3.1118908
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr04.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_c1_ibr04.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4401962,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 11.23667,
+            "y": 18.71546,
+            "z": -46.31656
+          },
+          "Rotation": {
+            "x": 0.2513372,
+            "y": 1.0352793,
+            "z": -0.013116699
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_c1_ibr07.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 94850,
+    "Name": "wood",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 51,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 4948,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 4960,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 4960,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 1,
+        "InstanceId": 4395487,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -24.05647,
+            "y": 4.735212,
+            "z": 53.16921
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395489,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 6.604651,
+            "y": 0.9100676,
+            "z": 55.23189
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395490,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -38.89632,
+            "y": 23.25201,
+            "z": -50.96671
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395491,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -55.94124,
+            "y": 6.89631,
+            "z": -12.94096
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395492,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 36.85735,
+            "y": 16.17176,
+            "z": -53.10692
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395493,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 69.94372,
+            "y": 3.522373,
+            "z": 1.809278
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395494,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 91.90689,
+            "y": 28.65522,
+            "z": -21.22411
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395495,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 73.47788,
+            "y": 7.048135,
+            "z": 15.86281
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395497,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 36.3106,
+            "y": 11.28769,
+            "z": 54.06745
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395498,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 107.9891,
+            "y": 12.53482,
+            "z": 73.34873
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395499,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 1.516958,
+            "y": 16.23459,
+            "z": 93.09566
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395501,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 3.355783,
+            "y": 8.352684,
+            "z": 68.21473
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre6a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre6a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395502,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -22.82039,
+            "y": 16.0072,
+            "z": 69.22457
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre6a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre6a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395503,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -58.3534,
+            "y": 15.49564,
+            "z": 28.71345
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre6a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre6a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395527,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 11.31942,
+            "y": 9.991383,
+            "z": -62.95669
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre6b.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre6b.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4394954,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 49.46701,
+            "y": 0.8881612,
+            "z": 88.60962
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4394956,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 142.6022,
+            "y": -0.2493941,
+            "z": 68.48959
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5163522,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4394957,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 157.0387,
+            "y": 14.98248,
+            "z": -25.04481
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5163512,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4394958,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -9.633091,
+            "y": 3.957576,
+            "z": -63.47572
+          },
+          "Rotation": {
+            "x": 3.0965703,
+            "y": 1.4519162,
+            "z": 3.0937393
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4394960,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -56.49096,
+            "y": -0.456562,
+            "z": 8.693659
+          },
+          "Rotation": {
+            "x": 1.7501935E-07,
+            "y": -0.083245225,
+            "z": -2.5262856E-09
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4394961,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -35.27646,
+            "y": 1.786983,
+            "z": 128.0204
+          },
+          "Rotation": {
+            "x": 1.7501935E-07,
+            "y": -0.083245225,
+            "z": -2.5262874E-09
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395537,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 115.6467,
+            "y": 6.900436,
+            "z": 98.50178
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.499952,
+            "y": 1.499952,
+            "z": 1.499952
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395542,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 168.1179,
+            "y": 1.890877,
+            "z": 115.1129
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395545,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 120.7384,
+            "y": 26.55988,
+            "z": 7.149898
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.275187,
+            "y": 1.275187,
+            "z": 1.275187
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395547,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 98.67499,
+            "y": 33.25317,
+            "z": -90.30058
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.379295,
+            "y": 1.379295,
+            "z": 1.379295
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395553,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 70.68463,
+            "y": 13.98453,
+            "z": -18.2317
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395699,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 12.2978,
+            "y": 33.44315,
+            "z": -95.81756
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395700,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -50.48368,
+            "y": 35.31864,
+            "z": -95.81756
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395701,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -88.20815,
+            "y": 18.79419,
+            "z": -11.4137
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395702,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -100.4918,
+            "y": 18.4304,
+            "z": 45.93371
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395703,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -51.91529,
+            "y": 20.15078,
+            "z": 80.66595
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395704,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -17.32755,
+            "y": 22.16564,
+            "z": 142.1286
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395834,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 33.12103,
+            "y": 23.11648,
+            "z": 124.5202
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.367275,
+            "y": 1.367275,
+            "z": 1.367275
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4395864,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 129.8006,
+            "y": 17.25589,
+            "z": 42.34575
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4396215,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -30.94875,
+            "y": 2.365904,
+            "z": -46.18921
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4397497,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 46.82433,
+            "y": 9.361221,
+            "z": -37.49183
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4398588,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 86.42191,
+            "y": 7.238983,
+            "z": 106.2282
+          },
+          "Rotation": {
+            "x": 0.022086794,
+            "y": 0.3977438,
+            "z": 0.007918739
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4399936,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 144.4774,
+            "y": -10.83067,
+            "z": 169.9522
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5163522,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4399937,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -170.2552,
+            "y": 1.786983,
+            "z": 138.3531
+          },
+          "Rotation": {
+            "x": 0.002167938,
+            "y": 0.5647058,
+            "z": 0.0028638307
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4399938,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -248.7744,
+            "y": 31.41118,
+            "z": -132.5199
+          },
+          "Rotation": {
+            "x": 0.002167938,
+            "y": 0.5647058,
+            "z": 0.0028638307
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4399940,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 150.3912,
+            "y": 23.46605,
+            "z": -192.4199
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5163512,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400282,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -47.12435,
+            "y": 8.035288,
+            "z": -33.61157
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400284,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -45.88546,
+            "y": 2.2077,
+            "z": -15.3187
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.5271593,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400285,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -42.89117,
+            "y": 0.953069,
+            "z": 28.63874
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.5271593,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400431,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 9.152267,
+            "y": 21.69851,
+            "z": 175.2008
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4400434,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 63.59203,
+            "y": 8.50994,
+            "z": -38.28036
+          },
+          "Rotation": {
+            "x": -0.02410373,
+            "y": 1.2627629,
+            "z": -0.03651379
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trel1.mdl",
+          "CollisionAssetPath": "",
+          "CollisionType": 0,
+          "AttributeMask": 0,
+          "Attribute": 28677,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4402396,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -66.40477,
+            "y": 26.59684,
+            "z": -58.19476
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407188,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 91.00396,
+            "y": 12.47129,
+            "z": 25.87231
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre5a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre5a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407189,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 83.02505,
+            "y": 3.893107,
+            "z": 38.72663
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre6a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre6a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407190,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 109.4708,
+            "y": 1.373961,
+            "z": 45.9582
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.275187,
+            "y": 1.275187,
+            "z": 1.275187
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p1_trem2.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p1_trem2.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 0,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      },
+      {
+        "AssetType": 1,
+        "InstanceId": 4407211,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 91.09292,
+            "y": 0.6418819,
+            "z": 76.20361
+          },
+          "Rotation": {
+            "x": 3.1288378,
+            "y": 0.4897394,
+            "z": 3.114484
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/fst_f1/fld/f1f2/bgparts/f1f2_p3_tre6a.mdl",
+          "CollisionAssetPath": "bg/ffxiv/fst_f1/fld/f1f2/collision/f1f2_p3_tre6a.pcb",
+          "CollisionType": 1,
+          "AttributeMask": 0,
+          "Attribute": 8192,
+          "CollisionConfig": 0,
+          "IsVisible": 0,
+          "RenderShadowEnabled": 0,
+          "RenderLightShadowEnabled": 0,
+          "Padding00": 0,
+          "RenderModelClipRange": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

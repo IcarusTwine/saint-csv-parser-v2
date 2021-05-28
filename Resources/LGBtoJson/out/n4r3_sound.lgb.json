@@ -1,0 +1,612 @@
+[
+  {
+    "LayerId": 260467,
+    "Name": "EnvBox",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 10,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 932,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 944,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 944,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 13,
+        "InstanceId": 8768731,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -800.0,
+            "y": -792.0,
+            "z": -820.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 400.0,
+            "y": 400.0,
+            "z": 400.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3_in.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8768732,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 820.0,
+            "y": -800.0,
+            "z": -757.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 500.0,
+            "y": 500.0,
+            "z": 500.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3_in.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8768733,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -800.0,
+            "z": -100.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 250.0,
+            "y": 250.0,
+            "z": 250.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3_in.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8768734,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -800.0,
+            "z": 400.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 250.0,
+            "y": 250.0,
+            "z": 250.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3_in.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8768735,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -800.0,
+            "z": 900.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 250.0,
+            "y": 250.0,
+            "z": 250.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3_in.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8768736,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 800.0,
+            "y": -440.0,
+            "z": 800.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 300.0,
+            "y": 500.0,
+            "z": 800.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.3,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8769707,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -812.9063,
+            "y": -887.0959,
+            "z": 709.0726
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 11.0,
+            "y": 20.0,
+            "z": 11.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.35,
+          "Filter": 0.3,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8769708,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -852.8614,
+            "y": -861.041,
+            "z": 806.6531
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 20.0,
+            "z": 10.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.35,
+          "Filter": 1.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8769709,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -851.7108,
+            "y": -861.041,
+            "z": 843.5419
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 20.0,
+            "z": 35.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.35,
+          "Filter": 0.3,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8784856,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -700.0,
+            "y": 600.0,
+            "z": -700.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 800.0,
+            "y": 400.0,
+            "z": 800.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.0,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_ytc/sound_n4r3_high.essb"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 260637,
+    "Name": "Obstruction",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1300,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1312,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1312,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8785127,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -730.6689,
+            "y": -800.0,
+            "z": -667.8581
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 400.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 9,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAAJAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAJbEAABIxAMAyMMAAIA//f/HwwAASMQDAMjDAACAPwcAyMMAAEjEAACWxAAAgD8AAJbEAABIxAAAlsQAAIA/AADIQwAAyEMAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8785128,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 887.6643,
+            "y": -800.0,
+            "z": -589.6104
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 500.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 9,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAAJAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAJZDAABIxAAAesMAAIA/AICiRAAASMQAAHrDAACAPwCAokQAAEjEAICdxAAAgD8AAJZDAABIxACAncQAAIA/AAD6QwAA+kMAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8785129,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 43.33191,
+            "y": -800.0,
+            "z": -17.41134
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 250.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 9,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAAJAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAHrDAABIxAAAFkMAAIA/AAB6QwAASMQAABZDAACAPwAAekMAAEjEAACvwwAAgD8AAHrDAABIxAAAr8MAAIA/AAB6QwAAekMAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8785130,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 43.33191,
+            "y": -800.0,
+            "z": 482.5887
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 250.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 9,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAAJAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAHrDAABIxACAIkQAAIA/AAB6QwAASMQAgCJEAACAPwAAekMAAEjEAAAWQwAAgD8AAHrDAABIxAAAFkMAAIA/AAB6QwAAekMAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8785131,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 43.33191,
+            "y": -800.0,
+            "z": 982.5887
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 250.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 9,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAAJAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8AAHrDAABIxADAj0QAAIA/AAB6QwAASMQAwI9EAACAPwAAekMAAEjEAIAiRAAAgD8AAHrDAABIxACAIkQAAIA/AAB6QwAAekMAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 8785132,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 877.0028,
+            "y": -610.9891,
+            "z": 766.0004
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 250.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 9,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAAJAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8q2QxETb8YxApvg0QAAIA/k+yERE2/GMQKb4NEAACAP5PshERNvxjEK2eZQwAAgD8q2QxETb8YxCtnmUMAAIA/AAB6QwAAekMAAIA/AACAPwAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

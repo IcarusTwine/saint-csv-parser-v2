@@ -1,0 +1,273 @@
+[
+  {
+    "LayerId": 99651,
+    "Name": "Sound",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1300,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1312,
+    "ObSetReferencedListCount": 6,
+    "ObSetEnableReferencedList": 1384,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 4691517,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 264.212,
+            "y": 407.424,
+            "z": -896.8306
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 350.0,
+            "y": 4.989685,
+            "z": 1900.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/fst/fst_spot_f1b4_meteorite.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 1,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8jG4RDRrbLQyk1YMQAAIA/AACvQwCA7USAq59AgKufQAAAgD9mZmY/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694300,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -33.24945,
+            "y": 0.9002075,
+            "z": -28.67175
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 4.989685,
+            "y": 4.989685,
+            "z": 49.97327
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/fst/fst_spot_fire_l.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9w/wTCAHRmP75f5cEAAIA/gKufQKHkR0KAq59AgKufQAAAgD+amVk/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694202,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -1.14447,
+            "y": 0.9002075,
+            "z": -36.05713
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 4.989685,
+            "y": 4.989685,
+            "z": 49.97327
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/fst/fst_spot_fire_s.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/+fZK/AHRmP4A6EMIAAIA/gKufQKHkR0KAq59AgKufQAAAgD9mZmY/mplZPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694347,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 34.0498,
+            "y": 3.56365,
+            "z": -62.05956
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/fst/fst_spot_fire_l.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD//MghC1xJkQP08eMIAAIA/AAAgQQAAoEIAAKBAAACgQAAAgD8AAIA/MzMzPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694493,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -68.10101,
+            "y": 3.372192,
+            "z": -18.26508
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 9.994568,
+            "y": 4.989685,
+            "z": 79.97253
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/fst/fst_spot_fire_l.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+4M4jC/tFXQOIeksEAAIA/wOkfQe/xn0KAq59AgKufQAAAgD8AAIA/MzMzPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694494,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 73.74077,
+            "y": -17.41213,
+            "z": 4.504559
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 100.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/fst/fst_spot_fire_s.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9Ge5NCC0yLwVklkEAAAIA/AACgQAAAyEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 7,
+        "InstanceId": 4691517,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_fst_f1/obset_f1_bah/obset_f1b4_bg_carteneau.obsb"
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694300,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_fst_f1/obset_f1_bah/obset_f1b4_bg_carteneau.obsb"
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694202,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_fst_f1/obset_f1_bah/obset_f1b4_bg_carteneau.obsb"
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694347,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_fst_f1/obset_f1_bah/obset_f1b4_bg_carteneau.obsb"
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694493,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_fst_f1/obset_f1_bah/obset_f1b4_bg_carteneau.obsb"
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 4694494,
+        "OBSetAssetPath": "bgcommon/env/obset/ffxiv_obset/obset_fst_f1/obset_f1_bah/obset_f1b4_bg_carteneau.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

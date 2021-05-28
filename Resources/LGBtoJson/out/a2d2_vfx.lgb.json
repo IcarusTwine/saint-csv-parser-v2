@@ -1,0 +1,252 @@
+[
+  {
+    "LayerId": 117394,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 5,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 512,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 524,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 524,
+    "ObSetEnableReferencedListCount": 4,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 5927995,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 162.6471,
+            "y": 61.5256,
+            "z": -37.58641
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.24390733,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/03_abr_a2/common/vfx/eff/a2d2_wat01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5930273,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -262.1322,
+            "y": 18.26074,
+            "z": -96.55622
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.7085643,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.9572039,
+            "y": 0.9572039,
+            "z": 0.9572039
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/03_abr_a2/common/vfx/eff/a2d2taki01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5930275,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -329.3579,
+            "y": -53.17234,
+            "z": 109.0736
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.218139,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.3600094,
+            "y": 0.3600094,
+            "z": 0.3600094
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/03_abr_a2/common/vfx/eff/a2d2taki01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5930276,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 562.311,
+            "y": -37.28024,
+            "z": 154.1005
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.46998176,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5031803,
+            "y": 0.5031803,
+            "z": 0.5031803
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/03_abr_a2/common/vfx/eff/a2d2taki01_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5941015,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 164.0,
+            "y": 61.0,
+            "z": 18.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ex1/03_abr_a2/common/vfx/eff/a2d2taki02_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 5930273,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5930275,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5930276,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 5941015,
+        "OBSetEnable": 0,
+        "OBSetEmissiveEnable": 1
+      }
+    ]
+  }
+]

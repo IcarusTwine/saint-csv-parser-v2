@@ -1,0 +1,194 @@
+[
+  {
+    "LayerId": 97442,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 4,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 420,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 432,
+    "ObSetReferencedListCount": 1,
+    "ObSetEnableReferencedList": 444,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 4558927,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 308.8594,
+            "y": -8.787434,
+            "z": -93.93974
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/roc_r1/common/vfx/eff/r1f1kiri02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 117,
+            "Green": 117,
+            "Blue": 117,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 100.0,
+          "FadeNearEnd": 50.0,
+          "FadeFarStart": 300.0,
+          "FadeFarEnd": 400.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4558928,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 545.8749,
+            "y": 89.64754,
+            "z": 174.0543
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.3,
+            "y": 1.3,
+            "z": 1.3
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/roc_r1/common/vfx/eff/r1f1kiri02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 300.0,
+          "FadeNearEnd": 200.0,
+          "FadeFarStart": 600.0,
+          "FadeFarEnd": 800.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4558929,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 467.8524,
+            "y": 87.13947,
+            "z": -396.5827
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.5,
+            "z": 1.3
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/roc_r1/common/vfx/eff/r1f1kiri02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 0,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 500.0,
+          "FadeFarEnd": 600.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 4558930,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.5177432,
+            "y": 0.03817765,
+            "z": -248.1142
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/nature/vfx/eff/we_asi002n_o.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 1800.0,
+          "FadeFarEnd": 2000.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 4558930,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_vfx/obset_vfx_asien.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

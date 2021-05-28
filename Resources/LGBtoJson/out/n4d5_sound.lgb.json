@@ -1,0 +1,199 @@
+[
+  {
+    "LayerId": 248967,
+    "Name": "EnvBox",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 316,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 328,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 328,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 13,
+        "InstanceId": 8035415,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -58.77356,
+            "y": 171.5793,
+            "z": -201.7415
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.8477143,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.0,
+            "y": 15.0,
+            "z": 10.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.4,
+          "Filter": 0.9,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_dun/sound_n4d5.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8035416,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -31.29639,
+            "y": -7.834633,
+            "z": -146.7842
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.32225603,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.0,
+            "y": 60.0,
+            "z": 100.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.4,
+          "Filter": 0.9,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_dun/sound_n4d5.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 8043426,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -239.8397,
+            "y": 203.2747,
+            "z": 189.5882
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 140.0,
+            "y": 50.0,
+            "z": 200.0
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.0,
+          "Filter": 0.0,
+          "SoundAssetPath": "bgcommon/env/sound/nvt_n4/n4_dun/sound_n4d1.essb"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 249211,
+    "Name": "Spot",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 244,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 256,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 256,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 8043437,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 304.4011,
+            "y": -39.8391,
+            "z": -140.6394
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 10.0,
+            "y": 5.0,
+            "z": 45.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/mgc_oth/mgc_oth_Loop_s08.scd",
+          "SEParam": {
+            "SoundEffectType": 5,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAFAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+Iw5dDCwbswYLiCcMAAIA/KaOYQ3WzSMLXZA/DAACAPwAAIEEAADRCAACgQAAAoEAAAIA/AAAAAGZmZj8AAIA/AAAAAAAAgD8AAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

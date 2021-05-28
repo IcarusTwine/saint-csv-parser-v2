@@ -1,0 +1,190 @@
+[
+  {
+    "LayerId": 132700,
+    "Name": "QB_JobBrd700_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 5,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 456,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 45,
+    "ObSetReferencedList": 472,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 472,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 6873890,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -245.1876,
+            "y": 9.761383,
+            "z": 35.72463
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.4804838,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 5.507046,
+            "y": 5.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 6873891,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -245.4448,
+            "y": 9.842683,
+            "z": 35.5095
+          },
+          "Rotation": {
+            "x": 3.601796E-15,
+            "y": -1.4750804,
+            "z": -3.0963016E-15
+          },
+          "Scale": {
+            "x": 2.54488,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 6873892,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -296.5819,
+            "y": 9.578211,
+            "z": 39.90949
+          },
+          "Rotation": {
+            "x": -3.1415892,
+            "y": 1.5453675,
+            "z": -3.1415892
+          },
+          "Scale": {
+            "x": 3.466735,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 6873893,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -296.82,
+            "y": 9.496911,
+            "z": 39.81149
+          },
+          "Rotation": {
+            "x": -3.948654E-06,
+            "y": -1.5507705,
+            "z": 3.8693197E-06
+          },
+          "Scale": {
+            "x": 5.507046,
+            "y": 5.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 8,
+        "InstanceId": 6874068,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -298.4739,
+            "y": 9.581807,
+            "z": 40.01114
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.4521983,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ParentData": {
+              "BaseId": 1021895
+            },
+            "PopWeather": 0,
+            "PopTimeStart": 0,
+            "PopTimeEnd": 0,
+            "Padding00": "AAA=",
+            "MoveAi": 1,
+            "WanderingRange": 6,
+            "Route": 0,
+            "EventGroup": 0
+          },
+          "Behavior": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 5
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

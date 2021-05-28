@@ -1,0 +1,160 @@
+[
+  {
+    "LayerId": 85231,
+    "Name": "VFX_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 3,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 328,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 340,
+    "ObSetReferencedListCount": 2,
+    "ObSetEnableReferencedList": 364,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 4,
+        "InstanceId": 3993587,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -353.5957,
+            "y": 120.5398,
+            "z": -177.6794
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.75885504,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1f5lese02_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 3993588,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -353.621,
+            "y": 121.2479,
+            "z": -289.1281
+          },
+          "Rotation": {
+            "x": -3.681732E-08,
+            "y": 0.90477675,
+            "z": -2.5937531E-08
+          },
+          "Scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/w1f5lese01_y.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 0,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 0.0,
+          "FadeFarEnd": 0.0,
+          "ZCorrect": 0.0
+        }
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 8406408,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -261.5456,
+            "y": -19.14513,
+            "z": -76.17179
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.4713557,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bg/ffxiv/wil_w1/common/vfx/eff/b1959watr1_h1.avfx",
+          "SoftParticleFadeRange": 0.0,
+          "Color": {
+            "Red": 255,
+            "Green": 255,
+            "Blue": 255,
+            "Alpha": 255
+          },
+          "IsAutoPlay": 1,
+          "IsNoFarClip": 1,
+          "FadeNearStart": 0.0,
+          "FadeNearEnd": 0.0,
+          "FadeFarStart": 200.0,
+          "FadeFarEnd": 300.0,
+          "ZCorrect": 0.0
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [
+      {
+        "AssetType": 4,
+        "InstanceId": 3993587,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_vfx/obset_vfx_mist_wtr.obsb"
+      },
+      {
+        "AssetType": 4,
+        "InstanceId": 3993588,
+        "OBSetAssetPath": "bgcommon/env/obset/common_obset/obset_vfx/obset_vfx_mist_wtr.obsb"
+      }
+    ],
+    "OBSetEnableReferencedList": []
+  }
+]

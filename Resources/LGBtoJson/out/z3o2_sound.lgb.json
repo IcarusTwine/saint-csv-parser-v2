@@ -1,0 +1,71 @@
+[
+  {
+    "LayerId": 134999,
+    "Name": "Spot_Normal",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 468,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 484,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 484,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 7001728,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -0.7307968,
+            "y": -2.283345E-07,
+            "z": -9.582886
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/sea/sea_spot_mizutamari_mono.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/sV7zBer5/tAGBNb0AAIA/4eiRwXq+f7Tde2rBAACAP9tDt8B6vn+0Qci0wQAAgD/e9rxAer5/tD+dtMEAAIA/KiOMQXq+f7TNO3jBAACAPymiukF6vn+0f70LwAAAgD/ZGqFBer5/tK/CPUEAAIA/+ncNQQAAAACbfqxBAACAPz5s3MB6vn+0GGazQQAAgD8v0Y7Ber7/tIE+d0EAAIA/HuG2wdnOP7XR+KpAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAoEEAAKBAAACgQAAAgD8zMzM/zcxMPwAAgD8AAAAACwAAAAAAgD8AAAAA"
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

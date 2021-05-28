@@ -1,0 +1,3581 @@
+[
+  {
+    "LayerId": 138915,
+    "Name": "LVD_Gimmick_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 138916,
+    "Name": "LVD_Gimmick_02",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 124,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 140,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 140,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 45,
+        "InstanceId": 7256249,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -2.722647,
+            "y": -8.121226E-07,
+            "z": 7.311604
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2009431
+          },
+          "BoundInstanceId": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 138917,
+    "Name": "LVD_Gimmick_03",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 140152,
+    "Name": "LVD_maprange_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 164,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 184,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 184,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 43,
+        "InstanceId": 7253737,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 22.0,
+            "y": 15.0,
+            "z": 22.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 450,
+          "PlaceNameBlock": 0,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 0,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 0,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 138734,
+    "Name": "LVD_Monster_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 138735,
+    "Name": "LVD_Monster_02",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 140213,
+    "Name": "LVD_Path_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 8,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 6964,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 6984,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 6984,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 65,
+        "InstanceId": 7258336,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 15.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 1.126509,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.928556,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 5.577565,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 6.638113,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 5.654727,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      },
+      {
+        "AssetType": 65,
+        "InstanceId": 7309915,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.6,
+            "y": 0.0,
+            "z": 10.6
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.7853982,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 0.5,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.2,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 3.8,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 5.5,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 5.654727,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      },
+      {
+        "AssetType": 65,
+        "InstanceId": 7309916,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -15.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5704508,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 1.126509,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.928556,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 5.577565,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 6.638113,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 5.654727,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      },
+      {
+        "AssetType": 65,
+        "InstanceId": 7309917,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -10.6,
+            "y": 0.0,
+            "z": -10.6
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.7853982,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 0.5,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.2,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 3.8,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 5.5,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 4.2,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      },
+      {
+        "AssetType": 65,
+        "InstanceId": 7309919,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -15.0
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.0,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 1.126509,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.928556,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 5.577565,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 6.638113,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 5.654727,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      },
+      {
+        "AssetType": 65,
+        "InstanceId": 7309920,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 10.6,
+            "y": 0.0,
+            "z": -10.6
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.7853982,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 0.5,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.1,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 3.8,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 5.3,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 3.4,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      },
+      {
+        "AssetType": 65,
+        "InstanceId": 7309921,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 15.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.5704508,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 1.126509,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.928556,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 5.577565,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 6.638113,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 5.654727,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      },
+      {
+        "AssetType": 65,
+        "InstanceId": 7309922,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 10.6,
+            "y": 0.0,
+            "z": 10.6
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.7853982,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ControlPoints": 80,
+            "ControlPointCount": 32,
+            "ControlPointsArray": [
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -5.007754
+                },
+                "PointId": 1,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.663867,
+                  "y": 1.0,
+                  "z": -9.876448
+                },
+                "PointId": 3,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.70897,
+                  "y": 2.5,
+                  "z": -17.35966
+                },
+                "PointId": 4,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.119133,
+                  "y": 3.9,
+                  "z": -24.46569
+                },
+                "PointId": 6,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.805846,
+                  "y": 5.8,
+                  "z": -24.73728
+                },
+                "PointId": 8,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 10.25163,
+                  "y": 3.6,
+                  "z": -18.14949
+                },
+                "PointId": 10,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.438099,
+                  "y": 2.457965,
+                  "z": -8.206097
+                },
+                "PointId": 13,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.197862,
+                  "y": 6.63942,
+                  "z": -14.11612
+                },
+                "PointId": 21,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.733388,
+                  "y": 7.467496,
+                  "z": -23.49724
+                },
+                "PointId": 22,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 5.273713,
+                  "y": 5.095888,
+                  "z": -26.56825
+                },
+                "PointId": 23,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.5045,
+                  "y": 3.203614,
+                  "z": -16.43414
+                },
+                "PointId": 24,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 4.000919,
+                  "y": 2.638274,
+                  "z": -7.08172
+                },
+                "PointId": 25,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -9.351534,
+                  "y": 0.04231643,
+                  "z": -12.54898
+                },
+                "PointId": 26,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -8.212906,
+                  "y": 0.02115822,
+                  "z": -23.74655
+                },
+                "PointId": 27,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.74325,
+                  "y": 0.01057911,
+                  "z": -24.08269
+                },
+                "PointId": 28,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 8.94851,
+                  "y": 0.005289554,
+                  "z": -11.26966
+                },
+                "PointId": 29,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -6.021187,
+                  "y": 0.002644777,
+                  "z": -12.06388
+                },
+                "PointId": 30,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.963424,
+                  "y": 0.002644777,
+                  "z": -17.91196
+                },
+                "PointId": 31,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -3.64319,
+                  "y": 0.002644777,
+                  "z": -23.45168
+                },
+                "PointId": 36,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.557684,
+                  "y": 0.002644777,
+                  "z": -22.17572
+                },
+                "PointId": 39,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 6.75547,
+                  "y": 0.002644777,
+                  "z": -10.42743
+                },
+                "PointId": 37,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -4.177037,
+                  "y": 0.002644777,
+                  "z": -12.11396
+                },
+                "PointId": 38,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -7.866007,
+                  "y": 0.002644777,
+                  "z": -20.11958
+                },
+                "PointId": 32,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 3.121932,
+                  "y": 0.002644777,
+                  "z": -26.08596
+                },
+                "PointId": 40,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 11.3562,
+                  "y": 0.002644777,
+                  "z": -14.99014
+                },
+                "PointId": 41,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 2.55186,
+                  "y": 0.002644777,
+                  "z": -5.22651
+                },
+                "PointId": 44,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -11.73824,
+                  "y": 0.002644777,
+                  "z": -17.10109
+                },
+                "PointId": 42,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": -1.055315,
+                  "y": 0.002644777,
+                  "z": -29.23922
+                },
+                "PointId": 43,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 13.15069,
+                  "y": 0.002644777,
+                  "z": -19.25721
+                },
+                "PointId": 45,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 12.29925,
+                  "y": 0.002644777,
+                  "z": -8.432854
+                },
+                "PointId": 33,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 1.234384,
+                  "y": 0.002644777,
+                  "z": -2.139642
+                },
+                "PointId": 34,
+                "Select": 0,
+                "Padding00": 0
+              },
+              {
+                "Translation": {
+                  "x": 0.0,
+                  "y": -1.732497E-06,
+                  "z": -5.0
+                },
+                "PointId": 35,
+                "Select": 0,
+                "Padding00": 0
+              }
+            ]
+          },
+          "Ring": 0,
+          "Padding00": "AQAA"
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 8
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 138732,
+    "Name": "LVD_planmap_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 8,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 756,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 776,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 776,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 6,
+        "InstanceId": 7174720,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 14.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0095.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7174721,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.504887,
+            "y": 0.0,
+            "z": 14.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2000182
+          },
+          "BoundInstanceId": 7174720
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7174742,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -14.5
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2000139
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7186969,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": -81.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 1.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 8192,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7207924,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2007457
+          },
+          "BoundInstanceId": 7181535
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 7231110,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 2.98723,
+            "y": 2.384186E-07,
+            "z": -2.908927
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2009214
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7238162,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 6.454247,
+            "y": 2.854844E-06,
+            "z": -12.32472
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 2.0,
+            "z": 4.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 8,
+        "InstanceId": 7244907,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 5.431334,
+            "y": 3.395254E-06,
+            "z": -14.03881
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.15695345,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ParentData": {
+              "BaseId": 1025298
+            },
+            "PopWeather": 0,
+            "PopTimeStart": 0,
+            "PopTimeEnd": 0,
+            "Padding00": "AAA=",
+            "MoveAi": 0,
+            "WanderingRange": 6,
+            "Route": 0,
+            "EventGroup": 0
+          },
+          "Behavior": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 8
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 138476,
+    "Name": "LVD_Position_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 138857,
+    "Name": "LVD_Position_002",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 68,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 68,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 139985,
+    "Name": "LVD_treasure_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 120,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 136,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 136,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 16,
+        "InstanceId": 7238609,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -8.0
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 242
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

@@ -1,0 +1,1163 @@
+[
+  {
+    "LayerId": 144513,
+    "Name": "EnvBox",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 14,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1284,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1296,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1296,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 13,
+        "InstanceId": 7515333,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -553.948,
+            "y": -651.0595,
+            "z": -28.70664
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.6218264,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 9.442418,
+            "y": 15.33868,
+            "z": 18.67795
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.4,
+          "Filter": 0.25,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515350,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -487.6114,
+            "y": -649.6672,
+            "z": -37.29403
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 62.3607,
+            "y": 15.92718,
+            "z": 24.81351
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.5,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515355,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -370.3594,
+            "y": -640.7814,
+            "z": -141.2581
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 89.95928,
+            "y": 24.1398,
+            "z": 82.17145
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.25,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515358,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -465.2691,
+            "y": -646.1351,
+            "z": -19.18942
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.7400123,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 21.46347,
+            "y": 15.90757,
+            "z": 17.28886
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 0.5,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515392,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -503.7922,
+            "y": -643.2408,
+            "z": -5.014255
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.15007012,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 21.07524,
+            "y": 11.52541,
+            "z": 11.5421
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.4,
+          "Filter": 0.25,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515397,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -786.2057,
+            "y": -635.5772,
+            "z": -28.1729
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 69.67155,
+            "y": 17.15216,
+            "z": 66.44632
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 1.0,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb_cave.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515398,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -723.2616,
+            "y": -638.534,
+            "z": 23.80392
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.36003438,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 11.08816,
+            "y": 12.83319,
+            "z": 17.40345
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.4,
+          "Filter": 0.25,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515400,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 384.8238,
+            "y": -618.1264,
+            "z": -67.62821
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.8675667,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 12.76036,
+            "y": 14.63007,
+            "z": 22.41382
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.25,
+          "Filter": 0.25,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515411,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 320.5618,
+            "y": -614.7977,
+            "z": -70.95913
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.07792129,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 49.51907,
+            "y": 17.87851,
+            "z": 20.47781
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.5,
+          "Filter": 0.4,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515413,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 191.8566,
+            "y": -615.2484,
+            "z": 2.837373
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.2972563,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.64785,
+            "y": 16.18753,
+            "z": 33.66774
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.25,
+          "Filter": 0.25,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515417,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 223.5699,
+            "y": -613.7463,
+            "z": -65.71729
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 66.71575,
+            "y": 18.53046,
+            "z": 51.99769
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 110,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 1.0,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb_cave.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515429,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 512.0359,
+            "y": -618.9539,
+            "z": -89.88393
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.33089244,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 14.86582,
+            "y": 12.9026,
+            "z": 23.08552
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.5,
+          "Filter": 0.4,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515430,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 568.0579,
+            "y": -619.7607,
+            "z": -112.7775
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 43.67027,
+            "y": 16.08493,
+            "z": 27.30674
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 100,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.6,
+          "Filter": 1.0,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb.essb"
+        }
+      },
+      {
+        "AssetType": 13,
+        "InstanceId": 7515431,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 724.996,
+            "y": -612.8336,
+            "z": -235.7699
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 123.0017,
+            "y": 36.9874,
+            "z": 169.6171
+          }
+        },
+        "Object": {
+          "AssetPath": "",
+          "BoundInstanceId": 0,
+          "Shape": 2,
+          "IsEnvMapShootingPoint": 1,
+          "Priority": 105,
+          "EffectiveRange": 100.0,
+          "InterpolationTime": 2000,
+          "Reverb": 0.7,
+          "Filter": 1.0,
+          "SoundAssetPath": "bgcommon/env/sound/zon_z3/zon_z3_eureka/sound_z3fb_cave.essb"
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 144514,
+    "Name": "Obstruction",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 884,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 896,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 896,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 7515395,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -511.9444,
+            "y": -649.6517,
+            "z": -8.234039
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 12,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 560,
+            "PointSelection": 0,
+            "Binaries": "MAIOAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+1OQXE4wojxKtAOsAAAIA/No0FxGq5H8TuJWXAAACAPzNE/cPxpyPEXoVkwQAAgD/G/PzDs3AgxMomU8EAAIA/iTryw3FEI8RjtBzBAACAPw7H8cPFHiDEthgQwQAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/DAYAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515396,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -489.0019,
+            "y": -627.0855,
+            "z": -14.86213
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 8,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAIAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8vpgnEOrMcxNk/b8AAAIA/w4XVwzqzHMSvlQpBAACAP6kr28NG+BzEg36kwgAAgD9HbhDERvgcxEin8MEAAIA/AACAPwAAgD8AAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 144512,
+    "Name": "Spot_Etc",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 15,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 4804,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 4816,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 4816,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 7515328,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -633.6103,
+            "y": -627.5359,
+            "z": -298.6066
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/lak/lak_spot_mizutamari_4ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/BRCLEZuYcxLajjcMAAIA/EFgbxKnYHMQcxI/DAACAPzzuGsRm5hzEmtecwwAAgD99zyHEZuYcxMwdosMAAIA/AACgQAAAoEEAAKBAAACgQAAAgD/NzEw/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515449,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -575.1891,
+            "y": -619.2376,
+            "z": 24.57084
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 40.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_wind_blow_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+aiR7ENc8axMucoUEAAIA/wBcVxDXPGsQhsJ5BAACAP7qfEcQ1zxrE9sBXQQAAgD9ddArENc8axCmzr0EAAIA/gAAJxDXPGsR+deRBAACAP+tOBcQ1zxrEEZ8AQgAAgD9hYgXENc8axMEfIkIAAIA/e68BxDXPGsQD5jFCAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAgQgAAoEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAACAAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515453,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.40637,
+            "y": -619.1043,
+            "z": 129.3202
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 29.98401,
+            "y": 4.989685,
+            "z": 100.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_wind_blow_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9zGh/CpOclxNWnF0MAAIA/5jSewdXnJcSaqBdDAACAP/oEnsH+vw3EHVrOQgAAgD99Ah/Cz78NxKFYzkIAAIA/Qd/vQQAAyEKAq59AgKufQAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515456,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -147.1507,
+            "y": -566.3832,
+            "z": 25.00826
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 45.0,
+            "y": 5.0,
+            "z": 100.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_wind_blow_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9NRCLDhpgNxKdcZcEAAIA/pfwQw4aYDcRXRENCAACAP/tr78KGmA3Ema1nQgAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAA0QgAAyEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAwAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515459,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 614.3042,
+            "y": -743.2212,
+            "z": 400.1549
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.0,
+            "y": 4.989685,
+            "z": 70.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_wind_blow_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/f5AZEmNg8xOBO60MAAIA/Fq8MREivO8R88uZDAACAPw/kFETmljvEP9bYQwAAgD94XBpEBTQ5xOQ0xkMAAIA/jJUqRGXRNsTzh6BDAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AADwQQAAjEKAq59AgKufQAAAgD8AAIA/AACAPwAAgD8AAAAABQAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515463,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 472.2619,
+            "y": -585.9977,
+            "z": -32.46352
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 40.0,
+            "y": 5.0,
+            "z": 90.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_wind_blow_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/eq7JDOvcQxNyLwcEAAIA/ROHhQ7S8EsQzCorBAACAP2+tEkRCmBPEXTlRwgAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAgQgAAtEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAwAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515464,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -80.06415,
+            "y": -497.0932,
+            "z": -304.0666
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 29.98401,
+            "y": 4.989685,
+            "z": 69.99304
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_wind_blow_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/2EqzC2GUAxACgjcMAAIA/UWZ1wmLg8sNNZJbDAACAPyltr8Ji4PLDJtSmwwAAgD/gbd/Cw1MAxNxWm8MAAIA/Qd/vQXD8i0KAq59AgKufQAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7515470,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -769.3809,
+            "y": -648.0338,
+            "z": 3.592989
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 50.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/wil/wil_spot_alchemy_kiln.scd",
+          "SEParam": {
+            "SoundEffectType": 3,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 128,
+            "PointSelection": 0,
+            "Binaries": "gAADAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9hWEDEKgIixIjzZUAAAIA/AACgQQAASEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7518323,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -574.8891,
+            "y": -619.22,
+            "z": 36.81684
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_garuda_circle.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+aiR7ENc8axBqXAEIAAIA/wBcVxDXPGsSJQf5BAACAP7qfEcQ1zxrE5HHLQQAAgD9ddArENc8axEmiB0IAAIA/gAAJxDXPGsRzAyJCAACAP+tOBcQ1zxrExmcwQgAAgD9hYgXENc8axHXoUUIAAIA/e68BxDXPGsS3rmFCAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAoEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAACAAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7518325,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -574.5891,
+            "y": -619.2016,
+            "z": 25.17084
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 40.0,
+            "y": 5.0,
+            "z": 80.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_cold_wind_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+aiR7ENc8axMucoUEAAIA/wBcVxDXPGsQhsJ5BAACAP7qfEcQ1zxrE9sBXQQAAgD9ddArENc8axCmzr0EAAIA/gAAJxDXPGsR+deRBAACAP+tOBcQ1zxrEEZ8AQgAAgD9hYgXENc8axMEfIkIAAIA/e68BxDXPGsQD5jFCAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAgQgAAoEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAACAAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7518330,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.59814,
+            "y": -629.7547,
+            "z": 134.1479
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 17.0,
+            "y": 4.989685,
+            "z": 70.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_garuda_circle.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD81Bx/CDgYmxHiaF0MAAIA/aw6ewR4GJsSzmhdDAACAP5X9ncGrBhPEw/PhQgAAgD/L/h7CmwYTxEDz4UIAAIA/AACIQQAAjEKAq59AgKufQAAAgD8zM3M/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7518331,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.41134,
+            "y": -619.2373,
+            "z": 129.3503
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 29.98401,
+            "y": 4.989685,
+            "z": 100.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_cold_wind_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8yHR/CtPglxLazF0MAAIA/aTqewdL4JcQztBdDAACAP1gcnsGhvw3EdGTOQgAAgD8sDh/Cg78NxHtjzkIAAIA/Qd/vQQAAyEKAq59AgKufQAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7519650,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 472.2619,
+            "y": -585.9977,
+            "z": -32.46352
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 40.0,
+            "y": 5.0,
+            "z": 120.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_cold_wind_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 6,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 336,
+            "PointSelection": 0,
+            "Binaries": "UAEGAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD/eq7JDOvcQxNyLwcEAAIA/ROHhQ7S8EsQzCorBAACAP2+tEkRCmBPEXTlRwgAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAgQgAA8EIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAwAAAAAAgD8AAAAA"
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7519658,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -80.06315,
+            "y": -497.0752,
+            "z": -304.0415
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 70.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_cold_wind_2ch.scd",
+          "SEParam": {
+            "SoundEffectType": 7,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 160,
+            "PointSelection": 0,
+            "Binaries": "oAAHAQQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD92EqzCs2QAxMqcjcMAAIA/UWV1whTe8sMXYZbDAACAP6hsr8IU3vLD79CmwwAAgD9dbd/CnlIAxKZTm8MAAIA/AACgQQAAjEIAAKBAAACgQAAAgD8AAIA/AACAPwAAgD8AAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 7519672,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 19.48977,
+            "y": -450.5655,
+            "z": -462.2587
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 35.0,
+            "y": 5.0,
+            "z": 250.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "bgcommon/sound/roc/roc_spot_garuda_circle.scd",
+          "SEParam": {
+            "SoundEffectType": 5,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 112,
+            "PointSelection": 0,
+            "Binaries": "cAAFAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+iHBzBYkjhwx9d5sMAAIA/OPJCQmJI4cMb5efDAACAPwAADEIAAHpDAACgQAAAoEAAAIA/AACAPwAAgD8AAIA/AAAAAAAAgD8AAAAAAAAAAA=="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

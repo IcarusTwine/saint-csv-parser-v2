@@ -1,0 +1,102 @@
+[
+  {
+    "LayerId": 116836,
+    "Name": "obstruction",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1332,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1344,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1344,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 0,
+      "LayerSets": 12,
+      "LayerSetCount": 0
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 7,
+        "InstanceId": 5916127,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -32.88695,
+            "y": -5.853728,
+            "z": 4.826997
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 12,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 560,
+            "PointSelection": 0,
+            "Binaries": "MAIOAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD8+P63BAAAgwuv/nUAAAIA/Pj+twQAAyEHr/51AAACAP4gIQ8IAACDCNTKdQAAAgD+FCEPC63/4QTgynUAAAIA/hQhDwgAAIMJe6LtBAACAP4UIQ8Lrf/hBXui7QQAAgD83ZmvCAAAgwl7ou0EAAIA/N2ZrwuZ/+EFe6LtBAACAPzdma8IAACDCQua4wQAAgD83ZmvC5n/4QULmuMEAAIA/4IRCwgAAIMJC5rjBAACAP+CEQsLmf/hBQua4wQAAgD9n9ULCAAAgwnMSmcAAAIA/Z/VCwuZ/+EF9EpnAAACAP6umrcEAACDCbxKZwAAAgD+rpq3BAADIQW8SmcAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/BhAAAAAAAAA="
+          }
+        }
+      },
+      {
+        "AssetType": 7,
+        "InstanceId": 5916128,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 32.88638,
+            "y": -5.840819,
+            "z": 4.886239
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "SoundEffectParam": 56,
+          "AssetPath": "",
+          "SEParam": {
+            "SoundEffectType": 12,
+            "AutoPlay": 1,
+            "IsNoFarClip": 0,
+            "Binary": 20,
+            "BinaryCount": 560,
+            "PointSelection": 0,
+            "Binaries": "MAIOAAQAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD+v1KtBAAAgwuf/nUAAAIA/r9SrQeb/x0Hn/51AAACAPwaeQkIAACDCMzKdQAAAgD8GnkJCTA/5QTMynUAAAIA/Bp5CQgAAIMJe6LtBAACAPwaeQkJMD/lBXui7QQAAgD/nqWxCAAAgwl7ou0EAAIA/56lsQkcP+UFe6LtBAACAP+epbEIAACDCQua4wQAAgD/nqWxCRw/5QULmuMEAAIA/qyFDQgAAIMJC5rjBAACAP6shQ0JHD/lBQua4wQAAgD8ksUJCAAAgwoQSmcAAAIA/JLFCQkwP+UGGEpnAAACAPz5tq0EAACDChBKZwAAAgD9DbatB5v/HQYQSmcAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/BhAAAAAAAAA="
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

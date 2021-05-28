@@ -1,0 +1,5646 @@
+[
+  {
+    "LayerId": 97225,
+    "Name": "LVD_BNPC_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97226,
+    "Name": "LVD_BNPC_02",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 128,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 148,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 148,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 49,
+        "InstanceId": 4599054,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 59.3532,
+            "y": 4.734955,
+            "z": -108.9391
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.1695886,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 52.98283,
+            "y": 6.661025,
+            "z": 27.14997
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97227,
+    "Name": "LVD_BNPC_03",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97902,
+    "Name": "LVD_Boss_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 2,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 204,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 220,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 220,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 49,
+        "InstanceId": 4621938,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 113.9053,
+            "y": -2.675855,
+            "z": -26.40586
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 18.06704,
+            "y": 5.0,
+            "z": 21.48285
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4621955,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 114.1657,
+            "y": -2.674982,
+            "z": -26.40418
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 1.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 2
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97903,
+    "Name": "LVD_Boss_02",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 124,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 140,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 140,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 45,
+        "InstanceId": 4621687,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -16.80023,
+            "y": 25.37573,
+            "z": -171.0079
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2003103
+          },
+          "BoundInstanceId": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97917,
+    "Name": "LVD_Boss_03",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 144,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 160,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 160,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 4682559,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -24.78283,
+            "y": 39.182,
+            "z": -258.0302
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.28196055,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.595989,
+            "y": 4.78235,
+            "z": 0.7144623
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97228,
+    "Name": "LVD_eventBNPC_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 6,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 604,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 624,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 624,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 4652594,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 93.01457,
+            "y": 4.813158,
+            "z": -114.2877
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.485316,
+            "y": 0.7471009,
+            "z": 2.210457
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 29696,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4652595,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 28.83075,
+            "y": 8.427436,
+            "z": -78.55172
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.4900312,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.485316,
+            "y": 0.7471009,
+            "z": 2.210457
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 29696,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4652596,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 25.39617,
+            "y": 6.948412,
+            "z": -124.3033
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.47912848,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.485316,
+            "y": 0.7471009,
+            "z": 2.210457
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 29696,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 8,
+        "InstanceId": 4639173,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -33.52411,
+            "y": 35.01941,
+            "z": -233.9361
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.4631734,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ParentData": {
+              "BaseId": 1007998
+            },
+            "PopWeather": 0,
+            "PopTimeStart": 0,
+            "PopTimeEnd": 0,
+            "Padding00": "AAA=",
+            "MoveAi": 0,
+            "WanderingRange": 6,
+            "Route": 0,
+            "EventGroup": 0
+          },
+          "Behavior": 0
+        }
+      },
+      {
+        "AssetType": 8,
+        "InstanceId": 4639174,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -31.4037,
+            "y": 35.12634,
+            "z": -232.7154
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.1501672,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ParentData": {
+              "BaseId": 1008002
+            },
+            "PopWeather": 0,
+            "PopTimeStart": 0,
+            "PopTimeEnd": 0,
+            "Padding00": "AAA=",
+            "MoveAi": 0,
+            "WanderingRange": 6,
+            "Route": 0,
+            "EventGroup": 0
+          },
+          "Behavior": 0
+        }
+      },
+      {
+        "AssetType": 8,
+        "InstanceId": 4639175,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -33.25538,
+            "y": 35.04602,
+            "z": -231.4141
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.27386782,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "ParentData": {
+              "BaseId": 1008003
+            },
+            "PopWeather": 0,
+            "PopTimeStart": 0,
+            "PopTimeEnd": 0,
+            "Padding00": "AAA=",
+            "MoveAi": 0,
+            "WanderingRange": 6,
+            "Route": 0,
+            "EventGroup": 0
+          },
+          "Behavior": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 6
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97901,
+    "Name": "LVD_gimmick_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 21,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 2432,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 2448,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 2448,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 49,
+        "InstanceId": 4598096,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -84.1205,
+            "y": -0.294801,
+            "z": 84.46535
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.081421986,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 29.2736,
+            "y": 5.0,
+            "z": 3.1195
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4543710,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -69.645,
+            "y": 0.0224,
+            "z": 105.2815
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.8393969,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.0,
+            "y": 3.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 4543722,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 111.095,
+            "y": -2.323265,
+            "z": -41.95084
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.031460766,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 3.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -41.95084,
+              "y": 3.1415927,
+              "z": 0.031460766
+            },
+            {
+              "x": 3.1415927,
+              "y": 3.0,
+              "z": 3.0
+            },
+            {
+              "x": 3.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 1.241,
+              "z": -0.102
+            },
+            {
+              "x": 1.145,
+              "y": 2.182,
+              "z": -0.13
+            },
+            {
+              "x": 1.773,
+              "y": -2.799,
+              "z": 0.055
+            },
+            {
+              "x": -0.201,
+              "y": -0.415,
+              "z": -0.122
+            },
+            {
+              "x": 1.933,
+              "y": 0.498,
+              "z": -0.122
+            },
+            {
+              "x": 1.8,
+              "y": -0.92,
+              "z": 0.063
+            },
+            {
+              "x": -0.551,
+              "y": 0.591,
+              "z": 0.163
+            },
+            {
+              "x": -1.824,
+              "y": 2.36,
+              "z": -0.099
+            },
+            {
+              "x": 0.88,
+              "y": -2.212,
+              "z": 0.13
+            },
+            {
+              "x": -1.092,
+              "y": 0.25,
+              "z": 0.05
+            },
+            {
+              "x": -0.575,
+              "y": -2.265,
+              "z": 0.066
+            },
+            {
+              "x": -0.389,
+              "y": -1.032,
+              "z": -0.108
+            },
+            {
+              "x": 1.636,
+              "y": 0.474,
+              "z": -0.023
+            },
+            {
+              "x": 0.179,
+              "y": -0.001,
+              "z": 0.0
+            },
+            {
+              "x": -0.002,
+              "y": 1.737,
+              "z": -0.106
+            },
+            {
+              "x": 1.177,
+              "y": 0.36,
+              "z": -0.039
+            }
+          ]
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543713,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 105.9128,
+            "y": 1.724182,
+            "z": 11.42896
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002182
+          },
+          "BoundInstanceId": 4542379
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543714,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 111.6503,
+            "y": 0.2288208,
+            "z": -49.79028
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002183
+          },
+          "BoundInstanceId": 4621964
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4543753,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -78.84019,
+            "y": -0.1934188,
+            "z": 95.22712
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0095.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4543725,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -69.64498,
+            "y": 0.02237773,
+            "z": 105.2815
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.8393973,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0055.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543758,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -75.02542,
+            "y": -1.210333,
+            "z": 73.65933
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2000700
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543754,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -77.62268,
+            "y": 0.6056303,
+            "z": 95.6283
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2000182
+          },
+          "BoundInstanceId": 4543753
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4599052,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.939839,
+            "y": 7.301677,
+            "z": 17.27123
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.6632864,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.910853,
+            "y": 5.0,
+            "z": 3.620607
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4599105,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -64.05311,
+            "y": -41.47892,
+            "z": 27.97261
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.14331473,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 13.77371,
+            "y": 5.0,
+            "z": 4.04739
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4599106,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -31.07281,
+            "y": -31.39152,
+            "z": 27.97261
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.14331473,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 13.77371,
+            "y": 5.0,
+            "z": 4.04739
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4599119,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -3.491464,
+            "y": -0.3545599,
+            "z": -24.71835
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002326
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4615188,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -62.76958,
+            "y": -0.3328539,
+            "z": 36.19965
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002325
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543727,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 111.888,
+            "y": -2.109839,
+            "z": -6.942894
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002872
+          },
+          "BoundInstanceId": 4543726
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543728,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 114.6587,
+            "y": -2.093417,
+            "z": -6.149437
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.1,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002735
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4621964,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 111.5549,
+            "y": -2.091551,
+            "z": -46.49717
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.3,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0118.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4682723,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -84.1205,
+            "y": -0.4957528,
+            "z": 89.93201
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.08142139,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 29.27355,
+            "y": 5.0,
+            "z": 3.119495
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4696868,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 11.21677,
+            "y": 7.872657,
+            "z": 13.53555
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -1.3030633,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 2.152266,
+            "y": 7.912524,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4543726,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 114.6065,
+            "y": -2.092947,
+            "z": -6.130011
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_pln/sgpl_w_lvd_b0118_wide.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 7390952,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 114.6625,
+            "y": -2.429804,
+            "z": -16.51638
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -8.742278E-08,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -16.51638,
+              "y": -3.1415927,
+              "z": -8.742278E-08
+            },
+            {
+              "x": -3.1415927,
+              "y": 1.0,
+              "z": 1.0
+            },
+            {
+              "x": 1.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.413,
+              "z": 0.015
+            },
+            {
+              "x": 0.382,
+              "y": 0.205,
+              "z": 0.006
+            },
+            {
+              "x": 0.168,
+              "y": 0.012,
+              "z": -0.002
+            },
+            {
+              "x": -0.044,
+              "y": -0.109,
+              "z": 0.018
+            },
+            {
+              "x": 0.506,
+              "y": 0.979,
+              "z": -0.001
+            },
+            {
+              "x": -0.074,
+              "y": 0.548,
+              "z": 0.01
+            },
+            {
+              "x": 0.233,
+              "y": -0.229,
+              "z": 0.015
+            },
+            {
+              "x": 0.419,
+              "y": -0.741,
+              "z": 0.014
+            },
+            {
+              "x": 0.429,
+              "y": 0.627,
+              "z": 0.003
+            },
+            {
+              "x": 0.056,
+              "y": -0.386,
+              "z": 0.005
+            },
+            {
+              "x": 0.152,
+              "y": -0.283,
+              "z": 0.011
+            },
+            {
+              "x": 0.306,
+              "y": -0.141,
+              "z": 0.005
+            },
+            {
+              "x": 0.133,
+              "y": 0.644,
+              "z": -0.024
+            },
+            {
+              "x": -0.679,
+              "y": 0.871,
+              "z": 0.012
+            },
+            {
+              "x": 0.274,
+              "y": -0.158,
+              "z": 0.005
+            },
+            {
+              "x": 0.148,
+              "y": -0.764,
+              "z": 0.019
+            }
+          ]
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 21
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97904,
+    "Name": "LVD_gimmick_02",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 21,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 2532,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 2548,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 2548,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 45,
+        "InstanceId": 4598145,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 92.97721,
+            "y": 5.002774,
+            "z": -110.9755
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002109
+          },
+          "BoundInstanceId": 4549243
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4598146,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 30.49752,
+            "y": 8.248112,
+            "z": -82.09692
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002150
+          },
+          "BoundInstanceId": 4549448
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4598147,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 27.13451,
+            "y": 7.114878,
+            "z": -120.7197
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002180
+          },
+          "BoundInstanceId": 4549459
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4598148,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 45.69585,
+            "y": 7.015042,
+            "z": -129.3446
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002181
+          },
+          "BoundInstanceId": 4574849
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 4543723,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -24.39163,
+            "y": 25.51685,
+            "z": -175.8326
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.0873171,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 3.0,
+            "y": 3.0,
+            "z": 3.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -175.8326,
+              "y": -3.1415927,
+              "z": -1.0873171
+            },
+            {
+              "x": -3.1415927,
+              "y": 3.0,
+              "z": 3.0
+            },
+            {
+              "x": 3.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 1.241,
+              "z": 0.008
+            },
+            {
+              "x": 1.145,
+              "y": 2.182,
+              "z": -0.006
+            },
+            {
+              "x": 1.773,
+              "y": -2.797,
+              "z": -0.072
+            },
+            {
+              "x": -0.184,
+              "y": -0.415,
+              "z": -0.04
+            },
+            {
+              "x": 1.933,
+              "y": 0.498,
+              "z": -0.022
+            },
+            {
+              "x": 1.8,
+              "y": -0.869,
+              "z": -0.014
+            },
+            {
+              "x": -0.167,
+              "y": 0.569,
+              "z": 0.042
+            },
+            {
+              "x": -1.834,
+              "y": 2.107,
+              "z": 0.027
+            },
+            {
+              "x": 0.762,
+              "y": -2.191,
+              "z": -0.042
+            },
+            {
+              "x": -1.081,
+              "y": 0.07,
+              "z": 0.011
+            },
+            {
+              "x": -0.575,
+              "y": -2.811,
+              "z": -0.073
+            },
+            {
+              "x": -0.146,
+              "y": 1.615,
+              "z": 0.05
+            },
+            {
+              "x": -0.655,
+              "y": 1.75,
+              "z": 0.034
+            },
+            {
+              "x": 0.488,
+              "y": -0.029,
+              "z": 0.0
+            },
+            {
+              "x": -0.053,
+              "y": -1.181,
+              "z": -0.051
+            },
+            {
+              "x": 1.739,
+              "y": 0.374,
+              "z": 0.004
+            }
+          ]
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 4598411,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 44.90482,
+            "y": 8.22332,
+            "z": -131.508
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.5323256,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 0.9761571,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 2
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4598413,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 43.31382,
+            "y": 7.015449,
+            "z": -133.9094
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.53232545,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.8213515,
+            "y": 1.000441,
+            "z": 2.815033
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4598414,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -28.61024,
+            "y": 25.19263,
+            "z": -174.6312
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": 0.00052714336,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002262
+          },
+          "BoundInstanceId": 4598415
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 4598417,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 11.33518,
+            "y": 25.8571,
+            "z": -162.4354
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.3866814,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -162.4354,
+              "y": -3.1415927,
+              "z": -1.3866814
+            },
+            {
+              "x": -3.1415927,
+              "y": 1.5,
+              "z": 1.5
+            },
+            {
+              "x": 1.5,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.621,
+              "z": 0.084
+            },
+            {
+              "x": 0.573,
+              "y": 1.11,
+              "z": 0.152
+            },
+            {
+              "x": 0.902,
+              "y": 0.57,
+              "z": 0.09
+            },
+            {
+              "x": -0.848,
+              "y": -0.105,
+              "z": -0.019
+            },
+            {
+              "x": 0.487,
+              "y": 0.349,
+              "z": 0.051
+            },
+            {
+              "x": -0.144,
+              "y": -0.582,
+              "z": -0.073
+            },
+            {
+              "x": -1.237,
+              "y": 1.364,
+              "z": 0.199
+            },
+            {
+              "x": -0.189,
+              "y": 0.504,
+              "z": 0.099
+            },
+            {
+              "x": -1.097,
+              "y": -0.225,
+              "z": -0.043
+            },
+            {
+              "x": 1.195,
+              "y": -0.088,
+              "z": -0.006
+            },
+            {
+              "x": -0.705,
+              "y": -0.634,
+              "z": -0.093
+            },
+            {
+              "x": 0.2,
+              "y": 0.58,
+              "z": 0.146
+            },
+            {
+              "x": -1.325,
+              "y": -0.225,
+              "z": -0.032
+            },
+            {
+              "x": 0.002,
+              "y": -0.294,
+              "z": -0.042
+            },
+            {
+              "x": -0.064,
+              "y": -0.328,
+              "z": -0.048
+            },
+            {
+              "x": 0.122,
+              "y": -0.269,
+              "z": -0.042
+            }
+          ]
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4599257,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 108.6321,
+            "y": 3.311693,
+            "z": -61.31836
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 28.49734,
+            "y": 8.013679,
+            "z": 15.23042
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543731,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 44.6869,
+            "y": 7.015,
+            "z": -131.5474
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.53232545,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002735
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4543729,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 44.68687,
+            "y": 6.996458,
+            "z": -131.5474
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.53232545,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0118.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543730,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 44.23277,
+            "y": 7.015042,
+            "z": -129.353
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002872
+          },
+          "BoundInstanceId": 4543729
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4598415,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.31918,
+            "y": 24.82709,
+            "z": -180.7866
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0813646,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0250.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4663860,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 44.35875,
+            "y": 7.554582,
+            "z": -132.3411
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2003429
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4672972,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 55.38585,
+            "y": 4.718402,
+            "z": -108.4961
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.26450658,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 48.19945,
+            "y": 9.863144,
+            "z": 40.47688
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4599072,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 63.83006,
+            "y": 6.531086,
+            "z": -95.95478
+          },
+          "Rotation": {
+            "x": -5.0086136E-08,
+            "y": -1.3753395,
+            "z": 2.2343514E-07
+          },
+          "Scale": {
+            "x": 10.12646,
+            "y": 4.322639,
+            "z": 6.242607
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4696080,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 71.32184,
+            "y": 1.018956,
+            "z": -73.56162
+          },
+          "Rotation": {
+            "x": 1.0970342E-08,
+            "y": -1.1170563,
+            "z": -1.2101638E-08
+          },
+          "Scale": {
+            "x": 6.321304,
+            "y": 9.517113,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4696081,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 74.83534,
+            "y": 4.715443,
+            "z": -64.65006
+          },
+          "Rotation": {
+            "x": 2.432956E-08,
+            "y": -1.3553281,
+            "z": -2.481003E-08
+          },
+          "Scale": {
+            "x": 3.306881,
+            "y": 13.2136,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4696082,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 78.5373,
+            "y": 4.715443,
+            "z": -56.56944
+          },
+          "Rotation": {
+            "x": 8.594131E-09,
+            "y": -1.0129219,
+            "z": -1.0020143E-08
+          },
+          "Scale": {
+            "x": 5.726639,
+            "y": 13.2136,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 7390954,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.10518,
+            "y": 25.47187,
+            "z": -164.0175
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -1.3736912,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -164.0175,
+              "y": -3.1415927,
+              "z": -1.3736912
+            },
+            {
+              "x": -3.1415927,
+              "y": 1.0,
+              "z": 1.0
+            },
+            {
+              "x": 1.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.413,
+              "z": 0.011
+            },
+            {
+              "x": 0.382,
+              "y": 0.205,
+              "z": 0.006
+            },
+            {
+              "x": 0.168,
+              "y": 0.012,
+              "z": 0.001
+            },
+            {
+              "x": -0.042,
+              "y": -0.109,
+              "z": -0.012
+            },
+            {
+              "x": 0.506,
+              "y": 0.979,
+              "z": 0.041
+            },
+            {
+              "x": -0.074,
+              "y": 0.194,
+              "z": -0.003
+            },
+            {
+              "x": 0.694,
+              "y": -0.24,
+              "z": -0.016
+            },
+            {
+              "x": 0.415,
+              "y": -0.712,
+              "z": -0.035
+            },
+            {
+              "x": 0.413,
+              "y": 0.643,
+              "z": 0.025
+            },
+            {
+              "x": 0.058,
+              "y": -0.214,
+              "z": -0.014
+            },
+            {
+              "x": 0.318,
+              "y": -0.006,
+              "z": 0.0
+            },
+            {
+              "x": 0.009,
+              "y": 0.143,
+              "z": 0.001
+            },
+            {
+              "x": 0.289,
+              "y": 0.284,
+              "z": 0.019
+            },
+            {
+              "x": -0.484,
+              "y": 0.639,
+              "z": 0.017
+            },
+            {
+              "x": 0.608,
+              "y": 0.231,
+              "z": 0.011
+            },
+            {
+              "x": -0.076,
+              "y": -0.675,
+              "z": -0.038
+            }
+          ]
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 21
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97905,
+    "Name": "LVD_gimmick_03",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 19,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 1920,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 1936,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 1936,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 45,
+        "InstanceId": 4543759,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.89465,
+            "y": 35.01941,
+            "z": -222.9496
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2000139
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4543756,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -46.23512,
+            "y": 36.12978,
+            "z": -235.4859
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.52426,
+            "y": 4.397173,
+            "z": 22.96329
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4603975,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -106.9904,
+            "y": 15.79719,
+            "z": -169.8728
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": -0.69015837,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 35.62574,
+            "y": 8.794753,
+            "z": 35.62574
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4598149,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -95.26472,
+            "y": 12.88843,
+            "z": -122.5933
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002184
+          },
+          "BoundInstanceId": 4549240
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4598150,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -100.2732,
+            "y": 20.31073,
+            "z": -163.5134
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002665
+          },
+          "BoundInstanceId": 4549241
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4598151,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -102.6475,
+            "y": 21.0116,
+            "z": -187.3655
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002884
+          },
+          "BoundInstanceId": 4572942
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 4621901,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -28.51309,
+            "y": 35.27187,
+            "z": -238.3808
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 1.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543736,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -48.17525,
+            "y": 34.70692,
+            "z": -234.4632
+          },
+          "Rotation": {
+            "x": -4.7922134E-05,
+            "y": -4.7922134E-05,
+            "z": -4.7922134E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002872
+          },
+          "BoundInstanceId": 4543735
+        }
+      },
+      {
+        "AssetType": 45,
+        "InstanceId": 4543737,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -48.27123,
+            "y": 34.91854,
+            "z": -235.5742
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.4977189,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 2002735
+          },
+          "BoundInstanceId": 0
+        }
+      },
+      {
+        "AssetType": 6,
+        "InstanceId": 4543735,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -48.1772,
+            "y": 34.7429,
+            "z": -235.5935
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.4977189,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "AssetPath": "bgcommon/world/lvd/shared/for_vfx/sgvf_w_lvd_b0250.sgb",
+          "InitialDoorState": 1,
+          "OverriddenMembers": 92,
+          "OverriddenMembersCount": 0,
+          "InitialRotationState": 1,
+          "RandomTimelineAutoPlay": 1,
+          "RandomTimelineLoopPlayback": 1,
+          "IsCollisionControllableWithoutEObj": 0,
+          "BoundCLientPathInstanceId": 0,
+          "_MovePathSettings": 92,
+          "NotCreateNavimeshDoor": 0,
+          "InitialTransformState": 0,
+          "InitialColorState": 0,
+          "SGOverriddenMembers": null,
+          "MovePathSettings": {
+            "Mode": 0,
+            "AutoPlay": 0,
+            "Padding00": 0,
+            "Time": 30,
+            "Loop": 0,
+            "Reverse": 0,
+            "Rotation": 0,
+            "AccelerateTime": 0,
+            "DecelerateTime": 0,
+            "VerticalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "HorizontalSwingRange": [
+              0.0,
+              0.0
+            ],
+            "SwingMoveSpeedRange": [
+              30.0,
+              30.0
+            ],
+            "SwingRotation": [
+              0.0,
+              0.0
+            ],
+            "SwingRotationSpeedRange": [
+              30.0,
+              30.0
+            ]
+          }
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4622632,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -81.90158,
+            "y": 17.32825,
+            "z": -142.7454
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0156113,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 9.282715,
+            "y": 9.652214,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4622633,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -89.45456,
+            "y": 20.57427,
+            "z": -151.7929
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.4940832,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 7.732582,
+            "y": 10.0,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4622634,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -88.3344,
+            "y": 20.57427,
+            "z": -140.192
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.2711673,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 5.578987,
+            "y": 10.0,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4622635,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -91.87536,
+            "y": 20.57427,
+            "z": -161.5168
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.60004705,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 3.718033,
+            "y": 10.0,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4649681,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -74.83242,
+            "y": 17.83389,
+            "z": -152.7691
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.7717251,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.071518,
+            "y": 10.15785,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4649684,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -72.8899,
+            "y": 18.49629,
+            "z": -161.5824
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 1.5356587,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 6.71701,
+            "y": 10.82025,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4649685,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -69.82927,
+            "y": 19.62035,
+            "z": -171.8773
+          },
+          "Rotation": {
+            "x": -5.7218594E-09,
+            "y": 0.8312765,
+            "z": -7.8710425E-09
+          },
+          "Scale": {
+            "x": 4.911385,
+            "y": 11.94431,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4681460,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -29.84891,
+            "y": 20.28134,
+            "z": -137.4536
+          },
+          "Rotation": {
+            "x": 9.06607E-09,
+            "y": -1.0368919,
+            "z": -1.0423526E-08
+          },
+          "Scale": {
+            "x": 28.44477,
+            "y": 13.2136,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 21504,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 40,
+        "InstanceId": 7390955,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -42.70843,
+            "y": 34.72707,
+            "z": -235.7043
+          },
+          "Rotation": {
+            "x": -0.0,
+            "y": 1.5704509,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -235.7043,
+              "y": -0.0,
+              "z": 1.5704509
+            },
+            {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            {
+              "x": 1.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.413,
+              "z": -0.001
+            },
+            {
+              "x": 0.382,
+              "y": 0.205,
+              "z": 0.0
+            },
+            {
+              "x": 0.168,
+              "y": 0.013,
+              "z": 0.002
+            },
+            {
+              "x": -0.043,
+              "y": -0.109,
+              "z": -0.012
+            },
+            {
+              "x": 0.506,
+              "y": 0.979,
+              "z": 0.018
+            },
+            {
+              "x": -0.074,
+              "y": 0.384,
+              "z": -0.005
+            },
+            {
+              "x": 0.534,
+              "y": -0.246,
+              "z": -0.013
+            },
+            {
+              "x": 0.413,
+              "y": -0.725,
+              "z": -0.015
+            },
+            {
+              "x": 0.42,
+              "y": 0.651,
+              "z": 0.01
+            },
+            {
+              "x": 0.058,
+              "y": -0.12,
+              "z": -0.01
+            },
+            {
+              "x": 0.381,
+              "y": -0.098,
+              "z": -0.006
+            },
+            {
+              "x": 0.189,
+              "y": -0.373,
+              "z": -0.001
+            },
+            {
+              "x": -0.112,
+              "y": 0.095,
+              "z": 0.009
+            },
+            {
+              "x": -0.23,
+              "y": 0.645,
+              "z": -0.002
+            },
+            {
+              "x": 0.62,
+              "y": -0.076,
+              "z": 0.006
+            },
+            {
+              "x": -0.23,
+              "y": -0.902,
+              "z": -0.014
+            }
+          ]
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 19
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97232,
+    "Name": "LVD_maprange_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 32,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 3636,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 3656,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 3656,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 43,
+        "InstanceId": 4543794,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 70.30473,
+            "y": 2.111519,
+            "z": 21.54442
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.24721962,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 50.83856,
+            "y": 10.0,
+            "z": 27.45608
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 682,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 3,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543795,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 26.88216,
+            "y": 12.47291,
+            "z": 24.34296
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.66299146,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 19.88917,
+            "y": 5.387425,
+            "z": 21.38165
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 682,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 3,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543796,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 110.879,
+            "y": 3.190766,
+            "z": -8.385415
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.3702763,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 26.74656,
+            "y": 8.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 101,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 687,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 4,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543797,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 116.8826,
+            "y": 2.363468,
+            "z": -33.43258
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.25876775,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 31.45224,
+            "y": 8.0,
+            "z": 21.80491
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 101,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 687,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 4,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543798,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 97.68358,
+            "y": 4.575931,
+            "z": -70.06494
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.2587674,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 25.0,
+            "y": 10.0,
+            "z": 18.56516
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 683,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 5,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543799,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 93.98758,
+            "y": 7.026661,
+            "z": -97.2804
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.0,
+            "y": 5.0,
+            "z": 20.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 683,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 5,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543800,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 47.78264,
+            "y": 11.80495,
+            "z": -91.35254
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.23546726,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.0,
+            "y": 12.0,
+            "z": 47.7826
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 683,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 5,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543803,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 8.027842,
+            "y": 0.6331797,
+            "z": -16.17454
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.7601937,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 8.0,
+            "z": 26.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 2,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543804,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -15.43228,
+            "y": 3.815912,
+            "z": 21.05158
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.25206256,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 35.0,
+            "y": 10.0,
+            "z": 56.81487
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 2,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543805,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -87.42046,
+            "y": 2.048229,
+            "z": 31.98241
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.16915905,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 45.85568,
+            "y": 8.0,
+            "z": 57.98566
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 101,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 2,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543810,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -80.04465,
+            "y": 12.73782,
+            "z": -114.1564
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.5471393,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 19.98959,
+            "y": 14.0,
+            "z": 11.90532
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 7,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543811,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -58.83015,
+            "y": 22.46847,
+            "z": -143.7145
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0278399,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 9.14355,
+            "y": 8.0,
+            "z": 17.73945
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 7,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543812,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -41.48582,
+            "y": 18.50058,
+            "z": -125.6945
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 16.3297,
+            "y": 5.0,
+            "z": 16.3297
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 7,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543813,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -105.4058,
+            "y": 20.73654,
+            "z": -178.8779
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.105672635,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.0,
+            "y": 5.0,
+            "z": 11.52538
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 8,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543814,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -142.7339,
+            "y": 17.39028,
+            "z": -134.9291
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 36.90455,
+            "y": 14.0,
+            "z": 28.08848
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 8,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543815,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -23.83211,
+            "y": 31.44988,
+            "z": -239.7438
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 25.03145,
+            "y": 15.0,
+            "z": 22.69812
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 101,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 1342,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 10,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543818,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -76.7996,
+            "y": 1.767681,
+            "z": 105.9176
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.16915861,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 18.35344,
+            "y": 8.0,
+            "z": 18.35344
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 1339,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 1,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4543820,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -70.64094,
+            "y": 15.52436,
+            "z": -127.434
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.3568221,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 15.9492,
+            "y": 14.0,
+            "z": 14.49619
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 7,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621662,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -97.90778,
+            "y": 31.44988,
+            "z": -205.3274
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.1056727,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 13.17714,
+            "y": 15.0,
+            "z": 15.63943
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 9,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621663,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -46.7692,
+            "y": 24.05676,
+            "z": -171.8126
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.0745783,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 25.80186,
+            "y": 9.588291,
+            "z": 15.00016
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 7,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621664,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -118.2518,
+            "y": 17.39028,
+            "z": -141.6355
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.5471396,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 26.99115,
+            "y": 14.0,
+            "z": 18.69789
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 8,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621665,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -102.4034,
+            "y": 17.39028,
+            "z": -157.8454
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.37536082,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.673059,
+            "y": 14.0,
+            "z": 8.436722
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 8,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621666,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -6.077946,
+            "y": 24.05676,
+            "z": -162.8383
+          },
+          "Rotation": {
+            "x": -1.0381036E-08,
+            "y": 1.0745776,
+            "z": -9.377733E-09
+          },
+          "Scale": {
+            "x": 26.79222,
+            "y": 9.588291,
+            "z": 25.48024
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 101,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 1341,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 6,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621667,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -87.14836,
+            "y": 20.73654,
+            "z": -173.0864
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.375361,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 16.49427,
+            "y": 5.0,
+            "z": 11.35947
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 8,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621668,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -81.76205,
+            "y": 20.73654,
+            "z": -157.2658
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.5197266,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 8.935871,
+            "y": 5.0,
+            "z": 6.103924
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 8,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621669,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 59.9384,
+            "y": 2.111519,
+            "z": -0.2431717
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.24721962,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 16.33868,
+            "y": 10.0,
+            "z": 19.58083
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 102,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 682,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 3,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621670,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -79.44145,
+            "y": 31.44988,
+            "z": -231.9798
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.80368,
+            "y": 15.0,
+            "z": 14.93416
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 9,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4621660,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -1.488204,
+            "y": 6.514228,
+            "z": 8.254142
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.8352349,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.213946,
+            "y": 7.594696,
+            "z": 2.11119
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 1340,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 1,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4681139,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 2.167968,
+            "y": 9.451648,
+            "z": 11.54628
+          },
+          "Rotation": {
+            "x": -0.4351689,
+            "y": 0.8293485,
+            "z": -0.021532021
+          },
+          "Scale": {
+            "x": 2.213946,
+            "y": 6.850531,
+            "z": 6.853935
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 1340,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 1,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4681141,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 4.084959,
+            "y": 10.75695,
+            "z": 15.06736
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.8352349,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.565003,
+            "y": 7.594696,
+            "z": 2.363363
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 1340,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 1,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4681142,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 7.163815,
+            "y": 11.48289,
+            "z": 15.8456
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.8352349,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.076115,
+            "y": 6.868759,
+            "z": 2.087195
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 684,
+          "PlaceNameSpot": 1340,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 1,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 0,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      },
+      {
+        "AssetType": 43,
+        "InstanceId": 4681184,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -63.87588,
+            "y": 24.05676,
+            "z": -163.4574
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.1491573,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 8.987267,
+            "y": 9.588291,
+            "z": 8.987267
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 3,
+            "Priority": 103,
+            "Enabled": 1
+          },
+          "Map": 146,
+          "PlaceNameBlock": 685,
+          "PlaceNameSpot": 0,
+          "Weather": 0,
+          "BGM": 0,
+          "HousingBlockId": 0,
+          "RestBonusEffective": 1,
+          "DiscoveryId": 7,
+          "MapEnabled": 1,
+          "PlaceNameEnabled": 1,
+          "DiscoveryEnabled": 1,
+          "BGMEnabled": 0,
+          "WeatherEnabled": 0,
+          "RestBonusEnabled": 0,
+          "BGMPlayZoneInOnly": 0,
+          "LiftEnabled": 0,
+          "HousingEnabled": 0
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 32
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97234,
+    "Name": "LVD_navimesh_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 7,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 696,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 716,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 716,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 4630708,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 44.39489,
+            "y": 6.679408,
+            "z": -132.5536
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.1848157,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.3170505,
+            "z": 2.960997
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 28672,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4630710,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 46.1577,
+            "y": 6.679408,
+            "z": -135.6447
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.97254723,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 0.3170505,
+            "z": 2.537391
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 28672,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4649633,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -74.57503,
+            "y": 17.97146,
+            "z": -153.5161
+          },
+          "Rotation": {
+            "x": -2.0750675,
+            "y": -0.40255532,
+            "z": 0.8818702
+          },
+          "Scale": {
+            "x": 2.236618,
+            "y": 1.119026,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 28672,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4682776,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -106.9698,
+            "y": 22.17216,
+            "z": -169.3854
+          },
+          "Rotation": {
+            "x": 2.361291,
+            "y": -1.2265124,
+            "z": 2.2972443
+          },
+          "Scale": {
+            "x": 1.737945,
+            "y": 1.400803,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 28672,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4682779,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -114.2819,
+            "y": 22.73546,
+            "z": -172.5046
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.21297973,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 8.408115,
+            "y": 4.501111,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 4,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4682780,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -117.4106,
+            "y": 22.73546,
+            "z": -173.5412
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.51392984,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 8.408115,
+            "y": 4.501111,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 4,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 4721964,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 44.48386,
+            "y": 8.149839,
+            "z": -132.3534
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.5060725,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.670586,
+            "y": 1.319502,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 6,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 28672,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 7
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 97235,
+    "Name": "LVD_position_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 0,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 52,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 72,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 72,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 2
+    },
+    "InstanceObjects": [],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 0
+      },
+      {
+        "LayerSetId": 16777217
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 98121,
+    "Name": "LVD_treasure_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 8,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 596,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 612,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 612,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 16,
+        "InstanceId": 4614293,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 64.54141,
+            "y": 3.386683,
+            "z": -9.728525
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.30057588,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 11
+        }
+      },
+      {
+        "AssetType": 16,
+        "InstanceId": 4614294,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 110.6431,
+            "y": -1.543162,
+            "z": -49.67536
+          },
+          "Rotation": {
+            "x": -4.7922116E-05,
+            "y": 0.02813935,
+            "z": -4.7922116E-05
+          },
+          "Scale": {
+            "x": 0.9917603,
+            "y": 0.9917603,
+            "z": 0.9917603
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 15
+        }
+      },
+      {
+        "AssetType": 16,
+        "InstanceId": 4614297,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -23.98785,
+            "y": 25.53483,
+            "z": -176.4601
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.1554604,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 16
+        }
+      },
+      {
+        "AssetType": 16,
+        "InstanceId": 4614298,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -42.34414,
+            "y": 18.49042,
+            "z": -119.058
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 1.2231162,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 14
+        }
+      },
+      {
+        "AssetType": 16,
+        "InstanceId": 4614299,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -29.37641,
+            "y": 35.21094,
+            "z": -229.0627
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.6331643,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 18
+        }
+      },
+      {
+        "AssetType": 16,
+        "InstanceId": 4616678,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -25.04578,
+            "y": 25.47779,
+            "z": -174.237
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.1554604,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 17
+        }
+      },
+      {
+        "AssetType": 16,
+        "InstanceId": 4614295,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 65.20124,
+            "y": 18.32412,
+            "z": -86.96684
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.4005131,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 13
+        }
+      },
+      {
+        "AssetType": 16,
+        "InstanceId": 4614296,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 66.45101,
+            "y": 4.279181,
+            "z": -56.32547
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.052971598,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "BaseId": 0
+          },
+          "NonpopInitZone": 12
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 8
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  },
+  {
+    "LayerId": 127859,
+    "Name": "LVD_zone_01",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 1,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 368,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 0,
+    "ObSetReferencedList": 384,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 384,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 40,
+        "InstanceId": 6540525,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -34.60092,
+            "y": 35.01653,
+            "z": -237.2794
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.5650172,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 1.0,
+            "z": 2.0
+          }
+        },
+        "Object": {
+          "PopType": 1,
+          "_RelativePositions": {
+            "Pos": 20,
+            "PosCount": 20
+          },
+          "InnerRadiusRatio": 0.0,
+          "Index": 0,
+          "RelativePositions": [
+            {
+              "x": -237.2794,
+              "y": 0.0,
+              "z": 0.5650172
+            },
+            {
+              "x": 0.0,
+              "y": 2.0,
+              "z": 1.0
+            },
+            {
+              "x": 2.0,
+              "y": 1E-45,
+              "z": 2.8E-44
+            },
+            {
+              "x": 2.8E-44,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.826,
+              "z": 0.019
+            },
+            {
+              "x": 0.767,
+              "y": 1.326,
+              "z": 0.035
+            },
+            {
+              "x": 1.083,
+              "y": 0.52,
+              "z": 0.016
+            },
+            {
+              "x": 0.22,
+              "y": -0.24,
+              "z": -0.026
+            },
+            {
+              "x": 1.101,
+              "y": -0.266,
+              "z": -0.004
+            },
+            {
+              "x": -0.361,
+              "y": -1.55,
+              "z": -0.075
+            },
+            {
+              "x": 0.862,
+              "y": 0.204,
+              "z": 0.011
+            },
+            {
+              "x": -0.27,
+              "y": -1.075,
+              "z": -0.015
+            },
+            {
+              "x": -1.656,
+              "y": -0.007,
+              "z": 0.01
+            },
+            {
+              "x": -0.744,
+              "y": -1.643,
+              "z": -0.081
+            },
+            {
+              "x": 1.002,
+              "y": 0.035,
+              "z": 0.002
+            },
+            {
+              "x": -0.017,
+              "y": -0.023,
+              "z": -0.001
+            },
+            {
+              "x": -0.005,
+              "y": -0.432,
+              "z": -0.01
+            },
+            {
+              "x": -0.381,
+              "y": -0.053,
+              "z": 0.007
+            },
+            {
+              "x": -0.653,
+              "y": 0.326,
+              "z": 0.014
+            },
+            {
+              "x": -0.144,
+              "y": 0.209,
+              "z": -0.02
+            }
+          ]
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 1
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]

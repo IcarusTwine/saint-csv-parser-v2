@@ -1,0 +1,1080 @@
+[
+  {
+    "LayerId": 149933,
+    "Name": "QB_JobSmn650_001",
+    "_InstanceObjects": 52,
+    "InstanceObjectCount": 36,
+    "ToolModeVisible": 1,
+    "ToolModeReadOnly": 0,
+    "IsBushLayer": 0,
+    "PS3Visible": 1,
+    "_LayerSetReferencedList": 2856,
+    "FestivalID": 0,
+    "FestivalPhaseID": 0,
+    "IsTemporary": 0,
+    "IsHousing": 0,
+    "VersionMask": 45,
+    "ObSetReferencedList": 2872,
+    "ObSetReferencedListCount": 0,
+    "ObSetEnableReferencedList": 2872,
+    "ObSetEnableReferencedListCount": 0,
+    "LayerSetReferencedList": {
+      "ReferencedType": 1,
+      "LayerSets": 12,
+      "LayerSetCount": 1
+    },
+    "InstanceObjects": [
+      {
+        "AssetType": 57,
+        "InstanceId": 7585482,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -101.6328,
+            "y": 33.81282,
+            "z": 59.26598
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.14892371,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.487072,
+            "y": 5.272918,
+            "z": 5.248761
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585483,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -40.50361,
+            "y": 18.90791,
+            "z": -1.005489
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.31138036,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 26.34472,
+            "y": 5.091538,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585484,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -41.9345,
+            "y": 15.42834,
+            "z": 0.3530852
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.3075476,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 23.32204,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585485,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -28.51851,
+            "y": 20.14833,
+            "z": 33.39534
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.33993465,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 30.17137,
+            "y": 6.148339,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585486,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -27.91984,
+            "y": 14.99998,
+            "z": 31.81591
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.34820506,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 26.85627,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585487,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 54.63741,
+            "y": 17.09231,
+            "z": 25.67327
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 22.21968,
+            "y": 5.39208,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585488,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 76.30071,
+            "y": 14.76742,
+            "z": 5.739785
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5691049,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.10901,
+            "y": 5.39208,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585489,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 55.34061,
+            "y": 12.93486,
+            "z": -12.72684
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 19.61968,
+            "y": 3.665605,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585490,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 75.13483,
+            "y": 12.80605,
+            "z": 6.086771
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.5675391,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 18.63614,
+            "y": 2.060618,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585491,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 53.75522,
+            "y": 12.55067,
+            "z": 24.76855
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.0037070515,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 21.15485,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585492,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 54.9374,
+            "y": 15.30572,
+            "z": -13.75937
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 22.21968,
+            "y": 5.925972,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7585518,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": 25.82417,
+            "y": 13.94364,
+            "z": -0.6931655
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 4.03894,
+            "y": 7.103103,
+            "z": 7.153064
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585534,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -298.9669,
+            "y": 37.30773,
+            "z": 89.68385
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.38806403,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 6.205211,
+            "z": 17.38582
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585535,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -297.8508,
+            "y": 33.21257,
+            "z": 89.70596
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 1.179151,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 14.32235,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585536,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -269.7694,
+            "y": 33.58413,
+            "z": 58.25974
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.94326967,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 6.050057,
+            "z": 9.647936
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585537,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -269.8141,
+            "y": 29.2486,
+            "z": 59.60868
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.6308456,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 8.096158,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585538,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -237.472,
+            "y": 32.5523,
+            "z": 49.72129
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.039385032,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 25.33791,
+            "y": 7.183309,
+            "z": 1.57611
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585539,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -235.8507,
+            "y": 27.62943,
+            "z": 51.29396
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.036312886,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 20.92785,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585540,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -187.3527,
+            "y": 28.64061,
+            "z": 51.14271
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.06939885,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 13.85928,
+            "y": 5.191272,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585541,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -187.4216,
+            "y": 25.2742,
+            "z": 52.04069
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.07431789,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 11.73754,
+            "y": 1.543775,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585542,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -134.9003,
+            "y": 26.51048,
+            "z": 34.04323
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.6819839,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 16.06676,
+            "y": 4.012635,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585543,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -134.1469,
+            "y": 23.35182,
+            "z": 34.76843
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.6840422,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 14.67379,
+            "y": 1.600119,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585544,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -266.0335,
+            "y": 35.18598,
+            "z": 112.8763
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.6146854,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 22.91999,
+            "y": 6.157835,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585545,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -266.9494,
+            "y": 32.27301,
+            "z": 112.1843
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.6065845,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 20.92201,
+            "y": 1.388456,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585546,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -132.2389,
+            "y": 27.49672,
+            "z": 106.8105
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.23550723,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 18.81093,
+            "y": 6.883322,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585547,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -132.9229,
+            "y": 22.3738,
+            "z": 105.614
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": 0.24172112,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 16.44523,
+            "y": 1.518629,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585548,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -99.3515,
+            "y": 29.54996,
+            "z": 82.56529
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.124943845,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.0,
+            "y": 10.28923,
+            "z": 23.76877
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585549,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -99.18343,
+            "y": 20.69015,
+            "z": 86.23766
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.4404083,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 17.76048,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585550,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -102.6582,
+            "y": 31.27047,
+            "z": 63.89795
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.4103329,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 3.953781,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585551,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -259.2488,
+            "y": 35.98698,
+            "z": 93.21545
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -1.302648,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.426278,
+            "y": 2.190908,
+            "z": 5.013976
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585552,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -261.6464,
+            "y": 33.67602,
+            "z": 95.41359
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.24604535,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.60724,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585553,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -221.6708,
+            "y": 30.94231,
+            "z": 81.43656
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.65379494,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 1.913293,
+            "y": 1.678773,
+            "z": 0.8055536
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585554,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -222.1376,
+            "y": 29.77511,
+            "z": 80.79897
+          },
+          "Rotation": {
+            "x": 3.1415927,
+            "y": -0.6586421,
+            "z": 3.1415927
+          },
+          "Scale": {
+            "x": 2.0,
+            "y": 1.5,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 57,
+        "InstanceId": 7585555,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -202.9728,
+            "y": 28.90768,
+            "z": 99.893
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": -0.17360142,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 23.00237,
+            "y": 6.069025,
+            "z": 1.0
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 1
+          },
+          "AttributeMask": 268435455,
+          "Attribute": 9216,
+          "PushPlayerOut": 2,
+          "CollisionAssetPath": "9"
+        }
+      },
+      {
+        "AssetType": 59,
+        "InstanceId": 7585556,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -202.9049,
+            "y": 26.87295,
+            "z": 98.88831
+          },
+          "Rotation": {
+            "x": -3.1415927,
+            "y": 0.165284,
+            "z": -3.1415927
+          },
+          "Scale": {
+            "x": 19.21958,
+            "y": 2.913766,
+            "z": 0.001
+          }
+        },
+        "Object": {
+          "LineStyle": 1
+        }
+      },
+      {
+        "AssetType": 49,
+        "InstanceId": 7585557,
+        "Name": "",
+        "Transform": {
+          "Translation": {
+            "x": -94.10004,
+            "y": 19.53591,
+            "z": 31.13996
+          },
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.42624503,
+            "z": 0.0
+          },
+          "Scale": {
+            "x": 6.431278,
+            "y": 9.800228,
+            "z": 18.81627
+          }
+        },
+        "Object": {
+          "ParentData": {
+            "TriggerBoxShape": 1,
+            "Priority": 100,
+            "Enabled": 0
+          }
+        }
+      }
+    ],
+    "LayerSetReferences": [
+      {
+        "LayerSetId": 36
+      }
+    ],
+    "OBSetReferencedList": [],
+    "OBSetEnableReferencedList": []
+  }
+]
