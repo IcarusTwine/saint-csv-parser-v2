@@ -129,8 +129,8 @@ class Actions implements ParseInterface
             if ($Type === "Mount") {
               $TemplateSwitch = "{{Mount Action";
               $AffinitySwitch = "|Acquired = Mount\n";
-              $IconArray[$Name] = $Action['Icon'];
             }
+            $IconArray[$Name] = $Action['Icon'];
 
             // Save some data
             $data = [

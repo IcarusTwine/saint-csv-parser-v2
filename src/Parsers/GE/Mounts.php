@@ -40,6 +40,8 @@ class Mounts implements ParseInterface
         $MountTransientCsv = $this->csv("MountTransient");
         $ActionCsv = $this->csv("Action");
         $BGMCsv = $this->csv("BGM");
+        $ActionTransientCsv = $this->csv("ActionTransient");
+        
 
         // (optional) start a progress bar
         $this->io->progressStart($ItemCsv->total);
@@ -115,7 +117,7 @@ class Mounts implements ParseInterface
                     $Name = "Great Vessel of Ronka (Mount)";
                     break;
                 default:
-                    $Name = "". str_replace($MountItemRemove, null, $RequiredItemName) ." (Mount)";
+                    $Name = "". str_replace($MountItemRemove, "", $RequiredItemName) ." (Mount)";
                     break;
             }
 
@@ -131,16 +133,75 @@ class Mounts implements ParseInterface
             // MountAction.csv, and take THAT value and match it with the "Name" column from Action.csv
             $Action1 = $ActionCsv->at($MountActionCsv->at($Mount['MountAction'])["Action[0]"])['Name'];
             $Action2 = $ActionCsv->at($MountActionCsv->at($Mount['MountAction'])["Action[1]"])['Name'];
-            if ($MountActionCsv->at($Mount['MountAction'])["Action[1]"] > 0) {
-                $Action = "\n| Actions = $Action1, $Action2";
-            } elseif ($MountActionCsv->at($Mount['MountAction'])["Action[0]"] > 0){
-                $Action = "\n| Actions = $Action1";
-            } else {
-                $Action = "\n| Actions =";
-            };
+            $ActionArray = [];
+            foreach(range(0,1) as $i) {
+                if (empty($ActionCsv->at($MountActionCsv->at($Mount['MountAction'])["Action[$i]"])['Name'])) continue;
+                $ActionName = $ActionCsv->at($MountActionCsv->at($Mount['MountAction'])["Action[$i]"])['Name'];
+                $ActionArray[] = $ActionCsv->at($MountActionCsv->at($Mount['MountAction'])["Action[$i]"])['Name'];
+                $ActionIconArray[$ActionName] = $ActionCsv->at($MountActionCsv->at($Mount['MountAction'])["Action[$i]"])['Icon'];
+                $ActionID = $MountActionCsv->at($Mount['MountAction'])["Action[$i]"];
+                if ($ActionCsv->at($ActionID)['Range'] == "-1") {
+                    $Range = "3";
+                } elseif ($ActionCsv->at($ActionID)['Range'] !== "-1") {
+                    $Range = $ActionCsv->at($ActionID)['Range'];
+                }
+                $Radius = $ActionCsv->at($ActionID)['EffectRange'];
+                $CastType = $ActionCsv->at($ActionID)['CastType'];
+                switch ($CastType) {
+                    case 1:
+                        $CastType = "single";
+                    break;
+                    case 2:
+                        $CastType = "aoe";
+                    break;
+                    case 3:
+                        $CastType = "cone";
+                    break;
+                    case 4:
+                        $CastType = "line";
+                    break;
+                    default:
+                        $CastType = "aoe";
+                    break;
+                }
+                if ($ActionCsv->at($ActionID)['Cast<100ms>'] == "0") {
+                    $CastTime = "Instant";
+                } elseif ($ActionCsv->at($ActionID)['Cast<100ms>'] !== "0") {
+                    $CastTimeRaw = $ActionCsv->at($ActionID)['Cast<100ms>'];
+                    $CastTime = "". ($CastTimeRaw / 10) ."";
+                }
+    
+                if ($ActionCsv->at($ActionID)['Recast<100ms>'] == "0") {
+                    $Recast = "Instant";
+                } elseif ($ActionCsv->at($ActionID)['Recast<100ms>'] !== "0") {
+                    $ReCastTimeRaw = $ActionCsv->at($ActionID)['Recast<100ms>'];
+                    $Recast = "". ($ReCastTimeRaw / 10) ."";
+                }
+                $ActionDescription = str_ireplace("\n","{{tab|}}",$ActionTransientCsv->at($ActionCsv->at($ActionID)['id'])['Description']);
+    
+                $ActionString = "{{-start-}}\n'''$ActionName (Mount Action)'''\n{{Mount Action\n";
+                $ActionString .= "|Patch = $Patch\n";
+                $ActionString .= "|Name = $ActionName\n";
+                $ActionString .= "|Type = Mount\n";
+                $ActionString .= "|Acquired = $Name\n";
+                $ActionString .= "\n";
+                $ActionString .= "|Range = $Range\n";
+                $ActionString .= "|Radius = $Radius\n";
+                $ActionString .= "\n";
+                $ActionString .= "|Target = $CastType\n";
+                $ActionString .= "\n";
+                $ActionString .= "|Cast = $CastTime\n";
+                $ActionString .= "|Recast = $Recast\n";
+                $ActionString .= "|Duration = \n";
+                $ActionString .= "|Description = $ActionDescription\n";
+                $ActionString .= "\n";
+                $ActionString .= "}}\n{{-stop-}}\n";
+                $ActionOutputArray[] = $ActionString;
+            }
+            $Action = "\n| Actions = ".implode(",",$ActionArray)."";
 
             // Mount Music. Remove leading filename, replace extension with ogg, and replace underscores with spaces
-            $Music = str_replace("scd", "ogg", str_replace("music/ffxiv/", null, str_replace("_", " ", $BGMCsv->at($Mount['RideBGM'])['File'])));
+            $Music = str_replace("scd", "ogg", str_replace("music/ffxiv/", "", str_replace("_", " ", $BGMCsv->at($Mount['RideBGM'])['File'])));
 
             // Icon copying
             $SmallIcon = $Mount["Icon"];
@@ -201,7 +262,30 @@ class Mounts implements ParseInterface
             // need to look into using item-specific regex, if required.
             $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
         };
+        $this->saveExtra("MountActions.txt", implode("\n",$ActionOutputArray));
+        
+        $ActionIconArray = array_unique($ActionIconArray);
+        $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/MountIcons/Actions/";
+        if (!is_dir($IconOutputDirectory)) {
+            mkdir($IconOutputDirectory, 0777, true);
+        }
+        if (!empty($ActionIconArray)) {
+            $this->io->text('Copying Action Icons ...');
+            foreach ($ActionIconArray as $key => $value){
+                $IconID = sprintf("%06d", $value);
+                $IconName = $key." Icon";
+                if (!file_exists($this->getOutputFolder() ."/$PatchID/MountIcons/Actions/$IconName.png")) {
+                    if ($IconID === "000000") continue;
+                    $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
+                    $iconFileName = "{$IconOutputDirectory}/$IconName.png";
+                    if(file_exists($GetIcon)){
+                        copy($GetIcon, $iconFileName);
+                    }
+                }
+            }
+        }
 
+        
         // save our data to the filename: GeMountWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');

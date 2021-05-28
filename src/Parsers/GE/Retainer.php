@@ -48,27 +48,21 @@ class Retainer implements ParseInterface
             if (empty($ItemName)) continue;
             $IsRandom = $Task["IsRandom"];
             if ($IsRandom === "true") continue;
-            $ClassJob = $ClassJobCategoryCsv->at($Task["ClassJobCategory"])["Name"];
             $ClassJobRaw = $Task["ClassJobCategory"];
             $RetainerLevel = $Task["RetainerLevel"];
-            $Unknown3 = $Task['unknown_4'];
             $RetainerTaskParameter = $Task['RetainerTaskParameter'];
             switch ($ClassJobRaw) {
-                case 17: //min
-                case 18: //btn
+                case "17": //min
+                case "18": //btn
                     $ClassSwitch = "Gathering{DoL}";
-                    $OutArraySwitch = "DoH";
                 break;
-                case 19: //fsh
+                case "19": //fsh
                     $ClassSwitch = "Gathering{FSH}";
-                    $OutArraySwitch = "DoH";
                 break;
-                case 34: //DoW
+                case "34": //DoW
                     $ClassSwitch = "ItemLevel{DoW}";
-                    $OutArraySwitch = "DoW";
                 break;
             }
-            $ConditionParam = $Task["ConditionParam[0]"];
             $ItemLevelParam1 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[0]"];
             $ItemLevelParam2 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[1]"];
             $Experience = $Task['Experience'];
@@ -85,20 +79,17 @@ class Retainer implements ParseInterface
             $Quantity2 = $Quantity[1];
             $Quantity3 = $Quantity[2];
             switch ($ClassJobRaw) {
-                case 17: //min
+                case "17": //min
                     $MINArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
-
-                case 18: //btn
+                break;
+                case "18": //btn
                     $BTNArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
-
                 break;
-                case 19: //fsh
+                case "19": //fsh
                     $FSHArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
-
                 break;
-                case 34: //DoW
+                case "34": //DoW
                     $DOWArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredItemLevel|Item=$ItemName|Quantity1=$RequiredItemLevel|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
-
                 break;
             }
 
