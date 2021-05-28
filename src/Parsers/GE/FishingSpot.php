@@ -70,8 +70,8 @@ class FishingSpot implements ParseInterface
             if ($c < 1) {
                 $c = 1;
             }
-            $CX = round(($X / 50) / $c,1);
-            $CY = round(($Y / 50) / $c,1);
+            $CX = round((($X / 50) / $c) + 1,1);
+            $CY = round((($Y / 50) / $c) + 1,1);
             $GatheringLevel = $fishingspot['GatheringLevel'];
             $Rare = $fishingspot['Rare'];
             $Radius = $fishingspot['Radius'];
@@ -176,8 +176,8 @@ class FishingSpot implements ParseInterface
             if ($c < 1) {
                 $c = 1;
             }
-            $CX = round(($X / 50) / $c,1);
-            $CY = round(($Y / 50) / $c,1);
+            $CX = round((($X / 50) / $c) + 1,1);
+            $CY = round((($Y / 50) / $c) + 1,1);
             $GatheringLevel = $Spearfishing['GatheringLevel'];
             $Radius = $Spearfishing['Radius'];
             $Gpoint = $Spearfishing['GatheringPointBase'];
