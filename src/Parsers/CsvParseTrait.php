@@ -1098,48 +1098,35 @@ trait CsvParseTrait
     
     public function getLuaIfNew($_lua, $_pos){
         $Ifend = false;
-        $subarray = [];
-        $newarray = [];
-        while($Ifend === false) {
-            //end the array
-        //var_dump($_lua[$_pos]);{
-            $_lines = count($_lua);
+        $_lines = count($_lua);
+        while($Ifend == false) {
+            if(empty($_lua[$_pos])){
+                $Ifend = true;
+            }
             if($_pos >= $_lines){
+                $Ifend = true;
                 break;
             };
-            if (strpos($_lua[$_pos],"}") !== false){
-                $subarray[] = $subarray;
-                $subarray[] = $_lua[$_pos];
-                $_pos++;
+            $line = $_lua[$_pos];
+            if (strpos($line, "};") !== false){
+                $Ifarray[] = $line;
                 $Ifend = true;
-                if($_pos >= $_lines){
-                    break;
-                };
-            }
-            //new array
-            if (strpos($_lua[$_pos],"{") !== false){
-                $subarray[] = $_lua[$_pos];
                 $_pos++;
-                $sub = $this->getLuaIfNew($_lua, $_pos);
-                $subarray[] = $sub['array'];
-                $_pos = $sub['pos'];
-                if($_pos >= $_lines){
-                    break;
-                };
             }
-            //add text
-                if($_pos >= $_lines){
-                    break;
-                    $subarray = [];
-                };
-            if ((!strstr($_lua[$_pos],"{")) & (!strstr($_lua[$_pos],"}"))) {
-                $subarray[] = $_lua[$_pos];
+            if ($Ifend === false){
+                $Ifarray[] = $line;
                 $_pos++;
+            }
+            if (preg_match('/\{/', $_lua[$_pos])) {
+                $nested = $this->getLuaIfNew($_lua, $_pos);
+                $Ifarray[] = $nested['out'];
+                $_pos = $nested['pos'];
             }
         }
-        $newarray['array'] = $subarray;
-        $newarray['pos'] = $_pos;
-        return $newarray;
+        var_dump($_pos);
+        $ifdata['pos'] = $_pos;
+        $ifdata['out'] = $Ifarray;
+        return $ifdata;
     }
     /**
      * Format dialogue for luasheets
@@ -1382,20 +1369,22 @@ trait CsvParseTrait
         $_lines = count($_lua);
         $_pos = 0;
         $end = false;
-        if($_pos < $_lines){
-            $line = $_lua[$_pos];
-            while($end === false) {
-                if($_pos >= $_lines){
-                    break;
-                };
-
-                if (strpos($line,"{") !== false){
-                    $newcode[] = $this->getLuaIfNew($_lua, $_pos);
-                };
-
-                $_pos++;
-            }
-        }
+        $newcode[] = $this->getLuaIfNew($_lua, $_pos);
+        //if($_pos < $_lines){
+        //    $line = $_lua[$_pos];
+        //    while($end === false) {
+        //        if($_pos >= $_lines){
+        //            break;
+        //        };
+//
+        //        if (strpos($line,"{") !== false){
+        //            var_dump($_lua);
+        //            $newcode[] = $this->getLuaIfNew($_lua, $_pos);
+        //        };
+//
+        //        $_pos++;
+        //    }
+        //}
         $newcode = json_encode($newcode,JSON_PRETTY_PRINT);
         return($newcode);
         
