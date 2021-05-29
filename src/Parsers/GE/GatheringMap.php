@@ -55,7 +55,10 @@ class GatheringMap implements ParseInterface
             $GatheringLevel = $GatheringPointBaseCsv->at($BaseRaw)['GatheringLevel'];
             $IsLimited = $GatheringPointBaseCsv->at($BaseRaw)['IsLimited'];
             $Type = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($BaseRaw)['GatheringType'])['Name'];
-            
+            $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($BaseRaw)['GatheringType'])['Icon{Main}'];
+            if ($IsLimited === "True") {
+                $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($BaseRaw)['GatheringType'])['Icon{Off}'];
+            }
             if (!empty($SpotArray[$TerritoryType][$PlaceName]['X'])) {
                 continue;
             }
@@ -77,6 +80,7 @@ class GatheringMap implements ParseInterface
                             'id' => $TerritoryType,
                             'Name' => $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryType)['PlaceName'])['Name'],
                         ),
+                        'Icon' => "0".$Icon."_hr1.png",
                         'Map' => $Map,
                         'GatheringLevel' => $GatheringLevel,
                         'IsLimited' => $IsLimited,
