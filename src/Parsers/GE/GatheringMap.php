@@ -38,6 +38,7 @@ class GatheringMap implements ParseInterface
         foreach ($GatheringPointCsv->data as $id => $Point) {
             $this->io->progressAdvance();
             $TerritoryType = $Point['TerritoryType'];
+            $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
             if ($TerritoryType < 2) continue;
             $PlaceName = $Point['PlaceName'];
             $BaseRaw = $Point['GatheringPointBase'];
@@ -46,6 +47,10 @@ class GatheringMap implements ParseInterface
             $YRaw = $ExportedGatheringPointCsv->at($BaseRaw)['Y'];
             $X = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9;
             $Y = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9;
+            $PX = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PX"];
+            $PY = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PY"];
+            $CX = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["X"];
+            $CY = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["Y"];
             $Radius = $ExportedGatheringPointCsv->at($BaseRaw)['unknown_5'];
             $GatheringLevel = $GatheringPointBaseCsv->at($BaseRaw)['GatheringLevel'];
             $IsLimited = $GatheringPointBaseCsv->at($BaseRaw)['IsLimited'];
@@ -57,6 +62,7 @@ class GatheringMap implements ParseInterface
             foreach(range(0,7) as $i) {
                 if (!empty($ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name'])) {
                     $Item = str_ireplace($BadArray,$GoodArray,$ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name']);
+                    $ItemRaw = $GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'];
                     $SpotArray[$TerritoryType][$Item]['X'][] = $X;
                     $SpotArray[$TerritoryType][$Item]['Y'][] = $Y;
                     $SpotArray[$TerritoryType][$Item]['Radius'][] = $Radius;
@@ -64,9 +70,30 @@ class GatheringMap implements ParseInterface
                     $SpotArray[$TerritoryType][$Item]['Rare'][] = $IsLimited;
                     $SpotArray[$TerritoryType][$Item]['Type'][] = $Type;
                     $SpotArray[$TerritoryType][$Item]['Count'][] = $NodeCountAmt;
+                    $JSON_ItemArray[$ItemRaw][] = array(
+                        'ItemName' => $Item = $ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name'],
+                        'Type' => $Type,
+                        'TerritoryType' => array(
+                            'id' => $TerritoryType,
+                            'Name' => $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryType)['PlaceName'])['Name'],
+                        ),
+                        'Map' => $Map,
+                        'GatheringLevel' => $GatheringLevel,
+                        'IsLimited' => $IsLimited,
+                        'Position' => array(
+                            'px' => $PX,
+                            'py' => $PY,
+                            'cx' => $CX,
+                            'cy' => $CY,
+                            'Radius' => $Radius
+                        ),
+                    );
                 }
             }
         }
+        
+        $JSON_Out = json_encode($JSON_ItemArray,JSON_PRETTY_PRINT);
+        $this->saveExtra("Gathering.json", $JSON_Out, true, true);
 
         foreach($SpotArray as $Teri => $Value){
             $ZoneName = $PlaceNameCsv->at($TerritoryTypeCsv->at($Teri)['PlaceName'])['Name'];
