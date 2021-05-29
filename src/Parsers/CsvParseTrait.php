@@ -1096,81 +1096,50 @@ trait CsvParseTrait
         return $ifdata;
     }
     
-    public function getLuaIfNew($_lua, $_pos, &$funccount){
-        $i = explode(" ",$_lua[$_pos]);
-        $CountArray = count($i);
+    public function getLuaIfNew($_lua, $_pos){
         $Ifend = false;
-        $Ifarray = [];
-        //simple if then
-        if ($CountArray <= 5) {
-            //if $L6_6 == true then 
-            $ConstructorStart = "{$i[0]} ({$i[1]} {$i[2]} {$i[3]}) {\n";
-            $_pos++;
-            while($Ifend === false) {
-                $line = $_lua[$_pos];
-                if (preg_match('/if|elseif/', $_lua[$_pos])) {
-                    $funccount++;
-                    $nested = $this->getLuaIf($_lua, $_pos, $funccount);
-                    $Ifarray[] = "$tab".$nested['out'];
-                    $_pos = $nested['pos'];
-                }
-            }
-            $IfOut = implode("\n",$Ifarray);
-            $null = true;
-            $ifdata['out'] = "$ConstructorStart$IfOut";
-        }
-        //two questions if then
-        if ($CountArray === 9) {
-            //elseif IsQuestAccepted(THE1ST_OPEN_QUEST) == true and GetQuestSequence(THE1ST_OPEN_QUEST) >= THE1ST_OPEN_QUEST_SEQ then
-            $ConstructorStart = "{$i[0]} ({$i[1]} {$i[2]} {$i[3]}) {$i[4]} ({$i[5]} {$i[6]} {$i[7]}) {\n";
+        $subarray = [];
+        $newarray = [];
+        while($Ifend === false) {
+            //end the array
+        //var_dump($_lua[$_pos]);{
+            $_lines = count($_lua);
+            if($_pos >= $_lines){
+                break;
+            };
+            if (strpos($_lua[$_pos],"}") !== false){
+                $subarray[] = $subarray;
+                $subarray[] = $_lua[$_pos];
                 $_pos++;
-                while($Ifend === false) {
-                    $line = $_lua[$_pos];
-                    if (preg_match('/[A-Z][0-9]_[0-9]+\./', $_lua[$_pos])) {
-                        if (preg_match('/\.(.*?)\w+/', $_lua[$_pos], $match) == 1) {
-                            $match = str_replace(".","",$match[0]);
-                            $newstring = "\"$match\"";
-                            $_lua[$_pos] = str_replace($match,$newstring,$_lua[$_pos]);
-                            $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
-                        }
-                    }
-                    if (preg_match('/[A-Z][0-9]_[0-9]+\./', $line)) {
-                        if (preg_match('/\.(.*?)\w+/', $line, $match) == 1) {
-                            $match = str_replace(".","",$match[0]);
-                            $newstring = "\"$match\"";
-                            $line = str_replace($match,$newstring,$line);
-                            $line = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $line);
-                        }
-                    }
-                    if (strpos($line, "end") !== false){
-                        $Ifarray[] = $tab."}";
-                        $Ifend = true;
-                        break;
-                    }
-                    if (strpos($line,"else") !== false){
-                        $Ifarray[] = str_replace("else",$tabshort."}else{",$line);
-                    }
-                    if ($Ifend === false){
-                        $Ifarray[] = "$tab".$line;
-                        $_pos++;
-                    }
-                    if (preg_match('/if|elseif/', $_lua[$_pos])) {
-                        $funccount++;
-                        $nested = $this->getLuaIf($_lua, $_pos, $funccount);
-                        $Ifarray[] = "$tab".$nested['out'];
-                        $_pos = $nested['pos'];
-                    }
-                }
-                $IfOut = implode("\n",$Ifarray);
-                $null = true;
-                $ifdata['out'] = "$ConstructorStart$IfOut";
+                $Ifend = true;
+                if($_pos >= $_lines){
+                    break;
+                };
+            }
+            //new array
+            if (strpos($_lua[$_pos],"{") !== false){
+                $subarray[] = $_lua[$_pos];
+                $_pos++;
+                $sub = $this->getLuaIfNew($_lua, $_pos);
+                $subarray[] = $sub['array'];
+                $_pos = $sub['pos'];
+                if($_pos >= $_lines){
+                    break;
+                };
+            }
+            //add text
+                if($_pos >= $_lines){
+                    break;
+                    $subarray = [];
+                };
+            if ((!strstr($_lua[$_pos],"{")) & (!strstr($_lua[$_pos],"}"))) {
+                $subarray[] = $_lua[$_pos];
+                $_pos++;
+            }
         }
-        //unknown
-        if ($CountArray > 9) {
-            var_dump(($i));
-        }
-        $ifdata['pos'] = $_pos;
-        return $ifdata;
+        $newarray['array'] = $subarray;
+        $newarray['pos'] = $_pos;
+        return $newarray;
     }
     /**
      * Format dialogue for luasheets
@@ -1420,15 +1389,15 @@ trait CsvParseTrait
                     break;
                 };
 
-                //if (strpos($line,"{"){
-//
-                //};
+                if (strpos($line,"{") !== false){
+                    $newcode[] = $this->getLuaIfNew($_lua, $_pos);
+                };
 
                 $_pos++;
             }
         }
-
-        return($code);
+        $newcode = json_encode($newcode,JSON_PRETTY_PRINT);
+        return($newcode);
         
     }
     

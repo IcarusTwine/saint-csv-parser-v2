@@ -81,8 +81,8 @@ class GatheringMap implements ParseInterface
                         'GatheringLevel' => $GatheringLevel,
                         'IsLimited' => $IsLimited,
                         'Position' => array(
-                            'px' => $PX,
-                            'py' => $PY,
+                            'px' => $X,
+                            'py' => $Y,
                             'cx' => $CX,
                             'cy' => $CY,
                             'Radius' => $Radius

@@ -20,7 +20,7 @@ class LuaTest implements ParseInterface
 
 
     // the wiki output format / template we shall use
-    const WIKI_FORMAT = "<?php\n{Output}";
+    const WIKI_FORMAT = "{Output}";
 
     public function parse()
     {
@@ -71,7 +71,7 @@ class LuaTest implements ParseInterface
         $this->data[] = $data;
         // save
         $console->writeln(" Saving... ");
-        $info = $this->save("LuaTest.php", 999999);
+        $info = $this->save("LuaTest.json", 999999);
 
     }
 }
