@@ -1376,7 +1376,7 @@ trait CsvParseTrait
         $newcode = json_encode($newcode["out"],JSON_PRETTY_PRINT);
         function recurse($item) {
             $ffxiv_core = ["STUFF", "THINGS"];
-            $debug = true;
+            $debug = false;
             $GetNumOfNewLetters = function ($blank){
                 print_r("ZERO");
             };
@@ -1460,9 +1460,6 @@ trait CsvParseTrait
                                         $console->writeln(">>> Eval : <fg=black;bg=green>$replaceeval</>\n");
                                     }
                                     eval('return $replaceeval;');
-                                    if (!empty($L4_4)){
-                                        var_dump($L4_4);
-                                    }
                                     $testarray[] = $replaceeval;
                                     $found = true;
                                 }
@@ -1484,7 +1481,9 @@ trait CsvParseTrait
                 return($outarray);
             }
         }
-        $finalout[] = recurse($forcode);
+        $finalout = json_encode(recurse($forcode),JSON_PRETTY_PRINT);
+        $this->saveExtra("luanew.json",$finalout);
+        //return(json_encode($finalout));
         //var_dump($finalout);
         
     }
