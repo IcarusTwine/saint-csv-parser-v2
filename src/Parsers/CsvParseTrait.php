@@ -6,6 +6,7 @@ use PhpParser\ParserFactory;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Console\Output\ConsoleOutput;
 use ForceUTF8\Encoding;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
@@ -1096,38 +1097,7 @@ trait CsvParseTrait
         return $ifdata;
     }
     
-    public function getLuaIfNew($_lua, $_pos){
-        $Ifend = false;
-        $_lines = count($_lua);
-        while($Ifend == false) {
-            if(empty($_lua[$_pos])){
-                $Ifend = true;
-            }
-            if($_pos >= $_lines){
-                $Ifend = true;
-                break;
-            };
-            $line = $_lua[$_pos];
-            if (strpos($line, "};") !== false){
-                $Ifarray[] = $line;
-                $Ifend = true;
-                $_pos++;
-            }
-            if ($Ifend === false){
-                $Ifarray[] = $line;
-                $_pos++;
-            }
-            if (preg_match('/\{/', $_lua[$_pos])) {
-                $nested = $this->getLuaIfNew($_lua, $_pos);
-                $Ifarray[] = $nested['out'];
-                $_pos = $nested['pos'];
-            }
-        }
-        var_dump($_pos);
-        $ifdata['pos'] = $_pos;
-        $ifdata['out'] = $Ifarray;
-        return $ifdata;
-    }
+    
     /**
      * Format dialogue for luasheets
      */
@@ -1369,23 +1339,87 @@ trait CsvParseTrait
         $_lines = count($_lua);
         $_pos = 0;
         $end = false;
-        $newcode[] = $this->getLuaIfNew($_lua, $_pos);
-        //if($_pos < $_lines){
-        //    $line = $_lua[$_pos];
-        //    while($end === false) {
-        //        if($_pos >= $_lines){
-        //            break;
-        //        };
-//
-        //        if (strpos($line,"{") !== false){
-        //            var_dump($_lua);
-        //            $newcode[] = $this->getLuaIfNew($_lua, $_pos);
-        //        };
-//
-        //        $_pos++;
-        //    }
-        //}
-        $newcode = json_encode($newcode,JSON_PRETTY_PRINT);
+        function getLuaIfNew($_lua, $_pos){
+            $Ifend = false;
+            $_lines = count($_lua);
+            while($Ifend == false) {
+                if(empty($_lua[$_pos])){
+                    $Ifend = true;
+                }
+                if($_pos >= $_lines){
+                    $Ifend = true;
+                    break;
+                };
+                $line = $_lua[$_pos];
+                if (strpos($line, "};") !== false){
+                    $Ifarray[] = $line;
+                    $Ifend = true;
+                    $_pos++;
+                }
+                if ($Ifend === false){
+                    $Ifarray[] = $line;
+                    $_pos++;
+                }
+                if (preg_match('/\{/', $_lua[$_pos])) {
+                    $nested = getLuaIfNew($_lua, $_pos);
+                    $Ifarray[] = $nested['out'];
+                    $_pos = $nested['pos'];
+                }
+            }
+            $ifdata['pos'] = $_pos;
+            $ifdata['out'] = $Ifarray;
+            return $ifdata;
+        }
+        $newcode = getLuaIfNew($_lua, $_pos);
+        unset($newcode['pos']);
+        $forcode = $newcode["out"];
+        $newcode = json_encode($newcode["out"],JSON_PRETTY_PRINT);
+        function recurse($item) {
+            $console = new ConsoleOutput();
+            foreach ($item as $key => $value) {
+                if (is_array($value)) {
+                    recurse($value);
+                    //echo "{$value[0]}\n";
+                } else {
+                    if (strpos($value, "($") !== false){
+                        $console->writeln("$value <fg=black;bg=yellow>'($' Found</>");
+                        $found = false;
+                        $check = explode("(",$value);
+                        $check = explode(" = ",$check[0]);
+                        $tempkey = $key;
+                        while ($found === false){
+                            $tempkey--;
+                            if ($tempkey <= 0){
+                                $console->writeln("Could not find : <error>{$check[0]}</error>");
+
+                                break;
+                            }
+                            if(strpos($item[$tempkey],"::") !== false){
+                                $explodefound = explode(" =",$item[$tempkey]);
+                                if ($explodefound[0] == $check[0]){
+                                    $functionname = explode("::",$explodefound[1]);
+                                    $console->writeln("found : <fg=black;bg=green>{$functionname[1]}</>");
+                                    $value1 = str_replace("$","",$functionname[1]."",$functionname[1]);
+                                    $console->writeln("<fg=black;bg=green>{$check[0]}</> is now set to <fg=black;bg=green>$value1</>");
+                                    $value1 = str_replace(";","",$value1);
+                                    $checks1 = $check[0];
+                                    $replaceeval = str_replace("".$checks1."(","".$value1."(",$value);
+                                    $console->writeln("Eval : <fg=black;bg=green>$replaceeval</>\n");
+                                    $testarray[] = $replaceeval;
+                                    $found = true;
+                                }
+                            }
+                        }
+                        //echo ("$key . ".$value."\n");
+                    } else {
+                        $testarray[] = $value;
+                    }
+                }
+            }
+            var_dump($testarray);
+        }
+        recurse($forcode);
+        
         return($newcode);
         
     }
