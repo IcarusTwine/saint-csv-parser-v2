@@ -1375,36 +1375,94 @@ trait CsvParseTrait
         $forcode = $newcode["out"];
         $newcode = json_encode($newcode["out"],JSON_PRETTY_PRINT);
         function recurse($item) {
+            $ffxiv_core = ["STUFF", "THINGS"];
+            $debug = true;
+            $GetNumOfNewLetters = function ($blank){
+                print_r("ZERO");
+            };
             $console = new ConsoleOutput();
             foreach ($item as $key => $value) {
                 if (is_array($value)) {
-                    recurse($value);
+                    $testarray[] = recurse($value);
                     //echo "{$value[0]}\n";
                 } else {
                     if (strpos($value, "($") !== false){
-                        $console->writeln("$value <fg=black;bg=yellow>'($' Found</>");
+                        if ($debug === true ) {
+                            $console->writeln("-------------------------------------------\n");
+                            $console->writeln("$value <fg=black;bg=yellow>'($' Found</>");
+                        }
                         $found = false;
                         $check = explode("(",$value);
+                        //create variables inside functions
+                        if (!empty($check[1])){
+                            $checkline = $check[1];
+                            if (strpos($checkline,");")!== false){
+                                $checkline = str_replace(");","",$checkline);
+                                $variables = explode(", ",$checkline);
+                                foreach ($variables as $variable) {
+                                    if ($variable === "false") continue;
+                                    if ($variable === "nil") continue;
+                                    $tempkey = $key;
+                                    while ($found === false){
+                                        $tempkey--;
+                                        if ($tempkey <= 0){
+                                            if ($debug === true ) {
+                                                $console->writeln("-------------------------------------------\n");
+                                                $console->writeln("Could not find Variable : <error>{$variable}</error>");
+                                                $console->writeln("line is : <error>{$checkline}</error>");
+                                                $console->writeln("-------------------------------------------\n");
+                                            }
+                                            break;
+                                        }
+                                        if (!is_array($item[$tempkey])){
+                                            $explodefound = explode(" =",$item[$tempkey]);
+                                            if ($explodefound[0] == $variable){
+                                                if ($debug === true ) {
+                                                    $console->writeln("found : <fg=black;bg=green>$variable</>, Setting");
+                                                }
+                                                $evalit = $item[$tempkey];
+                                                eval("return $evalit");
+                                                $found = true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         $check = explode(" = ",$check[0]);
                         $tempkey = $key;
                         while ($found === false){
                             $tempkey--;
                             if ($tempkey <= 0){
-                                $console->writeln("Could not find : <error>{$check[0]}</error>");
-
+                                if ($debug === true ) {
+                                    $console->writeln("-------------------------------------------\n");
+                                    $console->writeln("Could not find : <error>{$check[0]}</error>");
+                                    $console->writeln("-------------------------------------------\n");
+                                }
                                 break;
                             }
                             if(strpos($item[$tempkey],"::") !== false){
                                 $explodefound = explode(" =",$item[$tempkey]);
                                 if ($explodefound[0] == $check[0]){
                                     $functionname = explode("::",$explodefound[1]);
-                                    $console->writeln("found : <fg=black;bg=green>{$functionname[1]}</>");
+                                    if ($debug === true ) {
+                                        $console->writeln("found : <fg=black;bg=green>{$functionname[1]}</>");
+                                    }
                                     $value1 = str_replace("$","",$functionname[1]."",$functionname[1]);
-                                    $console->writeln("<fg=black;bg=green>{$check[0]}</> is now set to <fg=black;bg=green>$value1</>");
+                                    if ($debug === true ) {
+                                        $console->writeln("<fg=black;bg=green>{$check[0]}</> is now set to <fg=black;bg=green>$value1</>");
+                                    }
                                     $value1 = str_replace(";","",$value1);
                                     $checks1 = $check[0];
                                     $replaceeval = str_replace("".$checks1."(","".$value1."(",$value);
-                                    $console->writeln("Eval : <fg=black;bg=green>$replaceeval</>\n");
+                                    if ($debug === true ) {
+                                        $console->writeln("-------------------------------------------\n");
+                                        $console->writeln(">>> Eval : <fg=black;bg=green>$replaceeval</>\n");
+                                    }
+                                    eval('return $replaceeval;');
+                                    if (!empty($L4_4)){
+                                        var_dump($L4_4);
+                                    }
                                     $testarray[] = $replaceeval;
                                     $found = true;
                                 }
@@ -1412,15 +1470,22 @@ trait CsvParseTrait
                         }
                         //echo ("$key . ".$value."\n");
                     } else {
+                        if ($debug === true ) {
+                            $console->writeln(">>> ".$value);
+                        }
                         $testarray[] = $value;
                     }
                 }
             }
-            var_dump($testarray);
+            if (!empty($testarray)){
+                $outarray[] = $testarray;
+            }
+            if (!empty($outarray)){
+                return($outarray);
+            }
         }
-        recurse($forcode);
-        
-        return($newcode);
+        $finalout[] = recurse($forcode);
+        //var_dump($finalout);
         
     }
     
