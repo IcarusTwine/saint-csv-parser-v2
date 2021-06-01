@@ -10,6 +10,7 @@ class GeFormatter
         // this prevents keys such as "Job" affecting "ClassJobLevel"
         $keys = array_map('strlen', array_keys($data));
         array_multisort($keys, SORT_DESC, $data);
+        
 
         // set format
         $format = str_ireplace(array_keys($data), $data, $format);

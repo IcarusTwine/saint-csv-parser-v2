@@ -113,6 +113,9 @@ trait CsvParseTrait
             case 'CharaMakeCustomize':
                 $offset = "FeatureID";
             break;
+            case 'TerritoryType':
+                $offset = "Name";
+            break;
             
             default:
                 $offset = "id";
@@ -1921,7 +1924,7 @@ trait CsvParseTrait
                 $ShopOutputStringImp = implode("\n",$ShopOutputArray);
                 $ShopOutputNames = implode(",",$ShopOutputNamesArray);
                 $ShopOutput["Number"] = $number;
-                $ShopOutput["Shop"] = "$ShopOutputStringImp";
+                $ShopOutput["Shop"] = str_replace(",","&#44;",$ShopOutputStringImp);
                 $ShopOutput["Name"] = $ShopOutputNames;
                 return $ShopOutput;
             break;
@@ -2051,7 +2054,7 @@ trait CsvParseTrait
                 $ShopOutputString .= "| Shop = \n";
                 $ShopOutputString .= "{{Tabsells3\n";
                 
-                $ShopOutput["Shop"] = "\n$ShopOutputString\n$Weapons$Armor$Accessory$Other\n}}\n}}\n{{-stop-}}";
+                $ShopOutput["Shop"] = str_replace(",","&#44;","\n$ShopOutputString\n$Weapons$Armor$Accessory$Other\n}}\n}}\n{{-stop-}}");
                 $ShopOutput["Number"] = $NumberItems;
                 $ShopOutput["Name"] = $ShopName;
                 return $ShopOutput;
@@ -2148,7 +2151,7 @@ trait CsvParseTrait
                 $ShopOutputString .= "| Shop = \n";
                 $ShopOutputString .= "{{Tabsells3\n";
                 
-                $ShopOutput["Shop"] = "\n$ShopOutputString\n$Weapons$Armor$Accessory$Other\n}}\n}}\n{{-stop-}}";
+                $ShopOutput["Shop"] = str_replace(",","&#44;","\n$ShopOutputString\n$Weapons$Armor$Accessory$Other\n}}\n}}\n{{-stop-}}");
                 $ShopOutput["Number"] = $NumberItems;
                 $ShopOutput["Name"] = $ShopName;
                 return $ShopOutput;
@@ -2239,7 +2242,7 @@ trait CsvParseTrait
                 $ShopOutputString .= "| Shop = \n";
                 $ShopOutputString .= "{{Tabsells3\n";
                 
-                $ShopOutput["Shop"] = "\n$ShopOutputString\n$Weapons$Armor$Accessory$Other\n}}\n}}\n{{-stop-}}";
+                $ShopOutput["Shop"] = str_replace(",","&#44;","\n$ShopOutputString\n$Weapons$Armor$Accessory$Other\n}}\n}}\n{{-stop-}}");
                 $ShopOutput["Number"] = $NumberItems;
                 $ShopOutput["Name"] = $ShopName;
                 return $ShopOutput;
@@ -2494,6 +2497,9 @@ trait CsvParseTrait
         // this prevents keys such as "Job" affecting "ClassJobLevel"
 
         // set format
+        if (strpos($data,"<if") !== false){
+            var_dump($data);
+        }
         $data = str_ireplace('        |','|', $data);
         $data = str_ireplace("        \n","\n", $data);
         $data = str_ireplace('        }}','}}', $data);
