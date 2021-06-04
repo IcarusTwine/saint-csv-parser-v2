@@ -310,7 +310,7 @@ export { mapswitch };
         //fclose($htmllink);
 
         foreach ($territoryTypeCsv->data as $id => $territoryType) {
-        	if ($id != 975) continue;
+        	if ($id != 128) continue;
         $teriID = $territoryType['id'];
         $this->io->progressAdvance();
         $teriName = $territoryType['Name'];

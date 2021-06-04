@@ -1907,7 +1907,13 @@ class NpcsPagesAll implements ParseInterface
                 }
                 $BasePlaceName = "$code - {$MapName}{$sub}";
                 if ($subLocation === "Airship Landing"){
-                    $subLoaction = "Airship Landing ($MapName)"; 
+                    $SubLocation = "Airship Landing ($MapName)"; 
+                }
+                if ($subLocation === "Castrum Oriens"){
+                    $SubLocation = "Castrum Oriens ($MapName)"; 
+                }
+                if ($subLocation === "The Solar"){
+                    $SubLocation = "The Solar ($MapName)"; 
                 }
     
                 $LevelID = $LGBArray[$id]['id'];

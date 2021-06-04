@@ -1379,7 +1379,7 @@ trait CsvParseTrait
         $newcode = json_encode($newcode["out"],JSON_PRETTY_PRINT);
         function recurse($item) {
             $ffxiv_core = ["STUFF", "THINGS"];
-            $debug = false;
+            $debug = true;
             $GetNumOfNewLetters = function ($blank){
                 print_r("ZERO");
             };
