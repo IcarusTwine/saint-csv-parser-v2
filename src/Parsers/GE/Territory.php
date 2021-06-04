@@ -649,7 +649,6 @@ class Territory implements ParseInterface
                     // build icon input folder paths
                     if ($IconID === "000000") continue;
                     $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
-                    var_dump($iconFileName);
                     $iconFileName = "{$IconOutputDirectory}$IconName.png";
     
                     // copy the input icon to the output filename
