@@ -119,8 +119,8 @@ class ARRM3 implements ParseInterface
                     return L.marker(latlng, {
                         icon: L.divIcon({
                             className: feature.properties.amenity,
-                            iconSize: L.point(16, 16),
-                            html: feature.properties.amenity[0].toUpperCase(),
+                            iconSize: L.point(30, 30),
+                            html: '<img src=\"../icons/'+feature.iconUrl+'.png\">',
                         })
                     }).bindPopup(feature.properties.amenity+'<br><b>'+feature.properties.name+'</b>');
                 }
@@ -185,12 +185,12 @@ class ARRM3 implements ParseInterface
             	initial: false,
             	propertyName: 'name',
             	buildTip: function(text, val) {
-            		var type = val.layer.feature.properties.amenity;
+                    var type = val.layer.feature.properties.dataid;
             		return '<a href=\"#\" class=\"'+type+'\">'+text+'<b>'+type+'</b></a>';
             	}
             })
             .addTo(map);
-
+            L.geoJSON(bar).addTo(map);
             var coords = new L.control.attribution({position: 'topleft', prefix: 'X: 0, Y: 0'}).addTo(map);
             map.on('mousemove', updateXY);
             function isInteger(n) {

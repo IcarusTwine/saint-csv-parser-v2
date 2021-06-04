@@ -57,6 +57,20 @@ class Territory implements ParseInterface
                 $MapIndexArray[$MapTerri][$Index][$MapId] = $id;
             }
         }
+        $WeatherSwitchArray[] = "https://ffxiv.gamerescape.com/w/index.php?title=Template:Zoneweatherswitch&action=edit";
+        $WeatherSwitchArray[] = "{{#switch:{{lc:{{{weather}}}}}";
+        foreach ($WeatherCsv->data as $id => $Weather) {
+            $Name = strtolower($Weather['Name']);
+            if (empty($Name)) continue;
+            $NameUp = $Weather['Name'];
+            $Description = strtolower($Weather['Description']);
+            $Icon = $Weather['Icon'];
+            $WeatherIconArray[$id]['Icon'] = $Icon;
+            $WeatherIconArray[$id]['Name'] = "$NameUp icon";
+            $WeatherSwitchArray[] = "|$Name|$Description = $NameUp icon.png";
+        }
+        $WeatherSwitchArray[] = "}}";
+        $WeatherSwitchArray = array_unique($WeatherSwitchArray);
         $ZoneIconNames = array(
             '060311.png' => "Chocobokeep/Summoning Stone/Amarokeep",
             '060314.png' => "Adventurers' Guild",
@@ -521,8 +535,10 @@ class Territory implements ParseInterface
             if (!empty($Territory['WeatherRate'])){
                 $WeatherRate = "\n";
                 foreach(range(0,7) as $i){
+                    $No = ($i + 1);
                     if (empty($WeatherCsv->at($WeatherRateCsv->at($Territory['WeatherRate'])["Weather[$i]"])['Name'])) continue;
-                    $WeatherRate .= "|".$WeatherCsv->at($WeatherRateCsv->at($Territory['WeatherRate'])["Weather[$i]"])['Name']." = ".$WeatherRateCsv->at($Territory['WeatherRate'])["Rate[$i]"]."%\n";
+                    $WeatherRate .= "|Weather $No = ".$WeatherCsv->at($WeatherRateCsv->at($Territory['WeatherRate'])["Weather[$i]"])['Name']."";
+                    $WeatherRate .= "|Weather $No Chance = ".$WeatherRateCsv->at($Territory['WeatherRate'])["Rate[$i]"]."%\n";
                 }
             }
             $ExPac = $ExVersionCsv->at($Territory['ExVersion'])['Name'];
@@ -591,33 +607,58 @@ class Territory implements ParseInterface
             '{output}' => $output,
         ];
         
-        //$IconArray = array_unique($IconArray);
-        //if (!empty($IconArray)) {
-        //    $this->io->text('Copying Map Icons ...');
-        //    foreach ($IconArray as $value){
-        //        $IconID = sprintf("%06d", $value);
-        //        if (!file_exists($this->getOutputFolder() ."/$PatchID/MapMarkers/$IconID.png")) {
-        //            // ensure output directory exists
-        //            $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/MapMarkers/";
-        //            if (!is_dir($IconOutputDirectory)) {
-        //                mkdir($IconOutputDirectory, 0777, true);
-        //            }
-    //
-        //            // build icon input folder paths
-        //            if ($IconID === "000000") continue;
-        //            $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
-    //
-        //            $iconFileName = "{$IconOutputDirectory}/$IconID.png";
-    //
-        //            // copy the input icon to the output filename
-        //            if(file_exists($GetIcon)){
-        //                copy($GetIcon, $iconFileName);
-        //            } else {
-        //                $MissingIconArray[] = $value;
-        //            }
-        //        }
-        //    }
-        //}
+        $IconArray = array_unique($IconArray);
+        if (!empty($IconArray)) {
+            $this->io->text('Copying Map Icons ...');
+            foreach ($IconArray as $value){
+                $IconID = sprintf("%06d", $value);
+                if (!file_exists($this->getOutputFolder() ."/$PatchID/MapMarkers/$IconID.png")) {
+                    // ensure output directory exists
+                    $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/MapMarkers/";
+                    if (!is_dir($IconOutputDirectory)) {
+                        mkdir($IconOutputDirectory, 0777, true);
+                    }
+    
+                    // build icon input folder paths
+                    if ($IconID === "000000") continue;
+                    $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
+    
+                    $iconFileName = "{$IconOutputDirectory}/$IconID.png";
+    
+                    // copy the input icon to the output filename
+                    if(file_exists($GetIcon)){
+                        copy($GetIcon, $iconFileName);
+                    } else {
+                        $MissingIconArray[] = $value;
+                    }
+                }
+            }
+        }
+        if (!empty($WeatherIconArray)) {
+            $this->io->text('Copying Weather Icons ...');
+            foreach ($WeatherIconArray as $value){
+                $IconID = sprintf("%06d", $value["Icon"]);
+                $IconName = $value["Name"];
+                if (!file_exists($this->getOutputFolder() ."/$PatchID/WeatherIcons/$IconName.png")) {
+                    // ensure output directory exists
+                    $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/WeatherIcons/";
+                    if (!is_dir($IconOutputDirectory)) {
+                        mkdir($IconOutputDirectory, 0777, true);
+                    }
+    
+                    // build icon input folder paths
+                    if ($IconID === "000000") continue;
+                    $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
+                    var_dump($iconFileName);
+                    $iconFileName = "{$IconOutputDirectory}$IconName.png";
+    
+                    // copy the input icon to the output filename
+                        copy($GetIcon, $iconFileName);
+                }
+            }
+        }
+        $WeatherSwitchOut = implode("\n",$WeatherSwitchArray);
+        $this->saveExtra("WeatherSwitch.txt",$WeatherSwitchOut);
 
         // format using Gamer Escape formatter and add to data array
         // need to look into using item-specific regex, if required.
