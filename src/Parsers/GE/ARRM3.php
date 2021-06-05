@@ -441,7 +441,7 @@ class ARRM3 implements ParseInterface
                         })
                     }).on('click',function(){
                         var win =  L.control.window(map,{
-                                title:feature.properties.name,
+                                title: null,
                                 maxWidth:400,
                                 modal: false,
                                 position:'top'
@@ -452,6 +452,21 @@ class ARRM3 implements ParseInterface
                             }).bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
                         }
             };
+            
+            L.control.search({
+            	layer: poiLayers,
+            	initial: false,
+                autoType: false,
+                casesensitive: false,
+                tooltipLimit: -1,
+            	propertyName: 'dataid',
+            	buildTip: function(text, val) {
+                    var dataid = val.layer.feature.properties.dataid;
+                    var type = val.layer.feature.properties.amenity;
+            		return '<a href=\"#\" class=\"'+dataid+'\">'+text+'<b> - '+type+'</b></a>';
+            	}
+            })
+            .addTo(map);
             var southWest =  map.unproject(mapSW);
             var northEast = map.unproject(mapNE);
             var bounds = new L.LatLngBounds(southWest, northEast);
@@ -502,20 +517,6 @@ class ARRM3 implements ParseInterface
 		        L.geoJson(vfxGeo, geojsonOpts).addTo(Vfx)
 	        ]).addTo(map);
 
-            L.control.search({
-            	layer: poiLayers,
-            	initial: false,
-                autoType: false,
-                casesensitive: false,
-                tooltipLimit: -1,
-            	propertyName: 'dataid',
-            	buildTip: function(text, val) {
-                    var dataid = val.layer.feature.properties.dataid;
-                    var type = val.layer.feature.properties.amenity;
-            		return '<a href=\"#\" class=\"'+dataid+'\">'+text+'<b> - '+type+'</b></a>';
-            	}
-            })
-            .addTo(map);
             L.geoJSON(mapmarkerGeo).addTo(map);
             var coords = new L.control.attribution({position: 'topleft', prefix: 'X: 0, Y: 0'}).addTo(map);
             map.on('mousemove', updateXY);
@@ -657,6 +658,40 @@ class ARRM3 implements ParseInterface
             
             
             L.control.layers.tree(null, baseTree, {collapsed:false}).addTo(map);
+            
+            var customControl =  L.Control.extend({
+
+                options: {
+                  position: 'topright'
+                },
+                
+                onAdd: function (map) {
+                  var container = L.DomUtil.create('input');
+                  container.type=\"button\";
+                  container.title=\"No cat\";
+                  container.value = \"\";
+                
+                  container.style.backgroundColor = 'white';     
+                  //container.style.backgroundImage = \"url(https://t1.gstatic.com/images?q=tbn:ANd9GcR6FCUMW5bPn8C4PbKak2BJQQsmC-K9-mbYBeFZm1ZM2w2GRy40Ew)\";
+                  container.style.backgroundSize = \"30px 30px\";
+                  container.style.width = '30px';
+                  container.style.height = '30px';
+                  
+                  container.onmouseover = function(){
+                    container.style.backgroundColor = 'pink'; 
+                  }
+                  container.onmouseout = function(){
+                    container.style.backgroundColor = 'white'; 
+                  }
+                
+                  container.onclick = function(){
+                    console.log('buttonClicked');
+                  }
+                
+                  return container;
+                }
+                });
+                map.addControl(new customControl());
             //left map switcher
             var mapswitcher = L.control({position:'topleft'});
             mapswitcher.onAdd = function (map) {
@@ -670,6 +705,7 @@ class ARRM3 implements ParseInterface
             mapswitcher.addTo(map);
             var layerControl = L.control.layers.tree(mapswitch, null, {position:'topleft'}).addTo(map);
             
+                
             window.arrmMap = map;
             </script>
             </body>
