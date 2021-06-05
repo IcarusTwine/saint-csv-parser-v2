@@ -452,21 +452,6 @@ class ARRM3 implements ParseInterface
                             }).bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
                         }
             };
-            
-            L.control.search({
-            	layer: poiLayers,
-            	initial: false,
-                autoType: false,
-                casesensitive: false,
-                tooltipLimit: -1,
-            	propertyName: 'dataid',
-            	buildTip: function(text, val) {
-                    var dataid = val.layer.feature.properties.dataid;
-                    var type = val.layer.feature.properties.amenity;
-            		return '<a href=\"#\" class=\"'+dataid+'\">'+text+'<b> - '+type+'</b></a>';
-            	}
-            })
-            .addTo(map);
             var southWest =  map.unproject(mapSW);
             var northEast = map.unproject(mapNE);
             var bounds = new L.LatLngBounds(southWest, northEast);
@@ -692,6 +677,22 @@ class ARRM3 implements ParseInterface
                 }
                 });
                 map.addControl(new customControl());
+                
+            
+            L.control.search({
+            	layer: poiLayers,
+            	initial: false,
+                autoType: false,
+                casesensitive: false,
+                tooltipLimit: -1,
+            	propertyName: 'dataid',
+            	buildTip: function(text, val) {
+                    var dataid = val.layer.feature.properties.dataid;
+                    var type = val.layer.feature.properties.amenity;
+            		return '<a href=\"#\" class=\"'+dataid+'\">'+text+'<b> - '+type+'</b></a>';
+            	}
+            })
+            .addTo(map);
             //left map switcher
             var mapswitcher = L.control({position:'topleft'});
             mapswitcher.onAdd = function (map) {
