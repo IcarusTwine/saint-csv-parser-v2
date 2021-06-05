@@ -378,7 +378,8 @@ class ARRM3 implements ParseInterface
             <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">
             <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
             <link rel=\"stylesheet\" href=\"../assets/css/easy-button.css\">
-            <link rel=\"stylesheet\" href=\"../assets/css/L.Control.Layers.Tree.css\"
+            <link rel=\"stylesheet\" href=\"../assets/css/L.Control.Layers.Tree.css\">
+            <link rel=\"stylesheet\" href=\"../assets/css/L.Control.Window.css\">
             <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">
             <link rel=\"shortcut icon\" href=\"../favicon.ico\" type=\"image/x-icon\">
             <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">
@@ -398,6 +399,7 @@ class ARRM3 implements ParseInterface
             <script src=\"../assets/js/L.Control.Layers.Tree.js\"></script>
             <script src=\"../assets/js/l.ellipse.js\"></script>
             <script src=\"../assets/js/leaflet.rotatedMarker.js\"></script>
+            <script src=\"../assets/js/L.Control.Window.js\"></script>
             <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
             
             </head>
@@ -437,11 +439,19 @@ class ARRM3 implements ParseInterface
                             html: '<img src=\"../icons/'+feature.iconUrl+'.png\" height=\"32\" width=\"32\"\">',
                             iconAnchor: [16, 16],
                         })
-                    }).bindPopup('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.popup+'')
-                    .bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
-                }
+                    }).on('click',function(){
+                        var win =  L.control.window(map,{
+                                title:feature.properties.name,
+                                maxWidth:400,
+                                modal: false,
+                                position:'top'
+                            })
+                                .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.popup+'')
+                                .prompt({callback:function(){alert}})
+                                .show()
+                            }).bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
+                        }
             };
-            
             var southWest =  map.unproject(mapSW);
             var northEast = map.unproject(mapNE);
             var bounds = new L.LatLngBounds(southWest, northEast);
