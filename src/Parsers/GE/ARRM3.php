@@ -26,6 +26,12 @@ class ARRM3 implements ParseInterface
         $MapCsv = $this->csv('Map');
         $PlaceNameCsv = $this->csv('PlaceName');
         $MapMarkerCsv = $this->csv('MapMarker');
+        $DynamicEventCsv = $this->csv('DynamicEvent');
+        $EObjNameCsv = $this->csv('EObjName');
+        $DynamicEventTypeCsv = $this->csv('DynamicEventType');
+        $QuestCsv = $this->csv('Quest');
+        $DynamicEventEnemyTypeCsv = $this->csv('DynamicEventEnemyType');
+        $FateCsv = $this->csv('Fate');
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
@@ -38,6 +44,19 @@ class ARRM3 implements ParseInterface
             if (empty($MapIndexArray[$MapTerri][$Index])){
                 $MapIndexArray[$MapTerri][$Index][$MapId] = $id;
             }
+        }
+        $DynamicFateArray = [];
+        foreach ($DynamicEventCsv->data as $id => $DynamicFateData) {
+            $DynamicFateLocation = $DynamicFateData['LGBEventObject'];
+            $DynamicFateArray[$DynamicFateLocation] = $DynamicFateData;
+        }
+        
+        $FateArraySheet = [];
+
+        foreach ($FateCsv->data as $id => $FateData) {
+            $FateLocation = $FateData['Location'];
+            $FateArraySheet[$FateLocation] = $FateData;
+            // example = var_dump($FateArraySheet["4520640"]["id"]);
         }
         $this->io->progressStart($TerritoryTypeCsv->total);
         $OutputArray = [];        // loop through data
@@ -90,8 +109,8 @@ class ARRM3 implements ParseInterface
                                 if ($AssetType === 3){
                                     $x = $Object->Transform->Translation->x;
                                     $y = $Object->Transform->Translation->z;
-                                    $PX = "".($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9) / 4;
-                                    $PY = "-".($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9) / 4;
+                                    $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
+                                    $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
                                     $PopupText = "Light Type: ".$Object->Object->LightType ."\n";
                                     $lightarray[] = array(
                                         "layer" => "lights",
@@ -120,11 +139,11 @@ class ARRM3 implements ParseInterface
                                 if ($AssetType === 4){
                                     $x = $Object->Transform->Translation->x;
                                     $y = $Object->Transform->Translation->z;
-                                    $PX = "".($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9) / 4;
-                                    $PY = "-".($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9) / 4;
+                                    $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
+                                    $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
                                     $PopupText = "AssetPath: ".$Object->Object->AssetPath ."\n";
                                     $vfxarray[] = array(
-                                        "layer" => "lights",
+                                        "layer" => "vfx",
                                         "type" => "Feature",
                                         "iconUrl" => "contentsreplayplayer_hr1_04",
                                         "properties" => array (
@@ -145,6 +164,90 @@ class ARRM3 implements ParseInterface
                                             ]
                                         )
                                     );
+                                }
+
+                                
+                                if ($AssetType === 45){
+                                    $x = $Object->Transform->Translation->x;
+                                    $y = $Object->Transform->Translation->z;
+                                    $BaseId = $Object->Object->ParentData->BaseId;
+                                    $EobjName = "";
+                                    $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
+                                    $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
+                                    if (!empty($EObjNameCsv->at($BaseId)['Singular'])){
+                                        $EobjName = ucwords($EObjNameCsv->at($BaseId)['Singular'])."<br>";
+                                    }
+                                    if (strpos($LayerName, 'LVD_DE') !== false) {
+                                        if (empty($DynamicFateArray[$InstanceID]["id"])) continue;
+                                        $FateID = $DynamicFateArray[$InstanceID]["id"];
+                                        $lgbIcon = sprintf("%06d", $DynamicEventTypeCsv->at($DynamicEventCsv->at($FateID)["EventType"])['Icon{Objective}[0]']);
+                                        $IconArray[] = $lgbIcon;
+                                        $fateName = addslashes($DynamicEventCsv->at($FateID)['Name']);
+                                        $QuestDynamic = $QuestCsv->at($DynamicEventCsv->at($FateID)['Quest'])['Name'];
+                                        $EnemyType = $DynamicEventEnemyTypeCsv->at($DynamicEventCsv->at($FateID)['EnemyType'])['Name'];
+                                        $description = str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
+                                        $TextOut = "$QuestDynamic<br>$EnemyType<br>$description";
+                                        $FateArray[] = array(
+                                            "layer" => "Fate",
+                                            "type" => "Feature",
+                                            "iconUrl" => "{$lgbIcon}",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "Fate",
+                                                "name" => $fateName,
+                                                "popup" => $TextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+                                }
+                                
+                                if ($AssetType === 49){
+                                    $x = $Object->Transform->Translation->x;
+                                    $y = $Object->Transform->Translation->z;
+                                    $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
+                                    $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
+                                    if (strpos($LayerName, 'FATE') !== false) {
+                                        if (empty($FateArraySheet[$InstanceID]["id"])) continue;
+                                        $FateID = $FateArraySheet[$InstanceID]["id"];
+                                        $lgbIcon = sprintf("%06d", $FateCsv->at($FateID)["Icon{Objective}"]);
+                                        $IconArray[] = $lgbIcon;
+                                        $fateName = addslashes($FateCsv->at($FateID)['Name']);
+                                        $description = str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $FateCsv->at($FateID)['Description']));
+                                        $TextOut = "$description";
+                                        $FateArray[] = array(
+                                            "layer" => "Fate",
+                                            "type" => "Feature",
+                                            "iconUrl" => "{$lgbIcon}",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "Fate",
+                                                "name" => $fateName,
+                                                "popup" => $TextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
                                 }
                                 
                             }
@@ -168,6 +271,16 @@ class ARRM3 implements ParseInterface
             if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json", 0777, true); }
                 $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json/vfx.geojson.js", 'w');
                 fwrite($js_file_Feature, $VFX_Json);
+                fclose($js_file_Feature);
+
+                
+            $FATEOut["type"] = "FeatureCollection";
+            $FATEOut["timestamp"] = time();
+            $FATEOut["features"] = $FateArray;
+            $FATE_Json = "var fateGeo = ".json_encode($FATEOut,JSON_PRETTY_PRINT)."";
+            if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json", 0777, true); }
+                $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json/fate.geojson.js", 'w');
+                fwrite($js_file_Feature, $FATE_Json);
                 fclose($js_file_Feature);
 
 
@@ -200,8 +313,8 @@ class ARRM3 implements ParseInterface
                             $subtextRaw = str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $PlaceNameCsv->at($MapMarkerCsv->at($Ci)['PlaceName{Subtext}'])['Name']);
                             $subtextRaw = str_replace("<br><br>","<br>",$subtextRaw);
                             $MMType = $MapMarkerCsv->at($Ci)['Data{Type}'];
-                            $MMX = "".($MapMarkerCsv->at($Ci)['X'] / 4) ;
-                            $MMY = "-".($MapMarkerCsv->at($Ci)['Y'] / 4);
+                            $MMX = "".($MapMarkerCsv->at($Ci)['X']) ;
+                            $MMY = "".($MapMarkerCsv->at($Ci)['Y']);
                             switch ($MapMarkerCsv->at($Ci)['SubtextOrientation']) {
                                 case 1:
                                     $subtextOrientation = "left";
@@ -380,6 +493,7 @@ class ARRM3 implements ParseInterface
             <link rel=\"stylesheet\" href=\"../assets/css/easy-button.css\">
             <link rel=\"stylesheet\" href=\"../assets/css/L.Control.Layers.Tree.css\">
             <link rel=\"stylesheet\" href=\"../assets/css/L.Control.Window.css\">
+            <link rel=\"stylesheet\" href=\"../assets/css/MarkerCluster.css\" />
             <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">
             <link rel=\"shortcut icon\" href=\"../favicon.ico\" type=\"image/x-icon\">
             <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">
@@ -392,7 +506,7 @@ class ARRM3 implements ParseInterface
             <meta name=\"twitter:card\" content=\"summary_large_image\">
             <meta name=\"twitter:image\" content=\"https://http://arealmremapped.com/images/embedlogo.png\">
             <meta name=\"theme-color\" content=\"#000\">
-            <script src=\"../scripts/leaflet/leaflet.js\"></script>
+            <script src=\"../scripts/leaflet/leaflet-src.js\"></script>
             <!--<script src=\"scripts/leaflet/leaflet.map-hash.js\"></script> -->
             <script src=\"../scripts/leaflet/leaflet-fullHash.js\"></script>
             <script src=\"../assets/js/easy-button.js\"></script>
@@ -400,6 +514,7 @@ class ARRM3 implements ParseInterface
             <script src=\"../assets/js/l.ellipse.js\"></script>
             <script src=\"../assets/js/leaflet.rotatedMarker.js\"></script>
             <script src=\"../assets/js/L.Control.Window.js\"></script>
+            <script src=\"../assets/js/leaflet.markercluster.js\"></script>
             <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
             
             </head>
@@ -417,21 +532,27 @@ class ARRM3 implements ParseInterface
             <link rel=\"stylesheet\" href=\"../scripts/leaflet/leaflet-search.css\" />
             <script src=\"json/mapmarkerGeo.geojson.js\"></script>
             <script src=\"json/vfx.geojson.js\"></script>
+            <script src=\"json/fate.geojson.js\"></script>
             <script type=\"module\">
             import { mapswitch } from \"./../htmllist.mjs\";
-            var mapSW = [0, 2046];
-            var mapNE = [2046, 0];
             var baseurl = \"../$MapCode - $MapName.png\";
             
-            var map = new L.map(\"map\", {
-                zoom: 2,
-                minZoom: 0,
-                maxZoom: 6,
-                noWrap: true,
-                center: [0, -2046],
-                crs: L.CRS.Simple,
-            }),
-            geojsonOpts = {
+            var map = L.map('map', {
+              crs: L.CRS.Simple,
+              zoom: 1,
+              minZoom: -1,
+              maxZoom: 1
+            }).setView([1028, 1028], 1);
+            var bounds = [
+              [2046, 0],
+              [0, 2046]
+            ];
+            var image = L.imageOverlay(baseurl, bounds).addTo(map);
+            map.fitBounds(bounds);
+            map.setMaxBounds(bounds);
+
+
+            var geojsonOpts = {
                 pointToLayer: function(feature, latlng) {
                     return L.marker(latlng, {
                         icon: L.divIcon({
@@ -452,14 +573,9 @@ class ARRM3 implements ParseInterface
                             }).bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
                         }
             };
-            var southWest =  map.unproject(mapSW);
-            var northEast = map.unproject(mapNE);
-            var bounds = new L.LatLngBounds(southWest, northEast);
-            var imgOv =  L.imageOverlay(baseurl, bounds).addTo(map);
-            map.setMaxBounds(bounds);
             // markers and popups
             var mapmarker = L.layerGroup().addTo(map);
-            //var fate = L.layerGroup();
+            var fate = L.layerGroup();
             //var current = L.layerGroup();
             //var vista = L.layerGroup();
             //var bg = L.layerGroup();
@@ -496,11 +612,35 @@ class ARRM3 implements ParseInterface
             //var unknown = L.layerGroup();
             //var Monster = L.layerGroup();
             //var Treasure = L.layerGroup();
-            
+            var fateCluster = L.markerClusterGroup({iconCreateFunction: function(cluster) {
+                return L.divIcon({ html: '<div class=\"markerImage\">' + cluster.getChildCount() + '</div>' });
+            }});
+            var fateGeoForm = L.geoJson(fateGeo, geojsonOpts);
+            fateCluster.addLayer(fateGeoForm);
+
             var poiLayers = L.layerGroup([
 		        L.geoJson(mapmarkerGeo, geojsonOpts).addTo(mapmarker),
-		        L.geoJson(vfxGeo, geojsonOpts).addTo(Vfx)
-	        ]).addTo(map);
+		        L.geoJson(vfxGeo, geojsonOpts).addTo(Vfx),
+		        fateCluster.addTo(fate)
+	        ]);
+          var searchLayer = L.layerGroup([mapmarker, Vfx, fate])
+
+          var searchControl = new L.Control.Search({
+            layer: searchLayer,
+             initial: false,
+               autoType: false,
+               casesensitive: false,
+               tooltipLimit: -1,
+             propertyName: 'dataid',
+             buildTip: function(text, val) {
+                   var dataid = val.layer.feature.properties.dataid;
+                   var type = val.layer.feature.properties.amenity;
+               return '<a href=\"#\ class=\"'+dataid+'\">'+text+'<b> - '+type+'</b></a>';
+             }
+           })
+          map.addControl(searchControl);
+          searchLayer.remove();
+          mapmarker.addTo(map);
 
             L.geoJSON(mapmarkerGeo).addTo(map);
             var coords = new L.control.attribution({position: 'topleft', prefix: 'X: 0, Y: 0'}).addTo(map);
@@ -545,12 +685,7 @@ class ARRM3 implements ParseInterface
                 label: 'Layers',
                 children: [
                   {label: 'Map Labels', layer: mapmarker},
-                  //{label: '<img src=../assets/icons/060000/060501.png width=18/>FATEs', layer: fate,
-                  //  selectAllCheckbox: true,
-                  //  collapsed: true,
-                  //  children: [
-                  //  ]
-                  //},
+                  {label: '<img src=../assets/icons/060000/060501.png width=18/>FATEs', layer: fate},
                   //{label: '<img src=../assets/icons/060000/060653.png width=18/>Currents', layer: current},
                   //{label: '<img src=../assets/icons/060000/060465.png width=18/>Fishing Spots', layer: fishingspot},
                   //{label: '<img src=../assets/icons/060000/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
@@ -571,7 +706,7 @@ class ARRM3 implements ParseInterface
                 collapsed: true,
                 children: [
                   //{label: '<img src=../assets/icons/060000/060002.png width=18/><span title=\"Type = 3\">Lights</span>', layer: light},
-                  {label: '<img src=../assets/icons/060000/060914.png width=18/><span title=\"Type = 4\">Vfx</span>', layer: Vfx},
+                  {label: '<img src=../icons/contentsreplayplayer_hr1_04.png width=18/><span title=\"Type = 4\">Vfx</span>', layer: Vfx},
                   //{label: '<img src=../assets/icons/060000/060408.png width=18/><span title=\"Type = 5\">Position Marker</span>', layer: PositionMarker},
                   //{label: '<img src=../assets/icons/060000/060071.png width=18/><span title=\"Type = 6\">Gimmick</span>', layer: Gimmick},
                   //{label: '<img src=../assets/icons/060000/060979.png width=18/><span title=\"Type = 7\">Sounds</span>', layer: Sound},
@@ -679,20 +814,6 @@ class ARRM3 implements ParseInterface
                 map.addControl(new customControl());
                 
             
-            L.control.search({
-            	layer: poiLayers,
-            	initial: false,
-                autoType: false,
-                casesensitive: false,
-                tooltipLimit: -1,
-            	propertyName: 'dataid',
-            	buildTip: function(text, val) {
-                    var dataid = val.layer.feature.properties.dataid;
-                    var type = val.layer.feature.properties.amenity;
-            		return '<a href=\"#\" class=\"'+dataid+'\">'+text+'<b> - '+type+'</b></a>';
-            	}
-            })
-            .addTo(map);
             //left map switcher
             var mapswitcher = L.control({position:'topleft'});
             mapswitcher.onAdd = function (map) {
