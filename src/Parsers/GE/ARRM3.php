@@ -550,8 +550,6 @@ class ARRM3 implements ParseInterface
             var image = L.imageOverlay(baseurl, bounds).addTo(map);
             map.fitBounds(bounds);
             map.setMaxBounds(bounds);
-
-
             var geojsonOpts = {
                 pointToLayer: function(feature, latlng) {
                     return L.marker(latlng, {
@@ -560,17 +558,19 @@ class ARRM3 implements ParseInterface
                             html: '<img src=\"../icons/'+feature.iconUrl+'.png\" height=\"32\" width=\"32\"\">',
                             iconAnchor: [16, 16],
                         })
-                    }).on('click',function(){
-                        var win =  L.control.window(map,{
-                                title: null,
-                                maxWidth:400,
-                                modal: false,
-                                position:'top'
-                            })
-                                .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.popup+'')
-                                .prompt({callback:function(){alert}})
-                                .show()
-                            }).bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
+                    }).bindPopup('test<br><button class=\"popoutinfobutton\">Popout</button>').on('popupopen',function(){
+              $('.popoutinfobutton').click(function() {
+            var win =  L.control.window(map,{
+                    title: null,
+                    maxWidth:400,
+                    modal: false,
+                    position:'top'
+                })
+                    .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.popup+'')
+                    .prompt({callback:function(){alert}})
+                    .show()
+                })
+            }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
                         }
             };
             // markers and popups
