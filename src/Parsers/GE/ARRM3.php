@@ -32,6 +32,9 @@ class ARRM3 implements ParseInterface
         $QuestCsv = $this->csv('Quest');
         $DynamicEventEnemyTypeCsv = $this->csv('DynamicEventEnemyType');
         $FateCsv = $this->csv('Fate');
+        $EventItemCsv = $this->csv('EventItem');
+        $BGMCsv = $this->csv('BGM');
+        $DynamicEventSingleBattleCsv = $this->csv('DynamicEventSingleBattle');
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
@@ -106,6 +109,7 @@ class ARRM3 implements ParseInterface
                             $AssetType = $Object->AssetType;
                             if (!empty($Object->InstanceId)) {
                                 $InstanceID = $Object->InstanceId;
+                                $DataTable = "";
                                 if ($AssetType === 3){
                                     $x = $Object->Transform->Translation->x;
                                     $y = $Object->Transform->Translation->z;
@@ -182,11 +186,28 @@ class ARRM3 implements ParseInterface
                                         $FateID = $DynamicFateArray[$InstanceID]["id"];
                                         $lgbIcon = sprintf("%06d", $DynamicEventTypeCsv->at($DynamicEventCsv->at($FateID)["EventType"])['Icon{Objective}[0]']);
                                         $IconArray[] = $lgbIcon;
-                                        $fateName = addslashes($DynamicEventCsv->at($FateID)['Name']);
-                                        $QuestDynamic = $QuestCsv->at($DynamicEventCsv->at($FateID)['Quest'])['Name'];
-                                        $EnemyType = $DynamicEventEnemyTypeCsv->at($DynamicEventCsv->at($FateID)['EnemyType'])['Name'];
-                                        $description = str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
-                                        $TextOut = "$QuestDynamic<br>$EnemyType<br>$description";
+                                        $fateName = $DynamicEventCsv->at($FateID)['Name'];
+                                        $QuestDynamic = "";
+                                        if (!empty($QuestCsv->at($DynamicEventCsv->at($FateID)['Quest'])['Name'])){
+                                            $QuestName = $QuestCsv->at($DynamicEventCsv->at($FateID)['Quest'])['Name'];
+                                            $QuestDynamic = "<br>Quest : <a href=\"https://ffxiv.gamerescape.com/wiki/".$QuestName."\">$QuestName</a>";
+                                        }
+                                        $EnemyType = "";
+                                        if (!empty($DynamicEventEnemyTypeCsv->at($DynamicEventCsv->at($FateID)['EnemyType'])['Name'])){
+                                            $EnemyType = "<br>Enemy Type : ".$DynamicEventEnemyTypeCsv->at($DynamicEventCsv->at($FateID)['EnemyType'])['Name'];
+                                        }
+                                        $SingleBattle = "";
+                                        if (!empty($DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Text'])){
+                                            $SBText = $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Text'];
+                                            $SBIcon = sprintf("%06d", $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Icon']);
+                                            $IconArray[] = $SBIcon;
+                                            $SBActionIcon = $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['ActionIcon']);
+                                            $IconArray[] = $SBActionIcon;
+                                            $SingleBattle = "<br><b>Battle:<b><br>\n<img src=\"../icons/".$SBIcon.".png\" width=\"350\"></b><br>\n<br>\"$SBText\"<br>Action:<img src=\"../icons/".$SBActionIcon.".png\">";
+                                        }
+                                        $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
+                                        $PopupTextOut = "$QuestDynamic$EnemyType$description";
+                                        $DataWindowTextOut = "$QuestDynamic$EnemyType$description$SingleBattle";
                                         $FateArray[] = array(
                                             "layer" => "Fate",
                                             "type" => "Feature",
@@ -195,7 +216,8 @@ class ARRM3 implements ParseInterface
                                                 "dataid" => "$InstanceID",
                                                 "amenity" => "Fate",
                                                 "name" => $fateName,
-                                                "popup" => $TextOut,
+                                                "popup" => $PopupTextOut,
+                                                "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
                                                     "text" => "",
@@ -222,9 +244,58 @@ class ARRM3 implements ParseInterface
                                         $FateID = $FateArraySheet[$InstanceID]["id"];
                                         $lgbIcon = sprintf("%06d", $FateCsv->at($FateID)["Icon{Objective}"]);
                                         $IconArray[] = $lgbIcon;
-                                        $fateName = addslashes($FateCsv->at($FateID)['Name']);
-                                        $description = str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $FateCsv->at($FateID)['Description']));
-                                        $TextOut = "$description";
+                                        $fateName = $FateCsv->at($FateID)['Name'];
+                                        $ClassJobLevel = $FateCsv->at($FateID)['ClassJobLevel'];
+                                        $ClassJobLevelMax = $FateCsv->at($FateID)['ClassJobLevel{Max}'];
+                                        $Objective = "";
+                                        if (!empty($FateCsv->at($FateID)["Objective"])){
+                                            $Objective = "<br><ul><li>".$FateCsv->at($FateID)["Objective"]."</li></ul>";
+                                        }
+                                        $Quest = "";
+                                        if (!empty($QuestCsv->at($FateCsv->at($FateID)["RequiredQuest"])['Name'])){
+                                            $QuestName = $QuestCsv->at($FateCsv->at($FateID)["RequiredQuest"])['Name'];
+                                            $Quest = "<br>Quest : <a href=\"https://ffxiv.gamerescape.com/wiki/".$QuestName."\">$QuestName</a>";
+                                        }
+                                        $ObjectiveIcons = [];
+                                        foreach(range(0,7) as $i){
+                                            if (empty($FateCsv->at($FateID)["ObjectiveIcon[$i]"])) break;
+                                            $IconArray[] = $FateCsv->at($FateID)["ObjectiveIcon[$i]"];
+                                            $ObjectiveIcons[] = "<img src=\"../icons/".sprintf("%06d", $FateCsv->at($FateID)["ObjectiveIcon[$i]"]).".png\" height=\"48\" width=\"48\"\">";
+                                        }
+                                        $ObjectiveIcon = implode($ObjectiveIcons);
+                                        $DataTable = "<div class= \"datawindow\"><table class=\"w3-table w3-bordered w3-border\">
+                                            <tr>
+                                                <td>ArrayEventHandler:</td>
+                                                <td>".$FateCsv->at($FateID)["ArrayIndex"]."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ReqEventItem:</td>
+                                                <td>".$EventItemCsv->at($FateCsv->at($FateID)["ReqEventItem"])['Name']."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>TurnInEventItem:</td>
+                                                <td>".$EventItemCsv->at($FateCsv->at($FateID)["TurnInEventItem"])['Name']."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ObjectiveIcons:</td>
+                                                <td>".$ObjectiveIcon."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Music:</td>
+                                                <td>".$BGMCsv->at($FateCsv->at($FateID)["Music"])['File']."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ClassJobLevel:</td>
+                                                <td>$ClassJobLevel</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ClassJobLevelMax:</td>
+                                                <td>$ClassJobLevelMax</td>
+                                            </tr>
+                                            </table></div>";
+                                        $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $FateCsv->at($FateID)['Description']));
+                                        $PopupTextOut = "Level: $ClassJobLevel / $ClassJobLevelMax$Quest$description$Objective";
+                                        $DataWindowTextOut = "$Quest$description$Objective$DataTable";
                                         $FateArray[] = array(
                                             "layer" => "Fate",
                                             "type" => "Feature",
@@ -233,7 +304,8 @@ class ARRM3 implements ParseInterface
                                                 "dataid" => "$InstanceID",
                                                 "amenity" => "Fate",
                                                 "name" => $fateName,
-                                                "popup" => $TextOut,
+                                                "popup" => $PopupTextOut,
+                                                "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
                                                     "text" => "",
@@ -542,7 +614,7 @@ class ARRM3 implements ParseInterface
               zoom: 1,
               minZoom: -1,
               maxZoom: 1
-            }).setView([1028, 1028], 1);
+            }).setView([1028, 1028], -1);
             var bounds = [
               [2046, 0],
               [0, 2046]
@@ -555,10 +627,10 @@ class ARRM3 implements ParseInterface
                     return L.marker(latlng, {
                         icon: L.divIcon({
                             className: feature.properties.amenity,
-                            html: '<img src=\"../icons/'+feature.iconUrl+'.png\" height=\"32\" width=\"32\"\">',
-                            iconAnchor: [16, 16],
+                            html: '<img src=\"../icons/'+feature.iconUrl+'.png\" height=\"48\" width=\"48\"\">',
+                            iconAnchor: [24, 24],
                         })
-                    }).bindPopup('test<br><button class=\"popoutinfobutton\">Popout</button>').on('popupopen',function(){
+                    }).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>').on('popupopen',function(){
               $('.popoutinfobutton').click(function() {
             var win =  L.control.window(map,{
                     title: null,
@@ -566,7 +638,7 @@ class ARRM3 implements ParseInterface
                     modal: false,
                     position:'top'
                 })
-                    .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.popup+'')
+                    .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
                     .prompt({callback:function(){alert}})
                     .show()
                 })
@@ -613,7 +685,7 @@ class ARRM3 implements ParseInterface
             //var Monster = L.layerGroup();
             //var Treasure = L.layerGroup();
             var fateCluster = L.markerClusterGroup({iconCreateFunction: function(cluster) {
-                return L.divIcon({ html: '<div class=\"markerImage\">' + cluster.getChildCount() + '</div>' });
+                return L.divIcon({ html: '<div class=\"markerImage\"><img src=../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
             }});
             var fateGeoForm = L.geoJson(fateGeo, geojsonOpts);
             fateCluster.addLayer(fateGeoForm);
@@ -631,11 +703,14 @@ class ARRM3 implements ParseInterface
                autoType: false,
                casesensitive: false,
                tooltipLimit: -1,
+               zoom: 1,
              propertyName: 'dataid',
              buildTip: function(text, val) {
                    var dataid = val.layer.feature.properties.dataid;
                    var type = val.layer.feature.properties.amenity;
-               return '<a href=\"#\ class=\"'+dataid+'\">'+text+'<b> - '+type+'</b></a>';
+                   var searchicon = val.layer.feature.iconUrl;
+                   var searchname = val.layer.feature.properties.name;
+               return '<a href=\"#\ class=\"'+dataid+'\">'+text+'<b> - '+type+'</b><img src=../icons/'+searchicon+'.png width=18/>'+searchname+'</a>';
              }
            })
           map.addControl(searchControl);
@@ -685,7 +760,7 @@ class ARRM3 implements ParseInterface
                 label: 'Layers',
                 children: [
                   {label: 'Map Labels', layer: mapmarker},
-                  {label: '<img src=../assets/icons/060000/060501.png width=18/>FATEs', layer: fate},
+                  {label: '<img src=../icons/063914.png width=18/>FATEs', layer: fate},
                   //{label: '<img src=../assets/icons/060000/060653.png width=18/>Currents', layer: current},
                   //{label: '<img src=../assets/icons/060000/060465.png width=18/>Fishing Spots', layer: fishingspot},
                   //{label: '<img src=../assets/icons/060000/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
