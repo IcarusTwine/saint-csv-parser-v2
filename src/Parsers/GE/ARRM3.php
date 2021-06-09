@@ -35,10 +35,279 @@ class ARRM3 implements ParseInterface
         $EventItemCsv = $this->csv('EventItem');
         $BGMCsv = $this->csv('BGM');
         $DynamicEventSingleBattleCsv = $this->csv('DynamicEventSingleBattle');
+        $BNpcNameCsv = $this->csv('BNpcName');
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
 
+
+        $AssetTypeEnums[0] = "AssetNone"; 
+        $AssetTypeEnums[1] = "BG"; 
+        $AssetTypeEnums[2] = "Attribute"; 
+        $AssetTypeEnums[3] = "LayLight"; 
+        $AssetTypeEnums[4] = "VFX"; 
+        $AssetTypeEnums[5] = "PositionMarker"; 
+        $AssetTypeEnums[6] = "SharedGroup"; 
+        $AssetTypeEnums[7] = "Sound"; 
+        $AssetTypeEnums[8] = "EventNPC"; 
+        $AssetTypeEnums[9] = "BattleNPC"; 
+        $AssetTypeEnums[10] = "RoutePath"; 
+        $AssetTypeEnums[11] = "Character"; 
+        $AssetTypeEnums[12] = "Aetheryte"; 
+        $AssetTypeEnums[13] = "EnvSet"; 
+        $AssetTypeEnums[14] = "Gathering"; 
+        $AssetTypeEnums[15] = "HelperObject"; 
+        $AssetTypeEnums[16] = "Treasure"; 
+        $AssetTypeEnums[17] = "Clip"; 
+        $AssetTypeEnums[18] = "ClipCtrlPoint"; 
+        $AssetTypeEnums[19] = "ClipCamera"; 
+        $AssetTypeEnums[20] = "ClipLight"; 
+        $AssetTypeEnums[36] = "CutAssetOnlySelectable"; 
+        $AssetTypeEnums[37] = "Player"; 
+        $AssetTypeEnums[38] = "Monster"; 
+        $AssetTypeEnums[39] = "Weapon"; 
+        $AssetTypeEnums[40] = "PopRange"; 
+        $AssetTypeEnums[41] = "ExitRange"; 
+        $AssetTypeEnums[42] = "LVB"; 
+        $AssetTypeEnums[43] = "MapRange"; 
+        $AssetTypeEnums[44] = "NaviMeshRange"; 
+        $AssetTypeEnums[45] = "EventObject"; 
+        $AssetTypeEnums[46] = "DemiHuman"; 
+        $AssetTypeEnums[47] = "EnvLocation"; 
+        $AssetTypeEnums[48] = "ControlPoint"; 
+        $AssetTypeEnums[49] = "EventRange"; 
+        $AssetTypeEnums[50] = "RestBonusRange"; 
+        $AssetTypeEnums[51] = "QuestMarker"; 
+        $AssetTypeEnums[52] = "Timeline"; 
+        $AssetTypeEnums[53] = "ObjectBehaviorSet"; 
+        $AssetTypeEnums[54] = "Movie"; 
+        $AssetTypeEnums[55] = "ScenarioExd"; 
+        $AssetTypeEnums[56] = "ScenarioText"; 
+        $AssetTypeEnums[57] = "CollisionBox"; 
+        $AssetTypeEnums[58] = "DoorRange"; 
+        $AssetTypeEnums[59] = "LineVFX"; 
+        $AssetTypeEnums[60] = "SoundEnvSet"; 
+        $AssetTypeEnums[61] = "CutActionTimeline"; 
+        $AssetTypeEnums[62] = "CharaScene"; 
+        $AssetTypeEnums[63] = "CutAction"; 
+        $AssetTypeEnums[64] = "EquipPreset"; 
+        $AssetTypeEnums[65] = "ClientPath"; 
+        $AssetTypeEnums[66] = "ServerPath"; 
+        $AssetTypeEnums[67] = "GimmickRange"; 
+        $AssetTypeEnums[68] = "TargetMarker"; 
+        $AssetTypeEnums[69] = "ChairMarker"; 
+        $AssetTypeEnums[70] = "ClickableRange"; 
+        $AssetTypeEnums[71] = "PrefetchRange"; 
+        $AssetTypeEnums[72] = "FateRange"; 
+        $AssetTypeEnums[73] = "PartyMember"; 
+        $AssetTypeEnums[74] = "KeepRange"; 
+        $AssetTypeEnums[75] = "SphereCastRange"; 
+        $AssetTypeEnums[76] = "IndoorObject"; 
+        $AssetTypeEnums[77] = "OutdoorObject"; 
+        $AssetTypeEnums[78] = "EditGroup"; 
+        $AssetTypeEnums[79] = "StableChocobo"; 
+        $AssetTypeEnums[80] = "MaxAssetType"; 
+        $DoorState[1] = "Auto";
+        $DoorState[2] = "Open";
+        $DoorState[3] = "Closed";
+    //    public enum RotationState
+    //{
+    //    Rounding = 0x1,
+    //    Stopped = 0x2,
+    //}
+//
+    //public enum TransformState
+    //{
+    //    TransformStatePlay = 0x0,
+    //    TransformStateStop = 0x1,
+    //    TransformStateReplay = 0x2,
+    //    TransformStateReset = 0x3,
+    //}
+//
+    //public enum ColourState
+    //{
+    //    ColorStatePlay = 0x0,
+    //    ColorStateStop = 0x1,
+    //    ColorStateReplay = 0x2,
+    //    ColorStateReset = 0x3,
+    //}
+//
+    $TriggerBoxShapeEnum[1] = "TriggerBoxShapeBox";
+    $TriggerBoxShapeEnum[2] = "TriggerBoxShapeSphere";
+    $TriggerBoxShapeEnum[3] = "TriggerBoxShapeCylinder";
+    $TriggerBoxShapeEnum[4] = "TriggerBoxShapeBoard";
+    $TriggerBoxShapeEnum[5] = "TriggerBoxShapeMesh";
+    $TriggerBoxShapeEnum[6] = "TriggerBoxShapeBoardBothSides";
+//
+    //public enum ModelCollisionType
+    //{
+    //    None = 0x0,
+    //    Replace = 0x1,
+    //    Box = 0x2,
+    //}
+//
+    //public enum LightType
+    //{
+    //    None = 0x0,
+    //    Directional = 0x1,
+    //    Point = 0x2,
+    //    Spot = 0x3,
+    //    Plane = 0x4,
+    //    Line = 0x5,
+    //    Specular = 0x6,
+    //}
+//
+    //public enum PointLightType
+    //{
+    //    Sphere = 0x0,
+    //    Hemisphere = 0x1,
+    //}
+//
+    //public enum PositionMarkerType
+    //{
+    //    DebugZonePop = 0x1,
+    //    DebugJump = 0x2,
+    //    NaviMesh = 0x3,
+    //    LQEvent = 0x4,
+    //}
+//
+    //public enum EnvSetShape
+    //{
+    //    EnvShapeEllipsoid = 0x1,
+    //    EnvShapeCuboid = 0x2,
+    //    EnvShapeCylinder = 0x3,
+    //}
+//
+    //public enum HelperObjectType
+    //{
+    //    ProxyActor = 0x0,
+    //    NullObject = 0x1,
+    //}
+//
+    //public enum TargetType
+    //{
+    //    None = 0x0,
+    //    ENPCInstanceID = 0x1,
+    //    Player = 0x2,
+    //    PartyMember = 0x3,
+    //    ENPCDirect = 0x4,
+    //    BNPCDirect = 0x5,
+    //    BGObjInstanceID = 0x6,
+    //    SharedGroupInstanceID = 0x7,
+    //    BGObj = 0x8,
+    //    SharedGroup = 0x9,
+    //    Weapon = 0xA,
+    //    StableChocobo = 0xB,
+    //    AllianceMember = 0xC,
+    //    Max = 0xD,
+    //}
+//
+    //public enum PopType
+    //{
+    //    PC = 0x1,
+    //    NPC = 0x2,
+    //    BNPC = 0x2,
+    //    Content = 0x3,
+    //}
+//
+    //public enum ExitType
+    //{
+    //    ZoneLine = 0x1,
+    //}
+//
+    //public enum RangeType
+    //{
+    //    Type01 = 0x1,
+    //    Type02 = 0x2,
+    //    Type03 = 0x3,
+    //    Type04 = 0x4,
+    //    Type05 = 0x5,
+    //    Type06 = 0x6,
+    //    Type07 = 0x7,
+    //}
+//
+    //public enum LineStyle
+    //{
+    //    Red = 0x1,
+    //    Blue = 0x2,
+    //}
+//
+    //public enum GimmickType
+    //{
+    //    Fishing = 0x1,
+    //    Content = 0x2,
+    //    Room = 0x3,
+    //}
+//
+    //public enum TargetMarkerType
+    //{
+    //    UiTarget = 0x0,
+    //    UiNameplate = 0x1,
+    //    LookAt = 0x2,
+    //    BodyDyn = 0x3,
+    //    Root = 0x4,
+    //}
+//
+    ////For ChairMarker
+    //public enum ObjectType
+    //{
+    //    ObjectChair = 0x0,
+    //    ObjectBed = 0x1,
+    //}
+//
+    //public enum CharacterSize : byte
+    //{
+    //    DefaultSize = 0x0,
+    //    VerySmall = 0x1,
+    //    Small = 0x2,
+    //    Medium = 0x3,
+    //    Large = 0x4,
+    //    VeryLarge = 0x5,
+    //}
+//
+    //public enum DrawHeadParts : byte
+    //{
+    //    Default = 0x0,
+    //    ForceOn = 0x1,
+    //    ForceOff = 0x2,
+    //}
+//
+    //public enum RotationType
+    //{
+    //    NoRotate = 0x0,
+    //    AllAxis = 0x1,
+    //    YAxisOnly = 0x2,
+    //}
+//
+    //public enum MovePathMode
+    //{
+    //    None = 0x0,
+    //    SharedGroupAction = 0x1,
+    //    Timeline = 0x2,
+    //}
+//
+    //public enum LayerSetReferencedType
+    //{
+    //    All = 0x0,
+    //    Include = 0x1,
+    //    Exclude = 0x2,
+    //    Undetermined = 0x3,
+    //}
+//
+    //public enum SoundEffectType
+    //{
+    //    Point = 0x3,
+    //    PointDir = 0x4,
+    //    Line = 0x5,
+    //    PolyLine = 0x6,
+    //    Surface = 0x7,
+    //    BoardObstruction = 0x8,
+    //    BoxObstruction = 0x9,
+    //    PolyLineObstruction = 0xB,
+    //    PolygonObstruction = 0xC,
+    //    LineExtController = 0xD,
+    //    Polygon = 0xE,
+    //}
         foreach ($MapCsv->data as $id => $Map) {
             $MapTerri = $Map['TerritoryType'];
             $Index = $Map['MapIndex'];
@@ -201,9 +470,8 @@ class ARRM3 implements ParseInterface
                                             $SBText = $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Text'];
                                             $SBIcon = sprintf("%06d", $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Icon']);
                                             $IconArray[] = $SBIcon;
-                                            $SBActionIcon = $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['ActionIcon']);
-                                            $IconArray[] = $SBActionIcon;
-                                            $SingleBattle = "<br><b>Battle:<b><br>\n<img src=\"../icons/".$SBIcon.".png\" width=\"350\"></b><br>\n<br>\"$SBText\"<br>Action:<img src=\"../icons/".$SBActionIcon.".png\">";
+                                            $SBTarget = $BNpcNameCsv->at($DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['ActionIcon'])['Singular'];
+                                            $SingleBattle = "<br><b>Battle Target: <i>$SBTarget</i></b><br>\n<img src=\"../icons/".$SBIcon.".png\" width=\"350\"></b><br>\n<br>\"$SBText\"";
                                         }
                                         $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
                                         $PopupTextOut = "$QuestDynamic$EnemyType$description";
@@ -296,6 +564,37 @@ class ARRM3 implements ParseInterface
                                         $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $FateCsv->at($FateID)['Description']));
                                         $PopupTextOut = "Level: $ClassJobLevel / $ClassJobLevelMax$Quest$description$Objective";
                                         $DataWindowTextOut = "$Quest$description$Objective$DataTable";
+                                        $Lgbinfo = '<form>
+                                        <fieldset disabled="disabled">
+                                        <legend>'.$LayerName.':</legend>
+                                        <label>InstanceID:</label>
+                                        <input type="text"  value="'.$InstanceID.'"><br>
+                                        <label>PosX:</label>
+                                        <input type="text" value="'.$Object->Transform->Translation->x.'"><br>
+                                        <label>PosY:</label>
+                                        <input type="text" value="'.$Object->Transform->Translation->y.'"><br>
+                                        <label>PosZ:</label>
+                                        <input type="text" value="'.$Object->Transform->Translation->z.'"><br>
+                                        <label>RotX:</label>
+                                        <input type="text" value="'.$Object->Transform->Rotation->x.'"><br>
+                                        <label>RotY:</label>
+                                        <input type="text" value="'.$Object->Transform->Rotation->y.'"><br>
+                                        <label>RotZ:</label>
+                                        <input type="text" value="'.$Object->Transform->Rotation->z.'"><br>
+                                        <label>ScaleX:</label>
+                                        <input type="text" value="'.$Object->Transform->Scale->x.'"><br>
+                                        <label>ScaleY:</label>
+                                        <input type="text" value="'.$Object->Transform->Scale->y.'"><br>
+                                        <label>ScaleZ:</label>
+                                        <input type="text" value="'.$Object->Transform->Scale->z.'"><br>
+                                        <label>Asset type:</label>
+                                        <input type="text" value="'.$AssetTypeEnums[$AssetType].'"><br>
+                                        <label>Festival ID:</label>
+                                        <input type="text" value="'.$lgb->FestivalID.'"><br>
+                                        <label>TriggerBoxShape:</label>
+                                        <input type="text" value="'.$TriggerBoxShapeEnum[$Object->Object->ParentData->TriggerBoxShape].'"><br>
+                                        </fieldset
+                                      </form>';
                                         $FateArray[] = array(
                                             "layer" => "Fate",
                                             "type" => "Feature",
@@ -306,6 +605,7 @@ class ARRM3 implements ParseInterface
                                                 "name" => $fateName,
                                                 "popup" => $PopupTextOut,
                                                 "datawindow" => $DataWindowTextOut,
+                                                "lgbinfo" => $Lgbinfo,
                                                 "tooltip" => array (
                                                     "direction" => "",
                                                     "text" => "",
@@ -624,13 +924,18 @@ class ARRM3 implements ParseInterface
             map.setMaxBounds(bounds);
             var geojsonOpts = {
                 pointToLayer: function(feature, latlng) {
+                    if (feature.properties.lgbinfo == null){
+                      var lgbbutton = '';
+                    } else {
+                      var lgbbutton = '<div class=\"lgbchangebutton\"></div>';
+                    }
                     return L.marker(latlng, {
                         icon: L.divIcon({
                             className: feature.properties.amenity,
                             html: '<img src=\"../icons/'+feature.iconUrl+'.png\" height=\"48\" width=\"48\"\">',
                             iconAnchor: [24, 24],
                         })
-                    }).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>').on('popupopen',function(){
+                    }).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
               $('.popoutinfobutton').click(function() {
             var win =  L.control.window(map,{
                     title: null,
@@ -642,9 +947,16 @@ class ARRM3 implements ParseInterface
                     .prompt({callback:function(){alert}})
                     .show()
                 })
+            }).on('popupopen',function(){
+              $('.lgbchangebutton').click(function() {
+                infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
+                })
             }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
                         }
             };
+            $('.btnClick').on('click',function(){
+              infobox.getContainer().innerHTML = ''
+            });
             // markers and popups
             var mapmarker = L.layerGroup().addTo(map);
             var fate = L.layerGroup();
@@ -853,41 +1165,19 @@ class ARRM3 implements ParseInterface
             
             
             L.control.layers.tree(null, baseTree, {collapsed:false}).addTo(map);
-            
-            var customControl =  L.Control.extend({
 
-                options: {
-                  position: 'topright'
-                },
-                
-                onAdd: function (map) {
-                  var container = L.DomUtil.create('input');
-                  container.type=\"button\";
-                  container.title=\"No cat\";
-                  container.value = \"\";
-                
-                  container.style.backgroundColor = 'white';     
-                  //container.style.backgroundImage = \"url(https://t1.gstatic.com/images?q=tbn:ANd9GcR6FCUMW5bPn8C4PbKak2BJQQsmC-K9-mbYBeFZm1ZM2w2GRy40Ew)\";
-                  container.style.backgroundSize = \"30px 30px\";
-                  container.style.width = '30px';
-                  container.style.height = '30px';
-                  
-                  container.onmouseover = function(){
-                    container.style.backgroundColor = 'pink'; 
-                  }
-                  container.onmouseout = function(){
-                    container.style.backgroundColor = 'white'; 
-                  }
-                
-                  container.onclick = function(){
-                    console.log('buttonClicked');
-                  }
-                
-                  return container;
-                }
-                });
-                map.addControl(new customControl());
-                
+            //lgb infobox
+            var infobox = L.control({position:'topright'});
+            infobox.onAdd = function (lgb) {
+              this._div = L.DomUtil.create('div', 'info');
+              this.update();
+              return this._div;
+            };
+            infobox.update = function (lgbchange) {
+                this._div.innerHTML = '';
+            };
+            infobox.addTo(map);
+
             
             //left map switcher
             var mapswitcher = L.control({position:'topleft'});
