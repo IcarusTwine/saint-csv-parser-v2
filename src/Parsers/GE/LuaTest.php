@@ -71,7 +71,7 @@ class LuaTest implements ParseInterface
         $this->data[] = $data;
         // save
         $console->writeln(" Saving... ");
-        $info = $this->save("LuaTest.json", 999999);
+        $info = $this->save("LuaTest.txt", 999999);
 
     }
 }

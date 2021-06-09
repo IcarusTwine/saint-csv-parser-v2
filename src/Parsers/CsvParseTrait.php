@@ -1303,18 +1303,18 @@ trait CsvParseTrait
         
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
-        //include_once "LuaParser.php";
-        //include_once "print_tree.php";
         
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
         $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";  
         
-
+        $outarray = [];
         $NpcName = str_replace(" ", "", strtoupper($Name));
         $folder = substr(explode('_', $LuaName)[1], 0, 3);
         $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+        $LuaNameStrippedexp = explode("_", $LuaName);
+        $LuaNameStripped = $LuaNameStrippedexp[0];
         $CsvTextArray = [];
         foreach ($textdata->data as $key => $textdataCsv) {
             $command = $textdataCsv["unknown_1"];
@@ -1324,169 +1324,119 @@ trait CsvParseTrait
             }
         }
         $code = file_get_contents($LuaFile);
-
-        $log = new Logger('lua');
-        $log->pushHandler(new StreamHandler('php://stdout', Logger::DEBUG));
-        $code = explode("\n", $code);
-        foreach ($code as $i => $line) {
-            $line = trim($line);
-            $line = Encoding::fixUTF8($line);
-            $line = variableReplacement($line);
-            $line = basicCodeReplacement($line);
-            $code[$i] = $line;
-        }
-        $code = implode("\n", $code);
-        $code = indentCode($code);
-        
-        $_lua = explode("\n", str_replace("\r","",str_replace("  ","",$code)));
+        $LuaDefinedArray = [];
+        //tidy code up (explode then remove linebreaks, tabs)
+        $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$code)))));
+        //get total lines for while
         $_lines = count($_lua);
+        //set pos to the start
         $_pos = 0;
         $end = false;
-        function getLuaIfNew($_lua, $_pos){
-            $Ifend = false;
-            $_lines = count($_lua);
-            while($Ifend == false) {
-                if(empty($_lua[$_pos])){
-                    $Ifend = true;
-                }
+        if($_pos < $_lines){
+            while($end === false) {
                 if($_pos >= $_lines){
-                    $Ifend = true;
                     break;
                 };
-                $line = $_lua[$_pos];
-                if (strpos($line, "};") !== false){
-                    $Ifarray[] = $line;
-                    $Ifend = true;
-                    $_pos++;
+                //getpreset values
+                $namereg = "/{$LuaNameStripped}\.(.*?)\ =/";
+                if (preg_match($namereg, $_lua[$_pos], $match)){
+                    $valueexplode = explode(" = ", $_lua[$_pos]);
+                    $ValueName = $match[1];
+                    $Value = $valueexplode[1];
+                    $CsvTextArray[$ValueName] = $Value;
                 }
-                if ($Ifend === false){
-                    $Ifarray[] = $line;
-                    $_pos++;
-                }
-                if (preg_match('/\{/', $_lua[$_pos])) {
-                    $nested = getLuaIfNew($_lua, $_pos);
-                    $Ifarray[] = $nested['out'];
-                    $_pos = $nested['pos'];
-                }
-            }
-            $ifdata['pos'] = $_pos;
-            $ifdata['out'] = $Ifarray;
-            return $ifdata;
-        }
-        $newcode = getLuaIfNew($_lua, $_pos);
-        unset($newcode['pos']);
-        $forcode = $newcode["out"];
-        $newcode = json_encode($newcode["out"],JSON_PRETTY_PRINT);
-        function recurse($item) {
-            $ffxiv_core = ["STUFF", "THINGS"];
-            $debug = true;
-            $GetNumOfNewLetters = function ($blank){
-                print_r("ZERO");
-            };
-            $console = new ConsoleOutput();
-            foreach ($item as $key => $value) {
-                if (is_array($value)) {
-                    $testarray[] = recurse($value);
-                    //echo "{$value[0]}\n";
-                } else {
-                    if (strpos($value, "($") !== false){
-                        if ($debug === true ) {
-                            $console->writeln("-------------------------------------------\n");
-                            $console->writeln("$value <fg=black;bg=yellow>'($' Found</>");
-                        }
+                //get the title of the box
+                if (strpos($_lua[$_pos], "if") !== false){
+                    //explode question
+                    $QuestionExplode = explode(" ",$_lua[$_pos]);
+                    //questions less than 5
+                    if (count($QuestionExplode) >= 5){
+                        $FindValue = $QuestionExplode[1];
+                        $StorePos = $_pos;
                         $found = false;
-                        $check = explode("(",$value);
-                        //create variables inside functions
-                        if (!empty($check[1])){
-                            $checkline = $check[1];
-                            if (strpos($checkline,");")!== false){
-                                $checkline = str_replace(");","",$checkline);
-                                $variables = explode(", ",$checkline);
-                                foreach ($variables as $variable) {
-                                    if ($variable === "false") continue;
-                                    if ($variable === "nil") continue;
-                                    $tempkey = $key;
-                                    while ($found === false){
-                                        $tempkey--;
-                                        if ($tempkey <= 0){
-                                            if ($debug === true ) {
-                                                $console->writeln("-------------------------------------------\n");
-                                                $console->writeln("Could not find Variable : <error>{$variable}</error>");
-                                                $console->writeln("line is : <error>{$checkline}</error>");
-                                                $console->writeln("-------------------------------------------\n");
-                                            }
-                                            break;
-                                        }
-                                        if (!is_array($item[$tempkey])){
-                                            $explodefound = explode(" =",$item[$tempkey]);
-                                            if ($explodefound[0] == $variable){
-                                                if ($debug === true ) {
-                                                    $console->writeln("found : <fg=black;bg=green>$variable</>, Setting");
-                                                }
-                                                $evalit = $item[$tempkey];
-                                                eval("return $evalit");
-                                                $found = true;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        $check = explode(" = ",$check[0]);
-                        $tempkey = $key;
-                        while ($found === false){
-                            $tempkey--;
-                            if ($tempkey <= 0){
-                                if ($debug === true ) {
-                                    $console->writeln("-------------------------------------------\n");
-                                    $console->writeln("Could not find : <error>{$check[0]}</error>");
-                                    $console->writeln("-------------------------------------------\n");
-                                }
+                        while($found === false){
+                            $_pos--;
+                            if ($_pos < 0){
+                                $_pos = $StorePos;
                                 break;
                             }
-                            if(strpos($item[$tempkey],"::") !== false){
-                                $explodefound = explode(" =",$item[$tempkey]);
-                                if ($explodefound[0] == $check[0]){
-                                    $functionname = explode("::",$explodefound[1]);
-                                    if ($debug === true ) {
-                                        $console->writeln("found : <fg=black;bg=green>{$functionname[1]}</>");
+                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                                $matchExplode = explode(" = ", $match[0]);
+                                if ($matchExplode[0] === $FindValue){
+                                    $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                                    $GetFuncName = "(".$GetFuncNameExp[1].")";
+                                    //get func value
+                                    $_pos++;
+                                    $Variable = "";
+                                    if (strpos($_lua[$_pos],")") !== false){
+                                        if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                                            if (strpos($match[1],",") !== false){
+                                                $expmatch = explode(",",$match[1]);
+                                                $Variable = " (".$expmatch[0].")";
+                                            } else {
+                                                $Variable = " (".$match[1].")";
+                                            }
+                                        }
                                     }
-                                    $value1 = str_replace("$","",$functionname[1]."",$functionname[1]);
-                                    if ($debug === true ) {
-                                        $console->writeln("<fg=black;bg=green>{$check[0]}</> is now set to <fg=black;bg=green>$value1</>");
+                                    $FuncNameAndVar = "$GetFuncName$Variable";
+                                    $_pos = $StorePos;
+                                    //if the 2nd variable is a number variable
+                                    $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
+                                    if (preg_match("/[A-Z][0-9]_[0-9]+/", $QuestionExplode[3], $match)){
+                                        $found2 = false;
+                                        while($found2 === false){
+                                            $_pos--;
+                                            if ($_pos < 0){
+                                                $_pos = $StorePos;
+                                                break;
+                                            }
+                                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                                                $matchExplode = explode(" = ", $match[0]);
+                                                if ($matchExplode[0] === $QuestionExplode[3]){
+                                                    $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                                                    $GetFuncName2 = "(".$GetFuncNameExp[1].")";
+                                                    $found2 = true;
+                                                }
+                                            }
+                                        }
+                                        $_pos = $StorePos;
+                                        $newquestion = str_replace($QuestionExplode[3],$GetFuncName2,$newquestion);
                                     }
-                                    $value1 = str_replace(";","",$value1);
-                                    $checks1 = $check[0];
-                                    $replaceeval = str_replace("".$checks1."(","".$value1."(",$value);
-                                    if ($debug === true ) {
-                                        $console->writeln("-------------------------------------------\n");
-                                        $console->writeln(">>> Eval : <fg=black;bg=green>$replaceeval</>\n");
-                                    }
-                                    eval('return $replaceeval;');
-                                    $testarray[] = $replaceeval;
+                                    $outarray[] = $newquestion;
                                     $found = true;
                                 }
                             }
                         }
-                        //echo ("$key . ".$value."\n");
-                    } else {
-                        if ($debug === true ) {
-                            $console->writeln(">>> ".$value);
-                        }
-                        $testarray[] = $value;
                     }
                 }
-            }
-            if (!empty($testarray)){
-                $outarray[] = $testarray;
-            }
-            if (!empty($outarray)){
-                return($outarray);
+                
+                if (strpos($_lua[$_pos], "TEXT") !== false){
+                    if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
+                        $outarray[] = "(".$match[1].")";
+                    } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                        $outarray[] = "(".$match[1].")";
+                    }
+                }
+                if ($_lua[$_pos] === "else"){
+                    $outarray[] = $_lua[$_pos];
+                }
+                if ($_lua[$_pos] === "end"){
+                    $outarray[] = $_lua[$_pos];
+                }
+
+                
+               
+
+                $_pos++;
             }
         }
-        $finalout = json_encode(recurse($forcode),JSON_PRETTY_PRINT);
-        $this->saveExtra("luanew.json",$finalout);
-        //return(json_encode($finalout));
+         
+        $finalout = implode("\n",$outarray);
+        foreach($CsvTextArray as $key => $value){
+            $finalout = str_replace("($key)",$value,$finalout);
+        }
+        //foreach of the argarrys but need to understand usage first
+        return $finalout;
         //var_dump($finalout);
         
     }
