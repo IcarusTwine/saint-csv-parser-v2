@@ -27,6 +27,7 @@ class ARRM3 implements ParseInterface
         $PlaceNameCsv = $this->csv('PlaceName');
         $MapMarkerCsv = $this->csv('MapMarker');
         $DynamicEventCsv = $this->csv('DynamicEvent');
+        $ENpcResidentCsv = $this->csv('ENpcResident');
         $EObjNameCsv = $this->csv('EObjName');
         $DynamicEventTypeCsv = $this->csv('DynamicEventType');
         $QuestCsv = $this->csv('Quest');
@@ -41,15 +42,15 @@ class ARRM3 implements ParseInterface
         $PatchNumber = $this->getPatch("TerritoryType");
 
 
-        $AssetTypeEnums[0] = "AssetNone"; 
-        $AssetTypeEnums[1] = "BG"; 
-        $AssetTypeEnums[2] = "Attribute"; 
-        $AssetTypeEnums[3] = "LayLight"; 
-        $AssetTypeEnums[4] = "VFX"; 
-        $AssetTypeEnums[5] = "PositionMarker"; 
-        $AssetTypeEnums[6] = "SharedGroup"; 
-        $AssetTypeEnums[7] = "Sound"; 
-        $AssetTypeEnums[8] = "EventNPC"; 
+        $AssetTypeEnums[0] = "AssetNone"; //zero matches LGB
+        $AssetTypeEnums[1] = "BG"; //yes, but too heavy to load
+        $AssetTypeEnums[2] = "Attribute"; //zero matches LGB
+        $AssetTypeEnums[3] = "LayLight"; //yes
+        $AssetTypeEnums[4] = "VFX"; //yes
+        $AssetTypeEnums[5] = "PositionMarker"; //none LGB
+        $AssetTypeEnums[6] = "SharedGroup"; //yes
+        $AssetTypeEnums[7] = "Sound"; //yes
+        $AssetTypeEnums[8] = "EventNPC"; //yes
         $AssetTypeEnums[9] = "BattleNPC"; 
         $AssetTypeEnums[10] = "RoutePath"; 
         $AssetTypeEnums[11] = "Character"; 
@@ -146,22 +147,16 @@ class ARRM3 implements ParseInterface
     //    Box = 0x2,
     //}
 //
-    //public enum LightType
-    //{
-    //    None = 0x0,
-    //    Directional = 0x1,
-    //    Point = 0x2,
-    //    Spot = 0x3,
-    //    Plane = 0x4,
-    //    Line = 0x5,
-    //    Specular = 0x6,
-    //}
-//
-    //public enum PointLightType
-    //{
-    //    Sphere = 0x0,
-    //    Hemisphere = 0x1,
-    //}
+    $LightTypeEnum[0] ="None";
+    $LightTypeEnum[1] ="Directional";
+    $LightTypeEnum[2] ="Point";
+    $LightTypeEnum[3] ="Spot";
+    $LightTypeEnum[4] ="Plane";
+    $LightTypeEnum[5] ="Line";
+    $LightTypeEnum[6] ="Specular";
+
+    $PointLightTypeEnum[0] = "Sphere";
+    $PointLightTypeEnum[1] = "Hemisphere";
 //
     //public enum PositionMarkerType
     //{
@@ -294,20 +289,26 @@ class ARRM3 implements ParseInterface
     //    Undetermined = 0x3,
     //}
 //
-    //public enum SoundEffectType
-    //{
-    //    Point = 0x3,
-    //    PointDir = 0x4,
-    //    Line = 0x5,
-    //    PolyLine = 0x6,
-    //    Surface = 0x7,
-    //    BoardObstruction = 0x8,
-    //    BoxObstruction = 0x9,
-    //    PolyLineObstruction = 0xB,
-    //    PolygonObstruction = 0xC,
-    //    LineExtController = 0xD,
-    //    Polygon = 0xE,
-    //}
+    $SoundEffectTypeEnum[3] = "Point";
+    $SoundEffectTypeEnum[4] = "PointDir";
+    $SoundEffectTypeEnum[5] = "Line";
+    $SoundEffectTypeEnum[6] = "PolyLine";
+    $SoundEffectTypeEnum[7] = "Surface";
+    $SoundEffectTypeEnum[8] = "BoardObstruction";
+    $SoundEffectTypeEnum[9] = "BoxObstruction";
+    $SoundEffectTypeEnum[11] = "PolyLineObstruction";
+    $SoundEffectTypeEnum[12] = "PolygonObstruction";
+    $SoundEffectTypeEnum[13] = "LineExtController";
+    $SoundEffectTypeEnum[14] = "Polygon";
+    //make table function:
+    
+    function makeDataTable($array){
+        foreach($array as $key => $value){
+            $formatarray[] = "<tr>\n<td>$key:</td>\n<td>$value</td>\n</tr>";
+        }
+        $output = "<div style=\"display: inline-block;\"class= \"datawindow\"><table class=\"w3-table w3-bordered w3-border\">\n".implode("\n",$formatarray)."</table</div>";
+        return $output;
+    }
         foreach ($MapCsv->data as $id => $Map) {
             $MapTerri = $Map['TerritoryType'];
             $Index = $Map['MapIndex'];
@@ -379,21 +380,47 @@ class ARRM3 implements ParseInterface
                             if (!empty($Object->InstanceId)) {
                                 $InstanceID = $Object->InstanceId;
                                 $DataTable = "";
+                                $DataArray = [];
+
                                 if ($AssetType === 3){
                                     $x = $Object->Transform->Translation->x;
                                     $y = $Object->Transform->Translation->z;
                                     $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
                                     $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
-                                    $PopupText = "Light Type: ".$Object->Object->LightType ."\n";
+                                    
+                                    $DataArray["InstanceID"] = $InstanceID;
+                                    $DataArray["LayerName"] = $LayerName;
+                                    $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+                                    $DataArray["LightType"] = $LightTypeEnum[$Object->Object->LightType];
+                                    $DataArray["Attenuation"] = $Object->Object->Attenuation;
+                                    $DataArray["RangeRate"] = $Object->Object->RangeRate;
+                                    $DataArray["PointLightType"] = $PointLightTypeEnum[$Object->Object->PointLightType];
+                                    $DataArray["AttenuationConeCoefficient"] = $Object->Object->AttenuationConeCoefficient;
+                                    $DataArray["ConeDegree"] = $Object->Object->ConeDegree;
+                                    $DataArray["TexturePath"] = $Object->Object->TexturePath;
+                                    $color = sprintf("#%02x%02x%02x", $Object->Object->DiffuseColorHDRI->Red, $Object->Object->DiffuseColorHDRI->Green, $Object->Object->DiffuseColorHDRI->Blue);
+                                    $DataArray["DiffuseColorHDRI"] = "<div style= \"background: $color; display: inline-block; margin-right: -4px; padding: 0px; width: 30px;   height:20px;\"> </div>    ".$color." (".$Object->Object->DiffuseColorHDRI->Red.",".$Object->Object->DiffuseColorHDRI->Green.",".$Object->Object->DiffuseColorHDRI->Blue.",".$Object->Object->DiffuseColorHDRI->Alpha.")";
+                                    $PopupText = "<div style= \"background: $color; display: inline-block; margin-right: -4px; padding: 0px; width: 30px;   height:20px;\"> </div>";
+                                    $DataArray["Intensity"] = $Object->Object->DiffuseColorHDRI->Intensity;
+                                    $DataArray["FollowsDirectionalLight"] = $Object->Object->FollowsDirectionalLight;
+                                    $DataArray["SpecularEnabled"] = $Object->Object->SpecularEnabled;
+                                    $DataArray["BGShadowEnabled"] = $Object->Object->BGShadowEnabled;
+                                    $DataArray["CharacterShadowEnabled"] = $Object->Object->CharacterShadowEnabled;
+                                    $DataArray["ShadowClipRange"] = $Object->Object->ShadowClipRange;
+                                    $DataArray["PlaneLightRotationX"] = $Object->Object->PlaneLightRotationX;
+                                    $DataArray["PlaneLightRotationY"] = $Object->Object->PlaneLightRotationY;
+                                    $DataArray["MergeGroupID"] = $Object->Object->MergeGroupID;
+                                    $DataWindowTextOut = makeDataTable($DataArray);
                                     $lightarray[] = array(
                                         "layer" => "lights",
                                         "type" => "Feature",
-                                        "iconUrl" => "configbackup_hr1_14",
+                                        "iconUrl" => "emjicon_hr1_19",
                                         "properties" => array (
                                             "dataid" => $InstanceID,
                                             "amenity" => "Lights",
                                             "name" => $LayerName,
                                             "popup" => $PopupText,
+                                            "datawindow" => $DataWindowTextOut,
                                             "tooltip" => array (
                                                 "direction" => "",
                                                 "text" => "",
@@ -415,6 +442,21 @@ class ARRM3 implements ParseInterface
                                     $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
                                     $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
                                     $PopupText = "AssetPath: ".$Object->Object->AssetPath ."\n";
+                                    $DataArray["InstanceID"] = $InstanceID;
+                                    $DataArray["LayerName"] = $LayerName;
+                                    $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+                                    $DataArray["AssetPath"] = $Object->Object->AssetPath;
+                                    $DataArray["SoftParticleFadeRange"] = $Object->Object->SoftParticleFadeRange;
+                                    $color = sprintf("#%02x%02x%02x", $Object->Object->Color->Red, $Object->Object->Color->Green, $Object->Object->Color->Blue);
+                                    $DataArray["Color"] = "<div style= \"background: $color; display: inline-block; margin-right: -4px; padding: 0px; width: 30px;   height:20px;\"> </div>    ".$color." (".$Object->Object->Color->Red.",".$Object->Object->Color->Green.",".$Object->Object->Color->Blue.",".$Object->Object->Color->Alpha.")";
+                                    $DataArray["IsAutoPlay"] = $Object->Object->IsAutoPlay;
+                                    $DataArray["IsNoFarClip"] = $Object->Object->IsNoFarClip;
+                                    $DataArray["FadeNearStart"] = $Object->Object->FadeNearStart;
+                                    $DataArray["FadeNearEnd"] = $Object->Object->FadeNearEnd;
+                                    $DataArray["FadeFarStart"] = $Object->Object->FadeFarStart;
+                                    $DataArray["FadeFarEnd"] = $Object->Object->FadeFarEnd;
+                                    $DataArray["ZCorrect"] = $Object->Object->ZCorrect;
+                                    $DataWindowTextOut = makeDataTable($DataArray);
                                     $vfxarray[] = array(
                                         "layer" => "vfx",
                                         "type" => "Feature",
@@ -424,6 +466,139 @@ class ARRM3 implements ParseInterface
                                             "amenity" => "Vfx",
                                             "name" => $LayerName,
                                             "popup" => $PopupText,
+                                            "datawindow" => $DataWindowTextOut,
+                                            "tooltip" => array (
+                                                "direction" => "",
+                                                "text" => "",
+                                            )
+                                        ),
+                                        "geometry" => array (
+                                            "type" => "Point",
+                                            "coordinates" => [
+                                                $PX,
+                                                $PY,
+                                            ]
+                                        )
+                                    );
+                                }
+                                
+                                if ($AssetType === 6){
+                                    $x = $Object->Transform->Translation->x;
+                                    $y = $Object->Transform->Translation->z;
+                                    $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
+                                    $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
+                                    $PopupText = "AssetPath: ".$Object->Object->AssetPath ."\n";
+                                    $DataArray["InstanceID"] = $InstanceID;
+                                    $DataArray["LayerName"] = $LayerName;
+                                    $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                    $DataArray["AssetPath"] = $Object->Object->AssetPath;
+                                    $DataArray["InitialDoorState"] = $Object->Object->InitialDoorState;
+                                    $DataArray["OverriddenMembers"] = $Object->Object->OverriddenMembers;
+                                    $DataArray["InitialRotationState"] = $Object->Object->InitialRotationState;
+                                    $DataArray["RandomTimelineAutoPlay"] = $Object->Object->RandomTimelineAutoPlay;
+                                    $DataArray["RandomTimelineLoopPlayback"] = $Object->Object->RandomTimelineLoopPlayback;
+                                    $DataArray["IsCollisionControllableWithoutEObj"] = $Object->Object->IsCollisionControllableWithoutEObj;
+                                    $DataArray["BoundCLientPathInstanceId"] = $Object->Object->BoundCLientPathInstanceId;
+                                    $DataArray["_MovePathSettings"] = $Object->Object->_MovePathSettings;
+                                    $DataArray["NotCreateNavimeshDoor"] = $Object->Object->NotCreateNavimeshDoor;
+                                    $DataArray["InitialTransformState"] = $Object->Object->InitialTransformState;
+                                    $DataArray["InitialColorState"] = $Object->Object->InitialColorState;
+                                    $DataArray["SGOverriddenMembers"] = $Object->Object->SGOverriddenMembers;
+                                    $DataWindowTextOut = makeDataTable($DataArray);
+                                    $SharedGroupArray[] = array(
+                                        "layer" => "SharedGroup",
+                                        "type" => "Feature",
+                                        "iconUrl" => "rhythmactionstatus.uld-1-2-hr",
+                                        "properties" => array (
+                                            "dataid" => "$InstanceID",
+                                            "amenity" => "SharedGroup",
+                                            "name" => $LayerName,
+                                            "popup" => $PopupText,
+                                            "datawindow" => $DataWindowTextOut,
+                                            "tooltip" => array (
+                                                "direction" => "",
+                                                "text" => "",
+                                            )
+                                        ),
+                                        "geometry" => array (
+                                            "type" => "Point",
+                                            "coordinates" => [
+                                                $PX,
+                                                $PY,
+                                            ]
+                                        )
+                                    );
+                                }
+                                
+                                if ($AssetType === 7){
+                                    $x = $Object->Transform->Translation->x;
+                                    $y = $Object->Transform->Translation->z;
+                                    $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
+                                    $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
+                                    $PopupText = "";
+                                    $DataArray["InstanceID"] = $InstanceID;
+                                    $DataArray["LayerName"] = $LayerName;
+                                    $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                    $DataArray["AssetPath"] = $Object->Object->AssetPath;
+                                    $DataArray["SoundEffectParam"] = $Object->Object->SoundEffectParam;
+                                    $DataArray["SoundEffectType"] = $SoundEffectTypeEnum[$Object->Object->SEParam->SoundEffectType];
+                                    $DataArray["AutoPlay"] = $Object->Object->SEParam->AutoPlay;
+                                    $DataArray["IsNoFarClip"] = $Object->Object->SEParam->IsNoFarClip;
+                                    $DataArray["Binary"] = $Object->Object->SEParam->Binary;
+                                    $DataArray["BinaryCount"] = $Object->Object->SEParam->BinaryCount;
+                                    $DataArray["PointSelection"] = $Object->Object->SEParam->PointSelection;
+                                    $DataWindowTextOut = makeDataTable($DataArray);
+                                    $soundarray[] = array(
+                                        "layer" => "sound",
+                                        "type" => "Feature",
+                                        "iconUrl" => "configbackup_hr1_14",
+                                        "properties" => array (
+                                            "dataid" => "$InstanceID",
+                                            "amenity" => "sound",
+                                            "name" => $LayerName,
+                                            "popup" => $PopupText,
+                                            "datawindow" => $DataWindowTextOut,
+                                            "tooltip" => array (
+                                                "direction" => "",
+                                                "text" => "",
+                                            )
+                                        ),
+                                        "geometry" => array (
+                                            "type" => "Point",
+                                            "coordinates" => [
+                                                $PX,
+                                                $PY,
+                                            ]
+                                        )
+                                    );
+                                }
+
+                                if ($AssetType === 8){
+                                    $x = $Object->Transform->Translation->x;
+                                    $y = $Object->Transform->Translation->z;
+                                    $PX = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9);
+                                    $PY = ($this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9);
+                                    $ENpcBaseId = $Object->Object->ParentData->ParentData->BaseId;
+                                    $ENpcName = $ENpcResidentCsv->at($ENpcBaseId)['Singular'];
+                                    $PopupText = "$ENpcName";
+                                    $DataArray["InstanceID"] = $InstanceID;
+                                    $DataArray["LayerName"] = $LayerName;
+                                    $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+                                    $DataArray["BaseId"] = $Object->Object->ParentData->ParentData->BaseId;
+                                    $DataArray["Name"] = $ENpcName;
+                                    $DataWindowTextOut = makeDataTable($DataArray);
+                                    $enpcarray[] = array(
+                                        "layer" => "enpc",
+                                        "type" => "Feature",
+                                        "iconUrl" => "mirageprismboxitemdetail.uld-3-23-hr",
+                                        "properties" => array (
+                                            "dataid" => "$ENpcName",
+                                            "amenity" => "enpc",
+                                            "name" => $ENpcName,
+                                            "popup" => $LayerName,
+                                            "datawindow" => $DataWindowTextOut,
                                             "tooltip" => array (
                                                 "direction" => "",
                                                 "text" => "",
@@ -475,7 +650,26 @@ class ARRM3 implements ParseInterface
                                         }
                                         $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
                                         $PopupTextOut = "$QuestDynamic$EnemyType$description";
-                                        $DataWindowTextOut = "$QuestDynamic$EnemyType$description$SingleBattle";
+                                        $DataTable = "<div class= \"datawindow\"><table class=\"w3-table w3-bordered w3-border\">
+                                            <tr>
+                                                <td>Fate ID:</td>
+                                                <td>".$FateID."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>LGB Event Object:</td>
+                                                <td>".$DynamicEventCsv->at($FateID)["LGBEventObject"]."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>LGB Map Range:</td>
+                                                <td>".$DynamicEventCsv->at($FateID)["LGBMapRange"]."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Asset Type:</td>
+                                                <td>".$AssetTypeEnums[$AssetType]."</td>
+                                            </tr>
+                                            </table></div>";
+                                        
+                                        $DataWindowTextOut = "$QuestDynamic$EnemyType$description$SingleBattle$DataTable";
                                         $FateArray[] = array(
                                             "layer" => "Fate",
                                             "type" => "Feature",
@@ -533,6 +727,18 @@ class ARRM3 implements ParseInterface
                                         $ObjectiveIcon = implode($ObjectiveIcons);
                                         $DataTable = "<div class= \"datawindow\"><table class=\"w3-table w3-bordered w3-border\">
                                             <tr>
+                                                <td>Fate ID:</td>
+                                                <td>".$FateCsv->at($FateID)["id"]."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>LGB ID:</td>
+                                                <td>".$FateCsv->at($FateID)["Location"]."</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Asset Type:</td>
+                                                <td>".$AssetTypeEnums[$AssetType]."</td>
+                                            </tr>
+                                            <tr>
                                                 <td>ArrayEventHandler:</td>
                                                 <td>".$FateCsv->at($FateID)["ArrayIndex"]."</td>
                                             </tr>
@@ -564,37 +770,37 @@ class ARRM3 implements ParseInterface
                                         $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $FateCsv->at($FateID)['Description']));
                                         $PopupTextOut = "Level: $ClassJobLevel / $ClassJobLevelMax$Quest$description$Objective";
                                         $DataWindowTextOut = "$Quest$description$Objective$DataTable";
-                                        $Lgbinfo = '<form>
-                                        <fieldset disabled="disabled">
-                                        <legend>'.$LayerName.':</legend>
-                                        <label>InstanceID:</label>
-                                        <input type="text"  value="'.$InstanceID.'"><br>
-                                        <label>PosX:</label>
-                                        <input type="text" value="'.$Object->Transform->Translation->x.'"><br>
-                                        <label>PosY:</label>
-                                        <input type="text" value="'.$Object->Transform->Translation->y.'"><br>
-                                        <label>PosZ:</label>
-                                        <input type="text" value="'.$Object->Transform->Translation->z.'"><br>
-                                        <label>RotX:</label>
-                                        <input type="text" value="'.$Object->Transform->Rotation->x.'"><br>
-                                        <label>RotY:</label>
-                                        <input type="text" value="'.$Object->Transform->Rotation->y.'"><br>
-                                        <label>RotZ:</label>
-                                        <input type="text" value="'.$Object->Transform->Rotation->z.'"><br>
-                                        <label>ScaleX:</label>
-                                        <input type="text" value="'.$Object->Transform->Scale->x.'"><br>
-                                        <label>ScaleY:</label>
-                                        <input type="text" value="'.$Object->Transform->Scale->y.'"><br>
-                                        <label>ScaleZ:</label>
-                                        <input type="text" value="'.$Object->Transform->Scale->z.'"><br>
-                                        <label>Asset type:</label>
-                                        <input type="text" value="'.$AssetTypeEnums[$AssetType].'"><br>
-                                        <label>Festival ID:</label>
-                                        <input type="text" value="'.$lgb->FestivalID.'"><br>
-                                        <label>TriggerBoxShape:</label>
-                                        <input type="text" value="'.$TriggerBoxShapeEnum[$Object->Object->ParentData->TriggerBoxShape].'"><br>
-                                        </fieldset
-                                      </form>';
+                                        //$Lgbinfo = '<form>
+                                        //<fieldset disabled="disabled">
+                                        //<legend>'.$LayerName.':</legend>
+                                        //<label>InstanceID:</label>
+                                        //<input type="text"  value="'.$InstanceID.'"><br>
+                                        //<label>PosX:</label>
+                                        //<input type="text" value="'.$Object->Transform->Translation->x.'"><br>
+                                        //<label>PosY:</label>
+                                        //<input type="text" value="'.$Object->Transform->Translation->y.'"><br>
+                                        //<label>PosZ:</label>
+                                        //<input type="text" value="'.$Object->Transform->Translation->z.'"><br>
+                                        //<label>RotX:</label>
+                                        //<input type="text" value="'.$Object->Transform->Rotation->x.'"><br>
+                                        //<label>RotY:</label>
+                                        //<input type="text" value="'.$Object->Transform->Rotation->y.'"><br>
+                                        //<label>RotZ:</label>
+                                        //<input type="text" value="'.$Object->Transform->Rotation->z.'"><br>
+                                        //<label>ScaleX:</label>
+                                        //<input type="text" value="'.$Object->Transform->Scale->x.'"><br>
+                                        //<label>ScaleY:</label>
+                                        //<input type="text" value="'.$Object->Transform->Scale->y.'"><br>
+                                        //<label>ScaleZ:</label>
+                                        //<input type="text" value="'.$Object->Transform->Scale->z.'"><br>
+                                        //<label>Asset type:</label>
+                                        //<input type="text" value="'.$AssetTypeEnums[$AssetType].'"><br>
+                                        //<label>Festival ID:</label>
+                                        //<input type="text" value="'.$lgb->FestivalID.'"><br>
+                                        //<label>TriggerBoxShape:</label>
+                                        //<input type="text" value="'.$TriggerBoxShapeEnum[$Object->Object->ParentData->TriggerBoxShape].'"><br>
+                                        //</fieldset
+                                        //</form>';
                                         $FateArray[] = array(
                                             "layer" => "Fate",
                                             "type" => "Feature",
@@ -605,7 +811,6 @@ class ARRM3 implements ParseInterface
                                                 "name" => $fateName,
                                                 "popup" => $PopupTextOut,
                                                 "datawindow" => $DataWindowTextOut,
-                                                "lgbinfo" => $Lgbinfo,
                                                 "tooltip" => array (
                                                     "direction" => "",
                                                     "text" => "",
@@ -627,6 +832,24 @@ class ARRM3 implements ParseInterface
                     }
                 }
             }
+            $soundOut["type"] = "FeatureCollection";
+            $soundOut["timestamp"] = time();
+            $soundOut["features"] = $soundarray;
+            $sound_Json = "var soundGeo = ".json_encode($soundOut,JSON_PRETTY_PRINT)."";
+            if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json", 0777, true); }
+                $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json/sound.geojson.js", 'w');
+                fwrite($js_file_Feature, $sound_Json);
+                fclose($js_file_Feature);
+                
+            $enpcOut["type"] = "FeatureCollection";
+            $enpcOut["timestamp"] = time();
+            $enpcOut["features"] = $enpcarray;
+            $enpc_Json = "var enpcGeo = ".json_encode($enpcOut,JSON_PRETTY_PRINT)."";
+            if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json", 0777, true); }
+                $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json/enpc.geojson.js", 'w');
+                fwrite($js_file_Feature, $enpc_Json);
+                fclose($js_file_Feature);
+
             $LightsOut["type"] = "FeatureCollection";
             $LightsOut["timestamp"] = time();
             $LightsOut["features"] = $lightarray;
@@ -644,6 +867,18 @@ class ARRM3 implements ParseInterface
                 $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json/vfx.geojson.js", 'w');
                 fwrite($js_file_Feature, $VFX_Json);
                 fclose($js_file_Feature);
+
+                
+
+            $SharedGroup["type"] = "FeatureCollection";
+            $SharedGroup["timestamp"] = time();
+            $SharedGroup["features"] = $SharedGroupArray;
+            $SharedGroup_Json = "var sharedgroupGeo = ".json_encode($SharedGroup,JSON_PRETTY_PRINT)."";
+            if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json", 0777, true); }
+                $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$id/json/sharedgroup.geojson.js", 'w');
+                fwrite($js_file_Feature, $SharedGroup_Json);
+                fclose($js_file_Feature);
+
 
                 
             $FATEOut["type"] = "FeatureCollection";
@@ -868,7 +1103,7 @@ class ARRM3 implements ParseInterface
             <link rel=\"stylesheet\" href=\"../assets/css/MarkerCluster.css\" />
             <link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">
             <link rel=\"shortcut icon\" href=\"../favicon.ico\" type=\"image/x-icon\">
-            <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">
+            <link rel=\"icon\" href=\"../favicon.ico\" type=\"image/x-icon\">
             <link type=\"application/json+oembed\" href=\"/oembed.json\" />
             <meta content=\"https://arealmremapped.com/images/embedlogo.png\" property=\"og:image\">
             <meta content=\"A Realm Remapped - Showing the true Eorzea.\" property=\"og:title\">
@@ -905,6 +1140,10 @@ class ARRM3 implements ParseInterface
             <script src=\"json/mapmarkerGeo.geojson.js\"></script>
             <script src=\"json/vfx.geojson.js\"></script>
             <script src=\"json/fate.geojson.js\"></script>
+            <script src=\"json/lights.geojson.js\"></script>
+            <script src=\"json/sharedgroup.geojson.js\"></script>
+            <script src=\"json/sound.geojson.js\"></script>
+            <script src=\"json/enpc.geojson.js\"></script>
             <script type=\"module\">
             import { mapswitch } from \"./../htmllist.mjs\";
             var baseurl = \"../$MapCode - $MapName.png\";
@@ -939,7 +1178,6 @@ class ARRM3 implements ParseInterface
               $('.popoutinfobutton').click(function() {
             var win =  L.control.window(map,{
                     title: null,
-                    maxWidth:400,
                     modal: false,
                     position:'top'
                 })
@@ -965,8 +1203,8 @@ class ARRM3 implements ParseInterface
             //var bg = L.layerGroup();
             //var fishingspot = L.layerGroup();
             //var EnvSpace = L.layerGroup();
-            //var Sound = L.layerGroup();
-            //var EventNPC = L.layerGroup();
+            var sound = L.layerGroup();
+            var enpc = L.layerGroup();
             var Vfx = L.layerGroup();
             //var aetheryte = L.layerGroup();
             //var gathering = L.layerGroup();
@@ -982,8 +1220,8 @@ class ARRM3 implements ParseInterface
             //var CollisionBox = L.layerGroup();
             //var EventRange = L.layerGroup();
             //var MapRange = L.layerGroup();
-            //var light = L.layerGroup();
-            //var Gimmick = L.layerGroup();
+            var light = L.layerGroup();
+            var sharedgroup = L.layerGroup();
             //var GimmickRange = L.layerGroup();
             //var ChairMarker = L.layerGroup();
             //var EnvLocation = L.layerGroup();
@@ -996,18 +1234,56 @@ class ARRM3 implements ParseInterface
             //var unknown = L.layerGroup();
             //var Monster = L.layerGroup();
             //var Treasure = L.layerGroup();
-            var fateCluster = L.markerClusterGroup({iconCreateFunction: function(cluster) {
-                return L.divIcon({ html: '<div class=\"markerImage\"><img src=../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
+            var fateCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
             }});
             var fateGeoForm = L.geoJson(fateGeo, geojsonOpts);
             fateCluster.addLayer(fateGeoForm);
 
+            
+            var soundCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../icons/configbackup_hr1_14.png width=48/>' + cluster.getChildCount() + '</div>' });
+            }});
+            var soundGeoForm = L.geoJson(soundGeo, geojsonOpts);
+            soundCluster.addLayer(soundGeoForm);
+            
+            var enpcCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+            }});
+            var enpcGeoForm = L.geoJson(enpcGeo, geojsonOpts);
+            enpcCluster.addLayer(enpcGeoForm);
+
+            
+            var vfxCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../icons/contentsreplayplayer_hr1_04.png width=48/>' + cluster.getChildCount() + '</div>' });
+            }});
+            var vfxGeoForm = L.geoJson(vfxGeo, geojsonOpts);
+            vfxCluster.addLayer(vfxGeoForm);
+
+            
+            var LightCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../icons/emjicon_hr1_19.png width=48/>' + cluster.getChildCount() + '</div>' });
+            }});
+            var lightGeoForm = L.geoJson(lightsGeo, geojsonOpts);
+            LightCluster.addLayer(lightGeoForm);
+
+            
+            var SGCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../icons/rhythmactionstatus.uld-1-2-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+            }});
+            var sgGeoForm = L.geoJson(sharedgroupGeo, geojsonOpts);
+            SGCluster.addLayer(sgGeoForm);
+
             var poiLayers = L.layerGroup([
 		        L.geoJson(mapmarkerGeo, geojsonOpts).addTo(mapmarker),
-		        L.geoJson(vfxGeo, geojsonOpts).addTo(Vfx),
-		        fateCluster.addTo(fate)
+		        vfxCluster.addTo(Vfx),
+		        fateCluster.addTo(fate),
+		        LightCluster.addTo(light),
+		        soundCluster.addTo(sound),
+		        enpcCluster.addTo(enpc),
+		        SGCluster.addTo(sharedgroup)
 	        ]);
-          var searchLayer = L.layerGroup([mapmarker, Vfx, fate])
+          var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup])
 
           var searchControl = new L.Control.Search({
             layer: searchLayer,
@@ -1076,7 +1352,7 @@ class ARRM3 implements ParseInterface
                   //{label: '<img src=../assets/icons/060000/060653.png width=18/>Currents', layer: current},
                   //{label: '<img src=../assets/icons/060000/060465.png width=18/>Fishing Spots', layer: fishingspot},
                   //{label: '<img src=../assets/icons/060000/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
-                  //{label: '<img src=../assets/icons/060000/060421.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: EventNPC},
+                  {label: '<img src=../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
                   //{label: '<img src=../assets/icons/060000/060004.png width=18/><span title=\"Type = 9\">Monsters</span>',
                   //  selectAllCheckbox: true,
                   //  collapsed: true,
@@ -1092,11 +1368,11 @@ class ARRM3 implements ParseInterface
                 label: 'Dev Layers',
                 collapsed: true,
                 children: [
-                  //{label: '<img src=../assets/icons/060000/060002.png width=18/><span title=\"Type = 3\">Lights</span>', layer: light},
+                  {label: '<img src=../icons/emjicon_hr1_19.png width=18/><span title=\"Type = 3\">Lights</span>', layer: light},
                   {label: '<img src=../icons/contentsreplayplayer_hr1_04.png width=18/><span title=\"Type = 4\">Vfx</span>', layer: Vfx},
                   //{label: '<img src=../assets/icons/060000/060408.png width=18/><span title=\"Type = 5\">Position Marker</span>', layer: PositionMarker},
-                  //{label: '<img src=../assets/icons/060000/060071.png width=18/><span title=\"Type = 6\">Gimmick</span>', layer: Gimmick},
-                  //{label: '<img src=../assets/icons/060000/060979.png width=18/><span title=\"Type = 7\">Sounds</span>', layer: Sound},
+                  {label: '<img src=../icons/rhythmactionstatus.uld-1-2-hr.png width=18/><span title=\"Type = 6\">SGB</span>', layer: sharedgroup},
+                  {label: '<img src=../icons/configbackup_hr1_14.png width=18/><span title=\"Type = 7\">Sounds</span>', layer: sound},
                   //{label: '<img src=../assets/icons/060000/060422.png width=18/><span title=\"Type = 9\">Battle Npc</span>', layer: BattleNPC},
                   //{label: '<img src=../assets/icons/060000/060430.png width=18/><span title=\"Type = 12\">Aetheryte</span>', layer: Aetheryte},
                   //{label: '<img src=../assets/icons/060000/060711.png width=18/><span title=\"Type = 13\">Env Space</span>', layer: EnvSpace},
