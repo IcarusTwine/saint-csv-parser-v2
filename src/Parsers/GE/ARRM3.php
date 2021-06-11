@@ -57,9 +57,9 @@ class ARRM3 implements ParseInterface
         $AssetTypeEnums[11] = "Character"; //none LGB
         $AssetTypeEnums[12] = "Aetheryte"; //skipped
         $AssetTypeEnums[13] = "EnvSet"; //yes (make polygon)
-        $AssetTypeEnums[14] = "Gathering"; 
-        $AssetTypeEnums[15] = "HelperObject"; 
-        $AssetTypeEnums[16] = "Treasure"; 
+        $AssetTypeEnums[14] = "Gathering"; //none lgb
+        $AssetTypeEnums[15] = "HelperObject"; //none lgb
+        $AssetTypeEnums[16] = "Treasure"; //yes
         $AssetTypeEnums[17] = "Clip"; 
         $AssetTypeEnums[18] = "ClipCtrlPoint"; 
         $AssetTypeEnums[19] = "ClipCamera"; 
@@ -331,8 +331,6 @@ class ARRM3 implements ParseInterface
         $this->io->progressStart($TerritoryTypeCsv->total);
         $OutputArray = [];        // loop through data
         $teriName = "";
-        $MapCode = "n4b6";
-        $MapName = "Zadnor";
         foreach ($MapCsv->data as $id => $Map) {
             $MapTerri = $Map['TerritoryType'];
             $Index = $Map['MapIndex'];
@@ -349,7 +347,7 @@ class ARRM3 implements ParseInterface
         
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
-            if ($id != 975) continue;
+            if ($id != 936) continue;
             $linkedmapsarray = [];
             foreach($MapIndexArray[$id] as $key => $zonevalue){
                 foreach($zonevalue as $key => $mapidtemp){
@@ -414,6 +412,10 @@ class ARRM3 implements ParseInterface
                                     $InstanceID = $Object->InstanceId;
                                     $DataTable = "";
                                     $DataArray = [];
+                                    $Type = "Marker";
+                                    $Poly = "";
+                                    $PolyArray = "";
+                                    $Radius = "";
 
                                     if ($AssetType === 3){
                                         $x = $Object->Transform->Translation->x;
@@ -454,6 +456,7 @@ class ARRM3 implements ParseInterface
                                                 "amenity" => "Lights",
                                                 "name" => $LayerName,
                                                 "popup" => $PopupText,
+                                                "type" => $Type,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -501,6 +504,7 @@ class ARRM3 implements ParseInterface
                                                 "amenity" => "Vfx",
                                                 "name" => $LayerName,
                                                 "popup" => $PopupText,
+                                                "type" => $Type,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -551,6 +555,7 @@ class ARRM3 implements ParseInterface
                                                 "amenity" => "SharedGroup",
                                                 "name" => $LayerName,
                                                 "popup" => $PopupText,
+                                                "type" => $Type,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -596,6 +601,7 @@ class ARRM3 implements ParseInterface
                                                 "amenity" => "sound",
                                                 "name" => $LayerName,
                                                 "popup" => $PopupText,
+                                                "type" => $Type,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -636,6 +642,7 @@ class ARRM3 implements ParseInterface
                                                 "amenity" => "enpc",
                                                 "name" => $ENpcName,
                                                 "popup" => $LayerName,
+                                                "type" => $Type,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -656,7 +663,9 @@ class ARRM3 implements ParseInterface
                                         $polypoints = "";
                                         $x = $Object->Transform->Translation->x;
                                         $y = $Object->Transform->Translation->z;
-                                        $Radius = $Object->Transform->Scale->x;
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -671,14 +680,16 @@ class ARRM3 implements ParseInterface
                                         switch ($Object->Object->Shape) {
                                             case '1':
                                             case '3':
-                                                $ShapeSwitch = array (
-                                                    "radius" => $Radius,
-                                                );
+                                                $Radius = $xscale;
+                                                $PolyArray = array();
+                                                $Poly = "false";
+                                                $Type = "Circle";
                                             break;
                                             case '2':
-                                                $ShapeSwitch = array (
-                                                    "polypoints" => $polypoints,
-                                                );
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "Box";
                                             break;
                                         }
                                         $DataArray["IsEnvMapShootingPoint"] = $Object->Object->IsEnvMapShootingPoint;
@@ -697,9 +708,55 @@ class ARRM3 implements ParseInterface
                                                 "dataid" => "$InstanceID",
                                                 "amenity" => "EnvSet",
                                                 "name" => $LayerName,
+                                                "type" => $Type,
                                                 "popup" => $LayerName,
                                                 "radius" => $Radius,
-                                                "special" => $ShapeSwitch,
+                                                "poly" => $Poly,
+                                                "polydata" => $PolyArray,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+
+                                    
+                                    if ($AssetType === 16){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $PopupText = $AssetTypeEnums[$AssetType];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        $DataArray["BaseId"] = $Object->Object->ParentData->BaseId;
+                                        $DataArray["NonpopInitZone"] = $Object->Object->NonpopInitZone;
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $treasurearray[] = array(
+                                            "layer" => "treasure",
+                                            "type" => "Feature",
+                                            "iconUrl" => "060003_hr1",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "treasure",
+                                                "name" => $LayerName,
+                                                "type" => "Marker",
+                                                "popup" => $LayerName,
+                                                "radius" => $Radius,
+                                                "poly" => $Poly,
+                                                "polydata" => $PolyArray,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -781,6 +838,7 @@ class ARRM3 implements ParseInterface
                                                     "dataid" => "$InstanceID",
                                                     "amenity" => "Fate",
                                                     "name" => $fateName,
+                                                    "type" => $Type,
                                                     "popup" => $PopupTextOut,
                                                     "datawindow" => $DataWindowTextOut,
                                                     "tooltip" => array (
@@ -913,6 +971,7 @@ class ARRM3 implements ParseInterface
                                                     "dataid" => "$InstanceID",
                                                     "amenity" => "Fate",
                                                     "name" => $fateName,
+                                                    "type" => $Type,
                                                     "popup" => $PopupTextOut,
                                                     "datawindow" => $DataWindowTextOut,
                                                     "tooltip" => array (
@@ -1010,6 +1069,16 @@ class ARRM3 implements ParseInterface
                     fwrite($js_file_Feature, $envset_Json);
                     fclose($js_file_Feature);
 
+                    
+                $treasureOut["type"] = "FeatureCollection";
+                $treasureOut["timestamp"] = time();
+                $treasureOut["features"] = $treasurearray;
+                $treasure_Json = "var treasureGeo = ".json_encode($treasureOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/treasure.geojson.js", 'w');
+                    fwrite($js_file_Feature, $treasure_Json);
+                    fclose($js_file_Feature);
+
                         
                 $featurearray = [];
                 $MapName = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name'];
@@ -1031,6 +1100,7 @@ class ARRM3 implements ParseInterface
                 $MapMarkerRange = $MapCsv->at($newMapId)['MapMarkerRange'];
                 
                 foreach(range(0,999) as $i){
+                    $Type = "Marker";
                     $Ci = "$MapMarkerRange.$i";
                     if (empty($MapMarkerCsv->at($Ci)['id'])) break;
                     $subtextRaw = str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $PlaceNameCsv->at($MapMarkerCsv->at($Ci)['PlaceName{Subtext}'])['Name']);
@@ -1075,6 +1145,7 @@ class ARRM3 implements ParseInterface
                                 "properties" => array (
                                     "dataid" => "$subtextRaw",
                                     "amenity" => "MapMarker",
+                                    "type" => $Type,
                                     "name" => $subtextRaw,
                                     "tooltip" => array (
                                         "direction" => $subtextOrientation,
@@ -1097,6 +1168,7 @@ class ARRM3 implements ParseInterface
                                 "iconUrl" => $MMIcon,
                                 "properties" => array (
                                     "dataid" => "$subtextRaw",
+                                    "type" => $Type,
                                     "amenity" => "MapMarker",
                                     "name" => $subtextRaw,
                                     "tooltip" => array (
@@ -1120,6 +1192,7 @@ class ARRM3 implements ParseInterface
                                 "iconUrl" => $MMIcon,
                                 "properties" => array (
                                     "dataid" => "$subtextRaw",
+                                    "type" => $Type,
                                     "amenity" => "MapMarker",
                                     "name" => $subtextRaw,
                                     "tooltip" => array (
@@ -1143,6 +1216,7 @@ class ARRM3 implements ParseInterface
                                 "iconUrl" => $MMIcon,
                                 "properties" => array (
                                     "dataid" => "$subtextRaw",
+                                    "type" => $Type,
                                     "amenity" => "MapMarker",
                                     "name" => $subtextRaw,
                                     "popup" => "<center><span class='sptitle'>Aetheryte</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $PlaceNameCsv->at($AetheryteCsv->at($MapMarkerCsv->at($Ci)['Data{Key}'])['AethernetName'])['Name']) ."",
@@ -1167,6 +1241,7 @@ class ARRM3 implements ParseInterface
                                 "iconUrl" => $MMIcon,
                                 "properties" => array (
                                     "dataid" => "$subtextRaw",
+                                    "type" => $Type,
                                     "amenity" => "MapMarker",
                                     "name" => $subtextRaw,
                                     "popup" => "<center><span class='sptitle'>Aethernet Shard</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $PlaceNameCsv->at($MapMarkerCsv->at($Ci)['Data{Key}'])['Name']) ."",
@@ -1271,6 +1346,7 @@ class ARRM3 implements ParseInterface
                 <script src=\"json/sound.geojson.js\"></script>
                 <script src=\"json/enpc.geojson.js\"></script>
                 <script src=\"json/envset.geojson.js\"></script>
+                <script src=\"json/treasure.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -1295,7 +1371,7 @@ class ARRM3 implements ParseInterface
                         } else {
                         var lgbbutton = '<div class=\"lgbchangebutton\"></div>';
                         }
-                        if (feature.properties.radius) {
+                        if (feature.properties.type === \"Circle\") {
                             return new L.Circle(latlng, feature.properties.radius).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
                                 $('.popoutinfobutton').click(function() {
                                     var win =  L.control.window(map,{
@@ -1312,7 +1388,24 @@ class ARRM3 implements ParseInterface
                             infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
                         })
                     }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
-                        } else {
+                        } else if (feature.properties.type === \"Box\") {
+                            return new L.Polygon(feature.properties.polydata).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
+                            $('.popoutinfobutton').click(function() {
+                                var win =  L.control.window(map,{
+                                title: null,
+                                modal: false,
+                                position:'top'
+                            })
+                            .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
+                            .prompt({callback:function(){alert}})
+                            .show()
+                        })
+                    }).on('popupopen',function(){
+                        $('.lgbchangebutton').click(function() {
+                        infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
+                    })
+                }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
+                } else if (feature.properties.type === \"Marker\") {
                             return L.marker(latlng, {
                                 icon: L.divIcon({
                                     className: feature.properties.amenity,
@@ -1338,9 +1431,9 @@ class ARRM3 implements ParseInterface
                 }
                 }
                 };
-                $('.btnClick').on('click',function(){
-                infobox.getContainer().innerHTML = ''
-                });
+                //$('.btnClick').on('click',function(){
+                //infobox.getContainer().innerHTML = ''
+                //});
                 // markers and popups
                 var mapmarker = L.layerGroup().addTo(map);
                 var fate = L.layerGroup();
@@ -1381,6 +1474,7 @@ class ARRM3 implements ParseInterface
                 //var unknown = L.layerGroup();
                 //var Monster = L.layerGroup();
                 //var Treasure = L.layerGroup();
+                var treasure = L.layerGroup();
                 var fateCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
                     return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
@@ -1426,6 +1520,12 @@ class ARRM3 implements ParseInterface
                 }});
                 var envsetGeoForm = L.geoJson(envsetGeo, geojsonOpts);
                 envsetCluster.addLayer(envsetGeoForm);
+                
+                var treasureCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/060003_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var treasureGeoForm = L.geoJson(treasureGeo, geojsonOpts);
+                treasureCluster.addLayer(treasureGeoForm);
 
                 var poiLayers = L.layerGroup([
                     L.geoJson(mapmarkerGeo, geojsonOpts).addTo(mapmarker),
@@ -1435,9 +1535,10 @@ class ARRM3 implements ParseInterface
                     soundCluster.addTo(sound),
                     enpcCluster.addTo(enpc),
                     envsetCluster.addTo(envset),
+                    treasureCluster.addTo(treasure),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -1530,6 +1631,7 @@ class ARRM3 implements ParseInterface
                     //{label: '<img src=../../../icons/060422.png width=18/><span title=\"Type = 9\">Battle Npc</span>', layer: BattleNPC},
                     //{label: '<img src=../../../icons/060430.png width=18/><span title=\"Type = 12\">Aetheryte</span>', layer: Aetheryte},
                     {label: '<img src=../../../icons/beginnersroommainwindow.uld-3-14-hr.png width=18/><span title=\"Type = 13\">Env Set</span>', layer: envset},
+                    {label: '<img src=../../../icons/060003_hr1.png width=18/><span title=\"Type = 16\">Treasure</span>', layer: treasure},
                     //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: PopRange},
                     //{label: '<img src=../../../icons/060457.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
                     //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: MapRange},

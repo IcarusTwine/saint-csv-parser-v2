@@ -813,6 +813,33 @@ trait CsvParseTrait
         $POSArray["PY"] = $NpcPixelZ; 
         return $POSArray;
     }
+    public function getLGBBoxTrigger($xscale, $zscale, $rotationy, $pixelX, $pixelY){
+        $r = $rotationy;
+        $pos1x = $pixelX - $xscale;
+        $pos1y = $pixelY - $zscale;
+        $pos2x = $pixelX + $xscale;
+        $pos2y = $pixelY - $zscale;
+        $pos3x = $pixelX + $xscale;
+        $pos3y = $pixelY + $zscale;
+        $pos4x = $pixelX - $xscale;
+        $pos4y = $pixelY + $zscale;
+        $qx1 = $pixelX + cos(-$r) * ($pos1x - $pixelX) - sin(-$r) * ($pos1y - $pixelY);
+        $qy1 = $pixelY + sin(-$r) * ($pos1x - $pixelX) + cos(-$r) * ($pos1y - $pixelY);
+        $qx2 = $pixelX + cos(-$r) * ($pos2x - $pixelX) - sin(-$r) * ($pos2y - $pixelY);
+        $qy2 = $pixelY + sin(-$r) * ($pos2x - $pixelX) + cos(-$r) * ($pos2y - $pixelY);
+        $qx3 = $pixelX + cos(-$r) * ($pos3x - $pixelX) - sin(-$r) * ($pos3y - $pixelY);
+        $qy3 = $pixelY + sin(-$r) * ($pos3x - $pixelX) + cos(-$r) * ($pos3y - $pixelY);
+        $qx4 = $pixelX + cos(-$r) * ($pos4x - $pixelX) - sin(-$r) * ($pos4y - $pixelY);
+        $qy4 = $pixelY + sin(-$r) * ($pos4x - $pixelX) + cos(-$r) * ($pos4y - $pixelY);
+        $BoxArray = array(
+            //lat lng are switched in geojson
+            [$qy1,$qx1],
+            [$qy2,$qx2],
+            [$qy3,$qx3],
+            [$qy4,$qx4]
+        );
+        return $BoxArray;
+    }
     /**
      * Generate Triple Triad Pages
      */
