@@ -37,6 +37,7 @@ class ARRM3 implements ParseInterface
         $BGMCsv = $this->csv('BGM');
         $DynamicEventSingleBattleCsv = $this->csv('DynamicEventSingleBattle');
         $BNpcNameCsv = $this->csv('BNpcName');
+        $AetheryteCsv = $this->csv('Aetheryte');
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
@@ -348,8 +349,23 @@ class ARRM3 implements ParseInterface
         $ini = parse_ini_file('src/Parsers/config.ini');
         $MainPath = $ini['MainPath'];
         $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
+        
+        
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
-            if ($id != 975) continue;
+            if ($id != 150) continue;
+            $linkedmapsarray = [];
+            foreach($MapIndexArray[$id] as $key => $zonevalue){
+                foreach($zonevalue as $key => $mapidtemp){
+                    $newMapId = $mapidtemp;
+                    $UrlSub = "";
+                    if (!empty($PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name'])){
+                        $UrlSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
+                    }
+                    $MapNameUrl = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub";
+                    $FolderNameUrl = str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
+                    $linkedmapsarray[] = "{label: '<a href=\"../$FolderNameUrl/$FolderNameUrl.html\">$FolderNameUrl</a>'},";
+                }
+            }
             foreach($MapIndexArray[$id] as $key => $zonevalue){
                 foreach($zonevalue as $key => $mapidtemp){
                     $newMapId = $mapidtemp;
@@ -357,6 +373,7 @@ class ARRM3 implements ParseInterface
                 $FateArray = [];
                 $lightarray = [];
                 $vfxarray = [];
+                $enpcarray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_planlive.lgb.json",
@@ -366,20 +383,22 @@ class ARRM3 implements ParseInterface
                     "cache/{$PatchID}/lgb/{$code}_vfx.lgb.json",
                     "cache/{$PatchID}/lgb/{$code}_planner.lgb.json",
                 );
-                $Region = "Unknown";
+                $FolderRegion = "Unknown";
                 if (!empty($PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Region}'])['Name'])){
+                    $FolderRegion = str_replace(" ","_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Region}'])['Name']);
                     $Region = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Region}'])['Name'];
                 }
-                if ($Region === "???"){
-                    $Region = "Unknown";
+                if ($FolderRegion === "???"){
+                    $FolderRegion = "Unknown";
                 }
                 $UrlSub = "";
                 $MapSub = "";
                 if (!empty($PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name'])){
-                    $UrlSub = "-".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
+                    $UrlSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
                     $MapSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
                 }
                 $MapNameUrl = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub";
+                $FolderNameUrl = str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
                 $MapName = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$MapSub";
                 $MapCodeExp = explode("/",$MapCsv->at($newMapId)['Id']);
                 $MapCode = $MapCodeExp[0];
@@ -855,19 +874,19 @@ class ARRM3 implements ParseInterface
                         }
                     }
                 }
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$Region\\")) { 
-                    var_dump($Region);
-                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$Region\\", 0777, true); 
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\")) { 
+                    var_dump($FolderRegion);
+                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\", 0777, true); 
                 }
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$Region\\$MapNameUrl\\")) { 
-                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$Region\\$MapNameUrl\\", 0777, true); 
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\")) { 
+                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\", 0777, true); 
                 }
                 $soundOut["type"] = "FeatureCollection";
                 $soundOut["timestamp"] = time();
                 $soundOut["features"] = $soundarray;
                 $sound_Json = "var soundGeo = ".json_encode($soundOut,JSON_PRETTY_PRINT)."";
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$Region\\$MapNameUrl\\json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$Region\\$MapNameUrl\\json", 0777, true); }
-                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$Region\\$MapNameUrl\\json\\sound.geojson.js", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\json\\sound.geojson.js", 'w');
                     fwrite($js_file_Feature, $sound_Json);
                     fclose($js_file_Feature);
                     
@@ -875,8 +894,8 @@ class ARRM3 implements ParseInterface
                 $enpcOut["timestamp"] = time();
                 $enpcOut["features"] = $enpcarray;
                 $enpc_Json = "var enpcGeo = ".json_encode($enpcOut,JSON_PRETTY_PRINT)."";
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json", 0777, true); }
-                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json/enpc.geojson.js", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/enpc.geojson.js", 'w');
                     fwrite($js_file_Feature, $enpc_Json);
                     fclose($js_file_Feature);
 
@@ -884,8 +903,8 @@ class ARRM3 implements ParseInterface
                 $LightsOut["timestamp"] = time();
                 $LightsOut["features"] = $lightarray;
                 $Lights_Json = "var lightsGeo = ".json_encode($LightsOut,JSON_PRETTY_PRINT)."";
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json", 0777, true); }
-                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json/lights.geojson.js", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/lights.geojson.js", 'w');
                     fwrite($js_file_Feature, $Lights_Json);
                     fclose($js_file_Feature);
 
@@ -893,8 +912,8 @@ class ARRM3 implements ParseInterface
                 $VFXOut["timestamp"] = time();
                 $VFXOut["features"] = $vfxarray;
                 $VFX_Json = "var vfxGeo = ".json_encode($VFXOut,JSON_PRETTY_PRINT)."";
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json", 0777, true); }
-                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json/vfx.geojson.js", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/vfx.geojson.js", 'w');
                     fwrite($js_file_Feature, $VFX_Json);
                     fclose($js_file_Feature);
 
@@ -904,8 +923,8 @@ class ARRM3 implements ParseInterface
                 $SharedGroup["timestamp"] = time();
                 $SharedGroup["features"] = $SharedGroupArray;
                 $SharedGroup_Json = "var sharedgroupGeo = ".json_encode($SharedGroup,JSON_PRETTY_PRINT)."";
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json", 0777, true); }
-                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json/sharedgroup.geojson.js", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/sharedgroup.geojson.js", 'w');
                     fwrite($js_file_Feature, $SharedGroup_Json);
                     fclose($js_file_Feature);
 
@@ -915,8 +934,8 @@ class ARRM3 implements ParseInterface
                 $FATEOut["timestamp"] = time();
                 $FATEOut["features"] = $FateArray;
                 $FATE_Json = "var fateGeo = ".json_encode($FATEOut,JSON_PRETTY_PRINT)."";
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json", 0777, true); }
-                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json/fate.geojson.js", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/fate.geojson.js", 'w');
                     fwrite($js_file_Feature, $FATE_Json);
                     fclose($js_file_Feature);
 
@@ -1055,9 +1074,10 @@ class ARRM3 implements ParseInterface
                                     "dataid" => "$subtextRaw",
                                     "amenity" => "MapMarker",
                                     "name" => $subtextRaw,
+                                    "popup" => "<center><span class='sptitle'>Aetheryte</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $PlaceNameCsv->at($AetheryteCsv->at($MapMarkerCsv->at($Ci)['Data{Key}'])['AethernetName'])['Name']) ."",
                                     "tooltip" => array (
                                         "direction" => $subtextOrientation,
-                                        "text" => "<center><span class='sptitle'>Aetheryte</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $placeNameCsv->at($aetheryteCsv->at($mapMarkerCsv->at($newKey)['Data{Key}'])['AethernetName'])['Name']) ."\"",
+                                        "text" => "",
                                     )
                                 ),
                                 "geometry" => array (
@@ -1078,9 +1098,10 @@ class ARRM3 implements ParseInterface
                                     "dataid" => "$subtextRaw",
                                     "amenity" => "MapMarker",
                                     "name" => $subtextRaw,
+                                    "popup" => "<center><span class='sptitle'>Aethernet Shard</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $PlaceNameCsv->at($MapMarkerCsv->at($Ci)['Data{Key}'])['Name']) ."",
                                     "tooltip" => array (
                                         "direction" => $subtextOrientation,
-                                        "text" => "\"<center><span class='sptitle'>Aethernet Shard</span></center>". str_replace(array("\n\r", "\r", "\n", "\t", "\0", "\x0b"), '<br>', $PlaceNameCsv->at($mapMarkerCsv->at($Ci)['Data{Key}'])['Name']) ."\"",
+                                        "text" => "",
                                     )
                                 ),
                                 "geometry" => array (
@@ -1102,10 +1123,23 @@ class ARRM3 implements ParseInterface
                 $FeatureOut["timestamp"] = time();
                 $FeatureOut["features"] = $featurearray;
                 $Feature_Json = "var mapmarkerGeo = ".json_encode($FeatureOut,JSON_PRETTY_PRINT)."";
+                $zonetree = "";
+                if (count($linkedmapsarray) > 1){
+                    $zonetree = "
+                    var zonetree = [
+                        {
+                            label: 'Map Levels',
+                            children: [                
+                                ". implode("\n",$linkedmapsarray) ."
+                            ]
+                        }
+                        ];
+                        L.control.layers.tree(null, zonetree, {collapsed:true,position:'topleft'}).addTo(map);";
+                }
                 
                 //write JS file
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json", 0777, true); }
-                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/json/mapmarkerGeo.geojson.js", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/mapmarkerGeo.geojson.js", 'w');
                     fwrite($js_file_Feature, $Feature_Json);
                     fclose($js_file_Feature);
                 $jsString = "<!DOCTYPE html>
@@ -1167,7 +1201,7 @@ class ARRM3 implements ParseInterface
                 <script src=\"json/enpc.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
-                var baseurl = \"../../map/$mapurlcode/$MapCode - $MapName.png\";
+                var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
                 
                 var map = L.map('map', {
                 crs: L.CRS.Simple,
@@ -1489,6 +1523,9 @@ class ARRM3 implements ParseInterface
                 mapswitcher.addTo(map);
                 var layerControl = L.control.layers.tree(mapswitch, null, {position:'topleft'}).addTo(map);
                 
+                $zonetree
+                
+                // add zone map control
                     
                 window.arrmMap = map;
                 </script>
@@ -1497,8 +1534,8 @@ class ARRM3 implements ParseInterface
                 ";
 
                 //write JS file
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/", 0777, true); }
-                $js_file = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$Region/$MapNameUrl/$MapNameUrl.html", 'w');
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/", 0777, true); }
+                $js_file = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/$FolderNameUrl.html", 'w');
                 fwrite($js_file, $jsString);
                 fclose($js_file);
             }  
