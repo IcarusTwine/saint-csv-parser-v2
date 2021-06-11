@@ -784,6 +784,35 @@ trait CsvParseTrait
         $POSArray["PY"] = $NpcPixelZ; 
         return $POSArray;
     }
+    
+    /**
+     * Generate X and Y for LGB/LEVEL Locations for ARRM3
+     */
+    public function GetLGBPosArrm($x, $y, $TerritoryID, $TerritoryTypeCsv, $MapCsv, $MapId) {
+        $mapLink = $MapId;
+        if (!empty($x)) {
+            $scale = $MapCsv->at($mapLink)['SizeFactor'];
+        } else {
+            $scale = 100;
+        }
+        $c = $scale / 100.0;
+        $offsetx = $MapCsv->at($mapLink)['Offset{X}'];
+        $offsetValueX = ($x + $offsetx) * $c;
+        if ($c < 1) {
+            $c = 1;
+        }
+        $LocX = round(((41.0 / $c) * (($offsetValueX + 1024.0) / 2048.0) +1), 1);
+        $NpcPixelX = round(((($LocX - 1) * 50 * $c) + 5), 2);
+        $offsety = $MapCsv->at($mapLink)['Offset{Y}'];
+        $offsetValueY = ($y + $offsety) * $c;
+        $LocY = round(((41.0 / $c) * (($offsetValueY + 1024.0) / 2048.0) +1), 1);
+        $NpcPixelZ = round(((($LocY - 1) * 50 * $c) + 5), 2);
+        $POSArray["X"] = $LocX; 
+        $POSArray["Y"] = $LocY; 
+        $POSArray["PX"] = $NpcPixelX; 
+        $POSArray["PY"] = $NpcPixelZ; 
+        return $POSArray;
+    }
     /**
      * Generate Triple Triad Pages
      */
