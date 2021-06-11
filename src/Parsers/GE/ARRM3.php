@@ -357,6 +357,7 @@ class ARRM3 implements ParseInterface
         $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
             if ($id != 975) continue;
+            $FateArray = [];
             $lightarray = [];
             $vfxarray = [];
             $code = substr($Territory['Bg'], -4);
