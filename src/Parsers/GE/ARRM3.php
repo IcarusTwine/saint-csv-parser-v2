@@ -52,11 +52,11 @@ class ARRM3 implements ParseInterface
         $AssetTypeEnums[6] = "SharedGroup"; //yes
         $AssetTypeEnums[7] = "Sound"; //yes
         $AssetTypeEnums[8] = "EventNPC"; //yes
-        $AssetTypeEnums[9] = "BattleNPC"; 
-        $AssetTypeEnums[10] = "RoutePath"; 
-        $AssetTypeEnums[11] = "Character"; 
-        $AssetTypeEnums[12] = "Aetheryte"; 
-        $AssetTypeEnums[13] = "EnvSet"; 
+        $AssetTypeEnums[9] = "BattleNPC"; //none LGB
+        $AssetTypeEnums[10] = "RoutePath"; //none LGB
+        $AssetTypeEnums[11] = "Character"; //none LGB
+        $AssetTypeEnums[12] = "Aetheryte"; //skipped
+        $AssetTypeEnums[13] = "EnvSet"; //yes (make polygon)
         $AssetTypeEnums[14] = "Gathering"; 
         $AssetTypeEnums[15] = "HelperObject"; 
         $AssetTypeEnums[16] = "Treasure"; 
@@ -167,12 +167,9 @@ class ARRM3 implements ParseInterface
     //    LQEvent = 0x4,
     //}
 //
-    //public enum EnvSetShape
-    //{
-    //    EnvShapeEllipsoid = 0x1,
-    //    EnvShapeCuboid = 0x2,
-    //    EnvShapeCylinder = 0x3,
-    //}
+    $EnvSetShapeEnum[1] = "EnvShapeEllipsoid";
+    $EnvSetShapeEnum[2] = "EnvShapeCuboid";
+    $EnvSetShapeEnum[3] = "EnvShapeCylinder";
 //
     //public enum HelperObjectType
     //{
@@ -352,7 +349,7 @@ class ARRM3 implements ParseInterface
         
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
-            if ($id != 150) continue;
+            if ($id != 975) continue;
             $linkedmapsarray = [];
             foreach($MapIndexArray[$id] as $key => $zonevalue){
                 foreach($zonevalue as $key => $mapidtemp){
@@ -374,6 +371,7 @@ class ARRM3 implements ParseInterface
                 $lightarray = [];
                 $vfxarray = [];
                 $enpcarray = [];
+                $envsetarray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_planlive.lgb.json",
@@ -638,6 +636,70 @@ class ARRM3 implements ParseInterface
                                                 "amenity" => "enpc",
                                                 "name" => $ENpcName,
                                                 "popup" => $LayerName,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+
+                                    if ($AssetType === 13){
+                                        $polypoints = "";
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $Radius = $Object->Transform->Scale->x;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $PopupText = $AssetTypeEnums[$AssetType];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        $DataArray["AssetPath"] = $Object->Object->AssetPath;
+                                        $DataArray["BoundInstanceId"] = $Object->Object->BoundInstanceId;
+                                        $DataArray["Shape"] = $EnvSetShapeEnum[$Object->Object->Shape];
+                                        switch ($Object->Object->Shape) {
+                                            case '1':
+                                            case '3':
+                                                $ShapeSwitch = array (
+                                                    "radius" => $Radius,
+                                                );
+                                            break;
+                                            case '2':
+                                                $ShapeSwitch = array (
+                                                    "polypoints" => $polypoints,
+                                                );
+                                            break;
+                                        }
+                                        $DataArray["IsEnvMapShootingPoint"] = $Object->Object->IsEnvMapShootingPoint;
+                                        $DataArray["Priority"] = $Object->Object->Priority;
+                                        $DataArray["EffectiveRange"] = $Object->Object->EffectiveRange;
+                                        $DataArray["InterpolationTime"] = $Object->Object->InterpolationTime;
+                                        $DataArray["Reverb"] = $Object->Object->Reverb;
+                                        $DataArray["Filter"] = $Object->Object->Filter;
+                                        $DataArray["SoundAssetPath"] = $Object->Object->SoundAssetPath;
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $envsetarray[] = array(
+                                            "layer" => "EnvSet",
+                                            "type" => "Feature",
+                                            "iconUrl" => "beginnersroommainwindow.uld-3-14-hr",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "EnvSet",
+                                                "name" => $LayerName,
+                                                "popup" => $LayerName,
+                                                "radius" => $Radius,
+                                                "special" => $ShapeSwitch,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -938,6 +1000,15 @@ class ARRM3 implements ParseInterface
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/fate.geojson.js", 'w');
                     fwrite($js_file_Feature, $FATE_Json);
                     fclose($js_file_Feature);
+                    
+                $envsetOut["type"] = "FeatureCollection";
+                $envsetOut["timestamp"] = time();
+                $envsetOut["features"] = $envsetarray;
+                $envset_Json = "var envsetGeo = ".json_encode($envsetOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/envset.geojson.js", 'w');
+                    fwrite($js_file_Feature, $envset_Json);
+                    fclose($js_file_Feature);
 
                         
                 $featurearray = [];
@@ -1199,6 +1270,7 @@ class ARRM3 implements ParseInterface
                 <script src=\"json/sharedgroup.geojson.js\"></script>
                 <script src=\"json/sound.geojson.js\"></script>
                 <script src=\"json/enpc.geojson.js\"></script>
+                <script src=\"json/envset.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -1223,29 +1295,48 @@ class ARRM3 implements ParseInterface
                         } else {
                         var lgbbutton = '<div class=\"lgbchangebutton\"></div>';
                         }
-                        return L.marker(latlng, {
-                            icon: L.divIcon({
-                                className: feature.properties.amenity,
-                                html: '<img src=\"../../../icons/'+feature.iconUrl+'.png\" height=\"48\" width=\"48\"\">',
-                                iconAnchor: [24, 24],
+                        if (feature.properties.radius) {
+                            return new L.Circle(latlng, feature.properties.radius).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
+                                $('.popoutinfobutton').click(function() {
+                                    var win =  L.control.window(map,{
+                                    title: null,
+                                    modal: false,
+                                    position:'top'
+                                })
+                                .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
+                                .prompt({callback:function(){alert}})
+                                .show()
                             })
-                        }).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
-                $('.popoutinfobutton').click(function() {
-                var win =  L.control.window(map,{
-                        title: null,
-                        modal: false,
-                        position:'top'
-                    })
-                        .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
-                        .prompt({callback:function(){alert}})
-                        .show()
-                    })
-                }).on('popupopen',function(){
-                $('.lgbchangebutton').click(function() {
-                    infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
+                        }).on('popupopen',function(){
+                            $('.lgbchangebutton').click(function() {
+                            infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
+                        })
+                    }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
+                        } else {
+                            return L.marker(latlng, {
+                                icon: L.divIcon({
+                                    className: feature.properties.amenity,
+                                    html: '<img src=\"../../../icons/'+feature.iconUrl+'.png\" height=\"48\" width=\"48\"\">',
+                                    iconAnchor: [24, 24],
+                                })
+                            }).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
+                            $('.popoutinfobutton').click(function() {
+                                var win =  L.control.window(map,{
+                                title: null,
+                                modal: false,
+                                position:'top'
+                            })
+                            .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
+                            .prompt({callback:function(){alert}})
+                            .show()
+                        })
+                    }).on('popupopen',function(){
+                        $('.lgbchangebutton').click(function() {
+                        infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
                     })
                 }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
-                            }
+                }
+                }
                 };
                 $('.btnClick').on('click',function(){
                 infobox.getContainer().innerHTML = ''
@@ -1258,6 +1349,7 @@ class ARRM3 implements ParseInterface
                 //var bg = L.layerGroup();
                 //var fishingspot = L.layerGroup();
                 //var EnvSpace = L.layerGroup();
+                var envset = L.layerGroup();
                 var sound = L.layerGroup();
                 var enpc = L.layerGroup();
                 var Vfx = L.layerGroup();
@@ -1329,6 +1421,12 @@ class ARRM3 implements ParseInterface
                 var sgGeoForm = L.geoJson(sharedgroupGeo, geojsonOpts);
                 SGCluster.addLayer(sgGeoForm);
 
+                var envsetCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/beginnersroommainwindow.uld-3-14-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var envsetGeoForm = L.geoJson(envsetGeo, geojsonOpts);
+                envsetCluster.addLayer(envsetGeoForm);
+
                 var poiLayers = L.layerGroup([
                     L.geoJson(mapmarkerGeo, geojsonOpts).addTo(mapmarker),
                     vfxCluster.addTo(Vfx),
@@ -1336,9 +1434,10 @@ class ARRM3 implements ParseInterface
                     LightCluster.addTo(light),
                     soundCluster.addTo(sound),
                     enpcCluster.addTo(enpc),
+                    envsetCluster.addTo(envset),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -1430,7 +1529,7 @@ class ARRM3 implements ParseInterface
                     {label: '<img src=../../../icons/configbackup_hr1_14.png width=18/><span title=\"Type = 7\">Sounds</span>', layer: sound},
                     //{label: '<img src=../../../icons/060422.png width=18/><span title=\"Type = 9\">Battle Npc</span>', layer: BattleNPC},
                     //{label: '<img src=../../../icons/060430.png width=18/><span title=\"Type = 12\">Aetheryte</span>', layer: Aetheryte},
-                    //{label: '<img src=../../../icons/060711.png width=18/><span title=\"Type = 13\">Env Space</span>', layer: EnvSpace},
+                    {label: '<img src=../../../icons/beginnersroommainwindow.uld-3-14-hr.png width=18/><span title=\"Type = 13\">Env Set</span>', layer: envset},
                     //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: PopRange},
                     //{label: '<img src=../../../icons/060457.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
                     //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: MapRange},
