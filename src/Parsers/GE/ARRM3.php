@@ -370,6 +370,7 @@ class ARRM3 implements ParseInterface
                 $treasurearray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
+                    "cache/{$PatchID}/lgb/{$code}_bg.lgb.json",
                     "cache/{$PatchID}/lgb/{$code}_planlive.lgb.json",
                     "cache/{$PatchID}/lgb/{$code}_planevent.lgb.json",
                     "cache/{$PatchID}/lgb/{$code}_planmap.lgb.json",
