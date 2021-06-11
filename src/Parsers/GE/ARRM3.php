@@ -60,15 +60,15 @@ class ARRM3 implements ParseInterface
         $AssetTypeEnums[14] = "Gathering"; //none lgb
         $AssetTypeEnums[15] = "HelperObject"; //none lgb
         $AssetTypeEnums[16] = "Treasure"; //yes
-        $AssetTypeEnums[17] = "Clip"; 
-        $AssetTypeEnums[18] = "ClipCtrlPoint"; 
-        $AssetTypeEnums[19] = "ClipCamera"; 
-        $AssetTypeEnums[20] = "ClipLight"; 
-        $AssetTypeEnums[36] = "CutAssetOnlySelectable"; 
-        $AssetTypeEnums[37] = "Player"; 
-        $AssetTypeEnums[38] = "Monster"; 
-        $AssetTypeEnums[39] = "Weapon"; 
-        $AssetTypeEnums[40] = "PopRange"; 
+        $AssetTypeEnums[17] = "Clip"; // none lgb
+        $AssetTypeEnums[18] = "ClipCtrlPoint"; // none lgb
+        $AssetTypeEnums[19] = "ClipCamera"; // none lgb
+        $AssetTypeEnums[20] = "ClipLight"; // none lgb
+        $AssetTypeEnums[36] = "CutAssetOnlySelectable"; // none lgb
+        $AssetTypeEnums[37] = "Player"; // none lgb
+        $AssetTypeEnums[38] = "Monster"; // none lgb
+        $AssetTypeEnums[39] = "Weapon"; // none lgb
+        $AssetTypeEnums[40] = "PopRange"; // yes
         $AssetTypeEnums[41] = "ExitRange"; 
         $AssetTypeEnums[42] = "LVB"; 
         $AssetTypeEnums[43] = "MapRange"; 
@@ -195,13 +195,10 @@ class ARRM3 implements ParseInterface
     //    Max = 0xD,
     //}
 //
-    //public enum PopType
-    //{
-    //    PC = 0x1,
-    //    NPC = 0x2,
-    //    BNPC = 0x2,
-    //    Content = 0x3,
-    //}
+    $PopTypeEnum[1] = "PC";
+    $PopTypeEnum[2] = "NPC";
+    $PopTypeEnum[3] = "BNPC";
+    $PopTypeEnum[4] = "Content";
 //
     //public enum ExitType
     //{
@@ -347,7 +344,7 @@ class ARRM3 implements ParseInterface
         
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
-            if ($id != 936) continue;
+            if ($id != 129) continue;
             $linkedmapsarray = [];
             foreach($MapIndexArray[$id] as $key => $zonevalue){
                 foreach($zonevalue as $key => $mapidtemp){
@@ -370,6 +367,7 @@ class ARRM3 implements ParseInterface
                 $vfxarray = [];
                 $enpcarray = [];
                 $envsetarray = [];
+                $treasurearray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_planlive.lgb.json",
@@ -772,6 +770,54 @@ class ARRM3 implements ParseInterface
                                             )
                                         );
                                     }
+                                    
+                                    
+                                    if ($AssetType === 40){
+                                        $Type = "Circle";
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $PopupText = $AssetTypeEnums[$AssetType];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        $DataArray["PopType"] = $PopTypeEnum[$Object->Object->PopType];
+                                        $DataArray["RelativePositions"] = $Object->Object->_RelativePositions->PosCount;
+                                        $DataArray["InnerRadiusRatio"] = $Object->Object->InnerRadiusRatio;
+                                        $DataArray["Index"] = $Object->Object->Index;
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $poprangearray[] = array(
+                                            "layer" => "poprange",
+                                            "type" => "Feature",
+                                            "iconUrl" => "",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "poprange",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $LayerName,
+                                                "radius" => $xscale,
+                                                "poly" => $Poly,
+                                                "polydata" => $PolyArray,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
 
                                     
                                     if ($AssetType === 45){
@@ -1079,6 +1125,17 @@ class ARRM3 implements ParseInterface
                     fwrite($js_file_Feature, $treasure_Json);
                     fclose($js_file_Feature);
 
+                    
+                $poprangeOut["type"] = "FeatureCollection";
+                $poprangeOut["timestamp"] = time();
+                $poprangeOut["features"] = $poprangearray;
+                $poprange_Json = "var poprangeGeo = ".json_encode($poprangeOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/poprange.geojson.js", 'w');
+                    fwrite($js_file_Feature, $poprange_Json);
+                    fclose($js_file_Feature);
+
+
                         
                 $featurearray = [];
                 $MapName = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name'];
@@ -1347,6 +1404,7 @@ class ARRM3 implements ParseInterface
                 <script src=\"json/enpc.geojson.js\"></script>
                 <script src=\"json/envset.geojson.js\"></script>
                 <script src=\"json/treasure.geojson.js\"></script>
+                <script src=\"json/poprange.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -1448,7 +1506,7 @@ class ARRM3 implements ParseInterface
                 var Vfx = L.layerGroup();
                 //var aetheryte = L.layerGroup();
                 //var gathering = L.layerGroup();
-                //var PopRange = L.layerGroup();
+                var poprange = L.layerGroup();
                 //var exitrange = L.layerGroup();
                 //var EventObject = L.layerGroup();
                 //var ExitRange = L.layerGroup();
@@ -1536,9 +1594,10 @@ class ARRM3 implements ParseInterface
                     enpcCluster.addTo(enpc),
                     envsetCluster.addTo(envset),
                     treasureCluster.addTo(treasure),
+                    L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -1630,9 +1689,9 @@ class ARRM3 implements ParseInterface
                     {label: '<img src=../../../icons/configbackup_hr1_14.png width=18/><span title=\"Type = 7\">Sounds</span>', layer: sound},
                     //{label: '<img src=../../../icons/060422.png width=18/><span title=\"Type = 9\">Battle Npc</span>', layer: BattleNPC},
                     //{label: '<img src=../../../icons/060430.png width=18/><span title=\"Type = 12\">Aetheryte</span>', layer: Aetheryte},
-                    {label: '<img src=../../../icons/beginnersroommainwindow.uld-3-14-hr.png width=18/><span title=\"Type = 13\">Env Set</span>', layer: envset},
+                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 13\">Env Set</span>', layer: envset},
                     {label: '<img src=../../../icons/060003_hr1.png width=18/><span title=\"Type = 16\">Treasure</span>', layer: treasure},
-                    //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: PopRange},
+                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: poprange},
                     //{label: '<img src=../../../icons/060457.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
                     //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: MapRange},
                     //{label: '<img src=../../../icons/060416.png width=18/><span title=\"Type = 45\">Event Objects</span>', layer: EventObject},
