@@ -1426,6 +1426,9 @@ trait CsvParseTrait
         
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
+        $LogMessageCsv = $this->csv("LogMessage");
+        $HowToCsv = $this->csv("HowTo");
+        $QuestCsv = $this->csv("Quest");
         
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
@@ -1531,6 +1534,7 @@ trait CsvParseTrait
                             }
                         }
                     }
+                    
                 }
                 
                 if (strpos($_lua[$_pos], "TEXT") !== false){
@@ -1538,6 +1542,25 @@ trait CsvParseTrait
                         $outarray[] = "(".$match[1].")";
                     } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
                         $outarray[] = "(".$match[1].")";
+                    }
+                }
+                if (strpos($_lua[$_pos], "LogMessage") !== false){
+                    if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
+                        $FoundMatch = $match[1];
+                        $outarray[] = $LogMessageCsv->at($ArgArray[$FoundMatch])['Text'];
+                    } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                        $FoundMatch = $match[1];
+                        $outarray[] = $LogMessageCsv->at($ArgArray[$FoundMatch])['Text'];
+                    }
+                }
+                
+                if (strpos($_lua[$_pos], "HowTo") !== false){
+                    if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
+                        $FoundMatch = $match[1];
+                        $outarray[] = "[[Active Help/".$HowToCsv->at($ArgArray[$FoundMatch])['Name']."]]";
+                    } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                        $FoundMatch = $match[1];
+                        $outarray[] = "[[Active Help/".$HowToCsv->at($ArgArray[$FoundMatch])['Name']."]]";
                     }
                 }
                 if ($_lua[$_pos] === "else"){
@@ -1553,13 +1576,97 @@ trait CsvParseTrait
                 $_pos++;
             }
         }
-         
-        $finalout = implode("\n",$outarray);
+        foreach($outarray as $line) {
+            if ($line === "end"){
+                $newoutarray[] = str_replace("end", "}}", $line);
+            } elseif (strpos($line,"elseif (") !== false){
+                $newoutarray[] = "{{!}}-{{!}}\n$line=";
+            } elseif (strpos($line,"if (") !== false){
+                $newoutarray[] = "{{#tag:tabber|\n$line=";
+            } elseif ($line === "else") {
+                $newoutarray[] = str_replace("else", "{{!}}-{{!}}\nelse = ", $line);
+            } else {
+                $newoutarray[] = $line;
+            }
+        }
+        //do functions
+        $outarray = [];
+        foreach($newoutarray as $line) {
+            $explodedLine = explode(" ",$line);
+            if (!empty($explodedLine[1])){
+                $Parameter = $explodedLine[1];
+                $Question = $explodedLine[0];
+                if ($Parameter === "(IsEnpcBelongsToThe1st)"){
+                    if ($explodedLine[3] === "true"){
+                        $outarray[] = "$Question the npc is a 5.0+ npc=";
+                    }
+                    if ($explodedLine[3] === "false"){
+                        $outarray[] = "$Question the npc is not a 5.0+ npc=";
+                    }
+                } elseif ($Parameter === "(IsEnableThe1stLetterMoogle)"){
+                    if ($explodedLine[3] === "true"){
+                        $outarray[] = "$Question ". $QuestCsv->at($ArgArray["THE1ST_OPEN_QUEST"])['Name']. " is started=";
+                    }
+                    if ($explodedLine[3] === "false"){
+                        $outarray[] = "$Question ". $QuestCsv->at($ArgArray["THE1ST_OPEN_QUEST"])['Name']. " is not started=";
+                    }
+                } elseif ($Parameter === "(IsHowTo)"){
+                    if ($explodedLine[4] === "true"){
+                        $outarray[] = "$Question the NPC has Active Help=";
+                    }
+                    if ($explodedLine[4] === "false"){
+                        $outarray[] = "$Question the NPC does not have Active Help=";
+                    }
+                } elseif ($Parameter === "(GetNumOfNewLetters)"){
+                    if ($explodedLine[2] === "is"){
+                        $outarray[] = "$Question the player has ". $explodedLine[3]." new letters=";
+                    }
+                    if ($explodedLine[2] === "<"){
+                        $outarray[] = "$Question the player has less than ". $explodedLine[3]." new letters=";
+                    }
+                    if ($explodedLine[2] === ">"){
+                        $outarray[] = "$Question the player has more than ". $explodedLine[3]." new letters=";
+                    }
+                } elseif ($Parameter === "(IsQuestCompleted)"){
+                    $QuestParam = str_replace(array("(",")"),"",$explodedLine[2]);
+                    $QuestName = $QuestCsv->at($ArgArray[$QuestParam])["Name"];
+                    if ($explodedLine[4] === "true"){
+                        $outarray[] = "$Question the player has completed $QuestName=";
+                    }
+                    if ($explodedLine[4] === "false"){
+                        $outarray[] = "$Question the player has not completed $QuestName=";
+                    }
+                } elseif ($Parameter === "(GetNumOfDeniedLetters)"){
+                    if ($explodedLine[2] === "is"){
+                        $outarray[] = "$Question the player has ". $explodedLine[3]." denied letters=";
+                    }
+                    if ($explodedLine[2] === "<"){
+                        $outarray[] = "$Question the player has less than ". $explodedLine[3]." denied letters=";
+                    }
+                    if ($explodedLine[2] === ">"){
+                        $outarray[] = "$Question the player has more than ". $explodedLine[3]." denied letters=";
+                    }
+                } elseif ($Parameter === "(GetLetterBoxUsage)"){
+                    $outarray[] = str_replace("Players inbox ",$Parameter,$line);
+                } else {
+                    if(strpos($Parameter,"(") !== false){
+                        var_dump("$Parameter is not an assigned function ! ! ! ! !");
+                    }
+                    $outarray[] = $line;
+                }
+            }else {
+                $outarray[] = $line;
+            }
+        }
+        $finalout = implode("\n<br>",$outarray);
         foreach($CsvTextArray as $key => $value){
             $finalout = str_replace("($key)",$value,$finalout);
         }
+        $finalout = str_replace("==", "is", $finalout);
+        $finalout = str_replace(">=", "is more or equal to", $finalout);
+        $finalout = str_replace("<=", "is less or equal to", $finalout);
         //foreach of the argarrys but need to understand usage first
-        return $finalout;
+        return "{{Dialoguebox3|Dialogue={{#tag:tabber|\n$MainOption=\n".$finalout;
         //var_dump($finalout);
         
     }
