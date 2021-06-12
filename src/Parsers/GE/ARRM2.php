@@ -705,10 +705,10 @@ var markerraw". $keyID ."". $keySub ." = L.marker(map.unproject([". $x .", ". $y
                         $c2 = ($scale / 100.0) * 2;
                     break;
                     case 400:
-                        $c2 = ($scale / 100.0) / 2;
+                        $c2 = ($scale / 100.0) * 2;
                     break;
                     case 800:
-                        $c2 = ($scale / 100.0) / 8;
+                        $c2 = ($scale / 100.0) * 8;
                     break;
                 }
 

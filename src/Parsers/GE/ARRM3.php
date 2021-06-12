@@ -200,10 +200,7 @@ class ARRM3 implements ParseInterface
     $PopTypeEnum[3] = "BNPC";
     $PopTypeEnum[4] = "Content";
 //
-    //public enum ExitType
-    //{
-    //    ZoneLine = 0x1,
-    //}
+    $ExitType[1] = "ZoneLine";
 //
     //public enum RangeType
     //{
@@ -368,6 +365,7 @@ class ARRM3 implements ParseInterface
                 $enpcarray = [];
                 $envsetarray = [];
                 $treasurearray = [];
+                $exitrangearray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_bg.lgb.json",
@@ -398,6 +396,24 @@ class ARRM3 implements ParseInterface
                 $MapCodeExp = explode("/",$MapCsv->at($newMapId)['Id']);
                 $MapCode = $MapCodeExp[0];
                 $mapurlcode = substr($MapCode, 0, 3);
+                $radiusscale = $MapCsv->at($newMapId)['SizeFactor'];
+                switch ($radiusscale) {
+                    case 95:
+                        $c2 = 10;
+                    break;
+                    case 100:
+                        $c2 = 8;
+                    break;
+                    case 200:
+                        $c2 = 2;
+                    break;
+                    case 400:
+                        $c2 = 2;
+                    break;
+                    case 800:
+                        $c2 = 8;
+                    break;
+                }
                 foreach($JSONFiles as $url) {
                     if (file_exists($url)) {
                         $jdata = file_get_contents($url);
@@ -679,7 +695,7 @@ class ARRM3 implements ParseInterface
                                         switch ($Object->Object->Shape) {
                                             case '1':
                                             case '3':
-                                                $Radius = $xscale;
+                                                $Radius = $xscale * $c2;
                                                 $PolyArray = array();
                                                 $Poly = "false";
                                                 $Type = "Circle";
@@ -777,7 +793,7 @@ class ARRM3 implements ParseInterface
                                         $Type = "Circle";
                                         $x = $Object->Transform->Translation->x;
                                         $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x;
+                                        $xscale = $Object->Transform->Scale->x  * $c2;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -798,6 +814,71 @@ class ARRM3 implements ParseInterface
                                             "properties" => array (
                                                 "dataid" => "$InstanceID",
                                                 "amenity" => "poprange",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $LayerName,
+                                                "radius" => $xscale,
+                                                "poly" => $Poly,
+                                                "polydata" => $PolyArray,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+                                    
+                                    if ($AssetType === 41){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $xscale = $Object->Transform->Scale->x * $c2;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        switch ($Object->Object->ParentData->TriggerBoxShape) {
+                                            case '1':
+                                            case '3':
+                                                $Radius = $xscale;
+                                                $PolyArray = array();
+                                                $Poly = "false";
+                                                $Type = "Circle";
+                                            break;
+                                            case '2':
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "Box";
+                                            break;
+                                        }
+                                        $DataArray["TriggerBoxShape"] = $TriggerBoxShapeEnum[$Object->Object->ParentData->TriggerBoxShape];
+                                        $DataArray["ExitType"] = $Object->Object->ExitType;
+                                        $DataArray["ZoneId"] = $Object->Object->ZoneId;
+                                        $DataArray["TerritoryType"] = $PlaceNameCsv->at($TerritoryTypeCsv->at($Object->Object->TerritoryType)['PlaceName'])['Name']." (".$Object->Object->TerritoryType.")";
+                                        $DataArray["Index"] = $Object->Object->Index;
+                                        $DataArray["DestInstanceId"] = $Object->Object->DestInstanceId;
+                                        $DataArray["ReturnInstanceId"] = $Object->Object->ReturnInstanceId;
+                                        $DataArray["PlayerRunningDirection"] = $Object->Object->PlayerRunningDirection;
+                                        $PopupText = "Exits to -> ".$DataArray["TerritoryType"]."";
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $exitrangearray[] = array(
+                                            "layer" => "exitrange",
+                                            "type" => "Feature",
+                                            "iconUrl" => "",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "exitrange",
                                                 "name" => $LayerName,
                                                 "type" => $Type,
                                                 "popup" => $LayerName,
@@ -1136,6 +1217,19 @@ class ARRM3 implements ParseInterface
                     fwrite($js_file_Feature, $poprange_Json);
                     fclose($js_file_Feature);
 
+                    
+
+                    
+                $exitrangeOut["type"] = "FeatureCollection";
+                $exitrangeOut["timestamp"] = time();
+                $exitrangeOut["features"] = $exitrangearray;
+                $exitrange_Json = "var exitrangeGeo = ".json_encode($exitrangeOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/exitrange.geojson.js", 'w');
+                    fwrite($js_file_Feature, $exitrange_Json);
+                    fclose($js_file_Feature);
+
+
 
                         
                 $featurearray = [];
@@ -1406,6 +1500,7 @@ class ARRM3 implements ParseInterface
                 <script src=\"json/envset.geojson.js\"></script>
                 <script src=\"json/treasure.geojson.js\"></script>
                 <script src=\"json/poprange.geojson.js\"></script>
+                <script src=\"json/exitrange.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -1508,9 +1603,8 @@ class ARRM3 implements ParseInterface
                 //var aetheryte = L.layerGroup();
                 //var gathering = L.layerGroup();
                 var poprange = L.layerGroup();
-                //var exitrange = L.layerGroup();
+                var exitrange = L.layerGroup();
                 //var EventObject = L.layerGroup();
-                //var ExitRange = L.layerGroup();
                 //var eventrange = L.layerGroup();
                 //var questmarker = L.layerGroup();
                 //var collisionbox = L.layerGroup();
@@ -1596,9 +1690,10 @@ class ARRM3 implements ParseInterface
                     envsetCluster.addTo(envset),
                     treasureCluster.addTo(treasure),
                     L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
+                    L.geoJson(exitrangeGeo, geojsonOpts).addTo(exitrange),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -1693,7 +1788,7 @@ class ARRM3 implements ParseInterface
                     {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 13\">Env Set</span>', layer: envset},
                     {label: '<img src=../../../icons/060003_hr1.png width=18/><span title=\"Type = 16\">Treasure</span>', layer: treasure},
                     {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: poprange},
-                    //{label: '<img src=../../../icons/060457.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
+                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
                     //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: MapRange},
                     //{label: '<img src=../../../icons/060416.png width=18/><span title=\"Type = 45\">Event Objects</span>', layer: EventObject},
                     //{label: '<img src=../../../icons/060423.png width=18/><span title=\"Type = 47\">Env Locations</span>', layer: EnvLocation},
