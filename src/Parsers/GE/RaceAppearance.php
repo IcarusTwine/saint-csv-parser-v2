@@ -196,6 +196,8 @@ class RaceAppearance implements ParseInterface
                                         }
                                         $Hint = "|Hint = ".$Hint."";
                                         if (!empty($MenuData['HintItem'])){
+                                            $HintItemName = $ItemCsv->at($MenuData['HintItem'])['Name'];
+                                            $ItemHairArray[$HintItemName][] = $MenuData['Icon'];
                                             $Item = "|Item = ".$ItemCsv->at($MenuData['HintItem'])['Name']."";
                                         }
                                     }
@@ -218,6 +220,8 @@ class RaceAppearance implements ParseInterface
                                         }
                                         $Hint = "|Hint = ".$Hint."";
                                         if (!empty($MenuData['HintItem'])){
+                                            $HintItemName = $ItemCsv->at($MenuData['HintItem'])['Name'];
+                                            $ItemHairArray[$HintItemName][] = $MenuData['Icon'];
                                             $Item = "|Item = ".$ItemCsv->at($MenuData['HintItem'])['Name']."";
                                         }
                                     }
@@ -255,9 +259,14 @@ class RaceAppearance implements ParseInterface
             $OutputArray[] = implode($RaceInfoArray);
         }
         $IconArray = array_unique($IconArray);
+        $IconArrayCount = count($IconArray);
+        $console = $console->section();
         if (!empty($IconArray)) {
             $this->io->text('Copying Appearance Icons ...');
+            $i = 1;
             foreach ($IconArray as $value){
+                $i++;
+                $console->overwrite(" Saving -> $i / $IconArrayCount");
                 $IconID = sprintf("%06d", $value);
                 if (!file_exists($this->getOutputFolder() ."/$PatchID/AppearanceIcons/$IconID.png")) {
                     // ensure output directory exists
@@ -285,9 +294,15 @@ class RaceAppearance implements ParseInterface
             $this->io->text('Missing Icons ...');
             print_r($MissingIconArray);
         }
+
+        foreach($ItemHairArray as $key => $value){
+            $Valueimplode = implode(",",$value);
+            $ReplaceOutput[] = "\"$key\" |Hairicons = $Valueimplode";
+        }
+        $ReplaceOutput = implode("\n",$ReplaceOutput);
+        $this->saveExtra("ItemHairs.txt", $ReplaceOutput);
         
         $Output = implode($OutputArray);
-        $console = $console->section();
 
         $data = GeFormatter::format(self::WIKI_FORMAT, [
             '{Output}'  => $Output,

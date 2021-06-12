@@ -1590,6 +1590,8 @@ trait CsvParseTrait
             }
         }
         //do functions
+        $console = new ConsoleOutput();
+        $console = $console->section();
         $outarray = [];
         foreach($newoutarray as $line) {
             $explodedLine = explode(" ",$line);
@@ -1650,7 +1652,7 @@ trait CsvParseTrait
                     $outarray[] = str_replace("Players inbox ",$Parameter,$line);
                 } else {
                     if(strpos($Parameter,"(") !== false){
-                        var_dump("$Parameter is not an assigned function ! ! ! ! !");
+                        $console->writeln("<error> $Parameter is not an assigned function ! ! ! ! ! </error>\n");
                     }
                     $outarray[] = $line;
                 }
