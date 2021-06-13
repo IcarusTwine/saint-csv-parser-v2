@@ -79,17 +79,17 @@ class ARRM3 implements ParseInterface
         $AssetTypeEnums[43] = "MapRange"; //yes
         $AssetTypeEnums[44] = "NaviMeshRange"; //meh
         $AssetTypeEnums[45] = "EventObject"; //yes
-        $AssetTypeEnums[46] = "DemiHuman"; 
-        $AssetTypeEnums[47] = "EnvLocation"; 
-        $AssetTypeEnums[48] = "ControlPoint"; 
-        $AssetTypeEnums[49] = "EventRange"; 
-        $AssetTypeEnums[50] = "RestBonusRange"; 
-        $AssetTypeEnums[51] = "QuestMarker"; 
-        $AssetTypeEnums[52] = "Timeline"; 
-        $AssetTypeEnums[53] = "ObjectBehaviorSet"; 
-        $AssetTypeEnums[54] = "Movie"; 
-        $AssetTypeEnums[55] = "ScenarioExd"; 
-        $AssetTypeEnums[56] = "ScenarioText"; 
+        $AssetTypeEnums[46] = "DemiHuman"; //none lgb
+        $AssetTypeEnums[47] = "EnvLocation"; //yes
+        $AssetTypeEnums[48] = "ControlPoint"; //none lgb
+        $AssetTypeEnums[49] = "EventRange"; //yes
+        $AssetTypeEnums[50] = "RestBonusRange"; //none lgb
+        $AssetTypeEnums[51] = "QuestMarker"; //none lgb
+        $AssetTypeEnums[52] = "Timeline"; //none lgb
+        $AssetTypeEnums[53] = "ObjectBehaviorSet"; //none lgb
+        $AssetTypeEnums[54] = "Movie"; //none lgb
+        $AssetTypeEnums[55] = "ScenarioExd"; //none lgb
+        $AssetTypeEnums[56] = "ScenarioText"; //none lgb
         $AssetTypeEnums[57] = "CollisionBox"; 
         $AssetTypeEnums[58] = "DoorRange"; 
         $AssetTypeEnums[59] = "LineVFX"; 
@@ -379,8 +379,10 @@ class ARRM3 implements ParseInterface
                 $envsetarray = [];
                 $treasurearray = [];
                 $exitrangearray = [];
-                $eobjarray = [];
+                $eobjArray = [];
                 $currentarray = [];
+                $eventrangearray = [];
+                $collisionboxarray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_bg.lgb.json",
@@ -858,7 +860,9 @@ class ARRM3 implements ParseInterface
                                     if ($AssetType === 41){
                                         $x = $Object->Transform->Translation->x;
                                         $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x * $c2;
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -930,7 +934,9 @@ class ARRM3 implements ParseInterface
                                         if ($Object->Object->PlaceNameEnabled === 0) continue;
                                         $x = $Object->Transform->Translation->x;
                                         $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x * $c2;
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1103,6 +1109,9 @@ class ARRM3 implements ParseInterface
                                         $DataArray["BoundInstanceId"] = $Object->Object->BoundInstanceId;
                                         if ($EObjDataRaw == 0) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "None";
@@ -1135,6 +1144,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 65000 && $EObjDataRaw < 100000) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "Quest";
@@ -1169,6 +1181,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 131070 && $EObjDataRaw < 131391) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "Warp";
@@ -1203,6 +1218,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 589820 && $EObjDataRaw < 600000) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "DefaultTalk";
@@ -1238,6 +1256,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 720890 && $EObjDataRaw < 722000) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "CustomTalk";
@@ -1272,6 +1293,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 851900 && $EObjDataRaw < 899999) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "ArrayEventHandler";
@@ -1305,6 +1329,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 983000 && $EObjDataRaw < 1146996) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "Unknown";
@@ -1338,6 +1365,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 1179600 && $EObjDataRaw < 1180000) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "ChocoboTaxiStand";
@@ -1371,6 +1401,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 1700000 && $EObjDataRaw < 1710000) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "Story";
@@ -1404,6 +1437,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 1769480 && $EObjDataRaw < 1900000) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "Unknown";
@@ -1437,6 +1473,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 1900540 && $EObjDataRaw < 1909999) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "InstanceContentGuide";
@@ -1472,6 +1511,9 @@ class ARRM3 implements ParseInterface
                                         }
                                         if ($EObjDataRaw > 1966080 && $EObjDataRaw < 1969999) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "HousingAethernet";
@@ -1511,6 +1553,9 @@ class ARRM3 implements ParseInterface
                                         
                                         if ($EObjDataRaw > 2818000 && $EObjDataRaw < 2819999) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "AetherCurrent";
@@ -1543,6 +1588,52 @@ class ARRM3 implements ParseInterface
                                             );
                                         }
                                     }
+                                    
+                                    
+                                    if ($AssetType === 47){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $PopupText = $AssetTypeEnums[$AssetType];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        $DataArray["SHAmbientLightAssetPath"] = $Object->Object->SHAmbientLightAssetPath;
+                                        $DataArray["EnvMapAssetPath"] = $Object->Object->EnvMapAssetPath;
+                                        $PopupTextOut = $AssetTypeEnums[$AssetType];
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $envlocationarray[] = array(
+                                            "layer" => "envlocation",
+                                            "type" => "Feature",
+                                            "iconUrl" => "exp_ps3.uld-1-2-hr",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "envlocation",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $PopupTextOut,
+                                                "radius" => "",
+                                                "poly" => $Poly,
+                                                "polydata" => $PolyArray,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+                                
                                     
                                     if ($AssetType === 49){
                                         $x = $Object->Transform->Translation->x;
@@ -1674,7 +1765,125 @@ class ARRM3 implements ParseInterface
                                                     ]
                                                 )
                                             );
+                                        } else {
+                                            $xscale = $Object->Transform->Scale->x;
+                                            $zscale = $Object->Transform->Scale->z;
+                                            $rotationy = $Object->Transform->Rotation->y;
+                                            $DataArray["InstanceID"] = $InstanceID;
+                                            $DataArray["LayerName"] = $LayerName;
+                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+    
+                                            switch ($Object->Object->ParentData->TriggerBoxShape) {
+                                                case '1':
+                                                case '3':
+                                                    $Radius = $xscale;
+                                                    $PolyArray = array();
+                                                    $Poly = "false";
+                                                    $Type = "Circle";
+                                                    $PX = $PX - 10;
+                                                    $PY = $PY - 10;
+                                                break;
+                                                case '2':
+                                                    $Radius = "false";
+                                                    $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
+                                                    $Poly = "true";
+                                                    $Type = "Box";
+                                                    $PX = $PX - 10;
+                                                    $PY = $PY - 10;
+                                                break;
+                                                default:
+                                                    $Radius = $xscale;
+                                                    $PolyArray = array();
+                                                    $Poly = "false";
+                                                    $Type = "Circle";
+                                                    $PX = $PX - 10;
+                                                    $PY = $PY - 10;
+                                                break;
+                                            }
+                                            $DataArray["TriggerBoxShape"] = $TriggerBoxShapeEnum[$Object->Object->ParentData->TriggerBoxShape];
+                                            $PopupText = "";
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $eventrangearray[] = array(
+                                                "layer" => "eventrange",
+                                                "type" => "Feature",
+                                                "iconUrl" => "",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eventrange",
+                                                    "name" => $LayerName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupText,
+                                                    "radius" => $xscale,
+                                                    "poly" => $Poly,
+                                                    "polydata" => $PolyArray,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+
                                         }
+                                    }
+                                    //make collisionbox a polyline TODO
+                                    if ($AssetType === 57){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
+                                        $PopupText = $AssetTypeEnums[$AssetType];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        $DataArray["PushPlayerOut"] = $Object->Object->PushPlayerOut;
+                                        $DataArray["CollisionAssetPath"] = $Object->Object->CollisionAssetPath;
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $Radius = "false";
+                                        $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
+                                        $Poly = "true";
+                                        $Type = "Box";
+                                        $PX = $PX - 10;
+                                        $PY = $PY - 10;
+                                        $treasurearray[] = array(
+                                            "layer" => "collisionbox",
+                                            "type" => "Feature",
+                                            "iconUrl" => "",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "collisionbox",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $LayerName,
+                                                "radius" => $Radius,
+                                                "poly" => $Poly,
+                                                "polydata" => $PolyArray,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
                                     }
                                     
                                 }
@@ -1815,7 +2024,33 @@ class ARRM3 implements ParseInterface
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/eobj.geojson.js", 'w');
                     fwrite($js_file_Feature, $eobj_Json);
                     fclose($js_file_Feature);
+                    
+                $envlocationOut["type"] = "FeatureCollection";
+                $envlocationOut["timestamp"] = time();
+                $envlocationOut["features"] = $envlocationarray;
+                $envlocation_Json = "var envlocationGeo = ".json_encode($envlocationOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/envlocation.geojson.js", 'w');
+                    fwrite($js_file_Feature, $envlocation_Json);
+                    fclose($js_file_Feature);
+                    
+                $eventrangeOut["type"] = "FeatureCollection";
+                $eventrangeOut["timestamp"] = time();
+                $eventrangeOut["features"] = $eventrangearray;
+                $eventrange_Json = "var eventrangeGeo = ".json_encode($eventrangeOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/eventrange.geojson.js", 'w');
+                    fwrite($js_file_Feature, $eventrange_Json);
+                    fclose($js_file_Feature);
 
+                $collisionboxOut["type"] = "FeatureCollection";
+                $collisionboxOut["timestamp"] = time();
+                $collisionboxOut["features"] = $collisionboxarray;
+                $collisionbox_Json = "var collisionboxGeo = ".json_encode($collisionboxOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/collisionbox.geojson.js", 'w');
+                    fwrite($js_file_Feature, $collisionbox_Json);
+                    fclose($js_file_Feature);
 
                         
                 $featurearray = [];
@@ -2090,6 +2325,9 @@ class ARRM3 implements ParseInterface
                 <script src=\"json/maprange.geojson.js\"></script>
                 <script src=\"json/current.geojson.js\"></script>
                 <script src=\"json/eobj.geojson.js\"></script>
+                <script src=\"json/envlocation.geojson.js\"></script>
+                <script src=\"json/eventrange.geojson.js\"></script>
+                <script src=\"json/collisionbox.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -2194,19 +2432,18 @@ class ARRM3 implements ParseInterface
                 var poprange = L.layerGroup();
                 var exitrange = L.layerGroup();
                 var eobj = L.layerGroup();
-                //var eventrange = L.layerGroup();
                 //var questmarker = L.layerGroup();
-                //var collisionbox = L.layerGroup();
+                var collisionbox = L.layerGroup();
                 //var ClientPath = L.layerGroup();
                 //var serverpath = L.layerGroup();
                 //var CollisionBox = L.layerGroup();
-                //var EventRange = L.layerGroup();
+                var eventrange = L.layerGroup();
                 var maprange = L.layerGroup();
                 var light = L.layerGroup();
                 var sharedgroup = L.layerGroup();
                 //var GimmickRange = L.layerGroup();
                 //var ChairMarker = L.layerGroup();
-                //var EnvLocation = L.layerGroup();
+                var envlocation = L.layerGroup();
                 //var TargetMarker = L.layerGroup();
                 //var Aetheryte = L.layerGroup();
                 //var LineVfx = L.layerGroup();
@@ -2275,6 +2512,14 @@ class ARRM3 implements ParseInterface
                 var eobjGeoForm = L.geoJson(eobjGeo, geojsonOpts);
                 eobjCluster.addLayer(eobjGeoForm);
 
+                
+                var envlocationCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/exp_ps3.uld-1-2-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var envlocationGeoForm = L.geoJson(envlocationGeo, geojsonOpts);
+                envlocationCluster.addLayer(envlocationGeoForm);
+
+
                 var poiLayers = L.layerGroup([
                     L.geoJson(mapmarkerGeo, geojsonOpts).addTo(mapmarker),
                     vfxCluster.addTo(Vfx),
@@ -2285,13 +2530,16 @@ class ARRM3 implements ParseInterface
                     envsetCluster.addTo(envset),
                     treasureCluster.addTo(treasure),
                     eobjCluster.addTo(eobj),
+                    envlocationCluster.addTo(envlocation),
                     L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
                     L.geoJson(exitrangeGeo, geojsonOpts).addTo(exitrange),
                     L.geoJson(maprangeGeo, geojsonOpts).addTo(maprange),
+                    L.geoJson(eventrangeGeo, geojsonOpts).addTo(eventrange),
+                    L.geoJson(collisionboxGeo, geojsonOpts).addTo(collisionbox),
                     L.geoJson(currentGeo, geojsonOpts).addTo(current),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -2389,9 +2637,9 @@ class ARRM3 implements ParseInterface
                     {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
                     {label: '<img src=../../../icons/configbackup_hr1_22.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: maprange},
                     {label: '<img src=../../../icons/060416_hr1.png width=18/><span title=\"Type = 45\">Event Objects</span>', layer: eobj},
-                    //{label: '<img src=../../../icons/060423.png width=18/><span title=\"Type = 47\">Env Locations</span>', layer: EnvLocation},
-                    //{label: '<img src=../../../icons/060496.png width=18/><span title=\"Type = 49\">Event Range</span>', layer: EventRange},
-                    //{label: '<img src=../../../icons/060626.png width=18/><span title=\"Type = 57\">Collision Boxs</span>', layer: CollisionBox},
+                    {label: '<img src=../../../icons/exp_ps3.uld-1-2-hr.png width=18/><span title=\"Type = 47\">Env Locations</span>', layer: envlocation},
+                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 49\">Event Range</span>', layer: eventrange},
+                    {label: '<img src=../../../icons/freecompanyactivity.uld-5-28-hr.png width=18/><span title=\"Type = 57\">Collision Boxs</span>', layer: collisionbox},
                     //{label: '<img src=../../../icons/060457.png width=18/><span title=\"Type = 59\">Exit Line VFX</span>', layer: LineVfx},
                     //{label: '<img src=../../../icons/060403.png width=18/><span title=\"Type = 65\">Client Paths</span>', layer: ClientPath},
                     //{label: '<img src=../../../icons/060953.png width=18/><span title=\"Type = 66\">Server Paths</span>', layer: serverpath},
@@ -2538,7 +2786,3 @@ class ARRM3 implements ParseInterface
         );
     }
 }
-
-/*
-11th April 2021 - Creation
-*/
