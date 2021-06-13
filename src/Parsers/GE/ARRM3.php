@@ -39,6 +39,10 @@ class ARRM3 implements ParseInterface
         $BNpcNameCsv = $this->csv('BNpcName');
         $AetheryteCsv = $this->csv('Aetheryte');
         $WeatherCsv = $this->csv('Weather');
+        $EObjCsv = $this->csv('EObj');
+        $ContentFinderConditionCsv = $this->csv('ContentFinderCondition');
+        $ExportedSGCsv = $this->csv('ExportedSG');
+        $CustomTalkCsv = $this->csv('CustomTalk');
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
@@ -73,8 +77,8 @@ class ARRM3 implements ParseInterface
         $AssetTypeEnums[41] = "ExitRange"; //yes
         $AssetTypeEnums[42] = "LVB"; //none lgb
         $AssetTypeEnums[43] = "MapRange"; //yes
-        $AssetTypeEnums[44] = "NaviMeshRange"; 
-        $AssetTypeEnums[45] = "EventObject"; 
+        $AssetTypeEnums[44] = "NaviMeshRange"; //meh
+        $AssetTypeEnums[45] = "EventObject"; //yes
         $AssetTypeEnums[46] = "DemiHuman"; 
         $AssetTypeEnums[47] = "EnvLocation"; 
         $AssetTypeEnums[48] = "ControlPoint"; 
@@ -315,6 +319,14 @@ class ARRM3 implements ParseInterface
             $DynamicFateLocation = $DynamicFateData['LGBEventObject'];
             $DynamicFateArray[$DynamicFateLocation] = $DynamicFateData;
         }
+        $InstanceContentArray = [];
+        foreach ($ContentFinderConditionCsv->data as $id => $Content) {
+            if ($Content["ContentLinkType"] === "1"){
+                $contentid = $Content['Content'];
+                $InstanceContentArray[$contentid] = $Content['Name'];
+            }
+        }
+        
         
         $FateArraySheet = [];
 
@@ -342,7 +354,7 @@ class ARRM3 implements ParseInterface
         
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
-            if ($id != 129) continue;
+            if ($id != 814) continue;
             $linkedmapsarray = [];
             foreach($MapIndexArray[$id] as $key => $zonevalue){
                 foreach($zonevalue as $key => $mapidtemp){
@@ -367,6 +379,8 @@ class ARRM3 implements ParseInterface
                 $envsetarray = [];
                 $treasurearray = [];
                 $exitrangearray = [];
+                $eobjarray = [];
+                $currentarray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_bg.lgb.json",
@@ -1084,6 +1098,450 @@ class ARRM3 implements ParseInterface
                                                 )
                                             );
                                         }
+                                        $EObjDataRaw = $EObjCsv->at($BaseId)['Data'];
+                                        $DataArray["BaseId"] = $Object->Object->ParentData->BaseId;
+                                        $DataArray["BoundInstanceId"] = $Object->Object->BoundInstanceId;
+                                        if ($EObjDataRaw == 0) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "None";
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 65000 && $EObjDataRaw < 100000) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "Quest";
+                                            $Quest = $QuestCsv->at($EObjCsv->at($BaseId)['Data'])['Name'];
+                                            $DataArray["Quest"] = $Quest." (". $EObjCsv->at($BaseId)['Data'] .")";
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Used in Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $Quest ."\\\">". $Quest ."</a><br>";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 131070 && $EObjDataRaw < 131391) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "Warp";
+                                            $Warp = $PlaceNameCsv->at($TerritoryTypeCsv->at($WarpCsv->at($EObjCsv->at($BaseId)['Data'])['TerritoryType'])['PlaceName'])['Name'];
+                                            $DataArray["Warp"] = $Warp." (". $EObjCsv->at($BaseId)['Data'] .")";
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Warps to = $Warp<br>";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060431_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 589820 && $EObjDataRaw < 600000) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "DefaultTalk";
+                                            $DataArray["DefaultTalk"] = $PlaceNameCsv->at($TerritoryTypeCsv->at($WarpCsv->at($EObjCsv->at($BaseId)['Data'])['TerritoryType'])['PlaceName'])['Name'];
+                                            $Talk = $this->getDefaultTalk($DefaultTalkCsv, $EObjCsv, $BaseId, "Data", "");
+                                            $DataArray["Talk"] = $Talk;
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "When talked to = $Talk<br>";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 720890 && $EObjDataRaw < 722000) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "CustomTalk";
+                                            $DataArray["CustomTalk"] = $CustomTalkCsv->at($EObjCsv->at($BaseId)['Data'])['Name'];
+                                            $DataArray["Option"] = $CustomTalkCsv->at($EObjCsv->at($BaseId)['Data'])['MainOption'];
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Option: ". $CustomTalkCsv->at($EObjCsv->at($BaseId)['Data'])['MainOption'] ."";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 851900 && $EObjDataRaw < 899999) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "ArrayEventHandler";
+                                            $DataArray["ArrayEventHandler"] = $EObjCsv->at($BaseId)['Data'];
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "ArrayEventHandler";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 983000 && $EObjDataRaw < 1146996) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "Unknown";
+                                            $DataArray["Data"] = $EObjCsv->at($BaseId)['Data'];
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Object";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 1179600 && $EObjDataRaw < 1180000) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "ChocoboTaxiStand";
+                                            $DataArray["ChocoboTaxiStand"] = $PlaceNameCsv->at($ChocoboTaxiStand->at($EObjCsv->at($BaseId)['Data'])['PlaceName'])['Name']." (".$EObjCsv->at($BaseId)['Data'].")";
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "ChocoboTaxi Stand";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060581",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 1700000 && $EObjDataRaw < 1710000) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "Story";
+                                            $DataArray["Story"] = $EObjCsv->at($BaseId)['Data'];
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Story";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 1769480 && $EObjDataRaw < 1900000) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "Unknown";
+                                            $DataArray["Data"] = $EObjCsv->at($BaseId)['Data'];
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Object";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 1900540 && $EObjDataRaw < 1909999) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "InstanceContentGuide";
+                                            $ContentName = $InstanceContentArray[$InstanceContentGuideCsv->at($EObjCsv->at($BaseId)['Data'])['Instance']];
+                                            $DataArray["Data"] = $InstanceContentGuideCsv->at($EObjCsv->at($BaseId)['Data'])['Instance'];
+                                            $DataArray["ContentName"] = $ContentName;
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Instance Content Guide for -> $ContentName";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060416_hr1",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        if ($EObjDataRaw > 1966080 && $EObjDataRaw < 1969999) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "HousingAethernet";
+                                            $DataArray["Data"] = $EObjCsv->at($BaseId)['Data'];
+
+                                            
+                                            $DataArray["PlaceName"] = $PlaceNameCsv->at($HousingAethernetCsv->at($EObjCsv->at($BaseId)['Data'])['PlaceName'])['Name'];
+                                            $DataPlaceName = $PlaceNameCsv->at($HousingAethernetCsv->at($EObjCsv->at($BaseId)['Data'])['PlaceName'])['Name'];
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Instance Content Guide for -> $DataPlaceName";
+                                            $eobjArray[] = array(
+                                                "layer" => "eobj",
+                                                "type" => "Feature",
+                                                "iconUrl" => "060430",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "eobj",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
+                                        //skipped adventure for level
+                                        
+                                        if ($EObjDataRaw > 2818000 && $EObjDataRaw < 2819999) {
+                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $DataArray["SgbPath"] = $EobjData;
+                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            $DataArray["LinkRange"] = "AetherCurrent";
+                                            $DataArray["Data"] = $EObjCsv->at($BaseId)['Data'];
+                                            $DataWindowTextOut = makeDataTable($DataArray);
+                                            $PopupTextOut = "Aether Current";
+                                            $currentarray[] = array(
+                                                "layer" => "current",
+                                                "type" => "Feature",
+                                                "iconUrl" => "flyingpermission.uld-6-9-hr",
+                                                "properties" => array (
+                                                    "dataid" => "$InstanceID",
+                                                    "amenity" => "current",
+                                                    "name" => $EobjName,
+                                                    "type" => $Type,
+                                                    "popup" => $PopupTextOut,
+                                                    "datawindow" => $DataWindowTextOut,
+                                                    "tooltip" => array (
+                                                        "direction" => "",
+                                                        "text" => "",
+                                                    )
+                                                ),
+                                                "geometry" => array (
+                                                    "type" => "Point",
+                                                    "coordinates" => [
+                                                        $PX,
+                                                        $PY,
+                                                    ]
+                                                )
+                                            );
+                                        }
                                     }
                                     
                                     if ($AssetType === 49){
@@ -1225,7 +1683,6 @@ class ARRM3 implements ParseInterface
                     }
                 }
                 if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\")) { 
-                    var_dump($FolderRegion);
                     mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\", 0777, true); 
                 }
                 if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\")) { 
@@ -1337,6 +1794,26 @@ class ARRM3 implements ParseInterface
                 if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/maprange.geojson.js", 'w');
                     fwrite($js_file_Feature, $maprange_Json);
+                    fclose($js_file_Feature);
+
+                    
+                $currentOut["type"] = "FeatureCollection";
+                $currentOut["timestamp"] = time();
+                $currentOut["features"] = $currentarray;
+                $current_Json = "var currentGeo = ".json_encode($currentOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/current.geojson.js", 'w');
+                    fwrite($js_file_Feature, $current_Json);
+                    fclose($js_file_Feature);
+
+                    
+                $eobjOut["type"] = "FeatureCollection";
+                $eobjOut["timestamp"] = time();
+                $eobjOut["features"] = $eobjArray;
+                $eobj_Json = "var eobjGeo = ".json_encode($eobjOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/eobj.geojson.js", 'w');
+                    fwrite($js_file_Feature, $eobj_Json);
                     fclose($js_file_Feature);
 
 
@@ -1611,6 +2088,8 @@ class ARRM3 implements ParseInterface
                 <script src=\"json/poprange.geojson.js\"></script>
                 <script src=\"json/exitrange.geojson.js\"></script>
                 <script src=\"json/maprange.geojson.js\"></script>
+                <script src=\"json/current.geojson.js\"></script>
+                <script src=\"json/eobj.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -1701,7 +2180,7 @@ class ARRM3 implements ParseInterface
                 // markers and popups
                 var mapmarker = L.layerGroup().addTo(map);
                 var fate = L.layerGroup();
-                //var current = L.layerGroup();
+                var current = L.layerGroup();
                 //var vista = L.layerGroup();
                 //var bg = L.layerGroup();
                 //var fishingspot = L.layerGroup();
@@ -1714,7 +2193,7 @@ class ARRM3 implements ParseInterface
                 //var gathering = L.layerGroup();
                 var poprange = L.layerGroup();
                 var exitrange = L.layerGroup();
-                //var EventObject = L.layerGroup();
+                var eobj = L.layerGroup();
                 //var eventrange = L.layerGroup();
                 //var questmarker = L.layerGroup();
                 //var collisionbox = L.layerGroup();
@@ -1790,6 +2269,12 @@ class ARRM3 implements ParseInterface
                 var treasureGeoForm = L.geoJson(treasureGeo, geojsonOpts);
                 treasureCluster.addLayer(treasureGeoForm);
 
+                var eobjCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/060416_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var eobjGeoForm = L.geoJson(eobjGeo, geojsonOpts);
+                eobjCluster.addLayer(eobjGeoForm);
+
                 var poiLayers = L.layerGroup([
                     L.geoJson(mapmarkerGeo, geojsonOpts).addTo(mapmarker),
                     vfxCluster.addTo(Vfx),
@@ -1799,12 +2284,14 @@ class ARRM3 implements ParseInterface
                     enpcCluster.addTo(enpc),
                     envsetCluster.addTo(envset),
                     treasureCluster.addTo(treasure),
+                    eobjCluster.addTo(eobj),
                     L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
                     L.geoJson(exitrangeGeo, geojsonOpts).addTo(exitrange),
                     L.geoJson(maprangeGeo, geojsonOpts).addTo(maprange),
+                    L.geoJson(currentGeo, geojsonOpts).addTo(current),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -1870,7 +2357,7 @@ class ARRM3 implements ParseInterface
                     children: [
                     {label: 'Map Labels', layer: mapmarker},
                     {label: '<img src=../../../icons/063914.png width=18/>FATEs', layer: fate},
-                    //{label: '<img src=../../../icons/060653.png width=18/>Currents', layer: current},
+                    {label: '<img src=../../../icons/flyingpermission.uld-6-9-hr.png width=18/>Currents', layer: current},
                     //{label: '<img src=../../../icons/060465.png width=18/>Fishing Spots', layer: fishingspot},
                     //{label: '<img src=../../../icons/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
                     {label: '<img src=../../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
@@ -1901,7 +2388,7 @@ class ARRM3 implements ParseInterface
                     {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: poprange},
                     {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
                     {label: '<img src=../../../icons/configbackup_hr1_22.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: maprange},
-                    //{label: '<img src=../../../icons/060416.png width=18/><span title=\"Type = 45\">Event Objects</span>', layer: EventObject},
+                    {label: '<img src=../../../icons/060416_hr1.png width=18/><span title=\"Type = 45\">Event Objects</span>', layer: eobj},
                     //{label: '<img src=../../../icons/060423.png width=18/><span title=\"Type = 47\">Env Locations</span>', layer: EnvLocation},
                     //{label: '<img src=../../../icons/060496.png width=18/><span title=\"Type = 49\">Event Range</span>', layer: EventRange},
                     //{label: '<img src=../../../icons/060626.png width=18/><span title=\"Type = 57\">Collision Boxs</span>', layer: CollisionBox},
