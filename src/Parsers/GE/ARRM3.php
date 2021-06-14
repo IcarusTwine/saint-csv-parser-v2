@@ -122,22 +122,15 @@ class ARRM3 implements ParseInterface
     //    Rounding = 0x1,
     //    Stopped = 0x2,
     //}
-//
-    //public enum TransformState
-    //{
-    //    TransformStatePlay = 0x0,
-    //    TransformStateStop = 0x1,
-    //    TransformStateReplay = 0x2,
-    //    TransformStateReset = 0x3,
-    //}
-//
-    //public enum ColourState
-    //{
-    //    ColorStatePlay = 0x0,
-    //    ColorStateStop = 0x1,
-    //    ColorStateReplay = 0x2,
-    //    ColorStateReset = 0x3,
-    //}
+$TransformStateEnum[0] = "TransformStatePlay";
+$TransformStateEnum[1] = "TransformStateStop";
+$TransformStateEnum[2] = "TransformStateReplay";
+$TransformStateEnum[3] = "TransformStateReset";
+
+$ColorStateEnum[0] = "ColorStatePlay";
+$ColorStateEnum[1] = "ColorStateStop";
+$ColorStateEnum[2] = "ColorStateReplay";
+$ColorStateEnum[3] = "ColorStateReset";
 //
     $TriggerBoxShapeEnum[1] = "TriggerBoxShapeBox";
     $TriggerBoxShapeEnum[2] = "TriggerBoxShapeSphere";
@@ -354,6 +347,7 @@ class ARRM3 implements ParseInterface
         
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
+            //if ($id != 817) continue;
             if ($id != 814) continue;
             $linkedmapsarray = [];
             foreach($MapIndexArray[$id] as $key => $zonevalue){
@@ -574,8 +568,8 @@ class ARRM3 implements ParseInterface
                                         $DataArray["BoundCLientPathInstanceId"] = $Object->Object->BoundCLientPathInstanceId;
                                         $DataArray["_MovePathSettings"] = $Object->Object->_MovePathSettings;
                                         $DataArray["NotCreateNavimeshDoor"] = $Object->Object->NotCreateNavimeshDoor;
-                                        $DataArray["InitialTransformState"] = $Object->Object->InitialTransformState;
-                                        $DataArray["InitialColorState"] = $Object->Object->InitialColorState;
+                                        $DataArray["InitialTransformState"] = $TransformStateEnum[$Object->Object->InitialTransformState]." (".$Object->Object->InitialTransformState.")"; 
+                                        $DataArray["InitialColorState"] = $ColorStateEnum[$Object->Object->InitialColorState]." (".$Object->Object->InitialColorState.")";
                                         $DataArray["SGOverriddenMembers"] = $Object->Object->SGOverriddenMembers;
                                         $DataWindowTextOut = makeDataTable($DataArray);
                                         $SharedGroupArray[] = array(
@@ -698,6 +692,8 @@ class ARRM3 implements ParseInterface
                                         $xscale = $Object->Transform->Scale->x;
                                         $zscale = $Object->Transform->Scale->z;
                                         $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -710,8 +706,8 @@ class ARRM3 implements ParseInterface
                                         $DataArray["BoundInstanceId"] = $Object->Object->BoundInstanceId;
                                         $DataArray["Shape"] = $EnvSetShapeEnum[$Object->Object->Shape];
                                         switch ($Object->Object->Shape) {
-                                            case '1':
-                                            case '3':
+                                            case 1:
+                                            case 3:
                                                 $Radius = $xscale * $c2;
                                                 $PolyArray = array();
                                                 $Poly = "false";
@@ -719,11 +715,11 @@ class ARRM3 implements ParseInterface
                                                 $PX = $PX - 10;
                                                 $PY = $PY - 10;
                                             break;
-                                            case '2':
+                                            case 2:
                                                 $Radius = "false";
-                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
                                                 $Poly = "true";
-                                                $Type = "Box";
+                                                $Type = "polygon";
                                                 $PX = $PX - 10;
                                                 $PY = $PY - 10;
                                             break;
@@ -748,6 +744,8 @@ class ARRM3 implements ParseInterface
                                                 "popup" => $LayerName,
                                                 "radius" => $Radius,
                                                 "poly" => $Poly,
+                                                "options" => array (
+                                                ),
                                                 "polydata" => $PolyArray,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
@@ -863,6 +861,8 @@ class ARRM3 implements ParseInterface
                                         $xscale = $Object->Transform->Scale->x;
                                         $zscale = $Object->Transform->Scale->z;
                                         $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -871,20 +871,20 @@ class ARRM3 implements ParseInterface
                                         $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
 
                                         switch ($Object->Object->ParentData->TriggerBoxShape) {
-                                            case '1':
-                                            case '3':
+                                            case 1:
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "polygon";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                            case 2:
+                                            case 3:
                                                 $Radius = $xscale;
                                                 $PolyArray = array();
                                                 $Poly = "false";
                                                 $Type = "Circle";
-                                                $PX = $PX - 10;
-                                                $PY = $PY - 10;
-                                            break;
-                                            case '2':
-                                                $Radius = "false";
-                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
-                                                $Poly = "true";
-                                                $Type = "Box";
                                                 $PX = $PX - 10;
                                                 $PY = $PY - 10;
                                             break;
@@ -911,6 +911,8 @@ class ARRM3 implements ParseInterface
                                                 "popup" => $PopupText,
                                                 "radius" => $xscale,
                                                 "poly" => $Poly,
+                                                "options" => array (
+                                                ),
                                                 "polydata" => $PolyArray,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
@@ -937,6 +939,8 @@ class ARRM3 implements ParseInterface
                                         $xscale = $Object->Transform->Scale->x;
                                         $zscale = $Object->Transform->Scale->z;
                                         $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -947,28 +951,28 @@ class ARRM3 implements ParseInterface
                                         $PlaceNameSpot = $PlaceNameCsv->at($Object->Object->PlaceNameSpot)['Name'];
 
                                         switch ($Object->Object->ParentData->TriggerBoxShape) {
-                                            case '1':
-                                            case '3':
+                                            case 1:
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "polygon";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                            case 2:
+                                            case 3:
                                                 $Radius = $xscale;
                                                 $PolyArray = array();
                                                 $Poly = "false";
                                                 $Type = "Circle";
-                                                $PX = $PX - 10;
-                                                $PY = $PY - 10;
-                                            break;
-                                            case '2':
-                                                $Radius = "false";
-                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
-                                                $Poly = "true";
-                                                $Type = "Box";
                                                 $PX = $PX - 10;
                                                 $PY = $PY - 10;
                                             break;
                                             default:
-                                                $Radius = $xscale;
-                                                $PolyArray = array();
-                                                $Poly = "false";
-                                                $Type = "Circle";
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "polygon";
                                                 $PX = $PX - 10;
                                                 $PY = $PY - 10;
                                             break;
@@ -1005,6 +1009,8 @@ class ARRM3 implements ParseInterface
                                                 "popup" => $PopupText,
                                                 "radius" => $xscale,
                                                 "poly" => $Poly,
+                                                "options" => array (
+                                                ),
                                                 "polydata" => $PolyArray,
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
@@ -1769,13 +1775,15 @@ class ARRM3 implements ParseInterface
                                             $xscale = $Object->Transform->Scale->x;
                                             $zscale = $Object->Transform->Scale->z;
                                             $rotationy = $Object->Transform->Rotation->y;
+                                            $rotationx = $Object->Transform->Rotation->x;
+                                            $rotationz = $Object->Transform->Rotation->z;
                                             $DataArray["InstanceID"] = $InstanceID;
                                             $DataArray["LayerName"] = $LayerName;
                                             $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
     
                                             switch ($Object->Object->ParentData->TriggerBoxShape) {
-                                                case '1':
-                                                case '3':
+                                                case 2:
+                                                case 3:
                                                     $Radius = $xscale;
                                                     $PolyArray = array();
                                                     $Poly = "false";
@@ -1783,11 +1791,11 @@ class ARRM3 implements ParseInterface
                                                     $PX = $PX - 10;
                                                     $PY = $PY - 10;
                                                 break;
-                                                case '2':
+                                                case 1:
                                                     $Radius = "false";
-                                                    $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
+                                                    $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
                                                     $Poly = "true";
-                                                    $Type = "Box";
+                                                    $Type = "polygon";
                                                     $PX = $PX - 10;
                                                     $PY = $PY - 10;
                                                 break;
@@ -1817,6 +1825,8 @@ class ARRM3 implements ParseInterface
                                                     "poly" => $Poly,
                                                     "polydata" => $PolyArray,
                                                     "datawindow" => $DataWindowTextOut,
+                                                    "options" => array (
+                                                    ),
                                                     "tooltip" => array (
                                                         "direction" => "",
                                                         "text" => "",
@@ -1833,7 +1843,6 @@ class ARRM3 implements ParseInterface
 
                                         }
                                     }
-                                    //make collisionbox a polyline TODO
                                     if ($AssetType === 57){
                                         $x = $Object->Transform->Translation->x;
                                         $y = $Object->Transform->Translation->z;
@@ -1843,6 +1852,8 @@ class ARRM3 implements ParseInterface
                                         $xscale = $Object->Transform->Scale->x;
                                         $zscale = $Object->Transform->Scale->z;
                                         $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
                                         $PopupText = $AssetTypeEnums[$AssetType];
                                         $DataArray["InstanceID"] = $InstanceID;
                                         $DataArray["LayerName"] = $LayerName;
@@ -1850,14 +1861,30 @@ class ARRM3 implements ParseInterface
 
                                         $DataArray["PushPlayerOut"] = $Object->Object->PushPlayerOut;
                                         $DataArray["CollisionAssetPath"] = $Object->Object->CollisionAssetPath;
-                                        $DataWindowTextOut = makeDataTable($DataArray);
                                         $Radius = "false";
-                                        $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationy, $PX, $PY);
+                                        $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                        $DataArray["xscale"] = $xscale;
+                                        $DataArray["zscale"] = $zscale;
+                                        $DataArray["rotationy"] = $rotationy;
+                                        $DataArray["X Deg"] = rad2deg($rotationx);
+                                        $DataArray["Z Deg"] = rad2deg($rotationz);
+                                        $DataArray["Y Deg"] = rad2deg($rotationy);
+                                        $DataArray["Flipped?"] = "False";
+                                        if ((abs(rad2deg($rotationx)) > 90) || (abs(rad2deg($rotationz)) > 90)) {
+                                            $DataArray["Flipped?"] = "True";
+                                            $DataArray["X Deg rad"] = abs(rad2deg($rotationx));
+                                            $DataArray["Z Deg rad"] = abs(rad2deg($rotationz));
+                                            $DataArray["Y Deg rad"] = abs(rad2deg($rotationy));
+                                        }
+                                        $DataArray["PX"] = $PX;
+                                        $DataArray["PY"] = $PY;
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+            
                                         $Poly = "true";
-                                        $Type = "Box";
+                                        $Type = "polygon";
                                         $PX = $PX - 10;
                                         $PY = $PY - 10;
-                                        $treasurearray[] = array(
+                                        $collisionboxarray[] = array(
                                             "layer" => "collisionbox",
                                             "type" => "Feature",
                                             "iconUrl" => "",
@@ -1870,6 +1897,10 @@ class ARRM3 implements ParseInterface
                                                 "radius" => $Radius,
                                                 "poly" => $Poly,
                                                 "polydata" => $PolyArray,
+                                                "options" => array (
+                                                    "color" => "#ab1313",
+                                                    "dashArray" => "10 10",
+                                                ),
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
                                                     "direction" => "",
@@ -2369,8 +2400,9 @@ class ARRM3 implements ParseInterface
                             infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
                         })
                     }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
-                        } else if (feature.properties.type === \"Box\") {
-                            return new L.Polygon(feature.properties.polydata).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
+                        } else if (feature.properties.type === \"polygon\") {
+                            var polyoptions = feature.properties.options
+                            return new L.Polygon(feature.properties.polydata, polyoptions).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
                             $('.popoutinfobutton').click(function() {
                                 var win =  L.control.window(map,{
                                 title: null,

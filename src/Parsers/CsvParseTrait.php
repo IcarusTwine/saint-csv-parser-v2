@@ -813,8 +813,11 @@ trait CsvParseTrait
         $POSArray["PY"] = $NpcPixelZ; 
         return $POSArray;
     }
-    public function getLGBBoxTrigger($xscale, $zscale, $rotationy, $pixelX, $pixelY){
+    public function getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $pixelX, $pixelY){
         $r = $rotationy;
+        if ((abs(rad2deg($rotationx)) > 90) || (abs(rad2deg($rotationz)) > 90)) {
+            $r = $rotationy * -1;
+        }
         $pos1x = $pixelX - $xscale;
         $pos1y = $pixelY - $zscale;
         $pos2x = $pixelX + $xscale;
