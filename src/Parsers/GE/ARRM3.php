@@ -43,6 +43,17 @@ class ARRM3 implements ParseInterface
         $ContentFinderConditionCsv = $this->csv('ContentFinderCondition');
         $ExportedSGCsv = $this->csv('ExportedSG');
         $CustomTalkCsv = $this->csv('CustomTalk');
+        $FishingSpotCsv = $this->csv('FishingSpot');
+        $ItemCsv = $this->csv('Item');
+        $SpearfishingNotebookCsv = $this->csv('SpearfishingNotebook');
+        $SpearfishingItemCsv = $this->csv('SpearfishingItem');
+        $GatheringPointBaseCsv = $this->csv('GatheringPointBase');
+        $LevelCsv = $this->csv('Level');
+        $AdventureCsv = $this->csv('Adventure');
+        $EmoteCsv = $this->csv('Emote');
+        $TreasureSpotCsv = $this->csv('TreasureSpot');
+        $TreasureHuntRankCsv = $this->csv('TreasureHuntRank');
+
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
@@ -103,17 +114,17 @@ class ARRM3 implements ParseInterface
         $AssetTypeEnums[67] = "GimmickRange"; //none lgb
         $AssetTypeEnums[68] = "TargetMarker"; //yes
         $AssetTypeEnums[69] = "ChairMarker"; //yes
-        $AssetTypeEnums[70] = "ClickableRange"; 
-        $AssetTypeEnums[71] = "PrefetchRange"; 
-        $AssetTypeEnums[72] = "FateRange"; 
-        $AssetTypeEnums[73] = "PartyMember"; 
-        $AssetTypeEnums[74] = "KeepRange"; 
-        $AssetTypeEnums[75] = "SphereCastRange"; 
-        $AssetTypeEnums[76] = "IndoorObject"; 
-        $AssetTypeEnums[77] = "OutdoorObject"; 
-        $AssetTypeEnums[78] = "EditGroup"; 
-        $AssetTypeEnums[79] = "StableChocobo"; 
-        $AssetTypeEnums[80] = "MaxAssetType"; 
+        $AssetTypeEnums[70] = "ClickableRange"; //none lgb
+        $AssetTypeEnums[71] = "PrefetchRange"; // yes 
+        $AssetTypeEnums[72] = "FateRange"; //yes
+        $AssetTypeEnums[73] = "PartyMember"; // none lgb
+        $AssetTypeEnums[74] = "KeepRange"; // none lgb
+        $AssetTypeEnums[75] = "SphereCastRange"; // none lgb
+        $AssetTypeEnums[76] = "IndoorObject"; // none lgb
+        $AssetTypeEnums[77] = "OutdoorObject"; // none lgb
+        $AssetTypeEnums[78] = "EditGroup"; // none lgb
+        $AssetTypeEnums[79] = "StableChocobo"; // none lgb
+        $AssetTypeEnums[80] = "MaxAssetType"; // none lgb
         $DoorState[1] = "Auto";
         $DoorState[2] = "Open";
         $DoorState[3] = "Closed";
@@ -320,6 +331,93 @@ $ColorStateEnum[3] = "ColorStateReset";
             $FateArraySheet[$FateLocation] = $FateData;
             // example = var_dump($FateArraySheet["4520640"]["id"]);
         }
+
+        
+        foreach ($AdventureCsv->data as $id => $Adventure) {
+            $Zone = $LevelCsv->at($Adventure['Level'])['Map'];
+            $AdventureDataArray[$Zone][$id]["X"] = $LevelCsv->at($Adventure['Level'])['X'];
+            $AdventureDataArray[$Zone][$id]["Y"] = $LevelCsv->at($Adventure['Level'])['Z'];
+            $AdventureDataArray[$Zone][$id]["Name"] = $Adventure['Name'];
+            $AdventureDataArray[$Zone][$id]["Impression"] = $Adventure['Impression'];
+            $AdventureDataArray[$Zone][$id]["Description"] = $Adventure['Description'];
+            $AdventureDataArray[$Zone][$id]["MinLevel"] = $Adventure['MinLevel'];
+            $AdventureDataArray[$Zone][$id]["PlaceName"] = $PlaceNameCsv->at($Adventure['PlaceName'])['Name'];
+            $AdventureDataArray[$Zone][$id]["IconSmall"] = sprintf("%06d", $Adventure['Icon{List}']);
+            $AdventureDataArray[$Zone][$id]["IconBig"] = sprintf("%06d", $Adventure['Icon{Discovered}']);
+            $AdventureDataArray[$Zone][$id]["IconMissing"] = sprintf("%06d", $Adventure['Icon{Undiscovered}']);
+            $AdventureDataArray[$Zone][$id]["Emote"] = $EmoteCsv->at($Adventure['Emote'])['Name'];
+            $AdventureDataArray[$Zone][$id]["MinTime"] = $Adventure['MinTime'];
+            $AdventureDataArray[$Zone][$id]["MaxTime"] = $Adventure['MaxTime'];
+            $AdventureDataArray[$Zone][$id]["MaxLevel"] = $Adventure['MaxLevel'];
+            $AdventureDataArray[$Zone][$id]["IsInitial"] = $Adventure['IsInitial'];
+            $AdventureDataArray[$Zone][$id]["Level"] = $Adventure['Level'];
+        }
+        
+        foreach ($TreasureSpotCsv->data as $id => $TreasureSpot) {
+            $Zone = $LevelCsv->at($TreasureSpot['Level'])['Map'];
+            if (empty($Zone)) continue;
+            $newid = explode(".",$id);
+            $firstid = $newid[0];
+            $AdventureDataArray[$Zone][$id]["X"] = $LevelCsv->at($TreasureSpot['Level'])['X'];
+            $AdventureDataArray[$Zone][$id]["Y"] = $LevelCsv->at($TreasureSpot['Level'])['Z'];
+            $AdventureDataArray[$Zone][$id]["Name"] = $ItemCsv->at($TreasureHuntRankCsv->at($firstid)['ItemName'])['Name'];
+            $AdventureDataArray[$Zone][$id]["Icon"] = sprintf("%06d", $TreasureHuntRankCsv->at($firstid)['Icon']);
+        }
+
+        foreach ($FishingSpotCsv->data as $id => $fishingspot) {
+
+            //skip ones with no data
+            if (empty($fishingspot['PlaceName'])) {
+                continue;
+            }
+
+            $PlaceName = $fishingspot['PlaceName'];
+            $TerritoryType = $fishingspot['TerritoryType'];
+            $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
+            $X = $fishingspot['X'];
+            $Y = $fishingspot['Z'];
+            $GatheringLevel = $fishingspot['GatheringLevel'];
+            $Radius = $fishingspot['Radius'];
+            $FishingSpotArray[$TerritoryType][$PlaceName]['X'] = $X;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Y'] = $Y;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Radius'] = $Radius;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Level'] = $GatheringLevel;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Rare'] = "false";
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Type'] = "Fishing";
+            $Fish = [];
+            foreach(range(0,9) as $i) {
+                if (!empty($fishingspot["Item[$i]"])) {
+                    $Item = $ItemCsv->at($fishingspot["Item[$i]"])["Name"];
+                    $FishingSpotArray[$TerritoryType][$PlaceName]['Fish'][] = $Item;
+                }
+            }
+        }
+        foreach ($SpearfishingNotebookCsv->data as $id => $Spearfishing) {
+            $PlaceName = $Spearfishing['PlaceName'];
+            if (empty($PlaceName)) continue;
+            $TerritoryType = $Spearfishing['TerritoryType'];
+            $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
+            $X = $Spearfishing['X'];
+            $Y = $Spearfishing['Y'];
+            $GatheringLevel = $Spearfishing['GatheringLevel'];
+            $Radius = $Spearfishing['Radius'];
+            $Gpoint = $Spearfishing['GatheringPointBase'];
+            foreach(range(0,7) as $i) {
+                if (!empty($ItemCsv->at($SpearfishingItemCsv->at($GatheringPointBaseCsv->at($Gpoint)["Item[$i]"])['Item'])['Name'])) {
+                    $Item = $ItemCsv->at($SpearfishingItemCsv->at($GatheringPointBaseCsv->at($Gpoint)["Item[$i]"])['Item'])['Name'];
+                    $FishingSpotArray[$TerritoryType][$PlaceName]['Fish'][] = $Item;
+                }
+            }
+            $FishingSpotArray[$TerritoryType][$PlaceName]['X'] = $X;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Y'] = $Y;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Radius'] = $Radius;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Level'] = $GatheringLevel;
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Type'] = "Spearfishing";
+            $FishingSpotArray[$TerritoryType][$PlaceName]['Rare'] = "false";
+            if ($Spearfishing["IsShadowNode"] === "True"){
+                $FishingSpotArray[$TerritoryType][$PlaceName]['Rare'] = "true";
+            }
+        }
         $this->io->progressStart($TerritoryTypeCsv->total);
         $OutputArray = [];        // loop through data
         $teriName = "";
@@ -339,8 +437,78 @@ $ColorStateEnum[3] = "ColorStateReset";
         
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
+            $DataArray = [];
             //if ($id != 817) continue;
             if ($id != 814) continue;
+            $fishingspotarray = [];
+            if (!empty($FishingSpotArray[$id])) {
+                foreach($FishingSpotArray[$id] as $PN => $PNValue){
+                    $DataArray = [];
+                    $LocalAreaName = $PlaceNameCsv->at($PN)['Name'];
+                    if (empty($PNValue['Fish'])) continue;
+                    if (empty($PNValue['X'])) continue;
+                    $PxX = $PNValue['X'];
+                    $PxY = $PNValue['Y'];
+                    $Radius = $PNValue['Radius'] / 8;
+                    $Level = $PNValue['Level'];
+                    $Rare = $PNValue['Rare'];
+                    $TypeFish = $PNValue['Type'];
+                    $FishArray = $PNValue['Fish'];
+                    $ImageSwitch = "060445_hr1.png";
+                    switch ($Rare) {
+                        case "true":
+                            $ImageSwitch = "060930_hr1.png";
+                        break;
+                        case "false":
+                            $ImageSwitch = "060445_hr1.png";
+                        break;
+                    }
+                    $ListOfFish = [];
+                    foreach($FishArray as $FishKey => $FishName){
+                        $ListOfFish[] = $FishName;
+                    }
+                    $Fishout = implode("<br>", $ListOfFish);
+                    $DataArray["Fish"] = $Fishout;
+                    $PolyArray = array();
+                    $Poly = "false";
+                    $Type = "Circle";
+                    $PX = $PxX - 10;
+                    $PY = $PxY - 10;
+                    $PopupText = "$LocalAreaName<br>Lv.$Level<br>$TypeFish<br>---------------<br>$Fishout";
+                    $DataWindowTextOut = makeDataTable($DataArray);
+                    $fishingspotarray[] = array(
+                        "layer" => "fishingspot",
+                        "type" => "Feature",
+                        "iconUrl" => "$ImageSwitch",
+                        "properties" => array (
+                            "dataid" => "$LocalAreaName",
+                            "amenity" => "fishingspot",
+                            "name" => $LocalAreaName,
+                            "type" => $Type,
+                            "popup" => $PopupText,
+                            "radius" => $Radius,
+                            "poly" => $Poly,
+                            "options" => array (
+                                "color" => "green",
+                                "dashArray" => "10 10",
+                            ),
+                            "polydata" => $PolyArray,
+                            "datawindow" => $DataWindowTextOut,
+                            "tooltip" => array (
+                                "direction" => "",
+                                "text" => "",
+                            )
+                        ),
+                        "geometry" => array (
+                            "type" => "Point",
+                            "coordinates" => [
+                                $PX,
+                                $PY,
+                            ]
+                        )
+                    );
+                }
+            }
             $linkedmapsarray = [];
             foreach($MapIndexArray[$id] as $key => $zonevalue){
                 foreach($zonevalue as $key => $mapidtemp){
@@ -358,18 +526,85 @@ $ColorStateEnum[3] = "ColorStateReset";
                 foreach($zonevalue as $key => $mapidtemp){
                     $newMapId = $mapidtemp;
                 }
-                $FateArray = [];
+                $soundarray = [];
+                $enpcarray = [];
                 $lightarray = [];
                 $vfxarray = [];
-                $enpcarray = [];
+                $SharedGroupArray = [];
+                $FateArray = [];
                 $envsetarray = [];
                 $treasurearray = [];
+                $poprangearray = [];
                 $exitrangearray = [];
-                $eobjArray = [];
+                $maprangearray = [];
                 $currentarray = [];
+                $eobjArray = [];
+                $envlocationarray = [];
                 $eventrangearray = [];
                 $collisionboxarray = [];
+                $linevfxarray = [];
+                $clientpatharray = [];
+                $targetmarkerarray = [];
                 $chairarray = [];
+                $prefetchrangearray = [];
+                $adventurearray = [];
+                if (!empty($AdventureDataArray[$newMapId])) {
+                    foreach($AdventureDataArray[$newMapId] as $avent){
+                        $DataArray = [];
+                        $x = $avent["X"];
+                        $y = $avent["Y"];
+                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                        $PX = $XandY["PX"];
+                        $PY = $XandY["PY"];
+                        $Type = "Marker";
+                        $DataArray["InstanceID"] = $avent["Level"];
+                        $DataArray["Name"] = $avent['Name'];
+                        $DataArray["Impression"] = $avent['Impression'];
+                        $DataArray["Description"] = $avent['Description'];
+                        $DataArray["MinLevel"] = $avent['MinLevel'];
+                        $DataArray["PlaceName"] = $avent['PlaceName'];
+                        $DataArray["IconSmall"] = "<img src=\"../../icons/".$avent['IconSmall'].".png\"style=\"max-width: 350px;\"/>";
+                        $DataArray["IconBig"] = "<img src=\"../../icons/".$avent['IconBig'].".png\"style=\"max-width: 350px;\"/>";
+                        $DataArray["IconMissing"] = "<img src=\"../../icons/".$avent['IconMissing'].".png\"style=\"max-width: 350px;\"/>";
+                        $IconArray[] = $avent['IconSmall'];
+                        $IconArray[] = $avent['IconBig'];
+                        $IconArray[] = $avent['IconMissing'];
+                        $DataArray["Emote"] = $avent['Emote'];
+                        $DataArray["MinTime"] = $avent['MinTime'];
+                        $DataArray["MaxTime"] = $avent['MaxTime'];
+                        $DataArray["MaxLevel"] = $avent['MaxLevel'];
+                        $DataArray["IsInitial"] = $avent['IsInitial'];
+                        $PopupText = "".$avent['Name']."<br><img src=\"../../icons/".$avent['IconSmall'].".png\"style=\"max-width: 100px;\"/>";
+                        
+                        $DataWindowTextOut = makeDataTable($DataArray);
+                        $adventurearray[] = array(
+                            "layer" => "adventure",
+                            "type" => "Feature",
+                            "iconUrl" => "configcharacterchatlogringtone.uld-5-12-hr",
+                            "properties" => array (
+                                "dataid" => $avent["Level"],
+                                "amenity" => "adventure",
+                                "name" => $avent['Name'],
+                                "popup" => $PopupText,
+                                "type" => $Type,
+                                "datawindow" => $DataWindowTextOut,
+                                "tooltip" => array (
+                                    "direction" => "",
+                                    "text" => "",
+                                )
+                            ),
+                            "geometry" => array (
+                                "type" => "Point",
+                                "coordinates" => [
+                                    $PX,
+                                    $PY,
+                                ]
+                            )
+                        );
+
+                    }
+
+                }
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_bg.lgb.json",
@@ -1054,7 +1289,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                                 $SBIcon = sprintf("%06d", $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Icon']);
                                                 $IconArray[] = $SBIcon;
                                                 $SBTarget = $BNpcNameCsv->at($DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['ActionIcon'])['Singular'];
-                                                $SingleBattle = "<br><b>Battle Target: <i>$SBTarget</i></b><br>\n<img src=\"../icons/".$SBIcon.".png\" width=\"350\"></b><br>\n<br>\"$SBText\"";
+                                                $SingleBattle = "<br><b>Battle Target: <i>$SBTarget</i></b><br>\n<img src=\"../icons/".$SBIcon.".png\" max-width=\"350\"></b><br>\n<br>\"$SBText\"";
                                             }
                                             $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
                                             $PopupTextOut = "$QuestDynamic$EnemyType$description";
@@ -2137,6 +2372,162 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         );
                                     }
                                     
+                                    if ($AssetType === 71){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        switch ($Object->Object->ParentData->TriggerBoxShape) {
+                                            case 1:
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "polygon";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                            case 2:
+                                            case 3:
+                                                $Radius = $xscale;
+                                                $PolyArray = array();
+                                                $Poly = "false";
+                                                $Type = "Circle";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                            default:
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "polygon";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                        }
+                                        $DataArray["TriggerBoxShape"] = $TriggerBoxShapeEnum[$Object->Object->ParentData->TriggerBoxShape];
+                                        $DataArray["BoundInstanceId"] = $Object->Object->BoundInstanceId;
+                                        $PopupText = "Bound instance : ".$Object->Object->BoundInstanceId;
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $prefetchrangearray[] = array(
+                                            "layer" => "prefetchrange",
+                                            "type" => "Feature",
+                                            "iconUrl" => "",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "prefetchrange",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $PopupText,
+                                                "radius" => $xscale,
+                                                "poly" => $Poly,
+                                                "options" => array (
+                                                ),
+                                                "polydata" => $PolyArray,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+                                    
+                                    
+                                    if ($AssetType === 72){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+
+                                        switch ($Object->Object->ParentData->TriggerBoxShape) {
+                                            case 1:
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "polygon";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                            case 2:
+                                            case 3:
+                                                $Radius = $xscale;
+                                                $PolyArray = array();
+                                                $Poly = "false";
+                                                $Type = "Circle";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                            default:
+                                                $Radius = "false";
+                                                $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                                $Poly = "true";
+                                                $Type = "polygon";
+                                                $PX = $PX - 10;
+                                                $PY = $PY - 10;
+                                            break;
+                                        }
+                                        $DataArray["TriggerBoxShape"] = $TriggerBoxShapeEnum[$Object->Object->ParentData->TriggerBoxShape];
+                                        $PopupText = "";
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $FateArray[] = array(
+                                            "layer" => "fate",
+                                            "type" => "Feature",
+                                            "iconUrl" => "",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "fate",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $PopupText,
+                                                "radius" => $xscale,
+                                                "poly" => $Poly,
+                                                "options" => array (
+                                                    "color" => "#f57b42",
+                                                    "dashArray" => "10 10",
+                                                ),
+                                                "polydata" => $PolyArray,
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+                                    
                                 }
                             }                        
                         }
@@ -2339,6 +2730,58 @@ $ColorStateEnum[3] = "ColorStateReset";
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/chair.geojson.js", 'w');
                     fwrite($js_file_Feature, $chair_Json);
                     fclose($js_file_Feature);
+                    
+                $prefetchrangeOut["type"] = "FeatureCollection";
+                $prefetchrangeOut["timestamp"] = time();
+                $prefetchrangeOut["features"] = $prefetchrangearray;
+                $prefetchrange_Json = "var prefetchrangeGeo = ".json_encode($prefetchrangeOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/prefetchrange.geojson.js", 'w');
+                    fwrite($js_file_Feature, $prefetchrange_Json);
+                    fclose($js_file_Feature);
+                    
+                    
+                $fishingspotOut["type"] = "FeatureCollection";
+                $fishingspotOut["timestamp"] = time();
+                $fishingspotOut["features"] = $fishingspotarray;
+                $fishingspot_Json = "var fishingspotGeo = ".json_encode($fishingspotOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/fishingspot.geojson.js", 'w');
+                    fwrite($js_file_Feature, $fishingspot_Json);
+                    fclose($js_file_Feature);
+                    
+                $adventureOut["type"] = "FeatureCollection";
+                $adventureOut["timestamp"] = time();
+                $adventureOut["features"] = $adventurearray;
+                $adventure_Json = "var adventureGeo = ".json_encode($adventureOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/adventure.geojson.js", 'w');
+                    fwrite($js_file_Feature, $adventure_Json);
+                    fclose($js_file_Feature);
+
+                $soundcount = count($soundarray);
+                $enpccount = count($enpcarray);
+                $lightcount = count($lightarray);
+                $vfxcount = count($vfxarray);
+                $sharedgroupcount = count($SharedGroupArray);
+                $fatecount = count($FateArray);
+                $evnsetcount = count($envsetarray);
+                $treasurecount = count($treasurearray);
+                $poprangecount = count($poprangearray);
+                $exitrangecount = count($exitrangearray);
+                $maprangecount = count($maprangearray);
+                $currentcount = count($currentarray);
+                $eobjcount = count($eobjArray);
+                $envlocationcount = count($envlocationarray);
+                $eventrangecount = count($eventrangearray);
+                $collisionboxcount = count($collisionboxarray);
+                $linevfxcount = count($linevfxarray);
+                $clientpathcount = count($clientpatharray);
+                $targetmarkercount = count($targetmarkerarray);
+                $chaircount = count($chairarray);
+                $prefetchrangecount = count($prefetchrangearray);
+                $fishingspotcount = count($fishingspotarray);
+                $adventurecount = count($adventurearray);
                         
                 $featurearray = [];
                 $MapName = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name'];
@@ -2576,15 +3019,15 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <meta name=\"twitter:card\" content=\"summary_large_image\">
                 <meta name=\"twitter:image\" content=\"https://http://arealmremapped.com/images/embedlogo.png\">
                 <meta name=\"theme-color\" content=\"#000\">
-                <script src=\"../../../scripts/leaflet/leaflet-src.js\"></script>
+                <script src=\"../../scripts/leaflet/leaflet-src.js\"></script>
                 <!--<script src=\"../../scripts/leaflet/leaflet.map-hash.js\"></script> -->
-                <script src=\"../../../scripts/leaflet/leaflet-fullHash.js\"></script>
-                <script src=\"../../../assets/js/easy-button.js\"></script>
-                <script src=\"../../../assets/js/L.Control.Layers.Tree.js\"></script>
-                <script src=\"../../../assets/js/l.ellipse.js\"></script>
-                <script src=\"../../../assets/js/leaflet.rotatedMarker.js\"></script>
-                <script src=\"../../../assets/js/L.Control.Window.js\"></script>
-                <script src=\"../../../assets/js/leaflet.markercluster.js\"></script>
+                <script src=\"../../scripts/leaflet/leaflet-fullHash.js\"></script>
+                <script src=\"../../assets/js/easy-button.js\"></script>
+                <script src=\"../../assets/js/L.Control.Layers.Tree.js\"></script>
+                <script src=\"../../assets/js/l.ellipse.js\"></script>
+                <script src=\"../../assets/js/leaflet.rotatedMarker.js\"></script>
+                <script src=\"../../assets/js/L.Control.Window.js\"></script>
+                <script src=\"../../assets/js/leaflet.markercluster.js\"></script>
                 <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
                 
                 </head>
@@ -2619,8 +3062,11 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <script src=\"json/clientpath.geojson.js\"></script>
                 <script src=\"json/targetmarker.geojson.js\"></script>
                 <script src=\"json/chair.geojson.js\"></script>
+                <script src=\"json/prefetchrange.geojson.js\"></script>
+                <script src=\"json/fishingspot.geojson.js\"></script>
+                <script src=\"json/adventure.geojson.js\"></script>
                 <script type=\"module\">
-                import { mapswitch } from \"../../../htmllist.mjs\";
+                import { mapswitch } from \"../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
                 
                 var map = L.map('map', {
@@ -2644,7 +3090,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                         var lgbbutton = '<div class=\"lgbchangebutton\"></div>';
                         }
                         if (feature.properties.type === \"Circle\") {
-                            return new L.Circle(latlng, feature.properties.radius).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
+                            var polyoptions = feature.properties.options
+                            return new L.Circle(latlng, feature.properties.radius, polyoptions).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
                                 $('.popoutinfobutton').click(function() {
                                     var win =  L.control.window(map,{
                                     title: null,
@@ -2700,7 +3147,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                             return L.marker(latlng, {
                                 icon: L.divIcon({
                                     className: feature.properties.amenity,
-                                    html: '<img src=\"../../../icons/'+feature.iconUrl+'.png\" height=\"48\" width=\"48\"\">',
+                                    html: '<img src=\"../../icons/'+feature.iconUrl+'.png\" height=\"48\"\">',
                                     iconAnchor: [24, 24],
                                 })
                             }).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
@@ -2729,9 +3176,9 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var mapmarker = L.layerGroup().addTo(map);
                 var fate = L.layerGroup();
                 var current = L.layerGroup();
-                //var vista = L.layerGroup();
+                var adventure = L.layerGroup();
                 //var bg = L.layerGroup();
-                //var fishingspot = L.layerGroup();
+                var fishingspot = L.layerGroup();
                 //var EnvSpace = L.layerGroup();
                 var envset = L.layerGroup();
                 var sound = L.layerGroup();
@@ -2757,7 +3204,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var targetmarker = L.layerGroup();
                 //var Aetheryte = L.layerGroup();
                 var linevfx = L.layerGroup();
-                //var PrefetchRange = L.layerGroup();
+                var prefetchrange = L.layerGroup();
                 //var PositionMarker = L.layerGroup();
                 //var BattleNPC = L.layerGroup();
                 //var unknown = L.layerGroup();
@@ -2765,78 +3212,78 @@ $ColorStateEnum[3] = "ColorStateReset";
                 //var Treasure = L.layerGroup();
                 var treasure = L.layerGroup();
                 var fateCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var fateGeoForm = L.geoJson(fateGeo, geojsonOpts);
                 fateCluster.addLayer(fateGeoForm);
 
                 
                 var soundCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/configbackup_hr1_14.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/configbackup_hr1_14.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var soundGeoForm = L.geoJson(soundGeo, geojsonOpts);
                 soundCluster.addLayer(soundGeoForm);
                 
                 var enpcCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var enpcGeoForm = L.geoJson(enpcGeo, geojsonOpts);
                 enpcCluster.addLayer(enpcGeoForm);
 
                 
                 var vfxCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/contentsreplayplayer_hr1_04.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/contentsreplayplayer_hr1_04.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var vfxGeoForm = L.geoJson(vfxGeo, geojsonOpts);
                 vfxCluster.addLayer(vfxGeoForm);
 
                 
                 var LightCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/emjicon_hr1_19.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/emjicon_hr1_19.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var lightGeoForm = L.geoJson(lightsGeo, geojsonOpts);
                 LightCluster.addLayer(lightGeoForm);
 
                 
                 var SGCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/rhythmactionstatus.uld-1-2-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/rhythmactionstatus.uld-1-2-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var sgGeoForm = L.geoJson(sharedgroupGeo, geojsonOpts);
                 SGCluster.addLayer(sgGeoForm);
 
                 var envsetCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/beginnersroommainwindow.uld-3-14-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/beginnersroommainwindow.uld-3-14-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var envsetGeoForm = L.geoJson(envsetGeo, geojsonOpts);
                 envsetCluster.addLayer(envsetGeoForm);
                 
                 var treasureCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/060003_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060003_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var treasureGeoForm = L.geoJson(treasureGeo, geojsonOpts);
                 treasureCluster.addLayer(treasureGeoForm);
 
                 var eobjCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/060416_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060416_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var eobjGeoForm = L.geoJson(eobjGeo, geojsonOpts);
                 eobjCluster.addLayer(eobjGeoForm);
 
                 
                 var envlocationCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/exp_ps3.uld-1-2-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/exp_ps3.uld-1-2-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var envlocationGeoForm = L.geoJson(envlocationGeo, geojsonOpts);
                 envlocationCluster.addLayer(envlocationGeoForm);
                 
                 var targetmarkerCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/060561_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060561_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var targetmarkerGeoForm = L.geoJson(targetmarkerGeo, geojsonOpts);
                 targetmarkerCluster.addLayer(targetmarkerGeoForm);
                 
                 var chairCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/061511_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/061511_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var chairGeoForm = L.geoJson(chairGeo, geojsonOpts);
                 chairCluster.addLayer(chairGeoForm);
@@ -2863,9 +3310,12 @@ $ColorStateEnum[3] = "ColorStateReset";
                     L.geoJson(currentGeo, geojsonOpts).addTo(current),
                     L.geoJson(linevfxGeo, geojsonOpts).addTo(linevfx),
                     L.geoJson(clientpathGeo, geojsonOpts).addTo(clientpath),
+                    L.geoJson(prefetchrangeGeo, geojsonOpts).addTo(prefetchrange),
+                    L.geoJson(fishingspotGeo, geojsonOpts).addTo(fishingspot),
+                    L.geoJson(adventureGeo, geojsonOpts).addTo(adventure),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker,prefetchrange, fishingspot, adventure])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -2880,7 +3330,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                         var type = val.layer.feature.properties.amenity;
                         var searchicon = val.layer.feature.iconUrl;
                         var searchname = val.layer.feature.properties.name;
-                    return '<a href=\"#\ class=\"'+dataid+'\">'+text+'<b> - '+type+'</b><img src=../../../icons/'+searchicon+'.png width=18/>'+searchname+'</a>';
+                    return '<a href=\"#\ class=\"'+dataid+'\">'+text+'<b> - '+type+'</b><img src=../../icons/'+searchicon+'.png width=18/>'+searchname+'</a>';
                     }
                 })
                 map.addControl(searchControl);
@@ -2930,49 +3380,49 @@ $ColorStateEnum[3] = "ColorStateReset";
                     label: 'Layers',
                     children: [
                     {label: 'Map Labels', layer: mapmarker},
-                    {label: '<img src=../../../icons/063914.png width=18/>FATEs', layer: fate},
-                    {label: '<img src=../../../icons/flyingpermission.uld-6-9-hr.png width=18/>Currents', layer: current},
-                    //{label: '<img src=../../../icons/060465.png width=18/>Fishing Spots', layer: fishingspot},
-                    //{label: '<img src=../../../icons/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
-                    {label: '<img src=../../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
-                    //{label: '<img src=../../../icons/060004.png width=18/><span title=\"Type = 9\">Monsters</span>',
+                    {label: '<img src=../../icons/063914.png width=18/>FATEs', layer: fate},
+                    {label: '<img src=../../icons/flyingpermission.uld-6-9-hr.png width=18/>Currents', layer: current},
+                    {label: '<img src=../../icons/060929_hr1.png width=18/>Fishing Spots', layer: fishingspot},
+                    //{label: '<img src=../../icons/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
+                    {label: '<img src=../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
+                    //{label: '<img src=../../icons/060004.png width=18/><span title=\"Type = 9\">Monsters</span>',
                     //  selectAllCheckbox: true,
                     //  collapsed: true,
                     //  children: [
                     //  ]
                     //},
-                    //{label: '<img src=../../../assets/icons060438.png width=18/><span title=\"\">Gathering</span>', layer: gathering},
-                    //{label: '<img src=../../../assets/icons060429.png width=18/><span title=\"\">Vistas</span>', layer: vista},
-                    //{label: '<img src=../../../assets/icons060354.png width=18/><span title=\"\">Treasure</span>', layer: Treasure},
+                    //{label: '<img src=../../assets/icons060438.png width=18/><span title=\"\">Gathering</span>', layer: gathering},
+                    {label: '<img src=../../icons/configcharacterchatlogringtone.uld-5-12-hr.png width=18/><span title=\"\">Vistas</span>', layer: adventure},
+                    //{label: '<img src=../../assets/icons060354.png width=18/><span title=\"\">Treasure</span>', layer: Treasure},
                     ]
                 },
                 {
                     label: 'Dev Layers',
                     collapsed: true,
                     children: [
-                    {label: '<img src=../../../icons/emjicon_hr1_19.png width=18/><span title=\"Type = 3\">Lights</span>', layer: light},
-                    {label: '<img src=../../../icons/contentsreplayplayer_hr1_04.png width=18/><span title=\"Type = 4\">Vfx</span>', layer: Vfx},
-                    //{label: '<img src=../../../icons/060408.png width=18/><span title=\"Type = 5\">Position Marker</span>', layer: PositionMarker},
-                    {label: '<img src=../../../icons/rhythmactionstatus.uld-1-2-hr.png width=18/><span title=\"Type = 6\">SGB</span>', layer: sharedgroup},
-                    {label: '<img src=../../../icons/configbackup_hr1_14.png width=18/><span title=\"Type = 7\">Sounds</span>', layer: sound},
-                    //{label: '<img src=../../../icons/060422.png width=18/><span title=\"Type = 9\">Battle Npc</span>', layer: BattleNPC},
-                    //{label: '<img src=../../../icons/060430.png width=18/><span title=\"Type = 12\">Aetheryte</span>', layer: Aetheryte},
-                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 13\">Env Set</span>', layer: envset},
-                    {label: '<img src=../../../icons/060003_hr1.png width=18/><span title=\"Type = 16\">Treasure</span>', layer: treasure},
-                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: poprange},
-                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
-                    {label: '<img src=../../../icons/configbackup_hr1_22.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: maprange},
-                    {label: '<img src=../../../icons/060416_hr1.png width=18/><span title=\"Type = 45\">Event Objects</span>', layer: eobj},
-                    {label: '<img src=../../../icons/exp_ps3.uld-1-2-hr.png width=18/><span title=\"Type = 47\">Env Locations</span>', layer: envlocation},
-                    {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 49\">Event Range</span>', layer: eventrange},
-                    {label: '<img src=../../../icons/freecompanyactivity.uld-5-28-hr.png width=18/><span title=\"Type = 57\">Collision Boxs</span>', layer: collisionbox},
-                    {label: '<img src=../../../icons/060457_hr1.png width=18/><span title=\"Type = 59\">Exit Line VFX</span>', layer: linevfx},
-                    {label: '<img src=../../../icons/060358_hr1.png width=18/><span title=\"Type = 65\">Client Paths</span>', layer: clientpath},
-                    //{label: '<img src=../../../icons/060953.png width=18/><span title=\"Type = 66\">Server Paths</span>', layer: serverpath},
-                    //{label: '<img src=../../../icons/060496.png width=18/><span title=\"Type = 67\">Gimmick Range</span>', layer: GimmickRange},
-                    {label: '<img src=../../../icons/060561_hr1.png width=18/><span title=\"Type = 68\">Target Markers</span>', layer: targetmarker},
-                    {label: '<img src=../../../icons/061511_hr1.png width=18/><span title=\"Type = 69\">Chairs</span>', layer: chair},
-                    //{label: '<img src=../../../icons/060496.png width=18/><span title=\"Type = 71\">Prefetch Range</span>', layer: PrefetchRange},
+                    {label: '<img src=../../icons/emjicon_hr1_19.png width=18/><span title=\"Type = 3\">Lights</span>', layer: light},
+                    {label: '<img src=../../icons/contentsreplayplayer_hr1_04.png width=18/><span title=\"Type = 4\">Vfx</span>', layer: Vfx},
+                    //{label: '<img src=../../icons/060408.png width=18/><span title=\"Type = 5\">Position Marker</span>', layer: PositionMarker},
+                    {label: '<img src=../../icons/rhythmactionstatus.uld-1-2-hr.png width=18/><span title=\"Type = 6\">SGB</span>', layer: sharedgroup},
+                    {label: '<img src=../../icons/configbackup_hr1_14.png width=18/><span title=\"Type = 7\">Sounds</span>', layer: sound},
+                    //{label: '<img src=../../icons/060422.png width=18/><span title=\"Type = 9\">Battle Npc</span>', layer: BattleNPC},
+                    //{label: '<img src=../../icons/060430.png width=18/><span title=\"Type = 12\">Aetheryte</span>', layer: Aetheryte},
+                    {label: '<img src=../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 13\">Env Set</span>', layer: envset},
+                    {label: '<img src=../../icons/060003_hr1.png width=18/><span title=\"Type = 16\">Treasure</span>', layer: treasure},
+                    {label: '<img src=../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 40\">PopRange</span>', layer: poprange},
+                    {label: '<img src=../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 41\">Exit Range</span>', layer: exitrange},
+                    {label: '<img src=../../icons/configbackup_hr1_22.png width=18/><span title=\"Type = 43\">Map Range</span>', layer: maprange},
+                    {label: '<img src=../../icons/060416_hr1.png width=18/><span title=\"Type = 45\">Event Objects</span>', layer: eobj},
+                    {label: '<img src=../../icons/exp_ps3.uld-1-2-hr.png width=18/><span title=\"Type = 47\">Env Locations</span>', layer: envlocation},
+                    {label: '<img src=../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 49\">Event Range</span>', layer: eventrange},
+                    {label: '<img src=../../icons/freecompanyactivity.uld-5-28-hr.png width=18/><span title=\"Type = 57\">Collision Boxs</span>', layer: collisionbox},
+                    {label: '<img src=../../icons/060457_hr1.png width=18/><span title=\"Type = 59\">Exit Line VFX</span>', layer: linevfx},
+                    {label: '<img src=../../icons/060358_hr1.png width=18/><span title=\"Type = 65\">Client Paths</span>', layer: clientpath},
+                    //{label: '<img src=../../icons/060953.png width=18/><span title=\"Type = 66\">Server Paths</span>', layer: serverpath},
+                    //{label: '<img src=../../icons/060496.png width=18/><span title=\"Type = 67\">Gimmick Range</span>', layer: GimmickRange},
+                    {label: '<img src=../../icons/060561_hr1.png width=18/><span title=\"Type = 68\">Target Markers</span>', layer: targetmarker},
+                    {label: '<img src=../../icons/061511_hr1.png width=18/><span title=\"Type = 69\">Chairs</span>', layer: chair},
+                    {label: '<img src=../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 71\">Prefetch Range</span>', layer: prefetchrange},
                     ]
                 },
                 {
