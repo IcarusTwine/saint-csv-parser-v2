@@ -90,19 +90,19 @@ class ARRM3 implements ParseInterface
         $AssetTypeEnums[54] = "Movie"; //none lgb
         $AssetTypeEnums[55] = "ScenarioExd"; //none lgb
         $AssetTypeEnums[56] = "ScenarioText"; //none lgb
-        $AssetTypeEnums[57] = "CollisionBox"; 
-        $AssetTypeEnums[58] = "DoorRange"; 
-        $AssetTypeEnums[59] = "LineVFX"; 
-        $AssetTypeEnums[60] = "SoundEnvSet"; 
-        $AssetTypeEnums[61] = "CutActionTimeline"; 
-        $AssetTypeEnums[62] = "CharaScene"; 
-        $AssetTypeEnums[63] = "CutAction"; 
-        $AssetTypeEnums[64] = "EquipPreset"; 
-        $AssetTypeEnums[65] = "ClientPath"; 
-        $AssetTypeEnums[66] = "ServerPath"; 
-        $AssetTypeEnums[67] = "GimmickRange"; 
-        $AssetTypeEnums[68] = "TargetMarker"; 
-        $AssetTypeEnums[69] = "ChairMarker"; 
+        $AssetTypeEnums[57] = "CollisionBox"; //yes
+        $AssetTypeEnums[58] = "DoorRange"; //one, skipped
+        $AssetTypeEnums[59] = "LineVFX"; //yes
+        $AssetTypeEnums[60] = "SoundEnvSet"; //none lgb
+        $AssetTypeEnums[61] = "CutActionTimeline"; //none lgb
+        $AssetTypeEnums[62] = "CharaScene"; //none lgb
+        $AssetTypeEnums[63] = "CutAction"; //none lgb
+        $AssetTypeEnums[64] = "EquipPreset"; //none lgb
+        $AssetTypeEnums[65] = "ClientPath"; //yes
+        $AssetTypeEnums[66] = "ServerPath"; //none lgb
+        $AssetTypeEnums[67] = "GimmickRange"; //none lgb
+        $AssetTypeEnums[68] = "TargetMarker"; //yes
+        $AssetTypeEnums[69] = "ChairMarker"; //yes
         $AssetTypeEnums[70] = "ClickableRange"; 
         $AssetTypeEnums[71] = "PrefetchRange"; 
         $AssetTypeEnums[72] = "FateRange"; 
@@ -211,11 +211,8 @@ $ColorStateEnum[3] = "ColorStateReset";
     //    Type07 = 0x7,
     //}
 //
-    //public enum LineStyle
-    //{
-    //    Red = 0x1,
-    //    Blue = 0x2,
-    //}
+    $LineStyleEnum[1] = "Red";
+    $LineStyleEnum[2] = "Blue";
 //
     //public enum GimmickType
     //{
@@ -224,21 +221,16 @@ $ColorStateEnum[3] = "ColorStateReset";
     //    Room = 0x3,
     //}
 //
-    //public enum TargetMarkerType
-    //{
-    //    UiTarget = 0x0,
-    //    UiNameplate = 0x1,
-    //    LookAt = 0x2,
-    //    BodyDyn = 0x3,
-    //    Root = 0x4,
-    //}
+    $TargetMarkerTypeEnum[0] = "UiTarget";
+    $TargetMarkerTypeEnum[1] = "UiNameplate";
+    $TargetMarkerTypeEnum[2] = "LookAt";
+    $TargetMarkerTypeEnum[3] = "BodyDyn";
+    $TargetMarkerTypeEnum[4] = "Root";
+    $TargetMarkerTypeEnum[5] = "Unknown";
+    $TargetMarkerTypeEnum[6] = "Unknown";
 //
-    ////For ChairMarker
-    //public enum ObjectType
-    //{
-    //    ObjectChair = 0x0,
-    //    ObjectBed = 0x1,
-    //}
+    $ChairMarkerTypeEnum[0] = "ObjectChair";
+    $ChairMarkerTypeEnum[1] = "ObjectBed";
 //
     //public enum CharacterSize : byte
     //{
@@ -377,6 +369,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $currentarray = [];
                 $eventrangearray = [];
                 $collisionboxarray = [];
+                $chairarray = [];
                 $code = substr($Territory['Bg'], -4);
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_bg.lgb.json",
@@ -1814,7 +1807,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             $eventrangearray[] = array(
                                                 "layer" => "eventrange",
                                                 "type" => "Feature",
-                                                "iconUrl" => "",
+                                                "iconUrl" => "itemdetail.uld-4-3-hr",
                                                 "properties" => array (
                                                     "dataid" => "$InstanceID",
                                                     "amenity" => "eventrange",
@@ -1863,21 +1856,6 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         $DataArray["CollisionAssetPath"] = $Object->Object->CollisionAssetPath;
                                         $Radius = "false";
                                         $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
-                                        $DataArray["xscale"] = $xscale;
-                                        $DataArray["zscale"] = $zscale;
-                                        $DataArray["rotationy"] = $rotationy;
-                                        $DataArray["X Deg"] = rad2deg($rotationx);
-                                        $DataArray["Z Deg"] = rad2deg($rotationz);
-                                        $DataArray["Y Deg"] = rad2deg($rotationy);
-                                        $DataArray["Flipped?"] = "False";
-                                        if ((abs(rad2deg($rotationx)) > 90) || (abs(rad2deg($rotationz)) > 90)) {
-                                            $DataArray["Flipped?"] = "True";
-                                            $DataArray["X Deg rad"] = abs(rad2deg($rotationx));
-                                            $DataArray["Z Deg rad"] = abs(rad2deg($rotationz));
-                                            $DataArray["Y Deg rad"] = abs(rad2deg($rotationy));
-                                        }
-                                        $DataArray["PX"] = $PX;
-                                        $DataArray["PY"] = $PY;
                                         $DataWindowTextOut = makeDataTable($DataArray);
             
                                         $Poly = "true";
@@ -1887,7 +1865,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         $collisionboxarray[] = array(
                                             "layer" => "collisionbox",
                                             "type" => "Feature",
-                                            "iconUrl" => "",
+                                            "iconUrl" => "freecompanyactivity.uld-5-28-hr",
                                             "properties" => array (
                                                 "dataid" => "$InstanceID",
                                                 "amenity" => "collisionbox",
@@ -1900,6 +1878,248 @@ $ColorStateEnum[3] = "ColorStateReset";
                                                 "options" => array (
                                                     "color" => "#ab1313",
                                                     "dashArray" => "10 10",
+                                                ),
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+
+                                    
+                                    if ($AssetType === 59){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $PopupText = $AssetTypeEnums[$AssetType];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+                                        $LineColor = $LineStyleEnum[$Object->Object->LineStyle];
+                                        $DataArray["LineStyle"] = $LineStyleEnum[$Object->Object->LineStyle]." (".$Object->Object->LineStyle.")";
+                                        $Radius = "false";
+                                        $PolyArray = $this->getLGBBoxTrigger($xscale, $zscale, $rotationx, $rotationy, $rotationz, $PX, $PY);
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+            
+                                        $Poly = "true";
+                                        $Type = "polygon";
+                                        $PX = $PX - 10;
+                                        $PY = $PY - 10;
+                                        $linevfxarray[] = array(
+                                            "layer" => "linevfx",
+                                            "type" => "Feature",
+                                            "iconUrl" => "060457_hr1",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "linevfx",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $LayerName,
+                                                "radius" => $Radius,
+                                                "poly" => $Poly,
+                                                "polydata" => $PolyArray,
+                                                "options" => array (
+                                                    "color" => "$LineColor",
+                                                    "dashArray" => "2 2",
+                                                    "lineCap" => "round",
+                                                ),
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+                                    
+
+                                    
+                                    if ($AssetType === 65){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $xscale = $Object->Transform->Scale->x;
+                                        $zscale = $Object->Transform->Scale->z;
+                                        $rotationy = $Object->Transform->Rotation->y;
+                                        $rotationx = $Object->Transform->Rotation->x;
+                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $PopupText = $AssetTypeEnums[$AssetType];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+                                        $ControlPointsArray = $Object->Object->ParentData->ControlPointsArray;
+                                        $ControlPointsPathArray = array();
+                                        $ControlPointsPathString = "";
+                                        $colorarray = array("#2c04bf","#86d539","#470f81","#bda8b0","#a13f22","#1673d8","#878e48","#b5b815","#c74ff0","#b762fe","#d627dc","#e83c34","#00caa7","#78c425","#e2ba42","#22edf7","#21bff7","#83525e","#626051","#2f37a9","#04c532","#771e41","#8850fe","#ff884b","#c883c4","#11e04f","#0807d3","#185636","#8c985e","#cf17a1","#95e6a9","#fb7613","#89cafa","#39fbfc","#8dae55","#12c6b1","#055d70","#ecbb74","#671b06","#1b0298","#57e219","#d4e077","#a7281d","#b9246b","#35ed38","#94aec8","#a698d0","#dc54e5","#a57b29","#ba7dd4","#95aff1","#e43476","#114fc2","#2adfda","#7a9a59","#f24a7e");
+                                        $xsave = null;
+                                        $ysave = null;
+                                        $xsave = $x;
+                                        $ysave = $y;
+                                        foreach($ControlPointsArray as $ControlPoints) {
+                                            $PointX = $ControlPoints->Translation->x;
+                                            $PointY = $ControlPoints->Translation->z;
+                                            $PointXnew = $xsave + $PointX;
+                                            $PointYnew = $ysave + $PointY;
+                                            $PointPos = $this->GetLGBPosArrm($PointXnew, $PointYnew, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                            $newpolyarray = array(
+                                                [$PointPos["PY"],$PointPos["PX"]]
+                                            );
+                                            $ControlPointsPathArray = array_merge($ControlPointsPathArray, $newpolyarray);
+                                        }
+                                        $randomColour = array_rand($colorarray);
+                                        $Radius = "false";
+                                        $DataArray["Color"] = "<div style= \"background: $colorarray[$randomColour]; display: inline-block; margin-right: -4px; padding: 0px; width: 30px;   height:20px;\"> </div>    ( ".$colorarray[$randomColour]." )";
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $PopupText = "Color : <div style= \"background: ". $colorarray[$randomColour] ."; display: inline-block; width: 20px;   height: 20px;\"></div>";
+            
+                                        $Poly = "true";
+                                        $Type = "polyline";
+                                        $PX = $PX - 10;
+                                        $PY = $PY - 10;
+                                        $clientpatharray[] = array(
+                                            "layer" => "clientpath",
+                                            "type" => "Feature",
+                                            "iconUrl" => "060358_hr1",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "clientpath",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $PopupText,
+                                                "radius" => $Radius,
+                                                "poly" => $Poly,
+                                                "polydata" => $ControlPointsPathArray,
+                                                "options" => array (
+                                                    "color" => $colorarray[$randomColour]
+                                                ),
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+                                    
+                                    if ($AssetType === 68){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType]; 
+
+                                        $DataArray["NamePlateOffsetY"] = $Object->Object->NamePlateOffsetY; 
+                                        $DataArray["TargetMarkerType"] = $TargetMarkerTypeEnum[$Object->Object->TargetMakerType]." (".$Object->Object->TargetMakerType.")";
+
+                                        $Radius = "false";
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $PopupText = "";
+            
+                                        $PX = $PX - 10;
+                                        $PY = $PY - 10;
+                                        $targetmarkerarray[] = array(
+                                            "layer" => "targetmarker",
+                                            "type" => "Feature",
+                                            "iconUrl" => "060561_hr1",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "targetmarker",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $PopupText,
+                                                "radius" => $Radius,
+                                                "poly" => $Poly,
+                                                "polydata" => "",
+                                                "options" => array (
+                                                ),
+                                                "datawindow" => $DataWindowTextOut,
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                    }
+
+                                    
+                                    
+                                    if ($AssetType === 69){
+                                        $x = $Object->Transform->Translation->x;
+                                        $y = $Object->Transform->Translation->z;
+                                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                                        $PX = $XandY["PX"];
+                                        $PY = $XandY["PY"];
+                                        $DataArray["InstanceID"] = $InstanceID;
+                                        $DataArray["LayerName"] = $LayerName;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType]; 
+
+                                        $DataArray["LeftEnable"] = $Object->Object->LeftEnable; 
+                                        $DataArray["RightEnable"] = $Object->Object->RightEnable; 
+                                        $DataArray["BackEnable"] = $Object->Object->BackEnable; 
+                                        $DataArray["ObjectType"] = $ChairMarkerTypeEnum[$Object->Object->ObjectType]." (".$Object->Object->ObjectType.")";
+
+                                        $Radius = "false";
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $PopupText = $ChairMarkerTypeEnum[$Object->Object->ObjectType]." (".$Object->Object->ObjectType.")";;
+            
+                                        $PX = $PX - 10;
+                                        $PY = $PY - 10;
+                                        $chairarray[] = array(
+                                            "layer" => "chair",
+                                            "type" => "Feature",
+                                            "iconUrl" => "061511_hr1",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "chair",
+                                                "name" => $LayerName,
+                                                "type" => $Type,
+                                                "popup" => $PopupText,
+                                                "radius" => $Radius,
+                                                "poly" => $Poly,
+                                                "polydata" => "",
+                                                "options" => array (
                                                 ),
                                                 "datawindow" => $DataWindowTextOut,
                                                 "tooltip" => array (
@@ -2082,7 +2302,43 @@ $ColorStateEnum[3] = "ColorStateReset";
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/collisionbox.geojson.js", 'w');
                     fwrite($js_file_Feature, $collisionbox_Json);
                     fclose($js_file_Feature);
+                    
+                $linevfxOut["type"] = "FeatureCollection";
+                $linevfxOut["timestamp"] = time();
+                $linevfxOut["features"] = $linevfxarray;
+                $linevfx_Json = "var linevfxGeo = ".json_encode($linevfxOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/linevfx.geojson.js", 'w');
+                    fwrite($js_file_Feature, $linevfx_Json);
+                    fclose($js_file_Feature);
 
+                $clientpathOut["type"] = "FeatureCollection";
+                $clientpathOut["timestamp"] = time();
+                $clientpathOut["features"] = $clientpatharray;
+                $clientpath_Json = "var clientpathGeo = ".json_encode($clientpathOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/clientpath.geojson.js", 'w');
+                    fwrite($js_file_Feature, $clientpath_Json);
+                    fclose($js_file_Feature);
+                    
+                $targetmarkerOut["type"] = "FeatureCollection";
+                $targetmarkerOut["timestamp"] = time();
+                $targetmarkerOut["features"] = $targetmarkerarray;
+                $targetmarker_Json = "var targetmarkerGeo = ".json_encode($targetmarkerOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/targetmarker.geojson.js", 'w');
+                    fwrite($js_file_Feature, $targetmarker_Json);
+                    fclose($js_file_Feature);
+                    
+                    
+                $chairOut["type"] = "FeatureCollection";
+                $chairOut["timestamp"] = time();
+                $chairOut["features"] = $chairarray;
+                $chair_Json = "var chairGeo = ".json_encode($chairOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/chair.geojson.js", 'w');
+                    fwrite($js_file_Feature, $chair_Json);
+                    fclose($js_file_Feature);
                         
                 $featurearray = [];
                 $MapName = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name'];
@@ -2359,6 +2615,10 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <script src=\"json/envlocation.geojson.js\"></script>
                 <script src=\"json/eventrange.geojson.js\"></script>
                 <script src=\"json/collisionbox.geojson.js\"></script>
+                <script src=\"json/linevfx.geojson.js\"></script>
+                <script src=\"json/clientpath.geojson.js\"></script>
+                <script src=\"json/targetmarker.geojson.js\"></script>
+                <script src=\"json/chair.geojson.js\"></script>
                 <script type=\"module\">
                 import { mapswitch } from \"../../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -2418,7 +2678,25 @@ $ColorStateEnum[3] = "ColorStateReset";
                         infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
                     })
                 }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
-                } else if (feature.properties.type === \"Marker\") {
+                }else if (feature.properties.type === \"polyline\") {
+                    var polyoptions = feature.properties.options
+                    return new L.Polyline(feature.properties.polydata, polyoptions).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
+                    $('.popoutinfobutton').click(function() {
+                        var win =  L.control.window(map,{
+                        title: null,
+                        modal: false,
+                        position:'top'
+                    })
+                    .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
+                    .prompt({callback:function(){alert}})
+                    .show()
+                })
+            }).on('popupopen',function(){
+                $('.lgbchangebutton').click(function() {
+                infobox.getContainer().innerHTML = '<div class=\"lgbdatainfo\">'+feature.properties.lgbinfo+'</div>';
+            })
+        }).openPopup().bindTooltip(feature.properties.tooltip.text,{direction: feature.properties.tooltip.direction, permanent: true});
+        } else if (feature.properties.type === \"Marker\") {
                             return L.marker(latlng, {
                                 icon: L.divIcon({
                                     className: feature.properties.amenity,
@@ -2466,7 +2744,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var eobj = L.layerGroup();
                 //var questmarker = L.layerGroup();
                 var collisionbox = L.layerGroup();
-                //var ClientPath = L.layerGroup();
+                var clientpath = L.layerGroup();
                 //var serverpath = L.layerGroup();
                 //var CollisionBox = L.layerGroup();
                 var eventrange = L.layerGroup();
@@ -2474,11 +2752,11 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var light = L.layerGroup();
                 var sharedgroup = L.layerGroup();
                 //var GimmickRange = L.layerGroup();
-                //var ChairMarker = L.layerGroup();
+                var chair = L.layerGroup();
                 var envlocation = L.layerGroup();
-                //var TargetMarker = L.layerGroup();
+                var targetmarker = L.layerGroup();
                 //var Aetheryte = L.layerGroup();
-                //var LineVfx = L.layerGroup();
+                var linevfx = L.layerGroup();
                 //var PrefetchRange = L.layerGroup();
                 //var PositionMarker = L.layerGroup();
                 //var BattleNPC = L.layerGroup();
@@ -2550,6 +2828,18 @@ $ColorStateEnum[3] = "ColorStateReset";
                 }});
                 var envlocationGeoForm = L.geoJson(envlocationGeo, geojsonOpts);
                 envlocationCluster.addLayer(envlocationGeoForm);
+                
+                var targetmarkerCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/060561_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var targetmarkerGeoForm = L.geoJson(targetmarkerGeo, geojsonOpts);
+                targetmarkerCluster.addLayer(targetmarkerGeoForm);
+                
+                var chairCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../../icons/061511_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var chairGeoForm = L.geoJson(chairGeo, geojsonOpts);
+                chairCluster.addLayer(chairGeoForm);
 
 
                 var poiLayers = L.layerGroup([
@@ -2563,15 +2853,19 @@ $ColorStateEnum[3] = "ColorStateReset";
                     treasureCluster.addTo(treasure),
                     eobjCluster.addTo(eobj),
                     envlocationCluster.addTo(envlocation),
+                    targetmarkerCluster.addTo(targetmarker),
+                    chairCluster.addTo(chair),
                     L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
                     L.geoJson(exitrangeGeo, geojsonOpts).addTo(exitrange),
                     L.geoJson(maprangeGeo, geojsonOpts).addTo(maprange),
                     L.geoJson(eventrangeGeo, geojsonOpts).addTo(eventrange),
                     L.geoJson(collisionboxGeo, geojsonOpts).addTo(collisionbox),
                     L.geoJson(currentGeo, geojsonOpts).addTo(current),
+                    L.geoJson(linevfxGeo, geojsonOpts).addTo(linevfx),
+                    L.geoJson(clientpathGeo, geojsonOpts).addTo(clientpath),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -2672,12 +2966,12 @@ $ColorStateEnum[3] = "ColorStateReset";
                     {label: '<img src=../../../icons/exp_ps3.uld-1-2-hr.png width=18/><span title=\"Type = 47\">Env Locations</span>', layer: envlocation},
                     {label: '<img src=../../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 49\">Event Range</span>', layer: eventrange},
                     {label: '<img src=../../../icons/freecompanyactivity.uld-5-28-hr.png width=18/><span title=\"Type = 57\">Collision Boxs</span>', layer: collisionbox},
-                    //{label: '<img src=../../../icons/060457.png width=18/><span title=\"Type = 59\">Exit Line VFX</span>', layer: LineVfx},
-                    //{label: '<img src=../../../icons/060403.png width=18/><span title=\"Type = 65\">Client Paths</span>', layer: ClientPath},
+                    {label: '<img src=../../../icons/060457_hr1.png width=18/><span title=\"Type = 59\">Exit Line VFX</span>', layer: linevfx},
+                    {label: '<img src=../../../icons/060358_hr1.png width=18/><span title=\"Type = 65\">Client Paths</span>', layer: clientpath},
                     //{label: '<img src=../../../icons/060953.png width=18/><span title=\"Type = 66\">Server Paths</span>', layer: serverpath},
                     //{label: '<img src=../../../icons/060496.png width=18/><span title=\"Type = 67\">Gimmick Range</span>', layer: GimmickRange},
-                    //{label: '<img src=../../../icons/060561.png width=18/><span title=\"Type = 68\">Target Markers</span>', layer: TargetMarker},
-                    //{label: '<img src=../../../icons/060420.png width=18/><span title=\"Type = 69\">Chairs</span>', layer: ChairMarker},
+                    {label: '<img src=../../../icons/060561_hr1.png width=18/><span title=\"Type = 68\">Target Markers</span>', layer: targetmarker},
+                    {label: '<img src=../../../icons/061511_hr1.png width=18/><span title=\"Type = 69\">Chairs</span>', layer: chair},
                     //{label: '<img src=../../../icons/060496.png width=18/><span title=\"Type = 71\">Prefetch Range</span>', layer: PrefetchRange},
                     ]
                 },
