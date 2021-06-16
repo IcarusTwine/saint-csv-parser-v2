@@ -354,14 +354,15 @@ $ColorStateEnum[3] = "ColorStateReset";
         }
         
         foreach ($TreasureSpotCsv->data as $id => $TreasureSpot) {
-            $Zone = $LevelCsv->at($TreasureSpot['Level'])['Map'];
+            $Zone = $LevelCsv->at($TreasureSpot['Location'])['Map'];
             if (empty($Zone)) continue;
             $newid = explode(".",$id);
             $firstid = $newid[0];
-            $AdventureDataArray[$Zone][$id]["X"] = $LevelCsv->at($TreasureSpot['Level'])['X'];
-            $AdventureDataArray[$Zone][$id]["Y"] = $LevelCsv->at($TreasureSpot['Level'])['Z'];
-            $AdventureDataArray[$Zone][$id]["Name"] = $ItemCsv->at($TreasureHuntRankCsv->at($firstid)['ItemName'])['Name'];
-            $AdventureDataArray[$Zone][$id]["Icon"] = sprintf("%06d", $TreasureHuntRankCsv->at($firstid)['Icon']);
+            $TreasureDataArray[$Zone][$id]["X"] = $LevelCsv->at($TreasureSpot['Location'])['X'];
+            $TreasureDataArray[$Zone][$id]["Y"] = $LevelCsv->at($TreasureSpot['Location'])['Z'];
+            $TreasureDataArray[$Zone][$id]["Level"] = $TreasureSpot['Location'];
+            $TreasureDataArray[$Zone][$id]["Name"] = $ItemCsv->at($TreasureHuntRankCsv->at($firstid)['ItemName'])['Name'];
+            $TreasureDataArray[$Zone][$id]["Icon"] = sprintf("%06d", $TreasureHuntRankCsv->at($firstid)['Icon']);
         }
 
         foreach ($FishingSpotCsv->data as $id => $fishingspot) {
@@ -548,6 +549,76 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $chairarray = [];
                 $prefetchrangearray = [];
                 $adventurearray = [];
+                $treasurespotarray = [];
+                
+                if (!empty($TreasureDataArray[$newMapId])) {
+                    foreach($TreasureDataArray[$newMapId] as $Spot){
+                        $DataArray = [];
+                        $x = $Spot["X"];
+                        $y = $Spot["Y"];
+                        $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
+                        $PX = $XandY["PX"];
+                        $PY = $XandY["PY"];
+                        $Type = "Marker";
+                        $PopupText = "";
+                        $Item = $Spot["Name"];
+                        $Icon = $Spot["Icon"];
+                        $IconArray[] = $Icon;
+                        $DataArray["Level"] = $Spot["Level"];
+                        $DataWindowTextOut = makeDataTable($DataArray);
+                        $treasurespotarray[$Item]["Icon"] = $Icon;
+                        $treasurespotarray[$Item]["Data"][] = array(
+                            "layer" => "treasurespot",
+                            "type" => "Feature",
+                            "iconUrl" => "treasuremap.uld-1-1-hr",
+                            "properties" => array (
+                                "dataid" => $Spot["Level"],
+                                "amenity" => "treasurespotX",
+                                "name" => $Spot['Name'],
+                                "popup" => $PopupText,
+                                "type" => $Type,
+                                "datawindow" => $DataWindowTextOut,
+                                "tooltip" => array (
+                                    "direction" => "",
+                                    "text" => "",
+                                )
+                            ),
+                            "geometry" => array (
+                                "type" => "Point",
+                                "coordinates" => [
+                                    $PX,
+                                    $PY,
+                                ]
+                            )
+                        );
+                        $treasurespotarray[$Item]["Data"][] = array(
+                            "layer" => "treasurespot",
+                            "type" => "Feature",
+                            "iconUrl" => "treasuremap.uld-1-0-hr",
+                            "properties" => array (
+                                "dataid" => $Spot["Level"],
+                                "amenity" => "treasurespotB",
+                                "name" => $Spot['Name'],
+                                "popup" => $PopupText,
+                                "type" => $Type,
+                                "datawindow" => $DataWindowTextOut,
+                                "tooltip" => array (
+                                    "direction" => "",
+                                    "text" => "",
+                                )
+                            ),
+                            "geometry" => array (
+                                "type" => "Point",
+                                "coordinates" => [
+                                    $PX,
+                                    $PY,
+                                ]
+                            )
+                        );
+
+                    }
+
+                }
                 if (!empty($AdventureDataArray[$newMapId])) {
                     foreach($AdventureDataArray[$newMapId] as $avent){
                         $DataArray = [];
@@ -892,7 +963,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             "type" => "Feature",
                                             "iconUrl" => "mirageprismboxitemdetail.uld-3-23-hr",
                                             "properties" => array (
-                                                "dataid" => "$ENpcName",
+                                                "dataid" => "$ENpcBaseId",
                                                 "amenity" => "enpc",
                                                 "name" => $ENpcName,
                                                 "popup" => $LayerName,
@@ -2759,6 +2830,43 @@ $ColorStateEnum[3] = "ColorStateReset";
                     fwrite($js_file_Feature, $adventure_Json);
                     fclose($js_file_Feature);
 
+                $MapTypeArray = [];
+                $treasurespotfmtnames = [];
+                foreach ($treasurespotarray as $key => $value){
+                    $treasurespotOut = [];
+                    $MapType = $key;
+                    $MapTypeArray[] = $key;
+                    $Icon = $value["Icon"];
+                    $treasurespotOut["type"] = "FeatureCollection";
+                    $treasurespotOut["timestamp"] = time();
+                    $treasurespotOut["features"] = $value["Data"];
+                    $formatname = str_replace(" ","",$MapType);
+                    $treasurespotfmtnames[$formatname]["Icon"] = $Icon;
+                    $treasurespotfmtnames[$formatname]["Unformatname"] = $MapType;
+                    $treasurespot_Json = "var {$formatname}Geo = ".json_encode($treasurespotOut,JSON_PRETTY_PRINT)."";
+                    if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                        $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/$formatname.geojson.js", 'w');
+                        fwrite($js_file_Feature, $treasurespot_Json);
+                        fclose($js_file_Feature);
+                }
+                $Sriptimplode = "";
+                $varimplode = "";
+                $addtoimplode = "";
+                $layerimplode = "";
+                $vararray = [];
+                $ScriptArray = [];
+                $addtoarray = [];
+                $layerarray = [];
+                foreach($treasurespotfmtnames as $name => $Icon) {
+                    $ScriptArray[] = "<script src=\"json/$name.geojson.js\"></script>";
+                    $addtoarray[] = "L.geoJson({$name}Geo, geojsonOpts).addTo($name),";
+                    $vararray[] = "var $name = L.layerGroup();";
+                    $layerarray[] = "{label: '<img src=../../icons/". $Icon["Icon"] .".png width=18/>". $Icon["Unformatname"] ."', layer: $name},";
+                }
+                $Sriptimplode = implode("\n",$ScriptArray);
+                $addtoimplode = implode("\n",$addtoarray);
+                $varimplode = implode("\n",$vararray);
+                $layerimplode = implode("\n",$layerarray);
                 $soundcount = count($soundarray);
                 $enpccount = count($enpcarray);
                 $lightcount = count($lightarray);
@@ -3065,6 +3173,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <script src=\"json/prefetchrange.geojson.js\"></script>
                 <script src=\"json/fishingspot.geojson.js\"></script>
                 <script src=\"json/adventure.geojson.js\"></script>
+                $Sriptimplode
                 <script type=\"module\">
                 import { mapswitch } from \"../../htmllist.mjs\";
                 var baseurl = \"../../map/$mapurlcode/$MapCode - $MapNameUrl.png\";
@@ -3211,6 +3320,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 //var Monster = L.layerGroup();
                 //var Treasure = L.layerGroup();
                 var treasure = L.layerGroup();
+                $varimplode
                 var fateCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
                     return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
@@ -3302,6 +3412,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                     envlocationCluster.addTo(envlocation),
                     targetmarkerCluster.addTo(targetmarker),
                     chairCluster.addTo(chair),
+                    $addtoimplode
                     L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
                     L.geoJson(exitrangeGeo, geojsonOpts).addTo(exitrange),
                     L.geoJson(maprangeGeo, geojsonOpts).addTo(maprange),
@@ -3385,12 +3496,13 @@ $ColorStateEnum[3] = "ColorStateReset";
                     {label: '<img src=../../icons/060929_hr1.png width=18/>Fishing Spots', layer: fishingspot},
                     //{label: '<img src=../../icons/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
                     {label: '<img src=../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
-                    //{label: '<img src=../../icons/060004.png width=18/><span title=\"Type = 9\">Monsters</span>',
-                    //  selectAllCheckbox: true,
-                    //  collapsed: true,
-                    //  children: [
-                    //  ]
-                    //},
+                    {label: '<img src=../../icons/060913_hr1.png width=18/><span title=\"\">Treasure Spots</span>',
+                        selectAllCheckbox: true,
+                        collapsed: true,
+                        children: [
+                        $layerimplode
+                        ]
+                    },
                     //{label: '<img src=../../assets/icons060438.png width=18/><span title=\"\">Gathering</span>', layer: gathering},
                     {label: '<img src=../../icons/configcharacterchatlogringtone.uld-5-12-hr.png width=18/><span title=\"\">Vistas</span>', layer: adventure},
                     //{label: '<img src=../../assets/icons060354.png width=18/><span title=\"\">Treasure</span>', layer: Treasure},
@@ -3486,8 +3598,59 @@ $ColorStateEnum[3] = "ColorStateReset";
                     this._div.innerHTML = '';
                 };
                 infobox.addTo(map);
-
+                map.on('layeradd', function (a) { 
+                   $('.treasurespotB img').attr('height', 100).css('marginLeft', -50).css('marginTop', -50);
+                   $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                })
                 
+                map.on('zoomend', function(e) {
+                    if ($('.treasurespotB img').length > 0) {
+                        if (map.getZoom() === 1)  {     
+                            map.on('layeradd', function (a) {
+                                $('.treasurespotB img').css('height', 400).css('marginLeft', -200).css('marginTop', -200);
+                                $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                            })
+                            $('.treasurespotB img').css('height', 400).css('marginLeft', -200).css('marginTop', -200);
+                            $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                        } 
+                        if (map.getZoom() === 0)  {     
+                            map.on('layeradd', function (a) {
+                                $('.treasurespotB img').css('height', 200).css('marginLeft', -100).css('marginTop', -100);
+                                $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                            })
+                            $('.treasurespotB img').css('height', 200).css('marginLeft', -100).css('marginTop', -100);
+                            $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                        }
+                        if (map.getZoom() === -1)  {    
+                            map.on('layeradd', function (a) { 
+                                $('.treasurespotB img').css('height', 100).css('marginLeft', -50).css('marginTop', -50);
+                                $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                            })
+                            $('.treasurespotB img').css('height', 100).css('marginLeft', -50).css('marginTop', -50);
+                            $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                        }
+                    }
+                    else {
+                        if (map.getZoom() === 1)  {     
+                            map.on('layeradd', function (a) {
+                                $('.treasurespotB img').css('height', 400).css('marginLeft', -200).css('marginTop', -200);
+                                $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                            })
+                        } 
+                        if (map.getZoom() === 0)  {     
+                            map.on('layeradd', function (a) {
+                                $('.treasurespotB img').css('height', 200).css('marginLeft', -100).css('marginTop', -100);
+                                $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                            })
+                        }
+                        if (map.getZoom() === -1)  {    
+                            map.on('layeradd', function (a) { 
+                                $('.treasurespotB img').css('height', 100).css('marginLeft', -50).css('marginTop', -50);
+                                $('.treasurespotX img').css('marginLeft', -14).css('marginTop', -20);
+                            })
+                        }
+                    }
+                })
                 //left map switcher
                 var mapswitcher = L.control({position:'topleft'});
                 mapswitcher.onAdd = function (map) {
