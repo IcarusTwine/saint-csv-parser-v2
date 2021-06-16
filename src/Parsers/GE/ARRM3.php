@@ -53,6 +53,10 @@ class ARRM3 implements ParseInterface
         $EmoteCsv = $this->csv('Emote');
         $TreasureSpotCsv = $this->csv('TreasureSpot');
         $TreasureHuntRankCsv = $this->csv('TreasureHuntRank');
+        $WeatherRateCsv = $this->csv('WeatherRate');
+        $WeatherCsv = $this->csv('Weather');
+        $InstanceContentGuideCsv = $this->csv('InstanceContentGuide');
+        $WarpCsv = $this->csv('Warp');
 
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
@@ -310,6 +314,112 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $MapIndexArray[$MapTerri][$Index][$MapId] = $id;
             }
         }
+        //produce mapswitch
+        foreach ($MapCsv->data as $id => $Map) {
+            $Sort = $Map['Hierarchy'];
+            //this is the top layers
+            if ($Sort === "2") {
+                $Region = $Map["PlaceName{Region}"];
+                foreach(range(0,99) as $i){
+                    $mmcode = $Map["MapMarkerRange"].".".$i;
+                    if (empty($MapMarkerCsv->at($mmcode)['PlaceName{Subtext}'])) break;
+                    $SubRegionCode = $MapMarkerCsv->at($mmcode)['PlaceName{Subtext}'];
+                    $MapArrayH[$SubRegionCode]["RegionCode"] = $Region;
+                }
+            }
+        }
+        $MapArrayH[2405]["RegionCode"] = "2405";
+        foreach ($MapCsv->data as $id => $Map) {
+            $Sort = $Map['Hierarchy'];
+            $Region = $Map["PlaceName{Region}"];
+            if (empty($Region)) continue;
+            //this is the top layers
+            if ($Sort === "1") {
+                $MapArrayH[$Region]["Zones"][] = $Map['TerritoryType'];
+            }
+        }        
+        foreach ($MapArrayH as $id => $Map) {
+            if (!empty($Map['RegionCode'])){
+                $PlaceName = $PlaceNameCsv->at($Map['RegionCode'])['Name'];
+            } else {
+                $PlaceName = $PlaceNameCsv->at($id)['Name'];
+            }
+            if (!empty($Map["Zones"])){
+                $newid = $PlaceNameCsv->at($id)['Name'];
+                $SecondMapArray[$PlaceName][$newid][] = $Map["Zones"];
+            }
+        }
+        $maplinkshomepage = "";
+        foreach($SecondMapArray as $Region => $SubRegion){
+            if ($Region === "???"){
+                $Region = "Unknown";
+            }
+            $maplinkshomepage .= "<h2 id=\"$Region\" class=\"w3-center\"><b>".strtoupper($Region)."</b></h2>\n";
+            $maplinkshomepage .= "<div class=\"w3-row-padding \">\n";
+            $SubRegionArray = [];
+            foreach($SubRegion as $Name => $Value){
+                if ($Name === "???"){
+                    $Name = "Unknown";
+                }
+                $maplinkshomepage .= "<div class=\"w3-col l3 m6 w3-margin-bottom\">\n";
+                $maplinkshomepage .= "<div class=\"w3-center\">\n";
+                $maplinkshomepage .= "<h3><b>$Name</b></h3>\n";
+                $maplinkshomepage .= "</div>\n";
+                $maplinkshomepage .= "<img src=\"images/{$Name}Small.jpg\" alt=\"{$Name}\" style=\"width:100%\">\n";
+              $maplinkshomepage .= "<div class=\"w3-dropdown-hover w3-block\">\n";
+                $maplinkshomepage .= "<button class=\"w3-button w3-light-grey w3-block\">Select a zone</button>\n";
+                $maplinkshomepage .= "<div class=\"w3-dropdown-content w3-bar-block w3-border\">\n";
+                $zonedmapsarray = [];
+                foreach($Value as $urg => $zonezonearray){
+                    $zonezonearray = array_unique($zonezonearray);
+                    foreach($zonezonearray as $Zone){
+                        if (empty($MapIndexArray[$Zone])) continue;
+                        if (!empty($PatchNumber[$Zone])){
+                            $PatchCheck = $PatchNumber[$Zone];
+                            if ($PatchCheck == $Patch) {
+                                $maplinkshomepage .= "<div class=\"w3-display-topright w3-tag w3-small w3-red w3-round-xlarge\" style=\"transform:rotate(30deg)\">\n";
+                                $maplinkshomepage .= "<p>NEW</p>\n";
+                                $maplinkshomepage .= "</div>\n";
+                            }
+                        }
+                        $newMapId = $TerritoryTypeCsv->at($Zone)['Map'];
+                        $UrlSub = "";
+                        if (!empty($PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name'])){
+                            $UrlSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
+                        }
+                        $MapNameUrl = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub";
+                        $FolderNameUrl = str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
+                        $maplinkshomepage .= "<a href=\"$Region/$FolderNameUrl/$FolderNameUrl.html\" class=\"w3-bar-item w3-button\">$MapNameUrl</a>\n";
+                        $zonedmapsarray[] = array(
+                            "label" => "<a href=\"../../$Region/$FolderNameUrl/$FolderNameUrl.html\">$FolderNameUrl</a>"
+                        );
+                    }
+                }
+                $maplinkshomepage .= "</div>\n";
+                $maplinkshomepage .= "</div>\n";
+                $maplinkshomepage .= "</p>\n";
+                $maplinkshomepage .= "</div>\n";
+                $SubRegionArray[] = array(
+                    "label" => "$Name",
+                    "collapsed" => true,
+                    "children" => $zonedmapsarray,
+                );
+            }
+            $maplinkshomepage .= "</div>\n";
+            $maplinkshomepage .= "</div>\n";
+            $maplinkshomepage .= "<div class=\"w3-content w3-container w3-padding-64\" id=\"\">\n";
+            
+            $HTMLZones[] = array(
+                "label" => "$Region",
+                "collapsed" => true,
+                "children" => $SubRegionArray
+            );
+        }
+        $mapswitch_Json = "export let mapswitch = ".json_encode($HTMLZones,JSON_PRETTY_PRINT)."";
+        $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/htmllist.mjs", 'w');
+        fwrite($js_file_Feature, $mapswitch_Json);
+        fclose($js_file_Feature);
+
         $DynamicFateArray = [];
         foreach ($DynamicEventCsv->data as $id => $DynamicFateData) {
             $DynamicFateLocation = $DynamicFateData['LGBEventObject'];
@@ -331,6 +441,7 @@ $ColorStateEnum[3] = "ColorStateReset";
             $FateArraySheet[$FateLocation] = $FateData;
             // example = var_dump($FateArraySheet["4520640"]["id"]);
         }
+        
 
         
         foreach ($AdventureCsv->data as $id => $Adventure) {
@@ -438,9 +549,8 @@ $ColorStateEnum[3] = "ColorStateReset";
         
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
+            $this->io->progressAdvance();
             $DataArray = [];
-            //if ($id != 817) continue;
-            if ($id != 814) continue;
             $fishingspotarray = [];
             if (!empty($FishingSpotArray[$id])) {
                 foreach($FishingSpotArray[$id] as $PN => $PNValue){
@@ -511,6 +621,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 }
             }
             $linkedmapsarray = [];
+            if (empty($MapIndexArray[$id])) continue;
             foreach($MapIndexArray[$id] as $key => $zonevalue){
                 foreach($zonevalue as $key => $mapidtemp){
                     $newMapId = $mapidtemp;
@@ -527,6 +638,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 foreach($zonevalue as $key => $mapidtemp){
                     $newMapId = $mapidtemp;
                 }
+                
                 $soundarray = [];
                 $enpcarray = [];
                 $lightarray = [];
@@ -550,6 +662,17 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $prefetchrangearray = [];
                 $adventurearray = [];
                 $treasurespotarray = [];
+                $WeatherArray = [];
+                $WeatherRate = $Territory['WeatherRate'];
+                foreach(range(0,7) as $w) {
+                    if (empty($WeatherRateCsv->at($WeatherRate)["Weather[$w]"])) continue;
+                    $WeatherType = $WeatherCsv->at($WeatherRateCsv->at($WeatherRate)["Weather[$w]"])['Name'];
+                    $WeatherIcon = sprintf("%06d", $WeatherCsv->at($WeatherRateCsv->at($WeatherRate)["Weather[$w]"])['Icon']);
+                    $IconArray[] = $WeatherIcon;
+                    $Rate = $WeatherRateCsv->at($WeatherRate)["Rate[$w]"];
+                    $WeatherArray[] = "<img src=../../icons/". $WeatherIcon .".png width=32/>". $WeatherType. " ($Rate%)";
+                }
+                $WeatherOutput = implode("<br>",$WeatherArray);
                 
                 if (!empty($TreasureDataArray[$newMapId])) {
                     foreach($TreasureDataArray[$newMapId] as $Spot){
@@ -677,6 +800,17 @@ $ColorStateEnum[3] = "ColorStateReset";
 
                 }
                 $code = substr($Territory['Bg'], -4);
+                $mapCode = $Territory['Name'];
+                $mapLink = "Map ID : ".$newMapId;
+                $SizeFactorMap = $MapCsv->at($newMapId)['SizeFactor'];
+                $OffsetXMap = $MapCsv->at($newMapId)['Offset{X}'];
+                $OffsetYMap = $MapCsv->at($newMapId)['Offset{Y}'];
+                $bgPath = $Territory['Bg'];
+                $fixedTime = $Territory['FixedTime'];
+                $MountBool = $Territory['Mount'];
+                $StealthBool = $Territory['Stealth'];
+                $SearchBool = $Territory['PCSearch'];
+                $PVPZoneBool = $Territory['IsPvpZone'];
                 $JSONFiles = array(
                     "cache/{$PatchID}/lgb/{$code}_bg.lgb.json",
                     "cache/{$PatchID}/lgb/{$code}_planlive.lgb.json",
@@ -961,7 +1095,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         $enpcarray[] = array(
                                             "layer" => "enpc",
                                             "type" => "Feature",
-                                            "iconUrl" => "mirageprismboxitemdetail.uld-3-23-hr",
+                                            "iconUrl" => "lfgdetail.uld-8-17-hr",
                                             "properties" => array (
                                                 "dataid" => "$ENpcBaseId",
                                                 "amenity" => "enpc",
@@ -1418,7 +1552,9 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             $DataArray["LayerName"] = $LayerName;
                                             $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
-                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            if (!empty($EObjCsv->at($BaseId)['PopType'])) {
+                                                $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                            }
                                             $DataArray["LinkRange"] = "None";
                                             $DataWindowTextOut = makeDataTable($DataArray);
                                             $PopupTextOut = "";
@@ -1778,15 +1914,19 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         }
                                         if ($EObjDataRaw > 1900540 && $EObjDataRaw < 1909999) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                            $ContentName = "";
                                             $DataArray["InstanceID"] = $InstanceID;
                                             $DataArray["LayerName"] = $LayerName;
                                             $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "InstanceContentGuide";
-                                            $ContentName = $InstanceContentArray[$InstanceContentGuideCsv->at($EObjCsv->at($BaseId)['Data'])['Instance']];
+                                            if (!empty($InstanceContentArray[$InstanceContentGuideCsv->at($EObjCsv->at($BaseId)['Data'])['Instance']])){
+                                                //TODO FIX FIX !
+                                                $ContentName = $InstanceContentArray[$InstanceContentGuideCsv->at($EObjCsv->at($BaseId)['Data'])['Instance']];
+                                                $DataArray["ContentName"] = $ContentName;
+                                            }
                                             $DataArray["Data"] = $InstanceContentGuideCsv->at($EObjCsv->at($BaseId)['Data'])['Instance'];
-                                            $DataArray["ContentName"] = $ContentName;
                                             $DataWindowTextOut = makeDataTable($DataArray);
                                             $PopupTextOut = "Instance Content Guide for -> $ContentName";
                                             $eobjArray[] = array(
@@ -2873,7 +3013,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $vfxcount = count($vfxarray);
                 $sharedgroupcount = count($SharedGroupArray);
                 $fatecount = count($FateArray);
-                $evnsetcount = count($envsetarray);
+                $envsetcount = count($envsetarray);
                 $treasurecount = count($treasurearray);
                 $poprangecount = count($poprangearray);
                 $exitrangecount = count($exitrangearray);
@@ -3143,7 +3283,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                 
                 <div class=\"w3-bar header-shadow\">
                 <a href=\"../../index.html\" class=\"w3-bar-item w3-button w3-mobile w3-green\">Home</a>
-                <button onclick=\"document.getElementById('id01').style.display='block'\" class=\"w3-button w3-black\">Open Modal</button>
+                <button onclick=\"document.getElementById('arrmabout').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;\"><img src=\"../../assets/linkshell.uld-10-3-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
+                <button onclick=\"document.getElementById('mapabout').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;\"><img src=\"../../assets/linkshell.uld-10-6-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
                 <span class=\"w3-bar-item w3-wide\"><b>$MapNameUrl</b></span>
                 </div>
                 
@@ -3336,7 +3477,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 soundCluster.addLayer(soundGeoForm);
                 
                 var enpcCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/lfgdetail.uld-8-17-hr.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var enpcGeoForm = L.geoJson(enpcGeo, geojsonOpts);
                 enpcCluster.addLayer(enpcGeoForm);
@@ -3455,7 +3596,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                 function isInteger(n) {
                     return n % 1 === 0;
                 }
-                var mapSize = 1024;
+                //possibly need to fix mapsize:
+                var mapSize = 4112;
                 function convertXY(x, y) {
                     var modifier = mapSize / 41;
                     var xdec = isInteger(x);
@@ -3496,7 +3638,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                     {label: '<img src=../../icons/flyingpermission.uld-6-9-hr.png width=18/>Currents', layer: current},
                     {label: '<img src=../../icons/060929_hr1.png width=18/>Fishing Spots', layer: fishingspot},
                     //{label: '<img src=../../icons/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
-                    {label: '<img src=../../icons/mirageprismboxitemdetail.uld-3-23-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
+                    {label: '<img src=../../icons/lfgdetail.uld-8-17-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
                     {label: '<img src=../../icons/060913_hr1.png width=18/><span title=\"\">Treasure Spots</span>',
                         selectAllCheckbox: true,
                         collapsed: true,
@@ -3536,50 +3678,6 @@ $ColorStateEnum[3] = "ColorStateReset";
                     {label: '<img src=../../icons/060561_hr1.png width=18/><span title=\"Type = 68\">Target Markers</span>', layer: targetmarker},
                     {label: '<img src=../../icons/061511_hr1.png width=18/><span title=\"Type = 69\">Chairs</span>', layer: chair},
                     {label: '<img src=../../icons/itemdetail.uld-4-3-hr.png width=18/><span title=\"Type = 71\">Prefetch Range</span>', layer: prefetchrange},
-                    ]
-                },
-                {
-                    label: 'Zone Information',
-                    collapsed: true,
-                    children: [
-                        {label: '<table class=\"w3-table w3-striped w3-border\"><tr><th>Zone ID</th><th>Code</th></tr><tr><td>". $id ."</td><td>". $teriName ."</td></tr></table>'},
-                        {label: 'BG Path : '},
-                        {label: 'Fixed Time : '},
-                        {
-                            label: 'BGM :',
-                            collapsed: true,
-                            children: [
-                                
-                            ]
-                        },
-                        {
-                            label: 'Map : ',
-                            collapsed: true,
-                            children: [
-                                {label: 'SizeFactor : '},
-                                {label: 'Offset X :  Y : '},
-                                
-                            ]
-                        },
-                        {
-                            label: 'ArrayEventHandler',
-                            collapsed: true,
-                            children: [
-                                {label: '<b>Handler ID : </b>'},
-                                
-                            ]
-                        },
-                        {
-                            label: 'Weather',
-                            collapsed: true,
-                            children: [
-                                
-                            ]
-                        },
-                        {label: 'Can Use Mount? : '},
-                        {label: 'Can Use Stealth? : '},
-                        {label: 'Can Search for PC? : '},
-                        {label: 'Is PVP Zone? : '},
                     ]
                 },
                 ];
@@ -3671,16 +3769,95 @@ $ColorStateEnum[3] = "ColorStateReset";
                     
                 window.arrmMap = map;
                 </script>
-                <div id=\"id01\" class=\"w3-modal\">
+                <div id=\"arrmabout\" class=\"w3-modal\">
                     <div class=\"w3-modal-content\">
                       <div class=\"w3-container\">
-                        <span onclick=\"document.getElementById('id01').style.display='none'\"
-                        class=\"w3-button w3-display-topright\">&times;</span>
-                        <p>Some text in the Modal..</p>
-                        <p>Some text in the Modal..</p>
+                        <span onclick=\"document.getElementById('arrmabout').style.display='none'\"
+                        class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
+                        <h1><center><b>About A Realm Remapped</b></center><br></h1>
+                        A Realm Remapped is a collection of all maps and locations in FINAL FANTASY XIV including FATEs, Treasure maps, Vistas, Aether Currents and more !<br>The main purpose of this is to allow for 100% accuracy for all objects found in zones to date.<br>Please be aware that these maps, although are complete, take a big amount of time to produce, if there is any zone you wish to see and is not here then please contact me on discord at <b>Icarus Twine#7006</b>
+                        If you wish to contribute / support / suggest changes then please do so at the links below :<br>
+                        (Discord) <a href=\"https://discord.gg/wSmXFZpk\" class=\"w3-bar-item\">https://discord.gg/wSmXFZpk</a><br>
+                        (Google Forms) <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfUbCXKmZxxXw-3as3CdBYQresgghBeF4hXO7C8f0r4kXa38A/viewform?usp=sf_link\" class=\"w3-bar-item\">Here</a><br>
+                       (Patreon) <a href=\"https://www.patreon.com/ARealmRemapped\" class=\"w3-bar-item\">https://www.patreon.com/ARealmRemapped</a><br>
+                       
+                        If you would like to support this website to keep it running and up to date please consider leaving a tip via paypal or join our Patreon, thank you loads.
+                        <span class=\"w3-wide\"><form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">
+                        <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" />
+                        <input type=\"hidden\" name=\"hosted_button_id\" value=\"9FYZ36J2X39XY\" />
+                        <input type=\"image\" src=\"https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />
+                        <img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\" />
+                        </form></span>
+                        <a href=\"https://www.patreon.com/bePatron?u=10666828\" data-patreon-widget-type=\"become-patron-button\">Become a Patron!</a><script async src=\"https://c6.patreon.com/becomePatronButton.bundle.js\"></script>
+                       <br><br>
+                       <b>All assets, images and data are owned by © SQUARE ENIX CO., LTD. All Rights Reserved.
+                       <br> FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</b>
+                       <br> If there is any violation to these trademarks or copyrights then please contact Icarus Twine at the above methods.
+                       <br>
+                       <br>
+                       <b>A big thank you to : </b>
+                       <br><b><h5>Supporters:</h5></b>
+                       <b>Gamer Escape</b> (<a href=\"https://gamerescape.com/\">https://gamerescape.com)</a>
+                       <br><b>Miu</b> (<a href=\"https://ffxivteamcraft.com/\">http://ffxivteamcraft.com)</a>
+                       <br><b>Hezkezl</b>
+                       <br><b>Raelys</b> (<a href=\"https://ffxivcollect.com//\">https://ffxivcollect.com)</a>
+                       <br><b>Everyone at the SaintCoinach team</b> (<a href=\"https://github.com/IcarusTwine/SaintCoinach/\">https://github.com/IcarusTwine/SaintCoinach)</a>
+                       <br><b><h5>Patreons:</h5></b>
+                       <br><b><h5>Testers:</h5></b>
+                       <br><b>ArcaneDisgea</b>
+                       <br><b>Ferthi</b>
+                       <br><b>Nemekh</b>
                       </div>
                     </div>
                   </div>
+                  
+                <div id=\"mapabout\" class=\"w3-modal\">
+                <div class=\"w3-modal-content\">
+                  <div class=\"w3-container\">
+                    <span onclick=\"document.getElementById('mapabout').style.display='none'\"
+                    class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
+                    <table class=\"w3-table w3-striped w3-border\"><tr><th>Zone ID</th><th>Name</th></tr><tr><td>". $id ."</td><td>". $MapNameUrl ."</td></tr></table>
+                    <br>Patch : ". $PatchNumber[$id] ."
+                    <br>Map : ". $mapCode ."(". $mapLink .")
+                    <br>SizeFactor : ". $SizeFactorMap ."
+                    <br>Offset X : ". $OffsetXMap ." Y : ". $OffsetYMap ."
+                    <br>". $WeatherOutput ."
+                    
+                    <br>BG Path : ". $bgPath ."
+                    <br>Fixed Time : ". $fixedTime ."
+                    <br>Can Use Mount? : ". $MountBool ."
+                    <br>Can Use Stealth? : ". $StealthBool ."
+                    <br>Can Search for PC? : ". $SearchBool ."
+                    <br>Is PVP Zone? : ". $PVPZoneBool ."<br>
+
+
+                    sounds : ($soundcount)<br>
+                    enpcs : ($enpccount)<br>
+                    lights : ($lightcount)<br>
+                    vfxs : ($vfxcount)<br>
+                    sharedgroups : ($sharedgroupcount)<br>
+                    fates : ($fatecount)<br>
+                    envsets : ($envsetcount)<br>
+                    treasures : ($treasurecount)<br>
+                    popranges : ($poprangecount)<br>
+                    exitranges : ($exitrangecount)<br>
+                    mapranges : ($maprangecount)<br>
+                    currents : ($currentcount)<br>
+                    eobjs : ($eobjcount)<br>
+                    envlocations : ($envlocationcount)<br>
+                    eventranges : ($eventrangecount)<br>
+                    collisionboxs : ($collisionboxcount)<br>
+                    linevfxs : ($linevfxcount)<br>
+                    clientpaths : ($clientpathcount)<br>
+                    targetmarkers : ($targetmarkercount)<br>
+                    chairs : ($chaircount)<br>
+                    prefetchranges : ($prefetchrangecount)<br>
+                    fishingspots : ($fishingspotcount)<br>
+                    adventures : ($adventurecount)<br>
+
+                  </div>
+                </div>
+              </div>
                 </body>
                 </html>
                 ";
@@ -3720,7 +3897,433 @@ $ColorStateEnum[3] = "ColorStateReset";
             }
 
             $output = implode("\n", $OutputArray);
+        //HTML:
+        $HTMLPAGE = "<!DOCTYPE html>
+        <title>A Realm Remapped</title>
+        <head>
+        <meta charset=\"UTF-8\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+        <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
+        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">
+        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
+        <link rel=\"shortcut icon\" href=\"favicon.ico\" type=\"image/x-icon\">
+        <link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">
+        <link type=\"application/json+oembed\" href=\"/oembed.json\" />
+        <meta content=\"https://arealmremapped.com/images/embedlogo.png\" property=\"og:image\">
+        <meta content=\"A Realm Remapped - Showing the true Eorzea.\" property=\"og:title\">
+        <meta content=\"A Realm Remapped -
+        Aether Currents, FATEs, Vistas, Treasure Maps, NPCs and more...\" property=\"og:description\">
+        <meta content=\"https://arealmremapped.com/images/embedlogo.png\" property=\"og:image\">
+        <meta name=\"twitter:card\" content=\"summary_large_image\">
+        <meta name=\"twitter:image\" content=\"https://http://arealmremapped.com/images/embedlogo.png\">
+        <meta name=\"theme-color\" content=\"#03fc03\">
+        
+        <link rel=\"stylesheet\" href=\"https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css\">
+        <link rel=\"stylesheet\" href=\"https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css\">
+        <script src=\"https://code.jquery.com/jquery-1.10.2.min.js\"></script>
+        <script src=\"https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js\"></script>
+        
+        </head>
+        
+        <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: \"Lato\", sans-serif;}
+        body, html {
+          height: 100%;
+          color: #777;
+          line-height: 1.8;
+        }
+        
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+          background-image: url('images/Eorzea.jpg');
+          min-height: 50%;
+        }
+        
+        .w3-wide {letter-spacing: 10px;}
+        .w3-hover-opacity {cursor: pointer;}
+        
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+          .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+          }
+        }
+        </style>
+        <body>
+          <div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
+            <div class=\"modal-dialog\">
+                <div class=\"modal-content\">
+                    <div class=\"modal-header\">
+                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
+                        <h4 class=\"modal-title\" id=\"myModalLabel\">A Realm Remapped is changing in a <i>big</i> way.</h4>
+                    </div>
+                    <div class=\"modal-body\">
+                      A Realm Remapped is changing in a <i>big</i> way,<br>
+                       It's been over a year since i've updated the website and i've got some big plans. <br>
+                       So i need your help, If you have any suggestions for improvements please let me know at : <br>
+                       (Discord) <a href=\"https://discord.gg/wSmXFZpk\" class=\"w3-bar-item w3-button\">https://discord.gg/wSmXFZpk</a><br>
+                       (Google Forms) <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfUbCXKmZxxXw-3as3CdBYQresgghBeF4hXO7C8f0r4kXa38A/viewform?usp=sf_link\" class=\"w3-bar-item w3-button\">Here</a><br>
+                       (Discord DM) <b>Icarus Twine#7006</b> <br>
+                      (Patreon) <a href=\"https://www.patreon.com/ARealmRemapped\" class=\"w3-bar-item w3-button\">https://www.patreon.com/ARealmRemapped</a><br>
+        
+                    </div>
+                    <div class=\"modal-footer\">
+                        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- Navbar (sit on top) -->
+        <div class=\"w3-top\">
+          <div class=\"w3-bar\" id=\"myNavbar\">
+            <a class=\"w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right\" href=\"javascript:void(0);\" onclick=\"toggleFunction()\" title=\"Toggle Navigation Menu\">
+              <i class=\"fa fa-bars\"></i>
+          </div>
+        
+          <!-- Navbar on small screens -->
+          <div id=\"navDemo\" class=\"w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium\">
+            <a href=\"#about\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\"></a>
+            <a href=\"#portfolio\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\"></a>
+            <a href=\"#contact\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\"></a>
+            <a href=\"#\" class=\"w3-bar-item w3-button\"></a>
+          </div>
+        </div>
+        
+        <!-- First Parallax Image with Logo Text -->
+        <div class=\"bgimg-1 w3-display-container w3-opacity-min\" id=\"home\">
+          <div class=\"w3-display-middle\" style=\"white-space:nowrap;\">
+            <span class=\"w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity\">A REALM REMAPPED</span>
+          </div>
+        </div>
+        
+        <!-- Container (About Section) -->
+        <div class=\"w3-content w3-container w3-padding-64\" id=\"about\">
+          <h3 class=\"w3-center\">ABOUT</h3>
+          <p class=\"w3-center\"><em></em></p>
+          <p>A Realm Remapped is a collection of all maps and locations in FINAL FANTASY XIV including FATEs, Treasure maps, Vistas, Aether Currents and more !<br>The main purpose of this is to allow for 100% accuracy for all objects found in zones to date.<br>Please be aware that these maps, although are complete, take a big amount of time to produce, if there is any zone you wish to see and is not here then please contact me on discord at <b>Icarus Twine#7006<b></p>
+            <!-- About Section -->
+        $maplinkshomepage
+        
+        
+        <!-- Footer -->
+        <footer class=\"w3-center w3-black w3-padding-64\">
+          If you would like to support this website to keep it running and up to date please consider leaving a tip via paypal, thank you loads.
+          <span class=\"w3-wide\"><form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">
+        <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" />
+        <input type=\"hidden\" name=\"hosted_button_id\" value=\"9FYZ36J2X39XY\" />
+        <input type=\"image\" src=\"https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />
+        <img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\" />
+        </form></span>
+        <a href=\"https://www.patreon.com/bePatron?u=10666828\" data-patreon-widget-type=\"become-patron-button\">Become a Patron!</a><script async src=\"https://c6.patreon.com/becomePatronButton.bundle.js\"></script>
 
+          <a href=\"#home\" class=\"w3-button w3-light-grey\"><i class=\"fa fa-arrow-up w3-margin-right\"></i>To the top</a>
+          <p>Many thanks to <a href=\"https://www.w3schools.com/w3css/default.asp\" title=\"Gamer Escape\" target=\"_blank\" class=\"w3-hover-text-green\">w3.css</a></p>
+          <p>Extra special thanks to Viion for his continued support in this.</p>
+          <p><a href=\"https://ffxiv.gamerescape.com/wiki/Main_Page\" title=\"W3.CSS\" target=\"_blank\" class=\"w3-hover-text-green\">Gamer Escape</a> for their support</p>
+          <p>Maps created using <a href=\"https://leafletjs.com/\" title=\"Leaflet.js\" target=\"_blank\" class=\"w3-hover-text-green\">Leaflet.js</a></p>
+          <p>All images on this site are property of SQUARE ENIX CO., LTD and are used with only the best intention.</p>
+          <p>All data used on the site is using pure and unmodified information extracted from the game client only.</p>
+          <p><b>FINAL FANTASY XIV © 2010 - 2021 SQUARE ENIX CO., LTD. All Rights Reserved.</b></p>
+          <p>If you would like to contact me, please do so via discord @ <i><b>Icarus Twine#7006</b></i></p>
+          <div class=\"w3-container\">
+          <h2>ChangeLog</h2>
+          <button onclick=\"document.getElementById('id01').style.display='block'\" class=\"w3-button w3-red\">Open Changelog</button>
+        
+          <div id=\"id01\" class=\"w3-modal\">
+            <div class=\"w3-modal-content\">
+              <div class=\"w3-container w3-white\">
+                <span onclick=\"document.getElementById('id01').style.display='none'\" class=\"w3-button w3-display-topright \">&times;</span>
+        
+                <div class=\"w3-border\">
+                  <div class=\"w3-red w3-wide w3-text-black\">
+                  <p>16/06/2021 - finished all suggestions</p>
+                </div>
+                  <ul>
+                  </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                  <div class=\"w3-red w3-wide w3-text-black\">
+                  <p>07/06/2021 - Progression of user suggestions</p>
+                </div>
+                  <ul>
+                    <li>• Added Modal to inform</li>
+                    <li>• Updated to 2021 guidlines</li>
+                    <li>• Started progression of re-writing ARRM</li>
+                  </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                  <div class=\"w3-red w3-wide w3-text-black\">
+                  <p>31/07/2020 - Major improvements</p>
+                </div>
+                  <ul>
+                    <li>• Displayed shapes for EnvSpace</li>
+                    <li>• Displayed Radius for Sound + Data</li>
+                    <li>• Displayed shapes for Collision Boxes</li>
+                    <li>• Displayed VFX Orinataion for VFXLine</li>
+                    <li>• Displayed Actual size for Map Range</li>
+                    <li>• Sorted BNPC's (Enemies) into their own subsort</li>
+                    <li>• Added Gathering Bonus's for points</li>
+                    <li>• Fixed bnpcs causing page to be blank</li>
+                    <li>• Added proper Client Pathing (chocobo taxi + Npcs)</li>
+                    <li>• All pages are now done via TerritoryType ID for URL</li>
+                  </ul>
+                </div>
+        
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>05/11/2019 - Added Fates and updated for 5.1</p>
+              </div>
+                <ul>
+                  <li>Added Lyhe Mheg</li>
+                </ul>
+              </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>13/10/2019 - Improved Navigation:</p>
+              </div>
+                <ul>
+                  <li>Modals now close upon clicking outside the box</li>
+                  <li>Experimental (user gathered data) added for gathering nodes</li>
+                </ul>
+              </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>10/10/2019 - Feedback requests:</p>
+              </div>
+                <ul>
+                  <li>Layer selection is now always open</li>
+                  <li>Split Aether Currents and Eobj</li>
+                  <li>Added icons on the layers box and descriptions for each type</li>
+                  <li>Fixed home button for mobile view</li>
+                  <li>Added different icons for different treasure maps</li>
+                  <li>Added layer control with url so you can send exact location</li>
+                </ul>
+              </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>06/10/2019 - New Zones:</p>
+                </div>
+                <ul>
+                  <li>Shirogane</li>
+                  <li>Yanxia</li>
+                  <li>The Ruby Sea</li>
+                  <li>Kugane</li>
+                  <li>The Lochs</li>
+                  <li>The Peaks</li>
+                  <li>The Fringes</li>
+                  <li>Rhalgr's Reach</li>
+                </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>03/10/2019 - Added Perma link with URL Location</p>
+                </div>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>03/10/2019 - New Zones:</p>
+                </div>
+                <ul>
+                  <li>The Sea of Clouds</li>
+                  <li>The Pillars</li>
+                  <li>The Dravanian Hinterlands</li>
+                  <li>Azys Lla</li>
+                  <li>Coerthas Central Highlands</li>
+                  <li>Coerthas Western Highlands</li>
+                  <li>Foundation</li>
+                  <li>Idyllshire</li>
+                  <li>Mor Dhona</li>
+                  <li>The Churning Mists</li>
+                </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>01/10/2019 - New Zones:</p>
+                </div>
+                <ul>
+                  <li>New Gridania</li>
+                  <li>Ul'dah - Steps of Nald</li>
+                  <li>The Lavender Beds</li>
+                  <li>Old Gridania</li>
+                  <li>Northern Thanalan</li>
+                  <li>Western Thanalan</li>
+                  <li>Central Thanalan</li>
+                  <li>Ul'dah - Steps of Thal - Merchant Strip</li>
+                  <li>South Shroud</li>
+                  <li>Eastern Thanalan</li>
+                  <li>North Shroud</li>
+                  <li>Central Shroud</li>
+                  <li>East Shroud</li>
+                  <li>Southern Thanalan</li>
+                  <li>The Gold Saucer - Chocobo Square</li>
+                  <li>The Gold Saucer</li>
+                  <li>The Goblet</li>
+                  <li>Ul'dah - Steps of Thal - Hustings Strip</li>
+                  <li>Ul'dah - Steps of Nald - Airship Landing</li>
+                </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>29/09/2019 - Added some dev test rooms</p>
+                </div>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>28/09/2019 - Limsa zones:</p>
+                </div>
+                <ul>
+                  <li>Limsa Lominsa Lower Decks</li>
+                  <li>Limsa Lominsa Upper Decks</li>
+                  <li>Dohn Mheg</li>
+                  <li>Mist</li>
+                  <li>Wolves' Den Pier</li>
+                  <li>Middle La Noscea</li>
+                  <li>Lower La Noscea</li>
+                  <li>Eastern La Noscea</li>
+                  <li>Western La Noscea</li>
+                  <li>Upper La Noscea</li>
+                  <li>Outer La Noscea</li>
+                </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>26/09/2019 - Finished 5.0 content:</p>
+                </div>
+                <ul>
+                  <li>Akadaemia Anyder</li>
+                  <li>Amaurot</li>
+                  <li>Dohn Mheg</li>
+                  <li>Holminster Switch</li>
+                  <li>Malikah's Well</li>
+                  <li>Mt. Gulg</li>
+                  <li>The Qitana Ravel</li>
+                  <li>The Rak'tika Greatwood</li>
+                  <li>The Tempest</li>
+                  <li>The_Twinning</li>
+                </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                 <p>25/09/2019 - New zones + Meta tags:</p>
+                 </div>
+                <ul>
+                  <li>Il Mheg</li>
+                  <li>Amh Araeng</li>
+                  <li>Lakeland</li>
+                  <li>Eulmore</li>
+                  <li>The Crystarium</li>
+                  <li>The Dravanian Forelands</li>
+                  <li>The Azim Steppe</li>
+                </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>23/09/2019 - Added Layers for dungeons and new maps:</p>
+                 </div>
+                <ul>
+                  <li>The Haunted Manor</li>
+                  <li>The Empty</li>
+                  <li>The Lost City of Amdapor</li>
+                </ul>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>22/09/2019 - Initialization of 2.0</p>
+                 </div>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>22/09/2019 - Added Limsa Lominsa Upper Decks Map</p>
+                 </div>
+                </div>
+        
+                <div class=\"w3-border\">
+                <div class=\"w3-red w3-wide w3-text-black\">
+                <p>22/09/2019 - Added Kholusia Map</p>
+                 </div>
+        
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = \"none\";
+          }
+        }
+        </script>
+        </footer>
+         
+        <script>
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById(\"img01\").src = element.src;
+          document.getElementById(\"modal01\").style.display = \"block\";
+          var captionText = document.getElementById(\"caption\");
+          captionText.innerHTML = element.alt;
+        }
+        
+        // Change style of navbar on scroll
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById(\"myNavbar\");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = \"w3-bar\" + \" w3-card\" + \" w3-animate-top\" + \" w3-white\";
+            } else {
+                navbar.className = navbar.className.replace(\" w3-card w3-animate-top w3-white\", \"\");
+            }
+        }
+        
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById(\"navDemo\");
+            if (x.className.indexOf(\"w3-show\") == -1) {
+                x.className += \" w3-show\";
+            } else {
+                x.className = x.className.replace(\" w3-show\", \"\");
+            }
+        }
+        </script>
+        
+        </body>
+        </html>
+        ";
+        
+        $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/index.html", 'w');
+        fwrite($js_file_Feature, $HTMLPAGE);
+        fclose($js_file_Feature);
         // Save some data
         $data = [
             '{output}' => $output,
