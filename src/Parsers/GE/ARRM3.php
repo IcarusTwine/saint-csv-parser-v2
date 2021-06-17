@@ -57,12 +57,16 @@ class ARRM3 implements ParseInterface
         $WeatherCsv = $this->csv('Weather');
         $InstanceContentGuideCsv = $this->csv('InstanceContentGuide');
         $WarpCsv = $this->csv('Warp');
+        $HousingAethernetCsv = $this->csv('HousingAethernet');
+        $ChocoboTaxiStandCsv = $this->csv('ChocoboTaxiStand');
+        $DefaultTalkCsv = $this->csv('DefaultTalk');
 
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
 
 
+        $replacearray = array(":","<Emphasis>","</Emphasis>");
         $AssetTypeEnums[0] = "AssetNone"; //zero matches LGB
         $AssetTypeEnums[1] = "BG"; //yes, but too heavy to load
         $AssetTypeEnums[2] = "Attribute"; //zero matches LGB
@@ -387,11 +391,11 @@ $ColorStateEnum[3] = "ColorStateReset";
                         if (!empty($PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name'])){
                             $UrlSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
                         }
-                        $MapNameUrl = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub";
-                        $FolderNameUrl = str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
-                        $maplinkshomepage .= "<a href=\"$Region/$FolderNameUrl/$FolderNameUrl.html\" class=\"w3-bar-item w3-button\">$MapNameUrl</a>\n";
+                        $MapNameUrl = str_replace($replacearray,"",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
+                        $FolderNameUrl = str_replace($replacearray,"",str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub"));
+                        $maplinkshomepage .= "<a href=\"".str_replace($replacearray,"",str_replace(" ", "_",$Name))."/$FolderNameUrl/$FolderNameUrl.html\" class=\"w3-bar-item w3-button\">$MapNameUrl</a>\n";
                         $zonedmapsarray[] = array(
-                            "label" => "<a href=\"../../$Region/$FolderNameUrl/$FolderNameUrl.html\">$FolderNameUrl</a>"
+                            "label" => "<a href=\"../../".str_replace($replacearray,"",str_replace(" ", "_",$Name))."/$FolderNameUrl/$FolderNameUrl.html\">$FolderNameUrl</a>"
                         );
                     }
                 }
@@ -629,8 +633,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                     if (!empty($PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name'])){
                         $UrlSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
                     }
-                    $MapNameUrl = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub";
-                    $FolderNameUrl = str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
+                    $MapNameUrl = str_replace($replacearray,"",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
+                    $FolderNameUrl = str_replace($replacearray,"",str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub"));
                     $linkedmapsarray[] = "{label: '<a href=\"../$FolderNameUrl/$FolderNameUrl.html\">$FolderNameUrl</a>'},";
                 }
             }
@@ -834,8 +838,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                     $UrlSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
                     $MapSub = " - ".$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName{Sub}'])['Name']."";
                 }
-                $MapNameUrl = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub";
-                $FolderNameUrl = str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
+                $MapNameUrl = str_replace($replacearray,"",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
+                $FolderNameUrl = str_replace($replacearray,"",str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub"));
                 $MapName = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$MapSub";
                 $MapCodeExp = explode("/",$MapCsv->at($newMapId)['Id']);
                 $MapCode = $MapCodeExp[0];
@@ -1812,7 +1816,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             $DataArray["SgbPath"] = $EobjData;
                                             $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
                                             $DataArray["LinkRange"] = "ChocoboTaxiStand";
-                                            $DataArray["ChocoboTaxiStand"] = $PlaceNameCsv->at($ChocoboTaxiStand->at($EObjCsv->at($BaseId)['Data'])['PlaceName'])['Name']." (".$EObjCsv->at($BaseId)['Data'].")";
+                                            $DataArray["ChocoboTaxiStand"] = $PlaceNameCsv->at($ChocoboTaxiStandCsv->at($EObjCsv->at($BaseId)['Data'])['PlaceName'])['Name']." (".$EObjCsv->at($BaseId)['Data'].")";
                                             $DataWindowTextOut = makeDataTable($DataArray);
                                             $PopupTextOut = "ChocoboTaxi Stand";
                                             $eobjArray[] = array(
@@ -2744,11 +2748,12 @@ $ColorStateEnum[3] = "ColorStateReset";
                         }
                     }
                 }
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\")) { 
-                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\", 0777, true); 
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/")) { 
+                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/", 0777, true); 
                 }
-                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\")) { 
-                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM\\$FolderRegion\\$FolderNameUrl\\", 0777, true); 
+                var_dump($FolderNameUrl);
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/")) { 
+                    mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/", 0777, true); 
                 }
                 $soundOut["type"] = "FeatureCollection";
                 $soundOut["timestamp"] = time();
@@ -3291,6 +3296,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <div id=\"map\" style=\"width: 100%; height: 100%; background: #000000;\"></div>
                 <script src=\"../../scripts/leaflet/leaflet-search.js\"></script>
                 <link rel=\"stylesheet\" href=\"../../scripts/leaflet/leaflet-search.css\" />
+                <script async src=\"https://c6.patreon.com/becomePatronButton.bundle.js\"></script>
                 <script src=\"json/mapmarkerGeo.geojson.js\"></script>
                 <script src=\"json/vfx.geojson.js\"></script>
                 <script src=\"json/fate.geojson.js\"></script>
@@ -3788,7 +3794,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                         <input type=\"image\" src=\"https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />
                         <img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\" />
                         </form></span>
-                        <a href=\"https://www.patreon.com/bePatron?u=10666828\" data-patreon-widget-type=\"become-patron-button\">Become a Patron!</a><script async src=\"https://c6.patreon.com/becomePatronButton.bundle.js\"></script>
+                        <a href=\"https://www.patreon.com/bePatron?u=10666828\" data-patreon-widget-type=\"become-patron-button\">Become a Patron!</a>
                        <br><br>
                        <b>All assets, images and data are owned by © SQUARE ENIX CO., LTD. All Rights Reserved.
                        <br> FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</b>
