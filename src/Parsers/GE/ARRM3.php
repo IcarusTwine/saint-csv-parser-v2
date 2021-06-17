@@ -59,6 +59,16 @@ class ARRM3 implements ParseInterface
         $WarpCsv = $this->csv('Warp');
         $HousingAethernetCsv = $this->csv('HousingAethernet');
         $ChocoboTaxiStandCsv = $this->csv('ChocoboTaxiStand');
+        $gatheringpointcsv = $this->csv('GatheringPoint');
+        $gatheringPointBaseCsv = $this->csv('GatheringPointBase');
+        $gatheringtypecsv = $this->csv('GatheringType');
+        $gatheringPointTransientCsv = $this->csv('GatheringPointTransient');
+        $gatheringPointBonusCsv = $this->csv('gatheringPointBonus');
+        $gatheringItemCsv = $this->csv('GatheringItem');
+        $GatheringConditionCsv = $this->csv('GatheringCondition');
+        $GatheringPointBonusTypeCsv = $this->csv('GatheringPointBonusType');
+        $GatheringRarePopTimeTableCsv = $this->csv('GatheringRarePopTimeTable');
+        $spearfishingItemCsv = $this->csv('SpearfishingItem');
         $DefaultTalkCsv = $this->csv('DefaultTalk');
 
 
@@ -449,7 +459,7 @@ $ColorStateEnum[3] = "ColorStateReset";
 
         
         foreach ($AdventureCsv->data as $id => $Adventure) {
-            $Zone = $LevelCsv->at($Adventure['Level'])['Map'];
+            $Zone = $TerritoryTypeCsv->at($LevelCsv->at($Adventure['Level'])['Territory'])['Map'];
             $AdventureDataArray[$Zone][$id]["X"] = $LevelCsv->at($Adventure['Level'])['X'];
             $AdventureDataArray[$Zone][$id]["Y"] = $LevelCsv->at($Adventure['Level'])['Z'];
             $AdventureDataArray[$Zone][$id]["Name"] = $Adventure['Name'];
@@ -467,7 +477,6 @@ $ColorStateEnum[3] = "ColorStateReset";
             $AdventureDataArray[$Zone][$id]["IsInitial"] = $Adventure['IsInitial'];
             $AdventureDataArray[$Zone][$id]["Level"] = $Adventure['Level'];
         }
-        
         foreach ($TreasureSpotCsv->data as $id => $TreasureSpot) {
             $Zone = $LevelCsv->at($TreasureSpot['Location'])['Map'];
             if (empty($Zone)) continue;
@@ -542,6 +551,7 @@ $ColorStateEnum[3] = "ColorStateReset";
             $Index = $Map['MapIndex'];
             $MapId = $Map['Id'];
             if (strpos($MapId,"default")!== false) continue;
+            if ($TerritoryTypeCsv->at($MapTerri)['ExclusiveType'] == 2) continue;
             if (empty($MapIndexArray[$MapTerri][$Index])){
                 $MapIndexArray[$MapTerri][$Index][$MapId] = $id;
             }
@@ -667,6 +677,176 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $adventurearray = [];
                 $treasurespotarray = [];
                 $WeatherArray = [];
+                $bnpcarray = [];
+                $gatheringarray = [];
+
+                $MappyUrl = "https://xivapi.com/mappy/map/$newMapId";
+                $mappyjdata = file_get_contents($MappyUrl);
+                $mappydecodeJdata = json_decode($mappyjdata);
+                foreach ($mappydecodeJdata as $mappyData) {
+                    $Type = "Marker";
+                    $DataArray = [];
+                    $Hash = $mappyData->Hash;
+                    $BNpcBaseID = $mappyData->BNpcBaseID;
+                    $BNpcNameID = ucwords($BNpcNameCsv->at($mappyData->BNpcNameID)['Singular']);
+                    $NoThanksArray = array("Earthly Star", "Demi-Bahamut", "Seraph", "Demi-Phoenix", "Esteem", "Automaton Queen", "Bunshin");
+                    if (in_array($BNpcNameID, $NoThanksArray)) continue;
+                    $FateID = $mappyData->FateID;
+                    $HP = $mappyData->HP;
+                    $PixelX = ($mappyData->PixelX);
+                    $PixelY = ($mappyData->PixelY);
+                    $PosX = round($mappyData->PosX, 1);
+                    $PosY = round($mappyData->PosY, 1);
+                    $mappyType = $mappyData->Type;
+                    $NodeID = $mappyData->NodeID;
+                    switch ($mappyType) {
+                        case 'BNPC':
+                            $DataArray["Hash"] = $Hash;
+                            $DataArray["BNpcBaseID"] = $BNpcBaseID;
+                            $DataArray["BNpcName"] = $BNpcNameID;
+                            $DataArray["FateID"] = $FateID;
+                            $DataArray["HP"] = $HP;
+                            $DataArray["PosX"] = $PosX;
+                            $DataArray["PosY"] = $PosY;
+                            $DataArray["Type"] = $mappyType;
+                            $DataWindowTextOut = makeDataTable($DataArray);
+                            $PopupText = "$BNpcNameID<br>$HP<br>(X:$PosX,Y:$PosY)";
+                            $bnpcarray[] = array(
+                                "layer" => "bnpc",
+                                "type" => "Feature",
+                                "iconUrl" => "060004_hr1",
+                                "properties" => array (
+                                    "dataid" => $mappyData->BNpcNameID,
+                                    "amenity" => "bnpc",
+                                    "name" => $BNpcNameID,
+                                    "popup" => $PopupText,
+                                    "type" => "Marker",
+                                    "datawindow" => $DataWindowTextOut,
+                                    "tooltip" => array (
+                                        "direction" => "",
+                                        "text" => "",
+                                    )
+                                ),
+                                "geometry" => array (
+                                    "type" => "Point",
+                                    "coordinates" => [
+                                        $PixelX,
+                                        $PixelY,
+                                    ]
+                                )
+                            );
+                        break;
+                        case 'Node':
+                            $gatheringTimeTable = [];
+                            $gpoint = $gatheringpointcsv->at($NodeID)['GatheringPointBase'];
+                            $gpointbase = $gatheringPointBaseCsv->at($gpoint)['GatheringType'];
+                            $gpointlimited = $gatheringPointBaseCsv->at($gpoint)['IsLimited'];
+                            $gpointtype = $gatheringtypecsv->at($gpointbase)['Name'];
+                            //switch to EN
+                            if ($gpointtype != '●銛') {
+                                $gpointtype = $gpointtype;
+                            } elseif ($gpointtype = '●銛') {
+                                $gpointtype = 'Spearfishing';
+                            }
+                            $gpointicon = sprintf("%06d", $gatheringtypecsv->at($gpointbase)['Icon{Main}']);
+                            $IconArray[] = $gpointicon;
+                            
+                            if ($gatheringPointTransientCsv->at($NodeID)['GatheringRarePopTimeTable'] > 0) {
+                                $gpointicon = sprintf("%06d", $gatheringtypecsv->at($gpointbase)['Icon{Off}']);
+                                $IconArray[] = $gpointicon;
+                                foreach (range(0, 2) as $t){
+                                    $startTimeRaw = $GatheringRarePopTimeTableCsv->at($gatheringPointTransientCsv->at($NodeID)['GatheringRarePopTimeTable'])["StartTime[$t]"];
+                                    if ($startTimeRaw == 65535) continue;
+                                    $startTimeFmt = date("g:i a", strtotime(substr_replace($startTimeRaw, ':', -2, 0)));
+                                    $gatheringTimeTableDuration = $GatheringRarePopTimeTableCsv->at($gatheringPointTransientCsv->at($NodeID)['GatheringRarePopTimeTable'])["Duration(m)[$t]"];
+                                    $tnum = $t + 1;
+                                    $gatheringTimeTableString = "#". $tnum ." Start: ". $startTimeFmt ." for ". $gatheringTimeTableDuration ." Mins<br>";
+                                    $gatheringTimeTable[] = $gatheringTimeTableString;
+                                }
+                            }
+                            $gatheringTimeTable = implode($gatheringTimeTable);
+                            $AssetSort = "gathering";
+                            $gpointlevel = $gatheringPointBaseCsv->at($gpoint)['GatheringLevel'];
+                            $gpointbonusRaw = $gatheringpointcsv->at($NodeID)['GatheringPointBonus[0]'];
+                            $gpointbonus = "";
+                            if ($gpointbonusRaw != 0) {
+                                $GpointBonusConditionValue = $gatheringPointBonusCsv->at($gpointbonusRaw)['ConditionValue'];
+                                $GpointBonusCondition = str_replace("<Value>IntegerParameter(1)</Value>", $GpointBonusConditionValue, $GatheringConditionCsv->at($gatheringPointBonusCsv->at($gpointbonusRaw)['Condition'])['Text']);
+                                $GpointBonusTypeValue = $gatheringPointBonusCsv->at($gpointbonusRaw)['BonusValue'];
+                                $GpointBonusType = str_replace("<Value>IntegerParameter(1)</Value>", $GpointBonusTypeValue, $GatheringPointBonusTypeCsv->at($gatheringPointBonusCsv->at($gpointbonusRaw)['BonusType'])['Text']);
+                                $gpointbonus = "<br>Location Effect:<br>". $GpointBonusCondition ." <b>→</b> ". $GpointBonusType ."<br>";
+                            }
+                            $gpointItem = [];
+                            foreach (range(0, 7) as $i) {
+                                if ($gatheringPointBaseCsv->at($gpoint)["Item[$i]"] == 0) continue;
+                                switch ($gpointbase) {
+                                    case 0:
+                                    case 1:
+                                    case 2:
+                                    case 3:
+                                        $gpointItemSingle = $ItemCsv->at($gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"])["Name"];
+                                    break;
+                                    case 4:
+                                        $gpointItemSingle = $ItemCsv->at($spearfishingItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"])["Name"];
+                                    break;
+                                }
+                                if ($gatheringpointcsv->at($NodeID)['Type'] == 3) {
+                                    $gpointItemSingle = $EventItemCsv->at($gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"])["Name"];
+                                }
+        
+                                $gpointItemString = "Item: ". $gpointItemSingle ."<br>";
+                                $gpointItem[] = $gpointItemString;
+                            }
+                            $gpointItem = implode($gpointItem);
+                            $DataArray["Hash"] = $Hash;
+                            $DataArray["gpointbase"] = $gpointbase;
+                            $DataArray["gpoint"] = $gpoint;
+                            $DataArray["gpointtype"] = $gpointtype;
+                            $DataArray["gpointlevel"] = $gpointlevel;
+                            $DataArray["NodeID"] = $NodeID;
+                            $DataArray["PosX"] = $PosX;
+                            $DataArray["PosY"] = $PosY;
+                            $DataArray["Item"] = $gpointItem;
+                            $DataArray["TimeTable"] = $gatheringTimeTable;
+                            $DataArray["Bonus"] = $gpointbonus;
+                            $DataWindowTextOut = makeDataTable($DataArray);
+                            $PopupText = "<center><span class='sptitle'>". $gpointtype ."<br>
+                            </span></center>". $gpointItem ."<br>
+                            ". $gatheringTimeTable ."<br>
+                            Lv. ". $gpointlevel ."
+                            ". $gpointbonus ."
+                            (X:". $PosX ." Y:". $PosY .")";
+                            $gatheringarray[] = array(
+                                "layer" => "Gathering",
+                                "type" => "Feature",
+                                "iconUrl" => "$gpointicon",
+                                "properties" => array (
+                                    "dataid" => $gpoint,
+                                    "amenity" => "Gathering",
+                                    "name" => $gpointbase,
+                                    "popup" => $PopupText,
+                                    "type" => "Marker",
+                                    "datawindow" => $DataWindowTextOut,
+                                    "tooltip" => array (
+                                        "direction" => "",
+                                        "text" => "",
+                                    )
+                                ),
+                                "geometry" => array (
+                                    "type" => "Point",
+                                    "coordinates" => [
+                                        $PixelX,
+                                        $PixelY,
+                                    ]
+                                )
+                            );
+                        break;
+        
+                        default:
+                            # code...
+                        break;
+                    }
+                }
                 $WeatherRate = $Territory['WeatherRate'];
                 foreach(range(0,7) as $w) {
                     if (empty($WeatherRateCsv->at($WeatherRate)["Weather[$w]"])) continue;
@@ -688,7 +868,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                         $PY = $XandY["PY"];
                         $Type = "Marker";
                         $PopupText = "";
-                        $Item = $Spot["Name"];
+                        $Item = str_replace("'","",$Spot["Name"]);
                         $Icon = $Spot["Icon"];
                         $IconArray[] = $Icon;
                         $DataArray["Level"] = $Spot["Level"];
@@ -701,7 +881,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                             "properties" => array (
                                 "dataid" => $Spot["Level"],
                                 "amenity" => "treasurespotX",
-                                "name" => $Spot['Name'],
+                                "name" => str_replace("'","",$Spot['Name']),
                                 "popup" => $PopupText,
                                 "type" => $Type,
                                 "datawindow" => $DataWindowTextOut,
@@ -725,7 +905,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                             "properties" => array (
                                 "dataid" => $Spot["Level"],
                                 "amenity" => "treasurespotB",
-                                "name" => $Spot['Name'],
+                                "name" => str_replace("'","",$Spot['Name']),
                                 "popup" => $PopupText,
                                 "type" => $Type,
                                 "datawindow" => $DataWindowTextOut,
@@ -772,9 +952,9 @@ $ColorStateEnum[3] = "ColorStateReset";
                         $DataArray["MaxTime"] = $avent['MaxTime'];
                         $DataArray["MaxLevel"] = $avent['MaxLevel'];
                         $DataArray["IsInitial"] = $avent['IsInitial'];
-                        $PopupText = "".$avent['Name']."<br><img src=\"../../icons/".$avent['IconSmall'].".png\"style=\"max-width: 100px;\"/>";
+                        $PopupText = str_replace($replacearray,"","".$avent['Name']."<br><img src=\"../../icons/".$avent['IconSmall'].".png\"style=\"max-width: 100px;\"/>");
                         
-                        $DataWindowTextOut = makeDataTable($DataArray);
+                        $DataWindowTextOut = str_replace($replacearray,"",makeDataTable($DataArray));
                         $adventurearray[] = array(
                             "layer" => "adventure",
                             "type" => "Feature",
@@ -1467,6 +1647,7 @@ $ColorStateEnum[3] = "ColorStateReset";
 
                                     
                                     if ($AssetType === 45){
+                                        //TODO FIX EOBJ, Names breaking for some reason?
                                         $x = $Object->Transform->Translation->x;
                                         $y = $Object->Transform->Translation->z;
                                         $BaseId = $Object->Object->ParentData->BaseId;
@@ -1474,9 +1655,9 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
-                                        if (!empty($EObjNameCsv->at($BaseId)['Singular'])){
-                                            $EobjName = ucwords($EObjNameCsv->at($BaseId)['Singular'])."<br>";
-                                        }
+                                        //if (!empty($EObjNameCsv->at($BaseId)['Singular'])){
+                                        //    $EobjName = ucwords($EObjNameCsv->at($BaseId)['Singular'])."<br>";
+                                        //}
                                         if (strpos($LayerName, 'LVD_DE') !== false) {
                                             if (empty($DynamicFateArray[$InstanceID]["id"])) continue;
                                             $FateID = $DynamicFateArray[$InstanceID]["id"];
@@ -1548,8 +1729,38 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             );
                                         }
                                         $EObjDataRaw = $EObjCsv->at($BaseId)['Data'];
+                                        //$EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
                                         $DataArray["BaseId"] = $Object->Object->ParentData->BaseId;
                                         $DataArray["BoundInstanceId"] = $Object->Object->BoundInstanceId;
+                                        $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+                                       // $DataArray["SgbPath"] = $EobjData;
+                                        $DataWindowTextOut = makeDataTable($DataArray);
+                                        $PopupTextOut = "$EObjDataRaw";
+                                        $eobjArray[] = array(
+                                            "layer" => "eobj",
+                                            "type" => "Feature",
+                                            "iconUrl" => "060416_hr1",
+                                            "properties" => array (
+                                                "dataid" => "$InstanceID",
+                                                "amenity" => "eobj",
+                                                "name" => $EobjName,
+                                                "type" => $Type,
+                                                "popup" => $PopupTextOut,
+                                                "datawindow" => "$DataWindowTextOut",
+                                                "tooltip" => array (
+                                                    "direction" => "",
+                                                    "text" => "",
+                                                )
+                                            ),
+                                            "geometry" => array (
+                                                "type" => "Point",
+                                                "coordinates" => [
+                                                    $PX,
+                                                    $PY,
+                                                ]
+                                            )
+                                        );
+                                        /** 
                                         if ($EObjDataRaw == 0) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
                                             $DataArray["InstanceID"] = $InstanceID;
@@ -1586,44 +1797,44 @@ $ColorStateEnum[3] = "ColorStateReset";
                                                     ]
                                                 )
                                             );
-                                        }
-                                        if ($EObjDataRaw > 65000 && $EObjDataRaw < 100000) {
-                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
-                                            $DataArray["InstanceID"] = $InstanceID;
-                                            $DataArray["LayerName"] = $LayerName;
-                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
-                                            $DataArray["SgbPath"] = $EobjData;
-                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
-                                            $DataArray["LinkRange"] = "Quest";
-                                            $Quest = $QuestCsv->at($EObjCsv->at($BaseId)['Data'])['Name'];
-                                            $DataArray["Quest"] = $Quest." (". $EObjCsv->at($BaseId)['Data'] .")";
-                                            $DataWindowTextOut = makeDataTable($DataArray);
-                                            $PopupTextOut = "Used in Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $Quest ."\\\">". $Quest ."</a><br>";
-                                            $eobjArray[] = array(
-                                                "layer" => "eobj",
-                                                "type" => "Feature",
-                                                "iconUrl" => "060416_hr1",
-                                                "properties" => array (
-                                                    "dataid" => "$InstanceID",
-                                                    "amenity" => "eobj",
-                                                    "name" => $EobjName,
-                                                    "type" => $Type,
-                                                    "popup" => $PopupTextOut,
-                                                    "datawindow" => $DataWindowTextOut,
-                                                    "tooltip" => array (
-                                                        "direction" => "",
-                                                        "text" => "",
-                                                    )
-                                                ),
-                                                "geometry" => array (
-                                                    "type" => "Point",
-                                                    "coordinates" => [
-                                                        $PX,
-                                                        $PY,
-                                                    ]
-                                                )
-                                            );
-                                        }
+                                        }//TODO : FIX QUEST BREAKING JSON
+                                        //if ($EObjDataRaw > 65000 && $EObjDataRaw < 100000) {
+                                        //    $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
+                                        //    $DataArray["InstanceID"] = $InstanceID;
+                                        //    $DataArray["LayerName"] = $LayerName;
+                                        //    $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
+                                        //    $DataArray["SgbPath"] = $EobjData;
+                                        //    $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
+                                        //    $DataArray["LinkRange"] = "Quest";
+                                        //    $Quest = $QuestCsv->at($EObjCsv->at($BaseId)['Data'])['Name'];
+                                        //    $DataArray["Quest"] = $Quest." (". $EObjCsv->at($BaseId)['Data'] .")";
+                                        //    $DataWindowTextOut = makeDataTable($DataArray);
+                                        //    $PopupTextOut = "Used in Quest = <a href=\\\"https://ffxiv.gamerescape.com/wiki/". $Quest ."\\\">". $Quest ."</a><br>";
+                                        //    $eobjArray[] = array(
+                                        //        "layer" => "eobj",
+                                        //        "type" => "Feature",
+                                        //        "iconUrl" => "060416_hr1",
+                                        //        "properties" => array (
+                                        //            "dataid" => "$InstanceID",
+                                        //            "amenity" => "eobj",
+                                        //            "name" => $EobjName,
+                                        //            "type" => $Type,
+                                        //            "popup" => $PopupTextOut,
+                                        //            "datawindow" => $DataWindowTextOut,
+                                        //            "tooltip" => array (
+                                        //                "direction" => "",
+                                        //                "text" => "",
+                                        //            )
+                                        //        ),
+                                        //        "geometry" => array (
+                                        //            "type" => "Point",
+                                        //            "coordinates" => [
+                                        //                $PX,
+                                        //                $PY,
+                                        //            ]
+                                        //        )
+                                        //    );
+                                        //}
                                         if ($EObjDataRaw > 131070 && $EObjDataRaw < 131391) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
                                             $DataArray["InstanceID"] = $InstanceID;
@@ -1932,51 +2143,11 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             }
                                             $DataArray["Data"] = $InstanceContentGuideCsv->at($EObjCsv->at($BaseId)['Data'])['Instance'];
                                             $DataWindowTextOut = makeDataTable($DataArray);
-                                            $PopupTextOut = "Instance Content Guide for -> $ContentName";
+                                            $PopupTextOut = "Instance Content Guide for $ContentName";
                                             $eobjArray[] = array(
                                                 "layer" => "eobj",
                                                 "type" => "Feature",
                                                 "iconUrl" => "060416_hr1",
-                                                "properties" => array (
-                                                    "dataid" => "$InstanceID",
-                                                    "amenity" => "eobj",
-                                                    "name" => $EobjName,
-                                                    "type" => $Type,
-                                                    "popup" => $PopupTextOut,
-                                                    "datawindow" => $DataWindowTextOut,
-                                                    "tooltip" => array (
-                                                        "direction" => "",
-                                                        "text" => "",
-                                                    )
-                                                ),
-                                                "geometry" => array (
-                                                    "type" => "Point",
-                                                    "coordinates" => [
-                                                        $PX,
-                                                        $PY,
-                                                    ]
-                                                )
-                                            );
-                                        }
-                                        if ($EObjDataRaw > 1966080 && $EObjDataRaw < 1969999) {
-                                            $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
-                                            $DataArray["InstanceID"] = $InstanceID;
-                                            $DataArray["LayerName"] = $LayerName;
-                                            $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
-                                            $DataArray["SgbPath"] = $EobjData;
-                                            $DataArray["PopType"] = $PopTypeEnum[$EObjCsv->at($BaseId)['PopType']]." (". $EObjCsv->at($BaseId)['PopType']. ")";
-                                            $DataArray["LinkRange"] = "HousingAethernet";
-                                            $DataArray["Data"] = $EObjCsv->at($BaseId)['Data'];
-
-                                            
-                                            $DataArray["PlaceName"] = $PlaceNameCsv->at($HousingAethernetCsv->at($EObjCsv->at($BaseId)['Data'])['PlaceName'])['Name'];
-                                            $DataPlaceName = $PlaceNameCsv->at($HousingAethernetCsv->at($EObjCsv->at($BaseId)['Data'])['PlaceName'])['Name'];
-                                            $DataWindowTextOut = makeDataTable($DataArray);
-                                            $PopupTextOut = "Instance Content Guide for -> $DataPlaceName";
-                                            $eobjArray[] = array(
-                                                "layer" => "eobj",
-                                                "type" => "Feature",
-                                                "iconUrl" => "060430",
                                                 "properties" => array (
                                                     "dataid" => "$InstanceID",
                                                     "amenity" => "eobj",
@@ -2035,7 +2206,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                                     ]
                                                 )
                                             );
-                                        }
+                                        }*/
                                     }
                                     
                                     
@@ -2751,7 +2922,6 @@ $ColorStateEnum[3] = "ColorStateReset";
                 if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/")) { 
                     mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/", 0777, true); 
                 }
-                var_dump($FolderNameUrl);
                 if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/")) { 
                     mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/", 0777, true); 
                 }
@@ -2873,11 +3043,11 @@ $ColorStateEnum[3] = "ColorStateReset";
                     fwrite($js_file_Feature, $current_Json);
                     fclose($js_file_Feature);
 
-                    
+                $eobjOut = [];
                 $eobjOut["type"] = "FeatureCollection";
                 $eobjOut["timestamp"] = time();
                 $eobjOut["features"] = $eobjArray;
-                $eobj_Json = "var eobjGeo = ".json_encode($eobjOut,JSON_PRETTY_PRINT)."";
+                $eobj_Json = "var eobjGeo = ".json_encode($eobjOut,JSON_PRETTY_PRINT);
                 if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/eobj.geojson.js", 'w');
                     fwrite($js_file_Feature, $eobj_Json);
@@ -2975,6 +3145,26 @@ $ColorStateEnum[3] = "ColorStateReset";
                     fwrite($js_file_Feature, $adventure_Json);
                     fclose($js_file_Feature);
 
+                    
+                $bnpcOut["type"] = "FeatureCollection";
+                $bnpcOut["timestamp"] = time();
+                $bnpcOut["features"] = $bnpcarray;
+                $bnpc_Json = "var bnpcGeo = ".json_encode($bnpcOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/bnpc.geojson.js", 'w');
+                    fwrite($js_file_Feature, $bnpc_Json);
+                    fclose($js_file_Feature);
+
+                    
+                $gatheringOut["type"] = "FeatureCollection";
+                $gatheringOut["timestamp"] = time();
+                $gatheringOut["features"] = $gatheringarray;
+                $gathering_Json = "var gatheringGeo = ".json_encode($gatheringOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/gathering.geojson.js", 'w');
+                    fwrite($js_file_Feature, $gathering_Json);
+                    fclose($js_file_Feature);
+
                 $MapTypeArray = [];
                 $treasurespotfmtnames = [];
                 foreach ($treasurespotarray as $key => $value){
@@ -3035,6 +3225,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $prefetchrangecount = count($prefetchrangearray);
                 $fishingspotcount = count($fishingspotarray);
                 $adventurecount = count($adventurearray);
+                $bnpccount = count($bnpcarray);
+                $gatheringcount = count($gatheringarray);
                         
                 $featurearray = [];
                 $MapName = $PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name'];
@@ -3236,7 +3428,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                             ]
                         }
                         ];
-                        L.control.layers.tree(null, zonetree, {collapsed:true,position:'topleft'}).addTo(map);";
+                        L.control.layers.tree(null, zonetree, {collapsed:false,position:'topleft'}).addTo(map);";
                 }
                 
                 //write JS file
@@ -3321,6 +3513,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <script src=\"json/prefetchrange.geojson.js\"></script>
                 <script src=\"json/fishingspot.geojson.js\"></script>
                 <script src=\"json/adventure.geojson.js\"></script>
+                <script src=\"json/bnpc.geojson.js\"></script>
+                <script src=\"json/gathering.geojson.js\"></script>
                 $Sriptimplode
                 <script type=\"module\">
                 import { mapswitch } from \"../../htmllist.mjs\";
@@ -3434,39 +3628,27 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var fate = L.layerGroup();
                 var current = L.layerGroup();
                 var adventure = L.layerGroup();
-                //var bg = L.layerGroup();
                 var fishingspot = L.layerGroup();
-                //var EnvSpace = L.layerGroup();
                 var envset = L.layerGroup();
                 var sound = L.layerGroup();
                 var enpc = L.layerGroup();
                 var Vfx = L.layerGroup();
-                //var aetheryte = L.layerGroup();
-                //var gathering = L.layerGroup();
+                var gathering = L.layerGroup();
                 var poprange = L.layerGroup();
                 var exitrange = L.layerGroup();
                 var eobj = L.layerGroup();
-                //var questmarker = L.layerGroup();
                 var collisionbox = L.layerGroup();
                 var clientpath = L.layerGroup();
-                //var serverpath = L.layerGroup();
-                //var CollisionBox = L.layerGroup();
                 var eventrange = L.layerGroup();
                 var maprange = L.layerGroup();
                 var light = L.layerGroup();
                 var sharedgroup = L.layerGroup();
-                //var GimmickRange = L.layerGroup();
                 var chair = L.layerGroup();
                 var envlocation = L.layerGroup();
                 var targetmarker = L.layerGroup();
-                //var Aetheryte = L.layerGroup();
                 var linevfx = L.layerGroup();
                 var prefetchrange = L.layerGroup();
-                //var PositionMarker = L.layerGroup();
-                //var BattleNPC = L.layerGroup();
-                //var unknown = L.layerGroup();
-                //var Monster = L.layerGroup();
-                //var Treasure = L.layerGroup();
+                var bnpc = L.layerGroup();
                 var treasure = L.layerGroup();
                 $varimplode
                 var fateCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
@@ -3545,6 +3727,18 @@ $ColorStateEnum[3] = "ColorStateReset";
                 }});
                 var chairGeoForm = L.geoJson(chairGeo, geojsonOpts);
                 chairCluster.addLayer(chairGeoForm);
+                
+                var bnpcCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060004_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var bnpcGeoForm = L.geoJson(bnpcGeo, geojsonOpts);
+                bnpcCluster.addLayer(bnpcGeoForm);
+                
+                var gatheringCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
+                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060433.png width=48/>' + cluster.getChildCount() + '</div>' });
+                }});
+                var gatheringGeoForm = L.geoJson(gatheringGeo, geojsonOpts);
+                gatheringCluster.addLayer(gatheringGeoForm);
 
 
                 var poiLayers = L.layerGroup([
@@ -3560,6 +3754,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                     envlocationCluster.addTo(envlocation),
                     targetmarkerCluster.addTo(targetmarker),
                     chairCluster.addTo(chair),
+                    bnpcCluster.addTo(bnpc),
+                    gatheringCluster.addTo(gathering),
                     $addtoimplode
                     L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
                     L.geoJson(exitrangeGeo, geojsonOpts).addTo(exitrange),
@@ -3574,7 +3770,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                     L.geoJson(adventureGeo, geojsonOpts).addTo(adventure),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker,prefetchrange, fishingspot, adventure])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker,prefetchrange, fishingspot, adventure, bnpc, gathering])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -3643,7 +3839,6 @@ $ColorStateEnum[3] = "ColorStateReset";
                     {label: '<img src=../../icons/063914.png width=18/>FATEs', layer: fate},
                     {label: '<img src=../../icons/flyingpermission.uld-6-9-hr.png width=18/>Currents', layer: current},
                     {label: '<img src=../../icons/060929_hr1.png width=18/>Fishing Spots', layer: fishingspot},
-                    //{label: '<img src=../../icons/061731.png width=18/><span title=\"Type = 51\">Quest Markers</span>', layer: questmarker},
                     {label: '<img src=../../icons/lfgdetail.uld-8-17-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
                     {label: '<img src=../../icons/060913_hr1.png width=18/><span title=\"\">Treasure Spots</span>',
                         selectAllCheckbox: true,
@@ -3652,9 +3847,9 @@ $ColorStateEnum[3] = "ColorStateReset";
                         $layerimplode
                         ]
                     },
-                    //{label: '<img src=../../assets/icons060438.png width=18/><span title=\"\">Gathering</span>', layer: gathering},
+                    {label: '<img src=../../icons/060433.png width=18/><span title=\"\">Gathering</span>', layer: gathering},
+                    {label: '<img src=../../icons/060004_hr1.png width=18/><span title=\"\">Monsters</span>', layer: bnpc},
                     {label: '<img src=../../icons/configcharacterchatlogringtone.uld-5-12-hr.png width=18/><span title=\"\">Vistas</span>', layer: adventure},
-                    //{label: '<img src=../../assets/icons060354.png width=18/><span title=\"\">Treasure</span>', layer: Treasure},
                     ]
                 },
                 {
@@ -3794,8 +3989,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                         <input type=\"image\" src=\"https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />
                         <img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\" />
                         </form></span>
-                        <a href=\"https://www.patreon.com/bePatron?u=10666828\" data-patreon-widget-type=\"become-patron-button\">Become a Patron!</a>
-                       <br><br>
+                        <a href=\"https://www.patreon.com/bePatron?u=10666828\"><img src=\"https://mymodernmet.com/wp/wp-content/uploads/2017/12/become_a_patron_button@3x.png\" alt=\"join patreon\" style=\"width:300px;\"></a>                       <br><br>
                        <b>All assets, images and data are owned by © SQUARE ENIX CO., LTD. All Rights Reserved.
                        <br> FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</b>
                        <br> If there is any violation to these trademarks or copyrights then please contact Icarus Twine at the above methods.
@@ -3860,6 +4054,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                     prefetchranges : ($prefetchrangecount)<br>
                     fishingspots : ($fishingspotcount)<br>
                     adventures : ($adventurecount)<br>
+                    bnpc : ($bnpccount)<br>
+                    gathering : ($gatheringcount)<br>
 
                   </div>
                 </div>
@@ -3873,8 +4069,22 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $js_file = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/$FolderNameUrl.html", 'w');
                 fwrite($js_file, $jsString);
                 fclose($js_file);
+                $homesearchdata[] = array(
+                    "id" => "$id",
+                    "placename" => "$MapNameUrl",
+                    "region" => "$Region",
+                    "code" => "$code",
+                    "map" => "$newMapId",
+                    "url" => "/$FolderRegion/$FolderNameUrl/$FolderNameUrl.html"
+                );
             }  
         }
+        
+        $homesearch_Json = "var data = ".json_encode($homesearchdata,JSON_PRETTY_PRINT)."";
+        $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/searchdata.js", 'w');
+        fwrite($js_file_Feature, $homesearch_Json);
+        fclose($js_file_Feature);
+
         
             $IconArray = array_unique($IconArray);
             if (!empty($IconArray)) {
@@ -3928,6 +4138,7 @@ $ColorStateEnum[3] = "ColorStateReset";
         <link rel=\"stylesheet\" href=\"https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css\">
         <script src=\"https://code.jquery.com/jquery-1.10.2.min.js\"></script>
         <script src=\"https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js\"></script>
+        <script src=\"searchdata.js\"></script>
         
         </head>
         
@@ -4012,6 +4223,14 @@ $ColorStateEnum[3] = "ColorStateReset";
             <span class=\"w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity\">A REALM REMAPPED</span>
           </div>
         </div>
+        <div class=\"container\" style=\"padding:50px 250px;\">
+<form role=\"form\">
+    <div class=\"form-group\">
+      <input type=\"input\" class=\"form-control input-lg\" id=\"txt-search\" placeholder=\"Type in a zone\">
+    </div>
+</form>
+<div id=\"filter-records\"></div>
+</div>
         
         <!-- Container (About Section) -->
         <div class=\"w3-content w3-container w3-padding-64\" id=\"about\">
@@ -4290,6 +4509,40 @@ $ColorStateEnum[3] = "ColorStateReset";
           }
         }
         </script>
+        <script>$('#txt-search').keyup(function(){
+            var searchField = $(this).val();
+        if(searchField === '')  {
+        $('#filter-records').html('');
+        return;
+        }
+        
+            var regex = new RegExp(searchField, \"i\");
+            var output = '<div class=\"row\">';
+            var count = 1;
+        $.each(data, function(key, val){
+        if (
+          (val.id.search(regex) != -1) || 
+          (val.placename.search(regex) != -1) || 
+          (val.region.search(regex) != -1) || 
+          (val.code.search(regex) != -1) || 
+          (val.map.search(regex) != -1) 
+          ) {
+          output += '<a href=\"'+val.url+'\">';
+          output += '<div class=\"col-md-6 well\" style=\"display: block;\">';
+          output += '<div class=\"col-md-8\" style=\"text-align:right;\">';
+          output += '<h4>' + val.placename + ' (' + val.region + ')</h4>';
+          output += '</div>';
+          output += '</div>';
+          output += '</a>';
+          if(count%2 == 0){
+          output += '</div><div class=\"row\">'
+          }
+          count++;
+        }
+        });
+        output += '</div>';
+        $('#filter-records').html(output);
+        });</script>
         </footer>
          
         <script>
