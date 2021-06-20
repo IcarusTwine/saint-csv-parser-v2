@@ -30,70 +30,64 @@ class GatheringMap implements ParseInterface
         $MapCsv = $this->csv('Map');
         $ItemCsv = $this->csv('Item');
         $PlaceNameCsv = $this->csv('PlaceName');
+        $GatheringItemPointCsv = $this->csv('GatheringItemPoint');
 
         $BadArray = array();
         $GoodArray = array();
         // (optional) start a progress bar
         $this->io->progressStart($GatheringPointCsv->total);
-        foreach ($GatheringPointCsv->data as $id => $Point) {
-            $this->io->progressAdvance();
-            $TerritoryType = $Point['TerritoryType'];
+        foreach ($GatheringItemPointCsv->data as $id => $ItemPoint) {
+            $ItemIDexp = explode(".",$id);
+            $ItemID = $ItemIDexp[0];
+            $ItemRaw = $GatheringItemCsv->at($ItemID)['Item'];
+            $ItemName = $ItemCsv->at($ItemRaw)['Name'];
+            $GatheringPointBaseRaw = $GatheringPointCsv->at($ItemPoint['GatheringPoint'])['GatheringPointBase'];
+            $GatheringPointRaw = $ItemPoint['GatheringPoint'];
+            $Type = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringType'])['Name'];
+            $TerritoryType = $GatheringPointCsv->at($GatheringPointRaw)['TerritoryType'];
+            $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringType'])['Icon{Main}'];
+            $IsLimited = $GatheringPointBaseCsv->at($GatheringPointBaseRaw)['IsLimited'];
+            if ($IsLimited === "True") {
+                $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringType'])['Icon{Off}'];
+            }
             $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
-            if ($TerritoryType < 2) continue;
-            $PlaceName = $Point['PlaceName'];
-            $BaseRaw = $Point['GatheringPointBase'];
-            $NodeCountAmt = $Point['Count'];
-            $XRaw = $ExportedGatheringPointCsv->at($BaseRaw)['X'];
-            $YRaw = $ExportedGatheringPointCsv->at($BaseRaw)['Y'];
+            $GatheringLevel = $GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringLevel'];
+            $XRaw = $ExportedGatheringPointCsv->at($GatheringPointBaseRaw)['X'];
+            $YRaw = $ExportedGatheringPointCsv->at($GatheringPointBaseRaw)['Y'];
             $X = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PX"] * 3.9;
             $Y = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9;
-            $PX = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PX"];
-            $PY = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PY"];
             $CX = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["X"];
             $CY = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["Y"];
-            $Radius = $ExportedGatheringPointCsv->at($BaseRaw)['unknown_5'];
-            $GatheringLevel = $GatheringPointBaseCsv->at($BaseRaw)['GatheringLevel'];
-            $IsLimited = $GatheringPointBaseCsv->at($BaseRaw)['IsLimited'];
-            $Type = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($BaseRaw)['GatheringType'])['Name'];
-            $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($BaseRaw)['GatheringType'])['Icon{Main}'];
-            if ($IsLimited === "True") {
-                $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($BaseRaw)['GatheringType'])['Icon{Off}'];
-            }
-            if (!empty($SpotArray[$TerritoryType][$PlaceName]['X'])) {
-                continue;
-            }
-            foreach(range(0,7) as $i) {
-                if (!empty($ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name'])) {
-                    $Item = str_ireplace($BadArray,$GoodArray,$ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name']);
-                    $ItemRaw = $GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'];
-                    $SpotArray[$TerritoryType][$Item]['X'][] = $X;
-                    $SpotArray[$TerritoryType][$Item]['Y'][] = $Y;
-                    $SpotArray[$TerritoryType][$Item]['Radius'][] = $Radius;
-                    $SpotArray[$TerritoryType][$Item]['Level'][] = $GatheringLevel;
-                    $SpotArray[$TerritoryType][$Item]['Rare'][] = $IsLimited;
-                    $SpotArray[$TerritoryType][$Item]['Type'][] = $Type;
-                    $SpotArray[$TerritoryType][$Item]['Count'][] = $NodeCountAmt;
-                    $JSON_ItemArray[$ItemRaw][] = array(
-                        'ItemName' => $Item = $ItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($BaseRaw)["Item[$i]"])['Item'])['Name'],
-                        'Type' => $Type,
-                        'TerritoryType' => array(
-                            'id' => $TerritoryType,
-                            'Name' => $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryType)['PlaceName'])['Name'],
-                        ),
-                        'Icon' => "0".$Icon."_hr1.png",
-                        'Map' => $Map,
-                        'GatheringLevel' => $GatheringLevel,
-                        'IsLimited' => $IsLimited,
-                        'Position' => array(
-                            'px' => $X,
-                            'py' => $Y,
-                            'cx' => $CX,
-                            'cy' => $CY,
-                            'Radius' => $Radius
-                        ),
-                    );
-                }
-            }
+            $Radius = $ExportedGatheringPointCsv->at($GatheringPointBaseRaw)['unknown_5'];
+            $NodeCountAmt = 0;
+            $SpotArray[$TerritoryType][$ItemName]['X'][] = $X;
+            $SpotArray[$TerritoryType][$ItemName]['Y'][] = $Y;
+            $SpotArray[$TerritoryType][$ItemName]['Radius'][] = $Radius;
+            $SpotArray[$TerritoryType][$ItemName]['Level'][] = $GatheringLevel;
+            $SpotArray[$TerritoryType][$ItemName]['Rare'][] = $IsLimited;
+            $SpotArray[$TerritoryType][$ItemName]['Type'][] = $Type;
+            $SpotArray[$TerritoryType][$ItemName]['Count'][] = $NodeCountAmt;
+            
+            $JSON_ItemArray[$ItemRaw][] = array(
+                'ItemName' => $ItemName,
+                'Type' => $Type,
+                'TerritoryType' => array(
+                    'id' => $TerritoryType,
+                    'Name' => $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryType)['PlaceName'])['Name'],
+                ),
+                'Icon' => "0".$Icon."_hr1.png",
+                'Map' => $Map,
+                'GatheringLevel' => $GatheringLevel,
+                'IsLimited' => $IsLimited,
+                'Position' => array(
+                    'px' => $X,
+                    'py' => $Y,
+                    'cx' => $CX,
+                    'cy' => $CY,
+                    'Radius' => $Radius
+                ),
+            );
+
         }
         
         $JSON_Out = json_encode($JSON_ItemArray,JSON_PRETTY_PRINT);
