@@ -1463,28 +1463,122 @@ trait CsvParseTrait
             $_lines = count($_lua);
             //set pos to the start
             $_pos = 0;
-            if (strpos($_lua[0],"OnScene") === false) continue;
-            $outarray[] = "{{Dialoguebox3|Dialogue={{#tag:tabber|\n$MainOption=\n";
             $end = false;
             if($_pos < $_lines){
                 while($end === false) {
                     if($_pos >= $_lines){
                         break;
                     };
-                    //getpreset values
-                    $namereg = "/{$LuaNameStripped}\.(.*?)\ =/";
-                    if (preg_match($namereg, $_lua[$_pos], $match)){
+                    if (preg_match("/$LuaNameStripped\.(.*?) =/", $_lua[$_pos])){
                         $valueexplode = explode(" = ", $_lua[$_pos]);
-                        $ValueName = $match[1];
-                        $Value = $valueexplode[1];
-                        $CsvTextArray[$ValueName] = $Value;
+                        if (!empty($valueexplode[1])) {
+                            $ValueEXP = explode(".",$valueexplode[0]);
+                            $ValueName = $ValueEXP[1];
+                            $Value = $valueexplode[1];
+                            $CsvTextArray[$ValueName] = $Value;
+                        }
                     }
+                    $_pos++;
+                }
+            }
+            $_pos = 0;
+            if (strpos($_lua[0],"OnScene") === false) continue;
+            $outarray[] = "{{Dialoguebox5|Dialogue={{#tag:tabber|\n$MainOption=\n";
+            $end = false;
+            if($_pos < $_lines){
+                while($end === false) {
+                    if($_pos >= $_lines){
+                        break;
+                    };
                     //get the title of the box
                     if (strpos($_lua[$_pos], "if") !== false){
                         //explode question
                         $QuestionExplode = explode(" ",$_lua[$_pos]);
                         //questions less than 5
                         if (count($QuestionExplode) === 5){
+                            $FindValue = $QuestionExplode[1];
+                            $StorePos = $_pos;
+                            $found = false;
+                            while($found === false){
+                                $_pos--;
+                                if ($_pos < 0){
+                                    $_pos = $StorePos;
+                                    break;
+                                }
+                                if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                                    $matchExplode = explode(" = ", $match[0]);
+                                    if ($matchExplode[0] === $FindValue){
+                                        $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                                        $GetFuncName = "(".$GetFuncNameExp[1].")";
+                                        //get func value
+                                        $_pos++;
+                                        $Variable = "";
+                                        if (strpos($_lua[$_pos],")") !== false){
+                                            if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                                                if (strpos($match[1],",") !== false){
+                                                    $expmatch = explode(",",$match[1]);
+                                                    $Variable = " (".$expmatch[0].")";
+                                                } else {
+                                                    $Variable = " (".$match[1].")";
+                                                }
+                                            }
+                                        }
+                                        $FuncNameAndVar = "$GetFuncName$Variable";
+                                        $_pos = $StorePos;
+                                        //if the 2nd variable is a number variable
+                                        $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
+                                        if (preg_match("/[A-Z][0-9]_[0-9]+/", $QuestionExplode[3], $match)){
+                                            $found2 = false;
+                                            while($found2 === false){
+                                                $_pos--;
+                                                if ($_pos < 0){
+                                                    $_pos = $StorePos;
+                                                    break;
+                                                }
+                                                if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                                                    $matchExplode = explode(" = ", $match[0]);
+                                                    if ($matchExplode[0] === $QuestionExplode[3]){
+                                                        $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                                                        $GetFuncName2 = "(".$GetFuncNameExp[1].")";
+                                                        $found2 = true;
+                                                    }
+                                                }
+                                            }
+                                            $_pos = $StorePos;
+                                            $newquestion = str_replace($QuestionExplode[3],$GetFuncName2,$newquestion);
+                                        }
+                                        $outarray[] = $newquestion;
+                                        $found = true;
+                                    }
+                                }
+                            } if ($found === false){
+                                $GetFuncNameExp = explode(":", $_lua[$_pos]);
+                                var_dump($GetFuncNameExp);
+                                if (empty($GetFuncNameExp[1])){
+                                    $GetFuncNameExp[0] = "Unknown";
+                                } else {
+                                    $GetFuncNameExp = explode("(", $GetFuncNameExp[1]);
+                                }
+                                $GetFuncName = "(".$GetFuncNameExp[0].")";
+                                //get func value
+                                $Variable = "";
+                                if (strpos($_lua[$_pos],")") !== false){
+                                    if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                                        if (strpos($match[1],",") !== false){
+                                            $expmatch = explode(",",$match[1]);
+                                            $Variable = " (".$expmatch[0].")";
+                                        } else {
+                                            $Variable = " (".$match[1].")";
+                                        }
+                                    }
+                                }
+                                $FuncNameAndVar = "$GetFuncName$Variable";
+                                $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
+                                $outarray[] = $newquestion;
+                                $found = true;
+                            }
+                        }
+                        elseif (count($QuestionExplode) > 5){
                             $FindValue = $QuestionExplode[1];
                             $StorePos = $_pos;
                             $found = false;
@@ -1562,64 +1656,6 @@ trait CsvParseTrait
                                 $found = true;
                             }
                         }
-                        //elseif (count($QuestionExplode) >= 5){
-                        //    $FindValue = $QuestionExplode[1];
-                        //    $StorePos = $_pos;
-                        //    $found = false;
-                        //    while($found === false){
-                        //        $_pos--;
-                        //        if ($_pos < 0){
-                        //            $_pos = $StorePos;
-                        //            break;
-                        //        }
-                        //        if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
-                        //            $matchExplode = explode(" = ", $match[0]);
-                        //            if ($matchExplode[0] === $FindValue){
-                        //                $GetFuncNameExp = explode(".", $_lua[$_pos]);
-                        //                $GetFuncName = "(".$GetFuncNameExp[1].")";
-                        //                //get func value
-                        //                $_pos++;
-                        //                $Variable = "";
-                        //                if (strpos($_lua[$_pos],")") !== false){
-                        //                    if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
-                        //                        if (strpos($match[1],",") !== false){
-                        //                            $expmatch = explode(",",$match[1]);
-                        //                            $Variable = " (".$expmatch[0].")";
-                        //                        } else {
-                        //                            $Variable = " (".$match[1].")";
-                        //                        }
-                        //                    }
-                        //                }
-                        //                $FuncNameAndVar = "$GetFuncName$Variable";
-                        //                $_pos = $StorePos;
-                        //                //if the 2nd variable is a number variable
-                        //                $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
-                        //                if (preg_match("/[A-Z][0-9]_[0-9]+/", $QuestionExplode[3], $match)){
-                        //                    $found2 = false;
-                        //                    while($found2 === false){
-                        //                        $_pos--;
-                        //                        if ($_pos < 0){
-                        //                            $_pos = $StorePos;
-                        //                            break;
-                        //                        }
-                        //                        if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
-                        //                            $matchExplode = explode(" = ", $match[0]);
-                        //                            if ($matchExplode[0] === $QuestionExplode[3]){
-                        //                                $GetFuncNameExp = explode(".", $_lua[$_pos]);
-                        //                                $GetFuncName2 = "(".$GetFuncNameExp[1].")";
-                        //                                $found2 = true;
-                        //                            }
-                        //                        }
-                        //                    }
-                        //                    $_pos = $StorePos;
-                        //                    $newquestion = str_replace($QuestionExplode[3],$GetFuncName2,$newquestion);
-                        //                }
-                        //                $outarray[] = $newquestion;
-                        //                $found = true;
-                        //            }
-                        //        }
-                        //    }
-                        //}
                     }
                     if (strpos($_lua[$_pos], "TEXT") !== false){
                         if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
@@ -1731,7 +1767,7 @@ trait CsvParseTrait
                         $outarray[] = "$Question the player has more than ". $explodedLine[3]." denied letters=";
                     }
                 } elseif ($Parameter === "(GetLetterBoxUsage)"){
-                    $outarray[] = str_replace("Players inbox ",$Parameter,$line);
+                    $outarray[] = str_replace($Parameter,"Players inbox ",$line);
                 } else {
                     if(strpos($Parameter,"(") !== false){
                         $console->writeln("<error> $Parameter is not an assigned function ! ! ! ! ! </error>\n");
@@ -1743,8 +1779,14 @@ trait CsvParseTrait
             }
         }
         $finalout = implode("\n<br>",$outarray);
+        if (preg_match('/[A-Z][0-9]_[0-9]+\./', $finalout, $match) == 1) {
+            $finalout = str_replace($match[0], "", $finalout);
+        }
         foreach($CsvTextArray as $key => $value){
             $finalout = str_replace("($key)",$value,$finalout);
+        }
+        foreach($CsvTextArray as $key => $value){
+            $finalout = str_replace($key,$value,$finalout);
         }
         $finalout = str_replace("==", "is", $finalout);
         $finalout = str_replace(">=", "is more or equal to", $finalout);
