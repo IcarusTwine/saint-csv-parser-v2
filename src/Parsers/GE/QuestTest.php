@@ -36,7 +36,7 @@ class QuestTest implements ParseInterface
                 $Argument = $Quest["Script{Arg}[$i]"];
                 $ArgArray[$Instruction] = $Argument;
             }
-            var_dump($ArgArray);
+            //var_dump($ArgArray);
             //produce listener array
             foreach(range(0,63) as $i){
                 if (empty($Quest["Listener[$i]"])) break;
@@ -77,6 +77,7 @@ class QuestTest implements ParseInterface
             }
             $QuestName = $Quest["Name"];
             $LuaFile = $Quest["Id"];
+            $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray);
         }
         $console = $console->section();
         

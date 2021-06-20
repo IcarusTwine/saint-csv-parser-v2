@@ -101,7 +101,6 @@ class StartUp implements ParseInterface
         $handle2 = fopen ("php://stdin","r");
         $line2 = fgets($handle2);
         if(trim($line) !== 'no'){
-            exit;
         }
         fclose($handle2);
         $SaintCommands = array(

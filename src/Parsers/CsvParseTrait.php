@@ -1237,7 +1237,7 @@ trait CsvParseTrait
         //$LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua"; 
         $LuaFile = "$Resources/game_script/quest/000/ClsCnj002_00091.lua"; 
         $folder = substr(explode('_', $LuaName)[1], 0, 3);
-        $textdata = $this->csv("custom/{$folder}/{$LuaName}");
+        $textdata = $this->csv("quest/{$folder}/{$LuaName}");
         $CsvTextArray = [];
         foreach ($textdata->data as $key => $textdataCsv) {
             $command = $textdataCsv["unknown_1"];
@@ -1261,23 +1261,62 @@ trait CsvParseTrait
             if (strpos($_lua[0],"OnScene") === false) continue;
             if($_pos < $_lines){
                 while($end === false) {
-                    $Line = $_lua[$_pos];
                     if($_pos >= $_lines){
                         break;
                     };
                     //type 1
-                    if (strpos($Line,":")!==false){
+                    if (strpos($_lua[$_pos],":")!==false){
                         //if found "A2_29:PlayActionTimeline("
+                        //get function name
+                        $Function = "";
+                        $Variable = "";
+                        if (preg_match('/\:(.*?)\(+/', $_lua[$_pos], $match) == 1) {
+                            $Function = "((".$match[1]."))";
+                        }
+                        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                            $CutVariable = explode(",",$match[1]);
+                            $Variable = "[[".$CutVariable[0]."]]";
+                        }
+                        $OutArray[] = "$Function$Variable";
                     }
                     //type 2
-                    if (preg_match("/[A-Z][0-9]_[0-9]+\(/", $Line, $match)){
+                    if (preg_match("/[A-Z][0-9]_[0-9]+\(/", $_lua[$_pos], $match)){
                         //if found "L5_35(L6_36, 10)"
+                        //Grab the variable we need and find where it's defined
+                        $ToFind = str_replace("(","",$match[0]);
+                        $found = false;
+                        //set the orignal position to call back to
+                        $StorePos = $_pos;
+                        while($found === false){
+                            $_pos--;
+                            if ($_pos < 0){
+                                $_pos = $StorePos;
+                                break;
+                            }
+                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                                $matchExplode = explode(" = ", $match[0]);
+                                $Function = "";
+                                $Variable = "";
+                                if ($matchExplode[0] === $ToFind){
+                                    $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                                    $Function = "((".$GetFuncNameExp[1]."))";
+                                    //set back to origonal pos
+                                    $_pos = $StorePos;
+                                    if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                        $CutVariable = explode(",",$match[1]);
+                                        $Variable = "[[".$CutVariable[0]."]]";
+                                    }
+                                    $OutArray[] = "$Function$Variable";
+                                    $found = true;
+                                }
+                            }
+                        }
                     }
                     $_pos++;
                 }
             }
         }
-
+        var_dump($OutArray);
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
         $LogMessageCsv = $this->csv("LogMessage");
