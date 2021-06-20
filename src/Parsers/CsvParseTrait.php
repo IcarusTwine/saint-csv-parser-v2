@@ -1228,23 +1228,14 @@ trait CsvParseTrait
     
     
     /**
-     * Format dialogue for luasheets
+     * Format dialogue for Quest Loremonger
      */
-    public function getLuaDialogue($LuaName, $ArgArray, $NpcNameRaw, $MainOption) { 
-        //var_dump($ArgArray);
-        //include "LUAFunctions.php";
-        // Initialise/reset vars
-		$_lua = array();
-		$data = array();
-		$_pos = 0;
-		$_lines = 0;
+    public function getLuaQuest($LuaName, $ArgArray, $ListenerArray, $ToDoArray) {
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";  
-        
-
-        $NpcName = str_replace(" ", "", strtoupper($NpcNameRaw));
+        //$LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua"; 
+        $LuaFile = "$Resources/game_script/quest/000/ClsCnj002_00091.lua"; 
         $folder = substr(explode('_', $LuaName)[1], 0, 3);
         $textdata = $this->csv("custom/{$folder}/{$LuaName}");
         $CsvTextArray = [];
@@ -1255,178 +1246,38 @@ trait CsvParseTrait
                 $CsvTextArray[$command] = $argument;
             }
         }
-        //define all args
-        foreach($ArgArray as $key => $value){
-            $$key = $value;
-            $oldarray[] = "$key";
-            $newarray[] = "$$key";
-        }
-        $LuaGet = file_get_contents($LuaFile);
-        
-        $_lua = explode("\n", str_replace("\r","",str_replace("  ","",$LuaGet)));
-        $_lines = count($_lua);
-		$luadata = array();
-		$end = false;
-        $null = false;
-        if($_pos < $_lines){
-            while($end === false) {
-                if($_pos >= $_lines){
-                    break;
-                };
-                //convert if statements to correct php
-                if (preg_match('/if|elseif/', $_lua[$_pos])) {
-                    $startPos = $_pos;
-                    $funccount = 1;
-                    $ifdata = $this->getLuaIf($_lua, $_pos, $funccount);
-                    $_pos = $ifdata['pos'];
-                    $endPos = $_pos + 1;
-                    foreach(range($startPos,$endPos) as $a){
-                        $_lua[$a] = "";
+        $codesolid = file_get_contents($LuaFile);
+        $codeexp = explode("function",$codesolid);
+        foreach($codeexp as $chunk){
+            $LuaDefinedArray = [];
+            //tidy code up (explode then remove linebreaks, tabs)
+            $code = $chunk;
+            $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$code)))));
+            //get total lines for while
+            $_lines = count($_lua);
+            //set pos to the start
+            $_pos = 0;
+            $end = false;
+            if (strpos($_lua[0],"OnScene") === false) continue;
+            if($_pos < $_lines){
+                while($end === false) {
+                    $Line = $_lua[$_pos];
+                    if($_pos >= $_lines){
+                        break;
+                    };
+                    //type 1
+                    if (strpos($Line,":")!==false){
+                        //if found "A2_29:PlayActionTimeline("
                     }
-                    $_lua[$startPos] = $ifdata['out'];
+                    //type 2
+                    if (preg_match("/[A-Z][0-9]_[0-9]+\(/", $Line, $match)){
+                        //if found "L5_35(L6_36, 10)"
+                    }
+                    $_pos++;
                 }
-			$_pos++;
             }
         }
-        $_pos = 0;
-        if($_pos < $_lines){
-            while($end === false) {
-                if($_pos >= $_lines){
-                    break;
-                };
-                //make all L6_6. to "";
-                if (preg_match('/[A-Z][0-9]_[0-9]+\./', $_lua[$_pos])) {
-                    if (preg_match('/\.(.*?)\w+/', $_lua[$_pos], $match) == 1) {
-                        $match = str_replace(".","",$match[0]);
-                        $newstring = "\"$match\"";
-                        $_lua[$_pos] = str_replace($match,$newstring,$_lua[$_pos]);
-                        $_lua[$_pos] = preg_replace("/[A-Z][0-9]_[0-9]+\./","", $_lua[$_pos]);
-                    }
-                }
-                //remove line with local
-                if (strpos($_lua[$_pos], "local ") !== false){
-                    $null = true;
-                }
-                //remove line with print
-                if (strpos($_lua[$_pos], "print(") !== false){
-                    $null = true;
-                }
-                // set CmnDefMogLetter.LETTER_BOX_USAGE_THERESHOLD = 80 to
-                // $LETTER_BOX_USAGE_THERESHOLD = 80
-                if (preg_match('/\.(.*?)\s=\s[0-9]+/', $_lua[$_pos], $match)) {
-                    $match = str_replace(".","",$match[0]);
-                    //add to replacearray 
-                    $ReplaceArray[] = $match;
-                    $match = "$".$match.";";
-                    eval("return $match");
-                    $null = true;
-                }
-                //find and make array of data
-                if (preg_match('/[A-Z][0-9]_[0-9]+\s=\s{/', $_lua[$_pos])) {
-                    $OgPos = $_pos;
-                    $_lua[$_pos] = str_replace("{","array(",$_lua[$_pos]);
-                    $arrayend = false;
-                    while ($arrayend === false) {
-                        if (strpos($_lua[$_pos],"}") !== false){
-                            $arrayend === true;
-                            $endpos = $_pos;
-                            break;
-                        }
-                        if ($arrayend === true){
-                            break;
-                        }
-                        $_lua[$_pos] = str_replace("}",")",$_lua[$_pos]);
-                        $_pos++;
-                    }
-                }
-                //set functions variables
-                if (strpos($_lua[$_pos], "function") !== false){
-                    if (preg_match('/\((.*?)\)/', $_lua[$_pos], $match) == 1) {
-                        $FuncVars = explode(",",$match[1]);
-                        foreach($FuncVars as $SetVar){
-                            $SetVar = str_replace(" ", "", $SetVar);
-                            $$SetVar = $ArgArray;
-                        }
-                    }
-                    $null = true;
-                }
-                //rename all vars to have $ infront
-                if (preg_match_all("/[A-Z][0-9]_[0-9]+/", $_lua[$_pos], $match)) {
-                    $Matches = array_unique($match[0]);
-                    foreach ($Matches as $var){
-                        $_lua[$_pos] = str_replace($var,"$$var", $_lua[$_pos]);
-                    }
-                }
-                //set eval on functions
-                if (preg_match_all("/\\$[A-Z][0-9]_[0-9]+\(+/", $_lua[$_pos], $match)) {
-                    $Matches = array_unique($match[0]);
-                    foreach ($Matches as $var){
-                        $_lua[$_pos] = str_replace($var,"eval('return $var", $_lua[$_pos]);
-                    }
-                    if (preg_match('/eval\((.*?)\)/', $_lua[$_pos], $match) == 1) {
-                    }
-                }
-                if ($null === false) {
-                    if (!empty($_lua[$_pos])){
-                        $luadata[] = $_lua[$_pos]."";
-                    }
-                }
-                //print_r($_lua[$_pos]."\n");
-                // Increase position
-				$_pos++;
-                $null = false;
-            }
-        }
-        //cleanup
-        //$FormatTest = $this->basicFormatDialogue($luadata,$CsvTextArray);
-        //var_dump($luadata);
-        $output = implode("\n",$luadata);
-        $output = explode("\n",$output);
-        foreach($output as $outputline){
-            if (preg_match('/eval\((.*?)\)/', $outputline, $match) == 1) {
-                $match1 = $match[0];
-                $match2 = str_replace("$","\\$",$match1);
-                $outputline = str_replace($match1,$match2,$outputline);
-                if (strpos($outputline,"if") == false){
-                    $outputline = str_replace(")", ")')", $outputline);
 
-                }
-            }
-            if ($outputline === "else"){
-                $outputline = "else{";
-            }
-            if (strpos($outputline,"elseif") !== false){
-                $outputline = str_replace("elseif","}if",$outputline);
-            }
-            if (strpos($outputline,"    else") !== false){
-                continue;
-            }
-            if (strpos($outputline,"end") !== false){
-                continue;
-            }
-            if ((strpos($outputline,"{") !== false) or (strpos($outputline,"}") !== false)){
-            } else {
-                $outputline = $outputline.";";
-            }
-            $finaloutput[] = $outputline;
-        }
-        $output = "".implode("\n",$finaloutput);
-        //try {
-        //    $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP7);
-        //    $logic = $parser->parse($output);
-        //
-        //    // dump the tree, it'll be big 
-        //    //print_r($logic);
-        //    
-        //    // optional: 
-        //     $json = json_decode(json_encode($logic));
-        //     print_r($json);
-        //} catch (Error $error) {
-        //    die("\n\n Parse error: {$error->getMessage()}\n\n");
-        //}
-        return $output;
-        //var_dump(eval("return $output"));
-        
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
         $LogMessageCsv = $this->csv("LogMessage");
@@ -1436,8 +1287,9 @@ trait CsvParseTrait
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua";  
-        
+        //$LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua"; 
+        $LuaFile = "$Resources/game_script/quest/000/ClsCnj002_00091.lua"; 
+        $ArgArray["HOW_TO_GEAR_SET"] = 38;
         $outarray = [];
         $NpcName = str_replace(" ", "", strtoupper($Name));
         $folder = substr(explode('_', $LuaName)[1], 0, 3);
