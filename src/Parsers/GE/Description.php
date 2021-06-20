@@ -14,7 +14,7 @@ class Description implements ParseInterface
     use CsvParseTrait;
 
     // the wiki output format / template we shall use
-    const WIKI_FORMAT = "{output}";
+    const WIKI_FORMAT = "{output}{tempout}";
 
     public function parse()
     {
@@ -43,14 +43,15 @@ class Description implements ParseInterface
             $Patch = $PatchNumber[$id];
             
             $Title = $Description['Text[Long]'];
+            $Templist[] = "Active_Help/".$Title."";
             $RequiredQuest = "";
             if ($Description['Quest'] != "0") {
                 $RequiredQuest = $QuestCsv->at($Description['Quest'])['Name'];
             }
             $SectionLink = $Description['Section'];
 
-            $PageArray[] = $Title."\n";
-            $Patch = $Patch."\n";
+            $PageArray[] = "'''Active_Help/".$Title."'''\n";
+            $Patch = "|Patch = ".$Patch."\n";
             $RequiredQuest = "Quest = ".$RequiredQuest."\n";
             $PageArray[] = $Patch;
             $PageArray[] = $RequiredQuest;
@@ -103,11 +104,12 @@ class Description implements ParseInterface
         }
 
         $output = implode("\n", $OutputArray)."\n}}";
-
+        $Templistout = implode("\n",$Templist);
 
         // Save some data
         $data = [
             '{output}' => $output,
+            '{tempout}' => $Templistout,
         ];
 
         // format using Gamer Escape formatter and add to data array

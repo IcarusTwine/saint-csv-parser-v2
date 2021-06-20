@@ -32,8 +32,8 @@ class LuaTest implements ParseInterface
         $ENpcResidentCsv = $this->csv("ENpcResident");
         $CustomTalkCsv = $this->csv("CustomTalk");
         foreach ($ENpcBaseCsv->data as $id => $ENpcBase) {
-            //if ($id != 1000063) continue;
-            if ($id != 1000395) continue;
+            if ($id != 1000063) continue;
+            //if ($id != 1000395) continue;
             $ArgArray["BaseId"] = $id;
             $Name = $ENpcResidentCsv->at($id)['Singular'];
             foreach(range(0,31) as $i) {

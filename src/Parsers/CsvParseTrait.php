@@ -1452,132 +1452,211 @@ trait CsvParseTrait
                 $CsvTextArray[$command] = $argument;
             }
         }
-        $code = file_get_contents($LuaFile);
-        $LuaDefinedArray = [];
-        //tidy code up (explode then remove linebreaks, tabs)
-        $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$code)))));
-        //get total lines for while
-        $_lines = count($_lua);
-        //set pos to the start
-        $_pos = 0;
-        $end = false;
-        if($_pos < $_lines){
-            while($end === false) {
-                if($_pos >= $_lines){
-                    break;
-                };
-                //getpreset values
-                $namereg = "/{$LuaNameStripped}\.(.*?)\ =/";
-                if (preg_match($namereg, $_lua[$_pos], $match)){
-                    $valueexplode = explode(" = ", $_lua[$_pos]);
-                    $ValueName = $match[1];
-                    $Value = $valueexplode[1];
-                    $CsvTextArray[$ValueName] = $Value;
-                }
-                //get the title of the box
-                if (strpos($_lua[$_pos], "if") !== false){
-                    //explode question
-                    $QuestionExplode = explode(" ",$_lua[$_pos]);
-                    //questions less than 5
-                    if (count($QuestionExplode) >= 5){
-                        $FindValue = $QuestionExplode[1];
-                        $StorePos = $_pos;
-                        $found = false;
-                        while($found === false){
-                            $_pos--;
-                            if ($_pos < 0){
-                                $_pos = $StorePos;
-                                break;
-                            }
-                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
-                                $matchExplode = explode(" = ", $match[0]);
-                                if ($matchExplode[0] === $FindValue){
-                                    $GetFuncNameExp = explode(".", $_lua[$_pos]);
-                                    $GetFuncName = "(".$GetFuncNameExp[1].")";
-                                    //get func value
-                                    $_pos++;
-                                    $Variable = "";
-                                    if (strpos($_lua[$_pos],")") !== false){
-                                        if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
-                                            if (strpos($match[1],",") !== false){
-                                                $expmatch = explode(",",$match[1]);
-                                                $Variable = " (".$expmatch[0].")";
-                                            } else {
-                                                $Variable = " (".$match[1].")";
-                                            }
-                                        }
-                                    }
-                                    $FuncNameAndVar = "$GetFuncName$Variable";
+        $codesolid = file_get_contents($LuaFile);
+        $codeexp = explode("function",$codesolid);
+        foreach($codeexp as $chunk){
+            $LuaDefinedArray = [];
+            //tidy code up (explode then remove linebreaks, tabs)
+            $code = $chunk;
+            $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$code)))));
+            //get total lines for while
+            $_lines = count($_lua);
+            //set pos to the start
+            $_pos = 0;
+            if (strpos($_lua[0],"OnScene") === false) continue;
+            $outarray[] = "{{Dialoguebox3|Dialogue={{#tag:tabber|\n$MainOption=\n";
+            $end = false;
+            if($_pos < $_lines){
+                while($end === false) {
+                    if($_pos >= $_lines){
+                        break;
+                    };
+                    //getpreset values
+                    $namereg = "/{$LuaNameStripped}\.(.*?)\ =/";
+                    if (preg_match($namereg, $_lua[$_pos], $match)){
+                        $valueexplode = explode(" = ", $_lua[$_pos]);
+                        $ValueName = $match[1];
+                        $Value = $valueexplode[1];
+                        $CsvTextArray[$ValueName] = $Value;
+                    }
+                    //get the title of the box
+                    if (strpos($_lua[$_pos], "if") !== false){
+                        //explode question
+                        $QuestionExplode = explode(" ",$_lua[$_pos]);
+                        //questions less than 5
+                        if (count($QuestionExplode) === 5){
+                            $FindValue = $QuestionExplode[1];
+                            $StorePos = $_pos;
+                            $found = false;
+                            while($found === false){
+                                $_pos--;
+                                if ($_pos < 0){
                                     $_pos = $StorePos;
-                                    //if the 2nd variable is a number variable
-                                    $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
-                                    if (preg_match("/[A-Z][0-9]_[0-9]+/", $QuestionExplode[3], $match)){
-                                        $found2 = false;
-                                        while($found2 === false){
-                                            $_pos--;
-                                            if ($_pos < 0){
-                                                $_pos = $StorePos;
-                                                break;
-                                            }
-                                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
-                                                $matchExplode = explode(" = ", $match[0]);
-                                                if ($matchExplode[0] === $QuestionExplode[3]){
-                                                    $GetFuncNameExp = explode(".", $_lua[$_pos]);
-                                                    $GetFuncName2 = "(".$GetFuncNameExp[1].")";
-                                                    $found2 = true;
+                                    break;
+                                }
+                                if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                                    $matchExplode = explode(" = ", $match[0]);
+                                    if ($matchExplode[0] === $FindValue){
+                                        $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                                        $GetFuncName = "(".$GetFuncNameExp[1].")";
+                                        //get func value
+                                        $_pos++;
+                                        $Variable = "";
+                                        if (strpos($_lua[$_pos],")") !== false){
+                                            if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                                                if (strpos($match[1],",") !== false){
+                                                    $expmatch = explode(",",$match[1]);
+                                                    $Variable = " (".$expmatch[0].")";
+                                                } else {
+                                                    $Variable = " (".$match[1].")";
                                                 }
                                             }
                                         }
+                                        $FuncNameAndVar = "$GetFuncName$Variable";
                                         $_pos = $StorePos;
-                                        $newquestion = str_replace($QuestionExplode[3],$GetFuncName2,$newquestion);
+                                        //if the 2nd variable is a number variable
+                                        $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
+                                        if (preg_match("/[A-Z][0-9]_[0-9]+/", $QuestionExplode[3], $match)){
+                                            $found2 = false;
+                                            while($found2 === false){
+                                                $_pos--;
+                                                if ($_pos < 0){
+                                                    $_pos = $StorePos;
+                                                    break;
+                                                }
+                                                if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                                                    $matchExplode = explode(" = ", $match[0]);
+                                                    if ($matchExplode[0] === $QuestionExplode[3]){
+                                                        $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                                                        $GetFuncName2 = "(".$GetFuncNameExp[1].")";
+                                                        $found2 = true;
+                                                    }
+                                                }
+                                            }
+                                            $_pos = $StorePos;
+                                            $newquestion = str_replace($QuestionExplode[3],$GetFuncName2,$newquestion);
+                                        }
+                                        $outarray[] = $newquestion;
+                                        $found = true;
                                     }
-                                    $outarray[] = $newquestion;
-                                    $found = true;
                                 }
+                            } if ($found === false){
+                                $GetFuncNameExp = explode(":", $_lua[$_pos]);
+                                $GetFuncNameExp = explode("(", $GetFuncNameExp[1]);
+                                $GetFuncName = "(".$GetFuncNameExp[0].")";
+                                //get func value
+                                $Variable = "";
+                                if (strpos($_lua[$_pos],")") !== false){
+                                    if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                                        if (strpos($match[1],",") !== false){
+                                            $expmatch = explode(",",$match[1]);
+                                            $Variable = " (".$expmatch[0].")";
+                                        } else {
+                                            $Variable = " (".$match[1].")";
+                                        }
+                                    }
+                                }
+                                $FuncNameAndVar = "$GetFuncName$Variable";
+                                $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
+                                $outarray[] = $newquestion;
+                                $found = true;
                             }
+                        }
+                        //elseif (count($QuestionExplode) >= 5){
+                        //    $FindValue = $QuestionExplode[1];
+                        //    $StorePos = $_pos;
+                        //    $found = false;
+                        //    while($found === false){
+                        //        $_pos--;
+                        //        if ($_pos < 0){
+                        //            $_pos = $StorePos;
+                        //            break;
+                        //        }
+                        //        if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                        //            $matchExplode = explode(" = ", $match[0]);
+                        //            if ($matchExplode[0] === $FindValue){
+                        //                $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                        //                $GetFuncName = "(".$GetFuncNameExp[1].")";
+                        //                //get func value
+                        //                $_pos++;
+                        //                $Variable = "";
+                        //                if (strpos($_lua[$_pos],")") !== false){
+                        //                    if (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                        //                        if (strpos($match[1],",") !== false){
+                        //                            $expmatch = explode(",",$match[1]);
+                        //                            $Variable = " (".$expmatch[0].")";
+                        //                        } else {
+                        //                            $Variable = " (".$match[1].")";
+                        //                        }
+                        //                    }
+                        //                }
+                        //                $FuncNameAndVar = "$GetFuncName$Variable";
+                        //                $_pos = $StorePos;
+                        //                //if the 2nd variable is a number variable
+                        //                $newquestion = str_replace($FindValue,$FuncNameAndVar,$_lua[$_pos]);
+                        //                if (preg_match("/[A-Z][0-9]_[0-9]+/", $QuestionExplode[3], $match)){
+                        //                    $found2 = false;
+                        //                    while($found2 === false){
+                        //                        $_pos--;
+                        //                        if ($_pos < 0){
+                        //                            $_pos = $StorePos;
+                        //                            break;
+                        //                        }
+                        //                        if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
+                        //                            $matchExplode = explode(" = ", $match[0]);
+                        //                            if ($matchExplode[0] === $QuestionExplode[3]){
+                        //                                $GetFuncNameExp = explode(".", $_lua[$_pos]);
+                        //                                $GetFuncName2 = "(".$GetFuncNameExp[1].")";
+                        //                                $found2 = true;
+                        //                            }
+                        //                        }
+                        //                    }
+                        //                    $_pos = $StorePos;
+                        //                    $newquestion = str_replace($QuestionExplode[3],$GetFuncName2,$newquestion);
+                        //                }
+                        //                $outarray[] = $newquestion;
+                        //                $found = true;
+                        //            }
+                        //        }
+                        //    }
+                        //}
+                    }
+                    if (strpos($_lua[$_pos], "TEXT") !== false){
+                        if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
+                            $outarray[] = "(".$match[1].")";
+                        } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                            $outarray[] = "(".$match[1].")";
+                        }
+                    }
+                    if (strpos($_lua[$_pos], "LogMessage") !== false){
+                        if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
+                            $FoundMatch = $match[1];
+                            $outarray[] = $LogMessageCsv->at($ArgArray[$FoundMatch])['Text'];
+                        } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                            $FoundMatch = $match[1];
+                            $outarray[] = $LogMessageCsv->at($ArgArray[$FoundMatch])['Text'];
                         }
                     }
                     
-                }
-                
-                if (strpos($_lua[$_pos], "TEXT") !== false){
-                    if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
-                        $outarray[] = "(".$match[1].")";
-                    } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
-                        $outarray[] = "(".$match[1].")";
+                    if (strpos($_lua[$_pos], "HowTo") !== false){
+                        if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
+                            $FoundMatch = $match[1];
+                            $outarray[] = "[[Active Help/".$HowToCsv->at($ArgArray[$FoundMatch])['Name']."]]";
+                        } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
+                            $FoundMatch = $match[1];
+                            $outarray[] = "[[Active Help/".$HowToCsv->at($ArgArray[$FoundMatch])['Name']."]]";
+                        }
                     }
-                }
-                if (strpos($_lua[$_pos], "LogMessage") !== false){
-                    if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
-                        $FoundMatch = $match[1];
-                        $outarray[] = $LogMessageCsv->at($ArgArray[$FoundMatch])['Text'];
-                    } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
-                        $FoundMatch = $match[1];
-                        $outarray[] = $LogMessageCsv->at($ArgArray[$FoundMatch])['Text'];
+                    if ($_lua[$_pos] === "else"){
+                        $outarray[] = $_lua[$_pos];
                     }
-                }
-                
-                if (strpos($_lua[$_pos], "HowTo") !== false){
-                    if (preg_match('/\.(.*?)\,/', $_lua[$_pos], $match) == 1) {
-                        $FoundMatch = $match[1];
-                        $outarray[] = "[[Active Help/".$HowToCsv->at($ArgArray[$FoundMatch])['Name']."]]";
-                    } elseif (preg_match('/\.(.*?)\)/', $_lua[$_pos], $match) == 1) {
-                        $FoundMatch = $match[1];
-                        $outarray[] = "[[Active Help/".$HowToCsv->at($ArgArray[$FoundMatch])['Name']."]]";
+                    if ($_lua[$_pos] === "end"){
+                        $outarray[] = $_lua[$_pos];
                     }
+                    $_pos++;
                 }
-                if ($_lua[$_pos] === "else"){
-                    $outarray[] = $_lua[$_pos];
-                }
-                if ($_lua[$_pos] === "end"){
-                    $outarray[] = $_lua[$_pos];
-                }
-
-                
-               
-
-                $_pos++;
             }
+            $outarray[] = "}}";
         }
         foreach($outarray as $line) {
             if ($line === "end"){
@@ -1671,7 +1750,7 @@ trait CsvParseTrait
         $finalout = str_replace(">=", "is more or equal to", $finalout);
         $finalout = str_replace("<=", "is less or equal to", $finalout);
         //foreach of the argarrys but need to understand usage first
-        return "{{Dialoguebox3|Dialogue={{#tag:tabber|\n$MainOption=\n".$finalout;
+        return "".$finalout;
         //var_dump($finalout);
         
     }

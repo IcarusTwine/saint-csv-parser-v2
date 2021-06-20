@@ -70,6 +70,13 @@ class ARRM3 implements ParseInterface
         $GatheringRarePopTimeTableCsv = $this->csv('GatheringRarePopTimeTable');
         $spearfishingItemCsv = $this->csv('SpearfishingItem');
         $DefaultTalkCsv = $this->csv('DefaultTalk');
+        $ENpcBaseCsv = $this->csv('ENpcBase');
+        $TripleTriadCsv = $this->csv('TripleTriad');
+        $TripleTriadCardCsv = $this->csv('TripleTriadCard');
+        $TripleTriadCardTypeCsv = $this->csv('TripleTriadCardType');
+        $TripleTriadCardResidentCsv = $this->csv('TripleTriadCardResident');
+        $TripleTriadCardRarityCsv = $this->csv('TripleTriadCardRarity');
+        $TripleTriadRuleCsv = $this->csv('TripleTriadRule');
 
 
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
@@ -316,8 +323,57 @@ $ColorStateEnum[3] = "ColorStateReset";
         foreach($array as $key => $value){
             $formatarray[] = "<tr>\n<td>$key:</td>\n<td>$value</td>\n</tr>";
         }
-        $output = "<div style=\"display: inline-block;\"class= \"datawindow\"><table class=\"w3-table w3-bordered w3-border\">\n".implode("\n",$formatarray)."</table</div>";
+        $output = "<div style=\"display: inline-block;\"class= \"datawindow\"><table class=\"w3-table w3-bordered w3-border\">\n".implode("\n",$formatarray)."</table></div>";
         return $output;
+    }
+    function tripletriadCardConstructor($CardName, $Family, $Rarity, $LargeIcon, $Top, $Right, $Bottom, $Left){
+        $FamilyString = "";
+        if (!empty($Family)){
+            $FamilyString = "<img style=\"position: absolute;top:5px;left:157px\" src=\"../../assets/$Family.png\"/>";
+        }
+        switch ($Rarity) {
+            case '0':
+                $RarityString = "";
+            break;
+            case '1':
+                $RarityString = "<img style=\"position: absolute;top:5px;left:35px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+            break;
+            case '2':
+                $RarityString = "<img style=\"position: absolute;top:5px;left:35px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:18px;left:16px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+            break;
+            case '3':
+                $RarityString = "<img style=\"position: absolute;top:5px;left:35px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:18px;left:16px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:18px;left:54px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+            break;
+            case '4':
+                $RarityString = "<img style=\"position: absolute;top:5px;left:35px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:18px;left:16px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:18px;left:54px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:40px;left:24px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+            break;
+            case '5':
+                $RarityString = "<img style=\"position: absolute;top:5px;left:35px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:18px;left:16px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:18px;left:54px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:40px;left:24px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+                $RarityString .= "<img style=\"position: absolute;top:40px;left:48px\" src=\"../../assets/tripletriad.uld-1-1-hr.png\"/>";
+            break;
+        }
+        $NumbersString = "<img style=\"position: absolute;top:175px;left:90px\" src=\"../../assets/$Top\"/>";
+        $NumbersString .= "<img style=\"position: absolute;top:188px;left:115px\" src=\"../../assets/$Right\"/>";
+        $NumbersString .= "<img style=\"position: absolute;top:200px;left:90px\" src=\"../../assets/$Bottom\"/>";
+        $NumbersString .= "<img style=\"position: absolute;top:188px;left:65px\" src=\"../../assets/$Left\"/>";
+        $output = "<div style=\"position: relative;top:0;left:0\">
+        <img style=\"position: relative;top:0;left:0\" src=\"../../assets/tripletriad.uld-1-0-hr.png\"/>
+        <img style=\"position: absolute;top:0;left:0\" src=\"../../icons/$LargeIcon.png\"/>
+        $FamilyString
+        $RarityString
+        $NumbersString
+        
+        <div>";
+        return "<td>$output</td>";
     }
         foreach ($MapCsv->data as $id => $Map) {
             $MapTerri = $Map['TerritoryType'];
@@ -564,6 +620,7 @@ $ColorStateEnum[3] = "ColorStateReset";
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
             $this->io->progressAdvance();
+            if ($id != 132) continue;
             $DataArray = [];
             $fishingspotarray = [];
             if (!empty($FishingSpotArray[$id])) {
@@ -679,6 +736,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 $WeatherArray = [];
                 $bnpcarray = [];
                 $gatheringarray = [];
+                $tripletriadarray = [];
 
                 $MappyUrl = "https://xivapi.com/mappy/map/$newMapId";
                 $mappyjdata = file_get_contents($MappyUrl);
@@ -1275,11 +1333,107 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
                                         $DataArray["BaseId"] = $Object->Object->ParentData->ParentData->BaseId;
                                         $DataArray["Name"] = $ENpcName;
+                                        $IconUrl = "lfgdetail.uld-8-17-hr";
                                         $DataWindowTextOut = makeDataTable($DataArray);
+                                        foreach(range(0,31) as $i) {
+                                            if (empty($ENpcBaseCsv->at($ENpcBaseId)["ENpcData[$i]"])) continue;
+                                            $DataValue = $ENpcBaseCsv->at($ENpcBaseId)["ENpcData[$i]"];
+                                            if (($DataValue > 2293000) && ($DataValue < 2300000)) {
+                                                //change iconurl if quest required
+                                                if (!empty($TripleTriadCsv->at($DataValue)["PreviousQuest[2]"])){
+                                                    $IconUrl = "ttquest";
+                                                    $ReqQuest = "<br>Requires Quest : ".$QuestCsv->at($TripleTriadCsv->at($DataValue)["PreviousQuest[2]"])['Name'];
+                                                } else {
+                                                    $IconUrl = "ttnpc";
+                                                    $ReqQuest = "";
+                                                }
+                                                $TopData = [];
+                                                $Fee = $TripleTriadCsv->at($DataValue)["Fee"];
+                                                $TopData["Fee"] = $Fee;
+                                                $Rulearray = [];
+                                                foreach (range(0,1) as $a){
+                                                    if (empty($TripleTriadRuleCsv->at($TripleTriadCsv->at($DataValue)["TripleTriadRule[$a]"])['Name'])) continue;
+                                                    $Rulearray[] = $TripleTriadRuleCsv->at($TripleTriadCsv->at($DataValue)["TripleTriadRule[$a]"])['Name'];
+                                                }
+                                                $RulesOut = implode(", ",$Rulearray);
+                                                $TopData["Rules"] = $RulesOut;
+                                                $FixedArray = [];
+                                                foreach(range(0,4) as $a){
+                                                    if (empty($TripleTriadCardCsv->at($TripleTriadCsv->at($DataValue)["TripleTriadCard{Fixed}[$a]"])['Name'])) continue;
+                                                    $CardID = $TripleTriadCardCsv->at($TripleTriadCsv->at($DataValue)["TripleTriadCard{Fixed}[$a]"])['id'];
+                                                    $CardName = $TripleTriadCardCsv->at($CardID)['Name'];
+                                                    $Family = $TripleTriadCardTypeCsv->at($TripleTriadCardResidentCsv->at($CardID)['TripleTriadCardType'])['Name'];
+                                                    $Rarity = $TripleTriadCardRarityCsv->at($TripleTriadCardResidentCsv->at($CardID)['TripleTriadCardRarity'])['Stars'];
+                                                    $LargeIcon = "0".(82100 + $CardID);
+                                                    $IconArray[] = $LargeIcon;
+                                                    $Top = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Top'])."cardno.png";
+                                                    $Right = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Right'])."cardno.png";
+                                                    $Bottom = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Bottom'])."cardno.png";
+                                                    $Left = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Left'])."cardno.png";
+                                                    $CardOut = tripletriadCardConstructor($CardName, $Family, $Rarity, $LargeIcon, $Top, $Right, $Bottom, $Left);
+                                                    $FixedArray[] = $CardOut;
+                                                }
+                                                $FixedOut = implode($FixedArray);
+                                                $VariableArray = [];
+                                                foreach(range(0,4) as $a){
+                                                    if (empty($TripleTriadCardCsv->at($TripleTriadCsv->at($DataValue)["TripleTriadCard{Variable}[$a]"])['Name'])) continue;
+                                                    $CardID = $TripleTriadCardCsv->at($TripleTriadCsv->at($DataValue)["TripleTriadCard{Variable}[$a]"])['id'];
+                                                    $CardName = $TripleTriadCardCsv->at($CardID)['Name'];
+                                                    $Family = $TripleTriadCardTypeCsv->at($TripleTriadCardResidentCsv->at($CardID)['TripleTriadCardType'])['Name'];
+                                                    $Rarity = $TripleTriadCardRarityCsv->at($TripleTriadCardResidentCsv->at($CardID)['TripleTriadCardRarity'])['Stars'];
+                                                    $LargeIcon = "0".(82100 + $CardID);
+                                                    $IconArray[] = $LargeIcon;
+                                                    $Top = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Top'])."cardno.png";
+                                                    $Right = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Right'])."cardno.png";
+                                                    $Bottom = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Bottom'])."cardno.png";
+                                                    $Left = str_replace("10", "A", $TripleTriadCardResidentCsv->at($CardID)['Left'])."cardno.png";
+                                                    $CardOut = tripletriadCardConstructor($CardName, $Family, $Rarity, $LargeIcon, $Top, $Right, $Bottom, $Left);
+                                                    $VariableArray[] = $CardOut;
+                                                }
+                                                $VariableOut = implode($VariableArray);
+                                                $RewardArray = [];
+                                                foreach(range(0,3) as $a){
+                                                    if (empty($ItemCsv->at($TripleTriadCsv->at($DataValue)["Item{PossibleReward}[$a]"])['Name'])) continue;
+                                                    $RewardArray[] = $ItemCsv->at($TripleTriadCsv->at($DataValue)["Item{PossibleReward}[$a]"])['Name'];
+                                                }
+                                                $RewardOut = implode(", ",$RewardArray);
+                                                $TopData["Potential Rewards"] = $RewardOut;
+                                                $TopOut = makeDataTable($TopData);
+
+                                                $output = "<div class= \"datawindow\"><div style=\"height:120px\">$TopOut</div><table style=\"width:100%\">
+                                                <tr><td>FixedCards:</tr></td><tr>".$FixedOut."</tr><br><tr><td>Random Cards:</tr></td><tr>".$VariableOut."</tr></table></div>";
+                                                $DataWindowTextOut = $output;
+                                                $tripletriadarray[] = array(
+                                                    "layer" => "tripletriad",
+                                                    "type" => "Feature",
+                                                    "iconUrl" => "$IconUrl",
+                                                    "properties" => array (
+                                                        "dataid" => "$ENpcName",
+                                                        "amenity" => "tripletriad",
+                                                        "name" => $ENpcName,
+                                                        "popup" => "Triple Triad NPC$ReqQuest",
+                                                        "type" => "Marker",
+                                                        "datawindow" => $DataWindowTextOut,
+                                                        "tooltip" => array (
+                                                            "direction" => "",
+                                                            "text" => "",
+                                                        )
+                                                    ),
+                                                    "geometry" => array (
+                                                        "type" => "Point",
+                                                        "coordinates" => [
+                                                            $PX,
+                                                            $PY,
+                                                        ]
+                                                    )
+                                                );
+                                            }
+                                        }
+                                        
                                         $enpcarray[] = array(
                                             "layer" => "enpc",
                                             "type" => "Feature",
-                                            "iconUrl" => "lfgdetail.uld-8-17-hr",
+                                            "iconUrl" => "$IconUrl",
                                             "properties" => array (
                                                 "dataid" => "$ENpcBaseId",
                                                 "amenity" => "enpc",
@@ -2170,7 +2324,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             );
                                         }
                                         //skipped adventure for level
-                                        
+                                        */
                                         if ($EObjDataRaw > 2818000 && $EObjDataRaw < 2819999) {
                                             $EobjData = $ExportedSGCsv->at($EObjCsv->at($BaseId)['SgbPath'])['SgbPath'];
                                             $DataArray["InstanceID"] = $InstanceID;
@@ -2206,7 +2360,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                                     ]
                                                 )
                                             );
-                                        }*/
+                                        }
                                     }
                                     
                                     
@@ -3165,6 +3319,16 @@ $ColorStateEnum[3] = "ColorStateReset";
                     fwrite($js_file_Feature, $gathering_Json);
                     fclose($js_file_Feature);
 
+                    
+                $tripletriadOut["type"] = "FeatureCollection";
+                $tripletriadOut["timestamp"] = time();
+                $tripletriadOut["features"] = $tripletriadarray;
+                $tripletriad_Json = "var tripletriadGeo = ".json_encode($tripletriadOut,JSON_PRETTY_PRINT)."";
+                if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
+                    $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/tripletriad.geojson.js", 'w');
+                    fwrite($js_file_Feature, $tripletriad_Json);
+                    fclose($js_file_Feature);
+
                 $MapTypeArray = [];
                 $treasurespotfmtnames = [];
                 foreach ($treasurespotarray as $key => $value){
@@ -3515,6 +3679,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <script src=\"json/adventure.geojson.js\"></script>
                 <script src=\"json/bnpc.geojson.js\"></script>
                 <script src=\"json/gathering.geojson.js\"></script>
+                <script src=\"json/tripletriad.geojson.js\"></script>
                 $Sriptimplode
                 <script type=\"module\">
                 import { mapswitch } from \"../../htmllist.mjs\";
@@ -3552,6 +3717,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                 .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
                                 .prompt({callback:function(){alert}})
                                 .show()
+                                .disableBtn()
                             })
                         }).on('popupopen',function(){
                             $('.lgbchangebutton').click(function() {
@@ -3570,6 +3736,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                             .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
                             .prompt({callback:function(){alert}})
                             .show()
+                            .disableBtn()
                         })
                     }).on('popupopen',function(){
                         $('.lgbchangebutton').click(function() {
@@ -3588,6 +3755,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                     .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
                     .prompt({callback:function(){alert}})
                     .show()
+                    .disableBtn()
                 })
             }).on('popupopen',function(){
                 $('.lgbchangebutton').click(function() {
@@ -3604,6 +3772,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                             }).bindPopup('<h5 class=\"sptitle\"><center>'+feature.properties.name+'</center></h5><br>'+feature.properties.popup+'<div class=\"popoutinfobutton\"></div>'+lgbbutton+'').on('popupopen',function(){
                             $('.popoutinfobutton').click(function() {
                                 var win =  L.control.window(map,{
+                                maxWidth: 9999,
                                 title: null,
                                 modal: false,
                                 position:'top'
@@ -3611,6 +3780,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                             .content('<b><center>'+feature.properties.name+'</center></b><br>'+feature.properties.datawindow+'')
                             .prompt({callback:function(){alert}})
                             .show()
+                            .disableBtn()
                         })
                     }).on('popupopen',function(){
                         $('.lgbchangebutton').click(function() {
@@ -3650,6 +3820,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var prefetchrange = L.layerGroup();
                 var bnpc = L.layerGroup();
                 var treasure = L.layerGroup();
+                var tripletriad = L.layerGroup();
                 $varimplode
                 var fateCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
                     return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
@@ -3768,9 +3939,10 @@ $ColorStateEnum[3] = "ColorStateReset";
                     L.geoJson(prefetchrangeGeo, geojsonOpts).addTo(prefetchrange),
                     L.geoJson(fishingspotGeo, geojsonOpts).addTo(fishingspot),
                     L.geoJson(adventureGeo, geojsonOpts).addTo(adventure),
+                    L.geoJson(tripletriadGeo, geojsonOpts).addTo(tripletriad),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker,prefetchrange, fishingspot, adventure, bnpc, gathering])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker,prefetchrange, fishingspot, adventure, bnpc, gathering,tripletriad])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -3837,11 +4009,11 @@ $ColorStateEnum[3] = "ColorStateReset";
                     children: [
                     {label: 'Map Labels', layer: mapmarker},
                     {label: '<img src=../../icons/063914.png width=18/>FATEs', layer: fate},
-                    {label: '<img src=../../icons/flyingpermission.uld-6-9-hr.png width=18/>Currents', layer: current},
+                    {label: '<img src=../../icons/flyingpermission.uld-6-9-hr.png width=18/>Aether Currents', layer: current},
                     {label: '<img src=../../icons/060929_hr1.png width=18/>Fishing Spots', layer: fishingspot},
                     {label: '<img src=../../icons/lfgdetail.uld-8-17-hr.png width=18/><span title=\"Type = 8\">NPCs</span>', layer: enpc},
+                    {label: '<img src=../../icons/ttnpc.png width=18/><span title=\"\">Triple Triad</span>', layer: tripletriad},
                     {label: '<img src=../../icons/060913_hr1.png width=18/><span title=\"\">Treasure Spots</span>',
-                        selectAllCheckbox: true,
                         collapsed: true,
                         children: [
                         $layerimplode
@@ -3972,7 +4144,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 </script>
                 <div id=\"arrmabout\" class=\"w3-modal\">
                     <div class=\"w3-modal-content\">
-                      <div class=\"w3-container\">
+                      <div class=\"w3-container w3-text-black\">
                         <span onclick=\"document.getElementById('arrmabout').style.display='none'\"
                         class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
                         <h1><center><b>About A Realm Remapped</b></center><br></h1>
@@ -4070,17 +4242,18 @@ $ColorStateEnum[3] = "ColorStateReset";
                 fwrite($js_file, $jsString);
                 fclose($js_file);
                 $homesearchdata[] = array(
-                    "id" => "$id",
-                    "placename" => "$MapNameUrl",
-                    "region" => "$Region",
-                    "code" => "$code",
-                    "map" => "$newMapId",
-                    "url" => "/$FolderRegion/$FolderNameUrl/$FolderNameUrl.html"
+                    "1" => "$id",
+                    "2" => "$MapNameUrl",
+                    "3" => "$Region",
+                    "4" => "$code",
+                    "5" => "$newMapId",
+                    "6" => "/$FolderRegion/$FolderNameUrl/$FolderNameUrl.html"
                 );
             }  
         }
         
-        $homesearch_Json = "var data = ".json_encode($homesearchdata,JSON_PRETTY_PRINT)."";
+        $homesearch_Jsonarray[] = "var maps = ".json_encode($homesearchdata,JSON_PRETTY_PRINT)."";
+        $homesearch_Json = implode("\n",$homesearch_Jsonarray);
         $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/searchdata.js", 'w');
         fwrite($js_file_Feature, $homesearch_Json);
         fclose($js_file_Feature);
@@ -4120,6 +4293,7 @@ $ColorStateEnum[3] = "ColorStateReset";
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">
+        <link rel=\"stylesheet\" href=\"assets/css/main.css\">
         <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">
         <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
         <link rel=\"shortcut icon\" href=\"favicon.ico\" type=\"image/x-icon\">
@@ -4140,6 +4314,56 @@ $ColorStateEnum[3] = "ColorStateReset";
         <script src=\"https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js\"></script>
         <script src=\"searchdata.js\"></script>
         
+        <script>
+            $(document).ready(function() {
+   
+             var clickedButtons = new Array();
+          
+             $('.clicked').click(function() {
+          
+               var index = clickedButtons.indexOf(this.value);
+   
+               if (index === -1) {
+                 clickedButtons = this.value;  //value not found so push it
+               }
+                 console.log(clickedButtons)
+             });
+           var categories = { \"map\": maps, \"npc\": npc, \"monster\": bnpc}
+           $('#txt-search').keyup(function(){
+               var searchField = $(this).val();
+           if(searchField === '')  {
+           $('#filter-records').html('');
+           return;
+           }
+               var regex = new RegExp(searchField, \"i\");
+               var output = '<div class=\"row\">';
+               var count = 1;
+           $.each(categories[clickedButtons], function(key, val){
+           if (
+             (val.id1.search(regex) != -1) || 
+             (val.id2.search(regex) != -1) || 
+             (val.id3.search(regex) != -1) || 
+             (val.id4.search(regex) != -1) || 
+             (val.id5.search(regex) != -1) 
+             ) {
+             output += '<a href=\"'+val.url+'\">';
+             console.log(clickedButtons)
+             output += '<div class=\"col-md-6 well\" style=\"display: block;\">';
+             output += '<div class=\"col-md-8\" style=\"text-align:right;\">';
+             output += '<h4>' + val.placename + ' (' + val.region + ')</h4>';
+             output += '</div>';
+             output += '</div>';
+             output += '</a>';
+             if(count%2 == 0){
+             output += '</div><div class=\"row\">'
+             }
+             count++;
+           }
+           });
+           output += '</div>';
+           $('#filter-records').html(output);
+           });
+           });</script>
         </head>
         
         <style>
@@ -4164,6 +4388,12 @@ $ColorStateEnum[3] = "ColorStateReset";
           min-height: 50%;
         }
         
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+          }
+        
         .w3-wide {letter-spacing: 10px;}
         .w3-hover-opacity {cursor: pointer;}
         
@@ -4176,62 +4406,27 @@ $ColorStateEnum[3] = "ColorStateReset";
         }
         </style>
         <body>
-          <div class=\"modal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModalLabel\" aria-hidden=\"true\">
-            <div class=\"modal-dialog\">
-                <div class=\"modal-content\">
-                    <div class=\"modal-header\">
-                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>
-                        <h4 class=\"modal-title\" id=\"myModalLabel\">A Realm Remapped is changing in a <i>big</i> way.</h4>
-                    </div>
-                    <div class=\"modal-body\">
-                      A Realm Remapped is changing in a <i>big</i> way,<br>
-                       It's been over a year since i've updated the website and i've got some big plans. <br>
-                       So i need your help, If you have any suggestions for improvements please let me know at : <br>
-                       (Discord) <a href=\"https://discord.gg/wSmXFZpk\" class=\"w3-bar-item w3-button\">https://discord.gg/wSmXFZpk</a><br>
-                       (Google Forms) <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfUbCXKmZxxXw-3as3CdBYQresgghBeF4hXO7C8f0r4kXa38A/viewform?usp=sf_link\" class=\"w3-bar-item w3-button\">Here</a><br>
-                       (Discord DM) <b>Icarus Twine#7006</b> <br>
-                      (Patreon) <a href=\"https://www.patreon.com/ARealmRemapped\" class=\"w3-bar-item w3-button\">https://www.patreon.com/ARealmRemapped</a><br>
-        
-                    </div>
-                    <div class=\"modal-footer\">
-                        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-                    </div>
+            <div class=\"w3-bar w3-white\">
+              <button onclick=\"document.getElementById('arrmabout').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;height: 36px;\"><img src=\"../../assets/linkshell.uld-10-3-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
+    
+            <form class=\"w3-bar-item\" style=\"height: 30px;position:relative\" role=\"form\">
+                <div class=\"form-group\">
+                  <input type=\"input\"style=\"height: 30px;position:relative; top:-3px;\" class=\"form-control input-lg\" id=\"txt-search\" placeholder=\"Search\">
                 </div>
+            </form>
+            <div id=\"filter-records\"></div>
+            <button value=\"map\" class=\"w3-bar-item w3-button clicked\" style=\"width: 32px;height: 36px;\"><img src=\"../../assets/linkshell.uld-10-3-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
+            <button value=\"npc\" class=\"w3-bar-item w3-button clicked\" style=\"width: 32px;height: 36px;\"><img src=\"../../assets/linkshell.uld-10-3-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
+            <button value=\"monster\" class=\"w3-bar-item w3-button clicked\" style=\"width: 32px;height: 36px;\"><img src=\"../../assets/linkshell.uld-10-3-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
             </div>
+      
+      <!-- First Parallax Image with Logo Text -->
+      <div class=\"bgimg-1 w3-display-container w3-opacity-min\" id=\"home\">
+        <div class=\"w3-display-middle\" style=\"text-align: center;\">
+          <span class=\"w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity\">A REALM REMAPPED</span>
         </div>
-        </div>
-        </div>
-        <!-- Navbar (sit on top) -->
-        <div class=\"w3-top\">
-          <div class=\"w3-bar\" id=\"myNavbar\">
-            <a class=\"w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right\" href=\"javascript:void(0);\" onclick=\"toggleFunction()\" title=\"Toggle Navigation Menu\">
-              <i class=\"fa fa-bars\"></i>
-          </div>
-        
-          <!-- Navbar on small screens -->
-          <div id=\"navDemo\" class=\"w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium\">
-            <a href=\"#about\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\"></a>
-            <a href=\"#portfolio\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\"></a>
-            <a href=\"#contact\" class=\"w3-bar-item w3-button\" onclick=\"toggleFunction()\"></a>
-            <a href=\"#\" class=\"w3-bar-item w3-button\"></a>
-          </div>
-        </div>
-        
-        <!-- First Parallax Image with Logo Text -->
-        <div class=\"bgimg-1 w3-display-container w3-opacity-min\" id=\"home\">
-          <div class=\"w3-display-middle\" style=\"white-space:nowrap;\">
-            <span class=\"w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity\">A REALM REMAPPED</span>
-          </div>
-        </div>
-        <div class=\"container\" style=\"padding:50px 250px;\">
-<form role=\"form\">
-    <div class=\"form-group\">
-      <input type=\"input\" class=\"form-control input-lg\" id=\"txt-search\" placeholder=\"Type in a zone\">
-    </div>
-</form>
-<div id=\"filter-records\"></div>
-</div>
-        
+      </div>
+      
         <!-- Container (About Section) -->
         <div class=\"w3-content w3-container w3-padding-64\" id=\"about\">
           <h3 class=\"w3-center\">ABOUT</h3>
@@ -4253,9 +4448,9 @@ $ColorStateEnum[3] = "ColorStateReset";
         <a href=\"https://www.patreon.com/bePatron?u=10666828\" data-patreon-widget-type=\"become-patron-button\">Become a Patron!</a><script async src=\"https://c6.patreon.com/becomePatronButton.bundle.js\"></script>
 
           <a href=\"#home\" class=\"w3-button w3-light-grey\"><i class=\"fa fa-arrow-up w3-margin-right\"></i>To the top</a>
-          <p>Many thanks to <a href=\"https://www.w3schools.com/w3css/default.asp\" title=\"Gamer Escape\" target=\"_blank\" class=\"w3-hover-text-green\">w3.css</a></p>
+          <p>Many thanks to <a href=\"https://www.w3schools.com/w3css/default.asp\" title=\"W3.CSS\" target=\"_blank\" class=\"w3-hover-text-green\">w3.css</a></p>
           <p>Extra special thanks to Viion for his continued support in this.</p>
-          <p><a href=\"https://ffxiv.gamerescape.com/wiki/Main_Page\" title=\"W3.CSS\" target=\"_blank\" class=\"w3-hover-text-green\">Gamer Escape</a> for their support</p>
+          <p><a href=\"https://ffxiv.gamerescape.com/wiki/Main_Page\" title=\"Gamer Escape\" target=\"_blank\" class=\"w3-hover-text-green\">Gamer Escape</a> for their support</p>
           <p>Maps created using <a href=\"https://leafletjs.com/\" title=\"Leaflet.js\" target=\"_blank\" class=\"w3-hover-text-green\">Leaflet.js</a></p>
           <p>All images on this site are property of SQUARE ENIX CO., LTD and are used with only the best intention.</p>
           <p>All data used on the site is using pure and unmodified information extracted from the game client only.</p>
@@ -4509,40 +4704,47 @@ $ColorStateEnum[3] = "ColorStateReset";
           }
         }
         </script>
-        <script>$('#txt-search').keyup(function(){
-            var searchField = $(this).val();
-        if(searchField === '')  {
-        $('#filter-records').html('');
-        return;
-        }
         
-            var regex = new RegExp(searchField, \"i\");
-            var output = '<div class=\"row\">';
-            var count = 1;
-        $.each(data, function(key, val){
-        if (
-          (val.id.search(regex) != -1) || 
-          (val.placename.search(regex) != -1) || 
-          (val.region.search(regex) != -1) || 
-          (val.code.search(regex) != -1) || 
-          (val.map.search(regex) != -1) 
-          ) {
-          output += '<a href=\"'+val.url+'\">';
-          output += '<div class=\"col-md-6 well\" style=\"display: block;\">';
-          output += '<div class=\"col-md-8\" style=\"text-align:right;\">';
-          output += '<h4>' + val.placename + ' (' + val.region + ')</h4>';
-          output += '</div>';
-          output += '</div>';
-          output += '</a>';
-          if(count%2 == 0){
-          output += '</div><div class=\"row\">'
-          }
-          count++;
-        }
-        });
-        output += '</div>';
-        $('#filter-records').html(output);
-        });</script>
+        <div id=\"arrmabout\" class=\"w3-modal\">
+        <div class=\"w3-modal-content\">
+          <div class=\"w3-container w3-text-black\">
+            <span onclick=\"document.getElementById('arrmabout').style.display='none'\"
+            class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
+            <h1><center><b>About A Realm Remapped</b></center><br></h1>
+            A Realm Remapped is a collection of all maps and locations in FINAL FANTASY XIV including FATEs, Treasure maps, Vistas, Aether Currents and more !<br>The main purpose of this is to allow for 100% accuracy for all objects found in zones to date.<br>Please be aware that these maps, although are complete, take a big amount of time to produce, if there is any zone you wish to see and is not here then please contact me on discord at <b>Icarus Twine#7006</b>
+            If you wish to contribute / support / suggest changes then please do so at the links below :<br>
+            (Discord) <a href=\"https://discord.gg/wSmXFZpk\" class=\"w3-bar-item\">https://discord.gg/wSmXFZpk</a><br>
+            (Google Forms) <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfUbCXKmZxxXw-3as3CdBYQresgghBeF4hXO7C8f0r4kXa38A/viewform?usp=sf_link\" class=\"w3-bar-item\">Here</a><br>
+           (Patreon) <a href=\"https://www.patreon.com/ARealmRemapped\" class=\"w3-bar-item\">https://www.patreon.com/ARealmRemapped</a><br>
+           
+            If you would like to support this website to keep it running and up to date please consider leaving a tip via paypal or join our Patreon, thank you loads.
+            <span class=\"w3-wide\"><form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">
+            <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\" />
+            <input type=\"hidden\" name=\"hosted_button_id\" value=\"9FYZ36J2X39XY\" />
+            <input type=\"image\" src=\"https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif\" border=\"0\" name=\"submit\" title=\"PayPal - The safer, easier way to pay online!\" alt=\"Donate with PayPal button\" />
+            <img alt=\"\" border=\"0\" src=\"https://www.paypal.com/en_GB/i/scr/pixel.gif\" width=\"1\" height=\"1\" />
+            </form></span>
+            <a href=\"https://www.patreon.com/bePatron?u=10666828\"><img src=\"https://mymodernmet.com/wp/wp-content/uploads/2017/12/become_a_patron_button@3x.png\" alt=\"join patreon\" style=\"width:300px;\"></a>                       <br><br>
+           <b>All assets, images and data are owned by © SQUARE ENIX CO., LTD. All Rights Reserved.
+           <br> FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</b>
+           <br> If there is any violation to these trademarks or copyrights then please contact Icarus Twine at the above methods.
+           <br>
+           <br>
+           <b>A big thank you to : </b>
+           <br><b><h5>Supporters:</h5></b>
+           <b>Gamer Escape</b> (<a href=\"https://gamerescape.com/\">https://gamerescape.com)</a>
+           <br><b>Miu</b> (<a href=\"https://ffxivteamcraft.com/\">http://ffxivteamcraft.com)</a>
+           <br><b>Hezkezl</b>
+           <br><b>Raelys</b> (<a href=\"https://ffxivcollect.com//\">https://ffxivcollect.com)</a>
+           <br><b>Everyone at the SaintCoinach team</b> (<a href=\"https://github.com/IcarusTwine/SaintCoinach/\">https://github.com/IcarusTwine/SaintCoinach)</a>
+           <br><b><h5>Patreons:</h5></b>
+           <br><b><h5>Testers:</h5></b>
+           <br><b>ArcaneDisgea</b>
+           <br><b>Ferthi</b>
+           <br><b>Nemekh</b>
+          </div>
+        </div>
+      </div>
         </footer>
          
         <script>
@@ -4554,26 +4756,6 @@ $ColorStateEnum[3] = "ColorStateReset";
           captionText.innerHTML = element.alt;
         }
         
-        // Change style of navbar on scroll
-        window.onscroll = function() {myFunction()};
-        function myFunction() {
-            var navbar = document.getElementById(\"myNavbar\");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = \"w3-bar\" + \" w3-card\" + \" w3-animate-top\" + \" w3-white\";
-            } else {
-                navbar.className = navbar.className.replace(\" w3-card w3-animate-top w3-white\", \"\");
-            }
-        }
-        
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function toggleFunction() {
-            var x = document.getElementById(\"navDemo\");
-            if (x.className.indexOf(\"w3-show\") == -1) {
-                x.className += \" w3-show\";
-            } else {
-                x.className = x.className.replace(\" w3-show\", \"\");
-            }
-        }
         </script>
         
         </body>
