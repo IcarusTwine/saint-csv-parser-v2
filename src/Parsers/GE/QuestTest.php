@@ -28,7 +28,7 @@ class QuestTest implements ParseInterface
         $ENpcResidentCsv = $this->csv("ENpcResident");
         $QuestCsv = $this->csv("Quest");
         foreach ($QuestCsv->data as $id => $Quest) {
-            if ($id != 65627) continue;
+            if ($id != 65612) continue;
             //produce argument array
             foreach(range(0,49) as $i){
                 if (empty($Quest["Script{Instruction}[$i]"])) break;
@@ -40,7 +40,8 @@ class QuestTest implements ParseInterface
             //produce listener array
             foreach(range(0,63) as $i){
                 if (empty($Quest["Listener[$i]"])) break;
-                $ListenerArray[$i] = array(
+                $Seq = $Quest["ActorDespawnSeq[$i]"];
+                $ListenerArray[] = array(
                     "Listener" => $Quest["Listener[$i]"],
                     "ConditionValue" => $Quest["ConditionValue[$i]"],
                     "Behavior" => $Quest["Behavior[$i]"],
@@ -75,9 +76,13 @@ class QuestTest implements ParseInterface
                     "CountableNum" => $Quest["CountableNum[$i]"]
                 );
             }
+            var_dump($ArgArray);
+            var_dump($ListenerArray);
+            var_dump($ToDoArray);
+            $QuestData["Issuer{Start}"] = $Quest["Issuer{Start}"];
             $QuestName = $Quest["Name"];
             $LuaFile = $Quest["Id"];
-            $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray);
+            $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData);
         }
         $console = $console->section();
         

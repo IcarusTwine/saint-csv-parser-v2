@@ -1230,12 +1230,15 @@ trait CsvParseTrait
     /**
      * Format dialogue for Quest Loremonger
      */
-    public function getLuaQuest($LuaName, $ArgArray, $ListenerArray, $ToDoArray) {
+    public function getLuaQuest($LuaName, $ArgArray, $ListenerArray, $ToDoArray, $QuestData) {
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
+        $debug = true;
+        $console = new ConsoleOutput();
+        var_dump($LuaName);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
         //$LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua"; 
-        $LuaFile = "$Resources/game_script/quest/000/ClsCnj002_00091.lua"; 
+        $LuaFile = "$Resources/game_script/quest/000/ClsArc006_00076.lua"; 
         $folder = substr(explode('_', $LuaName)[1], 0, 3);
         $textdata = $this->csv("quest/{$folder}/{$LuaName}");
         $CsvTextArray = [];
@@ -1264,12 +1267,63 @@ trait CsvParseTrait
                     if($_pos >= $_lines){
                         break;
                     };
+                    //get scene number
+                    if (strpos($_lua[$_pos],"OnScene")!==false){
+                        if (preg_match('/OnScene(.*?)\(+/', $_lua[$_pos], $match) == 1) {
+                            $SceneNo = ltrim($match[1], '0');
+                            if (empty($SceneNo)){
+                                $SceneNo = "0";
+                            }
+                            $alivearray = [];
+                            foreach($ListenerArray as $Value){
+                                foreach ($Value as $key => $Listener){
+                                    if ($Listener['ActorSpawnSeq'] === $SceneNo){
+                                        if ($debug === true){
+                                            $alivearray[$Listener['Listener']] = $Listener['Listener'];
+                                            $console->writeln("<fg=black;bg=yellow> Spawn -> ".$Listener['Listener']."</>");
+                                        }
+                                    }
+                                    if ($Listener['ActorDespawnSeq'] === $SceneNo){
+                                        if ($debug === true){
+                                            unset($alivearray[$Listener['Listener']]);
+                                            $console->writeln("<fg=black;bg=yellow> Despawn -> ".$Listener['Listener']."</>");
+                                        }
+                                    }
+                                }
+                            }
+                            $Target = implode($alivearray);
+                            //gen vars from function : 
+                            if (preg_match('/\((.*?)\)+/', $_lua[0], $match) == 1) {
+                                $funcvararray = explode(",",$match[1]);
+                                foreach($funcvararray as $key => $var){
+                                    $var = str_replace(" ","",$var);
+                                    if ($key === 0){
+                                        $ObjectArray[$var] = "self";
+                                    }elseif ($key === 1){
+                                        $ObjectArray[$var] = "player";
+                                    }elseif ($key === 2){
+                                        $ObjectArray[$var] = $Target;
+                                    }else {
+                                        $ObjectArray[$var] = "Unknown";
+                                    }
+                                }
+                            }
+                        }                        
+                    }
+                    $Function = "";
+                    $Variable = "";
+                    $Object = "";
                     //type 1
                     if (strpos($_lua[$_pos],":")!==false){
                         //if found "A2_29:PlayActionTimeline("
+                        //grab firstvar 
+                        $GetObjVar = explode(":",$_lua[$_pos]);
+                        $ObjVar = $GetObjVar[0];
+                        //Grab the variable we need and find where it's defined
+                        if (!empty($ObjectArray[$ObjVar])){
+                            $Object = "~~".$ObjectArray[$ObjVar]."~~";
+                        }
                         //get function name
-                        $Function = "";
-                        $Variable = "";
                         if (preg_match('/\:(.*?)\(+/', $_lua[$_pos], $match) == 1) {
                             $Function = "((".$match[1]."))";
                         }
@@ -1277,13 +1331,30 @@ trait CsvParseTrait
                             $CutVariable = explode(",",$match[1]);
                             $Variable = "[[".$CutVariable[0]."]]";
                         }
-                        $OutArray[] = "$Function$Variable";
+                        //if character is created then set a variable for that character
+                        if ($Function === "((CreateCharacter))"){
+                            $ObjectName = $ArgArray[$CutVariable[0]];
+                            $GetVar = explode(" = ",$_lua[$_pos]);
+                            $ReplaceVar = $GetVar[0];
+                            $ObjectArray[$ReplaceVar] = $ObjectName;
+                        }
+                        $OutArray[] = "$Object$Function$Variable";
                     }
+                    $Function = "";
+                    $Variable = "";
+                    $Object = "";
                     //type 2
                     if (preg_match("/[A-Z][0-9]_[0-9]+\(/", $_lua[$_pos], $match)){
                         //if found "L5_35(L6_36, 10)"
+                        //grab firstvar 
+                        
+                        $GetObjVar = explode(" = ",$_lua[$_pos]);
+                        $ObjVar = $GetObjVar[0];
                         //Grab the variable we need and find where it's defined
                         $ToFind = str_replace("(","",$match[0]);
+                        if (!empty($ObjectArray[$ObjVar])){
+                            $Object = "~~".$ObjectArray[$ObjVar]."~~";
+                        }
                         $found = false;
                         //set the orignal position to call back to
                         $StorePos = $_pos;
@@ -1297,16 +1368,32 @@ trait CsvParseTrait
                                 $matchExplode = explode(" = ", $match[0]);
                                 $Function = "";
                                 $Variable = "";
+                                if (!empty($ObjectArray[$matchExplode[0]])){
+                                    $Object = "~~".$ObjectArray[$matchExplode[0]]."~~";
+                                }
                                 if ($matchExplode[0] === $ToFind){
                                     $GetFuncNameExp = explode(".", $_lua[$_pos]);
                                     $Function = "((".$GetFuncNameExp[1]."))";
+                                    //if character is created then set a variable for that character
                                     //set back to origonal pos
                                     $_pos = $StorePos;
                                     if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
                                         $CutVariable = explode(",",$match[1]);
                                         $Variable = "[[".$CutVariable[0]."]]";
+                                        if ($Function === "((CreateCharacter))"){
+                                            $ObjectName = $ArgArray[$CutVariable[0]];
+                                            $_pos++;
+                                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+/", $_lua[$_pos], $match)){
+                                                $GetVar = explode(" = ",$_lua[$_pos]);
+                                                $ReplaceVar = $GetVar[0];
+                                                $ObjectArray[$ReplaceVar] = $ObjectName;
+                                                $ReplaceVar = $GetVar[1];
+                                                $ObjectArray[$ReplaceVar] = $ObjectName;
+                                                $_pos = $StorePos;
+                                            }
+                                        }
                                     }
-                                    $OutArray[] = "$Function$Variable";
+                                    $OutArray[] = "$Object$Function$Variable";
                                     $found = true;
                                 }
                             }
@@ -1316,7 +1403,11 @@ trait CsvParseTrait
                 }
             }
         }
-        var_dump($OutArray);
+        foreach($OutArray as $Line){
+            if (strpos($Line,"Talk") !== false){
+                //var_dump($Line);
+            }
+        }
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
         $LogMessageCsv = $this->csv("LogMessage");
