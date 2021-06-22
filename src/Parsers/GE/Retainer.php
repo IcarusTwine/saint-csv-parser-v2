@@ -89,7 +89,7 @@ class Retainer implements ParseInterface
                     $FSHArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
                 break;
                 case "34": //DoW
-                    $DOWArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredItemLevel|Item=$ItemName|Quantity1=$RequiredItemLevel|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
+                    $DOWArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredItemLevel|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredItemLevel|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
                 break;
             }
 
