@@ -76,9 +76,9 @@ class QuestTest implements ParseInterface
                     "CountableNum" => $Quest["CountableNum[$i]"]
                 );
             }
-            var_dump($ArgArray);
-            var_dump($ListenerArray);
-            var_dump($ToDoArray);
+            //var_dump($ArgArray);
+            //var_dump($ListenerArray);
+            //var_dump($ToDoArray);
             $QuestData["Issuer{Start}"] = $Quest["Issuer{Start}"];
             $QuestName = $Quest["Name"];
             $LuaFile = $Quest["Id"];

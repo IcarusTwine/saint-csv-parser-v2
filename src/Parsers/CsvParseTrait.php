@@ -1274,24 +1274,6 @@ trait CsvParseTrait
                             if (empty($SceneNo)){
                                 $SceneNo = "0";
                             }
-                            $alivearray = [];
-                            foreach($ListenerArray as $Value){
-                                foreach ($Value as $key => $Listener){
-                                    if ($Listener['ActorSpawnSeq'] === $SceneNo){
-                                        if ($debug === true){
-                                            $alivearray[$Listener['Listener']] = $Listener['Listener'];
-                                            $console->writeln("<fg=black;bg=yellow> Spawn -> ".$Listener['Listener']."</>");
-                                        }
-                                    }
-                                    if ($Listener['ActorDespawnSeq'] === $SceneNo){
-                                        if ($debug === true){
-                                            unset($alivearray[$Listener['Listener']]);
-                                            $console->writeln("<fg=black;bg=yellow> Despawn -> ".$Listener['Listener']."</>");
-                                        }
-                                    }
-                                }
-                            }
-                            $Target = implode($alivearray);
                             //gen vars from function : 
                             if (preg_match('/\((.*?)\)+/', $_lua[0], $match) == 1) {
                                 $funcvararray = explode(",",$match[1]);
@@ -1302,7 +1284,7 @@ trait CsvParseTrait
                                     }elseif ($key === 1){
                                         $ObjectArray[$var] = "player";
                                     }elseif ($key === 2){
-                                        $ObjectArray[$var] = $Target;
+                                        $ObjectArray[$var] = "Target";
                                     }else {
                                         $ObjectArray[$var] = "Unknown";
                                     }
@@ -1403,6 +1385,7 @@ trait CsvParseTrait
                 }
             }
         }
+        var_dump($OutArray);
         foreach($OutArray as $Line){
             if (strpos($Line,"Talk") !== false){
                 //var_dump($Line);
