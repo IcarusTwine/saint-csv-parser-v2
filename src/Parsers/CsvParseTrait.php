@@ -1237,8 +1237,7 @@ trait CsvParseTrait
         var_dump($LuaName);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        //$LuaFile = "$Resources/game_script/custom/{$Luafolder}/{$LuaName}.lua"; 
-        $LuaFile = "$Resources/game_script/quest/000/ClsArc006_00076.lua"; 
+        $LuaFile = "$Resources/game_script/quest/{$Luafolder}/{$LuaName}.lua"; 
         $folder = substr(explode('_', $LuaName)[1], 0, 3);
         $textdata = $this->csv("quest/{$folder}/{$LuaName}");
         $CsvTextArray = [];
@@ -1274,6 +1273,7 @@ trait CsvParseTrait
                             if (empty($SceneNo)){
                                 $SceneNo = "0";
                             }
+                            $OutArray[] = "Scene $SceneNo";
                             //gen vars from function : 
                             if (preg_match('/\((.*?)\)+/', $_lua[0], $match) == 1) {
                                 $funcvararray = explode(",",$match[1]);
@@ -1284,7 +1284,11 @@ trait CsvParseTrait
                                     }elseif ($key === 1){
                                         $ObjectArray[$var] = "player";
                                     }elseif ($key === 2){
-                                        $ObjectArray[$var] = "Target";
+                                        if (($SceneNo === "0")){
+                                            $ObjectArray[$var] = $QuestData["Issuer{Start}"];
+                                        } else {
+                                            $ObjectArray[$var] = "Target";
+                                        }
                                     }else {
                                         $ObjectArray[$var] = "Unknown";
                                     }
@@ -1348,10 +1352,11 @@ trait CsvParseTrait
                             }
                             if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
                                 $matchExplode = explode(" = ", $match[0]);
+                                $MatchTarget = str_ireplace(".","",$matchExplode[1]);
                                 $Function = "";
                                 $Variable = "";
-                                if (!empty($ObjectArray[$matchExplode[0]])){
-                                    $Object = "~~".$ObjectArray[$matchExplode[0]]."~~";
+                                if (!empty($ObjectArray[$MatchTarget])){
+                                    $Object = "~~".$ObjectArray[$MatchTarget]."~~";
                                 }
                                 if ($matchExplode[0] === $ToFind){
                                     $GetFuncNameExp = explode(".", $_lua[$_pos]);
