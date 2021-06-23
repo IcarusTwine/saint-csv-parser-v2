@@ -1274,7 +1274,7 @@ trait CsvParseTrait
                                 $SceneNo = "0";
                             }
                             $OutArray[] = "Scene $SceneNo";
-                            //gen vars from function : 
+                            //gen vars from functions : 
                             if (preg_match('/\((.*?)\)+/', $_lua[0], $match) == 1) {
                                 $funcvararray = explode(",",$match[1]);
                                 foreach($funcvararray as $key => $var){
