@@ -89,13 +89,44 @@ class QuestTest implements ParseInterface
             var_dump($id);
            $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData);
         }
+        $IconArray = $QuestFormat["Icons"];
+        $IconArray = array_unique($IconArray);
+        $IconArrayCount = count($IconArray);
         $console = $console->section();
-        
+        if (!empty($IconArray)) {
+            $this->io->text('Copying Quest Images ...');
+            $i = 0;
+            foreach ($IconArray as $value){
+                $i++;
+                $console->overwrite(" Saving -> $i / $IconArrayCount");
+                $IconID = sprintf("%06d", $value);
+                if (!file_exists($this->getOutputFolder() ."/$PatchID/QuestImages/$IconID.png")) {
+                    // ensure output directory exists
+                    $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/QuestImages/";
+                    if (!is_dir($IconOutputDirectory)) {
+                        mkdir($IconOutputDirectory, 0777, true);
+                    }
+    
+                    // build icon input folder paths
+                    if ($IconID === "000000") continue;
+                    $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
+    
+                    $iconFileName = "{$IconOutputDirectory}/$IconID.png";
+    
+                    // copy the input icon to the output filename
+                    if(file_exists($GetIcon)){
+                        copy($GetIcon, $iconFileName);
+                    } else {
+                        $MissingIconArray[] = $value;
+                    }
+                }
+            }
+        }
         
         //print_r($LuaFormat);
 
         $data = GeFormatter::format(self::WIKI_FORMAT, [
-            '{Output}'  => $QuestFormat,
+            '{Output}'  => $QuestFormat['Lore'],
 
         ]);
         $this->data[] = $data;

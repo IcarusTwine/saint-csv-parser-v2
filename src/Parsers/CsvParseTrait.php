@@ -1524,6 +1524,7 @@ trait CsvParseTrait
             "WaitForActionTimeline",
             "WalkOut",
             "IsHowTo",
+            "QuestReward",
         );
         $LastSpeaker = "";
         $CurrentSpeaker = $ENpcResidentCsv->at($QuestData["Issuer{Start}"])['Singular'];
@@ -1536,6 +1537,9 @@ trait CsvParseTrait
             if (in_array($Line['Type'],$SkipTypes)) continue;
             if ($Line["Target"] === "Target"){
                 $ExplodeVariable = explode("_",$Line["Variables"]);
+                if (empty($ExplodeVariable[3])){
+                    var_dump($Line['Type']);
+                }
                 $TargetNameSearch = substr($ExplodeVariable[3], 0, 4);
                 foreach($PotentialNames as $PotentialName => $RealName){
                     if ($TargetNameSearch === $PotentialName){
@@ -1567,14 +1571,25 @@ trait CsvParseTrait
                 break;
                 case 'ScreenImage':
                     $i++;
-                    $ScreenImage = $ScreenImageCsv->at($ArgArray[$Line['Variables']])['Image'];
-                    $Image
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:{$ScreenImage}_hr1.png|Screen Image]]";
+                    $ScreenImage = sprintf("%06d", $ScreenImageCsv->at($ArgArray[$Line['Variables']])['Image']);
+                    $IconArray[] = $ScreenImage;
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:{$ScreenImage}.png|Screen Image]]";
                 break;
                 case 'HowTo':
                     $i++;
                     $HowTo = $HowToCsv->at($ArgArray[$Line['Variables']])['Name'];
                     $LinedArray[$i][] = "{{Loremnarrator|dialog=Unlocked: Active Help : [[Active_Help/$HowTo|$HowTo]]";
+                break;
+                case 'YesNo':
+                    $i++;
+                    $LinedArray[$i][] = "{{Loremquote|$CurrentSpeaker|link=y|{| class=\"datatable-GEtable\"
+                        |+".$CsvTextArray[$Line['Variables'][0]]."
+                        !".$CsvTextArray[$Line['Variables'][1]]."
+                        !".$CsvTextArray[$Line['Variables'][2]]."
+                        |-
+                        |width=50%|{{Loremquote|$CurrentSpeaker|link=y|}}
+                        |width=50%|{{Loremquote|$CurrentSpeaker|link=y|".$CsvTextArray[$Line['Variables']['Refuse'][0]]."}}
+                        |}";
                 break;
                 default:
                     $LinedArray[$i][] = $Line["Type"];
@@ -1586,7 +1601,7 @@ trait CsvParseTrait
         foreach($LinedArray as $key => $KeyedOutArray){
             $FinalArray[] = implode("\n----\n",$KeyedOutArray)."";
         }
-        $FinalOutput = implode("}}",$FinalArray);
+        $FinalOutput = implode("}}\n",$FinalArray);
         $QuestStartLocation = "New Gridania";
         $Previous1 = "";
         $Previous2 = "";
@@ -1597,7 +1612,8 @@ trait CsvParseTrait
         {{Loremquestheader|$QuestName|Mined=X|Summary=}}</noinclude>
         {{LoremLoc|Location=$QuestStartLocation}}";
         $QuestLuaOutput["Lore"] = "$StartOfOutput\n".$FinalOutput."}}";
-        return 
+        $QuestLuaOutput["Icons"] = $IconArray;
+        return $QuestLuaOutput;
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
         $LogMessageCsv = $this->csv("LogMessage");
