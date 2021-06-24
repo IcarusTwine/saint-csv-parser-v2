@@ -41,7 +41,7 @@ class QuestTest implements ParseInterface
             foreach(range(0,63) as $i){
                 if (empty($Quest["Listener[$i]"])) break;
                 $Seq = $Quest["ActorDespawnSeq[$i]"];
-                $ListenerArray[] = array(
+                $ListenerArray[$Seq][] = array(
                     "Listener" => $Quest["Listener[$i]"],
                     "ConditionValue" => $Quest["ConditionValue[$i]"],
                     "Behavior" => $Quest["Behavior[$i]"],
@@ -80,9 +80,14 @@ class QuestTest implements ParseInterface
             //var_dump($ListenerArray);
             //var_dump($ToDoArray);
             $QuestData["Issuer{Start}"] = $Quest["Issuer{Start}"];
+            $QuestData["Target{End}"] = $Quest["Target{End}"];
+            $QuestData["Name"] = $Quest["Name"];
             $QuestName = $Quest["Name"];
             $LuaFile = $Quest["Id"];
-            $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData);
+            var_dump($LuaFile);
+            var_dump($QuestName);
+            var_dump($id);
+           $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData);
         }
         $console = $console->section();
         

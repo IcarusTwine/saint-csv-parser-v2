@@ -10,6 +10,8 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 use ForceUTF8\Encoding;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
+use PDO;
+
 trait CsvParseTrait
 {
     /** @var SymfonyStyle */
@@ -1231,10 +1233,12 @@ trait CsvParseTrait
      * Format dialogue for Quest Loremonger
      */
     public function getLuaQuest($LuaName, $ArgArray, $ListenerArray, $ToDoArray, $QuestData) {
+        $ENpcResidentCsv = $this->csv("ENpcResident");
+        $ScreenImageCsv = $this->csv("ScreenImage");
+        $HowToCsv = $this->csv("HowTo");
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $debug = true;
         $console = new ConsoleOutput();
-        var_dump($LuaName);
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
         $LuaFile = "$Resources/game_script/quest/{$Luafolder}/{$LuaName}.lua"; 
@@ -1250,6 +1254,28 @@ trait CsvParseTrait
         }
         $codesolid = file_get_contents($LuaFile);
         $codeexp = explode("function",$codesolid);
+        //get all scenes
+        $SceneArray = [];
+        foreach($codeexp as $chunks){
+            $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$chunks)))));
+            if (strpos($_lua[0],"OnScene") === false) continue;
+            if (preg_match('/OnScene(.*?)\(+/', $_lua[0], $match) == 1) {
+                $SceneNo = ltrim($match[1], '0');
+                if (empty($SceneNo)){
+                    $SceneNo = "0";
+                }
+                $SceneArray[] = $SceneNo;
+            }
+        }
+        $LastScene = end($SceneArray);
+        //potential names
+        foreach($ArgArray as $Arg){
+            if ($Arg > 1000000 && $Arg < 2000000){
+                $NameKey = substr(strtoupper($ENpcResidentCsv->at($Arg)['Singular']), 0, 4);
+                $PotentialNames[$NameKey] = ucwords($ENpcResidentCsv->at($Arg)['Singular']);
+            }
+        }
+        
         foreach($codeexp as $chunk){
             $LuaDefinedArray = [];
             //tidy code up (explode then remove linebreaks, tabs)
@@ -1273,7 +1299,6 @@ trait CsvParseTrait
                             if (empty($SceneNo)){
                                 $SceneNo = "0";
                             }
-                            $OutArray[] = "Scene $SceneNo";
                             //gen vars from functions : 
                             if (preg_match('/\((.*?)\)+/', $_lua[0], $match) == 1) {
                                 $funcvararray = explode(",",$match[1]);
@@ -1286,6 +1311,8 @@ trait CsvParseTrait
                                     }elseif ($key === 2){
                                         if (($SceneNo === "0")){
                                             $ObjectArray[$var] = $QuestData["Issuer{Start}"];
+                                        }elseif ($SceneNo === $LastScene){
+                                            $ObjectArray[$var] = $QuestData["Target{End}"];
                                         } else {
                                             $ObjectArray[$var] = "Target";
                                         }
@@ -1307,24 +1334,64 @@ trait CsvParseTrait
                         $ObjVar = $GetObjVar[0];
                         //Grab the variable we need and find where it's defined
                         if (!empty($ObjectArray[$ObjVar])){
-                            $Object = "~~".$ObjectArray[$ObjVar]."~~";
+                            $Object = "".$ObjectArray[$ObjVar]."";
                         }
                         //get function name
                         if (preg_match('/\:(.*?)\(+/', $_lua[$_pos], $match) == 1) {
-                            $Function = "((".$match[1]."))";
+                            $Function = "".$match[1]."";
                         }
                         if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
                             $CutVariable = explode(",",$match[1]);
-                            $Variable = "[[".$CutVariable[0]."]]";
+                            $Variable = "".$CutVariable[0]."";
                         }
                         //if character is created then set a variable for that character
-                        if ($Function === "((CreateCharacter))"){
+                        if ($Function === "CreateCharacter"){
                             $ObjectName = $ArgArray[$CutVariable[0]];
                             $GetVar = explode(" = ",$_lua[$_pos]);
                             $ReplaceVar = $GetVar[0];
                             $ObjectArray[$ReplaceVar] = $ObjectName;
                         }
-                        $OutArray[] = "$Object$Function$Variable";
+                        if ($Function === "YesNo"){
+                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                $YesNoNo = [];
+                                $VariablesExp = explode(", ",$match[1]);
+                                array_pop($VariablesExp);
+                                unset($VariablesExp[0]);
+                                $VariablesYesNo = [];
+                                foreach($VariablesExp as $Variables){
+                                    $VariablesYesNo[] = ltrim(strstr($Variables, '.'),'.');
+                                }
+                                //add refuse text
+                                $StorePos = $_pos;
+                                $YesNoEnd = false;
+                                while($YesNoEnd === false){
+                                    $_pos++;
+                                    if ($_pos >= $_lines){
+                                        break;
+                                    }
+                                    if (strpos($_lua[$_pos],"TEXT") !== false){
+                                        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                            $CutVariable = explode(",",$match[1]);
+                                            $VariableNo = $CutVariable[0];
+                                            $YesNoNo[] = $VariableNo;
+                                        }
+                                    }
+                                    if ($_lua[$_pos] === "end"){
+                                        $YesNoEnd = true;
+                                        $VariablesYesNo["Refuse"] = $YesNoNo;
+                                        break;
+                                    }
+
+                                }
+                                $Variable = $VariablesYesNo;
+                            }
+                        }
+                        $Array = array(
+                            "Type" => $Function,
+                            "Target" => $Object,
+                            "Variables" => $Variable
+                        );
+                        $OutArray[] = $Array;
                     }
                     $Function = "";
                     $Variable = "";
@@ -1339,7 +1406,7 @@ trait CsvParseTrait
                         //Grab the variable we need and find where it's defined
                         $ToFind = str_replace("(","",$match[0]);
                         if (!empty($ObjectArray[$ObjVar])){
-                            $Object = "~~".$ObjectArray[$ObjVar]."~~";
+                            $Object = "".$ObjectArray[$ObjVar]."";
                         }
                         $found = false;
                         //set the orignal position to call back to
@@ -1356,18 +1423,18 @@ trait CsvParseTrait
                                 $Function = "";
                                 $Variable = "";
                                 if (!empty($ObjectArray[$MatchTarget])){
-                                    $Object = "~~".$ObjectArray[$MatchTarget]."~~";
+                                    $Object = "".$ObjectArray[$MatchTarget]."";
                                 }
                                 if ($matchExplode[0] === $ToFind){
                                     $GetFuncNameExp = explode(".", $_lua[$_pos]);
-                                    $Function = "((".$GetFuncNameExp[1]."))";
+                                    $Function = "".$GetFuncNameExp[1]."";
                                     //if character is created then set a variable for that character
                                     //set back to origonal pos
                                     $_pos = $StorePos;
                                     if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
                                         $CutVariable = explode(",",$match[1]);
-                                        $Variable = "[[".$CutVariable[0]."]]";
-                                        if ($Function === "((CreateCharacter))"){
+                                        $Variable = "".$CutVariable[0]."";
+                                        if ($Function === "CreateCharacter"){
                                             $ObjectName = $ArgArray[$CutVariable[0]];
                                             $_pos++;
                                             if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+/", $_lua[$_pos], $match)){
@@ -1379,8 +1446,48 @@ trait CsvParseTrait
                                                 $_pos = $StorePos;
                                             }
                                         }
+                                        if ($Function === "YesNo"){
+                                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                                $YesNoNo = [];
+                                                $VariablesExp = explode(", ",$match[1]);
+                                                array_pop($VariablesExp);
+                                                unset($VariablesExp[0]);
+                                                $VariablesYesNo = [];
+                                                foreach($VariablesExp as $Variables){
+                                                    $VariablesYesNo[] = ltrim(strstr($Variables, '.'),'.');
+                                                }
+                                                //add refuse text
+                                                $StorePos = $_pos;
+                                                $YesNoEnd = false;
+                                                while($YesNoEnd === false){
+                                                    $_pos++;
+                                                    if ($_pos >= $_lines){
+                                                        break;
+                                                    }
+                                                    if (strpos($_lua[$_pos],"TEXT") !== false){
+                                                        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                                            $CutVariable = explode(",",$match[1]);
+                                                            $VariableNo = $CutVariable[0];
+                                                            $YesNoNo[] = $VariableNo;
+                                                        }
+                                                    }
+                                                    if ($_lua[$_pos] === "end"){
+                                                        $YesNoEnd = true;
+                                                        $VariablesYesNo["Refuse"] = $YesNoNo;
+                                                        break;
+                                                    }
+
+                                                }
+                                                $Variable = $VariablesYesNo;
+                                            }
+                                        }
                                     }
-                                    $OutArray[] = "$Object$Function$Variable";
+                                    $Array = array(
+                                        "Type" => $Function,
+                                        "Target" => $Object,
+                                        "Variables" => $Variable
+                                    );
+                                    $OutArray[] = $Array;
                                     $found = true;
                                 }
                             }
@@ -1390,12 +1497,107 @@ trait CsvParseTrait
                 }
             }
         }
-        var_dump($OutArray);
+        $SkipTypes = array(
+            "QuestOffer",
+            "TurnTo",
+            "WaitForTurn",
+            "PlayActionTimeline",
+            "Position",
+            "Direction",
+            "LookAt",
+            "Idle",
+            "InvisibleStandCharacter",
+            "CreateCharacter",
+            "Visible",
+            "PlayCamera",
+            "Wait",
+            "FadeIn",
+            "WaitForFade",
+            "PlayTwoShotCamera",
+            "WalkIn",
+            "SideDolly",
+            "SidePan",
+            "Zoom",
+            "WaitForMove",
+            "WaitForLookAt",
+            "FadeOut",
+            "WaitForActionTimeline",
+            "WalkOut",
+            "IsHowTo",
+        );
+        $LastSpeaker = "";
+        $CurrentSpeaker = $ENpcResidentCsv->at($QuestData["Issuer{Start}"])['Singular'];
+        $i = 0;
         foreach($OutArray as $Line){
-            if (strpos($Line,"Talk") !== false){
-                //var_dump($Line);
+            if (!empty($ENpcResidentCsv->at($Line["Target"])['Singular'])) {
+                $CurrentSpeaker = $ENpcResidentCsv->at($Line["Target"])['Singular'];
             }
+            //skip these functions
+            if (in_array($Line['Type'],$SkipTypes)) continue;
+            if ($Line["Target"] === "Target"){
+                $ExplodeVariable = explode("_",$Line["Variables"]);
+                $TargetNameSearch = substr($ExplodeVariable[3], 0, 4);
+                foreach($PotentialNames as $PotentialName => $RealName){
+                    if ($TargetNameSearch === $PotentialName){
+                        $CurrentSpeaker = $RealName;
+                    }
+                }
+            }
+
+            if ($LastSpeaker != $CurrentSpeaker){
+                $i++;
+                $LinedArray[$i][] = "{{Loremquote|$CurrentSpeaker|link=y|";
+            }
+            $LastSpeaker = $CurrentSpeaker;
+            switch ($Line["Type"]) {
+                case 'Talk':
+                    $LinedArray[$i][] = $CsvTextArray[$Line['Variables']]."";
+                break;
+                case 'QuestAccepted':
+                    $i++;
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120001_hr1.png|Quest Accepted]]";
+                break;
+                case 'SystemTalk':
+                    $i++;
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Positive|".$CsvTextArray[$Line['Variables']]."}}";
+                break;
+                case 'QuestCompleted':
+                    $i++;
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120012_hr1.png|Quest Completed]]";
+                break;
+                case 'ScreenImage':
+                    $i++;
+                    $ScreenImage = $ScreenImageCsv->at($ArgArray[$Line['Variables']])['Image'];
+                    $Image
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:{$ScreenImage}_hr1.png|Screen Image]]";
+                break;
+                case 'HowTo':
+                    $i++;
+                    $HowTo = $HowToCsv->at($ArgArray[$Line['Variables']])['Name'];
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=Unlocked: Active Help : [[Active_Help/$HowTo|$HowTo]]";
+                break;
+                default:
+                    $LinedArray[$i][] = $Line["Type"];
+                break;
+            }
+            
+
         }
+        foreach($LinedArray as $key => $KeyedOutArray){
+            $FinalArray[] = implode("\n----\n",$KeyedOutArray)."";
+        }
+        $FinalOutput = implode("}}",$FinalArray);
+        $QuestStartLocation = "New Gridania";
+        $Previous1 = "";
+        $Previous2 = "";
+        $Next = "";
+        $QuestName = $QuestData["Name"];
+        $StartOfOutput = "<noinclude>
+        {{Lorempageturn|prev=$Previous1|prev2=$Previous2|next=$Next}}
+        {{Loremquestheader|$QuestName|Mined=X|Summary=}}</noinclude>
+        {{LoremLoc|Location=$QuestStartLocation}}";
+        $QuestLuaOutput["Lore"] = "$StartOfOutput\n".$FinalOutput."}}";
+        return 
     }
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
         $LogMessageCsv = $this->csv("LogMessage");
