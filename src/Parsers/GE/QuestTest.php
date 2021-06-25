@@ -27,8 +27,11 @@ class QuestTest implements ParseInterface
         $ENpcBaseCsv = $this->csv("ENpcBase");
         $ENpcResidentCsv = $this->csv("ENpcResident");
         $QuestCsv = $this->csv("Quest");
+        $IconArray = [];
         foreach ($QuestCsv->data as $id => $Quest) {
-            if ($id != 65603) continue;
+            $ListenerArray = [];
+            $ToDoArray = [];
+            if ($id != 69430) continue;
             //produce argument array
             foreach(range(0,49) as $i){
                 if (empty($Quest["Script{Instruction}[$i]"])) break;

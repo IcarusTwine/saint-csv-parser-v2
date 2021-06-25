@@ -1236,6 +1236,12 @@ trait CsvParseTrait
         $ENpcResidentCsv = $this->csv("ENpcResident");
         $ScreenImageCsv = $this->csv("ScreenImage");
         $HowToCsv = $this->csv("HowTo");
+        $LogMessageCsv = $this->csv("LogMessage");
+        $BGMCsv = $this->csv("BGM");
+        $SECsv = $this->csv("SE");
+        $ArgArray["BGM_MUSIC_NO_MUSIC"] = "1";
+        $ArgArray["BGM_MUSIC_EVENT_MEETING"] = "19";
+        $IconArray = [];
         $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
         $debug = true;
         $console = new ConsoleOutput();
@@ -1351,6 +1357,40 @@ trait CsvParseTrait
                             $ReplaceVar = $GetVar[0];
                             $ObjectArray[$ReplaceVar] = $ObjectName;
                         }
+                        if ($Function === "Menu"){
+                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                $a = 0;
+                                $VariablesExp = explode(", ",$match[1]);
+                                //$VariablesYesNo = [];
+                                foreach($VariablesExp as $Variables){
+                                    $VariablesMenu[] = ltrim(strstr($Variables, '.'),'.');
+                                }
+                                //add refuse text
+                                $MenuEnd = false;
+                                while($MenuEnd === false){
+                                    $_pos++;
+                                    if ($_pos >= $_lines){
+                                        break;
+                                    }
+                                    if (strpos($_lua[$_pos],"TEXT") !== false){
+                                        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                            $CutVariable = explode(",",$match[1]);
+                                            $VariableMenu = $CutVariable[0];
+                                            $Answers[$a][] = $VariableMenu;
+                                        }
+                                    }
+                                    if ($_lua[$_pos] === "else"){
+                                        $a++;
+                                    }
+                                    if ($_lua[$_pos] === "end"){
+                                        $MenuEnd = true;
+                                        $VariablesMenu["Answers"] = $Answers;
+                                        break;
+                                    }
+                                }
+                                $Variable = $VariablesMenu;
+                            }
+                        }
                         if ($Function === "YesNo"){
                             if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
                                 $YesNoNo = [];
@@ -1446,6 +1486,39 @@ trait CsvParseTrait
                                                 $_pos = $StorePos;
                                             }
                                         }
+                                        if ($Function === "Menu"){
+                                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                                $VariablesExp = explode(", ",$match[1]);
+                                                var_dump($VariablesExp);
+                                                //$VariablesYesNo = [];
+                                                //foreach($VariablesExp as $Variables){
+                                                //    $VariablesYesNo[] = ltrim(strstr($Variables, '.'),'.');
+                                                //}
+                                                ////add refuse text
+                                                //$StorePos = $_pos;
+                                                //$YesNoEnd = false;
+                                                //while($YesNoEnd === false){
+                                                //    $_pos++;
+                                                //    if ($_pos >= $_lines){
+                                                //        break;
+                                                //    }
+                                                //    if (strpos($_lua[$_pos],"TEXT") !== false){
+                                                //        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                                //            $CutVariable = explode(",",$match[1]);
+                                                //            $VariableNo = $CutVariable[0];
+                                                //            $YesNoNo[] = $VariableNo;
+                                                //        }
+                                                //    }
+                                                //    if ($_lua[$_pos] === "end"){
+                                                //        $YesNoEnd = true;
+                                                //        $VariablesYesNo["Refuse"] = $YesNoNo;
+                                                //        break;
+                                                //    }
+//
+                                                //}
+                                                //$Variable = $VariablesYesNo;
+                                            }
+                                        }
                                         if ($Function === "YesNo"){
                                             if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
                                                 $YesNoNo = [];
@@ -1524,14 +1597,33 @@ trait CsvParseTrait
             "WaitForActionTimeline",
             "WalkOut",
             "IsHowTo",
-            "QuestReward",
+            "QuestReward", //???
+            "BindCharacter",
+            "UpdownPan",
+            "UpdownDolly",
+            "ChangeBGMVolume",
+            "IsQuestCompleted", //???
+            "IsInstanceContentEnableFinder",
+            "WaitForTransparency",
+            "CancelActionTimeline",
+            "Orbit",
+            "PlayTargetRelationCamera",
+            "GetRace",
+            "WaitForDolly",
+            "GetSex",
+            "TalkAsync",
+            "Transparency",
+            "IsBattleNpcOwner",
+            "BeginCutScene",
+            "WaitForPan",
+            "PlayVfx",
         );
         $LastSpeaker = "";
-        $CurrentSpeaker = $ENpcResidentCsv->at($QuestData["Issuer{Start}"])['Singular'];
+        $CurrentSpeaker = ucwords($ENpcResidentCsv->at($QuestData["Issuer{Start}"])['Singular']);
         $i = 0;
         foreach($OutArray as $Line){
             if (!empty($ENpcResidentCsv->at($Line["Target"])['Singular'])) {
-                $CurrentSpeaker = $ENpcResidentCsv->at($Line["Target"])['Singular'];
+                $CurrentSpeaker = ucwords($ENpcResidentCsv->at($Line["Target"])['Singular']);
             }
             //skip these functions
             if (in_array($Line['Type'],$SkipTypes)) continue;
@@ -1543,7 +1635,7 @@ trait CsvParseTrait
                 $TargetNameSearch = substr($ExplodeVariable[3], 0, 4);
                 foreach($PotentialNames as $PotentialName => $RealName){
                     if ($TargetNameSearch === $PotentialName){
-                        $CurrentSpeaker = $RealName;
+                        $CurrentSpeaker = ucwords($RealName);
                     }
                 }
             }
@@ -1559,37 +1651,107 @@ trait CsvParseTrait
                 break;
                 case 'QuestAccepted':
                     $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120001_hr1.png|Quest Accepted]]";
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120001_hr1.png|820px|Quest Accepted]]";
+                    if ($CurrentSpeaker === $LastSpeaker){
+                        $i++;
+                        $LinedArray[$i][] = "\n{{Loremquote|$CurrentSpeaker|link=y|";
+                    }
                 break;
                 case 'SystemTalk':
+                    $CurrentSpeaker = "System";
                     $i++;
                     $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Positive|".$CsvTextArray[$Line['Variables']]."}}";
+                    $i++;
                 break;
                 case 'QuestCompleted':
                     $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120012_hr1.png|Quest Completed]]";
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120012_hr1.png|820px|Quest Completed]]";
+                        $i++;
                 break;
                 case 'ScreenImage':
                     $i++;
                     $ScreenImage = sprintf("%06d", $ScreenImageCsv->at($ArgArray[$Line['Variables']])['Image']);
                     $IconArray[] = $ScreenImage;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:{$ScreenImage}.png|Screen Image]]";
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:{$ScreenImage}.png|820px|Screen Image]]";
+                    $i++;
                 break;
                 case 'HowTo':
                     $i++;
                     $HowTo = $HowToCsv->at($ArgArray[$Line['Variables']])['Name'];
                     $LinedArray[$i][] = "{{Loremnarrator|dialog=Unlocked: Active Help : [[Active_Help/$HowTo|$HowTo]]";
+                    $i++;
+                break;
+                case 'PlayBGM':
+                    if (!empty($ArgArray[$Line['Variables']])){
+                        $i++;
+                        $BGM = $BGMCsv->at($ArgArray[$Line['Variables']])['File'];
+                        $LinedArray[$i][] = "{{LoremBGM|$BGM";
+                        $i++;
+                    }
+                break;
+                case 'PlayCutScene':
+                    $i++;
+                    $LinedArray[$i][] = "{{LoremCS|start";
+                    $i++;
+                break;
+                case 'PlaySE':
+                    if (!empty($ArgArray[$Line['Variables']])){
+                        $i++;
+                        $SountEffect = $SECsv->at($ArgArray[$Line['Variables']])['unknown_1'];
+                        $LinedArray[$i][] = "{{LoremBGM|$SountEffect";
+                        $i++;
+                    }
+                break;
+                case 'EndCutScene':
+                    $i++;
+                    $LinedArray[$i][] = "{{LoremCS|end";
+                    $i++;
+                break;
+                case 'LogMessage':
+                    $i++;
+                    if (!empty($ArgArray[$Line['Variables']])){
+                    $LogMessage = $LogMessageCsv->at($ArgArray[$Line['Variables']])['Text'];
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Positive|$LogMessage}}";
+                    }
+                    $i++;
                 break;
                 case 'YesNo':
                     $i++;
-                    $LinedArray[$i][] = "{{Loremquote|$CurrentSpeaker|link=y|{| class=\"datatable-GEtable\"
-                        |+".$CsvTextArray[$Line['Variables'][0]]."
+                    $LinedArray[$i][] = "{| class=\"datatable-GEtable\"
+                        |+{{Loremquote|".$CsvTextArray[$Line['Variables'][0]]."|}}
                         !".$CsvTextArray[$Line['Variables'][1]]."
                         !".$CsvTextArray[$Line['Variables'][2]]."
                         |-
                         |width=50%|{{Loremquote|$CurrentSpeaker|link=y|}}
                         |width=50%|{{Loremquote|$CurrentSpeaker|link=y|".$CsvTextArray[$Line['Variables']['Refuse'][0]]."}}
-                        |}";
+                        |}\n{{Loremquote|$CurrentSpeaker|link=y|";
+                break;
+                case 'Menu':
+                    $i++;
+                    foreach(range(1,99) as $a){
+                        if (empty($Line['Variables'][$a])) break;
+                        $Questions[] = "!".$CsvTextArray[$Line['Variables'][$a]]."";
+                    }
+                    $Question = implode("\n",$Questions);
+                    $QuestionAmount = count($Questions);
+                    $Width = 100 / $QuestionAmount;
+                    foreach(range(0,99) as $a){
+                        if (empty($Line['Variables']['Answers'][$a])) break;
+                        $Top = "|width=$Width%|{{Loremquote|$CurrentSpeaker|link=y|";
+                        $Answers = [];
+                        foreach(range(0,99) as $b){
+                            if (empty($Line['Variables']['Answers'][$a][$b])) break;
+                            $Answers[] = $CsvTextArray[$Line['Variables']['Answers'][$a][$b]];
+                        }
+                        $AnswersOut[] = "$Top".implode("\n----\n",$Answers)."}}";
+                    }
+                    $Answers = implode("\n",$AnswersOut)                    ;
+                    $LinedArray[$i][] = "{| class=\"datatable-GEtable\"
+                        |+{{Loremquote|".$CsvTextArray[$Line['Variables'][0]]."|}}
+                        $Question
+                        |-
+                        $Answers
+                        |}\n{{Loremquote|$CurrentSpeaker|link=y|";
                 break;
                 default:
                     $LinedArray[$i][] = $Line["Type"];
