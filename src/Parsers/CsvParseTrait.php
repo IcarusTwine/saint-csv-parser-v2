@@ -1617,6 +1617,18 @@ trait CsvParseTrait
             "BeginCutScene",
             "WaitForPan",
             "PlayVfx",
+            "AutoShake",
+            "FootStep",
+            "CancelActionTimelineAll",
+            "GetClassJob",
+            "CancelEventScene",
+            "GetEquippedItem",
+            "GetNumOfItems",
+            "SetCamera",
+            "GetTribe",
+            "DisableSceneSkip",
+            "EnableSceneSkip",
+            "GetQuestAcceptClassJob",
         );
         $LastSpeaker = "";
         $CurrentSpeaker = ucwords($ENpcResidentCsv->at($QuestData["Issuer{Start}"])['Singular']);
@@ -1630,7 +1642,8 @@ trait CsvParseTrait
             if ($Line["Target"] === "Target"){
                 $ExplodeVariable = explode("_",$Line["Variables"]);
                 if (empty($ExplodeVariable[3])){
-                    var_dump($Line['Type']);
+                    var_dump($Line["Type"]);
+                    continue;
                 }
                 $TargetNameSearch = substr($ExplodeVariable[3], 0, 4);
                 foreach($PotentialNames as $PotentialName => $RealName){
@@ -1660,7 +1673,7 @@ trait CsvParseTrait
                 case 'SystemTalk':
                     $CurrentSpeaker = "System";
                     $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Positive|".$CsvTextArray[$Line['Variables']]."}}";
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Negative|".$CsvTextArray[$Line['Variables']]."}}";
                     $i++;
                 break;
                 case 'QuestCompleted':
@@ -1711,7 +1724,7 @@ trait CsvParseTrait
                     $i++;
                     if (!empty($ArgArray[$Line['Variables']])){
                     $LogMessage = $LogMessageCsv->at($ArgArray[$Line['Variables']])['Text'];
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Positive|$LogMessage}}";
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Negative|$LogMessage}}";
                     }
                     $i++;
                 break;
@@ -1735,6 +1748,7 @@ trait CsvParseTrait
                     $Question = implode("\n",$Questions);
                     $QuestionAmount = count($Questions);
                     $Width = 100 / $QuestionAmount;
+                    $AnswersOut = [];
                     foreach(range(0,99) as $a){
                         if (empty($Line['Variables']['Answers'][$a])) break;
                         $Top = "|width=$Width%|{{Loremquote|$CurrentSpeaker|link=y|";
