@@ -1278,7 +1278,9 @@ trait CsvParseTrait
         foreach($ArgArray as $Arg){
             if ($Arg > 1000000 && $Arg < 2000000){
                 $NameKey = substr(strtoupper($ENpcResidentCsv->at($Arg)['Singular']), 0, 4);
+                $FullNameKey = str_replace(" ","",strtoupper($ENpcResidentCsv->at($Arg)['Singular']));
                 $PotentialNames[$NameKey] = ucwords($ENpcResidentCsv->at($Arg)['Singular']);
+                $PotentialNames[$FullNameKey] = ucwords($ENpcResidentCsv->at($Arg)['Singular']);
             }
         }
         
@@ -1405,7 +1407,12 @@ trait CsvParseTrait
                                 $YesNoNo = [];
                                 $YesNoYes = [];
                                 $VariablesExp = explode(", ",$match[1]);
-                                array_pop($VariablesExp);
+                                if (strpos(end($VariablesExp),"TEXT") === false){
+                                    array_pop($VariablesExp);
+                                }
+                                if (strpos($VariablesExp[0],"TEXT") === false){
+                                    unset($VariablesExp[0]);
+                                }
                                 $VariablesYesNo = [];
                                 foreach($VariablesExp as $Variables){
                                     $VariablesYesNo[] = ltrim(strstr($Variables, '.'),'.');
@@ -1562,8 +1569,12 @@ trait CsvParseTrait
                                             if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
                                                 $YesNoNo = [];
                                                 $VariablesExp = explode(", ",$match[1]);
-                                                array_pop($VariablesExp);
-                                                unset($VariablesExp[0]);
+                                                if (strpos(end($VariablesExp),"TEXT") === false){
+                                                    array_pop($VariablesExp);
+                                                }
+                                                if (strpos($VariablesExp[0],"TEXT") === false){
+                                                    unset($VariablesExp[0]);
+                                                }
                                                 $VariablesYesNo = [];
                                                 foreach($VariablesExp as $Variables){
                                                     $VariablesYesNo[] = ltrim(strstr($Variables, '.'),'.');
@@ -1695,6 +1706,7 @@ trait CsvParseTrait
             "Skip",
             "ResetSkip",
             "ContinueEventBGM",
+            "IsInstanceContentUnlocked",
             "SetNpcTradeItem", //???
         );
         $LastSpeaker = "";
@@ -1709,13 +1721,25 @@ trait CsvParseTrait
             if ($Line["Target"] === "Target"){
                 $ExplodeVariable = explode("_",$Line["Variables"]);
                 if (empty($ExplodeVariable[3])){
-                    var_dump($Line["Type"]);
+                    var_dump($Line);
                     continue;
                 }
-                $TargetNameSearch = substr($ExplodeVariable[3], 0, 4);
+                //first search full name
+                $TargetNameFound = false;
+                $TargetNameSearch = $ExplodeVariable[3];
                 foreach($PotentialNames as $PotentialName => $RealName){
                     if ($TargetNameSearch === $PotentialName){
                         $CurrentSpeaker = ucwords($RealName);
+                        $TargetNameFound = true;
+                    }
+                }
+                //if the name is stil not found
+                if ($TargetNameFound === false) {
+                    $TargetNameSearch = substr($ExplodeVariable[3], 0, 4);
+                    foreach($PotentialNames as $PotentialName => $RealName){
+                        if ($TargetNameSearch === $PotentialName){
+                            $CurrentSpeaker = ucwords($RealName);
+                        }
                     }
                 }
             }
@@ -1776,6 +1800,12 @@ trait CsvParseTrait
                     $i++;
                     $LinedArray[$i][] = "{{Loremnarrator|dialog=Battle Quest Starts";
                     $i++;
+                break;
+                case 'PlayStaffRoll':
+                    $i++;
+                    $LinedArray[$i][] = "{{Loremnarrator|dialog=Plays Staff Roll";
+                    $i++;
+                break;
                 case 'PlaySE':
                     if (!empty($ArgArray[$Line['Variables']])){
                         $SountEffect = $SECsv->at($ArgArray[$Line['Variables']])['unknown_1'];
@@ -1788,6 +1818,7 @@ trait CsvParseTrait
                     $i++;
                 break;
                 case 'LogMessage':
+                case 'LogMessageContentOpen':
                     $i++;
                     if (!empty($ArgArray[$Line['Variables']])){
                     $LogMessage = $LogMessageCsv->at($ArgArray[$Line['Variables']])['Text'];
@@ -1804,11 +1835,11 @@ trait CsvParseTrait
                     if (!empty($Line['Variables'][0])){
                         $Question = $CsvTextArray[$Line['Variables'][0]];
                     }
-                    $Answer1 = "";
+                    $Answer1 = "Yes";
                     if (!empty($Line['Variables'][1])){
                         $Answer1 = $CsvTextArray[$Line['Variables'][1]];
                     }
-                    $Answer2 = "";
+                    $Answer2 = "No";
                     if (!empty($Line['Variables'][2])){
                         $Answer2 = $CsvTextArray[$Line['Variables'][2]];
                     }
