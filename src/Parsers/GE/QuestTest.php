@@ -16,7 +16,7 @@ class QuestTest implements ParseInterface
 
 
     // the wiki output format / template we shall use
-    const WIKI_FORMAT = "{Output}\n\n{Data}\n\n{Args}\n\n{QuestOutput}";
+    const WIKI_FORMAT = "{QuestOutput}";
 
     public function parse()
     {
@@ -39,6 +39,8 @@ class QuestTest implements ParseInterface
         $AchievementCsv = $this->csv("Achievement");
         $AchievementCategoryCsv = $this->csv("AchievementCategory");
         $BNpcNameCsv = $this->csv("BNpcName");
+        $EventIconTypeCsv = $this->csv("EventIconType");
+        $EventItemCsv = $this->csv("EventItem");
 
 
 
@@ -51,16 +53,19 @@ class QuestTest implements ParseInterface
         
         $this->PatchCheck($Patch, "Quest", $QuestCsv);
         $PatchNumber = $this->getPatch("Quest");
+        $LGBArray = $this->getLGBArray();
+        //get bad names 
+        $BadNames = $this->NameChecker($EventItemCsv, $ItemCsv);
         $IconArray = [];
         foreach ($QuestCsv->data as $id => $Quest) {
+            $QuestData = [];
             $NpcsInvolved = [];
             $ListenerArray = [];
             $ToDoArray = [];
             $ArgArray = [];
-            //if ($id != 67985) continue; //A Haven for the Bold
-            if ($id < 68088) continue; //To Catch a Poacher
-            if ($id > 68096) continue;
-            var_dump($id);
+            $EnemyArray = [];
+            $ItemArray = [];
+            if ($id != 69333) continue;
             //produce argument array
             foreach(range(0,49) as $i){
                 if (empty($Quest["Script{Instruction}[$i]"])) break;
@@ -68,7 +73,6 @@ class QuestTest implements ParseInterface
                 $Argument = $Quest["Script{Arg}[$i]"];
                 $ArgArray[$Instruction] = $Argument;
             }
-            //var_dump($ArgArray);
             //produce listener array
             foreach(range(0,31) as $i){
                 if (empty($Quest["Listener[$i]"])) break;
@@ -127,7 +131,7 @@ class QuestTest implements ParseInterface
                 $Npc = $Quest["Listener[$i]"];
                 if (($Npc > 1000000) && ($Npc < 1100000)) {
                     if (empty($ENpcResidentCsv->at($Npc)['Singular'])) continue;
-                    $NpcsInvolved[] = ucwords($ENpcResidentCsv->at($Npc)['Singular']); 
+                    $NpcsInvolved[] = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames)['Name'];
                 }
             }
             $NpcsInvolved = array_unique($NpcsInvolved);
@@ -185,231 +189,63 @@ class QuestTest implements ParseInterface
                     "CountableNum" => $Quest["CountableNum[$i]"]
                 );
             }
-            $QuestData["Name"] = $Quest["Name"];
-            $QuestName = $Quest["Name"];
-            //var_dump($ArgArray);
-            //var_dump($ListenerArray);
-            //var_dump($ToDoArray);
+
+            //----------Produce Quest Data--------------//
 
 
 
-
-            $QuestData["Target{End}"] = $Quest["Target{End}"];
-            var_dump($LuaFile);
-            var_dump($QuestName);
-            var_dump($id);
-            //rewards
-            //QuestInfo
-            $QuestData["QUEST INFO"] = "--->";
-            $QuestData["Id"] = $Quest["Id"];
-            foreach(range(0,1) as $i){
-                $QuestData["QuestLock[$i]"] = $Quest["QuestLock[$i]"];
+            //General Info
+            $QuestType = $JournalCategoryCsv->at($JournalGenreCsv->at($Quest['JournalGenre'])['JournalCategory'])['Name'];
+            $QuestSubType = $JournalGenreCsv->at($Quest['JournalGenre'])['Name'];
+            $QuestSection = $JournalSectionCsv->at($JournalCategoryCsv->at($JournalGenreCsv->at($Quest['JournalGenre'])['JournalCategory'])['JournalSection'])['Name'];
+            $EventIcon = $Quest['Icon{Special}'];
+            if (empty($Quest['Icon{Special}'])){
+                $EventIcon = $EventIconTypeCsv->at($Quest['EventIconType'])['NpcIcon{Available}'] + 1;
             }
-            foreach(range(0,2) as $i){
-                $QuestData["InstanceContent[$i]"] = $Quest["InstanceContent[$i]"];
+            $IconType = sprintf("%06d", $EventIcon);
+            $IconArray[] = $EventIcon;
+            if ($Quest['Issuer{Start}'] > 2000000) {
+                $QuestGiver = str_replace($IncorrectNames, $correctnames, ucwords(strtolower($EObjNameCsv->at($quest['Issuer{Start}'])['Singular']))) . " (Object)";
+            } else {
+                $issuerid = $Quest['Issuer{Start}'];
+                $QuestGiver = $this->NameFormat($issuerid, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$issuerid], $LGBArray, $BadNames)['Name'];
             }
-            $QuestData["Mount{Required}"] = $Quest["Mount{Required}"];
-            $QuestData["Header"] = $Quest["Header"];
-            $QuestData["Bell{Start}"] = $Quest["Bell{Start}"];
-            $QuestData["Bell{End}"] = $Quest["Bell{End}"];
-            $QuestData["BeastReputationValue"] = $Quest["BeastReputationValue"];
-            $QuestData["ClientBehavior"] = $Quest["ClientBehavior"];
-            $QuestData["QuestClassJobSupply"] = $Quest["QuestClassJobSupply"];
-            $QuestData["Expansion"] = $Quest["Expansion"];
-            foreach(range(0,1) as $i){
-                $QuestData["ClassJobCategory[$i]"] = $Quest["ClassJobCategory[$i]"];
+            //Objectives:
+            $ObjectiveArray = [];
+            foreach($ToDoArray as $ToDo){
+                //throw a formatter here?
+                $ToDoAmount = " 0/".$ToDo["ToDoQty"];
+                if ($ToDo["ToDoQty"] === "1"){
+                    $ToDoAmount = "";
+                }
+                $ObjectiveArray[] = "*".$ToDo["Task"]."$ToDoAmount";
             }
-            $QuestData["PreviousQuestJoin"] = $Quest["PreviousQuestJoin"];
-            $QuestData["unknown_11"] = $Quest["unknown_11"];
-            $QuestData["QuestLockJoin"] = $Quest["QuestLockJoin"];
-            $QuestData["unknown_18"] = $Quest["unknown_18"];
-            $QuestData["unknown_19"] = $Quest["unknown_19"];
-            $QuestData["ClassJob{Unlock}"] = $Quest["ClassJob{Unlock}"];
-            $QuestData["GrandCompany"] = $Quest["GrandCompany"];
-            $QuestData["GrandCompanyRank"] = $Quest["GrandCompanyRank"];
-            $QuestData["InstanceContentJoin"] = $Quest["InstanceContentJoin"];
-            $QuestData["Festival"] = $Quest["Festival"];
-            $QuestData["FestivalBegin"] = $Quest["FestivalBegin"];
-            $QuestData["FestivalEnd"] = $Quest["FestivalEnd"];
-            $QuestData["BeastTribe"] = $Quest["BeastTribe"];
-            $QuestData["BeastReputationRank"] = $Quest["BeastReputationRank"];
-            $QuestData["unknown_35"] = $Quest["unknown_35"];
-            $QuestData["unknown_36"] = $Quest["unknown_36"];
-            $QuestData["DeliveryQuest"] = $Quest["DeliveryQuest"];
-            $QuestData["RepeatIntervalType"] = $Quest["RepeatIntervalType"];
-            $QuestData["QuestRepeatFlag"] = $Quest["QuestRepeatFlag"];
-            $QuestData["Type"] = $Quest["Type"];
-            $QuestData["ClassJob{Required}"] = $Quest["ClassJob{Required}"];
-            $QuestData["unknown_1440"] = $Quest["unknown_1440"];
-            $QuestData["unknown_1508"] = $Quest["unknown_1508"];
-            $QuestData["EventIconType"] = $Quest["EventIconType"];
-            $QuestData["unknown_1514"] = $Quest["unknown_1514"];
-            $QuestData["IsRepeatable"] = $Quest["IsRepeatable"];
-            $QuestData["IsHouseRequired"] = $Quest["IsHouseRequired"];
-            $QuestData["Introduction"] = $Quest["Introduction"];
-            $QuestData["HideOfferIcon"] = $Quest["HideOfferIcon"];
-            $QuestData["CanCancel"] = $Quest["CanCancel"];
-            $QuestData["unknown_1516"] = $Quest["unknown_1516"];
-
-            $QuestData["Icon{Special}"] = $Quest["Icon{Special}"];
-            $QuestData["SortKey"] = $Quest["SortKey"];
-
-            //Used
-            $QuestData["USED"] = "-----------";
-            $QuestData["Issuer{Start}"] = $Quest["Issuer{Start}"];
-            $QuestData["Issuer{Location}"] = $Quest["Issuer{Location}"];
-            $QuestData["JournalGenre"] = $Quest["JournalGenre"];
-            $QuestData["Level{Max}"] = $Quest["Level{Max}"];
-            $QuestData["Icon"] = $Quest["Icon"];
-            foreach(range(0,1) as $i){
-                $QuestData["ClassJobLevel[$i]"] = $Quest["ClassJobLevel[$i]"];
-            }
-            $QuestData["QuestLevelOffset"] = $Quest["QuestLevelOffset"];
-            foreach(range(0,2) as $i){
-                $QuestData["PreviousQuest[$i]"] = $Quest["PreviousQuest[$i]"];
-            }
-            $QuestData["ToDo"] = json_encode($ToDoArray,JSON_PRETTY_PRINT); 
-            $SeqDescription = json_encode($SeqArray,JSON_PRETTY_PRINT);
-            $QuestData["REWARDS:"] = "--->";
-            $QuestData["GilReward"] = $Quest["GilReward"];
-            $QuestData["ExpFactor"] = $Quest["ExpFactor"];
-            $QuestData["unknown_1443"] = $Quest["unknown_1443"];
-            $QuestData["GCSeals"] = $Quest["GCSeals"];
-            foreach(range(0,2) as $i){
-                $QuestData["Item{Catalyst}[$i]"] = $Quest["Item{Catalyst}[$i]"];
-                $QuestData["ItemCount{Catalyst}[$i]"] = $Quest["ItemCount{Catalyst}[$i]"];
-            }
-            $QuestData["ItemRewardType"] = $Quest["ItemRewardType"];
-            foreach(range(0,5) as $i){
-                $QuestData["Item{Reward}[$i]"] = $Quest["Item{Reward}[0][$i]"];
-                $QuestData["ItemCount{Reward}[$i]"] = $Quest["ItemCount{Reward}[0][$i]"];
-                $QuestData["ItemStain{Reward}[$i]"] = $Quest["Stain{Reward}[0][$i]"];
-            }
-            $QuestData["Item{Reward}[6]"] = $Quest["Item{Reward}[0][6]"];
-            $QuestData["ItemCount{Reward}[6]"] = $Quest["unknown_1465"];
-            $QuestData["ItemStain{Reward}[6]"] = $Quest["unknown_1472"];
-            foreach(range(0,4) as $i){
-                $QuestData["OptionalItem{Reward}[$i]"] = $Quest["Item{Reward}[1][$i]"];
-                $QuestData["OptionalItemCount{Reward}[$i]"] = $Quest["ItemCount{Reward}[1][$i]"];
-                $QuestData["OptionalItemStain{Reward}[$i]"] = $Quest["Stain{Reward}[1][$i]"];
-                $QuestData["OptionalItemHQ{Reward}[$i]"] = $Quest["IsHQ{Reward}[1][$i]"];
-            }
-            $QuestData["Emote{Reward}"] = $Quest["Emote{Reward}"];
-            $QuestData["Action{Reward}"] = $Quest["Action{Reward}"];
-            foreach(range(0,1) as $i){
-                $QuestData["GeneralAction{Reward}[$i]"] = $Quest["GeneralAction{Reward}[$i]"];
-            }
-            foreach(range(0,1) as $i){
-                $QuestData["System{Reward}[$i]"] = $Quest["System{Reward}[$i]"];
-            }
-            $QuestData["Other{Reward}"] = $Quest["Other{Reward}"];
-            $QuestData["unknown_1502"] = $Quest["unknown_1502"];
-            $QuestData["GCType{Reward}"] = $Quest["GCType{Reward}"];
-            $QuestData["InstanceContent{Unlock}"] = $Quest["InstanceContent{Unlock}"];
-            $QuestData["Tomestone{Reward}"] = $Quest["Tomestone{Reward}"];
-            $QuestData["TomestoneCount{Reward}"] = $Quest["TomestoneCount{Reward}"];
-            $QuestData["ReputationReward"] = $Quest["ReputationReward"];
-
-            //Create Rewards
-            $RewardArray["Gil"] = $QuestData["GilReward"];
-            $RewardArray["Tomestone Reward"] = $Quest["Tomestone{Reward}"];
-            $RewardArray["Tomestone Amount"] = $Quest["TomestoneCount{Reward}"];
+            $Objectives = implode("\n",$ObjectiveArray);
+            //Requirements
             //Need to add the ClassJobLevel[0] value to the LevelOffset value to get the actual level of the quest
-            $QuestLevel = ($QuestData["ClassJobLevel[0]"] + $QuestData["QuestLevelOffset"]);
-
+            $QuestLevel = ($Quest["ClassJobLevel[0]"] + $Quest["QuestLevelOffset"]);
+            $PreviousQuestArray = [];
+            foreach(range(0,2,) as $i){
+                if (empty($Quest["PreviousQuest[$i]"])) continue;
+                $PreviousQuestArray[] = str_replace(",","&#44;",$QuestCsv->at($Quest["PreviousQuest[$i]"])['Name']);
+            }
+            $PreviousQuests = implode(",",$PreviousQuestArray);
+            //rewards
             //Show EXPReward if more than zero and round it down (if needed) Otherwise, blank it.
             $ParamGrow = $ParamGrowCsv->at($QuestLevel);
-            $QuestEXP = floor(($QuestData["ExpFactor"] * $ParamGrow['ScaledQuestXP'] * $ParamGrow['QuestExpModifier']) / 100);
-            if ($QuestData['Level{Max}'] > 0) {
-                $ParamGrowMaxLevel = $ParamGrowCsv->at($QuestData['Level{Max}']);
-                $QuestEXPMaxLevel = floor(($QuestData["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100);
+            $QuestEXP = floor(($Quest["ExpFactor"] * $ParamGrow['ScaledQuestXP'] * $ParamGrow['QuestExpModifier']) / 100);
+            if ($Quest['Level{Max}'] > 0) {
+                $ParamGrowMaxLevel = $ParamGrowCsv->at($Quest['Level{Max}']);
+                $QuestEXPMaxLevel = floor(($Quest["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100);
                 $QuestEXP = "$QuestEXP-$QuestEXPMaxLevel";
             }
-            $RewardArray["Exp"] = $QuestEXP;
-            $RewardArray["unknown_1443"] = $QuestData["unknown_1443"];
-            $RewardArray["Grand Company Seals"] = $QuestData["GCSeals"];
-            $RewardArray["Catalyst"] = [];
-            if (!empty($QuestData["Item{Catalyst}[0]"])){
-                foreach(range(0,2) as $i){
-                    if (empty($QuestData["Item{Catalyst}[$i]"])) continue;
-                    $ItemReward = array (
-                        "Item" => $ItemCsv->at($QuestData["Item{Catalyst}[$i]"])['Name'],
-                        "Amount" => $QuestData["ItemCount{Catalyst}[$i]"],
-                    );
-                    $RewardArray["Catalyst"][] = $ItemReward;
-                }
-            }
-            $RewardArray["Item Reward Type"] = $QuestData["ItemRewardType"];
-            $RewardArray["Guaranteed Items"] = [];
-            if (!empty($QuestData["Item{Reward}[0]"])){
-                foreach(range(0,6) as $i){
-                    if (empty($QuestData["Item{Reward}[$i]"])) continue;
-                    $Stain = "";
-                    if ($QuestData["ItemStain{Reward}[$i]"] != "0"){
-                        $Stain = $ItemCsv->at($StainTransientCsv->at($QuestData["ItemStain{Reward}[$i]"])['Item{1}'])['Name'];
-                    }
-                    $ItemReward = array (
-                        "Item" => $ItemCsv->at($QuestData["Item{Reward}[$i]"])['Name'],
-                        "Amount" => $QuestData["ItemCount{Reward}[$i]"],
-                        "Dyed" => $Stain,
-                    );
-                    $RewardArray["Guaranteed Items"][] = $ItemReward;
-                }
-            }
-            $RewardArray["Choice Items"] = [];
-            if (!empty($QuestData["OptionalItem{Reward}[0]"])){
-                foreach(range(0,4) as $i){
-                    if (empty($QuestData["OptionalItem{Reward}[$i]"])) continue;
-                    $Stain = "";
-                    if ($QuestData["OptionalItemStain{Reward}[$i]"] != "0"){
-                        $Stain = $ItemCsv->at($StainTransientCsv->at($QuestData["OptionalItemStain{Reward}[$i]"])['Item{1}'])['Name'];
-                    }
-                    $ItemReward = array (
-                        "Item" => $ItemCsv->at($QuestData["OptionalItem{Reward}[$i]"])['Name'],
-                        "High Quality" => $QuestData["OptionalItemHQ{Reward}[$i]"],
-                        "Amount" => $QuestData["OptionalItemCount{Reward}[$i]"],
-                        "Dyed" => $Stain,
-                    );
-                    $RewardArray["Choice Items"][] = $ItemReward;
-                }
-            }
-            $RewardArray["Emote Reward"] = $EmoteCsv->at($QuestData["Emote{Reward}"])['Name'];
-            $RewardArray["Action Reward"] = $ActionCsv->at($QuestData["Action{Reward}"])['Name'];
-            $RewardArray["General Action Reward"] = [];
-            if (!empty($QuestData["GeneralAction{Reward}[0]"])){
-                foreach(range(0,1) as $i){
-                    if (empty($QuestData["GeneralAction{Reward}[$i]"])) continue;
-                    $ActionReward = array (
-                        "Action" => $GeneralActionCsv->at($QuestData["GeneralAction{Reward}[$i]"])['Name'],
-                    );
-                    $RewardArray["General Action Reward"][] = $ActionReward;
-                }
-            }
-            $RewardArray["System Action Reward"] = [];
-            if (!empty($QuestData["System{Reward}[0]"])){
-                foreach(range(0,1) as $i){
-                    if (empty($QuestData["System{Reward}[$i]"])) continue;
-                    $ActionReward = array (
-                        "Action" => $ActionCsv->at($QuestData["System{Reward}[$i]"])['Name'],
-                    );
-                    $RewardArray["System Action Reward"][] = $ActionReward;
-                }
-            }
-            $RewardArray["Other Reward"] = $QuestData["Other{Reward}"];
-            $RewardArray["1502 Reward"] = $QuestData["unknown_1502"];
-            $RewardArray["Grand Company Reward"] = $ActionCsv->at($QuestData["Emote{Reward}"])['Name'];
-            $RewardArray["InstanceContent Unlock"] = $Quest["InstanceContent{Unlock}"];
-            $RewardArray["Reputation Reward"] = $Quest["ReputationReward"];
-            $RewardArray["Achievement"] = "0";
-            if (!empty($AchievementArray[$id])){
-                $RewardArray["Achievement"] = $AchievementArray[$id];
-            }
-            $Rewards = json_encode($RewardArray,JSON_PRETTY_PRINT);
-            //end create Rewards 
-            $NpcsInvolvedJson = implode(",",$NpcsInvolved);
-            $Args = json_encode($ArgArray,JSON_PRETTY_PRINT);
-            $EnemyArray = [];
-            $ItemArray = [];
+
+
+
+
+
+
+            $NpcsInvolved = implode(",",$NpcsInvolved);
             foreach($ArgArray as $Argument => $Value) {
                 if (stripos($Argument,"ENEMY") !== false){
                     $EnemyArray[] = ucwords($BNpcNameCsv->at($Value)['Singular']);
@@ -427,45 +263,28 @@ class QuestTest implements ParseInterface
             if ($PatchFixed === "2.1"){
                 $PatchFixed = "2.0";
             }
-            $QuestTypeArray = array(
-                "Type" => $JournalCategoryCsv->at($JournalGenreCsv->at($QuestData["JournalGenre"])['JournalCategory'])['Name'],
-                "Type Extra" => array(
-                    "Journal Icon" => $JournalGenreCsv->at($QuestData["JournalGenre"])['Icon'],
-                    "Separate Type" => $JournalCategoryCsv->at($JournalGenreCsv->at($QuestData["JournalGenre"])['JournalCategory'])['SeparateType'],
-                    "Data Type" => $JournalCategoryCsv->at($JournalGenreCsv->at($QuestData["JournalGenre"])['JournalCategory'])['DataType'],
-                    "Journal Section" => $JournalSectionCsv->at($JournalCategoryCsv->at($JournalGenreCsv->at($QuestData["JournalGenre"])['JournalCategory'])['JournalSection'])['Name'],
-                ),
-            );
-            $ClassJobLevelArray = json_encode(array(
-                "Level[1]" => $QuestData["ClassJobLevel[0]"],
-                "Level[2]" => $QuestData["ClassJobLevel[1]"],
-            ),JSON_PRETTY_PRINT);
-            $PreviousQuestArray = json_encode(array(
-                "PreviousQuest[1]" => $QuestCsv->at($QuestData["PreviousQuest[0]"])['Name'],
-                "PreviousQuest[2]" => $QuestCsv->at($QuestData["PreviousQuest[1]"])['Name'],
-                "PreviousQuest[3]" => $QuestCsv->at($QuestData["PreviousQuest[2]"])['Name'],
-            ),JSON_PRETTY_PRINT);
-            $QuestType = json_encode($QuestTypeArray,JSON_PRETTY_PRINT); 
-            $SubType = $JournalGenreCsv->at($QuestData["JournalGenre"])['Name'];
 
             $QuestOutput = "{{-start-}}\n";
             $QuestOutput .= "{{ARR Infobox Quest\n";
             $QuestOutput .= "|Patch = $PatchFixed\n";
-            $QuestOutput .= "|Name = ".$QuestData["Name"]."\n";
+            $QuestOutput .= "|Name = ".$Quest["Name"]."\n";
+            $QuestOutput .= "|Section = $QuestSection\n";
             $QuestOutput .= "|Type = $QuestType\n";
-            $QuestOutput .= "|SubType = $SubType\n";
-            $QuestOutput .= "|SmallImage = ".$QuestData["Icon"]."\n";
-            $QuestOutput .= "|Level = ".$ClassJobLevelArray."\n";
+            $QuestOutput .= "|SubType = $QuestSubType\n";
+            $QuestOutput .= "|Header Image = ".$Quest["Icon"].".png\n";
+            $QuestOutput .= "|Icontype = $IconType.png\n";
             $QuestOutput .= "|Quest Number = $id\n";
-            $QuestOutput .= "|Previous Quests = $PreviousQuestArray\n";
-            $QuestOutput .= "|Objectives = ".$QuestData["ToDo"]."\n";
-            $QuestOutput .= "|Description = $SeqDescription\n";
-            $QuestOutput .= "|Rewards = $Rewards\n";
-            $QuestOutput .= "|Issuing NPC =  ".ucwords($QuestData["Issuer{Start}"])."\n";
-            $QuestOutput .= "|NPC Location =  ".$QuestData["Issuer{Location}"]."\n";
-            $QuestOutput .= "|NPCs Involved = $NpcsInvolvedJson\n";
+            $QuestOutput .= "|Objectives = \n$Objectives\n";
+            $QuestOutput .= "|Description = \n";
+            $QuestOutput .= "|Issuing NPC =  $QuestGiver\n";
+            $QuestOutput .= "|NPCs Involved = $NpcsInvolved\n";
             $QuestOutput .= "|Mobs Involved = $EnemyArray\n";
             $QuestOutput .= "|Items Involved = $ItemArray\n";
+            $QuestOutput .= "\n";
+            $QuestOutput .= "|Level = $QuestLevel\n";
+            $QuestOutput .= "|Previous Quests = $PreviousQuests\n";
+            $QuestOutput .= "\n";
+            $QuestOutput .= "|Rewards =\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "\n";
@@ -484,11 +303,11 @@ class QuestTest implements ParseInterface
                 $QuestOutputData[] = "|$key = $value";
             }
             $QuestOutputDataImplode = implode("\n",$QuestOutputData);
-            $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData);
-            $LoreOut[] = $QuestFormat['Lore'];
+            //$QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData);
+            //$LoreOut[] = $QuestFormat['Lore'];
         }
-        $FinalOutput = implode($LoreOut);
-        $IconArray = $QuestFormat["Icons"];
+        //$FinalOutput = implode($LoreOut);
+        //$IconArray = $QuestFormat["Icons"];
         $IconArray = array_unique($IconArray);
         $IconArrayCount = count($IconArray);
         $console = $console->section();
@@ -505,13 +324,10 @@ class QuestTest implements ParseInterface
                     if (!is_dir($IconOutputDirectory)) {
                         mkdir($IconOutputDirectory, 0777, true);
                     }
-    
                     // build icon input folder paths
                     if ($IconID === "000000") continue;
                     $GetIcon = $this->getInputFolder() .'/icon/'. $this->iconize($IconID, true);
-    
                     $iconFileName = "{$IconOutputDirectory}/$IconID.png";
-    
                     // copy the input icon to the output filename
                     if(file_exists($GetIcon)){
                         copy($GetIcon, $iconFileName);
@@ -521,15 +337,8 @@ class QuestTest implements ParseInterface
                 }
             }
         }
-        
-        //print_r($LuaFormat);
-
         $data = GeFormatter::format(self::WIKI_FORMAT, [
-            '{Output}'  => $FinalOutput,
-            //'{Data}'  => $QuestOutputDataImplode,
-            //'{Args}'  => $Args,
-            //'{QuestOutput}'  => $QuestOutput,
-
+            '{QuestOutput}'  => $QuestOutput,
         ]);
         $this->data[] = $data;
         // save
