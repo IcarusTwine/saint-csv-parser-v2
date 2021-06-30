@@ -47,6 +47,7 @@ class QuestTest implements ParseInterface
         $EmoteCsv = $this->csv("Emote");
         $TomestonesItemCsv = $this->csv("TomestonesItem");
         $ContentFinderConditionCsv = $this->csv("ContentFinderCondition");
+        $ExVersionCsv = $this->csv("ExVersion");
 
 
 
@@ -65,7 +66,7 @@ class QuestTest implements ParseInterface
             }
             $ContentLink = $Content['Content'];
             if ($Content['ContentLinkType'] === "1") {
-                $ContentArray[$ContentLink] = $Name;
+                $ContentArray[$ContentLink] = str_replace(",","&#44;",ucfirst($Name));
             }
         }
         //maketomestonelist
@@ -90,7 +91,7 @@ class QuestTest implements ParseInterface
             $ArgArray = [];
             $EnemyArray = [];
             $ItemArray = [];
-            if ($id != 69333) continue;
+            if ($id != 67057) continue;
             //produce argument array
             foreach(range(0,49) as $i){
                 if (empty($Quest["Script{Instruction}[$i]"])) break;
@@ -235,6 +236,17 @@ class QuestTest implements ParseInterface
                 $issuerid = $Quest['Issuer{Start}'];
                 $QuestGiver = $this->NameFormat($issuerid, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$issuerid], $LGBArray, $BadNames)['Name'];
             }
+            $Header = "";
+            if (!empty($Quest["Icon"])){
+                $IconArray[] = sprintf("%06d",$Quest["Icon"]);
+                $Header = sprintf("%06d",$Quest["Icon"]).".png";
+            }
+            $HeaderUnknown = "";
+            if (!empty($Quest["Header"])){
+                $HeaderUnknown = "{{Unknown Header Option?}}\n";
+            }
+            $Sort = $Quest["SortKey"];
+            $Expansion = $ExVersionCsv->at($Quest["Expansion"])['Name'];
             //Objectives:
             $ObjectiveArray = [];
             foreach($ToDoArray as $ToDo){
@@ -250,11 +262,45 @@ class QuestTest implements ParseInterface
             //Need to add the ClassJobLevel[0] value to the LevelOffset value to get the actual level of the quest
             $QuestLevel = ($Quest["ClassJobLevel[0]"] + $Quest["QuestLevelOffset"]);
             $PreviousQuestArray = [];
-            foreach(range(0,2,) as $i){
+            foreach(range(0,2) as $i){
                 if (empty($Quest["PreviousQuest[$i]"])) continue;
                 $PreviousQuestArray[] = str_replace(",","&#44;",$QuestCsv->at($Quest["PreviousQuest[$i]"])['Name']);
             }
             $PreviousQuests = implode(",",$PreviousQuestArray);
+            //questlock
+            $QuestLockArray = [];
+            foreach(range(0,1) as $i){
+                if (empty($Quest["QuestLock[$i]"])) continue;
+                $QuestLockArray[] = str_replace(",","&#44;",$QuestCsv->at($Quest["QuestLock[$i]"])['Name']);
+            }
+            $QuestLock = implode(",",$QuestLockArray);
+            //InstanceContent
+            $InstanceContentArray = [];
+            foreach(range(0,2) as $i){
+                if (empty($ContentArray[$Quest["InstanceContent[$i]"]])) continue;
+                $InstanceContentArray[] = $ContentArray[$Quest["InstanceContent[$i]"]];
+            }
+            $InstanceContent = implode(",",$InstanceContentArray);
+            $Mount = "";
+            if (!empty($Quest["Mount{Required}"])){
+                $Mount = ucwords($MountCsv->at($Quest["Mount{Required}"])['Name'])." (Mount)";
+            }
+            $RequiredClassArray = [];
+            $RequiredClassNo = 0;
+            foreach(range(0,1) as $i){
+                if (!empty($Quest["ClassJobCategory[$i]"])){
+                    $RequiredClassNo++;
+                    $RequiredClassArray[] = "|RequiredClasses $RequiredClassNo = ".$ClassJobCategoryCsv->at($Quest["ClassJobCategory[$i]"])['Name'];
+                    $RequiredClassArray[] = "|RequiredClasses $RequiredClassNo Level = ".$Quest["ClassJobLevel[$i]"];
+                }
+            }
+            $RequiredClasses = implode("\n",$RequiredClassArray);
+            $Unknown_11 = "";
+            if (!empty($Quest["unknown_11"])){
+                $Unknown_11 = "|Unknown_11 = ".$Quest["unknown_11"]."\n";
+            }
+
+
             //rewards
             //Show EXPReward if more than zero and round it down (if needed) Otherwise, blank it.
             $ParamGrow = $ParamGrowCsv->at($QuestLevel);
@@ -273,10 +319,8 @@ class QuestTest implements ParseInterface
                 $RewardArray[] = "|GilReward = ".$Quest["GilReward"];
             }
             if (!empty($Quest["unknown_1443"])) {
-                $RewardArray[] = "|unknown_1443 = ".$Quest["unknown_1443"];
-            }
-            if (!empty($Quest["GCSeals"])) {
-                $RewardArray[] = "|GCSeals = ".$Quest["GCSeals"];
+                $RewardArray[] = "|Currency Reward = ".$ItemCsv->at($Quest["unknown_1443"])['Name'];
+                $RewardArray[] = "|Currency Count = ".$Quest["GCSeals"];
             }
             $ItemRewards = [];
             foreach(range(0,2) as $i){
@@ -339,25 +383,25 @@ class QuestTest implements ParseInterface
                 );
             }
             if (!empty($Quest["Emote{Reward}"])) {
-                $RewardArray[] = "|EmoteReward = ".$EmoteCsv->at($Quest["Emote{Reward}"])['Name'];
+                $RewardArray[] = "|Emote Reward = ".$EmoteCsv->at($Quest["Emote{Reward}"])['Name'];
             }
             if (!empty($Quest["Action{Reward}"])) {
-                $RewardArray[] = "|ActionReward = ".$ActionCsv->at($Quest["Action{Reward}"])['Name'];
+                $RewardArray[] = "|Action Reward = ".$ActionCsv->at($Quest["Action{Reward}"])['Name'];
             }
             foreach(range(0,1) as $i){
                 if (empty($Quest["GeneralAction{Reward}[$i]"])) continue;
-                    $RewardArray[] = "|ActionReward = ".$GeneralActionCsv->at($Quest["GeneralAction{Reward}[$i]"])['Name']."";
+                    $RewardArray[] = "|Action Reward = ".$GeneralActionCsv->at($Quest["GeneralAction{Reward}[$i]"])['Name']."";
             }
             if (!empty($Quest["Other{Reward}"])) {
                 $RewardArray[] = "|Misc Reward = ".$QuestRewardOtherCsv->at($Quest["Other{Reward}"])['Name'];
-            }
+            };
             if (!empty($ContentArray[$Quest['InstanceContent{Unlock}']])){
                 if ($Quest['InstanceContent{Unlock}']) {
                     $RewardArray[] = "\n|Misc Reward = [[". preg_replace("/\<Emphasis>|\<\/Emphasis>/", "", ucfirst($ContentArray[$quest['InstanceContent{Unlock}']])) ."]] unlocked.";
                 }
             }
             if (!empty($AchievementArray[$id])) {
-                $RewardArray[] = "|Misc Reward = ".$AchievementArray[$id];
+                $RewardArray[] = "|AchievementReward = ".$AchievementArray[$id];
             }
             $TomestoneCheck = $Quest["Tomestone{Reward}"];
             if (!empty($TomeStoneArray[$TomestoneCheck])) {
@@ -365,7 +409,7 @@ class QuestTest implements ParseInterface
                 $RewardArray[] = "|TomeStone Amount = ".$Quest["TomestoneCount{Reward}"];
             }
             if (!empty($Quest["ReputationReward"])) {
-                $RewardArray[] = "|Relations = ".$Quest["Other{ReputationReward}"];
+                $RewardArray[] = "|Relations = ".$Quest["ReputationReward"];
             }
             
             $ItemCount = 0;
@@ -376,13 +420,13 @@ class QuestTest implements ParseInterface
                     $Job = $Item["Job"]." ";
                 }
                 if (!empty($Item["Item"])){
-                    $RewardArray[] = "|QuestRewardOption $OptionItemCount $Job= ".$Item["Item"];
+                    $RewardArray[] = "|QuestReward $ItemCount $Job= ".$Item["Item"];
                 }
                 if ($Item["Count"] > 1){
-                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Count $Job= ".$Item["Count"];
+                    $RewardArray[] = "|QuestReward $ItemCount Count = ".$Item["Count"];
                 }
                 if (!empty($Item["Stain"])){
-                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Dye $Job= ".$Item["Stain"];
+                    $RewardArray[] = "|QuestReward $ItemCount Dye = ".$Item["Stain"];
                 }
             }
             $OptionItemCount = 0;
@@ -424,13 +468,16 @@ class QuestTest implements ParseInterface
             }
 
             $QuestOutput = "{{-start-}}\n";
+            $QuestOutput .= "$HeaderUnknown";
             $QuestOutput .= "{{ARR Infobox Quest\n";
             $QuestOutput .= "|Patch = $PatchFixed\n";
+            $QuestOutput .= "|Expansion = $Expansion\n";
             $QuestOutput .= "|Name = ".$Quest["Name"]."\n";
             $QuestOutput .= "|Section = $QuestSection\n";
             $QuestOutput .= "|Type = $QuestType\n";
             $QuestOutput .= "|SubType = $QuestSubType\n";
-            $QuestOutput .= "|Header Image = ".$Quest["Icon"].".png\n";
+            $QuestOutput .= "|Order = $Sort\n";
+            $QuestOutput .= "|Header Image = $Header\n";
             $QuestOutput .= "|Icontype = $IconType.png\n";
             $QuestOutput .= "|Quest Number = $id\n";
             $QuestOutput .= "|Objectives = \n$Objectives\n";
@@ -442,6 +489,13 @@ class QuestTest implements ParseInterface
             $QuestOutput .= "\n";
             $QuestOutput .= "|Level = $QuestLevel\n";
             $QuestOutput .= "|Previous Quests = $PreviousQuests\n";
+            $QuestOutput .= "|Quest Lock = $QuestLock\n";
+            $QuestOutput .= "|Dungeon Requirement = $InstanceContent\n";
+            $QuestOutput .= "|Mount Requirement = $Mount\n";
+            $QuestOutput .= "$RequiredClasses\n";
+            $QuestOutput .= "$Unknown_11";
+            $QuestOutput .= "\n";
+            $QuestOutput .= "\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "$Rewards\n";
             $QuestOutput .= "\n";
