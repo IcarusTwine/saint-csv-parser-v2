@@ -41,14 +41,39 @@ class QuestTest implements ParseInterface
         $BNpcNameCsv = $this->csv("BNpcName");
         $EventIconTypeCsv = $this->csv("EventIconType");
         $EventItemCsv = $this->csv("EventItem");
+        $BeastRankBonusCsv = $this->csv("BeastRankBonus");
+        $QuestClassJobRewardCsv = $this->csv("QuestClassJobReward");
+        $ClassJobCategoryCsv = $this->csv("ClassJobCategory");
+        $EmoteCsv = $this->csv("Emote");
+        $TomestonesItemCsv = $this->csv("TomestonesItem");
+        $ContentFinderConditionCsv = $this->csv("ContentFinderCondition");
 
 
 
-        //make achivement array
+        //make acheivement array
         foreach ($AchievementCsv->data as $id => $Achievement) {
             if($AchievementCategoryCsv->at($Achievement['AchievementCategory'])['AchievementKind'] !== "8") continue;
             $Key = $Achievement['Key'];
             $AchievementArray[$Key] = $Achievement['Name'];
+        }
+        //make instancecontent array
+        foreach($ContentFinderConditionCsv->data as $id => $Content) {
+            if (empty($Content['Name'])) {
+                $Name = "No Name";
+            } else {
+                $Name = $Content['Name'];
+            }
+            $ContentLink = $Content['Content'];
+            if ($Content['ContentLinkType'] === "1") {
+                $ContentArray[$ContentLink] = $Name;
+            }
+        }
+        //maketomestonelist
+        foreach($TomestonesItemCsv->data as $id => $Tomestones){
+            if (!empty($Tomestones["Tomestones"])){
+                $TomeStoneId = $Tomestones["Tomestones"];
+                $TomeStoneArray[$TomeStoneId] = $ItemCsv->at($Tomestones['Item'])['Name'];
+            }
         }
         
         $this->PatchCheck($Patch, "Quest", $QuestCsv);
@@ -239,10 +264,144 @@ class QuestTest implements ParseInterface
                 $QuestEXPMaxLevel = floor(($Quest["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100);
                 $QuestEXP = "$QuestEXP-$QuestEXPMaxLevel";
             }
-
-
-
-
+            //QuestExp^
+            $RewardArray = [];
+            if (!empty($QuestEXP)) {
+                $RewardArray[] = "|EXPReward = $QuestEXP";
+            }
+            if (!empty($Quest["GilReward"])) {
+                $RewardArray[] = "|GilReward = ".$Quest["GilReward"];
+            }
+            if (!empty($Quest["unknown_1443"])) {
+                $RewardArray[] = "|unknown_1443 = ".$Quest["unknown_1443"];
+            }
+            if (!empty($Quest["GCSeals"])) {
+                $RewardArray[] = "|GCSeals = ".$Quest["GCSeals"];
+            }
+            $ItemRewards = [];
+            foreach(range(0,2) as $i){
+                if (empty($Quest["Item{Catalyst}[$i]"])) continue;
+                $ItemRewards[] = array(
+                    "Item" => $ItemCsv->at($Quest["Item{Catalyst}[$i]"]),
+                    "Count" => $Quest["ItemCount{Catalyst}[$i]"],
+                );
+            }
+            foreach(range(0,6) as $i){
+                if ($Quest["ItemRewardType"] === "7"){
+                    if (empty($Quest["Item{Reward}[$i]"])) continue;
+                    $ItemRewards[] = array(
+                        "Item" => $ItemCsv->at($BeastRankBonusCsv->at($Quest["Item{Reward}[$i]"])['Item'])['Name'],
+                        "Count" => $Quest["ItemCount{Reward}[$i]"],
+                    );
+                }
+                elseif ($Quest["ItemRewardType"] === "6"){
+                    if (empty($Quest["Item{Reward}[$i]"])) continue;
+                    foreach(range(0,99) as $a){
+                        $SubNo = $Quest["Item{Reward}[$i]"]."$a";
+                        if (empty($QuestClassJobRewardCsv->at($SubNo)["Reward{Item}[$b]"])) break;
+                        foreach(range(0,3) as $b){
+                            $ItemRewards[] = array(
+                                "Item" => $ItemCsv->at($QuestClassJobRewardCsv->at($SubNo)["Reward{Item}[$b]"])['Name'],
+                                "Count" => $QuestClassJobRewardCsv->at($SubNo)["Reward{Amount}[$b]"],
+                                "Job" => $ClassJobCategoryCsv->at($QuestClassJobRewardCsv->at($SubNo)["ClassJobCategory"])['Name'],
+                            );
+                            $ItemArray[] = $ItemCsv->at($QuestClassJobRewardCsv->at($SubNo)["Required{Item}[$b]"])['Name'];
+                        }
+                    }
+                }
+                else {
+                    if (empty($Quest["Item{Reward}[$i]"])) continue;
+                    if ($Quest["Stain{Reward}[$i]"] === "0"){
+                        $Stain = "";
+                    } else {
+                        $Stain = $ItemCsv->at($StainTransientCsv->at($Quest["Stain{Reward}[$i]"])['Item{1}'])['Name'];
+                    }
+                    $ItemRewards[] = array(
+                        "Item" => $ItemCsv->at($Quest["Item{Reward}[$i]"])['Name'],
+                        "Count" => $Quest["ItemCount{Reward}[$i]"],
+                        "Stain" => $Stain,
+                    );
+                }
+            }
+            $OptionalItemRewards = [];
+            foreach(range(0,4) as $i){
+                if (empty($Quest["OptionalItem{Reward}[$i]"])) continue;
+                if ($Quest["Stain{Reward}[$i]"] === "0"){
+                    $Stain = "";
+                } else {
+                    $Stain = $ItemCsv->at($StainTransientCsv->at($Quest["OptionalItemStain{Reward}[$i]"])['Item{1}'])['Name'];
+                }
+                $OptionalItemRewards[] = array(
+                    "Item" => $ItemCsv->at($Quest["OptionalItem{Reward}[$i]"])['Name'],
+                    "Count" => $Quest["OptionalItemCount{Reward}[$i]"],
+                    "Stain" => $Stain,
+                    "IsHQ" => $Quest["OptionalItemIsHQ{Reward}[$i]"],
+                );
+            }
+            if (!empty($Quest["Emote{Reward}"])) {
+                $RewardArray[] = "|EmoteReward = ".$EmoteCsv->at($Quest["Emote{Reward}"])['Name'];
+            }
+            if (!empty($Quest["Action{Reward}"])) {
+                $RewardArray[] = "|ActionReward = ".$ActionCsv->at($Quest["Action{Reward}"])['Name'];
+            }
+            foreach(range(0,1) as $i){
+                if (empty($Quest["GeneralAction{Reward}[$i]"])) continue;
+                    $RewardArray[] = "|ActionReward = ".$GeneralActionCsv->at($Quest["GeneralAction{Reward}[$i]"])['Name']."";
+            }
+            if (!empty($Quest["Other{Reward}"])) {
+                $RewardArray[] = "|Misc Reward = ".$QuestRewardOtherCsv->at($Quest["Other{Reward}"])['Name'];
+            }
+            if (!empty($ContentArray[$Quest['InstanceContent{Unlock}']])){
+                if ($Quest['InstanceContent{Unlock}']) {
+                    $RewardArray[] = "\n|Misc Reward = [[". preg_replace("/\<Emphasis>|\<\/Emphasis>/", "", ucfirst($ContentArray[$quest['InstanceContent{Unlock}']])) ."]] unlocked.";
+                }
+            }
+            if (!empty($AchievementArray[$id])) {
+                $RewardArray[] = "|Misc Reward = ".$AchievementArray[$id];
+            }
+            $TomestoneCheck = $Quest["Tomestone{Reward}"];
+            if (!empty($TomeStoneArray[$TomestoneCheck])) {
+                $RewardArray[] = "|TomeStone = $TomestoneCheck";
+                $RewardArray[] = "|TomeStone Amount = ".$Quest["TomestoneCount{Reward}"];
+            }
+            if (!empty($Quest["ReputationReward"])) {
+                $RewardArray[] = "|Relations = ".$Quest["Other{ReputationReward}"];
+            }
+            
+            $ItemCount = 0;
+            foreach($ItemRewards as $Item){
+                $ItemCount++;
+                $Job = "";
+                if (!empty($Item["Job"])){
+                    $Job = $Item["Job"]." ";
+                }
+                if (!empty($Item["Item"])){
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount $Job= ".$Item["Item"];
+                }
+                if ($Item["Count"] > 1){
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Count $Job= ".$Item["Count"];
+                }
+                if (!empty($Item["Stain"])){
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Dye $Job= ".$Item["Stain"];
+                }
+            }
+            $OptionItemCount = 0;
+            foreach($OptionalItemRewards as $Item){
+                $OptionItemCount++;
+                if (!empty($Item["Item"])){
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount = ".$Item["Item"];
+                }
+                if ($Item["Count"] > 1){
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Count = ".$Item["Count"];
+                }
+                if (!empty($Item["Stain"])){
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Dye = ".$Item["Stain"];
+                }
+                if ($Item["IsHQ"] == true){
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount HQ = x";
+                }
+            }
+            $Rewards = implode("\n",$RewardArray);
 
 
             $NpcsInvolved = implode(",",$NpcsInvolved);
@@ -284,7 +443,7 @@ class QuestTest implements ParseInterface
             $QuestOutput .= "|Level = $QuestLevel\n";
             $QuestOutput .= "|Previous Quests = $PreviousQuests\n";
             $QuestOutput .= "\n";
-            $QuestOutput .= "|Rewards =\n";
+            $QuestOutput .= "$Rewards\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "\n";
