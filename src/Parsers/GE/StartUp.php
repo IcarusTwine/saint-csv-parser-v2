@@ -21,6 +21,7 @@ class StartUp implements ParseInterface
     public function parse()
     {
         include (dirname(__DIR__) . '/Paths.php');
+        $MapCsv = $this->csv('Map');
         function recurseCopy($src,$dst, $childFolder='') { 
 
             $dir = opendir($src); 
@@ -142,6 +143,27 @@ class StartUp implements ParseInterface
             $src = "$Resources/LGBtoJson/out";
             $console->writeln("Copying to cache/\n");
             recurseCopy($src, $CachePath);
+        }
+        fclose($handle);
+        
+        $console->writeln("<question>Would you like to produce bnpc File?</question>");
+        $console->writeln("(yes/no)\n");
+        $handle = fopen ("php://stdin","r");
+        $line = fgets($handle);
+        if(trim($line) === 'yes'){
+            $console->writeln("Running...");
+            foreach ($MapCsv->data as $id => $Map) {
+                $MappyUrl = "https://xivapi.com/mappy/map/$id";
+                $mappyjdata = file_get_contents($MappyUrl);
+                $mappydecodeJdata = json_decode($mappyjdata);
+                foreach ($mappydecodeJdata as $mappyData) {
+                    $BNpcBaseID = $mappyData->BNpcBaseID;
+                    $BNpcNameID = $mappyData->BNpcNameID;
+                    $BNpcArray[$BNpcBaseID] = $BNpcNameID;
+                }
+            }
+            $JSON_Out = json_encode($BNpcArray,JSON_PRETTY_PRINT);
+            $this->saveExtra("BNPC.json", $JSON_Out, true, true);
         }
         fclose($handle);
         echo "\n"; 

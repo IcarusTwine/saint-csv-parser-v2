@@ -62,6 +62,7 @@ class QuestTest implements ParseInterface
         
         $Festivaljdata = file_get_contents("Patch/FestivalNames.json");
         $FestivaldecodeJdata = json_decode($Festivaljdata, true);  
+        $BNPCData = json_decode(file_get_contents("Resources/BNPC.json"), true);
 
         //make acheivement array
         foreach ($AchievementCsv->data as $id => $Achievement) {
@@ -113,7 +114,7 @@ class QuestTest implements ParseInterface
             $ArgArray = [];
             $EnemyArray = [];
             $ItemArray = [];
-            if ($id != 66917) continue;
+            //if ($id != 65572) continue;
             if (empty($Quest['Name'])) continue;
             //produce argument array
             foreach(range(0,49) as $i){
@@ -280,7 +281,7 @@ class QuestTest implements ParseInterface
             }
             $DeliveryQuest = "";
             if (!empty($Quest["DeliveryQuest"])){
-                $DeliveryQuest = "True";
+                $DeliveryQuest = "|Delivery Quest = ".$Quest["DeliveryQuest"];
             }
             $SpecialChar = "";
             if (strpos($Quest['Name'], " ") !== false) {
@@ -315,7 +316,7 @@ class QuestTest implements ParseInterface
             }
             $JournalArray = [];
             foreach($SeqArray as $Journal){
-                $JournalArray[] = str_replace("※",":※","*".$Journal['Description']);
+                $JournalArray[] = str_replace("\n","\n:",str_replace("※",":※","*".$Journal['Description']));
             }
             if (!empty($JournalArray[0])){
                 $Description = str_replace("*","",$JournalArray[0]);
@@ -580,7 +581,11 @@ class QuestTest implements ParseInterface
             $NpcsInvolved = implode(",",$NpcsInvolved);
             foreach($ArgArray as $Argument => $Value) {
                 if (stripos($Argument,"ENEMY") !== false){
-                    $EnemyArray[] = ucwords($BNpcNameCsv->at($Value)['Singular']);
+                    $BnpcID = $Value;
+                    if (!empty($BNPCData[$BnpcID])){
+                        $BnpcName = $BNPCData[$BnpcID];
+                        $EnemyArray[] = ucwords($BNpcNameCsv->at($BnpcName)['Singular']);
+                    }
                 }
                 if (stripos($Argument,"ITEM") !== false){
                     $ItemArray[] = array(
@@ -624,7 +629,7 @@ class QuestTest implements ParseInterface
 
             $QuestOutput = "{{-start-}}\n";
             $QuestOutput .= "$HeaderUnknown";
-            $QuestOutput .= "'''".str_replace(",","&#44;",$Quest["Name"])."'''\n";
+            $QuestOutput .= "'''".$Quest["Name"]."'''\n";
             $QuestOutput .= "{{ARR Infobox Quest\n";
             $QuestOutput .= "|Patch = $PatchFixed\n";
             $QuestOutput .= "|Expansion = $Expansion\n";
