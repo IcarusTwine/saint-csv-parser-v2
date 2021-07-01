@@ -57,7 +57,23 @@ class QuestTest implements ParseInterface
         $MountCsv = $this->csv("Mount");
         $QuestRewardOtherCsv = $this->csv("QuestRewardOther");
         $TraitCsv = $this->csv("Trait");
+        $ScreenImageCsv = $this->csv("ScreenImage");
+        $HowToCsv = $this->csv("HowTo");
+        $LogMessageCsv = $this->csv("LogMessage");
+        $BGMCsv = $this->csv("BGM");
+        $SECsv = $this->csv("SE");
+        $LevelCsv = $this->csv("Level");
+        $PlaceNameCsv = $this->csv("PlaceName");
+        $MapCsv = $this->csv("Map");
 
+
+        //send csvs to function when needed : 
+        $CSVData["ENpcResidentCsv"] = $ENpcResidentCsv;
+        $CSVData["ScreenImageCsv"] = $ScreenImageCsv;
+        $CSVData["HowToCsv"] = $HowToCsv;
+        $CSVData["LogMessageCsv"] = $LogMessageCsv;
+        $CSVData["BGMCsv"] = $BGMCsv;
+        $CSVData["SECsv"] = $SECsv;
         //get festivals:
         
         $Festivaljdata = file_get_contents("Patch/FestivalNames.json");
@@ -114,7 +130,7 @@ class QuestTest implements ParseInterface
             $ArgArray = [];
             $EnemyArray = [];
             $ItemArray = [];
-            //if ($id != 65572) continue;
+            if ($id != 65572) continue;
             if (empty($Quest['Name'])) continue;
             //produce argument array
             foreach(range(0,49) as $i){
@@ -170,26 +186,51 @@ class QuestTest implements ParseInterface
                 );
                 $UInt8B++;
             }
+            $NPCSubPagesArray = [];
             foreach(range(0,49) as $i) {
                 $Npc = $Quest["Script{Arg}[$i]"];
                 if (($Npc > 1000000) && ($Npc < 1100000)) {
                     if (empty($ENpcResidentCsv->at($Npc)['Singular'])) continue;
-                    $NpcsInvolved[] = ucwords($ENpcResidentCsv->at($Npc)['Singular']); 
+                    $NpcName = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames)['Name'];
+                    $NpcsInvolved[] = $NpcName;
+                    $NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
                 }
             }
             foreach(range(0,63) as $i) {
                 $Npc = $Quest["Listener[$i]"];
                 if (($Npc > 1000000) && ($Npc < 1100000)) {
                     if (empty($ENpcResidentCsv->at($Npc)['Singular'])) continue;
-                    $NpcsInvolved[] = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames)['Name'];
+                    $NpcName = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames)['Name'];
+                    $NpcsInvolved[] = $NpcName;
+                    $NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
                 }
             }
-            $NpcsInvolved = array_unique($NpcsInvolved);
+            $lastnpc = array_key_last($NPCSubPagesArray);
+            $FinalNpcName = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames)['Name'];
+            $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $Quest['Name'] ."}}";
+            if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
+                $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
+            }
+            $firstnpc = $NPCSubPagesArray[0];
+            $FirstNpcName = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)['Name'];
+            $FirstNPC = "{{QuestNPC|Name=$FirstNpcName|ID=". $Quest["Issuer{Start}"] ."|Quest=". $Quest['Name'] ."}}";
+            if ($firstnpc != $FirstNPC){
+                array_unshift($NPCSubPagesArray,$FirstNPC);
+            }
+            $NpcsInvolved[] = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)['Name'];
+            $NpcsInvolved[] = $FinalNpcName;
             $LuaFile = $Quest["Id"];
             $folder = substr(explode('_', $LuaFile)[1], 0, 3);
             $textdata = $this->csv("quest/{$folder}/{$LuaFile}");
             $ToDoSeqArray = [];
             $SeqArray = [];
+            //make quest data to send to lua
+            $QuestData = [];
+            $QuestData["Issuer{Start}"] = $Quest["Issuer{Start}"];
+            $QuestData["Target{End}"] = $Quest["Target{End}"];
+            $QuestData["Name"] = $Quest["Name"];
+            $QuestStartLocation = $PlaceNameCsv->at($MapCsv->at($LevelCsv->at($Quest["Issuer{Location}"])['Map'])['PlaceName'])['Name'];
+            $QuestData["QuestStartLocation"] = $QuestStartLocation;
             foreach ($textdata->data as $key => $textdataCsv) {
                 if (empty($textdataCsv['unknown_2'])) continue;
                 if (strpos($textdataCsv['unknown_1'],"TODO_")!== false){
@@ -240,7 +281,6 @@ class QuestTest implements ParseInterface
                     "CountableNum" => $Quest["CountableNum[$i]"]
                 );
             }
-
             //----------Produce Quest Data--------------//
 
 
@@ -342,9 +382,18 @@ class QuestTest implements ParseInterface
             //Need to add the ClassJobLevel[0] value to the LevelOffset value to get the actual level of the quest
             $QuestLevel = ($Quest["ClassJobLevel[0]"] + $Quest["QuestLevelOffset"]);
             $PreviousQuestArray = [];
+            $QuestData["Previous1"] = "";
+            $QuestData["Previous2"] = "";
             foreach(range(0,2) as $i){
                 if (empty($Quest["PreviousQuest[$i]"])) continue;
-                $PreviousQuestArray[] = str_replace(",","&#44;",$QuestCsv->at($Quest["PreviousQuest[$i]"])['Name']);
+                $PrevQuestName = str_replace(",","&#44;",$QuestCsv->at($Quest["PreviousQuest[$i]"])['Name']);
+                if ($i === 0) {
+                    $QuestData["Previous1"] = $PrevQuestName;
+                }
+                if ($i === 1) {
+                    $QuestData["Previous2"] = $PrevQuestName;
+                }
+                $PreviousQuestArray[] = $PrevQuestName;
             }
             $PreviousQuests = implode(",",$PreviousQuestArray);
             //questlock
@@ -578,7 +627,6 @@ class QuestTest implements ParseInterface
             $Rewards = implode("\n",$RewardArray);
 
 
-            $NpcsInvolved = implode(",",$NpcsInvolved);
             foreach($ArgArray as $Argument => $Value) {
                 if (stripos($Argument,"ENEMY") !== false){
                     $BnpcID = $Value;
@@ -602,30 +650,57 @@ class QuestTest implements ParseInterface
             }
             $ObjectArrayNames = [];
             $ItemArrayNames = [];
+            $MatchItemArray = [];
             foreach($ItemArray as $key => $value){
                 if ($value['Type'] === "ITEM"){
                     if ($value['Value'] < 2000000){
                         $ItemArrayNames[] = $ItemCsv->at($value['Value'])['Name'];
+                        $MatchItemArray[$ItemCsv->at($value['Value'])['Singular']] = array(
+                            "Singular" => $ItemCsv->at($value['Value'])['Singular'],
+                            "Plural" => $ItemCsv->at($value['Value'])['Plural'],
+                            "Name" => $ItemCsv->at($value['Value'])['Name'],
+                        );
                     }
                     else {
-                        $ItemArrayNames[] = ucwords($EventItemCsv->at($value['Value'])['Singular']);
+                        $ItemArrayNames[] = $EventItemCsv->at($value['Value'])['Name'];
+                        $MatchItemArray[$EventItemCsv->at($value['Value'])['Singular']] = array(
+                            "Singular" => $EventItemCsv->at($value['Value'])['Singular'],
+                            "Plural" => $EventItemCsv->at($value['Value'])['Plural'],
+                            "Name" => $EventItemCsv->at($value['Value'])['Name'],
+                        );
                     }
 
                 }
                 if ($value['Type'] === "EOBJECT"){
                     $ObjectArrayNames[] = ucwords($EObjNameCsv->at($value['Value'])['Singular']);
+                    $MatchItemArray[$EObjNameCsv->at($value['Value'])['Singular']] = array(
+                        "Singular" => $EObjNameCsv->at($value['Value'])['Singular'],
+                        "Plural" => $EObjNameCsv->at($value['Value'])['Plural'],
+                        "Name" => ucwords($EObjNameCsv->at($value['Value'])['Singular']),
+                    );
                 }
             }
+            $NpcsInvolved = array_unique($NpcsInvolved);
             $EnemyArray = implode(",",array_unique($EnemyArray));
             $ItemArray = implode(",",array_unique($ItemArrayNames));
             $ObjectArray = implode(",",array_unique($ObjectArrayNames));
 
-
+            foreach($MatchItemArray as $Item){
+                $Singular = $Item['Singular'];
+                $Plural = $Item['Plural'];
+                $Objectives = str_replace(" $Singular ", " [[".$Item['Name']."|".$Item['Singular']."]] ", $Objectives);
+                $Objectives = str_replace(" $Plural ", " [[".$Item['Name']."|".$Item['Plural']."]] ", $Objectives);
+            }
+            foreach($NpcsInvolved as $Npc){
+                $Objectives = str_replace($Npc, "[[".$Npc."|".$Npc."]]", $Objectives);
+            }
+            $NpcsInvolved = implode(",",$NpcsInvolved);
 
             $PatchFixed = $PatchNumber[$id];
             if ($PatchFixed === "2.1"){
                 $PatchFixed = "2.0";
             }
+            $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
 
             $QuestOutput = "{{-start-}}\n";
             $QuestOutput .= "$HeaderUnknown";
@@ -677,17 +752,18 @@ class QuestTest implements ParseInterface
             $QuestOutput .= "\n";
             $QuestOutput .= "}}\n";
             $QuestOutput .= "{{-stop-}}\n";
+            $QuestOutput .= "{{-start-}}\n";
+            $QuestOutput .= "'''".$Quest["Name"]."/NPCs'''\n";
+            $QuestOutput .= implode("\n",$NPCSubPagesArray)."\n";
+            $QuestOutput .= "{{-stop-}}\n";
+            $QuestOutput .= "{{-start-}}\n";
+            $QuestOutput .= "'''Loremonger:".$Quest["Name"]."'''\n";
+            $QuestOutput .= $QuestFormat['Lore']."\n";
+            $QuestOutput .= "{{-stop-}}\n";
             $FinalOutput[] = $QuestOutput;
-            $QuestData["ToDo"] = json_encode($ToDoArray,JSON_PRETTY_PRINT); 
-            foreach($QuestData as $key => $value){
-                $QuestOutputData[] = "|$key = $value";
-            }
-            $QuestOutputDataImplode = implode("\n",$QuestOutputData);
-            //$QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData);
-            //$LoreOut[] = $QuestFormat['Lore'];
         }
         $FinalOut = implode($FinalOutput);
-        //$IconArray = $QuestFormat["Icons"];
+        $IconArray = array_merge($IconArray,$QuestFormat["Icons"]);
         $IconArray = array_unique($IconArray);
         $IconArrayCount = count($IconArray);
         $console = $console->section();

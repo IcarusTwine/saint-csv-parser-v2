@@ -1232,13 +1232,13 @@ trait CsvParseTrait
     /**
      * Format dialogue for Quest Loremonger
      */
-    public function getLuaQuest($LuaName, $ArgArray, $ListenerArray, $ToDoArray, $QuestData) {
-        $ENpcResidentCsv = $this->csv("ENpcResident");
-        $ScreenImageCsv = $this->csv("ScreenImage");
-        $HowToCsv = $this->csv("HowTo");
-        $LogMessageCsv = $this->csv("LogMessage");
-        $BGMCsv = $this->csv("BGM");
-        $SECsv = $this->csv("SE");
+    public function getLuaQuest($LuaName, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData) {
+        $ENpcResidentCsv = $CSVData["ENpcResidentCsv"];
+        $ScreenImageCsv = $CSVData["ScreenImageCsv"];
+        $HowToCsv = $CSVData["HowToCsv"];
+        $LogMessageCsv =$CSVData["LogMessageCsv"];
+        $BGMCsv = $CSVData["BGMCsv"];
+        $SECsv = $CSVData["SECsv"];
         $ArgArray["BGM_MUSIC_NO_MUSIC"] = "1";
         $ArgArray["BGM_MUSIC_EVENT_MEETING"] = "19";
         $IconArray = [];
@@ -1693,7 +1693,6 @@ trait CsvParseTrait
             "GetClassJob",
             "CancelEventScene",
             "GetEquippedItem",
-            "GetNumOfItems",
             "SetCamera",
             "GetTribe",
             "DisableSceneSkip",
@@ -1702,6 +1701,7 @@ trait CsvParseTrait
             "LoadMovePosition",
             "GetQuestSequence",
             "GetQuestId",
+            "GetNumOfItems",
             "WaitForOrbit",
             "Skip",
             "ResetSkip",
@@ -1818,7 +1818,7 @@ trait CsvParseTrait
                     $i++;
                 break;
                 case 'LogMessage':
-                case 'LogMessageContentOpen':
+                case 'LogMessageContentOpen': // need to check
                     $i++;
                     if (!empty($ArgArray[$Line['Variables']])){
                     $LogMessage = $LogMessageCsv->at($ArgArray[$Line['Variables']])['Text'];
@@ -1827,7 +1827,6 @@ trait CsvParseTrait
                     $i++;
                 break;
                 case 'YesNo':
-                    //{{Loremquote|$CurrentSpeaker|link=y|";
                     if (empty($Line['Variables']['Affirmative'])){
                         $Line['Variables']['Affirmative'][0] = "";
                     }
@@ -1894,13 +1893,12 @@ trait CsvParseTrait
             $FinalArray[] = implode("\n----\n",$KeyedOutArray)."";
         }
         $FinalOutput = implode("}}\n",$FinalArray);
-        $QuestStartLocation = "New Gridania";
-        $Previous1 = "";
-        $Previous2 = "";
-        $Next = "";
+        $QuestStartLocation = $QuestData["QuestStartLocation"];
+        $Previous1 = $QuestData["Previous1"];
+        $Previous2 = $QuestData["Previous2"];
         $QuestName = $QuestData["Name"];
         $StartOfOutput = "<noinclude>
-        {{Lorempageturn|prev=$Previous1|prev2=$Previous2|next=$Next}}
+        {{Lorempageturn|prev=$Previous1|prev2=$Previous2|next=}}
         {{Loremquestheader|$QuestName|Mined=X|Summary=}}</noinclude>
         {{LoremLoc|Location=$QuestStartLocation}}";
         $QuestLuaOutput["Lore"] = "$StartOfOutput\n".$FinalOutput."}}";
