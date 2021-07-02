@@ -3,6 +3,7 @@ php bin/console app:parse:csv GE:PatchPopulate
 php bin/console app:parse:csv GE:Achievement
 php bin/console app:parse:csv GE:Festival
 php bin/console app:parse:csv GE:ActiveHelp
+php bin/console app:parse:csv GE:BNPCGenerate
 php bin/console app:parse:csv GE:Actions
 php bin/console app:parse:csv GE:AquariumFish
 php bin/console app:parse:csv GE:Collectable

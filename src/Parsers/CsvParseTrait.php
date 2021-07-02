@@ -1704,8 +1704,12 @@ trait CsvParseTrait
             "GetNumOfItems",
             "WaitForOrbit",
             "Skip",
+            "CancelNpcTrade",
+            "FollowLookAt",
+            "CreateObject",
             "ResetSkip",
             "ContinueEventBGM",
+            "GetClassLevel",
             "IsInstanceContentUnlocked",
             "SetNpcTradeItem", //???
         );
@@ -1770,7 +1774,10 @@ trait CsvParseTrait
                 case 'QuestCompleted':
                     $i++;
                     $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120012_hr1.png|820px|Quest Completed]]";
+                    if ($CurrentSpeaker === $LastSpeaker){
                         $i++;
+                        $LinedArray[$i][] = "\n{{Loremquote|$CurrentSpeaker|link=y|";
+                    }
                 break;
                 case 'ScreenImage':
                     $i++;

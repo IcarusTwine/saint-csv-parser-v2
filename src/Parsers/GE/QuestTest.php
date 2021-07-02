@@ -130,7 +130,7 @@ class QuestTest implements ParseInterface
             $ArgArray = [];
             $EnemyArray = [];
             $ItemArray = [];
-            //if ($id != 67101) continue;
+            if ($id != 65545) continue;
             if (empty($Quest['Name'])) continue;
             //produce argument array
             foreach(range(0,49) as $i){
@@ -232,6 +232,9 @@ class QuestTest implements ParseInterface
                 $NpcsInvolved[] = $EObjNameCsv->at($Quest["Issuer{Start}"])['Singular'];
             }
             $LuaFile = $Quest["Id"];
+            var_dump($LuaFile);
+            var_dump($Quest['Name']);
+            var_dump($id);
             $folder = substr(explode('_', $LuaFile)[1], 0, 3);
             $textdata = $this->csv("quest/{$folder}/{$LuaFile}");
             $ToDoSeqArray = [];
@@ -603,7 +606,7 @@ class QuestTest implements ParseInterface
             }
             $TomestoneCheck = $Quest["Tomestone{Reward}"];
             if (!empty($TomestoneCheck)) {
-                $RewardArray[] = "|TomeStone = ".$TomestoneList[$TomestoneCheck];
+                $RewardArray[] = $TomestoneList[$TomestoneCheck];
                 $RewardArray[] = "|TomeStone Amount = ".$Quest["TomestoneCount{Reward}"];
             }
             if (!empty($Quest["ReputationReward"])) {
@@ -729,7 +732,9 @@ class QuestTest implements ParseInterface
             if ($PatchFixed === "2.1"){
                 $PatchFixed = "2.0";
             }
-            //$QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
+
+
+            $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
 
             $QuestOutput = "{{-start-}}\n";
             $QuestOutput .= "$HeaderUnknown";
@@ -788,12 +793,12 @@ class QuestTest implements ParseInterface
             $QuestOutput .= "{{-stop-}}\n";
             $QuestOutput .= "{{-start-}}\n";
             $QuestOutput .= "'''Loremonger:".$Quest["Name"]."'''\n";
-            //$QuestOutput .= $QuestFormat['Lore']."\n";
+            $QuestOutput .= $QuestFormat['Lore']."\n";
             $QuestOutput .= "{{-stop-}}\n";
             $FinalOutput[] = $QuestOutput;
         }
         $FinalOut = implode($FinalOutput);
-        //$IconArray = array_merge($IconArray,$QuestFormat["Icons"]);
+        $IconArray = array_merge($IconArray,$QuestFormat["Icons"]);
         $IconArray = array_unique($IconArray);
         $IconArrayCount = count($IconArray);
         $console = $console->section();
