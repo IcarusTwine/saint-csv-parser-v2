@@ -1721,7 +1721,7 @@ trait CsvParseTrait
             if ($Line["Target"] === "Target"){
                 $ExplodeVariable = explode("_",$Line["Variables"]);
                 if (empty($ExplodeVariable[3])){
-                    var_dump($Line);
+                    //var_dump($Line);
                     continue;
                 }
                 //first search full name
@@ -2031,7 +2031,7 @@ trait CsvParseTrait
                                 }
                             } if ($found === false){
                                 $GetFuncNameExp = explode(":", $_lua[$_pos]);
-                                var_dump($GetFuncNameExp);
+                                //var_dump($GetFuncNameExp);
                                 if (empty($GetFuncNameExp[1])){
                                     $GetFuncNameExp[0] = "Unknown";
                                 } else {
