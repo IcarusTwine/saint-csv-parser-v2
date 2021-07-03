@@ -1507,9 +1507,13 @@ trait CsvParseTrait
                                     //if character is created then set a variable for that character
                                     //set back to origonal pos
                                     $_pos = $StorePos;
-                                    if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                                    if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
                                         $CutVariable = explode(",",$match[1]);
-                                        $Variable = "".$CutVariable[0]."";
+                                        if(!empty($CutVariable[1])){
+                                            $Variable = "".$CutVariable[1]."";
+                                        } else {
+                                            $Variable = "Self";
+                                        }
                                         if ($Function === "CreateCharacter"){
                                             $ObjectName = "";
                                             if (!empty($ArgArray[$CutVariable[0]])){
@@ -1710,6 +1714,8 @@ trait CsvParseTrait
             "ResetSkip",
             "ContinueEventBGM",
             "GetClassLevel",
+            "CloseHowTo",
+            "Inventory",
             "IsInstanceContentUnlocked",
             "SetNpcTradeItem", //???
         );
