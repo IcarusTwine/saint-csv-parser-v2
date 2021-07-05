@@ -11,6 +11,7 @@ use ForceUTF8\Encoding;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use PDO;
+use Symfony\Component\VarDumper\VarDumper;
 
 trait CsvParseTrait
 {
@@ -1234,11 +1235,14 @@ trait CsvParseTrait
      */
     public function getLuaQuest($LuaName, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData) {
         $ENpcResidentCsv = $CSVData["ENpcResidentCsv"];
+        $ENpcBaseCsv = $CSVData["ENpcBaseCsv"];
         $ScreenImageCsv = $CSVData["ScreenImageCsv"];
         $HowToCsv = $CSVData["HowToCsv"];
         $LogMessageCsv =$CSVData["LogMessageCsv"];
         $BGMCsv = $CSVData["BGMCsv"];
         $SECsv = $CSVData["SECsv"];
+        $LGBArray = $CSVData["LGBArray"];
+        $BadNames = $CSVData["BadNames"];
         $ArgArray["BGM_MUSIC_NO_MUSIC"] = "1";
         $ArgArray["BGM_MUSIC_EVENT_MEETING"] = "19";
         $IconArray = [];
@@ -1279,8 +1283,8 @@ trait CsvParseTrait
             if ($Arg > 1000000 && $Arg < 2000000){
                 $NameKey = substr(strtoupper($ENpcResidentCsv->at($Arg)['Singular']), 0, 4);
                 $FullNameKey = str_replace(" ","",strtoupper($ENpcResidentCsv->at($Arg)['Singular']));
-                $PotentialNames[$NameKey] = ucwords($ENpcResidentCsv->at($Arg)['Singular']);
-                $PotentialNames[$FullNameKey] = ucwords($ENpcResidentCsv->at($Arg)['Singular']);
+                $PotentialNames[$NameKey] = $Arg;
+                $PotentialNames[$FullNameKey] = $Arg;
             }
         }
         
@@ -1294,6 +1298,7 @@ trait CsvParseTrait
             $_pos = 0;
             $end = false;
             if (strpos($_lua[0],"OnScene") === false) continue;
+            $ObjectArray = [];
             if($_pos < $_lines){
                 while($end === false) {
                     if($_pos >= $_lines){
@@ -1331,29 +1336,95 @@ trait CsvParseTrait
                             }
                         }
                     }
+                    if (strpos($_lua[$_pos],"local ")!== false){
+                        $RemovedLocal = str_replace("local ","",$_lua[$_pos]);
+                        $LocalVariables = explode(", ",$RemovedLocal);
+                        foreach($LocalVariables as $LocalVariable){
+                            $ObjectArray[$LocalVariable] = "local";
+                        }
+                    }
+                    if (preg_match('/[A-Z][0-9]+_[0-9]+ = [A-Z][0-9]+_[0-9]+\.TEXT(.*?)$/', $_lua[$_pos], $match) == 1) {
+                        $Explode1 = explode(" = ",$match[0]);
+                        $Explode2 = explode(".",$Explode1[1]);
+                        $TargetVar = $Explode2[0];
+                        if (preg_match('/[0-9]_[A-Z](.*?)_[0-9]/', $Explode2[1], $match ) == 1) {
+                            $FindExp = explode("_",$match[0]);
+                            $Find = $FindExp[1];
+                            //first search full name
+                            $TargetNameFound = false;
+                            $TargetNameSearch = $Find;
+                            foreach($PotentialNames as $PotentialName => $RealID){
+                                if ($TargetNameSearch === $PotentialName){
+                                    $TargetNameFound = true;
+                                    $ObjectArray[$TargetVar] = $RealID;
+                                }
+                            }
+                            //if the name is stil not found
+                            if ($TargetNameFound === false) {
+                                $TargetNameSearch = substr($Find, 0, 4);
+                                foreach($PotentialNames as $PotentialName => $RealID){
+                                    if ($TargetNameSearch === $PotentialName){
+                                        $ObjectArray[$TargetVar] = $RealID;
+                                        $TargetNameFound = true;
+                                    }
+                                }
+                            }
+                            if ($TargetNameFound === false) {
+                                if (($SceneNo === "0")){
+                                    $ObjectArray[$TargetVar] = $QuestData["Issuer{Start}"];
+                                } elseif ($SceneNo === $LastScene){
+                                    $ObjectArray[$TargetVar] = $QuestData["Target{End}"];
+                                } else {
+                                    $ObjectArray[$TargetVar] = $Find;
+                                }
+                            }
+                        }
+                    }
                     $Replacement = "";
+                    $ExplodeLine = [];
                     if (strpos($_lua[$_pos]," = ")!== false){
                         $ExplodeLine = explode(" = ",$_lua[$_pos]);
                         if (strpos($ExplodeLine[0]," ")!== false){
                             //if or for etc, skip
                         } else {
-                            if (preg_match('/[A-Z][0-9]+_[0-9]+\n/', $ExplodeLine[1], $match) == 1) {
-                                $Replacement = $ObjectArray[$ExplodeLine[1]];
-                                $ObjectArray[$ExplodeLine[0]] = $Replacement;
-                            } elseif (preg_match('/[A-Z][0-9]+_[0-9]+\./', $ExplodeLine[1], $match) == 1) {
-                                $ObjectArray[$ExplodeLine[0]] = $match[1];
-                            } else{
-                                $ObjectArray[$ExplodeLine[0]] = $ExplodeLine[1];
+                            if (preg_match('/[A-Z][0-9]+_[0-9]+$/', $ExplodeLine[1]) == 1) {
+                                if (!empty($ObjectArray[$ExplodeLine[1]])){
+                                    $Replacement = $ObjectArray[$ExplodeLine[1]];
+                                    $ObjectArray[$ExplodeLine[0]] = $Replacement;
+                                }
+                            } elseif (preg_match('/[A-Z][0-9]+_[0-9]+\./', $ExplodeLine[1]) == 1) {
+                                $MatchExplode = explode(".",$ExplodeLine[1]);
+                                $Target = $ObjectArray[$MatchExplode[0]];
+                                $ObjectArray[$ExplodeLine[0]] = $MatchExplode[1];
+                            } else {
+                                if (strpos($ExplodeLine[1],"(") === false){
+                                    $ExplodeCheck = explode(" ",$ExplodeLine[1]);
+                                    if (!empty($ExplodeCheck[1])){
+                                        $SetVar = $ObjectArray[$ExplodeCheck[0]];
+                                        unset($ExplodeCheck[0]);
+                                        $Imploded = implode(" ",$ExplodeCheck);
+                                        $ObjectArray[$ExplodeLine[0]] = "$SetVar $Imploded";
+                                    } else {
+                                        $ObjectArray[$ExplodeLine[0]] = $ExplodeLine[1];
+                                    }
+                                }
                             }
                         }
                     }
+                    $ExplodeLine = [];
                     if (preg_match('/[A-Z][0-9]+_[0-9]+\(/', $_lua[$_pos])) {
                         if (strpos($_lua[$_pos],"function") === false){
                             $ExplodeLine = explode("(",$_lua[$_pos]);
                             if (strpos($ExplodeLine[0]," = ") !== false){
-                                if (preg_match('/ = [A-Z][0-9]+_[0-9]+\(/', $_lua[$_pos], $correctmatch)) {
-                                    $ExplodeLine[0] = str_replace("(","",str_replace(" = ","",$correctmatch[1]));
+                                if (preg_match('/, [A-Z][0-9]+_[0-9]+ = [A-Z][0-9]+_[0-9]+\(/', $_lua[$_pos], $correctmatch)) {
+                                    $ExplodeCorrect = explode(" = ",$correctmatch[0]);
+                                    $ExplodeLine[0] = str_replace("(","",str_replace(" = ","",$ExplodeCorrect[1]));
                                 }
+                            }
+                            if (strpos($ExplodeLine[0]," = ") !== false){
+                                $ExplodeCorrect = explode(" = ",$ExplodeLine[0]);
+                                $ExplodeCorrect2 = explode("(",$ExplodeCorrect[1]);
+                                $ExplodeLine[0] = $ExplodeCorrect2[0];
                             }
                             $Function = $ObjectArray[$ExplodeLine[0]];
                             $VariableLine = str_replace(")","",$ExplodeLine[1]);
@@ -1362,8 +1433,13 @@ trait CsvParseTrait
                             foreach($RawVariables as $Variable){
                                 $Variables[] = $ObjectArray[$Variable]; 
                             }
+                            if ($Function === "CreateCharacter"){
+                                $ExpVar = explode(" = ",$_lua[$_pos]);
+                                $ObjectArray[$ExpVar[0]] = $ArgArray[$Variables[1]];
+                            }
                             $OutArray[] = array(
                                 "Scene" => $SceneNo,
+                                "Speaker" => $Target,
                                 "Function" => $Function,
                                 "Variables" => $Variables
                             );
@@ -1373,6 +1449,7 @@ trait CsvParseTrait
                 }
             }
         }
+        $this->saveExtra("QUESTTEST.json",json_encode($OutArray,JSON_PRETTY_PRINT));
         $SkipTypes = array(
             "QuestOffer",
             "TurnTo",
@@ -1445,208 +1522,206 @@ trait CsvParseTrait
             "GetClassLevel",
             "CloseHowTo",
             "Inventory",
+            "Gyro",
+            "GetBaseId",
+            "PlayLandscopeCamera",
+            "Equip",
+            "GetDeliveryLevel",
+            "getNpcTradeItemInfo",
+            "unpack",
+            "NpcTrade",
+            "GetQuestUI8BH",
+            "GetQuestUI8BL",
             "IsInstanceContentUnlocked",
             "SetNpcTradeItem", //???
         );
         $LastSpeaker = "";
-        $CurrentSpeaker = ucwords($ENpcResidentCsv->at($QuestData["Issuer{Start}"])['Singular']);
-        $i = 0;
-        foreach($OutArray as $Line){
-            if (!empty($ENpcResidentCsv->at($Line["Target"])['Singular'])) {
-                $CurrentSpeaker = ucwords($ENpcResidentCsv->at($Line["Target"])['Singular']);
-            }
-            //skip these functions
-            if (in_array($Line['Type'],$SkipTypes)) continue;
-            if ($Line["Target"] === "Target"){
-                $ExplodeVariable = explode("_",$Line["Variables"]);
-                if (empty($ExplodeVariable[3])){
-                    //var_dump($Line);
-                    continue;
-                }
-                //first search full name
-                $TargetNameFound = false;
-                $TargetNameSearch = $ExplodeVariable[3];
-                foreach($PotentialNames as $PotentialName => $RealName){
-                    if ($TargetNameSearch === $PotentialName){
-                        $CurrentSpeaker = ucwords($RealName);
-                        $TargetNameFound = true;
-                    }
-                }
-                //if the name is stil not found
-                if ($TargetNameFound === false) {
-                    $TargetNameSearch = substr($ExplodeVariable[3], 0, 4);
-                    foreach($PotentialNames as $PotentialName => $RealName){
-                        if ($TargetNameSearch === $PotentialName){
-                            $CurrentSpeaker = ucwords($RealName);
-                        }
-                    }
-                }
-            }
-
-            if ($LastSpeaker != $CurrentSpeaker){
-                $i++;
-                $LinedArray[$i][] = "{{Loremquote|$CurrentSpeaker|link=y|";
-            }
-            $LastSpeaker = $CurrentSpeaker;
-            switch ($Line["Type"]) {
-                case 'Talk':
-                    $LinedArray[$i][] = $CsvTextArray[$Line['Variables']]."";
-                break;
-                case 'QuestAccepted':
-                    $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120001_hr1.png|820px|Quest Accepted]]";
-                    if ($CurrentSpeaker === $LastSpeaker){
-                        $i++;
-                        $LinedArray[$i][] = "\n{{Loremquote|$CurrentSpeaker|link=y|";
-                    }
-                break;
-                case 'SystemTalk':
-                    $CurrentSpeaker = "System";
-                    $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Negative|".$CsvTextArray[$Line['Variables']]."}}";
-                    $i++;
-                break;
-                case 'QuestCompleted':
-                    $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:120012_hr1.png|820px|Quest Completed]]";
-                    if ($CurrentSpeaker === $LastSpeaker){
-                        $i++;
-                        $LinedArray[$i][] = "\n{{Loremquote|$CurrentSpeaker|link=y|";
-                    }
-                break;
-                case 'ScreenImage':
-                    $i++;
-                    $ScreenImage = sprintf("%06d", $ScreenImageCsv->at($ArgArray[$Line['Variables']])['Image']);
-                    $IconArray[] = $ScreenImage;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=[[File:{$ScreenImage}.png|820px|Screen Image]]";
-                    $i++;
-                break;
-                case 'HowTo':
-                    $i++;
-                    $HowTo = $HowToCsv->at($ArgArray[$Line['Variables']])['Name'];
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=Unlocked: Active Help : [[Active_Help/$HowTo|$HowTo]]";
-                    $i++;
-                break;
-                case 'PlayBGM':
-                    if (!empty($ArgArray[$Line['Variables']])){
-                        $BGM = $BGMCsv->at($ArgArray[$Line['Variables']])['File'];
-                        $LinedArray[$i][] = "{{LoremBGM|$BGM}}";
-                    }
-                break;
-                case 'PlayCutScene':
-                    $i++;
-                    $LinedArray[$i][] = "{{LoremCS|start";
-                    $i++;
-                break;
-                case 'YesNoQuestBattle':
-                    $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=Battle Quest Starts";
-                    $i++;
-                break;
-                case 'PlayStaffRoll':
-                    $i++;
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog=Plays Staff Roll";
-                    $i++;
-                break;
-                case 'PlaySE':
-                    if (!empty($ArgArray[$Line['Variables']])){
-                        $SountEffect = $SECsv->at($ArgArray[$Line['Variables']])['unknown_1'];
-                        $LinedArray[$i][] = "{{LoremBGM|$SountEffect}}";
-                    }
-                break;
-                case 'EndCutScene':
-                    $i++;
-                    $LinedArray[$i][] = "{{LoremCS|end";
-                    $i++;
-                break;
-                case 'LogMessage':
-                case 'LogMessageContentOpen': // need to check
-                    $i++;
-                    if (!empty($ArgArray[$Line['Variables']])){
-                    $LogMessage = $LogMessageCsv->at($ArgArray[$Line['Variables']])['Text'];
-                    $LinedArray[$i][] = "{{Loremnarrator|dialog={{Color|style=normal|Negative|$LogMessage}}";
-                    }
-                    $i++;
-                break;
-                case 'YesNo':
-                    if (empty($Line['Variables']['Affirmative'])){
-                        $Line['Variables']['Affirmative'][0] = "";
-                    }
-                    $Question = "";
-                    if (!empty($Line['Variables'][0])){
-                        $Question = $CsvTextArray[$Line['Variables'][0]];
-                    }
-                    $Answer1 = "Yes";
-                    if (!empty($Line['Variables'][1])){
-                        $Answer1 = $CsvTextArray[$Line['Variables'][1]];
-                    }
-                    $Answer2 = "No";
-                    if (!empty($Line['Variables'][2])){
-                        $Answer2 = $CsvTextArray[$Line['Variables'][2]];
-                    }
-                    $LinedArray[$i][] = "{{Loremtable|Width=50|Question=".$Question."|Answer1=".$Answer1."|Answer2=".$Answer2."|Reply1=".implode("\n",$Line['Variables']['Affirmative'])."|Reply2=".implode("\n",$Line['Variables']['Negative'])."}}";
-                break;
-                case 'Menu':
-                    $Questions = [];
-                    foreach(range(1,99) as $a){
-                        if (empty($Line['Variables'][$a])) break;
-                        $Questions[] = "|Answer$a=".$CsvTextArray[$Line['Variables'][$a]]."";
-                    }
-                    if (empty($Questions)){
-                        $Questions[0] = "";
-                        $QuestionFix = "";
-                    } else {
-                        $QuestionFix = $CsvTextArray[$Line['Variables'][0]];
-                    }
-                    $Question = implode("\n",$Questions);
-                    $AnswersOut = [];
-                    foreach(range(0,99) as $a){
-                        $aa = $a + 1;
-                        if (empty($Line['Variables']['Answers'][$a])) break;
-                        $Top = "|Reply$aa=";
-                        $Answers = [];
-                        foreach(range(0,99) as $b){
-                            if (empty($Line['Variables']['Answers'][$a][$b])) break;
-                            $Answers[] = $CsvTextArray[$Line['Variables']['Answers'][$a][$b]];
-                        }
-                        $AnswersOut[] = "$Top".implode("\n",$Answers)."";
-                    }
-                    $Ra = 0;
-                    foreach($Questions as $key){
-                        if(empty($AnswersOut[$Ra])){
-                            $Ra++;
-                            $AnswersOut[$Ra] = "|Reply$Ra=";
-                        }
-                    }
-                    $QuestionAmount = count($AnswersOut);
-                    $Width = 100 / $QuestionAmount;
-                    $Answers = implode("\n",$AnswersOut);
-                    $LinedArray[$i][] = "{{Loremtable|Width=$Width|Question=".$QuestionFix."$Question$Answers}}";
-                break;
-                default:
-                    $LinedArray[$i][] = $Line["Type"];
-                break;
-            }
-            
-
-        }
-        $FinalArray = [];
-        foreach($LinedArray as $key => $KeyedOutArray){
-            $FinalArray[] = implode("\n----\n",$KeyedOutArray)."";
-        }
-        $FinalOutput = implode("}}\n",$FinalArray);
+        $CurrentSpeaker = $this->NameFormat($QuestData["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$QuestData["Issuer{Start}"]], $LGBArray, $BadNames)['Name'];
+        $UndefinedFunction = [];
+        
         $QuestStartLocation = $QuestData["QuestStartLocation"];
         $Previous1 = $QuestData["Previous1"];
         $Previous2 = $QuestData["Previous2"];
         $QuestName = $QuestData["Name"];
-        $StartOfOutput = "<noinclude>
+        $LastScene = 0;
+        $LinedArray = "<noinclude>
         {{Lorempageturn|prev=$Previous1|prev2=$Previous2|next=}}
         {{Loremquestheader|$QuestName|Mined=X|Summary=}}</noinclude>
-        {{LoremLoc|Location=$QuestStartLocation}}";
-        $QuestLuaOutput["Lore"] = "$StartOfOutput\n".$FinalOutput."}}";
+        {{LoremLoc|Location=$QuestStartLocation";
+        foreach($OutArray as $Line){
+            if (!empty($ENpcResidentCsv->at($Line["Speaker"])['Singular'])) {
+                $CurrentSpeaker = $this->NameFormat($Line["Speaker"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Line["Speaker"]], $LGBArray, $BadNames)['Name'];
+            }
+            $CurrentScene = $Line["Scene"];
+            //skip these functions
+            if (in_array($Line['Function'],$SkipTypes)) continue;
+            
+            if ($LastScene != $CurrentScene){
+                $LinedArray .= "----\n----\n----\n";
+            }
+            if ($LastSpeaker != $CurrentSpeaker){
+                $LinedArray .= "}}{{Loremquote|$CurrentSpeaker|link=y|";
+            }
+            $LastSpeaker = $CurrentSpeaker;
+            $LastScene = $CurrentScene;
+            switch ($Line["Function"]) {
+                case 'Talk':
+                    $LinedArray .= $CsvTextArray[$Line['Variables'][3]]."\n----\n";
+                break;
+                case 'QuestAccepted':
+                    $LinedArray .= "{{Loremnarrator|dialog=[[File:120001_hr1.png|820px|Quest Accepted]]}}\n";
+                break;
+                case 'SystemTalk':
+                    $LinedArray .= "{{Loremnarrator|dialog={{Color|style=normal|Negative|".$CsvTextArray[$Line['Variables'][1]]."}}}}\n";
+                break;
+                case 'QuestCompleted':
+                    $LinedArray .= "{{Loremnarrator|dialog=[[File:120012_hr1.png|820px|Quest Completed]]}}\n";
+                break;
+                case 'ScreenImage':
+                    $ScreenImage = sprintf("%06d", $ScreenImageCsv->at($ArgArray[$Line['Variables'][1]])['Image']);
+                    $IconArray[] = $ScreenImage;
+                    $LinedArray .= "{{Loremnarrator|dialog=[[File:{$ScreenImage}.png|820px|Screen Image]]}}\n";
+                break;
+                case 'HowTo':
+                    $HowTo = $HowToCsv->at($ArgArray[$Line['Variables'][1]])['Name'];
+                    $LinedArray .= "{{Loremnarrator|dialog=Unlocked: Active Help : [[Active_Help/$HowTo|$HowTo]]}}\n";
+                break;
+                case 'PlayBGM':
+                    if (!empty($ArgArray[$Line['Variables'][1]])){
+                        $BGM = $BGMCsv->at($ArgArray[$Line['Variables'][1]])['File'];
+                        $LinedArray .= "{{LoremBGM|$BGM}}\n";
+                    }
+                break;
+                case 'PlayCutScene':
+                    $LinedArray .= "{{LoremCS|start}}\n";
+                break;
+                case 'YesNoQuestBattle':
+                    $LinedArray .= "{{Loremnarrator|dialog=Battle Quest Starts}}\n";
+                break;
+                case 'PlayStaffRoll':
+                    $LinedArray .= "{{Loremnarrator|dialog=Plays Staff Roll}}\n";
+                break;
+                case 'PlaySE':
+                    if (!empty($ArgArray[$Line['Variables'][1]])){
+                        $SountEffect = $SECsv->at($ArgArray[$Line['Variables'][1]])['unknown_1'];
+                        $LinedArray .= "{{LoremBGM|$SountEffect}}\n";
+                    }
+                break;
+                case 'EndCutScene':
+                    $LinedArray .= "{{LoremCS|end}}\n";
+                break;
+                case 'LogMessage':
+                case 'LogMessageContentOpen': // need to check
+                    if (!empty($ArgArray[$Line['Variables'][1]])){
+                        $LogMessage = $LogMessageCsv->at($ArgArray[$Line['Variables'][1]])['Text'];
+                        if(strpos($LogMessage,"<") !== false){
+                            $LogMessage = $this->getTextFmt($LogMessage,$Line['Variables']);
+                        }
+                        $LinedArray .= "{{Loremnarrator|dialog={{Color|style=normal|Negative|$LogMessage}}}}\n";
+                    }
+                break;
+                default:
+                    $LinedArray .= $Line["Function"]."\n----\n";
+                    $UndefinedFunction[] = $Line["Function"];
+                break;
+            }
+            //    case 'YesNo':
+            //        if (empty($Line['Variables']['Affirmative'])){
+            //            $Line['Variables']['Affirmative'][0] = "";
+            //        }
+            //        $Question = "";
+            //        if (!empty($Line['Variables'][0])){
+            //            $Question = $CsvTextArray[$Line['Variables'][0]];
+            //        }
+            //        $Answer1 = "Yes";
+            //        if (!empty($Line['Variables'][1])){
+            //            $Answer1 = $CsvTextArray[$Line['Variables'][1]];
+            //        }
+            //        $Answer2 = "No";
+            //        if (!empty($Line['Variables'][2])){
+            //            $Answer2 = $CsvTextArray[$Line['Variables'][2]];
+            //        }
+            //        $LinedArray[$i][] = "{{Loremtable|Width=50|Question=".$Question."|Answer1=".$Answer1."|Answer2=".$Answer2."|Reply1=".implode("\n",$Line['Variables']['Affirmative'])."|Reply2=".implode("\n",$Line['Variables']['Negative'])."}}";
+            //    break;
+            //    case 'Menu':
+            //        $Questions = [];
+            //        foreach(range(1,99) as $a){
+            //            if (empty($Line['Variables'][$a])) break;
+            //            $Questions[] = "|Answer$a=".$CsvTextArray[$Line['Variables'][$a]]."";
+            //        }
+            //        if (empty($Questions)){
+            //            $Questions[0] = "";
+            //            $QuestionFix = "";
+            //        } else {
+            //            $QuestionFix = $CsvTextArray[$Line['Variables'][0]];
+            //        }
+            //        $Question = implode("\n",$Questions);
+            //        $AnswersOut = [];
+            //        foreach(range(0,99) as $a){
+            //            $aa = $a + 1;
+            //            if (empty($Line['Variables']['Answers'][$a])) break;
+            //            $Top = "|Reply$aa=";
+            //            $Answers = [];
+            //            foreach(range(0,99) as $b){
+            //                if (empty($Line['Variables']['Answers'][$a][$b])) break;
+            //                $Answers[] = $CsvTextArray[$Line['Variables']['Answers'][$a][$b]];
+            //            }
+            //            $AnswersOut[] = "$Top".implode("\n",$Answers)."";
+            //        }
+            //        $Ra = 0;
+            //        foreach($Questions as $key){
+            //            if(empty($AnswersOut[$Ra])){
+            //                $Ra++;
+            //                $AnswersOut[$Ra] = "|Reply$Ra=";
+            //            }
+            //        }
+            //        $QuestionAmount = count($AnswersOut);
+            //        $Width = 100 / $QuestionAmount;
+            //        $Answers = implode("\n",$AnswersOut);
+            //        $LinedArray[$i][] = "{{Loremtable|Width=$Width|Question=".$QuestionFix."$Question$Answers}}";
+            //    break;
+            //}
+            
+
+        }
+        if (!empty($UndefinedFunction)){
+            var_dump($UndefinedFunction);
+        }
+        $QuestLuaOutput["Lore"] = "$LinedArray}}";
         $QuestLuaOutput["Icons"] = $IconArray;
         return $QuestLuaOutput;
     }
+    /**
+     * Fix Formatting like: <Value>IntegerParameter(1)</Value>
+     */
+    public function getTextFmt($String, $Variables) {
+        $ExplodeString = preg_split('/[<,>]/',$String);
+        $Start = $ExplodeString[0];
+        $ExplodeString[0] = "";
+        $End = array_pop($ExplodeString);
+        $Lines = count($ExplodeString);
+        $Finish = false;
+        $Pos = 0;
+        if($Pos < $Lines){
+            while($Finish === false) {
+                if($Pos >= $Lines){
+                    break;
+                };
+                if (strpos($ExplodeString[$Pos],"IntegerParameter") !== false){
+                    if (preg_match('/\((.*?)\)/', $ExplodeString[$Pos], $match ) == 1) {
+                        $Integer = $match[1] + 1;
+                        $Replacement = "{{Color|style=normal|Positive|".str_replace("Get","Player ",$Variables[$Integer])."}}";
+                    }                    
+                }
+                $Pos++;
+            }
+        }
+        return "$Start$Replacement$End";
+    }
+
+
+
+
     public function getLuaDialogue2($LuaName, $ArgArray, $Name, $MainOption) {
         $LogMessageCsv = $this->csv("LogMessage");
         $HowToCsv = $this->csv("HowTo");

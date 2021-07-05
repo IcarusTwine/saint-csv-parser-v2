@@ -77,6 +77,7 @@ class QuestTest implements ParseInterface
         $CSVData["LogMessageCsv"] = $LogMessageCsv;
         $CSVData["BGMCsv"] = $BGMCsv;
         $CSVData["SECsv"] = $SECsv;
+        $CSVData["ENpcBaseCsv"] = $ENpcBaseCsv;
         //get festivals:
         
         $Festivaljdata = file_get_contents("Patch/FestivalNames.json");
@@ -117,8 +118,10 @@ class QuestTest implements ParseInterface
         $this->PatchCheck($Patch, "Quest", $QuestCsv);
         $PatchNumber = $this->getPatch("Quest");
         $LGBArray = $this->getLGBArray();
+        $CSVData["LGBArray"] = $LGBArray;
         //get bad names 
         $BadNames = $this->NameChecker($EventItemCsv, $ItemCsv);
+        $CSVData["BadNames"] = $BadNames;
         $IconArray = [];
         $this->io->progressStart($QuestCsv->total);
         foreach ($QuestCsv->data as $id => $Quest) {
