@@ -1,60 +1,118 @@
-(function()
-  print("CmnDefGroupPose")
-  function CmnDefGroupPose.OnScene00000(A0_0, A1_1, A2_2)
-    A0_0:GroupPose()
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefGroupPose"
+  L0_2(L1_2)
+  L0_2 = CmnDefGroupPose
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GroupPose
+    L3_3(L4_3)
   end
-  function CmnDefGroupPose.OnUI(A0_3, A1_4, A2_5)
-    local L3_6
-    L3_6 = A0_3.IsCurrentEventClientEvent
-    L3_6 = L3_6(A0_3)
-    if L3_6 == true then
-      L3_6 = A0_3.UI_EVENT_GROUP_POSE
-      if A2_5 == L3_6 then
-        L3_6 = A1_4.SetSceneEndRollback
-        L3_6(A1_4, A0_3.ROLLBACK_ACTIONTIMELINE, false)
-        L3_6 = A1_4.SetSceneEndRollback
-        L3_6(A1_4, A0_3.ROLLBACK_POSITION, false)
-        L3_6 = A1_4.SetSceneEndRollback
-        L3_6(A1_4, A0_3.ROLLBACK_DIRECTION, false)
-        L3_6 = A0_3.SCENE_FLAGS_NO_DEFAULT_CAMERA
-        L3_6 = L3_6 + A0_3.SCENE_FLAGS_FADE_OUT
-        L3_6 = L3_6 + A0_3.SCENE_FLAGS_HIDE_UI
-        L3_6 = L3_6 + A0_3.SCENE_FLAGS_DISABLE_CANCEL_EMOTE
-        L3_6 = L3_6 + A0_3.SCENE_FLAGS_INVIS_AOE
-        A0_3:PlayClientEventScene(0, L3_6, A2_5)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefGroupPose
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsCurrentEventClientEvent
+    L3_3 = L3_3(L4_3)
+    if L3_3 == true then
+      L3_3 = A0_3.UI_EVENT_GROUP_POSE
+      if A2_3 == L3_3 then
+        L4_3 = A1_3
+        L3_3 = A1_3.SetSceneEndRollback
+        L5_3 = A0_3.ROLLBACK_ACTIONTIMELINE
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A1_3
+        L3_3 = A1_3.SetSceneEndRollback
+        L5_3 = A0_3.ROLLBACK_POSITION
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A1_3
+        L3_3 = A1_3.SetSceneEndRollback
+        L5_3 = A0_3.ROLLBACK_DIRECTION
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L3_3 = A0_3.SCENE_FLAGS_NO_DEFAULT_CAMERA
+        L4_3 = A0_3.SCENE_FLAGS_FADE_OUT
+        L3_3 = L3_3 + L4_3
+        L4_3 = A0_3.SCENE_FLAGS_HIDE_UI
+        L3_3 = L3_3 + L4_3
+        L4_3 = A0_3.SCENE_FLAGS_DISABLE_CANCEL_EMOTE
+        L3_3 = L3_3 + L4_3
+        L4_3 = A0_3.SCENE_FLAGS_INVIS_AOE
+        L3_3 = L3_3 + L4_3
+        L5_3 = A0_3
+        L4_3 = A0_3.PlayClientEventScene
+        L6_3 = 0
+        L7_3 = L3_3
+        L8_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3, L8_3)
       end
     end
   end
-end)()
-;(function()
-  local L0_7, L1_8
-  L0_7 = CmnDefGroupPose
-  L0_7.SCRIPT_VERSION = 1
-  L0_7 = CmnDefGroupPose
-  function L1_8(A0_9, A1_10, A2_11, A3_12, A4_13)
-    if A1_10:IsReplaying() == true then
-      return 0
+  L0_2.OnUI = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefGroupPose
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefGroupPose
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3
+    L6_3 = A1_3
+    L5_3 = A1_3.IsReplaying
+    L5_3 = L5_3(L6_3)
+    if L5_3 == true then
+      L5_3 = 0
+      return L5_3
     end
-    return A0_9.EVENT_STATE_MOUNT_NORMAL
+    L5_3 = A0_3.EVENT_STATE_MOUNT_NORMAL
+    return L5_3
   end
-  L0_7.GetConditionId = L1_8
-  L0_7 = CmnDefGroupPose
-  function L1_8(A0_14, A1_15, A2_16, A3_17, A4_18)
-    if A1_15:IsReplaying() == true then
-      return 0
+  L0_2.GetConditionId = L1_2
+  L0_2 = CmnDefGroupPose
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3
+    L6_3 = A1_3
+    L5_3 = A1_3.IsReplaying
+    L5_3 = L5_3(L6_3)
+    if L5_3 == true then
+      L5_3 = 0
+      return L5_3
     end
-    return A0_14.PERMISSION_GROUP_POSE
+    L5_3 = A0_3.PERMISSION_GROUP_POSE
+    return L5_3
   end
-  L0_7.GetPermissionId = L1_8
-  L0_7 = CmnDefGroupPose
-  function L1_8(A0_19, A1_20, A2_21, A3_22, A4_23, A5_24, A6_25)
-    if A5_24 == A0_19.EVENT_UI and A6_25 == A0_19.UI_EVENT_GROUP_POSE then
-      if A1_20:IsReplaying() == true then
-        return true
+  L0_2.GetPermissionId = L1_2
+  L0_2 = CmnDefGroupPose
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3)
+    local L7_3, L8_3
+    L7_3 = A0_3.EVENT_UI
+    if A5_3 == L7_3 then
+      L7_3 = A0_3.UI_EVENT_GROUP_POSE
+      if A6_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.IsReplaying
+        L7_3 = L7_3(L8_3)
+        if L7_3 == true then
+          L7_3 = true
+          return L7_3
+        end
+        L8_3 = A1_3
+        L7_3 = A1_3.IsActionMoving
+        L7_3 = L7_3(L8_3)
+        L7_3 = L7_3 == false
+        return L7_3
       end
-      return A1_20:IsActionMoving() == false and A1_20:IsExecAction() == false and (A1_20:IsMoveForbidden() == false or A1_20:IsEmoting() == true) and A1_20:IsKnockBacking() == false
     end
-    return false
+    L7_3 = false
+    return L7_3
   end
-  L0_7.IsAcceptEvent = L1_8
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

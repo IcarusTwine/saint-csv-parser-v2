@@ -1,791 +1,3953 @@
-(function()
-  print("CtsFckMaster")
-  function CtsFckMaster.lcutFashionCheck(A0_0, A1_1, A2_2, A3_3, A4_4, A5_5)
-    local L6_6, L7_7, L8_8
-    L7_7 = A1_1
-    L6_6 = A1_1.GetRace
-    L6_6 = L6_6(L7_7)
-    L8_8 = A1_1
-    L7_7 = A1_1.GetSex
-    L7_7 = L7_7(L8_8)
-    L8_8 = A0_0.ChangeBGMVolume
-    L8_8(A0_0, 0)
-    L8_8 = A2_2.Direction
-    L8_8(A2_2, A1_1)
-    L8_8 = A2_2.LookAt
-    L8_8(A2_2, A1_1)
-    L8_8 = A2_2.Visible
-    L8_8(A2_2, A0_0.VISIBLE_HIDE)
-    L8_8 = A0_0.CreateCharacter
-    L8_8 = L8_8(A0_0, A0_0.ACTOR_ROSE, A2_2, A0_0.ARRANGE_TYPE_BASE_RIGHT, 2)
-    A0_0:Wait(10)
-    A1_1:Position(A0_0.LCUT_MAKER_01)
-    A0_0:Wait(10)
-    A1_1:Direction(L8_8)
-    A1_1:LookAt(L8_8, A0_0.LOOKAT_ACTOR_FOLLOW)
-    L8_8:Direction(A1_1)
-    L8_8:LookAt(A1_1, A0_0.LOOKAT_ACTOR_FOLLOW)
-    A0_0:LoadMovePosition(A0_0.LCUT_MAKER_02)
-    if L6_6 == A0_0.RACE_LALAFELL then
-      A0_0:PlayTwoShotCamera(A0_0.TWOSHOT_TYPE_RIGHT_70, L8_8, A1_1, 0)
-      A0_0:Zoom(-0.1, -0.1, 0, 0, 0)
-    elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-      A0_0:PlayTwoShotCamera(A0_0.TWOSHOT_TYPE_RIGHT_70, L8_8, A1_1, 0)
-      A0_0:Zoom(-0.2, -0.2, 0, 0, 0)
-      A0_0:UpdownDolly(-0.4, -0.4, 0, 0, 0)
-    elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-      A0_0:PlayTwoShotCamera(A0_0.TWOSHOT_TYPE_RIGHT_70, L8_8, A1_1, 0)
-      A0_0:Zoom(-0.2, -0.2, 0, 0, 0)
-      A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsFckMaster"
+  L0_2(L1_2)
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3
+    L7_3 = A1_3
+    L6_3 = A1_3.GetRace
+    L6_3 = L6_3(L7_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.GetSex
+    L7_3 = L7_3(L8_3)
+    L9_3 = A0_3
+    L8_3 = A0_3.ChangeBGMVolume
+    L10_3 = 0
+    L8_3(L9_3, L10_3)
+    L9_3 = A2_3
+    L8_3 = A2_3.Direction
+    L10_3 = A1_3
+    L8_3(L9_3, L10_3)
+    L9_3 = A2_3
+    L8_3 = A2_3.LookAt
+    L10_3 = A1_3
+    L8_3(L9_3, L10_3)
+    L9_3 = A2_3
+    L8_3 = A2_3.Visible
+    L10_3 = A0_3.VISIBLE_HIDE
+    L8_3(L9_3, L10_3)
+    L9_3 = A0_3
+    L8_3 = A0_3.CreateCharacter
+    L10_3 = A0_3.ACTOR_ROSE
+    L11_3 = A2_3
+    L12_3 = A0_3.ARRANGE_TYPE_BASE_RIGHT
+    L13_3 = 2
+    L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.Position
+    L11_3 = A0_3.LCUT_MAKER_01
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.Direction
+    L11_3 = L8_3
+    L9_3(L10_3, L11_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.LookAt
+    L11_3 = L8_3
+    L12_3 = A0_3.LOOKAT_ACTOR_FOLLOW
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.Direction
+    L11_3 = A1_3
+    L9_3(L10_3, L11_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.LookAt
+    L11_3 = A1_3
+    L12_3 = A0_3.LOOKAT_ACTOR_FOLLOW
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.LoadMovePosition
+    L11_3 = A0_3.LCUT_MAKER_02
+    L9_3(L10_3, L11_3)
+    L9_3 = A0_3.RACE_LALAFELL
+    if L6_3 == L9_3 then
+      L10_3 = A0_3
+      L9_3 = A0_3.PlayTwoShotCamera
+      L11_3 = A0_3.TWOSHOT_TYPE_RIGHT_70
+      L12_3 = L8_3
+      L13_3 = A1_3
+      L14_3 = 0
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+      L10_3 = A0_3
+      L9_3 = A0_3.Zoom
+      L11_3 = -0.1
+      L12_3 = -0.1
+      L13_3 = 0
+      L14_3 = 0
+      L15_3 = 0
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A0_0:PlayTwoShotCamera(A0_0.TWOSHOT_TYPE_RIGHT_70, L8_8, A1_1, 0)
-      A0_0:Zoom(-0.2, -0.2, 0, 0, 0)
+      L9_3 = A0_3.RACE_ROEGADYN
+      if L6_3 ~= L9_3 then
+        L9_3 = A0_3.RACE_ELEZEN
+        if L6_3 ~= L9_3 then
+          goto lbl_93
+        end
+      end
+      L10_3 = A0_3
+      L9_3 = A0_3.PlayTwoShotCamera
+      L11_3 = A0_3.TWOSHOT_TYPE_RIGHT_70
+      L12_3 = L8_3
+      L13_3 = A1_3
+      L14_3 = 0
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+      L10_3 = A0_3
+      L9_3 = A0_3.Zoom
+      L11_3 = -0.2
+      L12_3 = -0.2
+      L13_3 = 0
+      L14_3 = 0
+      L15_3 = 0
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L10_3 = A0_3
+      L9_3 = A0_3.UpdownDolly
+      L11_3 = -0.4
+      L12_3 = -0.4
+      L13_3 = 0
+      L14_3 = 0
+      L15_3 = 0
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      goto lbl_133
+      ::lbl_93::
+      L9_3 = A0_3.RACE_AURA
+      if L6_3 == L9_3 then
+        L9_3 = A0_3.SEX_MALE
+        if L7_3 == L9_3 then
+          L10_3 = A0_3
+          L9_3 = A0_3.PlayTwoShotCamera
+          L11_3 = A0_3.TWOSHOT_TYPE_RIGHT_70
+          L12_3 = L8_3
+          L13_3 = A1_3
+          L14_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          L10_3 = A0_3
+          L9_3 = A0_3.Zoom
+          L11_3 = -0.2
+          L12_3 = -0.2
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+          L10_3 = A0_3
+          L9_3 = A0_3.UpdownDolly
+          L11_3 = -0.2
+          L12_3 = -0.2
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      end
+      else
+        L10_3 = A0_3
+        L9_3 = A0_3.PlayTwoShotCamera
+        L11_3 = A0_3.TWOSHOT_TYPE_RIGHT_70
+        L12_3 = L8_3
+        L13_3 = A1_3
+        L14_3 = 0
+        L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+        L10_3 = A0_3
+        L9_3 = A0_3.Zoom
+        L11_3 = -0.2
+        L12_3 = -0.2
+        L13_3 = 0
+        L14_3 = 0
+        L15_3 = 0
+        L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      end
     end
-    A0_0:Wait(10)
-    A0_0:FadeIn(A0_0.FADE_LONG)
-    A0_0:Wait(10)
-    A0_0:WaitForFade()
-    L8_8:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_CHECK_START_ROSE_000_000, true)
-    L8_8:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A0_0:Wait(10)
-    L8_8:TurnTo(-45, false)
-    L8_8:LookAt(0, 0)
-    L8_8:WaitForTurn()
-    A0_0:Wait(10)
-    L8_8:Move(A0_0.LCUT_MAKER_02, A0_0.MOVE_WALK)
-    A0_0:Wait(60)
-    A1_1:TurnTo(90, false, false)
-    L8_8:WaitForMove()
-    A1_1:WaitForTurn()
-    A1_1:LookAt(0, 0)
-    A0_0:Wait(30)
-    A0_0:PlayBGM(A0_0.LCUT_BGM_01)
-    A0_0:ChangeBGMVolume(0.5)
-    A0_0:Wait(10)
-    L8_8:Direction(A1_1)
-    L8_8:LookAt(A1_1, A0_0.LOOKAT_ACTOR_FOLLOW)
-    if A3_3 >= 0 and A3_3 <= 49 then
-      if 0 <= A0_0:FashionCheckGetRandom(10) and A0_0:FashionCheckGetRandom(10) <= 5 then
-        A0_0:PlayCamera(9, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.1, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.9, -0.9, 0, 0, 0)
-          A0_0:UpdownDolly(0.6, 0, 0, 120, 120)
-          A0_0:UpdownPan(-45, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
+    ::lbl_133::
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.FadeIn
+    L11_3 = A0_3.FADE_LONG
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.WaitForFade
+    L9_3(L10_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.PlayActionTimeline
+    L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L9_3(L10_3, L11_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.Talk
+    L11_3 = A1_3
+    L12_3 = A0_3
+    L13_3 = A0_3.TEXT_CTSFCKMASTER_00453_CHECK_START_ROSE_000_000
+    L14_3 = true
+    L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.WaitForActionTimeline
+    L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.TurnTo
+    L11_3 = -45
+    L12_3 = false
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.LookAt
+    L11_3 = 0
+    L12_3 = 0
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.WaitForTurn
+    L9_3(L10_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.Move
+    L11_3 = A0_3.LCUT_MAKER_02
+    L12_3 = A0_3.MOVE_WALK
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 60
+    L9_3(L10_3, L11_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.TurnTo
+    L11_3 = 90
+    L12_3 = false
+    L13_3 = false
+    L9_3(L10_3, L11_3, L12_3, L13_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.WaitForMove
+    L9_3(L10_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.WaitForTurn
+    L9_3(L10_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.LookAt
+    L11_3 = 0
+    L12_3 = 0
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 30
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.PlayBGM
+    L11_3 = A0_3.LCUT_BGM_01
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.ChangeBGMVolume
+    L11_3 = 0.5
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.Direction
+    L11_3 = A1_3
+    L9_3(L10_3, L11_3)
+    L10_3 = L8_3
+    L9_3 = L8_3.LookAt
+    L11_3 = A1_3
+    L12_3 = A0_3.LOOKAT_ACTOR_FOLLOW
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.FashionCheckGetRandom
+    L11_3 = 10
+    L9_3 = L9_3(L10_3, L11_3)
+    if 0 <= A3_3 and A3_3 <= 49 then
+      if 0 <= L9_3 and L9_3 <= 5 then
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 9
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.1
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -25
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-          A0_0:UpdownDolly(0.2, 0, 0, 120, 120)
-          A0_0:UpdownPan(-45, 5, 80, 80, 80)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_279
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.9
+          L13_3 = -0.9
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.6
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -45
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_2136
+          ::lbl_279::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.3
+              L13_3 = -0.3
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 0.7
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 120
+              L16_3 = 120
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownPan
+              L12_3 = -25
+              L13_3 = 5
+              L14_3 = 80
+              L15_3 = 80
+              L16_3 = 80
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.8
+            L13_3 = -0.8
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.2
+            L13_3 = 0
+            L14_3 = 0
+            L15_3 = 120
+            L16_3 = 120
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = -45
+            L13_3 = 5
+            L14_3 = 80
+            L15_3 = 80
+            L16_3 = 80
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-      elseif A0_0:FashionCheckGetRandom(10) >= 6 and A0_0:FashionCheckGetRandom(10) <= 8 then
-        A0_0:PlayCamera(9, A1_1)
-        A0_0:Orbit(-30, 30, 80, 80, 80)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.1, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.9, -0.9, 0, 0, 0)
-          A0_0:UpdownDolly(0.9, 0, 0, 120, 120)
-          A0_0:UpdownPan(-45, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
+      elseif 6 <= L9_3 and L9_3 <= 8 then
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 9
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Orbit
+        L12_3 = -30
+        L13_3 = 30
+        L14_3 = 80
+        L15_3 = 80
+        L16_3 = 80
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.1
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -25
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.2, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_397
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.9
+          L13_3 = -0.9
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.9
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -45
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_2136
+          ::lbl_397::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.3
+              L13_3 = -0.3
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 0.7
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 120
+              L16_3 = 120
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownPan
+              L12_3 = -25
+              L13_3 = 5
+              L14_3 = 80
+              L15_3 = 80
+              L16_3 = 80
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.3
+            L13_3 = -0.3
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.2
+            L13_3 = 0
+            L14_3 = 0
+            L15_3 = 120
+            L16_3 = 120
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = -25
+            L13_3 = 5
+            L14_3 = 80
+            L15_3 = 80
+            L16_3 = 80
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
       else
-        A0_0:PlayCamera(11, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.4, 0.4, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(1.5, 1.5, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(1.7, 1.7, 0, 0, 0)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 11
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.4
+          L13_3 = 0.4
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.1, -0.1, 0, 0, 0)
-          A0_0:UpdownDolly(1.2, 1.2, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_490
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 1.5
+          L13_3 = 1.5
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_525
+          ::lbl_490::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 1.7
+              L13_3 = 1.7
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.1
+            L13_3 = -0.1
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 1.2
+            L13_3 = 1.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
-        A0_0:PlayCamera(13, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.3, 0.3, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(0.9, 0.9, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(1.2, 1.2, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
+        ::lbl_525::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 13
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.3
+          L13_3 = 0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.SideDolly
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.2, -0.2, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0.7, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_594
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.9
+          L13_3 = 0.9
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.SideDolly
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_643
+          ::lbl_594::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 1.2
+              L13_3 = 1.2
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.SideDolly
+              L12_3 = -0.2
+              L13_3 = -0.2
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.2
+            L13_3 = -0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.7
+            L13_3 = 0.7
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.2
+            L13_3 = -0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
-        A0_0:PlayCamera(12, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(0.5, 0.5, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0.7, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
+        ::lbl_643::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 12
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.2
+          L13_3 = 0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Orbit
+          L12_3 = 15
+          L13_3 = 15
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_712
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.5
+          L13_3 = 0.5
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Orbit
+          L12_3 = 15
+          L13_3 = 15
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_754
+          ::lbl_712::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 0.7
+              L13_3 = 0.7
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.Orbit
+              L12_3 = 15
+              L13_3 = 15
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.2
+            L13_3 = 0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = 15
+            L13_3 = 15
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
-        A0_0:PlayCamera(14, A1_1)
-        A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(-0.1, -0.1, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+        ::lbl_754::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 14
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = -0.2
+        L13_3 = -0.2
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_816
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = -0.1
+          L13_3 = -0.1
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_844
+          ::lbl_816::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = -0.2
+              L13_3 = -0.2
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = -0.1
+            L13_3 = -0.1
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
+        ::lbl_844::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
       end
-    elseif A3_3 >= 50 and A3_3 <= 79 then
-      if 0 <= A0_0:FashionCheckGetRandom(10) and 2 >= A0_0:FashionCheckGetRandom(10) then
-        A0_0:PlayCamera(9, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.1, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.9, -0.9, 0, 0, 0)
-          A0_0:UpdownDolly(0.6, 0, 0, 120, 120)
-          A0_0:UpdownPan(-45, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
+    elseif 50 <= A3_3 and A3_3 <= 79 then
+      if 0 <= L9_3 and L9_3 <= 2 then
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 9
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.1
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -25
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-          A0_0:UpdownDolly(0.2, 0, 0, 120, 120)
-          A0_0:UpdownPan(-45, 5, 80, 80, 80)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_922
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.9
+          L13_3 = -0.9
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.6
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -45
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_2136
+          ::lbl_922::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.3
+              L13_3 = -0.3
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 0.7
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 120
+              L16_3 = 120
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownPan
+              L12_3 = -25
+              L13_3 = 5
+              L14_3 = 80
+              L15_3 = 80
+              L16_3 = 80
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.8
+            L13_3 = -0.8
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.2
+            L13_3 = 0
+            L14_3 = 0
+            L15_3 = 120
+            L16_3 = 120
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = -45
+            L13_3 = 5
+            L14_3 = 80
+            L15_3 = 80
+            L16_3 = 80
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-      elseif A0_0:FashionCheckGetRandom(10) >= 3 and A0_0:FashionCheckGetRandom(10) <= 8 then
-        A0_0:PlayCamera(9, A1_1)
-        A0_0:Orbit(-30, 30, 80, 80, 80)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.1, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.9, -0.9, 0, 0, 0)
-          A0_0:UpdownDolly(0.9, 0, 0, 120, 120)
-          A0_0:UpdownPan(-45, 5, 80, 80, 80)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
+      elseif 3 <= L9_3 and L9_3 <= 8 then
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 9
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Orbit
+        L12_3 = -30
+        L13_3 = 30
+        L14_3 = 80
+        L15_3 = 80
+        L16_3 = 80
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.1
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -25
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.2, 0, 0, 120, 120)
-          A0_0:UpdownPan(-25, 5, 80, 80, 80)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_1040
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.9
+          L13_3 = -0.9
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.9
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -45
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_2136
+          ::lbl_1040::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.3
+              L13_3 = -0.3
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 0.7
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 120
+              L16_3 = 120
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownPan
+              L12_3 = -25
+              L13_3 = 5
+              L14_3 = 80
+              L15_3 = 80
+              L16_3 = 80
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.3
+            L13_3 = -0.3
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.2
+            L13_3 = 0
+            L14_3 = 0
+            L15_3 = 120
+            L16_3 = 120
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = -25
+            L13_3 = 5
+            L14_3 = 80
+            L15_3 = 80
+            L16_3 = 80
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
       else
-        A0_0:PlayCamera(11, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.4, 0.4, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(1.5, 1.5, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(1.7, 1.7, 0, 0, 0)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 11
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.4
+          L13_3 = 0.4
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.1, -0.1, 0, 0, 0)
-          A0_0:UpdownDolly(1.2, 1.2, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_1133
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 1.5
+          L13_3 = 1.5
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_1168
+          ::lbl_1133::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 1.7
+              L13_3 = 1.7
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.1
+            L13_3 = -0.1
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 1.2
+            L13_3 = 1.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
-        A0_0:PlayCamera(13, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.3, 0.3, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(0.9, 0.9, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(1.2, 1.2, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
+        ::lbl_1168::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 13
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.3
+          L13_3 = 0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.SideDolly
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:Zoom(-0.2, -0.2, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0.7, 0, 0, 0)
-          A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_1237
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.9
+          L13_3 = 0.9
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.SideDolly
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_1286
+          ::lbl_1237::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 1.2
+              L13_3 = 1.2
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.SideDolly
+              L12_3 = -0.2
+              L13_3 = -0.2
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.2
+            L13_3 = -0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.7
+            L13_3 = 0.7
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.2
+            L13_3 = -0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
-        A0_0:PlayCamera(12, A1_1)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(0.5, 0.5, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(0.7, 0.7, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
+        ::lbl_1286::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 12
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.2
+          L13_3 = 0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Orbit
+          L12_3 = 15
+          L13_3 = 15
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-          A0_0:Orbit(15, 15, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_1355
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.5
+          L13_3 = 0.5
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Orbit
+          L12_3 = 15
+          L13_3 = 15
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_1397
+          ::lbl_1355::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = 0.7
+              L13_3 = 0.7
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.Orbit
+              L12_3 = 15
+              L13_3 = 15
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.2
+            L13_3 = 0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = 15
+            L13_3 = 15
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
-        A0_0:PlayCamera(14, A1_1)
-        A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
-        if L6_6 == A0_0.RACE_LALAFELL then
-          A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-          A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-          A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-          A0_0:UpdownDolly(-0.1, -0.1, 0, 0, 0)
-        elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-          A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-          A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+        ::lbl_1397::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayCamera
+        L12_3 = 14
+        L13_3 = A1_3
+        L10_3(L11_3, L12_3, L13_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = -0.2
+        L13_3 = -0.2
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L10_3 = A0_3.RACE_LALAFELL
+        if L6_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          A0_0:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+          L10_3 = A0_3.RACE_ROEGADYN
+          if L6_3 ~= L10_3 then
+            L10_3 = A0_3.RACE_ELEZEN
+            if L6_3 ~= L10_3 then
+              goto lbl_1459
+            end
+          end
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.6
+          L13_3 = -0.6
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = -0.1
+          L13_3 = -0.1
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          goto lbl_1487
+          ::lbl_1459::
+          L10_3 = A0_3.RACE_AURA
+          if L6_3 == L10_3 then
+            L10_3 = A0_3.SEX_MALE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -0.4
+              L13_3 = -0.4
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = -0.2
+              L13_3 = -0.2
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
+          else
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = -0.1
+            L13_3 = -0.1
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          end
         end
-        A0_0:PlaySE(A0_0.SE_05)
-        A0_0:PlayScreenShake(5)
-        A0_0:StopScreenShake(10)
-        A0_0:Wait(30)
+        ::lbl_1487::
+        L11_3 = A0_3
+        L10_3 = A0_3.PlaySE
+        L12_3 = A0_3.SE_05
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.PlayScreenShake
+        L12_3 = 5
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.StopScreenShake
+        L12_3 = 10
+        L10_3(L11_3, L12_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Wait
+        L12_3 = 30
+        L10_3(L11_3, L12_3)
       end
-    elseif A0_0:FashionCheckGetRandom(10) == 0 then
-      A0_0:PlayCamera(9, A1_1)
-      if L6_6 == A0_0.RACE_LALAFELL then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(0.1, 0, 0, 120, 120)
-        A0_0:UpdownPan(-25, 5, 80, 80, 80)
-      elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-        A0_0:Zoom(-0.9, -0.9, 0, 0, 0)
-        A0_0:UpdownDolly(0.6, 0, 0, 120, 120)
-        A0_0:UpdownPan(-45, 5, 80, 80, 80)
-      elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(0.7, 0, 0, 120, 120)
-        A0_0:UpdownPan(-25, 5, 80, 80, 80)
+    elseif L9_3 == 0 then
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 9
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L10_3 = A0_3.RACE_LALAFELL
+      if L6_3 == L10_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.3
+        L13_3 = -0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.1
+        L13_3 = 0
+        L14_3 = 0
+        L15_3 = 120
+        L16_3 = 120
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownPan
+        L12_3 = -25
+        L13_3 = 5
+        L14_3 = 80
+        L15_3 = 80
+        L16_3 = 80
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
       else
-        A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-        A0_0:UpdownDolly(0.2, 0, 0, 120, 120)
-        A0_0:UpdownPan(-45, 5, 80, 80, 80)
+        L10_3 = A0_3.RACE_ROEGADYN
+        if L6_3 ~= L10_3 then
+          L10_3 = A0_3.RACE_ELEZEN
+          if L6_3 ~= L10_3 then
+            goto lbl_1559
+          end
+        end
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.9
+        L13_3 = -0.9
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.6
+        L13_3 = 0
+        L14_3 = 0
+        L15_3 = 120
+        L16_3 = 120
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownPan
+        L12_3 = -45
+        L13_3 = 5
+        L14_3 = 80
+        L15_3 = 80
+        L16_3 = 80
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        goto lbl_2136
+        ::lbl_1559::
+        L10_3 = A0_3.RACE_AURA
+        if L6_3 == L10_3 then
+          L10_3 = A0_3.SEX_MALE
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.3
+            L13_3 = -0.3
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.7
+            L13_3 = 0
+            L14_3 = 0
+            L15_3 = 120
+            L16_3 = 120
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = -25
+            L13_3 = 5
+            L14_3 = 80
+            L15_3 = 80
+            L16_3 = 80
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
+        else
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.8
+          L13_3 = -0.8
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.2
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -45
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
       end
-    elseif A0_0:FashionCheckGetRandom(10) >= 1 and A0_0:FashionCheckGetRandom(10) <= 3 then
-      A0_0:PlayCamera(9, A1_1)
-      A0_0:Orbit(-30, 30, 80, 80, 80)
-      if L6_6 == A0_0.RACE_LALAFELL then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(0.1, 0, 0, 120, 120)
-        A0_0:UpdownPan(-25, 5, 80, 80, 80)
-      elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-        A0_0:Zoom(-0.9, -0.9, 0, 0, 0)
-        A0_0:UpdownDolly(0.9, 0, 0, 120, 120)
-        A0_0:UpdownPan(-45, 5, 80, 80, 80)
-      elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(0.7, 0, 0, 120, 120)
-        A0_0:UpdownPan(-25, 5, 80, 80, 80)
+    elseif 1 <= L9_3 and L9_3 <= 3 then
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 9
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.Orbit
+      L12_3 = -30
+      L13_3 = 30
+      L14_3 = 80
+      L15_3 = 80
+      L16_3 = 80
+      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+      L10_3 = A0_3.RACE_LALAFELL
+      if L6_3 == L10_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.3
+        L13_3 = -0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.1
+        L13_3 = 0
+        L14_3 = 0
+        L15_3 = 120
+        L16_3 = 120
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownPan
+        L12_3 = -25
+        L13_3 = 5
+        L14_3 = 80
+        L15_3 = 80
+        L16_3 = 80
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
       else
-        A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-        A0_0:UpdownDolly(0.3, 0, 0, 120, 120)
-        A0_0:UpdownPan(-35, 5, 80, 80, 80)
+        L10_3 = A0_3.RACE_ROEGADYN
+        if L6_3 ~= L10_3 then
+          L10_3 = A0_3.RACE_ELEZEN
+          if L6_3 ~= L10_3 then
+            goto lbl_1677
+          end
+        end
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.9
+        L13_3 = -0.9
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.9
+        L13_3 = 0
+        L14_3 = 0
+        L15_3 = 120
+        L16_3 = 120
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownPan
+        L12_3 = -45
+        L13_3 = 5
+        L14_3 = 80
+        L15_3 = 80
+        L16_3 = 80
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        goto lbl_2136
+        ::lbl_1677::
+        L10_3 = A0_3.RACE_AURA
+        if L6_3 == L10_3 then
+          L10_3 = A0_3.SEX_MALE
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.3
+            L13_3 = -0.3
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.7
+            L13_3 = 0
+            L14_3 = 0
+            L15_3 = 120
+            L16_3 = 120
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = -25
+            L13_3 = 5
+            L14_3 = 80
+            L15_3 = 80
+            L16_3 = 80
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
+        else
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.4
+          L13_3 = -0.4
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.3
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 120
+          L16_3 = 120
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = -35
+          L13_3 = 5
+          L14_3 = 80
+          L15_3 = 80
+          L16_3 = 80
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
       end
     else
-      A0_0:PlayCamera(11, A1_1)
-      if L6_6 == A0_0.RACE_LALAFELL then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(0.4, 0.4, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-        A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-        A0_0:UpdownDolly(1.5, 1.5, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-        A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-        A0_0:UpdownDolly(1.7, 1.7, 0, 0, 0)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 11
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L10_3 = A0_3.RACE_LALAFELL
+      if L6_3 == L10_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.3
+        L13_3 = -0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.4
+        L13_3 = 0.4
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
       else
-        A0_0:Zoom(-0.1, -0.1, 0, 0, 0)
-        A0_0:UpdownDolly(1.2, 1.2, 0, 0, 0)
+        L10_3 = A0_3.RACE_ROEGADYN
+        if L6_3 ~= L10_3 then
+          L10_3 = A0_3.RACE_ELEZEN
+          if L6_3 ~= L10_3 then
+            goto lbl_1770
+          end
+        end
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.6
+        L13_3 = -0.6
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 1.5
+        L13_3 = 1.5
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        goto lbl_1805
+        ::lbl_1770::
+        L10_3 = A0_3.RACE_AURA
+        if L6_3 == L10_3 then
+          L10_3 = A0_3.SEX_MALE
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.4
+            L13_3 = -0.4
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 1.7
+            L13_3 = 1.7
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
+        else
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.1
+          L13_3 = -0.1
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 1.2
+          L13_3 = 1.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
       end
-      A0_0:PlaySE(A0_0.SE_05)
-      A0_0:PlayScreenShake(5)
-      A0_0:StopScreenShake(10)
-      A0_0:Wait(30)
-      A0_0:PlayCamera(13, A1_1)
-      if L6_6 == A0_0.RACE_LALAFELL then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(0.3, 0.3, 0, 0, 0)
-        A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-        A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-        A0_0:UpdownDolly(0.9, 0.9, 0, 0, 0)
-        A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-        A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-        A0_0:UpdownDolly(1.2, 1.2, 0, 0, 0)
-        A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
+      ::lbl_1805::
+      L11_3 = A0_3
+      L10_3 = A0_3.PlaySE
+      L12_3 = A0_3.SE_05
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayScreenShake
+      L12_3 = 5
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.StopScreenShake
+      L12_3 = 10
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.Wait
+      L12_3 = 30
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 13
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L10_3 = A0_3.RACE_LALAFELL
+      if L6_3 == L10_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.3
+        L13_3 = -0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.3
+        L13_3 = 0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.SideDolly
+        L12_3 = -0.2
+        L13_3 = -0.2
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
       else
-        A0_0:Zoom(-0.2, -0.2, 0, 0, 0)
-        A0_0:UpdownDolly(0.7, 0.7, 0, 0, 0)
-        A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
+        L10_3 = A0_3.RACE_ROEGADYN
+        if L6_3 ~= L10_3 then
+          L10_3 = A0_3.RACE_ELEZEN
+          if L6_3 ~= L10_3 then
+            goto lbl_1874
+          end
+        end
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.6
+        L13_3 = -0.6
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.9
+        L13_3 = 0.9
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.SideDolly
+        L12_3 = -0.2
+        L13_3 = -0.2
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        goto lbl_1923
+        ::lbl_1874::
+        L10_3 = A0_3.RACE_AURA
+        if L6_3 == L10_3 then
+          L10_3 = A0_3.SEX_MALE
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.4
+            L13_3 = -0.4
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 1.2
+            L13_3 = 1.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.2
+            L13_3 = -0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
+        else
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.7
+          L13_3 = 0.7
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.SideDolly
+          L12_3 = -0.2
+          L13_3 = -0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
       end
-      A0_0:PlaySE(A0_0.SE_05)
-      A0_0:PlayScreenShake(5)
-      A0_0:StopScreenShake(10)
-      A0_0:Wait(30)
-      A0_0:PlayCamera(12, A1_1)
-      if L6_6 == A0_0.RACE_LALAFELL then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-        A0_0:Orbit(15, 15, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-        A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-        A0_0:UpdownDolly(0.5, 0.5, 0, 0, 0)
-        A0_0:Orbit(15, 15, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-        A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-        A0_0:UpdownDolly(0.7, 0.7, 0, 0, 0)
-        A0_0:Orbit(15, 15, 0, 0, 0)
+      ::lbl_1923::
+      L11_3 = A0_3
+      L10_3 = A0_3.PlaySE
+      L12_3 = A0_3.SE_05
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayScreenShake
+      L12_3 = 5
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.StopScreenShake
+      L12_3 = 10
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.Wait
+      L12_3 = 30
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 12
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L10_3 = A0_3.RACE_LALAFELL
+      if L6_3 == L10_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.3
+        L13_3 = -0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.2
+        L13_3 = 0.2
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Orbit
+        L12_3 = 15
+        L13_3 = 15
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
       else
-        A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-        A0_0:Orbit(15, 15, 0, 0, 0)
+        L10_3 = A0_3.RACE_ROEGADYN
+        if L6_3 ~= L10_3 then
+          L10_3 = A0_3.RACE_ELEZEN
+          if L6_3 ~= L10_3 then
+            goto lbl_1992
+          end
+        end
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.6
+        L13_3 = -0.6
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = 0.5
+        L13_3 = 0.5
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Orbit
+        L12_3 = 15
+        L13_3 = 15
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        goto lbl_2034
+        ::lbl_1992::
+        L10_3 = A0_3.RACE_AURA
+        if L6_3 == L10_3 then
+          L10_3 = A0_3.SEX_MALE
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.4
+            L13_3 = -0.4
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = 0.7
+            L13_3 = 0.7
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = 15
+            L13_3 = 15
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
+        else
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = 0.2
+          L13_3 = 0.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Orbit
+          L12_3 = 15
+          L13_3 = 15
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
       end
-      A0_0:PlaySE(A0_0.SE_05)
-      A0_0:PlayScreenShake(5)
-      A0_0:StopScreenShake(10)
-      A0_0:Wait(30)
-      A0_0:PlayCamera(14, A1_1)
-      A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
-      if L6_6 == A0_0.RACE_LALAFELL then
-        A0_0:Zoom(-0.3, -0.3, 0, 0, 0)
-        A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-        A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-        A0_0:UpdownDolly(-0.1, -0.1, 0, 0, 0)
-      elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-        A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-        A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
+      ::lbl_2034::
+      L11_3 = A0_3
+      L10_3 = A0_3.PlaySE
+      L12_3 = A0_3.SE_05
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayScreenShake
+      L12_3 = 5
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.StopScreenShake
+      L12_3 = 10
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.Wait
+      L12_3 = 30
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 14
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.UpdownDolly
+      L12_3 = -0.2
+      L13_3 = -0.2
+      L14_3 = 0
+      L15_3 = 0
+      L16_3 = 0
+      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+      L10_3 = A0_3.RACE_LALAFELL
+      if L6_3 == L10_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.3
+        L13_3 = -0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = -0.2
+        L13_3 = -0.2
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
       else
-        A0_0:UpdownDolly(-0.1, -0.1, 0, 0, 0)
+        L10_3 = A0_3.RACE_ROEGADYN
+        if L6_3 ~= L10_3 then
+          L10_3 = A0_3.RACE_ELEZEN
+          if L6_3 ~= L10_3 then
+            goto lbl_2096
+          end
+        end
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -0.6
+        L13_3 = -0.6
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = -0.1
+        L13_3 = -0.1
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        goto lbl_2124
+        ::lbl_2096::
+        L10_3 = A0_3.RACE_AURA
+        if L6_3 == L10_3 then
+          L10_3 = A0_3.SEX_MALE
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.4
+            L13_3 = -0.4
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = -0.2
+            L13_3 = -0.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
+        else
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownDolly
+          L12_3 = -0.1
+          L13_3 = -0.1
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        end
       end
-      A0_0:PlaySE(A0_0.SE_05)
-      A0_0:PlayScreenShake(5)
-      A0_0:StopScreenShake(10)
-      A0_0:Wait(30)
+      ::lbl_2124::
+      L11_3 = A0_3
+      L10_3 = A0_3.PlaySE
+      L12_3 = A0_3.SE_05
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayScreenShake
+      L12_3 = 5
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.StopScreenShake
+      L12_3 = 10
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.Wait
+      L12_3 = 30
+      L10_3(L11_3, L12_3)
     end
-    A0_0:WaitForPan()
-    if L6_6 == A0_0.RACE_LALAFELL then
-      A0_0:PlayCamera(25, A1_1)
-      A0_0:Zoom(-0.1, -0.1, 0, 0, 0)
-      A0_0:Orbit(45, -45, 80, 80, 80)
-    elseif L6_6 == A0_0.RACE_ROEGADYN or L6_6 == A0_0.RACE_ELEZEN then
-      A0_0:PlayCamera(25, A1_1)
-      A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-      A0_0:UpdownDolly(0.1, 0.1, 0, 0, 0)
-      A0_0:Orbit(45, -45, 80, 80, 80)
-    elseif L6_6 == A0_0.RACE_AURA and L7_7 == A0_0.SEX_MALE then
-      A0_0:PlayCamera(25, A1_1)
-      A0_0:Zoom(-0.4, -0.4, 0, 0, 0)
-      A0_0:UpdownDolly(0.1, 0.1, 0, 0, 0)
-      A0_0:Orbit(45, -45, 80, 80, 80)
+    ::lbl_2136::
+    L11_3 = A0_3
+    L10_3 = A0_3.WaitForPan
+    L10_3(L11_3)
+    L11_3 = A0_3
+    L10_3 = A0_3.FashionCheckGetRandom
+    L12_3 = 30
+    L10_3 = L10_3(L11_3, L12_3)
+    L11_3 = A0_3.RACE_LALAFELL
+    if L6_3 == L11_3 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 25
+      L14_3 = A1_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.1
+      L14_3 = -0.1
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Orbit
+      L13_3 = 45
+      L14_3 = -45
+      L15_3 = 80
+      L16_3 = 80
+      L17_3 = 80
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
     else
-      A0_0:PlayCamera(25, A1_1)
-      A0_0:Zoom(-0.6, -0.6, 0, 0, 0)
-      A0_0:Orbit(45, -45, 80, 80, 80)
-    end
-    if A5_5 == 11 then
-      A1_1:PlayActionTimeline(A0_0.EMOTE_10)
-      A0_0:Wait(30)
-    elseif A5_5 == 15 then
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ME)
-      A0_0:Wait(30)
-    elseif A5_5 == 21 then
-      A1_1:PlayActionTimeline(A0_0.EMOTE_08)
-      A0_0:Wait(30)
-    elseif A5_5 == 22 then
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_BOW)
-      A0_0:Wait(30)
-    else
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_POSING)
-      A0_0:Wait(30)
-    end
-    A0_0:Wait(30)
-    if A3_3 >= 0 and A3_3 <= 49 then
-      if 0 <= A0_0:FashionCheckGetRandom(30) and A0_0:FashionCheckGetRandom(30) <= 5 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_000_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 6 and A0_0:FashionCheckGetRandom(30) <= 11 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_001_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 12 and A0_0:FashionCheckGetRandom(30) <= 17 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_002_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 18 and A0_0:FashionCheckGetRandom(30) <= 20 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_003_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 21 and A0_0:FashionCheckGetRandom(30) <= 23 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_004_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 24 and A0_0:FashionCheckGetRandom(30) <= 26 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_005_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) == 27 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_006_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) == 28 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_007_000, true)
-      else
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_009_000, true)
+      L11_3 = A0_3.RACE_ROEGADYN
+      if L6_3 ~= L11_3 then
+        L11_3 = A0_3.RACE_ELEZEN
+        if L6_3 ~= L11_3 then
+          goto lbl_2195
+        end
       end
-    elseif A3_3 >= 50 and A3_3 <= 79 then
-      if 0 <= A0_0:FashionCheckGetRandom(30) and 2 >= A0_0:FashionCheckGetRandom(30) then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_000_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 3 and A0_0:FashionCheckGetRandom(30) <= 5 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_001_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 6 and A0_0:FashionCheckGetRandom(30) <= 8 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_002_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 9 and A0_0:FashionCheckGetRandom(30) <= 14 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_003_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 15 and A0_0:FashionCheckGetRandom(30) <= 20 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_004_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 21 and A0_0:FashionCheckGetRandom(30) <= 26 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_005_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) == 27 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_006_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) == 28 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_007_000, true)
-      else
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_009_000, true)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 25
+      L14_3 = A1_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.6
+      L14_3 = -0.6
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.1
+      L14_3 = 0.1
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Orbit
+      L13_3 = 45
+      L14_3 = -45
+      L15_3 = 80
+      L16_3 = 80
+      L17_3 = 80
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      goto lbl_2245
+      ::lbl_2195::
+      L11_3 = A0_3.RACE_AURA
+      if L6_3 == L11_3 then
+        L11_3 = A0_3.SEX_MALE
+        if L7_3 == L11_3 then
+          L12_3 = A0_3
+          L11_3 = A0_3.PlayCamera
+          L13_3 = 25
+          L14_3 = A1_3
+          L11_3(L12_3, L13_3, L14_3)
+          L12_3 = A0_3
+          L11_3 = A0_3.Zoom
+          L13_3 = -0.4
+          L14_3 = -0.4
+          L15_3 = 0
+          L16_3 = 0
+          L17_3 = 0
+          L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L12_3 = A0_3
+          L11_3 = A0_3.UpdownDolly
+          L13_3 = 0.1
+          L14_3 = 0.1
+          L15_3 = 0
+          L16_3 = 0
+          L17_3 = 0
+          L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L12_3 = A0_3
+          L11_3 = A0_3.Orbit
+          L13_3 = 45
+          L14_3 = -45
+          L15_3 = 80
+          L16_3 = 80
+          L17_3 = 80
+          L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
       end
-    elseif A3_3 >= 80 and A3_3 <= 99 then
-      if A0_0:FashionCheckGetRandom(30) == 0 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_000_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) == 1 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_001_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) == 2 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_002_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 3 and A0_0:FashionCheckGetRandom(30) <= 5 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_003_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 6 and A0_0:FashionCheckGetRandom(30) <= 8 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_004_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 9 and A0_0:FashionCheckGetRandom(30) <= 11 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_005_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 12 and A0_0:FashionCheckGetRandom(30) <= 17 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_006_000, true)
-      elseif A0_0:FashionCheckGetRandom(30) >= 18 and A0_0:FashionCheckGetRandom(30) <= 23 then
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_007_000, true)
       else
-        L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_009_000, true)
+        L12_3 = A0_3
+        L11_3 = A0_3.PlayCamera
+        L13_3 = 25
+        L14_3 = A1_3
+        L11_3(L12_3, L13_3, L14_3)
+        L12_3 = A0_3
+        L11_3 = A0_3.Zoom
+        L13_3 = -0.6
+        L14_3 = -0.6
+        L15_3 = 0
+        L16_3 = 0
+        L17_3 = 0
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+        L12_3 = A0_3
+        L11_3 = A0_3.Orbit
+        L13_3 = 45
+        L14_3 = -45
+        L15_3 = 80
+        L16_3 = 80
+        L17_3 = 80
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
       end
-    else
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_008_000, true)
     end
-    A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_POSING)
-    A0_0:WaitForOrbit()
-    A0_0:Wait(30)
-    A0_0:ChangeBGMVolume(0)
-    L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_CHECK_RESULT_ROSE_000_000, true)
-    A1_1:Idle(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE2)
-    A0_0:Wait(60)
-    A0_0:FashionCheckOpenScoreWidget()
-    A0_0:Wait(20)
-    if A3_3 >= 0 and A3_3 <= 49 then
-      A0_0:ChangeBGMVolume(0)
-    elseif A3_3 >= 50 and A3_3 <= 79 then
-      A0_0:PlayBGM(A0_0.LCUT_BGM_01)
-      A0_0:ChangeBGMVolume(1)
-      A0_0:Wait(10)
-    elseif A3_3 >= 80 and A3_3 <= 99 then
-      A0_0:PlayBGM(A0_0.LCUT_BGM_04)
-      A0_0:ChangeBGMVolume(0.5)
-      A0_0:Wait(10)
+    ::lbl_2245::
+    if A5_3 == 11 then
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.EMOTE_10
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif A5_3 == 15 then
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_ME
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif A5_3 == 21 then
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.EMOTE_08
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif A5_3 == 22 then
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
     else
-      A0_0:PlayBGM(A0_0.LCUT_BGM_02)
-      A0_0:ChangeBGMVolume(0.5)
-      A0_0:Wait(10)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_POSING
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    end
+    L12_3 = A0_3
+    L11_3 = A0_3.Wait
+    L13_3 = 30
+    L11_3(L12_3, L13_3)
+    if 0 <= A3_3 and A3_3 <= 49 then
+      if 0 <= L10_3 and L10_3 <= 5 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_000_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 6 <= L10_3 and L10_3 <= 11 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_001_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 12 <= L10_3 and L10_3 <= 17 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_002_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 18 <= L10_3 and L10_3 <= 20 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_003_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 21 <= L10_3 and L10_3 <= 23 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_004_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 24 <= L10_3 and L10_3 <= 26 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_005_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif L10_3 == 27 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_006_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif L10_3 == 28 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_007_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      else
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_009_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      end
+    elseif 50 <= A3_3 and A3_3 <= 79 then
+      if 0 <= L10_3 and L10_3 <= 2 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_000_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 3 <= L10_3 and L10_3 <= 5 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_001_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 6 <= L10_3 and L10_3 <= 8 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_002_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 9 <= L10_3 and L10_3 <= 14 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_003_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 15 <= L10_3 and L10_3 <= 20 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_004_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 21 <= L10_3 and L10_3 <= 26 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_005_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif L10_3 == 27 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_006_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif L10_3 == 28 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_007_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      else
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_009_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      end
+    elseif 80 <= A3_3 and A3_3 <= 99 then
+      if L10_3 == 0 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_000_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif L10_3 == 1 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_001_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif L10_3 == 2 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_002_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 3 <= L10_3 and L10_3 <= 5 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_003_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 6 <= L10_3 and L10_3 <= 8 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_004_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 9 <= L10_3 and L10_3 <= 11 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_005_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 12 <= L10_3 and L10_3 <= 17 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_006_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      elseif 18 <= L10_3 and L10_3 <= 23 then
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_007_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      else
+        L12_3 = L8_3
+        L11_3 = L8_3.Talk
+        L13_3 = A1_3
+        L14_3 = A0_3
+        L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_009_000
+        L16_3 = true
+        L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      end
+    else
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_COMMENT_ROSE_008_000
+      L16_3 = true
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+    end
+    L12_3 = A1_3
+    L11_3 = A1_3.WaitForActionTimeline
+    L13_3 = A0_3.ACTION_TIMELINE_EMOTE_POSING
+    L11_3(L12_3, L13_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.WaitForOrbit
+    L11_3(L12_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.Wait
+    L13_3 = 30
+    L11_3(L12_3, L13_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.ChangeBGMVolume
+    L13_3 = 0
+    L11_3(L12_3, L13_3)
+    L12_3 = L8_3
+    L11_3 = L8_3.Talk
+    L13_3 = A1_3
+    L14_3 = A0_3
+    L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_CHECK_RESULT_ROSE_000_000
+    L16_3 = true
+    L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+    L12_3 = A1_3
+    L11_3 = A1_3.Idle
+    L13_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE2
+    L11_3(L12_3, L13_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.Wait
+    L13_3 = 60
+    L11_3(L12_3, L13_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.FashionCheckOpenScoreWidget
+    L11_3(L12_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.Wait
+    L13_3 = 20
+    L11_3(L12_3, L13_3)
+    if 0 <= A3_3 and A3_3 <= 49 then
+      L12_3 = A0_3
+      L11_3 = A0_3.ChangeBGMVolume
+      L13_3 = 0
+      L11_3(L12_3, L13_3)
+    elseif 50 <= A3_3 and A3_3 <= 79 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayBGM
+      L13_3 = A0_3.LCUT_BGM_01
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.ChangeBGMVolume
+      L13_3 = 1
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+    elseif 80 <= A3_3 and A3_3 <= 99 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayBGM
+      L13_3 = A0_3.LCUT_BGM_04
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.ChangeBGMVolume
+      L13_3 = 0.5
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+    else
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayBGM
+      L13_3 = A0_3.LCUT_BGM_02
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.ChangeBGMVolume
+      L13_3 = 0.5
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
     end
     if A3_3 == 100 then
-      A0_0:PlaySE(A0_0.SE_04)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY_STRONG)
-      A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY_STRONG)
-      A1_1:PlayActionTimeline(A0_0.EMOTE_01)
-      A0_0:Wait(120)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      L8_8:PlayEmote(64)
-      A0_0:Wait(120)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_007_000, true)
-      A0_0:PlayCamera(6, A1_1)
-      A0_0:Zoom(0.4, 0.4, 0, 0, 0)
-      A0_0:UpdownPan(5, 5, 0, 0, 0)
-      A0_0:Wait(30)
-      A1_1:PlayActionTimeline(A0_0.EMOTE_06)
-      A0_0:Wait(90)
-    elseif A3_3 >= 90 and A3_3 <= 99 then
-      A0_0:PlaySE(A0_0.SE_02)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
-      A0_0:Wait(90)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      A0_0:Wait(10)
-      L8_8:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_SPIRIT)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_006_000, true)
-      A0_0:Wait(30)
-    elseif A3_3 >= 80 and A3_3 <= 89 then
-      A0_0:PlaySE(A0_0.SE_02)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES_STRONG)
-      A0_0:Wait(90)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      A0_0:Wait(10)
-      L8_8:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_005_000, true, nil, nil, nil, A0_0.SPEAK_SHOUT_LONG)
-      A0_0:Wait(30)
-    elseif A3_3 >= 70 and A3_3 <= 79 then
-      A0_0:PlaySE(A0_0.SE_02)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES)
-      A0_0:Wait(90)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      A0_0:Wait(10)
-      L8_8:Idle(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE1)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_004_000, true, nil, nil, nil, A0_0.SPEAK_SHOUT_LONG)
-      A0_0:Wait(30)
-    elseif A3_3 >= 60 and A3_3 <= 69 then
-      A0_0:PlaySE(A0_0.SE_02)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A0_0:Wait(90)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      A0_0:Wait(10)
-      L8_8:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE1)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_003_000, true, nil, nil, nil, A0_0.SPEAK_SHOUT_LONG)
-      A0_0:Wait(30)
-    elseif A3_3 >= 50 and A3_3 <= 59 then
-      A0_0:PlaySE(A0_0.SE_02)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHRUG)
-      A0_0:Wait(90)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      A0_0:Wait(10)
-      L8_8:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_002_000, true, nil, nil, nil, A0_0.SPEAK_SHOUT_LONG)
-      A0_0:Wait(30)
-    elseif A3_3 >= 10 and A3_3 <= 49 then
-      A0_0:PlaySE(A0_0.SE_03)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_UPSET)
-      A0_0:Wait(90)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      A0_0:Wait(10)
-      L8_8:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_001_000, true, nil, nil, nil, A0_0.SPEAK_SHOUT_LONG)
-      A0_0:Wait(30)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_04
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY_STRONG
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.WaitForActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY_STRONG
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.EMOTE_01
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 120
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayEmote
+      L13_3 = 64
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 120
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_007_000
+      L16_3 = true
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 6
+      L14_3 = A1_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = 0.4
+      L14_3 = 0.4
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownPan
+      L13_3 = 5
+      L14_3 = 5
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.EMOTE_06
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+    elseif 90 <= A3_3 and A3_3 <= 99 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_02
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EVENT_SPIRIT
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_006_000
+      L16_3 = true
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif 80 <= A3_3 and A3_3 <= 89 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_02
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_YES_STRONG
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_YES
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_005_000
+      L16_3 = true
+      L17_3 = nil
+      L18_3 = nil
+      L19_3 = nil
+      L20_3 = A0_3.SPEAK_SHOUT_LONG
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif 70 <= A3_3 and A3_3 <= 79 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_02
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_YES
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Idle
+      L13_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE1
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_004_000
+      L16_3 = true
+      L17_3 = nil
+      L18_3 = nil
+      L19_3 = nil
+      L20_3 = A0_3.SPEAK_SHOUT_LONG
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif 60 <= A3_3 and A3_3 <= 69 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_02
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE1
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_003_000
+      L16_3 = true
+      L17_3 = nil
+      L18_3 = nil
+      L19_3 = nil
+      L20_3 = A0_3.SPEAK_SHOUT_LONG
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif 50 <= A3_3 and A3_3 <= 59 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_02
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_SHRUG
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_002_000
+      L16_3 = true
+      L17_3 = nil
+      L18_3 = nil
+      L19_3 = nil
+      L20_3 = A0_3.SPEAK_SHOUT_LONG
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
+    elseif 10 <= A3_3 and A3_3 <= 49 then
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_03
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_UPSET
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_001_000
+      L16_3 = true
+      L17_3 = nil
+      L18_3 = nil
+      L19_3 = nil
+      L20_3 = A0_3.SPEAK_SHOUT_LONG
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
     else
-      A0_0:PlaySE(A0_0.SE_03)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ORZ)
-      A0_0:Wait(90)
-      A0_0:PlayCamera(5, L8_8)
-      A0_0:Zoom(-0.8, -0.8, 0, 0, 0)
-      A0_0:SidePan(10, 10, 0, 0, 0)
-      A0_0:SideDolly(-0.2, -0.2, 0, 0, 0)
-      A0_0:UpdownDolly(0.2, 0.2, 0, 0, 0)
-      A0_0:Wait(10)
-      L8_8:PlayEmote(A0_0.EMOTE_HUH)
-      L8_8:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_000_000, true, nil, nil, nil, A0_0.SPEAK_SHOUT_LONG)
-      A0_0:Wait(30)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlaySE
+      L13_3 = A0_3.SE_03
+      L11_3(L12_3, L13_3)
+      L12_3 = A1_3
+      L11_3 = A1_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_ORZ
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 90
+      L11_3(L12_3, L13_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.PlayCamera
+      L13_3 = 5
+      L14_3 = L8_3
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Zoom
+      L13_3 = -0.8
+      L14_3 = -0.8
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SidePan
+      L13_3 = 10
+      L14_3 = 10
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.SideDolly
+      L13_3 = -0.2
+      L14_3 = -0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.UpdownDolly
+      L13_3 = 0.2
+      L14_3 = 0.2
+      L15_3 = 0
+      L16_3 = 0
+      L17_3 = 0
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 10
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayEmote
+      L13_3 = A0_3.EMOTE_HUH
+      L11_3(L12_3, L13_3)
+      L12_3 = L8_3
+      L11_3 = L8_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_SCORE_REACTION_ROSE_000_000
+      L16_3 = true
+      L17_3 = nil
+      L18_3 = nil
+      L19_3 = nil
+      L20_3 = A0_3.SPEAK_SHOUT_LONG
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
     end
-    if A4_4 == 1 then
-      L8_8:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSFCKMASTER_00453_BESTSCORE_REACTION_ROSE_000_000, true)
-      A0_0:Wait(30)
+    if A4_3 == 1 then
+      L12_3 = L8_3
+      L11_3 = L8_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_YES
+      L11_3(L12_3, L13_3)
+      L12_3 = A2_3
+      L11_3 = A2_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_BESTSCORE_REACTION_ROSE_000_000
+      L16_3 = true
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      L12_3 = A0_3
+      L11_3 = A0_3.Wait
+      L13_3 = 30
+      L11_3(L12_3, L13_3)
     else
     end
-    A0_0:FadeOut(A0_0.FADE_DEFAULT)
-    A0_0:WaitForFade()
-    A0_0:Wait(30)
+    L12_3 = A0_3
+    L11_3 = A0_3.FadeOut
+    L13_3 = A0_3.FADE_DEFAULT
+    L11_3(L12_3, L13_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.WaitForFade
+    L11_3(L12_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.Wait
+    L13_3 = 30
+    L11_3(L12_3, L13_3)
   end
-  function CtsFckMaster.talkContentLock(A0_9, A1_10, A2_11)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSFCKMASTER_00453_DEFAULT_ROSE_000_000, true)
+  L0_2.lcutFashionCheck = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSFCKMASTER_00453_DEFAULT_ROSE_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsFckMaster.talkStart(A0_12, A1_13, A2_14, A3_15)
-    if A3_15 == 1 then
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSFCKMASTER_00453_DEFAULT_ROSE_001_000, true)
+  L0_2.talkContentLock = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    if A3_3 == 1 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSFCKMASTER_00453_DEFAULT_ROSE_001_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSFCKMASTER_00453_DEFAULT_ROSE_002_000, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSFCKMASTER_00453_DEFAULT_ROSE_002_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
   end
-  function CtsFckMaster.talkFashionCheckSelected(A0_16, A1_17, A2_18, A3_19, A4_20)
-    if A4_20 > 0 then
-      if A3_19 == 1 then
+  L0_2.talkStart = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    if 0 < A4_3 then
+      if A3_3 == 1 then
       else
-        A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSFCKMASTER_00453_CHECK_REQUEST_ROSE_000_000, true)
-        A0_16:Wait(10)
-        A0_16:SystemTalk(A0_16.TEXT_CTSFCKMASTER_00453_CHECK_REQUEST_SYSTEM_000_001, true)
-        A0_16:Wait(10)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CTSFCKMASTER_00453_CHECK_REQUEST_ROSE_000_000
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSFCKMASTER_00453_CHECK_REQUEST_SYSTEM_000_001
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
       end
     else
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSFCKMASTER_00453_CHECK_REQUEST_ROSE_001_000, true)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSFCKMASTER_00453_CHECK_REQUEST_ROSE_001_000
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
     end
   end
-  function CtsFckMaster.talkWeeklyThemeSelected(A0_21, A1_22, A2_23, A3_24)
-    A2_23:Talk(A1_22, A0_21, A0_21:FormatString(A0_21.TEXT_CTSFCKMASTER_00453_THEME_ROSE_000_000, A3_24), true)
-    A0_21:FashionCheckOpenThemeWidget()
+  L0_2.talkFashionCheckSelected = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L9_3 = A0_3
+    L8_3 = A0_3.FormatString
+    L10_3 = A0_3.TEXT_CTSFCKMASTER_00453_THEME_ROSE_000_000
+    L11_3 = A3_3
+    L8_3 = L8_3(L9_3, L10_3, L11_3)
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.FashionCheckOpenThemeWidget
+    L4_3(L5_3)
   end
-  function CtsFckMaster.talkEntryReward(A0_25, A1_26, A2_27)
-    A2_27:Talk(A1_26, A0_25, A0_25.TEXT_CTSFCKMASTER_00453_REWARD_ROSE_000_000, true)
-    A0_25:FashionCheckAddEntryReward()
-    A0_25:Wait(60)
+  L0_2.talkWeeklyThemeSelected = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSFCKMASTER_00453_REWARD_ROSE_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FashionCheckAddEntryReward
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
   end
-  function CtsFckMaster.talkBonusReward(A0_28, A1_29, A2_30)
-    A2_30:Talk(A1_29, A0_28, A0_28.TEXT_CTSFCKMASTER_00453_REWARD_ROSE_001_000, true)
-    A0_28:FashionCheckAddBonusReward()
-    A0_28:Wait(60)
+  L0_2.talkEntryReward = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSFCKMASTER_00453_REWARD_ROSE_001_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FashionCheckAddBonusReward
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
   end
-  function CtsFckMaster.talkEnd(A0_31, A1_32, A2_33, A3_34)
-    if A3_34 > 0 then
-      A2_33:Talk(A1_32, A0_31, A0_31.TEXT_CTSFCKMASTER_00453_COME_AGAIN_ROSE_000_000, true)
+  L0_2.talkBonusReward = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    if 0 < A3_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSFCKMASTER_00453_COME_AGAIN_ROSE_000_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_33:Talk(A1_32, A0_31, A0_31.TEXT_CTSFCKMASTER_00453_COME_AGAIN_ROSE_001_000, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSFCKMASTER_00453_COME_AGAIN_ROSE_001_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
   end
-  function CtsFckMaster.talkLinkdeadReturn(A0_35, A1_36, A2_37)
-    A2_37:Talk(A1_36, A0_35, A0_35.TEXT_CTSFCKMASTER_00453_REWARD_ROSE_002_000, false)
+  L0_2.talkEnd = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSFCKMASTER_00453_REWARD_ROSE_002_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsFckMaster.talkHighScoreEquipSelected(A0_38, A1_39, A2_40, A3_41)
-    if A3_41 == 1 then
-      A0_38:FashionCheckOpenHighScoreEquipWidget()
+  L0_2.talkLinkdeadReturn = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    if A3_3 == 1 then
+      L5_3 = A0_3
+      L4_3 = A0_3.FashionCheckOpenHighScoreEquipWidget
+      L4_3(L5_3)
     else
-      A2_40:Talk(A1_39, A0_38, A0_38.TEXT_CTSFCKMASTER_00453_CHECK_BEST_EQUIP_000_000, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSFCKMASTER_00453_CHECK_BEST_EQUIP_000_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
   end
-end)()
-;(function()
-  local L1_42
-  L1_42 = CtsFckMaster
-  L1_42.SCRIPT_VERSION = 2
-end)()
-;(function()
-  print("CtsFckMaster")
-  function CtsFckMaster.OnScene00000(A0_43, A1_44, A2_45)
-    A0_43:talkContentLock(A1_44, A2_45)
+  L0_2.talkHighScoreEquipSelected = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsFckMaster
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsFckMaster"
+  L0_2(L1_2)
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.talkContentLock
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsFckMaster.OnScene00001(A0_46, A1_47, A2_48, A3_49, A4_50, A5_51, A6_52, A7_53)
-    local L8_54, L9_55
-    L9_55 = A0_46
-    L8_54 = A0_46.FashionCheckSetPlayerInfo
-    L8_54(L9_55, A3_49, A4_50)
-    L9_55 = A0_46
-    L8_54 = A0_46.talkStart
-    L8_54(L9_55, A1_47, A2_48, A6_52)
-    L9_55 = A0_46
-    L8_54 = A0_46.FormatString
-    L8_54 = L8_54(L9_55, A0_46.TEXT_CTSFCKMASTER_00453_TOPMENU_000_000, A3_49, A4_50, A6_52)
-    L9_55 = {}
-    L9_55[#L9_55 + 1] = A0_46.TEXT_CTSFCKMASTER_00453_TOPMENU_000_002
-    ;({})[#{} + 1] = 1
-    L9_55[#L9_55 + 1] = A0_46.TEXT_CTSFCKMASTER_00453_TOPMENU_000_001
-    ;({})[#{} + 1] = 2
-    L9_55[#L9_55 + 1] = A0_46.TEXT_CTSFCKMASTER_00453_TOPMENU_000_004
-    ;({})[#{} + 1] = 3
-    L9_55[#L9_55 + 1] = A0_46.TEXT_CTSFCKMASTER_00453_TOPMENU_000_003
-    ;({})[#{} + 1] = 99
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3)
+    local L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3
+    L9_3 = A0_3
+    L8_3 = A0_3.FashionCheckSetPlayerInfo
+    L10_3 = A3_3
+    L11_3 = A4_3
+    L8_3(L9_3, L10_3, L11_3)
+    L9_3 = A0_3
+    L8_3 = A0_3.talkStart
+    L10_3 = A1_3
+    L11_3 = A2_3
+    L12_3 = A6_3
+    L8_3(L9_3, L10_3, L11_3, L12_3)
+    L9_3 = A0_3
+    L8_3 = A0_3.FormatString
+    L10_3 = A0_3.TEXT_CTSFCKMASTER_00453_TOPMENU_000_000
+    L11_3 = A3_3
+    L12_3 = A4_3
+    L13_3 = A6_3
+    L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+    L9_3 = {}
+    L10_3 = {}
+    L11_3 = #L9_3
+    L11_3 = L11_3 + 1
+    L12_3 = A0_3.TEXT_CTSFCKMASTER_00453_TOPMENU_000_002
+    L9_3[L11_3] = L12_3
+    L11_3 = #L10_3
+    L11_3 = L11_3 + 1
+    L10_3[L11_3] = 1
+    L11_3 = #L9_3
+    L11_3 = L11_3 + 1
+    L12_3 = A0_3.TEXT_CTSFCKMASTER_00453_TOPMENU_000_001
+    L9_3[L11_3] = L12_3
+    L11_3 = #L10_3
+    L11_3 = L11_3 + 1
+    L10_3[L11_3] = 2
+    L11_3 = #L9_3
+    L11_3 = L11_3 + 1
+    L12_3 = A0_3.TEXT_CTSFCKMASTER_00453_TOPMENU_000_004
+    L9_3[L11_3] = L12_3
+    L11_3 = #L10_3
+    L11_3 = L11_3 + 1
+    L10_3[L11_3] = 3
+    L11_3 = #L9_3
+    L11_3 = L11_3 + 1
+    L12_3 = A0_3.TEXT_CTSFCKMASTER_00453_TOPMENU_000_003
+    L9_3[L11_3] = L12_3
+    L11_3 = #L10_3
+    L11_3 = L11_3 + 1
+    L10_3[L11_3] = 99
     while true do
-      if 1 > A0_46:Menu(L8_54, unpack(L9_55)) or A0_46:Menu(L8_54, unpack(L9_55)) > #{} then
+      L12_3 = A0_3
+      L11_3 = A0_3.Menu
+      L13_3 = L8_3
+      L14_3 = unpack
+      L15_3 = L9_3
+      L14_3, L15_3, L16_3, L17_3, L18_3 = L14_3(L15_3)
+      L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3)
+      if L11_3 < 1 then
         break
       end
-      if ({})[A0_46:Menu(L8_54, unpack(L9_55))] == 1 then
-        A0_46:talkWeeklyThemeSelected(A1_47, A2_48, A7_53)
-      elseif ({})[A0_46:Menu(L8_54, unpack(L9_55))] == 2 then
-        A0_46:talkFashionCheckSelected(A1_47, A2_48, A6_52, A4_50)
-        if true == false then
-          return A0_46.RESULT_CHECK
+      L12_3 = #L10_3
+      if L11_3 > L12_3 then
+        break
+      end
+      L12_3 = L10_3[L11_3]
+      if L12_3 == 1 then
+        L13_3 = A0_3
+        L12_3 = A0_3.talkWeeklyThemeSelected
+        L14_3 = A1_3
+        L15_3 = A2_3
+        L16_3 = A7_3
+        L12_3(L13_3, L14_3, L15_3, L16_3)
+      else
+        L12_3 = L10_3[L11_3]
+        if L12_3 == 2 then
+          L12_3 = false
+          if A6_3 == 1 and 0 < A4_3 then
+            L14_3 = A0_3
+            L13_3 = A0_3.YesNo
+            L15_3 = A0_3.TEXT_CTSFCKMASTER_00453_CHECK_DIALOG_000_000
+            L16_3 = nil
+            L17_3 = nil
+            L18_3 = A0_3.DEFAULT_NO
+            L13_3 = L13_3(L14_3, L15_3, L16_3, L17_3, L18_3)
+            if L13_3 == false then
+              L12_3 = true
+            end
+          end
+          L14_3 = A0_3
+          L13_3 = A0_3.talkFashionCheckSelected
+          L15_3 = A1_3
+          L16_3 = A2_3
+          L17_3 = A6_3
+          L18_3 = A4_3
+          L13_3(L14_3, L15_3, L16_3, L17_3, L18_3)
+          if L12_3 == false then
+            L13_3 = A0_3.RESULT_CHECK
+            return L13_3
+          end
+        else
+          L12_3 = L10_3[L11_3]
+          if L12_3 == 3 then
+            L13_3 = A0_3
+            L12_3 = A0_3.talkHighScoreEquipSelected
+            L14_3 = A1_3
+            L15_3 = A2_3
+            L16_3 = A5_3
+            L12_3(L13_3, L14_3, L15_3, L16_3)
+          else
+            L12_3 = L10_3[L11_3]
+            if L12_3 == 99 then
+              L12_3 = A0_3.RESULT_END
+              return L12_3
+            end
+          end
         end
-      elseif ({})[A0_46:Menu(L8_54, unpack(L9_55))] == 3 then
-        A0_46:talkHighScoreEquipSelected(A1_47, A2_48, A5_51)
-      elseif ({})[A0_46:Menu(L8_54, unpack(L9_55))] == 99 then
-        return A0_46.RESULT_END
       end
     end
-    return A0_46.RESULT_END
+    L11_3 = A0_3.RESULT_END
+    return L11_3
   end
-  function CtsFckMaster.OnScene00006(A0_56, A1_57, A2_58, A3_59, A4_60, A5_61)
-    A0_56:Skip(A0_56.SKIP_FINALIZE_AUTO_FADEIN)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A0_3
+    L6_3 = A0_3.Skip
+    L8_3 = A0_3.SKIP_FINALIZE_AUTO_FADEIN
+    L6_3(L7_3, L8_3)
   end
-  function CtsFckMaster.OnScene00002(A0_62, A1_63, A2_64, A3_65, A4_66, A5_67)
-    A0_62:lcutFashionCheck(A1_63, A2_64, A3_65, A4_66, A5_67)
+  L0_2.OnScene00006 = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L7_3 = A0_3
+    L6_3 = A0_3.lcutFashionCheck
+    L8_3 = A1_3
+    L9_3 = A2_3
+    L10_3 = A3_3
+    L11_3 = A4_3
+    L12_3 = A5_3
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsFckMaster.OnScene00003(A0_68, A1_69, A2_70)
-    A0_68:talkEntryReward(A1_69, A2_70)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.talkEntryReward
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsFckMaster.OnScene00004(A0_71, A1_72, A2_73)
-    A0_71:talkBonusReward(A1_72, A2_73)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.talkBonusReward
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsFckMaster.OnScene00005(A0_74, A1_75, A2_76, A3_77)
-    A0_74:talkEnd(A1_75, A2_76, A3_77)
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.talkEnd
+    L6_3 = A1_3
+    L7_3 = A2_3
+    L8_3 = A3_3
+    L4_3(L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsFckMaster.OnScene00010(A0_78, A1_79, A2_80)
-    A0_78:talkLinkdeadReturn(A1_79, A2_80)
+  L0_2.OnScene00005 = L1_2
+  L0_2 = CtsFckMaster
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.talkLinkdeadReturn
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
   end
-end)()
+  L0_2.OnScene00010 = L1_2
+end
+L0_1()

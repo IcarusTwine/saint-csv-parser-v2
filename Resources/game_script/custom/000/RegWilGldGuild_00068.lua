@@ -1,120 +1,559 @@
-(function()
-  print("RegWilGldGuild")
-  function RegWilGldGuild.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    if A1_1:IsQuestCompleted(A0_0.QUEST8) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_095, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST8) == true then
-      if A1_1:GetQuestSequence(A0_0.QUEST8) > 4 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_090, true)
-        A0_0:CancelEventScene()
-      end
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_080, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST7) == true then
-      if A1_1:GetQuestSequence(A0_0.QUEST7) == 1 or A1_1:GetQuestSequence(A0_0.QUEST7) == 2 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_085, true)
-        A0_0:CancelEventScene()
-      end
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_080, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST6) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_080, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST4) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_075, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_076, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST3) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_070, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
-      if A1_1:IsQuestCompleted(A0_0.QUEST2) == true and A1_1:IsQuestCompleted(A0_0.QUEST5) == false then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_AMAZED)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_061, false)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_062, true)
-      else
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_050, true)
-      end
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST1) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_040, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_041, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegWilGldGuild"
+  L0_2(L1_2)
+  L0_2 = RegWilGldGuild
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST8
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EMOTE_WELCOME
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_095
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000, true)
-    end
-  end
-  function RegWilGldGuild.OnScene00001(A0_3, A1_4, A2_5)
-    if A1_4:IsQuestCompleted(A0_3.QUEST0) == true then
-      while true do
-        if A0_3:Menu(A0_3.TEXT_REGWILGLDGUILD_00068_Q2_000_001, A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_001, A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_002, A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_003) == 1 then
-          if A1_4:IsQuestCompleted(A0_3.QUEST8) == true then
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_110, true)
-            A0_3:Wait(10)
-            A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-            A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_SURPRISED)
-            A0_3:Wait(45)
-            A1_4:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_SURPRISED)
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_111, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_112, false)
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_113, true)
-          elseif A1_4:IsQuestCompleted(A0_3.QUEST4) == true then
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_105, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_106, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_107, false)
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_UPSET)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_108, true)
-          else
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_100, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_101, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_102, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_103, true)
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestAccepted
+      L5_3 = A0_3.QUEST8
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
+        L4_3 = A1_3
+        L3_3 = A1_3.GetQuestSequence
+        L5_3 = A0_3.QUEST8
+        L3_3 = L3_3(L4_3, L5_3)
+        if 4 < L3_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EMOTE_WELCOME
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_090
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.CancelEventScene
+          L4_3(L5_3)
+        end
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_080
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      else
+        L4_3 = A1_3
+        L3_3 = A1_3.IsQuestAccepted
+        L5_3 = A0_3.QUEST7
+        L3_3 = L3_3(L4_3, L5_3)
+        if L3_3 == true then
+          L4_3 = A1_3
+          L3_3 = A1_3.GetQuestSequence
+          L5_3 = A0_3.QUEST7
+          L3_3 = L3_3(L4_3, L5_3)
+          if L3_3 == 1 or L3_3 == 2 then
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_085
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.CancelEventScene
+            L4_3(L5_3)
           end
-        elseif A0_3:Menu(A0_3.TEXT_REGWILGLDGUILD_00068_Q2_000_001, A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_001, A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_002, A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_003) == 2 then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_110, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_111, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_112, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_113, false)
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_WELCOME)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_114, true)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_080
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
         else
-          return 0
+          L4_3 = A1_3
+          L3_3 = A1_3.IsQuestCompleted
+          L5_3 = A0_3.QUEST6
+          L3_3 = L3_3(L4_3, L5_3)
+          if L3_3 == true then
+            L4_3 = A2_3
+            L3_3 = A2_3.PlayActionTimeline
+            L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+            L3_3(L4_3, L5_3)
+            L4_3 = A2_3
+            L3_3 = A2_3.Talk
+            L5_3 = A1_3
+            L6_3 = A0_3
+            L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_080
+            L8_3 = true
+            L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          else
+            L4_3 = A1_3
+            L3_3 = A1_3.IsQuestCompleted
+            L5_3 = A0_3.QUEST4
+            L3_3 = L3_3(L4_3, L5_3)
+            if L3_3 == true then
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_075
+              L8_3 = false
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_076
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+            else
+              L4_3 = A1_3
+              L3_3 = A1_3.IsQuestCompleted
+              L5_3 = A0_3.QUEST3
+              L3_3 = L3_3(L4_3, L5_3)
+              if L3_3 == true then
+                L4_3 = A2_3
+                L3_3 = A2_3.PlayActionTimeline
+                L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L3_3(L4_3, L5_3)
+                L4_3 = A2_3
+                L3_3 = A2_3.Talk
+                L5_3 = A1_3
+                L6_3 = A0_3
+                L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_070
+                L8_3 = true
+                L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+              else
+                L4_3 = A1_3
+                L3_3 = A1_3.IsQuestCompleted
+                L5_3 = A0_3.QUEST0
+                L3_3 = L3_3(L4_3, L5_3)
+                if L3_3 == true then
+                  L4_3 = A1_3
+                  L3_3 = A1_3.IsQuestCompleted
+                  L5_3 = A0_3.QUEST2
+                  L3_3 = L3_3(L4_3, L5_3)
+                  if L3_3 == true then
+                    L4_3 = A1_3
+                    L3_3 = A1_3.IsQuestCompleted
+                    L5_3 = A0_3.QUEST5
+                    L3_3 = L3_3(L4_3, L5_3)
+                    if L3_3 == false then
+                      L4_3 = A2_3
+                      L3_3 = A2_3.PlayActionTimeline
+                      L5_3 = A0_3.ACTION_TIMELINE_EMOTE_AMAZED
+                      L3_3(L4_3, L5_3)
+                      L4_3 = A2_3
+                      L3_3 = A2_3.Talk
+                      L5_3 = A1_3
+                      L6_3 = A0_3
+                      L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_061
+                      L8_3 = false
+                      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                      L4_3 = A2_3
+                      L3_3 = A2_3.Talk
+                      L5_3 = A1_3
+                      L6_3 = A0_3
+                      L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_062
+                      L8_3 = true
+                      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                  end
+                  else
+                    L4_3 = A2_3
+                    L3_3 = A2_3.PlayActionTimeline
+                    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+                    L3_3(L4_3, L5_3)
+                    L4_3 = A2_3
+                    L3_3 = A2_3.Talk
+                    L5_3 = A1_3
+                    L6_3 = A0_3
+                    L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_050
+                    L8_3 = true
+                    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                  end
+                else
+                  L4_3 = A1_3
+                  L3_3 = A1_3.IsQuestCompleted
+                  L5_3 = A0_3.QUEST1
+                  L3_3 = L3_3(L4_3, L5_3)
+                  if L3_3 == true then
+                    L4_3 = A2_3
+                    L3_3 = A2_3.PlayActionTimeline
+                    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+                    L3_3(L4_3, L5_3)
+                    L4_3 = A2_3
+                    L3_3 = A2_3.Talk
+                    L5_3 = A1_3
+                    L6_3 = A0_3
+                    L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_040
+                    L8_3 = false
+                    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                    L4_3 = A2_3
+                    L3_3 = A2_3.Talk
+                    L5_3 = A1_3
+                    L6_3 = A0_3
+                    L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_041
+                    L8_3 = true
+                    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                  else
+                    L4_3 = A2_3
+                    L3_3 = A2_3.PlayActionTimeline
+                    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+                    L3_3(L4_3, L5_3)
+                    L4_3 = A2_3
+                    L3_3 = A2_3.Talk
+                    L5_3 = A1_3
+                    L6_3 = A0_3
+                    L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000
+                    L8_3 = true
+                    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                  end
+                end
+              end
+            end
+          end
         end
       end
-    while true do
-      elseif A0_3:Menu(A0_3.TEXT_REGWILGLDGUILD_00068_Q1_000_1, A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_1, A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_2, A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_3) == 1 then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_010, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_011, false)
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_ME)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_012, true)
-      elseif A0_3:Menu(A0_3.TEXT_REGWILGLDGUILD_00068_Q1_000_1, A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_1, A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_2, A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_3) == 2 then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_020, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_021, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_022, false)
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_WELCOME)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_023, true)
-      else
-        return 0
+    end
+  end
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegWilGldGuild
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST0
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      while true do
+        L4_3 = A0_3
+        L3_3 = A0_3.Menu
+        L5_3 = A0_3.TEXT_REGWILGLDGUILD_00068_Q2_000_001
+        L6_3 = A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_001
+        L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_002
+        L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_A2_000_003
+        L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        if L3_3 == 1 then
+          L5_3 = A1_3
+          L4_3 = A1_3.IsQuestCompleted
+          L6_3 = A0_3.QUEST8
+          L4_3 = L4_3(L5_3, L6_3)
+          if L4_3 == true then
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_110
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.Wait
+            L6_3 = 10
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.CancelActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+            L4_3(L5_3, L6_3)
+            L5_3 = A1_3
+            L4_3 = A1_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_SURPRISED
+            L4_3(L5_3, L6_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.Wait
+            L6_3 = 45
+            L4_3(L5_3, L6_3)
+            L5_3 = A1_3
+            L4_3 = A1_3.CancelActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_SURPRISED
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_111
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_112
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_100_113
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          else
+            L5_3 = A1_3
+            L4_3 = A1_3.IsQuestCompleted
+            L6_3 = A0_3.QUEST4
+            L4_3 = L4_3(L5_3, L6_3)
+            if L4_3 == true then
+              L5_3 = A2_3
+              L4_3 = A2_3.PlayActionTimeline
+              L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+              L4_3(L5_3, L6_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_105
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_106
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_107
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.PlayActionTimeline
+              L6_3 = A0_3.ACTION_TIMELINE_EMOTE_UPSET
+              L4_3(L5_3, L6_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_108
+              L9_3 = true
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            else
+              L5_3 = A2_3
+              L4_3 = A2_3.PlayActionTimeline
+              L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+              L4_3(L5_3, L6_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_100
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_101
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_102
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_103
+              L9_3 = true
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            end
+          end
+        elseif L3_3 == 2 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_110
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_111
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_112
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_113
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EMOTE_WELCOME
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_000_114
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        else
+          L4_3 = 0
+          return L4_3
+        end
+      end
+    else
+      while true do
+        L4_3 = A0_3
+        L3_3 = A0_3.Menu
+        L5_3 = A0_3.TEXT_REGWILGLDGUILD_00068_Q1_000_1
+        L6_3 = A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_1
+        L7_3 = A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_2
+        L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_A1_000_3
+        L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        if L3_3 == 1 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_010
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_011
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EMOTE_ME
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_012
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        elseif L3_3 == 2 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_020
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_021
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_022
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EMOTE_WELCOME
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILGLDGUILD_00068_SERENDIPITY_023
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        else
+          L4_3 = 0
+          return L4_3
+        end
       end
     end
   end
-end)()
-;(function()
-  local L1_6
-  L1_6 = RegWilGldGuild
-  L1_6.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegWilGldGuild
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

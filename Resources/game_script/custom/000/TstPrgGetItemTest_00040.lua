@@ -1,25 +1,65 @@
-(function()
-  print("TstPrgGetItemTest")
-  function TstPrgGetItemTest.OnScene00000(A0_0, A1_1, A2_2)
-    if A0_0:isRecoverItem(A1_1) then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_TSTPRGGETITEMTEST_00040_TALK_ACTOR_0, true)
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "TstPrgGetItemTest"
+  L0_2(L1_2)
+  L0_2 = TstPrgGetItemTest
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.isRecoverItem
+    L5_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_TSTPRGGETITEMTEST_00040_TALK_ACTOR_0
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L3_3 = 1
+      return L3_3
     else
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_TSTPRGGETITEMTEST_00040_TALK_ACTOR_1, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_TSTPRGGETITEMTEST_00040_TALK_ACTOR_1
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     end
   end
-end)()
-;(function()
-  local L0_3
-  L0_3 = TstPrgGetItemTest
-  L0_3.SCRIPT_VERSION = 1
-  L0_3 = TstPrgGetItemTest
-  L0_3.SCENE_0 = 0
-  L0_3 = TstPrgGetItemTest
-  function L0_3.isRecoverItem(A0_4, A1_5)
-    if A1_5:GetNumOfItems(A0_4.ITEM) == 0 and A1_5:IsQuestAccepted(A0_4.QUEST) == true then
-      return true
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = TstPrgGetItemTest
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = TstPrgGetItemTest
+  L0_2.SCENE_0 = 0
+  L0_2 = TstPrgGetItemTest
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3
+    L3_3 = A1_3
+    L2_3 = A1_3.GetNumOfItems
+    L4_3 = A0_3.ITEM
+    L2_3 = L2_3(L3_3, L4_3)
+    if L2_3 == 0 then
+      L3_3 = A1_3
+      L2_3 = A1_3.IsQuestAccepted
+      L4_3 = A0_3.QUEST
+      L2_3 = L2_3(L3_3, L4_3)
+      if L2_3 == true then
+        L2_3 = true
+        return L2_3
+      end
     end
-    return false
+    L2_3 = false
+    return L2_3
   end
-end)()
+  L0_2.isRecoverItem = L1_2
+end
+L0_1()

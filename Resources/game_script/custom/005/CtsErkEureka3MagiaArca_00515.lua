@@ -1,37 +1,101 @@
-(function()
-  print("CtsErkEureka3MagiaArca")
-  function CtsErkEureka3MagiaArca.OnScene00001_001(A0_0, A1_1, A2_2)
-    A0_0:SystemTalk(A0_0.TEXT_CTSERKEUREKA3MAGIAARCA_00515_SYSTEM_000_000, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka3MagiaArca"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka3MagiaArca
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA3MAGIAARCA_00515_SYSTEM_000_000
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsErkEureka3MagiaArca.OnScene00002_001(A0_3, A1_4, A2_5)
-    A0_3:SystemTalk(A0_3.TEXT_CTSERKEUREKA3MAGIAARCA_00515_SYSTEM_000_010, true)
-    A0_3:Wait(10)
-    A0_3:ScreenImage(A0_3.UNLOCK_SCREENIMAGE_01)
-    A0_3:Wait(120)
-    if A1_4:IsHowTo(A0_3.HOWTO_01) == false then
-      A0_3:HowTo(A0_3.HOWTO_01)
+  L0_2.OnScene00001_001 = L1_2
+  L0_2 = CtsErkEureka3MagiaArca
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA3MAGIAARCA_00515_SYSTEM_000_010
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ScreenImage
+    L5_3 = A0_3.UNLOCK_SCREENIMAGE_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 120
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsHowTo
+    L5_3 = A0_3.HOWTO_01
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == false then
+      L4_3 = A0_3
+      L3_3 = A0_3.HowTo
+      L5_3 = A0_3.HOWTO_01
+      L3_3(L4_3, L5_3)
     end
   end
-end)()
-;(function()
-  local L1_6
-  L1_6 = CtsErkEureka3MagiaArca
-  L1_6.SCRIPT_VERSION = 2
-end)()
-;(function()
-  print("CtsErkEureka3MagiaArca")
-  function CtsErkEureka3MagiaArca.OnScene00000(A0_7, A1_8, A2_9)
+  L0_2.OnScene00002_001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsErkEureka3MagiaArca
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka3MagiaArca"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka3MagiaArca
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function CtsErkEureka3MagiaArca.OnScene00001(A0_10, A1_11, A2_12)
-    A0_10:OnScene00001_001(A1_11, A2_12)
-    return A0_10.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsErkEureka3MagiaArca
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00001_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka3MagiaArca.OnScene00002(A0_13, A1_14, A2_15)
-    A0_13:OnScene00002_001(A1_14, A2_15)
-    return A0_13.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsErkEureka3MagiaArca
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00002_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+    return L3_3
   end
-  function CtsErkEureka3MagiaArca.OnScene00003(A0_16, A1_17, A2_18)
-    A0_16:OpenMagiaArca()
-    return A0_16.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsErkEureka3MagiaArca
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OpenMagiaArca
+    L3_3(L4_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-end)()
+  L0_2.OnScene00003 = L1_2
+end
+L0_1()

@@ -1,15 +1,32 @@
-(function()
-  print("ComArmGcArmyCaptureRefund")
-  function ComArmGcArmyCaptureRefund.OnScene00000(A0_0, A1_1, A2_2)
-    A0_0:FadeIn(A0_0.FADE_DEFAULT)
-    A0_0:WaitForFade()
-    A0_0:LogMessage(A0_0.LOG_MESSAGE0)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ComArmGcArmyCaptureRefund"
+  L0_2(L1_2)
+  L0_2 = ComArmGcArmyCaptureRefund
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.LogMessage
+    L5_3 = A0_3.LOG_MESSAGE0
+    L3_3(L4_3, L5_3)
   end
-end)()
-;(function()
-  local L0_3, L1_4
-  L0_3 = ComArmGcArmyCaptureRefund
-  L0_3.SCRIPT_VERSION = 2
-  L0_3 = ComArmGcArmyCaptureRefund
-  L0_3.SCENE_CAPTURE_REFUND = 0
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ComArmGcArmyCaptureRefund
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = ComArmGcArmyCaptureRefund
+  L0_2.SCENE_CAPTURE_REFUND = 0
+end
+L0_1()

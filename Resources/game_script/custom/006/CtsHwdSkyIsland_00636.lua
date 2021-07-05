@@ -1,289 +1,715 @@
-(function()
-  print("CtsHwdSkyIsland")
-  CtsHwdSkyIsland.RETURN_TO_HWD_SKYISLAND = 1
-  function CtsHwdSkyIsland.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6
-    L4_4 = A2_2
-    L3_3 = A2_2.TurnTo
-    L5_5 = A1_1
-    L6_6 = true
-    L3_3(L4_4, L5_5, L6_6)
-    L4_4 = A2_2
-    L3_3 = A2_2.WaitForTurn
-    L3_3(L4_4)
-    L4_4 = A2_2
-    L3_3 = A2_2.PlayActionTimeline
-    L5_5 = A0_0.ACTION_TIMELINE_EVENT_TALK2
-    L3_3(L4_4, L5_5)
-    L4_4 = A2_2
-    L3_3 = A2_2.Talk
-    L5_5 = A1_1
-    L6_6 = A0_0
-    L3_3(L4_4, L5_5, L6_6, A0_0.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_050_000, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsHwdSkyIsland"
+  L0_2(L1_2)
+  L0_2 = CtsHwdSkyIsland
+  L0_2.RETURN_TO_HWD_SKYISLAND = 1
+  L0_2 = CtsHwdSkyIsland
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_050_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     while true do
-      L4_4 = A0_0
-      L3_3 = A0_0.Menu
-      L5_5 = A0_0.TEXT_CTSHWDSKYISLAND_00636_MENU_TITLE
-      L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_MENU_001
-      L3_3 = L3_3(L4_4, L5_5, L6_6, A0_0.TEXT_CTSHWDSKYISLAND_00636_MENU_002, A0_0.TEXT_CTSHWDSKYISLAND_00636_MENU_003, A0_0.TEXT_CTSHWDSKYISLAND_00636_MENU_CANCEL)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_MENU_TITLE
+      L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_MENU_001
+      L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_MENU_002
+      L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_MENU_003
+      L9_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_MENU_CANCEL
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
       if L3_3 == 1 then
-        L5_5 = A1_1
-        L4_4 = A1_1.IsClassJobGatherer
-        L4_4 = L4_4(L5_5)
-        if L4_4 == true then
-          L5_5 = A1_1
-          L4_4 = A1_1.GetClassLevel
-          L4_4 = L4_4(L5_5)
-          if L4_4 < 10 then
-            L5_5 = A0_0
-            L4_4 = A0_0.SystemTalk
-            L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_060_000
-            L4_4(L5_5, L6_6, true)
+        L5_3 = A1_3
+        L4_3 = A1_3.IsClassJobGatherer
+        L4_3 = L4_3(L5_3)
+        if L4_3 == true then
+          L5_3 = A1_3
+          L4_3 = A1_3.GetClassLevel
+          L4_3 = L4_3(L5_3)
+          if L4_3 < 10 then
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_060_000
+            L7_3 = true
+            L4_3(L5_3, L6_3, L7_3)
             return
           end
         else
-          L5_5 = A0_0
-          L4_4 = A0_0.SystemTalk
-          L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_060_000
-          L4_4(L5_5, L6_6, true)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_060_000
+          L7_3 = true
+          L4_3(L5_3, L6_3, L7_3)
           return
         end
-        L5_5 = A0_0
-        L4_4 = A0_0.YesNo
-        L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_ASK_TITLE
-        L4_4 = L4_4(L5_5, L6_6)
-        if L4_4 == true then
-          L6_6 = A0_0
-          L5_5 = A0_0.GetCFLanguage
-          L5_5 = L5_5(L6_6)
-          L6_6 = A0_0.GetCFHalfway
-          L6_6 = L6_6(A0_0)
-          return CtsHwdSkyIsland.RETURN_TO_HWD_SKYISLAND, L6_6, L5_5
+        L5_3 = A0_3
+        L4_3 = A0_3.YesNo
+        L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_ASK_TITLE
+        L4_3 = L4_3(L5_3, L6_3)
+        if L4_3 == true then
+          L6_3 = A0_3
+          L5_3 = A0_3.GetCFLanguage
+          L5_3 = L5_3(L6_3)
+          L7_3 = A0_3
+          L6_3 = A0_3.GetCFHalfway
+          L6_3 = L6_3(L7_3)
+          L7_3 = CtsHwdSkyIsland
+          L7_3 = L7_3.RETURN_TO_HWD_SKYISLAND
+          L8_3 = L6_3
+          L9_3 = L5_3
+          return L7_3, L8_3, L9_3
         end
       elseif L3_3 == 2 then
-        L5_5 = A2_2
-        L4_4 = A2_2.PlayActionTimeline
-        L6_6 = A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
-        L4_4(L5_5, L6_6)
-        L5_5 = A2_2
-        L4_4 = A2_2.Talk
-        L6_6 = A1_1
-        L4_4(L5_5, L6_6, A0_0, A0_0.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_020, false)
-        L5_5 = A2_2
-        L4_4 = A2_2.Talk
-        L6_6 = A1_1
-        L4_4(L5_5, L6_6, A0_0, A0_0.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_030, false)
-        L5_5 = A2_2
-        L4_4 = A2_2.Talk
-        L6_6 = A1_1
-        L4_4(L5_5, L6_6, A0_0, A0_0.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_040, false)
-        L5_5 = A2_2
-        L4_4 = A2_2.CancelActionTimeline
-        L6_6 = A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
-        L4_4(L5_5, L6_6)
-        L5_5 = A2_2
-        L4_4 = A2_2.PlayActionTimeline
-        L6_6 = A0_0.ACTION_TIMELINE_EVENT_TALK2
-        L4_4(L5_5, L6_6)
-        L5_5 = A2_2
-        L4_4 = A2_2.Talk
-        L6_6 = A1_1
-        L4_4(L5_5, L6_6, A0_0, A0_0.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_050, true)
-        L5_5 = A0_0
-        L4_4 = A0_0.Wait
-        L6_6 = 10
-        L4_4(L5_5, L6_6)
-        L5_5 = A0_0
-        L4_4 = A0_0.SystemTalk
-        L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_020
-        L4_4(L5_5, L6_6, false)
-        L5_5 = A1_1
-        L4_4 = A1_1.IsQuestCompleted
-        L6_6 = A0_0.QST_CLSFSH530
-        L4_4 = L4_4(L5_5, L6_6)
-        if L4_4 == true then
-          L5_5 = A0_0
-          L4_4 = A0_0.SystemTalk
-          L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030
-          L4_4(L5_5, L6_6, true)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_020
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_030
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_040
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_050
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_020
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A1_3
+        L4_3 = A1_3.IsQuestCompleted
+        L6_3 = A0_3.QST_CLSFSH530
+        L4_3 = L4_3(L5_3, L6_3)
+        if L4_3 == true then
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030
+          L7_3 = true
+          L4_3(L5_3, L6_3, L7_3)
         else
-          L5_5 = A0_0
-          L4_4 = A0_0.SystemTalk
-          L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030
-          L4_4(L5_5, L6_6, false)
-          L5_5 = A0_0
-          L4_4 = A0_0.SystemTalk
-          L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_040
-          L4_4(L5_5, L6_6, true)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030
+          L7_3 = false
+          L4_3(L5_3, L6_3, L7_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_040
+          L7_3 = true
+          L4_3(L5_3, L6_3, L7_3)
         end
       elseif L3_3 == 3 then
-        L5_5 = A0_0
-        L4_4 = A0_0.LoadEventPicture
-        L6_6 = A0_0.EVENT_PICTURE0
-        L4_4(L5_5, L6_6, A0_0.EVENT_PICTURE_SE_DEFAULT)
-        L5_5 = A0_0
-        L4_4 = A0_0.EventPictureOffset
-        L6_6 = 50
-        L4_4(L5_5, L6_6, 50, 1, 1)
-        L5_5 = A0_0
-        L4_4 = A0_0.WaitForLoadEventPicture
-        L4_4(L5_5)
-        L5_5 = A0_0
-        L4_4 = A0_0.EventPicture
-        L6_6 = true
-        L4_4(L5_5, L6_6)
-        L5_5 = A0_0
-        L4_4 = A0_0.Wait
-        L6_6 = 10
-        L4_4(L5_5, L6_6)
-        L5_5 = A2_2
-        L4_4 = A2_2.Talk
-        L6_6 = A1_1
-        L4_4(L5_5, L6_6, A0_0, A0_0.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_070_000, false)
-        L5_5 = A2_2
-        L4_4 = A2_2.Talk
-        L6_6 = A1_1
-        L4_4(L5_5, L6_6, A0_0, A0_0.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_070_010, true)
-        L5_5 = A0_0
-        L4_4 = A0_0.Wait
-        L6_6 = 10
-        L4_4(L5_5, L6_6)
-        L5_5 = A0_0
-        L4_4 = A0_0.SystemTalk
-        L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_020
-        L4_4(L5_5, L6_6, false)
-        L5_5 = A0_0
-        L4_4 = A0_0.SystemTalk
-        L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_030
-        L4_4(L5_5, L6_6, false)
-        L5_5 = A0_0
-        L4_4 = A0_0.SystemTalk
-        L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_040
-        L4_4(L5_5, L6_6, false)
-        L5_5 = A0_0
-        L4_4 = A0_0.SystemTalk
-        L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_050
-        L4_4(L5_5, L6_6, false)
-        L5_5 = A0_0
-        L4_4 = A0_0.SystemTalk
-        L6_6 = A0_0.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_060
-        L4_4(L5_5, L6_6, true)
-        L5_5 = A0_0
-        L4_4 = A0_0.EventPicture
-        L6_6 = false
-        L4_4(L5_5, L6_6)
+        L5_3 = A0_3
+        L4_3 = A0_3.LoadEventPicture
+        L6_3 = A0_3.EVENT_PICTURE0
+        L7_3 = A0_3.EVENT_PICTURE_SE_DEFAULT
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.EventPictureOffset
+        L6_3 = 50
+        L7_3 = 50
+        L8_3 = 1
+        L9_3 = 1
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.WaitForLoadEventPicture
+        L4_3(L5_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.EventPicture
+        L6_3 = true
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_070_000
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_070_010
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_020
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_030
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_040
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_050
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_070_060
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.EventPicture
+        L6_3 = false
+        L4_3(L5_3, L6_3)
       else
         return
       end
     end
   end
-  function CtsHwdSkyIsland.OnScene00001(A0_7, A1_8, A2_9)
-    A2_9:TurnTo(A1_8, true)
-    A2_9:WaitForTurn()
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_020_000, false)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_020_010, false)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_020_020, true)
-    A0_7:Wait(10)
-    A0_7:SystemTalk(A0_7.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_020_030, true)
-    A0_7:Wait(10)
-    A2_9:CancelActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsHwdSkyIsland
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_020_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_020_010
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_020_020
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_020_030
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
   end
-  function CtsHwdSkyIsland.OnScene00002(A0_10, A1_11, A2_12)
-    A2_12:TurnTo(A1_11, true)
-    A2_12:WaitForTurn()
-    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_040_000, true)
-    A0_10:ScreenImage(A0_10.SCREEN_IMAGE0)
-    A0_10:Wait(120)
-    A2_12:CancelActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A0_10:Wait(10)
-    A0_10:SystemTalk(A0_10.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_010, false)
-    A0_10:SystemTalk(A0_10.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_020, false)
-    if A1_11:IsQuestCompleted(A0_10.QST_CLSFSH530) == true then
-      A0_10:SystemTalk(A0_10.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030, true)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsHwdSkyIsland
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_040_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ScreenImage
+    L5_3 = A0_3.SCREEN_IMAGE0
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 120
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_010
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_020
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QST_CLSFSH530
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
     else
-      A0_10:SystemTalk(A0_10.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030, false)
-      A0_10:SystemTalk(A0_10.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_040, true)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_030
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_040_040
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
     end
   end
-  function CtsHwdSkyIsland.OnScene00003(A0_13, A1_14, A2_15)
-    A2_15:TurnTo(A1_14, true)
-    A2_15:WaitForTurn()
-    A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_THINK)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_030_000, false)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_030_010, true)
-    A0_13:Wait(10)
-    A0_13:SystemTalk(A0_13.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_030_020, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsHwdSkyIsland
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_030_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_030_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_SYSTEM_030_020
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsHwdSkyIsland.OnScene01001(A0_16, A1_17, A2_18, A3_19)
-    A0_16:LoadEventPicture(A0_16.EVENT_PICTURE0, A0_16.EVENT_PICTURE_SE_DEFAULT)
-    A2_18:TurnTo(A1_17, true)
-    A2_18:WaitForTurn()
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_BIG)
-    if A1_17:IsQuestCompleted(A0_16.QST_HEAVNY814) == true then
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_000, false)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CtsHwdSkyIsland
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A0_3
+    L4_3 = A0_3.LoadEventPicture
+    L6_3 = A0_3.EVENT_PICTURE0
+    L7_3 = A0_3.EVENT_PICTURE_SE_DEFAULT
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestCompleted
+    L6_3 = A0_3.QST_HEAVNY814
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 == true then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_000
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_010, false)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_010
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    A2_18:CancelActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_020, false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_030, false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_040, false)
-    A2_18:CancelActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK2)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_050, false)
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_060, false)
-    A0_16:EventPictureOffset(50, 50, 1, 1)
-    A0_16:WaitForLoadEventPicture()
-    A0_16:EventPicture(true)
-    A0_16:Wait(10)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_070, false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_080, false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_090, false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_100, false)
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_110, false)
-    A0_16:EventPicture(false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_120, false)
-    A2_18:CancelActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_130, false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_140, false)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_150, true)
-    A2_18:CancelActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_020
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_030
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_040
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_050
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_060
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.EventPictureOffset
+    L6_3 = 50
+    L7_3 = 50
+    L8_3 = 1
+    L9_3 = 1
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForLoadEventPicture
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.EventPicture
+    L6_3 = true
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_070
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_080
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_090
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_100
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_110
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.EventPicture
+    L6_3 = false
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_120
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_130
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_140
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_010_150
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L4_3(L5_3, L6_3)
   end
-  function CtsHwdSkyIsland.OnScene09001(A0_20, A1_21, A2_22, A3_23)
-    A2_22:TurnTo(A1_21, true)
-    A2_22:WaitForTurn()
-    A2_22:PlayActionTimeline(A0_20.ACTION_TIMELINE_EVENT_TALK_BIG)
-    if A1_21:IsQuestCompleted(A0_20.QST_HEAVNY814) == true then
-      A2_22:Talk(A1_21, A0_20, A0_20.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_000, false)
-      A2_22:Talk(A1_21, A0_20, A0_20.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_010, true)
+  L0_2.OnScene01001 = L1_2
+  L0_2 = CtsHwdSkyIsland
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestCompleted
+    L6_3 = A0_3.QST_HEAVNY814
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 == true then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_000
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_010
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_22:Talk(A1_21, A0_20, A0_20.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_020, false)
-      A2_22:Talk(A1_21, A0_20, A0_20.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_030, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_020
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_030
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    A2_22:CancelActionTimeline(A0_20.ACTION_TIMELINE_EVENT_TALK_BIG)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
   end
-  function CtsHwdSkyIsland.OnScene09002(A0_24, A1_25, A2_26)
-    A2_26:TurnTo(A1_25, true)
-    A2_26:WaitForTurn()
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BIG)
-    if A1_25:IsQuestCompleted(A0_24.QST_HEAVNY814) == true then
-      A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_000, false)
-      A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_010, true)
+  L0_2.OnScene09001 = L1_2
+  L0_2 = CtsHwdSkyIsland
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QST_HEAVNY814
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_000
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_010
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_020, false)
-      A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_030, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_020
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CTSHWDSKYISLAND_00636_AURVAEL_000_030
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     end
-    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BIG)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
   end
-end)()
-;(function()
-  local L1_27
-  L1_27 = CtsHwdSkyIsland
-  L1_27.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene09002 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsHwdSkyIsland
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

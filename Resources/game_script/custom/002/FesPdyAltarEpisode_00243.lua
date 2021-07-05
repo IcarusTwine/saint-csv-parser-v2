@@ -1,209 +1,888 @@
-(function()
-  print("FesPdyAltarEpisode")
-  function FesPdyAltarEpisode.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_BOW)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_000, true)
-    return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "FesPdyAltarEpisode"
+  L0_2(L1_2)
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L3_3 = 1
+    return L3_3
   end
-  function FesPdyAltarEpisode.OnScene00001(A0_3, A1_4, A2_5)
-    local L3_6
-    L3_6 = 1
+  L0_2.OnScene00000 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L3_3 = 1
+    L4_3 = 1
+    L6_3 = A0_3
+    L5_3 = A0_3.GetFestivalPhase
+    L7_3 = 20
+    L5_3 = L5_3(L6_3, L7_3)
     while true do
-      if A0_3:GetFestivalPhase(20) >= 11 then
-        L3_6 = A0_3:Menu(A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_006, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_007, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_008, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009)
-      elseif A0_3:GetFestivalPhase(20) >= 10 then
-        L3_6 = A0_3:Menu(A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_006, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_007, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009)
-      elseif A0_3:GetFestivalPhase(20) >= 7 then
-        L3_6 = A0_3:Menu(A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_006, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009)
-      elseif A0_3:GetFestivalPhase(20) >= 5 then
-        L3_6 = A0_3:Menu(A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009)
-      elseif A0_3:GetFestivalPhase(20) >= 2 then
-        L3_6 = A0_3:Menu(A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009)
+      if 11 <= L5_3 then
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000
+        L9_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002
+        L11_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003
+        L12_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004
+        L13_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005
+        L14_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_006
+        L15_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_007
+        L16_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_008
+        L17_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+        L3_3 = L6_3
+        L4_3 = 9
+      elseif 10 <= L5_3 then
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000
+        L9_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002
+        L11_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003
+        L12_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004
+        L13_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005
+        L14_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_006
+        L15_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_007
+        L16_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L3_3 = L6_3
+        L4_3 = 8
+      elseif 7 <= L5_3 then
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000
+        L9_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002
+        L11_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003
+        L12_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004
+        L13_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005
+        L14_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_006
+        L15_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+        L3_3 = L6_3
+        L4_3 = 7
+      elseif 5 <= L5_3 then
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000
+        L9_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002
+        L11_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003
+        L12_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004
+        L13_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_005
+        L14_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L3_3 = L6_3
+        L4_3 = 6
+      elseif 2 <= L5_3 then
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000
+        L9_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002
+        L11_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003
+        L12_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_004
+        L13_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+        L3_3 = L6_3
+        L4_3 = 5
       else
-        L3_6 = A0_3:Menu(A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003, A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009)
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_Q1_000_000
+        L9_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_001
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_002
+        L11_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_003
+        L12_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_A1_000_009
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+        L3_3 = L6_3
+        L4_3 = 4
       end
-      if L3_6 < 1 or L3_6 == 4 then
-        A0_3:CancelEventScene()
-      elseif L3_6 == 1 then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_010, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_011, true)
-        return 2
-      elseif L3_6 == 2 then
-        return 3
-      elseif L3_6 == 3 then
-        return 4
-      elseif L3_6 == 4 then
-        return 5
-      elseif L3_6 == 5 then
-        return 6
-      elseif L3_6 == 6 then
-        return 7
-      elseif L3_6 == 7 then
-        return 8
+      if L3_3 < 1 or L3_3 == L4_3 then
+        L7_3 = A0_3
+        L6_3 = A0_3.CancelEventScene
+        L6_3(L7_3)
+      elseif L3_3 == 1 then
+        L7_3 = A2_3
+        L6_3 = A2_3.PlayActionTimeline
+        L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L6_3(L7_3, L8_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_010
+        L11_3 = false
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_011
+        L11_3 = true
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+        L6_3 = 2
+        return L6_3
+      elseif L3_3 == 2 then
+        L6_3 = 3
+        return L6_3
+      elseif L3_3 == 3 then
+        L6_3 = 4
+        return L6_3
+      elseif L3_3 == 4 then
+        L6_3 = 5
+        return L6_3
+      elseif L3_3 == 5 then
+        L6_3 = 6
+        return L6_3
+      elseif L3_3 == 6 then
+        L6_3 = 7
+        return L6_3
+      elseif L3_3 == 7 then
+        L6_3 = 8
+        return L6_3
       else
-        return 9
+        L6_3 = 9
+        return L6_3
       end
     end
-    return 1
+    L6_3 = 1
+    return L6_3
   end
-  function FesPdyAltarEpisode.OnScene00002(A0_7, A1_8, A2_9)
-    A0_7:LoadMovePosition(A0_7.LOC_CAM_POS_01)
-    A0_7:PlayLandscapeCamera(A0_7.LOC_CAM_POS_01)
-    A0_7:UpdownDolly(-2.5, -2.5, 0, 0, 0)
-    A0_7:Zoom(-4.1, -4.1, 0, 0, 0)
-    A0_7:ChangeBGMVolume(0.5)
-    A0_7:FadeIn(A0_7.FADE_DEFAULT)
-    A0_7:WaitForFade()
-    if A0_7:GetFestivalPhase(20) >= 11 then
-      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_014, true)
-    elseif A0_7:GetFestivalPhase(20) >= 2 then
-      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_013, true)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LoadMovePosition
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayLandscapeCamera
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -2.5
+    L6_3 = -2.5
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = -4.1
+    L6_3 = -4.1
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ChangeBGMVolume
+    L5_3 = 0.5
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    if 11 <= L3_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_014
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    elseif 2 <= L3_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_013
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_012, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_012
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    A0_7:Wait(80)
-    A0_7:FadeOut(A0_7.FADE_DEFAULT)
-    A0_7:WaitForFade()
-    A1_8:LookAt()
-    A0_7:Wait(30)
-    return 1
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 80
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeOut
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L4_3 = 1
+    return L4_3
   end
-  function FesPdyAltarEpisode.OnScene00003(A0_10, A1_11, A2_12)
-    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK2)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_020, false)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_021, false)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_022, false)
-    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK1)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_023, false)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_024, false)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_025, false)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_026, false)
-    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_11)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_027, true)
-    return 1
+  L0_2.OnScene00002 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_020
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_021
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_022
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_023
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_024
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_025
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_026
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L7_3 = A1_3
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_027
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = 1
+    return L4_3
   end
-  function FesPdyAltarEpisode.OnScene00004(A0_13, A1_14, A2_15)
-    A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_030, false)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_031, false)
-    A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK1)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_032, false)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_034, false)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_035, true)
-    return 1
+  L0_2.OnScene00003 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_030
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_031
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_032
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_034
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_035
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = 1
+    return L4_3
   end
-  function FesPdyAltarEpisode.OnScene00005(A0_16, A1_17, A2_18)
-    A0_16:LoadMovePosition(A0_16.LOC_CAM_POS_01)
-    A0_16:PlayLandscapeCamera(A0_16.LOC_CAM_POS_01)
-    A0_16:UpdownDolly(-1.3, -1.3, 0, 0, 0)
-    A0_16:Zoom(-2.1, -2.1, 0, 0, 0)
-    A0_16:ChangeBGMVolume(0.5)
-    A0_16:FadeIn(A0_16.FADE_DEFAULT)
-    A0_16:WaitForFade()
-    A0_16:Wait(60)
-    if A0_16:GetFestivalPhase(20) < 4 then
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_040, true)
+  L0_2.OnScene00004 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LoadMovePosition
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayLandscapeCamera
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -1.3
+    L6_3 = -1.3
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = -2.1
+    L6_3 = -2.1
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ChangeBGMVolume
+    L5_3 = 0.5
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 < 4 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_040
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_041, false)
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_042, false)
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_043, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_041
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_042
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_043
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    A0_16:FadeOut(A0_16.FADE_DEFAULT)
-    A0_16:WaitForFade()
-    A1_17:LookAt()
-    A0_16:Wait(30)
-    return 1
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeOut
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L4_3 = 1
+    return L4_3
   end
-  function FesPdyAltarEpisode.OnScene00006(A0_19, A1_20, A2_21)
-    A0_19:LoadMovePosition(A0_19.LOC_CAM_POS_01)
-    A0_19:PlayLandscapeCamera(A0_19.LOC_CAM_POS_01)
-    A0_19:UpdownDolly(-2.8, -2.8, 0, 0, 0)
-    A0_19:Zoom(0.1, 0.1, 0, 0, 0)
-    A0_19:ChangeBGMVolume(0.5)
-    A0_19:FadeIn(A0_19.FADE_DEFAULT)
-    A0_19:WaitForFade()
-    A0_19:Wait(60)
-    if A0_19:GetFestivalPhase(20) < 6 then
-      A2_21:Talk(A1_20, A0_19, A0_19.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_050, true)
+  L0_2.OnScene00005 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LoadMovePosition
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayLandscapeCamera
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -2.8
+    L6_3 = -2.8
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = 0.1
+    L6_3 = 0.1
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ChangeBGMVolume
+    L5_3 = 0.5
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 < 6 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_050
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_21:Talk(A1_20, A0_19, A0_19.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_051, false)
-      A2_21:Talk(A1_20, A0_19, A0_19.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_052, false)
-      A2_21:Talk(A1_20, A0_19, A0_19.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_053, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_051
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_052
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_053
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    A0_19:FadeOut(A0_19.FADE_DEFAULT)
-    A0_19:WaitForFade()
-    A1_20:LookAt()
-    A0_19:Wait(30)
-    return 1
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeOut
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L4_3 = 1
+    return L4_3
   end
-  function FesPdyAltarEpisode.OnScene00007(A0_22, A1_23, A2_24)
-    A0_22:LoadMovePosition(A0_22.LOC_CAM_POS_01)
-    A0_22:PlayLandscapeCamera(A0_22.LOC_CAM_POS_01)
-    A0_22:UpdownDolly(-4.3, -4.3, 0, 0, 0)
-    A0_22:Zoom(2.6, 2.6, 0, 0, 0)
-    A0_22:UpdownPan(-10, -10, 0, 0, 0)
-    A0_22:ChangeBGMVolume(0.5)
-    A0_22:FadeIn(A0_22.FADE_DEFAULT)
-    A0_22:WaitForFade()
-    A0_22:Wait(60)
-    if A0_22:GetFestivalPhase(20) < 9 then
-      A2_24:Talk(A1_23, A0_22, A0_22.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_060, true)
+  L0_2.OnScene00006 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LoadMovePosition
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayLandscapeCamera
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -4.3
+    L6_3 = -4.3
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = 2.6
+    L6_3 = 2.6
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownPan
+    L5_3 = -10
+    L6_3 = -10
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ChangeBGMVolume
+    L5_3 = 0.5
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 < 9 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_060
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_24:Talk(A1_23, A0_22, A0_22.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_061, false)
-      A2_24:Talk(A1_23, A0_22, A0_22.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_062, false)
-      A2_24:Talk(A1_23, A0_22, A0_22.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_063, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_061
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_062
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_063
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    A0_22:FadeOut(A0_22.FADE_DEFAULT)
-    A0_22:WaitForFade()
-    A1_23:LookAt()
-    A0_22:Wait(30)
-    return 1
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeOut
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L4_3 = 1
+    return L4_3
   end
-  function FesPdyAltarEpisode.OnScene00008(A0_25, A1_26, A2_27)
-    A0_25:LoadMovePosition(A0_25.LOC_CAM_POS_01)
-    A0_25:PlayLandscapeCamera(A0_25.LOC_CAM_POS_01)
-    A0_25:UpdownDolly(-4.1, -4.1, 0, 0, 0)
-    A0_25:Zoom(5.9, 5.9, 0, 0, 0)
-    A0_25:ChangeBGMVolume(0.5)
-    A0_25:FadeIn(A0_25.FADE_DEFAULT)
-    A0_25:WaitForFade()
-    A0_25:Wait(60)
-    A2_27:PlayActionTimeline(A0_25.ACTION_TIMELINE_EVENT_TALK2)
-    A2_27:Talk(A1_26, A0_25, A0_25.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_070, false)
-    A2_27:Talk(A1_26, A0_25, A0_25.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_071, false)
-    A2_27:Talk(A1_26, A0_25, A0_25.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_072, false)
-    A2_27:Talk(A1_26, A0_25, A0_25.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_073, true)
-    A0_25:FadeOut(A0_25.FADE_DEFAULT)
-    A0_25:WaitForFade()
-    A1_26:LookAt()
-    A0_25:Wait(30)
-    return 1
+  L0_2.OnScene00007 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LoadMovePosition
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayLandscapeCamera
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -4.1
+    L6_3 = -4.1
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = 5.9
+    L6_3 = 5.9
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ChangeBGMVolume
+    L5_3 = 0.5
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_070
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_071
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_072
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_073
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeOut
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L4_3 = 1
+    return L4_3
   end
-  function FesPdyAltarEpisode.OnScene00009(A0_28, A1_29, A2_30)
-    A0_28:LoadMovePosition(A0_28.LOC_CAM_POS_01)
-    A0_28:PlayLandscapeCamera(A0_28.LOC_CAM_POS_01)
-    A0_28:UpdownDolly(-4.1, -4.1, 0, 0, 0)
-    A0_28:Zoom(5.9, 5.9, 0, 0, 0)
-    A0_28:ChangeBGMVolume(0.5)
-    A0_28:FadeIn(A0_28.FADE_DEFAULT)
-    A0_28:WaitForFade()
-    A0_28:Wait(60)
-    A2_30:Talk(A1_29, A0_28, A0_28.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_080, false)
-    A2_30:Talk(A1_29, A0_28, A0_28.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_81, false)
-    A2_30:Talk(A1_29, A0_28, A0_28.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_082, false)
-    A2_30:Talk(A1_29, A0_28, A0_28.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_083, true)
-    A0_28:FadeOut(A0_28.FADE_DEFAULT)
-    A0_28:WaitForFade()
-    A1_29:LookAt()
-    A0_28:Wait(30)
-    return 1
+  L0_2.OnScene00008 = L1_2
+  L0_2 = FesPdyAltarEpisode
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LoadMovePosition
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayLandscapeCamera
+    L5_3 = A0_3.LOC_CAM_POS_01
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -4.1
+    L6_3 = -4.1
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = 5.9
+    L6_3 = 5.9
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.ChangeBGMVolume
+    L5_3 = 0.5
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFestivalPhase
+    L5_3 = 20
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_080
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_81
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_082
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_FESPDYALTAREPISODE_00243_GUIDEPDY2015_000_083
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeOut
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L4_3 = 1
+    return L4_3
   end
-end)()
-;(function()
-  local L1_31
-  L1_31 = FesPdyAltarEpisode
-  L1_31.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00009 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = FesPdyAltarEpisode
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

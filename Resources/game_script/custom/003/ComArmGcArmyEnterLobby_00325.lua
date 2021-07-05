@@ -1,48 +1,125 @@
-(function()
-  print("ComArmGcArmyEnterLobby")
-  function ComArmGcArmyEnterLobby.OnScene00000(A0_0, A1_1, A2_2)
-    if A0_0:YesNo(A0_0.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_Q, A0_0.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_YES, A0_0.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_NO, A0_0.DEFAULT_NO) then
-      A0_0:Skip(A0_0.SKIP_FINALIZE_AUTO_FADE_IN)
-      A0_0:FadeOut(A0_0.FADE_DEFAULT)
-      A0_0:WaitForFade()
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ComArmGcArmyEnterLobby"
+  L0_2(L1_2)
+  L0_2 = ComArmGcArmyEnterLobby
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNo
+    L5_3 = A0_3.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_Q
+    L6_3 = A0_3.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_YES
+    L7_3 = A0_3.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_NO
+    L8_3 = A0_3.DEFAULT_NO
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    if L3_3 then
+      L5_3 = A0_3
+      L4_3 = A0_3.Skip
+      L6_3 = A0_3.SKIP_FINALIZE_AUTO_FADE_IN
+      L4_3(L5_3, L6_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.FadeOut
+      L6_3 = A0_3.FADE_DEFAULT
+      L4_3(L5_3, L6_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.WaitForFade
+      L4_3(L5_3)
     end
-    return (A0_0:YesNo(A0_0.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_Q, A0_0.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_YES, A0_0.TEXT_COMARMGCARMYENTERLOBBY_00325_YESNO_NO, A0_0.DEFAULT_NO))
+    return L3_3
   end
-  function ComArmGcArmyEnterLobby.IsTargetingPossible(A0_3, A1_4, A2_5)
-    local L3_6, L4_7, L5_8
-    L4_7 = A0_3
-    L3_6 = A0_3.isValidWarp
-    L5_8 = A1_4
-    return L3_6(L4_7, L5_8, A2_5:GetBaseId())
+  L0_2.OnScene00000 = L1_2
+  L0_2 = ComArmGcArmyEnterLobby
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.isValidWarp
+    L5_3 = A1_3
+    L7_3 = A2_3
+    L6_3 = A2_3.GetBaseId
+    L6_3, L7_3 = L6_3(L7_3)
+    return L3_3(L4_3, L5_3, L6_3, L7_3)
   end
-  function ComArmGcArmyEnterLobby.IsAcceptEvent(A0_9, A1_10, A2_11, A3_12, A4_13, A5_14)
-    return A0_9:isValidWarp(A1_10, A3_12)
+  L0_2.IsTargetingPossible = L1_2
+  L0_2 = ComArmGcArmyEnterLobby
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3
+    L7_3 = A0_3
+    L6_3 = A0_3.isValidWarp
+    L8_3 = A1_3
+    L9_3 = A3_3
+    return L6_3(L7_3, L8_3, L9_3)
   end
-end)()
-;(function()
-  local L0_15
-  L0_15 = ComArmGcArmyEnterLobby
-  L0_15.SCRIPT_VERSION = 1
-  L0_15 = ComArmGcArmyEnterLobby
-  function L0_15.isValidWarp(A0_16, A1_17, A2_18)
-    local L3_19
-    L3_19 = A1_17.GetGrandCompany
-    L3_19 = L3_19(A1_17)
-    if L3_19 == A0_16.GC_ORDER_OF_TWIN_ADDER and A2_18 ~= A0_16.EOBJ_1 then
-      return false
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ComArmGcArmyEnterLobby
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = ComArmGcArmyEnterLobby
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetGrandCompany
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.GC_ORDER_OF_TWIN_ADDER
+    if L3_3 == L4_3 then
+      L4_3 = A0_3.EOBJ_1
+      if A2_3 ~= L4_3 then
+        L4_3 = false
+        return L4_3
+      end
     end
-    if L3_19 == A0_16.GC_MAELSTROM and A2_18 ~= A0_16.EOBJ_2 then
-      return false
+    L4_3 = A0_3.GC_MAELSTROM
+    if L3_3 == L4_3 then
+      L4_3 = A0_3.EOBJ_2
+      if A2_3 ~= L4_3 then
+        L4_3 = false
+        return L4_3
+      end
     end
-    if L3_19 == A0_16.GC_IMMORTAL_FLAMES and A2_18 ~= A0_16.EOBJ_3 then
-      return false
+    L4_3 = A0_3.GC_IMMORTAL_FLAMES
+    if L3_3 == L4_3 then
+      L4_3 = A0_3.EOBJ_3
+      if A2_3 ~= L4_3 then
+        L4_3 = false
+        return L4_3
+      end
     end
-    if A1_17:GetGrandCompanyRank(L3_19) < A0_16.GC_LOWEST_OFFICER_RANK then
-      return false
+    L5_3 = A1_3
+    L4_3 = A1_3.GetGrandCompanyRank
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.GC_LOWEST_OFFICER_RANK
+    if L4_3 < L5_3 then
+      L5_3 = false
+      return L5_3
     end
-    if A1_17:IsQuestCompleted(A0_16.QUEST_ENTER_GRD) ~= true and A1_17:IsQuestCompleted(A0_16.QUEST_ENTER_LIM) ~= true and A1_17:IsQuestCompleted(A0_16.QUEST_ENTER_ULD) ~= true then
-      return false
+    L6_3 = A1_3
+    L5_3 = A1_3.IsQuestCompleted
+    L7_3 = A0_3.QUEST_ENTER_GRD
+    L5_3 = L5_3(L6_3, L7_3)
+    if L5_3 ~= true then
+      L6_3 = A1_3
+      L5_3 = A1_3.IsQuestCompleted
+      L7_3 = A0_3.QUEST_ENTER_LIM
+      L5_3 = L5_3(L6_3, L7_3)
+      if L5_3 ~= true then
+        L6_3 = A1_3
+        L5_3 = A1_3.IsQuestCompleted
+        L7_3 = A0_3.QUEST_ENTER_ULD
+        L5_3 = L5_3(L6_3, L7_3)
+        if L5_3 ~= true then
+          L5_3 = false
+          return L5_3
+        end
+      end
     end
-    return true
+    L5_3 = true
+    return L5_3
   end
-end)()
+  L0_2.isValidWarp = L1_2
+end
+L0_1()

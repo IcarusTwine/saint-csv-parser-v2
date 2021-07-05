@@ -1,38 +1,116 @@
-(function()
-  print("CtsMycEntranceHard")
-  function CtsMycEntranceHard.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsMycEntranceHard"
+  L0_2(L1_2)
+  L0_2 = CtsMycEntranceHard
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
     L3_3 = {}
-    L4_4 = {}
-    A2_2:LookAt(A1_1)
-    L3_3[#L3_3 + 1] = A0_0.CONTENT_01
-    L4_4[#L4_4 + 1] = A0_0:FormatString(A0_0.TEXT_CTSMYCENTRANCEHARD_00706_MENU_CONTENT, L3_3[#L3_3])
-    L4_4[#L4_4 + 1] = A0_0:FormatString(A0_0.TEXT_CTSMYCENTRANCEHARD_00706_A1_000_001, L3_3[#L3_3])
-    L4_4[#L4_4 + 1] = A0_0:FormatString(A0_0.TEXT_CTSMYCENTRANCEHARD_00706_A1_000_003, L3_3[#L3_3])
-    L4_4[#L4_4 + 1] = A0_0.TEXT_CTSMYCENTRANCEHARD_00706_A1_000_002
+    L4_3 = {}
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L5_3 = #L3_3
+    L5_3 = L5_3 + 1
+    L6_3 = A0_3.CONTENT_01
+    L3_3[L5_3] = L6_3
+    L5_3 = #L4_3
+    L5_3 = L5_3 + 1
+    L7_3 = A0_3
+    L6_3 = A0_3.FormatString
+    L8_3 = A0_3.TEXT_CTSMYCENTRANCEHARD_00706_MENU_CONTENT
+    L9_3 = #L3_3
+    L9_3 = L3_3[L9_3]
+    L6_3 = L6_3(L7_3, L8_3, L9_3)
+    L4_3[L5_3] = L6_3
+    L5_3 = #L4_3
+    L5_3 = L5_3 + 1
+    L7_3 = A0_3
+    L6_3 = A0_3.FormatString
+    L8_3 = A0_3.TEXT_CTSMYCENTRANCEHARD_00706_A1_000_001
+    L9_3 = #L3_3
+    L9_3 = L3_3[L9_3]
+    L6_3 = L6_3(L7_3, L8_3, L9_3)
+    L4_3[L5_3] = L6_3
+    L5_3 = #L4_3
+    L5_3 = L5_3 + 1
+    L7_3 = A0_3
+    L6_3 = A0_3.FormatString
+    L8_3 = A0_3.TEXT_CTSMYCENTRANCEHARD_00706_A1_000_003
+    L9_3 = #L3_3
+    L9_3 = L3_3[L9_3]
+    L6_3 = L6_3(L7_3, L8_3, L9_3)
+    L4_3[L5_3] = L6_3
+    L5_3 = #L4_3
+    L5_3 = L5_3 + 1
+    L6_3 = A0_3.TEXT_CTSMYCENTRANCEHARD_00706_A1_000_002
+    L4_3[L5_3] = L6_3
     while true do
-      if A0_0:Menu(A0_0.TEXT_CTSMYCENTRANCEHARD_00706_Q1_000_000, unpack(L4_4)) == 1 then
-        return true, A0_0.NEST1
-      elseif A0_0:Menu(A0_0.TEXT_CTSMYCENTRANCEHARD_00706_Q1_000_000, unpack(L4_4)) == 2 then
-        return true, A0_0.NEST2
-      elseif A0_0:Menu(A0_0.TEXT_CTSMYCENTRANCEHARD_00706_Q1_000_000, unpack(L4_4)) == 3 then
-        A2_2:TurnTo(A1_1, false)
-        A2_2:WaitForTurn()
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSMYCENTRANCEHARD_00706_WAKADANNAOFMUJIKOZA_000_000, false)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSMYCENTRANCEHARD_00706_WAKADANNAOFMUJIKOZA_000_001, true)
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L7_3 = A0_3.TEXT_CTSMYCENTRANCEHARD_00706_Q1_000_000
+      L8_3 = unpack
+      L9_3 = L4_3
+      L8_3, L9_3, L10_3, L11_3 = L8_3(L9_3)
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+      if L5_3 == 1 then
+        L6_3 = true
+        L7_3 = A0_3.NEST1
+        return L6_3, L7_3
+      elseif L5_3 == 2 then
+        L6_3 = true
+        L7_3 = A0_3.NEST2
+        return L6_3, L7_3
+      elseif L5_3 == 3 then
+        L7_3 = A2_3
+        L6_3 = A2_3.TurnTo
+        L8_3 = A1_3
+        L9_3 = false
+        L6_3(L7_3, L8_3, L9_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.WaitForTurn
+        L6_3(L7_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.PlayActionTimeline
+        L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L6_3(L7_3, L8_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_CTSMYCENTRANCEHARD_00706_WAKADANNAOFMUJIKOZA_000_000
+        L11_3 = false
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_CTSMYCENTRANCEHARD_00706_WAKADANNAOFMUJIKOZA_000_001
+        L11_3 = true
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
       else
         break
       end
     end
   end
-end)()
-;(function()
-  local L0_5
-  L0_5 = CtsMycEntranceHard
-  L0_5.SCRIPT_VERSION = 2
-  L0_5 = CtsMycEntranceHard
-  function L0_5.IsAcceptEvent(A0_6, A1_7, A2_8, A3_9, A4_10, A5_11)
-    return A1_7:IsQuestCompleted(A0_6.PREQUEST)
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsMycEntranceHard
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = CtsMycEntranceHard
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestCompleted
+    L8_3 = A0_3.PREQUEST
+    return L6_3(L7_3, L8_3)
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

@@ -1,433 +1,567 @@
-(function()
-  print("HouFurPlantPot")
-  function HouFurPlantPot.OnScene00000(A0_0, A1_1, A2_2, A3_3)
-    local L4_4, L5_5, L6_6, L7_7, L8_8, L9_9, L10_10, L11_11, L12_12, L13_13
-    if A2_2 ~= nil then
-      L5_5 = A0_0
-      L4_4 = A0_0.IsEventSceneTargetExists
-      L4_4 = L4_4(L5_5)
-    elseif L4_4 == false then
-      L5_5 = A0_0
-      L4_4 = A0_0.LogMessage
-      L6_6 = A0_0.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
-      L4_4(L5_5, L6_6)
-      L4_4 = 0
-      return L4_4
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "HouFurPlantPot"
+  L0_2(L1_2)
+  L0_2 = HouFurPlantPot
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    if A2_3 ~= nil then
+      L5_3 = A0_3
+      L4_3 = A0_3.IsEventSceneTargetExists
+      L4_3 = L4_3(L5_3)
+      if L4_3 ~= false then
+        goto lbl_12
+      end
     end
-    L5_5 = A0_0
-    L4_4 = A0_0.SystemTalk
-    L6_6 = A0_0.TEXT_HOUFURPLANTPOT_00331_TALK_NONE
-    L7_7 = true
-    L4_4(L5_5, L6_6, L7_7)
-    if A2_2 ~= nil then
-      L5_5 = A0_0
-      L4_4 = A0_0.IsEventSceneTargetExists
-      L4_4 = L4_4(L5_5)
-    elseif L4_4 == false then
-      L5_5 = A0_0
-      L4_4 = A0_0.LogMessage
-      L6_6 = A0_0.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
-      L4_4(L5_5, L6_6)
-      L4_4 = 0
-      return L4_4
+    L5_3 = A0_3
+    L4_3 = A0_3.LogMessage
+    L6_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L4_3(L5_3, L6_3)
+    L4_3 = 0
+    do return L4_3 end
+    ::lbl_12::
+    L5_3 = A0_3
+    L4_3 = A0_3.SystemTalk
+    L6_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_TALK_NONE
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    if A2_3 ~= nil then
+      L5_3 = A0_3
+      L4_3 = A0_3.IsEventSceneTargetExists
+      L4_3 = L4_3(L5_3)
+      if L4_3 ~= false then
+        goto lbl_27
+      end
     end
+    L5_3 = A0_3
+    L4_3 = A0_3.LogMessage
+    L6_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L4_3(L5_3, L6_3)
+    L4_3 = 0
+    do return L4_3 end
+    ::lbl_27::
     if A3_3 == 1 then
-      L4_4 = 0
-      return L4_4
+      L4_3 = 0
+      return L4_3
     end
-    L5_5 = A2_2
-    L4_4 = A2_2.IsNeedHousingAuthorityCheck
-    L4_4 = L4_4(L5_5)
-    L5_5 = A0_0.LAND_TYPE_INVALID
-    if L4_4 ~= L5_5 then
-      L6_6 = A1_1
-      L5_5 = A1_1.IsHousingAuthority
-      L7_7 = A0_0.FC_AUTHORITY_SEEDING
-      L8_8 = A0_0.MATE_AUTHORITY_SEEDING
-      L9_9 = L4_4
-      L10_10 = A2_2
-      L5_5 = L5_5(L6_6, L7_7, L8_8, L9_9, L10_10)
-      if L5_5 == false then
-        L6_6 = A0_0.LAND_TYPE_FCHOUSE
-        if L4_4 == L6_6 then
-          L7_7 = A0_0
-          L6_6 = A0_0.LogMessage
-          L8_8 = A0_0.PLANTPOT_ERR_NO_AUTHORITY_SEED
-          L6_6(L7_7, L8_8)
+    L5_3 = A2_3
+    L4_3 = A2_3.IsNeedHousingAuthorityCheck
+    L4_3 = L4_3(L5_3)
+    L5_3 = A0_3.LAND_TYPE_INVALID
+    if L4_3 ~= L5_3 then
+      L6_3 = A1_3
+      L5_3 = A1_3.IsHousingAuthority
+      L7_3 = A0_3.FC_AUTHORITY_SEEDING
+      L8_3 = A0_3.MATE_AUTHORITY_SEEDING
+      L9_3 = L4_3
+      L10_3 = A2_3
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      if L5_3 == false then
+        L6_3 = A0_3.LAND_TYPE_FCHOUSE
+        if L4_3 == L6_3 then
+          L7_3 = A0_3
+          L6_3 = A0_3.LogMessage
+          L8_3 = A0_3.PLANTPOT_ERR_NO_AUTHORITY_SEED
+          L6_3(L7_3, L8_3)
         else
-          L7_7 = A0_0
-          L6_6 = A0_0.LogMessage
-          L8_8 = A0_0.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_SEED
-          L6_6(L7_7, L8_8)
+          L7_3 = A0_3
+          L6_3 = A0_3.LogMessage
+          L8_3 = A0_3.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_SEED
+          L6_3(L7_3, L8_3)
         end
-        L6_6 = 0
-        return L6_6
+        L6_3 = 0
+        return L6_3
       end
     end
-    L6_6 = A1_1
-    L5_5 = A1_1.IsHowTo
-    L7_7 = A0_0.HOWTO_FLOWER
-    L5_5 = L5_5(L6_6, L7_7)
-    if L5_5 == false then
-      L6_6 = A0_0
-      L5_5 = A0_0.HowTo
-      L7_7 = A0_0.HOWTO_FLOWER
-      L5_5(L6_6, L7_7)
+    L6_3 = A1_3
+    L5_3 = A1_3.IsHowTo
+    L7_3 = A0_3.HOWTO_FLOWER
+    L5_3 = L5_3(L6_3, L7_3)
+    if L5_3 == false then
+      L6_3 = A0_3
+      L5_3 = A0_3.HowTo
+      L7_3 = A0_3.HOWTO_FLOWER
+      L5_3(L6_3, L7_3)
     end
-    L6_6 = A1_1
-    L5_5 = A1_1.IsHowTo
-    L7_7 = A0_0.HOWTO_OUTLINE
-    L5_5 = L5_5(L6_6, L7_7)
-    if L5_5 == false then
-      L6_6 = A0_0
-      L5_5 = A0_0.HowTo
-      L7_7 = A0_0.HOWTO_OUTLINE
-      L5_5(L6_6, L7_7)
+    L6_3 = A1_3
+    L5_3 = A1_3.IsHowTo
+    L7_3 = A0_3.HOWTO_OUTLINE
+    L5_3 = L5_3(L6_3, L7_3)
+    if L5_3 == false then
+      L6_3 = A0_3
+      L5_3 = A0_3.HowTo
+      L7_3 = A0_3.HOWTO_OUTLINE
+      L5_3(L6_3, L7_3)
     end
-    L5_5 = ""
-    L7_7 = A0_0
-    L6_6 = A0_0.Menu
-    L8_8 = L5_5
-    L9_9 = A0_0.TEXT_HOUFURPLANTPOT_00331_SET_SEED
-    L10_10 = A0_0.TEXT_HOUFURPLANTPOT_00331_END_EVENT
-    L6_6 = L6_6(L7_7, L8_8, L9_9, L10_10)
-    if L6_6 == 1 then
+    L5_3 = ""
+    L7_3 = A0_3
+    L6_3 = A0_3.Menu
+    L8_3 = L5_3
+    L9_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_SET_SEED
+    L10_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_END_EVENT
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3)
+    if L6_3 == 1 then
       if A3_3 == 2 then
-        L8_8 = A0_0
-        L7_7 = A0_0.LogMessage
-        L9_9 = A0_0.PLANTPOT_ERR_NO_SEED
-        L7_7(L8_8, L9_9)
-        L7_7 = 0
-        return L7_7
+        L8_3 = A0_3
+        L7_3 = A0_3.LogMessage
+        L9_3 = A0_3.PLANTPOT_ERR_NO_SEED
+        L7_3(L8_3, L9_3)
+        L7_3 = 0
+        return L7_3
       elseif A3_3 == 3 then
-        L8_8 = A0_0
-        L7_7 = A0_0.LogMessage
-        L9_9 = A0_0.PLANTPOT_ERR_NO_SOIL
-        L7_7(L8_8, L9_9)
-        L7_7 = 0
-        return L7_7
+        L8_3 = A0_3
+        L7_3 = A0_3.LogMessage
+        L9_3 = A0_3.PLANTPOT_ERR_NO_SOIL
+        L7_3(L8_3, L9_3)
+        L7_3 = 0
+        return L7_3
       end
-      L8_8 = A0_0
-      L7_7 = A0_0.HousingPlantPotSeed
-      L11_11 = L7_7(L8_8)
-      if L7_7 == true then
-        L12_12 = L7_7
-        L13_13 = L8_8
-        return L12_12, L13_13, L9_9, L10_10, L11_11
+      L8_3 = A0_3
+      L7_3 = A0_3.HousingPlantPotSeed
+      L7_3, L8_3, L9_3, L10_3, L11_3 = L7_3(L8_3)
+      if L7_3 == true then
+        L12_3 = L7_3
+        L13_3 = L8_3
+        L14_3 = L9_3
+        L15_3 = L10_3
+        L16_3 = L11_3
+        return L12_3, L13_3, L14_3, L15_3, L16_3
       else
-        L12_12 = 0
-        return L12_12
+        L12_3 = 0
+        return L12_3
       end
     end
-    L7_7 = 0
-    return L7_7
+    L7_3 = 0
+    return L7_3
   end
-  function HouFurPlantPot.OnScene00001(A0_14, A1_15, A2_16, A3_17, A4_18, A5_19, A6_20)
-    local L7_21, L8_22, L9_23, L10_24, L11_25, L12_26
-    if A2_16 ~= nil then
-      L8_22 = A0_14
-      L7_21 = A0_14.IsEventSceneTargetExists
-      L7_21 = L7_21(L8_22)
-    elseif L7_21 == false then
-      L8_22 = A0_14
-      L7_21 = A0_14.LogMessage
-      L9_23 = A0_14.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
-      L7_21(L8_22, L9_23)
-      L7_21 = 0
-      return L7_21
+  L0_2.OnScene00000 = L1_2
+  L0_2 = HouFurPlantPot
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3)
+    local L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    if A2_3 ~= nil then
+      L8_3 = A0_3
+      L7_3 = A0_3.IsEventSceneTargetExists
+      L7_3 = L7_3(L8_3)
+      if L7_3 ~= false then
+        goto lbl_12
+      end
     end
-    L8_22 = A2_16
-    L7_21 = A2_16.GetHousingPlantPotStatus
-    L7_21 = L7_21(L8_22)
-    if A4_18 == 0 then
-      L9_23 = A2_16
-      L8_22 = A2_16.GetHousingPlantPotCropCatalogId
-      L8_22 = L8_22(L9_23)
-      if L7_21 == 1 then
-        L10_24 = A0_14
-        L9_23 = A0_14.SystemTalk
-        L11_25 = A0_14.TEXT_HOUFURPLANTPOT_00331_TALK_DEPRESSED
-        L12_26 = true
-        L9_23(L10_24, L11_25, L12_26, L8_22)
+    L8_3 = A0_3
+    L7_3 = A0_3.LogMessage
+    L9_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L7_3(L8_3, L9_3)
+    L7_3 = 0
+    do return L7_3 end
+    ::lbl_12::
+    L8_3 = A2_3
+    L7_3 = A2_3.GetHousingPlantPotStatus
+    L7_3 = L7_3(L8_3)
+    if A4_3 == 0 then
+      L9_3 = A2_3
+      L8_3 = A2_3.GetHousingPlantPotCropCatalogId
+      L8_3 = L8_3(L9_3)
+      if L7_3 == 1 then
+        L10_3 = A0_3
+        L9_3 = A0_3.SystemTalk
+        L11_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_TALK_DEPRESSED
+        L12_3 = true
+        L13_3 = L8_3
+        L9_3(L10_3, L11_3, L12_3, L13_3)
       else
-        L10_24 = A0_14
-        L9_23 = A0_14.SystemTalk
-        L11_25 = A0_14.TEXT_HOUFURPLANTPOT_00331_TALK_VIGOROUS
-        L12_26 = true
-        L9_23(L10_24, L11_25, L12_26, L8_22)
+        L10_3 = A0_3
+        L9_3 = A0_3.SystemTalk
+        L11_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_TALK_VIGOROUS
+        L12_3 = true
+        L13_3 = L8_3
+        L9_3(L10_3, L11_3, L12_3, L13_3)
       end
     else
-      if L7_21 == 1 then
-        L9_23 = A0_14
-        L8_22 = A0_14.SystemTalk
-        L10_24 = A0_14.TEXT_HOUFURPLANTPOT_00331_TALK_FLOWER_DEPRESSED
-        L11_25 = false
-        L12_26 = A4_18
-        L8_22(L9_23, L10_24, L11_25, L12_26)
+      if L7_3 == 1 then
+        L9_3 = A0_3
+        L8_3 = A0_3.SystemTalk
+        L10_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_TALK_FLOWER_DEPRESSED
+        L11_3 = false
+        L12_3 = A4_3
+        L8_3(L9_3, L10_3, L11_3, L12_3)
       else
-        L9_23 = A0_14
-        L8_22 = A0_14.SystemTalk
-        L10_24 = A0_14.TEXT_HOUFURPLANTPOT_00331_TALK_FLOWER_VIGOROUS
-        L11_25 = false
-        L12_26 = A4_18
-        L8_22(L9_23, L10_24, L11_25, L12_26)
+        L9_3 = A0_3
+        L8_3 = A0_3.SystemTalk
+        L10_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_TALK_FLOWER_VIGOROUS
+        L11_3 = false
+        L12_3 = A4_3
+        L8_3(L9_3, L10_3, L11_3, L12_3)
       end
-      if A2_16 ~= nil then
-        L9_23 = A0_14
-        L8_22 = A0_14.IsEventSceneTargetExists
-        L8_22 = L8_22(L9_23)
-      elseif L8_22 == false then
-        L9_23 = A0_14
-        L8_22 = A0_14.LogMessage
-        L10_24 = A0_14.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
-        L8_22(L9_23, L10_24)
-        L8_22 = 0
-        return L8_22
+      if A2_3 ~= nil then
+        L9_3 = A0_3
+        L8_3 = A0_3.IsEventSceneTargetExists
+        L8_3 = L8_3(L9_3)
+        if L8_3 ~= false then
+          goto lbl_56
+        end
       end
-      if A5_19 >= 6 then
-        L9_23 = A0_14
-        L8_22 = A0_14.SystemTalk
-        L10_24 = A0_14.TEXT_HOUFURPLANTPOT_00331_FLOWER_PREDICT_UNKNOWN
-        L11_25 = true
-        L12_26 = A6_20 + 1
-        L8_22(L9_23, L10_24, L11_25, L12_26)
+      L9_3 = A0_3
+      L8_3 = A0_3.LogMessage
+      L10_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+      L8_3(L9_3, L10_3)
+      L8_3 = 0
+      do return L8_3 end
+      ::lbl_56::
+      if 6 <= A5_3 then
+        L9_3 = A0_3
+        L8_3 = A0_3.SystemTalk
+        L10_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_FLOWER_PREDICT_UNKNOWN
+        L11_3 = true
+        L12_3 = A6_3 + 1
+        L8_3(L9_3, L10_3, L11_3, L12_3)
       else
-        L9_23 = A0_14
-        L8_22 = A0_14.SystemTalk
-        L10_24 = A0_14.TEXT_HOUFURPLANTPOT_00331_FLOWER_PREDICT
-        L11_25 = true
-        L12_26 = A5_19 + 1
-        L8_22(L9_23, L10_24, L11_25, L12_26)
+        L9_3 = A0_3
+        L8_3 = A0_3.SystemTalk
+        L10_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_FLOWER_PREDICT
+        L11_3 = true
+        L12_3 = A5_3 + 1
+        L8_3(L9_3, L10_3, L11_3, L12_3)
       end
     end
-    if A2_16 ~= nil then
-      L9_23 = A0_14
-      L8_22 = A0_14.IsEventSceneTargetExists
-      L8_22 = L8_22(L9_23)
-    elseif L8_22 == false then
-      L9_23 = A0_14
-      L8_22 = A0_14.LogMessage
-      L10_24 = A0_14.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
-      L8_22(L9_23, L10_24)
-      L8_22 = 0
-      return L8_22
+    if A2_3 ~= nil then
+      L9_3 = A0_3
+      L8_3 = A0_3.IsEventSceneTargetExists
+      L8_3 = L8_3(L9_3)
+      if L8_3 ~= false then
+        goto lbl_80
+      end
     end
-    L8_22 = ""
-    if A3_17 == 1 then
-      L10_24 = A0_14
-      L9_23 = A0_14.Menu
-      L11_25 = L8_22
-      L12_26 = A0_14.TEXT_HOUFURPLANTPOT_00331_CARE
-      L9_23 = L9_23(L10_24, L11_25, L12_26, A0_14.TEXT_HOUFURPLANTPOT_00331_END_EVENT)
-      if L9_23 == 1 then
-        L10_24 = 2
-        return L10_24
+    L9_3 = A0_3
+    L8_3 = A0_3.LogMessage
+    L10_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L8_3(L9_3, L10_3)
+    L8_3 = 0
+    do return L8_3 end
+    ::lbl_80::
+    L8_3 = ""
+    if A3_3 == 1 then
+      L10_3 = A0_3
+      L9_3 = A0_3.Menu
+      L11_3 = L8_3
+      L12_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_CARE
+      L13_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_END_EVENT
+      L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3)
+      if L9_3 == 1 then
+        L10_3 = 2
+        return L10_3
       end
     else
-      L10_24 = A0_14
-      L9_23 = A0_14.Menu
-      L11_25 = L8_22
-      L12_26 = A0_14.TEXT_HOUFURPLANTPOT_00331_SET_FERTILIZER
-      L9_23 = L9_23(L10_24, L11_25, L12_26, A0_14.TEXT_HOUFURPLANTPOT_00331_CARE, A0_14.TEXT_HOUFURPLANTPOT_00331_DISPOSE, A0_14.TEXT_HOUFURPLANTPOT_00331_END_EVENT)
-      if L9_23 == 1 then
-        if A3_17 == 2 then
-          L11_25 = A0_14
-          L10_24 = A0_14.LogMessage
-          L12_26 = A0_14.PLANTPOT_ERR_NO_FERTILIZER
-          L10_24(L11_25, L12_26)
-          L10_24 = 0
-          return L10_24
+      L10_3 = A0_3
+      L9_3 = A0_3.Menu
+      L11_3 = L8_3
+      L12_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_SET_FERTILIZER
+      L13_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_CARE
+      L14_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_DISPOSE
+      L15_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_END_EVENT
+      L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      if L9_3 == 1 then
+        if A3_3 == 2 then
+          L11_3 = A0_3
+          L10_3 = A0_3.LogMessage
+          L12_3 = A0_3.PLANTPOT_ERR_NO_FERTILIZER
+          L10_3(L11_3, L12_3)
+          L10_3 = 0
+          return L10_3
         end
-        if A3_17 == 3 then
-          L11_25 = A0_14
-          L10_24 = A0_14.LogMessage
-          L12_26 = A0_14.PLANTPOT_ERR_FULL_FERTILIZER
-          L10_24(L11_25, L12_26)
-          L10_24 = 0
-          return L10_24
+        if A3_3 == 3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.LogMessage
+          L12_3 = A0_3.PLANTPOT_ERR_FULL_FERTILIZER
+          L10_3(L11_3, L12_3)
+          L10_3 = 0
+          return L10_3
         end
-        L11_25 = A0_14
-        L10_24 = A0_14.HousingPlantPotFertilize
-        L12_26 = L10_24(L11_25)
-        if L10_24 == true then
-          return 1, L11_25, L12_26
+        L11_3 = A0_3
+        L10_3 = A0_3.HousingPlantPotFertilize
+        L10_3, L11_3, L12_3 = L10_3(L11_3)
+        if L10_3 == true then
+          L13_3 = 1
+          L14_3 = L11_3
+          L15_3 = L12_3
+          return L13_3, L14_3, L15_3
         else
-          return 0
+          L13_3 = 0
+          return L13_3
         end
-      elseif L9_23 == 2 then
-        L10_24 = 2
-        return L10_24
-      elseif L9_23 == 3 then
-        L11_25 = A2_16
-        L10_24 = A2_16.IsNeedHousingAuthorityCheck
-        L10_24 = L10_24(L11_25)
-        L11_25 = A0_14.LAND_TYPE_INVALID
-        if L10_24 ~= L11_25 then
-          L12_26 = A1_15
-          L11_25 = A1_15.IsHousingAuthority
-          L11_25 = L11_25(L12_26, A0_14.FC_AUTHORITY_DISPOSE, A0_14.MATE_AUTHORITY_DISPOSE, L10_24, A2_16)
-          if L11_25 == false then
-            L12_26 = A0_14.LAND_TYPE_FCHOUSE
-            if L10_24 == L12_26 then
-              L12_26 = A0_14.LogMessage
-              L12_26(A0_14, A0_14.PLANTPOT_ERR_NO_AUTHORITY_DISPOSE_PLANT)
+      elseif L9_3 == 2 then
+        L10_3 = 2
+        return L10_3
+      elseif L9_3 == 3 then
+        L11_3 = A2_3
+        L10_3 = A2_3.IsNeedHousingAuthorityCheck
+        L10_3 = L10_3(L11_3)
+        L11_3 = A0_3.LAND_TYPE_INVALID
+        if L10_3 ~= L11_3 then
+          L12_3 = A1_3
+          L11_3 = A1_3.IsHousingAuthority
+          L13_3 = A0_3.FC_AUTHORITY_DISPOSE
+          L14_3 = A0_3.MATE_AUTHORITY_DISPOSE
+          L15_3 = L10_3
+          L16_3 = A2_3
+          L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+          if L11_3 == false then
+            L12_3 = A0_3.LAND_TYPE_FCHOUSE
+            if L10_3 == L12_3 then
+              L13_3 = A0_3
+              L12_3 = A0_3.LogMessage
+              L14_3 = A0_3.PLANTPOT_ERR_NO_AUTHORITY_DISPOSE_PLANT
+              L12_3(L13_3, L14_3)
             else
-              L12_26 = A0_14.LogMessage
-              L12_26(A0_14, A0_14.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_DISPOSE_PLANT)
+              L13_3 = A0_3
+              L12_3 = A0_3.LogMessage
+              L14_3 = A0_3.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_DISPOSE_PLANT
+              L12_3(L13_3, L14_3)
             end
-            L12_26 = 0
-            return L12_26
+            L12_3 = 0
+            return L12_3
           end
         end
-        L12_26 = A0_14
-        L11_25 = A0_14.YesNo
-        L11_25 = L11_25(L12_26, A0_14.TEXT_HOUFURPLANTPOT_00331_ASK_DISPOSE, A0_14.TEXT_HOUFURPLANTPOT_00331_ASK_DISPOSE_YES, A0_14.TEXT_HOUFURPLANTPOT_00331_ASK_DISPOSE_NO, A0_14.DEFAULT_NO)
-        if L11_25 == true then
-          L12_26 = 3
-          return L12_26
+        L12_3 = A0_3
+        L11_3 = A0_3.YesNo
+        L13_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_ASK_DISPOSE
+        L14_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_ASK_DISPOSE_YES
+        L15_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_ASK_DISPOSE_NO
+        L16_3 = A0_3.DEFAULT_NO
+        L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+        if L11_3 == true then
+          L12_3 = 3
+          return L12_3
         end
       end
     end
-    L9_23 = 0
-    return L9_23
+    L9_3 = 0
+    return L9_3
   end
-  function HouFurPlantPot.OnScene00002(A0_27, A1_28, A2_29, A3_30, A4_31)
-    local L5_32, L6_33, L7_34
-    if A2_29 ~= nil then
-      L6_33 = A0_27
-      L5_32 = A0_27.IsEventSceneTargetExists
-      L5_32 = L5_32(L6_33)
-    elseif L5_32 == false then
-      L6_33 = A0_27
-      L5_32 = A0_27.LogMessage
-      L7_34 = A0_27.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
-      L5_32(L6_33, L7_34)
-      L5_32 = 0
-      return L5_32
+  L0_2.OnScene00001 = L1_2
+  L0_2 = HouFurPlantPot
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    if A2_3 ~= nil then
+      L6_3 = A0_3
+      L5_3 = A0_3.IsEventSceneTargetExists
+      L5_3 = L5_3(L6_3)
+      if L5_3 ~= false then
+        goto lbl_12
+      end
     end
-    L5_32 = A4_31
-    if L5_32 == 0 then
-      L7_34 = A2_29
-      L6_33 = A2_29.GetHousingPlantPotCropCatalogId
-      L6_33 = L6_33(L7_34)
-      L5_32 = L6_33
-      L7_34 = A0_27
-      L6_33 = A0_27.SystemTalk
-      L6_33(L7_34, A0_27.TEXT_HOUFURPLANTPOT_00331_TALK_RIPE, true, L5_32)
+    L6_3 = A0_3
+    L5_3 = A0_3.LogMessage
+    L7_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L5_3(L6_3, L7_3)
+    L5_3 = 0
+    do return L5_3 end
+    ::lbl_12::
+    L5_3 = A4_3
+    if L5_3 == 0 then
+      L7_3 = A2_3
+      L6_3 = A2_3.GetHousingPlantPotCropCatalogId
+      L6_3 = L6_3(L7_3)
+      L5_3 = L6_3
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_TALK_RIPE
+      L9_3 = true
+      L10_3 = L5_3
+      L6_3(L7_3, L8_3, L9_3, L10_3)
     else
-      L7_34 = A0_27
-      L6_33 = A0_27.SystemTalk
-      L6_33(L7_34, A0_27.TEXT_HOUFURPLANTPOT_00331_FLOWERED, true, L5_32)
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_FLOWERED
+      L9_3 = true
+      L10_3 = L5_3
+      L6_3(L7_3, L8_3, L9_3, L10_3)
     end
-    if A2_29 ~= nil then
-      L7_34 = A0_27
-      L6_33 = A0_27.IsEventSceneTargetExists
-      L6_33 = L6_33(L7_34)
-    elseif L6_33 == false then
-      L7_34 = A0_27
-      L6_33 = A0_27.LogMessage
-      L6_33(L7_34, A0_27.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE)
-      L6_33 = 0
-      return L6_33
-    end
-    if A3_30 == 1 then
-      L6_33 = 0
-      return L6_33
-    end
-    L7_34 = A2_29
-    L6_33 = A2_29.IsNeedHousingAuthorityCheck
-    L6_33 = L6_33(L7_34)
-    L7_34 = A0_27.LAND_TYPE_INVALID
-    if L6_33 ~= L7_34 then
-      L7_34 = A1_28.IsHousingAuthority
-      L7_34 = L7_34(A1_28, A0_27.FC_AUTHORITY_HARVESTING, A0_27.MATE_AUTHORITY_HARVESTING, L6_33, A2_29)
-      if L7_34 == false then
-        if L6_33 == A0_27.LAND_TYPE_FCHOUSE then
-          A0_27:LogMessage(A0_27.PLANTPOT_ERR_NO_AUTHORITY_HARVEST)
-        else
-          A0_27:LogMessage(A0_27.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_HARVEST)
-        end
-        return 0
+    if A2_3 ~= nil then
+      L7_3 = A0_3
+      L6_3 = A0_3.IsEventSceneTargetExists
+      L6_3 = L6_3(L7_3)
+      if L6_3 ~= false then
+        goto lbl_40
       end
     end
-    L7_34 = A1_28.IsHowTo
-    L7_34 = L7_34(A1_28, A0_27.HOWTO_HARVEST)
-    if L7_34 == false then
-      L7_34 = A0_27.HowTo
-      L7_34(A0_27, A0_27.HOWTO_HARVEST)
+    L7_3 = A0_3
+    L6_3 = A0_3.LogMessage
+    L8_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L6_3(L7_3, L8_3)
+    L6_3 = 0
+    do return L6_3 end
+    ::lbl_40::
+    if A3_3 == 1 then
+      L6_3 = 0
+      return L6_3
     end
-    L7_34 = ""
-    if A0_27:Menu(L7_34, A0_27.TEXT_HOUFURPLANTPOT_00331_HARVEST, A0_27.TEXT_HOUFURPLANTPOT_00331_END_EVENT) == 1 then
-      return 1
-    end
-    return 0
-  end
-  function HouFurPlantPot.OnScene00003(A0_35, A1_36, A2_37, A3_38)
-    local L4_39, L5_40, L6_41
-    if A2_37 ~= nil then
-      L5_40 = A0_35
-      L4_39 = A0_35.IsEventSceneTargetExists
-      L4_39 = L4_39(L5_40)
-    elseif L4_39 == false then
-      L5_40 = A0_35
-      L4_39 = A0_35.LogMessage
-      L6_41 = A0_35.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
-      L4_39(L5_40, L6_41)
-      L4_39 = 0
-      return L4_39
-    end
-    L5_40 = A2_37
-    L4_39 = A2_37.GetHousingPlantPotCropCatalogId
-    L4_39 = L4_39(L5_40)
-    L6_41 = A0_35
-    L5_40 = A0_35.SystemTalk
-    L5_40(L6_41, A0_35.TEXT_HOUFURPLANTPOT_00331_TALK_DEAD, true, L4_39)
-    if A2_37 ~= nil then
-      L6_41 = A0_35
-      L5_40 = A0_35.IsEventSceneTargetExists
-      L5_40 = L5_40(L6_41)
-    elseif L5_40 == false then
-      L6_41 = A0_35
-      L5_40 = A0_35.LogMessage
-      L5_40(L6_41, A0_35.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE)
-      L5_40 = 0
-      return L5_40
-    end
-    if A3_38 == 1 then
-      L5_40 = 0
-      return L5_40
-    end
-    L6_41 = A2_37
-    L5_40 = A2_37.IsNeedHousingAuthorityCheck
-    L5_40 = L5_40(L6_41)
-    L6_41 = A0_35.LAND_TYPE_INVALID
-    if L5_40 ~= L6_41 then
-      L6_41 = A1_36.IsHousingAuthority
-      L6_41 = L6_41(A1_36, A0_35.FC_AUTHORITY_DISPOSE, A0_35.MATE_AUTHORITY_DISPOSE, L5_40, A2_37)
-      if L6_41 == false then
-        if L5_40 == A0_35.LAND_TYPE_FCHOUSE then
-          A0_35:LogMessage(A0_35.PLANTPOT_ERR_NO_AUTHORITY_DISPOSE_PLANT)
+    L7_3 = A2_3
+    L6_3 = A2_3.IsNeedHousingAuthorityCheck
+    L6_3 = L6_3(L7_3)
+    L7_3 = A0_3.LAND_TYPE_INVALID
+    if L6_3 ~= L7_3 then
+      L8_3 = A1_3
+      L7_3 = A1_3.IsHousingAuthority
+      L9_3 = A0_3.FC_AUTHORITY_HARVESTING
+      L10_3 = A0_3.MATE_AUTHORITY_HARVESTING
+      L11_3 = L6_3
+      L12_3 = A2_3
+      L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+      if L7_3 == false then
+        L8_3 = A0_3.LAND_TYPE_FCHOUSE
+        if L6_3 == L8_3 then
+          L9_3 = A0_3
+          L8_3 = A0_3.LogMessage
+          L10_3 = A0_3.PLANTPOT_ERR_NO_AUTHORITY_HARVEST
+          L8_3(L9_3, L10_3)
         else
-          A0_35:LogMessage(A0_35.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_DISPOSE_PLANT)
+          L9_3 = A0_3
+          L8_3 = A0_3.LogMessage
+          L10_3 = A0_3.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_HARVEST
+          L8_3(L9_3, L10_3)
         end
-        return 0
+        L8_3 = 0
+        return L8_3
       end
     end
-    L6_41 = ""
-    if A0_35:Menu(L6_41, A0_35.TEXT_HOUFURPLANTPOT_00331_DISPOSE, A0_35.TEXT_HOUFURPLANTPOT_00331_END_EVENT) == 1 then
-      return 1
+    L8_3 = A1_3
+    L7_3 = A1_3.IsHowTo
+    L9_3 = A0_3.HOWTO_HARVEST
+    L7_3 = L7_3(L8_3, L9_3)
+    if L7_3 == false then
+      L8_3 = A0_3
+      L7_3 = A0_3.HowTo
+      L9_3 = A0_3.HOWTO_HARVEST
+      L7_3(L8_3, L9_3)
     end
-    return 0
-  end
-  function HouFurPlantPot.OnScene00004(A0_42, A1_43, A2_44)
-    if A1_43:IsHowTo(A0_42.HOWTO_GROW) == false then
-      A0_42:HowTo(A0_42.HOWTO_GROW)
+    L7_3 = ""
+    L9_3 = A0_3
+    L8_3 = A0_3.Menu
+    L10_3 = L7_3
+    L11_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_HARVEST
+    L12_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_END_EVENT
+    L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3)
+    if L8_3 == 1 then
+      L9_3 = 1
+      return L9_3
     end
-    return 0
+    L9_3 = 0
+    return L9_3
   end
-end)()
-;(function()
-  local L1_45
-  L1_45 = HouFurPlantPot
-  L1_45.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00002 = L1_2
+  L0_2 = HouFurPlantPot
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    if A2_3 ~= nil then
+      L5_3 = A0_3
+      L4_3 = A0_3.IsEventSceneTargetExists
+      L4_3 = L4_3(L5_3)
+      if L4_3 ~= false then
+        goto lbl_12
+      end
+    end
+    L5_3 = A0_3
+    L4_3 = A0_3.LogMessage
+    L6_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L4_3(L5_3, L6_3)
+    L4_3 = 0
+    do return L4_3 end
+    ::lbl_12::
+    L5_3 = A2_3
+    L4_3 = A2_3.GetHousingPlantPotCropCatalogId
+    L4_3 = L4_3(L5_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.SystemTalk
+    L7_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_TALK_DEAD
+    L8_3 = true
+    L9_3 = L4_3
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    if A2_3 ~= nil then
+      L6_3 = A0_3
+      L5_3 = A0_3.IsEventSceneTargetExists
+      L5_3 = L5_3(L6_3)
+      if L5_3 ~= false then
+        goto lbl_30
+      end
+    end
+    L6_3 = A0_3
+    L5_3 = A0_3.LogMessage
+    L7_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L5_3(L6_3, L7_3)
+    L5_3 = 0
+    do return L5_3 end
+    ::lbl_30::
+    if A3_3 == 1 then
+      L5_3 = 0
+      return L5_3
+    end
+    L6_3 = A2_3
+    L5_3 = A2_3.IsNeedHousingAuthorityCheck
+    L5_3 = L5_3(L6_3)
+    L6_3 = A0_3.LAND_TYPE_INVALID
+    if L5_3 ~= L6_3 then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsHousingAuthority
+      L8_3 = A0_3.FC_AUTHORITY_DISPOSE
+      L9_3 = A0_3.MATE_AUTHORITY_DISPOSE
+      L10_3 = L5_3
+      L11_3 = A2_3
+      L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+      if L6_3 == false then
+        L7_3 = A0_3.LAND_TYPE_FCHOUSE
+        if L5_3 == L7_3 then
+          L8_3 = A0_3
+          L7_3 = A0_3.LogMessage
+          L9_3 = A0_3.PLANTPOT_ERR_NO_AUTHORITY_DISPOSE_PLANT
+          L7_3(L8_3, L9_3)
+        else
+          L8_3 = A0_3
+          L7_3 = A0_3.LogMessage
+          L9_3 = A0_3.HOUSING_ERR_HOUSE_MATE_NO_AUTHORITY_DISPOSE_PLANT
+          L7_3(L8_3, L9_3)
+        end
+        L7_3 = 0
+        return L7_3
+      end
+    end
+    L6_3 = ""
+    L8_3 = A0_3
+    L7_3 = A0_3.Menu
+    L9_3 = L6_3
+    L10_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_DISPOSE
+    L11_3 = A0_3.TEXT_HOUFURPLANTPOT_00331_END_EVENT
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3)
+    if L7_3 == 1 then
+      L8_3 = 1
+      return L8_3
+    end
+    L8_3 = 0
+    return L8_3
+  end
+  L0_2.OnScene00003 = L1_2
+  L0_2 = HouFurPlantPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsHowTo
+    L5_3 = A0_3.HOWTO_GROW
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == false then
+      L4_3 = A0_3
+      L3_3 = A0_3.HowTo
+      L5_3 = A0_3.HOWTO_GROW
+      L3_3(L4_3, L5_3)
+    end
+    L3_3 = 0
+    return L3_3
+  end
+  L0_2.OnScene00004 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = HouFurPlantPot
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

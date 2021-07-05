@@ -1,40 +1,87 @@
-(function()
-  print("CmnDefHousingPersonalRoomExit")
-  function CmnDefHousingPersonalRoomExit.MoveToOthersRoom(A0_0, A1_1, A2_2, A3_3)
-    local L4_4
-    L4_4 = A0_0.HousingPersonalRoomPortal
-    L4_4 = L4_4(A0_0, A1_1, A2_2, A3_3)
-    if L4_4 ~= 0 then
-      return 3, L4_4
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefHousingPersonalRoomExit"
+  L0_2(L1_2)
+  L0_2 = CmnDefHousingPersonalRoomExit
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.HousingPersonalRoomPortal
+    L6_3 = A1_3
+    L7_3 = A2_3
+    L8_3 = A3_3
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+    if L4_3 ~= 0 then
+      L5_3 = 3
+      L6_3 = L4_3
+      return L5_3, L6_3
     end
-    return 0
+    L5_3 = 0
+    return L5_3
   end
-  function CmnDefHousingPersonalRoomExit.OnScene00000(A0_5, A1_6, A2_7)
-    local L3_8, L4_9, L5_10, L6_11, L7_12, L8_13, L9_14, L10_15, L11_16
-    L4_9 = A0_5
-    L3_8 = A0_5.GetPersonalRoomStatus
-    L9_14 = L3_8(L4_9)
-    L11_16 = A0_5
-    L10_15 = A0_5.IsInMyPersonalRoom
-    L10_15 = L10_15(L11_16)
-    L11_16 = A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_TALK_ACTOR
-    if L8_13 == 1 and L10_15 == false and L6_11 == 1 then
-      if A0_5:Menu(L11_16, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_FC_HOUSE, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_OTHER_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_MY_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_EXIT) == 1 then
-        return 2
-      elseif A0_5:Menu(L11_16, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_FC_HOUSE, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_OTHER_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_MY_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_EXIT) == 2 then
-        return A0_5:MoveToOthersRoom(A2_7, L3_8, L4_9)
-      elseif A0_5:Menu(L11_16, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_FC_HOUSE, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_OTHER_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_MY_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_EXIT) == 3 then
-        return 1
+  L0_2.MoveToOthersRoom = L1_2
+  L0_2 = CmnDefHousingPersonalRoomExit
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetPersonalRoomStatus
+    L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3 = L3_3(L4_3)
+    L11_3 = A0_3
+    L10_3 = A0_3.IsInMyPersonalRoom
+    L10_3 = L10_3(L11_3)
+    L11_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_TALK_ACTOR
+    if L8_3 == 1 and L10_3 == false and L6_3 == 1 then
+      L13_3 = A0_3
+      L12_3 = A0_3.Menu
+      L14_3 = L11_3
+      L15_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_FC_HOUSE
+      L16_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_OTHER_ROOM
+      L17_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_MY_ROOM
+      L18_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_EXIT
+      L12_3 = L12_3(L13_3, L14_3, L15_3, L16_3, L17_3, L18_3)
+      if L12_3 == 1 then
+        L13_3 = 2
+        return L13_3
+      elseif L12_3 == 2 then
+        L14_3 = A0_3
+        L13_3 = A0_3.MoveToOthersRoom
+        L15_3 = A2_3
+        L16_3 = L3_3
+        L17_3 = L4_3
+        return L13_3(L14_3, L15_3, L16_3, L17_3)
+      elseif L12_3 == 3 then
+        L13_3 = 1
+        return L13_3
       end
-    elseif A0_5:Menu(L11_16, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_FC_HOUSE, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_OTHER_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_EXIT) == 1 then
-      return 2
-    elseif A0_5:Menu(L11_16, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_FC_HOUSE, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_OTHER_ROOM, A0_5.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_EXIT) == 2 then
-      return A0_5:MoveToOthersRoom(A2_7, L3_8, L4_9)
+    else
+      L13_3 = A0_3
+      L12_3 = A0_3.Menu
+      L14_3 = L11_3
+      L15_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_FC_HOUSE
+      L16_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_GO_OTHER_ROOM
+      L17_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMEXIT_00179_MENU_EXIT
+      L12_3 = L12_3(L13_3, L14_3, L15_3, L16_3, L17_3)
+      if L12_3 == 1 then
+        L13_3 = 2
+        return L13_3
+      elseif L12_3 == 2 then
+        L14_3 = A0_3
+        L13_3 = A0_3.MoveToOthersRoom
+        L15_3 = A2_3
+        L16_3 = L3_3
+        L17_3 = L4_3
+        return L13_3(L14_3, L15_3, L16_3, L17_3)
+      end
     end
   end
-end)()
-;(function()
-  local L1_17
-  L1_17 = CmnDefHousingPersonalRoomExit
-  L1_17.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefHousingPersonalRoomExit
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

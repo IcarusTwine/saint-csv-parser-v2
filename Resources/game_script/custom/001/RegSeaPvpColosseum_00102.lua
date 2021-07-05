@@ -1,136 +1,427 @@
-(function()
-  print("RegSeaPvpColosseum")
-  function RegSeaPvpColosseum.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_001, false)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_002, true)
-    A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegSeaPvpColosseum"
+  L0_2(L1_2)
+  L0_2 = RegSeaPvpColosseum
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_001
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_002
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+    L3_3(L4_3, L5_3)
   end
-  function RegSeaPvpColosseum.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegSeaPvpColosseum
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
     while true do
-      while true do
-        repeat
-          if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q1_000_1, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_1, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_4, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_5) == 1 then
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_010, true)
-            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_11, false)
-            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_12, false)
-            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_13, true)
-          else
-            if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q1_000_1, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_1, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_4, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_5) == 2 then
-              while true do
-                while true do
-                  while true do
-                    if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q2_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_100_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_003) == 1 then
-                      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_030, true)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_031, false)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_032, false)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_032, false)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_101_032, false)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_033, false)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_034, false)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_035, false)
-                      A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_036, true)
-                    end
-                    if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q2_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_100_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_003) == 2 then
-                      while true do
-                        while true do
-                          while true do
-                            while true do
-                              if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q3_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_200_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_005) == 1 then
-                                A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_100_037, true)
-                                A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_038, false)
-                                A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_039, true)
-                              end
-                              if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q3_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_200_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_005) == 2 then
-                                A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_040, true)
-                                A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_041, false)
-                                A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_042, false)
-                                A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_043, true)
-                              end
-                            end
-                            if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q3_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_200_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_005) == 3 then
-                              A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                              A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_050, true)
-                              A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_051, false)
-                              A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_052, true)
-                            end
-                          end
-                          if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q3_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_200_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_005) == 4 then
-                            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_060, true)
-                            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_061, false)
-                            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_062, true)
-                          end
-                        end
-                        break
-                      end
-                    end
-                  end
-                  while true do
-                    while true do
-                      while true do
-                        while true do
-                          if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q4_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_005) == 1 then
-                            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_070, true)
-                            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_071, false)
-                            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_072, true)
-                          end
-                          if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q4_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_005) == 2 then
-                            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_080, true)
-                            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_081, false)
-                            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_082, false)
-                            A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_083, true)
-                          end
-                        end
-                        if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q4_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_005) == 3 then
-                          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_090, true)
-                          A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_091, false)
-                          A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_092, false)
-                          A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_093, true)
-                        end
-                      end
-                      if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q4_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_003, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_004, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_005) == 4 then
-                        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_100, true)
-                        A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_101, false)
-                        A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_102, false)
-                        A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_103, false)
-                        A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_104, true)
-                      end
-                    end
-                    break
-                  end
-                end
-                break
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q1_000_1
+      L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_1
+      L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_3
+      L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_4
+      L9_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_5
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_010
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_11
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_12
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_13
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 2 then
+        while true do
+          L5_3 = A0_3
+          L4_3 = A0_3.Menu
+          L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q2_000_000
+          L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_100_001
+          L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_001
+          L9_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_002
+          L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_003
+          L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+          if L4_3 == 1 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_030
+            L10_3 = true
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_031
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_032
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_032
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_101_032
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_033
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_034
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_035
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_036
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          elseif L4_3 == 2 then
+            while true do
+              L6_3 = A0_3
+              L5_3 = A0_3.Menu
+              L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q3_000_000
+              L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_200_001
+              L9_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_002
+              L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_003
+              L11_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_004
+              L12_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A3_000_005
+              L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+              if L5_3 == 1 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_100_037
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_038
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_039
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              elseif L5_3 == 2 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_040
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_041
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_042
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_043
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              elseif L5_3 == 3 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_050
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_051
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_052
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              elseif L5_3 == 4 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_060
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_061
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_062
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              else
+                goto lbl_296
               end
             end
-            if A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q1_000_1, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_1, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_4, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A1_000_5) == 3 then
-              A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-              A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_110, false)
-              A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_31, false)
-              A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_050_31, false)
-              A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_31, false)
-              A0_3:SystemTalk(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_32, true)
-            else
-              return 0
+          elseif L4_3 == 3 then
+            while true do
+              L6_3 = A0_3
+              L5_3 = A0_3.Menu
+              L7_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q4_000_000
+              L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_001
+              L9_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_002
+              L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_003
+              L11_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_004
+              L12_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A4_000_005
+              L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+              if L5_3 == 1 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_070
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_071
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_072
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              elseif L5_3 == 2 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_080
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_081
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_082
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_083
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              elseif L5_3 == 3 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_090
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_091
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_092
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_093
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              elseif L5_3 == 4 then
+                L7_3 = A2_3
+                L6_3 = A2_3.PlayActionTimeline
+                L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L6_3(L7_3, L8_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_100
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_101
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_102
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_103
+                L9_3 = false
+                L6_3(L7_3, L8_3, L9_3)
+                L7_3 = A0_3
+                L6_3 = A0_3.SystemTalk
+                L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_104
+                L9_3 = true
+                L6_3(L7_3, L8_3, L9_3)
+              else
+                goto lbl_296
+              end
             end
+          else
+            goto lbl_328
           end
-        until A0_3:Menu(A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_Q2_000_000, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_100_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_001, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_002, A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_A2_000_003) == 3
+          ::lbl_296::
+        end
+      elseif L3_3 == 3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_BERKOEYA_000_110
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_31
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_050_31
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_100_31
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGSEAPVPCOLOSSEUM_00102_SYSTEM_000_32
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+      else
+        L4_3 = 0
+        return L4_3
       end
+      ::lbl_328::
     end
   end
-end)()
-;(function()
-  local L1_6
-  L1_6 = RegSeaPvpColosseum
-  L1_6.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegSeaPvpColosseum
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

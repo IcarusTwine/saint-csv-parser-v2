@@ -1,21 +1,52 @@
-(function()
-  print("CmnDefF1e4Entrance")
-  function CmnDefF1e4Entrance.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefF1e4Entrance"
+  L0_2(L1_2)
+  L0_2 = CmnDefF1e4Entrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
     L3_3 = false
-    if A1_1:IsQuestCompleted(A0_0.QUEST) == true then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFF1E4ENTRANCE_00047_TALK_000, true)
-      L3_3 = A0_0:YesNo(A0_0.TEXT_CMNDEFF1E4ENTRANCE_00047_YESNO_Q, A0_0.TEXT_CMNDEFF1E4ENTRANCE_00047_YESNO_Y, A0_0.TEXT_CMNDEFF1E4ENTRANCE_00047_YESNO_N, A0_0.DEFAULT_YES)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestCompleted
+    L6_3 = A0_3.QUEST
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 == true then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFF1E4ENTRANCE_00047_TALK_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.YesNo
+      L6_3 = A0_3.TEXT_CMNDEFF1E4ENTRANCE_00047_YESNO_Q
+      L7_3 = A0_3.TEXT_CMNDEFF1E4ENTRANCE_00047_YESNO_Y
+      L8_3 = A0_3.TEXT_CMNDEFF1E4ENTRANCE_00047_YESNO_N
+      L9_3 = A0_3.DEFAULT_YES
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L3_3 = L4_3
     else
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFF1E4ENTRANCE_00047_TALK_001, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFF1E4ENTRANCE_00047_TALK_001
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
     return L3_3
   end
-end)()
-;(function()
-  local L0_4, L1_5
-  L0_4 = CmnDefF1e4Entrance
-  L0_4.SCRIPT_VERSION = 1
-  L0_4 = CmnDefF1e4Entrance
-  L0_4.SCENE_0 = 0
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefF1e4Entrance
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefF1e4Entrance
+  L0_2.SCENE_0 = 0
+end
+L0_1()

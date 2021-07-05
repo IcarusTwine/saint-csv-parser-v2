@@ -1,121 +1,558 @@
-(function()
-  print("RegFstExploreNote")
-  function RegFstExploreNote.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ME, A1_1)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_000, false)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_001, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegFstExploreNote"
+  L0_2(L1_2)
+  L0_2 = RegFstExploreNote
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_ME
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function RegFstExploreNote.OnScene00002(A0_3, A1_4, A2_5)
-    A2_5:LookAt(A1_4)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GREETING, A1_4)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_010, true)
-    A0_3:Wait(10)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_4)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_011, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_012, true)
-    A0_3:Wait(10)
-    if A1_4:IsQuestCompleted(A0_3.QUEST_HEA_VNY_807) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1, A1_4)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_012, false)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_013, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegFstExploreNote
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_011
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_012
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_HEA_VNY_807
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_012
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_013
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     end
-    if A1_4:IsQuestCompleted(A0_3.QUEST_STM_BDY_102) == true then
-      A0_3:Wait(10)
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND, A1_4)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_014, true)
-      A0_3:Wait(10)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_STM_BDY_102
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_014
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
     end
-    A0_3:SystemTalk(A0_3.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_013, false)
-    A0_3:SystemTalk(A0_3.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_014, true)
-    A0_3:Wait(10)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_013
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_014
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
   end
-  function RegFstExploreNote.OnScene00003(A0_6, A1_7, A2_8)
-    A2_8:LookAt(A1_7)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_GREETING, A1_7)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_020, true)
-    A0_6:Wait(10)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EMOTE_JOY, A1_7)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_021, true)
-    A0_6:Wait(10)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK1, A1_7)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_022, false)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_023, true)
-    A0_6:Wait(10)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EMOTE_THINK, A1_7)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_024, false)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_025, true)
-    A0_6:Wait(10)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_GREETING, A1_7)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_026, true)
-    A0_6:Wait(10)
-    if A1_7:IsQuestCompleted(A0_6.QUEST_HEA_VNY_807) == true then
-      A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK1, A1_7)
-      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_026, false)
-      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_027, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = RegFstExploreNote
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_020
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_021
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_022
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_023
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_THINK
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_024
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_025
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_026
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_HEA_VNY_807
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_026
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_027
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     end
-    if A1_7:IsQuestCompleted(A0_6.QUEST_STM_BDY_102) == true then
-      A0_6:Wait(10)
-      A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_ONEHAND, A1_7)
-      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_028, true)
-      A0_6:Wait(10)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_STM_BDY_102
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_028
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
     end
-    A0_6:SystemTalk(A0_6.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_027, false)
-    A0_6:SystemTalk(A0_6.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_028, true)
-    A0_6:Wait(10)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_027
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_028
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
   end
-  function RegFstExploreNote.OnScene00004(A0_9, A1_10, A2_11)
-    A2_11:LookAt(A1_10)
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK2, A1_10)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_030, true)
-    A0_9:Wait(10)
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_10)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_031, false)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_032, true)
-    A0_9:Wait(10)
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_GREETING, A1_10)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_033, true)
-    A0_9:Wait(10)
-    if A1_10:IsQuestCompleted(A0_9.QUEST_HEA_VNY_807) == true then
-      A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK1, A1_10)
-      A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_033, false)
-      A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_034, true)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = RegFstExploreNote
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_030
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_031
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_032
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_033
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_HEA_VNY_807
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_033
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_034
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     end
-    if A1_10:IsQuestCompleted(A0_9.QUEST_STM_BDY_102) == true then
-      A0_9:Wait(10)
-      A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_ONEHAND, A1_10)
-      A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_035, true)
-      A0_9:Wait(10)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_STM_BDY_102
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_035
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
     end
-    A0_9:SystemTalk(A0_9.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_034, true)
-    A0_9:Wait(10)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_SYSTEM_000_034
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
   end
-  function RegFstExploreNote.OnScene00005(A0_12, A1_13, A2_14)
-    A2_14:LookAt(A1_13)
-    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK2, A1_13)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_040, true)
-    A0_12:Wait(10)
-    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK1, A1_13)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_041, false)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_042, true)
-    A0_12:Wait(10)
-    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_GREETING, A1_13)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_043, true)
-    A0_12:Wait(10)
-    if A1_13:IsQuestCompleted(A0_12.QUEST_HEA_VNY_807) == true then
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK1, A1_13)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_043, false)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_044, true)
+  L0_2.OnScene00004 = L1_2
+  L0_2 = RegFstExploreNote
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_040
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_041
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_042
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_000_043
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_HEA_VNY_807
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_043
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_044
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     end
-    if A1_13:IsQuestCompleted(A0_12.QUEST_STM_BDY_102) == true then
-      A0_12:Wait(10)
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK_ONEHAND, A1_13)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_045, true)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_STM_BDY_102
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3 = A1_3
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGFSTEXPLORENOTE_00177_MILLITHIRONHEART_100_045
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     end
   end
-end)()
-;(function()
-  local L1_15
-  L1_15 = RegFstExploreNote
-  L1_15.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00005 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegFstExploreNote
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

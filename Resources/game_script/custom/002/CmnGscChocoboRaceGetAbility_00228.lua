@@ -1,116 +1,215 @@
-(function()
-  print("CmnGscChocoboRaceGetAbility")
-  function CmnGscChocoboRaceGetAbility.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5
-    L4_4 = A0_0
-    L3_3 = A0_0.RequestRacingChocoboParam
-    L3_3(L4_4)
-    L4_4 = A2_2
-    L3_3 = A2_2.TurnTo
-    L5_5 = A1_1
-    L3_3(L4_4, L5_5, false)
-    L4_4 = A2_2
-    L3_3 = A2_2.WaitForTurn
-    L3_3(L4_4)
-    L4_4 = A0_0
-    L3_3 = A0_0.HasRacingChocobo
-    L3_3 = L3_3(L4_4)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnGscChocoboRaceGetAbility"
+  L0_2(L1_2)
+  L0_2 = CmnGscChocoboRaceGetAbility
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L4_3 = A0_3
+    L3_3 = A0_3.RequestRacingChocoboParam
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.HasRacingChocobo
+    L3_3 = L3_3(L4_3)
     if L3_3 == false then
-      L4_4 = A2_2
-      L3_3 = A2_2.Talk
-      L5_5 = A1_1
-      L3_3(L4_4, L5_5, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_TALK_ACTOR, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_TALK_ACTOR
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      L4_4 = A0_0
-      L3_3 = A0_0.GetRacingChocoboName
-      L3_3 = L3_3(L4_4)
-      L5_5 = A2_2
-      L4_4 = A2_2.Talk
-      L4_4(L5_5, A1_1, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_TALK_ACTOR_02, true, nil, nil, nil, nil, L3_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.GetRacingChocoboName
+      L3_3 = L3_3(L4_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_TALK_ACTOR_02
+      L9_3 = true
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = L3_3
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
     end
-    L4_4 = A0_0
-    L3_3 = A0_0.HasRacingChocobo
-    L3_3 = L3_3(L4_4)
+    L4_3 = A0_3
+    L3_3 = A0_3.HasRacingChocobo
+    L3_3 = L3_3(L4_3)
     if L3_3 == false then
-      L4_4 = A2_2
-      L3_3 = A2_2.Talk
-      L5_5 = A1_1
-      L3_3(L4_4, L5_5, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_001_01, false)
-      L4_4 = A0_0
-      L3_3 = A0_0.SystemTalk
-      L5_5 = A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_001_02
-      L3_3(L4_4, L5_5, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_001_01
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_001_02
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
       L3_3 = 0
       return L3_3
     else
-      L4_4 = A0_0
-      L3_3 = A0_0.HasRacingChocoboAbilityItem
-      L3_3 = L3_3(L4_4)
+      L4_3 = A0_3
+      L3_3 = A0_3.HasRacingChocoboAbilityItem
+      L3_3 = L3_3(L4_3)
       if L3_3 == false then
-        L4_4 = A2_2
-        L3_3 = A2_2.Talk
-        L5_5 = A1_1
-        L3_3(L4_4, L5_5, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_002_01, false)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L5_5 = A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_002_02
-        L3_3(L4_4, L5_5, true)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_002_01
+        L8_3 = false
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_002_02
+        L6_3 = true
+        L3_3(L4_3, L5_3, L6_3)
         L3_3 = 0
         return L3_3
       else
-        L4_4 = A0_0
-        L3_3 = A0_0.CanLearnRacingChocoboAbility
-        L3_3 = L3_3(L4_4)
+        L4_3 = A0_3
+        L3_3 = A0_3.CanLearnRacingChocoboAbility
+        L3_3 = L3_3(L4_3)
         if L3_3 == false then
-          L4_4 = A2_2
-          L3_3 = A2_2.Talk
-          L5_5 = A1_1
-          L3_3(L4_4, L5_5, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_003_01, false)
-          L4_4 = A0_0
-          L3_3 = A0_0.SystemTalk
-          L5_5 = A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_003_02
-          L3_3(L4_4, L5_5, true)
+          L4_3 = A2_3
+          L3_3 = A2_3.Talk
+          L5_3 = A1_3
+          L6_3 = A0_3
+          L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_003_01
+          L8_3 = false
+          L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          L4_3 = A0_3
+          L3_3 = A0_3.SystemTalk
+          L5_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_003_02
+          L6_3 = true
+          L3_3(L4_3, L5_3, L6_3)
           L3_3 = 0
           return L3_3
         end
       end
     end
-    L4_4 = A0_0
-    L3_3 = A0_0.OpenRacingChocoboAbilityInventory
-    L5_5 = L3_3(L4_4)
+    L4_3 = A0_3
+    L3_3 = A0_3.OpenRacingChocoboAbilityInventory
+    L3_3, L4_3, L5_3 = L3_3(L4_3)
     if L3_3 == false then
-      return 0
+      L6_3 = 0
+      return L6_3
     end
-    if A0_0:CanUseRacingChocoboItem(L4_4, L5_5) == false then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_004_01, false)
-      A0_0:SystemTalk(A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_004_02, false)
-      A0_0:SystemTalk(A0_0.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_004_03, true)
-      return 0
+    L7_3 = A0_3
+    L6_3 = A0_3.CanUseRacingChocoboItem
+    L8_3 = L4_3
+    L9_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3, L9_3)
+    if L6_3 == false then
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_004_01
+      L11_3 = false
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_004_02
+      L9_3 = false
+      L6_3(L7_3, L8_3, L9_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_ERROR_004_03
+      L9_3 = true
+      L6_3(L7_3, L8_3, L9_3)
+      L6_3 = 0
+      return L6_3
     end
-    return 1, L4_4, L5_5
+    L6_3 = 1
+    L7_3 = L4_3
+    L8_3 = L5_3
+    return L6_3, L7_3, L8_3
   end
-  function CmnGscChocoboRaceGetAbility.OnScene00001(A0_6, A1_7, A2_8, A3_9)
-    A0_6:FadeOut(A0_6.FADE_DEFAULT)
-    A0_6:WaitForFade()
-    A0_6:PlaySE(A0_6.SE_CHOCOBO)
-    A0_6:FadeIn(A0_6.FADE_DEFAULT)
-    A0_6:WaitForFade()
-    return A3_9
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnGscChocoboRaceGetAbility
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeOut
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.PlaySE
+    L6_3 = A0_3.SE_CHOCOBO
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.FadeIn
+    L6_3 = A0_3.FADE_DEFAULT
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.WaitForFade
+    L4_3(L5_3)
+    return A3_3
   end
-  function CmnGscChocoboRaceGetAbility.OnScene00002(A0_10, A1_11, A2_12, A3_13)
-    local L4_14
-    L4_14 = A0_10.GetRacingChocoboName
-    L4_14 = L4_14(A0_10)
-    A0_10:DumpRacingChocoboLog(A0_10.RESULT_LOG, L4_14, A3_13)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_001_DONE, true, nil, nil, nil, nil, A3_13)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnGscChocoboRaceGetAbility
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L5_3 = A0_3
+    L4_3 = A0_3.GetRacingChocoboName
+    L4_3 = L4_3(L5_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.DumpRacingChocoboLog
+    L7_3 = A0_3.RESULT_LOG
+    L8_3 = L4_3
+    L9_3 = A3_3
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETABILITY_00228_001_DONE
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = A3_3
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
   end
-end)()
-;(function()
-  local L0_15
-  L0_15 = CmnGscChocoboRaceGetAbility
-  L0_15.SCRIPT_VERSION = 1
-  L0_15 = CmnGscChocoboRaceGetAbility
-  function L0_15.IsAcceptEvent(A0_16, A1_17, A2_18, A3_19, A4_20, A5_21)
-    return A0_16:CanRacingChocoboTrainingTalk(A1_17) == true and A0_16:IsChocoboRaceAllOpen(A1_17) == true
+  L0_2.OnScene00002 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnGscChocoboRaceGetAbility
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnGscChocoboRaceGetAbility
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A0_3
+    L6_3 = A0_3.CanRacingChocoboTrainingTalk
+    L8_3 = A1_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L6_3 = L6_3 == true
+    return L6_3
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

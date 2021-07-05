@@ -1,58 +1,226 @@
-(function()
-  print("LucKyb007 loaded")
-  function LucKyb007.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3
-    L3_3 = A0_0.BindCharacter
-    L3_3 = L3_3(A0_0, A0_0.LOC_ENPC_LEVEL_01)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:Idle(A0_0.LOC_ACT_01)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_001, false)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_002, false)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_003, false, A0_0.TALK_SHAPE_EMPHASIS)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_004, true, A0_0.TALK_SHAPE_EMPHASIS)
-    A0_0:Wait(10)
-    if A0_0:Menu(A0_0.TEXT_LUCKYB007_03842_Q1_000_000, A0_0.TEXT_LUCKYB007_03842_A1_000_001, A0_0.TEXT_LUCKYB007_03842_A1_000_002) == 1 then
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "LucKyb007 loaded"
+  L0_2(L1_2)
+  L0_2 = LucKyb007
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3 = A0_3
+    L3_3 = A0_3.BindCharacter
+    L5_3 = A0_3.LOC_ENPC_LEVEL_01
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Idle
+    L6_3 = A0_3.LOC_ACT_01
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_001
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_002
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_003
+    L9_3 = false
+    L10_3 = A0_3.TALK_SHAPE_EMPHASIS
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_004
+    L9_3 = true
+    L10_3 = A0_3.TALK_SHAPE_EMPHASIS
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Menu
+    L6_3 = A0_3.TEXT_LUCKYB007_03842_Q1_000_000
+    L7_3 = A0_3.TEXT_LUCKYB007_03842_A1_000_001
+    L8_3 = A0_3.TEXT_LUCKYB007_03842_A1_000_002
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+    if L4_3 == 1 then
+      L6_3 = A1_3
+      L5_3 = A1_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L5_3(L6_3, L7_3)
+      L6_3 = A1_3
+      L5_3 = A1_3.WaitForActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L5_3(L6_3, L7_3)
     else
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHRUG)
-      A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SHRUG)
+      L6_3 = A1_3
+      L5_3 = A1_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EMOTE_SHRUG
+      L5_3(L6_3, L7_3)
+      L6_3 = A1_3
+      L5_3 = A1_3.WaitForActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EMOTE_SHRUG
+      L5_3(L6_3, L7_3)
     end
-    A0_0:Wait(10)
-    A2_2:Idle(A0_0.LOC_ACT_01)
-    A0_0:Wait(15)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_007, false)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_009, false)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_100_009, false)
-    A2_2:LookAt(L3_3)
-    A1_1:LookAt(L3_3)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_200_010, false, A0_0.TALK_SHAPE_EMPHASIS)
-    A1_1:LookAt(A2_2)
-    A2_2:LookAt(A1_1)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_300_010, false, A0_0.TALK_SHAPE_EMPHASIS)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_PSYCH)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_400_010, true, A0_0.TALK_SHAPE_EMPHASIS)
-    A2_2:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_PSYCH)
-    A0_0:Wait(5)
-    A2_2:Idle(A0_0.LOC_ACT_01)
-    A0_0:Wait(15)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_010, true)
-    A0_0:Wait(10)
-    return 1, 0
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Idle
+    L7_3 = A0_3.LOC_ACT_01
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 15
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_007
+    L10_3 = false
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_009
+    L10_3 = false
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_100_009
+    L10_3 = false
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = L3_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = L3_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_200_010
+    L10_3 = false
+    L11_3 = A0_3.TALK_SHAPE_EMPHASIS
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_300_010
+    L10_3 = false
+    L11_3 = A0_3.TALK_SHAPE_EMPHASIS
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EMOTE_PSYCH
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_400_010
+    L10_3 = true
+    L11_3 = A0_3.TALK_SHAPE_EMPHASIS
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EMOTE_PSYCH
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 5
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Idle
+    L7_3 = A0_3.LOC_ACT_01
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 15
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_LUCKYB007_03842_WEAPONSGIENGINEER_000_010
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L5_3 = 1
+    L6_3 = 0
+    return L5_3, L6_3
   end
-end)()
-;(function()
-  local L0_4
-  L0_4 = LucKyb007
-  L0_4.SCRIPT_VERSION = 2
-  L0_4 = LucKyb007
-  function L0_4.OnInitialize(A0_5)
-    local L1_6
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = LucKyb007
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = LucKyb007
+  function L1_2(A0_3)
+    local L1_3
   end
-end)()
+  L0_2.OnInitialize = L1_2
+end
+L0_1()

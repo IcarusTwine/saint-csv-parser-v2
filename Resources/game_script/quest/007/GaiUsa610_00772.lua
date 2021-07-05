@@ -1,81 +1,178 @@
-(function()
-  print("GaiUsa610 loaded")
-  function GaiUsa610.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "GaiUsa610 loaded"
+  L0_2(L1_2)
+  L0_2 = GaiUsa610
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestOffer
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L3_3 = 1
+      return L3_3
     else
-      return 0
+      L3_3 = 0
+      return L3_3
     end
   end
-  function GaiUsa610.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_GAIUSA610_00772_AEDOC_000_000, false)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_GAIUSA610_00772_AEDOC_000_001, true)
-    A0_3:QuestAccepted()
+  L0_2.OnScene00000 = L1_2
+  L0_2 = GaiUsa610
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_GAIUSA610_00772_AEDOC_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_GAIUSA610_00772_AEDOC_000_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestAccepted
+    L3_3(L4_3)
   end
-  function GaiUsa610.OnScene00002(A0_6, A1_7, A2_8)
-    local L3_9, L4_10
-    L4_10 = A2_8
-    L3_9 = A2_8.TurnTo
-    L3_9(L4_10, A1_7, false)
-    L4_10 = A2_8
-    L3_9 = A2_8.PlayActionTimeline
-    L3_9(L4_10, A0_6.ACTION_TIMELINE_EVENT_ADD_YES)
-    L4_10 = A2_8
-    L3_9 = A2_8.Talk
-    L3_9(L4_10, A1_7, A0_6, A0_6.TEXT_GAIUSA610_00772_ERIMMONT_000_010, true)
-    L4_10 = A0_6
-    L3_9 = A0_6.QuestReward
-    L4_10 = L3_9(L4_10, A2_8, A1_7)
-    if L3_9 then
-      A0_6:QuestCompleted()
+  L0_2.OnScene00001 = L1_2
+  L0_2 = GaiUsa610
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_GAIUSA610_00772_ERIMMONT_000_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestReward
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3, L4_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L6_3 = A0_3
+      L5_3 = A0_3.QuestCompleted
+      L5_3(L6_3)
     end
-    return L3_9, L4_10
+    L5_3 = L3_3
+    L6_3 = L4_3
+    return L5_3, L6_3
   end
-  function GaiUsa610.IsTodoChecked(A0_11, A1_12, A2_13)
-    local L3_14
-    L3_14 = A0_11.GetQuestId
-    L3_14 = L3_14(A0_11)
-    if A1_12:GetQuestSequence(L3_14) == A0_11.SEQ_0 then
-      return false
+  L0_2.OnScene00002 = L1_2
+  L0_2 = GaiUsa610
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
     end
-    if A2_13 == 0 then
-      return false
-    end
-  end
-end)()
-;(function()
-  local L0_15, L1_16
-  L0_15 = GaiUsa610
-  L0_15.SCRIPT_VERSION = 1
-  L0_15 = GaiUsa610
-  function L1_16(A0_17)
-    local L1_18
-  end
-  L0_15.OnInitialize = L1_16
-  L0_15 = GaiUsa610
-  function L1_16(A0_19, A1_20, A2_21)
-    local L3_22
-    L3_22 = A0_19.GetQuestId
-    L3_22 = L3_22(A0_19)
-    if A1_20:GetQuestSequence(L3_22) == A0_19.SEQ_0 then
-      return 0, 0
-    end
-    if A2_21 == 0 then
-      return A1_20:GetQuestUI8AL(L3_22), 0
+    if A2_3 == 0 then
+      L5_3 = false
+      return L5_3
     end
   end
-  L0_15.GetTodoArgs = L1_16
-  L0_15 = GaiUsa610
-  function L1_16(A0_23, A1_24, A2_25)
-    local L3_26
-    L3_26 = A0_23.GetQuestId
-    L3_26 = L3_26(A0_23)
-    if A1_24:GetQuestSequence(L3_26) == A0_23.SEQ_FINISH then
-    end
-    return A0_23:IsBattleNpcTriggerOwner(A1_24, A2_25, false), false
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = GaiUsa610
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = GaiUsa610
+  function L1_2(A0_3)
+    local L1_3
   end
-  L0_15.GetGimmickState = L1_16
-end)()
+  L0_2.OnInitialize = L1_2
+  L0_2 = GaiUsa610
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+  end
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = GaiUsa610
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L6_3 = A0_3.SEQ_FINISH
+    if L4_3 == L6_3 then
+    end
+    L7_3 = A0_3
+    L6_3 = A0_3.IsBattleNpcTriggerOwner
+    L8_3 = A1_3
+    L9_3 = A2_3
+    L10_3 = false
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = false
+    return L6_3, L7_3
+  end
+  L0_2.GetGimmickState = L1_2
+end
+L0_1()

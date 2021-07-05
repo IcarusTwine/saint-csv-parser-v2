@@ -1,156 +1,596 @@
-(function()
-  print("CtsErkEureka4RogosActionAdd")
-  function CtsErkEureka4RogosActionAdd.OnScene00001_001(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_000, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka4RogosActionAdd"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_000
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4RogosActionAdd.OnScene00002_001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_060, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00001_001 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_060
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4RogosActionAdd.OnScene00003_001(A0_6, A1_7, A2_8, A3_9, A4_10)
-    A2_8:TurnTo(A1_7, false)
-    A2_8:WaitForTurn()
+  L0_2.OnScene00002_001 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
     while true do
-      if A0_6:Menu(A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_Q1_000_000, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_001, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_002, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_003) == 1 then
-        if A1_7:GetNumOfItems(A3_9) == 0 then
-          A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_010, false, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_011, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
-          A0_6:Wait(10)
-          A0_6:SystemTalk(A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_012, true)
-          A0_6:Wait(10)
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L7_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_Q1_000_000
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_001
+      L9_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_002
+      L10_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_003
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      if L5_3 == 1 then
+        L7_3 = A1_3
+        L6_3 = A1_3.GetNumOfItems
+        L8_3 = A3_3
+        L6_3 = L6_3(L7_3, L8_3)
+        if L6_3 == 0 then
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_010
+          L12_3 = false
+          L13_3 = nil
+          L14_3 = nil
+          L15_3 = nil
+          L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_011
+          L12_3 = true
+          L13_3 = nil
+          L14_3 = nil
+          L15_3 = nil
+          L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = 10
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_012
+          L10_3 = true
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = 10
+          L7_3(L8_3, L9_3)
         else
-          A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_020, false, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_021, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
-          A0_6:Wait(10)
-          A0_6:SetNpcTradeItem(1, unpack(A0_6:GetNpcTradeItemInfo(A3_9, A4_10)))
-          if A0_6:NpcTrade(A0_6.NPC_TRADE_INVENTORY_MODE_NORMAL, nil, nil, 1) == 1 then
-            A1_7:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ITEM)
-            A0_6:Wait(20)
-            A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ITEM)
-            A2_8:WaitForActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ITEM)
-            A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TAKE_LOOK, nil, A0_6.AUTO_SHAKE_ENABLE)
-            A0_6:Wait(30)
-            A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_022, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
-            A0_6:Wait(10)
-            A0_6:FadeOut(A0_6.FADE_DEFAULT, A0_6.FADE_LAYER_MIDDLE_NO_LOADING)
-            A0_6:WaitForFade()
-            A2_8:AutoShake(false)
-            A2_8:CancelActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TAKE_LOOK)
-            A0_6:Wait(3)
-            A2_8:PlayActionTimeline(A0_6.LOC_ACTION_01)
-            A0_6:Wait(90)
-            A2_8:CancelActionTimeline(A0_6.LOC_ACTION_01)
-            A0_6:PlaySE(A0_6.LOC_SE_01)
-            A0_6:Wait(60)
-            A0_6:FadeIn(A0_6.FADE_DEFAULT)
-            A0_6:WaitForFade()
-            return true
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_020
+          L12_3 = false
+          L13_3 = nil
+          L14_3 = nil
+          L15_3 = nil
+          L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_021
+          L12_3 = true
+          L13_3 = nil
+          L14_3 = nil
+          L15_3 = nil
+          L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = 10
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SetNpcTradeItem
+          L9_3 = 1
+          L10_3 = unpack
+          L12_3 = A0_3
+          L11_3 = A0_3.GetNpcTradeItemInfo
+          L13_3 = A3_3
+          L14_3 = A4_3
+          L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3 = L11_3(L12_3, L13_3, L14_3)
+          L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.NpcTrade
+          L9_3 = A0_3.NPC_TRADE_INVENTORY_MODE_NORMAL
+          L10_3 = nil
+          L11_3 = nil
+          L12_3 = 1
+          L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          if L7_3 == 1 then
+            L9_3 = A1_3
+            L8_3 = A1_3.PlayActionTimeline
+            L10_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.Wait
+            L10_3 = 20
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.PlayActionTimeline
+            L10_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.WaitForActionTimeline
+            L10_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.PlayActionTimeline
+            L10_3 = A0_3.ACTION_TIMELINE_EVENT_TAKE_LOOK
+            L11_3 = nil
+            L12_3 = A0_3.AUTO_SHAKE_ENABLE
+            L8_3(L9_3, L10_3, L11_3, L12_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.Wait
+            L10_3 = 30
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.Talk
+            L10_3 = A1_3
+            L11_3 = A0_3
+            L12_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_022
+            L13_3 = true
+            L14_3 = nil
+            L15_3 = nil
+            L16_3 = nil
+            L17_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.Wait
+            L10_3 = 10
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.FadeOut
+            L10_3 = A0_3.FADE_DEFAULT
+            L11_3 = A0_3.FADE_LAYER_MIDDLE_NO_LOADING
+            L8_3(L9_3, L10_3, L11_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.WaitForFade
+            L8_3(L9_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.AutoShake
+            L10_3 = false
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.CancelActionTimeline
+            L10_3 = A0_3.ACTION_TIMELINE_EVENT_TAKE_LOOK
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.Wait
+            L10_3 = 3
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.PlayActionTimeline
+            L10_3 = A0_3.LOC_ACTION_01
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.Wait
+            L10_3 = 90
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.CancelActionTimeline
+            L10_3 = A0_3.LOC_ACTION_01
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.PlaySE
+            L10_3 = A0_3.LOC_SE_01
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.Wait
+            L10_3 = 60
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.FadeIn
+            L10_3 = A0_3.FADE_DEFAULT
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.WaitForFade
+            L8_3(L9_3)
+            L8_3 = true
+            return L8_3
           else
-            A0_6:CancelNpcTrade(A1_7)
+            L9_3 = A0_3
+            L8_3 = A0_3.CancelNpcTrade
+            L10_3 = A1_3
+            L8_3(L9_3, L10_3)
           end
         end
-      elseif A0_6:Menu(A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_Q1_000_000, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_001, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_002, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_A1_000_003) == 2 then
-        A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK1)
-        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_050, false, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
-        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_051, false, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE, 6)
-        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_052, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
-        A0_6:Wait(10)
-        A0_6:SystemTalk(A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_053, false)
-        A0_6:SystemTalk(A0_6.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_054, true, 3, 6)
+      elseif L5_3 == 2 then
+        L7_3 = A2_3
+        L6_3 = A2_3.PlayActionTimeline
+        L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L6_3(L7_3, L8_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_050
+        L11_3 = false
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = nil
+        L15_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_051
+        L11_3 = false
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = nil
+        L15_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L16_3 = 6
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_052
+        L11_3 = true
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = nil
+        L15_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.Wait
+        L8_3 = 10
+        L6_3(L7_3, L8_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.SystemTalk
+        L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_053
+        L9_3 = false
+        L6_3(L7_3, L8_3, L9_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.SystemTalk
+        L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_054
+        L9_3 = true
+        L10_3 = 3
+        L11_3 = 6
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
       else
         break
       end
     end
-    return false
+    L5_3 = false
+    return L5_3
   end
-  function CtsErkEureka4RogosActionAdd.OnScene00004_001(A0_11, A1_12, A2_13, A3_14)
-    A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_023, true, nil, nil, nil, A0_11.SPEAK_NORMAL_MIDDLE)
-    A0_11:Wait(10)
-    A2_13:CancelActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_ITEM)
-    A0_11:Wait(20)
-    A1_12:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_ITEM)
-    A1_12:WaitForActionTimeline(A0_11.ACTION_TIMELINE_EVENT_ITEM)
-    if A3_14 == 0 then
-      A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_040, true, nil, nil, nil, A0_11.SPEAK_NORMAL_MIDDLE)
-      A0_11:Wait(10)
-      A0_11:SystemTalk(A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_041, false, 4)
-      A0_11:SystemTalk(A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_042, true, 2)
+  L0_2.OnScene00003_001 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_023
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 20
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.WaitForActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L4_3(L5_3, L6_3)
+    if A3_3 == 0 then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_040
+      L9_3 = true
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.Wait
+      L6_3 = 10
+      L4_3(L5_3, L6_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.SystemTalk
+      L6_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_041
+      L7_3 = false
+      L8_3 = 4
+      L4_3(L5_3, L6_3, L7_3, L8_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.SystemTalk
+      L6_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_042
+      L7_3 = true
+      L8_3 = 2
+      L4_3(L5_3, L6_3, L7_3, L8_3)
     end
-    if A3_14 == 1 then
-      A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_040, true, nil, nil, nil, A0_11.SPEAK_NORMAL_MIDDLE)
-      A0_11:Wait(10)
-      A0_11:SystemTalk(A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_041, false, 5)
-      A0_11:SystemTalk(A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_042, true, 1)
+    if A3_3 == 1 then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_040
+      L9_3 = true
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.Wait
+      L6_3 = 10
+      L4_3(L5_3, L6_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.SystemTalk
+      L6_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_041
+      L7_3 = false
+      L8_3 = 5
+      L4_3(L5_3, L6_3, L7_3, L8_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.SystemTalk
+      L6_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_042
+      L7_3 = true
+      L8_3 = 1
+      L4_3(L5_3, L6_3, L7_3, L8_3)
     end
-    if A3_14 == 2 then
-      A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK1)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_030, false, nil, nil, nil, A0_11.SPEAK_NORMAL_MIDDLE)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_031, true, nil, nil, nil, A0_11.SPEAK_NORMAL_MIDDLE)
-      A0_11:Wait(10)
-      A0_11:SystemTalk(A0_11.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_032, true, 6)
+    if A3_3 == 2 then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_030
+      L9_3 = false
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_ALCHEMIST00563_000_031
+      L9_3 = true
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.Wait
+      L6_3 = 10
+      L4_3(L5_3, L6_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.SystemTalk
+      L6_3 = A0_3.TEXT_CTSERKEUREKA4ROGOSACTIONADD_00563_SYSTEM_000_032
+      L7_3 = true
+      L8_3 = 6
+      L4_3(L5_3, L6_3, L7_3, L8_3)
     end
-    if A3_14 == 3 then
+    if A3_3 == 3 then
     end
   end
-end)()
-;(function()
-  local L1_15
-  L1_15 = CtsErkEureka4RogosActionAdd
-  L1_15.SCRIPT_VERSION = 2
-end)()
-;(function()
-  print("CtsErkEureka4RogosActionAdd")
-  function CtsErkEureka4RogosActionAdd.OnScene00000(A0_16, A1_17, A2_18)
+  L0_2.OnScene00004_001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka4RogosActionAdd"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function CtsErkEureka4RogosActionAdd.OnScene00001(A0_19, A1_20, A2_21)
-    A0_19:OnScene00001_001(A1_20, A2_21)
-    return A0_19.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00001_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4RogosActionAdd.OnScene00002(A0_22, A1_23, A2_24)
-    A0_22:OnScene00002_001(A1_23, A2_24)
-    return A0_22.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00002_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4RogosActionAdd.OnScene00003(A0_25, A1_26, A2_27, ...)
-    local L4_29, L5_30
-    L5_30 = ...
-    if A0_25:OnScene00003_001(A1_26, A2_27, L4_29, L5_30) == true then
-      return A0_25.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3, L5_3 = ...
+    L7_3 = A0_3
+    L6_3 = A0_3.OnScene00003_001
+    L8_3 = A1_3
+    L9_3 = A2_3
+    L10_3 = L4_3
+    L11_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    if L6_3 == true then
+      L7_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+      return L7_3
     end
-    return A0_25.EUREKA_EVENT_RESULT_END
+    L7_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L7_3
   end
-  function CtsErkEureka4RogosActionAdd.OnScene00004(A0_31, A1_32, A2_33, A3_34)
-    A0_31:OnScene00004_001(A1_32, A2_33, A3_34)
-    return A0_31.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.OnScene00004_001
+    L6_3 = A1_3
+    L7_3 = A2_3
+    L8_3 = A3_3
+    L4_3(L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+    return L4_3
   end
-  function CtsErkEureka4RogosActionAdd.GetNpcTradeItemInfo(A0_35, A1_36, A2_37)
-    local L3_38
-    L3_38 = {
-      A1_36,
-      A2_37,
-      false,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    }
-    return L3_38
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CtsErkEureka4RogosActionAdd
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L3_3 = {}
+    L4_3 = A1_3
+    L5_3 = A2_3
+    L6_3 = false
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L12_3 = 0
+    L13_3 = 0
+    L14_3 = 0
+    L15_3 = 0
+    L16_3 = 0
+    L17_3 = 0
+    L3_3[1] = L4_3
+    L3_3[2] = L5_3
+    L3_3[3] = L6_3
+    L3_3[4] = L7_3
+    L3_3[5] = L8_3
+    L3_3[6] = L9_3
+    L3_3[7] = L10_3
+    L3_3[8] = L11_3
+    L3_3[9] = L12_3
+    L3_3[10] = L13_3
+    L3_3[11] = L14_3
+    L3_3[12] = L15_3
+    L3_3[13] = L16_3
+    L3_3[14] = L17_3
+    return L3_3
   end
-end)()
+  L0_2.GetNpcTradeItemInfo = L1_2
+end
+L0_1()

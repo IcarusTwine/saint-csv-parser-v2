@@ -1,665 +1,2031 @@
-(function()
-  print("RegOth4WerlytGarage")
-  function RegOth4WerlytGarage.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_000, false)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_001, true)
-    A0_0:Wait(10)
-    if A0_0:YesNo(A0_0.TEXT_REGOTH4WERLYTGARAGE_00686_Q1_000_000, nil, nil, A0_0.DEFAULT_YES) == true then
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegOth4WerlytGarage"
+  L0_2(L1_2)
+  L0_2 = RegOth4WerlytGarage
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNo
+    L5_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q1_000_000
+    L6_3 = nil
+    L7_3 = nil
+    L8_3 = A0_3.DEFAULT_YES
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    if L3_3 == true then
+      L4_3 = 1
+      return L4_3
     end
-    return 0
+    L4_3 = 0
+    return L4_3
   end
-  function RegOth4WerlytGarage.OnScene00001(A0_3, A1_4, A2_5)
-    local L3_6, L4_7, L5_8, L6_9, L7_10, L8_11, L9_12, L10_13, L11_14, L12_15, L13_16, L14_17, L15_18, L16_19, L17_20, L18_21, L19_22, L20_23
-    L4_7 = A1_4
-    L3_6 = A1_4.GetRace
-    L3_6 = L3_6(L4_7)
-    L5_8 = A1_4
-    L4_7 = A1_4.GetSex
-    L4_7 = L4_7(L5_8)
-    L6_9 = A1_4
-    L5_8 = A1_4.GetTribe
-    L5_8 = L5_8(L6_9)
-    L6_9 = false
-    L7_10 = false
-    L8_11 = A0_3.RACE_AURA
-    if L3_6 == L8_11 then
-      L8_11 = A0_3.SEX_MALE
-      if L4_7 == L8_11 then
-        L6_9 = true
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegOth4WerlytGarage
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetRace
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetSex
+    L4_3 = L4_3(L5_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetTribe
+    L5_3 = L5_3(L6_3)
+    L6_3 = false
+    L7_3 = false
+    L8_3 = A0_3.RACE_AURA
+    if L3_3 == L8_3 then
+      L8_3 = A0_3.SEX_MALE
+      if L4_3 == L8_3 then
+        L6_3 = true
       end
     else
-      L8_11 = A0_3.RACE_ROEGADYN
-      if L3_6 == L8_11 then
-        L6_9 = true
+      L8_3 = A0_3.RACE_ROEGADYN
+      if L3_3 == L8_3 then
+        L6_3 = true
       else
-        L8_11 = A0_3.RACE_ELEZEN
-        if L8_11 == L3_6 then
-          L6_9 = true
+        L8_3 = A0_3.RACE_ELEZEN
+        if L8_3 == L3_3 then
+          L6_3 = true
         else
-          L8_11 = A0_3.TRIBE_HIGHLANDER
-          if L5_8 == L8_11 then
-            L6_9 = true
+          L8_3 = A0_3.TRIBE_HIGHLANDER
+          if L5_3 == L8_3 then
+            L6_3 = true
           else
-            L8_11 = A0_3.RACE_LALAFELL
-            if L3_6 == L8_11 then
-              L7_10 = true
+            L8_3 = A0_3.RACE_LALAFELL
+            if L3_3 == L8_3 then
+              L7_3 = true
             end
           end
         end
       end
     end
-    L8_11 = false
-    L9_12 = A0_3.RACE_MICOTTAE
-    if L3_6 == L9_12 then
-      L8_11 = true
+    L8_3 = false
+    L9_3 = A0_3.RACE_MICOTTAE
+    if L3_3 == L9_3 then
+      L8_3 = true
     else
-      L9_12 = A0_3.RACE_AURA
-      if L3_6 == L9_12 then
-        L8_11 = true
+      L9_3 = A0_3.RACE_AURA
+      if L3_3 == L9_3 then
+        L8_3 = true
       end
     end
-    L10_13 = A1_4
-    L9_12 = A1_4.Position
-    L11_14 = A0_3.LOC_LEVEL_GW_01
-    L12_15 = A0_3.POSITION_WAIT_COLLISION_ON
-    L9_12(L10_13, L11_14, L12_15)
-    L10_13 = A0_3
-    L9_12 = A0_3.CreateCharacter
-    L11_14 = A0_3.LOC_ENPC_GW_BODY_06
-    L12_15 = A2_5
-    L13_16 = A0_3.ARRANGE_TYPE_BASE_FRONT
-    L14_17 = 0
-    L9_12 = L9_12(L10_13, L11_14, L12_15, L13_16, L14_17)
-    L11_14 = L9_12
-    L10_13 = L9_12.Visible
-    L12_15 = A0_3.VISIBLE_HIDE
-    L10_13(L11_14, L12_15)
-    L11_14 = A0_3
-    L10_13 = A0_3.CreateCharacter
-    L12_15 = A0_3.LOC_ENPC_GW_BODY_06
-    L13_16 = A0_3.LOC_LEVEL_GW_01
-    L10_13 = L10_13(L11_14, L12_15, L13_16)
-    L12_15 = A0_3
-    L11_14 = A0_3.CreateCharacter
-    L13_16 = A0_3.LOC_ENPC_GW_EMP_01
-    L14_17 = A0_3.LOC_LEVEL_GW_EMP_01
-    L11_14 = L11_14(L12_15, L13_16, L14_17)
-    L13_16 = A0_3
-    L12_15 = A0_3.CreateCharacter
-    L14_17 = A0_3.LOC_ENPC_GW_EMP_02
-    L15_18 = A0_3.LOC_LEVEL_GW_01
-    L12_15 = L12_15(L13_16, L14_17, L15_18)
-    L14_17 = A0_3
-    L13_16 = A0_3.CreateCharacter
-    L15_18 = A0_3.LOC_ENPC_GW_EMP_03
-    L16_19 = A0_3.LOC_LEVEL_GW_01
-    L13_16 = L13_16(L14_17, L15_18, L16_19)
-    L15_18 = A0_3
-    L14_17 = A0_3.CreateCharacter
-    L16_19 = A0_3.LOC_ENPC_GW_EMP_04
-    L17_20 = A0_3.LOC_LEVEL_GW_EMP_03
-    L14_17 = L14_17(L15_18, L16_19, L17_20)
-    L16_19 = A0_3
-    L15_18 = A0_3.CreateCharacter
-    L17_20 = A0_3.LOC_ENPC_GW_EMP_05
-    L18_21 = A0_3.LOC_LEVEL_GW_EMP_04
-    L15_18 = L15_18(L16_19, L17_20, L18_21)
-    L17_20 = A0_3
-    L16_19 = A0_3.CreateObject
-    L18_21 = A0_3.LOC_EOBJ_SAVER_BLUE_01
-    L19_22 = A0_3.LOC_LEVEL_SAVER_01
-    L16_19 = L16_19(L17_20, L18_21, L19_22)
-    L18_21 = A0_3
-    L17_20 = A0_3.CreateObject
-    L19_22 = A0_3.LOC_EOBJ_SAVER_RED_01
-    L20_23 = A0_3.LOC_LEVEL_SAVER_01
-    L17_20 = L17_20(L18_21, L19_22, L20_23)
-    L19_22 = L16_19
-    L18_21 = L16_19.Visible
-    L20_23 = A0_3.VISIBLE_HIDE
-    L18_21(L19_22, L20_23)
-    L19_22 = L17_20
-    L18_21 = L17_20.Visible
-    L20_23 = A0_3.VISIBLE_HIDE
-    L18_21(L19_22, L20_23)
-    L19_22 = L13_16
-    L18_21 = L13_16.Position
-    L20_23 = L13_16
-    L18_21(L19_22, L20_23, A0_3.ARRANGE_TYPE_BASE_LEFT, 1.5)
-    L19_22 = L13_16
-    L18_21 = L13_16.LookAt
-    L20_23 = 0
-    L18_21(L19_22, L20_23, 25)
-    L19_22 = L12_15
-    L18_21 = L12_15.Position
-    L20_23 = L10_13
-    L18_21(L19_22, L20_23, A0_3.ARRANGE_TYPE_FRONT, 5.577913)
-    L19_22 = L12_15
-    L18_21 = L12_15.Position
-    L20_23 = L12_15
-    L18_21(L19_22, L20_23, A0_3.ARRANGE_TYPE_RIGHT, 3.967553)
-    L19_22 = L12_15
-    L18_21 = L12_15.Direction
-    L20_23 = 152
-    L18_21(L19_22, L20_23)
-    L19_22 = L13_16
-    L18_21 = L13_16.Position
-    L20_23 = L10_13
-    L18_21(L19_22, L20_23, A0_3.ARRANGE_TYPE_FRONT, 4.323521)
-    L19_22 = L13_16
-    L18_21 = L13_16.Position
-    L20_23 = L13_16
-    L18_21(L19_22, L20_23, A0_3.ARRANGE_TYPE_RIGHT, 2.986913)
-    L19_22 = L13_16
-    L18_21 = L13_16.Direction
-    L20_23 = 152
-    L18_21(L19_22, L20_23)
-    L19_22 = A0_3
-    L18_21 = A0_3.ChangeBGMVolume
-    L20_23 = 0
-    L18_21(L19_22, L20_23)
-    L19_22 = A1_4
-    L18_21 = A1_4.WalkIn
-    L20_23 = 0
-    L18_21(L19_22, L20_23, 7.3, A0_3.MOVE_WALK)
-    L19_22 = A1_4
-    L18_21 = A1_4.WaitForMove
-    L18_21(L19_22)
-    L19_22 = A1_4
-    L18_21 = A1_4.Position
-    L20_23 = A0_3.LOC_LEVEL_PL_01
-    L18_21(L19_22, L20_23)
-    L19_22 = L9_12
-    L18_21 = L9_12.Position
-    L20_23 = A0_3.LOC_LEVEL_PL_01
-    L18_21(L19_22, L20_23)
-    L19_22 = L10_13
-    L18_21 = L10_13.Position
-    L20_23 = L10_13
-    L18_21(L19_22, L20_23, A0_3.ARRANGE_TYPE_BACK, 1)
-    L19_22 = L10_13
-    L18_21 = L10_13.Idle
-    L20_23 = A0_3.LOC_ACT_03
-    L18_21(L19_22, L20_23)
-    L19_22 = A0_3
-    L18_21 = A0_3.PlayTargetRelationCamera
-    L20_23 = L9_12
-    L18_21(L19_22, L20_23, 42.98, 1.2556, 1.1889, -84.7036, 0.2282, 1.5524, 1.453)
-    L19_22 = A1_4
-    L18_21 = A1_4.LookAt
-    L18_21(L19_22)
-    L19_22 = A0_3
-    L18_21 = A0_3.Wait
-    L20_23 = 50
-    L18_21(L19_22, L20_23)
-    L19_22 = A1_4
-    L18_21 = A1_4.LookAt
-    L18_21(L19_22)
-    L19_22 = A0_3
-    L18_21 = A0_3.UpdownPan
-    L20_23 = 10
-    L18_21(L19_22, L20_23, 0, 30, 0, 50)
-    if L6_9 == true then
-      L19_22 = A0_3
-      L18_21 = A0_3.UpdownDolly
-      L20_23 = -0.7
-      L18_21(L19_22, L20_23, -0.5, 30, 0, 50)
-    elseif L7_10 == true then
-      L19_22 = A0_3
-      L18_21 = A0_3.UpdownDolly
-      L20_23 = 0.4
-      L18_21(L19_22, L20_23, 0.6, 30, 0, 50)
+    L10_3 = A1_3
+    L9_3 = A1_3.Position
+    L11_3 = A0_3.LOC_LEVEL_GW_01
+    L12_3 = A0_3.POSITION_WAIT_COLLISION_ON
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.CreateCharacter
+    L11_3 = A0_3.LOC_ENPC_GW_BODY_06
+    L12_3 = A2_3
+    L13_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L14_3 = 0
+    L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+    L11_3 = L9_3
+    L10_3 = L9_3.Visible
+    L12_3 = A0_3.VISIBLE_HIDE
+    L10_3(L11_3, L12_3)
+    L11_3 = A0_3
+    L10_3 = A0_3.CreateCharacter
+    L12_3 = A0_3.LOC_ENPC_GW_BODY_06
+    L13_3 = A0_3.LOC_LEVEL_GW_01
+    L10_3 = L10_3(L11_3, L12_3, L13_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.CreateCharacter
+    L13_3 = A0_3.LOC_ENPC_GW_EMP_01
+    L14_3 = A0_3.LOC_LEVEL_GW_EMP_01
+    L11_3 = L11_3(L12_3, L13_3, L14_3)
+    L13_3 = A0_3
+    L12_3 = A0_3.CreateCharacter
+    L14_3 = A0_3.LOC_ENPC_GW_EMP_02
+    L15_3 = A0_3.LOC_LEVEL_GW_01
+    L12_3 = L12_3(L13_3, L14_3, L15_3)
+    L14_3 = A0_3
+    L13_3 = A0_3.CreateCharacter
+    L15_3 = A0_3.LOC_ENPC_GW_EMP_03
+    L16_3 = A0_3.LOC_LEVEL_GW_01
+    L13_3 = L13_3(L14_3, L15_3, L16_3)
+    L15_3 = A0_3
+    L14_3 = A0_3.CreateCharacter
+    L16_3 = A0_3.LOC_ENPC_GW_EMP_04
+    L17_3 = A0_3.LOC_LEVEL_GW_EMP_03
+    L14_3 = L14_3(L15_3, L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.CreateCharacter
+    L17_3 = A0_3.LOC_ENPC_GW_EMP_05
+    L18_3 = A0_3.LOC_LEVEL_GW_EMP_04
+    L15_3 = L15_3(L16_3, L17_3, L18_3)
+    L17_3 = A0_3
+    L16_3 = A0_3.CreateObject
+    L18_3 = A0_3.LOC_EOBJ_SAVER_BLUE_01
+    L19_3 = A0_3.LOC_LEVEL_SAVER_01
+    L16_3 = L16_3(L17_3, L18_3, L19_3)
+    L18_3 = A0_3
+    L17_3 = A0_3.CreateObject
+    L19_3 = A0_3.LOC_EOBJ_SAVER_RED_01
+    L20_3 = A0_3.LOC_LEVEL_SAVER_01
+    L17_3 = L17_3(L18_3, L19_3, L20_3)
+    L19_3 = L16_3
+    L18_3 = L16_3.Visible
+    L20_3 = A0_3.VISIBLE_HIDE
+    L18_3(L19_3, L20_3)
+    L19_3 = L17_3
+    L18_3 = L17_3.Visible
+    L20_3 = A0_3.VISIBLE_HIDE
+    L18_3(L19_3, L20_3)
+    L19_3 = L13_3
+    L18_3 = L13_3.Position
+    L20_3 = L13_3
+    L21_3 = A0_3.ARRANGE_TYPE_BASE_LEFT
+    L22_3 = 1.5
+    L18_3(L19_3, L20_3, L21_3, L22_3)
+    L19_3 = L13_3
+    L18_3 = L13_3.LookAt
+    L20_3 = 0
+    L21_3 = 25
+    L18_3(L19_3, L20_3, L21_3)
+    L19_3 = L12_3
+    L18_3 = L12_3.Position
+    L20_3 = L10_3
+    L21_3 = A0_3.ARRANGE_TYPE_FRONT
+    L22_3 = 5.577913
+    L18_3(L19_3, L20_3, L21_3, L22_3)
+    L19_3 = L12_3
+    L18_3 = L12_3.Position
+    L20_3 = L12_3
+    L21_3 = A0_3.ARRANGE_TYPE_RIGHT
+    L22_3 = 3.967553
+    L18_3(L19_3, L20_3, L21_3, L22_3)
+    L19_3 = L12_3
+    L18_3 = L12_3.Direction
+    L20_3 = 152
+    L18_3(L19_3, L20_3)
+    L19_3 = L13_3
+    L18_3 = L13_3.Position
+    L20_3 = L10_3
+    L21_3 = A0_3.ARRANGE_TYPE_FRONT
+    L22_3 = 4.323521
+    L18_3(L19_3, L20_3, L21_3, L22_3)
+    L19_3 = L13_3
+    L18_3 = L13_3.Position
+    L20_3 = L13_3
+    L21_3 = A0_3.ARRANGE_TYPE_RIGHT
+    L22_3 = 2.986913
+    L18_3(L19_3, L20_3, L21_3, L22_3)
+    L19_3 = L13_3
+    L18_3 = L13_3.Direction
+    L20_3 = 152
+    L18_3(L19_3, L20_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.ChangeBGMVolume
+    L20_3 = 0
+    L18_3(L19_3, L20_3)
+    L19_3 = A1_3
+    L18_3 = A1_3.WalkIn
+    L20_3 = 0
+    L21_3 = 7.3
+    L22_3 = A0_3.MOVE_WALK
+    L18_3(L19_3, L20_3, L21_3, L22_3)
+    L19_3 = A1_3
+    L18_3 = A1_3.WaitForMove
+    L18_3(L19_3)
+    L19_3 = A1_3
+    L18_3 = A1_3.Position
+    L20_3 = A0_3.LOC_LEVEL_PL_01
+    L18_3(L19_3, L20_3)
+    L19_3 = L9_3
+    L18_3 = L9_3.Position
+    L20_3 = A0_3.LOC_LEVEL_PL_01
+    L18_3(L19_3, L20_3)
+    L19_3 = L10_3
+    L18_3 = L10_3.Position
+    L20_3 = L10_3
+    L21_3 = A0_3.ARRANGE_TYPE_BACK
+    L22_3 = 1
+    L18_3(L19_3, L20_3, L21_3, L22_3)
+    L19_3 = L10_3
+    L18_3 = L10_3.Idle
+    L20_3 = A0_3.LOC_ACT_03
+    L18_3(L19_3, L20_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.PlayTargetRelationCamera
+    L20_3 = L9_3
+    L21_3 = 42.98
+    L22_3 = 1.2556
+    L23_3 = 1.1889
+    L24_3 = -84.7036
+    L25_3 = 0.2282
+    L26_3 = 1.5524
+    L27_3 = 1.453
+    L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+    L19_3 = A1_3
+    L18_3 = A1_3.LookAt
+    L18_3(L19_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.Wait
+    L20_3 = 50
+    L18_3(L19_3, L20_3)
+    L19_3 = A1_3
+    L18_3 = A1_3.LookAt
+    L18_3(L19_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.UpdownPan
+    L20_3 = 10
+    L21_3 = 0
+    L22_3 = 30
+    L23_3 = 0
+    L24_3 = 50
+    L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+    if L6_3 == true then
+      L19_3 = A0_3
+      L18_3 = A0_3.UpdownDolly
+      L20_3 = -0.7
+      L21_3 = -0.5
+      L22_3 = 30
+      L23_3 = 0
+      L24_3 = 50
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+    elseif L7_3 == true then
+      L19_3 = A0_3
+      L18_3 = A0_3.UpdownDolly
+      L20_3 = 0.4
+      L21_3 = 0.6
+      L22_3 = 30
+      L23_3 = 0
+      L24_3 = 50
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
     else
-      L19_22 = A0_3
-      L18_21 = A0_3.UpdownDolly
-      L20_23 = -0.2
-      L18_21(L19_22, L20_23, 0, 30, 0, 50)
-      L19_22 = A0_3
-      L18_21 = A0_3.Zoom
-      L20_23 = -0.2
-      L18_21(L19_22, L20_23, -0.2, 0, 0, 0)
+      L19_3 = A0_3
+      L18_3 = A0_3.UpdownDolly
+      L20_3 = -0.2
+      L21_3 = 0
+      L22_3 = 30
+      L23_3 = 0
+      L24_3 = 50
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+      L19_3 = A0_3
+      L18_3 = A0_3.Zoom
+      L20_3 = -0.2
+      L21_3 = -0.2
+      L22_3 = 0
+      L23_3 = 0
+      L24_3 = 0
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
     end
-    L19_22 = A0_3
-    L18_21 = A0_3.FadeIn
-    L20_23 = A0_3.FADE_DEFAULT
-    L18_21(L19_22, L20_23)
-    L19_22 = A0_3
-    L18_21 = A0_3.WaitForFade
-    L18_21(L19_22)
-    L19_22 = A1_4
-    L18_21 = A1_4.LookAt
-    L20_23 = 0
-    L18_21(L19_22, L20_23, 30)
-    L19_22 = A0_3
-    L18_21 = A0_3.WaitForDolly
-    L18_21(L19_22)
-    L19_22 = A0_3
-    L18_21 = A0_3.WaitForPan
-    L18_21(L19_22)
-    L19_22 = A0_3
-    L18_21 = A0_3.Wait
-    L20_23 = 10
-    L18_21(L19_22, L20_23)
-    L19_22 = A0_3
-    L18_21 = A0_3.PlayBGM
-    L20_23 = A0_3.LOC_BGM_01
-    L18_21(L19_22, L20_23)
-    L19_22 = A0_3
-    L18_21 = A0_3.ChangeBGMVolume
-    L20_23 = 0.5
-    L18_21(L19_22, L20_23)
-    L19_22 = A0_3
-    L18_21 = A0_3.PlayTargetRelationCamera
-    L20_23 = L9_12
-    L18_21(L19_22, L20_23, -150.8511, 1.458, 1.1433, -41.4316, 0.8816, 1.5612, 1.983)
-    if L6_9 == true then
-      L19_22 = A0_3
-      L18_21 = A0_3.Zoom
-      L20_23 = -1.8
-      L18_21(L19_22, L20_23, -0.9, 160, 0, 20)
-    elseif L7_10 == true then
-      L19_22 = A0_3
-      L18_21 = A0_3.UpdownDolly
-      L20_23 = 0.4
-      L18_21(L19_22, L20_23, 0.4, 0, 0, 0)
-      L19_22 = A0_3
-      L18_21 = A0_3.Zoom
-      L20_23 = -0.9
-      L18_21(L19_22, L20_23, 0, 160, 0, 20)
+    L19_3 = A0_3
+    L18_3 = A0_3.FadeIn
+    L20_3 = A0_3.FADE_DEFAULT
+    L18_3(L19_3, L20_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.WaitForFade
+    L18_3(L19_3)
+    L19_3 = A1_3
+    L18_3 = A1_3.LookAt
+    L20_3 = 0
+    L21_3 = 30
+    L18_3(L19_3, L20_3, L21_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.WaitForDolly
+    L18_3(L19_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.WaitForPan
+    L18_3(L19_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.Wait
+    L20_3 = 10
+    L18_3(L19_3, L20_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.PlayBGM
+    L20_3 = A0_3.LOC_BGM_01
+    L18_3(L19_3, L20_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.ChangeBGMVolume
+    L20_3 = 0.5
+    L18_3(L19_3, L20_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.PlayTargetRelationCamera
+    L20_3 = L9_3
+    L21_3 = -150.8511
+    L22_3 = 1.458
+    L23_3 = 1.1433
+    L24_3 = -41.4316
+    L25_3 = 0.8816
+    L26_3 = 1.5612
+    L27_3 = 1.983
+    L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+    if L6_3 == true then
+      L19_3 = A0_3
+      L18_3 = A0_3.Zoom
+      L20_3 = -1.8
+      L21_3 = -0.9
+      L22_3 = 160
+      L23_3 = 0
+      L24_3 = 20
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+    elseif L7_3 == true then
+      L19_3 = A0_3
+      L18_3 = A0_3.UpdownDolly
+      L20_3 = 0.4
+      L21_3 = 0.4
+      L22_3 = 0
+      L23_3 = 0
+      L24_3 = 0
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+      L19_3 = A0_3
+      L18_3 = A0_3.Zoom
+      L20_3 = -0.9
+      L21_3 = 0
+      L22_3 = 160
+      L23_3 = 0
+      L24_3 = 20
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
     else
-      L19_22 = A0_3
-      L18_21 = A0_3.Zoom
-      L20_23 = -0.9
-      L18_21(L19_22, L20_23, 0, 160, 0, 20)
+      L19_3 = A0_3
+      L18_3 = A0_3.Zoom
+      L20_3 = -0.9
+      L21_3 = 0
+      L22_3 = 160
+      L23_3 = 0
+      L24_3 = 20
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
     end
-    L19_22 = A0_3
-    L18_21 = A0_3.WaitForZoom
-    L18_21(L19_22)
-    L19_22 = A0_3
-    L18_21 = A0_3.PlayTargetRelationCamera
-    L20_23 = L9_12
-    L18_21(L19_22, L20_23, 64.8481, 6.6537, -2.495, -2.3856, 16.0825, 1.3039, 15.3144)
-    L19_22 = A0_3
-    L18_21 = A0_3.SideDolly
-    L20_23 = -0.9
-    L18_21(L19_22, L20_23, -0.9, 0, 0, 0)
-    L19_22 = A0_3
-    L18_21 = A0_3.Orbit
-    L20_23 = 20
-    L18_21(L19_22, L20_23, 10, 360, 0, 90)
-    L19_22 = A0_3
-    L18_21 = A0_3.Wait
-    L20_23 = 10
-    L18_21(L19_22, L20_23)
-    L19_22 = A1_4
-    L18_21 = A1_4.IsQuestCompleted
-    L20_23 = A0_3.LOC_QST_LUCKYW401
-    L18_21 = L18_21(L19_22, L20_23)
+    L19_3 = A0_3
+    L18_3 = A0_3.WaitForZoom
+    L18_3(L19_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.PlayTargetRelationCamera
+    L20_3 = L9_3
+    L21_3 = 64.8481
+    L22_3 = 6.6537
+    L23_3 = -2.495
+    L24_3 = -2.3856
+    L25_3 = 16.0825
+    L26_3 = 1.3039
+    L27_3 = 15.3144
+    L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.SideDolly
+    L20_3 = -0.9
+    L21_3 = -0.9
+    L22_3 = 0
+    L23_3 = 0
+    L24_3 = 0
+    L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.Orbit
+    L20_3 = 20
+    L21_3 = 10
+    L22_3 = 360
+    L23_3 = 0
+    L24_3 = 90
+    L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.Wait
+    L20_3 = 10
+    L18_3(L19_3, L20_3)
+    L19_3 = A1_3
+    L18_3 = A1_3.IsQuestCompleted
+    L20_3 = A0_3.LOC_QST_LUCKYW401
+    L18_3 = L18_3(L19_3, L20_3)
     while true do
-      L19_22 = 1
-      if L18_21 == true then
-        L20_23 = A0_3.Menu
-        L20_23 = L20_23(A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_000_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_200_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_300_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_007)
-        L19_22 = L20_23
+      L19_3 = 1
+      if L18_3 == true then
+        L21_3 = A0_3
+        L20_3 = A0_3.Menu
+        L22_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_000_000
+        L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_001
+        L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_200_001
+        L25_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_300_001
+        L26_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_007
+        L20_3 = L20_3(L21_3, L22_3, L23_3, L24_3, L25_3, L26_3)
+        L19_3 = L20_3
       end
-      if L19_22 > 0 then
-        if L19_22 == 1 then
-          L20_23 = {}
-          table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_001)
-          table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_002)
-          table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_003)
-          table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_004)
-          table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_005)
-          table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_006)
-          if A1_4:IsQuestCompleted(A0_3.LOC_QST_LUCKYW301) == true then
-            table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_006)
+      if 0 < L19_3 then
+        if L19_3 == 1 then
+          L20_3 = {}
+          L21_3 = table
+          L21_3 = L21_3.insert
+          L22_3 = L20_3
+          L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_001
+          L21_3(L22_3, L23_3)
+          L21_3 = table
+          L21_3 = L21_3.insert
+          L22_3 = L20_3
+          L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_002
+          L21_3(L22_3, L23_3)
+          L21_3 = table
+          L21_3 = L21_3.insert
+          L22_3 = L20_3
+          L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_003
+          L21_3(L22_3, L23_3)
+          L21_3 = table
+          L21_3 = L21_3.insert
+          L22_3 = L20_3
+          L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_004
+          L21_3(L22_3, L23_3)
+          L21_3 = table
+          L21_3 = L21_3.insert
+          L22_3 = L20_3
+          L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_005
+          L21_3(L22_3, L23_3)
+          L21_3 = table
+          L21_3 = L21_3.insert
+          L22_3 = L20_3
+          L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_006
+          L21_3(L22_3, L23_3)
+          L22_3 = A1_3
+          L21_3 = A1_3.IsQuestCompleted
+          L23_3 = A0_3.LOC_QST_LUCKYW301
+          L21_3 = L21_3(L22_3, L23_3)
+          if L21_3 == true then
+            L21_3 = table
+            L21_3 = L21_3.insert
+            L22_3 = L20_3
+            L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_006
+            L21_3(L22_3, L23_3)
           end
-          if L18_21 == true then
-            table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_007)
+          if L18_3 == true then
+            L21_3 = table
+            L21_3 = L21_3.insert
+            L22_3 = L20_3
+            L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_007
+            L21_3(L22_3, L23_3)
           else
-            table.insert(L20_23, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_007)
+            L21_3 = table
+            L21_3 = L21_3.insert
+            L22_3 = L20_3
+            L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_007
+            L21_3(L22_3, L23_3)
           end
+          L21_3 = false
           while true do
-            A0_3:Wait(10)
-            if 0 < A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23)) then
-              if L20_23[A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23))] == A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_001 then
-                A0_3:PlayTargetRelationCamera(L9_12, 24.0497, 14.0732, 6.2918, -7.0374, 19.4245, 6.8093, 10.3645)
-                A0_3:Orbit(15, -20, 210, 120, 120)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_010, false)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_011, false)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_012, false)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_013, true)
-                A0_3:Wait(10)
-              elseif L20_23[A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23))] == A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_002 then
-                A0_3:PlayTargetRelationCamera(L9_12, 3.3871, 14.1781, 9.259, -5.9334, 19.3834, 8.1726, 5.9609)
-                A0_3:Orbit(0, -10, 360, 0, 90)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_020, false)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_021, true)
-                A0_3:Wait(10)
-              elseif L20_23[A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23))] == A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_003 then
-                A0_3:PlayTargetRelationCamera(L9_12, 22.5584, 23.4735, -1.2456, -25.1619, 22.5367, 7.8618, 20.738)
-                A0_3:Orbit(0, -5, 360, 0, 90)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_030, false)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_031, true)
-                A0_3:Wait(10)
-              elseif L20_23[A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23))] == A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_004 then
-                A0_3:PlayTargetRelationCamera(L9_12, -38.6888, 26.8021, 3.1818, -15.6568, 22.7985, 3.3593, 10.6526)
-                A0_3:Orbit(10, 0, 360, 0, 90)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_040, false)
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_041, true)
-                A0_3:Wait(10)
-              elseif L20_23[A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23))] == A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_005 then
-                A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                A0_3:WaitForFade()
-                A1_4:Position(A0_3.LOC_LEVEL_GW_SHOR_01)
-                A1_4:Idle(A0_3.LOC_ACT_01)
-                A0_3:Wait(40)
-                if L8_11 == true then
-                  A0_3:PlayTargetRelationCamera(L9_12, -10.1871, 12.9726, 5.7805, -6.0814, 21.1832, 8.7471, 8.8105)
-                else
-                  A0_3:PlayTargetRelationCamera(L9_12, -7.1592, 12.9398, 6.4335, -6.8389, 21.2303, 8.6604, 8.5849)
-                end
-                A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                A0_3:WaitForFade()
-                A0_3:Wait(50)
-                while true do
-                  A0_3:Wait(80)
-                  A0_3:Wait(10)
-                  if A0_3:YesNo(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_000_000, nil, nil, A0_3.DEFAULT_YES) == true then
-                    break
-                  end
-                end
-                A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                A0_3:WaitForFade()
-                A1_4:Position(A0_3.LOC_LEVEL_PL_01)
-                A1_4:LookAt(0, 30)
-                A0_3:PlayTargetRelationCamera(L9_12, 64.8481, 6.6537, -2.495, -2.3856, 16.0825, 1.3039, 15.3144)
-                A0_3:SideDolly(-0.9, -0.9, 0, 0, 0)
-                A0_3:Orbit(20, 0, 360, 0, 90)
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE)
-                A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                A0_3:WaitForFade()
-              elseif L20_23[A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23))] == A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_006 then
-                A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                A0_3:WaitForFade()
-                A1_4:Position(A0_3.LOC_LEVEL_DECK_SIDE_01)
-                A1_4:Direction(-60)
-                A0_3:Wait(60)
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE)
-                A1_4:LookAt(10, 30)
-                A0_3:PlayTargetRelationCamera(L9_12, -24.6927, 11.7872, 7.0883, -12.36, 20.7364, 7.019, 9.5589)
-                A0_3:SideDolly(-0.4, -0.4, 0, 0, 0)
-                A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                A0_3:WaitForFade()
-                A0_3:Wait(90)
-                A1_4:LookAt()
-                A1_4:TurnTo(60, false)
-                A1_4:WaitForTurn()
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE1)
-                A0_3:Wait(50)
-                A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
-                while true do
-                  A0_3:Wait(80)
-                  A0_3:Wait(10)
-                  if A0_3:YesNo(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_000_000, nil, nil, A0_3.DEFAULT_YES) == true then
-                    break
-                  end
-                end
-                A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                A0_3:WaitForFade()
-                A1_4:Position(A0_3.LOC_LEVEL_PL_01)
-                A1_4:LookAt(0, 30)
-                A0_3:PlayTargetRelationCamera(L9_12, 64.8481, 6.6537, -2.495, -2.3856, 16.0825, 1.3039, 15.3144)
-                A0_3:SideDolly(-0.9, -0.9, 0, 0, 0)
-                A0_3:Orbit(20, 0, 360, 0, 90)
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE)
-                A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                A0_3:WaitForFade()
-              elseif L20_23[A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000, unpack(L20_23))] == A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_006 then
-                A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                A0_3:WaitForFade()
-                A1_4:Position(A0_3.LOC_LEVEL_GW_HAND_01)
-                L10_13:Idle(A0_3.LOC_ACT_02)
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE3)
-                A0_3:Wait(60)
-                A1_4:LookAt(10, 30)
-                if L7_10 == true then
-                  A0_3:PlayTargetRelationCamera(L9_12, 18.9629, 20.5076, -0.3065, -2.9776, 18.3473, 2.9053, 8.3358)
-                else
-                  A0_3:PlayTargetRelationCamera(L9_12, 18.6558, 19.9503, -0.3667, -2.8624, 17.949, 2.9141, 8.0427)
-                end
-                A0_3:SideDolly(-0.4, -0.4, 0, 0, 0)
-                A0_3:UpdownDolly(1.4, 0, 60, 60, 20)
-                A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                A0_3:WaitForFade()
-                A0_3:WaitForDolly()
-                A0_3:Wait(40)
-                A1_4:LookAt()
-                A1_4:TurnTo(-165, false)
-                A1_4:WaitForTurn()
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE3)
-                A0_3:Wait(40)
-                A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
-                while true do
-                  A0_3:Wait(80)
-                  A0_3:Wait(10)
-                  if A0_3:YesNo(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_000_000, nil, nil, A0_3.DEFAULT_YES) == true then
-                    break
-                  end
-                end
-                A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                A0_3:WaitForFade()
-                A1_4:Position(A0_3.LOC_LEVEL_PL_01)
-                L10_13:Idle(A0_3.LOC_ACT_03)
-                A0_3:Wait(30)
-                A1_4:LookAt(0, 30)
-                A0_3:PlayTargetRelationCamera(L9_12, 64.8481, 6.6537, -2.495, -2.3856, 16.0825, 1.3039, 15.3144)
-                A0_3:SideDolly(-0.9, -0.9, 0, 0, 0)
-                A0_3:Orbit(20, 0, 360, 0, 90)
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE)
-                A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                A0_3:WaitForFade()
+            L23_3 = A0_3
+            L22_3 = A0_3.Menu
+            L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q2_100_000
+            L25_3 = unpack
+            L26_3 = L20_3
+            L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3 = L25_3(L26_3)
+            L22_3 = L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+            L24_3 = A0_3
+            L23_3 = A0_3.Wait
+            L25_3 = 10
+            L23_3(L24_3, L25_3)
+            if 0 < L22_3 then
+              L23_3 = L20_3[L22_3]
+              L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_001
+              if L23_3 == L24_3 then
+                L25_3 = A0_3
+                L24_3 = A0_3.PlayTargetRelationCamera
+                L26_3 = L9_3
+                L27_3 = 24.0497
+                L28_3 = 14.0732
+                L29_3 = 6.2918
+                L30_3 = -7.0374
+                L31_3 = 19.4245
+                L32_3 = 6.8093
+                L33_3 = 10.3645
+                L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                L25_3 = A0_3
+                L24_3 = A0_3.Orbit
+                L26_3 = 15
+                L27_3 = -20
+                L28_3 = 210
+                L29_3 = 120
+                L30_3 = 120
+                L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                L25_3 = A2_3
+                L24_3 = A2_3.Talk
+                L26_3 = A1_3
+                L27_3 = A0_3
+                L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_010
+                L29_3 = false
+                L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                L25_3 = A2_3
+                L24_3 = A2_3.Talk
+                L26_3 = A1_3
+                L27_3 = A0_3
+                L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_011
+                L29_3 = false
+                L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                L25_3 = A2_3
+                L24_3 = A2_3.Talk
+                L26_3 = A1_3
+                L27_3 = A0_3
+                L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_012
+                L29_3 = false
+                L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                L25_3 = A2_3
+                L24_3 = A2_3.Talk
+                L26_3 = A1_3
+                L27_3 = A0_3
+                L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_013
+                L29_3 = true
+                L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                L25_3 = A0_3
+                L24_3 = A0_3.Wait
+                L26_3 = 10
+                L24_3(L25_3, L26_3)
+                L21_3 = true
               else
-                A0_3:Wait(10)
-              end
-            else
-              if true == true then
-                A0_3:PlayTargetRelationCamera(L9_12, 64.8481, 6.6537, -2.495, -2.3856, 16.0825, 1.3039, 15.3144)
-                A0_3:SideDolly(-0.9, -0.9, 0, 0, 0)
-                A0_3:Orbit(20, 10, 360, 0, 90)
-                A0_3:Wait(10)
-                A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE)
-              end
-              else
-                if L19_22 == 2 then
-                  L20_23 = A0_3.FadeOut
-                  L20_23(A0_3, A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                  L20_23 = A0_3.WaitForFade
-                  L20_23(A0_3)
-                  L20_23 = false
-                  L16_19:Visible(A0_3.VISIBLE_SHOW)
-                  L17_20:Visible(A0_3.VISIBLE_HIDE)
-                  A1_4:LookAt(10, 30)
-                  A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                  A0_3:Wait(90)
-                  A0_3:Orbit(15, -25, 210, 150, 120)
-                  A0_3:Wait(30)
-                  A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                  A0_3:WaitForFade()
-                  while true do
-                    while true do
-                      while true do
-                        while true do
-                          repeat
-                            A0_3:Wait(20)
-                            if L20_23 == false then
-                              A0_3:Wait(10)
-                              if A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_004) == 1 then
-                                A0_3:PlayTargetRelationCamera(L9_12, 97.3605, 320.684, -18.1927, 101.1733, 270.4574, -6.4138, 55.1849)
-                                A0_3:Orbit(4, 0, 360, 0, 90)
-                                A0_3:Wait(30)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_050, false)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_051, false)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_052, true)
-                                A0_3:Wait(10)
-                                A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                                A0_3:Orbit(15, -25, 210, 150, 120)
-                              end
-                              if A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_004) == 2 then
-                                A0_3:PlayTargetRelationCamera(L9_12, 93.3707, 272.757, -6.0688, 98.3666, 277.1463, -3.9154, 24.4592)
-                                A0_3:Zoom(-10.2, 4.5, 460, 0, 90)
-                                A0_3:SideDolly(-6.9, -4.9, 460, 0, 90)
-                                A0_3:UpdownDolly(0, 1, 460, 0, 90)
-                                A0_3:Orbit(8, 0, 460, 0, 90)
-                                A0_3:Wait(30)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_060, false)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_061, false)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_062, false)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_063, true)
-                                A0_3:Wait(10)
-                                A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                                A0_3:Orbit(15, -25, 210, 150, 120)
-                              end
-                              if A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_004) == 3 then
-                                A0_3:PlayTargetRelationCamera(L9_12, 116.7246, 289.4232, -8.0826, 106.2572, 266.0954, -11.0911, 55.826)
-                                A0_3:Orbit(4, 0, 360, 0, 90)
-                                A0_3:Wait(30)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_070, false)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_071, false)
-                                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_072, true)
-                                A0_3:Wait(10)
-                                A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                                A0_3:Orbit(15, -25, 210, 150, 120)
-                              end
-                              A0_3:Wait(10)
-                              A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                              A0_3:WaitForFade()
-                              L16_19:Visible(A0_3.VISIBLE_HIDE)
-                              L17_20:Visible(A0_3.VISIBLE_HIDE)
-                              A1_4:Position(A0_3.LOC_LEVEL_PL_01)
-                              L10_13:Idle(A0_3.LOC_ACT_03)
-                              A1_4:LookAt(0, 30)
-                              A0_3:PlayTargetRelationCamera(L9_12, 64.8481, 6.6537, -2.495, -2.3856, 16.0825, 1.3039, 15.3144)
-                              A0_3:Wait(150)
-                              A0_3:SideDolly(-0.9, -0.9, 0, 0, 0)
-                              A0_3:Orbit(20, 0, 360, 0, 90)
-                              A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE)
-                              A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                              A0_3:WaitForFade()
-                          until 0 < A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_004)
-                        end
-                      end
-                    end
+                L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_002
+                if L23_3 == L24_3 then
+                  L25_3 = A0_3
+                  L24_3 = A0_3.PlayTargetRelationCamera
+                  L26_3 = L9_3
+                  L27_3 = 3.3871
+                  L28_3 = 14.1781
+                  L29_3 = 9.259
+                  L30_3 = -5.9334
+                  L31_3 = 19.3834
+                  L32_3 = 8.1726
+                  L33_3 = 5.9609
+                  L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                  L25_3 = A0_3
+                  L24_3 = A0_3.Orbit
+                  L26_3 = 0
+                  L27_3 = -10
+                  L28_3 = 360
+                  L29_3 = 0
+                  L30_3 = 90
+                  L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                  L25_3 = A2_3
+                  L24_3 = A2_3.Talk
+                  L26_3 = A1_3
+                  L27_3 = A0_3
+                  L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_020
+                  L29_3 = false
+                  L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                  L25_3 = A2_3
+                  L24_3 = A2_3.Talk
+                  L26_3 = A1_3
+                  L27_3 = A0_3
+                  L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_021
+                  L29_3 = true
+                  L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                  L25_3 = A0_3
+                  L24_3 = A0_3.Wait
+                  L26_3 = 10
+                  L24_3(L25_3, L26_3)
+                  L21_3 = true
+                else
+                  L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_003
+                  if L23_3 == L24_3 then
+                    L25_3 = A0_3
+                    L24_3 = A0_3.PlayTargetRelationCamera
+                    L26_3 = L9_3
+                    L27_3 = 22.5584
+                    L28_3 = 23.4735
+                    L29_3 = -1.2456
+                    L30_3 = -25.1619
+                    L31_3 = 22.5367
+                    L32_3 = 7.8618
+                    L33_3 = 20.738
+                    L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                    L25_3 = A0_3
+                    L24_3 = A0_3.Orbit
+                    L26_3 = 0
+                    L27_3 = -5
+                    L28_3 = 360
+                    L29_3 = 0
+                    L30_3 = 90
+                    L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                    L25_3 = A2_3
+                    L24_3 = A2_3.Talk
+                    L26_3 = A1_3
+                    L27_3 = A0_3
+                    L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_030
+                    L29_3 = false
+                    L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                    L25_3 = A2_3
+                    L24_3 = A2_3.Talk
+                    L26_3 = A1_3
+                    L27_3 = A0_3
+                    L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_031
+                    L29_3 = true
+                    L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                    L25_3 = A0_3
+                    L24_3 = A0_3.Wait
+                    L26_3 = 10
+                    L24_3(L25_3, L26_3)
+                    L21_3 = true
+                  else
+                    L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_004
+                    if L23_3 == L24_3 then
+                      L25_3 = A0_3
+                      L24_3 = A0_3.PlayTargetRelationCamera
+                      L26_3 = L9_3
+                      L27_3 = -38.6888
+                      L28_3 = 26.8021
+                      L29_3 = 3.1818
+                      L30_3 = -15.6568
+                      L31_3 = 22.7985
+                      L32_3 = 3.3593
+                      L33_3 = 10.6526
+                      L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                      L25_3 = A0_3
+                      L24_3 = A0_3.Orbit
+                      L26_3 = 10
+                      L27_3 = 0
+                      L28_3 = 360
+                      L29_3 = 0
+                      L30_3 = 90
+                      L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                      L25_3 = A2_3
+                      L24_3 = A2_3.Talk
+                      L26_3 = A1_3
+                      L27_3 = A0_3
+                      L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_040
+                      L29_3 = false
+                      L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                      L25_3 = A2_3
+                      L24_3 = A2_3.Talk
+                      L26_3 = A1_3
+                      L27_3 = A0_3
+                      L28_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_041
+                      L29_3 = true
+                      L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                      L25_3 = A0_3
+                      L24_3 = A0_3.Wait
+                      L26_3 = 10
+                      L24_3(L25_3, L26_3)
+                      L21_3 = true
                     else
+                      L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_005
+                      if L23_3 == L24_3 then
+                        L25_3 = A0_3
+                        L24_3 = A0_3.FadeOut
+                        L26_3 = A0_3.FADE_SHORT
+                        L27_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                        L24_3(L25_3, L26_3, L27_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.WaitForFade
+                        L24_3(L25_3)
+                        L25_3 = A1_3
+                        L24_3 = A1_3.Position
+                        L26_3 = A0_3.LOC_LEVEL_GW_SHOR_01
+                        L24_3(L25_3, L26_3)
+                        L25_3 = A1_3
+                        L24_3 = A1_3.Idle
+                        L26_3 = A0_3.LOC_ACT_01
+                        L24_3(L25_3, L26_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.Wait
+                        L26_3 = 40
+                        L24_3(L25_3, L26_3)
+                        if L8_3 == true then
+                          L25_3 = A0_3
+                          L24_3 = A0_3.PlayTargetRelationCamera
+                          L26_3 = L9_3
+                          L27_3 = -10.1871
+                          L28_3 = 12.9726
+                          L29_3 = 5.7805
+                          L30_3 = -6.0814
+                          L31_3 = 21.1832
+                          L32_3 = 8.7471
+                          L33_3 = 8.8105
+                          L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                        else
+                          L25_3 = A0_3
+                          L24_3 = A0_3.PlayTargetRelationCamera
+                          L26_3 = L9_3
+                          L27_3 = -7.1592
+                          L28_3 = 12.9398
+                          L29_3 = 6.4335
+                          L30_3 = -6.8389
+                          L31_3 = 21.2303
+                          L32_3 = 8.6604
+                          L33_3 = 8.5849
+                          L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                        end
+                        L25_3 = A0_3
+                        L24_3 = A0_3.FadeIn
+                        L26_3 = A0_3.FADE_SHORT
+                        L27_3 = A0_3.FADE_LAYER_BACK
+                        L24_3(L25_3, L26_3, L27_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.WaitForFade
+                        L24_3(L25_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.Wait
+                        L26_3 = 50
+                        L24_3(L25_3, L26_3)
+                        while true do
+                          L25_3 = A0_3
+                          L24_3 = A0_3.Wait
+                          L26_3 = 80
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.YesNo
+                          L26_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_000_000
+                          L27_3 = nil
+                          L28_3 = nil
+                          L29_3 = A0_3.DEFAULT_YES
+                          L24_3 = L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                          L26_3 = A0_3
+                          L25_3 = A0_3.Wait
+                          L27_3 = 10
+                          L25_3(L26_3, L27_3)
+                          if L24_3 == true then
+                            break
+                          end
+                        end
+                        L25_3 = A0_3
+                        L24_3 = A0_3.FadeOut
+                        L26_3 = A0_3.FADE_SHORT
+                        L27_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                        L24_3(L25_3, L26_3, L27_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.WaitForFade
+                        L24_3(L25_3)
+                        L25_3 = A1_3
+                        L24_3 = A1_3.Position
+                        L26_3 = A0_3.LOC_LEVEL_PL_01
+                        L24_3(L25_3, L26_3)
+                        L25_3 = A1_3
+                        L24_3 = A1_3.LookAt
+                        L26_3 = 0
+                        L27_3 = 30
+                        L24_3(L25_3, L26_3, L27_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.PlayTargetRelationCamera
+                        L26_3 = L9_3
+                        L27_3 = 64.8481
+                        L28_3 = 6.6537
+                        L29_3 = -2.495
+                        L30_3 = -2.3856
+                        L31_3 = 16.0825
+                        L32_3 = 1.3039
+                        L33_3 = 15.3144
+                        L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.SideDolly
+                        L26_3 = -0.9
+                        L27_3 = -0.9
+                        L28_3 = 0
+                        L29_3 = 0
+                        L30_3 = 0
+                        L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.Orbit
+                        L26_3 = 20
+                        L27_3 = 0
+                        L28_3 = 360
+                        L29_3 = 0
+                        L30_3 = 90
+                        L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                        L25_3 = A1_3
+                        L24_3 = A1_3.Idle
+                        L26_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+                        L24_3(L25_3, L26_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.FadeIn
+                        L26_3 = A0_3.FADE_SHORT
+                        L27_3 = A0_3.FADE_LAYER_BACK
+                        L24_3(L25_3, L26_3, L27_3)
+                        L25_3 = A0_3
+                        L24_3 = A0_3.WaitForFade
+                        L24_3(L25_3)
                       else
-                        L20_23 = 3
-                        if L19_22 == L20_23 then
-                          L20_23 = A0_3.FadeOut
-                          L20_23(A0_3, A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                          L20_23 = A0_3.WaitForFade
-                          L20_23(A0_3)
-                          L20_23 = false
-                          L16_19:Visible(A0_3.VISIBLE_HIDE)
-                          L17_20:Visible(A0_3.VISIBLE_SHOW)
-                          A1_4:LookAt(10, 30)
-                          A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                          A0_3:Wait(90)
-                          A0_3:Orbit(15, -25, 210, 150, 120)
-                          A0_3:Wait(30)
-                          A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                          A0_3:WaitForFade()
+                        L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_000_006
+                        if L23_3 == L24_3 then
+                          L25_3 = A0_3
+                          L24_3 = A0_3.FadeOut
+                          L26_3 = A0_3.FADE_SHORT
+                          L27_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                          L24_3(L25_3, L26_3, L27_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.WaitForFade
+                          L24_3(L25_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.Position
+                          L26_3 = A0_3.LOC_LEVEL_DECK_SIDE_01
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.Direction
+                          L26_3 = -60
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.Wait
+                          L26_3 = 60
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.Idle
+                          L26_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.LookAt
+                          L26_3 = 10
+                          L27_3 = 30
+                          L24_3(L25_3, L26_3, L27_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.PlayTargetRelationCamera
+                          L26_3 = L9_3
+                          L27_3 = -24.6927
+                          L28_3 = 11.7872
+                          L29_3 = 7.0883
+                          L30_3 = -12.36
+                          L31_3 = 20.7364
+                          L32_3 = 7.019
+                          L33_3 = 9.5589
+                          L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.SideDolly
+                          L26_3 = -0.4
+                          L27_3 = -0.4
+                          L28_3 = 0
+                          L29_3 = 0
+                          L30_3 = 0
+                          L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.FadeIn
+                          L26_3 = A0_3.FADE_SHORT
+                          L27_3 = A0_3.FADE_LAYER_BACK
+                          L24_3(L25_3, L26_3, L27_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.WaitForFade
+                          L24_3(L25_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.Wait
+                          L26_3 = 90
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.LookAt
+                          L24_3(L25_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.TurnTo
+                          L26_3 = 60
+                          L27_3 = false
+                          L24_3(L25_3, L26_3, L27_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.WaitForTurn
+                          L24_3(L25_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.Idle
+                          L26_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE1
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.Wait
+                          L26_3 = 50
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.PlayActionTimeline
+                          L26_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+                          L24_3(L25_3, L26_3)
                           while true do
-                            while true do
-                              while true do
-                                while true do
-                                  A0_3:Wait(80)
-                                  A0_3:Wait(10)
-                                  if 0 < A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q4_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_004) then
-                                    if A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q4_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_004) == 1 then
-                                      A0_3:PlayTargetRelationCamera(L9_12, 95.9643, 292.5449, -5.3001, 98.5601, 278.8785, -3.2514, 18.9313)
-                                      A0_3:Orbit(4, -4, 360, 0, 90)
-                                      A0_3:Wait(30)
-                                      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_080, false)
-                                      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_081, false)
-                                      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_082, true)
-                                      A0_3:Wait(10)
-                                      A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                                      A0_3:Orbit(15, -25, 210, 150, 120)
-                                    end
-                                    if A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q4_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_004) == 2 then
-                                      A0_3:PlayTargetRelationCamera(L9_12, 103.5875, 328.6066, -6.5686, 102.7071, 276.8329, -8.3377, 52.0108)
-                                      A0_3:Orbit(5, -2, 360, 0, 90)
-                                      A0_3:Wait(30)
-                                      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_090, true)
-                                      A0_3:Wait(10)
-                                      A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                                      A0_3:Orbit(15, -25, 210, 150, 120)
-                                    end
-                                    if A0_3:Menu(A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q4_100_000, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_001, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_002, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_003, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_004) == 3 then
-                                      A0_3:PlayTargetRelationCamera(L9_12, 110.7707, 206.7465, -13.0046, 103.7455, 263.8863, -8.5182, 64.0645)
-                                      A0_3:Orbit(5, -2, 360, 0, 90)
-                                      A0_3:Wait(30)
-                                      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_100, true)
-                                      A0_3:Wait(10)
-                                      A0_3:PlayTargetRelationCamera(L9_12, 96.576, 313.5797, 15.143, 101.0727, 267.0383, -9.1997, 57.2203)
-                                      A0_3:Orbit(15, -25, 210, 150, 120)
-                                    end
-                                    A0_3:Wait(10)
-                                    A0_3:FadeOut(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK_NO_LOADING)
-                                    A0_3:WaitForFade()
-                                    L16_19:Visible(A0_3.VISIBLE_HIDE)
-                                    L17_20:Visible(A0_3.VISIBLE_HIDE)
-                                    A1_4:Position(A0_3.LOC_LEVEL_PL_01)
-                                    L10_13:Idle(A0_3.LOC_ACT_03)
-                                    A1_4:LookAt(0, 30)
-                                    A0_3:PlayTargetRelationCamera(L9_12, 64.8481, 6.6537, -2.495, -2.3856, 16.0825, 1.3039, 15.3144)
-                                    A0_3:Wait(150)
-                                    A0_3:SideDolly(-0.9, -0.9, 0, 0, 0)
-                                    A0_3:Orbit(20, 0, 360, 0, 90)
-                                    A1_4:Idle(A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE)
-                                    A0_3:FadeIn(A0_3.FADE_SHORT, A0_3.FADE_LAYER_BACK)
-                                    A0_3:WaitForFade()
-                                end
-                              end
+                            L25_3 = A0_3
+                            L24_3 = A0_3.Wait
+                            L26_3 = 80
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.YesNo
+                            L26_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_000_000
+                            L27_3 = nil
+                            L28_3 = nil
+                            L29_3 = A0_3.DEFAULT_YES
+                            L24_3 = L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                            L26_3 = A0_3
+                            L25_3 = A0_3.Wait
+                            L27_3 = 10
+                            L25_3(L26_3, L27_3)
+                            if L24_3 == true then
+                              break
                             end
+                          end
+                          L25_3 = A0_3
+                          L24_3 = A0_3.FadeOut
+                          L26_3 = A0_3.FADE_SHORT
+                          L27_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                          L24_3(L25_3, L26_3, L27_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.WaitForFade
+                          L24_3(L25_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.Position
+                          L26_3 = A0_3.LOC_LEVEL_PL_01
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.LookAt
+                          L26_3 = 0
+                          L27_3 = 30
+                          L24_3(L25_3, L26_3, L27_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.PlayTargetRelationCamera
+                          L26_3 = L9_3
+                          L27_3 = 64.8481
+                          L28_3 = 6.6537
+                          L29_3 = -2.495
+                          L30_3 = -2.3856
+                          L31_3 = 16.0825
+                          L32_3 = 1.3039
+                          L33_3 = 15.3144
+                          L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.SideDolly
+                          L26_3 = -0.9
+                          L27_3 = -0.9
+                          L28_3 = 0
+                          L29_3 = 0
+                          L30_3 = 0
+                          L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.Orbit
+                          L26_3 = 20
+                          L27_3 = 0
+                          L28_3 = 360
+                          L29_3 = 0
+                          L30_3 = 90
+                          L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                          L25_3 = A1_3
+                          L24_3 = A1_3.Idle
+                          L26_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+                          L24_3(L25_3, L26_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.FadeIn
+                          L26_3 = A0_3.FADE_SHORT
+                          L27_3 = A0_3.FADE_LAYER_BACK
+                          L24_3(L25_3, L26_3, L27_3)
+                          L25_3 = A0_3
+                          L24_3 = A0_3.WaitForFade
+                          L24_3(L25_3)
+                        else
+                          L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A2_100_006
+                          if L23_3 == L24_3 then
+                            L25_3 = A0_3
+                            L24_3 = A0_3.FadeOut
+                            L26_3 = A0_3.FADE_SHORT
+                            L27_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                            L24_3(L25_3, L26_3, L27_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.WaitForFade
+                            L24_3(L25_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.Position
+                            L26_3 = A0_3.LOC_LEVEL_GW_HAND_01
+                            L24_3(L25_3, L26_3)
+                            L25_3 = L10_3
+                            L24_3 = L10_3.Idle
+                            L26_3 = A0_3.LOC_ACT_02
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.Idle
+                            L26_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE3
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.Wait
+                            L26_3 = 60
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.LookAt
+                            L26_3 = 10
+                            L27_3 = 30
+                            L24_3(L25_3, L26_3, L27_3)
+                            if L7_3 == true then
+                              L25_3 = A0_3
+                              L24_3 = A0_3.PlayTargetRelationCamera
+                              L26_3 = L9_3
+                              L27_3 = 18.9629
+                              L28_3 = 20.5076
+                              L29_3 = -0.3065
+                              L30_3 = -2.9776
+                              L31_3 = 18.3473
+                              L32_3 = 2.9053
+                              L33_3 = 8.3358
+                              L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
                             else
-                              else
+                              L25_3 = A0_3
+                              L24_3 = A0_3.PlayTargetRelationCamera
+                              L26_3 = L9_3
+                              L27_3 = 18.6558
+                              L28_3 = 19.9503
+                              L29_3 = -0.3667
+                              L30_3 = -2.8624
+                              L31_3 = 17.949
+                              L32_3 = 2.9141
+                              L33_3 = 8.0427
+                              L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                            end
+                            L25_3 = A0_3
+                            L24_3 = A0_3.SideDolly
+                            L26_3 = -0.4
+                            L27_3 = -0.4
+                            L28_3 = 0
+                            L29_3 = 0
+                            L30_3 = 0
+                            L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.UpdownDolly
+                            L26_3 = 1.4
+                            L27_3 = 0
+                            L28_3 = 60
+                            L29_3 = 60
+                            L30_3 = 20
+                            L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.FadeIn
+                            L26_3 = A0_3.FADE_SHORT
+                            L27_3 = A0_3.FADE_LAYER_BACK
+                            L24_3(L25_3, L26_3, L27_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.WaitForFade
+                            L24_3(L25_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.WaitForDolly
+                            L24_3(L25_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.Wait
+                            L26_3 = 40
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.LookAt
+                            L24_3(L25_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.TurnTo
+                            L26_3 = -165
+                            L27_3 = false
+                            L24_3(L25_3, L26_3, L27_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.WaitForTurn
+                            L24_3(L25_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.Idle
+                            L26_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE3
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.Wait
+                            L26_3 = 40
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.PlayActionTimeline
+                            L26_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+                            L24_3(L25_3, L26_3)
+                            while true do
+                              L25_3 = A0_3
+                              L24_3 = A0_3.Wait
+                              L26_3 = 80
+                              L24_3(L25_3, L26_3)
+                              L25_3 = A0_3
+                              L24_3 = A0_3.YesNo
+                              L26_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_000_000
+                              L27_3 = nil
+                              L28_3 = nil
+                              L29_3 = A0_3.DEFAULT_YES
+                              L24_3 = L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+                              L26_3 = A0_3
+                              L25_3 = A0_3.Wait
+                              L27_3 = 10
+                              L25_3(L26_3, L27_3)
+                              if L24_3 == true then
                                 break
                               end
                             end
+                            L25_3 = A0_3
+                            L24_3 = A0_3.FadeOut
+                            L26_3 = A0_3.FADE_SHORT
+                            L27_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                            L24_3(L25_3, L26_3, L27_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.WaitForFade
+                            L24_3(L25_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.Position
+                            L26_3 = A0_3.LOC_LEVEL_PL_01
+                            L24_3(L25_3, L26_3)
+                            L25_3 = L10_3
+                            L24_3 = L10_3.Idle
+                            L26_3 = A0_3.LOC_ACT_03
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.Wait
+                            L26_3 = 30
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.LookAt
+                            L26_3 = 0
+                            L27_3 = 30
+                            L24_3(L25_3, L26_3, L27_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.PlayTargetRelationCamera
+                            L26_3 = L9_3
+                            L27_3 = 64.8481
+                            L28_3 = 6.6537
+                            L29_3 = -2.495
+                            L30_3 = -2.3856
+                            L31_3 = 16.0825
+                            L32_3 = 1.3039
+                            L33_3 = 15.3144
+                            L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3, L33_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.SideDolly
+                            L26_3 = -0.9
+                            L27_3 = -0.9
+                            L28_3 = 0
+                            L29_3 = 0
+                            L30_3 = 0
+                            L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.Orbit
+                            L26_3 = 20
+                            L27_3 = 0
+                            L28_3 = 360
+                            L29_3 = 0
+                            L30_3 = 90
+                            L24_3(L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+                            L25_3 = A1_3
+                            L24_3 = A1_3.Idle
+                            L26_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+                            L24_3(L25_3, L26_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.FadeIn
+                            L26_3 = A0_3.FADE_SHORT
+                            L27_3 = A0_3.FADE_LAYER_BACK
+                            L24_3(L25_3, L26_3, L27_3)
+                            L25_3 = A0_3
+                            L24_3 = A0_3.WaitForFade
+                            L24_3(L25_3)
+                          else
+                            L25_3 = A0_3
+                            L24_3 = A0_3.Wait
+                            L26_3 = 10
+                            L24_3(L25_3, L26_3)
+                            break
                           end
+                        end
                       end
                     end
                   end
+                end
+              end
+            end
+            if L21_3 == true then
+              L24_3 = A0_3
+              L23_3 = A0_3.PlayTargetRelationCamera
+              L25_3 = L9_3
+              L26_3 = 64.8481
+              L27_3 = 6.6537
+              L28_3 = -2.495
+              L29_3 = -2.3856
+              L30_3 = 16.0825
+              L31_3 = 1.3039
+              L32_3 = 15.3144
+              L23_3(L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3, L32_3)
+              L24_3 = A0_3
+              L23_3 = A0_3.SideDolly
+              L25_3 = -0.9
+              L26_3 = -0.9
+              L27_3 = 0
+              L28_3 = 0
+              L29_3 = 0
+              L23_3(L24_3, L25_3, L26_3, L27_3, L28_3, L29_3)
+              L24_3 = A0_3
+              L23_3 = A0_3.Orbit
+              L25_3 = 20
+              L26_3 = 10
+              L27_3 = 360
+              L28_3 = 0
+              L29_3 = 90
+              L23_3(L24_3, L25_3, L26_3, L27_3, L28_3, L29_3)
+              L24_3 = A0_3
+              L23_3 = A0_3.Wait
+              L25_3 = 10
+              L23_3(L24_3, L25_3)
+              L24_3 = A1_3
+              L23_3 = A1_3.Idle
+              L25_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+              L23_3(L24_3, L25_3)
+              L21_3 = false
+            end
+          end
+        elseif L19_3 == 2 then
+          L21_3 = A0_3
+          L20_3 = A0_3.FadeOut
+          L22_3 = A0_3.FADE_SHORT
+          L23_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+          L20_3(L21_3, L22_3, L23_3)
+          L21_3 = A0_3
+          L20_3 = A0_3.WaitForFade
+          L20_3(L21_3)
+          L20_3 = false
+          L22_3 = L16_3
+          L21_3 = L16_3.Visible
+          L23_3 = A0_3.VISIBLE_SHOW
+          L21_3(L22_3, L23_3)
+          L22_3 = L17_3
+          L21_3 = L17_3.Visible
+          L23_3 = A0_3.VISIBLE_HIDE
+          L21_3(L22_3, L23_3)
+          L22_3 = A1_3
+          L21_3 = A1_3.LookAt
+          L23_3 = 10
+          L24_3 = 30
+          L21_3(L22_3, L23_3, L24_3)
+          L22_3 = A0_3
+          L21_3 = A0_3.PlayTargetRelationCamera
+          L23_3 = L9_3
+          L24_3 = 96.576
+          L25_3 = 313.5797
+          L26_3 = 15.143
+          L27_3 = 101.0727
+          L28_3 = 267.0383
+          L29_3 = -9.1997
+          L30_3 = 57.2203
+          L21_3(L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+          L22_3 = A0_3
+          L21_3 = A0_3.Wait
+          L23_3 = 90
+          L21_3(L22_3, L23_3)
+          L22_3 = A0_3
+          L21_3 = A0_3.Orbit
+          L23_3 = 15
+          L24_3 = -25
+          L25_3 = 210
+          L26_3 = 150
+          L27_3 = 120
+          L21_3(L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+          L22_3 = A0_3
+          L21_3 = A0_3.Wait
+          L23_3 = 30
+          L21_3(L22_3, L23_3)
+          L22_3 = A0_3
+          L21_3 = A0_3.FadeIn
+          L23_3 = A0_3.FADE_SHORT
+          L24_3 = A0_3.FADE_LAYER_BACK
+          L21_3(L22_3, L23_3, L24_3)
+          L22_3 = A0_3
+          L21_3 = A0_3.WaitForFade
+          L21_3(L22_3)
+          while true do
+            L22_3 = A0_3
+            L21_3 = A0_3.Wait
+            L23_3 = 20
+            L21_3(L22_3, L23_3)
+            if L20_3 == false then
+              L22_3 = A0_3
+              L21_3 = A0_3.Menu
+              L23_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_Q3_100_000
+              L24_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_001
+              L25_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_002
+              L26_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_003
+              L27_3 = A0_3.TEXT_REGOTH4WERLYTGARAGE_00686_A3_000_004
+              L21_3 = L21_3(L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+              L23_3 = A0_3
+              L22_3 = A0_3.Wait
+              L24_3 = 10
+              L22_3(L23_3, L24_3)
+              if 0 < L21_3 then
+                if L21_3 == 1 then
+                  L23_3 = A0_3
+                  L22_3 = A0_3.PlayTargetRelationCamera
+                  L24_3 = L9_3
+                  L25_3 = 97.3605
+                  L26_3 = 320.684
+                  L27_3 = -18.1927
+                  L28_3 = 101.1733
+                  L29_3 = 270.4574
+                  L30_3 = -6.4138
+                  L31_3 = 55.1849
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Orbit
+                  L24_3 = 4
+                  L25_3 = 0
+                  L26_3 = 360
+                  L27_3 = 0
+                  L28_3 = 90
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Wait
+                  L24_3 = 30
+                  L22_3(L23_3, L24_3)
+                  L23_3 = A2_3
+                  L22_3 = A2_3.Talk
+                  L24_3 = A1_3
+                  L25_3 = A0_3
+                  L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_050"
+                  L26_3 = A0_3[L26_3]
+                  L27_3 = false
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                  L23_3 = A2_3
+                  L22_3 = A2_3.Talk
+                  L24_3 = A1_3
+                  L25_3 = A0_3
+                  L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_051"
+                  L26_3 = A0_3[L26_3]
+                  L27_3 = false
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                  L23_3 = A2_3
+                  L22_3 = A2_3.Talk
+                  L24_3 = A1_3
+                  L25_3 = A0_3
+                  L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_052"
+                  L26_3 = A0_3[L26_3]
+                  L27_3 = true
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Wait
+                  L24_3 = 10
+                  L22_3(L23_3, L24_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.PlayTargetRelationCamera
+                  L24_3 = L9_3
+                  L25_3 = 96.576
+                  L26_3 = 313.5797
+                  L27_3 = 15.143
+                  L28_3 = 101.0727
+                  L29_3 = 267.0383
+                  L30_3 = -9.1997
+                  L31_3 = 57.2203
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Orbit
+                  L24_3 = 15
+                  L25_3 = -25
+                  L26_3 = 210
+                  L27_3 = 150
+                  L28_3 = 120
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                else
+                  L22_3 = 2
+                  if L21_3 == L22_3 then
+                    L23_3 = A0_3
+                    L22_3 = A0_3.PlayTargetRelationCamera
+                    L24_3 = L9_3
+                    L25_3 = 93.3707
+                    L26_3 = 272.757
+                    L27_3 = -6.0688
+                    L28_3 = 98.3666
+                    L29_3 = 277.1463
+                    L30_3 = -3.9154
+                    L31_3 = 24.4592
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Zoom
+                    L24_3 = -10.2
+                    L25_3 = 4.5
+                    L26_3 = 460
+                    L27_3 = 0
+                    L28_3 = 90
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.SideDolly
+                    L24_3 = -6.9
+                    L25_3 = -4.9
+                    L26_3 = 460
+                    L27_3 = 0
+                    L28_3 = 90
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.UpdownDolly
+                    L24_3 = 0
+                    L25_3 = 1
+                    L26_3 = 460
+                    L27_3 = 0
+                    L28_3 = 90
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Orbit
+                    L24_3 = 8
+                    L25_3 = 0
+                    L26_3 = 460
+                    L27_3 = 0
+                    L28_3 = 90
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Wait
+                    L24_3 = 30
+                    L22_3(L23_3, L24_3)
+                    L23_3 = A2_3
+                    L22_3 = A2_3.Talk
+                    L24_3 = A1_3
+                    L25_3 = A0_3
+                    L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_060"
+                    L26_3 = A0_3[L26_3]
+                    L27_3 = false
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                    L23_3 = A2_3
+                    L22_3 = A2_3.Talk
+                    L24_3 = A1_3
+                    L25_3 = A0_3
+                    L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_061"
+                    L26_3 = A0_3[L26_3]
+                    L27_3 = false
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                    L23_3 = A2_3
+                    L22_3 = A2_3.Talk
+                    L24_3 = A1_3
+                    L25_3 = A0_3
+                    L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_062"
+                    L26_3 = A0_3[L26_3]
+                    L27_3 = false
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                    L23_3 = A2_3
+                    L22_3 = A2_3.Talk
+                    L24_3 = A1_3
+                    L25_3 = A0_3
+                    L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_063"
+                    L26_3 = A0_3[L26_3]
+                    L27_3 = true
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Wait
+                    L24_3 = 10
+                    L22_3(L23_3, L24_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.PlayTargetRelationCamera
+                    L24_3 = L9_3
+                    L25_3 = 96.576
+                    L26_3 = 313.5797
+                    L27_3 = 15.143
+                    L28_3 = 101.0727
+                    L29_3 = 267.0383
+                    L30_3 = -9.1997
+                    L31_3 = 57.2203
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Orbit
+                    L24_3 = 15
+                    L25_3 = -25
+                    L26_3 = 210
+                    L27_3 = 150
+                    L28_3 = 120
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                  else
+                    L22_3 = 3
+                    if L21_3 == L22_3 then
+                      L23_3 = A0_3
+                      L22_3 = A0_3.PlayTargetRelationCamera
+                      L24_3 = L9_3
+                      L25_3 = 116.7246
+                      L26_3 = 289.4232
+                      L27_3 = -8.0826
+                      L28_3 = 106.2572
+                      L29_3 = 266.0954
+                      L30_3 = -11.0911
+                      L31_3 = 55.826
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Orbit
+                      L24_3 = 4
+                      L25_3 = 0
+                      L26_3 = 360
+                      L27_3 = 0
+                      L28_3 = 90
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 30
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A2_3
+                      L22_3 = A2_3.Talk
+                      L24_3 = A1_3
+                      L25_3 = A0_3
+                      L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_070"
+                      L26_3 = A0_3[L26_3]
+                      L27_3 = false
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                      L23_3 = A2_3
+                      L22_3 = A2_3.Talk
+                      L24_3 = A1_3
+                      L25_3 = A0_3
+                      L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_071"
+                      L26_3 = A0_3[L26_3]
+                      L27_3 = false
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                      L23_3 = A2_3
+                      L22_3 = A2_3.Talk
+                      L24_3 = A1_3
+                      L25_3 = A0_3
+                      L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_072"
+                      L26_3 = A0_3[L26_3]
+                      L27_3 = true
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 10
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.PlayTargetRelationCamera
+                      L24_3 = L9_3
+                      L25_3 = 96.576
+                      L26_3 = 313.5797
+                      L27_3 = 15.143
+                      L28_3 = 101.0727
+                      L29_3 = 267.0383
+                      L30_3 = -9.1997
+                      L31_3 = 57.2203
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Orbit
+                      L24_3 = 15
+                      L25_3 = -25
+                      L26_3 = 210
+                      L27_3 = 150
+                      L28_3 = 120
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                    else
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 10
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.FadeOut
+                      L24_3 = A0_3.FADE_SHORT
+                      L25_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                      L22_3(L23_3, L24_3, L25_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.WaitForFade
+                      L22_3(L23_3)
+                      L23_3 = L16_3
+                      L22_3 = L16_3.Visible
+                      L24_3 = A0_3.VISIBLE_HIDE
+                      L22_3(L23_3, L24_3)
+                      L23_3 = L17_3
+                      L22_3 = L17_3.Visible
+                      L24_3 = A0_3.VISIBLE_HIDE
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A1_3
+                      L22_3 = A1_3.Position
+                      L24_3 = A0_3.LOC_LEVEL_PL_01
+                      L22_3(L23_3, L24_3)
+                      L23_3 = L10_3
+                      L22_3 = L10_3.Idle
+                      L24_3 = A0_3.LOC_ACT_03
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A1_3
+                      L22_3 = A1_3.LookAt
+                      L24_3 = 0
+                      L25_3 = 30
+                      L22_3(L23_3, L24_3, L25_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.PlayTargetRelationCamera
+                      L24_3 = L9_3
+                      L25_3 = 64.8481
+                      L26_3 = 6.6537
+                      L27_3 = -2.495
+                      L28_3 = -2.3856
+                      L29_3 = 16.0825
+                      L30_3 = 1.3039
+                      L31_3 = 15.3144
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 150
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.SideDolly
+                      L24_3 = -0.9
+                      L25_3 = -0.9
+                      L26_3 = 0
+                      L27_3 = 0
+                      L28_3 = 0
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Orbit
+                      L24_3 = 20
+                      L25_3 = 0
+                      L26_3 = 360
+                      L27_3 = 0
+                      L28_3 = 90
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                      L23_3 = A1_3
+                      L22_3 = A1_3.Idle
+                      L24_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.FadeIn
+                      L24_3 = A0_3.FADE_SHORT
+                      L25_3 = A0_3.FADE_LAYER_BACK
+                      L22_3(L23_3, L24_3, L25_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.WaitForFade
+                      L22_3(L23_3)
+                      break
+                    end
+                  end
+                end
               end
             end
           end
+        else
+          L20_3 = 3
+          if L19_3 == L20_3 then
+            L21_3 = A0_3
+            L20_3 = A0_3.FadeOut
+            L22_3 = A0_3.FADE_SHORT
+            L23_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+            L20_3(L21_3, L22_3, L23_3)
+            L21_3 = A0_3
+            L20_3 = A0_3.WaitForFade
+            L20_3(L21_3)
+            L20_3 = false
+            L22_3 = L16_3
+            L21_3 = L16_3.Visible
+            L23_3 = A0_3.VISIBLE_HIDE
+            L21_3(L22_3, L23_3)
+            L22_3 = L17_3
+            L21_3 = L17_3.Visible
+            L23_3 = A0_3.VISIBLE_SHOW
+            L21_3(L22_3, L23_3)
+            L22_3 = A1_3
+            L21_3 = A1_3.LookAt
+            L23_3 = 10
+            L24_3 = 30
+            L21_3(L22_3, L23_3, L24_3)
+            L22_3 = A0_3
+            L21_3 = A0_3.PlayTargetRelationCamera
+            L23_3 = L9_3
+            L24_3 = 96.576
+            L25_3 = 313.5797
+            L26_3 = 15.143
+            L27_3 = 101.0727
+            L28_3 = 267.0383
+            L29_3 = -9.1997
+            L30_3 = 57.2203
+            L21_3(L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+            L22_3 = A0_3
+            L21_3 = A0_3.Wait
+            L23_3 = 90
+            L21_3(L22_3, L23_3)
+            L22_3 = A0_3
+            L21_3 = A0_3.Orbit
+            L23_3 = 15
+            L24_3 = -25
+            L25_3 = 210
+            L26_3 = 150
+            L27_3 = 120
+            L21_3(L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+            L22_3 = A0_3
+            L21_3 = A0_3.Wait
+            L23_3 = 30
+            L21_3(L22_3, L23_3)
+            L22_3 = A0_3
+            L21_3 = A0_3.FadeIn
+            L23_3 = A0_3.FADE_SHORT
+            L24_3 = A0_3.FADE_LAYER_BACK
+            L21_3(L22_3, L23_3, L24_3)
+            L22_3 = A0_3
+            L21_3 = A0_3.WaitForFade
+            L21_3(L22_3)
+            while true do
+              L22_3 = A0_3
+              L21_3 = A0_3.Wait
+              L23_3 = 80
+              L21_3(L22_3, L23_3)
+              L22_3 = A0_3
+              L21_3 = A0_3.Menu
+              L23_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_Q4_100_000"
+              L23_3 = A0_3[L23_3]
+              L24_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_001"
+              L24_3 = A0_3[L24_3]
+              L25_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_002"
+              L25_3 = A0_3[L25_3]
+              L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_003"
+              L26_3 = A0_3[L26_3]
+              L27_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_A4_000_004"
+              L27_3 = A0_3[L27_3]
+              L21_3 = L21_3(L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+              L23_3 = A0_3
+              L22_3 = A0_3.Wait
+              L24_3 = 10
+              L22_3(L23_3, L24_3)
+              L22_3 = 0
+              if L21_3 > L22_3 then
+                L22_3 = 1
+                if L21_3 == L22_3 then
+                  L23_3 = A0_3
+                  L22_3 = A0_3.PlayTargetRelationCamera
+                  L24_3 = L9_3
+                  L25_3 = 95.9643
+                  L26_3 = 292.5449
+                  L27_3 = -5.3001
+                  L28_3 = 98.5601
+                  L29_3 = 278.8785
+                  L30_3 = -3.2514
+                  L31_3 = 18.9313
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Orbit
+                  L24_3 = 4
+                  L25_3 = -4
+                  L26_3 = 360
+                  L27_3 = 0
+                  L28_3 = 90
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Wait
+                  L24_3 = 30
+                  L22_3(L23_3, L24_3)
+                  L23_3 = A2_3
+                  L22_3 = A2_3.Talk
+                  L24_3 = A1_3
+                  L25_3 = A0_3
+                  L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_080"
+                  L26_3 = A0_3[L26_3]
+                  L27_3 = false
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                  L23_3 = A2_3
+                  L22_3 = A2_3.Talk
+                  L24_3 = A1_3
+                  L25_3 = A0_3
+                  L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_081"
+                  L26_3 = A0_3[L26_3]
+                  L27_3 = false
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                  L23_3 = A2_3
+                  L22_3 = A2_3.Talk
+                  L24_3 = A1_3
+                  L25_3 = A0_3
+                  L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_082"
+                  L26_3 = A0_3[L26_3]
+                  L27_3 = true
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Wait
+                  L24_3 = 10
+                  L22_3(L23_3, L24_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.PlayTargetRelationCamera
+                  L24_3 = L9_3
+                  L25_3 = 96.576
+                  L26_3 = 313.5797
+                  L27_3 = 15.143
+                  L28_3 = 101.0727
+                  L29_3 = 267.0383
+                  L30_3 = -9.1997
+                  L31_3 = 57.2203
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                  L23_3 = A0_3
+                  L22_3 = A0_3.Orbit
+                  L24_3 = 15
+                  L25_3 = -25
+                  L26_3 = 210
+                  L27_3 = 150
+                  L28_3 = 120
+                  L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                else
+                  L22_3 = 2
+                  if L21_3 == L22_3 then
+                    L23_3 = A0_3
+                    L22_3 = A0_3.PlayTargetRelationCamera
+                    L24_3 = L9_3
+                    L25_3 = 103.5875
+                    L26_3 = 328.6066
+                    L27_3 = -6.5686
+                    L28_3 = 102.7071
+                    L29_3 = 276.8329
+                    L30_3 = -8.3377
+                    L31_3 = 52.0108
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Orbit
+                    L24_3 = 5
+                    L25_3 = -2
+                    L26_3 = 360
+                    L27_3 = 0
+                    L28_3 = 90
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Wait
+                    L24_3 = 30
+                    L22_3(L23_3, L24_3)
+                    L23_3 = A2_3
+                    L22_3 = A2_3.Talk
+                    L24_3 = A1_3
+                    L25_3 = A0_3
+                    L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_090"
+                    L26_3 = A0_3[L26_3]
+                    L27_3 = true
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Wait
+                    L24_3 = 10
+                    L22_3(L23_3, L24_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.PlayTargetRelationCamera
+                    L24_3 = L9_3
+                    L25_3 = 96.576
+                    L26_3 = 313.5797
+                    L27_3 = 15.143
+                    L28_3 = 101.0727
+                    L29_3 = 267.0383
+                    L30_3 = -9.1997
+                    L31_3 = 57.2203
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                    L23_3 = A0_3
+                    L22_3 = A0_3.Orbit
+                    L24_3 = 15
+                    L25_3 = -25
+                    L26_3 = 210
+                    L27_3 = 150
+                    L28_3 = 120
+                    L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                  else
+                    L22_3 = 3
+                    if L21_3 == L22_3 then
+                      L23_3 = A0_3
+                      L22_3 = A0_3.PlayTargetRelationCamera
+                      L24_3 = L9_3
+                      L25_3 = 110.7707
+                      L26_3 = 206.7465
+                      L27_3 = -13.0046
+                      L28_3 = 103.7455
+                      L29_3 = 263.8863
+                      L30_3 = -8.5182
+                      L31_3 = 64.0645
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Orbit
+                      L24_3 = 5
+                      L25_3 = -2
+                      L26_3 = 360
+                      L27_3 = 0
+                      L28_3 = 90
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 30
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A2_3
+                      L22_3 = A2_3.Talk
+                      L24_3 = A1_3
+                      L25_3 = A0_3
+                      L26_3 = "TEXT_REGOTH4WERLYTGARAGE_00686_GARLONDMECHANIC00686_000_100"
+                      L26_3 = A0_3[L26_3]
+                      L27_3 = true
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 10
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.PlayTargetRelationCamera
+                      L24_3 = L9_3
+                      L25_3 = 96.576
+                      L26_3 = 313.5797
+                      L27_3 = 15.143
+                      L28_3 = 101.0727
+                      L29_3 = 267.0383
+                      L30_3 = -9.1997
+                      L31_3 = 57.2203
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Orbit
+                      L24_3 = 15
+                      L25_3 = -25
+                      L26_3 = 210
+                      L27_3 = 150
+                      L28_3 = 120
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                    else
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 10
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.FadeOut
+                      L24_3 = A0_3.FADE_SHORT
+                      L25_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+                      L22_3(L23_3, L24_3, L25_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.WaitForFade
+                      L22_3(L23_3)
+                      L23_3 = L16_3
+                      L22_3 = L16_3.Visible
+                      L24_3 = A0_3.VISIBLE_HIDE
+                      L22_3(L23_3, L24_3)
+                      L23_3 = L17_3
+                      L22_3 = L17_3.Visible
+                      L24_3 = A0_3.VISIBLE_HIDE
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A1_3
+                      L22_3 = A1_3.Position
+                      L24_3 = A0_3.LOC_LEVEL_PL_01
+                      L22_3(L23_3, L24_3)
+                      L23_3 = L10_3
+                      L22_3 = L10_3.Idle
+                      L24_3 = A0_3.LOC_ACT_03
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A1_3
+                      L22_3 = A1_3.LookAt
+                      L24_3 = 0
+                      L25_3 = 30
+                      L22_3(L23_3, L24_3, L25_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.PlayTargetRelationCamera
+                      L24_3 = L9_3
+                      L25_3 = 64.8481
+                      L26_3 = 6.6537
+                      L27_3 = -2.495
+                      L28_3 = -2.3856
+                      L29_3 = 16.0825
+                      L30_3 = 1.3039
+                      L31_3 = 15.3144
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Wait
+                      L24_3 = 150
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.SideDolly
+                      L24_3 = -0.9
+                      L25_3 = -0.9
+                      L26_3 = 0
+                      L27_3 = 0
+                      L28_3 = 0
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.Orbit
+                      L24_3 = 20
+                      L25_3 = 0
+                      L26_3 = 360
+                      L27_3 = 0
+                      L28_3 = 90
+                      L22_3(L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+                      L23_3 = A1_3
+                      L22_3 = A1_3.Idle
+                      L24_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+                      L22_3(L23_3, L24_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.FadeIn
+                      L24_3 = A0_3.FADE_SHORT
+                      L25_3 = A0_3.FADE_LAYER_BACK
+                      L22_3(L23_3, L24_3, L25_3)
+                      L23_3 = A0_3
+                      L22_3 = A0_3.WaitForFade
+                      L22_3(L23_3)
+                      break
+                    end
+                  end
+                end
+              end
+            end
+          else
+            break
+          end
+        end
       end
-      L20_23 = false
-      if L18_21 == L20_23 then
+      L20_3 = false
+      if L18_3 == L20_3 then
         break
       end
     end
-    L20_23 = A0_3
-    L19_22 = A0_3.FadeOut
-    L19_22(L20_23, A0_3.FADE_DEFAULT)
-    L20_23 = A0_3
-    L19_22 = A0_3.WaitForFade
-    L19_22(L20_23)
-    L20_23 = A1_4
-    L19_22 = A1_4.Position
-    L19_22(L20_23, A0_3.LOC_LEVEL_GW_EMP_02, A0_3.POSITION_WAIT_COLLISION_ON)
-    L20_23 = A0_3
-    L19_22 = A0_3.Wait
-    L19_22(L20_23, 30)
+    L20_3 = A0_3
+    L19_3 = A0_3.FadeOut
+    L21_3 = A0_3.FADE_DEFAULT
+    L19_3(L20_3, L21_3)
+    L20_3 = A0_3
+    L19_3 = A0_3.WaitForFade
+    L19_3(L20_3)
+    L20_3 = A1_3
+    L19_3 = A1_3.Position
+    L21_3 = "LOC_LEVEL_GW_EMP_02"
+    L21_3 = A0_3[L21_3]
+    L22_3 = A0_3.POSITION_WAIT_COLLISION_ON
+    L19_3(L20_3, L21_3, L22_3)
+    L20_3 = A0_3
+    L19_3 = A0_3.Wait
+    L21_3 = 30
+    L19_3(L20_3, L21_3)
   end
-end)()
-;(function()
-  local L1_24
-  L1_24 = RegOth4WerlytGarage
-  L1_24.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegOth4WerlytGarage
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

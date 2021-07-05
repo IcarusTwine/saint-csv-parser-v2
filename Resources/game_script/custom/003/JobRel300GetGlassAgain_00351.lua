@@ -1,46 +1,169 @@
-(function()
-  print("JobRel300GetGlassAgain")
-  function JobRel300GetGlassAgain.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_000, true)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_001, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "JobRel300GetGlassAgain"
+  L0_2(L1_2)
+  L0_2 = JobRel300GetGlassAgain
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function JobRel300GetGlassAgain.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_010, true)
-    A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
-    A1_4:WaitForActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_011, true)
-    if A0_3:YesNo(A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_Q1_000_000) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GIVE)
-      A2_5:WaitForActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GIVE)
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_020, true)
-      A0_3:LogMessage(A0_3.LOG_MSG_EVENT, A0_3.ANIMA_GRASS)
-      return 1
+  L0_2.OnScene00000 = L1_2
+  L0_2 = JobRel300GetGlassAgain
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.WaitForActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_011
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNo
+    L5_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_Q1_000_000
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.WaitForActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_020
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.LogMessage
+      L6_3 = A0_3.LOG_MSG_EVENT
+      L7_3 = A0_3.ANIMA_GRASS
+      L4_3(L5_3, L6_3, L7_3)
+      L4_3 = 1
+      return L4_3
     end
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_030, false)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_031, true)
-    return 0
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_030
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_JOBREL300GETGLASSAGAIN_00351_ARNOTT_000_031
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = 0
+    return L4_3
   end
-end)()
-;(function()
-  local L0_6
-  L0_6 = JobRel300GetGlassAgain
-  L0_6.SCRIPT_VERSION = 1
-  L0_6 = JobRel300GetGlassAgain
-  function L0_6.IsAcceptEvent(A0_7, A1_8, A2_9, A3_10, A4_11, A5_12)
-    if A1_8:IsQuestAccepted(A0_7.CONDITION_QUEST) and A1_8:GetQuestSequence(A0_7.CONDITION_QUEST) >= 2 then
-      return true
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = JobRel300GetGlassAgain
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = JobRel300GetGlassAgain
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestAccepted
+    L8_3 = A0_3.CONDITION_QUEST
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 then
+      L7_3 = A1_3
+      L6_3 = A1_3.GetQuestSequence
+      L8_3 = A0_3.CONDITION_QUEST
+      L6_3 = L6_3(L7_3, L8_3)
+      if 2 <= L6_3 then
+        L7_3 = true
+        return L7_3
+      end
     end
-    return false
+    L6_3 = false
+    return L6_3
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

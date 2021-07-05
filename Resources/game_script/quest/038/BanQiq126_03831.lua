@@ -1,366 +1,769 @@
-(function()
-  print("BanQiq126 loaded")
-  function BanQiq126.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "BanQiq126 loaded"
+  L0_2(L1_2)
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestOffer
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L3_3 = 1
+      return L3_3
     else
-      return 0
+      L3_3 = 0
+      return L3_3
     end
   end
-  function BanQiq126.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_000, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-    if A1_4:GetClassJob() == A0_3.CLASS_JOB_MINER then
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_001, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-    elseif A1_4:GetClassJob() == A0_3.CLASS_JOB_HARVESTER then
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_002, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-    elseif A1_4:GetClassJob() == A0_3.CLASS_JOB_FISHERMAN then
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_003, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetClassJob
+    L3_3 = L3_3(L4_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_000
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L4_3 = A0_3.CLASS_JOB_MINER
+    if L3_3 == L4_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_001
+      L9_3 = true
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
     else
-      A0_3:CancelEventScene()
-    end
-    A0_3:QuestAccepted(A0_3.SCREEN_IMAGE_BEAST_QUEST_ACCEPTED)
-  end
-  function BanQiq126.OnScene00002(A0_6, A1_7, A2_8)
-    local L3_9, L4_10, L5_11, L6_12, L7_13, L8_14, L9_15, L10_16, L11_17, L12_18, L13_19, L14_20, L15_21, L16_22
-    L4_10 = A0_6
-    L3_9 = A0_6.GetQuestId
-    L3_9 = L3_9(L4_10)
-    L5_11 = A1_7
-    L4_10 = A1_7.GetQuestSequence
-    L6_12 = L3_9
-    L4_10 = L4_10(L5_11, L6_12)
-    L5_11 = 1
-    L7_13 = A0_6
-    L6_12 = A0_6.GetQuestAcceptClassJob
-    L6_12 = L6_12(L7_13)
-    L7_13 = 1
-    L8_14 = 1
-    L9_15 = 1
-    L11_17 = A2_8
-    L10_16 = A2_8.TurnTo
-    L12_18 = A1_7
-    L10_16(L11_17, L12_18, L13_19)
-    L11_17 = A2_8
-    L10_16 = A2_8.WaitForTurn
-    L10_16(L11_17)
-    L11_17 = A2_8
-    L10_16 = A2_8.PlayActionTimeline
-    L12_18 = A0_6.ACTION_TIMELINE_EVENT_TALK_DEMIHUMAN
-    L10_16(L11_17, L12_18)
-    L10_16 = A0_6.CLASS_JOB_MINER
-    if L6_12 == L10_16 then
-      L11_17 = A1_7
-      L10_16 = A1_7.GetNumOfItems
-      L12_18 = A0_6.QST_GATHERING_ITEM_MIN
-      L10_16 = L10_16(L11_17, L12_18, L13_19, L14_20, L15_21)
-      if L7_13 > L10_16 then
-        L11_17 = A2_8
-        L10_16 = A2_8.Talk
-        L12_18 = A1_7
-        L16_22 = nil
-        L10_16(L11_17, L12_18, L13_19, L14_20, L15_21, L16_22, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+      L4_3 = A0_3.CLASS_JOB_HARVESTER
+      if L3_3 == L4_3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_002
+        L9_3 = true
+        L10_3 = nil
+        L11_3 = nil
+        L12_3 = nil
+        L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
       else
-        L11_17 = A2_8
-        L10_16 = A2_8.Talk
-        L12_18 = A1_7
-        L16_22 = nil
-        L10_16(L11_17, L12_18, L13_19, L14_20, L15_21, L16_22, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+        L4_3 = A0_3.CLASS_JOB_FISHERMAN
+        if L3_3 == L4_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_003
+          L9_3 = true
+          L10_3 = nil
+          L11_3 = nil
+          L12_3 = nil
+          L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+        else
+          L5_3 = A0_3
+          L4_3 = A0_3.CancelEventScene
+          L4_3(L5_3)
+        end
+      end
+    end
+    L5_3 = A0_3
+    L4_3 = A0_3.QuestAccepted
+    L6_3 = A0_3.SCREEN_IMAGE_BEAST_QUEST_ACCEPTED
+    L4_3(L5_3, L6_3)
+  end
+  L0_2.OnScene00001 = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = 1
+    L7_3 = A0_3
+    L6_3 = A0_3.GetQuestAcceptClassJob
+    L6_3 = L6_3(L7_3)
+    L7_3 = 1
+    L8_3 = 1
+    L9_3 = 1
+    L11_3 = A2_3
+    L10_3 = A2_3.TurnTo
+    L12_3 = A1_3
+    L13_3 = false
+    L10_3(L11_3, L12_3, L13_3)
+    L11_3 = A2_3
+    L10_3 = A2_3.WaitForTurn
+    L10_3(L11_3)
+    L11_3 = A2_3
+    L10_3 = A2_3.PlayActionTimeline
+    L12_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_DEMIHUMAN
+    L10_3(L11_3, L12_3)
+    L10_3 = A0_3.CLASS_JOB_MINER
+    if L6_3 == L10_3 then
+      L11_3 = A1_3
+      L10_3 = A1_3.GetNumOfItems
+      L12_3 = A0_3.QST_GATHERING_ITEM_MIN
+      L13_3 = A0_3.NUM_OF_ITEMS_FILTER_HQ
+      L14_3 = false
+      L15_3 = true
+      L10_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
+      if L7_3 > L10_3 then
+        L11_3 = A2_3
+        L10_3 = A2_3.Talk
+        L12_3 = A1_3
+        L13_3 = A0_3
+        L14_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_004
+        L15_3 = true
+        L16_3 = nil
+        L17_3 = nil
+        L18_3 = nil
+        L19_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
+      else
+        L11_3 = A2_3
+        L10_3 = A2_3.Talk
+        L12_3 = A1_3
+        L13_3 = A0_3
+        L14_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_010
+        L15_3 = true
+        L16_3 = nil
+        L17_3 = nil
+        L18_3 = nil
+        L19_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
       end
     else
-      L10_16 = A0_6.CLASS_JOB_HARVESTER
-      if L6_12 == L10_16 then
-        L11_17 = A1_7
-        L10_16 = A1_7.GetNumOfItems
-        L12_18 = A0_6.QST_GATHERING_ITEM_HRV
-        L10_16 = L10_16(L11_17, L12_18, L13_19, L14_20, L15_21)
-        if L8_14 > L10_16 then
-          L11_17 = A2_8
-          L10_16 = A2_8.Talk
-          L12_18 = A1_7
-          L16_22 = nil
-          L10_16(L11_17, L12_18, L13_19, L14_20, L15_21, L16_22, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+      L10_3 = A0_3.CLASS_JOB_HARVESTER
+      if L6_3 == L10_3 then
+        L11_3 = A1_3
+        L10_3 = A1_3.GetNumOfItems
+        L12_3 = A0_3.QST_GATHERING_ITEM_HRV
+        L13_3 = A0_3.NUM_OF_ITEMS_FILTER_HQ
+        L14_3 = false
+        L15_3 = true
+        L10_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
+        if L8_3 > L10_3 then
+          L11_3 = A2_3
+          L10_3 = A2_3.Talk
+          L12_3 = A1_3
+          L13_3 = A0_3
+          L14_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_005
+          L15_3 = true
+          L16_3 = nil
+          L17_3 = nil
+          L18_3 = nil
+          L19_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
         else
-          L11_17 = A2_8
-          L10_16 = A2_8.Talk
-          L12_18 = A1_7
-          L16_22 = nil
-          L10_16(L11_17, L12_18, L13_19, L14_20, L15_21, L16_22, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+          L11_3 = A2_3
+          L10_3 = A2_3.Talk
+          L12_3 = A1_3
+          L13_3 = A0_3
+          L14_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_010
+          L15_3 = true
+          L16_3 = nil
+          L17_3 = nil
+          L18_3 = nil
+          L19_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
         end
       else
-        L10_16 = A0_6.CLASS_JOB_FISHERMAN
-        if L6_12 == L10_16 then
-          L11_17 = A1_7
-          L10_16 = A1_7.GetNumOfItems
-          L12_18 = A0_6.QST_GATHERING_ITEM_FSH
-          L10_16 = L10_16(L11_17, L12_18, L13_19, L14_20, L15_21)
-          if L9_15 > L10_16 then
-            L11_17 = A2_8
-            L10_16 = A2_8.Talk
-            L12_18 = A1_7
-            L16_22 = nil
-            L10_16(L11_17, L12_18, L13_19, L14_20, L15_21, L16_22, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+        L10_3 = A0_3.CLASS_JOB_FISHERMAN
+        if L6_3 == L10_3 then
+          L11_3 = A1_3
+          L10_3 = A1_3.GetNumOfItems
+          L12_3 = A0_3.QST_GATHERING_ITEM_FSH
+          L13_3 = A0_3.NUM_OF_ITEMS_FILTER_NQ_OR_HQ
+          L14_3 = false
+          L15_3 = true
+          L10_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
+          if L9_3 > L10_3 then
+            L11_3 = A2_3
+            L10_3 = A2_3.Talk
+            L12_3 = A1_3
+            L13_3 = A0_3
+            L14_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_006
+            L15_3 = true
+            L16_3 = nil
+            L17_3 = nil
+            L18_3 = nil
+            L19_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
           else
-            L11_17 = A2_8
-            L10_16 = A2_8.Talk
-            L12_18 = A1_7
-            L16_22 = nil
-            L10_16(L11_17, L12_18, L13_19, L14_20, L15_21, L16_22, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+            L11_3 = A2_3
+            L10_3 = A2_3.Talk
+            L12_3 = A1_3
+            L13_3 = A0_3
+            L14_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_010
+            L15_3 = true
+            L16_3 = nil
+            L17_3 = nil
+            L18_3 = nil
+            L19_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
           end
         else
-          L11_17 = A0_6
-          L10_16 = A0_6.CancelEventScene
-          L10_16(L11_17)
+          L11_3 = A0_3
+          L10_3 = A0_3.CancelEventScene
+          L10_3(L11_3)
         end
       end
     end
-    L11_17 = A0_6
-    L10_16 = A0_6.GetQuestId
-    L10_16 = L10_16(L11_17)
-    L12_18 = A1_7
-    L11_17 = A1_7.GetQuestSequence
-    L11_17 = L11_17(L12_18, L13_19)
-    L12_18 = 1
-    for L16_22 = 1, L12_18 do
-      A0_6:SetNpcTradeItem(L16_22, unpack(A0_6:getNpcTradeItemInfo(L16_22, L11_17, A2_8:GetBaseId())))
+    L11_3 = A0_3
+    L10_3 = A0_3.GetQuestId
+    L10_3 = L10_3(L11_3)
+    L12_3 = A1_3
+    L11_3 = A1_3.GetQuestSequence
+    L13_3 = L10_3
+    L11_3 = L11_3(L12_3, L13_3)
+    L12_3 = 1
+    L13_3 = 1
+    L14_3 = L12_3
+    L15_3 = 1
+    for L16_3 = L13_3, L14_3, L15_3 do
+      L18_3 = A0_3
+      L17_3 = A0_3.SetNpcTradeItem
+      L19_3 = L16_3
+      L20_3 = unpack
+      L22_3 = A0_3
+      L21_3 = A0_3.getNpcTradeItemInfo
+      L23_3 = L16_3
+      L24_3 = L11_3
+      L26_3 = A2_3
+      L25_3 = A2_3.GetBaseId
+      L25_3, L26_3 = L25_3(L26_3)
+      L21_3, L22_3, L23_3, L24_3, L25_3, L26_3 = L21_3(L22_3, L23_3, L24_3, L25_3, L26_3)
+      L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3 = L20_3(L21_3, L22_3, L23_3, L24_3, L25_3, L26_3)
+      L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3)
     end
-    L16_22 = nil
-    if L13_19 == 1 then
-      return L13_19
+    L14_3 = A0_3
+    L13_3 = A0_3.NpcTrade
+    L15_3 = A0_3.NPC_TRADE_INVENTORY_MODE_NORMAL
+    L16_3 = nil
+    L17_3 = nil
+    L18_3 = L12_3
+    L13_3 = L13_3(L14_3, L15_3, L16_3, L17_3, L18_3)
+    if L13_3 == 1 then
+      return L13_3
     else
     end
   end
-  function BanQiq126.OnScene00003(A0_23, A1_24, A2_25)
-    local L3_26, L4_27, L5_28
-    L4_27 = A0_23
-    L3_26 = A0_23.GetQuestAcceptClassJob
-    L3_26 = L3_26(L4_27)
-    L5_28 = A2_25
-    L4_27 = A2_25.CancelActionTimeline
-    L4_27(L5_28, A0_23.ACTION_TIMELINE_EVENT_TALK_DEMIHUMAN)
-    L5_28 = A1_24
-    L4_27 = A1_24.PlayActionTimeline
-    L4_27(L5_28, A0_23.ACTION_TIMELINE_EVENT_ITEM)
-    L5_28 = A0_23
-    L4_27 = A0_23.Wait
-    L4_27(L5_28, 30)
-    L5_28 = A2_25
-    L4_27 = A2_25.PlayActionTimeline
-    L4_27(L5_28, A0_23.ACTION_TIMELINE_EVENT_TALK1)
-    L5_28 = A2_25
-    L4_27 = A2_25.Talk
-    L4_27(L5_28, A1_24, A0_23, A0_23.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_011, true, nil, nil, nil, A0_23.SPEAK_NORMAL_MIDDLE)
-    L4_27 = A0_23.CLASS_JOB_MINER
-    if L3_26 == L4_27 then
-      L5_28 = A1_24
-      L4_27 = A1_24.GetNumOfNqItems
-      L4_27 = L4_27(L5_28, A0_23.QST_GATHERING_ITEM_MIN)
-      if L4_27 > 0 then
-        L5_28 = A0_23
-        L4_27 = A0_23.Wait
-        L4_27(L5_28, 10)
-        L5_28 = A0_23
-        L4_27 = A0_23.SystemTalk
-        L4_27(L5_28, A0_23.TEXT_BANQIQ126_03831_SYSTEM_000_020, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestAcceptClassJob
+    L3_3 = L3_3(L4_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_DEMIHUMAN
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_BANQIQ126_03831_QHOTERLPASOL_000_011
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L4_3 = A0_3.CLASS_JOB_MINER
+    if L3_3 == L4_3 then
+      L5_3 = A1_3
+      L4_3 = A1_3.GetNumOfNqItems
+      L6_3 = A0_3.QST_GATHERING_ITEM_MIN
+      L4_3 = L4_3(L5_3, L6_3)
+      if 0 < L4_3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_BANQIQ126_03831_SYSTEM_000_020
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
       end
     else
-      L4_27 = A0_23.CLASS_JOB_HARVESTER
-      if L3_26 == L4_27 then
-        L5_28 = A1_24
-        L4_27 = A1_24.GetNumOfNqItems
-        L4_27 = L4_27(L5_28, A0_23.QST_GATHERING_ITEM_HRV)
-        if L4_27 > 0 then
-          L5_28 = A0_23
-          L4_27 = A0_23.Wait
-          L4_27(L5_28, 10)
-          L5_28 = A0_23
-          L4_27 = A0_23.SystemTalk
-          L4_27(L5_28, A0_23.TEXT_BANQIQ126_03831_SYSTEM_000_020, true)
+      L4_3 = A0_3.CLASS_JOB_HARVESTER
+      if L3_3 == L4_3 then
+        L5_3 = A1_3
+        L4_3 = A1_3.GetNumOfNqItems
+        L6_3 = A0_3.QST_GATHERING_ITEM_HRV
+        L4_3 = L4_3(L5_3, L6_3)
+        if 0 < L4_3 then
+          L5_3 = A0_3
+          L4_3 = A0_3.Wait
+          L6_3 = 10
+          L4_3(L5_3, L6_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_BANQIQ126_03831_SYSTEM_000_020
+          L7_3 = true
+          L4_3(L5_3, L6_3, L7_3)
         end
       else
-        L4_27 = A0_23.CLASS_JOB_FISHERMAN
-        if L3_26 == L4_27 then
+        L4_3 = A0_3.CLASS_JOB_FISHERMAN
+        if L3_3 == L4_3 then
         else
-          L5_28 = A0_23
-          L4_27 = A0_23.CancelEventScene
-          L4_27(L5_28)
+          L5_3 = A0_3
+          L4_3 = A0_3.CancelEventScene
+          L4_3(L5_3)
         end
       end
     end
-    L5_28 = A0_23
-    L4_27 = A0_23.QuestReward
-    L5_28 = L4_27(L5_28, A2_25, A1_24)
-    if L4_27 then
-      A0_23:QuestCompleted(A0_23.SCREEN_IMAGE_BEAST_QUEST_COMPLETE)
+    L5_3 = A0_3
+    L4_3 = A0_3.QuestReward
+    L6_3 = A2_3
+    L7_3 = A1_3
+    L4_3, L5_3 = L4_3(L5_3, L6_3, L7_3)
+    if L4_3 then
+      L7_3 = A0_3
+      L6_3 = A0_3.QuestCompleted
+      L8_3 = A0_3.SCREEN_IMAGE_BEAST_QUEST_COMPLETE
+      L6_3(L7_3, L8_3)
     else
-      A0_23:CancelNpcTrade()
+      L7_3 = A0_3
+      L6_3 = A0_3.CancelNpcTrade
+      L6_3(L7_3)
     end
-    return L4_27, L5_28
+    L6_3 = L4_3
+    L7_3 = L5_3
+    return L6_3, L7_3
   end
-  function BanQiq126.OnScene00004(A0_29, A1_30, A2_31)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function BanQiq126.OnScene00005(A0_32, A1_33, A2_34)
+  L0_2.OnScene00004 = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function BanQiq126.OnScene00006(A0_35, A1_36, A2_37)
+  L0_2.OnScene00005 = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function BanQiq126.IsTodoChecked(A0_38, A1_39, A2_40)
-    local L3_41
-    L3_41 = A0_38.GetQuestId
-    L3_41 = L3_41(A0_38)
-    if A1_39:GetQuestSequence(L3_41) == A0_38.SEQ_0 then
-      return false
+  L0_2.OnScene00006 = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
     end
-    if A2_40 == 0 then
-      return false
-    end
-  end
-end)()
-;(function()
-  local L0_42, L1_43
-  L0_42 = BanQiq126
-  L0_42.SCRIPT_VERSION = 2
-  L0_42 = BanQiq126
-  function L1_43(A0_44)
-    local L1_45
-  end
-  L0_42.OnInitialize = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_46, A1_47, A2_48, A3_49, A4_50)
-    local L5_51
-    L5_51 = A0_46.GetQuestId
-    L5_51 = L5_51(A0_46)
-    if A1_47:GetQuestSequence(L5_51) == A0_46.SEQ_FINISH then
-      if A3_49 == A0_46.ACTOR0 then
-        return true
-      elseif A3_49 == A0_46.ACTOR1 then
-        return true
-      elseif A3_49 == A0_46.ACTOR2 then
-        return true
-      elseif A3_49 == A0_46.ACTOR3 then
-        return true
-      end
-    end
-    return false
-  end
-  L0_42.IsAcceptEvent = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_52, A1_53, A2_54, A3_55, A4_56)
-    local L5_57
-    L5_57 = A0_52.GetQuestId
-    L5_57 = L5_57(A0_52)
-    if A1_53:GetQuestSequence(L5_57) == A0_52.SEQ_FINISH then
-      if A3_55 == A0_52.ACTOR0 then
-        return true
-      elseif A3_55 == A0_52.ACTOR1 then
-        if A0_52:GetQuestAcceptClassJob() == A0_52.CLASS_JOB_MINER and A1_53:GetNumOfItems(A0_52.QST_GATHERING_ITEM_MIN, A0_52.NUM_OF_ITEMS_FILTER_HQ, false, true) < 1 then
-          return true, true
-        end
-      elseif A3_55 == A0_52.ACTOR2 then
-        if A0_52:GetQuestAcceptClassJob() == A0_52.CLASS_JOB_HARVESTER and 1 > A1_53:GetNumOfItems(A0_52.QST_GATHERING_ITEM_HRV, A0_52.NUM_OF_ITEMS_FILTER_HQ, false, true) then
-          return true, true
-        end
-      elseif A3_55 == A0_52.ACTOR3 and A0_52:GetQuestAcceptClassJob() == A0_52.CLASS_JOB_FISHERMAN and 1 > A1_53:GetNumOfItems(A0_52.QST_GATHERING_ITEM_FSH, A0_52.NUM_OF_ITEMS_FILTER_NQ, false, true) then
-        return true, true
-      end
-    end
-    return false
-  end
-  L0_42.IsAnnounce = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_58, A1_59, A2_60)
-    local L3_61
-    L3_61 = A0_58.GetQuestId
-    L3_61 = L3_61(A0_58)
-    if A1_59:GetQuestSequence(L3_61) == A0_58.SEQ_0 then
-      return 0, 0
-    end
-    if A2_60 == 0 then
-      return A1_59:GetNumOfItems(A0_58.RITEM0, A0_58.NUM_OF_ITEMS_FILTER_NQ_AND_HQ, false, true), 1, A0_58.RITEM0, false
+    if A2_3 == 0 then
+      L5_3 = false
+      return L5_3
     end
   end
-  L0_42.GetTodoArgs = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_62, A1_63, A2_64)
-    local L3_65
-    L3_65 = A0_62.GetQuestId
-    L3_65 = L3_65(A0_62)
-    if A1_63:GetQuestSequence(L3_65) == A0_62.SEQ_FINISH and A2_64 == A0_62.ACTOR0 then
-      return A0_62.RITEM0, false
-    end
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = BanQiq126
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = BanQiq126
+  function L1_2(A0_3)
+    local L1_3
   end
-  L0_42.GetListenItems = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_66, A1_67, A2_68, A3_69, A4_70, A5_71, A6_72)
-    local L7_73
-    L7_73 = A0_66.GetQuestId
-    L7_73 = L7_73(A0_66)
-    if A1_67:GetQuestSequence(L7_73) == A0_66.SEQ_OFFER then
-    elseif A1_67:GetQuestSequence(L7_73) == A0_66.SEQ_FINISH and A3_69 == A0_66.ACTOR0 and A1_67:GetNumOfItems(A0_66.RITEM0, A0_66.NUM_OF_ITEMS_FILTER_NQ_AND_HQ, false, true) < 1 then
-      return false, A0_66.QUALIFICATION_ITEM
-    end
-    return true, 0
-  end
-  L0_42.IsQualified = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_74, A1_75, A2_76)
-    local L3_77
-    L3_77 = A0_74.GetQuestId
-    L3_77 = L3_77(A0_74)
-    if A1_75:GetQuestSequence(L3_77) == A0_74.SEQ_FINISH then
-    end
-    return A0_74:IsBattleNpcTriggerOwner(A1_75, A2_76, false), false
-  end
-  L0_42.GetGimmickState = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_78, A1_79, A2_80, A3_81)
-    if A2_80 == A0_78.SEQ_0 then
-    elseif A2_80 == A0_78.SEQ_FINISH and A3_81 == A0_78.ACTOR0 then
-      ({})[1] = {
-        A0_78.RITEM0,
-        1,
-        false,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      }
-      return ({})[A1_79]
-    end
-  end
-  L0_42.getNpcTradeItemInfo = L1_43
-  L0_42 = BanQiq126
-  function L1_43(A0_82, A1_83, A2_84)
-    local L3_85, L4_86, L5_87, L6_88, L7_89, L8_90, L9_91, L10_92
-    L3_85 = {}
-    L4_86 = A0_82.SEQ_0
-    if A1_83 == L4_86 then
-    else
-      L4_86 = A0_82.SEQ_FINISH
-      if A1_83 == L4_86 then
-        L4_86 = A0_82.ACTOR0
-        if A2_84 == L4_86 then
-          L4_86 = 1
-          L5_87 = 1
-          for L9_91 = 1, L4_86 do
-            for _FORV_13_ = 1, #A0_82:getNpcTradeItemInfo(L9_91, A1_83, A2_84) do
-              L3_85[L5_87] = A0_82:getNpcTradeItemInfo(L9_91, A1_83, A2_84)[_FORV_13_]
-              L5_87 = L5_87 + 1
+  L0_2.OnInitialize = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_FINISH
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.ACTOR0
+      if A3_3 == L7_3 then
+        L7_3 = true
+        return L7_3
+      else
+        L7_3 = A0_3.ACTOR1
+        if A3_3 == L7_3 then
+          L7_3 = true
+          return L7_3
+        else
+          L7_3 = A0_3.ACTOR2
+          if A3_3 == L7_3 then
+            L7_3 = true
+            return L7_3
+          else
+            L7_3 = A0_3.ACTOR3
+            if A3_3 == L7_3 then
+              L7_3 = true
+              return L7_3
             end
           end
         end
       end
     end
-    return L3_85
+    L7_3 = false
+    return L7_3
   end
-  L0_42.GetNpcTradeItems = L1_43
-end)()
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.GetQuestAcceptClassJob
+    L7_3 = L7_3(L8_3)
+    L8_3 = A0_3.SEQ_FINISH
+    if L6_3 == L8_3 then
+      L8_3 = A0_3.ACTOR0
+      if A3_3 == L8_3 then
+        L8_3 = true
+        return L8_3
+      else
+        L8_3 = A0_3.ACTOR1
+        if A3_3 == L8_3 then
+          L8_3 = A0_3.CLASS_JOB_MINER
+          if L7_3 == L8_3 then
+            L9_3 = A1_3
+            L8_3 = A1_3.GetNumOfItems
+            L10_3 = A0_3.QST_GATHERING_ITEM_MIN
+            L11_3 = A0_3.NUM_OF_ITEMS_FILTER_HQ
+            L12_3 = false
+            L13_3 = true
+            L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+            if L8_3 < 1 then
+              L8_3 = true
+              L9_3 = true
+              return L8_3, L9_3
+            end
+          end
+        else
+          L8_3 = A0_3.ACTOR2
+          if A3_3 == L8_3 then
+            L8_3 = A0_3.CLASS_JOB_HARVESTER
+            if L7_3 == L8_3 then
+              L9_3 = A1_3
+              L8_3 = A1_3.GetNumOfItems
+              L10_3 = A0_3.QST_GATHERING_ITEM_HRV
+              L11_3 = A0_3.NUM_OF_ITEMS_FILTER_HQ
+              L12_3 = false
+              L13_3 = true
+              L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+              if L8_3 < 1 then
+                L8_3 = true
+                L9_3 = true
+                return L8_3, L9_3
+              end
+            end
+          else
+            L8_3 = A0_3.ACTOR3
+            if A3_3 == L8_3 then
+              L8_3 = A0_3.CLASS_JOB_FISHERMAN
+              if L7_3 == L8_3 then
+                L9_3 = A1_3
+                L8_3 = A1_3.GetNumOfItems
+                L10_3 = A0_3.QST_GATHERING_ITEM_FSH
+                L11_3 = A0_3.NUM_OF_ITEMS_FILTER_NQ
+                L12_3 = false
+                L13_3 = true
+                L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                if L8_3 < 1 then
+                  L8_3 = true
+                  L9_3 = true
+                  return L8_3, L9_3
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    L8_3 = false
+    return L8_3
+  end
+  L0_2.IsAnnounce = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetNumOfItems
+      L7_3 = A0_3.RITEM0
+      L8_3 = A0_3.NUM_OF_ITEMS_FILTER_NQ_AND_HQ
+      L9_3 = false
+      L10_3 = true
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = 1
+      L7_3 = A0_3.RITEM0
+      L8_3 = false
+      return L5_3, L6_3, L7_3, L8_3
+    end
+  end
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_FINISH
+    if L4_3 == L5_3 then
+      L5_3 = A0_3.ACTOR0
+      if A2_3 == L5_3 then
+        L5_3 = A0_3.RITEM0
+        L6_3 = false
+        return L5_3, L6_3
+      end
+    end
+  end
+  L0_2.GetListenItems = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3)
+    local L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L8_3 = A0_3
+    L7_3 = A0_3.GetQuestId
+    L7_3 = L7_3(L8_3)
+    L9_3 = A1_3
+    L8_3 = A1_3.GetQuestSequence
+    L10_3 = L7_3
+    L8_3 = L8_3(L9_3, L10_3)
+    L9_3 = A0_3.SEQ_OFFER
+    if L8_3 == L9_3 then
+    else
+      L9_3 = A0_3.SEQ_FINISH
+      if L8_3 == L9_3 then
+        L9_3 = A0_3.ACTOR0
+        if A3_3 == L9_3 then
+          L10_3 = A1_3
+          L9_3 = A1_3.GetNumOfItems
+          L11_3 = A0_3.RITEM0
+          L12_3 = A0_3.NUM_OF_ITEMS_FILTER_NQ_AND_HQ
+          L13_3 = false
+          L14_3 = true
+          L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          if L9_3 < 1 then
+            L9_3 = false
+            L10_3 = A0_3.QUALIFICATION_ITEM
+            return L9_3, L10_3
+          end
+        end
+      end
+    end
+    L9_3 = true
+    L10_3 = 0
+    return L9_3, L10_3
+  end
+  L0_2.IsQualified = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.GetLayoutId
+    L6_3 = L6_3(L7_3)
+    L7_3 = A0_3.SEQ_FINISH
+    if L4_3 == L7_3 then
+    end
+    L8_3 = A0_3
+    L7_3 = A0_3.IsBattleNpcTriggerOwner
+    L9_3 = A1_3
+    L10_3 = A2_3
+    L11_3 = false
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = false
+    return L7_3, L8_3
+  end
+  L0_2.GetGimmickState = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3
+    L5_3 = A0_3
+    L4_3 = A0_3.GetQuestId
+    L4_3 = L4_3(L5_3)
+    L5_3 = {}
+    L6_3 = A0_3.SEQ_0
+    if A2_3 == L6_3 then
+    else
+      L6_3 = A0_3.SEQ_FINISH
+      if A2_3 == L6_3 then
+        L6_3 = A0_3.ACTOR0
+        if A3_3 == L6_3 then
+          L6_3 = {}
+          L7_3 = A0_3.RITEM0
+          L8_3 = 1
+          L9_3 = false
+          L10_3 = 0
+          L11_3 = 0
+          L12_3 = 0
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L17_3 = 0
+          L18_3 = 0
+          L19_3 = 0
+          L20_3 = 0
+          L6_3[1] = L7_3
+          L6_3[2] = L8_3
+          L6_3[3] = L9_3
+          L6_3[4] = L10_3
+          L6_3[5] = L11_3
+          L6_3[6] = L12_3
+          L6_3[7] = L13_3
+          L6_3[8] = L14_3
+          L6_3[9] = L15_3
+          L6_3[10] = L16_3
+          L6_3[11] = L17_3
+          L6_3[12] = L18_3
+          L6_3[13] = L19_3
+          L6_3[14] = L20_3
+          L5_3[1] = L6_3
+          L6_3 = L5_3[A1_3]
+          return L6_3
+        end
+      end
+    end
+  end
+  L0_2.getNpcTradeItemInfo = L1_2
+  L0_2 = BanQiq126
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3
+    L3_3 = {}
+    L4_3 = A0_3.SEQ_0
+    if A1_3 == L4_3 then
+    else
+      L4_3 = A0_3.SEQ_FINISH
+      if A1_3 == L4_3 then
+        L4_3 = A0_3.ACTOR0
+        if A2_3 == L4_3 then
+          L4_3 = 1
+          L5_3 = 1
+          L6_3 = 1
+          L7_3 = L4_3
+          L8_3 = 1
+          for L9_3 = L6_3, L7_3, L8_3 do
+            L10_3 = 1
+            L12_3 = A0_3
+            L11_3 = A0_3.getNpcTradeItemInfo
+            L13_3 = L9_3
+            L14_3 = A1_3
+            L15_3 = A2_3
+            L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3)
+            L11_3 = #L11_3
+            L12_3 = 1
+            for L13_3 = L10_3, L11_3, L12_3 do
+              L15_3 = A0_3
+              L14_3 = A0_3.getNpcTradeItemInfo
+              L16_3 = L9_3
+              L17_3 = A1_3
+              L18_3 = A2_3
+              L14_3 = L14_3(L15_3, L16_3, L17_3, L18_3)
+              L14_3 = L14_3[L13_3]
+              L3_3[L5_3] = L14_3
+              L5_3 = L5_3 + 1
+            end
+          end
+        end
+      end
+    end
+    return L3_3
+  end
+  L0_2.GetNpcTradeItems = L1_2
+end
+L0_1()

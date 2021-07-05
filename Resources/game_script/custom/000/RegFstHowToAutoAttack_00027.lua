@@ -1,24 +1,52 @@
-(function()
-  print("RegFstHowToAutoAttack loaded")
-  function RegFstHowToAutoAttack.OnScene00000(A0_0, A1_1, A2_2)
-    A0_0:HowTo(A0_0.HOWTO_BATTLE)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegFstHowToAutoAttack loaded"
+  L0_2(L1_2)
+  L0_2 = RegFstHowToAutoAttack
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A0_3
+    L3_3 = A0_3.HowTo
+    L5_3 = A0_3.HOWTO_BATTLE
+    L3_3(L4_3, L5_3)
   end
-  function RegFstHowToAutoAttack.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:Talk(A1_4, A0_3, "HowTo\232\161\168\231\164\186\227\130\171\227\130\185\227\130\191\227\131\160\227\131\136\227\131\188\227\130\175\227\131\134\227\130\185\227\131\1362", true, A0_3.TALK_SHAPE_NORMAL)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegFstHowToAutoAttack
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = "HowTo\232\161\168\231\164\186\227\130\171\227\130\185\227\130\191\227\131\160\227\131\136\227\131\188\227\130\175\227\131\134\227\130\185\227\131\1362"
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_NORMAL
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
   end
-end)()
-;(function()
-  local L0_6, L1_7
-  L0_6 = RegFstHowToAutoAttack
-  L0_6.SCRIPT_VERSION = 1
-  L0_6 = RegFstHowToAutoAttack
-  function L1_7(A0_8, A1_9, A2_10, A3_11, A4_12, A5_13)
-    return A1_9:IsHowTo(A0_8.HOWTO_BATTLE) == false
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegFstHowToAutoAttack
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = RegFstHowToAutoAttack
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsHowTo
+    L8_3 = A0_3.HOWTO_BATTLE
+    L6_3 = L6_3(L7_3, L8_3)
+    L6_3 = L6_3 == false
+    return L6_3
   end
-  L0_6.IsAcceptEvent = L1_7
-  L0_6 = RegFstHowToAutoAttack
-  function L1_7(A0_14, A1_15, A2_16, A3_17, A4_18)
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = RegFstHowToAutoAttack
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
     return
   end
-  L0_6.GetConditionId = L1_7
-end)()
+  L0_2.GetConditionId = L1_2
+end
+L0_1()

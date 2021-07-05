@@ -1,237 +1,354 @@
-(function()
-  print("CmnDefCompanyManufactory")
-  CmnDefCompanyManufactory.CLIENT_RESULT_NONE = 0
-  CmnDefCompanyManufactory.CLIENT_RESULT_PROGRESS = 1
-  CmnDefCompanyManufactory.CLIENT_RESULT_BREAK_CRAFT = 2
-  CmnDefCompanyManufactory.CLIENT_RESULT_SUPPLY = 3
-  CmnDefCompanyManufactory.CLIENT_RESULT_CRAFT_START = 4
-  CmnDefCompanyManufactory.CLIENT_RESULT_FINISH = 5
-  CmnDefCompanyManufactory.CLIENT_RESULT_SUPPLY_RETURN_MENU = 6
-  function CmnDefCompanyManufactory.CraftNote(A0_0, A1_1, A2_2, A3_3, A4_4)
-    local L5_5, L6_6, L7_7
-    L5_5 = {
-      [3] = L6_6(L7_7)
-    }
-    L7_7 = A0_0
-    L6_6 = A0_0.GetCompanyCraftDraftFlags
-    L7_7 = L6_6(L7_7)
-    ;({
-      [3] = L6_6(L7_7)
-    })[1] = L6_6
-    ;({
-      [3] = L6_6(L7_7)
-    })[2] = L7_7
-    L7_7 = A0_0
-    L6_6 = A0_0.OpenNoteUI
-    L7_7 = L6_6(L7_7, A1_1, A2_2, A3_3, A4_4, unpack(L5_5))
-    if L6_6 == true then
-      return A0_0.CLIENT_RESULT_CRAFT_START, L7_7
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefCompanyManufactory"
+  L0_2(L1_2)
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.CLIENT_RESULT_NONE = 0
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.CLIENT_RESULT_PROGRESS = 1
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.CLIENT_RESULT_BREAK_CRAFT = 2
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.CLIENT_RESULT_SUPPLY = 3
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.CLIENT_RESULT_CRAFT_START = 4
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.CLIENT_RESULT_FINISH = 5
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.CLIENT_RESULT_SUPPLY_RETURN_MENU = 6
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L5_3 = {}
+    L7_3 = A0_3
+    L6_3 = A0_3.GetCompanyCraftDraftFlags
+    L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3 = L6_3(L7_3)
+    L5_3[1] = L6_3
+    L5_3[2] = L7_3
+    L5_3[3] = L8_3
+    L5_3[4] = L9_3
+    L5_3[5] = L10_3
+    L5_3[6] = L11_3
+    L5_3[7] = L12_3
+    L5_3[8] = L13_3
+    L7_3 = A0_3
+    L6_3 = A0_3.OpenNoteUI
+    L8_3 = A1_3
+    L9_3 = A2_3
+    L10_3 = A3_3
+    L11_3 = A4_3
+    L12_3 = unpack
+    L13_3 = L5_3
+    L12_3, L13_3 = L12_3(L13_3)
+    L6_3, L7_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    if L6_3 == true then
+      L8_3 = A0_3.CLIENT_RESULT_CRAFT_START
+      L9_3 = L7_3
+      return L8_3, L9_3
     end
-    return -1
+    L8_3 = -1
+    return L8_3
   end
-  function CmnDefCompanyManufactory.SupplyItem(A0_8, A1_9)
-    local L2_10, L3_11, L4_12, L5_13
-    L3_11 = A0_8
-    L2_10 = A0_8.OpenSupplyUI
-    L4_12 = A1_9
-    L5_13 = L2_10(L3_11, L4_12)
-    if L2_10 == true then
-      return A0_8.CLIENT_RESULT_SUPPLY, L3_11, L4_12, L5_13
+  L0_2.CraftNote = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L3_3 = A0_3
+    L2_3 = A0_3.OpenSupplyUI
+    L4_3 = A1_3
+    L2_3, L3_3, L4_3, L5_3 = L2_3(L3_3, L4_3)
+    if L2_3 == true then
+      L6_3 = A0_3.CLIENT_RESULT_SUPPLY
+      L7_3 = L3_3
+      L8_3 = L4_3
+      L9_3 = L5_3
+      return L6_3, L7_3, L8_3, L9_3
     end
-    return -1
+    L6_3 = -1
+    return L6_3
   end
-  function CmnDefCompanyManufactory.BreakCraft(A0_14, A1_15)
-    local L2_16
-    L2_16 = A0_14.FormatString
-    L2_16 = L2_16(A0_14, A0_14.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_ALL_CONF, A1_15)
-    if A0_14:YesNoCheck(L2_16, A0_14.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_YES, A0_14.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_NO, A0_14.DEFAULT_YES, A0_14.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_ALL_CHECK, false) == true then
-      return A0_14.CLIENT_RESULT_BREAK_CRAFT
+  L0_2.SupplyItem = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L3_3 = A0_3
+    L2_3 = A0_3.FormatString
+    L4_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_ALL_CONF
+    L5_3 = A1_3
+    L2_3 = L2_3(L3_3, L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNoCheck
+    L5_3 = L2_3
+    L6_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_YES
+    L7_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_NO
+    L8_3 = A0_3.DEFAULT_YES
+    L9_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_SUBMENU_CC_BREAK_ALL_CHECK
+    L10_3 = false
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+    if L3_3 == true then
+      L4_3 = A0_3.CLIENT_RESULT_BREAK_CRAFT
+      return L4_3
     end
-    return -1
+    L4_3 = -1
+    return L4_3
   end
-  function CmnDefCompanyManufactory.OnScene00000(A0_17, A1_18, A2_19)
-    local L3_20, L4_21, L5_22, L6_23
-    L3_20 = true
-    while L3_20 do
-      L5_22 = A0_17
-      L4_21 = A0_17.Menu
-      L6_23 = A0_17.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
-      L4_21 = L4_21(L5_22, L6_23, A0_17.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE, A0_17.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT)
-      if L4_21 == 1 then
-        L6_23 = A0_17
-        L5_22 = A0_17.CraftNote
-        L6_23 = L5_22(L6_23, false, 0, 0, 0)
-        if L5_22 > 0 then
-          return L5_22, L6_23
+  L0_2.BreakCraft = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L3_3 = true
+    while L3_3 do
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
+      L7_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE
+      L8_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+      if L4_3 == 1 then
+        L6_3 = A0_3
+        L5_3 = A0_3.CraftNote
+        L7_3 = false
+        L8_3 = 0
+        L9_3 = 0
+        L10_3 = 0
+        L5_3, L6_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        if 0 < L5_3 then
+          L7_3 = L5_3
+          L8_3 = L6_3
+          return L7_3, L8_3
         end
       else
-        L3_20 = false
+        L3_3 = false
       end
     end
   end
-  function CmnDefCompanyManufactory.OnScene00001(A0_24, A1_25, A2_26, A3_27, A4_28, A5_29, A6_30, A7_31)
-    local L8_32, L9_33, L10_34, L11_35, L12_36, L13_37, L14_38, L15_39, L16_40
-    L9_33 = A0_24
-    L8_32 = A0_24.FormatString
-    L10_34 = A0_24.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_SUPPLY
-    L11_35 = A7_31
-    L8_32 = L8_32(L9_33, L10_34, L11_35)
-    L9_33 = true
-    while L9_33 do
-      L11_35 = A0_24
-      L10_34 = A0_24.Menu
-      L12_36 = A0_24.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
-      L13_37 = L8_32
-      L14_38 = A0_24.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE
-      L15_39 = A0_24.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_BREAK
-      L16_40 = A0_24.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT
-      L10_34 = L10_34(L11_35, L12_36, L13_37, L14_38, L15_39, L16_40)
-      if L10_34 == 1 then
-        L12_36 = A0_24
-        L11_35 = A0_24.IsSuppliable
-        L11_35 = L11_35(L12_36)
-        if L11_35 == 0 then
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3)
+    local L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3
+    L9_3 = A0_3
+    L8_3 = A0_3.FormatString
+    L10_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_SUPPLY
+    L11_3 = A7_3
+    L8_3 = L8_3(L9_3, L10_3, L11_3)
+    L9_3 = true
+    while L9_3 do
+      L11_3 = A0_3
+      L10_3 = A0_3.Menu
+      L12_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
+      L13_3 = L8_3
+      L14_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE
+      L15_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_BREAK
+      L16_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT
+      L10_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+      if L10_3 == 1 then
+        L12_3 = A0_3
+        L11_3 = A0_3.IsSuppliable
+        L11_3 = L11_3(L12_3)
+        if L11_3 == 0 then
           return
         end
-        L12_36 = false
-        L14_38 = A0_24
-        L13_37 = A0_24.SupplyItem
-        L15_39 = L12_36
-        L16_40 = L13_37(L14_38, L15_39)
-        if L13_37 > 0 then
-          return L13_37, L14_38, L15_39, L16_40, A4_28, A5_29, A6_30
+        L12_3 = false
+        L14_3 = A0_3
+        L13_3 = A0_3.SupplyItem
+        L15_3 = L12_3
+        L13_3, L14_3, L15_3, L16_3 = L13_3(L14_3, L15_3)
+        if 0 < L13_3 then
+          L17_3 = L13_3
+          L18_3 = L14_3
+          L19_3 = L15_3
+          L20_3 = L16_3
+          L21_3 = A4_3
+          L22_3 = A5_3
+          L23_3 = A6_3
+          return L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3
         end
-      elseif L10_34 == 2 then
-        L12_36 = A0_24
-        L11_35 = A0_24.CraftNote
-        L13_37 = true
-        L14_38 = A4_28
-        L15_39 = A5_29
-        L16_40 = A6_30
-        L12_36 = L11_35(L12_36, L13_37, L14_38, L15_39, L16_40)
-        if L11_35 > 0 then
-          L13_37 = L11_35
-          L14_38 = L12_36
-          return L13_37, L14_38
+      elseif L10_3 == 2 then
+        L12_3 = A0_3
+        L11_3 = A0_3.CraftNote
+        L13_3 = true
+        L14_3 = A4_3
+        L15_3 = A5_3
+        L16_3 = A6_3
+        L11_3, L12_3 = L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+        if 0 < L11_3 then
+          L13_3 = L11_3
+          L14_3 = L12_3
+          return L13_3, L14_3
         end
-      elseif L10_34 == 3 then
-        L12_36 = A0_24
-        L11_35 = A0_24.BreakCraft
-        L13_37 = A3_27
-        L11_35 = L11_35(L12_36, L13_37)
-        if L11_35 > 0 then
-          return L11_35
+      elseif L10_3 == 3 then
+        L12_3 = A0_3
+        L11_3 = A0_3.BreakCraft
+        L13_3 = A3_3
+        L11_3 = L11_3(L12_3, L13_3)
+        if 0 < L11_3 then
+          return L11_3
         end
       else
-        L9_33 = false
+        L9_3 = false
       end
     end
   end
-  function CmnDefCompanyManufactory.OnScene00002(A0_41, A1_42, A2_43, A3_44, A4_45, A5_46, A6_47, A7_48)
-    local L8_49, L9_50, L10_51, L11_52, L12_53
-    L8_49 = 0
-    L10_51 = A0_41
-    L9_50 = A0_41.IsLastProgress
-    L11_52 = A4_45
-    L12_53 = A5_46
-    L9_50 = L9_50(L10_51, L11_52, L12_53, A6_47)
-    if L9_50 == true then
-      L10_51 = A0_41
-      L9_50 = A0_41.FormatString
-      L11_52 = A0_41.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_LAST_PROGRESS
-      L12_53 = A3_44
-      L9_50 = L9_50(L10_51, L11_52, L12_53, A7_48)
-      L8_49 = L9_50
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3)
+    local L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    L8_3 = 0
+    L10_3 = A0_3
+    L9_3 = A0_3.IsLastProgress
+    L11_3 = A4_3
+    L12_3 = A5_3
+    L13_3 = A6_3
+    L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3)
+    if L9_3 == true then
+      L10_3 = A0_3
+      L9_3 = A0_3.FormatString
+      L11_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_LAST_PROGRESS
+      L12_3 = A3_3
+      L13_3 = A7_3
+      L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3)
+      L8_3 = L9_3
     else
-      L10_51 = A0_41
-      L9_50 = A0_41.FormatString
-      L11_52 = A0_41.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_PROGRESS
-      L12_53 = A7_48
-      L9_50 = L9_50(L10_51, L11_52, L12_53)
-      L8_49 = L9_50
+      L10_3 = A0_3
+      L9_3 = A0_3.FormatString
+      L11_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_PROGRESS
+      L12_3 = A7_3
+      L9_3 = L9_3(L10_3, L11_3, L12_3)
+      L8_3 = L9_3
     end
-    L9_50 = true
-    while L9_50 do
-      L11_52 = A0_41
-      L10_51 = A0_41.Menu
-      L12_53 = A0_41.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
-      L10_51 = L10_51(L11_52, L12_53, L8_49, A0_41.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE, A0_41.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_BREAK, A0_41.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT)
-      if L10_51 == 1 then
-        L11_52 = A0_41.CLIENT_RESULT_PROGRESS
-        return L11_52
-      elseif L10_51 == 2 then
-        L12_53 = A0_41
-        L11_52 = A0_41.CraftNote
-        L12_53 = L11_52(L12_53, true, A4_45, A5_46, A6_47)
-        if L11_52 > 0 then
-          return L11_52, L12_53
+    L9_3 = true
+    while L9_3 do
+      L11_3 = A0_3
+      L10_3 = A0_3.Menu
+      L12_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
+      L13_3 = L8_3
+      L14_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE
+      L15_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_BREAK
+      L16_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT
+      L10_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+      if L10_3 == 1 then
+        L11_3 = A0_3.CLIENT_RESULT_PROGRESS
+        return L11_3
+      elseif L10_3 == 2 then
+        L12_3 = A0_3
+        L11_3 = A0_3.CraftNote
+        L13_3 = true
+        L14_3 = A4_3
+        L15_3 = A5_3
+        L16_3 = A6_3
+        L11_3, L12_3 = L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+        if 0 < L11_3 then
+          L13_3 = L11_3
+          L14_3 = L12_3
+          return L13_3, L14_3
         end
-      elseif L10_51 == 3 then
-        L12_53 = A0_41
-        L11_52 = A0_41.BreakCraft
-        L11_52 = L11_52(L12_53, A3_44)
-        if L11_52 > 0 then
-          return L11_52
+      elseif L10_3 == 3 then
+        L12_3 = A0_3
+        L11_3 = A0_3.BreakCraft
+        L13_3 = A3_3
+        L11_3 = L11_3(L12_3, L13_3)
+        if 0 < L11_3 then
+          return L11_3
         end
       else
-        L9_50 = false
+        L9_3 = false
       end
     end
   end
-  function CmnDefCompanyManufactory.OnScene00003(A0_54, A1_55, A2_56, A3_57, A4_58, A5_59, A6_60, A7_61)
-    local L8_62, L9_63, L10_64, L11_65
-    L8_62 = true
-    while L8_62 do
-      L10_64 = A0_54
-      L9_63 = A0_54.Menu
-      L11_65 = A0_54.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
-      L9_63 = L9_63(L10_64, L11_65, A0_54.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_GET_ITEM, A0_54.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE, A0_54.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT)
-      if L9_63 == 1 then
-        L11_65 = A0_54
-        L10_64 = A0_54.FormatString
-        L10_64 = L10_64(L11_65, A0_54.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_FINISH_CONF, A3_57)
-        L11_65 = A0_54.YesNo
-        L11_65 = L11_65(A0_54, L10_64, A0_54.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_FINISH_YES, A0_54.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_FINISH_NO, A0_54.DEFAULT_NO)
-        if L11_65 == true then
-          return A0_54.CLIENT_RESULT_FINISH
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3)
+    local L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    L8_3 = true
+    while L8_3 do
+      L10_3 = A0_3
+      L9_3 = A0_3.Menu
+      L11_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_TITLE
+      L12_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_GET_ITEM
+      L13_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_CC_NOTE
+      L14_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_MENU_EXIT
+      L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+      if L9_3 == 1 then
+        L11_3 = A0_3
+        L10_3 = A0_3.FormatString
+        L12_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_FINISH_CONF
+        L13_3 = A3_3
+        L10_3 = L10_3(L11_3, L12_3, L13_3)
+        L12_3 = A0_3
+        L11_3 = A0_3.YesNo
+        L13_3 = L10_3
+        L14_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_FINISH_YES
+        L15_3 = A0_3.TEXT_CMNDEFCOMPANYMANUFACTORY_00150_FINISH_NO
+        L16_3 = A0_3.DEFAULT_NO
+        L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+        if L11_3 == true then
+          L12_3 = A0_3.CLIENT_RESULT_FINISH
+          return L12_3
         end
-      elseif L9_63 == 2 then
-        L11_65 = A0_54
-        L10_64 = A0_54.CraftNote
-        L11_65 = L10_64(L11_65, true, A4_58, A5_59, A6_60)
-        if L10_64 > 0 then
-          return L10_64, L11_65
+      elseif L9_3 == 2 then
+        L11_3 = A0_3
+        L10_3 = A0_3.CraftNote
+        L12_3 = true
+        L13_3 = A4_3
+        L14_3 = A5_3
+        L15_3 = A6_3
+        L10_3, L11_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
+        if 0 < L10_3 then
+          L12_3 = L10_3
+          L13_3 = L11_3
+          return L12_3, L13_3
         end
       else
-        L8_62 = false
+        L8_3 = false
       end
     end
   end
-  function CmnDefCompanyManufactory.OnScene00004(A0_66, A1_67, A2_68, A3_69, A4_70, A5_71, A6_72, A7_73)
-    local L8_74, L9_75, L10_76, L11_77, L12_78
-    L8_74 = true
-    L10_76 = A0_66
-    L9_75 = A0_66.SupplyItem
-    L11_77 = L8_74
-    L12_78 = L9_75(L10_76, L11_77)
-    if L9_75 > 0 then
-      return L9_75, L10_76, L11_77, L12_78, A4_70, A5_71, A6_72
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3)
+    local L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3
+    L8_3 = true
+    L10_3 = A0_3
+    L9_3 = A0_3.SupplyItem
+    L11_3 = L8_3
+    L9_3, L10_3, L11_3, L12_3 = L9_3(L10_3, L11_3)
+    if 0 < L9_3 then
+      L13_3 = L9_3
+      L14_3 = L10_3
+      L15_3 = L11_3
+      L16_3 = L12_3
+      L17_3 = A4_3
+      L18_3 = A5_3
+      L19_3 = A6_3
+      return L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3
     end
-    return A0_66.CLIENT_RESULT_SUPPLY_RETURN_MENU
+    L13_3 = A0_3.CLIENT_RESULT_SUPPLY_RETURN_MENU
+    return L13_3
   end
-end)()
-;(function()
-  local L0_79, L1_80
-  L0_79 = CmnDefCompanyManufactory
-  L0_79.SCRIPT_VERSION = 1
-  L0_79 = CmnDefCompanyManufactory
-  function L1_80(A0_81, A1_82, A2_83)
-    return A1_82:IsInOwnLand()
+  L0_2.OnScene00004 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefCompanyManufactory
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsInOwnLand
+    return L3_3(L4_3)
   end
-  L0_79.IsTargetingPossible = L1_80
-  L0_79 = CmnDefCompanyManufactory
-  function L1_80(A0_84, A1_85, A2_86, A3_87, A4_88, A5_89)
-    return A1_85:IsInOwnLand()
+  L0_2.IsTargetingPossible = L1_2
+  L0_2 = CmnDefCompanyManufactory
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsInOwnLand
+    return L6_3(L7_3)
   end
-  L0_79.IsAcceptEvent = L1_80
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

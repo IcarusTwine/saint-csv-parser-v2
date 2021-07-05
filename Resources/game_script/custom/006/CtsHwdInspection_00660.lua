@@ -1,61 +1,236 @@
-(function()
-  print("CtsHwdInspection")
-  function CtsHwdInspection.OnScene00000(A0_0, A1_1, A2_2, ...)
-    local L4_4
-    L4_4 = A2_2.TurnTo
-    L4_4(A2_2, A1_1, true)
-    L4_4 = A2_2.WaitForTurn
-    L4_4(A2_2)
-    L4_4 = A2_2.PlayActionTimeline
-    L4_4(A2_2, A0_0.ACTION_TIMELINE_EVENT_GREETING)
-    L4_4 = A2_2.Talk
-    L4_4(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_020_000, true)
-    L4_4 = {
-      ...
-    }
-    A0_0:OpenGathererInspection(unpack(L4_4))
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsHwdInspection"
+  L0_2(L1_2)
+  L0_2 = CtsHwdInspection
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_020_000
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = {}
+    L5_3, L6_3, L7_3, L8_3, L9_3 = ...
+    L4_3[1] = L5_3
+    L4_3[2] = L6_3
+    L4_3[3] = L7_3
+    L4_3[4] = L8_3
+    L4_3[5] = L9_3
+    L6_3 = A0_3
+    L5_3 = A0_3.OpenGathererInspection
+    L7_3 = unpack
+    L8_3 = L4_3
+    L7_3, L8_3, L9_3 = L7_3(L8_3)
+    L5_3(L6_3, L7_3, L8_3, L9_3)
   end
-  function CtsHwdInspection.OnScene01001(A0_5, A1_6, A2_7, A3_8)
-    A2_7:TurnTo(A1_6, true)
-    A2_7:WaitForTurn()
-    A2_7:PlayActionTimeline(A0_5.ACTION_TIMELINE_EVENT_GREETING)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_000, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_010, false)
-    A2_7:CancelActionTimeline(A0_5.ACTION_TIMELINE_EVENT_GREETING)
-    A2_7:PlayActionTimeline(A0_5.ACTION_TIMELINE_EVENT_TALK1)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_020, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_030, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_040, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_050, false)
-    A2_7:CancelActionTimeline(A0_5.ACTION_TIMELINE_EVENT_TALK1)
-    A2_7:PlayActionTimeline(A0_5.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_060, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_070, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_073, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_077, false)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_080, false)
-    A2_7:CancelActionTimeline(A0_5.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_7:PlayActionTimeline(A0_5.ACTION_TIMELINE_EVENT_TALK2)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_090, true)
-    A2_7:CancelActionTimeline(A0_5.ACTION_TIMELINE_EVENT_TALK2)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsHwdInspection
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_000
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_010
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_020
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_030
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_040
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_050
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_060
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_070
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_073
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_077
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_080
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_010_090
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
   end
-  function CtsHwdInspection.OnScene09001(A0_9, A1_10, A2_11, A3_12)
-    A2_11:TurnTo(A1_10, true)
-    A2_11:WaitForTurn()
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK2)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_000_000, true)
-    A2_11:CancelActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK2)
+  L0_2.OnScene01001 = L1_2
+  L0_2 = CtsHwdInspection
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_000_000
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
   end
-  function CtsHwdInspection.OnScene09002(A0_13, A1_14, A2_15)
-    A2_15:TurnTo(A1_14, true)
-    A2_15:WaitForTurn()
-    A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_000_000, true)
-    A2_15:CancelActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
+  L0_2.OnScene09001 = L1_2
+  L0_2 = CtsHwdInspection
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDINSPECTION_00660_FLOTPASSANT_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
   end
-end)()
-;(function()
-  local L1_16
-  L1_16 = CtsHwdInspection
-  L1_16.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene09002 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsHwdInspection
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

@@ -1,244 +1,785 @@
-(function()
-  print("CtsErkKuganeEntrance")
-  function CtsErkKuganeEntrance.OnScene00000(A0_0, A1_1, A2_2, A3_3, A4_4, A5_5, A6_6)
-    local L7_7, L8_8, L9_9, L10_10, L11_11, L12_12, L13_13
-    L7_7 = A3_3 ~= 0
-    L8_8 = A4_4 ~= 0
-    L9_9 = A5_5 ~= 0
-    L10_10 = A6_6 ~= 0
-    L12_12 = A2_2
-    L11_11 = A2_2.LookAt
-    L13_13 = A1_1
-    L11_11(L12_12, L13_13)
-    L12_12 = A1_1
-    L11_11 = A1_1.IsQuestCompleted
-    L13_13 = A0_0.RELEASE_QUEST_42
-    L11_11 = L11_11(L12_12, L13_13)
-    if L11_11 == false then
-      L12_12 = A2_2
-      L11_11 = A2_2.TurnTo
-      L13_13 = A1_1
-      L11_11(L12_12, L13_13, false)
-      L12_12 = A2_2
-      L11_11 = A2_2.WaitForTurn
-      L11_11(L12_12)
-      L12_12 = A2_2
-      L11_11 = A2_2.PlayActionTimeline
-      L13_13 = A0_0.ACTION_TIMELINE_EMOTE_WELCOME
-      L11_11(L12_12, L13_13)
-      L12_12 = A2_2
-      L11_11 = A2_2.Talk
-      L13_13 = A1_1
-      L11_11(L12_12, L13_13, A0_0, A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_000, true)
-      L11_11 = -1
-      return L11_11
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkKuganeEntrance"
+  L0_2(L1_2)
+  L0_2 = CtsErkKuganeEntrance
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3)
+    local L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3
+    L7_3 = A3_3 ~= 0
+    L8_3 = A4_3 ~= 0
+    L9_3 = A5_3 ~= 0
+    L10_3 = A6_3 ~= 0
+    L12_3 = A2_3
+    L11_3 = A2_3.LookAt
+    L13_3 = A1_3
+    L11_3(L12_3, L13_3)
+    L12_3 = A1_3
+    L11_3 = A1_3.IsQuestCompleted
+    L13_3 = A0_3.RELEASE_QUEST_42
+    L11_3 = L11_3(L12_3, L13_3)
+    if L11_3 == false then
+      L12_3 = A2_3
+      L11_3 = A2_3.TurnTo
+      L13_3 = A1_3
+      L14_3 = false
+      L11_3(L12_3, L13_3, L14_3)
+      L12_3 = A2_3
+      L11_3 = A2_3.WaitForTurn
+      L11_3(L12_3)
+      L12_3 = A2_3
+      L11_3 = A2_3.PlayActionTimeline
+      L13_3 = A0_3.ACTION_TIMELINE_EMOTE_WELCOME
+      L11_3(L12_3, L13_3)
+      L12_3 = A2_3
+      L11_3 = A2_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_000
+      L16_3 = true
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+      L11_3 = -1
+      return L11_3
     end
-    L11_11 = A0_0.MENU_FLAG_ENABLE
-    if L8_8 == false then
-      L11_11 = A0_0.MENU_FLAG_DISABLE
-      if L7_7 == true then
-        L13_13 = A2_2
-        L12_12 = A2_2.TurnTo
-        L12_12(L13_13, A1_1, false)
-        L13_13 = A2_2
-        L12_12 = A2_2.WaitForTurn
-        L12_12(L13_13)
-        L13_13 = A2_2
-        L12_12 = A2_2.PlayActionTimeline
-        L12_12(L13_13, A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-        L13_13 = A2_2
-        L12_12 = A2_2.Talk
-        L12_12(L13_13, A1_1, A0_0, A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_100_010, true)
-        L13_13 = A0_0
-        L12_12 = A0_0.Wait
-        L12_12(L13_13, 30)
-        L13_13 = A2_2
-        L12_12 = A2_2.CancelActionTimeline
-        L12_12(L13_13, A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
+    L11_3 = A0_3.MENU_FLAG_ENABLE
+    if L8_3 == false then
+      L11_3 = A0_3.MENU_FLAG_DISABLE
+      if L7_3 == true then
+        L13_3 = A2_3
+        L12_3 = A2_3.TurnTo
+        L14_3 = A1_3
+        L15_3 = false
+        L12_3(L13_3, L14_3, L15_3)
+        L13_3 = A2_3
+        L12_3 = A2_3.WaitForTurn
+        L12_3(L13_3)
+        L13_3 = A2_3
+        L12_3 = A2_3.PlayActionTimeline
+        L14_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+        L12_3(L13_3, L14_3)
+        L13_3 = A2_3
+        L12_3 = A2_3.Talk
+        L14_3 = A1_3
+        L15_3 = A0_3
+        L16_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_100_010
+        L17_3 = true
+        L12_3(L13_3, L14_3, L15_3, L16_3, L17_3)
+        L13_3 = A0_3
+        L12_3 = A0_3.Wait
+        L14_3 = 30
+        L12_3(L13_3, L14_3)
+        L13_3 = A2_3
+        L12_3 = A2_3.CancelActionTimeline
+        L14_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+        L12_3(L13_3, L14_3)
       end
     end
-    if L7_7 == true then
-      L12_12 = false
-      L13_13 = nil
-      if A0_0.VER45EUREKA_ENABLE ~= nil and A1_1:IsReward(A0_0.REWARD_44_COMPLETE) == true and A1_1:IsQuestCompleted(A0_0.RELEASE_QUEST_45) == false then
-        L12_12 = true
-        L13_13 = A0_0.CONTENTS_45
-      elseif A0_0.VER44EUREKA_ENABLE ~= nil and A1_1:IsReward(A0_0.REWARD_43_COMPLETE) == true and A1_1:IsQuestCompleted(A0_0.RELEASE_QUEST_44) == false then
-        L12_12 = true
-        L13_13 = A0_0.CONTENTS_44
-      elseif A0_0.VER43EUREKA_ENABLE ~= nil and A1_1:IsReward(A0_0.REWARD_42_COMPLETE) == true and A1_1:IsQuestCompleted(A0_0.RELEASE_QUEST_43) == false then
-        L12_12 = true
-        L13_13 = A0_0.CONTENTS_43
+    if L7_3 == true then
+      L12_3 = false
+      L13_3 = nil
+      L14_3 = A0_3.VER45EUREKA_ENABLE
+      if L14_3 ~= nil then
+        L15_3 = A1_3
+        L14_3 = A1_3.IsReward
+        L16_3 = A0_3.REWARD_44_COMPLETE
+        L14_3 = L14_3(L15_3, L16_3)
+        if L14_3 == true then
+          L15_3 = A1_3
+          L14_3 = A1_3.IsQuestCompleted
+          L16_3 = A0_3.RELEASE_QUEST_45
+          L14_3 = L14_3(L15_3, L16_3)
+          if L14_3 == false then
+            L12_3 = true
+            L13_3 = A0_3.CONTENTS_45
+        end
       end
-      if L12_12 == true then
-        A2_2:TurnTo(A1_1, false)
-        A2_2:WaitForTurn()
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_100, true)
-        A0_0:Wait(10)
-        A0_0:SystemTalk(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_101, true, L13_13)
-        A0_0:Wait(10)
-        A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      end
-    end
-    L12_12 = {}
-    L13_13 = {}
-    if A1_1:IsQuestCompleted(A0_0.RELEASE_QUEST_45) then
-      L12_12[#L12_12 + 1] = A0_0.CONTENTS_45
-      L13_13[#L13_13 + 1] = A0_0:FormatString(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT, L12_12[#L12_12])
-      L13_13[#L13_13 + 1] = L11_11
-      ;({})[#{} + 1] = 0
-    end
-    if A1_1:IsQuestCompleted(A0_0.RELEASE_QUEST_44) then
-      L12_12[#L12_12 + 1] = A0_0.CONTENTS_44
-      L13_13[#L13_13 + 1] = A0_0:FormatString(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT, L12_12[#L12_12])
-      L13_13[#L13_13 + 1] = L11_11
-      ;({})[#{} + 1] = 50
-    end
-    if A1_1:IsQuestCompleted(A0_0.RELEASE_QUEST_43) then
-      L12_12[#L12_12 + 1] = A0_0.CONTENTS_43
-      L13_13[#L13_13 + 1] = A0_0:FormatString(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT, L12_12[#L12_12])
-      L13_13[#L13_13 + 1] = L11_11
-      ;({})[#{} + 1] = 35
-    end
-    L12_12[#L12_12 + 1] = A0_0.CONTENTS_42
-    L13_13[#L13_13 + 1] = A0_0:FormatString(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT, L12_12[#L12_12])
-    L13_13[#L13_13 + 1] = L11_11
-    ;({})[#{} + 1] = 20
-    L13_13[#L13_13 + 1] = A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_A1_000_001
-    L13_13[#L13_13 + 1] = A0_0.MENU_FLAG_ENABLE
-    if L9_9 then
-      L13_13[#L13_13 + 1] = A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_A1_000_002
-      L13_13[#L13_13 + 1] = A0_0.MENU_FLAG_ENABLE
-    end
-    if L10_10 then
-      L13_13[#L13_13 + 1] = A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_A1_100_002
-      L13_13[#L13_13 + 1] = A0_0.MENU_FLAG_ENABLE
-    end
-    L13_13[#L13_13 + 1] = A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_A1_000_003
-    L13_13[#L13_13 + 1] = A0_0.MENU_FLAG_ENABLE
-    if A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13)) == 0 then
-      return -1
-    elseif A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13)) <= #L12_12 then
-      if L8_8 == false then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_110_010, true)
-        A0_0:Wait(10)
-        A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        return 0
-      end
-      if A0_0:YesNo(A0_0:FormatString(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_YESNO_CONTENT, L12_12[A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13))], ({})[A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13))])) == true then
-        return L12_12[A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13))]
-      end
-      return 0
-    elseif A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13)) == #L12_12 + 1 then
-      A0_0:Description_Eureka(A1_1, A2_2)
-      return 0
-    elseif A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13)) == #L12_12 + 2 then
-      if L9_9 then
-        A0_0:OpenMagiaboard()
-        return 0
-      end
-    elseif A0_0:GrayoutMenu(A0_0.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000, unpack(L13_13)) == #L12_12 + 3 and L10_10 then
-      A0_0:OpenMagiaArca()
-      return 0
-    end
-    return -1
-  end
-  function CtsErkKuganeEntrance.Description_Eureka(A0_14, A1_15, A2_16)
-    while true do
-      if A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 1 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_020, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_021, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_022, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_100_022, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_023, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      elseif A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 2 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK2)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_030, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_031, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_032, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_033, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK2)
-      elseif A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 3 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_040, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_041, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_042, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_043, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_044, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      elseif A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 4 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK1)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_050, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_051, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_052, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK1)
-      elseif A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 5 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_SPIRIT)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_060, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_061, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_100_061, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EVENT_SPIRIT)
-      elseif A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 6 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_JOY)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_070, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_071, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_JOY)
-      elseif A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 7 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_THINK)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_080, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_081, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_082, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EVENT_THINK)
-      elseif A0_14:Menu(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009) == 8 then
-        A2_16:TurnTo(A1_15, false)
-        A2_16:WaitForTurn()
-        A2_16:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_16:Talk(A1_15, A0_14, A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_090, true)
-        A0_14:Wait(10)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_091, false)
-        A0_14:SystemTalk(A0_14.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_092, true)
-        A0_14:Wait(10)
-        A2_16:CancelActionTimeline(A0_14.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
       else
-        return 0
+        L14_3 = A0_3.VER44EUREKA_ENABLE
+        if L14_3 ~= nil then
+          L15_3 = A1_3
+          L14_3 = A1_3.IsReward
+          L16_3 = A0_3.REWARD_43_COMPLETE
+          L14_3 = L14_3(L15_3, L16_3)
+          if L14_3 == true then
+            L15_3 = A1_3
+            L14_3 = A1_3.IsQuestCompleted
+            L16_3 = A0_3.RELEASE_QUEST_44
+            L14_3 = L14_3(L15_3, L16_3)
+            if L14_3 == false then
+              L12_3 = true
+              L13_3 = A0_3.CONTENTS_44
+          end
+        end
+        else
+          L14_3 = A0_3.VER43EUREKA_ENABLE
+          if L14_3 ~= nil then
+            L15_3 = A1_3
+            L14_3 = A1_3.IsReward
+            L16_3 = A0_3.REWARD_42_COMPLETE
+            L14_3 = L14_3(L15_3, L16_3)
+            if L14_3 == true then
+              L15_3 = A1_3
+              L14_3 = A1_3.IsQuestCompleted
+              L16_3 = A0_3.RELEASE_QUEST_43
+              L14_3 = L14_3(L15_3, L16_3)
+              if L14_3 == false then
+                L12_3 = true
+                L13_3 = A0_3.CONTENTS_43
+              end
+            end
+          end
+        end
+      end
+      if L12_3 == true then
+        L15_3 = A2_3
+        L14_3 = A2_3.TurnTo
+        L16_3 = A1_3
+        L17_3 = false
+        L14_3(L15_3, L16_3, L17_3)
+        L15_3 = A2_3
+        L14_3 = A2_3.WaitForTurn
+        L14_3(L15_3)
+        L15_3 = A2_3
+        L14_3 = A2_3.PlayActionTimeline
+        L16_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L14_3(L15_3, L16_3)
+        L15_3 = A2_3
+        L14_3 = A2_3.Talk
+        L16_3 = A1_3
+        L17_3 = A0_3
+        L18_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_100
+        L19_3 = true
+        L14_3(L15_3, L16_3, L17_3, L18_3, L19_3)
+        L15_3 = A0_3
+        L14_3 = A0_3.Wait
+        L16_3 = 10
+        L14_3(L15_3, L16_3)
+        L15_3 = A0_3
+        L14_3 = A0_3.SystemTalk
+        L16_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_101
+        L17_3 = true
+        L18_3 = L13_3
+        L14_3(L15_3, L16_3, L17_3, L18_3)
+        L15_3 = A0_3
+        L14_3 = A0_3.Wait
+        L16_3 = 10
+        L14_3(L15_3, L16_3)
+        L15_3 = A2_3
+        L14_3 = A2_3.CancelActionTimeline
+        L16_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L14_3(L15_3, L16_3)
+      end
+    end
+    L12_3 = {}
+    L13_3 = {}
+    L14_3 = {}
+    L16_3 = A1_3
+    L15_3 = A1_3.IsQuestCompleted
+    L17_3 = A0_3.RELEASE_QUEST_45
+    L15_3 = L15_3(L16_3, L17_3)
+    if L15_3 then
+      L15_3 = #L12_3
+      L15_3 = L15_3 + 1
+      L16_3 = A0_3.CONTENTS_45
+      L12_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L17_3 = A0_3
+      L16_3 = A0_3.FormatString
+      L18_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT
+      L19_3 = #L12_3
+      L19_3 = L12_3[L19_3]
+      L16_3 = L16_3(L17_3, L18_3, L19_3)
+      L13_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L13_3[L15_3] = L11_3
+      L15_3 = #L14_3
+      L15_3 = L15_3 + 1
+      L14_3[L15_3] = 0
+    end
+    L16_3 = A1_3
+    L15_3 = A1_3.IsQuestCompleted
+    L17_3 = A0_3.RELEASE_QUEST_44
+    L15_3 = L15_3(L16_3, L17_3)
+    if L15_3 then
+      L15_3 = #L12_3
+      L15_3 = L15_3 + 1
+      L16_3 = A0_3.CONTENTS_44
+      L12_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L17_3 = A0_3
+      L16_3 = A0_3.FormatString
+      L18_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT
+      L19_3 = #L12_3
+      L19_3 = L12_3[L19_3]
+      L16_3 = L16_3(L17_3, L18_3, L19_3)
+      L13_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L13_3[L15_3] = L11_3
+      L15_3 = #L14_3
+      L15_3 = L15_3 + 1
+      L14_3[L15_3] = 50
+    end
+    L16_3 = A1_3
+    L15_3 = A1_3.IsQuestCompleted
+    L17_3 = A0_3.RELEASE_QUEST_43
+    L15_3 = L15_3(L16_3, L17_3)
+    if L15_3 then
+      L15_3 = #L12_3
+      L15_3 = L15_3 + 1
+      L16_3 = A0_3.CONTENTS_43
+      L12_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L17_3 = A0_3
+      L16_3 = A0_3.FormatString
+      L18_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT
+      L19_3 = #L12_3
+      L19_3 = L12_3[L19_3]
+      L16_3 = L16_3(L17_3, L18_3, L19_3)
+      L13_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L13_3[L15_3] = L11_3
+      L15_3 = #L14_3
+      L15_3 = L15_3 + 1
+      L14_3[L15_3] = 35
+    end
+    L15_3 = #L12_3
+    L15_3 = L15_3 + 1
+    L16_3 = A0_3.CONTENTS_42
+    L12_3[L15_3] = L16_3
+    L15_3 = #L13_3
+    L15_3 = L15_3 + 1
+    L17_3 = A0_3
+    L16_3 = A0_3.FormatString
+    L18_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_MENU_CONTENT
+    L19_3 = #L12_3
+    L19_3 = L12_3[L19_3]
+    L16_3 = L16_3(L17_3, L18_3, L19_3)
+    L13_3[L15_3] = L16_3
+    L15_3 = #L13_3
+    L15_3 = L15_3 + 1
+    L13_3[L15_3] = L11_3
+    L15_3 = #L14_3
+    L15_3 = L15_3 + 1
+    L14_3[L15_3] = 20
+    L15_3 = #L13_3
+    L15_3 = L15_3 + 1
+    L16_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A1_000_001
+    L13_3[L15_3] = L16_3
+    L15_3 = #L13_3
+    L15_3 = L15_3 + 1
+    L16_3 = A0_3.MENU_FLAG_ENABLE
+    L13_3[L15_3] = L16_3
+    if L9_3 then
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L16_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A1_000_002
+      L13_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L16_3 = A0_3.MENU_FLAG_ENABLE
+      L13_3[L15_3] = L16_3
+    end
+    if L10_3 then
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L16_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A1_100_002
+      L13_3[L15_3] = L16_3
+      L15_3 = #L13_3
+      L15_3 = L15_3 + 1
+      L16_3 = A0_3.MENU_FLAG_ENABLE
+      L13_3[L15_3] = L16_3
+    end
+    L15_3 = #L13_3
+    L15_3 = L15_3 + 1
+    L16_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A1_000_003
+    L13_3[L15_3] = L16_3
+    L15_3 = #L13_3
+    L15_3 = L15_3 + 1
+    L16_3 = A0_3.MENU_FLAG_ENABLE
+    L13_3[L15_3] = L16_3
+    L16_3 = A0_3
+    L15_3 = A0_3.GrayoutMenu
+    L17_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_Q1_000_000
+    L18_3 = unpack
+    L19_3 = L13_3
+    L18_3, L19_3, L20_3, L21_3, L22_3 = L18_3(L19_3)
+    L15_3 = L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+    if L15_3 == 0 then
+      L16_3 = -1
+      return L16_3
+    else
+      L16_3 = #L12_3
+      if L15_3 <= L16_3 then
+        if L8_3 == false then
+          L17_3 = A2_3
+          L16_3 = A2_3.PlayActionTimeline
+          L18_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L16_3(L17_3, L18_3)
+          L17_3 = A2_3
+          L16_3 = A2_3.Talk
+          L18_3 = A1_3
+          L19_3 = A0_3
+          L20_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_110_010
+          L21_3 = true
+          L16_3(L17_3, L18_3, L19_3, L20_3, L21_3)
+          L17_3 = A0_3
+          L16_3 = A0_3.Wait
+          L18_3 = 10
+          L16_3(L17_3, L18_3)
+          L17_3 = A2_3
+          L16_3 = A2_3.CancelActionTimeline
+          L18_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L16_3(L17_3, L18_3)
+          L16_3 = 0
+          return L16_3
+        end
+        L17_3 = A0_3
+        L16_3 = A0_3.YesNo
+        L19_3 = A0_3
+        L18_3 = A0_3.FormatString
+        L20_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_YESNO_CONTENT
+        L21_3 = L12_3[L15_3]
+        L22_3 = L14_3[L15_3]
+        L18_3, L19_3, L20_3, L21_3, L22_3 = L18_3(L19_3, L20_3, L21_3, L22_3)
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+        if L16_3 == true then
+          L17_3 = L12_3[L15_3]
+          return L17_3
+        end
+        L17_3 = 0
+        return L17_3
+      else
+        L16_3 = #L12_3
+        L16_3 = L16_3 + 1
+        if L15_3 == L16_3 then
+          L17_3 = A0_3
+          L16_3 = A0_3.Description_Eureka
+          L18_3 = A1_3
+          L19_3 = A2_3
+          L16_3(L17_3, L18_3, L19_3)
+          L16_3 = 0
+          return L16_3
+        else
+          L16_3 = #L12_3
+          L16_3 = L16_3 + 2
+          if L15_3 == L16_3 then
+            if L9_3 then
+              L17_3 = A0_3
+              L16_3 = A0_3.OpenMagiaboard
+              L16_3(L17_3)
+              L16_3 = 0
+              return L16_3
+            end
+          else
+            L16_3 = #L12_3
+            L16_3 = L16_3 + 3
+            if L15_3 == L16_3 and L10_3 then
+              L17_3 = A0_3
+              L16_3 = A0_3.OpenMagiaArca
+              L16_3(L17_3)
+              L16_3 = 0
+              return L16_3
+            end
+          end
+        end
+      end
+    end
+    L16_3 = -1
+    return L16_3
+  end
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsErkKuganeEntrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    while true do
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_Q2_000_000
+      L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_001
+      L7_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_002
+      L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_003
+      L9_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_004
+      L10_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_005
+      L11_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_006
+      L12_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_007
+      L13_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_008
+      L14_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_A2_000_009
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_020
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_021
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_022
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_100_022
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_023
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_030
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_031
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_032
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_033
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_040
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_041
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_042
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_043
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_044
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 4 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_050
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_051
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_052
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 5 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_SPIRIT
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_060
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_061
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_100_061
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_SPIRIT
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 6 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_070
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_071
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 7 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_080
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_081
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_082
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 8 then
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = A1_3
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_RODNEY_000_090
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_091
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_CTSERKKUGANEENTRANCE_00459_SYSTEM_000_092
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+      else
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-end)()
-;(function()
-  local L1_17
-  L1_17 = CtsErkKuganeEntrance
-  L1_17.SCRIPT_VERSION = 2
-end)()
+  L0_2.Description_Eureka = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsErkKuganeEntrance
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

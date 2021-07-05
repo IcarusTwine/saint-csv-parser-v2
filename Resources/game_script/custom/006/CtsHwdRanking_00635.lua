@@ -1,234 +1,651 @@
-(function()
-  print("CtsHwdRanking")
-  function CtsHwdRanking.OnScene00000(A0_0, A1_1, A2_2, A3_3, ...)
-    local L5_5, L6_6, L7_7
-    L6_6 = A0_0
-    L5_5 = A0_0.GetHWDDevelopmentLevel
-    L5_5 = L5_5(L6_6)
-    L7_7 = A2_2
-    L6_6 = A2_2.TurnTo
-    L6_6(L7_7, A1_1, true)
-    L7_7 = A2_2
-    L6_6 = A2_2.WaitForTurn
-    L6_6(L7_7)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsHwdRanking"
+  L0_2(L1_2)
+  L0_2 = CtsHwdRanking
+  function L1_2(A0_3, A1_3, A2_3, A3_3, ...)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetHWDDevelopmentLevel
+    L5_3 = L5_3(L6_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.TurnTo
+    L8_3 = A1_3
+    L9_3 = true
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.WaitForTurn
+    L6_3(L7_3)
     while true do
-      while true do
-        if L5_5 <= 111 then
-          L7_7 = A0_0
-          L6_6 = A0_0.Menu
-          L6_6 = L6_6(L7_7, A0_0.TEXT_CTSHWDRANKING_00635_MENU_TITLE, A0_0.TEXT_CTSHWDRANKING_00635_MENU_001, A0_0.TEXT_CTSHWDRANKING_00635_MENU_002, A0_0.TEXT_CTSHWDRANKING_00635_MENU_003, A0_0.TEXT_CTSHWDRANKING_00635_MENU_004, A0_0.TEXT_CTSHWDRANKING_00635_MENU_005, A0_0.TEXT_CTSHWDRANKING_00635_MENU_CANCEL)
-          if L6_6 == 1 then
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-            if A3_3 == 1 then
-              L7_7 = A2_2.Talk
-              L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_020_000, true)
-            else
-              L7_7 = A2_2.Talk
-              L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_020_010, true)
-            end
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-            L7_7 = {
-              ...
-            }
-            A0_0:OpenRankingUI(unpack(L7_7))
-            break
-          elseif L6_6 == 2 then
-          elseif L6_6 == 3 then
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_000, false)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_010, false)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_020, false)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_030, false)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_040, true)
-            L7_7 = A0_0.Wait
-            L7_7(A0_0, 10)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_030_050, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_030_060, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_030_070, true)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-          elseif L6_6 == 4 then
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK1)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_000, false)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_010, false)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK1)
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_020, false)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_030, false)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_040, true)
-            L7_7 = A0_0.Wait
-            L7_7(A0_0, 10)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_040_050, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_040_060, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_040_070, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_040_080, true)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-          elseif L6_6 == 5 then
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_050_000, false)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-            L7_7 = A2_2.PlayActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-            L7_7 = A2_2.Talk
-            L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_050_010, true)
-            L7_7 = A0_0.Wait
-            L7_7(A0_0, 10)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_050_020, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_050_030, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_050_040, false)
-            L7_7 = A0_0.SystemTalk
-            L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_050_050, true)
-            L7_7 = A2_2.CancelActionTimeline
-            L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
+      if L5_3 <= 111 then
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_TITLE
+        L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_001
+        L10_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_002
+        L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_003
+        L12_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_004
+        L13_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_005
+        L14_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_CANCEL
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        if L6_3 == 1 then
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          if A3_3 == 1 then
+            L8_3 = A2_3
+            L7_3 = A2_3.Talk
+            L9_3 = A1_3
+            L10_3 = A0_3
+            L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_020_000
+            L12_3 = true
+            L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
           else
-            break
+            L8_3 = A2_3
+            L7_3 = A2_3.Talk
+            L9_3 = A1_3
+            L10_3 = A0_3
+            L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_020_010
+            L12_3 = true
+            L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
           end
-      end
-      else
-        L7_7 = A0_0
-        L6_6 = A0_0.Menu
-        L6_6 = L6_6(L7_7, A0_0.TEXT_CTSHWDRANKING_00635_MENU_TITLE, A0_0.TEXT_CTSHWDRANKING_00635_MENU_001, A0_0.TEXT_CTSHWDRANKING_00635_MENU_003, A0_0.TEXT_CTSHWDRANKING_00635_MENU_CANCEL)
-        if L6_6 == 1 then
-          L7_7 = A2_2.PlayActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-          L7_7 = A2_2.Talk
-          L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_020_011, true)
-          L7_7 = A2_2.CancelActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-          L7_7 = {
-            ...
-          }
-          A0_0:OpenRankingUI(unpack(L7_7))
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          L7_3 = {}
+          L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3 = ...
+          L7_3[1] = L8_3
+          L7_3[2] = L9_3
+          L7_3[3] = L10_3
+          L7_3[4] = L11_3
+          L7_3[5] = L12_3
+          L7_3[6] = L13_3
+          L7_3[7] = L14_3
+          L9_3 = A0_3
+          L8_3 = A0_3.OpenRankingUI
+          L10_3 = unpack
+          L11_3 = L7_3
+          L10_3, L11_3, L12_3, L13_3, L14_3 = L10_3(L11_3)
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
           break
-        elseif L6_6 == 2 then
-          L7_7 = A2_2.PlayActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-          L7_7 = A2_2.Talk
-          L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_000, false)
-          L7_7 = A2_2.Talk
-          L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_010, false)
-          L7_7 = A2_2.CancelActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-          L7_7 = A2_2.PlayActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          L7_7 = A2_2.Talk
-          L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_020, false)
-          L7_7 = A2_2.Talk
-          L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_030, false)
-          L7_7 = A2_2.CancelActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          L7_7 = A2_2.PlayActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
-          L7_7 = A2_2.Talk
-          L7_7(A2_2, A1_1, A0_0, A0_0.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_040, true)
-          L7_7 = A0_0.Wait
-          L7_7(A0_0, 10)
-          L7_7 = A0_0.SystemTalk
-          L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_030_050, false)
-          L7_7 = A0_0.SystemTalk
-          L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_030_060, false)
-          L7_7 = A0_0.SystemTalk
-          L7_7(A0_0, A0_0.TEXT_CTSHWDRANKING_00635_SYSTEM_030_070, true)
-          L7_7 = A2_2.CancelActionTimeline
-          L7_7(A2_2, A0_0.ACTION_TIMELINE_EVENT_THINK)
+        elseif L6_3 == 2 then
+        elseif L6_3 == 3 then
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_000
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_010
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_020
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_030
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_040
+          L12_3 = true
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = 10
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_030_050
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_030_060
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_030_070
+          L10_3 = true
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+        elseif L6_3 == 4 then
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_000
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_010
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_020
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_030
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_040_040
+          L12_3 = true
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = 10
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_040_050
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_040_060
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_040_070
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_040_080
+          L10_3 = true
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+        elseif L6_3 == 5 then
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_050_000
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_050_010
+          L12_3 = true
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = 10
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_050_020
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_050_030
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_050_040
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_050_050
+          L10_3 = true
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+        else
+          break
+        end
+      else
+        L7_3 = A0_3
+        L6_3 = A0_3.Menu
+        L8_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_TITLE
+        L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_001
+        L10_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_003
+        L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_MENU_CANCEL
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+        if L6_3 == 1 then
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_020_011
+          L12_3 = true
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          L7_3 = {}
+          L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3 = ...
+          L7_3[1] = L8_3
+          L7_3[2] = L9_3
+          L7_3[3] = L10_3
+          L7_3[4] = L11_3
+          L7_3[5] = L12_3
+          L7_3[6] = L13_3
+          L7_3[7] = L14_3
+          L9_3 = A0_3
+          L8_3 = A0_3.OpenRankingUI
+          L10_3 = unpack
+          L11_3 = L7_3
+          L10_3, L11_3, L12_3, L13_3, L14_3 = L10_3(L11_3)
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          break
+        elseif L6_3 == 2 then
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_000
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_010
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_020
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_030
+          L12_3 = false
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.PlayActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.Talk
+          L9_3 = A1_3
+          L10_3 = A0_3
+          L11_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_030_040
+          L12_3 = true
+          L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = 10
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_030_050
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_030_060
+          L10_3 = false
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.SystemTalk
+          L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_SYSTEM_030_070
+          L10_3 = true
+          L7_3(L8_3, L9_3, L10_3)
+          L8_3 = A2_3
+          L7_3 = A2_3.CancelActionTimeline
+          L9_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L7_3(L8_3, L9_3)
         else
           break
         end
       end
     end
   end
-  function CtsHwdRanking.OnScene01001(A0_8, A1_9, A2_10, A3_11)
-    A2_10:TurnTo(A1_9, true)
-    A2_10:WaitForTurn()
-    if A0_8:GetHWDDevelopmentLevel() <= 111 then
-      A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_000, false)
-      A2_10:CancelActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_GREETING)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_010, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_020, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_030, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_040, false)
-      A2_10:CancelActionTimeline(A0_8.ACTION_TIMELINE_EVENT_GREETING)
-      A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_THINK)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_050, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_060, true)
-      A2_10:CancelActionTimeline(A0_8.ACTION_TIMELINE_EVENT_THINK)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsHwdRanking
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L5_3 = A0_3
+    L4_3 = A0_3.GetHWDDevelopmentLevel
+    L4_3 = L4_3(L5_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = true
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
+    if L4_3 <= 111 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_000
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.CancelActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_010
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_020
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_030
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_040
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.CancelActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_050
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_060
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.CancelActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L5_3(L6_3, L7_3)
     else
-      A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_000, false)
-      A2_10:CancelActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_GREETING)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_010, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_020, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_030, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_041, false)
-      A2_10:CancelActionTimeline(A0_8.ACTION_TIMELINE_EVENT_GREETING)
-      A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_THINK)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_052, false)
-      A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_060, true)
-      A2_10:CancelActionTimeline(A0_8.ACTION_TIMELINE_EVENT_THINK)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_000
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.CancelActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_010
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_020
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_030
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_041
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.CancelActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_052
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_010_060
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.CancelActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L5_3(L6_3, L7_3)
     end
   end
-  function CtsHwdRanking.OnScene09001(A0_12, A1_13, A2_14, A3_15)
-    A2_14:TurnTo(A1_13, true)
-    A2_14:WaitForTurn()
-    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_THINK)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_000_000, true)
-    A2_14:CancelActionTimeline(A0_12.ACTION_TIMELINE_EVENT_THINK)
+  L0_2.OnScene01001 = L1_2
+  L0_2 = CtsHwdRanking
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_000_000
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L4_3(L5_3, L6_3)
   end
-  function CtsHwdRanking.OnScene09002(A0_16, A1_17, A2_18)
-    A2_18:TurnTo(A1_17, true)
-    A2_18:WaitForTurn()
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_THINK)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_000_000, true)
-    A2_18:CancelActionTimeline(A0_16.ACTION_TIMELINE_EVENT_THINK)
+  L0_2.OnScene09001 = L1_2
+  L0_2 = CtsHwdRanking
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSHWDRANKING_00635_LUDOVRAINT_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
   end
-end)()
-;(function()
-  local L1_19
-  L1_19 = CtsHwdRanking
-  L1_19.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene09002 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsHwdRanking
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

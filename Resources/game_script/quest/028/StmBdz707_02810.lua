@@ -1,201 +1,561 @@
-(function()
-  print("StmBdz707 loaded")
-  function StmBdz707.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    A2_2:Idle(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE)
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "StmBdz707 loaded"
+  L0_2(L1_2)
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Idle
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestOffer
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L3_3 = 1
+      return L3_3
     else
-      return 0
+      L3_3 = 0
+      return L3_3
     end
   end
-  function StmBdz707.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_000, false)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_001, true)
-    A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_SHOCKED)
-    A0_3:Wait(45)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_002, false)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_003, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_004, false)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_005, false)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_006, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_007, false)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ITEM)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_008, true)
-    A0_3:QuestAccepted()
+  L0_2.OnScene00000 = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_SHOCKED
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 45
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_002
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_003
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_004
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_005
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_006
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_007
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_008
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestAccepted
+    L3_3(L4_3)
   end
-  function StmBdz707.OnScene00002(A0_6, A1_7, A2_8)
-    if A0_6:IsBattleNpcOwner(A1_7, true) == true or A0_6:IsBattleNpcTriggerOwner(A1_7, A2_8, false) == true then
-      A0_6:CancelEventScene()
-    else
-      A0_6:LogMessage(A0_6.LOG_MSG_EVENT_POP_MESSAGE)
-    end
-  end
-  function StmBdz707.OnScene00003(A0_9, A1_10, A2_11)
-    if A0_9:IsBattleNpcOwner(A1_10, true) == true or A0_9:IsBattleNpcTriggerOwner(A1_10, A2_11, false) == true then
-    else
-      A0_9:LogMessage(A0_9.LOG_MSG_EVENT_POP_MESSAGE)
-    end
-  end
-  function StmBdz707.OnScene00004(A0_12, A1_13, A2_14)
-  end
-  function StmBdz707.OnScene00005(A0_15, A1_16, A2_17)
-  end
-  function StmBdz707.OnScene00006(A0_18, A1_19, A2_20)
-    local L3_21, L4_22
-    L4_22 = A2_20
-    L3_21 = A2_20.TurnTo
-    L3_21(L4_22, A1_19, false)
-    L4_22 = A2_20
-    L3_21 = A2_20.Talk
-    L3_21(L4_22, A1_19, A0_18, A0_18.TEXT_STMBDZ707_02810_MOTOJIRO_000_020, false)
-    L4_22 = A2_20
-    L3_21 = A2_20.PlayActionTimeline
-    L3_21(L4_22, A0_18.ACTION_TIMELINE_EVENT_TALK1)
-    L4_22 = A2_20
-    L3_21 = A2_20.Talk
-    L3_21(L4_22, A1_19, A0_18, A0_18.TEXT_STMBDZ707_02810_MOTOJIRO_000_021, false)
-    L4_22 = A2_20
-    L3_21 = A2_20.Talk
-    L3_21(L4_22, A1_19, A0_18, A0_18.TEXT_STMBDZ707_02810_MOTOJIRO_000_022, false)
-    L4_22 = A2_20
-    L3_21 = A2_20.PlayActionTimeline
-    L3_21(L4_22, A0_18.ACTION_TIMELINE_EVENT_JP_BOW)
-    L4_22 = A2_20
-    L3_21 = A2_20.Talk
-    L3_21(L4_22, A1_19, A0_18, A0_18.TEXT_STMBDZ707_02810_MOTOJIRO_000_023, true)
-    L4_22 = A0_18
-    L3_21 = A0_18.QuestReward
-    L4_22 = L3_21(L4_22, A2_20, A1_19)
-    if L3_21 then
-      A0_18:QuestCompleted()
-    end
-    return L3_21, L4_22
-  end
-  function StmBdz707.GetEventItems(A0_23, A1_24)
-    local L2_25
-    L2_25 = A0_23.GetQuestId
-    L2_25 = L2_25(A0_23)
-    if A1_24:GetQuestSequence(L2_25) == A0_23.SEQ_0 then
-      return A0_23.ITEM0, A1_24:GetQuestUI8BH(L2_25), false
-    elseif A1_24:GetQuestSequence(L2_25) == A0_23.SEQ_1 then
-      return A0_23.ITEM0, A1_24:GetQuestUI8BH(L2_25), true
-    elseif A1_24:GetQuestSequence(L2_25) == A0_23.SEQ_FINISH then
-      return A0_23.ITEM0, A1_24:GetQuestUI8BH(L2_25), false
-    end
-  end
-  function StmBdz707.IsTodoChecked(A0_26, A1_27, A2_28)
-    local L3_29
-    L3_29 = A0_26.GetQuestId
-    L3_29 = L3_29(A0_26)
-    if A1_27:GetQuestSequence(L3_29) == A0_26.SEQ_0 then
-      return false
-    end
-    if A2_28 == 0 then
-      return A1_27:GetQuestUI8AL(L3_29) >= 1
-    elseif A2_28 == 1 then
-      return false
-    end
-  end
-end)()
-;(function()
-  local L0_30, L1_31
-  L0_30 = StmBdz707
-  L0_30.SCRIPT_VERSION = 2
-  L0_30 = StmBdz707
-  function L1_31(A0_32)
-    local L1_33
-  end
-  L0_30.OnInitialize = L1_31
-  L0_30 = StmBdz707
-  function L1_31(A0_34, A1_35, A2_36, A3_37, A4_38)
-    local L5_39
-    L5_39 = A0_34.GetQuestId
-    L5_39 = L5_39(A0_34)
-    if A1_35:GetQuestSequence(L5_39) == A0_34.SEQ_1 then
-      if A3_37 == A0_34.ENEMY0 then
-        return A1_35:GetQuestBitFlag8(L5_39, 1) == false
-      elseif A4_38 == A0_34.ENEMY1 then
-        return 1 > A1_35:GetQuestUI8AL(L5_39)
-      elseif A4_38 == A0_34.ENEMY1 then
-        return true
+  L0_2.OnScene00001 = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsBattleNpcOwner
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 ~= true then
+      L4_3 = A0_3
+      L3_3 = A0_3.IsBattleNpcTriggerOwner
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L7_3 = false
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+      if L3_3 ~= true then
+        goto lbl_17
       end
     end
-    return false
+    L4_3 = A0_3
+    L3_3 = A0_3.CancelEventScene
+    L3_3(L4_3)
+    goto lbl_20
+    ::lbl_17::
+    L4_3 = A0_3
+    L3_3 = A0_3.LogMessage
+    L5_3 = A0_3.LOG_MSG_EVENT_POP_MESSAGE
+    L3_3(L4_3, L5_3)
+    ::lbl_20::
   end
-  L0_30.IsAcceptEvent = L1_31
-  L0_30 = StmBdz707
-  function L1_31(A0_40, A1_41, A2_42, A3_43, A4_44)
-    local L5_45
-    L5_45 = A0_40.GetQuestId
-    L5_45 = L5_45(A0_40)
-    if A1_41:GetQuestSequence(L5_45) == A0_40.SEQ_1 then
-      if A3_43 == A0_40.ENEMY0 then
-        return A1_41:GetQuestBitFlag8(L5_45, 1) == false
-      elseif A4_44 == A0_40.ENEMY1 then
-        return 1 > A1_41:GetQuestUI8AL(L5_45)
-      elseif A4_44 == A0_40.ENEMY1 then
-        return false
+  L0_2.OnScene00002 = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsBattleNpcOwner
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 ~= true then
+      L4_3 = A0_3
+      L3_3 = A0_3.IsBattleNpcTriggerOwner
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L7_3 = false
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+      if L3_3 == true then
+      else
+        L4_3 = A0_3
+        L3_3 = A0_3.LogMessage
+        L5_3 = A0_3.LOG_MSG_EVENT_POP_MESSAGE
+        L3_3(L4_3, L5_3)
       end
     end
-    return false
   end
-  L0_30.IsAnnounce = L1_31
-  L0_30 = StmBdz707
-  function L1_31(A0_46, A1_47, A2_48, A3_49)
-    local L4_50
-    L4_50 = A0_46.GetQuestId
-    L4_50 = L4_50(A0_46)
-    if A1_47:GetQuestSequence(L4_50) == A0_46.SEQ_1 and A2_48:GetLayoutId() == A0_46.ENEMY1 and A3_49 == A0_46.ITEM0 then
-      return true
-    end
-    return false
+  L0_2.OnScene00003 = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  L0_30.IsEventItemUsable = L1_31
-  L0_30 = StmBdz707
-  function L1_31(A0_51, A1_52, A2_53)
-    local L3_54
-    L3_54 = A0_51.GetQuestId
-    L3_54 = L3_54(A0_51)
-    if A1_52:GetQuestSequence(L3_54) == A0_51.SEQ_0 then
-      return 0, 0
-    end
-    if A2_53 == 0 then
-      return 0, 0
-    elseif A2_53 == 1 then
-      return A1_52:GetQuestUI8AL(L3_54), 0
-    end
+  L0_2.OnScene00004 = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  L0_30.GetTodoArgs = L1_31
-  L0_30 = StmBdz707
-  function L1_31(A0_55, A1_56, A2_57, A3_58, A4_59)
-    local L5_60
-    L5_60 = A0_55.GetQuestId
-    L5_60 = L5_60(A0_55)
-    if A1_56:GetQuestSequence(L5_60) == A0_55.SEQ_1 then
-      if A2_57:GetBaseId() == A0_55.ENEMY0 then
-        return A0_55.EVENT_STATE_BATTLE
+  L0_2.OnScene00005 = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_020
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_021
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_022
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_JP_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_STMBDZ707_02810_MOTOJIRO_000_023
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestReward
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3, L4_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L6_3 = A0_3
+      L5_3 = A0_3.QuestCompleted
+      L5_3(L6_3)
+    end
+    L5_3 = L3_3
+    L6_3 = L4_3
+    return L5_3, L6_3
+  end
+  L0_2.OnScene00006 = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L3_3 = A0_3
+    L2_3 = A0_3.GetQuestId
+    L2_3 = L2_3(L3_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = L2_3
+    L3_3 = L3_3(L4_3, L5_3)
+    L4_3 = A0_3.SEQ_0
+    if L3_3 == L4_3 then
+      L4_3 = true
+      L5_3 = A0_3.ITEM0
+      L7_3 = A1_3
+      L6_3 = A1_3.GetQuestUI8BH
+      L8_3 = L2_3
+      L6_3 = L6_3(L7_3, L8_3)
+      L7_3 = false
+      return L5_3, L6_3, L7_3
+    else
+      L4_3 = A0_3.SEQ_1
+      if L3_3 == L4_3 then
+        L4_3 = true
+        L5_3 = A0_3.ITEM0
+        L7_3 = A1_3
+        L6_3 = A1_3.GetQuestUI8BH
+        L8_3 = L2_3
+        L6_3 = L6_3(L7_3, L8_3)
+        L7_3 = true
+        return L5_3, L6_3, L7_3
+      else
+        L4_3 = A0_3.SEQ_FINISH
+        if L3_3 == L4_3 then
+          L4_3 = true
+          L5_3 = A0_3.ITEM0
+          L7_3 = A1_3
+          L6_3 = A1_3.GetQuestUI8BH
+          L8_3 = L2_3
+          L6_3 = L6_3(L7_3, L8_3)
+          L7_3 = false
+          return L5_3, L6_3, L7_3
+        end
       end
-    elseif A1_56:GetQuestSequence(L5_60) == A0_55.SEQ_FINISH then
     end
-    return A0_55.EVENT_STATE_NORMAL
   end
-  L0_30.GetConditionId = L1_31
-  L0_30 = StmBdz707
-  function L1_31(A0_61, A1_62, A2_63)
-    local L3_64
-    L3_64 = A0_61.GetQuestId
-    L3_64 = L3_64(A0_61)
-    if A1_62:GetQuestSequence(L3_64) == A0_61.SEQ_1 then
-    elseif A1_62:GetQuestSequence(L3_64) == A0_61.SEQ_FINISH then
+  L0_2.GetEventItems = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
     end
-    return A0_61:IsBattleNpcTriggerOwner(A1_62, A2_63, false), false
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L5_3 = 1 <= L5_3
+      return L5_3
+    elseif A2_3 == 1 then
+      L5_3 = false
+      return L5_3
+    end
   end
-  L0_30.GetGimmickState = L1_31
-end)()
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = StmBdz707
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = StmBdz707
+  function L1_2(A0_3)
+    local L1_3
+  end
+  L0_2.OnInitialize = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_1
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.ENEMY0
+      if A3_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.GetQuestBitFlag8
+        L9_3 = L5_3
+        L10_3 = 1
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        L7_3 = L7_3 == false
+        return L7_3
+      else
+        L7_3 = A0_3.ENEMY1
+        if A4_3 == L7_3 then
+          L7_3 = 1
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8AL
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          L9_3 = L7_3 > L8_3
+          return L9_3
+        else
+          L7_3 = A0_3.ENEMY1
+          if A4_3 == L7_3 then
+            L7_3 = true
+            return L7_3
+          end
+        end
+      end
+    end
+    L7_3 = false
+    return L7_3
+  end
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_1
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.ENEMY0
+      if A3_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.GetQuestBitFlag8
+        L9_3 = L5_3
+        L10_3 = 1
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        L7_3 = L7_3 == false
+        return L7_3
+      else
+        L7_3 = A0_3.ENEMY1
+        if A4_3 == L7_3 then
+          L7_3 = 1
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8AL
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          L9_3 = L7_3 > L8_3
+          return L9_3
+        else
+          L7_3 = A0_3.ENEMY1
+          if A4_3 == L7_3 then
+            L7_3 = false
+            return L7_3
+          end
+        end
+      end
+    end
+    L7_3 = false
+    return L7_3
+  end
+  L0_2.IsAnnounce = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.GetQuestId
+    L4_3 = L4_3(L5_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetQuestSequence
+    L7_3 = L4_3
+    L5_3 = L5_3(L6_3, L7_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.GetBaseId
+    L6_3 = L6_3(L7_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.GetLayoutId
+    L7_3 = L7_3(L8_3)
+    L8_3 = A0_3.SEQ_1
+    if L5_3 == L8_3 then
+      L8_3 = A0_3.ENEMY1
+      if L7_3 == L8_3 then
+        L8_3 = A0_3.ITEM0
+        if A3_3 == L8_3 then
+          L8_3 = true
+          return L8_3
+        end
+      end
+    end
+    L8_3 = false
+    return L8_3
+  end
+  L0_2.IsEventItemUsable = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+    if A2_3 == 0 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
+    elseif A2_3 == 1 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+  end
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_1
+    if L6_3 == L7_3 then
+      L8_3 = A2_3
+      L7_3 = A2_3.GetBaseId
+      L7_3 = L7_3(L8_3)
+      L8_3 = A0_3.ENEMY0
+      if L7_3 == L8_3 then
+        L7_3 = A0_3.EVENT_STATE_BATTLE
+        return L7_3
+      end
+    else
+      L7_3 = A0_3.SEQ_FINISH
+      if L6_3 == L7_3 then
+      end
+    end
+    L7_3 = A0_3.EVENT_STATE_NORMAL
+    return L7_3
+  end
+  L0_2.GetConditionId = L1_2
+  L0_2 = StmBdz707
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.GetLayoutId
+    L6_3 = L6_3(L7_3)
+    L7_3 = A0_3.SEQ_1
+    if L4_3 == L7_3 then
+    else
+      L7_3 = A0_3.SEQ_FINISH
+      if L4_3 == L7_3 then
+      end
+    end
+    L8_3 = A0_3
+    L7_3 = A0_3.IsBattleNpcTriggerOwner
+    L9_3 = A1_3
+    L10_3 = A2_3
+    L11_3 = false
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = false
+    return L7_3, L8_3
+  end
+  L0_2.GetGimmickState = L1_2
+end
+L0_1()

@@ -1,201 +1,564 @@
-(function()
-  print("BanAna502 loaded")
-  function BanAna502.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "BanAna502 loaded"
+  L0_2(L1_2)
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestOffer
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L3_3 = 1
+      return L3_3
     else
-      return 0
+      L3_3 = 0
+      return L3_3
     end
   end
-  function BanAna502.OnScene00001(A0_3, A1_4, A2_5)
-    A1_4:LookAt(A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_GREETING)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANANA502_03059_ESHANA_000_000, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANANA502_03059_ESHANA_100_000, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANANA502_03059_ESHANA_000_001, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANANA502_03059_ESHANA_000_002, true)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ITEM)
-    A0_3:Wait(20)
-    A1_4:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ITEM)
-    A1_4:WaitForActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ITEM)
-    A0_3:QuestAccepted(A0_3.SCREEN_IMAGE_BEAST_QUEST_ACCEPTED)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A1_3
+    L3_3 = A1_3.LookAt
+    L5_3 = A2_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANANA502_03059_ESHANA_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANANA502_03059_ESHANA_100_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANANA502_03059_ESHANA_000_001
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANANA502_03059_ESHANA_000_002
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 20
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.WaitForActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestAccepted
+    L5_3 = A0_3.SCREEN_IMAGE_BEAST_QUEST_ACCEPTED
+    L3_3(L4_3, L5_3)
   end
-  function BanAna502.OnScene00002(A0_6, A1_7, A2_8)
-    A0_6:Inventory(true)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A0_3
+    L3_3 = A0_3.Inventory
+    L5_3 = true
+    L3_3(L4_3, L5_3)
   end
-  function BanAna502.OnScene00003(A0_9, A1_10, A2_11)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function BanAna502.OnScene00004(A0_12, A1_13, A2_14)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function BanAna502.OnScene00005(A0_15, A1_16, A2_17)
-    if A0_15:IsBattleNpcOwner(A1_16, true) == true or A0_15:IsBattleNpcTriggerOwner(A1_16, A2_17, false) == true then
-    else
-      A0_15:SystemTalk(A0_15.TEXT_BANANA502_03059_SYSTEM_000_010, true)
-      A2_17:PlayQuestGimmickReaction()
-      A0_15:Wait(10)
-      A0_15:LogMessage(A0_15.LOG_MSG_EVENT_POP_MESSAGE)
-    end
-  end
-  function BanAna502.OnScene00006(A0_18, A1_19, A2_20)
-  end
-  function BanAna502.OnScene00007(A0_21, A1_22, A2_23)
-    if A0_21:IsBattleNpcOwner(A1_22, true) == true or A0_21:IsBattleNpcTriggerOwner(A1_22, A2_23, false) == true then
-    else
-      A0_21:LogMessage(A0_21.LOG_MSG_EVENT_POP_MESSAGE)
-    end
-  end
-  function BanAna502.OnScene00008(A0_24, A1_25, A2_26)
-    local L3_27, L4_28
-    L4_28 = A1_25
-    L3_27 = A1_25.LookAt
-    L3_27(L4_28, A2_26)
-    L4_28 = A2_26
-    L3_27 = A2_26.TurnTo
-    L3_27(L4_28, A1_25, false)
-    L4_28 = A2_26
-    L3_27 = A2_26.WaitForTurn
-    L3_27(L4_28)
-    L4_28 = A2_26
-    L3_27 = A2_26.PlayActionTimeline
-    L3_27(L4_28, A0_24.ACTION_TIMELINE_EVENT_TALK1)
-    L4_28 = A2_26
-    L3_27 = A2_26.Talk
-    L3_27(L4_28, A1_25, A0_24, A0_24.TEXT_BANANA502_03059_ESHANA_000_020, false)
-    L4_28 = A2_26
-    L3_27 = A2_26.Talk
-    L3_27(L4_28, A1_25, A0_24, A0_24.TEXT_BANANA502_03059_ESHANA_000_021, false)
-    L4_28 = A2_26
-    L3_27 = A2_26.Talk
-    L3_27(L4_28, A1_25, A0_24, A0_24.TEXT_BANANA502_03059_ESHANA_000_022, true)
-    L4_28 = A0_24
-    L3_27 = A0_24.QuestReward
-    L4_28 = L3_27(L4_28, A2_26, A1_25)
-    if L3_27 then
-      A0_24:QuestCompleted(A0_24.SCREEN_IMAGE_BEAST_QUEST_COMPLETE)
-    end
-    return L3_27, L4_28
-  end
-  function BanAna502.GetEventItems(A0_29, A1_30)
-    local L2_31
-    L2_31 = A0_29.GetQuestId
-    L2_31 = L2_31(A0_29)
-    if A1_30:GetQuestSequence(L2_31) == A0_29.SEQ_0 then
-      return A0_29.ITEM0, A1_30:GetQuestUI8BH(L2_31), false
-    elseif A1_30:GetQuestSequence(L2_31) == A0_29.SEQ_1 then
-      return A0_29.ITEM0, A1_30:GetQuestUI8BH(L2_31), true
-    elseif A1_30:GetQuestSequence(L2_31) == A0_29.SEQ_2 then
-      return A0_29.ITEM0, A1_30:GetQuestUI8BH(L2_31), false
-    elseif A1_30:GetQuestSequence(L2_31) == A0_29.SEQ_FINISH then
-      return A0_29.ITEM0, A1_30:GetQuestUI8BH(L2_31), false
-    end
-  end
-  function BanAna502.IsTodoChecked(A0_32, A1_33, A2_34)
-    local L3_35
-    L3_35 = A0_32.GetQuestId
-    L3_35 = L3_35(A0_32)
-    if A1_33:GetQuestSequence(L3_35) == A0_32.SEQ_0 then
-      return false
-    end
-    if A2_34 == 0 then
-      return A1_33:GetQuestUI8AL(L3_35) >= 1
-    elseif A2_34 == 1 then
-      return A1_33:GetQuestUI8AL(L3_35) >= 1
-    elseif A2_34 == 2 then
-      return false
-    end
-  end
-end)()
-;(function()
-  local L0_36, L1_37
-  L0_36 = BanAna502
-  L0_36.SCRIPT_VERSION = 2
-  L0_36 = BanAna502
-  function L1_37(A0_38)
-    local L1_39
-  end
-  L0_36.OnInitialize = L1_37
-  L0_36 = BanAna502
-  function L1_37(A0_40, A1_41, A2_42, A3_43, A4_44)
-    local L5_45
-    L5_45 = A0_40.GetQuestId
-    L5_45 = L5_45(A0_40)
-    if A1_41:GetQuestSequence(L5_45) == A0_40.SEQ_2 then
-      if A3_43 == A0_40.EOBJECT1 then
-        return A1_41:GetQuestBitFlag8(L5_45, 1) == false
-      elseif A4_44 == A0_40.ENEMY0 then
-        return 1 > A1_41:GetQuestUI8AL(L5_45)
+  L0_2.OnScene00004 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsBattleNpcOwner
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 ~= true then
+      L4_3 = A0_3
+      L3_3 = A0_3.IsBattleNpcTriggerOwner
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L7_3 = false
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+      if L3_3 == true then
+      else
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_BANANA502_03059_SYSTEM_000_010
+        L6_3 = true
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayQuestGimmickReaction
+        L3_3(L4_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.Wait
+        L5_3 = 10
+        L3_3(L4_3, L5_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.LogMessage
+        L5_3 = A0_3.LOG_MSG_EVENT_POP_MESSAGE
+        L3_3(L4_3, L5_3)
       end
     end
-    return false
   end
-  L0_36.IsAcceptEvent = L1_37
-  L0_36 = BanAna502
-  function L1_37(A0_46, A1_47, A2_48, A3_49, A4_50)
-    local L5_51
-    L5_51 = A0_46.GetQuestId
-    L5_51 = L5_51(A0_46)
-    if A1_47:GetQuestSequence(L5_51) == A0_46.SEQ_2 then
-      if A3_49 == A0_46.EOBJECT1 then
-        return A1_47:GetQuestBitFlag8(L5_51, 1) == false
-      elseif A4_50 == A0_46.ENEMY0 then
-        return 1 > A1_47:GetQuestUI8AL(L5_51)
+  L0_2.OnScene00005 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+  end
+  L0_2.OnScene00006 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsBattleNpcOwner
+    L5_3 = A1_3
+    L6_3 = true
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 ~= true then
+      L4_3 = A0_3
+      L3_3 = A0_3.IsBattleNpcTriggerOwner
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L7_3 = false
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+      if L3_3 == true then
+      else
+        L4_3 = A0_3
+        L3_3 = A0_3.LogMessage
+        L5_3 = A0_3.LOG_MSG_EVENT_POP_MESSAGE
+        L3_3(L4_3, L5_3)
       end
     end
-    return false
   end
-  L0_36.IsAnnounce = L1_37
-  L0_36 = BanAna502
-  function L1_37(A0_52, A1_53, A2_54, A3_55)
-    local L4_56
-    L4_56 = A0_52.GetQuestId
-    L4_56 = L4_56(A0_52)
-    if A1_53:GetQuestSequence(L4_56) == A0_52.SEQ_1 and A2_54:GetBaseId() == A0_52.EOBJECT0 and A3_55 == A0_52.ITEM0 then
-      return A1_53:GetQuestBitFlag8(L4_56, 1) == false
+  L0_2.OnScene00007 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A1_3
+    L3_3 = A1_3.LookAt
+    L5_3 = A2_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANANA502_03059_ESHANA_000_020
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANANA502_03059_ESHANA_000_021
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANANA502_03059_ESHANA_000_022
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestReward
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3, L4_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L6_3 = A0_3
+      L5_3 = A0_3.QuestCompleted
+      L7_3 = A0_3.SCREEN_IMAGE_BEAST_QUEST_COMPLETE
+      L5_3(L6_3, L7_3)
     end
-    return false
+    L5_3 = L3_3
+    L6_3 = L4_3
+    return L5_3, L6_3
   end
-  L0_36.IsEventItemUsable = L1_37
-  L0_36 = BanAna502
-  function L1_37(A0_57, A1_58, A2_59)
-    local L3_60
-    L3_60 = A0_57.GetQuestId
-    L3_60 = L3_60(A0_57)
-    if A1_58:GetQuestSequence(L3_60) == A0_57.SEQ_0 then
-      return 0, 0
-    end
-    if A2_59 == 0 then
-      return A1_58:GetQuestUI8AL(L3_60), 0
-    elseif A2_59 == 1 then
-      return A1_58:GetQuestUI8AL(L3_60), 0
-    elseif A2_59 == 2 then
-      return A1_58:GetQuestUI8AL(L3_60), 0
-    end
-  end
-  L0_36.GetTodoArgs = L1_37
-  L0_36 = BanAna502
-  function L1_37(A0_61, A1_62, A2_63)
-    local L3_64
-    L3_64 = A0_61.GetQuestId
-    L3_64 = L3_64(A0_61)
-    if A1_62:GetQuestSequence(L3_64) == A0_61.SEQ_1 then
-      if A2_63:GetBaseId() == A0_61.EOBJECT0 then
-        if A1_62:GetQuestBitFlag8(L3_64, 2) == true then
-          return true, false
-        end
-        if 1 <= A1_62:GetQuestUI8AL(L3_64) then
-          return true, false
-        end
-        if A1_62:GetQuestBitFlag8(L3_64, 1) == true then
-          return true, false
+  L0_2.OnScene00008 = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L3_3 = A0_3
+    L2_3 = A0_3.GetQuestId
+    L2_3 = L2_3(L3_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = L2_3
+    L3_3 = L3_3(L4_3, L5_3)
+    L4_3 = A0_3.SEQ_0
+    if L3_3 == L4_3 then
+      L4_3 = true
+      L5_3 = A0_3.ITEM0
+      L7_3 = A1_3
+      L6_3 = A1_3.GetQuestUI8BH
+      L8_3 = L2_3
+      L6_3 = L6_3(L7_3, L8_3)
+      L7_3 = false
+      return L5_3, L6_3, L7_3
+    else
+      L4_3 = A0_3.SEQ_1
+      if L3_3 == L4_3 then
+        L4_3 = true
+        L5_3 = A0_3.ITEM0
+        L7_3 = A1_3
+        L6_3 = A1_3.GetQuestUI8BH
+        L8_3 = L2_3
+        L6_3 = L6_3(L7_3, L8_3)
+        L7_3 = true
+        return L5_3, L6_3, L7_3
+      else
+        L4_3 = A0_3.SEQ_2
+        if L3_3 == L4_3 then
+          L4_3 = true
+          L5_3 = A0_3.ITEM0
+          L7_3 = A1_3
+          L6_3 = A1_3.GetQuestUI8BH
+          L8_3 = L2_3
+          L6_3 = L6_3(L7_3, L8_3)
+          L7_3 = false
+          return L5_3, L6_3, L7_3
+        else
+          L4_3 = A0_3.SEQ_FINISH
+          if L3_3 == L4_3 then
+            L4_3 = true
+            L5_3 = A0_3.ITEM0
+            L7_3 = A1_3
+            L6_3 = A1_3.GetQuestUI8BH
+            L8_3 = L2_3
+            L6_3 = L6_3(L7_3, L8_3)
+            L7_3 = false
+            return L5_3, L6_3, L7_3
+          end
         end
       end
-    elseif A1_62:GetQuestSequence(L3_64) == A0_61.SEQ_2 then
-    elseif A1_62:GetQuestSequence(L3_64) == A0_61.SEQ_FINISH then
     end
-    return A0_61:IsBattleNpcTriggerOwner(A1_62, A2_63, false), false
   end
-  L0_36.GetGimmickState = L1_37
-end)()
+  L0_2.GetEventItems = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
+    end
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L5_3 = 1 <= L5_3
+      return L5_3
+    elseif A2_3 == 1 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L5_3 = 1 <= L5_3
+      return L5_3
+    elseif A2_3 == 2 then
+      L5_3 = false
+      return L5_3
+    end
+  end
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = BanAna502
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = BanAna502
+  function L1_2(A0_3)
+    local L1_3
+  end
+  L0_2.OnInitialize = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_2
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.EOBJECT1
+      if A3_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.GetQuestBitFlag8
+        L9_3 = L5_3
+        L10_3 = 1
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        L7_3 = L7_3 == false
+        return L7_3
+      else
+        L7_3 = A0_3.ENEMY0
+        if A4_3 == L7_3 then
+          L7_3 = 1
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8AL
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          L9_3 = L7_3 > L8_3
+          return L9_3
+        end
+      end
+    end
+    L7_3 = false
+    return L7_3
+  end
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_2
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.EOBJECT1
+      if A3_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.GetQuestBitFlag8
+        L9_3 = L5_3
+        L10_3 = 1
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        L7_3 = L7_3 == false
+        return L7_3
+      else
+        L7_3 = A0_3.ENEMY0
+        if A4_3 == L7_3 then
+          L7_3 = 1
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8AL
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          L9_3 = L7_3 > L8_3
+          return L9_3
+        end
+      end
+    end
+    L7_3 = false
+    return L7_3
+  end
+  L0_2.IsAnnounce = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L5_3 = A0_3
+    L4_3 = A0_3.GetQuestId
+    L4_3 = L4_3(L5_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetQuestSequence
+    L7_3 = L4_3
+    L5_3 = L5_3(L6_3, L7_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.GetBaseId
+    L6_3 = L6_3(L7_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.GetLayoutId
+    L7_3 = L7_3(L8_3)
+    L8_3 = A0_3.SEQ_1
+    if L5_3 == L8_3 then
+      L8_3 = A0_3.EOBJECT0
+      if L6_3 == L8_3 then
+        L8_3 = A0_3.ITEM0
+        if A3_3 == L8_3 then
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestBitFlag8
+          L10_3 = L4_3
+          L11_3 = 1
+          L8_3 = L8_3(L9_3, L10_3, L11_3)
+          L8_3 = L8_3 == false
+          return L8_3
+        end
+      end
+    end
+    L8_3 = false
+    return L8_3
+  end
+  L0_2.IsEventItemUsable = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
+    elseif A2_3 == 1 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
+    elseif A2_3 == 2 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+  end
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = BanAna502
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.GetLayoutId
+    L6_3 = L6_3(L7_3)
+    L7_3 = A0_3.SEQ_1
+    if L4_3 == L7_3 then
+      L7_3 = A0_3.EOBJECT0
+      if L5_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.GetQuestBitFlag8
+        L9_3 = L3_3
+        L10_3 = 2
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        if L7_3 == true then
+          L7_3 = true
+          L8_3 = false
+          return L7_3, L8_3
+        end
+        L7_3 = 1
+        L9_3 = A1_3
+        L8_3 = A1_3.GetQuestUI8AL
+        L10_3 = L3_3
+        L8_3 = L8_3(L9_3, L10_3)
+        if L7_3 <= L8_3 then
+          L9_3 = true
+          L10_3 = false
+          return L9_3, L10_3
+        end
+        L10_3 = A1_3
+        L9_3 = A1_3.GetQuestBitFlag8
+        L11_3 = L3_3
+        L12_3 = 1
+        L9_3 = L9_3(L10_3, L11_3, L12_3)
+        if L9_3 == true then
+          L9_3 = true
+          L10_3 = false
+          return L9_3, L10_3
+        end
+      end
+    else
+      L7_3 = A0_3.SEQ_2
+      if L4_3 == L7_3 then
+      else
+        L7_3 = A0_3.SEQ_FINISH
+        if L4_3 == L7_3 then
+        end
+      end
+    end
+    L8_3 = A0_3
+    L7_3 = A0_3.IsBattleNpcTriggerOwner
+    L9_3 = A1_3
+    L10_3 = A2_3
+    L11_3 = false
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = false
+    return L7_3, L8_3
+  end
+  L0_2.GetGimmickState = L1_2
+end
+L0_1()

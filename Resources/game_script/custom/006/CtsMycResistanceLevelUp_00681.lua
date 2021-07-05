@@ -1,108 +1,392 @@
-(function()
-  print("CtsMycResistanceLevelUp")
-  function CtsMycResistanceLevelUp.OnScene00000(A0_0, A1_1, A2_2, A3_3)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    if A1_1:IsQuestCompleted(A0_0.PREVQUEST) == false then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_001, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_002, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsMycResistanceLevelUp"
+  L0_2(L1_2)
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestCompleted
+    L6_3 = A0_3.PREVQUEST
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 == false then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_001
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_002
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
       return
     end
     if A3_3 == 1 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_SALUTE)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_010, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EMOTE_SALUTE
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_010
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    if A0_0:Menu(A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_Q1_000_001, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_001, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_002, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_003) == 1 then
-      return 1
-    elseif A0_0:Menu(A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_Q1_000_001, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_001, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_002, A0_0.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_003) == 2 then
-      return 2
+    L5_3 = A0_3
+    L4_3 = A0_3.Menu
+    L6_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_Q1_000_001
+    L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_001
+    L8_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_002
+    L9_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_A1_000_003
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    if L4_3 == 1 then
+      L5_3 = 1
+      return L5_3
+    elseif L4_3 == 2 then
+      L5_3 = 2
+      return L5_3
     end
   end
-  function CtsMycResistanceLevelUp.OnScene00001(A0_4, A1_5, A2_6)
-    A2_6:PlayActionTimeline(A0_4.ACTION_TIMELINE_EVENT_TALK2)
-    A2_6:Talk(A1_5, A0_4, A0_4.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_020, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_020
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsMycResistanceLevelUp.OnScene00002(A0_7, A1_8, A2_9, A3_10)
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_THINK)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_030, true)
-    A0_7:Wait(10)
-    A0_7:SystemTalk(A0_7.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_031, true, A3_10)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_030
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.SystemTalk
+    L6_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_031
+    L7_3 = true
+    L8_3 = A3_3
+    L4_3(L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsMycResistanceLevelUp.OnScene00003(A0_11, A1_12, A2_13, A3_14, A4_15)
-    if A3_14 == 1 then
-      A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_040, false)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    if A3_3 == 1 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_040
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
     end
-    A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_050, true)
-    A0_11:Wait(10)
-    A0_11:ScreenImage(A0_11.SCREENIMAGE_LEVELUP)
-    A0_11:Wait(10)
-    A1_12:PlayVfx(A0_11.VFX_LEVELUP)
-    A0_11:Wait(80)
-    A0_11:LogMessage(A0_11.LOGMSG_LV_UP, A4_15)
-    A0_11:Wait(120)
-    if A4_15 == 2 or A4_15 == 5 or A4_15 == 6 or A4_15 == 7 or A4_15 == 8 or A4_15 == 9 or A4_15 == 10 then
-      A0_11:SystemTalk(A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_051, true)
-      A0_11:Wait(10)
-    elseif A4_15 == 16 or A4_15 == 18 or A4_15 == 20 or A4_15 == 22 or A4_15 == 23 or A4_15 == 25 then
-      if A2_13:GetBaseId() == A0_11.ENPC_01 then
-        A0_11:SystemTalk(A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_052, true)
-        A0_11:Wait(10)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_050
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.ScreenImage
+    L7_3 = A0_3.SCREENIMAGE_LEVELUP
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.PlayVfx
+    L7_3 = A0_3.VFX_LEVELUP
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 80
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.LogMessage
+    L7_3 = A0_3.LOGMSG_LV_UP
+    L8_3 = A4_3
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 120
+    L5_3(L6_3, L7_3)
+    if A4_3 == 2 or A4_3 == 5 or A4_3 == 6 or A4_3 == 7 or A4_3 == 8 or A4_3 == 9 or A4_3 == 10 then
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_051
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 10
+      L5_3(L6_3, L7_3)
+    elseif A4_3 == 16 or A4_3 == 18 or A4_3 == 20 or A4_3 == 22 or A4_3 == 23 or A4_3 == 25 then
+      L6_3 = A2_3
+      L5_3 = A2_3.GetBaseId
+      L5_3 = L5_3(L6_3)
+      L6_3 = A0_3.ENPC_01
+      if L5_3 == L6_3 then
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_052
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
       else
-        A0_11:SystemTalk(A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_051, true)
-        A0_11:Wait(10)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_051
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
       end
     end
-    if A1_12:IsQuestCompleted(A0_11.QUEST_LUCKSA104) and A4_15 >= 3 then
-      A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_060, true)
-      A0_11:Wait(30)
+    L6_3 = A1_3
+    L5_3 = A1_3.IsQuestCompleted
+    L7_3 = A0_3.QUEST_LUCKSA104
+    L5_3 = L5_3(L6_3, L7_3)
+    if L5_3 and 3 <= A4_3 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_060
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 30
+      L5_3(L6_3, L7_3)
     end
-    if A1_12:IsQuestCompleted(A0_11.QUEST_LUCKSA104) and (A4_15 == 5 or A4_15 == 8 or A4_15 == 10 or A4_15 == 11 or A4_15 == 12 or A4_15 == 13 or A4_15 == 14 or A4_15 == 15 or A4_15 == 16 or A4_15 == 18 or A4_15 == 22 or A4_15 == 25) then
-      A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_065, true)
-      A0_11:Wait(30)
+    L6_3 = A1_3
+    L5_3 = A1_3.IsQuestCompleted
+    L7_3 = A0_3.QUEST_LUCKSA104
+    L5_3 = L5_3(L6_3, L7_3)
+    if L5_3 and (A4_3 == 5 or A4_3 == 8 or A4_3 == 10 or A4_3 == 11 or A4_3 == 12 or A4_3 == 13 or A4_3 == 14 or A4_3 == 15 or A4_3 == 16 or A4_3 == 18 or A4_3 == 22 or A4_3 == 25) then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_065
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 30
+      L5_3(L6_3, L7_3)
     end
-    if A4_15 == 5 then
-      A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_TALK_BIG)
-      A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_070, true)
-      A0_11:Wait(30)
-      A0_11:SystemTalk(A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_071, false, A4_15)
-      A0_11:SystemTalk(A0_11.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_072, true)
-      A0_11:Wait(30)
+    if A4_3 == 5 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_070
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 30
+      L5_3(L6_3, L7_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_071
+      L8_3 = false
+      L9_3 = A4_3
+      L5_3(L6_3, L7_3, L8_3, L9_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_SYSTEM_000_072
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 30
+      L5_3(L6_3, L7_3)
     end
   end
-  function CtsMycResistanceLevelUp.OnScene00004(A0_16, A1_17, A2_18)
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_110, false)
-    A0_16:Wait(30)
-    A2_18:CancelActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EMOTE_SALUTE)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_111, false)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_110
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 30
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_SALUTE
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_111
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsMycResistanceLevelUp.OnScene00005(A0_19, A1_20, A2_21)
-    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EVENT_BOW)
-    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_080, true)
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_080
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsMycResistanceLevelUp.OnScene00006(A0_22, A1_23, A2_24)
-    A2_24:PlayActionTimeline(A0_22.ACTION_TIMELINE_EVENT_TALK2)
-    A2_24:Talk(A1_23, A0_22, A0_22.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_090, true)
-    A0_22:Wait(30)
-    if A0_22:YesNo(A0_22.TEXT_CTSMYCRESISTANCELEVELUP_00681_Q2_000_001, nil, nil, A0_22.DEFAULT_NO) == true then
-      A2_24:Talk(A1_23, A0_22, A0_22.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_100, false)
-      return 1
+  L0_2.OnScene00005 = L1_2
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_090
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 30
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNo
+    L5_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_Q2_000_001
+    L6_3 = nil
+    L7_3 = nil
+    L8_3 = A0_3.DEFAULT_NO
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    if L3_3 == true then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_100
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L4_3 = 1
+      return L4_3
     else
-      A2_24:Talk(A1_23, A0_22, A0_22.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_105, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCRESISTANCELEVELUP_00681_RESISTANCEOFFICER_000_105
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
   end
-end)()
-;(function()
-  local L0_25
-  L0_25 = CtsMycResistanceLevelUp
-  L0_25.SCRIPT_VERSION = 2
-  L0_25 = CtsMycResistanceLevelUp
-  function L0_25.OnInitialize(A0_26)
-    A0_26:AddNestEventHandler(A0_26.DESCRIPTION)
+  L0_2.OnScene00006 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsMycResistanceLevelUp
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = CtsMycResistanceLevelUp
+  function L1_2(A0_3)
+    local L1_3, L2_3, L3_3
+    L2_3 = A0_3
+    L1_3 = A0_3.AddNestEventHandler
+    L3_3 = A0_3.DESCRIPTION
+    L1_3(L2_3, L3_3)
   end
-end)()
+  L0_2.OnInitialize = L1_2
+end
+L0_1()

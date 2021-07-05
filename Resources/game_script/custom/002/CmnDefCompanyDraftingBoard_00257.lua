@@ -1,148 +1,155 @@
-(function()
-  print("CmnDefCompanyDraftingBoard")
-  CmnDefCompanyDraftingBoard.CLIENT_RESULT_RECIPE_OPEN = 1
-  CmnDefCompanyDraftingBoard.CLIENT_RESULT_RETURN_TO_MENU = 2
-  function CmnDefCompanyDraftingBoard.OnScene00000(A0_0, A1_1, A2_2, ...)
-    local L4_4, L5_5, L6_6, L7_7, L8_8, L9_9, L10_10, L11_11, L12_12, L13_13, L14_14, L15_15, L16_16
-    L4_4 = true
-    while L4_4 do
-      L6_6 = A0_0
-      L5_5 = A0_0.Menu
-      L7_7 = A0_0.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_TITLE
-      L8_8 = A0_0.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_AIRSHIP
-      L9_9 = A0_0.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_HOUSE
-      L10_10 = A0_0.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_WHEEL
-      L11_11 = A0_0.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_EXIT
-      L5_5 = L5_5(L6_6, L7_7, L8_8, L9_9, L10_10, L11_11)
-      if L5_5 >= 1 and L5_5 <= 3 then
-        L6_6 = {
-          [11] = L7_7(L8_8)
-        }
-        L8_8 = A0_0
-        L7_7 = A0_0.GetCompanyCraftDraftFlags
-        L16_16 = L7_7(L8_8)
-        ;({
-          [11] = L7_7(L8_8)
-        })[1] = L7_7
-        ;({
-          [11] = L7_7(L8_8)
-        })[2] = L8_8
-        ;({
-          [11] = L7_7(L8_8)
-        })[3] = L9_9
-        ;({
-          [11] = L7_7(L8_8)
-        })[4] = L10_10
-        ;({
-          [11] = L7_7(L8_8)
-        })[5] = L11_11
-        ;({
-          [11] = L7_7(L8_8)
-        })[6] = L12_12
-        ;({
-          [11] = L7_7(L8_8)
-        })[7] = L13_13
-        ;({
-          [11] = L7_7(L8_8)
-        })[8] = L14_14
-        ;({
-          [11] = L7_7(L8_8)
-        })[9] = L15_15
-        ;({
-          [11] = L7_7(L8_8)
-        })[10] = L16_16
-        L7_7 = 0
-        if L5_5 == 1 then
-          L7_7 = 1
-        elseif L5_5 == 2 then
-          L7_7 = 2
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefCompanyDraftingBoard"
+  L0_2(L1_2)
+  L0_2 = CmnDefCompanyDraftingBoard
+  L0_2.CLIENT_RESULT_RECIPE_OPEN = 1
+  L0_2 = CmnDefCompanyDraftingBoard
+  L0_2.CLIENT_RESULT_RETURN_TO_MENU = 2
+  L0_2 = CmnDefCompanyDraftingBoard
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3
+    L4_3 = true
+    while L4_3 do
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L7_3 = A0_3.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_TITLE
+      L8_3 = A0_3.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_AIRSHIP
+      L9_3 = A0_3.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_HOUSE
+      L10_3 = A0_3.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_WHEEL
+      L11_3 = A0_3.TEXT_CMNDEFCOMPANYDRAFTINGBOARD_00257_MENU_EXIT
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+      if 1 <= L5_3 and L5_3 <= 3 then
+        L6_3 = {}
+        L8_3 = A0_3
+        L7_3 = A0_3.GetCompanyCraftDraftFlags
+        L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3 = L7_3(L8_3)
+        L6_3[1] = L7_3
+        L6_3[2] = L8_3
+        L6_3[3] = L9_3
+        L6_3[4] = L10_3
+        L6_3[5] = L11_3
+        L6_3[6] = L12_3
+        L6_3[7] = L13_3
+        L6_3[8] = L14_3
+        L6_3[9] = L15_3
+        L6_3[10] = L16_3
+        L6_3[11] = L17_3
+        L6_3[12] = L18_3
+        L6_3[13] = L19_3
+        L6_3[14] = L20_3
+        L6_3[15] = L21_3
+        L6_3[16] = L22_3
+        L6_3[17] = L23_3
+        L6_3[18] = L24_3
+        L7_3 = 0
+        if L5_3 == 1 then
+          L7_3 = 1
+        elseif L5_3 == 2 then
+          L7_3 = 2
         end
-        L8_8 = false
-        L10_10 = A0_0
-        L9_9 = A0_0.OpenDraftUI
-        L11_11 = L8_8
-        L12_12 = L7_7
-        L13_13 = unpack
-        L14_14 = L6_6
-        L16_16 = L13_13(L14_14)
-        L16_16 = L9_9(L10_10, L11_11, L12_12, L13_13, L14_14, L15_15, L16_16, L13_13(L14_14))
-        if L9_9 == true then
-          return A0_0.CLIENT_RESULT_RECIPE_OPEN, L10_10, L11_11, L12_12, L13_13, L14_14, L15_15, L16_16
+        L8_3 = false
+        L10_3 = A0_3
+        L9_3 = A0_3.OpenDraftUI
+        L11_3 = L8_3
+        L12_3 = L7_3
+        L13_3 = unpack
+        L14_3 = L6_3
+        L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3 = L13_3(L14_3)
+        L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+        if L9_3 == true then
+          L17_3 = A0_3.CLIENT_RESULT_RECIPE_OPEN
+          L18_3 = L10_3
+          L19_3 = L11_3
+          L20_3 = L12_3
+          L21_3 = L13_3
+          L22_3 = L14_3
+          L23_3 = L15_3
+          L24_3 = L16_3
+          return L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3
         else
-          L4_4 = true
+          L4_3 = true
         end
       else
-        L4_4 = false
+        L4_3 = false
       end
     end
   end
-  function CmnDefCompanyDraftingBoard.OnScene00001(A0_17, A1_18, A2_19, ...)
-    local L4_21, L5_22, L6_23, L7_24, L8_25, L9_26, L10_27, L11_28, L12_29, L13_30, L14_31
-    L4_21 = {
-      [11] = L5_22(L6_23)
-    }
-    L6_23 = A0_17
-    L5_22 = A0_17.GetCompanyCraftDraftFlags
-    L14_31 = L5_22(L6_23)
-    ;({
-      [11] = L5_22(L6_23)
-    })[1] = L5_22
-    ;({
-      [11] = L5_22(L6_23)
-    })[2] = L6_23
-    ;({
-      [11] = L5_22(L6_23)
-    })[3] = L7_24
-    ;({
-      [11] = L5_22(L6_23)
-    })[4] = L8_25
-    ;({
-      [11] = L5_22(L6_23)
-    })[5] = L9_26
-    ;({
-      [11] = L5_22(L6_23)
-    })[6] = L10_27
-    ;({
-      [11] = L5_22(L6_23)
-    })[7] = L11_28
-    ;({
-      [11] = L5_22(L6_23)
-    })[8] = L12_29
-    ;({
-      [11] = L5_22(L6_23)
-    })[9] = L13_30
-    ;({
-      [11] = L5_22(L6_23)
-    })[10] = L14_31
-    L5_22 = 0
-    L6_23 = true
-    L8_25 = A0_17
-    L7_24 = A0_17.OpenDraftUI
-    L9_26 = L6_23
-    L10_27 = L5_22
-    L11_28 = unpack
-    L12_29 = L4_21
-    L14_31 = L11_28(L12_29)
-    L14_31 = L7_24(L8_25, L9_26, L10_27, L11_28, L12_29, L13_30, L14_31, L11_28(L12_29))
-    if L7_24 == true then
-      return A0_17.CLIENT_RESULT_RECIPE_OPEN, L8_25, L9_26, L10_27, L11_28, L12_29, L13_30, L14_31
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefCompanyDraftingBoard
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3
+    L4_3 = {}
+    L6_3 = A0_3
+    L5_3 = A0_3.GetCompanyCraftDraftFlags
+    L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3 = L5_3(L6_3)
+    L4_3[1] = L5_3
+    L4_3[2] = L6_3
+    L4_3[3] = L7_3
+    L4_3[4] = L8_3
+    L4_3[5] = L9_3
+    L4_3[6] = L10_3
+    L4_3[7] = L11_3
+    L4_3[8] = L12_3
+    L4_3[9] = L13_3
+    L4_3[10] = L14_3
+    L4_3[11] = L15_3
+    L4_3[12] = L16_3
+    L4_3[13] = L17_3
+    L4_3[14] = L18_3
+    L4_3[15] = L19_3
+    L4_3[16] = L20_3
+    L4_3[17] = L21_3
+    L4_3[18] = L22_3
+    L5_3 = 0
+    L6_3 = true
+    L8_3 = A0_3
+    L7_3 = A0_3.OpenDraftUI
+    L9_3 = L6_3
+    L10_3 = L5_3
+    L11_3 = unpack
+    L12_3 = L4_3
+    L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3 = L11_3(L12_3)
+    L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+    if L7_3 == true then
+      L15_3 = A0_3.CLIENT_RESULT_RECIPE_OPEN
+      L16_3 = L8_3
+      L17_3 = L9_3
+      L18_3 = L10_3
+      L19_3 = L11_3
+      L20_3 = L12_3
+      L21_3 = L13_3
+      L22_3 = L14_3
+      return L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3
     else
-      return A0_17.CLIENT_RESULT_RETURN_TO_MENU
+      L15_3 = A0_3.CLIENT_RESULT_RETURN_TO_MENU
+      return L15_3
     end
   end
-end)()
-;(function()
-  local L0_32, L1_33
-  L0_32 = CmnDefCompanyDraftingBoard
-  L0_32.SCRIPT_VERSION = 1
-  L0_32 = CmnDefCompanyDraftingBoard
-  function L1_33(A0_34, A1_35, A2_36)
-    return A1_35:IsInOwnLand()
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefCompanyDraftingBoard
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefCompanyDraftingBoard
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsInOwnLand
+    return L3_3(L4_3)
   end
-  L0_32.IsTargetingPossible = L1_33
-  L0_32 = CmnDefCompanyDraftingBoard
-  function L1_33(A0_37, A1_38, A2_39, A3_40, A4_41, A5_42)
-    return A1_38:IsInOwnLand()
+  L0_2.IsTargetingPossible = L1_2
+  L0_2 = CmnDefCompanyDraftingBoard
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsInOwnLand
+    return L6_3(L7_3)
   end
-  L0_32.IsAcceptEvent = L1_33
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

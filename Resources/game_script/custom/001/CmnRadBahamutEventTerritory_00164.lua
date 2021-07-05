@@ -1,30 +1,80 @@
-(function()
-  print("CmnRadBahamutEventTerritory")
-  function CmnRadBahamutEventTerritory.OnScene00001(A0_0, A1_1, A2_2)
-    if A0_0:GetCurrentTerritoryType() == A0_0.TERRITORY_FOREST then
-      if A0_0:IsPlayCutsceneContent(A0_0.CUTSCENE_FOREST_1) == true then
-        A0_0:BeginCutScene()
-        A0_0:PlayCutScene(A0_0.CUTSCENE_FOREST_1)
-        A0_0:PlayCutScene(A0_0.CUTSCENE_FOREST_2)
-        A0_0:EndCutScene()
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnRadBahamutEventTerritory"
+  L0_2(L1_2)
+  L0_2 = CmnRadBahamutEventTerritory
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetCurrentTerritoryType
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.TERRITORY_FOREST
+    if L3_3 == L4_3 then
+      L5_3 = A0_3
+      L4_3 = A0_3.IsPlayCutsceneContent
+      L6_3 = A0_3.CUTSCENE_FOREST_1
+      L4_3 = L4_3(L5_3, L6_3)
+      if L4_3 == true then
+        L5_3 = A0_3
+        L4_3 = A0_3.BeginCutScene
+        L4_3(L5_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.PlayCutScene
+        L6_3 = A0_3.CUTSCENE_FOREST_1
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.PlayCutScene
+        L6_3 = A0_3.CUTSCENE_FOREST_2
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.EndCutScene
+        L4_3(L5_3)
       end
-    elseif A0_0:GetCurrentTerritoryType() == A0_0.TERRITORY_WILD and A0_0:IsPlayCutsceneContent(A0_0.CUTSCENE_WILD_1) == true then
-      A0_0:BeginCutScene()
-      A0_0:PlayCutScene(A0_0.CUTSCENE_WILD_1)
-      A0_0:PlayCutScene(A0_0.CUTSCENE_WILD_2)
-      A0_0:PlayCutScene(A0_0.CUTSCENE_WILD_3)
-      A0_0:EndCutScene()
+    else
+      L4_3 = A0_3.TERRITORY_WILD
+      if L3_3 == L4_3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.IsPlayCutsceneContent
+        L6_3 = A0_3.CUTSCENE_WILD_1
+        L4_3 = L4_3(L5_3, L6_3)
+        if L4_3 == true then
+          L5_3 = A0_3
+          L4_3 = A0_3.BeginCutScene
+          L4_3(L5_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.PlayCutScene
+          L6_3 = A0_3.CUTSCENE_WILD_1
+          L4_3(L5_3, L6_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.PlayCutScene
+          L6_3 = A0_3.CUTSCENE_WILD_2
+          L4_3(L5_3, L6_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.PlayCutScene
+          L6_3 = A0_3.CUTSCENE_WILD_3
+          L4_3(L5_3, L6_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.EndCutScene
+          L4_3(L5_3)
+        end
+      end
     end
   end
-end)()
-;(function()
-  local L0_3
-  L0_3 = CmnRadBahamutEventTerritory
-  L0_3.SCRIPT_VERSION = 1
-  L0_3 = CmnRadBahamutEventTerritory
-  function L0_3.GetConditionId(A0_4, A1_5, A2_6, A3_7, A4_8)
-    local L5_9
-    L5_9 = A0_4.EVENT_STATE_PRIORITY
-    return L5_9
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnRadBahamutEventTerritory
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnRadBahamutEventTerritory
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3
+    L5_3 = A0_3.EVENT_STATE_PRIORITY
+    return L5_3
   end
-end)()
+  L0_2.GetConditionId = L1_2
+end
+L0_1()

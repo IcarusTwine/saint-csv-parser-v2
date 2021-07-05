@@ -1,86 +1,206 @@
-(function()
-  print("CmnBhtRewardLv020St0003 loaded")
-  function CmnBhtRewardLv020St0003.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnBhtRewardLv020St0003 loaded"
+  L0_2(L1_2)
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
     L3_3 = 0
-    A2_2:TurnTo(A1_1, false)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNBHTREWARDLV020ST0003_00025_TALK_00, true)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_TALK_00
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     L3_3 = 1
     return L3_3
   end
-  function CmnBhtRewardLv020St0003.OnScene00001(A0_4, A1_5, A2_6, A3_7)
-    local L4_8
-    L4_8 = 0
-    A2_6:TurnTo(A1_5, false)
-    if A3_7 == 1 then
-      A2_6:Talk(A1_5, A0_4, A0_4.TEXT_CMNBHTREWARDLV020ST0003_00025_FIRST_BONUS_TALK_00, false)
-      A0_4:SystemTalk(A0_4.TEXT_CMNBHTREWARDLV020ST0003_00025_FIRST_BONUS_SYSTEM_TALK_00, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = 0
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    if A3_3 == 1 then
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_FIRST_BONUS_TALK_00
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_FIRST_BONUS_SYSTEM_TALK_00
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
     else
-      A2_6:Talk(A1_5, A0_4, A0_4.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_TALK_00, true)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_TALK_00
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
     end
-    A0_4:OpenBehestReward(A3_7)
-    L4_8 = 1
-    return L4_8
+    L6_3 = A0_3
+    L5_3 = A0_3.OpenBehestReward
+    L7_3 = A3_3
+    L5_3(L6_3, L7_3)
+    L4_3 = 1
+    return L4_3
   end
-  function CmnBhtRewardLv020St0003.OnScene00002(A0_9, A1_10, A2_11)
-    local L3_12
-    L3_12 = 0
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_TALK_00, true)
-    L3_12 = 1
-    return L3_12
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L3_3 = 0
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_TALK_00
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L3_3 = 1
+    return L3_3
   end
-  function CmnBhtRewardLv020St0003.OnScene00003(A0_13, A1_14, A2_15)
-    local L3_16, L4_17
-    L3_16 = 0
-    L4_17 = A0_13.YesNo
-    L4_17 = L4_17(A0_13, A0_13.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_MENU_TITLE, A0_13.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_MENU_YES, A0_13.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_MENU_NO, A0_13.DEFAULT_YES)
-    if L4_17 == true then
-      L4_17 = A0_13:YesNo(A0_13.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_RETURN_MENU_TITLE, A0_13.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_RETURN_MENU_YES, A0_13.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_RETURN_MENU_NO, A0_13.DEFAULT_YES)
-      if L4_17 == true then
-        L3_16 = 1
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L3_3 = 0
+    L5_3 = A0_3
+    L4_3 = A0_3.YesNo
+    L6_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_MENU_TITLE
+    L7_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_MENU_YES
+    L8_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_MENU_NO
+    L9_3 = A0_3.DEFAULT_YES
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    if L4_3 == true then
+      L6_3 = A0_3
+      L5_3 = A0_3.YesNo
+      L7_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_RETURN_MENU_TITLE
+      L8_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_RETURN_MENU_YES
+      L9_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_AFTER_RWD_RETURN_MENU_NO
+      L10_3 = A0_3.DEFAULT_YES
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L4_3 = L5_3
+      if L4_3 == true then
+        L3_3 = 1
       end
     end
-    return L3_16
+    return L3_3
   end
-  function CmnBhtRewardLv020St0003.OnScene00010(A0_18, A1_19, A2_20)
-    local L3_21
-    L3_21 = 0
-    if A0_18:Menu(A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_TITLE, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_00, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_01, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_02) == 1 then
-      if A0_18:YesNo(A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_ME_MENU_TITLE, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_ME_MENU_YES, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_ME_MENU_NO, A0_18.DEFAULT_YES) == true then
-        L3_21 = 1
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L3_3 = 0
+    L5_3 = A0_3
+    L4_3 = A0_3.Menu
+    L6_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_TITLE
+    L7_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_00
+    L8_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_01
+    L9_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_02
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    if L4_3 == 1 then
+      L6_3 = A0_3
+      L5_3 = A0_3.YesNo
+      L7_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_ME_MENU_TITLE
+      L8_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_ME_MENU_YES
+      L9_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_ME_MENU_NO
+      L10_3 = A0_3.DEFAULT_YES
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      if L5_3 == true then
+        L3_3 = 1
       end
-    elseif A0_18:Menu(A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_TITLE, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_00, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_01, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_MENU_02) == 2 and A0_18:YesNo(A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_PARTY_MENU_TITLE, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_PARTY_MENU_YES, A0_18.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_PARTY_MENU_NO, A0_18.DEFAULT_YES) == true then
-      L3_21 = 2
+    elseif L4_3 == 2 then
+      L6_3 = A0_3
+      L5_3 = A0_3.YesNo
+      L7_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_PARTY_MENU_TITLE
+      L8_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_PARTY_MENU_YES
+      L9_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RETURN_PARTY_MENU_NO
+      L10_3 = A0_3.DEFAULT_YES
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      if L5_3 == true then
+        L3_3 = 2
+      end
     end
-    return L3_21
+    return L3_3
   end
-  function CmnBhtRewardLv020St0003.OnScene00011(A0_22, A1_23, A2_24, A3_25)
-    local L4_26
-    L4_26 = 0
-    A0_22:OnSuccessBehestRewardReceive(A3_25)
-    L4_26 = 1
-    return L4_26
+  L0_2.OnScene00010 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3
+    L4_3 = 0
+    L6_3 = A0_3
+    L5_3 = A0_3.OnSuccessBehestRewardReceive
+    L7_3 = A3_3
+    L5_3(L6_3, L7_3)
+    L4_3 = 1
+    return L4_3
   end
-  function CmnBhtRewardLv020St0003.OnScene00012(A0_27, A1_28, A2_29)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_FAIL_TALK_00, true)
-    A0_27:SystemTalk(A0_27.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_FAIL_SYSTEM_TALK_00, true)
+  L0_2.OnScene00011 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_FAIL_TALK_00
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_FAIL_SYSTEM_TALK_00
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnBhtRewardLv020St0003.OnScene00021(A0_30, A1_31, A2_32)
-    local L3_33
-    L3_33 = 0
-    A0_30:SystemTalk(A0_30.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_SUCCESS_SYSTEM_TALK_00, true)
-    L3_33 = 1
-    return L3_33
+  L0_2.OnScene00012 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L3_3 = 0
+    L5_3 = A0_3
+    L4_3 = A0_3.SystemTalk
+    L6_3 = A0_3.TEXT_CMNBHTREWARDLV020ST0003_00025_RET_SUCCESS_SYSTEM_TALK_00
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
+    L3_3 = 1
+    return L3_3
   end
-  function CmnBhtRewardLv020St0003.OnScene00080(A0_34, A1_35, A2_36)
+  L0_2.OnScene00021 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function CmnBhtRewardLv020St0003.OnScene00081(A0_37, A1_38, A2_39)
+  L0_2.OnScene00080 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function CmnBhtRewardLv020St0003.OnScene00100(A0_40, A1_41, A2_42)
+  L0_2.OnScene00081 = L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  function L1_2(A0_3, A1_3, A2_3)
   end
-end)()
-;(function()
-  local L1_43
-  L1_43 = CmnBhtRewardLv020St0003
-  L1_43.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00100 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnBhtRewardLv020St0003
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

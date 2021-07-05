@@ -1,38 +1,115 @@
-(function()
-  print("CmnDefTomestoneExchange")
-  function CmnDefTomestoneExchange.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6, L7_7
-    L4_4 = A0_0
-    L3_3 = A0_0.GetAllaganTomestoneCatalogId
-    L5_5 = A0_0.TOMESTONE_FROM
-    L3_3 = L3_3(L4_4, L5_5)
-    L5_5 = A0_0
-    L4_4 = A0_0.GetAllaganTomestoneCatalogId
-    L6_6 = A0_0.TOMESTONE_TO
-    L4_4 = L4_4(L5_5, L6_6)
-    L6_6 = A1_1
-    L5_5 = A1_1.GetAllaganTomestone
-    L7_7 = L3_3
-    L5_5 = L5_5(L6_6, L7_7)
-    L7_7 = A1_1
-    L6_6 = A1_1.GetExchangeAllaganTomestone
-    L6_6 = L6_6(L7_7, L3_3, A0_0.EXCHANGE_RATE)
-    L7_7 = false
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_HELP, false, nil, nil, nil, nil, L3_3)
-    if L5_5 == 0 then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_TALK_NOT_HAVE, true, nil, nil, nil, nil, L3_3, L4_4)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefTomestoneExchange"
+  L0_2(L1_2)
+  L0_2 = CmnDefTomestoneExchange
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetAllaganTomestoneCatalogId
+    L5_3 = A0_3.TOMESTONE_FROM
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.GetAllaganTomestoneCatalogId
+    L6_3 = A0_3.TOMESTONE_TO
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetAllaganTomestone
+    L7_3 = L3_3
+    L5_3 = L5_3(L6_3, L7_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetExchangeAllaganTomestone
+    L8_3 = L3_3
+    L9_3 = A0_3.EXCHANGE_RATE
+    L6_3 = L6_3(L7_3, L8_3, L9_3)
+    L7_3 = false
+    L9_3 = A2_3
+    L8_3 = A2_3.Talk
+    L10_3 = A1_3
+    L11_3 = A0_3
+    L12_3 = A0_3.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_HELP
+    L13_3 = false
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = nil
+    L17_3 = nil
+    L18_3 = L3_3
+    L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3)
+    if L5_3 == 0 then
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_TALK_NOT_HAVE
+      L13_3 = true
+      L14_3 = nil
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L18_3 = L3_3
+      L19_3 = L4_3
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
     else
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_TALK_Q, true, nil, nil, nil, nil, L3_3, L5_5, L4_4, L6_6)
-      L7_7 = A0_0:YesNo(A0_0.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_EXCHANGE_Q, A0_0.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_EXCHANGE_YES, A0_0.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_EXCHANGE_NO, A0_0.DEFAULT_NO, L3_3, L5_5, L4_4, L6_6)
-      if L7_7 == true and L6_6 > A1_1:GetMaxItemStackable(L4_4) and A0_0:YesNoAddon(A0_0.ADDON_TOMESTONE_OVER_CONFIRM, A0_0.ADDON_YES, A0_0.ADDON_NO, A0_0.DEFAULT_NO) == false then
-        L7_7 = false
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_TALK_Q
+      L13_3 = true
+      L14_3 = nil
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L18_3 = L3_3
+      L19_3 = L5_3
+      L20_3 = L4_3
+      L21_3 = L6_3
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.YesNo
+      L10_3 = A0_3.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_EXCHANGE_Q
+      L11_3 = A0_3.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_EXCHANGE_YES
+      L12_3 = A0_3.TEXT_CMNDEFTOMESTONEEXCHANGE_00153_EXCHANGE_NO
+      L13_3 = A0_3.DEFAULT_NO
+      L14_3 = L3_3
+      L15_3 = L5_3
+      L16_3 = L4_3
+      L17_3 = L6_3
+      L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L7_3 = L8_3
+      if L7_3 == true then
+        L9_3 = A1_3
+        L8_3 = A1_3.GetAllaganTomestone
+        L10_3 = L4_3
+        L8_3 = L8_3(L9_3, L10_3)
+        L10_3 = A1_3
+        L9_3 = A1_3.GetMaxItemStackable
+        L11_3 = L4_3
+        L9_3 = L9_3(L10_3, L11_3)
+        if L6_3 > L9_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.YesNoAddon
+          L12_3 = A0_3.ADDON_TOMESTONE_OVER_CONFIRM
+          L13_3 = A0_3.ADDON_YES
+          L14_3 = A0_3.ADDON_NO
+          L15_3 = A0_3.DEFAULT_NO
+          L10_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
+          if L10_3 == false then
+            L7_3 = false
+          end
+        end
       end
     end
-    return L7_7
+    return L7_3
   end
-end)()
-;(function()
-  local L1_8
-  L1_8 = CmnDefTomestoneExchange
-  L1_8.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefTomestoneExchange
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

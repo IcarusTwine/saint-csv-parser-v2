@@ -1,51 +1,107 @@
-(function()
-  print("CmnDefChocoboRename")
-  function CmnDefChocoboRename.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4
-    L4_4 = A1_1
-    L3_3 = A1_1.IsBuddyExist
-    L3_3 = L3_3(L4_4)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefChocoboRename"
+  L0_2(L1_2)
+  L0_2 = CmnDefChocoboRename
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsBuddyExist
+    L3_3 = L3_3(L4_3)
     if L3_3 then
-      L4_4 = A0_0
-      L3_3 = A0_0.SystemTalk
-      L3_3(L4_4, A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_MY_CHOCOBO_RENAME_UNQUALIFIED, true)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_MY_CHOCOBO_RENAME_UNQUALIFIED
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
       L3_3 = 0
       return L3_3
     end
-    L4_4 = A1_1
-    L3_3 = A1_1.IsBuddyInStable
-    L3_3 = L3_3(L4_4)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsBuddyInStable
+    L3_3 = L3_3(L4_3)
     if L3_3 then
-      L4_4 = A0_0
-      L3_3 = A0_0.SystemTalk
-      L3_3(L4_4, A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_MY_CHOCOBO_RENAME_STABLE, true)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_MY_CHOCOBO_RENAME_STABLE
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
       L3_3 = 0
       return L3_3
     end
-    L4_4 = A0_0
-    L3_3 = A0_0.NameMyChocobo
-    L4_4 = L3_3(L4_4, A1_1, A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_TITLE, A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_CAPTION, A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_MES0, A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_MES1, A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_MES2)
+    L4_3 = A0_3
+    L3_3 = A0_3.NameMyChocobo
+    L5_3 = A1_3
+    L6_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_TITLE
+    L7_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_CAPTION
+    L8_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_MES0
+    L9_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_MES1
+    L10_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_MES2
+    L3_3, L4_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
     if L3_3 == true then
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_SUCCESS, true, L4_4)
-      return 0
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNDEFCHOCOBORENAME_00134_PROMPT_MY_CHOCOBO_RENAME_SUCCESS
+      L8_3 = true
+      L9_3 = L4_3
+      L5_3(L6_3, L7_3, L8_3, L9_3)
+      L5_3 = 0
+      return L5_3
     end
   end
-end)()
-;(function()
-  local L0_5, L1_6
-  L0_5 = CmnDefChocoboRename
-  L0_5.SCRIPT_VERSION = 1
-  L0_5 = CmnDefChocoboRename
-  function L1_6(A0_7, A1_8, A2_9, A3_10, A4_11, A5_12)
-    if A1_8:IsReward(A0_7.REWARD_MY_CHOCOBO) == true or A0_7:isQuestCompleted(A1_8) then
-      return true
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefChocoboRename
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefChocoboRename
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsReward
+    L8_3 = A0_3.REWARD_MY_CHOCOBO
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 ~= true then
+      L7_3 = A0_3
+      L6_3 = A0_3.isQuestCompleted
+      L8_3 = A1_3
+      L6_3 = L6_3(L7_3, L8_3)
+      if not L6_3 then
+        goto lbl_13
+      end
     end
-    return false
+    L6_3 = true
+    do return L6_3 end
+    ::lbl_13::
+    L6_3 = false
+    return L6_3
   end
-  L0_5.IsAcceptEvent = L1_6
-  L0_5 = CmnDefChocoboRename
-  function L1_6(A0_13, A1_14)
-    return A1_14:IsQuestCompleted(A0_13.QUEST_01) or A1_14:IsQuestCompleted(A0_13.QUEST_02) or A1_14:IsQuestCompleted(A0_13.QUEST_03)
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = CmnDefChocoboRename
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3
+    L3_3 = A1_3
+    L2_3 = A1_3.IsQuestCompleted
+    L4_3 = A0_3.QUEST_01
+    L2_3 = L2_3(L3_3, L4_3)
+    if not L2_3 then
+      L3_3 = A1_3
+      L2_3 = A1_3.IsQuestCompleted
+      L4_3 = A0_3.QUEST_02
+      L2_3 = L2_3(L3_3, L4_3)
+      if not L2_3 then
+        L3_3 = A1_3
+        L2_3 = A1_3.IsQuestCompleted
+        L4_3 = A0_3.QUEST_03
+        L2_3 = L2_3(L3_3, L4_3)
+      end
+    end
+    return L2_3
   end
-  L0_5.isQuestCompleted = L1_6
-end)()
+  L0_2.isQuestCompleted = L1_2
+end
+L0_1()

@@ -1,58 +1,221 @@
-(function()
-  print("FesSum2017")
-  function FesSum2017.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    if A2_2:GetBaseId() == A0_0.ENPC0 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_000, true)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
-      A0_0:Wait(10)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "FesSum2017"
+  L0_2(L1_2)
+  L0_2 = FesSum2017
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.ENPC0
+    if L3_3 == L4_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_000
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.CancelActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_010, true)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
-      A0_0:Wait(10)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_010
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.CancelActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
     end
     while true do
-      if A0_0:Menu(A0_0.TEXT_FESSUM2017_00431_Q1_000_000, A0_0.TEXT_FESSUM2017_00431_A1_000_001, A0_0.TEXT_FESSUM2017_00431_A1_000_002, A0_0.TEXT_FESSUM2017_00431_A1_000_003, A0_0.TEXT_FESSUM2017_00431_A1_000_004) == 1 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_020, false)
-        if A2_2:GetBaseId() == A0_0.ENPC0 then
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_021, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_022, true)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_FESSUM2017_00431_Q1_000_000
+      L6_3 = A0_3.TEXT_FESSUM2017_00431_A1_000_001
+      L7_3 = A0_3.TEXT_FESSUM2017_00431_A1_000_002
+      L8_3 = A0_3.TEXT_FESSUM2017_00431_A1_000_003
+      L9_3 = A0_3.TEXT_FESSUM2017_00431_A1_000_004
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_020
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.GetBaseId
+        L4_3 = L4_3(L5_3)
+        L5_3 = A0_3.ENPC0
+        if L4_3 == L5_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_021
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_022
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
         else
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_100_021, true)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_100_021
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
         end
-        A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A0_0:Wait(10)
-      elseif A0_0:Menu(A0_0.TEXT_FESSUM2017_00431_Q1_000_000, A0_0.TEXT_FESSUM2017_00431_A1_000_001, A0_0.TEXT_FESSUM2017_00431_A1_000_002, A0_0.TEXT_FESSUM2017_00431_A1_000_003, A0_0.TEXT_FESSUM2017_00431_A1_000_004) == 2 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_030, true)
-        A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        A0_0:Wait(10)
-      elseif A0_0:Menu(A0_0.TEXT_FESSUM2017_00431_Q1_000_000, A0_0.TEXT_FESSUM2017_00431_A1_000_001, A0_0.TEXT_FESSUM2017_00431_A1_000_002, A0_0.TEXT_FESSUM2017_00431_A1_000_003, A0_0.TEXT_FESSUM2017_00431_A1_000_004) == 3 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_040, false)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_041, false)
-        A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-        A0_0:Wait(10)
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_042, false)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESSUM2017_00431_ETHELIA_000_043, true)
-        A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-        A0_0:Wait(10)
-        A0_0:SystemTalk(A0_0.TEXT_FESSUM2017_00431_SYSTEM_000_044, false)
-        A0_0:SystemTalk(A0_0.TEXT_FESSUM2017_00431_SYSTEM_000_045, true)
-        A0_0:Wait(10)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_030
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_040
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_041
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_042
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_FESSUM2017_00431_ETHELIA_000_043
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_FESSUM2017_00431_SYSTEM_000_044
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_FESSUM2017_00431_SYSTEM_000_045
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-end)()
-;(function()
-  local L1_3
-  L1_3 = FesSum2017
-  L1_3.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = FesSum2017
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

@@ -1,139 +1,422 @@
-(function()
-  print("CmnDefRelicWeapon040Adjust")
-  function CmnDefRelicWeapon040Adjust.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4
-    L3_3 = {
-      [2] = L4_4(A1_1)
-    }
-    L4_4 = A1_1.GetRelicWeapon040CatalogIds
-    L4_4 = L4_4(A1_1)
-    ;({
-      [2] = L4_4(A1_1)
-    })[1] = L4_4
-    L4_4 = {}
-    A2_2:LookAt(A1_1)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_000, true)
-    A0_0:Wait(10)
-    for _FORV_8_ = 1, #L3_3 do
-      L4_4[_FORV_8_] = A0_0:FormatString(A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_A1_000_010, L3_3[_FORV_8_])
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefRelicWeapon040Adjust"
+  L0_2(L1_2)
+  L0_2 = CmnDefRelicWeapon040Adjust
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L3_3 = {}
+    L5_3 = A1_3
+    L4_3 = A1_3.GetRelicWeapon040CatalogIds
+    L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3 = L4_3(L5_3)
+    L3_3[1] = L4_3
+    L3_3[2] = L5_3
+    L3_3[3] = L6_3
+    L3_3[4] = L7_3
+    L3_3[5] = L8_3
+    L3_3[6] = L9_3
+    L3_3[7] = L10_3
+    L3_3[8] = L11_3
+    L3_3[9] = L12_3
+    L4_3 = {}
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_000
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L5_3 = 1
+    L6_3 = #L3_3
+    L7_3 = 1
+    for L8_3 = L5_3, L6_3, L7_3 do
+      L10_3 = A0_3
+      L9_3 = A0_3.FormatString
+      L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_A1_000_010
+      L12_3 = L3_3[L8_3]
+      L9_3 = L9_3(L10_3, L11_3, L12_3)
+      L4_3[L8_3] = L9_3
     end
-    _FOR_.insert(L4_4, A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_A1_000_015)
-    table.insert(L4_4, A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_A1_000_020)
-    if A0_0:Menu(A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_Q1_000_000, unpack(L4_4)) == #L3_3 + 1 then
-      A2_2:LookAt(A1_1)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_200, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_201, true)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A0_0:Wait(10)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_210, false)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_211, true)
-      A0_0:Wait(10)
+    L5_3 = table
+    L5_3 = L5_3.insert
+    L6_3 = L4_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_A1_000_015
+    L5_3(L6_3, L7_3)
+    L5_3 = table
+    L5_3 = L5_3.insert
+    L6_3 = L4_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_A1_000_020
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Menu
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_Q1_000_000
+    L8_3 = unpack
+    L9_3 = L4_3
+    L8_3, L9_3, L10_3, L11_3, L12_3 = L8_3(L9_3)
+    L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L6_3 = #L3_3
+    L6_3 = L6_3 + 1
+    if L5_3 == L6_3 then
+      L8_3 = A2_3
+      L7_3 = A2_3.LookAt
+      L9_3 = A1_3
+      L7_3(L8_3, L9_3)
+      L8_3 = A2_3
+      L7_3 = A2_3.PlayActionTimeline
+      L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L10_3 = A1_3
+      L7_3(L8_3, L9_3, L10_3)
+      L8_3 = A2_3
+      L7_3 = A2_3.Talk
+      L9_3 = A1_3
+      L10_3 = A0_3
+      L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_200
+      L12_3 = false
+      L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+      L8_3 = A2_3
+      L7_3 = A2_3.Talk
+      L9_3 = A1_3
+      L10_3 = A0_3
+      L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_201
+      L12_3 = true
+      L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+      L8_3 = A2_3
+      L7_3 = A2_3.CancelActionTimeline
+      L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L7_3(L8_3, L9_3)
+      L8_3 = A0_3
+      L7_3 = A0_3.Wait
+      L9_3 = 10
+      L7_3(L8_3, L9_3)
+      L8_3 = A0_3
+      L7_3 = A0_3.SystemTalk
+      L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_210
+      L10_3 = false
+      L7_3(L8_3, L9_3, L10_3)
+      L8_3 = A0_3
+      L7_3 = A0_3.SystemTalk
+      L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_211
+      L10_3 = true
+      L7_3(L8_3, L9_3, L10_3)
+      L8_3 = A0_3
+      L7_3 = A0_3.Wait
+      L9_3 = 10
+      L7_3(L8_3, L9_3)
     end
-    return 0
-  end
-  function CmnDefRelicWeapon040Adjust.OnScene00002(A0_5, A1_6, A2_7, ...)
-    local L4_9
-    L4_9 = (...)
-    A2_7:LookAt(A1_6)
-    A2_7:PlayActionTimeline(A0_5.ACTION_TIMELINE_EVENT_THINK, A1_6)
-    A2_7:Talk(A1_6, A0_5, A0_5.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_080, true)
-    A0_5:SystemTalk(A0_5.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_081, false, L4_9)
-    A0_5:Wait(10)
-  end
-  function CmnDefRelicWeapon040Adjust.OnScene00003(A0_10, A1_11, A2_12, ...)
-    local L4_14
-    L4_14 = (...)
-    A2_12:LookAt(A1_11)
-    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_130, true)
-    A0_10:Wait(10)
-    A0_10:SystemTalk(A0_10.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_135, true, L4_14)
-    A0_10:Wait(10)
-  end
-  function CmnDefRelicWeapon040Adjust.OnScene00004(A0_15, A1_16, A2_17, ...)
-    local L4_19, L5_20
-    L5_20 = ...
-    A2_17:LookAt(A1_16)
-    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK1, A1_16)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_150, false)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_151, true)
-    A2_17:CancelActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK1)
-    A0_15:Wait(10)
-    if A0_15:YesNo(A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_YESNO_Q1, A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_YESNO_YES, A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_YESNO_NO, A0_15.DEFAULT_NO, L5_20) == true then
-      A2_17:PlayActionTimeline(A0_15.ACTION1)
-      A2_17:WaitForActionTimeline(A0_15.ACTION1)
-      A0_15:SystemTalk(A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_155, false)
-      A0_15:SystemTalk(A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_156, false)
-      A0_15:SystemTalk(A0_15.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_157, true)
-      return L4_19, L5_20
+    L7_3 = #L3_3
+    if L5_3 > L7_3 or L5_3 < 0 then
+      L5_3 = 0
     end
-    return 0, 0
+    return L5_3
   end
-  function CmnDefRelicWeapon040Adjust.OnScene00005(A0_21, A1_22, A2_23, ...)
-    local L4_25, L5_26
-    L5_26 = ...
-    A2_23:LookAt(A1_22)
-    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_THINK, A1_22)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_160, true)
-    A2_23:CancelActionTimeline(A0_21.ACTION_TIMELINE_EVENT_THINK)
-    A0_21:Wait(10)
-    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK2, A1_22)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_161, true)
-    A2_23:CancelActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK2)
-    A0_21:Wait(10)
-    A0_21:RelicSphereUpgrade(L5_26, L5_26)
-    return 0
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefRelicWeapon040Adjust
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = (...)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L8_3 = A1_3
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_080
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.SystemTalk
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_081
+    L8_3 = false
+    L9_3 = L4_3
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
   end
-  function CmnDefRelicWeapon040Adjust.OnScene00010(A0_27, A1_28, A2_29, ...)
-    local L4_31, L5_32, L6_33, L7_34
-    L5_32 = A2_29
-    L4_31 = A2_29.LookAt
-    L6_33 = A1_28
-    L4_31(L5_32, L6_33)
-    L5_32 = A2_29
-    L4_31 = A2_29.PlayActionTimeline
-    L6_33 = A0_27.ACTION_TIMELINE_EVENT_TALK2
-    L7_34 = A1_28
-    L4_31(L5_32, L6_33, L7_34)
-    L5_32 = A2_29
-    L4_31 = A2_29.Talk
-    L6_33 = A1_28
-    L7_34 = A0_27
-    L4_31(L5_32, L6_33, L7_34, A0_27.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_170, false)
-    L5_32 = A2_29
-    L4_31 = A2_29.Talk
-    L6_33 = A1_28
-    L7_34 = A0_27
-    L4_31(L5_32, L6_33, L7_34, A0_27.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_171, true)
-    L5_32 = A2_29
-    L4_31 = A2_29.CancelActionTimeline
-    L6_33 = A0_27.ACTION_TIMELINE_EVENT_TALK1
-    L4_31(L5_32, L6_33)
-    L5_32 = A0_27
-    L4_31 = A0_27.Wait
-    L6_33 = 10
-    L4_31(L5_32, L6_33)
-    L6_33 = ...
-    L7_34 = A0_27.RelicSphereUpgrade
-    L7_34 = L7_34(A0_27, L5_32, L5_32)
-    if L7_34 == true then
-      A2_29:PlayActionTimeline(A0_27.ACTION1)
-      A2_29:WaitForActionTimeline(A0_27.ACTION1)
-      A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_EVENT_ITEM, A1_28)
-      A2_29:Talk(A1_28, A0_27, A0_27.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_172, true, nil, nil, nil, A0_27.SPEAK_NORMAL_MIDDLE, L5_32)
-      A2_29:CancelActionTimeline(A0_27.ACTION_TIMELINE_EVENT_ITEM)
-      A0_27:Wait(10)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnDefRelicWeapon040Adjust
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = (...)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_130
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.SystemTalk
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_135
+    L8_3 = true
+    L9_3 = L4_3
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+  end
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnDefRelicWeapon040Adjust
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3, L5_3 = ...
+    L7_3 = A2_3
+    L6_3 = A2_3.LookAt
+    L8_3 = A1_3
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L9_3 = A1_3
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_150
+    L11_3 = false
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_151
+    L11_3 = true
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.YesNo
+    L8_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_YESNO_Q1
+    L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_YESNO_YES
+    L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_YESNO_NO
+    L11_3 = A0_3.DEFAULT_NO
+    L12_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    if L6_3 == true then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION1
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.WaitForActionTimeline
+      L8_3 = A0_3.ACTION1
+      L6_3(L7_3, L8_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_155
+      L9_3 = false
+      L6_3(L7_3, L8_3, L9_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_156
+      L9_3 = false
+      L6_3(L7_3, L8_3, L9_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_SYSTEM_000_157
+      L9_3 = true
+      L6_3(L7_3, L8_3, L9_3)
+      L6_3 = L4_3
+      L7_3 = L5_3
+      return L6_3, L7_3
     end
-    return L7_34, L4_31, L5_32
+    L6_3 = 0
+    L7_3 = 0
+    return L6_3, L7_3
   end
-end)()
-;(function()
-  local L0_35
-  L0_35 = CmnDefRelicWeapon040Adjust
-  L0_35.SCRIPT_VERSION = 1
-  L0_35 = CmnDefRelicWeapon040Adjust
-  function L0_35.IsAcceptEvent(A0_36, A1_37, A2_38, A3_39, A4_40, A5_41)
-    return A1_37:IsQuestCompleted(A0_36.JOB_REL_007) == true
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CmnDefRelicWeapon040Adjust
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3, L5_3 = ...
+    L7_3 = A2_3
+    L6_3 = A2_3.LookAt
+    L8_3 = A1_3
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L9_3 = A1_3
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_160
+    L11_3 = true
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L9_3 = A1_3
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_161
+    L11_3 = true
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.RelicSphereUpgrade
+    L8_3 = L5_3
+    L9_3 = L5_3
+    L6_3(L7_3, L8_3, L9_3)
+    L6_3 = 0
+    return L6_3
   end
-end)()
+  L0_2.OnScene00005 = L1_2
+  L0_2 = CmnDefRelicWeapon040Adjust
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3
+    L5_3 = A2_3
+    L4_3 = A2_3.LookAt
+    L6_3 = A1_3
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L7_3 = A1_3
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_170
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_171
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L4_3, L5_3, L6_3 = ...
+    L8_3 = A0_3
+    L7_3 = A0_3.RelicSphereUpgrade
+    L9_3 = L5_3
+    L10_3 = L5_3
+    L7_3 = L7_3(L8_3, L9_3, L10_3)
+    if L7_3 == true then
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION1
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.WaitForActionTimeline
+      L10_3 = A0_3.ACTION1
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+      L11_3 = A1_3
+      L8_3(L9_3, L10_3, L11_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFRELICWEAPON040ADJUST_00211_JALZAHN_000_172
+      L13_3 = true
+      L14_3 = nil
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L18_3 = L5_3
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.CancelActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 10
+      L8_3(L9_3, L10_3)
+    end
+    L8_3 = L7_3
+    L9_3 = L4_3
+    L10_3 = L5_3
+    return L8_3, L9_3, L10_3
+  end
+  L0_2.OnScene00010 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefRelicWeapon040Adjust
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefRelicWeapon040Adjust
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestCompleted
+    L8_3 = A0_3.JOB_REL_007
+    L6_3 = L6_3(L7_3, L8_3)
+    L6_3 = L6_3 == true
+    return L6_3
+  end
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

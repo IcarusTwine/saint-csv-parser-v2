@@ -1,52 +1,103 @@
-(function()
-  print("CmnDefHousingDish")
-  CmnDefHousingDish.LOGMSG_HOUSING_COOK_FURNITURE_EAT_ERROR = 4068
-  CmnDefHousingDish.LOGMSG_HOUSING_ERR_HOUSING_01 = 3338
-  CmnDefHousingDish.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE = 1318
-  function CmnDefHousingDish.OnScene00000(A0_0, A1_1, A2_2, ...)
-    local L4_4, L5_5, L6_6
-    L5_5 = ...
-    if L4_4 == nil or L4_4 == 0 then
-      L6_6 = 0
-      return L6_6
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefHousingDish"
+  L0_2(L1_2)
+  L0_2 = CmnDefHousingDish
+  L0_2.LOGMSG_HOUSING_COOK_FURNITURE_EAT_ERROR = 4068
+  L0_2 = CmnDefHousingDish
+  L0_2.LOGMSG_HOUSING_ERR_HOUSING_01 = 3338
+  L0_2 = CmnDefHousingDish
+  L0_2.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE = 1318
+  L0_2 = CmnDefHousingDish
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L4_3, L5_3 = ...
+    if L4_3 == nil or L4_3 == 0 then
+      L6_3 = 0
+      return L6_3
     end
-    if A2_2 ~= nil then
-      L6_6 = A0_0.IsEventSceneTargetExists
-      L6_6 = L6_6(A0_0)
-    elseif L6_6 == false then
-      L6_6 = A0_0.LogMessage
-      L6_6(A0_0, A0_0.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE)
-      L6_6 = 0
-      return L6_6
-    end
-    L6_6 = A0_0.FormatString
-    L6_6 = L6_6(A0_0, A0_0.TEXT_CMNDEFHOUSINGDISH_00213_EAT_ASK_TITLE, L4_4, L5_5)
-    if A0_0:YesNoItem(L6_6, A0_0.TEXT_CMNDEFHOUSINGDISH_00213_EAT_ASK_YES, A0_0.TEXT_CMNDEFHOUSINGDISH_00213_EAT_ASK_NO, A0_0.DEFAULT_NO, L5_5) == true then
-      if A2_2 == nil or A0_0:IsEventSceneTargetExists() == false then
-        A0_0:LogMessage(A0_0.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE)
-        return 0
+    if A2_3 ~= nil then
+      L7_3 = A0_3
+      L6_3 = A0_3.IsEventSceneTargetExists
+      L6_3 = L6_3(L7_3)
+      if L6_3 ~= false then
+        goto lbl_19
       end
-      return 1
+    end
+    L7_3 = A0_3
+    L6_3 = A0_3.LogMessage
+    L8_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+    L6_3(L7_3, L8_3)
+    L6_3 = 0
+    do return L6_3 end
+    ::lbl_19::
+    L7_3 = A0_3
+    L6_3 = A0_3.FormatString
+    L8_3 = A0_3.TEXT_CMNDEFHOUSINGDISH_00213_EAT_ASK_TITLE
+    L9_3 = L4_3
+    L10_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.YesNoItem
+    L9_3 = L6_3
+    L10_3 = A0_3.TEXT_CMNDEFHOUSINGDISH_00213_EAT_ASK_YES
+    L11_3 = A0_3.TEXT_CMNDEFHOUSINGDISH_00213_EAT_ASK_NO
+    L12_3 = A0_3.DEFAULT_NO
+    L13_3 = L5_3
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    if L7_3 == true then
+      if A2_3 ~= nil then
+        L9_3 = A0_3
+        L8_3 = A0_3.IsEventSceneTargetExists
+        L8_3 = L8_3(L9_3)
+        if L8_3 ~= false then
+          goto lbl_44
+        end
+      end
+      L9_3 = A0_3
+      L8_3 = A0_3.LogMessage
+      L10_3 = A0_3.LOGMSG_CANCELLED_BEFORE_PLAY_EVENT_SCENE
+      L8_3(L9_3, L10_3)
+      L8_3 = 0
+      do return L8_3 end
+      ::lbl_44::
+      L8_3 = 1
+      return L8_3
     end
   end
-  function CmnDefHousingDish.OnScene00001(A0_7, A1_8, A2_9, ...)
-    local L4_11
-    L4_11 = (...)
-    if L4_11 == 0 then
-      A0_7:LogMessage(A0_7.LOGMSG_HOUSING_ERR_HOUSING_01)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefHousingDish
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = (...)
+    if L4_3 == 0 then
+      L6_3 = A0_3
+      L5_3 = A0_3.LogMessage
+      L7_3 = A0_3.LOGMSG_HOUSING_ERR_HOUSING_01
+      L5_3(L6_3, L7_3)
     else
-      A0_7:LogMessage(A0_7.LOGMSG_HOUSING_COOK_FURNITURE_EAT_ERROR, L4_11)
+      L6_3 = A0_3
+      L5_3 = A0_3.LogMessage
+      L7_3 = A0_3.LOGMSG_HOUSING_COOK_FURNITURE_EAT_ERROR
+      L8_3 = L4_3
+      L5_3(L6_3, L7_3, L8_3)
     end
   end
-end)()
-;(function()
-  local L0_12
-  L0_12 = CmnDefHousingDish
-  L0_12.SCRIPT_VERSION = 1
-  L0_12 = CmnDefHousingDish
-  function L0_12.GetConditionId(A0_13, A1_14, A2_15, A3_16, A4_17)
-    local L5_18
-    L5_18 = A0_13.EVENT_STATE_NORMAL
-    return L5_18
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefHousingDish
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefHousingDish
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3
+    L5_3 = A0_3.EVENT_STATE_NORMAL
+    return L5_3
   end
-end)()
+  L0_2.GetConditionId = L1_2
+end
+L0_1()

@@ -1,588 +1,2810 @@
-(function()
-  print("CtsDomReconEventKozakura")
-  function CtsDomReconEventKozakura.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_000, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
-    A0_0:Wait(10)
-    return A0_0.DOMA_EVENT_RESULT_END
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsDomReconEventKozakura"
+  L0_2(L1_2)
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_000
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00001(A0_3, A1_4, A2_5, A3_6)
-    A2_5:LookAt(A1_4)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_JP_BOW)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_010, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-    A0_3:Wait(10)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L5_3 = A2_3
+    L4_3 = A2_3.LookAt
+    L6_3 = A1_3
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_JP_BOW
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_010
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
     while true do
-      A0_3:Wait(10)
-      if A0_3:Menu(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_Q1_000_011, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_012, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_013, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_014, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_015) == 2 then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_017, false, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_018, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-        A0_3:Wait(10)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_019, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_020, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_021, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_022, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_023, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_024, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_025, true)
-        A0_3:Wait(10)
-      elseif A0_3:Menu(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_Q1_000_011, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_012, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_013, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_014, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_015) == 3 then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_026, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-        A0_3:Wait(10)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_027, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_028, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_100_028, false)
-        A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_029, true)
-        A0_3:Wait(10)
-      elseif A0_3:Menu(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_Q1_000_011, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_012, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_013, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_014, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_015) == 1 then
-        if A3_6 == A0_3.LOC_EVENT_PICTURE_001_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_016, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_002_YATAI_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_040, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_003_YATAI_MIDDLE then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_060, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_004_YATAI_END then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_JOY)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_080, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_005_BSM_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_100, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_006_PAPER_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_120, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_007_BSM_MIDDLE then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_140, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_008_PAPER_MIDDLE then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_160, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_009_BSM_END then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_JOY)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_180, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_010_PAPER_END then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_200, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_011_CHECKPOINT then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_210, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_012_FARM_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_250, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_013_FARM_END then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_290, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_014_SCHOOL_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_310, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_015_SCHOOL_END then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_350, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_016_SECURITY_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_370, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_017_SECURITY_END then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_390, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_018_TOWER_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_JOY)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_410, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_019_TOWER_END then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_430, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_020_GARDEN_START then
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_440, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_Q1_000_011
+      L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_012
+      L8_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_013
+      L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_014
+      L10_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_A1_000_015
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 10
+      L5_3(L6_3, L7_3)
+      if L4_3 == 2 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_017
+        L10_3 = false
+        L11_3 = nil
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_018
+        L10_3 = true
+        L11_3 = nil
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_019
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_020
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_021
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_022
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_023
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_024
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_025
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
+      elseif L4_3 == 3 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_026
+        L10_3 = true
+        L11_3 = nil
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_027
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_028
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_100_028
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_029
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 10
+        L5_3(L6_3, L7_3)
+      elseif L4_3 == 1 then
+        L5_3 = A0_3.LOC_EVENT_PICTURE_001_START
+        if A3_3 == L5_3 then
+          L6_3 = A2_3
+          L5_3 = A2_3.PlayActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L5_3(L6_3, L7_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_016
+          L10_3 = true
+          L11_3 = nil
+          L12_3 = nil
+          L13_3 = nil
+          L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L6_3 = A0_3
+          L5_3 = A0_3.Wait
+          L7_3 = 10
+          L5_3(L6_3, L7_3)
         else
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_460, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
+          L5_3 = A0_3.LOC_EVENT_PICTURE_002_YATAI_START
+          if A3_3 == L5_3 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_040
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+          else
+            L5_3 = A0_3.LOC_EVENT_PICTURE_003_YATAI_MIDDLE
+            if A3_3 == L5_3 then
+              L6_3 = A2_3
+              L5_3 = A2_3.PlayActionTimeline
+              L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+              L5_3(L6_3, L7_3)
+              L6_3 = A2_3
+              L5_3 = A2_3.Talk
+              L7_3 = A1_3
+              L8_3 = A0_3
+              L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_060
+              L10_3 = true
+              L11_3 = nil
+              L12_3 = nil
+              L13_3 = nil
+              L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+              L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+              L6_3 = A0_3
+              L5_3 = A0_3.Wait
+              L7_3 = 10
+              L5_3(L6_3, L7_3)
+            else
+              L5_3 = A0_3.LOC_EVENT_PICTURE_004_YATAI_END
+              if A3_3 == L5_3 then
+                L6_3 = A2_3
+                L5_3 = A2_3.PlayActionTimeline
+                L7_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+                L5_3(L6_3, L7_3)
+                L6_3 = A2_3
+                L5_3 = A2_3.Talk
+                L7_3 = A1_3
+                L8_3 = A0_3
+                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_080
+                L10_3 = true
+                L11_3 = nil
+                L12_3 = nil
+                L13_3 = nil
+                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                L6_3 = A0_3
+                L5_3 = A0_3.Wait
+                L7_3 = 10
+                L5_3(L6_3, L7_3)
+              else
+                L5_3 = A0_3.LOC_EVENT_PICTURE_005_BSM_START
+                if A3_3 == L5_3 then
+                  L6_3 = A2_3
+                  L5_3 = A2_3.PlayActionTimeline
+                  L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                  L5_3(L6_3, L7_3)
+                  L6_3 = A2_3
+                  L5_3 = A2_3.Talk
+                  L7_3 = A1_3
+                  L8_3 = A0_3
+                  L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_100
+                  L10_3 = true
+                  L11_3 = nil
+                  L12_3 = nil
+                  L13_3 = nil
+                  L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                  L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                  L6_3 = A0_3
+                  L5_3 = A0_3.Wait
+                  L7_3 = 10
+                  L5_3(L6_3, L7_3)
+                else
+                  L5_3 = A0_3.LOC_EVENT_PICTURE_006_PAPER_START
+                  if A3_3 == L5_3 then
+                    L6_3 = A2_3
+                    L5_3 = A2_3.PlayActionTimeline
+                    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                    L5_3(L6_3, L7_3)
+                    L6_3 = A2_3
+                    L5_3 = A2_3.Talk
+                    L7_3 = A1_3
+                    L8_3 = A0_3
+                    L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_120
+                    L10_3 = true
+                    L11_3 = nil
+                    L12_3 = nil
+                    L13_3 = nil
+                    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                    L6_3 = A0_3
+                    L5_3 = A0_3.Wait
+                    L7_3 = 10
+                    L5_3(L6_3, L7_3)
+                  else
+                    L5_3 = A0_3.LOC_EVENT_PICTURE_007_BSM_MIDDLE
+                    if A3_3 == L5_3 then
+                      L6_3 = A2_3
+                      L5_3 = A2_3.PlayActionTimeline
+                      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                      L5_3(L6_3, L7_3)
+                      L6_3 = A2_3
+                      L5_3 = A2_3.Talk
+                      L7_3 = A1_3
+                      L8_3 = A0_3
+                      L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_140
+                      L10_3 = true
+                      L11_3 = nil
+                      L12_3 = nil
+                      L13_3 = nil
+                      L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                      L6_3 = A0_3
+                      L5_3 = A0_3.Wait
+                      L7_3 = 10
+                      L5_3(L6_3, L7_3)
+                    else
+                      L5_3 = A0_3.LOC_EVENT_PICTURE_008_PAPER_MIDDLE
+                      if A3_3 == L5_3 then
+                        L6_3 = A2_3
+                        L5_3 = A2_3.PlayActionTimeline
+                        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+                        L5_3(L6_3, L7_3)
+                        L6_3 = A2_3
+                        L5_3 = A2_3.Talk
+                        L7_3 = A1_3
+                        L8_3 = A0_3
+                        L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_160
+                        L10_3 = true
+                        L11_3 = nil
+                        L12_3 = nil
+                        L13_3 = nil
+                        L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                        L6_3 = A0_3
+                        L5_3 = A0_3.Wait
+                        L7_3 = 10
+                        L5_3(L6_3, L7_3)
+                      else
+                        L5_3 = A0_3.LOC_EVENT_PICTURE_009_BSM_END
+                        if A3_3 == L5_3 then
+                          L6_3 = A2_3
+                          L5_3 = A2_3.PlayActionTimeline
+                          L7_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+                          L5_3(L6_3, L7_3)
+                          L6_3 = A2_3
+                          L5_3 = A2_3.Talk
+                          L7_3 = A1_3
+                          L8_3 = A0_3
+                          L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_180
+                          L10_3 = true
+                          L11_3 = nil
+                          L12_3 = nil
+                          L13_3 = nil
+                          L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                          L6_3 = A0_3
+                          L5_3 = A0_3.Wait
+                          L7_3 = 10
+                          L5_3(L6_3, L7_3)
+                        else
+                          L5_3 = A0_3.LOC_EVENT_PICTURE_010_PAPER_END
+                          if A3_3 == L5_3 then
+                            L6_3 = A2_3
+                            L5_3 = A2_3.PlayActionTimeline
+                            L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+                            L5_3(L6_3, L7_3)
+                            L6_3 = A2_3
+                            L5_3 = A2_3.Talk
+                            L7_3 = A1_3
+                            L8_3 = A0_3
+                            L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_200
+                            L10_3 = true
+                            L11_3 = nil
+                            L12_3 = nil
+                            L13_3 = nil
+                            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                            L6_3 = A0_3
+                            L5_3 = A0_3.Wait
+                            L7_3 = 10
+                            L5_3(L6_3, L7_3)
+                          else
+                            L5_3 = A0_3.LOC_EVENT_PICTURE_011_CHECKPOINT
+                            if A3_3 == L5_3 then
+                              L6_3 = A2_3
+                              L5_3 = A2_3.PlayActionTimeline
+                              L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                              L5_3(L6_3, L7_3)
+                              L6_3 = A2_3
+                              L5_3 = A2_3.Talk
+                              L7_3 = A1_3
+                              L8_3 = A0_3
+                              L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_210
+                              L10_3 = true
+                              L11_3 = nil
+                              L12_3 = nil
+                              L13_3 = nil
+                              L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                              L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                              L6_3 = A0_3
+                              L5_3 = A0_3.Wait
+                              L7_3 = 10
+                              L5_3(L6_3, L7_3)
+                            else
+                              L5_3 = A0_3.LOC_EVENT_PICTURE_012_FARM_START
+                              if A3_3 == L5_3 then
+                                L6_3 = A2_3
+                                L5_3 = A2_3.PlayActionTimeline
+                                L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                L5_3(L6_3, L7_3)
+                                L6_3 = A2_3
+                                L5_3 = A2_3.Talk
+                                L7_3 = A1_3
+                                L8_3 = A0_3
+                                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_250
+                                L10_3 = true
+                                L11_3 = nil
+                                L12_3 = nil
+                                L13_3 = nil
+                                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                L6_3 = A0_3
+                                L5_3 = A0_3.Wait
+                                L7_3 = 10
+                                L5_3(L6_3, L7_3)
+                              else
+                                L5_3 = A0_3.LOC_EVENT_PICTURE_013_FARM_END
+                                if A3_3 == L5_3 then
+                                  L6_3 = A2_3
+                                  L5_3 = A2_3.PlayActionTimeline
+                                  L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                  L5_3(L6_3, L7_3)
+                                  L6_3 = A2_3
+                                  L5_3 = A2_3.Talk
+                                  L7_3 = A1_3
+                                  L8_3 = A0_3
+                                  L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_290
+                                  L10_3 = true
+                                  L11_3 = nil
+                                  L12_3 = nil
+                                  L13_3 = nil
+                                  L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                  L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                  L6_3 = A0_3
+                                  L5_3 = A0_3.Wait
+                                  L7_3 = 10
+                                  L5_3(L6_3, L7_3)
+                                else
+                                  L5_3 = A0_3.LOC_EVENT_PICTURE_014_SCHOOL_START
+                                  if A3_3 == L5_3 then
+                                    L6_3 = A2_3
+                                    L5_3 = A2_3.PlayActionTimeline
+                                    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+                                    L5_3(L6_3, L7_3)
+                                    L6_3 = A2_3
+                                    L5_3 = A2_3.Talk
+                                    L7_3 = A1_3
+                                    L8_3 = A0_3
+                                    L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_310
+                                    L10_3 = true
+                                    L11_3 = nil
+                                    L12_3 = nil
+                                    L13_3 = nil
+                                    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                    L6_3 = A0_3
+                                    L5_3 = A0_3.Wait
+                                    L7_3 = 10
+                                    L5_3(L6_3, L7_3)
+                                  else
+                                    L5_3 = A0_3.LOC_EVENT_PICTURE_015_SCHOOL_END
+                                    if A3_3 == L5_3 then
+                                      L6_3 = A2_3
+                                      L5_3 = A2_3.PlayActionTimeline
+                                      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                                      L5_3(L6_3, L7_3)
+                                      L6_3 = A2_3
+                                      L5_3 = A2_3.Talk
+                                      L7_3 = A1_3
+                                      L8_3 = A0_3
+                                      L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_350
+                                      L10_3 = true
+                                      L11_3 = nil
+                                      L12_3 = nil
+                                      L13_3 = nil
+                                      L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                      L6_3 = A0_3
+                                      L5_3 = A0_3.Wait
+                                      L7_3 = 10
+                                      L5_3(L6_3, L7_3)
+                                    else
+                                      L5_3 = A0_3.LOC_EVENT_PICTURE_016_SECURITY_START
+                                      if A3_3 == L5_3 then
+                                        L6_3 = A2_3
+                                        L5_3 = A2_3.PlayActionTimeline
+                                        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                        L5_3(L6_3, L7_3)
+                                        L6_3 = A2_3
+                                        L5_3 = A2_3.Talk
+                                        L7_3 = A1_3
+                                        L8_3 = A0_3
+                                        L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_370
+                                        L10_3 = true
+                                        L11_3 = nil
+                                        L12_3 = nil
+                                        L13_3 = nil
+                                        L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                        L6_3 = A0_3
+                                        L5_3 = A0_3.Wait
+                                        L7_3 = 10
+                                        L5_3(L6_3, L7_3)
+                                      else
+                                        L5_3 = A0_3.LOC_EVENT_PICTURE_017_SECURITY_END
+                                        if A3_3 == L5_3 then
+                                          L6_3 = A2_3
+                                          L5_3 = A2_3.PlayActionTimeline
+                                          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                          L5_3(L6_3, L7_3)
+                                          L6_3 = A2_3
+                                          L5_3 = A2_3.Talk
+                                          L7_3 = A1_3
+                                          L8_3 = A0_3
+                                          L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_390
+                                          L10_3 = true
+                                          L11_3 = nil
+                                          L12_3 = nil
+                                          L13_3 = nil
+                                          L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                          L6_3 = A0_3
+                                          L5_3 = A0_3.Wait
+                                          L7_3 = 10
+                                          L5_3(L6_3, L7_3)
+                                        else
+                                          L5_3 = A0_3.LOC_EVENT_PICTURE_018_TOWER_START
+                                          if A3_3 == L5_3 then
+                                            L6_3 = A2_3
+                                            L5_3 = A2_3.PlayActionTimeline
+                                            L7_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+                                            L5_3(L6_3, L7_3)
+                                            L6_3 = A2_3
+                                            L5_3 = A2_3.Talk
+                                            L7_3 = A1_3
+                                            L8_3 = A0_3
+                                            L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_410
+                                            L10_3 = true
+                                            L11_3 = nil
+                                            L12_3 = nil
+                                            L13_3 = nil
+                                            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                            L6_3 = A0_3
+                                            L5_3 = A0_3.Wait
+                                            L7_3 = 10
+                                            L5_3(L6_3, L7_3)
+                                          else
+                                            L5_3 = A0_3.LOC_EVENT_PICTURE_019_TOWER_END
+                                            if A3_3 == L5_3 then
+                                              L6_3 = A2_3
+                                              L5_3 = A2_3.PlayActionTimeline
+                                              L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+                                              L5_3(L6_3, L7_3)
+                                              L6_3 = A2_3
+                                              L5_3 = A2_3.Talk
+                                              L7_3 = A1_3
+                                              L8_3 = A0_3
+                                              L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_430
+                                              L10_3 = true
+                                              L11_3 = nil
+                                              L12_3 = nil
+                                              L13_3 = nil
+                                              L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                              L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                              L6_3 = A0_3
+                                              L5_3 = A0_3.Wait
+                                              L7_3 = 10
+                                              L5_3(L6_3, L7_3)
+                                            else
+                                              L5_3 = A0_3.LOC_EVENT_PICTURE_020_GARDEN_START
+                                              if A3_3 == L5_3 then
+                                                L6_3 = A2_3
+                                                L5_3 = A2_3.PlayActionTimeline
+                                                L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                                L5_3(L6_3, L7_3)
+                                                L6_3 = A2_3
+                                                L5_3 = A2_3.Talk
+                                                L7_3 = A1_3
+                                                L8_3 = A0_3
+                                                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_440
+                                                L10_3 = true
+                                                L11_3 = nil
+                                                L12_3 = nil
+                                                L13_3 = nil
+                                                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                                L6_3 = A0_3
+                                                L5_3 = A0_3.Wait
+                                                L7_3 = 10
+                                                L5_3(L6_3, L7_3)
+                                              else
+                                                L6_3 = A2_3
+                                                L5_3 = A2_3.PlayActionTimeline
+                                                L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                                L5_3(L6_3, L7_3)
+                                                L6_3 = A2_3
+                                                L5_3 = A2_3.Talk
+                                                L7_3 = A1_3
+                                                L8_3 = A0_3
+                                                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_460
+                                                L10_3 = true
+                                                L11_3 = nil
+                                                L12_3 = nil
+                                                L13_3 = nil
+                                                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                                L6_3 = A0_3
+                                                L5_3 = A0_3.Wait
+                                                L7_3 = 10
+                                                L5_3(L6_3, L7_3)
+                                              end
+                                            end
+                                          end
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
         end
-        A0_3:LoadEventPicture(A3_6, A0_3.EVENT_PICTURE_SE_DEFAULT)
-        A0_3:WaitForLoadEventPicture()
-        A0_3:EventPictureOffset(50, 45, 1, 1)
-        A0_3:EventPicture(true)
-        A0_3:Wait(30)
-        if A3_6 == A0_3.LOC_EVENT_PICTURE_001_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_041, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_002_YATAI_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_041, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_003_YATAI_MIDDLE then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_061, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_004_YATAI_END then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_081, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_005_BSM_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_101, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_006_PAPER_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_121, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_007_BSM_MIDDLE then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_141, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_008_PAPER_MIDDLE then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_161, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_009_BSM_END then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_181, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_010_PAPER_END then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_201, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_011_CHECKPOINT then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_201, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_012_FARM_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_251, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_013_FARM_END then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_291, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_014_SCHOOL_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_311, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_015_SCHOOL_END then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_351, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_016_SECURITY_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_371, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_017_SECURITY_END then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_391, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_018_TOWER_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_411, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_019_TOWER_END then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_431, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-        elseif A3_6 == A0_3.LOC_EVENT_PICTURE_020_GARDEN_START then
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_441, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
+        L6_3 = A0_3
+        L5_3 = A0_3.LoadEventPicture
+        L7_3 = A3_3
+        L8_3 = A0_3.EVENT_PICTURE_SE_DEFAULT
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.WaitForLoadEventPicture
+        L5_3(L6_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.EventPictureOffset
+        L7_3 = 50
+        L8_3 = 45
+        L9_3 = 1
+        L10_3 = 1
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.EventPicture
+        L7_3 = true
+        L5_3(L6_3, L7_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Wait
+        L7_3 = 30
+        L5_3(L6_3, L7_3)
+        L5_3 = A0_3.LOC_EVENT_PICTURE_001_START
+        if A3_3 == L5_3 then
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_041
+          L10_3 = true
+          L11_3 = nil
+          L12_3 = nil
+          L13_3 = nil
+          L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L6_3 = A0_3
+          L5_3 = A0_3.Wait
+          L7_3 = 10
+          L5_3(L6_3, L7_3)
         else
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_441, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
-          A0_3:Wait(10)
-          A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_461, false)
-          A0_3:SystemTalk(A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_462, true)
-          A0_3:Wait(10)
+          L5_3 = A0_3.LOC_EVENT_PICTURE_002_YATAI_START
+          if A3_3 == L5_3 then
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_041
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+          else
+            L5_3 = A0_3.LOC_EVENT_PICTURE_003_YATAI_MIDDLE
+            if A3_3 == L5_3 then
+              L6_3 = A2_3
+              L5_3 = A2_3.Talk
+              L7_3 = A1_3
+              L8_3 = A0_3
+              L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_061
+              L10_3 = true
+              L11_3 = nil
+              L12_3 = nil
+              L13_3 = nil
+              L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+              L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+              L6_3 = A0_3
+              L5_3 = A0_3.Wait
+              L7_3 = 10
+              L5_3(L6_3, L7_3)
+            else
+              L5_3 = A0_3.LOC_EVENT_PICTURE_004_YATAI_END
+              if A3_3 == L5_3 then
+                L6_3 = A2_3
+                L5_3 = A2_3.Talk
+                L7_3 = A1_3
+                L8_3 = A0_3
+                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_081
+                L10_3 = true
+                L11_3 = nil
+                L12_3 = nil
+                L13_3 = nil
+                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                L6_3 = A0_3
+                L5_3 = A0_3.Wait
+                L7_3 = 10
+                L5_3(L6_3, L7_3)
+              else
+                L5_3 = A0_3.LOC_EVENT_PICTURE_005_BSM_START
+                if A3_3 == L5_3 then
+                  L6_3 = A2_3
+                  L5_3 = A2_3.Talk
+                  L7_3 = A1_3
+                  L8_3 = A0_3
+                  L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_101
+                  L10_3 = true
+                  L11_3 = nil
+                  L12_3 = nil
+                  L13_3 = nil
+                  L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                  L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                  L6_3 = A0_3
+                  L5_3 = A0_3.Wait
+                  L7_3 = 10
+                  L5_3(L6_3, L7_3)
+                else
+                  L5_3 = A0_3.LOC_EVENT_PICTURE_006_PAPER_START
+                  if A3_3 == L5_3 then
+                    L6_3 = A2_3
+                    L5_3 = A2_3.Talk
+                    L7_3 = A1_3
+                    L8_3 = A0_3
+                    L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_121
+                    L10_3 = true
+                    L11_3 = nil
+                    L12_3 = nil
+                    L13_3 = nil
+                    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                    L6_3 = A0_3
+                    L5_3 = A0_3.Wait
+                    L7_3 = 10
+                    L5_3(L6_3, L7_3)
+                  else
+                    L5_3 = A0_3.LOC_EVENT_PICTURE_007_BSM_MIDDLE
+                    if A3_3 == L5_3 then
+                      L6_3 = A2_3
+                      L5_3 = A2_3.Talk
+                      L7_3 = A1_3
+                      L8_3 = A0_3
+                      L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_141
+                      L10_3 = true
+                      L11_3 = nil
+                      L12_3 = nil
+                      L13_3 = nil
+                      L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                      L6_3 = A0_3
+                      L5_3 = A0_3.Wait
+                      L7_3 = 10
+                      L5_3(L6_3, L7_3)
+                    else
+                      L5_3 = A0_3.LOC_EVENT_PICTURE_008_PAPER_MIDDLE
+                      if A3_3 == L5_3 then
+                        L6_3 = A2_3
+                        L5_3 = A2_3.Talk
+                        L7_3 = A1_3
+                        L8_3 = A0_3
+                        L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_161
+                        L10_3 = true
+                        L11_3 = nil
+                        L12_3 = nil
+                        L13_3 = nil
+                        L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                        L6_3 = A0_3
+                        L5_3 = A0_3.Wait
+                        L7_3 = 10
+                        L5_3(L6_3, L7_3)
+                      else
+                        L5_3 = A0_3.LOC_EVENT_PICTURE_009_BSM_END
+                        if A3_3 == L5_3 then
+                          L6_3 = A2_3
+                          L5_3 = A2_3.Talk
+                          L7_3 = A1_3
+                          L8_3 = A0_3
+                          L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_181
+                          L10_3 = true
+                          L11_3 = nil
+                          L12_3 = nil
+                          L13_3 = nil
+                          L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                          L6_3 = A0_3
+                          L5_3 = A0_3.Wait
+                          L7_3 = 10
+                          L5_3(L6_3, L7_3)
+                        else
+                          L5_3 = A0_3.LOC_EVENT_PICTURE_010_PAPER_END
+                          if A3_3 == L5_3 then
+                            L6_3 = A2_3
+                            L5_3 = A2_3.Talk
+                            L7_3 = A1_3
+                            L8_3 = A0_3
+                            L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_201
+                            L10_3 = true
+                            L11_3 = nil
+                            L12_3 = nil
+                            L13_3 = nil
+                            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                            L6_3 = A0_3
+                            L5_3 = A0_3.Wait
+                            L7_3 = 10
+                            L5_3(L6_3, L7_3)
+                          else
+                            L5_3 = A0_3.LOC_EVENT_PICTURE_011_CHECKPOINT
+                            if A3_3 == L5_3 then
+                              L6_3 = A2_3
+                              L5_3 = A2_3.Talk
+                              L7_3 = A1_3
+                              L8_3 = A0_3
+                              L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_201
+                              L10_3 = true
+                              L11_3 = nil
+                              L12_3 = nil
+                              L13_3 = nil
+                              L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                              L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                              L6_3 = A0_3
+                              L5_3 = A0_3.Wait
+                              L7_3 = 10
+                              L5_3(L6_3, L7_3)
+                            else
+                              L5_3 = A0_3.LOC_EVENT_PICTURE_012_FARM_START
+                              if A3_3 == L5_3 then
+                                L6_3 = A2_3
+                                L5_3 = A2_3.Talk
+                                L7_3 = A1_3
+                                L8_3 = A0_3
+                                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_251
+                                L10_3 = true
+                                L11_3 = nil
+                                L12_3 = nil
+                                L13_3 = nil
+                                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                L6_3 = A0_3
+                                L5_3 = A0_3.Wait
+                                L7_3 = 10
+                                L5_3(L6_3, L7_3)
+                              else
+                                L5_3 = A0_3.LOC_EVENT_PICTURE_013_FARM_END
+                                if A3_3 == L5_3 then
+                                  L6_3 = A2_3
+                                  L5_3 = A2_3.Talk
+                                  L7_3 = A1_3
+                                  L8_3 = A0_3
+                                  L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_291
+                                  L10_3 = true
+                                  L11_3 = nil
+                                  L12_3 = nil
+                                  L13_3 = nil
+                                  L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                  L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                  L6_3 = A0_3
+                                  L5_3 = A0_3.Wait
+                                  L7_3 = 10
+                                  L5_3(L6_3, L7_3)
+                                else
+                                  L5_3 = A0_3.LOC_EVENT_PICTURE_014_SCHOOL_START
+                                  if A3_3 == L5_3 then
+                                    L6_3 = A2_3
+                                    L5_3 = A2_3.Talk
+                                    L7_3 = A1_3
+                                    L8_3 = A0_3
+                                    L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_311
+                                    L10_3 = true
+                                    L11_3 = nil
+                                    L12_3 = nil
+                                    L13_3 = nil
+                                    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                    L6_3 = A0_3
+                                    L5_3 = A0_3.Wait
+                                    L7_3 = 10
+                                    L5_3(L6_3, L7_3)
+                                  else
+                                    L5_3 = A0_3.LOC_EVENT_PICTURE_015_SCHOOL_END
+                                    if A3_3 == L5_3 then
+                                      L6_3 = A2_3
+                                      L5_3 = A2_3.Talk
+                                      L7_3 = A1_3
+                                      L8_3 = A0_3
+                                      L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_351
+                                      L10_3 = true
+                                      L11_3 = nil
+                                      L12_3 = nil
+                                      L13_3 = nil
+                                      L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                      L6_3 = A0_3
+                                      L5_3 = A0_3.Wait
+                                      L7_3 = 10
+                                      L5_3(L6_3, L7_3)
+                                    else
+                                      L5_3 = A0_3.LOC_EVENT_PICTURE_016_SECURITY_START
+                                      if A3_3 == L5_3 then
+                                        L6_3 = A2_3
+                                        L5_3 = A2_3.Talk
+                                        L7_3 = A1_3
+                                        L8_3 = A0_3
+                                        L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_371
+                                        L10_3 = true
+                                        L11_3 = nil
+                                        L12_3 = nil
+                                        L13_3 = nil
+                                        L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                        L6_3 = A0_3
+                                        L5_3 = A0_3.Wait
+                                        L7_3 = 10
+                                        L5_3(L6_3, L7_3)
+                                      else
+                                        L5_3 = A0_3.LOC_EVENT_PICTURE_017_SECURITY_END
+                                        if A3_3 == L5_3 then
+                                          L6_3 = A2_3
+                                          L5_3 = A2_3.Talk
+                                          L7_3 = A1_3
+                                          L8_3 = A0_3
+                                          L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_391
+                                          L10_3 = true
+                                          L11_3 = nil
+                                          L12_3 = nil
+                                          L13_3 = nil
+                                          L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                          L6_3 = A0_3
+                                          L5_3 = A0_3.Wait
+                                          L7_3 = 10
+                                          L5_3(L6_3, L7_3)
+                                        else
+                                          L5_3 = A0_3.LOC_EVENT_PICTURE_018_TOWER_START
+                                          if A3_3 == L5_3 then
+                                            L6_3 = A2_3
+                                            L5_3 = A2_3.Talk
+                                            L7_3 = A1_3
+                                            L8_3 = A0_3
+                                            L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_411
+                                            L10_3 = true
+                                            L11_3 = nil
+                                            L12_3 = nil
+                                            L13_3 = nil
+                                            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                            L6_3 = A0_3
+                                            L5_3 = A0_3.Wait
+                                            L7_3 = 10
+                                            L5_3(L6_3, L7_3)
+                                          else
+                                            L5_3 = A0_3.LOC_EVENT_PICTURE_019_TOWER_END
+                                            if A3_3 == L5_3 then
+                                              L6_3 = A2_3
+                                              L5_3 = A2_3.Talk
+                                              L7_3 = A1_3
+                                              L8_3 = A0_3
+                                              L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_431
+                                              L10_3 = true
+                                              L11_3 = nil
+                                              L12_3 = nil
+                                              L13_3 = nil
+                                              L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                              L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                              L6_3 = A0_3
+                                              L5_3 = A0_3.Wait
+                                              L7_3 = 10
+                                              L5_3(L6_3, L7_3)
+                                            else
+                                              L5_3 = A0_3.LOC_EVENT_PICTURE_020_GARDEN_START
+                                              if A3_3 == L5_3 then
+                                                L6_3 = A2_3
+                                                L5_3 = A2_3.Talk
+                                                L7_3 = A1_3
+                                                L8_3 = A0_3
+                                                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_441
+                                                L10_3 = true
+                                                L11_3 = nil
+                                                L12_3 = nil
+                                                L13_3 = nil
+                                                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                                L6_3 = A0_3
+                                                L5_3 = A0_3.Wait
+                                                L7_3 = 10
+                                                L5_3(L6_3, L7_3)
+                                              else
+                                                L6_3 = A2_3
+                                                L5_3 = A2_3.Talk
+                                                L7_3 = A1_3
+                                                L8_3 = A0_3
+                                                L9_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_441
+                                                L10_3 = true
+                                                L11_3 = nil
+                                                L12_3 = nil
+                                                L13_3 = nil
+                                                L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+                                                L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                                                L6_3 = A0_3
+                                                L5_3 = A0_3.Wait
+                                                L7_3 = 10
+                                                L5_3(L6_3, L7_3)
+                                                L6_3 = A0_3
+                                                L5_3 = A0_3.SystemTalk
+                                                L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_461
+                                                L8_3 = false
+                                                L5_3(L6_3, L7_3, L8_3)
+                                                L6_3 = A0_3
+                                                L5_3 = A0_3.SystemTalk
+                                                L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_462
+                                                L8_3 = true
+                                                L5_3(L6_3, L7_3, L8_3)
+                                                L6_3 = A0_3
+                                                L5_3 = A0_3.Wait
+                                                L7_3 = 10
+                                                L5_3(L6_3, L7_3)
+                                              end
+                                            end
+                                          end
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
         end
-        A0_3:EventPicture(false)
+        L6_3 = A0_3
+        L5_3 = A0_3.EventPicture
+        L7_3 = false
+        L5_3(L6_3, L7_3)
         break
       else
         break
       end
     end
-    return A0_3.DOMA_EVENT_RESULT_END
+    L4_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L4_3
   end
-  function CtsDomReconEventKozakura.OnScene00002(A0_7, A1_8, A2_9)
-    A2_9:LookAt(A1_8)
-    A2_9:TurnTo(A1_8, false)
-    A2_9:WaitForTurn()
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_016, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
-    A0_7:Wait(10)
-    return A0_7.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_016
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00003(A0_10, A1_11, A2_12)
-    A2_12:LookAt(A1_11)
-    A2_12:TurnTo(A1_11, false)
-    A2_12:WaitForTurn()
-    A2_12:PlayActionTimeline(A0_10.ACTION_TIMELINE_EVENT_TALK2)
-    A2_12:Talk(A1_11, A0_10, A0_10.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_030, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    A0_10:Wait(10)
-    return A0_10.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_030
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00004(A0_13, A1_14, A2_15)
-    A2_15:LookAt(A1_14)
-    A2_15:TurnTo(A1_14, false)
-    A2_15:WaitForTurn()
-    A2_15:PlayActionTimeline(A0_13.ACTION_TIMELINE_EVENT_TALK2)
-    A2_15:Talk(A1_14, A0_13, A0_13.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_040, true, nil, nil, nil, A0_13.SPEAK_NORMAL_MIDDLE)
-    A0_13:Wait(10)
-    return A0_13.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_040
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00005(A0_16, A1_17, A2_18)
-    A2_18:LookAt(A1_17)
-    A2_18:TurnTo(A1_17, false)
-    A2_18:WaitForTurn()
-    A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK2)
-    A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_050, true, nil, nil, nil, A0_16.SPEAK_NORMAL_MIDDLE)
-    A0_16:Wait(10)
-    return A0_16.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_050
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00006(A0_19, A1_20, A2_21)
-    A2_21:LookAt(A1_20)
-    A2_21:TurnTo(A1_20, false)
-    A2_21:WaitForTurn()
-    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EVENT_TALK1)
-    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_060, true, nil, nil, nil, A0_19.SPEAK_NORMAL_MIDDLE)
-    A0_19:Wait(10)
-    return A0_19.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00005 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_060
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00007(A0_22, A1_23, A2_24)
-    A2_24:LookAt(A1_23)
-    A2_24:TurnTo(A1_23, false)
-    A2_24:WaitForTurn()
-    A2_24:PlayActionTimeline(A0_22.ACTION_TIMELINE_EVENT_TALK1)
-    A2_24:Talk(A1_23, A0_22, A0_22.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_070, true, nil, nil, nil, A0_22.SPEAK_NORMAL_MIDDLE)
-    A0_22:Wait(10)
-    return A0_22.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00006 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_070
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00008(A0_25, A1_26, A2_27)
-    A2_27:LookAt(A1_26)
-    A2_27:TurnTo(A1_26, false)
-    A2_27:WaitForTurn()
-    A2_27:PlayActionTimeline(A0_25.ACTION_TIMELINE_EMOTE_JOY)
-    A2_27:Talk(A1_26, A0_25, A0_25.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_070, true, nil, nil, nil, A0_25.SPEAK_NORMAL_MIDDLE)
-    A0_25:Wait(10)
-    return A0_25.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00007 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_070
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00009(A0_28, A1_29, A2_30)
-    A2_30:LookAt(A1_29)
-    A2_30:TurnTo(A1_29, false)
-    A2_30:WaitForTurn()
-    A2_30:PlayActionTimeline(A0_28.ACTION_TIMELINE_EVENT_TALK2)
-    A2_30:Talk(A1_29, A0_28, A0_28.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_090, true, nil, nil, nil, A0_28.SPEAK_NORMAL_MIDDLE)
-    A0_28:Wait(10)
-    return A0_28.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00008 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_090
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00010(A0_31, A1_32, A2_33)
-    A2_33:LookAt(A1_32)
-    A2_33:TurnTo(A1_32, false)
-    A2_33:WaitForTurn()
-    A2_33:PlayActionTimeline(A0_31.ACTION_TIMELINE_EVENT_TALK2)
-    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_100, true, nil, nil, nil, A0_31.SPEAK_NORMAL_MIDDLE)
-    A0_31:Wait(10)
-    return A0_31.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00009 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_100
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00011(A0_34, A1_35, A2_36)
-    A2_36:LookAt(A1_35)
-    A2_36:TurnTo(A1_35, false)
-    A2_36:WaitForTurn()
-    A2_36:PlayActionTimeline(A0_34.ACTION_TIMELINE_EVENT_TALK1)
-    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_110, true, nil, nil, nil, A0_34.SPEAK_NORMAL_MIDDLE)
-    A0_34:Wait(10)
-    return A0_34.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00010 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_110
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00012(A0_37, A1_38, A2_39)
-    A2_39:PlayActionTimeline(A0_37.ACTION_TIMELINE_EVENT_TALK1)
-    A2_39:Talk(A1_38, A0_37, A0_37.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_120, true, nil, nil, nil, A0_37.SPEAK_NORMAL_MIDDLE)
-    A0_37:Wait(10)
-    return A0_37.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00011 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_120
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00013(A0_40, A1_41, A2_42)
-    A2_42:PlayActionTimeline(A0_40.ACTION_TIMELINE_EVENT_TALK1)
-    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_130, true, nil, nil, nil, A0_40.SPEAK_NORMAL_MIDDLE)
-    A0_40:Wait(10)
-    return A0_40.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00012 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_130
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00014(A0_43, A1_44, A2_45)
-    A2_45:PlayActionTimeline(A0_43.ACTION_TIMELINE_EVENT_TALK2)
-    A2_45:Talk(A1_44, A0_43, A0_43.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_140, true, nil, nil, nil, A0_43.SPEAK_NORMAL_MIDDLE)
-    A0_43:Wait(10)
-    return A0_43.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00013 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_140
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00015(A0_46, A1_47, A2_48)
-    A2_48:PlayActionTimeline(A0_46.ACTION_TIMELINE_EVENT_TALK1)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_150, true, nil, nil, nil, A0_46.SPEAK_NORMAL_MIDDLE)
-    A0_46:Wait(10)
-    return A0_46.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00014 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_150
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00016(A0_49, A1_50, A2_51)
-    A2_51:PlayActionTimeline(A0_49.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_160, true, nil, nil, nil, A0_49.SPEAK_NORMAL_MIDDLE)
-    A0_49:Wait(10)
-    return A0_49.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00015 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_160
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00017(A0_52, A1_53, A2_54)
-    A2_54:PlayActionTimeline(A0_52.ACTION_TIMELINE_EVENT_TALK2)
-    A2_54:Talk(A1_53, A0_52, A0_52.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_170, true, nil, nil, nil, A0_52.SPEAK_NORMAL_MIDDLE)
-    A0_52:Wait(10)
-    return A0_52.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00016 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_170
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00018(A0_55, A1_56, A2_57)
-    A2_57:PlayActionTimeline(A0_55.ACTION_TIMELINE_EMOTE_JOY)
-    A2_57:Talk(A1_56, A0_55, A0_55.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_180, true, nil, nil, nil, A0_55.SPEAK_NORMAL_MIDDLE)
-    A0_55:Wait(10)
-    return A0_55.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00017 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_180
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00019(A0_58, A1_59, A2_60)
-    A2_60:PlayActionTimeline(A0_58.ACTION_TIMELINE_EVENT_TALK2)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_190, true, nil, nil, nil, A0_58.SPEAK_NORMAL_MIDDLE)
-    A0_58:Wait(10)
-    return A0_58.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00018 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_190
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00020(A0_61, A1_62, A2_63)
-    A2_63:PlayActionTimeline(A0_61.ACTION_TIMELINE_EVENT_THINK)
-    A2_63:Talk(A1_62, A0_61, A0_61.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_200, true, nil, nil, nil, A0_61.SPEAK_NORMAL_MIDDLE)
-    A0_61:Wait(10)
-    return A0_61.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00019 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_200
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00021(A0_64, A1_65, A2_66)
-    A2_66:PlayActionTimeline(A0_64.ACTION_TIMELINE_EVENT_TALK1)
-    A2_66:Talk(A1_65, A0_64, A0_64.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_210, true, nil, nil, nil, A0_64.SPEAK_NORMAL_MIDDLE)
-    A0_64:Wait(10)
-    A0_64:SystemTalk(A0_64.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_210, true)
-    A0_64:Wait(10)
-    return A0_64.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00020 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_210
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_210
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00022(A0_67, A1_68, A2_69)
-    A2_69:PlayActionTimeline(A0_67.ACTION_TIMELINE_EVENT_TALK1)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_215, false, nil, nil, nil, A0_67.SPEAK_NORMAL_MIDDLE)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_216, true, nil, nil, nil, A0_67.SPEAK_NORMAL_MIDDLE)
-    A0_67:Wait(10)
-    A0_67:SystemTalk(A0_67.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_217, true)
-    A0_67:Wait(10)
-    return A0_67.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00021 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_215
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_216
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_SYSTEM_000_217
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00023(A0_70, A1_71, A2_72)
-    local L3_73, L4_74, L5_75, L6_76
-    L4_74 = A1_71
-    L3_73 = A1_71.GetRace
-    L3_73 = L3_73(L4_74)
-    L5_75 = A1_71
-    L4_74 = A1_71.GetSex
-    L4_74 = L4_74(L5_75)
-    L6_76 = A1_71
-    L5_75 = A1_71.Position
-    L5_75(L6_76, A2_72, A0_70.ARRANGE_TYPE_BASE_FRONT, 2.5)
-    L6_76 = A1_71
-    L5_75 = A1_71.Direction
-    L5_75(L6_76, A2_72)
-    L6_76 = A1_71
-    L5_75 = A1_71.LookAt
-    L5_75(L6_76, A2_72)
-    L6_76 = A0_70
-    L5_75 = A0_70.CreateCharacter
-    L5_75 = L5_75(L6_76, A0_70.LOC_ACTOR_001, A2_72, A0_70.ARRANGE_TYPE_BASE_FRONT, 2)
-    L6_76 = L5_75.Visible
-    L6_76(L5_75, A0_70.VISIBLE_HIDE)
-    L6_76 = A0_70.CreateCharacter
-    L6_76 = L6_76(A0_70, A0_70.LOC_ACTOR_002, A2_72, A0_70.ARRANGE_TYPE_BASE_FRONT, 2.329892)
-    L6_76:Position(L6_76, A0_70.ARRANGE_TYPE_LEFT, 1.594135)
-    L6_76:Direction(A2_72)
-    L6_76:LookAt(A2_72)
-    L6_76:Visible(A0_70.VISIBLE_HIDE)
-    A0_70:ChangeBGMVolume(0.5)
-    A0_70:Wait(30)
-    A0_70:PlayTargetRelationCamera(L5_75, -36.2742, 3.4491, 2.0162, 161.2224, 0.394, 0.9484, 3.9728)
-    A0_70:Wait(10)
-    A0_70:FadeIn(A0_70.FADE_DEFAULT)
-    A0_70:WaitForFade()
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_JP_BOW, nil, A0_70.AUTO_SHAKE_ENABLE)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_220, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    A2_72:AutoShake(false)
-    A1_71:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_GREETING)
-    A0_70:Wait(65)
-    A0_70:PlayTargetRelationCamera(L5_75, -151.1075, 1.1931, 1.3763, 159.8274, 4.6812, 0.8144, 4.0416)
-    A0_70:Wait(10)
-    A2_72:WaitForActionTimeline(A0_70.ACTION_TIMELINE_EVENT_JP_BOW)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK2)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_221, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(20)
-    A2_72:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK2)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK1)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_222, false, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_223, false, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_224, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(15)
-    A2_72:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK1)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_225, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    L6_76:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_226, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:ChangeBGMVolume(0)
-    A0_70:Wait(30)
-    A2_72:LookAt(L6_76)
-    A0_70:PlayBGM(A0_70.BGM_MUSIC_NO_MUSIC)
-    A0_70:ChangeBGMVolume(0.5)
-    L6_76:WalkIn(180, 3.5, A0_70.MOVE_WALK)
-    L6_76:Visible(A0_70.VISIBLE_SHOW)
-    A0_70:Wait(15)
-    A0_70:PlayTargetRelationCamera(L5_75, -145.8827, 3.1559, 1.7036, 107.5479, 0.9321, 1.097, 3.588)
-    A0_70:PlayBGM(A0_70.LOC_BGM_001)
-    A0_70:ChangeBGMVolume(0.5)
-    A0_70:Wait(10)
-    A1_71:LookAt(L6_76)
-    A0_70:Wait(10)
-    A1_71:TurnTo(-75, false)
-    L6_76:WaitForMove()
-    A0_70:Wait(10)
-    L6_76:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_ADD_YES)
-    A0_70:Wait(10)
-    A2_72:Idle(A0_70.ACTION_TIMELINE_EVENT_BASE_IDLE4)
-    A0_70:Wait(25)
-    L6_76:LookAt(A1_71)
-    A0_70:Wait(15)
-    A0_70:PlayTargetRelationCamera(L5_75, 135.8383, 0.5846, 1.7446, 80.5566, 1.3696, 1.7178, 1.1429)
-    A0_70:Wait(10)
-    L6_76:PlayActionTimeline(A0_70.ACTION_TIMELINE_EMOTE_ME)
-    L6_76:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_227, false, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    L6_76:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_228, false, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    L6_76:CancelActionTimeline(A0_70.ACTION_TIMELINE_EMOTE_ME)
-    L6_76:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    L6_76:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_229, false, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    L6_76:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_230, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    L6_76:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A0_70:PlayTargetRelationCamera(L5_75, -145.8827, 3.1559, 1.7036, 107.5479, 0.9321, 1.097, 3.588)
-    A0_70:Wait(10)
-    L6_76:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_231, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    L6_76:LookAt(A2_72)
-    A0_70:Wait(13)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_ADD_YES)
-    A0_70:Wait(25)
-    L6_76:PlayActionTimeline(A0_70.ACTION_TIMELINE_FACIAL_SMILE)
-    A0_70:Wait(25)
-    L6_76:LookAt(A1_71)
-    A0_70:Wait(10)
-    L6_76:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK2)
-    L6_76:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_232, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    A1_71:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_ADD_YES)
-    A0_70:Wait(40)
-    L6_76:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_ADD_YES)
-    A0_70:Wait(40)
-    L6_76:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK2)
-    L6_76:LookAt(A2_72)
-    A0_70:Wait(10)
-    L6_76:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_GREETING)
-    A0_70:Wait(30)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_ADD_YES)
-    L6_76:WaitForActionTimeline(A0_70.ACTION_TIMELINE_EVENT_GREETING)
-    A0_70:Wait(8)
-    L6_76:TurnTo(175, false)
-    A0_70:Wait(8)
-    L6_76:LookAt()
-    L6_76:WaitForTurn()
-    L6_76:WalkOut(0, 8, A0_70.MOVE_WALK)
-    A0_70:Wait(55)
-    A1_71:LookAt(A2_72)
-    A0_70:Wait(10)
-    A2_72:LookAt(A1_71)
-    A0_70:Wait(10)
-    A1_71:TurnTo(A2_72, false)
-    A0_70:Wait(15)
-    A0_70:PlayTargetRelationCamera(L5_75, -151.1075, 1.1931, 1.3763, 159.8274, 4.6812, 0.8144, 4.0416)
-    A0_70:Wait(10)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_FACIAL_SMILE, nil, A0_70.AUTO_SHAKE_TIMELINE)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK1)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_233, false, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_234, false, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    A2_72:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK1)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK2)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_235, true, nil, nil, nil, A0_70.SPEAK_NORMAL_MIDDLE)
-    A0_70:Wait(10)
-    A0_70:FadeOut(A0_70.FADE_DEFAULT)
-    A0_70:WaitForFade()
-    A0_70:Wait(100)
-    return A0_70.DOMA_EVENT_RESULT_NEXT
+  L0_2.OnScene00022 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetRace
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetSex
+    L4_3 = L4_3(L5_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Position
+    L7_3 = A2_3
+    L8_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L9_3 = 2.5
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Direction
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.CreateCharacter
+    L7_3 = A0_3.LOC_ACTOR_001
+    L8_3 = A2_3
+    L9_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L10_3 = 2
+    L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.Visible
+    L8_3 = A0_3.VISIBLE_HIDE
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.CreateCharacter
+    L8_3 = A0_3.LOC_ACTOR_002
+    L9_3 = A2_3
+    L10_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L11_3 = 2.329892
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Position
+    L9_3 = L6_3
+    L10_3 = A0_3.ARRANGE_TYPE_LEFT
+    L11_3 = 1.594135
+    L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Direction
+    L9_3 = A2_3
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.LookAt
+    L9_3 = A2_3
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Visible
+    L9_3 = A0_3.VISIBLE_HIDE
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.ChangeBGMVolume
+    L9_3 = 0.5
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 30
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayTargetRelationCamera
+    L9_3 = L5_3
+    L10_3 = -36.2742
+    L11_3 = 3.4491
+    L12_3 = 2.0162
+    L13_3 = 161.2224
+    L14_3 = 0.394
+    L15_3 = 0.9484
+    L16_3 = 3.9728
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.FadeIn
+    L9_3 = A0_3.FADE_DEFAULT
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.WaitForFade
+    L7_3(L8_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_JP_BOW
+    L10_3 = nil
+    L11_3 = A0_3.AUTO_SHAKE_ENABLE
+    L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_220
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.AutoShake
+    L9_3 = false
+    L7_3(L8_3, L9_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 65
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayTargetRelationCamera
+    L9_3 = L5_3
+    L10_3 = -151.1075
+    L11_3 = 1.1931
+    L12_3 = 1.3763
+    L13_3 = 159.8274
+    L14_3 = 4.6812
+    L15_3 = 0.8144
+    L16_3 = 4.0416
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.WaitForActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_JP_BOW
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_221
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 20
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_222
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_223
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_224
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 15
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_225
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_226
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.ChangeBGMVolume
+    L9_3 = 0
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 30
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.LookAt
+    L9_3 = L6_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayBGM
+    L9_3 = A0_3.BGM_MUSIC_NO_MUSIC
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.ChangeBGMVolume
+    L9_3 = 0.5
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.WalkIn
+    L9_3 = 180
+    L10_3 = 3.5
+    L11_3 = A0_3.MOVE_WALK
+    L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Visible
+    L9_3 = A0_3.VISIBLE_SHOW
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 15
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayTargetRelationCamera
+    L9_3 = L5_3
+    L10_3 = -145.8827
+    L11_3 = 3.1559
+    L12_3 = 1.7036
+    L13_3 = 107.5479
+    L14_3 = 0.9321
+    L15_3 = 1.097
+    L16_3 = 3.588
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayBGM
+    L9_3 = A0_3.LOC_BGM_001
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.ChangeBGMVolume
+    L9_3 = 0.5
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.LookAt
+    L9_3 = L6_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.TurnTo
+    L9_3 = -75
+    L10_3 = false
+    L7_3(L8_3, L9_3, L10_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.WaitForMove
+    L7_3(L8_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Idle
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE4
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 25
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.LookAt
+    L9_3 = A1_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 15
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayTargetRelationCamera
+    L9_3 = L5_3
+    L10_3 = 135.8383
+    L11_3 = 0.5846
+    L12_3 = 1.7446
+    L13_3 = 80.5566
+    L14_3 = 1.3696
+    L15_3 = 1.7178
+    L16_3 = 1.1429
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EMOTE_ME
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_227
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_228
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EMOTE_ME
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_229
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_230
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayTargetRelationCamera
+    L9_3 = L5_3
+    L10_3 = -145.8827
+    L11_3 = 3.1559
+    L12_3 = 1.7036
+    L13_3 = 107.5479
+    L14_3 = 0.9321
+    L15_3 = 1.097
+    L16_3 = 3.588
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_231
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.LookAt
+    L9_3 = A2_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 13
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 25
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 25
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.LookAt
+    L9_3 = A1_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_IHASE_000_232
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 40
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 40
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.LookAt
+    L9_3 = A2_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 30
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.WaitForActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 8
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.TurnTo
+    L9_3 = 175
+    L10_3 = false
+    L7_3(L8_3, L9_3, L10_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 8
+    L7_3(L8_3, L9_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.LookAt
+    L7_3(L8_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.WaitForTurn
+    L7_3(L8_3)
+    L8_3 = L6_3
+    L7_3 = L6_3.WalkOut
+    L9_3 = 0
+    L10_3 = 8
+    L11_3 = A0_3.MOVE_WALK
+    L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 55
+    L7_3(L8_3, L9_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.LookAt
+    L9_3 = A2_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.LookAt
+    L9_3 = A1_3
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.TurnTo
+    L9_3 = A2_3
+    L10_3 = false
+    L7_3(L8_3, L9_3, L10_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 15
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.PlayTargetRelationCamera
+    L9_3 = L5_3
+    L10_3 = -151.1075
+    L11_3 = 1.1931
+    L12_3 = 1.3763
+    L13_3 = 159.8274
+    L14_3 = 4.6812
+    L15_3 = 0.8144
+    L16_3 = 4.0416
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE
+    L10_3 = nil
+    L11_3 = A0_3.AUTO_SHAKE_TIMELINE
+    L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_233
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_234
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_235
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.FadeOut
+    L9_3 = A0_3.FADE_DEFAULT
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.WaitForFade
+    L7_3(L8_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 100
+    L7_3(L8_3, L9_3)
+    L7_3 = A0_3.DOMA_EVENT_RESULT_NEXT
+    return L7_3
   end
-  function CtsDomReconEventKozakura.OnScene00024(A0_77, A1_78, A2_79)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK2)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_240, true, nil, nil, nil, A0_77.SPEAK_NORMAL_MIDDLE)
-    A0_77:Wait(10)
-    return A0_77.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00023 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_240
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00025(A0_80, A1_81, A2_82)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK2)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_260, true, nil, nil, nil, A0_80.SPEAK_NORMAL_MIDDLE)
-    A0_80:Wait(10)
-    return A0_80.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00024 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_260
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00026(A0_83, A1_84, A2_85)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_TALK1)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_280, true, nil, nil, nil, A0_83.SPEAK_NORMAL_MIDDLE)
-    A0_83:Wait(10)
-    return A0_83.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00025 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_280
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00027(A0_86, A1_87, A2_88)
-    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK1)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_300, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-    A0_86:Wait(10)
-    return A0_86.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00026 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_300
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00028(A0_89, A1_90, A2_91)
-    A2_91:PlayActionTimeline(A0_89.ACTION_TIMELINE_EVENT_TALK2)
-    A2_91:Talk(A1_90, A0_89, A0_89.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_320, true, nil, nil, nil, A0_89.SPEAK_NORMAL_MIDDLE)
-    A0_89:Wait(10)
-    return A0_89.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00027 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_320
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00029(A0_92, A1_93, A2_94)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK1)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_340, true, nil, nil, nil, A0_92.SPEAK_NORMAL_MIDDLE)
-    A0_92:Wait(10)
-    return A0_92.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00028 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_340
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00030(A0_95, A1_96, A2_97)
-    A2_97:PlayActionTimeline(A0_95.ACTION_TIMELINE_EVENT_TALK2)
-    A2_97:Talk(A1_96, A0_95, A0_95.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_360, true, nil, nil, nil, A0_95.SPEAK_NORMAL_MIDDLE)
-    A0_95:Wait(10)
-    return A0_95.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00029 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_360
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00031(A0_98, A1_99, A2_100)
-    A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_100:Talk(A1_99, A0_98, A0_98.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_380, true, nil, nil, nil, A0_98.SPEAK_NORMAL_MIDDLE)
-    A0_98:Wait(10)
-    return A0_98.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00030 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_380
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00032(A0_101, A1_102, A2_103)
-    A2_103:PlayActionTimeline(A0_101.ACTION_TIMELINE_EVENT_TALK2)
-    A2_103:Talk(A1_102, A0_101, A0_101.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_400, true, nil, nil, nil, A0_101.SPEAK_NORMAL_MIDDLE)
-    A0_101:Wait(10)
-    return A0_101.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00031 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_400
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00033(A0_104, A1_105, A2_106)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK1)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_420, true, nil, nil, nil, A0_104.SPEAK_NORMAL_MIDDLE)
-    A0_104:Wait(10)
-    return A0_104.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00032 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_420
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsDomReconEventKozakura.OnScene00034(A0_107, A1_108, A2_109)
-    A2_109:PlayActionTimeline(A0_107.ACTION_TIMELINE_EVENT_TALK1)
-    A2_109:Talk(A1_108, A0_107, A0_107.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_450, true, nil, nil, nil, A0_107.SPEAK_NORMAL_MIDDLE)
-    A0_107:Wait(10)
-    return A0_107.DOMA_EVENT_RESULT_END
+  L0_2.OnScene00033 = L1_2
+  L0_2 = CtsDomReconEventKozakura
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSDOMRECONEVENTKOZAKURA_00486_KOZAKURA_000_450
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = A0_3.DOMA_EVENT_RESULT_END
+    return L3_3
   end
-end)()
-;(function()
-  local L1_110
-  L1_110 = CtsDomReconEventKozakura
-  L1_110.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene00034 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsDomReconEventKozakura
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

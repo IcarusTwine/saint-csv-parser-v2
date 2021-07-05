@@ -1,398 +1,2116 @@
-(function()
-  print("RegDra2BigwestShortstop")
-  function RegDra2BigwestShortstop.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    if A1_1:IsQuestCompleted(A0_0.QUEST_14) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_070, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_13) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_065, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST_13) == true and A1_1:GetQuestSequence(A0_0.QUEST_13) == 255 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_065, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST_13) == true and A1_1:GetQuestSequence(A0_0.QUEST_13) >= 1 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_060, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_12) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_055, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST_12) == true and A1_1:GetQuestSequence(A0_0.QUEST_12) == 255 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_055, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_10) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_050, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST_10) == true and A1_1:GetQuestSequence(A0_0.QUEST_10) == 255 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_050, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST_10) == true and A1_1:GetQuestSequence(A0_0.QUEST_10) >= 2 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_045, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST_10) == true and A1_1:GetQuestSequence(A0_0.QUEST_10) == 1 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_040, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_09) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_035, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_08) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_030, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_07) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_025, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_06) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_020, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_05) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_015, true)
-    elseif A1_1:IsQuestAccepted(A0_0.QUEST_05) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_013, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST_01) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_010, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegDra2BigwestShortstop"
+  L0_2(L1_2)
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_14
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_070
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_000, true)
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestCompleted
+      L5_3 = A0_3.QUEST_13
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L3_3(L4_3, L5_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_065
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      else
+        L4_3 = A1_3
+        L3_3 = A1_3.IsQuestAccepted
+        L5_3 = A0_3.QUEST_13
+        L3_3 = L3_3(L4_3, L5_3)
+        if L3_3 == true then
+          L4_3 = A1_3
+          L3_3 = A1_3.GetQuestSequence
+          L5_3 = A0_3.QUEST_13
+          L3_3 = L3_3(L4_3, L5_3)
+          if L3_3 == 255 then
+            L4_3 = A2_3
+            L3_3 = A2_3.PlayActionTimeline
+            L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L3_3(L4_3, L5_3)
+            L4_3 = A2_3
+            L3_3 = A2_3.Talk
+            L5_3 = A1_3
+            L6_3 = A0_3
+            L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_065
+            L8_3 = true
+            L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        end
+        else
+          L4_3 = A1_3
+          L3_3 = A1_3.IsQuestAccepted
+          L5_3 = A0_3.QUEST_13
+          L3_3 = L3_3(L4_3, L5_3)
+          if L3_3 == true then
+            L4_3 = A1_3
+            L3_3 = A1_3.GetQuestSequence
+            L5_3 = A0_3.QUEST_13
+            L3_3 = L3_3(L4_3, L5_3)
+            if 1 <= L3_3 then
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_060
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          end
+          else
+            L4_3 = A1_3
+            L3_3 = A1_3.IsQuestCompleted
+            L5_3 = A0_3.QUEST_12
+            L3_3 = L3_3(L4_3, L5_3)
+            if L3_3 == true then
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_055
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+            else
+              L4_3 = A1_3
+              L3_3 = A1_3.IsQuestAccepted
+              L5_3 = A0_3.QUEST_12
+              L3_3 = L3_3(L4_3, L5_3)
+              if L3_3 == true then
+                L4_3 = A1_3
+                L3_3 = A1_3.GetQuestSequence
+                L5_3 = A0_3.QUEST_12
+                L3_3 = L3_3(L4_3, L5_3)
+                if L3_3 == 255 then
+                  L4_3 = A2_3
+                  L3_3 = A2_3.PlayActionTimeline
+                  L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                  L3_3(L4_3, L5_3)
+                  L4_3 = A2_3
+                  L3_3 = A2_3.Talk
+                  L5_3 = A1_3
+                  L6_3 = A0_3
+                  L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_055
+                  L8_3 = true
+                  L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+              end
+              else
+                L4_3 = A1_3
+                L3_3 = A1_3.IsQuestCompleted
+                L5_3 = A0_3.QUEST_10
+                L3_3 = L3_3(L4_3, L5_3)
+                if L3_3 == true then
+                  L4_3 = A2_3
+                  L3_3 = A2_3.PlayActionTimeline
+                  L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                  L3_3(L4_3, L5_3)
+                  L4_3 = A2_3
+                  L3_3 = A2_3.Talk
+                  L5_3 = A1_3
+                  L6_3 = A0_3
+                  L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_050
+                  L8_3 = true
+                  L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                else
+                  L4_3 = A1_3
+                  L3_3 = A1_3.IsQuestAccepted
+                  L5_3 = A0_3.QUEST_10
+                  L3_3 = L3_3(L4_3, L5_3)
+                  if L3_3 == true then
+                    L4_3 = A1_3
+                    L3_3 = A1_3.GetQuestSequence
+                    L5_3 = A0_3.QUEST_10
+                    L3_3 = L3_3(L4_3, L5_3)
+                    if L3_3 == 255 then
+                      L4_3 = A2_3
+                      L3_3 = A2_3.PlayActionTimeline
+                      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                      L3_3(L4_3, L5_3)
+                      L4_3 = A2_3
+                      L3_3 = A2_3.Talk
+                      L5_3 = A1_3
+                      L6_3 = A0_3
+                      L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_050
+                      L8_3 = true
+                      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                  end
+                  else
+                    L4_3 = A1_3
+                    L3_3 = A1_3.IsQuestAccepted
+                    L5_3 = A0_3.QUEST_10
+                    L3_3 = L3_3(L4_3, L5_3)
+                    if L3_3 == true then
+                      L4_3 = A1_3
+                      L3_3 = A1_3.GetQuestSequence
+                      L5_3 = A0_3.QUEST_10
+                      L3_3 = L3_3(L4_3, L5_3)
+                      if 2 <= L3_3 then
+                        L4_3 = A2_3
+                        L3_3 = A2_3.PlayActionTimeline
+                        L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                        L3_3(L4_3, L5_3)
+                        L4_3 = A2_3
+                        L3_3 = A2_3.Talk
+                        L5_3 = A1_3
+                        L6_3 = A0_3
+                        L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_045
+                        L8_3 = true
+                        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                    end
+                    else
+                      L4_3 = A1_3
+                      L3_3 = A1_3.IsQuestAccepted
+                      L5_3 = A0_3.QUEST_10
+                      L3_3 = L3_3(L4_3, L5_3)
+                      if L3_3 == true then
+                        L4_3 = A1_3
+                        L3_3 = A1_3.GetQuestSequence
+                        L5_3 = A0_3.QUEST_10
+                        L3_3 = L3_3(L4_3, L5_3)
+                        if L3_3 == 1 then
+                          L4_3 = A2_3
+                          L3_3 = A2_3.PlayActionTimeline
+                          L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                          L3_3(L4_3, L5_3)
+                          L4_3 = A2_3
+                          L3_3 = A2_3.Talk
+                          L5_3 = A1_3
+                          L6_3 = A0_3
+                          L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_040
+                          L8_3 = true
+                          L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                      end
+                      else
+                        L4_3 = A1_3
+                        L3_3 = A1_3.IsQuestCompleted
+                        L5_3 = A0_3.QUEST_09
+                        L3_3 = L3_3(L4_3, L5_3)
+                        if L3_3 == true then
+                          L4_3 = A2_3
+                          L3_3 = A2_3.PlayActionTimeline
+                          L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                          L3_3(L4_3, L5_3)
+                          L4_3 = A2_3
+                          L3_3 = A2_3.Talk
+                          L5_3 = A1_3
+                          L6_3 = A0_3
+                          L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_035
+                          L8_3 = true
+                          L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                        else
+                          L4_3 = A1_3
+                          L3_3 = A1_3.IsQuestCompleted
+                          L5_3 = A0_3.QUEST_08
+                          L3_3 = L3_3(L4_3, L5_3)
+                          if L3_3 == true then
+                            L4_3 = A2_3
+                            L3_3 = A2_3.PlayActionTimeline
+                            L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                            L3_3(L4_3, L5_3)
+                            L4_3 = A2_3
+                            L3_3 = A2_3.Talk
+                            L5_3 = A1_3
+                            L6_3 = A0_3
+                            L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_030
+                            L8_3 = true
+                            L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                          else
+                            L4_3 = A1_3
+                            L3_3 = A1_3.IsQuestCompleted
+                            L5_3 = A0_3.QUEST_07
+                            L3_3 = L3_3(L4_3, L5_3)
+                            if L3_3 == true then
+                              L4_3 = A2_3
+                              L3_3 = A2_3.PlayActionTimeline
+                              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                              L3_3(L4_3, L5_3)
+                              L4_3 = A2_3
+                              L3_3 = A2_3.Talk
+                              L5_3 = A1_3
+                              L6_3 = A0_3
+                              L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_025
+                              L8_3 = true
+                              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                            else
+                              L4_3 = A1_3
+                              L3_3 = A1_3.IsQuestCompleted
+                              L5_3 = A0_3.QUEST_06
+                              L3_3 = L3_3(L4_3, L5_3)
+                              if L3_3 == true then
+                                L4_3 = A2_3
+                                L3_3 = A2_3.PlayActionTimeline
+                                L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                L3_3(L4_3, L5_3)
+                                L4_3 = A2_3
+                                L3_3 = A2_3.Talk
+                                L5_3 = A1_3
+                                L6_3 = A0_3
+                                L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_020
+                                L8_3 = true
+                                L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                              else
+                                L4_3 = A1_3
+                                L3_3 = A1_3.IsQuestCompleted
+                                L5_3 = A0_3.QUEST_05
+                                L3_3 = L3_3(L4_3, L5_3)
+                                if L3_3 == true then
+                                  L4_3 = A2_3
+                                  L3_3 = A2_3.PlayActionTimeline
+                                  L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                  L3_3(L4_3, L5_3)
+                                  L4_3 = A2_3
+                                  L3_3 = A2_3.Talk
+                                  L5_3 = A1_3
+                                  L6_3 = A0_3
+                                  L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_015
+                                  L8_3 = true
+                                  L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                                else
+                                  L4_3 = A1_3
+                                  L3_3 = A1_3.IsQuestAccepted
+                                  L5_3 = A0_3.QUEST_05
+                                  L3_3 = L3_3(L4_3, L5_3)
+                                  if L3_3 == true then
+                                    L4_3 = A2_3
+                                    L3_3 = A2_3.PlayActionTimeline
+                                    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                    L3_3(L4_3, L5_3)
+                                    L4_3 = A2_3
+                                    L3_3 = A2_3.Talk
+                                    L5_3 = A1_3
+                                    L6_3 = A0_3
+                                    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_013
+                                    L8_3 = true
+                                    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                                  else
+                                    L4_3 = A1_3
+                                    L3_3 = A1_3.IsQuestCompleted
+                                    L5_3 = A0_3.QUEST_01
+                                    L3_3 = L3_3(L4_3, L5_3)
+                                    if L3_3 == true then
+                                      L4_3 = A2_3
+                                      L3_3 = A2_3.PlayActionTimeline
+                                      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                      L3_3(L4_3, L5_3)
+                                      L4_3 = A2_3
+                                      L3_3 = A2_3.Talk
+                                      L5_3 = A1_3
+                                      L6_3 = A0_3
+                                      L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_010
+                                      L8_3 = true
+                                      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                                    else
+                                      L4_3 = A2_3
+                                      L3_3 = A2_3.PlayActionTimeline
+                                      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                      L3_3(L4_3, L5_3)
+                                      L4_3 = A2_3
+                                      L3_3 = A2_3.Talk
+                                      L5_3 = A1_3
+                                      L6_3 = A0_3
+                                      L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_000
+                                      L8_3 = true
+                                      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
     end
     while true do
-      if A1_1:IsQuestCompleted(A0_0.QUEST_14) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 7 then
-          A0_0:TalkAction_DataRecord_2_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 8 then
-          A0_0:TalkAction_DataRecord_2_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 9 then
-          A0_0:TalkAction_DataRecord_3_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 10 then
-          A0_0:TalkAction_DataRecord_3_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 11 then
-          A0_0:TalkAction_DataRecord_3_3(A1_1, A2_2)
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestCompleted
+      L5_3 = A0_3.QUEST_14
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
+        L4_3 = A0_3
+        L3_3 = A0_3.Menu
+        L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+        L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+        L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+        L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+        L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+        L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+        L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+        L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121
+        L13_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122
+        L14_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140
+        L15_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141
+        L16_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_142
+        L17_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+        L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+        if L3_3 == 1 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_AboutYou
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 2 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_WhatPlace
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 3 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_1_1
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 4 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_1_2
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 5 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_1_3
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 6 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_2_1
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 7 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_2_2
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 8 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_2_3
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 9 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_3_1
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 10 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_3_2
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 11 then
+          L5_3 = A0_3
+          L4_3 = A0_3.TalkAction_DataRecord_3_3
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
         else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_12) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 7 then
-          A0_0:TalkAction_DataRecord_2_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 8 then
-          A0_0:TalkAction_DataRecord_2_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 9 then
-          A0_0:TalkAction_DataRecord_3_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 10 then
-          A0_0:TalkAction_DataRecord_3_2(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_11) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 7 then
-          A0_0:TalkAction_DataRecord_2_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 8 then
-          A0_0:TalkAction_DataRecord_2_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 9 then
-          A0_0:TalkAction_DataRecord_3_1(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_10) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 7 then
-          A0_0:TalkAction_DataRecord_2_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 8 then
-          A0_0:TalkAction_DataRecord_3_1(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestAccepted(A0_0.QUEST_10) == true and A1_1:GetQuestSequence(A0_0.QUEST_10) == 255 then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 7 then
-          A0_0:TalkAction_DataRecord_2_3(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_09) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 7 then
-          A0_0:TalkAction_DataRecord_2_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 8 then
-          A0_0:TalkAction_DataRecord_2_3(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_07) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 7 then
-          A0_0:TalkAction_DataRecord_2_2(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_05) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 6 then
-          A0_0:TalkAction_DataRecord_2_1(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_04) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 5 then
-          A0_0:TalkAction_DataRecord_1_3(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_03) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 4 then
-          A0_0:TalkAction_DataRecord_1_2(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_02) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 3 then
-          A0_0:TalkAction_DataRecord_1_1(A1_1, A2_2)
-        else
-          return 0
-        end
-      elseif A1_1:IsQuestCompleted(A0_0.QUEST_01) == true then
-        if A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 1 then
-          A0_0:TalkAction_AboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102, A0_0.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200) == 2 then
-          A0_0:TalkAction_WhatPlace(A1_1, A2_2)
-        else
-          return 0
+          L4_3 = 0
+          return L4_3
         end
       else
-        return 0
+        L4_3 = A1_3
+        L3_3 = A1_3.IsQuestCompleted
+        L5_3 = A0_3.QUEST_12
+        L3_3 = L3_3(L4_3, L5_3)
+        if L3_3 == true then
+          L4_3 = A0_3
+          L3_3 = A0_3.Menu
+          L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+          L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+          L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+          L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+          L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+          L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+          L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+          L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121
+          L13_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122
+          L14_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140
+          L15_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_141
+          L16_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+          L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          if L3_3 == 1 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_AboutYou
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 2 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_WhatPlace
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 3 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_1_1
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 4 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_1_2
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 5 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_1_3
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 6 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_2_1
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 7 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_2_2
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 8 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_2_3
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 9 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_3_1
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          elseif L3_3 == 10 then
+            L5_3 = A0_3
+            L4_3 = A0_3.TalkAction_DataRecord_3_2
+            L6_3 = A1_3
+            L7_3 = A2_3
+            L4_3(L5_3, L6_3, L7_3)
+          else
+            L4_3 = 0
+            return L4_3
+          end
+        else
+          L4_3 = A1_3
+          L3_3 = A1_3.IsQuestCompleted
+          L5_3 = A0_3.QUEST_11
+          L3_3 = L3_3(L4_3, L5_3)
+          if L3_3 == true then
+            L4_3 = A0_3
+            L3_3 = A0_3.Menu
+            L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+            L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+            L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+            L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+            L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+            L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+            L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+            L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121
+            L13_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122
+            L14_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140
+            L15_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+            L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+            if L3_3 == 1 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_AboutYou
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 2 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_WhatPlace
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 3 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_DataRecord_1_1
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 4 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_DataRecord_1_2
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 5 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_DataRecord_1_3
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 6 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_DataRecord_2_1
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 7 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_DataRecord_2_2
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 8 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_DataRecord_2_3
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            elseif L3_3 == 9 then
+              L5_3 = A0_3
+              L4_3 = A0_3.TalkAction_DataRecord_3_1
+              L6_3 = A1_3
+              L7_3 = A2_3
+              L4_3(L5_3, L6_3, L7_3)
+            else
+              L4_3 = 0
+              return L4_3
+            end
+          else
+            L4_3 = A1_3
+            L3_3 = A1_3.IsQuestCompleted
+            L5_3 = A0_3.QUEST_10
+            L3_3 = L3_3(L4_3, L5_3)
+            if L3_3 == true then
+              L4_3 = A0_3
+              L3_3 = A0_3.Menu
+              L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+              L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+              L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+              L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+              L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+              L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+              L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121
+              L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122
+              L13_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_140
+              L14_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+              L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+              if L3_3 == 1 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_AboutYou
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              elseif L3_3 == 2 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_DataRecord_1_1
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              elseif L3_3 == 3 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_DataRecord_1_2
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              elseif L3_3 == 4 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_DataRecord_1_3
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              elseif L3_3 == 5 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_DataRecord_2_1
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              elseif L3_3 == 6 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_DataRecord_2_2
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              elseif L3_3 == 7 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_DataRecord_2_3
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              elseif L3_3 == 8 then
+                L5_3 = A0_3
+                L4_3 = A0_3.TalkAction_DataRecord_3_1
+                L6_3 = A1_3
+                L7_3 = A2_3
+                L4_3(L5_3, L6_3, L7_3)
+              else
+                L4_3 = 0
+                return L4_3
+              end
+            else
+              L4_3 = A1_3
+              L3_3 = A1_3.IsQuestAccepted
+              L5_3 = A0_3.QUEST_10
+              L3_3 = L3_3(L4_3, L5_3)
+              if L3_3 == true then
+                L4_3 = A1_3
+                L3_3 = A1_3.GetQuestSequence
+                L5_3 = A0_3.QUEST_10
+                L3_3 = L3_3(L4_3, L5_3)
+                if L3_3 == 255 then
+                  L4_3 = A0_3
+                  L3_3 = A0_3.Menu
+                  L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                  L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                  L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+                  L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+                  L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+                  L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+                  L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121
+                  L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122
+                  L13_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                  L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+                  if L3_3 == 1 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_AboutYou
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 2 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_1_1
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 3 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_1_2
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 4 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_1_3
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 5 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_2_1
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 6 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_2_2
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 7 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_2_3
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  else
+                    L4_3 = 0
+                    return L4_3
+                  end
+              end
+              else
+                L4_3 = A1_3
+                L3_3 = A1_3.IsQuestCompleted
+                L5_3 = A0_3.QUEST_09
+                L3_3 = L3_3(L4_3, L5_3)
+                if L3_3 == true then
+                  L4_3 = A0_3
+                  L3_3 = A0_3.Menu
+                  L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                  L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                  L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+                  L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+                  L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+                  L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+                  L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+                  L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121
+                  L13_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_122
+                  L14_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                  L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+                  if L3_3 == 1 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_AboutYou
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 2 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_WhatPlace
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 3 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_1_1
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 4 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_1_2
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 5 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_1_3
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 6 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_2_1
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 7 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_2_2
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  elseif L3_3 == 8 then
+                    L5_3 = A0_3
+                    L4_3 = A0_3.TalkAction_DataRecord_2_3
+                    L6_3 = A1_3
+                    L7_3 = A2_3
+                    L4_3(L5_3, L6_3, L7_3)
+                  else
+                    L4_3 = 0
+                    return L4_3
+                  end
+                else
+                  L4_3 = A1_3
+                  L3_3 = A1_3.IsQuestCompleted
+                  L5_3 = A0_3.QUEST_07
+                  L3_3 = L3_3(L4_3, L5_3)
+                  if L3_3 == true then
+                    L4_3 = A0_3
+                    L3_3 = A0_3.Menu
+                    L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                    L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+                    L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+                    L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+                    L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+                    L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+                    L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_121
+                    L13_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+                    if L3_3 == 1 then
+                      L5_3 = A0_3
+                      L4_3 = A0_3.TalkAction_AboutYou
+                      L6_3 = A1_3
+                      L7_3 = A2_3
+                      L4_3(L5_3, L6_3, L7_3)
+                    elseif L3_3 == 2 then
+                      L5_3 = A0_3
+                      L4_3 = A0_3.TalkAction_WhatPlace
+                      L6_3 = A1_3
+                      L7_3 = A2_3
+                      L4_3(L5_3, L6_3, L7_3)
+                    elseif L3_3 == 3 then
+                      L5_3 = A0_3
+                      L4_3 = A0_3.TalkAction_DataRecord_1_1
+                      L6_3 = A1_3
+                      L7_3 = A2_3
+                      L4_3(L5_3, L6_3, L7_3)
+                    elseif L3_3 == 4 then
+                      L5_3 = A0_3
+                      L4_3 = A0_3.TalkAction_DataRecord_1_2
+                      L6_3 = A1_3
+                      L7_3 = A2_3
+                      L4_3(L5_3, L6_3, L7_3)
+                    elseif L3_3 == 5 then
+                      L5_3 = A0_3
+                      L4_3 = A0_3.TalkAction_DataRecord_1_3
+                      L6_3 = A1_3
+                      L7_3 = A2_3
+                      L4_3(L5_3, L6_3, L7_3)
+                    elseif L3_3 == 6 then
+                      L5_3 = A0_3
+                      L4_3 = A0_3.TalkAction_DataRecord_2_1
+                      L6_3 = A1_3
+                      L7_3 = A2_3
+                      L4_3(L5_3, L6_3, L7_3)
+                    elseif L3_3 == 7 then
+                      L5_3 = A0_3
+                      L4_3 = A0_3.TalkAction_DataRecord_2_2
+                      L6_3 = A1_3
+                      L7_3 = A2_3
+                      L4_3(L5_3, L6_3, L7_3)
+                    else
+                      L4_3 = 0
+                      return L4_3
+                    end
+                  else
+                    L4_3 = A1_3
+                    L3_3 = A1_3.IsQuestCompleted
+                    L5_3 = A0_3.QUEST_05
+                    L3_3 = L3_3(L4_3, L5_3)
+                    if L3_3 == true then
+                      L4_3 = A0_3
+                      L3_3 = A0_3.Menu
+                      L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                      L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                      L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+                      L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+                      L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+                      L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+                      L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_120
+                      L12_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+                      if L3_3 == 1 then
+                        L5_3 = A0_3
+                        L4_3 = A0_3.TalkAction_AboutYou
+                        L6_3 = A1_3
+                        L7_3 = A2_3
+                        L4_3(L5_3, L6_3, L7_3)
+                      elseif L3_3 == 2 then
+                        L5_3 = A0_3
+                        L4_3 = A0_3.TalkAction_WhatPlace
+                        L6_3 = A1_3
+                        L7_3 = A2_3
+                        L4_3(L5_3, L6_3, L7_3)
+                      elseif L3_3 == 3 then
+                        L5_3 = A0_3
+                        L4_3 = A0_3.TalkAction_DataRecord_1_1
+                        L6_3 = A1_3
+                        L7_3 = A2_3
+                        L4_3(L5_3, L6_3, L7_3)
+                      elseif L3_3 == 4 then
+                        L5_3 = A0_3
+                        L4_3 = A0_3.TalkAction_DataRecord_1_2
+                        L6_3 = A1_3
+                        L7_3 = A2_3
+                        L4_3(L5_3, L6_3, L7_3)
+                      elseif L3_3 == 5 then
+                        L5_3 = A0_3
+                        L4_3 = A0_3.TalkAction_DataRecord_1_3
+                        L6_3 = A1_3
+                        L7_3 = A2_3
+                        L4_3(L5_3, L6_3, L7_3)
+                      elseif L3_3 == 6 then
+                        L5_3 = A0_3
+                        L4_3 = A0_3.TalkAction_DataRecord_2_1
+                        L6_3 = A1_3
+                        L7_3 = A2_3
+                        L4_3(L5_3, L6_3, L7_3)
+                      else
+                        L4_3 = 0
+                        return L4_3
+                      end
+                    else
+                      L4_3 = A1_3
+                      L3_3 = A1_3.IsQuestCompleted
+                      L5_3 = A0_3.QUEST_04
+                      L3_3 = L3_3(L4_3, L5_3)
+                      if L3_3 == true then
+                        L4_3 = A0_3
+                        L3_3 = A0_3.Menu
+                        L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                        L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                        L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+                        L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+                        L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+                        L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_112
+                        L11_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                        L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+                        if L3_3 == 1 then
+                          L5_3 = A0_3
+                          L4_3 = A0_3.TalkAction_AboutYou
+                          L6_3 = A1_3
+                          L7_3 = A2_3
+                          L4_3(L5_3, L6_3, L7_3)
+                        elseif L3_3 == 2 then
+                          L5_3 = A0_3
+                          L4_3 = A0_3.TalkAction_WhatPlace
+                          L6_3 = A1_3
+                          L7_3 = A2_3
+                          L4_3(L5_3, L6_3, L7_3)
+                        elseif L3_3 == 3 then
+                          L5_3 = A0_3
+                          L4_3 = A0_3.TalkAction_DataRecord_1_1
+                          L6_3 = A1_3
+                          L7_3 = A2_3
+                          L4_3(L5_3, L6_3, L7_3)
+                        elseif L3_3 == 4 then
+                          L5_3 = A0_3
+                          L4_3 = A0_3.TalkAction_DataRecord_1_2
+                          L6_3 = A1_3
+                          L7_3 = A2_3
+                          L4_3(L5_3, L6_3, L7_3)
+                        elseif L3_3 == 5 then
+                          L5_3 = A0_3
+                          L4_3 = A0_3.TalkAction_DataRecord_1_3
+                          L6_3 = A1_3
+                          L7_3 = A2_3
+                          L4_3(L5_3, L6_3, L7_3)
+                        else
+                          L4_3 = 0
+                          return L4_3
+                        end
+                      else
+                        L4_3 = A1_3
+                        L3_3 = A1_3.IsQuestCompleted
+                        L5_3 = A0_3.QUEST_03
+                        L3_3 = L3_3(L4_3, L5_3)
+                        if L3_3 == true then
+                          L4_3 = A0_3
+                          L3_3 = A0_3.Menu
+                          L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                          L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                          L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+                          L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+                          L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_111
+                          L10_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                          L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+                          if L3_3 == 1 then
+                            L5_3 = A0_3
+                            L4_3 = A0_3.TalkAction_AboutYou
+                            L6_3 = A1_3
+                            L7_3 = A2_3
+                            L4_3(L5_3, L6_3, L7_3)
+                          elseif L3_3 == 2 then
+                            L5_3 = A0_3
+                            L4_3 = A0_3.TalkAction_WhatPlace
+                            L6_3 = A1_3
+                            L7_3 = A2_3
+                            L4_3(L5_3, L6_3, L7_3)
+                          elseif L3_3 == 3 then
+                            L5_3 = A0_3
+                            L4_3 = A0_3.TalkAction_DataRecord_1_1
+                            L6_3 = A1_3
+                            L7_3 = A2_3
+                            L4_3(L5_3, L6_3, L7_3)
+                          elseif L3_3 == 4 then
+                            L5_3 = A0_3
+                            L4_3 = A0_3.TalkAction_DataRecord_1_2
+                            L6_3 = A1_3
+                            L7_3 = A2_3
+                            L4_3(L5_3, L6_3, L7_3)
+                          else
+                            L4_3 = 0
+                            return L4_3
+                          end
+                        else
+                          L4_3 = A1_3
+                          L3_3 = A1_3.IsQuestCompleted
+                          L5_3 = A0_3.QUEST_02
+                          L3_3 = L3_3(L4_3, L5_3)
+                          if L3_3 == true then
+                            L4_3 = A0_3
+                            L3_3 = A0_3.Menu
+                            L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                            L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                            L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+                            L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_110
+                            L9_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                            L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+                            if L3_3 == 1 then
+                              L5_3 = A0_3
+                              L4_3 = A0_3.TalkAction_AboutYou
+                              L6_3 = A1_3
+                              L7_3 = A2_3
+                              L4_3(L5_3, L6_3, L7_3)
+                            elseif L3_3 == 2 then
+                              L5_3 = A0_3
+                              L4_3 = A0_3.TalkAction_WhatPlace
+                              L6_3 = A1_3
+                              L7_3 = A2_3
+                              L4_3(L5_3, L6_3, L7_3)
+                            elseif L3_3 == 3 then
+                              L5_3 = A0_3
+                              L4_3 = A0_3.TalkAction_DataRecord_1_1
+                              L6_3 = A1_3
+                              L7_3 = A2_3
+                              L4_3(L5_3, L6_3, L7_3)
+                            else
+                              L4_3 = 0
+                              return L4_3
+                            end
+                          else
+                            L4_3 = A1_3
+                            L3_3 = A1_3.IsQuestCompleted
+                            L5_3 = A0_3.QUEST_01
+                            L3_3 = L3_3(L4_3, L5_3)
+                            if L3_3 == true then
+                              L4_3 = A0_3
+                              L3_3 = A0_3.Menu
+                              L5_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_Q1_000_100
+                              L6_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_101
+                              L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_102
+                              L8_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_A1_000_200
+                              L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+                              if L3_3 == 1 then
+                                L5_3 = A0_3
+                                L4_3 = A0_3.TalkAction_AboutYou
+                                L6_3 = A1_3
+                                L7_3 = A2_3
+                                L4_3(L5_3, L6_3, L7_3)
+                              elseif L3_3 == 2 then
+                                L5_3 = A0_3
+                                L4_3 = A0_3.TalkAction_WhatPlace
+                                L6_3 = A1_3
+                                L7_3 = A2_3
+                                L4_3(L5_3, L6_3, L7_3)
+                              else
+                                L4_3 = 0
+                                return L4_3
+                              end
+                            else
+                              L3_3 = 0
+                              return L3_3
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
       end
     end
   end
-  function RegDra2BigwestShortstop.TalkAction_AboutYou(A0_3, A1_4, A2_5)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_300, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_301, false)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_302, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_300
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_301
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_302
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_WhatPlace(A0_6, A1_7, A2_8)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK1)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_320, false)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_321, false)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_322, true)
+  L0_2.TalkAction_AboutYou = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_320
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_321
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_322
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_1_1(A0_9, A1_10, A2_11)
-    A2_11:PlayActionTimeline(A0_9.EVENT_BOW)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_500, false)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_501, false, A0_9.TALK_SHAPE_DOCUMENT, nil, nil, A0_9.SPEAK_NONE)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_502, false, A0_9.TALK_SHAPE_DOCUMENT, nil, nil, A0_9.SPEAK_NONE)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_503, false, A0_9.TALK_SHAPE_DOCUMENT, nil, nil, A0_9.SPEAK_NONE)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_504, false, A0_9.TALK_SHAPE_DOCUMENT, nil, nil, A0_9.SPEAK_NONE)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_505, false, A0_9.TALK_SHAPE_DOCUMENT, nil, nil, A0_9.SPEAK_NONE)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_506, true, A0_9.TALK_SHAPE_DOCUMENT, nil, nil, A0_9.SPEAK_NONE)
+  L0_2.TalkAction_WhatPlace = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_500
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_501
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_502
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_503
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_504
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_505
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_506
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_1_2(A0_12, A1_13, A2_14)
-    A2_14:PlayActionTimeline(A0_12.EVENT_BOW)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_520, false)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_521, false, A0_12.TALK_SHAPE_DOCUMENT, nil, nil, A0_12.SPEAK_NONE)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_522, false, A0_12.TALK_SHAPE_DOCUMENT, nil, nil, A0_12.SPEAK_NONE)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_523, false, A0_12.TALK_SHAPE_DOCUMENT, nil, nil, A0_12.SPEAK_NONE)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_524, false, A0_12.TALK_SHAPE_DOCUMENT, nil, nil, A0_12.SPEAK_NONE)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_525, false, A0_12.TALK_SHAPE_DOCUMENT, nil, nil, A0_12.SPEAK_NONE)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_526, false, A0_12.TALK_SHAPE_DOCUMENT, nil, nil, A0_12.SPEAK_NONE)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_527, true, A0_12.TALK_SHAPE_DOCUMENT, nil, nil, A0_12.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_1_1 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_520
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_521
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_522
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_523
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_524
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_525
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_526
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_527
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_1_3(A0_15, A1_16, A2_17)
-    A2_17:PlayActionTimeline(A0_15.EVENT_BOW)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_540, false)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_541, false, A0_15.TALK_SHAPE_DOCUMENT, nil, nil, A0_15.SPEAK_NONE)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_542, false, A0_15.TALK_SHAPE_DOCUMENT, nil, nil, A0_15.SPEAK_NONE)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_543, false, A0_15.TALK_SHAPE_DOCUMENT, nil, nil, A0_15.SPEAK_NONE)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_544, false, A0_15.TALK_SHAPE_DOCUMENT, nil, nil, A0_15.SPEAK_NONE)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_545, false, A0_15.TALK_SHAPE_DOCUMENT, nil, nil, A0_15.SPEAK_NONE)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_546, false, A0_15.TALK_SHAPE_DOCUMENT, nil, nil, A0_15.SPEAK_NONE)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_547, true, A0_15.TALK_SHAPE_DOCUMENT, nil, nil, A0_15.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_1_2 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_540
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_541
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_542
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_543
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_544
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_545
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_546
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_547
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_2_1(A0_18, A1_19, A2_20)
-    A2_20:PlayActionTimeline(A0_18.EVENT_BOW)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_600, false)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_601, false, A0_18.TALK_SHAPE_DOCUMENT, nil, nil, A0_18.SPEAK_NONE)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_602, false, A0_18.TALK_SHAPE_DOCUMENT, nil, nil, A0_18.SPEAK_NONE)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_603, false, A0_18.TALK_SHAPE_DOCUMENT, nil, nil, A0_18.SPEAK_NONE)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_604, false, A0_18.TALK_SHAPE_DOCUMENT, nil, nil, A0_18.SPEAK_NONE)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_605, false, A0_18.TALK_SHAPE_DOCUMENT, nil, nil, A0_18.SPEAK_NONE)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_606, false, A0_18.TALK_SHAPE_DOCUMENT, nil, nil, A0_18.SPEAK_NONE)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_607, true, A0_18.TALK_SHAPE_DOCUMENT, nil, nil, A0_18.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_1_3 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_600
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_601
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_602
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_603
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_604
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_605
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_606
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_607
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_2_2(A0_21, A1_22, A2_23)
-    A2_23:PlayActionTimeline(A0_21.EVENT_BOW)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_620, false)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_621, false, A0_21.TALK_SHAPE_DOCUMENT, nil, nil, A0_21.SPEAK_NONE)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_622, false, A0_21.TALK_SHAPE_DOCUMENT, nil, nil, A0_21.SPEAK_NONE)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_623, false, A0_21.TALK_SHAPE_DOCUMENT, nil, nil, A0_21.SPEAK_NONE)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_624, false, A0_21.TALK_SHAPE_DOCUMENT, nil, nil, A0_21.SPEAK_NONE)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_625, false, A0_21.TALK_SHAPE_DOCUMENT, nil, nil, A0_21.SPEAK_NONE)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_626, false, A0_21.TALK_SHAPE_DOCUMENT, nil, nil, A0_21.SPEAK_NONE)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_627, true, A0_21.TALK_SHAPE_DOCUMENT, nil, nil, A0_21.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_2_1 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_620
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_621
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_622
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_623
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_624
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_625
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_626
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_627
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_2_3(A0_24, A1_25, A2_26)
-    A2_26:PlayActionTimeline(A0_24.EVENT_BOW)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_640, false)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_641, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_642, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_643, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_644, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_645, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_646, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_647, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_648, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_649, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_650, false, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_651, true, A0_24.TALK_SHAPE_DOCUMENT, nil, nil, A0_24.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_2_2 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_640
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_641
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_642
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_643
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_644
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_645
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_646
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_647
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_648
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_649
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_650
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_651
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_3_1(A0_27, A1_28, A2_29)
-    A2_29:PlayActionTimeline(A0_27.EVENT_BOW)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_700, false)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_701, false, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_702, false, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_703, false, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_704, false, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_705, false, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_706, false, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_707, false, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_708, true, A0_27.TALK_SHAPE_DOCUMENT, nil, nil, A0_27.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_2_3 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_700
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_701
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_702
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_703
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_704
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_705
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_706
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_707
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_708
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_3_2(A0_30, A1_31, A2_32)
-    A2_32:PlayActionTimeline(A0_30.EVENT_BOW)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_720, false)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_721, false, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_722, false, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_723, false, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_724, false, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_725, false, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_726, false, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_727, false, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_728, true, A0_30.TALK_SHAPE_DOCUMENT, nil, nil, A0_30.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_3_1 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_720
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_721
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_722
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_723
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_724
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_725
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_726
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_727
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_728
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegDra2BigwestShortstop.TalkAction_DataRecord_3_3(A0_33, A1_34, A2_35)
-    A2_35:PlayActionTimeline(A0_33.EVENT_BOW)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_740, false)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_741, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_742, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_743, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_744, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_745, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_746, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_747, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_748, false, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_749, true, A0_33.TALK_SHAPE_DOCUMENT, nil, nil, A0_33.SPEAK_NONE)
+  L0_2.TalkAction_DataRecord_3_2 = L1_2
+  L0_2 = RegDra2BigwestShortstop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EVENT_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIX_000_740
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_741
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_742
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_743
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_744
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_745
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_746
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_747
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_748
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BIGWESTSHORTSTOP_00286_BACKRIXREPORT_000_749
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NONE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-end)()
-;(function()
-  local L1_36
-  L1_36 = RegDra2BigwestShortstop
-  L1_36.SCRIPT_VERSION = 1
-end)()
+  L0_2.TalkAction_DataRecord_3_3 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegDra2BigwestShortstop
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

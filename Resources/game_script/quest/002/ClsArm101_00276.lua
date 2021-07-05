@@ -1,348 +1,737 @@
-(function()
-  print("ClsArm101 loaded")
-  function ClsArm101.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      A2_2:TurnTo(A1_1, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_1, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_2, false)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_3, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_4, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_5, false)
-      A2_2:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_YES)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_6, false)
-      A2_2:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_YES)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_7, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSARM101_00276_HNAANZA_000_8, true)
-      A0_0:QuestAccepted()
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ClsArm101 loaded"
+  L0_2(L1_2)
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestOffer
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.TurnTo
+      L5_3 = A1_3
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_1
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_2
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_3
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_4
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_5
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.WaitForActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_6
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.WaitForActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_7
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSARM101_00276_HNAANZA_000_8
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.QuestAccepted
+      L3_3(L4_3)
+      L3_3 = 1
+      return L3_3
     else
-      return 0
+      L3_3 = 0
+      return L3_3
     end
   end
-  function ClsArm101.OnScene00001(A0_3, A1_4, A2_5)
-    local L3_6, L4_7, L5_8, L6_9
-    L4_7 = A2_5
-    L3_6 = A2_5.LookAt
-    L5_8 = A1_4
-    L3_6(L4_7, L5_8)
-    L4_7 = A2_5
-    L3_6 = A2_5.Talk
-    L5_8 = A1_4
-    L6_9 = A0_3
-    L3_6(L4_7, L5_8, L6_9, A0_3.TEXT_CLSARM101_00276_GRANAE_000_10, true)
-    L4_7 = A0_3
-    L3_6 = A0_3.NpcTrade
-    L5_8 = A0_3.NPC_TRADE_INVENTORY_MODE_NORMAL
-    L6_9 = nil
-    L6_9 = L3_6(L4_7, L5_8, L6_9, nil, A0_3.RITEM0, 12, false)
-    if L3_6 == 1 then
-      return L3_6, L4_7, L5_8, L6_9
+  L0_2.OnScene00000 = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_10
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.NpcTrade
+    L5_3 = A0_3.NPC_TRADE_INVENTORY_MODE_NORMAL
+    L6_3 = nil
+    L7_3 = nil
+    L8_3 = A0_3.RITEM0
+    L9_3 = 12
+    L10_3 = false
+    L3_3, L4_3, L5_3, L6_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+    if L3_3 == 1 then
+      L7_3 = L3_3
+      L8_3 = L4_3
+      L9_3 = L5_3
+      L10_3 = L6_3
+      return L7_3, L8_3, L9_3, L10_3
     else
     end
   end
-  function ClsArm101.OnScene00002(A0_10, A1_11, A2_12)
-    local L3_13, L4_14, L5_15, L6_16
-    L4_14 = A0_10
-    L3_13 = A0_10.LoadMovePosition
-    L5_15 = A0_10.LOC_POS_CAM1
-    L6_16 = A0_10.LOC_POS_EOBJ1
-    L3_13(L4_14, L5_15, L6_16)
-    L3_13 = nil
-    L5_15 = A0_10
-    L4_14 = A0_10.CreateObject
-    L6_16 = A0_10.LOC_EOBJ1
-    L4_14 = L4_14(L5_15, L6_16, A0_10.LOC_POS_EOBJ1)
-    L3_13 = L4_14
-    L4_14 = nil
-    L6_16 = A0_10
-    L5_15 = A0_10.CreateCharacter
-    L5_15 = L5_15(L6_16, A0_10.LOC_ACTOR0, A0_10.LOC_POS_EOBJ1)
-    L4_14 = L5_15
-    L6_16 = A1_11
-    L5_15 = A1_11.Position
-    L5_15(L6_16, A2_12, A0_10.ARRANGE_TYPE_BASE_FRONT, 1.5)
-    L6_16 = A1_11
-    L5_15 = A1_11.Direction
-    L5_15(L6_16, A2_12)
-    L6_16 = A1_11
-    L5_15 = A1_11.LookAt
-    L5_15(L6_16, A2_12)
-    L6_16 = A2_12
-    L5_15 = A2_12.Direction
-    L5_15(L6_16, A1_11)
-    L6_16 = A2_12
-    L5_15 = A2_12.Idle
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_BASE_IDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.PlayActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_BASE_IDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.LookAt
-    L5_15(L6_16, A1_11)
-    L6_16 = A0_10
-    L5_15 = A0_10.PlayTwoShotCamera
-    L5_15(L6_16, A0_10.TWOSHOT_TYPE_RIGHT_ZOOM, A2_12, A1_11, 0)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 30)
-    L6_16 = A0_10
-    L5_15 = A0_10.ChangeBGMVolume
-    L5_15(L6_16, 0.5)
-    L6_16 = A0_10
-    L5_15 = A0_10.FadeIn
-    L5_15(L6_16, A0_10.FADE_DEFAULT)
-    L6_16 = A0_10
-    L5_15 = A0_10.WaitForFade
-    L5_15(L6_16)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 10)
-    L6_16 = A2_12
-    L5_15 = A2_12.PlayActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_TALK1)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_11, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.CancelActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_TALK1)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 10)
-    L6_16 = A0_10
-    L5_15 = A0_10.FadeOut
-    L5_15(L6_16, A0_10.FADE_SHORT, A0_10.FADE_LAYER_BACK)
-    L6_16 = A0_10
-    L5_15 = A0_10.WaitForFade
-    L5_15(L6_16)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 30)
-    L6_16 = A2_12
-    L5_15 = A2_12.Position
-    L5_15(L6_16, L3_13, A0_10.ARRANGE_TYPE_LEFT, 0.7)
-    L6_16 = A2_12
-    L5_15 = A2_12.Idle
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_BASE_IDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.PlayActionTimeline
-    L5_15(L6_16, A0_10.LOC_ACTION1, nil, A0_10.AUTO_SHAKE_ENABLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.Direction
-    L5_15(L6_16, L3_13)
-    L6_16 = A2_12
-    L5_15 = A2_12.LookAt
-    L5_15(L6_16, 0, -40)
-    L6_16 = A1_11
-    L5_15 = A1_11.Position
-    L5_15(L6_16, L3_13, A0_10.ARRANGE_TYPE_RIGHT, 0.7)
-    L6_16 = A1_11
-    L5_15 = A1_11.Direction
-    L5_15(L6_16, A2_12)
-    L6_16 = A1_11
-    L5_15 = A1_11.LookAt
-    L5_15(L6_16, A2_12)
-    L6_16 = A1_11
-    L5_15 = A1_11.Visible
-    L5_15(L6_16, A0_10.VISIBLE_HIDE)
-    L6_16 = A0_10
-    L5_15 = A0_10.InvisibleStandCharacter
-    L5_15(L6_16, A0_10.ACTOR0)
-    L6_16 = A0_10
-    L5_15 = A0_10.PlayCamera
-    L5_15(L6_16, 6, A2_12)
-    L6_16 = A0_10
-    L5_15 = A0_10.Zoom
-    L5_15(L6_16, -1, -1, 0, 0, 0)
-    L6_16 = A0_10
-    L5_15 = A0_10.UpdownPan
-    L5_15(L6_16, -10, -10, 0, 0, 0)
-    L6_16 = A0_10
-    L5_15 = A0_10.SideDolly
-    L5_15(L6_16, -0.4, -0.4, 0, 0, 0)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 30)
-    L6_16 = A0_10
-    L5_15 = A0_10.FadeIn
-    L5_15(L6_16, A0_10.FADE_SHORT, A0_10.FADE_LAYER_BACK)
-    L6_16 = A0_10
-    L5_15 = A0_10.WaitForFade
-    L5_15(L6_16)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 10)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_12, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_13, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.AutoShake
-    L5_15(L6_16, false)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 10)
-    L6_16 = A2_12
-    L5_15 = A2_12.WaitForActionTimeline
-    L5_15(L6_16, A0_10.LOC_ACTION1)
-    L6_16 = A0_10
-    L5_15 = A0_10.PlayTwoShotCamera
-    L5_15(L6_16, A0_10.TWOSHOT_TYPE_FRONT, A1_11, A2_12, 0.5)
-    L6_16 = A0_10
-    L5_15 = A0_10.FollowLookAt
-    L5_15(L6_16, A0_10.FOLLOW_LOOKAT_ON)
-    L6_16 = A0_10
-    L5_15 = A0_10.SideDolly
-    L5_15(L6_16, -2, -2, 0, 0, 0)
-    L6_16 = A1_11
-    L5_15 = A1_11.Visible
-    L5_15(L6_16, A0_10.VISIBLE_SHOW)
-    L6_16 = A2_12
-    L5_15 = A2_12.LookAt
-    L5_15(L6_16, A1_11)
-    L6_16 = A2_12
-    L5_15 = A2_12.PlayActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_TALK1)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_14, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_15, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.PlayActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_TALK2)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_16, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_17, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.CancelActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_TALK2)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 10)
-    L6_16 = A2_12
-    L5_15 = A2_12.PlayActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_ADD_YES)
-    L6_16 = A2_12
-    L5_15 = A2_12.WaitForActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_ADD_YES)
-    L6_16 = A2_12
-    L5_15 = A2_12.PlayActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_TALK1)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_18, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_19, false, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.Talk
-    L5_15(L6_16, A1_11, A0_10, A0_10.TEXT_CLSARM101_00276_GRANAE_000_20, true, nil, nil, nil, A0_10.SPEAK_NORMAL_MIDDLE)
-    L6_16 = A2_12
-    L5_15 = A2_12.CancelActionTimeline
-    L5_15(L6_16, A0_10.ACTION_TIMELINE_EVENT_TALK1)
-    L6_16 = A0_10
-    L5_15 = A0_10.Wait
-    L5_15(L6_16, 10)
-    L6_16 = A0_10
-    L5_15 = A0_10.QuestReward
-    L6_16 = L5_15(L6_16, A2_12, A1_11, "")
-    if L5_15 then
-      A0_10:QuestCompleted()
-      A0_10:Wait(120)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LoadMovePosition
+    L5_3 = A0_3.LOC_POS_CAM1
+    L6_3 = A0_3.LOC_POS_EOBJ1
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = nil
+    L5_3 = A0_3
+    L4_3 = A0_3.CreateObject
+    L6_3 = A0_3.LOC_EOBJ1
+    L7_3 = A0_3.LOC_POS_EOBJ1
+    L4_3 = L4_3(L5_3, L6_3, L7_3)
+    L3_3 = L4_3
+    L4_3 = nil
+    L6_3 = A0_3
+    L5_3 = A0_3.CreateCharacter
+    L7_3 = A0_3.LOC_ACTOR0
+    L8_3 = A0_3.LOC_POS_EOBJ1
+    L5_3 = L5_3(L6_3, L7_3, L8_3)
+    L4_3 = L5_3
+    L6_3 = A1_3
+    L5_3 = A1_3.Position
+    L7_3 = A2_3
+    L8_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L9_3 = 1.5
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Direction
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Direction
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Idle
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayTwoShotCamera
+    L7_3 = A0_3.TWOSHOT_TYPE_RIGHT_ZOOM
+    L8_3 = A2_3
+    L9_3 = A1_3
+    L10_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 30
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.ChangeBGMVolume
+    L7_3 = 0.5
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.FadeIn
+    L7_3 = A0_3.FADE_DEFAULT
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.WaitForFade
+    L5_3(L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_11
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.CancelActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.FadeOut
+    L7_3 = A0_3.FADE_SHORT
+    L8_3 = A0_3.FADE_LAYER_BACK
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.WaitForFade
+    L5_3(L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 30
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Position
+    L7_3 = L3_3
+    L8_3 = A0_3.ARRANGE_TYPE_LEFT
+    L9_3 = 0.7
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Idle
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.LOC_ACTION1
+    L8_3 = nil
+    L9_3 = A0_3.AUTO_SHAKE_ENABLE
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Direction
+    L7_3 = L3_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = 0
+    L8_3 = -40
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Position
+    L7_3 = L3_3
+    L8_3 = A0_3.ARRANGE_TYPE_RIGHT
+    L9_3 = 0.7
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Direction
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Visible
+    L7_3 = A0_3.VISIBLE_HIDE
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.InvisibleStandCharacter
+    L7_3 = A0_3.ACTOR0
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayCamera
+    L7_3 = 6
+    L8_3 = A2_3
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Zoom
+    L7_3 = -1
+    L8_3 = -1
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.UpdownPan
+    L7_3 = -10
+    L8_3 = -10
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.SideDolly
+    L7_3 = -0.4
+    L8_3 = -0.4
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 30
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.FadeIn
+    L7_3 = A0_3.FADE_SHORT
+    L8_3 = A0_3.FADE_LAYER_BACK
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.WaitForFade
+    L5_3(L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_12
+    L10_3 = false
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_13
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.AutoShake
+    L7_3 = false
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForActionTimeline
+    L7_3 = A0_3.LOC_ACTION1
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayTwoShotCamera
+    L7_3 = A0_3.TWOSHOT_TYPE_FRONT
+    L8_3 = A1_3
+    L9_3 = A2_3
+    L10_3 = 0.5
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.FollowLookAt
+    L7_3 = A0_3.FOLLOW_LOOKAT_ON
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.SideDolly
+    L7_3 = -2
+    L8_3 = -2
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Visible
+    L7_3 = A0_3.VISIBLE_SHOW
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_14
+    L10_3 = false
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_15
+    L10_3 = false
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_16
+    L10_3 = false
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_17
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.CancelActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_18
+    L10_3 = false
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_19
+    L10_3 = false
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CLSARM101_00276_GRANAE_000_20
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.CancelActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.QuestReward
+    L7_3 = A2_3
+    L8_3 = A1_3
+    L9_3 = ""
+    L5_3, L6_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+    if L5_3 then
+      L8_3 = A0_3
+      L7_3 = A0_3.QuestCompleted
+      L7_3(L8_3)
+      L8_3 = A0_3
+      L7_3 = A0_3.Wait
+      L9_3 = 120
+      L7_3(L8_3, L9_3)
     else
-      A0_10:CancelNpcTrade()
+      L8_3 = A0_3
+      L7_3 = A0_3.CancelNpcTrade
+      L7_3(L8_3)
     end
-    A0_10:FadeOut(A0_10.FADE_DEFAULT)
-    A0_10:WaitForFade()
-    A1_11:LookAt()
-    A2_12:LookAt()
-    return L5_15, L6_16
+    L8_3 = A0_3
+    L7_3 = A0_3.FadeOut
+    L9_3 = A0_3.FADE_DEFAULT
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.WaitForFade
+    L7_3(L8_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.LookAt
+    L7_3(L8_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.LookAt
+    L7_3(L8_3)
+    L7_3 = L5_3
+    L8_3 = L6_3
+    return L7_3, L8_3
   end
-  function ClsArm101.OnScene00003(A0_17, A1_18, A2_19)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function ClsArm101.GetEventItems(A0_20, A1_21)
-    local L2_22
-    L2_22 = A0_20.GetQuestId
-    L2_22 = L2_22(A0_20)
-    if A1_21:GetQuestSequence(L2_22) == A0_20.SEQ_FINISH then
-    elseif A1_21:GetQuestSequence(L2_22) == A0_20.SEQ_FINISH then
-    end
-  end
-  function ClsArm101.IsTodoChecked(A0_23, A1_24, A2_25)
-    local L3_26
-    L3_26 = A0_23.GetQuestId
-    L3_26 = L3_26(A0_23)
-    if A1_24:GetQuestSequence(L3_26) == A0_23.SEQ_0 then
-      return false
-    end
-    if A2_25 == 0 then
-      return false
-    end
-  end
-end)()
-;(function()
-  local L0_27, L1_28
-  L0_27 = ClsArm101
-  L0_27.SCRIPT_VERSION = 1
-  L0_27 = ClsArm101
-  function L1_28(A0_29)
-    local L1_30
-  end
-  L0_27.OnInitialize = L1_28
-  L0_27 = ClsArm101
-  function L1_28(A0_31, A1_32, A2_33)
-    local L3_34
-    L3_34 = A0_31.GetQuestId
-    L3_34 = L3_34(A0_31)
-    if A1_32:GetQuestSequence(L3_34) == A0_31.SEQ_0 then
-      return 0, 0
-    end
-    if A2_33 == 0 then
-      return A1_32:GetNumOfItems(A0_31.RITEM0, A0_31.NUM_OF_ITEMS_FILTER_NQ_OR_HQ, false, true), 12
+  L0_2.OnScene00003 = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3
+    L3_3 = A0_3
+    L2_3 = A0_3.GetQuestId
+    L2_3 = L2_3(L3_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = L2_3
+    L3_3 = L3_3(L4_3, L5_3)
+    L4_3 = A0_3.SEQ_FINISH
+    if L3_3 == L4_3 then
+    else
+      L4_3 = A0_3.SEQ_FINISH
+      if L3_3 == L4_3 then
+      end
     end
   end
-  L0_27.GetTodoArgs = L1_28
-  L0_27 = ClsArm101
-  function L1_28(A0_35, A1_36, A2_37)
-    local L3_38
-    L3_38 = A0_35.GetQuestId
-    L3_38 = L3_38(A0_35)
-    if A1_36:GetQuestSequence(L3_38) == A0_35.SEQ_FINISH and A2_37 == A0_35.ACTOR1 then
-      return A0_35.RITEM0, false
+  L0_2.GetEventItems = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
+    end
+    if A2_3 == 0 then
+      L5_3 = false
+      return L5_3
     end
   end
-  L0_27.GetListenItems = L1_28
-  L0_27 = ClsArm101
-  function L1_28(A0_39, A1_40, A2_41, A3_42, A4_43, A5_44, A6_45)
-    local L7_46
-    L7_46 = A0_39.GetQuestId
-    L7_46 = L7_46(A0_39)
-    if A1_40:GetQuestSequence(L7_46) == A0_39.SEQ_OFFER then
-    elseif A1_40:GetQuestSequence(L7_46) == A0_39.SEQ_FINISH and A3_42 == A0_39.ACTOR1 and A1_40:GetNumOfItems(A0_39.RITEM0, A0_39.NUM_OF_ITEMS_FILTER_NQ_OR_HQ, false, true) < 12 and A1_40:GetQuestUI8AH(L7_46) < 1 then
-      return false, A0_39.QUALIFICATION_ITEM
-    end
-    return true, 0
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ClsArm101
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = ClsArm101
+  function L1_2(A0_3)
+    local L1_3
   end
-  L0_27.IsQualified = L1_28
-  L0_27 = ClsArm101
-  function L1_28(A0_47, A1_48, A2_49)
-    local L3_50
-    L3_50 = A0_47.GetQuestId
-    L3_50 = L3_50(A0_47)
-    if A1_48:GetQuestSequence(L3_50) == A0_47.SEQ_FINISH then
+  L0_2.OnInitialize = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
     end
-    return A0_47:IsBattleNpcTriggerOwner(A1_48, A2_49, false), false
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetNumOfItems
+      L7_3 = A0_3.RITEM0
+      L8_3 = A0_3.NUM_OF_ITEMS_FILTER_NQ_OR_HQ
+      L9_3 = false
+      L10_3 = true
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = 12
+      return L5_3, L6_3
+    end
   end
-  L0_27.GetGimmickState = L1_28
-end)()
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_FINISH
+    if L4_3 == L5_3 then
+      L5_3 = A0_3.ACTOR1
+      if A2_3 == L5_3 then
+        L5_3 = A0_3.RITEM0
+        L6_3 = false
+        return L5_3, L6_3
+      end
+    end
+  end
+  L0_2.GetListenItems = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3)
+    local L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L8_3 = A0_3
+    L7_3 = A0_3.GetQuestId
+    L7_3 = L7_3(L8_3)
+    L9_3 = A1_3
+    L8_3 = A1_3.GetQuestSequence
+    L10_3 = L7_3
+    L8_3 = L8_3(L9_3, L10_3)
+    L9_3 = A0_3.SEQ_OFFER
+    if L8_3 == L9_3 then
+    else
+      L9_3 = A0_3.SEQ_FINISH
+      if L8_3 == L9_3 then
+        L9_3 = A0_3.ACTOR1
+        if A3_3 == L9_3 then
+          L10_3 = A1_3
+          L9_3 = A1_3.GetNumOfItems
+          L11_3 = A0_3.RITEM0
+          L12_3 = A0_3.NUM_OF_ITEMS_FILTER_NQ_OR_HQ
+          L13_3 = false
+          L14_3 = true
+          L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          if L9_3 < 12 then
+            L10_3 = A1_3
+            L9_3 = A1_3.GetQuestUI8AH
+            L11_3 = L7_3
+            L9_3 = L9_3(L10_3, L11_3)
+            if L9_3 < 1 then
+              L9_3 = false
+              L10_3 = A0_3.QUALIFICATION_ITEM
+              return L9_3, L10_3
+            end
+          end
+        end
+      end
+    end
+    L9_3 = true
+    L10_3 = 0
+    return L9_3, L10_3
+  end
+  L0_2.IsQualified = L1_2
+  L0_2 = ClsArm101
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L6_3 = 0
+    L7_3 = A0_3.SEQ_FINISH
+    if L4_3 == L7_3 then
+    end
+    L8_3 = A0_3
+    L7_3 = A0_3.IsBattleNpcTriggerOwner
+    L9_3 = A1_3
+    L10_3 = A2_3
+    L11_3 = false
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = false
+    return L7_3, L8_3
+  end
+  L0_2.GetGimmickState = L1_2
+end
+L0_1()

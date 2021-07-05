@@ -1,176 +1,806 @@
-(function()
-  print("CmnGscTripleTriadCup")
-  function CmnGscTripleTriadCup.OnScene00000(A0_0, A1_1, A2_2, A3_3, A4_4, A5_5, A6_6, A7_7, A8_8, A9_9, A10_10, A11_11, A12_12, A13_13, A14_14)
-    local L15_15, L16_16
-    L15_15 = false
-    L16_16 = 0
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_WELCOME)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_000_001, true, nil, nil, nil, nil, A7_7, A4_4)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnGscTripleTriadCup"
+  L0_2(L1_2)
+  L0_2 = CmnGscTripleTriadCup
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3, A8_3, A9_3, A10_3, A11_3, A12_3, A13_3, A14_3)
+    local L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3
+    L15_3 = false
+    L16_3 = 0
+    L18_3 = A2_3
+    L17_3 = A2_3.TurnTo
+    L19_3 = A1_3
+    L20_3 = false
+    L17_3(L18_3, L19_3, L20_3)
+    L18_3 = A2_3
+    L17_3 = A2_3.WaitForTurn
+    L17_3(L18_3)
+    L18_3 = A2_3
+    L17_3 = A2_3.PlayActionTimeline
+    L19_3 = A0_3.ACTION_TIMELINE_EMOTE_WELCOME
+    L17_3(L18_3, L19_3)
+    L18_3 = A2_3
+    L17_3 = A2_3.Talk
+    L19_3 = A1_3
+    L20_3 = A0_3
+    L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_000_001
+    L22_3 = true
+    L23_3 = nil
+    L24_3 = nil
+    L25_3 = nil
+    L26_3 = nil
+    L27_3 = A7_3
+    L28_3 = A4_3
+    L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
     repeat
       if A3_3 == 0 then
-        L16_16 = A0_0:OpenSelectString(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q1_000_001, 4, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_001, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_003, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_004, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_005)
-      elseif A2_2:GetLayoutId() ~= A0_0.LAYOUT_ID_W1EB then
-        L16_16 = A0_0:OpenSelectString(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q1_000_001, 4, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_006, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_003, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_004, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_005)
+        L18_3 = A0_3
+        L17_3 = A0_3.OpenSelectString
+        L19_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q1_000_001
+        L20_3 = 4
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_001
+        L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_003
+        L23_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_004
+        L24_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_005
+        L17_3 = L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+        L16_3 = L17_3
       else
-        L16_16 = A0_0:OpenSelectString(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q1_000_001, 4, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_002, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_003, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_004, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_005)
-      end
-      if L16_16 == 1 then
-        if A3_3 == 0 then
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_010_001, true, nil, nil, nil, nil, A4_4)
-          if A0_0:YesNo(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q2_000_001, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A2_000_001, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_A2_000_002, A0_0.DEFAULT_YES, A4_4) and A0_0:EntryTripleTriadCompetition() == true then
-            if A4_4 == 1 or A4_4 == 5 or A4_4 == 9 or A4_4 == 13 or A4_4 == 17 or A4_4 == 21 then
-              A0_0:ScreenImage(A0_0.GRAPHIC_TEXT_JOIN_01)
-            elseif A4_4 == 2 or A4_4 == 6 or A4_4 == 10 or A4_4 == 14 or A4_4 == 18 or A4_4 == 22 then
-              A0_0:ScreenImage(A0_0.GRAPHIC_TEXT_JOIN_02)
-            elseif A4_4 == 3 or A4_4 == 7 or A4_4 == 11 or A4_4 == 15 or A4_4 == 19 or A4_4 == 23 then
-              A0_0:ScreenImage(A0_0.GRAPHIC_TEXT_JOIN_03)
-            elseif A4_4 == 4 or A4_4 == 8 or A4_4 == 12 or A4_4 == 16 or A4_4 == 20 or A4_4 == 24 then
-              A0_0:ScreenImage(A0_0.GRAPHIC_TEXT_JOIN_04)
-            end
-            A0_0:Wait(90)
-            A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_BOW)
-            A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_001, true, nil, nil, nil, nil, A4_4)
-            A0_0:SystemTalk(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_002, false, A4_4, A5_5, A6_6)
-            A0_0:SystemTalk(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_103, false)
-            A0_0:SystemTalk(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_004, false)
-            A0_0:SystemTalk(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_005, false)
-            A0_0:SystemTalk(A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_003, true)
-          end
-          L15_15 = true
-        elseif A0_0:CanOpenTripleTriadRanking() == true then
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_020_001, true, nil, nil, nil, nil, A4_4)
-          A0_0:OpenTripleTriadRanking()
+        L18_3 = A2_3
+        L17_3 = A2_3.GetLayoutId
+        L17_3 = L17_3(L18_3)
+        L18_3 = A0_3.LAYOUT_ID_W1EB
+        if L17_3 ~= L18_3 then
+          L18_3 = A0_3
+          L17_3 = A0_3.OpenSelectString
+          L19_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q1_000_001
+          L20_3 = 4
+          L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_006
+          L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_003
+          L23_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_004
+          L24_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_005
+          L17_3 = L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+          L16_3 = L17_3
         else
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_020_002, true)
-          L15_15 = true
+          L18_3 = A0_3
+          L17_3 = A0_3.OpenSelectString
+          L19_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q1_000_001
+          L20_3 = 4
+          L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_002
+          L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_003
+          L23_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_004
+          L24_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A1_000_005
+          L17_3 = L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+          L16_3 = L17_3
         end
-      elseif L16_16 == 2 then
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_000, false)
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_001, false, nil, nil, nil, nil, A7_7, A4_4)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_101, false, nil, nil, nil, nil, A11_11)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_002, false, nil, nil, nil, nil, A8_8)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_007, false, nil, nil, nil, nil, A9_9)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_003, false, nil, nil, nil, nil, A10_10)
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_BOW)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_004, false, nil, nil, nil, nil, A14_14)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_005, false)
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_006, true, nil, nil, nil, nil, A0_0.ITEM_PLATINUMPACK)
-      elseif L16_16 == 3 then
-        A0_0:Description(A1_1, A2_2)
+      end
+      if L16_3 == 1 then
+        if A3_3 == 0 then
+          L18_3 = A2_3
+          L17_3 = A2_3.Talk
+          L19_3 = A1_3
+          L20_3 = A0_3
+          L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_010_001
+          L22_3 = true
+          L23_3 = nil
+          L24_3 = nil
+          L25_3 = nil
+          L26_3 = nil
+          L27_3 = A4_3
+          L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+          L18_3 = A0_3
+          L17_3 = A0_3.YesNo
+          L19_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q2_000_001
+          L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A2_000_001
+          L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A2_000_002
+          L22_3 = A0_3.DEFAULT_YES
+          L23_3 = A4_3
+          L17_3 = L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3)
+          if L17_3 then
+            L19_3 = A0_3
+            L18_3 = A0_3.EntryTripleTriadCompetition
+            L18_3 = L18_3(L19_3)
+            if L18_3 == true then
+              if A4_3 == 1 or A4_3 == 5 or A4_3 == 9 or A4_3 == 13 or A4_3 == 17 or A4_3 == 21 then
+                L19_3 = A0_3
+                L18_3 = A0_3.ScreenImage
+                L20_3 = A0_3.GRAPHIC_TEXT_JOIN_01
+                L18_3(L19_3, L20_3)
+              elseif A4_3 == 2 or A4_3 == 6 or A4_3 == 10 or A4_3 == 14 or A4_3 == 18 or A4_3 == 22 then
+                L19_3 = A0_3
+                L18_3 = A0_3.ScreenImage
+                L20_3 = A0_3.GRAPHIC_TEXT_JOIN_02
+                L18_3(L19_3, L20_3)
+              elseif A4_3 == 3 or A4_3 == 7 or A4_3 == 11 or A4_3 == 15 or A4_3 == 19 or A4_3 == 23 then
+                L19_3 = A0_3
+                L18_3 = A0_3.ScreenImage
+                L20_3 = A0_3.GRAPHIC_TEXT_JOIN_03
+                L18_3(L19_3, L20_3)
+              elseif A4_3 == 4 or A4_3 == 8 or A4_3 == 12 or A4_3 == 16 or A4_3 == 20 or A4_3 == 24 then
+                L19_3 = A0_3
+                L18_3 = A0_3.ScreenImage
+                L20_3 = A0_3.GRAPHIC_TEXT_JOIN_04
+                L18_3(L19_3, L20_3)
+              end
+              L19_3 = A0_3
+              L18_3 = A0_3.Wait
+              L20_3 = 90
+              L18_3(L19_3, L20_3)
+              L19_3 = A2_3
+              L18_3 = A2_3.PlayActionTimeline
+              L20_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+              L18_3(L19_3, L20_3)
+              L19_3 = A2_3
+              L18_3 = A2_3.Talk
+              L20_3 = A1_3
+              L21_3 = A0_3
+              L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_001
+              L23_3 = true
+              L24_3 = nil
+              L25_3 = nil
+              L26_3 = nil
+              L27_3 = nil
+              L28_3 = A4_3
+              L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+              L19_3 = A0_3
+              L18_3 = A0_3.SystemTalk
+              L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_002
+              L21_3 = false
+              L22_3 = A4_3
+              L23_3 = A5_3
+              L24_3 = A6_3
+              L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+              L19_3 = A0_3
+              L18_3 = A0_3.SystemTalk
+              L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_103
+              L21_3 = false
+              L18_3(L19_3, L20_3, L21_3)
+              L19_3 = A0_3
+              L18_3 = A0_3.SystemTalk
+              L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_004
+              L21_3 = false
+              L18_3(L19_3, L20_3, L21_3)
+              L19_3 = A0_3
+              L18_3 = A0_3.SystemTalk
+              L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_005
+              L21_3 = false
+              L18_3(L19_3, L20_3, L21_3)
+              L19_3 = A0_3
+              L18_3 = A0_3.SystemTalk
+              L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_011_003
+              L21_3 = true
+              L18_3(L19_3, L20_3, L21_3)
+            end
+          end
+          L15_3 = true
+        else
+          L18_3 = A0_3
+          L17_3 = A0_3.CanOpenTripleTriadRanking
+          L17_3 = L17_3(L18_3)
+          if L17_3 == true then
+            L18_3 = A2_3
+            L17_3 = A2_3.Talk
+            L19_3 = A1_3
+            L20_3 = A0_3
+            L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_020_001
+            L22_3 = true
+            L23_3 = nil
+            L24_3 = nil
+            L25_3 = nil
+            L26_3 = nil
+            L27_3 = A4_3
+            L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+            L18_3 = A0_3
+            L17_3 = A0_3.OpenTripleTriadRanking
+            L17_3(L18_3)
+          else
+            L18_3 = A2_3
+            L17_3 = A2_3.Talk
+            L19_3 = A1_3
+            L20_3 = A0_3
+            L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_020_002
+            L22_3 = true
+            L17_3(L18_3, L19_3, L20_3, L21_3, L22_3)
+            L15_3 = true
+          end
+        end
+      elseif L16_3 == 2 then
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_000
+        L22_3 = false
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.PlayActionTimeline
+        L19_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L17_3(L18_3, L19_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_001
+        L22_3 = false
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = A7_3
+        L28_3 = A4_3
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_101
+        L22_3 = false
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = A11_3
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_002
+        L22_3 = false
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = A8_3
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_007
+        L22_3 = false
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = A9_3
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_003
+        L22_3 = false
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = A10_3
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.PlayActionTimeline
+        L19_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+        L17_3(L18_3, L19_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_004
+        L22_3 = false
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = A14_3
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_005
+        L22_3 = false
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.PlayActionTimeline
+        L19_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+        L17_3(L18_3, L19_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_030_006
+        L22_3 = true
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = A0_3.ITEM_PLATINUMPACK
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+      elseif L16_3 == 3 then
+        L18_3 = A0_3
+        L17_3 = A0_3.Description
+        L19_3 = A1_3
+        L20_3 = A2_3
+        L17_3(L18_3, L19_3, L20_3)
       else
-        L15_15 = true
+        L15_3 = true
       end
-    until L15_15
+    until L15_3
   end
-  function CmnGscTripleTriadCup.OnScene00001(A0_17, A1_18, A2_19, A3_20, A4_21, A5_22, A6_23, A7_24, A8_25, A9_26, A10_27, A11_28, A12_29, A13_30, A14_31, A15_32, A16_33, A17_34)
-    A2_19:TurnTo(A1_18, false)
-    A2_19:WaitForTurn()
-    A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EMOTE_BOW)
-    A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_100_001, true, nil, nil, nil, nil, A4_21)
-    A0_17:Wait(50)
-    if A3_20 < 20 then
-      if A4_21 == 1 or A4_21 == 5 or A4_21 == 9 or A4_21 == 13 or A4_21 == 17 or A4_21 == 21 then
-        A0_17:ScreenImage(A0_17.GRAPHIC_TEXT_WIN_01)
-      elseif A4_21 == 2 or A4_21 == 6 or A4_21 == 10 or A4_21 == 14 or A4_21 == 18 or A4_21 == 22 then
-        A0_17:ScreenImage(A0_17.GRAPHIC_TEXT_WIN_02)
-      elseif A4_21 == 3 or A4_21 == 7 or A4_21 == 11 or A4_21 == 15 or A4_21 == 19 or A4_21 == 23 then
-        A0_17:ScreenImage(A0_17.GRAPHIC_TEXT_WIN_03)
-      elseif A4_21 == 4 or A4_21 == 8 or A4_21 == 12 or A4_21 == 16 or A4_21 == 20 or A4_21 == 24 then
-        A0_17:ScreenImage(A0_17.GRAPHIC_TEXT_WIN_04)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnGscTripleTriadCup
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3, A8_3, A9_3, A10_3, A11_3, A12_3, A13_3, A14_3, A15_3, A16_3, A17_3)
+    local L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3
+    L19_3 = A2_3
+    L18_3 = A2_3.TurnTo
+    L20_3 = A1_3
+    L21_3 = false
+    L18_3(L19_3, L20_3, L21_3)
+    L19_3 = A2_3
+    L18_3 = A2_3.WaitForTurn
+    L18_3(L19_3)
+    L19_3 = A2_3
+    L18_3 = A2_3.PlayActionTimeline
+    L20_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+    L18_3(L19_3, L20_3)
+    L19_3 = A2_3
+    L18_3 = A2_3.Talk
+    L20_3 = A1_3
+    L21_3 = A0_3
+    L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_100_001
+    L23_3 = true
+    L24_3 = nil
+    L25_3 = nil
+    L26_3 = nil
+    L27_3 = nil
+    L28_3 = A4_3
+    L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.Wait
+    L20_3 = 50
+    L18_3(L19_3, L20_3)
+    if A3_3 < 20 then
+      if A4_3 == 1 or A4_3 == 5 or A4_3 == 9 or A4_3 == 13 or A4_3 == 17 or A4_3 == 21 then
+        L19_3 = A0_3
+        L18_3 = A0_3.ScreenImage
+        L20_3 = A0_3.GRAPHIC_TEXT_WIN_01
+        L18_3(L19_3, L20_3)
+      elseif A4_3 == 2 or A4_3 == 6 or A4_3 == 10 or A4_3 == 14 or A4_3 == 18 or A4_3 == 22 then
+        L19_3 = A0_3
+        L18_3 = A0_3.ScreenImage
+        L20_3 = A0_3.GRAPHIC_TEXT_WIN_02
+        L18_3(L19_3, L20_3)
+      elseif A4_3 == 3 or A4_3 == 7 or A4_3 == 11 or A4_3 == 15 or A4_3 == 19 or A4_3 == 23 then
+        L19_3 = A0_3
+        L18_3 = A0_3.ScreenImage
+        L20_3 = A0_3.GRAPHIC_TEXT_WIN_03
+        L18_3(L19_3, L20_3)
+      elseif A4_3 == 4 or A4_3 == 8 or A4_3 == 12 or A4_3 == 16 or A4_3 == 20 or A4_3 == 24 then
+        L19_3 = A0_3
+        L18_3 = A0_3.ScreenImage
+        L20_3 = A0_3.GRAPHIC_TEXT_WIN_04
+        L18_3(L19_3, L20_3)
       end
-      A0_17:Wait(120)
-      A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EMOTE_PRAISE)
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_001, false, nil, nil, nil, nil, A3_20 + 1)
+      L19_3 = A0_3
+      L18_3 = A0_3.Wait
+      L20_3 = 120
+      L18_3(L19_3, L20_3)
+      L19_3 = A2_3
+      L18_3 = A2_3.PlayActionTimeline
+      L20_3 = A0_3.ACTION_TIMELINE_EMOTE_PRAISE
+      L18_3(L19_3, L20_3)
+      L19_3 = A2_3
+      L18_3 = A2_3.Talk
+      L20_3 = A1_3
+      L21_3 = A0_3
+      L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_001
+      L23_3 = false
+      L24_3 = nil
+      L25_3 = nil
+      L26_3 = nil
+      L27_3 = nil
+      L28_3 = A3_3 + 1
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
     end
-    if A3_20 < A0_17.TRIPLE_TRIAD_COMPETITION_RANK_THRESHOLD_1 then
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002, true, nil, nil, nil, nil, A7_24, A15_32)
-    elseif A3_20 < A0_17.TRIPLE_TRIAD_COMPETITION_RANK_THRESHOLD_2 then
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002, true, nil, nil, nil, nil, A8_25, A15_32)
-    elseif A3_20 < A0_17.TRIPLE_TRIAD_COMPETITION_RANK_THRESHOLD_3 then
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002, true, nil, nil, nil, nil, A9_26, A15_32)
-    elseif A3_20 < 20 then
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002, true, nil, nil, nil, nil, A10_27, A15_32)
+    L18_3 = A0_3.TRIPLE_TRIAD_COMPETITION_RANK_THRESHOLD_1
+    if A3_3 < L18_3 then
+      L19_3 = A2_3
+      L18_3 = A2_3.Talk
+      L20_3 = A1_3
+      L21_3 = A0_3
+      L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002
+      L23_3 = true
+      L24_3 = nil
+      L25_3 = nil
+      L26_3 = nil
+      L27_3 = nil
+      L28_3 = A7_3
+      L29_3 = A15_3
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3)
     else
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_001, false)
-      if A15_32 == A14_31 then
-        A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_005, true, nil, nil, nil, nil, A15_32)
+      L18_3 = A0_3.TRIPLE_TRIAD_COMPETITION_RANK_THRESHOLD_2
+      if A3_3 < L18_3 then
+        L19_3 = A2_3
+        L18_3 = A2_3.Talk
+        L20_3 = A1_3
+        L21_3 = A0_3
+        L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002
+        L23_3 = true
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = nil
+        L27_3 = nil
+        L28_3 = A8_3
+        L29_3 = A15_3
+        L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3)
       else
-        A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_002, true, nil, nil, nil, nil, A15_32)
+        L18_3 = A0_3.TRIPLE_TRIAD_COMPETITION_RANK_THRESHOLD_3
+        if A3_3 < L18_3 then
+          L19_3 = A2_3
+          L18_3 = A2_3.Talk
+          L20_3 = A1_3
+          L21_3 = A0_3
+          L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002
+          L23_3 = true
+          L24_3 = nil
+          L25_3 = nil
+          L26_3 = nil
+          L27_3 = nil
+          L28_3 = A9_3
+          L29_3 = A15_3
+          L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3)
+        elseif A3_3 < 20 then
+          L19_3 = A2_3
+          L18_3 = A2_3.Talk
+          L20_3 = A1_3
+          L21_3 = A0_3
+          L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_002
+          L23_3 = true
+          L24_3 = nil
+          L25_3 = nil
+          L26_3 = nil
+          L27_3 = nil
+          L28_3 = A10_3
+          L29_3 = A15_3
+          L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3)
+        else
+          L19_3 = A2_3
+          L18_3 = A2_3.Talk
+          L20_3 = A1_3
+          L21_3 = A0_3
+          L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_001
+          L23_3 = false
+          L18_3(L19_3, L20_3, L21_3, L22_3, L23_3)
+          if A15_3 == A14_3 then
+            L19_3 = A2_3
+            L18_3 = A2_3.Talk
+            L20_3 = A1_3
+            L21_3 = A0_3
+            L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_005
+            L23_3 = true
+            L24_3 = nil
+            L25_3 = nil
+            L26_3 = nil
+            L27_3 = nil
+            L28_3 = A15_3
+            L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+          else
+            L19_3 = A2_3
+            L18_3 = A2_3.Talk
+            L20_3 = A1_3
+            L21_3 = A0_3
+            L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_002
+            L23_3 = true
+            L24_3 = nil
+            L25_3 = nil
+            L26_3 = nil
+            L27_3 = nil
+            L28_3 = A15_3
+            L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+          end
+        end
       end
     end
-    A0_17:Wait(10)
-    if A17_34 > 0 and A3_20 < 20 then
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_010, true, nil, nil, nil, nil, A16_33)
-    elseif A17_34 > 0 then
-      A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_010, true, nil, nil, nil, nil, A16_33)
+    L19_3 = A0_3
+    L18_3 = A0_3.Wait
+    L20_3 = 10
+    L18_3(L19_3, L20_3)
+    if 0 < A17_3 and A3_3 < 20 then
+      L19_3 = A2_3
+      L18_3 = A2_3.Talk
+      L20_3 = A1_3
+      L21_3 = A0_3
+      L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_010
+      L23_3 = true
+      L24_3 = nil
+      L25_3 = nil
+      L26_3 = nil
+      L27_3 = nil
+      L28_3 = A16_3
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
+    elseif 0 < A17_3 then
+      L19_3 = A2_3
+      L18_3 = A2_3.Talk
+      L20_3 = A1_3
+      L21_3 = A0_3
+      L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_120_010
+      L23_3 = true
+      L24_3 = nil
+      L25_3 = nil
+      L26_3 = nil
+      L27_3 = nil
+      L28_3 = A16_3
+      L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3)
     end
-    A0_17:OpenTripleTriadRanking()
-    if A0_17:YesNo(A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q3_000_001, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_A3_000_001, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_A3_000_002, A0_17.DEFAULT_YES) then
-      if A3_20 < 20 then
-        A2_19:PlayActionTimeline(A0_17.ACTION_TIMELINE_EMOTE_JOY)
-        A2_19:Talk(A1_18, A0_17, A0_17.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_004, true)
+    L19_3 = A0_3
+    L18_3 = A0_3.OpenTripleTriadRanking
+    L18_3(L19_3)
+    L19_3 = A0_3
+    L18_3 = A0_3.YesNo
+    L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q3_000_001
+    L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A3_000_001
+    L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A3_000_002
+    L23_3 = A0_3.DEFAULT_YES
+    L18_3 = L18_3(L19_3, L20_3, L21_3, L22_3, L23_3)
+    if L18_3 then
+      if A3_3 < 20 then
+        L20_3 = A2_3
+        L19_3 = A2_3.PlayActionTimeline
+        L21_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+        L19_3(L20_3, L21_3)
+        L20_3 = A2_3
+        L19_3 = A2_3.Talk
+        L21_3 = A1_3
+        L22_3 = A0_3
+        L23_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_110_004
+        L24_3 = true
+        L19_3(L20_3, L21_3, L22_3, L23_3, L24_3)
       end
-      A0_17:RewardTripleTriadCompetition()
+      L20_3 = A0_3
+      L19_3 = A0_3.RewardTripleTriadCompetition
+      L19_3(L20_3)
     end
   end
-  function CmnGscTripleTriadCup.OnScene00002(A0_35, A1_36, A2_37, A3_38, A4_39, A5_40, A6_41, A7_42, A8_43, A9_44, A10_45, A11_46, A12_47, A13_48)
-    local L14_49
-    L14_49 = 0
-    A2_37:TurnTo(A1_36, false)
-    A2_37:WaitForTurn()
-    A2_37:PlayActionTimeline(A0_35.ACTION_TIMELINE_EMOTE_BOW)
-    A2_37:Talk(A1_36, A0_35, A0_35.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_200_001, true)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnGscTripleTriadCup
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3, A8_3, A9_3, A10_3, A11_3, A12_3, A13_3)
+    local L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3
+    L14_3 = 0
+    L15_3 = false
+    L17_3 = A2_3
+    L16_3 = A2_3.TurnTo
+    L18_3 = A1_3
+    L19_3 = false
+    L16_3(L17_3, L18_3, L19_3)
+    L17_3 = A2_3
+    L16_3 = A2_3.WaitForTurn
+    L16_3(L17_3)
+    L17_3 = A2_3
+    L16_3 = A2_3.PlayActionTimeline
+    L18_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+    L16_3(L17_3, L18_3)
+    L17_3 = A2_3
+    L16_3 = A2_3.Talk
+    L18_3 = A1_3
+    L19_3 = A0_3
+    L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_200_001
+    L21_3 = true
+    L16_3(L17_3, L18_3, L19_3, L20_3, L21_3)
     repeat
-      L14_49 = A0_35:OpenSelectString(A0_35.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q4_000_001, 3, A0_35.TEXT_CMNGSCTRIPLETRIADCUP_00247_A4_000_001, A0_35.TEXT_CMNGSCTRIPLETRIADCUP_00247_A4_000_002, A0_35.TEXT_CMNGSCTRIPLETRIADCUP_00247_A4_000_003)
-      if L14_49 == 1 then
-        A2_37:Talk(A1_36, A0_35, A0_35.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_210_001, false, nil, nil, nil, nil, A6_41, A3_38)
-        A0_35:SystemTalk(A0_35.TEXT_CMNGSCTRIPLETRIADCUP_00247_SYSTEM_210_002, true, A3_38, A4_39, A5_40)
-      elseif L14_49 == 2 then
-        A0_35:Description(A1_36, A2_37)
+      L17_3 = A0_3
+      L16_3 = A0_3.OpenSelectString
+      L18_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_Q4_000_001
+      L19_3 = 3
+      L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A4_000_001
+      L21_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A4_000_002
+      L22_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_A4_000_003
+      L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+      L14_3 = L16_3
+      if L14_3 == 1 then
+        L17_3 = A2_3
+        L16_3 = A2_3.Talk
+        L18_3 = A1_3
+        L19_3 = A0_3
+        L20_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_210_001
+        L21_3 = false
+        L22_3 = nil
+        L23_3 = nil
+        L24_3 = nil
+        L25_3 = nil
+        L26_3 = A6_3
+        L27_3 = A3_3
+        L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3)
+        L17_3 = A0_3
+        L16_3 = A0_3.SystemTalk
+        L18_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_SYSTEM_210_002
+        L19_3 = true
+        L20_3 = A3_3
+        L21_3 = A4_3
+        L22_3 = A5_3
+        L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+      elseif L14_3 == 2 then
+        L17_3 = A0_3
+        L16_3 = A0_3.Description
+        L18_3 = A1_3
+        L19_3 = A2_3
+        L16_3(L17_3, L18_3, L19_3)
       else
+        L15_3 = true
       end
-    until true
+    until L15_3
   end
-  function CmnGscTripleTriadCup.OnScene00003(A0_50, A1_51, A2_52)
-    A2_52:PlayActionTimeline(A0_50.ACTION_TIMELINE_EMOTE_BOW)
-    A2_52:Talk(A1_51, A0_50, A0_50.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_000_002, false)
-    A2_52:Talk(A1_51, A0_50, A0_50.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_000_003, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnGscTripleTriadCup
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_000_002
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_000_003
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnGscTripleTriadCup.OnScene00004(A0_53, A1_54, A2_55)
-    A2_55:Talk(A1_54, A0_53, A0_53.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_130_001, true)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnGscTripleTriadCup
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_130_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnGscTripleTriadCup.Description(A0_56, A1_57, A2_58)
-    local L3_59
-    L3_59 = 0
-    if A2_58:GetLayoutId() ~= A0_56.LAYOUT_ID_W1EB then
-      L3_59 = 1
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CmnGscTripleTriadCup
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L3_3 = 0
+    L5_3 = A2_3
+    L4_3 = A2_3.GetLayoutId
+    L4_3 = L4_3(L5_3)
+    L5_3 = A0_3.LAYOUT_ID_W1EB
+    if L4_3 ~= L5_3 then
+      L3_3 = 1
     end
-    A2_58:PlayActionTimeline(A0_56.ACTION_TIMELINE_EMOTE_WELCOME)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_001, false)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_002, false)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_003, false)
-    A2_58:PlayActionTimeline(A0_56.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_004, false)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_005, false)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_006, false)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_007, false, nil, nil, nil, nil, L3_59)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_008, false)
-    A2_58:PlayActionTimeline(A0_56.ACTION_TIMELINE_EMOTE_JOY)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_009, false)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_010, false, nil, nil, nil, nil, A0_56.ITEM_PLATINUMPACK)
-    A2_58:PlayActionTimeline(A0_56.ACTION_TIMELINE_EMOTE_YES_STRONG)
-    A2_58:Talk(A1_57, A0_56, A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_011, true)
-    A0_56:Wait(10)
-    A0_56:SystemTalk(A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_140_006, false)
-    A0_56:SystemTalk(A0_56.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_240_006, true)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EMOTE_WELCOME
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_001
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_002
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_003
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_004
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_005
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_006
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_007
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = L3_3
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_008
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_009
+    L9_3 = false
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_010
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = A0_3.ITEM_PLATINUMPACK
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EMOTE_YES_STRONG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_040_011
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.SystemTalk
+    L6_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_140_006
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.SystemTalk
+    L6_3 = A0_3.TEXT_CMNGSCTRIPLETRIADCUP_00247_TTCUP_240_006
+    L7_3 = true
+    L4_3(L5_3, L6_3, L7_3)
   end
-end)()
-;(function()
-  local L1_60
-  L1_60 = CmnGscTripleTriadCup
-  L1_60.SCRIPT_VERSION = 1
-end)()
+  L0_2.Description = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnGscTripleTriadCup
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

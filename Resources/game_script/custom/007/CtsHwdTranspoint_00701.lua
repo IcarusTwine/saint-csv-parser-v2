@@ -1,67 +1,155 @@
-(function()
-  print("CtsHwdTranspoint")
-  function CtsHwdTranspoint.IsAcceptEvent(A0_0, A1_1, A2_2, A3_3, A4_4, A5_5)
-    if A0_0:GetHWDDevelopmentLevel() < 112 then
-      return false
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsHwdTranspoint"
+  L0_2(L1_2)
+  L0_2 = CtsHwdTranspoint
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3
+    L7_3 = A0_3
+    L6_3 = A0_3.GetHWDDevelopmentLevel
+    L6_3 = L6_3(L7_3)
+    if L6_3 < 112 then
+      L6_3 = false
+      return L6_3
     end
-    return true
+    L6_3 = true
+    return L6_3
   end
-  function CtsHwdTranspoint.OnScene00000(A0_6, A1_7, A2_8)
-    local L3_9, L4_10, L5_11, L6_12
-    L3_9 = {
-      L4_10,
-      L5_11,
-      L6_12,
-      A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_04,
-      A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_06,
-      A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_08,
-      A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_01,
-      A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_02
-    }
-    L4_10 = A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_07
-    L5_11 = A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_03
-    L4_10 = 0
-    L5_11 = {}
-    for _FORV_9_ = 1, #A0_6.AETHERYTE_LIST do
-      if A2_8:GetBaseId() ~= A0_6.AETHERYTE_LIST[_FORV_9_] then
-        table.insert(L5_11, L3_9[_FORV_9_])
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = CtsHwdTranspoint
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L3_3 = {}
+    L4_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_07
+    L5_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_03
+    L6_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_05
+    L7_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_04
+    L8_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_06
+    L9_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_08
+    L10_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_01
+    L11_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_02
+    L3_3[1] = L4_3
+    L3_3[2] = L5_3
+    L3_3[3] = L6_3
+    L3_3[4] = L7_3
+    L3_3[5] = L8_3
+    L3_3[6] = L9_3
+    L3_3[7] = L10_3
+    L3_3[8] = L11_3
+    L4_3 = 0
+    L5_3 = {}
+    L6_3 = 1
+    L7_3 = A0_3.AETHERYTE_LIST
+    L7_3 = #L7_3
+    L8_3 = 1
+    for L9_3 = L6_3, L7_3, L8_3 do
+      L11_3 = A2_3
+      L10_3 = A2_3.GetBaseId
+      L10_3 = L10_3(L11_3)
+      L11_3 = A0_3.AETHERYTE_LIST
+      L11_3 = L11_3[L9_3]
+      if L10_3 ~= L11_3 then
+        L10_3 = table
+        L10_3 = L10_3.insert
+        L11_3 = L5_3
+        L12_3 = L3_3[L9_3]
+        L10_3(L11_3, L12_3)
       else
-        L4_10 = L3_9[_FORV_9_]
+        L4_3 = L3_3[L9_3]
       end
     end
-    L6_12(L5_11, A0_6.TEXT_CTSHWDTRANSPOINT_00701_MENU_CANCEL)
-    if A0_6:Menu(L6_12, unpack(L5_11)) == 0 or A0_6:Menu(L6_12, unpack(L5_11)) >= #L5_11 then
-      return
+    L6_3 = table
+    L6_3 = L6_3.insert
+    L7_3 = L5_3
+    L8_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_CANCEL
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.FormatString
+    L8_3 = A0_3.TEXT_CTSHWDTRANSPOINT_00701_MENU_TITLE
+    L10_3 = A0_3
+    L9_3 = A0_3.FormatString
+    L11_3 = L4_3
+    L9_3, L10_3, L11_3, L12_3 = L9_3(L10_3, L11_3)
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Menu
+    L9_3 = L6_3
+    L10_3 = unpack
+    L11_3 = L5_3
+    L10_3, L11_3, L12_3 = L10_3(L11_3)
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+    if L7_3 ~= 0 then
+      L8_3 = #L5_3
+      if not (L7_3 >= L8_3) then
+        goto lbl_55
+      end
     end
-    return (A0_6:Menu(L6_12, unpack(L5_11)))
+    do return end
+    ::lbl_55::
+    return L7_3
   end
-end)()
-;(function()
-  local L0_13, L1_14
-  L0_13 = CtsHwdTranspoint
-  L0_13.SCRIPT_VERSION = 2
-  L0_13 = CtsHwdTranspoint
-  L1_14 = {
-    CtsHwdTranspoint.POPRANGE01,
-    CtsHwdTranspoint.POPRANGE02,
-    CtsHwdTranspoint.POPRANGE03,
-    CtsHwdTranspoint.POPRANGE04,
-    CtsHwdTranspoint.POPRANGE05,
-    CtsHwdTranspoint.POPRANGE06,
-    CtsHwdTranspoint.POPRANGE07,
-    CtsHwdTranspoint.POPRANGE08
-  }
-  L0_13.POP_RANGE_LIST = L1_14
-  L0_13 = CtsHwdTranspoint
-  L1_14 = {
-    CtsHwdTranspoint.EOBJ01,
-    CtsHwdTranspoint.EOBJ02,
-    CtsHwdTranspoint.EOBJ03,
-    CtsHwdTranspoint.EOBJ04,
-    CtsHwdTranspoint.EOBJ05,
-    CtsHwdTranspoint.EOBJ06,
-    CtsHwdTranspoint.EOBJ07,
-    CtsHwdTranspoint.EOBJ08
-  }
-  L0_13.AETHERYTE_LIST = L1_14
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L0_2 = CtsHwdTranspoint
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = CtsHwdTranspoint
+  L1_2 = {}
+  L2_2 = CtsHwdTranspoint
+  L2_2 = L2_2.POPRANGE01
+  L3_2 = CtsHwdTranspoint
+  L3_2 = L3_2.POPRANGE02
+  L4_2 = CtsHwdTranspoint
+  L4_2 = L4_2.POPRANGE03
+  L5_2 = CtsHwdTranspoint
+  L5_2 = L5_2.POPRANGE04
+  L6_2 = CtsHwdTranspoint
+  L6_2 = L6_2.POPRANGE05
+  L7_2 = CtsHwdTranspoint
+  L7_2 = L7_2.POPRANGE06
+  L8_2 = CtsHwdTranspoint
+  L8_2 = L8_2.POPRANGE07
+  L9_2 = CtsHwdTranspoint
+  L9_2 = L9_2.POPRANGE08
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L1_2[4] = L5_2
+  L1_2[5] = L6_2
+  L1_2[6] = L7_2
+  L1_2[7] = L8_2
+  L1_2[8] = L9_2
+  L0_2.POP_RANGE_LIST = L1_2
+  L0_2 = CtsHwdTranspoint
+  L1_2 = {}
+  L2_2 = CtsHwdTranspoint
+  L2_2 = L2_2.EOBJ01
+  L3_2 = CtsHwdTranspoint
+  L3_2 = L3_2.EOBJ02
+  L4_2 = CtsHwdTranspoint
+  L4_2 = L4_2.EOBJ03
+  L5_2 = CtsHwdTranspoint
+  L5_2 = L5_2.EOBJ04
+  L6_2 = CtsHwdTranspoint
+  L6_2 = L6_2.EOBJ05
+  L7_2 = CtsHwdTranspoint
+  L7_2 = L7_2.EOBJ06
+  L8_2 = CtsHwdTranspoint
+  L8_2 = L8_2.EOBJ07
+  L9_2 = CtsHwdTranspoint
+  L9_2 = L9_2.EOBJ08
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L1_2[4] = L5_2
+  L1_2[5] = L6_2
+  L1_2[6] = L7_2
+  L1_2[7] = L8_2
+  L1_2[8] = L9_2
+  L0_2.AETHERYTE_LIST = L1_2
+end
+L0_1()

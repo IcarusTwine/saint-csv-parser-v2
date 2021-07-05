@@ -1,168 +1,417 @@
-(function()
-  print("ClsThm021 loaded")
-  function ClsThm021.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      A2_2:TurnTo(A1_1)
-      A2_2:WaitForTurn()
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSTHM021_00346_COCOBUKI_000_1, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSTHM021_00346_COCOBUKI_000_2, false)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_POINT)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSTHM021_00346_COCOBUKI_000_3, true)
-      A0_0:QuestAccepted()
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ClsThm021 loaded"
+  L0_2(L1_2)
+  L0_2 = ClsThm021
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestOffer
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.TurnTo
+      L5_3 = A1_3
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.WaitForTurn
+      L3_3(L4_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_1
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_2
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EMOTE_POINT
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_3
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.QuestAccepted
+      L3_3(L4_3)
+      L3_3 = 1
+      return L3_3
     else
-      return 0
+      L3_3 = 0
+      return L3_3
     end
   end
-  function ClsThm021.OnScene00001(A0_3, A1_4, A2_5)
-    local L3_6, L4_7
-    L4_7 = A2_5
-    L3_6 = A2_5.TurnTo
-    L3_6(L4_7, A1_4)
-    L4_7 = A2_5
-    L3_6 = A2_5.WaitForTurn
-    L3_6(L4_7)
-    L4_7 = A2_5
-    L3_6 = A2_5.PlayActionTimeline
-    L3_6(L4_7, A0_3.ACTION_TIMELINE_EVENT_TALK2)
-    L4_7 = A2_5
-    L3_6 = A2_5.Talk
-    L3_6(L4_7, A1_4, A0_3, A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_60, false)
-    L4_7 = A2_5
-    L3_6 = A2_5.Talk
-    L3_6(L4_7, A1_4, A0_3, A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_62, false)
-    L4_7 = A2_5
-    L3_6 = A2_5.Talk
-    L3_6(L4_7, A1_4, A0_3, A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_63, false)
-    L4_7 = A2_5
-    L3_6 = A2_5.PlayActionTimeline
-    L3_6(L4_7, A0_3.ACTION_TIMELINE_EVENT_TALK1)
-    L4_7 = A2_5
-    L3_6 = A2_5.Talk
-    L3_6(L4_7, A1_4, A0_3, A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_64, false)
-    L4_7 = A2_5
-    L3_6 = A2_5.Talk
-    L3_6(L4_7, A1_4, A0_3, A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_65, false)
-    L4_7 = A0_3
-    L3_6 = A0_3.SystemTalk
-    L3_6(L4_7, A0_3.TEXT_CLSTHM021_00346_SYSTEM_000_100, true)
-    L4_7 = A0_3
-    L3_6 = A0_3.QuestReward
-    L4_7 = L3_6(L4_7, A2_5, A1_4)
-    if L3_6 then
-      A0_3:QuestCompleted()
+  L0_2.OnScene00000 = L1_2
+  L0_2 = ClsThm021
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_60
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_62
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_63
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_64
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CLSTHM021_00346_COCOBUKI_000_65
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CLSTHM021_00346_SYSTEM_000_100
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestReward
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3, L4_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L6_3 = A0_3
+      L5_3 = A0_3.QuestCompleted
+      L5_3(L6_3)
     end
-    return L3_6, L4_7
+    L5_3 = L3_3
+    L6_3 = L4_3
+    return L5_3, L6_3
   end
-  function ClsThm021.IsTodoChecked(A0_8, A1_9, A2_10)
-    local L3_11
-    L3_11 = A0_8.GetQuestId
-    L3_11 = L3_11(A0_8)
-    if A1_9:GetQuestSequence(L3_11) == A0_8.SEQ_0 then
-      return false
+  L0_2.OnScene00001 = L1_2
+  L0_2 = ClsThm021
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
     end
-    if A2_10 == 0 then
-      return A1_9:GetQuestUI8AL(L3_11) >= 3
-    elseif A2_10 == 1 then
-      return 3 <= A1_9:GetQuestUI8BH(L3_11)
-    elseif A2_10 == 2 then
-      return 3 <= A1_9:GetQuestUI8BL(L3_11)
-    elseif A2_10 == 3 then
-      return false
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L5_3 = 3 <= L5_3
+      return L5_3
+    elseif A2_3 == 1 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8BH
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L5_3 = 3 <= L5_3
+      return L5_3
+    elseif A2_3 == 2 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8BL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L5_3 = 3 <= L5_3
+      return L5_3
+    elseif A2_3 == 3 then
+      L5_3 = false
+      return L5_3
     end
   end
-end)()
-;(function()
-  local L0_12, L1_13
-  L0_12 = ClsThm021
-  L0_12.SCRIPT_VERSION = 1
-  L0_12 = ClsThm021
-  function L1_13(A0_14)
-    local L1_15
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ClsThm021
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = ClsThm021
+  function L1_2(A0_3)
+    local L1_3
   end
-  L0_12.OnInitialize = L1_13
-  L0_12 = ClsThm021
-  function L1_13(A0_16, A1_17, A2_18, A3_19, A4_20)
-    local L5_21
-    L5_21 = A0_16.GetQuestId
-    L5_21 = L5_21(A0_16)
-    if A1_17:GetQuestSequence(L5_21) == A0_16.SEQ_1 then
-      if A3_19 == A0_16.ENEMY0 then
-        if 3 <= A1_17:GetQuestUI8AL(L5_21) then
-          return false
+  L0_2.OnInitialize = L1_2
+  L0_2 = ClsThm021
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_1
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.ENEMY0
+      if A3_3 == L7_3 then
+        L7_3 = 3
+        L9_3 = A1_3
+        L8_3 = A1_3.GetQuestUI8AL
+        L10_3 = L5_3
+        L8_3 = L8_3(L9_3, L10_3)
+        if L7_3 <= L8_3 then
+          L9_3 = false
+          return L9_3
         end
-        return 3 > A1_17:GetQuestUI8AL(L5_21)
-      elseif A3_19 == A0_16.ENEMY1 then
-        if 3 <= A1_17:GetQuestUI8BH(L5_21) then
-          return false
+        L10_3 = A1_3
+        L9_3 = A1_3.GetQuestUI8AL
+        L11_3 = L5_3
+        L9_3 = L9_3(L10_3, L11_3)
+        L9_3 = L9_3 < 3
+        return L9_3
+      else
+        L7_3 = A0_3.ENEMY1
+        if A3_3 == L7_3 then
+          L7_3 = 3
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8BH
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          if L7_3 <= L8_3 then
+            L9_3 = false
+            return L9_3
+          end
+          L10_3 = A1_3
+          L9_3 = A1_3.GetQuestUI8BH
+          L11_3 = L5_3
+          L9_3 = L9_3(L10_3, L11_3)
+          L9_3 = L9_3 < 3
+          return L9_3
+        else
+          L7_3 = A0_3.ENEMY2
+          if A3_3 == L7_3 then
+            L7_3 = 3
+            L9_3 = A1_3
+            L8_3 = A1_3.GetQuestUI8BL
+            L10_3 = L5_3
+            L8_3 = L8_3(L9_3, L10_3)
+            if L7_3 <= L8_3 then
+              L9_3 = false
+              return L9_3
+            end
+            L10_3 = A1_3
+            L9_3 = A1_3.GetQuestUI8BL
+            L11_3 = L5_3
+            L9_3 = L9_3(L10_3, L11_3)
+            L9_3 = L9_3 < 3
+            return L9_3
+          end
         end
-        return 3 > A1_17:GetQuestUI8BH(L5_21)
-      elseif A3_19 == A0_16.ENEMY2 then
-        if 3 <= A1_17:GetQuestUI8BL(L5_21) then
-          return false
-        end
-        return 3 > A1_17:GetQuestUI8BL(L5_21)
       end
     end
-    return false
+    L7_3 = false
+    return L7_3
   end
-  L0_12.IsAcceptEvent = L1_13
-  L0_12 = ClsThm021
-  function L1_13(A0_22, A1_23, A2_24, A3_25, A4_26)
-    local L5_27
-    L5_27 = A0_22.GetQuestId
-    L5_27 = L5_27(A0_22)
-    if A1_23:GetQuestSequence(L5_27) == A0_22.SEQ_1 then
-      if A3_25 == A0_22.ENEMY0 then
-        if 3 <= A1_23:GetQuestUI8AL(L5_27) then
-          return false
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = ClsThm021
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_1
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.ENEMY0
+      if A3_3 == L7_3 then
+        L7_3 = 3
+        L9_3 = A1_3
+        L8_3 = A1_3.GetQuestUI8AL
+        L10_3 = L5_3
+        L8_3 = L8_3(L9_3, L10_3)
+        if L7_3 <= L8_3 then
+          L9_3 = false
+          return L9_3
         end
-        return 3 > A1_23:GetQuestUI8AL(L5_27)
-      elseif A3_25 == A0_22.ENEMY1 then
-        if 3 <= A1_23:GetQuestUI8BH(L5_27) then
-          return false
+        L10_3 = A1_3
+        L9_3 = A1_3.GetQuestUI8AL
+        L11_3 = L5_3
+        L9_3 = L9_3(L10_3, L11_3)
+        L9_3 = L9_3 < 3
+        return L9_3
+      else
+        L7_3 = A0_3.ENEMY1
+        if A3_3 == L7_3 then
+          L7_3 = 3
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8BH
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          if L7_3 <= L8_3 then
+            L9_3 = false
+            return L9_3
+          end
+          L10_3 = A1_3
+          L9_3 = A1_3.GetQuestUI8BH
+          L11_3 = L5_3
+          L9_3 = L9_3(L10_3, L11_3)
+          L9_3 = L9_3 < 3
+          return L9_3
+        else
+          L7_3 = A0_3.ENEMY2
+          if A3_3 == L7_3 then
+            L7_3 = 3
+            L9_3 = A1_3
+            L8_3 = A1_3.GetQuestUI8BL
+            L10_3 = L5_3
+            L8_3 = L8_3(L9_3, L10_3)
+            if L7_3 <= L8_3 then
+              L9_3 = false
+              return L9_3
+            end
+            L10_3 = A1_3
+            L9_3 = A1_3.GetQuestUI8BL
+            L11_3 = L5_3
+            L9_3 = L9_3(L10_3, L11_3)
+            L9_3 = L9_3 < 3
+            return L9_3
+          end
         end
-        return 3 > A1_23:GetQuestUI8BH(L5_27)
-      elseif A3_25 == A0_22.ENEMY2 then
-        if 3 <= A1_23:GetQuestUI8BL(L5_27) then
-          return false
-        end
-        return 3 > A1_23:GetQuestUI8BL(L5_27)
       end
     end
-    return false
+    L7_3 = false
+    return L7_3
   end
-  L0_12.IsAnnounce = L1_13
-  L0_12 = ClsThm021
-  function L1_13(A0_28, A1_29, A2_30)
-    local L3_31
-    L3_31 = A0_28.GetQuestId
-    L3_31 = L3_31(A0_28)
-    if A1_29:GetQuestSequence(L3_31) == A0_28.SEQ_0 then
-      return 0, 0
+  L0_2.IsAnnounce = L1_2
+  L0_2 = ClsThm021
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
     end
-    if A2_30 == 0 then
-      return A1_29:GetQuestUI8AL(L3_31), 3
-    elseif A2_30 == 1 then
-      return A1_29:GetQuestUI8BH(L3_31), 3
-    elseif A2_30 == 2 then
-      return A1_29:GetQuestUI8BL(L3_31), 3
-    elseif A2_30 == 3 then
-      return A1_29:GetQuestUI8AL(L3_31), 0
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 3
+      return L5_3, L6_3
+    elseif A2_3 == 1 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8BH
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 3
+      return L5_3, L6_3
+    elseif A2_3 == 2 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8BL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 3
+      return L5_3, L6_3
+    elseif A2_3 == 3 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
     end
   end
-  L0_12.GetTodoArgs = L1_13
-  L0_12 = ClsThm021
-  function L1_13(A0_32, A1_33, A2_34)
-    local L3_35
-    L3_35 = A0_32.GetQuestId
-    L3_35 = L3_35(A0_32)
-    if A1_33:GetQuestSequence(L3_35) == A0_32.SEQ_1 then
-    elseif A1_33:GetQuestSequence(L3_35) == A0_32.SEQ_FINISH then
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = ClsThm021
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L6_3 = A0_3.SEQ_1
+    if L4_3 == L6_3 then
+    else
+      L6_3 = A0_3.SEQ_FINISH
+      if L4_3 == L6_3 then
+      end
     end
-    return A0_32:IsBattleNpcTriggerOwner(A1_33, A2_34, false), false
+    L7_3 = A0_3
+    L6_3 = A0_3.IsBattleNpcTriggerOwner
+    L8_3 = A1_3
+    L9_3 = A2_3
+    L10_3 = false
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = false
+    return L6_3, L7_3
   end
-  L0_12.GetGimmickState = L1_13
-end)()
+  L0_2.GetGimmickState = L1_2
+end
+L0_1()

@@ -1,349 +1,738 @@
-(function()
-  print("CtsSdg010Trade")
-  CtsSdg010Trade.CRP_SDG_STEP_3 = 29634
-  CtsSdg010Trade.BSM_SDG_STEP_3 = 29635
-  CtsSdg010Trade.ARM_SDG_STEP_3 = 29636
-  CtsSdg010Trade.GSM_SDG_STEP_3 = 29637
-  CtsSdg010Trade.LTW_SDG_STEP_3 = 29638
-  CtsSdg010Trade.WVR_SDG_STEP_3 = 29639
-  CtsSdg010Trade.ALC_SDG_STEP_3 = 29640
-  CtsSdg010Trade.CUL_SDG_STEP_3 = 29641
-  CtsSdg010Trade.MIN_SDG_STEP_3 = 29643
-  CtsSdg010Trade.BTN_SDG_STEP_3 = 29642
-  CtsSdg010Trade.FSH_SDG_STEP_3 = 29644
-  function CtsSdg010Trade.OnScene00000(A0_0, A1_1, A2_2, A3_3, A4_4, A5_5, A6_6, A7_7, A8_8, A9_9)
-    local L10_10, L11_11, L12_12, L13_13
-    A0_0:LoadMovePosition(A0_0.LOC_POS_ACTOR0, A0_0.LOC_POS_ACTOR1)
-    L13_13 = A4_4
-    if L13_13 == A0_0.BSM_SDG_STEP_3 or L13_13 == A0_0.ARM_SDG_STEP_3 or L13_13 == A0_0.GSM_SDG_STEP_3 or L13_13 == A0_0.LTW_SDG_STEP_3 or L13_13 == A0_0.ALC_SDG_STEP_3 or L13_13 == A0_0.FSH_SDG_STEP_3 then
-      L11_11 = true
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsSdg010Trade"
+  L0_2(L1_2)
+  L0_2 = CtsSdg010Trade
+  L0_2.CRP_SDG_STEP_3 = 29634
+  L0_2 = CtsSdg010Trade
+  L0_2.BSM_SDG_STEP_3 = 29635
+  L0_2 = CtsSdg010Trade
+  L0_2.ARM_SDG_STEP_3 = 29636
+  L0_2 = CtsSdg010Trade
+  L0_2.GSM_SDG_STEP_3 = 29637
+  L0_2 = CtsSdg010Trade
+  L0_2.LTW_SDG_STEP_3 = 29638
+  L0_2 = CtsSdg010Trade
+  L0_2.WVR_SDG_STEP_3 = 29639
+  L0_2 = CtsSdg010Trade
+  L0_2.ALC_SDG_STEP_3 = 29640
+  L0_2 = CtsSdg010Trade
+  L0_2.CUL_SDG_STEP_3 = 29641
+  L0_2 = CtsSdg010Trade
+  L0_2.MIN_SDG_STEP_3 = 29643
+  L0_2 = CtsSdg010Trade
+  L0_2.BTN_SDG_STEP_3 = 29642
+  L0_2 = CtsSdg010Trade
+  L0_2.FSH_SDG_STEP_3 = 29644
+  L0_2 = CtsSdg010Trade
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3, A8_3, A9_3)
+    local L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3
+    L15_3 = A1_3
+    L14_3 = A1_3.GetClassJob
+    L14_3 = L14_3(L15_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.LoadMovePosition
+    L17_3 = A0_3.LOC_POS_ACTOR0
+    L18_3 = A0_3.LOC_POS_ACTOR1
+    L15_3(L16_3, L17_3, L18_3)
+    L13_3 = A4_3
+    L15_3 = A0_3.BSM_SDG_STEP_3
+    if L13_3 ~= L15_3 then
+      L15_3 = A0_3.ARM_SDG_STEP_3
+      if L13_3 ~= L15_3 then
+        L15_3 = A0_3.GSM_SDG_STEP_3
+        if L13_3 ~= L15_3 then
+          L15_3 = A0_3.LTW_SDG_STEP_3
+          if L13_3 ~= L15_3 then
+            L15_3 = A0_3.ALC_SDG_STEP_3
+            if L13_3 ~= L15_3 then
+              L15_3 = A0_3.FSH_SDG_STEP_3
+              if L13_3 ~= L15_3 then
+                goto lbl_27
+              end
+            end
+          end
+        end
+      end
     end
-    if L13_13 == A0_0.CRP_SDG_STEP_3 or L13_13 == A0_0.ALC_SDG_STEP_3 then
-      L12_12 = true
+    L11_3 = true
+    ::lbl_27::
+    L15_3 = A0_3.CRP_SDG_STEP_3
+    if L13_3 ~= L15_3 then
+      L15_3 = A0_3.ALC_SDG_STEP_3
+      if L13_3 ~= L15_3 then
+        goto lbl_34
+      end
     end
-    A1_1:LookAt()
-    A1_1:Position(A0_0.LOC_POS_ACTOR0)
-    A1_1:Direction(10)
-    A0_0:Wait(1)
-    L10_10 = A0_0:CreateCharacter(A0_0.LOC_ACTOR0, A0_0.LOC_POS_ACTOR1)
-    L10_10:Visible(A0_0.VISIBLE_HIDE)
-    A2_2:LookAt(A1_1)
-    A2_2:Direction(A1_1)
-    A2_2:Visible(A0_0.VISIBLE_HIDE)
-    A1_1:Idle(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE)
-    A2_2:Idle(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE3)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_FACIAL_SMILE, nil, A0_0.AUTO_SHAKE_TIMELINE)
-    A1_1:Equip(A0_0.EQUIP_TYPE_WEAPON, L13_13, A0_0.WEAPON_SLOT_MAIN)
-    A1_1:Equip(A0_0.EQUIP_TYPE_WEAPON, 0, A0_0.WEAPON_SLOT_SUB)
-    A0_0:FadeOut(A0_0.FADE_SHORT, A0_0.FADE_LAYER_BACK_NO_LOADING)
-    A0_0:FadeIn(A0_0.FADE_SHORT, A0_0.FADE_LAYER_BACK_NO_LOADING)
-    A0_0:FadeOut(A0_0.FADE_SHORT, A0_0.FADE_LAYER_MIDDLE_NO_LOADING)
-    A0_0:ChangeBGMVolume(0)
-    A0_0:Wait(60)
-    A0_0:PlayBGM(A0_0.BGM_MUSIC_NO_MUSIC)
-    A0_0:ChangeBGMVolume(1)
-    A0_0:PlaySE(A0_0.LOC_SE_KAJI)
-    A0_0:Wait(26)
-    A0_0:PlaySE(A0_0.LOC_SE_KAJI)
-    A0_0:Wait(26)
-    A0_0:PlaySE(A0_0.LOC_SE_KAJI)
-    A0_0:Wait(35)
-    A0_0:PlaySE(A0_0.LOC_SE_HQ)
-    A0_0:Wait(60)
-    A0_0:PlayBGM(A0_0.BGM_MUSIC_EVENT_RISE_IN_ARMS)
-    A0_0:Wait(45)
-    A0_0:PlayCamera(5, A2_2)
-    A0_0:SideDolly(0.15, 0, 0, 0, 45)
-    A1_1:Visible(A0_0.VISIBLE_HIDE)
-    A2_2:Visible(A0_0.VISIBLE_SHOW)
-    A0_0:FadeIn(A0_0.FADE_DEFAULT)
-    A0_0:WaitForFade()
-    A0_0:WaitForDolly()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES_STRONG)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_SPEAK_NORMAL_MIDDLE)
-    A0_0:Wait(15)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSSDG010TRADE_00672_DENYSE_000_000, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE, A4_4)
-    A0_0:Wait(10)
-    A1_1:PlayActionTimeline(A0_0.LCUT_SOUL_GET, nil, A0_0.AUTO_SHAKE_ENABLE, A0_0.ACTION_NO_INTERPOLATE)
-    A0_0:Wait(10)
-    A0_0:SetCamera(A1_1, 1, A2_2, L10_10)
-    A2_2:AutoShake(false)
-    A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES_STRONG)
-    A0_0:Wait(10)
-    A2_2:Idle(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE3)
-    A0_0:Wait(110)
-    A0_0:PlayCamera(13, A2_2)
-    A1_1:Visible(A0_0.VISIBLE_HIDE)
-    A2_2:Visible(A0_0.VISIBLE_SHOW)
-    A0_0:UpdownPan(2.5, 2.5, 0)
-    A0_0:SideDolly(-0.05, -0.05, 0)
-    A0_0:Zoom(-0.1, 0.1, 5, 10, 5)
-    A0_0:Wait(10)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_FACIAL_SMILE_STRONG)
-    A0_0:Wait(35)
-    A0_0:SetCamera(A1_1, 3, A2_2, L10_10, L11_11, L12_12)
-    A0_0:Wait(65)
-    A1_1:AutoShake(false)
-    A0_0:Wait(24)
-    A0_0:SetCamera(A1_1, 2, A2_2, L10_10)
-    A0_0:Wait(70)
-    A0_0:FadeOut(A0_0.FADE_DEFAULT)
-    A0_0:WaitForFade()
-    A0_0:DisableSceneSkip()
-    A2_2:FootStep(A0_0.FOOTSTEP_OFF)
-    A1_1:AutoShake(false)
-    A2_2:AutoShake(false)
-    A1_1:CancelActionTimeline(A0_0.LCUT_SOUL_GET)
-    A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_YES_STRONG)
-    A2_2:TurnTo(0, false, true)
-    A2_2:WaitForTurn()
-    A0_0:Wait(30)
-    A0_0:EnableSceneSkip()
+    L12_3 = true
+    ::lbl_34::
+    L16_3 = A1_3
+    L15_3 = A1_3.LookAt
+    L15_3(L16_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.Position
+    L17_3 = A0_3.LOC_POS_ACTOR0
+    L15_3(L16_3, L17_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.Direction
+    L17_3 = 10
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 1
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.CreateCharacter
+    L17_3 = A0_3.LOC_ACTOR0
+    L18_3 = A0_3.LOC_POS_ACTOR1
+    L15_3 = L15_3(L16_3, L17_3, L18_3)
+    L10_3 = L15_3
+    L16_3 = L10_3
+    L15_3 = L10_3.Visible
+    L17_3 = A0_3.VISIBLE_HIDE
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.LookAt
+    L17_3 = A1_3
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Direction
+    L17_3 = A1_3
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Visible
+    L17_3 = A0_3.VISIBLE_HIDE
+    L15_3(L16_3, L17_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.Idle
+    L17_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Idle
+    L17_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE3
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.PlayActionTimeline
+    L17_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE
+    L18_3 = nil
+    L19_3 = A0_3.AUTO_SHAKE_TIMELINE
+    L15_3(L16_3, L17_3, L18_3, L19_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.Equip
+    L17_3 = A0_3.EQUIP_TYPE_WEAPON
+    L18_3 = L13_3
+    L19_3 = A0_3.WEAPON_SLOT_MAIN
+    L15_3(L16_3, L17_3, L18_3, L19_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.Equip
+    L17_3 = A0_3.EQUIP_TYPE_WEAPON
+    L18_3 = 0
+    L19_3 = A0_3.WEAPON_SLOT_SUB
+    L15_3(L16_3, L17_3, L18_3, L19_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.FadeOut
+    L17_3 = A0_3.FADE_SHORT
+    L18_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+    L15_3(L16_3, L17_3, L18_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.FadeIn
+    L17_3 = A0_3.FADE_SHORT
+    L18_3 = A0_3.FADE_LAYER_BACK_NO_LOADING
+    L15_3(L16_3, L17_3, L18_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.FadeOut
+    L17_3 = A0_3.FADE_SHORT
+    L18_3 = A0_3.FADE_LAYER_MIDDLE_NO_LOADING
+    L15_3(L16_3, L17_3, L18_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.ChangeBGMVolume
+    L17_3 = 0
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 60
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlayBGM
+    L17_3 = A0_3.BGM_MUSIC_NO_MUSIC
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.ChangeBGMVolume
+    L17_3 = 1
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlaySE
+    L17_3 = A0_3.LOC_SE_KAJI
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 26
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlaySE
+    L17_3 = A0_3.LOC_SE_KAJI
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 26
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlaySE
+    L17_3 = A0_3.LOC_SE_KAJI
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 35
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlaySE
+    L17_3 = A0_3.LOC_SE_HQ
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 60
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlayBGM
+    L17_3 = A0_3.BGM_MUSIC_EVENT_RISE_IN_ARMS
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 45
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlayCamera
+    L17_3 = 5
+    L18_3 = A2_3
+    L15_3(L16_3, L17_3, L18_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.SideDolly
+    L17_3 = 0.15
+    L18_3 = 0
+    L19_3 = 0
+    L20_3 = 0
+    L21_3 = 45
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.Visible
+    L17_3 = A0_3.VISIBLE_HIDE
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Visible
+    L17_3 = A0_3.VISIBLE_SHOW
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.FadeIn
+    L17_3 = A0_3.FADE_DEFAULT
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.WaitForFade
+    L15_3(L16_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.WaitForDolly
+    L15_3(L16_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.PlayActionTimeline
+    L17_3 = A0_3.ACTION_TIMELINE_EMOTE_YES_STRONG
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.PlayActionTimeline
+    L17_3 = A0_3.ACTION_TIMELINE_SPEAK_NORMAL_MIDDLE
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 15
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Talk
+    L17_3 = A1_3
+    L18_3 = A0_3
+    L19_3 = A0_3.TEXT_CTSSDG010TRADE_00672_DENYSE_000_000
+    L20_3 = true
+    L21_3 = nil
+    L22_3 = nil
+    L23_3 = nil
+    L24_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L25_3 = A4_3
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 10
+    L15_3(L16_3, L17_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.PlayActionTimeline
+    L17_3 = A0_3.LCUT_SOUL_GET
+    L18_3 = nil
+    L19_3 = A0_3.AUTO_SHAKE_ENABLE
+    L20_3 = A0_3.ACTION_NO_INTERPOLATE
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 10
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.SetCamera
+    L17_3 = A1_3
+    L18_3 = 1
+    L19_3 = A2_3
+    L20_3 = L10_3
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.AutoShake
+    L17_3 = false
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.CancelActionTimeline
+    L17_3 = A0_3.ACTION_TIMELINE_EMOTE_YES_STRONG
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 10
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Idle
+    L17_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE3
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 110
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.PlayCamera
+    L17_3 = 13
+    L18_3 = A2_3
+    L15_3(L16_3, L17_3, L18_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.Visible
+    L17_3 = A0_3.VISIBLE_HIDE
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Visible
+    L17_3 = A0_3.VISIBLE_SHOW
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.UpdownPan
+    L17_3 = 2.5
+    L18_3 = 2.5
+    L19_3 = 0
+    L15_3(L16_3, L17_3, L18_3, L19_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.SideDolly
+    L17_3 = -0.05
+    L18_3 = -0.05
+    L19_3 = 0
+    L15_3(L16_3, L17_3, L18_3, L19_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Zoom
+    L17_3 = -0.1
+    L18_3 = 0.1
+    L19_3 = 5
+    L20_3 = 10
+    L21_3 = 5
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 10
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.PlayActionTimeline
+    L17_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE_STRONG
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 35
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.SetCamera
+    L17_3 = A1_3
+    L18_3 = 3
+    L19_3 = A2_3
+    L20_3 = L10_3
+    L21_3 = L11_3
+    L22_3 = L12_3
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 65
+    L15_3(L16_3, L17_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.AutoShake
+    L17_3 = false
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 24
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.SetCamera
+    L17_3 = A1_3
+    L18_3 = 2
+    L19_3 = A2_3
+    L20_3 = L10_3
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 70
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.FadeOut
+    L17_3 = A0_3.FADE_DEFAULT
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.WaitForFade
+    L15_3(L16_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.DisableSceneSkip
+    L15_3(L16_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.FootStep
+    L17_3 = A0_3.FOOTSTEP_OFF
+    L15_3(L16_3, L17_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.AutoShake
+    L17_3 = false
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.AutoShake
+    L17_3 = false
+    L15_3(L16_3, L17_3)
+    L16_3 = A1_3
+    L15_3 = A1_3.CancelActionTimeline
+    L17_3 = A0_3.LCUT_SOUL_GET
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.CancelActionTimeline
+    L17_3 = A0_3.ACTION_TIMELINE_EMOTE_YES_STRONG
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.TurnTo
+    L17_3 = 0
+    L18_3 = false
+    L19_3 = true
+    L15_3(L16_3, L17_3, L18_3, L19_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.WaitForTurn
+    L15_3(L16_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.Wait
+    L17_3 = 30
+    L15_3(L16_3, L17_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.EnableSceneSkip
+    L15_3(L16_3)
   end
-  function CtsSdg010Trade.SetCamera(A0_14, A1_15, A2_16, A3_17, A4_18, A5_19, A6_20)
-    local L7_21, L8_22, L9_23, L10_24, L11_25, L12_26, L13_27, L14_28
-    L8_22 = A1_15
-    L7_21 = A1_15.GetRace
-    L7_21 = L7_21(L8_22)
-    L9_23 = A1_15
-    L8_22 = A1_15.GetTribe
-    L8_22 = L8_22(L9_23)
-    L10_24 = A1_15
-    L9_23 = A1_15.GetSex
-    L9_23 = L9_23(L10_24)
-    if A2_16 == 1 then
-      L11_25 = A1_15
-      L10_24 = A1_15.Visible
-      L12_26 = A0_14.VISIBLE_SHOW
-      L10_24(L11_25, L12_26)
-      L11_25 = A3_17
-      L10_24 = A3_17.Visible
-      L12_26 = A0_14.VISIBLE_HIDE
-      L10_24(L11_25, L12_26)
-      L11_25 = A0_14
-      L10_24 = A0_14.PlayCamera
-      L12_26 = 1
-      L13_27 = A1_15
-      L10_24(L11_25, L12_26, L13_27)
-      L10_24 = A0_14.RACE_HYURAN
-      if L7_21 == L10_24 then
-        L11_25 = A0_14
-        L10_24 = A0_14.Zoom
-        L12_26 = -1
-        L13_27 = -1
-        L14_28 = 0
-        L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-        L11_25 = A0_14
-        L10_24 = A0_14.UpdownDolly
-        L12_26 = -0.3
-        L13_27 = -0.3
-        L14_28 = 0
-        L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-        L11_25 = A0_14
-        L10_24 = A0_14.UpdownPan
-        L12_26 = 0
-        L13_27 = -5
-        L14_28 = 0
-        L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
-        L11_25 = A0_14
-        L10_24 = A0_14.Orbit
-        L12_26 = -5
-        L13_27 = -5
-        L14_28 = 0
-        L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsSdg010Trade
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3)
+    local L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3
+    L8_3 = A1_3
+    L7_3 = A1_3.GetRace
+    L7_3 = L7_3(L8_3)
+    L9_3 = A1_3
+    L8_3 = A1_3.GetTribe
+    L8_3 = L8_3(L9_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.GetSex
+    L9_3 = L9_3(L10_3)
+    if A2_3 == 1 then
+      L11_3 = A1_3
+      L10_3 = A1_3.Visible
+      L12_3 = A0_3.VISIBLE_SHOW
+      L10_3(L11_3, L12_3)
+      L11_3 = A3_3
+      L10_3 = A3_3.Visible
+      L12_3 = A0_3.VISIBLE_HIDE
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 1
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L10_3 = A0_3.RACE_HYURAN
+      if L7_3 == L10_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.Zoom
+        L12_3 = -1
+        L13_3 = -1
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownDolly
+        L12_3 = -0.3
+        L13_3 = -0.3
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.UpdownPan
+        L12_3 = 0
+        L13_3 = -5
+        L14_3 = 0
+        L15_3 = 30
+        L16_3 = 300
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L11_3 = A0_3
+        L10_3 = A0_3.Orbit
+        L12_3 = -5
+        L13_3 = -5
+        L14_3 = 0
+        L15_3 = 0
+        L16_3 = 0
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
       else
-        L10_24 = A0_14.RACE_ELEZEN
-        if L7_21 == L10_24 then
-          L11_25 = A0_14
-          L10_24 = A0_14.Zoom
-          L12_26 = -1.1
-          L13_27 = -1.1
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-          L11_25 = A0_14
-          L10_24 = A0_14.UpdownPan
-          L12_26 = 0
-          L13_27 = 5
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
+        L10_3 = A0_3.RACE_ELEZEN
+        if L7_3 == L10_3 then
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = -1.1
+          L13_3 = -1.1
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = 0
+          L13_3 = 5
+          L14_3 = 0
+          L15_3 = 30
+          L16_3 = 300
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          L10_24 = A0_14.RACE_LALAFELL
-          if L7_21 == L10_24 then
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = -0.5
-            L13_27 = -0.5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownDolly
-            L12_26 = -0.1
-            L13_27 = -0.1
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 0
-            L13_27 = -5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
-            L11_25 = A0_14
-            L10_24 = A0_14.Orbit
-            L12_26 = -10
-            L13_27 = -10
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
+          L10_3 = A0_3.RACE_LALAFELL
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = -0.5
+            L13_3 = -0.5
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownDolly
+            L12_3 = -0.1
+            L13_3 = -0.1
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 0
+            L13_3 = -5
+            L14_3 = 0
+            L15_3 = 30
+            L16_3 = 300
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = -10
+            L13_3 = -10
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
           else
-            L10_24 = A0_14.RACE_MICOTTAE
-            if L7_21 == L10_24 then
-              L11_25 = A0_14
-              L10_24 = A0_14.Zoom
-              L12_26 = -1
-              L13_27 = -1
-              L14_28 = 0
-              L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-              L11_25 = A0_14
-              L10_24 = A0_14.UpdownDolly
-              L12_26 = -0.1
-              L13_27 = -0.1
-              L14_28 = 0
-              L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-              L11_25 = A0_14
-              L10_24 = A0_14.UpdownPan
-              L12_26 = 0
-              L13_27 = 2
-              L14_28 = 0
-              L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
+            L10_3 = A0_3.RACE_MICOTTAE
+            if L7_3 == L10_3 then
+              L11_3 = A0_3
+              L10_3 = A0_3.Zoom
+              L12_3 = -1
+              L13_3 = -1
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownDolly
+              L12_3 = -0.1
+              L13_3 = -0.1
+              L14_3 = 0
+              L15_3 = 0
+              L16_3 = 0
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L11_3 = A0_3
+              L10_3 = A0_3.UpdownPan
+              L12_3 = 0
+              L13_3 = 2
+              L14_3 = 0
+              L15_3 = 30
+              L16_3 = 300
+              L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
             else
-              L10_24 = A0_14.RACE_ROEGADYN
-              if L7_21 == L10_24 then
-                L11_25 = A0_14
-                L10_24 = A0_14.Zoom
-                L12_26 = -1.4
-                L13_27 = -1.4
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.UpdownDolly
-                L12_26 = -0.3
-                L13_27 = -0.3
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.UpdownPan
-                L12_26 = 0
-                L13_27 = -8
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
-                L11_25 = A0_14
-                L10_24 = A0_14.SideDolly
-                L12_26 = 0.1
-                L13_27 = 0.1
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
+              L10_3 = A0_3.RACE_ROEGADYN
+              if L7_3 == L10_3 then
+                L11_3 = A0_3
+                L10_3 = A0_3.Zoom
+                L12_3 = -1.4
+                L13_3 = -1.4
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.UpdownDolly
+                L12_3 = -0.3
+                L13_3 = -0.3
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.UpdownPan
+                L12_3 = 0
+                L13_3 = -8
+                L14_3 = 0
+                L15_3 = 30
+                L16_3 = 300
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.SideDolly
+                L12_3 = 0.1
+                L13_3 = 0.1
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
               else
-                L10_24 = A0_14.RACE_AURA
-                if L7_21 == L10_24 then
-                  if L9_23 == 0 then
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = -1
-                    L13_27 = -1
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownDolly
-                    L12_26 = -0.4
-                    L13_27 = -0.4
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 0
-                    L13_27 = -15
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
+                L10_3 = A0_3.RACE_AURA
+                if L7_3 == L10_3 then
+                  if L9_3 == 0 then
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = -1
+                    L13_3 = -1
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownDolly
+                    L12_3 = -0.4
+                    L13_3 = -0.4
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 0
+                    L13_3 = -15
+                    L14_3 = 0
+                    L15_3 = 30
+                    L16_3 = 300
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                   else
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = -0.7
-                    L13_27 = -0.7
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownDolly
-                    L12_26 = -0.2
-                    L13_27 = -0.2
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 0
-                    L13_27 = -15
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = -0.7
+                    L13_3 = -0.7
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownDolly
+                    L12_3 = -0.2
+                    L13_3 = -0.2
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 0
+                    L13_3 = -15
+                    L14_3 = 0
+                    L15_3 = 30
+                    L16_3 = 300
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                   end
                 else
-                  L10_24 = A0_14.RACE_JJM
-                  if L7_21 == L10_24 then
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = -1.4
-                    L13_27 = -1.4
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownDolly
-                    L12_26 = -0.3
-                    L13_27 = -0.3
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 0
-                    L13_27 = -8
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.SideDolly
-                    L12_26 = 0.1
-                    L13_27 = 0.1
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
+                  L10_3 = A0_3.RACE_JJM
+                  if L7_3 == L10_3 then
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = -1.4
+                    L13_3 = -1.4
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownDolly
+                    L12_3 = -0.3
+                    L13_3 = -0.3
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 0
+                    L13_3 = -8
+                    L14_3 = 0
+                    L15_3 = 30
+                    L16_3 = 300
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.SideDolly
+                    L12_3 = 0.1
+                    L13_3 = 0.1
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                   else
-                    L10_24 = A0_14.RACE_JJF
-                    if L7_21 == L10_24 then
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Zoom
-                      L12_26 = -1.1
-                      L13_27 = -1.1
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.UpdownPan
-                      L12_26 = 0
-                      L13_27 = 5
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
+                    L10_3 = A0_3.RACE_JJF
+                    if L7_3 == L10_3 then
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Zoom
+                      L12_3 = -1.1
+                      L13_3 = -1.1
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.UpdownPan
+                      L12_3 = 0
+                      L13_3 = 5
+                      L14_3 = 0
+                      L15_3 = 30
+                      L16_3 = 300
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                     else
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Zoom
-                      L12_26 = -0.5
-                      L13_27 = -0.5
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.SideDolly
-                      L12_26 = -0.2
-                      L13_27 = -0.2
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.UpdownPan
-                      L12_26 = 0
-                      L13_27 = 5
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 30, 300)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Zoom
+                      L12_3 = -0.5
+                      L13_3 = -0.5
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.SideDolly
+                      L12_3 = -0.2
+                      L13_3 = -0.2
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.UpdownPan
+                      L12_3 = 0
+                      L13_3 = 5
+                      L14_3 = 0
+                      L15_3 = 30
+                      L16_3 = 300
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                     end
                   end
                 end
@@ -352,846 +741,1034 @@
           end
         end
       end
-    elseif A2_16 == 2 then
-      L11_25 = A1_15
-      L10_24 = A1_15.Visible
-      L12_26 = A0_14.VISIBLE_SHOW
-      L10_24(L11_25, L12_26)
-      L11_25 = A3_17
-      L10_24 = A3_17.Visible
-      L12_26 = A0_14.VISIBLE_HIDE
-      L10_24(L11_25, L12_26)
-      L11_25 = A0_14
-      L10_24 = A0_14.PlayCamera
-      L12_26 = 33
-      L13_27 = A1_15
-      L10_24(L11_25, L12_26, L13_27)
-      L10_24 = A0_14.RACE_HYURAN
-      if L7_21 == L10_24 then
-        L10_24 = A0_14.TRIBE_HIGHLANDER
-        if L8_22 == L10_24 then
-          if L9_23 == 0 then
-            L11_25 = A0_14
-            L10_24 = A0_14.SideDolly
-            L12_26 = -0.3
-            L13_27 = -0.3
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 5.2
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 4
-            L13_27 = 4
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Orbit
-            L12_26 = -15
-            L13_27 = -15
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28)
-            L11_25 = A0_14
-            L10_24 = A0_14.Wait
-            L12_26 = 20
-            L10_24(L11_25, L12_26)
-            L11_25 = A1_15
-            L10_24 = A1_15.PlayVfx
-            L12_26 = A0_14.LCUT_VFX1
-            L10_24(L11_25, L12_26)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 4.4
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 4
-            L13_27 = 8.5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.Gyro
-            L12_26 = 0
-            L13_27 = -20
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+    elseif A2_3 == 2 then
+      L11_3 = A1_3
+      L10_3 = A1_3.Visible
+      L12_3 = A0_3.VISIBLE_SHOW
+      L10_3(L11_3, L12_3)
+      L11_3 = A3_3
+      L10_3 = A3_3.Visible
+      L12_3 = A0_3.VISIBLE_HIDE
+      L10_3(L11_3, L12_3)
+      L11_3 = A0_3
+      L10_3 = A0_3.PlayCamera
+      L12_3 = 33
+      L13_3 = A1_3
+      L10_3(L11_3, L12_3, L13_3)
+      L10_3 = A0_3.RACE_HYURAN
+      if L7_3 == L10_3 then
+        L10_3 = A0_3.TRIBE_HIGHLANDER
+        if L8_3 == L10_3 then
+          if L9_3 == 0 then
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.3
+            L13_3 = -0.3
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 5.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 4
+            L13_3 = 4
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = -15
+            L13_3 = -15
+            L14_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Wait
+            L12_3 = 20
+            L10_3(L11_3, L12_3)
+            L11_3 = A1_3
+            L10_3 = A1_3.PlayVfx
+            L12_3 = A0_3.LCUT_VFX1
+            L10_3(L11_3, L12_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 4.4
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 4
+            L13_3 = 8.5
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Gyro
+            L12_3 = 0
+            L13_3 = -20
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
           else
-            L11_25 = A0_14
-            L10_24 = A0_14.SideDolly
-            L12_26 = -0.3
-            L13_27 = -0.3
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 5.2
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 2
-            L13_27 = 2
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Orbit
-            L12_26 = -15
-            L13_27 = -15
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28)
-            L11_25 = A0_14
-            L10_24 = A0_14.Wait
-            L12_26 = 20
-            L10_24(L11_25, L12_26)
-            L11_25 = A1_15
-            L10_24 = A1_15.PlayVfx
-            L12_26 = A0_14.LCUT_VFX1
-            L10_24(L11_25, L12_26)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 4.9
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 2
-            L13_27 = 6.5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.Gyro
-            L12_26 = 0
-            L13_27 = -20
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.3
+            L13_3 = -0.3
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 5.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 2
+            L13_3 = 2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = -15
+            L13_3 = -15
+            L14_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Wait
+            L12_3 = 20
+            L10_3(L11_3, L12_3)
+            L11_3 = A1_3
+            L10_3 = A1_3.PlayVfx
+            L12_3 = A0_3.LCUT_VFX1
+            L10_3(L11_3, L12_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 4.9
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 2
+            L13_3 = 6.5
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Gyro
+            L12_3 = 0
+            L13_3 = -20
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
           end
-        elseif L9_23 == 0 then
-          L11_25 = A0_14
-          L10_24 = A0_14.SideDolly
-          L12_26 = -0.3
-          L13_27 = -0.3
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-          L11_25 = A0_14
-          L10_24 = A0_14.Zoom
-          L12_26 = 5.2
-          L13_27 = 5.2
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-          L11_25 = A0_14
-          L10_24 = A0_14.UpdownPan
-          L12_26 = 3
-          L13_27 = 3
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-          L11_25 = A0_14
-          L10_24 = A0_14.Orbit
-          L12_26 = -15
-          L13_27 = -15
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28)
-          L11_25 = A0_14
-          L10_24 = A0_14.Wait
-          L12_26 = 20
-          L10_24(L11_25, L12_26)
-          L11_25 = A1_15
-          L10_24 = A1_15.PlayVfx
-          L12_26 = A0_14.LCUT_VFX1
-          L10_24(L11_25, L12_26)
-          L11_25 = A0_14
-          L10_24 = A0_14.Zoom
-          L12_26 = 5.2
-          L13_27 = 4.8
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-          L11_25 = A0_14
-          L10_24 = A0_14.UpdownPan
-          L12_26 = 3
-          L13_27 = 7
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-          L11_25 = A0_14
-          L10_24 = A0_14.Gyro
-          L12_26 = 0
-          L13_27 = -20
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+        elseif L9_3 == 0 then
+          L11_3 = A0_3
+          L10_3 = A0_3.SideDolly
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = 5.2
+          L13_3 = 5.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = 3
+          L13_3 = 3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Orbit
+          L12_3 = -15
+          L13_3 = -15
+          L14_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Wait
+          L12_3 = 20
+          L10_3(L11_3, L12_3)
+          L11_3 = A1_3
+          L10_3 = A1_3.PlayVfx
+          L12_3 = A0_3.LCUT_VFX1
+          L10_3(L11_3, L12_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = 5.2
+          L13_3 = 4.8
+          L14_3 = 0
+          L15_3 = 5
+          L16_3 = 5
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = 3
+          L13_3 = 7
+          L14_3 = 0
+          L15_3 = 5
+          L16_3 = 5
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Gyro
+          L12_3 = 0
+          L13_3 = -20
+          L14_3 = 0
+          L15_3 = 5
+          L16_3 = 5
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         else
-          L11_25 = A0_14
-          L10_24 = A0_14.SideDolly
-          L12_26 = -0.3
-          L13_27 = -0.3
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-          L11_25 = A0_14
-          L10_24 = A0_14.Zoom
-          L12_26 = 5.2
-          L13_27 = 5.2
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-          L11_25 = A0_14
-          L10_24 = A0_14.Orbit
-          L12_26 = -15
-          L13_27 = -15
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28)
-          L11_25 = A0_14
-          L10_24 = A0_14.Wait
-          L12_26 = 20
-          L10_24(L11_25, L12_26)
-          L11_25 = A1_15
-          L10_24 = A1_15.PlayVfx
-          L12_26 = A0_14.LCUT_VFX1
-          L10_24(L11_25, L12_26)
-          L11_25 = A0_14
-          L10_24 = A0_14.Zoom
-          L12_26 = 5.2
-          L13_27 = 5
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-          L11_25 = A0_14
-          L10_24 = A0_14.UpdownPan
-          L12_26 = 0
-          L13_27 = 5.5
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-          L11_25 = A0_14
-          L10_24 = A0_14.Gyro
-          L12_26 = 0
-          L13_27 = -20
-          L14_28 = 0
-          L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+          L11_3 = A0_3
+          L10_3 = A0_3.SideDolly
+          L12_3 = -0.3
+          L13_3 = -0.3
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = 5.2
+          L13_3 = 5.2
+          L14_3 = 0
+          L15_3 = 0
+          L16_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Orbit
+          L12_3 = -15
+          L13_3 = -15
+          L14_3 = 0
+          L10_3(L11_3, L12_3, L13_3, L14_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Wait
+          L12_3 = 20
+          L10_3(L11_3, L12_3)
+          L11_3 = A1_3
+          L10_3 = A1_3.PlayVfx
+          L12_3 = A0_3.LCUT_VFX1
+          L10_3(L11_3, L12_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Zoom
+          L12_3 = 5.2
+          L13_3 = 5
+          L14_3 = 0
+          L15_3 = 5
+          L16_3 = 5
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.UpdownPan
+          L12_3 = 0
+          L13_3 = 5.5
+          L14_3 = 0
+          L15_3 = 5
+          L16_3 = 5
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L11_3 = A0_3
+          L10_3 = A0_3.Gyro
+          L12_3 = 0
+          L13_3 = -20
+          L14_3 = 0
+          L15_3 = 5
+          L16_3 = 5
+          L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
         end
       else
-        L10_24 = A0_14.RACE_ELEZEN
-        if L7_21 == L10_24 then
-          if L9_23 == 0 then
-            L11_25 = A0_14
-            L10_24 = A0_14.SideDolly
-            L12_26 = -0.4
-            L13_27 = -0.4
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 5.2
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 5
-            L13_27 = 5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Orbit
-            L12_26 = -15
-            L13_27 = -15
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28)
-            L11_25 = A0_14
-            L10_24 = A0_14.Wait
-            L12_26 = 20
-            L10_24(L11_25, L12_26)
-            L11_25 = A1_15
-            L10_24 = A1_15.PlayVfx
-            L12_26 = A0_14.LCUT_VFX1
-            L10_24(L11_25, L12_26)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 4.5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 5
-            L13_27 = 8
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.Gyro
-            L12_26 = 0
-            L13_27 = -20
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+        L10_3 = A0_3.RACE_ELEZEN
+        if L7_3 == L10_3 then
+          if L9_3 == 0 then
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.4
+            L13_3 = -0.4
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 5.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 5
+            L13_3 = 5
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = -15
+            L13_3 = -15
+            L14_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Wait
+            L12_3 = 20
+            L10_3(L11_3, L12_3)
+            L11_3 = A1_3
+            L10_3 = A1_3.PlayVfx
+            L12_3 = A0_3.LCUT_VFX1
+            L10_3(L11_3, L12_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 4.5
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 5
+            L13_3 = 8
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Gyro
+            L12_3 = 0
+            L13_3 = -20
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
           else
-            L11_25 = A0_14
-            L10_24 = A0_14.SideDolly
-            L12_26 = -0.4
-            L13_27 = -0.4
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 5.2
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 5
-            L13_27 = 5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Orbit
-            L12_26 = -15
-            L13_27 = -15
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28)
-            L11_25 = A0_14
-            L10_24 = A0_14.Wait
-            L12_26 = 20
-            L10_24(L11_25, L12_26)
-            L11_25 = A1_15
-            L10_24 = A1_15.PlayVfx
-            L12_26 = A0_14.LCUT_VFX1
-            L10_24(L11_25, L12_26)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 5.2
-            L13_27 = 4.7
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 5
-            L13_27 = 7
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.Gyro
-            L12_26 = 0
-            L13_27 = -20
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.4
+            L13_3 = -0.4
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 5.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 5
+            L13_3 = 5
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = -15
+            L13_3 = -15
+            L14_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Wait
+            L12_3 = 20
+            L10_3(L11_3, L12_3)
+            L11_3 = A1_3
+            L10_3 = A1_3.PlayVfx
+            L12_3 = A0_3.LCUT_VFX1
+            L10_3(L11_3, L12_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 5.2
+            L13_3 = 4.7
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 5
+            L13_3 = 7
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Gyro
+            L12_3 = 0
+            L13_3 = -20
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
           end
         else
-          L10_24 = A0_14.RACE_LALAFELL
-          if L7_21 == L10_24 then
-            L11_25 = A0_14
-            L10_24 = A0_14.SideDolly
-            L12_26 = -0.1
-            L13_27 = -0.1
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 6
-            L13_27 = 6
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 4.2
-            L13_27 = 4.2
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-            L11_25 = A0_14
-            L10_24 = A0_14.Orbit
-            L12_26 = -15
-            L13_27 = -15
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28)
-            L11_25 = A0_14
-            L10_24 = A0_14.Wait
-            L12_26 = 20
-            L10_24(L11_25, L12_26)
-            L11_25 = A1_15
-            L10_24 = A1_15.PlayVfx
-            L12_26 = A0_14.LCUT_VFX1
-            L10_24(L11_25, L12_26)
-            L11_25 = A0_14
-            L10_24 = A0_14.Zoom
-            L12_26 = 6
-            L13_27 = 5.2
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.UpdownPan
-            L12_26 = 4.2
-            L13_27 = 5
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-            L11_25 = A0_14
-            L10_24 = A0_14.Gyro
-            L12_26 = 0
-            L13_27 = -20
-            L14_28 = 0
-            L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+          L10_3 = A0_3.RACE_LALAFELL
+          if L7_3 == L10_3 then
+            L11_3 = A0_3
+            L10_3 = A0_3.SideDolly
+            L12_3 = -0.1
+            L13_3 = -0.1
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 6
+            L13_3 = 6
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 4.2
+            L13_3 = 4.2
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Orbit
+            L12_3 = -15
+            L13_3 = -15
+            L14_3 = 0
+            L10_3(L11_3, L12_3, L13_3, L14_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Wait
+            L12_3 = 20
+            L10_3(L11_3, L12_3)
+            L11_3 = A1_3
+            L10_3 = A1_3.PlayVfx
+            L12_3 = A0_3.LCUT_VFX1
+            L10_3(L11_3, L12_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Zoom
+            L12_3 = 6
+            L13_3 = 5.2
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.UpdownPan
+            L12_3 = 4.2
+            L13_3 = 5
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L11_3 = A0_3
+            L10_3 = A0_3.Gyro
+            L12_3 = 0
+            L13_3 = -20
+            L14_3 = 0
+            L15_3 = 5
+            L16_3 = 5
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
           else
-            L10_24 = A0_14.RACE_MICOTTAE
-            if L7_21 == L10_24 then
-              if L9_23 == 0 then
-                L11_25 = A0_14
-                L10_24 = A0_14.SideDolly
-                L12_26 = -0.3
-                L13_27 = -0.3
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.Zoom
-                L12_26 = 5.2
-                L13_27 = 5.2
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.UpdownPan
-                L12_26 = 2
-                L13_27 = 2
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.Orbit
-                L12_26 = -15
-                L13_27 = -15
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28)
-                L11_25 = A0_14
-                L10_24 = A0_14.Wait
-                L12_26 = 20
-                L10_24(L11_25, L12_26)
-                L11_25 = A1_15
-                L10_24 = A1_15.PlayVfx
-                L12_26 = A0_14.LCUT_VFX1
-                L10_24(L11_25, L12_26)
-                L11_25 = A0_14
-                L10_24 = A0_14.Zoom
-                L12_26 = 5.2
-                L13_27 = 4.8
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                L11_25 = A0_14
-                L10_24 = A0_14.UpdownPan
-                L12_26 = 2
-                L13_27 = 6.5
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                L11_25 = A0_14
-                L10_24 = A0_14.Gyro
-                L12_26 = 0
-                L13_27 = -20
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+            L10_3 = A0_3.RACE_MICOTTAE
+            if L7_3 == L10_3 then
+              if L9_3 == 0 then
+                L11_3 = A0_3
+                L10_3 = A0_3.SideDolly
+                L12_3 = -0.3
+                L13_3 = -0.3
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Zoom
+                L12_3 = 5.2
+                L13_3 = 5.2
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.UpdownPan
+                L12_3 = 2
+                L13_3 = 2
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Orbit
+                L12_3 = -15
+                L13_3 = -15
+                L14_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Wait
+                L12_3 = 20
+                L10_3(L11_3, L12_3)
+                L11_3 = A1_3
+                L10_3 = A1_3.PlayVfx
+                L12_3 = A0_3.LCUT_VFX1
+                L10_3(L11_3, L12_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Zoom
+                L12_3 = 5.2
+                L13_3 = 4.8
+                L14_3 = 0
+                L15_3 = 5
+                L16_3 = 5
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.UpdownPan
+                L12_3 = 2
+                L13_3 = 6.5
+                L14_3 = 0
+                L15_3 = 5
+                L16_3 = 5
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Gyro
+                L12_3 = 0
+                L13_3 = -20
+                L14_3 = 0
+                L15_3 = 5
+                L16_3 = 5
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
               else
-                L11_25 = A0_14
-                L10_24 = A0_14.SideDolly
-                L12_26 = -0.3
-                L13_27 = -0.3
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.Zoom
-                L12_26 = 5.2
-                L13_27 = 5.2
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.UpdownPan
-                L12_26 = 1
-                L13_27 = 1
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                L11_25 = A0_14
-                L10_24 = A0_14.Orbit
-                L12_26 = -15
-                L13_27 = -15
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28)
-                L11_25 = A0_14
-                L10_24 = A0_14.Wait
-                L12_26 = 20
-                L10_24(L11_25, L12_26)
-                L11_25 = A1_15
-                L10_24 = A1_15.PlayVfx
-                L12_26 = A0_14.LCUT_VFX1
-                L10_24(L11_25, L12_26)
-                L11_25 = A0_14
-                L10_24 = A0_14.Zoom
-                L12_26 = 5.2
-                L13_27 = 5
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                L11_25 = A0_14
-                L10_24 = A0_14.UpdownPan
-                L12_26 = 1
-                L13_27 = 5.5
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                L11_25 = A0_14
-                L10_24 = A0_14.Gyro
-                L12_26 = 0
-                L13_27 = -20
-                L14_28 = 0
-                L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+                L11_3 = A0_3
+                L10_3 = A0_3.SideDolly
+                L12_3 = -0.3
+                L13_3 = -0.3
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Zoom
+                L12_3 = 5.2
+                L13_3 = 5.2
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.UpdownPan
+                L12_3 = 1
+                L13_3 = 1
+                L14_3 = 0
+                L15_3 = 0
+                L16_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Orbit
+                L12_3 = -15
+                L13_3 = -15
+                L14_3 = 0
+                L10_3(L11_3, L12_3, L13_3, L14_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Wait
+                L12_3 = 20
+                L10_3(L11_3, L12_3)
+                L11_3 = A1_3
+                L10_3 = A1_3.PlayVfx
+                L12_3 = A0_3.LCUT_VFX1
+                L10_3(L11_3, L12_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Zoom
+                L12_3 = 5.2
+                L13_3 = 5
+                L14_3 = 0
+                L15_3 = 5
+                L16_3 = 5
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.UpdownPan
+                L12_3 = 1
+                L13_3 = 5.5
+                L14_3 = 0
+                L15_3 = 5
+                L16_3 = 5
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L11_3 = A0_3
+                L10_3 = A0_3.Gyro
+                L12_3 = 0
+                L13_3 = -20
+                L14_3 = 0
+                L15_3 = 5
+                L16_3 = 5
+                L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
               end
             else
-              L10_24 = A0_14.RACE_ROEGADYN
-              if L7_21 == L10_24 then
-                if L9_23 == 0 then
-                  L11_25 = A0_14
-                  L10_24 = A0_14.SideDolly
-                  L12_26 = -0.4
-                  L13_27 = -0.4
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Zoom
-                  L12_26 = 5.2
-                  L13_27 = 5.2
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.UpdownPan
-                  L12_26 = 8
-                  L13_27 = 8
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Orbit
-                  L12_26 = -15
-                  L13_27 = -15
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Wait
-                  L12_26 = 20
-                  L10_24(L11_25, L12_26)
-                  L11_25 = A1_15
-                  L10_24 = A1_15.PlayVfx
-                  L12_26 = A0_14.LCUT_VFX1
-                  L10_24(L11_25, L12_26)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Zoom
-                  L12_26 = 5.2
-                  L13_27 = 4
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.UpdownPan
-                  L12_26 = 8
-                  L13_27 = 13
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Gyro
-                  L12_26 = 0
-                  L13_27 = -20
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+              L10_3 = A0_3.RACE_ROEGADYN
+              if L7_3 == L10_3 then
+                if L9_3 == 0 then
+                  L11_3 = A0_3
+                  L10_3 = A0_3.SideDolly
+                  L12_3 = -0.4
+                  L13_3 = -0.4
+                  L14_3 = 0
+                  L15_3 = 0
+                  L16_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Zoom
+                  L12_3 = 5.2
+                  L13_3 = 5.2
+                  L14_3 = 0
+                  L15_3 = 0
+                  L16_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.UpdownPan
+                  L12_3 = 8
+                  L13_3 = 8
+                  L14_3 = 0
+                  L15_3 = 0
+                  L16_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Orbit
+                  L12_3 = -15
+                  L13_3 = -15
+                  L14_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Wait
+                  L12_3 = 20
+                  L10_3(L11_3, L12_3)
+                  L11_3 = A1_3
+                  L10_3 = A1_3.PlayVfx
+                  L12_3 = A0_3.LCUT_VFX1
+                  L10_3(L11_3, L12_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Zoom
+                  L12_3 = 5.2
+                  L13_3 = 4
+                  L14_3 = 0
+                  L15_3 = 5
+                  L16_3 = 5
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.UpdownPan
+                  L12_3 = 8
+                  L13_3 = 13
+                  L14_3 = 0
+                  L15_3 = 5
+                  L16_3 = 5
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Gyro
+                  L12_3 = 0
+                  L13_3 = -20
+                  L14_3 = 0
+                  L15_3 = 5
+                  L16_3 = 5
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                 else
-                  L11_25 = A0_14
-                  L10_24 = A0_14.SideDolly
-                  L12_26 = -0.4
-                  L13_27 = -0.4
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Zoom
-                  L12_26 = 5.2
-                  L13_27 = 5.2
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.UpdownPan
-                  L12_26 = 5
-                  L13_27 = 5
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Orbit
-                  L12_26 = -15
-                  L13_27 = -15
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Wait
-                  L12_26 = 20
-                  L10_24(L11_25, L12_26)
-                  L11_25 = A1_15
-                  L10_24 = A1_15.PlayVfx
-                  L12_26 = A0_14.LCUT_VFX1
-                  L10_24(L11_25, L12_26)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Zoom
-                  L12_26 = 5.2
-                  L13_27 = 4.5
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.UpdownPan
-                  L12_26 = 5
-                  L13_27 = 8
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                  L11_25 = A0_14
-                  L10_24 = A0_14.Gyro
-                  L12_26 = 0
-                  L13_27 = -20
-                  L14_28 = 0
-                  L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.SideDolly
+                  L12_3 = -0.4
+                  L13_3 = -0.4
+                  L14_3 = 0
+                  L15_3 = 0
+                  L16_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Zoom
+                  L12_3 = 5.2
+                  L13_3 = 5.2
+                  L14_3 = 0
+                  L15_3 = 0
+                  L16_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.UpdownPan
+                  L12_3 = 5
+                  L13_3 = 5
+                  L14_3 = 0
+                  L15_3 = 0
+                  L16_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Orbit
+                  L12_3 = -15
+                  L13_3 = -15
+                  L14_3 = 0
+                  L10_3(L11_3, L12_3, L13_3, L14_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Wait
+                  L12_3 = 20
+                  L10_3(L11_3, L12_3)
+                  L11_3 = A1_3
+                  L10_3 = A1_3.PlayVfx
+                  L12_3 = A0_3.LCUT_VFX1
+                  L10_3(L11_3, L12_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Zoom
+                  L12_3 = 5.2
+                  L13_3 = 4.5
+                  L14_3 = 0
+                  L15_3 = 5
+                  L16_3 = 5
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.UpdownPan
+                  L12_3 = 5
+                  L13_3 = 8
+                  L14_3 = 0
+                  L15_3 = 5
+                  L16_3 = 5
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L11_3 = A0_3
+                  L10_3 = A0_3.Gyro
+                  L12_3 = 0
+                  L13_3 = -20
+                  L14_3 = 0
+                  L15_3 = 5
+                  L16_3 = 5
+                  L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                 end
               else
-                L10_24 = A0_14.RACE_AURA
-                if L7_21 == L10_24 then
-                  if L9_23 == 0 then
-                    L11_25 = A0_14
-                    L10_24 = A0_14.SideDolly
-                    L12_26 = -0.4
-                    L13_27 = -0.4
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = 5.2
-                    L13_27 = 5.2
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 5
-                    L13_27 = 5
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Orbit
-                    L12_26 = -15
-                    L13_27 = -15
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Wait
-                    L12_26 = 20
-                    L10_24(L11_25, L12_26)
-                    L11_25 = A1_15
-                    L10_24 = A1_15.PlayVfx
-                    L12_26 = A0_14.LCUT_VFX1
-                    L10_24(L11_25, L12_26)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = 5.2
-                    L13_27 = 4.2
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 5
-                    L13_27 = 8.5
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Gyro
-                    L12_26 = 0
-                    L13_27 = -20
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+                L10_3 = A0_3.RACE_AURA
+                if L7_3 == L10_3 then
+                  if L9_3 == 0 then
+                    L11_3 = A0_3
+                    L10_3 = A0_3.SideDolly
+                    L12_3 = -0.4
+                    L13_3 = -0.4
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = 5.2
+                    L13_3 = 5.2
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 5
+                    L13_3 = 5
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Orbit
+                    L12_3 = -15
+                    L13_3 = -15
+                    L14_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Wait
+                    L12_3 = 20
+                    L10_3(L11_3, L12_3)
+                    L11_3 = A1_3
+                    L10_3 = A1_3.PlayVfx
+                    L12_3 = A0_3.LCUT_VFX1
+                    L10_3(L11_3, L12_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = 5.2
+                    L13_3 = 4.2
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 5
+                    L13_3 = 8.5
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Gyro
+                    L12_3 = 0
+                    L13_3 = -20
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                   else
-                    L11_25 = A0_14
-                    L10_24 = A0_14.SideDolly
-                    L12_26 = -0.3
-                    L13_27 = -0.3
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = 5.2
-                    L13_27 = 5.2
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Orbit
-                    L12_26 = -15
-                    L13_27 = -15
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Wait
-                    L12_26 = 20
-                    L10_24(L11_25, L12_26)
-                    L11_25 = A1_15
-                    L10_24 = A1_15.PlayVfx
-                    L12_26 = A0_14.LCUT_VFX1
-                    L10_24(L11_25, L12_26)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = 5.2
-                    L13_27 = 5
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 0
-                    L13_27 = 5.5
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Gyro
-                    L12_26 = 0
-                    L13_27 = -20
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.SideDolly
+                    L12_3 = -0.3
+                    L13_3 = -0.3
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = 5.2
+                    L13_3 = 5.2
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Orbit
+                    L12_3 = -15
+                    L13_3 = -15
+                    L14_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Wait
+                    L12_3 = 20
+                    L10_3(L11_3, L12_3)
+                    L11_3 = A1_3
+                    L10_3 = A1_3.PlayVfx
+                    L12_3 = A0_3.LCUT_VFX1
+                    L10_3(L11_3, L12_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = 5.2
+                    L13_3 = 5
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 0
+                    L13_3 = 5.5
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Gyro
+                    L12_3 = 0
+                    L13_3 = -20
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                   end
                 else
-                  L10_24 = A0_14.RACE_JJM
-                  if L7_21 == L10_24 then
-                    L11_25 = A0_14
-                    L10_24 = A0_14.SideDolly
-                    L12_26 = -0.4
-                    L13_27 = -0.4
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = 5.2
-                    L13_27 = 5.2
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 8
-                    L13_27 = 8
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Orbit
-                    L12_26 = -15
-                    L13_27 = -15
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Wait
-                    L12_26 = 20
-                    L10_24(L11_25, L12_26)
-                    L11_25 = A1_15
-                    L10_24 = A1_15.PlayVfx
-                    L12_26 = A0_14.LCUT_VFX1
-                    L10_24(L11_25, L12_26)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Zoom
-                    L12_26 = 5.2
-                    L13_27 = 4
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.UpdownPan
-                    L12_26 = 8
-                    L13_27 = 13
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                    L11_25 = A0_14
-                    L10_24 = A0_14.Gyro
-                    L12_26 = 0
-                    L13_27 = -20
-                    L14_28 = 0
-                    L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+                  L10_3 = A0_3.RACE_JJM
+                  if L7_3 == L10_3 then
+                    L11_3 = A0_3
+                    L10_3 = A0_3.SideDolly
+                    L12_3 = -0.4
+                    L13_3 = -0.4
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = 5.2
+                    L13_3 = 5.2
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 8
+                    L13_3 = 8
+                    L14_3 = 0
+                    L15_3 = 0
+                    L16_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Orbit
+                    L12_3 = -15
+                    L13_3 = -15
+                    L14_3 = 0
+                    L10_3(L11_3, L12_3, L13_3, L14_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Wait
+                    L12_3 = 20
+                    L10_3(L11_3, L12_3)
+                    L11_3 = A1_3
+                    L10_3 = A1_3.PlayVfx
+                    L12_3 = A0_3.LCUT_VFX1
+                    L10_3(L11_3, L12_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Zoom
+                    L12_3 = 5.2
+                    L13_3 = 4
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.UpdownPan
+                    L12_3 = 8
+                    L13_3 = 13
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L11_3 = A0_3
+                    L10_3 = A0_3.Gyro
+                    L12_3 = 0
+                    L13_3 = -20
+                    L14_3 = 0
+                    L15_3 = 5
+                    L16_3 = 5
+                    L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                   else
-                    L10_24 = A0_14.RACE_JJF
-                    if L7_21 == L10_24 then
-                      L11_25 = A0_14
-                      L10_24 = A0_14.SideDolly
-                      L12_26 = -0.4
-                      L13_27 = -0.4
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Zoom
-                      L12_26 = 5.2
-                      L13_27 = 5.2
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.UpdownPan
-                      L12_26 = 3
-                      L13_27 = 3
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Orbit
-                      L12_26 = -15
-                      L13_27 = -15
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Wait
-                      L12_26 = 20
-                      L10_24(L11_25, L12_26)
-                      L11_25 = A1_15
-                      L10_24 = A1_15.PlayVfx
-                      L12_26 = A0_14.LCUT_VFX1
-                      L10_24(L11_25, L12_26)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Zoom
-                      L12_26 = 5.2
-                      L13_27 = 4.7
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.UpdownPan
-                      L12_26 = 3
-                      L13_27 = 7
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Gyro
-                      L12_26 = 0
-                      L13_27 = -20
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+                    L10_3 = A0_3.RACE_JJF
+                    if L7_3 == L10_3 then
+                      L11_3 = A0_3
+                      L10_3 = A0_3.SideDolly
+                      L12_3 = -0.4
+                      L13_3 = -0.4
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Zoom
+                      L12_3 = 5.2
+                      L13_3 = 5.2
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.UpdownPan
+                      L12_3 = 3
+                      L13_3 = 3
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Orbit
+                      L12_3 = -15
+                      L13_3 = -15
+                      L14_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Wait
+                      L12_3 = 20
+                      L10_3(L11_3, L12_3)
+                      L11_3 = A1_3
+                      L10_3 = A1_3.PlayVfx
+                      L12_3 = A0_3.LCUT_VFX1
+                      L10_3(L11_3, L12_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Zoom
+                      L12_3 = 5.2
+                      L13_3 = 4.7
+                      L14_3 = 0
+                      L15_3 = 5
+                      L16_3 = 5
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.UpdownPan
+                      L12_3 = 3
+                      L13_3 = 7
+                      L14_3 = 0
+                      L15_3 = 5
+                      L16_3 = 5
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Gyro
+                      L12_3 = 0
+                      L13_3 = -20
+                      L14_3 = 0
+                      L15_3 = 5
+                      L16_3 = 5
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                     else
-                      L11_25 = A0_14
-                      L10_24 = A0_14.SideDolly
-                      L12_26 = -0.2
-                      L13_27 = -0.2
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Zoom
-                      L12_26 = 7
-                      L13_27 = 7
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.UpdownPan
-                      L12_26 = 7
-                      L13_27 = 7
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 0, 0)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Wait
-                      L12_26 = 20
-                      L10_24(L11_25, L12_26)
-                      L11_25 = A1_15
-                      L10_24 = A1_15.PlayVfx
-                      L12_26 = A0_14.LCUT_VFX1
-                      L10_24(L11_25, L12_26)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Zoom
-                      L12_26 = 7
-                      L13_27 = 5
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.UpdownPan
-                      L12_26 = 7
-                      L13_27 = 10
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
-                      L11_25 = A0_14
-                      L10_24 = A0_14.Gyro
-                      L12_26 = 0
-                      L13_27 = -20
-                      L14_28 = 0
-                      L10_24(L11_25, L12_26, L13_27, L14_28, 5, 5)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.SideDolly
+                      L12_3 = -0.2
+                      L13_3 = -0.2
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Zoom
+                      L12_3 = 7
+                      L13_3 = 7
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.UpdownPan
+                      L12_3 = 7
+                      L13_3 = 7
+                      L14_3 = 0
+                      L15_3 = 0
+                      L16_3 = 0
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Wait
+                      L12_3 = 20
+                      L10_3(L11_3, L12_3)
+                      L11_3 = A1_3
+                      L10_3 = A1_3.PlayVfx
+                      L12_3 = A0_3.LCUT_VFX1
+                      L10_3(L11_3, L12_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Zoom
+                      L12_3 = 7
+                      L13_3 = 5
+                      L14_3 = 0
+                      L15_3 = 5
+                      L16_3 = 5
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.UpdownPan
+                      L12_3 = 7
+                      L13_3 = 10
+                      L14_3 = 0
+                      L15_3 = 5
+                      L16_3 = 5
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L11_3 = A0_3
+                      L10_3 = A0_3.Gyro
+                      L12_3 = 0
+                      L13_3 = -20
+                      L14_3 = 0
+                      L15_3 = 5
+                      L16_3 = 5
+                      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
                     end
                   end
                 end
@@ -1201,399 +1778,1292 @@
         end
       end
     else
-      if A2_16 == 3 then
-        L11_25 = A1_15
-        L10_24 = A1_15.Visible
-        L12_26 = A0_14.VISIBLE_SHOW
-        L10_24(L11_25, L12_26)
-        L11_25 = A3_17
-        L10_24 = A3_17.Visible
-        L12_26 = A0_14.VISIBLE_HIDE
-        L10_24(L11_25, L12_26)
-        L10_24, L11_25, L12_26, L13_27, L14_28 = nil, nil, nil, nil, nil
-        L10_24 = -0.25
-        L11_25 = 0
-        L12_26 = 5
-        L13_27 = 15
-        L14_28 = 5
-        A0_14:PlayCamera(1, A1_15)
-        if L7_21 == A0_14.RACE_HYURAN then
-          if L8_22 == A0_14.TRIBE_HIGHLANDER then
-            if L9_23 == 0 then
-              if A5_19 == true then
-                A0_14:Orbit(15, 15, 0)
-                A0_14:SideDolly(-0.3, -0.3, 0)
-                A0_14:Gyro(5, 5, 0)
-                if A6_20 == true then
-                  A0_14:UpdownDolly(0.08, 0.08, 0)
-                  L10_24 = -0.4
-                  L11_25 = -0.17
+      if A2_3 == 3 then
+        L11_3 = A1_3
+        L10_3 = A1_3.Visible
+        L12_3 = A0_3.VISIBLE_SHOW
+        L10_3(L11_3, L12_3)
+        L11_3 = A3_3
+        L10_3 = A3_3.Visible
+        L12_3 = A0_3.VISIBLE_HIDE
+        L10_3(L11_3, L12_3)
+        L10_3 = nil
+        L11_3 = nil
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = nil
+        L10_3 = -0.25
+        L11_3 = 0
+        L12_3 = 5
+        L13_3 = 15
+        L14_3 = 5
+        L16_3 = A0_3
+        L15_3 = A0_3.PlayCamera
+        L17_3 = 1
+        L18_3 = A1_3
+        L15_3(L16_3, L17_3, L18_3)
+        L15_3 = A0_3.RACE_HYURAN
+        if L7_3 == L15_3 then
+          L15_3 = A0_3.TRIBE_HIGHLANDER
+          if L8_3 == L15_3 then
+            if L9_3 == 0 then
+              if A5_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = 15
+                L18_3 = 15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.3
+                L18_3 = -0.3
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.Gyro
+                L17_3 = 5
+                L18_3 = 5
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.UpdownDolly
+                  L17_3 = 0.08
+                  L18_3 = 0.08
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.4
+                  L11_3 = -0.17
                 end
               else
-                A0_14:Orbit(-65, -65, 0)
-                A0_14:SideDolly(-0.35, -0.35, 0)
-                A0_14:UpdownDolly(0.1, 0.1, 0)
-                A0_14:UpdownPan(15, 15, 0)
-                if A6_20 == true then
-                  A0_14:SideDolly(-0.3, -0.3, 0)
-                  L10_24 = -0.4
-                  L11_25 = -0.15
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = -65
+                L18_3 = -65
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.35
+                L18_3 = -0.35
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownDolly
+                L17_3 = 0.1
+                L18_3 = 0.1
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownPan
+                L17_3 = 15
+                L18_3 = 15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.SideDolly
+                  L17_3 = -0.3
+                  L18_3 = -0.3
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.4
+                  L11_3 = -0.15
                 end
               end
-              A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
+              L16_3 = A0_3
+              L15_3 = A0_3.Zoom
+              L17_3 = L10_3
+              L18_3 = L11_3
+              L19_3 = L12_3
+              L20_3 = L13_3
+              L21_3 = L14_3
+              L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
             else
-              if A5_19 == true then
-                A0_14:Orbit(15, 15, 0)
-                A0_14:SideDolly(-0.3, -0.3, 0)
-                A0_14:Gyro(5, 5, 0)
-                if A6_20 == true then
-                  A0_14:SideDolly(-0.15, -0.15, 0)
-                  A0_14:UpdownDolly(0.15, 0.15, 0)
-                  L10_24 = -0.4
-                  L11_25 = -0.15
+              if A5_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = 15
+                L18_3 = 15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.3
+                L18_3 = -0.3
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.Gyro
+                L17_3 = 5
+                L18_3 = 5
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.SideDolly
+                  L17_3 = -0.15
+                  L18_3 = -0.15
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L16_3 = A0_3
+                  L15_3 = A0_3.UpdownDolly
+                  L17_3 = 0.15
+                  L18_3 = 0.15
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.4
+                  L11_3 = -0.15
                 end
               else
-                A0_14:Orbit(-65, -65, 0)
-                A0_14:SideDolly(-0.35, -0.35, 0)
-                A0_14:UpdownDolly(0.1, 0.1, 0)
-                A0_14:UpdownPan(10, 10, 0)
-                if A6_20 == true then
-                  A0_14:SideDolly(-0.25, -0.25, 0)
-                  L10_24 = -0.4
-                  L11_25 = -0.15
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = -65
+                L18_3 = -65
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.35
+                L18_3 = -0.35
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownDolly
+                L17_3 = 0.1
+                L18_3 = 0.1
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownPan
+                L17_3 = 10
+                L18_3 = 10
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.SideDolly
+                  L17_3 = -0.25
+                  L18_3 = -0.25
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.4
+                  L11_3 = -0.15
                 end
               end
-              A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
+              L16_3 = A0_3
+              L15_3 = A0_3.Zoom
+              L17_3 = L10_3
+              L18_3 = L11_3
+              L19_3 = L12_3
+              L20_3 = L13_3
+              L21_3 = L14_3
+              L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
             end
-          elseif L9_23 == 0 then
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.3, -0.3, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.08, 0.08, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
+          elseif L9_3 == 0 then
+            if A5_3 == true then
+              L16_3 = A0_3
+              L15_3 = A0_3.Orbit
+              L17_3 = 15
+              L18_3 = 15
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.SideDolly
+              L17_3 = -0.3
+              L18_3 = -0.3
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.Gyro
+              L17_3 = 5
+              L18_3 = 5
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              if A6_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownDolly
+                L17_3 = 0.08
+                L18_3 = 0.08
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L10_3 = -0.4
+                L11_3 = -0.15
               end
             else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(15, 15, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.3, -0.3, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
+              L16_3 = A0_3
+              L15_3 = A0_3.Orbit
+              L17_3 = -65
+              L18_3 = -65
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.SideDolly
+              L17_3 = -0.35
+              L18_3 = -0.35
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.UpdownDolly
+              L17_3 = 0.1
+              L18_3 = 0.1
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.UpdownPan
+              L17_3 = 15
+              L18_3 = 15
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              if A6_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.3
+                L18_3 = -0.3
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L10_3 = -0.4
+                L11_3 = -0.15
               end
             end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
+            L16_3 = A0_3
+            L15_3 = A0_3.Zoom
+            L17_3 = L10_3
+            L18_3 = L11_3
+            L19_3 = L12_3
+            L20_3 = L13_3
+            L21_3 = L14_3
+            L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
           else
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.3, -0.3, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.15, -0.15, 0)
-                A0_14:UpdownDolly(0.15, 0.15, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
+            if A5_3 == true then
+              L16_3 = A0_3
+              L15_3 = A0_3.Orbit
+              L17_3 = 15
+              L18_3 = 15
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.SideDolly
+              L17_3 = -0.3
+              L18_3 = -0.3
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.Gyro
+              L17_3 = 5
+              L18_3 = 5
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              if A6_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.15
+                L18_3 = -0.15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownDolly
+                L17_3 = 0.15
+                L18_3 = 0.15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L10_3 = -0.4
+                L11_3 = -0.15
               end
             else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(10, 10, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.3, -0.3, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
+              L16_3 = A0_3
+              L15_3 = A0_3.Orbit
+              L17_3 = -65
+              L18_3 = -65
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.SideDolly
+              L17_3 = -0.35
+              L18_3 = -0.35
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.UpdownDolly
+              L17_3 = 0.1
+              L18_3 = 0.1
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              L16_3 = A0_3
+              L15_3 = A0_3.UpdownPan
+              L17_3 = 10
+              L18_3 = 10
+              L19_3 = 0
+              L15_3(L16_3, L17_3, L18_3, L19_3)
+              if A6_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.3
+                L18_3 = -0.3
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L10_3 = -0.4
+                L11_3 = -0.15
               end
             end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
+            L16_3 = A0_3
+            L15_3 = A0_3.Zoom
+            L17_3 = L10_3
+            L18_3 = L11_3
+            L19_3 = L12_3
+            L20_3 = L13_3
+            L21_3 = L14_3
+            L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
           end
-        elseif L7_21 == A0_14.RACE_ELEZEN then
-          if L9_23 == 0 then
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.25, -0.25, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.11, 0.11, 0)
-                L10_24 = -0.45
-                L11_25 = -0.2
-              end
-              A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-            else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.4, -0.4, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(10, 10, 0)
-              A0_14:Zoom(-0.15, -0.15, 0)
-              L10_24 = -0.4
-              L11_25 = -0.15
-              if A6_20 == true then
-                A0_14:SideDolly(-0.25, -0.25, 0)
-                L10_24 = -0.4
-                L11_25 = -0.2
-              end
-              A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-            end
-          else
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.3, -0.3, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.1, 0.1, 0)
-                L10_24 = -0.45
-                L11_25 = -0.2
-              end
-            else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(13, 13, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.25, -0.25, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
-              end
-            end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-          end
-        elseif L7_21 == A0_14.RACE_LALAFELL then
-          if A5_19 == true then
-            A0_14:Orbit(15, 15, 0)
-            A0_14:SideDolly(-0.1, -0.1, 0)
-            A0_14:Gyro(5, 5, 0)
-            if A6_20 == true then
-              A0_14:UpdownDolly(0.02, 0.02, 0)
-            end
-          else
-            A0_14:Orbit(-60, -60, 0)
-            A0_14:SideDolly(-0.2, -0.2, 0)
-            A0_14:UpdownPan(5, 5, 0)
-            if A6_20 == true then
-              L10_24 = -0.4
-              L11_25 = -0.15
-            end
-          end
-          A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-        elseif L7_21 == A0_14.RACE_MICOTTAE then
-          if L9_23 == 0 then
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.2, -0.2, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.08, 0.08, 0)
-                L10_24 = -0.45
-                L11_25 = -0.2
-              end
-            else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(15, 15, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.2, -0.2, 0)
-                L10_24 = -0.4
-                L11_25 = -0.18
-              end
-            end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-          else
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.2, -0.2, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.15, 0.15, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
-              end
-            else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(10, 10, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.25, -0.25, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
-              end
-            end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-          end
-        elseif L7_21 == A0_14.RACE_ROEGADYN then
-          if L9_23 == 0 then
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.3, -0.3, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.1, 0.1, 0)
-                L10_24 = -0.45
-                L11_25 = -0.2
-              end
-            else
-              A0_14:Orbit(-60, -60, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(15, 15, 0)
-              if A6_20 == true then
-                A0_14:UpdownPan(12, 12, 0)
-                A0_14:SideDolly(-0.1, -0.1, 0)
-                L10_24 = -0.4
-                L11_25 = -0.12
-              end
-            end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-          else
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.25, -0.25, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.1, 0.1, 0)
-                L10_24 = -0.45
-                L11_25 = -0.2
-              end
-            else
-              A0_14:Orbit(-60, -60, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(10, 10, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.3, -0.3, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
-              end
-            end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-          end
-        elseif L7_21 == A0_14.RACE_AURA then
-          if L9_23 == 0 then
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.08, 0.08, 0)
-                L10_24 = -0.45
-                L11_25 = -0.2
-              end
-            else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.35, -0.35, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(15, 15, 0)
-              if A6_20 == true then
-                A0_14:SideDolly(-0.3, -0.3, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
-              end
-            end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-          else
-            if A5_19 == true then
-              A0_14:Orbit(15, 15, 0)
-              A0_14:SideDolly(-0.2, -0.2, 0)
-              A0_14:Gyro(5, 5, 0)
-              if A6_20 == true then
-                A0_14:UpdownDolly(0.15, 0.15, 0)
-                L10_24 = -0.4
-                L11_25 = -0.15
-              end
-            else
-              A0_14:Orbit(-65, -65, 0)
-              A0_14:SideDolly(-0.3, -0.3, 0)
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              A0_14:UpdownPan(10, 10, 0)
-              if A6_20 == true then
-                A0_14:UpdownPan(7, 7, 0)
-                A0_14:SideDolly(-0.2, -0.2, 0)
-                L10_24 = -0.4
-                L11_25 = -0.16
-              end
-            end
-            A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-          end
-        elseif L7_21 == A0_14.RACE_JJM then
-          if A5_19 == true then
-            A0_14:Orbit(15, 15, 0)
-            A0_14:SideDolly(-0.3, -0.3, 0)
-            A0_14:Gyro(5, 5, 0)
-            if A6_20 == true then
-              A0_14:UpdownDolly(0.05, 0.05, 0)
-              L10_24 = -0.45
-              L11_25 = -0.25
-            end
-          else
-            A0_14:Orbit(-65, -65, 0)
-            A0_14:SideDolly(-0.3, -0.3, 0)
-            A0_14:UpdownDolly(0.1, 0.1, 0)
-            A0_14:UpdownPan(15, 15, 0)
-            if A6_20 == true then
-              A0_14:SideDolly(-0.15, -0.15, 0)
-              L10_24 = -0.4
-              L11_25 = -0.14
-            end
-          end
-          A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
-        elseif L7_21 == A0_14.RACE_JJF then
-          if A5_19 == true then
-            A0_14:Orbit(15, 15, 0)
-            A0_14:SideDolly(-0.2, -0.2, 0)
-            A0_14:Gyro(5, 5, 0)
-            if A6_20 == true then
-              A0_14:UpdownDolly(0.1, 0.1, 0)
-              L10_24 = -0.45
-              L11_25 = -0.2
-            end
-          else
-            A0_14:Orbit(-55, -55, 0)
-            A0_14:SideDolly(-0.3, -0.3, 0)
-            A0_14:UpdownDolly(0.1, 0.1, 0)
-            A0_14:UpdownPan(10, 10, 0)
-            if A6_20 == true then
-              A0_14:SideDolly(-0.22, -0.22, 0)
-              L10_24 = -0.4
-              L11_25 = -0.13
-            end
-          end
-          A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
         else
-          if A5_19 == true then
-            A0_14:Orbit(15, 15, 0)
-            A0_14:SideDolly(-0.3, -0.3, 0)
-            A0_14:Gyro(5, 5, 0)
-            if A6_20 == true then
-              A0_14:UpdownDolly(0.08, 0.08, 0)
-              L10_24 = -0.4
-              L11_25 = -0.17
+          L15_3 = A0_3.RACE_ELEZEN
+          if L7_3 == L15_3 then
+            if L9_3 == 0 then
+              if A5_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = 15
+                L18_3 = 15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.25
+                L18_3 = -0.25
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.Gyro
+                L17_3 = 5
+                L18_3 = 5
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.UpdownDolly
+                  L17_3 = 0.11
+                  L18_3 = 0.11
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.45
+                  L11_3 = -0.2
+                end
+                L16_3 = A0_3
+                L15_3 = A0_3.Zoom
+                L17_3 = L10_3
+                L18_3 = L11_3
+                L19_3 = L12_3
+                L20_3 = L13_3
+                L21_3 = L14_3
+                L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+              else
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = -65
+                L18_3 = -65
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.4
+                L18_3 = -0.4
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownDolly
+                L17_3 = 0.1
+                L18_3 = 0.1
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownPan
+                L17_3 = 10
+                L18_3 = 10
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.Zoom
+                L17_3 = -0.15
+                L18_3 = -0.15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L10_3 = -0.4
+                L11_3 = -0.15
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.SideDolly
+                  L17_3 = -0.25
+                  L18_3 = -0.25
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.4
+                  L11_3 = -0.2
+                end
+                L16_3 = A0_3
+                L15_3 = A0_3.Zoom
+                L17_3 = L10_3
+                L18_3 = L11_3
+                L19_3 = L12_3
+                L20_3 = L13_3
+                L21_3 = L14_3
+                L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+              end
+            else
+              if A5_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = 15
+                L18_3 = 15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.3
+                L18_3 = -0.3
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.Gyro
+                L17_3 = 5
+                L18_3 = 5
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.UpdownDolly
+                  L17_3 = 0.1
+                  L18_3 = 0.1
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.45
+                  L11_3 = -0.2
+                end
+              else
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = -65
+                L18_3 = -65
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.35
+                L18_3 = -0.35
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownDolly
+                L17_3 = 0.1
+                L18_3 = 0.1
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownPan
+                L17_3 = 13
+                L18_3 = 13
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.SideDolly
+                  L17_3 = -0.25
+                  L18_3 = -0.25
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                  L10_3 = -0.4
+                  L11_3 = -0.15
+                end
+              end
+              L16_3 = A0_3
+              L15_3 = A0_3.Zoom
+              L17_3 = L10_3
+              L18_3 = L11_3
+              L19_3 = L12_3
+              L20_3 = L13_3
+              L21_3 = L14_3
+              L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
             end
           else
-            A0_14:Orbit(-65, -65, 0)
-            A0_14:SideDolly(-0.35, -0.35, 0)
-            A0_14:UpdownDolly(0.1, 0.1, 0)
-            A0_14:UpdownPan(15, 15, 0)
-            if A6_20 == true then
-              A0_14:SideDolly(-0.3, -0.3, 0)
-              L10_24 = -0.4
-              L11_25 = -0.15
+            L15_3 = A0_3.RACE_LALAFELL
+            if L7_3 == L15_3 then
+              if A5_3 == true then
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = 15
+                L18_3 = 15
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.1
+                L18_3 = -0.1
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.Gyro
+                L17_3 = 5
+                L18_3 = 5
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L16_3 = A0_3
+                  L15_3 = A0_3.UpdownDolly
+                  L17_3 = 0.02
+                  L18_3 = 0.02
+                  L19_3 = 0
+                  L15_3(L16_3, L17_3, L18_3, L19_3)
+                end
+              else
+                L16_3 = A0_3
+                L15_3 = A0_3.Orbit
+                L17_3 = -60
+                L18_3 = -60
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.SideDolly
+                L17_3 = -0.2
+                L18_3 = -0.2
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                L16_3 = A0_3
+                L15_3 = A0_3.UpdownPan
+                L17_3 = 5
+                L18_3 = 5
+                L19_3 = 0
+                L15_3(L16_3, L17_3, L18_3, L19_3)
+                if A6_3 == true then
+                  L10_3 = -0.4
+                  L11_3 = -0.15
+                end
+              end
+              L16_3 = A0_3
+              L15_3 = A0_3.Zoom
+              L17_3 = L10_3
+              L18_3 = L11_3
+              L19_3 = L12_3
+              L20_3 = L13_3
+              L21_3 = L14_3
+              L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+            else
+              L15_3 = A0_3.RACE_MICOTTAE
+              if L7_3 == L15_3 then
+                if L9_3 == 0 then
+                  if A5_3 == true then
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Orbit
+                    L17_3 = 15
+                    L18_3 = 15
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.SideDolly
+                    L17_3 = -0.2
+                    L18_3 = -0.2
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Gyro
+                    L17_3 = 5
+                    L18_3 = 5
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    if A6_3 == true then
+                      L16_3 = A0_3
+                      L15_3 = A0_3.UpdownDolly
+                      L17_3 = 0.08
+                      L18_3 = 0.08
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L10_3 = -0.45
+                      L11_3 = -0.2
+                    end
+                  else
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Orbit
+                    L17_3 = -65
+                    L18_3 = -65
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.SideDolly
+                    L17_3 = -0.35
+                    L18_3 = -0.35
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.UpdownDolly
+                    L17_3 = 0.1
+                    L18_3 = 0.1
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.UpdownPan
+                    L17_3 = 15
+                    L18_3 = 15
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    if A6_3 == true then
+                      L16_3 = A0_3
+                      L15_3 = A0_3.SideDolly
+                      L17_3 = -0.2
+                      L18_3 = -0.2
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L10_3 = -0.4
+                      L11_3 = -0.18
+                    end
+                  end
+                  L16_3 = A0_3
+                  L15_3 = A0_3.Zoom
+                  L17_3 = L10_3
+                  L18_3 = L11_3
+                  L19_3 = L12_3
+                  L20_3 = L13_3
+                  L21_3 = L14_3
+                  L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                else
+                  if A5_3 == true then
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Orbit
+                    L17_3 = 15
+                    L18_3 = 15
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.SideDolly
+                    L17_3 = -0.2
+                    L18_3 = -0.2
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.UpdownDolly
+                    L17_3 = 0.1
+                    L18_3 = 0.1
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Gyro
+                    L17_3 = 5
+                    L18_3 = 5
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    if A6_3 == true then
+                      L16_3 = A0_3
+                      L15_3 = A0_3.UpdownDolly
+                      L17_3 = 0.15
+                      L18_3 = 0.15
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L10_3 = -0.4
+                      L11_3 = -0.15
+                    end
+                  else
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Orbit
+                    L17_3 = -65
+                    L18_3 = -65
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.SideDolly
+                    L17_3 = -0.35
+                    L18_3 = -0.35
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.UpdownDolly
+                    L17_3 = 0.1
+                    L18_3 = 0.1
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    L16_3 = A0_3
+                    L15_3 = A0_3.UpdownPan
+                    L17_3 = 10
+                    L18_3 = 10
+                    L19_3 = 0
+                    L15_3(L16_3, L17_3, L18_3, L19_3)
+                    if A6_3 == true then
+                      L16_3 = A0_3
+                      L15_3 = A0_3.SideDolly
+                      L17_3 = -0.25
+                      L18_3 = -0.25
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L10_3 = -0.4
+                      L11_3 = -0.15
+                    end
+                  end
+                  L16_3 = A0_3
+                  L15_3 = A0_3.Zoom
+                  L17_3 = L10_3
+                  L18_3 = L11_3
+                  L19_3 = L12_3
+                  L20_3 = L13_3
+                  L21_3 = L14_3
+                  L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                end
+              else
+                L15_3 = A0_3.RACE_ROEGADYN
+                if L7_3 == L15_3 then
+                  if L9_3 == 0 then
+                    if A5_3 == true then
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Orbit
+                      L17_3 = 15
+                      L18_3 = 15
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.SideDolly
+                      L17_3 = -0.3
+                      L18_3 = -0.3
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Gyro
+                      L17_3 = 5
+                      L18_3 = 5
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      if A6_3 == true then
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownDolly
+                        L17_3 = 0.1
+                        L18_3 = 0.1
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L10_3 = -0.45
+                        L11_3 = -0.2
+                      end
+                    else
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Orbit
+                      L17_3 = -60
+                      L18_3 = -60
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.SideDolly
+                      L17_3 = -0.35
+                      L18_3 = -0.35
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.UpdownDolly
+                      L17_3 = 0.1
+                      L18_3 = 0.1
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.UpdownPan
+                      L17_3 = 15
+                      L18_3 = 15
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      if A6_3 == true then
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownPan
+                        L17_3 = 12
+                        L18_3 = 12
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.1
+                        L18_3 = -0.1
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L10_3 = -0.4
+                        L11_3 = -0.12
+                      end
+                    end
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Zoom
+                    L17_3 = L10_3
+                    L18_3 = L11_3
+                    L19_3 = L12_3
+                    L20_3 = L13_3
+                    L21_3 = L14_3
+                    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                  else
+                    if A5_3 == true then
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Orbit
+                      L17_3 = 15
+                      L18_3 = 15
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.SideDolly
+                      L17_3 = -0.25
+                      L18_3 = -0.25
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Gyro
+                      L17_3 = 5
+                      L18_3 = 5
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      if A6_3 == true then
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownDolly
+                        L17_3 = 0.1
+                        L18_3 = 0.1
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L10_3 = -0.45
+                        L11_3 = -0.2
+                      end
+                    else
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Orbit
+                      L17_3 = -60
+                      L18_3 = -60
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.SideDolly
+                      L17_3 = -0.35
+                      L18_3 = -0.35
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.UpdownDolly
+                      L17_3 = 0.1
+                      L18_3 = 0.1
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      L16_3 = A0_3
+                      L15_3 = A0_3.UpdownPan
+                      L17_3 = 10
+                      L18_3 = 10
+                      L19_3 = 0
+                      L15_3(L16_3, L17_3, L18_3, L19_3)
+                      if A6_3 == true then
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.3
+                        L18_3 = -0.3
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L10_3 = -0.4
+                        L11_3 = -0.15
+                      end
+                    end
+                    L16_3 = A0_3
+                    L15_3 = A0_3.Zoom
+                    L17_3 = L10_3
+                    L18_3 = L11_3
+                    L19_3 = L12_3
+                    L20_3 = L13_3
+                    L21_3 = L14_3
+                    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                  end
+                else
+                  L15_3 = A0_3.RACE_AURA
+                  if L7_3 == L15_3 then
+                    if L9_3 == 0 then
+                      if A5_3 == true then
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Orbit
+                        L17_3 = 15
+                        L18_3 = 15
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.35
+                        L18_3 = -0.35
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Gyro
+                        L17_3 = 5
+                        L18_3 = 5
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        if A6_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownDolly
+                          L17_3 = 0.08
+                          L18_3 = 0.08
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L10_3 = -0.45
+                          L11_3 = -0.2
+                        end
+                      else
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Orbit
+                        L17_3 = -65
+                        L18_3 = -65
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.35
+                        L18_3 = -0.35
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownDolly
+                        L17_3 = 0.1
+                        L18_3 = 0.1
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownPan
+                        L17_3 = 15
+                        L18_3 = 15
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        if A6_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.SideDolly
+                          L17_3 = -0.3
+                          L18_3 = -0.3
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L10_3 = -0.4
+                          L11_3 = -0.15
+                        end
+                      end
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Zoom
+                      L17_3 = L10_3
+                      L18_3 = L11_3
+                      L19_3 = L12_3
+                      L20_3 = L13_3
+                      L21_3 = L14_3
+                      L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                    else
+                      if A5_3 == true then
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Orbit
+                        L17_3 = 15
+                        L18_3 = 15
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.2
+                        L18_3 = -0.2
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Gyro
+                        L17_3 = 5
+                        L18_3 = 5
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        if A6_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownDolly
+                          L17_3 = 0.15
+                          L18_3 = 0.15
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L10_3 = -0.4
+                          L11_3 = -0.15
+                        end
+                      else
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Orbit
+                        L17_3 = -65
+                        L18_3 = -65
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.3
+                        L18_3 = -0.3
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownDolly
+                        L17_3 = 0.1
+                        L18_3 = 0.1
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownPan
+                        L17_3 = 10
+                        L18_3 = 10
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        if A6_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownPan
+                          L17_3 = 7
+                          L18_3 = 7
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.SideDolly
+                          L17_3 = -0.2
+                          L18_3 = -0.2
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L10_3 = -0.4
+                          L11_3 = -0.16
+                        end
+                      end
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Zoom
+                      L17_3 = L10_3
+                      L18_3 = L11_3
+                      L19_3 = L12_3
+                      L20_3 = L13_3
+                      L21_3 = L14_3
+                      L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                    end
+                  else
+                    L15_3 = A0_3.RACE_JJM
+                    if L7_3 == L15_3 then
+                      if A5_3 == true then
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Orbit
+                        L17_3 = 15
+                        L18_3 = 15
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.3
+                        L18_3 = -0.3
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Gyro
+                        L17_3 = 5
+                        L18_3 = 5
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        if A6_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownDolly
+                          L17_3 = 0.05
+                          L18_3 = 0.05
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L10_3 = -0.45
+                          L11_3 = -0.25
+                        end
+                      else
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Orbit
+                        L17_3 = -65
+                        L18_3 = -65
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.SideDolly
+                        L17_3 = -0.3
+                        L18_3 = -0.3
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownDolly
+                        L17_3 = 0.1
+                        L18_3 = 0.1
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        L16_3 = A0_3
+                        L15_3 = A0_3.UpdownPan
+                        L17_3 = 15
+                        L18_3 = 15
+                        L19_3 = 0
+                        L15_3(L16_3, L17_3, L18_3, L19_3)
+                        if A6_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.SideDolly
+                          L17_3 = -0.15
+                          L18_3 = -0.15
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L10_3 = -0.4
+                          L11_3 = -0.14
+                        end
+                      end
+                      L16_3 = A0_3
+                      L15_3 = A0_3.Zoom
+                      L17_3 = L10_3
+                      L18_3 = L11_3
+                      L19_3 = L12_3
+                      L20_3 = L13_3
+                      L21_3 = L14_3
+                      L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                    else
+                      L15_3 = A0_3.RACE_JJF
+                      if L7_3 == L15_3 then
+                        if A5_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.Orbit
+                          L17_3 = 15
+                          L18_3 = 15
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.SideDolly
+                          L17_3 = -0.2
+                          L18_3 = -0.2
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.Gyro
+                          L17_3 = 5
+                          L18_3 = 5
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          if A6_3 == true then
+                            L16_3 = A0_3
+                            L15_3 = A0_3.UpdownDolly
+                            L17_3 = 0.1
+                            L18_3 = 0.1
+                            L19_3 = 0
+                            L15_3(L16_3, L17_3, L18_3, L19_3)
+                            L10_3 = -0.45
+                            L11_3 = -0.2
+                          end
+                        else
+                          L16_3 = A0_3
+                          L15_3 = A0_3.Orbit
+                          L17_3 = -55
+                          L18_3 = -55
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.SideDolly
+                          L17_3 = -0.3
+                          L18_3 = -0.3
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownDolly
+                          L17_3 = 0.1
+                          L18_3 = 0.1
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownPan
+                          L17_3 = 10
+                          L18_3 = 10
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          if A6_3 == true then
+                            L16_3 = A0_3
+                            L15_3 = A0_3.SideDolly
+                            L17_3 = -0.22
+                            L18_3 = -0.22
+                            L19_3 = 0
+                            L15_3(L16_3, L17_3, L18_3, L19_3)
+                            L10_3 = -0.4
+                            L11_3 = -0.13
+                          end
+                        end
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Zoom
+                        L17_3 = L10_3
+                        L18_3 = L11_3
+                        L19_3 = L12_3
+                        L20_3 = L13_3
+                        L21_3 = L14_3
+                        L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                      else
+                        if A5_3 == true then
+                          L16_3 = A0_3
+                          L15_3 = A0_3.Orbit
+                          L17_3 = 15
+                          L18_3 = 15
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.SideDolly
+                          L17_3 = -0.3
+                          L18_3 = -0.3
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.Gyro
+                          L17_3 = 5
+                          L18_3 = 5
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          if A6_3 == true then
+                            L16_3 = A0_3
+                            L15_3 = A0_3.UpdownDolly
+                            L17_3 = 0.08
+                            L18_3 = 0.08
+                            L19_3 = 0
+                            L15_3(L16_3, L17_3, L18_3, L19_3)
+                            L10_3 = -0.4
+                            L11_3 = -0.17
+                          end
+                        else
+                          L16_3 = A0_3
+                          L15_3 = A0_3.Orbit
+                          L17_3 = -65
+                          L18_3 = -65
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.SideDolly
+                          L17_3 = -0.35
+                          L18_3 = -0.35
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownDolly
+                          L17_3 = 0.1
+                          L18_3 = 0.1
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          L16_3 = A0_3
+                          L15_3 = A0_3.UpdownPan
+                          L17_3 = 15
+                          L18_3 = 15
+                          L19_3 = 0
+                          L15_3(L16_3, L17_3, L18_3, L19_3)
+                          if A6_3 == true then
+                            L16_3 = A0_3
+                            L15_3 = A0_3.SideDolly
+                            L17_3 = -0.3
+                            L18_3 = -0.3
+                            L19_3 = 0
+                            L15_3(L16_3, L17_3, L18_3, L19_3)
+                            L10_3 = -0.4
+                            L11_3 = -0.15
+                          end
+                        end
+                        L16_3 = A0_3
+                        L15_3 = A0_3.Zoom
+                        L17_3 = L10_3
+                        L18_3 = L11_3
+                        L19_3 = L12_3
+                        L20_3 = L13_3
+                        L21_3 = L14_3
+                        L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+                      end
+                    end
+                  end
+                end
+              end
             end
           end
-          A0_14:Zoom(L10_24, L11_25, L12_26, L13_27, L14_28)
         end
       else
       end
     end
   end
-end)()
-;(function()
-  local L1_29
-  L1_29 = CtsSdg010Trade
-  L1_29.SCRIPT_VERSION = 2
-end)()
+  L0_2.SetCamera = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsSdg010Trade
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

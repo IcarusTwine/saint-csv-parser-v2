@@ -1,298 +1,1741 @@
-(function()
-  print("RegHinAllaganStorageSystem")
-  function RegHinAllaganStorageSystem.OnScene00000(A0_0, A1_1, A2_2)
-    if A2_2:GetBaseId() == A0_0.TARGET_G then
-      A0_0:TalkGamma(A1_1, A2_2)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegHinAllaganStorageSystem"
+  L0_2(L1_2)
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.TARGET_G
+    if L3_3 == L4_3 then
+      L4_3 = A0_3
+      L3_3 = A0_3.TalkGamma
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L3_3(L4_3, L5_3, L6_3)
     else
-      A0_0:TalkAlpha(A1_1, A2_2)
+      L4_3 = A0_3
+      L3_3 = A0_3.TalkAlpha
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L3_3(L4_3, L5_3, L6_3)
     end
   end
-  function RegHinAllaganStorageSystem.TalkAlpha(A0_3, A1_4, A2_5)
-    local L3_6
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_000, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_000
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     while true do
-      L3_6 = A0_3:Menu(A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q1_000_000, A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A1_000_000, A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A1_000_001, A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A1_000_100)
-      if L3_6 == 1 then
-        A0_3:JenomisVoice(A1_4, A2_5)
-      elseif L3_6 == 2 then
-        A0_3:SlowWriterVoice(A1_4, A2_5)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q1_000_000
+      L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A1_000_000
+      L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A1_000_001
+      L9_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A1_000_100
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L3_3 = L4_3
+      if L3_3 == 1 then
+        L5_3 = A0_3
+        L4_3 = A0_3.JenomisVoice
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 2 then
+        L5_3 = A0_3
+        L4_3 = A0_3.SlowWriterVoice
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-  function RegHinAllaganStorageSystem.TalkGamma(A0_7, A1_8, A2_9)
-    local L3_10
-    A2_9:TurnTo(A1_8, false)
-    A2_9:WaitForTurn()
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_100_000, true)
+  L0_2.TalkAlpha = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_100_000
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     while true do
-      L3_10 = A0_7:Menu(A0_7.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q10_000_000, A0_7.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_000, A0_7.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_001, A0_7.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_002, A0_7.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_100)
-      if L3_10 == 1 then
-        A0_7:JenomisVoiceV43(A1_8, A2_9)
-      elseif L3_10 == 2 then
-        A0_7:SlowWriterVoiceV43(A1_8, A2_9)
-      elseif L3_10 == 3 then
-        A0_7:Mikoto(A1_8, A2_9)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q10_000_000
+      L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_000
+      L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_001
+      L9_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_002
+      L10_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A10_000_100
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+      L3_3 = L4_3
+      if L3_3 == 1 then
+        L5_3 = A0_3
+        L4_3 = A0_3.JenomisVoiceV43
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 2 then
+        L5_3 = A0_3
+        L4_3 = A0_3.SlowWriterVoiceV43
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.Mikoto
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-  function RegHinAllaganStorageSystem.JenomisVoice(A0_11, A1_12, A2_13)
-    local L3_14
+  L0_2.TalkGamma = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
     while true do
-      if A0_11:Menu(A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_001, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_002, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_003, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_004, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_005, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_010) == 1 then
-        A0_11:RamzaLexentale(A1_12, A2_13)
-      elseif A0_11:Menu(A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_001, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_002, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_003, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_004, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_005, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_010) == 2 then
-        A0_11:RamzaDelita(A1_12, A2_13)
-      elseif A0_11:Menu(A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_001, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_002, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_003, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_004, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_005, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_010) == 3 then
-        A0_11:ZodiacBrave(A1_12, A2_13)
-      elseif A0_11:Menu(A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_001, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_002, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_003, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_004, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_005, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_010) == 4 then
-        A0_11:CrystalStone(A1_12, A2_13)
-      elseif A0_11:Menu(A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_001, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_002, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_003, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_004, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_005, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_010) == 5 then
-        A0_11:Rugavi(A1_12, A2_13)
-      elseif A0_11:Menu(A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_000, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_001, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_002, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_003, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_004, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_005, A0_11.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_010) == 6 then
-        A0_11:Algus(A1_12, A2_13)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q2_000_000
+      L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_000
+      L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_A2_000_001
+      L9_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_002
+      L10_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_003
+      L11_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_004
+      L12_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_005
+      L13_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A2_000_010
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      if L4_3 == 1 then
+        L6_3 = A0_3
+        L5_3 = A0_3.RamzaLexentale
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 2 then
+        L6_3 = A0_3
+        L5_3 = A0_3.RamzaDelita
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 3 then
+        L6_3 = A0_3
+        L5_3 = A0_3.ZodiacBrave
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 4 then
+        L6_3 = A0_3
+        L5_3 = A0_3.CrystalStone
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 5 then
+        L6_3 = A0_3
+        L5_3 = A0_3.Rugavi
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 6 then
+        L6_3 = A0_3
+        L5_3 = A0_3.Algus
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
       else
-        return 0
+        L5_3 = 0
+        return L5_3
       end
     end
   end
-  function RegHinAllaganStorageSystem.JenomisVoiceV43(A0_15, A1_16, A2_17)
-    local L3_18
+  L0_2.JenomisVoice = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
     while true do
-      if A0_15:Menu(A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_001, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_002, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_003, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_010) == 1 then
-        A0_15:TheClockworkCityOfGoug(A1_16, A2_17)
-      elseif A0_15:Menu(A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_001, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_002, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_003, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_010) == 2 then
-        A0_15:Yzmat(A1_16, A2_17)
-      elseif A0_15:Menu(A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_001, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_002, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_003, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_010) == 3 then
-        A0_15:Tia(A1_16, A2_17)
-      elseif A0_15:Menu(A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_000, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_001, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_002, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_003, A0_15.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_010) == 4 then
-        A0_15:TiaOfNecklace(A1_16, A2_17)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q20_000_000
+      L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_000
+      L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_001
+      L9_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_002
+      L10_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_003
+      L11_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A20_000_010
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+      if L4_3 == 1 then
+        L6_3 = A0_3
+        L5_3 = A0_3.TheClockworkCityOfGoug
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 2 then
+        L6_3 = A0_3
+        L5_3 = A0_3.Yzmat
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 3 then
+        L6_3 = A0_3
+        L5_3 = A0_3.Tia
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 4 then
+        L6_3 = A0_3
+        L5_3 = A0_3.TiaOfNecklace
+        L7_3 = A1_3
+        L8_3 = A2_3
+        L5_3(L6_3, L7_3, L8_3)
       else
-        return 0
+        L5_3 = 0
+        return L5_3
       end
     end
   end
-  function RegHinAllaganStorageSystem.SlowWriterVoice(A0_19, A1_20, A2_21)
-    local L3_22
+  L0_2.JenomisVoiceV43 = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
     while true do
-      L3_22 = A0_19:Menu(A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q3_000_000, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_000, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_001, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_002, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_003, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_004, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_005, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_006, A0_19.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_010)
-      if L3_22 == 1 then
-        A0_19:JenomisLexentale(A1_20, A2_21)
-      elseif L3_22 == 2 then
-        A0_19:TheMajestic(A1_20, A2_21)
-      elseif L3_22 == 3 then
-        A0_19:ZodiacBraveLegend(A1_20, A2_21)
-      elseif L3_22 == 4 then
-        A0_19:ZodiacBraveStory(A1_20, A2_21)
-      elseif L3_22 == 5 then
-        A0_19:DalmascaCapital(A1_20, A2_21)
-      elseif L3_22 == 6 then
-        A0_19:CompanyPlaywright(A1_20, A2_21)
-      elseif L3_22 == 7 then
-        A0_19:WanderingMinstrel(A1_20, A2_21)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_Q3_000_000
+      L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_000
+      L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_001
+      L9_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_002
+      L10_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_003
+      L11_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_004
+      L12_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_005
+      L13_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_006
+      L14_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A3_000_010
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      L3_3 = L4_3
+      if L3_3 == 1 then
+        L5_3 = A0_3
+        L4_3 = A0_3.JenomisLexentale
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 2 then
+        L5_3 = A0_3
+        L4_3 = A0_3.TheMajestic
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.ZodiacBraveLegend
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 4 then
+        L5_3 = A0_3
+        L4_3 = A0_3.ZodiacBraveStory
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 5 then
+        L5_3 = A0_3
+        L4_3 = A0_3.DalmascaCapital
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 6 then
+        L5_3 = A0_3
+        L4_3 = A0_3.CompanyPlaywright
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 7 then
+        L5_3 = A0_3
+        L4_3 = A0_3.WanderingMinstrel
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-  function RegHinAllaganStorageSystem.SlowWriterVoiceV43(A0_23, A1_24, A2_25)
-    local L3_26
+  L0_2.SlowWriterVoice = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
     while true do
-      L3_26 = A0_23:Menu(A0_23.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q30_000_000, A0_23.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A30_000_000, A0_23.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A30_000_001, A0_23.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A30_000_010)
-      if L3_26 == 1 then
-        A0_23:DalmascaOccupation(A1_24, A2_25)
-      elseif L3_26 == 2 then
-        A0_23:DalmascaRebellion(A1_24, A2_25)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q30_000_000
+      L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A30_000_000
+      L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A30_000_001
+      L9_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A30_000_010
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L3_3 = L4_3
+      if L3_3 == 1 then
+        L5_3 = A0_3
+        L4_3 = A0_3.DalmascaOccupation
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 2 then
+        L5_3 = A0_3
+        L4_3 = A0_3.DalmascaRebellion
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-  function RegHinAllaganStorageSystem.Mikoto(A0_27, A1_28, A2_29)
-    local L3_30
+  L0_2.SlowWriterVoiceV43 = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
     while true do
-      L3_30 = A0_27:Menu(A0_27.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q40_000_000, A0_27.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_000, A0_27.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_001, A0_27.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_002, A0_27.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_003, A0_27.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_010)
-      if L3_30 == 1 then
-        A0_27:HowStoneGlowing(A1_28, A2_29)
-      elseif L3_30 == 2 then
-        A0_27:Otis(A1_28, A2_29)
-      elseif L3_30 == 3 then
-        A0_27:Duma(A1_28, A2_29)
-      elseif L3_30 == 4 then
-        A0_27:Ridorana(A1_28, A2_29)
+      L5_3 = A0_3
+      L4_3 = A0_3.Menu
+      L6_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_Q40_000_000
+      L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_000
+      L8_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_001
+      L9_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_002
+      L10_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_003
+      L11_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_A40_000_010
+      L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+      L3_3 = L4_3
+      if L3_3 == 1 then
+        L5_3 = A0_3
+        L4_3 = A0_3.HowStoneGlowing
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 2 then
+        L5_3 = A0_3
+        L4_3 = A0_3.Otis
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.Duma
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 4 then
+        L5_3 = A0_3
+        L4_3 = A0_3.Ridorana
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-  function RegHinAllaganStorageSystem.RamzaLexentale(A0_31, A1_32, A2_33)
-    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_010, false, nil, nil, nil, nil)
-    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_011, false, nil, nil, nil, nil)
-    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_012, false, nil, nil, nil, nil)
-    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_013, false, nil, nil, nil, nil)
-    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_014, true, nil, nil, nil, nil)
+  L0_2.Mikoto = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_010
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_011
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_012
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_013
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_014
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.RamzaDelita(A0_34, A1_35, A2_36)
-    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_020, false, nil, nil, nil, nil)
-    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_021, false, nil, nil, nil, nil)
-    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_022, true, nil, nil, nil, nil)
+  L0_2.RamzaLexentale = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_020
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_021
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_022
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.ZodiacBrave(A0_37, A1_38, A2_39)
-    A2_39:PlayActionTimeline(A0_37.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_39:Talk(A1_38, A0_37, A0_37.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_030, false, nil, nil, nil, nil)
-    A2_39:Talk(A1_38, A0_37, A0_37.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_031, false, nil, nil, nil, nil)
-    A2_39:Talk(A1_38, A0_37, A0_37.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_032, true, nil, nil, nil, nil)
+  L0_2.RamzaDelita = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_030
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_031
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_032
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.CrystalStone(A0_40, A1_41, A2_42)
-    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_040, false, nil, nil, nil, nil)
-    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_041, false, nil, nil, nil, nil)
-    A2_42:Talk(A1_41, A0_40, A0_40.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_042, true, nil, nil, nil, nil)
+  L0_2.ZodiacBrave = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_040
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_041
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_042
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.Rugavi(A0_43, A1_44, A2_45)
-    A2_45:Talk(A1_44, A0_43, A0_43.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_050, false, nil, nil, nil, nil)
-    A2_45:Talk(A1_44, A0_43, A0_43.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_051, false, nil, nil, nil, nil)
-    A2_45:Talk(A1_44, A0_43, A0_43.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_052, false, nil, nil, nil, nil)
-    A2_45:Talk(A1_44, A0_43, A0_43.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_053, true, nil, nil, nil, nil)
+  L0_2.CrystalStone = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_050
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_051
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_052
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_053
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.Algus(A0_46, A1_47, A2_48)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_060, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_061, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_062, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_063, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_064, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_065, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_066, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_067, false, nil, nil, nil, nil)
-    A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_068, true, nil, nil, nil, nil)
+  L0_2.Rugavi = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_060
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_061
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_062
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_063
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_064
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_065
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_066
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_067
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_068
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.TheClockworkCityOfGoug(A0_49, A1_50, A2_51)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_110, false, nil, nil, nil, nil)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_111, false, nil, nil, nil, nil)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_112, false, nil, nil, nil, nil)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_113, false, nil, nil, nil, nil)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_114, false, nil, nil, nil, nil)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_115, false, nil, nil, nil, nil)
-    A2_51:Talk(A1_50, A0_49, A0_49.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_116, true, nil, nil, nil, nil)
+  L0_2.Algus = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_110
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_111
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_112
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_113
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_114
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_115
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_116
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.Yzmat(A0_52, A1_53, A2_54)
-    A2_54:Talk(A1_53, A0_52, A0_52.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_120, false, nil, nil, nil, nil)
-    A2_54:Talk(A1_53, A0_52, A0_52.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_121, false, nil, nil, nil, nil)
-    A2_54:Talk(A1_53, A0_52, A0_52.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_122, false, nil, nil, nil, nil)
-    A2_54:Talk(A1_53, A0_52, A0_52.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_123, false, nil, nil, nil, nil)
-    A2_54:Talk(A1_53, A0_52, A0_52.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_124, true, nil, nil, nil, nil)
+  L0_2.TheClockworkCityOfGoug = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_120
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_121
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_122
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_123
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_124
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.Tia(A0_55, A1_56, A2_57)
-    A2_57:Talk(A1_56, A0_55, A0_55.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_130, false, nil, nil, nil, nil)
-    A2_57:Talk(A1_56, A0_55, A0_55.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_131, false, nil, nil, nil, nil)
-    A2_57:Talk(A1_56, A0_55, A0_55.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_132, false, nil, nil, nil, nil)
-    A2_57:Talk(A1_56, A0_55, A0_55.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_133, false, nil, nil, nil, nil)
-    A2_57:Talk(A1_56, A0_55, A0_55.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_134, true, nil, nil, nil, nil)
+  L0_2.Yzmat = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_130
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_131
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_132
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_133
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_134
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.TiaOfNecklace(A0_58, A1_59, A2_60)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_150, false, nil, nil, nil, nil)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_151, false, nil, nil, nil, nil)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_152, false, nil, nil, nil, nil)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_153, false, nil, nil, nil, nil)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_154, false, nil, nil, nil, nil)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_155, false, nil, nil, nil, nil)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_156, true, nil, nil, nil, nil)
+  L0_2.Tia = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_150
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_151
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_152
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_153
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_154
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_155
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_156
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.JenomisLexentale(A0_61, A1_62, A2_63)
-    A2_63:Talk(A1_62, A0_61, A0_61.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_100, false, nil, nil, nil, nil)
-    A2_63:Talk(A1_62, A0_61, A0_61.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_101, false, nil, nil, nil, nil)
-    A2_63:Talk(A1_62, A0_61, A0_61.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_102, false, nil, nil, nil, nil)
-    A2_63:Talk(A1_62, A0_61, A0_61.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_103, false, nil, nil, nil, nil)
-    A2_63:Talk(A1_62, A0_61, A0_61.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_104, true, nil, nil, nil, nil)
+  L0_2.TiaOfNecklace = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_100
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_101
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_102
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_103
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_104
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.TheMajestic(A0_64, A1_65, A2_66)
-    A2_66:Talk(A1_65, A0_64, A0_64.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_120, false, nil, nil, nil, nil)
-    A2_66:Talk(A1_65, A0_64, A0_64.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_121, false, nil, nil, nil, nil)
-    A2_66:Talk(A1_65, A0_64, A0_64.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_122, true, nil, nil, nil, nil)
+  L0_2.JenomisLexentale = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_120
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_121
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_122
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.ZodiacBraveLegend(A0_67, A1_68, A2_69)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_140, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_141, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_142, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_143, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_144, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_145, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_146, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_147, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_148, false, nil, nil, nil, nil)
-    A2_69:Talk(A1_68, A0_67, A0_67.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_149, true, nil, nil, nil, nil)
+  L0_2.TheMajestic = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_140
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_141
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_142
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_143
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_144
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_145
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_146
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_147
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_148
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_149
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.ZodiacBraveStory(A0_70, A1_71, A2_72)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_160, false, nil, nil, nil, nil)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_161, false, nil, nil, nil, nil)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_162, false, nil, nil, nil, nil)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_163, false, nil, nil, nil, nil)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_164, false, nil, nil, nil, nil)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_165, true, nil, nil, nil, nil)
+  L0_2.ZodiacBraveLegend = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_160
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_161
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_162
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_163
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_164
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_165
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.DalmascaCapital(A0_73, A1_74, A2_75)
-    A2_75:Talk(A1_74, A0_73, A0_73.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_180, false, nil, nil, nil, nil)
-    A2_75:Talk(A1_74, A0_73, A0_73.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_181, false, nil, nil, nil, nil)
-    A2_75:Talk(A1_74, A0_73, A0_73.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_182, false, nil, nil, nil, nil)
-    A2_75:Talk(A1_74, A0_73, A0_73.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_183, false, nil, nil, nil, nil)
-    A2_75:Talk(A1_74, A0_73, A0_73.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_184, true, nil, nil, nil, nil)
+  L0_2.ZodiacBraveStory = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_180
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_181
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_182
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_183
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_184
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.CompanyPlaywright(A0_76, A1_77, A2_78)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_200, false, nil, nil, nil, nil)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_201, false, nil, nil, nil, nil)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_202, true, nil, nil, nil, nil)
+  L0_2.DalmascaCapital = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_200
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_201
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_202
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.WanderingMinstrel(A0_79, A1_80, A2_81)
-    A2_81:Talk(A1_80, A0_79, A0_79.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_220, false, nil, nil, nil, nil)
-    A2_81:Talk(A1_80, A0_79, A0_79.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_221, false, nil, nil, nil, nil)
-    A2_81:Talk(A1_80, A0_79, A0_79.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_222, true, nil, nil, nil, nil)
+  L0_2.CompanyPlaywright = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_220
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_221
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_00491_ALLAGAN_000_222
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.DalmascaOccupation(A0_82, A1_83, A2_84)
-    A2_84:Talk(A1_83, A0_82, A0_82.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_300, false, nil, nil, nil, nil)
-    A2_84:Talk(A1_83, A0_82, A0_82.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_301, false, nil, nil, nil, nil)
-    A2_84:Talk(A1_83, A0_82, A0_82.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_302, false, nil, nil, nil, nil)
-    A2_84:Talk(A1_83, A0_82, A0_82.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_303, false, nil, nil, nil, nil)
-    A2_84:Talk(A1_83, A0_82, A0_82.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_304, true, nil, nil, nil, nil)
+  L0_2.WanderingMinstrel = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_300
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_301
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_302
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_303
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_304
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.DalmascaRebellion(A0_85, A1_86, A2_87)
-    A2_87:Talk(A1_86, A0_85, A0_85.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_320, false, nil, nil, nil, nil)
-    A2_87:Talk(A1_86, A0_85, A0_85.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_321, false, nil, nil, nil, nil)
-    A2_87:Talk(A1_86, A0_85, A0_85.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_322, false, nil, nil, nil, nil)
-    A2_87:Talk(A1_86, A0_85, A0_85.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_323, false, nil, nil, nil, nil)
-    A2_87:Talk(A1_86, A0_85, A0_85.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_324, false, nil, nil, nil, nil)
-    A2_87:Talk(A1_86, A0_85, A0_85.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_325, true, nil, nil, nil, nil)
+  L0_2.DalmascaOccupation = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_320
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_321
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_322
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_323
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_324
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_ALLAGAN_000_325
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.HowStoneGlowing(A0_88, A1_89, A2_90)
-    A2_90:Talk(A1_89, A0_88, A0_88.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_400, false, nil, nil, nil, nil)
-    A2_90:Talk(A1_89, A0_88, A0_88.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_401, true, nil, nil, nil, nil)
+  L0_2.DalmascaRebellion = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_400
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_401
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.Otis(A0_91, A1_92, A2_93)
-    A2_93:Talk(A1_92, A0_91, A0_91.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_420, false, nil, nil, nil, nil)
-    A2_93:Talk(A1_92, A0_91, A0_91.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_421, true, nil, nil, nil, nil)
+  L0_2.HowStoneGlowing = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_420
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_421
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.Duma(A0_94, A1_95, A2_96)
-    A2_96:Talk(A1_95, A0_94, A0_94.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_440, false, nil, nil, nil, nil)
-    A2_96:Talk(A1_95, A0_94, A0_94.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_441, false, nil, nil, nil, nil)
-    A2_96:Talk(A1_95, A0_94, A0_94.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_442, false, nil, nil, nil, nil)
-    A2_96:Talk(A1_95, A0_94, A0_94.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_443, true, nil, nil, nil, nil)
+  L0_2.Otis = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_440
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_441
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_442
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_443
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinAllaganStorageSystem.Ridorana(A0_97, A1_98, A2_99)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_480, false, nil, nil, nil, nil)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_481, false, nil, nil, nil, nil)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_482, false, nil, nil, nil, nil)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_483, false, nil, nil, nil, nil)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_484, false, nil, nil, nil, nil)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_485, false, nil, nil, nil, nil)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_486, false, nil, nil, nil, nil)
-    A2_99:Talk(A1_98, A0_97, A0_97.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_487, true, nil, nil, nil, nil)
+  L0_2.Duma = L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_480
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_481
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_482
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_483
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_484
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_485
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_486
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINALLAGANSTORAGESYSTEM_00491_MIKOTO_000_487
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-end)()
-;(function()
-  local L1_100
-  L1_100 = RegHinAllaganStorageSystem
-  L1_100.SCRIPT_VERSION = 2
-end)()
+  L0_2.Ridorana = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegHinAllaganStorageSystem
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

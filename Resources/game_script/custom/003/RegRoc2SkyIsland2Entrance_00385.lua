@@ -1,84 +1,340 @@
-(function()
-  print("RegRoc2SkyIsland2Entrance")
-  function RegRoc2SkyIsland2Entrance.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BIG, A1_1)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_000, false)
-    A0_0:Wait(10)
-    A0_0:SystemTalk(A0_0.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_001, false)
-    A0_0:SystemTalk(A0_0.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_002, false)
-    A0_0:SystemTalk(A0_0.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_003, false)
-    A0_0:SystemTalk(A0_0.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_004, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegRoc2SkyIsland2Entrance"
+  L0_2(L1_2)
+  L0_2 = RegRoc2SkyIsland2Entrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_001
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_002
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_003
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_004
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function RegRoc2SkyIsland2Entrance.OnScene00100(A0_3, A1_4, A2_5)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG, A1_4)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_010, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegRoc2SkyIsland2Entrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     while true do
-      if A0_3:Menu(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_Q1_000_000, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_001, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_002, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_003, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_004) == 1 then
-        return 0
-      elseif A0_3:Menu(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_Q1_000_000, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_001, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_002, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_003, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_004) == 2 then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_4)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_100, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_101, true)
-        A0_3:Wait(10)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_100, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_101, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_102, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_102, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_103, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_104, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_101_104, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_104, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_102_104, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_105, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_106, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_107, true)
-      elseif A0_3:Menu(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_Q1_000_000, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_001, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_002, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_003, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_004) == 3 then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1, A1_4)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_200, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_201, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_202, true)
-        A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-        A0_3:Wait(10)
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER, A1_4)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_100_202, false)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_110_202, false)
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG, A1_4)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_203, true)
-        A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG)
-        A0_3:Wait(10)
-        A2_5:LookAt()
-        A2_5:TurnTo(-60, false, true)
-        A2_5:WaitForTurn()
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_POINT)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_204, false)
-        A2_5:LookAt(A1_4)
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_205, true)
-        A2_5:CancelActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_POINT)
-        A0_3:Wait(10)
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG, A1_4)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_206, true)
-        A0_3:Wait(10)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_000, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_001, false)
-        A0_3:SystemTalk(A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_002, true)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_Q1_000_000
+      L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_001
+      L7_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_002
+      L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_003
+      L9_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_A1_000_004
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+      if L3_3 == 1 then
+        L4_3 = 0
+        return L4_3
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L7_3 = A1_3
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_100
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_101
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_100
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_101
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_102
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_102
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_103
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_104
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_101_104
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_104
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_102_104
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_105
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_106
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_107
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+      elseif L3_3 == 3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L7_3 = A1_3
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_200
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_201
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_202
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L7_3 = A1_3
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_100_202
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_110_202
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+        L7_3 = A1_3
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_203
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.LookAt
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.TurnTo
+        L6_3 = -60
+        L7_3 = false
+        L8_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForTurn
+        L4_3(L5_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EMOTE_POINT
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_204
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.LookAt
+        L6_3 = A1_3
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_205
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EMOTE_POINT
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+        L7_3 = A1_3
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_AURVAEL_000_206
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_000
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_001
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_100_002
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-  function RegRoc2SkyIsland2Entrance.OnScene00101(A0_6, A1_7, A2_8)
-    A0_6:SystemTalk(A0_6.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_200, true)
+  L0_2.OnScene00100 = L1_2
+  L0_2 = RegRoc2SkyIsland2Entrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLAND2ENTRANCE_00385_SYSTEM_000_200
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-end)()
-;(function()
-  local L0_9, L1_10
-  L0_9 = RegRoc2SkyIsland2Entrance
-  L0_9.SCRIPT_VERSION = 1
-  L0_9 = RegRoc2SkyIsland2Entrance
-  L0_9.SCENE_NORIGHTTALK_START = 0
-  L0_9 = RegRoc2SkyIsland2Entrance
-  L0_9.SCENE_GUIDMENU_START = 100
-  L0_9 = RegRoc2SkyIsland2Entrance
-  L0_9.SCENE_GUIDE_MENU_ERROR = 101
-end)()
+  L0_2.OnScene00101 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegRoc2SkyIsland2Entrance
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = RegRoc2SkyIsland2Entrance
+  L0_2.SCENE_NORIGHTTALK_START = 0
+  L0_2 = RegRoc2SkyIsland2Entrance
+  L0_2.SCENE_GUIDMENU_START = 100
+  L0_2 = RegRoc2SkyIsland2Entrance
+  L0_2.SCENE_GUIDE_MENU_ERROR = 101
+end
+L0_1()

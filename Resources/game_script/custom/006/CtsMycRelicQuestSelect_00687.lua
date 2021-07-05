@@ -1,73 +1,180 @@
-(function()
-  print("CtsMycRelicQuestSelect")
-  function CtsMycRelicQuestSelect.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsMycRelicQuestSelect"
+  L0_2(L1_2)
+  L0_2 = CtsMycRelicQuestSelect
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
     L3_3 = {}
-    L4_4 = {}
-    for _FORV_8_ = 1, #L6_6 do
-      if A0_0:isListupQuest(A1_1, A0_0.QUESTS[_FORV_8_]) then
-        table.insert(L3_3, A0_0:GetEventHandlerTitle(A0_0.QUESTS[_FORV_8_]))
-        table.insert(L4_4, A0_0.QUESTS[_FORV_8_])
+    L4_3 = {}
+    L5_3 = 1
+    L6_3 = A0_3.QUESTS
+    L6_3 = #L6_3
+    L7_3 = 1
+    for L8_3 = L5_3, L6_3, L7_3 do
+      L10_3 = A0_3
+      L9_3 = A0_3.isListupQuest
+      L11_3 = A1_3
+      L12_3 = A0_3.QUESTS
+      L12_3 = L12_3[L8_3]
+      L9_3 = L9_3(L10_3, L11_3, L12_3)
+      if L9_3 then
+        L9_3 = table
+        L9_3 = L9_3.insert
+        L10_3 = L3_3
+        L12_3 = A0_3
+        L11_3 = A0_3.GetEventHandlerTitle
+        L13_3 = A0_3.QUESTS
+        L13_3 = L13_3[L8_3]
+        L11_3, L12_3, L13_3 = L11_3(L12_3, L13_3)
+        L9_3(L10_3, L11_3, L12_3, L13_3)
+        L9_3 = table
+        L9_3 = L9_3.insert
+        L10_3 = L4_3
+        L11_3 = A0_3.QUESTS
+        L11_3 = L11_3[L8_3]
+        L9_3(L10_3, L11_3)
       end
     end
-    L5_5(L6_6, A0_0:GetAddonText(A0_0.MENU_CANCEL))
-    if L5_5 ~= 0 then
-    elseif L5_5 == L6_6 then
-      return L6_6
-    end
-    return L6_6
-  end
-end)()
-;(function()
-  local L0_7, L1_8
-  L0_7 = CtsMycRelicQuestSelect
-  L0_7.SCRIPT_VERSION = 2
-  L0_7 = CtsMycRelicQuestSelect
-  L1_8 = {
-    CtsMycRelicQuestSelect.LUCKSA355,
-    CtsMycRelicQuestSelect.LUCKSA253,
-    CtsMycRelicQuestSelect.LUCKSA251,
-    CtsMycRelicQuestSelect.LUCKSA152,
-    CtsMycRelicQuestSelect.LUCKSA151,
-    CtsMycRelicQuestSelect.LUCKSA051
-  }
-  L0_7.QUESTS = L1_8
-  L0_7 = CtsMycRelicQuestSelect
-  function L1_8(A0_9)
-    local L1_10, L3_11
-    for _FORV_4_ = 1, #L3_11 do
-      A0_9:AddNestEventHandler(A0_9.QUESTS[_FORV_4_])
-    end
-  end
-  L0_7.OnInitialize = L1_8
-  L0_7 = CtsMycRelicQuestSelect
-  function L1_8(A0_12, A1_13, A2_14, A3_15, A4_16, A5_17)
-    local L6_18, L8_19
-    for _FORV_9_ = 1, #L8_19 do
-      if A0_12:isListupQuest(A1_13, A0_12.QUESTS[_FORV_9_]) then
-        return true
+    L5_3 = table
+    L5_3 = L5_3.insert
+    L6_3 = L3_3
+    L8_3 = A0_3
+    L7_3 = A0_3.GetAddonText
+    L9_3 = A0_3.MENU_CANCEL
+    L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3 = L7_3(L8_3, L9_3)
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Menu
+    L7_3 = ""
+    L8_3 = unpack
+    L9_3 = L3_3
+    L8_3, L9_3, L10_3, L11_3, L12_3, L13_3 = L8_3(L9_3)
+    L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    if L5_3 ~= 0 then
+      L6_3 = #L3_3
+      if L5_3 ~= L6_3 then
+        goto lbl_50
       end
     end
-    return L6_18
+    L6_3 = 0
+    do return L6_3 end
+    ::lbl_50::
+    L6_3 = L4_3[L5_3]
+    return L6_3
   end
-  L0_7.IsAcceptEvent = L1_8
-  L0_7 = CtsMycRelicQuestSelect
-  function L1_8(A0_20, A1_21, A2_22)
-    local L3_23
-    L3_23 = A2_22 - 65536
-    if A2_22 == A0_20.LUCKSA051 then
-      if A1_21:IsQuestAccepted(L3_23) then
-        return false
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L0_2 = CtsMycRelicQuestSelect
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = CtsMycRelicQuestSelect
+  L1_2 = {}
+  L2_2 = CtsMycRelicQuestSelect
+  L2_2 = L2_2.LUCKSA355
+  L3_2 = CtsMycRelicQuestSelect
+  L3_2 = L3_2.LUCKSA253
+  L4_2 = CtsMycRelicQuestSelect
+  L4_2 = L4_2.LUCKSA251
+  L5_2 = CtsMycRelicQuestSelect
+  L5_2 = L5_2.LUCKSA152
+  L6_2 = CtsMycRelicQuestSelect
+  L6_2 = L6_2.LUCKSA151
+  L7_2 = CtsMycRelicQuestSelect
+  L7_2 = L7_2.LUCKSA051
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L1_2[4] = L5_2
+  L1_2[5] = L6_2
+  L1_2[6] = L7_2
+  L0_2.QUESTS = L1_2
+  L0_2 = CtsMycRelicQuestSelect
+  function L1_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
+    L1_3 = 1
+    L2_3 = A0_3.QUESTS
+    L2_3 = #L2_3
+    L3_3 = 1
+    for L4_3 = L1_3, L2_3, L3_3 do
+      L6_3 = A0_3
+      L5_3 = A0_3.AddNestEventHandler
+      L7_3 = A0_3.QUESTS
+      L7_3 = L7_3[L4_3]
+      L5_3(L6_3, L7_3)
+    end
+  end
+  L0_2.OnInitialize = L1_2
+  L0_2 = CtsMycRelicQuestSelect
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L6_3 = 1
+    L7_3 = A0_3.QUESTS
+    L7_3 = #L7_3
+    L8_3 = 1
+    for L9_3 = L6_3, L7_3, L8_3 do
+      L11_3 = A0_3
+      L10_3 = A0_3.isListupQuest
+      L12_3 = A1_3
+      L13_3 = A0_3.QUESTS
+      L13_3 = L13_3[L9_3]
+      L10_3 = L10_3(L11_3, L12_3, L13_3)
+      if L10_3 then
+        L10_3 = true
+        return L10_3
       end
-      return true
     end
-    if A1_21:IsQuestAccepted(L3_23) then
-      return false
-    end
-    if A1_21:IsQuestCompleted(L3_23) and A1_21:IsQuestAcceptQualified(L3_23, true) then
-      return true
-    end
-    return false
+    L6_3 = false
+    return L6_3
   end
-  L0_7.isListupQuest = L1_8
-end)()
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = CtsMycRelicQuestSelect
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L3_3 = A2_3 - 65536
+    L4_3 = A0_3.LUCKSA051
+    if A2_3 == L4_3 then
+      L5_3 = A1_3
+      L4_3 = A1_3.IsQuestAccepted
+      L6_3 = L3_3
+      L4_3 = L4_3(L5_3, L6_3)
+      if L4_3 then
+        L4_3 = false
+        return L4_3
+      end
+      L4_3 = true
+      return L4_3
+    end
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestAccepted
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 then
+      L4_3 = false
+      return L4_3
+    end
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestCompleted
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 then
+      L5_3 = A1_3
+      L4_3 = A1_3.IsQuestAcceptQualified
+      L6_3 = L3_3
+      L7_3 = true
+      L4_3 = L4_3(L5_3, L6_3, L7_3)
+      if L4_3 then
+        L4_3 = true
+        return L4_3
+      end
+    end
+    L4_3 = false
+    return L4_3
+  end
+  L0_2.isListupQuest = L1_2
+end
+L0_1()

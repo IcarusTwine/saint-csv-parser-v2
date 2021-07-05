@@ -1,80 +1,321 @@
-(function()
-  print("ComAll002 loaded")
-  function ComAll002.OnScene00000(A0_0, A1_1, A2_2)
-    A1_1:Position(A2_2, A0_0.ARRANGE_TYPE_BASE_FRONT, 2)
-    A1_1:Direction(A2_2)
-    A1_1:LookAt(A2_2)
-    A0_0:Wait(10)
-    A2_2:Direction(A1_1)
-    A2_2:LookAt(A1_1)
-    A0_0:Wait(10)
-    A0_0:PlayTwoShotCamera(A0_0.TWOSHOT_TYPE_LEFT_45, A1_1, A2_2, 1)
-    A0_0:UpdownDolly(-0.2, -0.2, 0, 0, 0)
-    A0_0:Wait(10)
-    A0_0:FadeIn(A0_0.FADE_DEFAULT)
-    A0_0:WaitForFade()
-    if A1_1:IsQuestAcceptQualified(A0_0:GetQuestId()) == true then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_COMALL002_03007_SOFTKNOX_000_000, false, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_COMALL002_03007_SOFTKNOX_000_001, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
-      A0_0:Wait(10)
-      A0_0:PlayTargetRelationCamera(A2_2, 18.8255, 1.5921, 1.0636, -127.0815, 0.297, 0.7684, 1.869)
-      A1_1:Visible(A0_0.VISIBLE_HIDE)
-      A0_0:Wait(10)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_COMALL002_03007_SOFTKNOX_000_002, false, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_JOY_BIG)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_COMALL002_03007_SOFTKNOX_000_003, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
-      A0_0:Wait(10)
-      A0_0:DisableSceneSkip()
-      A0_0:FadeOut(A0_0.FADE_DEFAULT)
-      A0_0:WaitForFade()
-      A0_0:BeginCutScene()
-      A0_0:PlayCutScene(A0_0.CUTSCENE0)
-      A0_0:PlayBGM(A0_0.BGM_MUSIC_NO_MUSIC)
-      A0_0:FadeOut(A0_0.FADE_SHORT, A0_0.FADE_LAYER_BACK)
-      A0_0:EndCutScene()
-      A0_0:EnableSceneSkip()
-      A0_0:FadeIn(A0_0.FADE_DEFAULT)
-      A0_0:WaitForFade()
-      A0_0:DisableSceneSkip()
-      A0_0:ScreenImage(A0_0.SCREENIMAGE0)
-      A0_0:Wait(60)
-      A0_0:EnableSceneSkip()
-      A0_0:DisableSceneSkip()
-      A0_0:LogMessage(A0_0.UNLOCK_ADD_NEW_CONTENT_TO_CF)
-      A0_0:Wait(60)
-      A0_0:EnableSceneSkip()
-      A0_0:FadeOut(A0_0.FADE_DEFAULT)
-      A0_0:WaitForFade()
-      A0_0:Wait(30)
-      A0_0:DisableSceneSkip()
-      if A1_1:IsHowTo(A0_0.HOWTO0) == false then
-        A0_0:HowTo(A0_0.HOWTO0)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ComAll002 loaded"
+  L0_2(L1_2)
+  L0_2 = ComAll002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A1_3
+    L3_3 = A1_3.Position
+    L5_3 = A2_3
+    L6_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L7_3 = 2
+    L3_3(L4_3, L5_3, L6_3, L7_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.Direction
+    L5_3 = A2_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.LookAt
+    L5_3 = A2_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Direction
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayTwoShotCamera
+    L5_3 = A0_3.TWOSHOT_TYPE_LEFT_45
+    L6_3 = A1_3
+    L7_3 = A2_3
+    L8_3 = 1
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -0.2
+    L6_3 = -0.2
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestAcceptQualified
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3 = L5_3(L6_3)
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_COMALL002_03007_SOFTKNOX_000_000
+      L8_3 = false
+      L9_3 = nil
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_COMALL002_03007_SOFTKNOX_000_001
+      L8_3 = true
+      L9_3 = nil
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.PlayTargetRelationCamera
+      L5_3 = A2_3
+      L6_3 = 18.8255
+      L7_3 = 1.5921
+      L8_3 = 1.0636
+      L9_3 = -127.0815
+      L10_3 = 0.297
+      L11_3 = 0.7684
+      L12_3 = 1.869
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+      L4_3 = A1_3
+      L3_3 = A1_3.Visible
+      L5_3 = A0_3.VISIBLE_HIDE
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_COMALL002_03007_SOFTKNOX_000_002
+      L8_3 = false
+      L9_3 = nil
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_JOY_BIG
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_COMALL002_03007_SOFTKNOX_000_003
+      L8_3 = true
+      L9_3 = nil
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.DisableSceneSkip
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.FadeOut
+      L5_3 = A0_3.FADE_DEFAULT
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.WaitForFade
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.BeginCutScene
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.PlayCutScene
+      L5_3 = A0_3.CUTSCENE0
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.PlayBGM
+      L5_3 = A0_3.BGM_MUSIC_NO_MUSIC
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.FadeOut
+      L5_3 = A0_3.FADE_SHORT
+      L6_3 = A0_3.FADE_LAYER_BACK
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.EndCutScene
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.EnableSceneSkip
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.FadeIn
+      L5_3 = A0_3.FADE_DEFAULT
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.WaitForFade
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.DisableSceneSkip
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.ScreenImage
+      L5_3 = A0_3.SCREENIMAGE0
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 60
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.EnableSceneSkip
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.DisableSceneSkip
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.LogMessage
+      L5_3 = A0_3.UNLOCK_ADD_NEW_CONTENT_TO_CF
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 60
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.EnableSceneSkip
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.FadeOut
+      L5_3 = A0_3.FADE_DEFAULT
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.WaitForFade
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 30
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.DisableSceneSkip
+      L3_3(L4_3)
+      L4_3 = A1_3
+      L3_3 = A1_3.IsHowTo
+      L5_3 = A0_3.HOWTO0
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == false then
+        L4_3 = A0_3
+        L3_3 = A0_3.HowTo
+        L5_3 = A0_3.HOWTO0
+        L3_3(L4_3, L5_3)
       end
-      A0_0:EnableSceneSkip()
-      return 1, 0
+      L4_3 = A0_3
+      L3_3 = A0_3.EnableSceneSkip
+      L3_3(L4_3)
+      L3_3 = 1
+      L4_3 = 0
+      return L3_3, L4_3
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_COMALL002_03007_SOFTKNOX_000_050, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
-      A0_0:Wait(10)
-      A0_0:SystemTalk(A0_0.TEXT_COMALL002_03007_SYSTEM_000_051, false)
-      A0_0:SystemTalk(A0_0.TEXT_COMALL002_03007_SYSTEM_000_052, false)
-      A0_0:SystemTalk(A0_0.TEXT_COMALL002_03007_SYSTEM_000_053, true)
-      A0_0:FadeOut(A0_0.FADE_DEFAULT)
-      A0_0:WaitForFade()
-      A0_0:Wait(30)
-      return 0, 0
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_COMALL002_03007_SOFTKNOX_000_050
+      L8_3 = true
+      L9_3 = nil
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_COMALL002_03007_SYSTEM_000_051
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_COMALL002_03007_SYSTEM_000_052
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_COMALL002_03007_SYSTEM_000_053
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.FadeOut
+      L5_3 = A0_3.FADE_DEFAULT
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.WaitForFade
+      L3_3(L4_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 30
+      L3_3(L4_3, L5_3)
+      L3_3 = 0
+      L4_3 = 0
+      return L3_3, L4_3
     end
   end
-end)()
-;(function()
-  local L0_3
-  L0_3 = ComAll002
-  L0_3.SCRIPT_VERSION = 2
-  L0_3 = ComAll002
-  function L0_3.OnInitialize(A0_4)
-    local L1_5
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ComAll002
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = ComAll002
+  function L1_2(A0_3)
+    local L1_3
   end
-end)()
+  L0_2.OnInitialize = L1_2
+end
+L0_1()

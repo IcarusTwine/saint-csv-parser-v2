@@ -1,696 +1,3581 @@
-(function()
-  print("RegHinReturnToIvaliceStoryNpc002")
-  function RegHinReturnToIvaliceStoryNpc002.OnScene00000(A0_0, A1_1, A2_2)
-    if A2_2:GetBaseId() == A0_0.LINA_LSCHG07_001 then
-      A0_0:TalkLina001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.MIKOTO_LSCHG07_001 then
-      A0_0:TalkMikoto001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.RAMZA_LSCHG07_001 then
-      A0_0:TalkRamza001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.JENOMIS_LSCHG07_001 then
-      A0_0:TalkJenomis001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.HURDY_LSCHG07_001 then
-      A0_0:TalkHurdy001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.MONB_LSCHG07_001 then
-      A0_0:TalkMonb001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.LINA_LSCHG09_001 then
-      A0_0:TalkLina002(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.MIKOTO_LSCHG09_001 then
-      A0_0:TalkMikoto002(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.FLAN_LSCHG09_001 then
-      A0_0:TalkFlan001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.BUWAJI_LSCHG09_001 then
-      A0_0:TalkBwaji001(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.MONB_LSCHG09_001 then
-      A0_0:TalkMonb002(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.HURDY_LSCHG09_001 then
-      A0_0:TalkHurdy002(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.LINA_LSCHG09_002 then
-      A0_0:TalkLina003(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.MIKOTO_LSCHG09_002 then
-      A0_0:TalkMikoto003(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.ALMA_LS002_001 then
-      A0_0:TalkAlma003(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.RAMZA_LS002_001 then
-      A0_0:TalkRamza003(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.JENOMIS_LS002_001 then
-      A0_0:TalkJenomis003(A1_1, A2_2)
-    elseif A2_2:GetBaseId() == A0_0.MONB_LS002_001 then
-      A0_0:TalkMonb003(A1_1, A2_2)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegHinReturnToIvaliceStoryNpc002"
+  L0_2(L1_2)
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.LINA_LSCHG07_001
+    if L3_3 == L4_3 then
+      L4_3 = A0_3
+      L3_3 = A0_3.TalkLina001
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L3_3(L4_3, L5_3, L6_3)
     else
-      if A2_2:GetBaseId() == A0_0.HURDY_LS002_001 then
-        A0_0:TalkHurdy003(A1_1, A2_2)
+      L4_3 = A2_3
+      L3_3 = A2_3.GetBaseId
+      L3_3 = L3_3(L4_3)
+      L4_3 = A0_3.MIKOTO_LSCHG07_001
+      if L3_3 == L4_3 then
+        L4_3 = A0_3
+        L3_3 = A0_3.TalkMikoto001
+        L5_3 = A1_3
+        L6_3 = A2_3
+        L3_3(L4_3, L5_3, L6_3)
       else
+        L4_3 = A2_3
+        L3_3 = A2_3.GetBaseId
+        L3_3 = L3_3(L4_3)
+        L4_3 = A0_3.RAMZA_LSCHG07_001
+        if L3_3 == L4_3 then
+          L4_3 = A0_3
+          L3_3 = A0_3.TalkRamza001
+          L5_3 = A1_3
+          L6_3 = A2_3
+          L3_3(L4_3, L5_3, L6_3)
+        else
+          L4_3 = A2_3
+          L3_3 = A2_3.GetBaseId
+          L3_3 = L3_3(L4_3)
+          L4_3 = A0_3.JENOMIS_LSCHG07_001
+          if L3_3 == L4_3 then
+            L4_3 = A0_3
+            L3_3 = A0_3.TalkJenomis001
+            L5_3 = A1_3
+            L6_3 = A2_3
+            L3_3(L4_3, L5_3, L6_3)
+          else
+            L4_3 = A2_3
+            L3_3 = A2_3.GetBaseId
+            L3_3 = L3_3(L4_3)
+            L4_3 = A0_3.HURDY_LSCHG07_001
+            if L3_3 == L4_3 then
+              L4_3 = A0_3
+              L3_3 = A0_3.TalkHurdy001
+              L5_3 = A1_3
+              L6_3 = A2_3
+              L3_3(L4_3, L5_3, L6_3)
+            else
+              L4_3 = A2_3
+              L3_3 = A2_3.GetBaseId
+              L3_3 = L3_3(L4_3)
+              L4_3 = A0_3.MONB_LSCHG07_001
+              if L3_3 == L4_3 then
+                L4_3 = A0_3
+                L3_3 = A0_3.TalkMonb001
+                L5_3 = A1_3
+                L6_3 = A2_3
+                L3_3(L4_3, L5_3, L6_3)
+              else
+                L4_3 = A2_3
+                L3_3 = A2_3.GetBaseId
+                L3_3 = L3_3(L4_3)
+                L4_3 = A0_3.LINA_LSCHG09_001
+                if L3_3 == L4_3 then
+                  L4_3 = A0_3
+                  L3_3 = A0_3.TalkLina002
+                  L5_3 = A1_3
+                  L6_3 = A2_3
+                  L3_3(L4_3, L5_3, L6_3)
+                else
+                  L4_3 = A2_3
+                  L3_3 = A2_3.GetBaseId
+                  L3_3 = L3_3(L4_3)
+                  L4_3 = A0_3.MIKOTO_LSCHG09_001
+                  if L3_3 == L4_3 then
+                    L4_3 = A0_3
+                    L3_3 = A0_3.TalkMikoto002
+                    L5_3 = A1_3
+                    L6_3 = A2_3
+                    L3_3(L4_3, L5_3, L6_3)
+                  else
+                    L4_3 = A2_3
+                    L3_3 = A2_3.GetBaseId
+                    L3_3 = L3_3(L4_3)
+                    L4_3 = A0_3.FLAN_LSCHG09_001
+                    if L3_3 == L4_3 then
+                      L4_3 = A0_3
+                      L3_3 = A0_3.TalkFlan001
+                      L5_3 = A1_3
+                      L6_3 = A2_3
+                      L3_3(L4_3, L5_3, L6_3)
+                    else
+                      L4_3 = A2_3
+                      L3_3 = A2_3.GetBaseId
+                      L3_3 = L3_3(L4_3)
+                      L4_3 = A0_3.BUWAJI_LSCHG09_001
+                      if L3_3 == L4_3 then
+                        L4_3 = A0_3
+                        L3_3 = A0_3.TalkBwaji001
+                        L5_3 = A1_3
+                        L6_3 = A2_3
+                        L3_3(L4_3, L5_3, L6_3)
+                      else
+                        L4_3 = A2_3
+                        L3_3 = A2_3.GetBaseId
+                        L3_3 = L3_3(L4_3)
+                        L4_3 = A0_3.MONB_LSCHG09_001
+                        if L3_3 == L4_3 then
+                          L4_3 = A0_3
+                          L3_3 = A0_3.TalkMonb002
+                          L5_3 = A1_3
+                          L6_3 = A2_3
+                          L3_3(L4_3, L5_3, L6_3)
+                        else
+                          L4_3 = A2_3
+                          L3_3 = A2_3.GetBaseId
+                          L3_3 = L3_3(L4_3)
+                          L4_3 = A0_3.HURDY_LSCHG09_001
+                          if L3_3 == L4_3 then
+                            L4_3 = A0_3
+                            L3_3 = A0_3.TalkHurdy002
+                            L5_3 = A1_3
+                            L6_3 = A2_3
+                            L3_3(L4_3, L5_3, L6_3)
+                          else
+                            L4_3 = A2_3
+                            L3_3 = A2_3.GetBaseId
+                            L3_3 = L3_3(L4_3)
+                            L4_3 = A0_3.LINA_LSCHG09_002
+                            if L3_3 == L4_3 then
+                              L4_3 = A0_3
+                              L3_3 = A0_3.TalkLina003
+                              L5_3 = A1_3
+                              L6_3 = A2_3
+                              L3_3(L4_3, L5_3, L6_3)
+                            else
+                              L4_3 = A2_3
+                              L3_3 = A2_3.GetBaseId
+                              L3_3 = L3_3(L4_3)
+                              L4_3 = A0_3.MIKOTO_LSCHG09_002
+                              if L3_3 == L4_3 then
+                                L4_3 = A0_3
+                                L3_3 = A0_3.TalkMikoto003
+                                L5_3 = A1_3
+                                L6_3 = A2_3
+                                L3_3(L4_3, L5_3, L6_3)
+                              else
+                                L4_3 = A2_3
+                                L3_3 = A2_3.GetBaseId
+                                L3_3 = L3_3(L4_3)
+                                L4_3 = A0_3.ALMA_LS002_001
+                                if L3_3 == L4_3 then
+                                  L4_3 = A0_3
+                                  L3_3 = A0_3.TalkAlma003
+                                  L5_3 = A1_3
+                                  L6_3 = A2_3
+                                  L3_3(L4_3, L5_3, L6_3)
+                                else
+                                  L4_3 = A2_3
+                                  L3_3 = A2_3.GetBaseId
+                                  L3_3 = L3_3(L4_3)
+                                  L4_3 = A0_3.RAMZA_LS002_001
+                                  if L3_3 == L4_3 then
+                                    L4_3 = A0_3
+                                    L3_3 = A0_3.TalkRamza003
+                                    L5_3 = A1_3
+                                    L6_3 = A2_3
+                                    L3_3(L4_3, L5_3, L6_3)
+                                  else
+                                    L4_3 = A2_3
+                                    L3_3 = A2_3.GetBaseId
+                                    L3_3 = L3_3(L4_3)
+                                    L4_3 = A0_3.JENOMIS_LS002_001
+                                    if L3_3 == L4_3 then
+                                      L4_3 = A0_3
+                                      L3_3 = A0_3.TalkJenomis003
+                                      L5_3 = A1_3
+                                      L6_3 = A2_3
+                                      L3_3(L4_3, L5_3, L6_3)
+                                    else
+                                      L4_3 = A2_3
+                                      L3_3 = A2_3.GetBaseId
+                                      L3_3 = L3_3(L4_3)
+                                      L4_3 = A0_3.MONB_LS002_001
+                                      if L3_3 == L4_3 then
+                                        L4_3 = A0_3
+                                        L3_3 = A0_3.TalkMonb003
+                                        L5_3 = A1_3
+                                        L6_3 = A2_3
+                                        L3_3(L4_3, L5_3, L6_3)
+                                      else
+                                        L4_3 = A2_3
+                                        L3_3 = A2_3.GetBaseId
+                                        L3_3 = L3_3(L4_3)
+                                        L4_3 = A0_3.HURDY_LS002_001
+                                        if L3_3 == L4_3 then
+                                          L4_3 = A0_3
+                                          L3_3 = A0_3.TalkHurdy003
+                                          L5_3 = A1_3
+                                          L6_3 = A2_3
+                                          L3_3(L4_3, L5_3, L6_3)
+                                        else
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
       end
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkLina001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    if A1_4:IsQuestAccepted(A0_3.QUEST_STMBDI302) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_040, true, nil, nil, nil, nil)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI301
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI302
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.IsQuestAccepted
+    L7_3 = A0_3.QUEST_STMBDI302
+    L5_3 = L5_3(L6_3, L7_3)
+    if L5_3 == true then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_040
+      L10_3 = true
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
     else
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_000, true, nil, nil, nil, nil)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_000
+      L10_3 = true
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkLina002(A0_6, A1_7, A2_8)
-    A2_8:TurnTo(A1_7, false)
-    A2_8:WaitForTurn()
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_FACIAL_WORRY)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_090, true, nil, nil, nil, nil)
+  L0_2.TalkLina001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_WORRY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_090
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkLina003(A0_9, A1_10, A2_11)
-    A2_11:LookAt(A1_10)
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_FACIAL_WRYSMILE_CL)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_100, true, nil, nil, nil, nil)
+  L0_2.TalkLina002 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_WRYSMILE_CL
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_LINA_000_100
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkMikoto001(A0_12, A1_13, A2_14)
-    A2_14:TurnTo(A1_13, false)
-    A2_14:WaitForTurn()
-    if A1_13:IsQuestAccepted(A0_12.QUEST_STMBDI302) == true then
-      if A1_13:GetQuestSequence(A0_12.QUEST_STMBDI302) <= 1 then
+  L0_2.TalkLina003 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI301
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI302
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = nil
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestAccepted
+    L8_3 = A0_3.QUEST_STMBDI302
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 == true then
+      if L4_3 <= 1 then
+        L5_3 = 0
       else
+        L5_3 = 2
       end
-    elseif A1_13:IsQuestAccepted(A0_12.QUEST_STMBDI301) == true then
-      if A1_13:GetQuestSequence(A0_12.QUEST_STMBDI301) >= 5 then
-      elseif A1_13:GetQuestSequence(A0_12.QUEST_STMBDI301) == 4 then
+    else
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestAccepted
+      L8_3 = A0_3.QUEST_STMBDI301
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 == true then
+        if 5 <= L3_3 then
+          L5_3 = 0
+        elseif L3_3 == 4 then
+          L5_3 = 1
+        else
+          L5_3 = 2
+        end
       else
+        L5_3 = 0
       end
-    else
     end
-    if 0 == 1 then
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK2)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_010, true, nil, nil, nil, nil)
-    elseif 0 == 0 then
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK_BIG)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_020, true, nil, nil, nil, nil)
+    if L5_3 == 1 then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_010
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    elseif L5_3 == 0 then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_020
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_ARMS)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_050, true, nil, nil, nil, nil)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_050
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkMikoto002(A0_15, A1_16, A2_17)
-    A2_17:TurnTo(A1_16, false)
-    A2_17:WaitForTurn()
-    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_FACIAL_CRY)
-    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_090, true, nil, nil, nil, nil)
+  L0_2.TalkMikoto001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_CRY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_090
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkMikoto003(A0_18, A1_19, A2_20)
-    A2_20:TurnTo(A1_19, false)
-    A2_20:WaitForTurn()
-    A2_20:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_20:PlayActionTimeline(A0_18.ACTION_TIMELINE_FACIAL_SPEWING)
-    A2_20:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_100, true, nil, nil, nil, nil)
+  L0_2.TalkMikoto002 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_SPEWING
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MIKOTO_000_100
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkRamza001(A0_21, A1_22, A2_23)
-    A2_23:TurnTo(A1_22, false)
-    A2_23:WaitForTurn()
-    if A1_22:IsQuestAccepted(A0_21.QUEST_STMBDI302) == true then
-      if A1_22:GetQuestSequence(A0_21.QUEST_STMBDI302) >= 2 then
+  L0_2.TalkMikoto003 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI301
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI302
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = nil
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestAccepted
+    L8_3 = A0_3.QUEST_STMBDI302
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 == true then
+      if 2 <= L4_3 then
+        L5_3 = 1
       else
+        L5_3 = 0
       end
     else
+      L5_3 = 0
     end
-    if 1 <= 0 then
-      A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_ADD_NO)
-      A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_050, true, nil, nil, nil, nil)
+    if 1 <= L5_3 then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_050
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_000, true, nil, nil, nil, nil)
-      A2_23:CancelActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A1_22:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A1_22:WaitForActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK2)
-      A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_001, false, nil, nil, nil, nil)
-      A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_002, false, nil, nil, nil, nil)
-      A2_23:CancelActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK2)
-      A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_THINK)
-      A2_23:Talk(A1_22, A0_21, A0_21.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_003, true, nil, nil, nil, nil)
-    end
-  end
-  function RegHinReturnToIvaliceStoryNpc002.TalkRamza003(A0_24, A1_25, A2_26)
-    A2_26:TurnTo(A1_25, false)
-    A2_26:WaitForTurn()
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_SMILE_WK)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_120, false, nil, nil, nil, nil)
-    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_BOW)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_121, false, nil, nil, nil, nil)
-    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_BOW)
-    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_122, false, nil, nil, nil, nil)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_123, false, nil, nil, nil, nil)
-    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK1)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EMOTE_UPSET)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_124, false, nil, nil, nil, nil)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_125, false, nil, nil, nil, nil)
-    A2_26:CancelActionTimeline(A0_24.ACTION_TIMELINE_EMOTE_UPSET)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK2)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_126, false, nil, nil, nil, nil)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_127, false, nil, nil, nil, nil)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_FACIAL_SMILE_WK)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_128, false, nil, nil, nil, nil)
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_129, true, nil, nil, nil, nil)
-  end
-  function RegHinReturnToIvaliceStoryNpc002.TalkAlma003(A0_27, A1_28, A2_29)
-    A2_29:TurnTo(A1_28, false)
-    A2_29:WaitForTurn()
-    A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_EMOTE_BOW)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_120, false, nil, nil, nil, nil)
-    A2_29:CancelActionTimeline(A0_27.ACTION_TIMELINE_EMOTE_BOW)
-    A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_EVENT_TALK1)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_121, false, nil, nil, nil, nil)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_122, false, nil, nil, nil, nil)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_123, true, nil, nil, nil, nil)
-    A0_27:Wait(10)
-    A2_29:CancelActionTimeline(A0_27.ACTION_TIMELINE_EVENT_TALK1)
-    A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_FACIAL_SMILE_WK)
-    A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_124, false, nil, nil, nil, nil)
-    A2_29:CancelActionTimeline(A0_27.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_29:PlayActionTimeline(A0_27.LOC_HAND)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_125, false, nil, nil, nil, nil)
-    A2_29:CancelActionTimeline(A0_27.LOC_HAND)
-    A2_29:PlayActionTimeline(A0_27.EMOTE_FACIAL_WORRY)
-    A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_EVENT_TALK2)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_126, false, nil, nil, nil, nil)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_127, true, nil, nil, nil, nil)
-    A2_29:CancelActionTimeline(A0_27.EMOTE_FACIAL_WORRY)
-    A2_29:CancelActionTimeline(A0_27.ACTION_TIMELINE_EVENT_TALK2)
-    A2_29:PlayActionTimeline(A0_27.LOC_PRAY)
-    A0_27:Wait(60)
-    A2_29:WaitForActionTimeline(A0_27.LOC_PRAY)
-  end
-  function RegHinReturnToIvaliceStoryNpc002.TalkHurdy001(A0_30, A1_31, A2_32)
-    A2_32:TurnTo(A1_31, false)
-    A2_32:WaitForTurn()
-    if A1_31:GetQuestSequence(A0_30.QUEST_STMBDI301) > 2 or A1_31:IsQuestCompleted(A0_30.QUEST_STMBDI301) == true and A1_31:GetQuestSequence(A0_30.QUEST_STMBDI302) < 2 then
-    else
-    end
-    if 2 == 1 then
-      A2_32:PlayActionTimeline(A0_30.ACTION_TIMELINE_EVENT_TALK1)
-      A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_000, false, nil, nil, nil, nil)
-      A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_001, true, nil, nil, nil, nil)
-    else
-      A2_32:PlayActionTimeline(A0_30.ACTION_TIMELINE_EVENT_TALK1)
-      A2_32:Talk(A1_31, A0_30, A0_30.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_050, true, nil, nil, nil, nil)
-    end
-  end
-  function RegHinReturnToIvaliceStoryNpc002.TalkHurdy002(A0_33, A1_34, A2_35)
-    local L3_36, L4_37, L5_38
-    L4_37 = A1_34
-    L3_36 = A1_34.GetQuestSequence
-    L5_38 = A0_33.QUEST_STMBDI302
-    L3_36 = L3_36(L4_37, L5_38)
-    L5_38 = A1_34
-    L4_37 = A1_34.GetQuestSequence
-    L4_37 = L4_37(L5_38, A0_33.QUEST_STMBDI303)
-    L5_38 = A0_33.BindCharacter
-    L5_38 = L5_38(A0_33, A0_33.BIND_MONB)
-    A2_35:TurnTo(L5_38, false)
-    L5_38:TurnTo(A2_35, false)
-    A2_35:WaitForTurn()
-    L5_38:WaitForTurn()
-    if L4_37 >= 1 then
-      L5_38:PlayActionTimeline(A0_33.ACTION_TIMELINE_EVENT_TALK1)
-      L5_38:Talk(A1_34, A0_33, A0_33.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_100, true, nil, nil, nil, nil)
-      A2_35:PlayActionTimeline(A0_33.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_101, true, nil, nil, nil, nil)
-    else
-      L5_38:PlayActionTimeline(A0_33.ACTION_TIMELINE_EVENT_SAD)
-      L5_38:Talk(A1_34, A0_33, A0_33.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_090, true, nil, nil, nil, nil)
-      A0_33:Wait(10)
-      A2_35:PlayActionTimeline(A0_33.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_35:Talk(A1_34, A0_33, A0_33.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_091, true, nil, nil, nil, nil)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_000
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.CancelActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3(L7_3, L8_3)
+      L7_3 = A1_3
+      L6_3 = A1_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3(L7_3, L8_3)
+      L7_3 = A1_3
+      L6_3 = A1_3.WaitForActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_001
+      L11_3 = false
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_002
+      L11_3 = false
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.CancelActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_003
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkHurdy003(A0_39, A1_40, A2_41)
-    local L3_42
-    L3_42 = A0_39.BindCharacter
-    L3_42 = L3_42(A0_39, A0_39.BIND_MONB_255)
-    A1_40:LookAt(L3_42)
-    A2_41:TurnTo(L3_42, false)
-    L3_42:TurnTo(A1_40, false)
-    L3_42:WaitForTurn()
-    A2_41:WaitForTurn()
-    L3_42:PlayActionTimeline(A0_39.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-    L3_42:Talk(A1_40, A0_39, A0_39.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_120, true, nil, nil, nil, nil)
-    L3_42:LookAt(A2_41)
-    A1_40:LookAt(A2_41)
-    A2_41:PlayActionTimeline(A0_39.ACTION_TIMELINE_EVENT_TALK1)
-    A2_41:Talk(A1_40, A0_39, A0_39.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_121, true, nil, nil, nil, nil)
+  L0_2.TalkRamza001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE_WK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_120
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_121
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_122
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_123
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_UPSET
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_124
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_125
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_UPSET
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_126
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_127
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE_WK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_128
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_RAMZA_000_129
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkMonb001(A0_43, A1_44, A2_45)
-    A2_45:TurnTo(A1_44, false)
-    A2_45:WaitForTurn()
-    if A1_44:GetQuestSequence(A0_43.QUEST_STMBDI302) > 1 then
-      A2_45:PlayActionTimeline(A0_43.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_45:Talk(A1_44, A0_43, A0_43.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_050, true, nil, nil, nil, nil)
+  L0_2.TalkRamza003 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_120
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_121
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_122
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_123
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE_WK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_124
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.LOC_HAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_125
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.LOC_HAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.EMOTE_FACIAL_WORRY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_126
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_ALMA_000_127
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.EMOTE_FACIAL_WORRY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.LOC_PRAY
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 60
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForActionTimeline
+    L5_3 = A0_3.LOC_PRAY
+    L3_3(L4_3, L5_3)
+  end
+  L0_2.TalkAlma003 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI301
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI302
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = 1
+    if not (2 < L3_3) then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestCompleted
+      L8_3 = A0_3.QUEST_STMBDI301
+      L6_3 = L6_3(L7_3, L8_3)
+      if not (L6_3 == true and L4_3 < 2) then
+        goto lbl_25
+      end
+    end
+    L5_3 = 1
+    goto lbl_26
+    ::lbl_25::
+    L5_3 = 2
+    ::lbl_26::
+    if L5_3 == 1 then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_000
+      L11_3 = false
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_001
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A2_45:PlayActionTimeline(A0_43.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_45:Talk(A1_44, A0_43, A0_43.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_040, true, nil, nil, nil, nil)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_050
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkMonb002(A0_46, A1_47, A2_48)
-    local L3_49, L4_50, L5_51
-    L4_50 = A1_47
-    L3_49 = A1_47.GetQuestSequence
-    L5_51 = A0_46.QUEST_STMBDI302
-    L3_49 = L3_49(L4_50, L5_51)
-    L5_51 = A1_47
-    L4_50 = A1_47.GetQuestSequence
-    L4_50 = L4_50(L5_51, A0_46.QUEST_STMBDI303)
-    L5_51 = A0_46.BindCharacter
-    L5_51 = L5_51(A0_46, A0_46.BIND_HURY)
-    A2_48:TurnTo(L5_51, false)
-    L5_51:TurnTo(A2_48, false)
-    A2_48:WaitForTurn()
-    L5_51:WaitForTurn()
-    if L4_50 >= 1 then
-      A2_48:PlayActionTimeline(A0_46.ACTION_TIMELINE_EVENT_TALK1)
-      A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_100, true, nil, nil, nil, nil)
-      L5_51:PlayActionTimeline(A0_46.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      L5_51:Talk(A1_47, A0_46, A0_46.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_101, true, nil, nil, nil, nil)
+  L0_2.TalkHurdy001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI302
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI303
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.BindCharacter
+    L7_3 = A0_3.BIND_MONB
+    L5_3 = L5_3(L6_3, L7_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.TurnTo
+    L8_3 = L5_3
+    L9_3 = false
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.TurnTo
+    L8_3 = A2_3
+    L9_3 = false
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.WaitForTurn
+    L6_3(L7_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.WaitForTurn
+    L6_3(L7_3)
+    if 1 <= L4_3 then
+      L7_3 = L5_3
+      L6_3 = L5_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3(L7_3, L8_3)
+      L7_3 = L5_3
+      L6_3 = L5_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_100
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_101
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A2_48:PlayActionTimeline(A0_46.ACTION_TIMELINE_EVENT_SAD)
-      A2_48:Talk(A1_47, A0_46, A0_46.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_090, true, nil, nil, nil, nil)
-      A0_46:Wait(10)
-      L5_51:PlayActionTimeline(A0_46.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      L5_51:Talk(A1_47, A0_46, A0_46.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_091, true, nil, nil, nil, nil)
+      L7_3 = L5_3
+      L6_3 = L5_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_SAD
+      L6_3(L7_3, L8_3)
+      L7_3 = L5_3
+      L6_3 = L5_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_090
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.Wait
+      L8_3 = 10
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_091
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkMonb003(A0_52, A1_53, A2_54)
-    local L3_55
-    L3_55 = A0_52.BindCharacter
-    L3_55 = L3_55(A0_52, A0_52.BIND_HURY_255)
-    A1_53:LookAt(A2_54)
-    L3_55:TurnTo(A2_54, false)
-    A2_54:TurnTo(A1_53, false)
-    A2_54:WaitForTurn()
-    L3_55:WaitForTurn()
-    A2_54:PlayActionTimeline(A0_52.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-    A2_54:Talk(A1_53, A0_52, A0_52.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_120, true, nil, nil, nil, nil)
-    A2_54:LookAt(L3_55)
-    A1_53:LookAt(L3_55)
-    L3_55:PlayActionTimeline(A0_52.ACTION_TIMELINE_EVENT_TALK1)
-    L3_55:Talk(A1_53, A0_52, A0_52.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_121, true, nil, nil, nil, nil)
+  L0_2.TalkHurdy002 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L4_3 = A0_3
+    L3_3 = A0_3.BindCharacter
+    L5_3 = A0_3.BIND_MONB_255
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI303
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = L3_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = L3_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.WaitForTurn
+    L5_3(L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+    L5_3(L6_3, L7_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_120
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_121
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkFlan001(A0_56, A1_57, A2_58)
-    A2_58:TurnTo(A1_57, false)
-    A2_58:WaitForTurn()
-    if A1_57:GetQuestSequence(A0_56.QUEST_STMBDI303) >= 1 then
-      A2_58:PlayActionTimeline(A0_56.ACTION_TIMELINE_EVENT_TALK1)
-      A2_58:Talk(A1_57, A0_56, A0_56.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_FRAN_000_100, false, nil, nil, nil, nil)
-      A2_58:Talk(A1_57, A0_56, A0_56.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_FRAN_000_101, true, nil, nil, nil, nil)
+  L0_2.TalkHurdy003 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI301
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI302
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
+    if 1 < L4_3 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_050
+      L10_3 = true
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
     else
-      A2_58:PlayActionTimeline(A0_56.ACTION_TIMELINE_EVENT_ARMS)
-      A2_58:Talk(A1_57, A0_56, A0_56.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_FRAN_000_090, true, nil, nil, nil, nil)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_040
+      L10_3 = true
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkBwaji001(A0_59, A1_60, A2_61)
-    A2_61:TurnTo(A1_60, false)
-    A2_61:WaitForTurn()
-    A2_61:PlayActionTimeline(A0_59.ACTION_TIMELINE_EVENT_ARMS)
-    A2_61:Talk(A1_60, A0_59, A0_59.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_BWAGI_000_090, true, nil, nil, nil, nil)
-  end
-  function RegHinReturnToIvaliceStoryNpc002.TalkJenomis001(A0_62, A1_63, A2_64)
-    local L3_65, L4_66, L5_67, L6_68, L7_69
-    L4_66 = A2_64
-    L3_65 = A2_64.TurnTo
-    L5_67 = A1_63
-    L6_68 = false
-    L3_65(L4_66, L5_67, L6_68)
-    L4_66 = A2_64
-    L3_65 = A2_64.WaitForTurn
-    L3_65(L4_66)
-    L4_66 = A1_63
-    L3_65 = A1_63.GetQuestSequence
-    L5_67 = A0_62.QUEST_STMBDI301
-    L3_65 = L3_65(L4_66, L5_67)
-    L5_67 = A1_63
-    L4_66 = A1_63.GetQuestSequence
-    L6_68 = A0_62.QUEST_STMBDI302
-    L4_66 = L4_66(L5_67, L6_68)
-    L6_68 = A1_63
-    L5_67 = A1_63.GetQuestSequence
-    L7_69 = A0_62.QUEST_STMBDI303
-    L5_67 = L5_67(L6_68, L7_69)
-    L6_68, L7_69 = nil, nil
-    if A1_63:IsQuestAccepted(A0_62.QUEST_STMBDI302) == true and L4_66 > 1 and L4_66 < 5 then
-      A2_64:PlayActionTimeline(A0_62.ACTION_TIMELINE_EVENT_TALK1)
-      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_050, false, nil, nil, nil, nil)
-      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_051, true, nil, nil, nil, nil)
+  L0_2.TalkMonb001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI302
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI303
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.BindCharacter
+    L7_3 = A0_3.BIND_HURY
+    L5_3 = L5_3(L6_3, L7_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.TurnTo
+    L8_3 = L5_3
+    L9_3 = false
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.TurnTo
+    L8_3 = A2_3
+    L9_3 = false
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.WaitForTurn
+    L6_3(L7_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.WaitForTurn
+    L6_3(L7_3)
+    if 1 <= L4_3 then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_100
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = L5_3
+      L6_3 = L5_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L6_3(L7_3, L8_3)
+      L7_3 = L5_3
+      L6_3 = L5_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_101
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A2_64:PlayActionTimeline(A0_62.ACTION_TIMELINE_EVENT_ADD_NO)
-      A2_64:PlayActionTimeline(A0_62.ACTION_TIMELINE_EVENT_ARMS)
-      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_000, false, nil, nil, nil, nil)
-      A2_64:CancelActionTimeline(A0_62.ACTION_TIMELINE_EVENT_ADD_NO)
-      A2_64:PlayActionTimeline(A0_62.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A2_64:Talk(A1_63, A0_62, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_001, true, nil, nil, nil, nil)
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_SAD
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_090
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.Wait
+      L8_3 = 10
+      L6_3(L7_3, L8_3)
+      L7_3 = L5_3
+      L6_3 = L5_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+      L6_3(L7_3, L8_3)
+      L7_3 = L5_3
+      L6_3 = L5_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_091
+      L11_3 = true
+      L12_3 = nil
+      L13_3 = nil
+      L14_3 = nil
+      L15_3 = nil
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    end
+  end
+  L0_2.TalkMonb002 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L4_3 = A0_3
+    L3_3 = A0_3.BindCharacter
+    L5_3 = A0_3.BIND_HURY_255
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI303
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.TurnTo
+    L7_3 = A2_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.WaitForTurn
+    L5_3(L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_MONTBLANC_000_120
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = L3_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = L3_3
+    L5_3(L6_3, L7_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L5_3(L6_3, L7_3)
+    L6_3 = L3_3
+    L5_3 = L3_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_HURDY_000_121
+    L10_3 = true
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+  end
+  L0_2.TalkMonb003 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI303
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    if 1 <= L3_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_FRAN_000_100
+      L9_3 = false
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_FRAN_000_101
+      L9_3 = true
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    else
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_FRAN_000_090
+      L9_3 = true
+      L10_3 = nil
+      L11_3 = nil
+      L12_3 = nil
+      L13_3 = nil
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    end
+  end
+  L0_2.TalkFlan001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI303
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_BWAGI_000_090
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+  end
+  L0_2.TalkBwaji001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI301
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI302
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetQuestSequence
+    L7_3 = A0_3.QUEST_STMBDI303
+    L5_3 = L5_3(L6_3, L7_3)
+    L6_3 = nil
+    L7_3 = nil
+    L9_3 = A1_3
+    L8_3 = A1_3.IsQuestAccepted
+    L10_3 = A0_3.QUEST_STMBDI302
+    L8_3 = L8_3(L9_3, L10_3)
+    if L8_3 == true and 1 < L4_3 and L4_3 < 5 then
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_050
+      L13_3 = false
+      L14_3 = nil
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_051
+      L13_3 = true
+      L14_3 = nil
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+    else
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_000
+      L13_3 = false
+      L14_3 = nil
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.CancelActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_001
+      L13_3 = true
+      L14_3 = nil
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
     end
     while true do
-      L7_69 = A0_62:Menu(A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_Q1_000_000, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_000, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_001, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_002, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_003, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_004, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_005, A0_62.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_010)
-      if L7_69 == 1 then
-        A0_62:RamzaDelitaRelationship(A1_63, A2_64)
-      elseif L7_69 == 2 then
-        A0_62:RamzaOlanRelationship(A1_63, A2_64)
-      elseif L7_69 == 3 then
-        A0_62:RamzaCrystalRelationship(A1_63, A2_64)
-      elseif L7_69 == 4 then
-        A0_62:OrbonneMonastery(A1_63, A2_64, L3_65, L4_66, L5_67)
-      elseif L7_69 == 5 then
-        A0_62:GolmoreJungle(A1_63, A2_64, L3_65, L4_66, L5_67)
-      elseif L7_69 == 6 then
-        A0_62:Ultima(A1_63, A2_64, L3_65, L4_66, L5_67)
+      L9_3 = A0_3
+      L8_3 = A0_3.Menu
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_Q1_000_000
+      L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_000
+      L12_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_001
+      L13_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_002
+      L14_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_003
+      L15_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_004
+      L16_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_005
+      L17_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_010
+      L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+      L7_3 = L8_3
+      if L7_3 == 1 then
+        L9_3 = A0_3
+        L8_3 = A0_3.RamzaDelitaRelationship
+        L10_3 = A1_3
+        L11_3 = A2_3
+        L8_3(L9_3, L10_3, L11_3)
+      elseif L7_3 == 2 then
+        L9_3 = A0_3
+        L8_3 = A0_3.RamzaOlanRelationship
+        L10_3 = A1_3
+        L11_3 = A2_3
+        L8_3(L9_3, L10_3, L11_3)
+      elseif L7_3 == 3 then
+        L9_3 = A0_3
+        L8_3 = A0_3.RamzaCrystalRelationship
+        L10_3 = A1_3
+        L11_3 = A2_3
+        L8_3(L9_3, L10_3, L11_3)
+      elseif L7_3 == 4 then
+        L9_3 = A0_3
+        L8_3 = A0_3.OrbonneMonastery
+        L10_3 = A1_3
+        L11_3 = A2_3
+        L12_3 = L3_3
+        L13_3 = L4_3
+        L14_3 = L5_3
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      elseif L7_3 == 5 then
+        L9_3 = A0_3
+        L8_3 = A0_3.GolmoreJungle
+        L10_3 = A1_3
+        L11_3 = A2_3
+        L12_3 = L3_3
+        L13_3 = L4_3
+        L14_3 = L5_3
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      elseif L7_3 == 6 then
+        L9_3 = A0_3
+        L8_3 = A0_3.Ultima
+        L10_3 = A1_3
+        L11_3 = A2_3
+        L12_3 = L3_3
+        L13_3 = L4_3
+        L14_3 = L5_3
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
       else
-        return 0
+        L8_3 = 0
+        return L8_3
       end
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.TalkJenomis003(A0_70, A1_71, A2_72)
-    local L3_73, L4_74, L5_75, L6_76
-    L4_74 = A1_71
-    L3_73 = A1_71.GetQuestSequence
-    L5_75 = A0_70.QUEST_STMBDI301
-    L3_73 = L3_73(L4_74, L5_75)
-    L5_75 = A1_71
-    L4_74 = A1_71.GetQuestSequence
-    L6_76 = A0_70.QUEST_STMBDI302
-    L4_74 = L4_74(L5_75, L6_76)
-    L6_76 = A1_71
-    L5_75 = A1_71.GetQuestSequence
-    L5_75 = L5_75(L6_76, A0_70.QUEST_STMBDI303)
-    L6_76 = nil
-    A2_72:TurnTo(A1_71, false)
-    A2_72:WaitForTurn()
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_110, true, nil, nil, nil, nil)
-    A0_70:Wait(10)
-    A2_72:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_111, false, nil, nil, nil, nil)
-    A2_72:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_112, false, nil, nil, nil, nil)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK1)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_113, false, nil, nil, nil, nil)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_114, true, nil, nil, nil, nil)
-    A0_70:Wait(10)
-    A2_72:CancelActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK1)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-    A2_72:PlayActionTimeline(A0_70.ACTION_TIMELINE_EVENT_TALK2)
-    A2_72:Talk(A1_71, A0_70, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_115, true, nil, nil, nil, nil)
+  L0_2.TalkJenomis001 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = A0_3.QUEST_STMBDI301
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = A0_3.QUEST_STMBDI302
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetQuestSequence
+    L7_3 = A0_3.QUEST_STMBDI303
+    L5_3 = L5_3(L6_3, L7_3)
+    L6_3 = nil
+    L8_3 = A2_3
+    L7_3 = A2_3.TurnTo
+    L9_3 = A1_3
+    L10_3 = false
+    L7_3(L8_3, L9_3, L10_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.WaitForTurn
+    L7_3(L8_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_110
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = nil
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_111
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = nil
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_112
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = nil
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_113
+    L12_3 = false
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = nil
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_114
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = nil
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 10
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.CancelActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L7_3(L8_3, L9_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_000_115
+    L12_3 = true
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = nil
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
     while true do
-      L6_76 = A0_70:Menu(A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_Q1_000_000, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_000, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_001, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_002, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_003, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_004, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_005, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_006, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_007, A0_70.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_010)
-      if L6_76 == 1 then
-        A0_70:RamzaDelitaRelationship(A1_71, A2_72)
-      elseif L6_76 == 2 then
-        A0_70:RamzaOlanRelationship(A1_71, A2_72)
-      elseif L6_76 == 3 then
-        A0_70:RamzaCrystalRelationship(A1_71, A2_72)
-      elseif L6_76 == 4 then
-        A0_70:OrbonneMonastery(A1_71, A2_72, L3_73, L4_74, L5_75)
-      elseif L6_76 == 5 then
-        A0_70:GolmoreJungle(A1_71, A2_72, L3_73, L4_74, L5_75)
-      elseif L6_76 == 6 then
-        A0_70:Ultima(A1_71, A2_72, L3_73, L4_74, L5_75)
-      elseif L6_76 == 7 then
-        A0_70:DeathMetropolitan(A1_71, A2_72, L3_73, L4_74, L5_75)
-      elseif L6_76 == 8 then
-        A0_70:Guardian(A1_71, A2_72)
+      L8_3 = A0_3
+      L7_3 = A0_3.Menu
+      L9_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_Q1_000_000
+      L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_000
+      L11_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_001
+      L12_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_002
+      L13_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_003
+      L14_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_004
+      L15_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_005
+      L16_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_006
+      L17_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_007
+      L18_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_A1_000_010
+      L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3)
+      L6_3 = L7_3
+      if L6_3 == 1 then
+        L8_3 = A0_3
+        L7_3 = A0_3.RamzaDelitaRelationship
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L7_3(L8_3, L9_3, L10_3)
+      elseif L6_3 == 2 then
+        L8_3 = A0_3
+        L7_3 = A0_3.RamzaOlanRelationship
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L7_3(L8_3, L9_3, L10_3)
+      elseif L6_3 == 3 then
+        L8_3 = A0_3
+        L7_3 = A0_3.RamzaCrystalRelationship
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L7_3(L8_3, L9_3, L10_3)
+      elseif L6_3 == 4 then
+        L8_3 = A0_3
+        L7_3 = A0_3.OrbonneMonastery
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L11_3 = L3_3
+        L12_3 = L4_3
+        L13_3 = L5_3
+        L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      elseif L6_3 == 5 then
+        L8_3 = A0_3
+        L7_3 = A0_3.GolmoreJungle
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L11_3 = L3_3
+        L12_3 = L4_3
+        L13_3 = L5_3
+        L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      elseif L6_3 == 6 then
+        L8_3 = A0_3
+        L7_3 = A0_3.Ultima
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L11_3 = L3_3
+        L12_3 = L4_3
+        L13_3 = L5_3
+        L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      elseif L6_3 == 7 then
+        L8_3 = A0_3
+        L7_3 = A0_3.DeathMetropolitan
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L11_3 = L3_3
+        L12_3 = L4_3
+        L13_3 = L5_3
+        L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      elseif L6_3 == 8 then
+        L8_3 = A0_3
+        L7_3 = A0_3.Guardian
+        L9_3 = A1_3
+        L10_3 = A2_3
+        L7_3(L8_3, L9_3, L10_3)
       else
-        return 0
+        L7_3 = 0
+        return L7_3
       end
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.RamzaDelitaRelationship(A0_77, A1_78, A2_79)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_000, true, nil, nil, nil, nil)
-    A0_77:Wait(10)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK1)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_001, false, nil, nil, nil, nil)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_002, false, nil, nil, nil, nil)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK1)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ARMS)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_003, true, nil, nil, nil, nil)
-    A0_77:Wait(10)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_004, false, nil, nil, nil, nil)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ARMS)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_005, true, nil, nil, nil, nil)
-    A0_77:Wait(10)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ARMS)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_006, false, nil, nil, nil, nil)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_007, false, nil, nil, nil, nil)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_ARMS)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK1)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_008, false, nil, nil, nil, nil)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_009, false, nil, nil, nil, nil)
-    A2_79:CancelActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK1)
-    A2_79:PlayActionTimeline(A0_77.ACTION_TIMELINE_EVENT_TALK2)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_010, false, nil, nil, nil, nil)
-    A2_79:Talk(A1_78, A0_77, A0_77.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_011, true, nil, nil, nil, nil)
+  L0_2.TalkJenomis003 = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_000
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_001
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_002
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_003
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_004
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_005
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_006
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_007
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_008
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_009
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_010
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_100_011
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.RamzaOlanRelationship(A0_80, A1_81, A2_82)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_000, false, nil, nil, nil, nil)
-    A2_82:CancelActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK1)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_001, false, nil, nil, nil, nil)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_002, false, nil, nil, nil, nil)
-    A2_82:CancelActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK1)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_ARMS)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_003, true, nil, nil, nil, nil)
-    A0_80:Wait(10)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_004, false, nil, nil, nil, nil)
-    A2_82:CancelActionTimeline(A0_80.ACTION_TIMELINE_EVENT_ARMS)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK2)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_005, false, nil, nil, nil, nil)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_006, false, nil, nil, nil, nil)
-    A2_82:CancelActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK2)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_THINK)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_007, false, nil, nil, nil, nil)
-    A2_82:CancelActionTimeline(A0_80.ACTION_TIMELINE_EVENT_THINK)
-    A2_82:CancelActionTimeline(A0_80.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_008, true, nil, nil, nil, nil)
-    A0_80:Wait(20)
-    A2_82:CancelActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_TALK1)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_009, false, nil, nil, nil, nil)
-    A2_82:PlayActionTimeline(A0_80.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_010, false, nil, nil, nil, nil)
-    A2_82:Talk(A1_81, A0_80, A0_80.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_011, true, nil, nil, nil, nil)
+  L0_2.RamzaDelitaRelationship = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_000
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_001
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_002
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_003
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_004
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_005
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_006
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_007
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_008
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 20
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_009
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_010
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_200_011
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.RamzaCrystalRelationship(A0_83, A1_84, A2_85)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_THINK)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_000, false, nil, nil, nil, nil)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_001, false, nil, nil, nil, nil)
-    A2_85:CancelActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_85:CancelActionTimeline(A0_83.ACTION_TIMELINE_EVENT_THINK)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_002, false, nil, nil, nil, nil)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_003, false, nil, nil, nil, nil)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_85:CancelActionTimeline(A0_83.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_004, true, nil, nil, nil, nil)
-    A0_83:Wait(15)
-    A2_85:CancelActionTimeline(A0_83.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_85:CancelActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ARMS)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_005, false, nil, nil, nil, nil)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_006, false, nil, nil, nil, nil)
-    A2_85:CancelActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ARMS)
-    A2_85:CancelActionTimeline(A0_83.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_85:PlayActionTimeline(A0_83.ACTION_TIMELINE_EVENT_TALK1)
-    A2_85:Talk(A1_84, A0_83, A0_83.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_007, true, nil, nil, nil, nil)
+  L0_2.RamzaOlanRelationship = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_000
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_001
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_002
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_003
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_004
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 15
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_005
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_006
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_300_007
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.OrbonneMonastery(A0_86, A1_87, A2_88, A3_89, A4_90, A5_91)
-    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK1)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_000, false, nil, nil, nil, nil)
-    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_001, false, nil, nil, nil, nil)
-    A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK1)
-    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_002, true, nil, nil, nil, nil)
-    A0_86:Wait(15)
-    A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ARMS)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_003, false, nil, nil, nil, nil)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_004, false, nil, nil, nil, nil)
-    A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ARMS)
-    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK2)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_005, false, nil, nil, nil, nil)
-    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_006, true, nil, nil, nil, nil)
-    A0_86:Wait(15)
-    A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK2)
-    if A1_87:IsQuestAccepted(A0_86.QUEST_STMBDI301) == true or A1_87:IsQuestCompleted(A0_86.QUEST_STMBDI301) == true and A1_87:IsQuestCompleted(A0_86.QUEST_STMBDI302) == false or A1_87:IsQuestAccepted(A0_86.QUEST_STMBDI302) == true and A4_90 < 5 then
-      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_THINK)
-      A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_007, true, nil, nil, nil, nil)
-    elseif A5_91 >= 255 or A1_87:IsQuestCompleted(A0_86.QUEST_STMBDI303) == true then
-      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ADD_NO)
-      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_015, false, nil, nil, nil, nil)
-      A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ARMS)
-      A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_016, false, nil, nil, nil, nil)
-      A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_017, true, nil, nil, nil, nil)
-      A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ARMS)
-    else
-      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_THINK)
-      A2_88:Talk(A1_87, A0_86, A0_86.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_007, true, nil, nil, nil, nil)
+  L0_2.RamzaCrystalRelationship = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_000
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_001
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_002
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 15
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_003
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_004
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_005
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_006
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 15
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3(L7_3, L8_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestAccepted
+    L8_3 = A0_3.QUEST_STMBDI301
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 ~= true then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestCompleted
+      L8_3 = A0_3.QUEST_STMBDI301
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 == true then
+        L7_3 = A1_3
+        L6_3 = A1_3.IsQuestCompleted
+        L8_3 = A0_3.QUEST_STMBDI302
+        L6_3 = L6_3(L7_3, L8_3)
+        if L6_3 == false then
+          goto lbl_108
+        end
+      end
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestAccepted
+      L8_3 = A0_3.QUEST_STMBDI302
+      L6_3 = L6_3(L7_3, L8_3)
+      if not (L6_3 == true and A4_3 < 5) then
+        goto lbl_122
+      end
+    end
+    ::lbl_108::
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_007
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    goto lbl_179
+    ::lbl_122::
+    if not (255 <= A5_3) then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestCompleted
+      L8_3 = A0_3.QUEST_STMBDI303
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 ~= true then
+        goto lbl_166
+      end
+    end
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_015
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_016
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_017
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    goto lbl_179
+    ::lbl_166::
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_400_007
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    ::lbl_179::
+  end
+  L0_2.OrbonneMonastery = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_000
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_001
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_002
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_003
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 15
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_004
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_005
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_006
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_007
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestAccepted
+    L8_3 = A0_3.QUEST_STMBDI302
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 ~= true or not (5 < A4_3) then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestCompleted
+      L8_3 = A0_3.QUEST_STMBDI302
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 == true then
+      else
+        L7_3 = A2_3
+        L6_3 = A2_3.PlayActionTimeline
+        L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+        L6_3(L7_3, L8_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.PlayActionTimeline
+        L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L6_3(L7_3, L8_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_008
+        L11_3 = true
+        L12_3 = nil
+        L13_3 = nil
+        L14_3 = nil
+        L15_3 = nil
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      end
     end
   end
-  function RegHinReturnToIvaliceStoryNpc002.GolmoreJungle(A0_92, A1_93, A2_94, A3_95, A4_96, A5_97)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK2)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_000, false, nil, nil, nil, nil)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_001, false, nil, nil, nil, nil)
-    A2_94:CancelActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK2)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK1)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_002, false, nil, nil, nil, nil)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_003, true, nil, nil, nil, nil)
-    A0_92:Wait(15)
-    A2_94:CancelActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK1)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_004, false, nil, nil, nil, nil)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_ARMS)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_005, false, nil, nil, nil, nil)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_006, false, nil, nil, nil, nil)
-    A2_94:CancelActionTimeline(A0_92.ACTION_TIMELINE_EVENT_ARMS)
-    A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_007, true, nil, nil, nil, nil)
-    A0_92:Wait(10)
-    if A1_93:IsQuestAccepted(A0_92.QUEST_STMBDI302) == true and A4_96 > 5 or A1_93:IsQuestCompleted(A0_92.QUEST_STMBDI302) == true then
-    else
-      A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_ADD_NO)
-      A2_94:PlayActionTimeline(A0_92.ACTION_TIMELINE_EVENT_TALK2)
-      A2_94:Talk(A1_93, A0_92, A0_92.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_500_008, true, nil, nil, nil, nil)
+  L0_2.GolmoreJungle = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    if not (255 <= A5_3) then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestCompleted
+      L8_3 = A0_3.QUEST_STMBDI303
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 ~= true then
+        goto lbl_32
+      end
     end
-  end
-  function RegHinReturnToIvaliceStoryNpc002.Ultima(A0_98, A1_99, A2_100, A3_101, A4_102, A5_103)
-    if A5_103 >= 255 or A1_99:IsQuestCompleted(A0_98.QUEST_STMBDI303) == true then
-      A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ARMS)
-      A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_100, false, nil, nil, nil, nil)
-      A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-      A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_101, true, nil, nil, nil, nil)
-      A2_100:CancelActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-    else
-      A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ADD_NO)
-      A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ARMS)
-      A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_000, false, nil, nil, nil, nil)
-      A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_001, true, nil, nil, nil, nil)
-      A0_98:Wait(10)
-      A2_100:CancelActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ADD_NO)
-      A2_100:CancelActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ARMS)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_100
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_101
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L6_3(L7_3, L8_3)
+    goto lbl_61
+    ::lbl_32::
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_000
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_001
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    ::lbl_61::
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_002
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_003
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_004
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_005
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    if not (255 <= A5_3) then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestCompleted
+      L8_3 = A0_3.QUEST_STMBDI303
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 ~= true then
+        goto lbl_132
+      end
     end
-    A2_100:CancelActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ARMS)
-    A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_TALK2)
-    A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_002, false, nil, nil, nil, nil)
-    A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_003, false, nil, nil, nil, nil)
-    A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_THINK)
-    A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_004, false, nil, nil, nil, nil)
-    A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_005, false, nil, nil, nil, nil)
-    if A5_103 >= 255 or A1_99:IsQuestCompleted(A0_98.QUEST_STMBDI303) == true then
-      A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_015, false, nil, nil, nil, nil)
-      A2_100:CancelActionTimeline(A0_98.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_THINK)
-      A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_016, true, nil, nil, nil, nil)
-    else
-      A2_100:PlayActionTimeline(A0_98.ACTION_TIMELINE_EVENT_TALK_BIG)
-      A2_100:Talk(A1_99, A0_98, A0_98.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_006, true, nil, nil, nil, nil)
-    end
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_015
+    L11_3 = false
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.CancelActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_016
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    goto lbl_142
+    ::lbl_132::
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_600_006
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = nil
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    ::lbl_142::
   end
-  function RegHinReturnToIvaliceStoryNpc002.DeathMetropolitan(A0_104, A1_105, A2_106, A3_107)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_THINK)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_000, false, nil, nil, nil, nil)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_001, false, nil, nil, nil, nil)
-    A2_106:CancelActionTimeline(A0_104.ACTION_TIMELINE_EVENT_THINK)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_002, true, nil, nil, nil, nil)
-    A0_104:Wait(10)
-    A2_106:CancelActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_003, false, nil, nil, nil, nil)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_004, false, nil, nil, nil, nil)
-    A2_106:CancelActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_005, true, nil, nil, nil, nil)
-    A0_104:Wait(10)
-    A2_106:CancelActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK1)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_006, false, nil, nil, nil, nil)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_007, false, nil, nil, nil, nil)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_008, false, nil, nil, nil, nil)
-    A2_106:CancelActionTimeline(A0_104.ACTION_TIMELINE_EVENT_TALK1)
-    A2_106:PlayActionTimeline(A0_104.ACTION_TIMELINE_EVENT_ARMS)
-    A2_106:Talk(A1_105, A0_104, A0_104.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_009, true, nil, nil, nil, nil)
+  L0_2.Ultima = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_000
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_001
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_002
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_003
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_004
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_005
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_006
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_007
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_008
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_700_009
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = nil
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
   end
-  function RegHinReturnToIvaliceStoryNpc002.Guardian(A0_108, A1_109, A2_110)
-    A2_110:PlayActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK1)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_000, false, nil, nil, nil, nil)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_001, false, nil, nil, nil, nil)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_002, true, nil, nil, nil, nil)
-    A2_110:CancelActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK1)
-    A2_110:PlayActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_003, false, nil, nil, nil, nil)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_004, true, nil, nil, nil, nil)
-    A2_110:CancelActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-    A2_110:PlayActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK1)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_005, false, nil, nil, nil, nil)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_006, false, nil, nil, nil, nil)
-    A2_110:CancelActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK1)
-    A2_110:PlayActionTimeline(A0_108.ACTION_TIMELINE_EVENT_ARMS)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_007, false, nil, nil, nil, nil)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_008, true, nil, nil, nil, nil)
-    A2_110:CancelActionTimeline(A0_108.ACTION_TIMELINE_EVENT_ARMS)
-    A2_110:PlayActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK1)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_009, false, nil, nil, nil, nil)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_010, false, nil, nil, nil, nil)
-    A2_110:CancelActionTimeline(A0_108.ACTION_TIMELINE_EVENT_ARMS)
-    A2_110:PlayActionTimeline(A0_108.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_011, false, nil, nil, nil, nil)
-    A2_110:Talk(A1_109, A0_108, A0_108.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_012, true, nil, nil, nil, nil)
+  L0_2.DeathMetropolitan = L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_000
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_001
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_002
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_003
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_004
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_005
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_006
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_007
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_008
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_009
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_010
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.CancelActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_011
+    L8_3 = false
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGHINRETURNTOIVALICESTORYNPC002_00543_JENOMIS_800_012
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-end)()
-;(function()
-  local L1_111
-  L1_111 = RegHinReturnToIvaliceStoryNpc002
-  L1_111.SCRIPT_VERSION = 2
-end)()
+  L0_2.Guardian = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegHinReturnToIvaliceStoryNpc002
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

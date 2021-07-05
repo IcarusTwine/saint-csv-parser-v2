@@ -1,124 +1,336 @@
-(function()
-  print("BanQiq042 loaded")
-  function BanQiq042.OnScene00000(A0_0, A1_1, A2_2)
-    if A1_1:IsQuestAcceptQualified(A0_0:GetQuestId()) then
-      A2_2:TurnTo(A1_1, false)
-      A2_2:WaitForTurn()
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ACT_TALK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_001, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_002, true)
-      A0_0:Wait(10)
-      A0_0:SystemTalk(A0_0.TEXT_BANQIQ042_03805_SYSTEM_000_003, false)
-      A0_0:SystemTalk(A0_0.TEXT_BANQIQ042_03805_SYSTEM_000_004, true)
-      A0_0:Wait(10)
-      if A0_0:YesNo(A0_0.TEXT_BANQIQ042_03805_Q1_000_000) == false then
-        A0_0:CancelEventScene()
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "BanQiq042 loaded"
+  L0_2(L1_2)
+  L0_2 = BanQiq042
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestAcceptQualified
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3, L6_3, L7_3, L8_3, L9_3 = L5_3(L6_3)
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    if L3_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.TurnTo
+      L5_3 = A1_3
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.WaitForTurn
+      L3_3(L4_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_ACT_TALK
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_001
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_002
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_BANQIQ042_03805_SYSTEM_000_003
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_BANQIQ042_03805_SYSTEM_000_004
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 10
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.YesNo
+      L5_3 = A0_3.TEXT_BANQIQ042_03805_Q1_000_000
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == false then
+        L5_3 = A0_3
+        L4_3 = A0_3.CancelEventScene
+        L4_3(L5_3)
       else
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_JOY_BIG)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_006, true)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_JOY_BIG
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_006
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
       end
     end
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      return 1
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestOffer
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L3_3 = 1
+      return L3_3
     else
-      return 0
+      L3_3 = 0
+      return L3_3
     end
   end
-  function BanQiq042.OnScene00001(A0_3, A1_4, A2_5)
-    local L3_6
-    L3_6 = A0_3:BindCharacter(A0_3.BIND_ACTOR01)
-    L3_6:TurnTo(A1_4, false)
-    L3_6:WaitForTurn()
-    A2_5:LookAt(L3_6)
-    A1_4:LookAt(L3_6)
-    L3_6:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-    L3_6:Talk(A1_4, A0_3, A0_3.TEXT_BANQIQ042_03805_QITARLNATL_000_006, true)
-    L3_6:LookAt()
-    L3_6:TurnTo(60, false, true)
-    L3_6:WaitForTurn()
-    L3_6:WalkOut(0, 10, A0_3.MOVE_WALK)
-    L3_6:Transparency(A0_3.TRANS_TYPE_FADE_OUT, 50)
-    L3_6:WaitForTransparency()
-    L3_6:FootStep(A0_3.FOOTSTEP_OFF)
-    A2_5:LookAt(A1_4)
-    A1_4:LookAt(A2_5)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_COMFORTABLE)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_007, true)
-    A0_3:QuestAccepted(A0_3.SCREEN_IMAGE_BEAST_QUEST_ACCEPTED)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = BanQiq042
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A0_3
+    L4_3 = A0_3.BindCharacter
+    L6_3 = A0_3.BIND_ACTOR01
+    L4_3 = L4_3(L5_3, L6_3)
+    L3_3 = L4_3
+    L5_3 = L3_3
+    L4_3 = L3_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.LookAt
+    L6_3 = L3_3
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L6_3 = L3_3
+    L4_3(L5_3, L6_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_BANQIQ042_03805_QITARLNATL_000_006
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.LookAt
+    L4_3(L5_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.TurnTo
+    L6_3 = 60
+    L7_3 = false
+    L8_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.WalkOut
+    L6_3 = 0
+    L7_3 = 10
+    L8_3 = A0_3.MOVE_WALK
+    L4_3(L5_3, L6_3, L7_3, L8_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.Transparency
+    L6_3 = A0_3.TRANS_TYPE_FADE_OUT
+    L7_3 = 50
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.WaitForTransparency
+    L4_3(L5_3)
+    L5_3 = L3_3
+    L4_3 = L3_3.FootStep
+    L6_3 = A0_3.FOOTSTEP_OFF
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.LookAt
+    L6_3 = A1_3
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.LookAt
+    L6_3 = A2_3
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_COMFORTABLE
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_007
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.QuestAccepted
+    L6_3 = A0_3.SCREEN_IMAGE_BEAST_QUEST_ACCEPTED
+    L4_3(L5_3, L6_3)
   end
-  function BanQiq042.OnScene00002(A0_7, A1_8, A2_9)
-    local L3_10, L4_11
-    L4_11 = A2_9
-    L3_10 = A2_9.TurnTo
-    L3_10(L4_11, A1_8, false)
-    L4_11 = A2_9
-    L3_10 = A2_9.WaitForTurn
-    L3_10(L4_11)
-    L4_11 = A2_9
-    L3_10 = A2_9.PlayActionTimeline
-    L3_10(L4_11, A0_7.ACTION_TIMELINE_EVENT_TALK1)
-    L4_11 = A2_9
-    L3_10 = A2_9.Talk
-    L3_10(L4_11, A1_8, A0_7, A0_7.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_008, true)
-    L4_11 = A0_7
-    L3_10 = A0_7.QuestReward
-    L4_11 = L3_10(L4_11, A2_9, A1_8)
-    if L3_10 then
-      A0_7:QuestCompleted(A0_7.SCREEN_IMAGE_BEAST_QUEST_COMPLETE)
-      A0_7:Wait(120)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = BanQiq042
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_BANQIQ042_03805_CHAQURLQHOTL_000_008
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.QuestReward
+    L5_3 = A2_3
+    L6_3 = A1_3
+    L3_3, L4_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 then
+      L6_3 = A0_3
+      L5_3 = A0_3.QuestCompleted
+      L7_3 = A0_3.SCREEN_IMAGE_BEAST_QUEST_COMPLETE
+      L5_3(L6_3, L7_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 120
+      L5_3(L6_3, L7_3)
     end
-    return L3_10, L4_11
+    L5_3 = L3_3
+    L6_3 = L4_3
+    return L5_3, L6_3
   end
-  function BanQiq042.OnScene00003(A0_12, A1_13, A2_14, ...)
-    local L4_16
-    L4_16 = (...)
-    A0_12:BeginCutScene()
-    A0_12:PlayCutScene(A0_12.CUT_SCENE_00, nil, 0)
-    A0_12:EndCutScene()
-    return L4_16
+  L0_2.OnScene00002 = L1_2
+  L0_2 = BanQiq042
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = (...)
+    L6_3 = A0_3
+    L5_3 = A0_3.BeginCutScene
+    L5_3(L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayCutScene
+    L7_3 = A0_3.CUT_SCENE_00
+    L8_3 = nil
+    L9_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.EndCutScene
+    L5_3(L6_3)
+    return L4_3
   end
-  function BanQiq042.IsTodoChecked(A0_17, A1_18, A2_19)
-    local L3_20
-    L3_20 = A0_17.GetQuestId
-    L3_20 = L3_20(A0_17)
-    if A1_18:GetQuestSequence(L3_20) == A0_17.SEQ_0 then
-      return false
+  L0_2.OnScene00003 = L1_2
+  L0_2 = BanQiq042
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
     end
-    if A2_19 == 0 then
-      return false
+    if A2_3 == 0 then
+      L5_3 = false
+      return L5_3
     end
   end
-end)()
-;(function()
-  local L0_21, L1_22
-  L0_21 = BanQiq042
-  L0_21.SCRIPT_VERSION = 2
-  L0_21 = BanQiq042
-  function L1_22(A0_23)
-    local L1_24
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = BanQiq042
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = BanQiq042
+  function L1_2(A0_3)
+    local L1_3
   end
-  L0_21.OnInitialize = L1_22
-  L0_21 = BanQiq042
-  function L1_22(A0_25, A1_26, A2_27)
-    local L3_28
-    L3_28 = A0_25.GetQuestId
-    L3_28 = L3_28(A0_25)
-    if A1_26:GetQuestSequence(L3_28) == A0_25.SEQ_0 then
-      return 0, 0
+  L0_2.OnInitialize = L1_2
+  L0_2 = BanQiq042
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
     end
-    if A2_27 == 0 then
-      return A1_26:GetQuestUI8AL(L3_28), 0
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
     end
   end
-  L0_21.GetTodoArgs = L1_22
-  L0_21 = BanQiq042
-  function L1_22(A0_29, A1_30, A2_31)
-    local L3_32
-    L3_32 = A0_29.GetQuestId
-    L3_32 = L3_32(A0_29)
-    if A1_30:GetQuestSequence(L3_32) == A0_29.SEQ_FINISH then
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = BanQiq042
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.GetLayoutId
+    L6_3 = L6_3(L7_3)
+    L7_3 = A0_3.SEQ_FINISH
+    if L4_3 == L7_3 then
     end
-    return A0_29:IsBattleNpcTriggerOwner(A1_30, A2_31, false), false
+    L8_3 = A0_3
+    L7_3 = A0_3.IsBattleNpcTriggerOwner
+    L9_3 = A1_3
+    L10_3 = A2_3
+    L11_3 = false
+    L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3)
+    L8_3 = false
+    return L7_3, L8_3
   end
-  L0_21.GetGimmickState = L1_22
-end)()
+  L0_2.GetGimmickState = L1_2
+end
+L0_1()

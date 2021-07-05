@@ -1,65 +1,181 @@
-(function()
-  print("CtsErkEureka2EventAetherPot")
-  function CtsErkEureka2EventAetherPot.OnScene00001_001(A0_0, A1_1, A2_2)
-    A0_0:SystemTalk(A0_0.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_SYSTEM_000_000, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka2EventAetherPot"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_SYSTEM_000_000
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsErkEureka2EventAetherPot.OnScene00002_001(A0_3, A1_4, A2_5)
-    A0_3:LogMessage(A0_3.LOG_MESSAGE_01)
+  L0_2.OnScene00001_001 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LogMessage
+    L5_3 = A0_3.LOG_MESSAGE_01
+    L3_3(L4_3, L5_3)
   end
-  function CtsErkEureka2EventAetherPot.OnScene00003_001(A0_6, A1_7, A2_8)
-    A0_6:LogMessage(A0_6.LOG_MESSAGE_02)
+  L0_2.OnScene00002_001 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LogMessage
+    L5_3 = A0_3.LOG_MESSAGE_02
+    L3_3(L4_3, L5_3)
   end
-  function CtsErkEureka2EventAetherPot.OnScene00004_001(A0_9, A1_10, A2_11)
-    if A0_9:YesNo(A0_9.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_YESNO_CONTENT, nil, nil) == true then
-      return true
+  L0_2.OnScene00003_001 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNo
+    L5_3 = A0_3.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_YESNO_CONTENT
+    L6_3 = nil
+    L7_3 = nil
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+    if L3_3 == true then
+      L4_3 = true
+      return L4_3
     else
-      return false
+      L4_3 = false
+      return L4_3
     end
   end
-  function CtsErkEureka2EventAetherPot.OnScene00004_002(A0_12, A1_13, A2_14)
-    A2_14:PlaySharedGroupTimeline(0)
+  L0_2.OnScene00004_001 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlaySharedGroupTimeline
+    L5_3 = 0
+    L3_3(L4_3, L5_3)
   end
-  function CtsErkEureka2EventAetherPot.OnScene00005_001(A0_15, A1_16, A2_17)
-    A0_15:SystemTalk(A0_15.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_SYSTEM_000_010, true)
+  L0_2.OnScene00004_002 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_SYSTEM_000_010
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsErkEureka2EventAetherPot.OnScene00006_001(A0_18, A1_19, A2_20)
-    A0_18:SystemTalk(A0_18.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_SYSTEM_000_000, true)
+  L0_2.OnScene00005_001 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA2EVENTAETHERPOT_00493_SYSTEM_000_000
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-end)()
-;(function()
-  local L1_21
-  L1_21 = CtsErkEureka2EventAetherPot
-  L1_21.SCRIPT_VERSION = 2
-end)()
-;(function()
-  print("CtsErkEureka2EventAetherPot")
-  function CtsErkEureka2EventAetherPot.OnScene00000(A0_22, A1_23, A2_24)
+  L0_2.OnScene00006_001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka2EventAetherPot"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function CtsErkEureka2EventAetherPot.OnScene00001(A0_25, A1_26, A2_27)
-    A0_25:OnScene00001_001(A1_26, A2_27)
-    return A0_25.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00001_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka2EventAetherPot.OnScene00002(A0_28, A1_29, A2_30)
-    A0_28:OnScene00002_001(A1_29, A2_30)
-    return A0_28.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00002_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka2EventAetherPot.OnScene00003(A0_31, A1_32, A2_33)
-    A0_31:OnScene00003_001(A1_32, A2_33)
-    return A0_31.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00003_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka2EventAetherPot.OnScene00004(A0_34, A1_35, A2_36)
-    if A0_34:OnScene00004_001(A1_35, A2_36) == true then
-      A0_34:OnScene00004_002(A1_35, A2_36)
-      return A0_34.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00004_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 == true then
+      L5_3 = A0_3
+      L4_3 = A0_3.OnScene00004_002
+      L6_3 = A1_3
+      L7_3 = A2_3
+      L4_3(L5_3, L6_3, L7_3)
+      L4_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+      return L4_3
     end
-    return A0_34.EUREKA_EVENT_RESULT_END
+    L4_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L4_3
   end
-  function CtsErkEureka2EventAetherPot.OnScene00005(A0_37, A1_38, A2_39)
-    A0_37:OnScene00005_001(A1_38, A2_39)
-    return A0_37.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00005_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+    return L3_3
   end
-  function CtsErkEureka2EventAetherPot.OnScene00006(A0_40, A1_41, A2_42)
-    A0_40:OnScene00006_001(A1_41, A2_42)
-    return A0_40.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00005 = L1_2
+  L0_2 = CtsErkEureka2EventAetherPot
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00006_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-end)()
+  L0_2.OnScene00006 = L1_2
+end
+L0_1()

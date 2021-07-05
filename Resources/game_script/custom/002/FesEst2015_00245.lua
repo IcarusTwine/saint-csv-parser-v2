@@ -1,193 +1,869 @@
-(function()
-  print("FesEst2015")
-  FesEst2015.SELECT_MENU_EXPLANATION_EVENT = 1
-  FesEst2015.SELECT_MENU_EXPLANATION_GIANTEGG = 2
-  FesEst2015.SELECT_MENU_EXPLANATION_TRANSFORMATION = 3
-  FesEst2015.SELECT_MENU_EXPLANATION_ITEM = 4
-  FesEst2015.SELECT_MENU_EXPLANATION_CLOSE = 5
-  FesEst2015.SELECT_MENU_SHAPESHIFT_FATE_TRANSFORMATION = 1
-  FesEst2015.SELECT_MENU_SHAPESHIFT_FATE_TALK = 2
-  FesEst2015.SELECT_MENU_SHAPESHIFT_FATE_CLOSE = 3
-  function FesEst2015.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    if A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION0 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_000, true)
-    elseif A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION1 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_000, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "FesEst2015"
+  L0_2(L1_2)
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_EXPLANATION_EVENT = 1
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_EXPLANATION_GIANTEGG = 2
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_EXPLANATION_TRANSFORMATION = 3
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_EXPLANATION_ITEM = 4
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_EXPLANATION_CLOSE = 5
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_SHAPESHIFT_FATE_TRANSFORMATION = 1
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_SHAPESHIFT_FATE_TALK = 2
+  L0_2 = FesEst2015
+  L0_2.SELECT_MENU_SHAPESHIFT_FATE_CLOSE = 3
+  L0_2 = FesEst2015
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.ENPC_EXPLANATION0
+    if L3_3 == L4_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_000
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_000, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.GetBaseId
+      L3_3 = L3_3(L4_3)
+      L4_3 = A0_3.ENPC_EXPLANATION1
+      if L3_3 == L4_3 then
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+        L3_3(L4_3, L5_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_000
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      else
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+        L3_3(L4_3, L5_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_000
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      end
     end
     while true do
-      if A0_0:Menu(A0_0.TEXT_FESEST2015_00245_Q1_000_000, A0_0.TEXT_FESEST2015_00245_A1_000_001, A0_0.TEXT_FESEST2015_00245_A1_000_002, A0_0.TEXT_FESEST2015_00245_A1_000_003, A0_0.TEXT_FESEST2015_00245_A1_000_004, A0_0.TEXT_FESEST2015_00245_A1_000_005) == A0_0.SELECT_MENU_EXPLANATION_EVENT then
-        if A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION0 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_010, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_011, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_012, false)
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_013, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_014, true)
-        elseif A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION1 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_010, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_011, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_012, false)
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_013, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_014, true)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_FESEST2015_00245_Q1_000_000
+      L6_3 = A0_3.TEXT_FESEST2015_00245_A1_000_001
+      L7_3 = A0_3.TEXT_FESEST2015_00245_A1_000_002
+      L8_3 = A0_3.TEXT_FESEST2015_00245_A1_000_003
+      L9_3 = A0_3.TEXT_FESEST2015_00245_A1_000_004
+      L10_3 = A0_3.TEXT_FESEST2015_00245_A1_000_005
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+      L4_3 = A0_3.SELECT_MENU_EXPLANATION_EVENT
+      if L3_3 == L4_3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.GetBaseId
+        L4_3 = L4_3(L5_3)
+        L5_3 = A0_3.ENPC_EXPLANATION0
+        if L4_3 == L5_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_010
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_011
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_012
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_013
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_014
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
         else
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_010, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_011, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_012, false)
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_013, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_014, true)
-        end
-      elseif A0_0:Menu(A0_0.TEXT_FESEST2015_00245_Q1_000_000, A0_0.TEXT_FESEST2015_00245_A1_000_001, A0_0.TEXT_FESEST2015_00245_A1_000_002, A0_0.TEXT_FESEST2015_00245_A1_000_003, A0_0.TEXT_FESEST2015_00245_A1_000_004, A0_0.TEXT_FESEST2015_00245_A1_000_005) == A0_0.SELECT_MENU_EXPLANATION_GIANTEGG then
-        if A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION0 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_020, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_021, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_022, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_023, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_024, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_025, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_026, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_027, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_028, true)
-        elseif A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION1 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_020, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_021, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_022, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_023, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_024, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_025, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_026, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_027, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_028, true)
-        else
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_020, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_021, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_022, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_023, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_024, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_025, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_026, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_027, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_028, true)
-        end
-      elseif A0_0:Menu(A0_0.TEXT_FESEST2015_00245_Q1_000_000, A0_0.TEXT_FESEST2015_00245_A1_000_001, A0_0.TEXT_FESEST2015_00245_A1_000_002, A0_0.TEXT_FESEST2015_00245_A1_000_003, A0_0.TEXT_FESEST2015_00245_A1_000_004, A0_0.TEXT_FESEST2015_00245_A1_000_005) == A0_0.SELECT_MENU_EXPLANATION_TRANSFORMATION then
-        if A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION0 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_030, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_031, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_032, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_033, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_034, true)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_035, true)
-        elseif A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION1 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_030, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_031, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_032, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_033, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_034, true)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_035, true)
-        else
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_030, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_031, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_032, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_033, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_034, true)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_035, true)
-        end
-      elseif A0_0:Menu(A0_0.TEXT_FESEST2015_00245_Q1_000_000, A0_0.TEXT_FESEST2015_00245_A1_000_001, A0_0.TEXT_FESEST2015_00245_A1_000_002, A0_0.TEXT_FESEST2015_00245_A1_000_003, A0_0.TEXT_FESEST2015_00245_A1_000_004, A0_0.TEXT_FESEST2015_00245_A1_000_005) == A0_0.SELECT_MENU_EXPLANATION_ITEM then
-        if A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION0 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_040, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_041, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_042, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_043, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_000_044, true)
-        elseif A2_2:GetBaseId() == A0_0.ENPC_EXPLANATION1 then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_040, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_041, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_042, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_043, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_100_044, true)
-        else
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_040, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_041, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_042, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_043, false)
-          A0_0:SystemTalk(A0_0.TEXT_FESEST2015_00245_SYSTEM_200_044, true)
+          L5_3 = A2_3
+          L4_3 = A2_3.GetBaseId
+          L4_3 = L4_3(L5_3)
+          L5_3 = A0_3.ENPC_EXPLANATION1
+          if L4_3 == L5_3 then
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_010
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_011
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_012
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_013
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_014
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          else
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_010
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_011
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_012
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_013
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_014
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          end
         end
       else
-        return 0
+        L4_3 = A0_3.SELECT_MENU_EXPLANATION_GIANTEGG
+        if L3_3 == L4_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.GetBaseId
+          L4_3 = L4_3(L5_3)
+          L5_3 = A0_3.ENPC_EXPLANATION0
+          if L4_3 == L5_3 then
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_020
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_021
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_022
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_023
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_024
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_025
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_026
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_027
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A0_3
+            L4_3 = A0_3.SystemTalk
+            L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_028
+            L7_3 = true
+            L4_3(L5_3, L6_3, L7_3)
+          else
+            L5_3 = A2_3
+            L4_3 = A2_3.GetBaseId
+            L4_3 = L4_3(L5_3)
+            L5_3 = A0_3.ENPC_EXPLANATION1
+            if L4_3 == L5_3 then
+              L5_3 = A2_3
+              L4_3 = A2_3.PlayActionTimeline
+              L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+              L4_3(L5_3, L6_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_020
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_021
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_022
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_023
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_024
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_025
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_026
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_027
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_028
+              L7_3 = true
+              L4_3(L5_3, L6_3, L7_3)
+            else
+              L5_3 = A2_3
+              L4_3 = A2_3.PlayActionTimeline
+              L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+              L4_3(L5_3, L6_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_020
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_021
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_022
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_023
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_024
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_025
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_026
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_027
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_028
+              L7_3 = true
+              L4_3(L5_3, L6_3, L7_3)
+            end
+          end
+        else
+          L4_3 = A0_3.SELECT_MENU_EXPLANATION_TRANSFORMATION
+          if L3_3 == L4_3 then
+            L5_3 = A2_3
+            L4_3 = A2_3.GetBaseId
+            L4_3 = L4_3(L5_3)
+            L5_3 = A0_3.ENPC_EXPLANATION0
+            if L4_3 == L5_3 then
+              L5_3 = A2_3
+              L4_3 = A2_3.PlayActionTimeline
+              L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+              L4_3(L5_3, L6_3)
+              L5_3 = A2_3
+              L4_3 = A2_3.Talk
+              L6_3 = A1_3
+              L7_3 = A0_3
+              L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_030
+              L9_3 = false
+              L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_031
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_032
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_033
+              L7_3 = false
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_034
+              L7_3 = true
+              L4_3(L5_3, L6_3, L7_3)
+              L5_3 = A0_3
+              L4_3 = A0_3.SystemTalk
+              L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_035
+              L7_3 = true
+              L4_3(L5_3, L6_3, L7_3)
+            else
+              L5_3 = A2_3
+              L4_3 = A2_3.GetBaseId
+              L4_3 = L4_3(L5_3)
+              L5_3 = A0_3.ENPC_EXPLANATION1
+              if L4_3 == L5_3 then
+                L5_3 = A2_3
+                L4_3 = A2_3.PlayActionTimeline
+                L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                L4_3(L5_3, L6_3)
+                L5_3 = A2_3
+                L4_3 = A2_3.Talk
+                L6_3 = A1_3
+                L7_3 = A0_3
+                L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_030
+                L9_3 = false
+                L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_031
+                L7_3 = false
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_032
+                L7_3 = false
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_033
+                L7_3 = false
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_034
+                L7_3 = true
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_035
+                L7_3 = true
+                L4_3(L5_3, L6_3, L7_3)
+              else
+                L5_3 = A2_3
+                L4_3 = A2_3.PlayActionTimeline
+                L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                L4_3(L5_3, L6_3)
+                L5_3 = A2_3
+                L4_3 = A2_3.Talk
+                L6_3 = A1_3
+                L7_3 = A0_3
+                L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_030
+                L9_3 = false
+                L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_031
+                L7_3 = false
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_032
+                L7_3 = false
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_033
+                L7_3 = false
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_034
+                L7_3 = true
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_035
+                L7_3 = true
+                L4_3(L5_3, L6_3, L7_3)
+              end
+            end
+          else
+            L4_3 = A0_3.SELECT_MENU_EXPLANATION_ITEM
+            if L3_3 == L4_3 then
+              L5_3 = A2_3
+              L4_3 = A2_3.GetBaseId
+              L4_3 = L4_3(L5_3)
+              L5_3 = A0_3.ENPC_EXPLANATION0
+              if L4_3 == L5_3 then
+                L5_3 = A2_3
+                L4_3 = A2_3.PlayActionTimeline
+                L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                L4_3(L5_3, L6_3)
+                L5_3 = A2_3
+                L4_3 = A2_3.Talk
+                L6_3 = A1_3
+                L7_3 = A0_3
+                L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_040
+                L9_3 = false
+                L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                L5_3 = A2_3
+                L4_3 = A2_3.Talk
+                L6_3 = A1_3
+                L7_3 = A0_3
+                L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_041
+                L9_3 = false
+                L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                L5_3 = A2_3
+                L4_3 = A2_3.Talk
+                L6_3 = A1_3
+                L7_3 = A0_3
+                L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFA_000_042
+                L9_3 = false
+                L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_043
+                L7_3 = false
+                L4_3(L5_3, L6_3, L7_3)
+                L5_3 = A0_3
+                L4_3 = A0_3.SystemTalk
+                L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_044
+                L7_3 = true
+                L4_3(L5_3, L6_3, L7_3)
+              else
+                L5_3 = A2_3
+                L4_3 = A2_3.GetBaseId
+                L4_3 = L4_3(L5_3)
+                L5_3 = A0_3.ENPC_EXPLANATION1
+                if L4_3 == L5_3 then
+                  L5_3 = A2_3
+                  L4_3 = A2_3.PlayActionTimeline
+                  L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                  L4_3(L5_3, L6_3)
+                  L5_3 = A2_3
+                  L4_3 = A2_3.Talk
+                  L6_3 = A1_3
+                  L7_3 = A0_3
+                  L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_040
+                  L9_3 = false
+                  L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                  L5_3 = A2_3
+                  L4_3 = A2_3.Talk
+                  L6_3 = A1_3
+                  L7_3 = A0_3
+                  L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_041
+                  L9_3 = false
+                  L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                  L5_3 = A2_3
+                  L4_3 = A2_3.Talk
+                  L6_3 = A1_3
+                  L7_3 = A0_3
+                  L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFB_000_042
+                  L9_3 = false
+                  L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                  L5_3 = A0_3
+                  L4_3 = A0_3.SystemTalk
+                  L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_043
+                  L7_3 = false
+                  L4_3(L5_3, L6_3, L7_3)
+                  L5_3 = A0_3
+                  L4_3 = A0_3.SystemTalk
+                  L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_100_044
+                  L7_3 = true
+                  L4_3(L5_3, L6_3, L7_3)
+                else
+                  L5_3 = A2_3
+                  L4_3 = A2_3.PlayActionTimeline
+                  L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                  L4_3(L5_3, L6_3)
+                  L5_3 = A2_3
+                  L4_3 = A2_3.Talk
+                  L6_3 = A1_3
+                  L7_3 = A0_3
+                  L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_040
+                  L9_3 = false
+                  L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                  L5_3 = A2_3
+                  L4_3 = A2_3.Talk
+                  L6_3 = A1_3
+                  L7_3 = A0_3
+                  L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_041
+                  L9_3 = false
+                  L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                  L5_3 = A2_3
+                  L4_3 = A2_3.Talk
+                  L6_3 = A1_3
+                  L7_3 = A0_3
+                  L8_3 = A0_3.TEXT_FESEST2015_00245_EGGHUNTINGSTAFFC_000_042
+                  L9_3 = false
+                  L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+                  L5_3 = A0_3
+                  L4_3 = A0_3.SystemTalk
+                  L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_043
+                  L7_3 = false
+                  L4_3(L5_3, L6_3, L7_3)
+                  L5_3 = A0_3
+                  L4_3 = A0_3.SystemTalk
+                  L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_200_044
+                  L7_3 = true
+                  L4_3(L5_3, L6_3, L7_3)
+                end
+              end
+            else
+              L4_3 = 0
+              return L4_3
+            end
+          end
+        end
       end
     end
   end
-  function FesEst2015.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPHFIELD_000_010, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = FesEst2015
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPHFIELD_000_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     while true do
-      if A0_3:Menu(A0_3.TEXT_FESEST2015_00245_Q2_000_010, A0_3.TEXT_FESEST2015_00245_A2_000_011, A0_3.TEXT_FESEST2015_00245_A2_000_012, A0_3.TEXT_FESEST2015_00245_A2_000_013) == A0_3.SELECT_MENU_SHAPESHIFT_FATE_TRANSFORMATION then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_JOY)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPHFIELD_000_020, false)
-        A0_3:SystemTalk(A0_3.TEXT_FESEST2015_00245_SYSTEM_300_021, false)
-        A0_3:SystemTalk(A0_3.TEXT_FESEST2015_00245_SYSTEM_300_022, true)
-        if A1_4:IsHowTo(A0_3.HOW_TO_0) == false then
-          A0_3:HowTo(A0_3.HOW_TO_0)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_FESEST2015_00245_Q2_000_010
+      L6_3 = A0_3.TEXT_FESEST2015_00245_A2_000_011
+      L7_3 = A0_3.TEXT_FESEST2015_00245_A2_000_012
+      L8_3 = A0_3.TEXT_FESEST2015_00245_A2_000_013
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3.SELECT_MENU_SHAPESHIFT_FATE_TRANSFORMATION
+      if L3_3 == L4_3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPHFIELD_000_020
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_300_021
+        L7_3 = false
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.SystemTalk
+        L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_300_022
+        L7_3 = true
+        L4_3(L5_3, L6_3, L7_3)
+        L5_3 = A1_3
+        L4_3 = A1_3.IsHowTo
+        L6_3 = A0_3.HOW_TO_0
+        L4_3 = L4_3(L5_3, L6_3)
+        if L4_3 == false then
+          L5_3 = A0_3
+          L4_3 = A0_3.HowTo
+          L6_3 = A0_3.HOW_TO_0
+          L4_3(L5_3, L6_3)
         end
-        if A1_4:IsHowTo(A0_3.HOW_TO_1) == false then
-          A0_3:HowTo(A0_3.HOW_TO_1)
+        L5_3 = A1_3
+        L4_3 = A1_3.IsHowTo
+        L6_3 = A0_3.HOW_TO_1
+        L4_3 = L4_3(L5_3, L6_3)
+        if L4_3 == false then
+          L5_3 = A0_3
+          L4_3 = A0_3.HowTo
+          L6_3 = A0_3.HOW_TO_1
+          L4_3(L5_3, L6_3)
         end
-        return 1
-      elseif A0_3:Menu(A0_3.TEXT_FESEST2015_00245_Q2_000_010, A0_3.TEXT_FESEST2015_00245_A2_000_011, A0_3.TEXT_FESEST2015_00245_A2_000_012, A0_3.TEXT_FESEST2015_00245_A2_000_013) == A0_3.SELECT_MENU_SHAPESHIFT_FATE_TALK then
-        A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_5:Talk(A1_4, A0_3, A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPHFIELD_000_030, false)
-        A0_3:SystemTalk(A0_3.TEXT_FESEST2015_00245_SYSTEM_000_050, false)
-        A0_3:SystemTalk(A0_3.TEXT_FESEST2015_00245_SYSTEM_000_051, false)
-        A0_3:SystemTalk(A0_3.TEXT_FESEST2015_00245_SYSTEM_000_052, false)
-        A0_3:SystemTalk(A0_3.TEXT_FESEST2015_00245_SYSTEM_000_053, true)
+        L4_3 = 1
+        return L4_3
       else
-        return 0
+        L4_3 = A0_3.SELECT_MENU_SHAPESHIFT_FATE_TALK
+        if L3_3 == L4_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPHFIELD_000_030
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_050
+          L7_3 = false
+          L4_3(L5_3, L6_3, L7_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_051
+          L7_3 = false
+          L4_3(L5_3, L6_3, L7_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_052
+          L7_3 = false
+          L4_3(L5_3, L6_3, L7_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.SystemTalk
+          L6_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_000_053
+          L7_3 = true
+          L4_3(L5_3, L6_3, L7_3)
+        else
+          L4_3 = 0
+          return L4_3
+        end
       end
     end
   end
-  function FesEst2015.OnScene00002(A0_6, A1_7, A2_8)
-    A2_8:TurnTo(A1_7, false)
-    A2_8:WaitForTurn()
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EMOTE_JOY)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_FESEST2015_00245_FRIENDLYSYLPH00556_000_000, true)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = FesEst2015
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPH00556_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function FesEst2015.OnScene00003(A0_9, A1_10, A2_11)
-    A2_11:TurnTo(A1_10, false)
-    A2_11:WaitForTurn()
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EMOTE_JOY)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_FESEST2015_00245_FRIENDLYSYLPH00556_000_020, true)
-    if A0_9:YesNo(A0_9.TEXT_FESEST2015_00245_Q3_000_020, A0_9.TEXT_FESEST2015_00245_A3_000_021, A0_9.TEXT_FESEST2015_00245_A3_000_022, A0_9.DEFAULT_YES) == true then
-      A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_11:Talk(A1_10, A0_9, A0_9.TEXT_FESEST2015_00245_FRIENDLYSYLPH00556_000_030, false)
-      A0_9:SystemTalk(A0_9.TEXT_FESEST2015_00245_SYSTEM_400_031, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = FesEst2015
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPH00556_000_020
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L3_3 = 0
+    L5_3 = A0_3
+    L4_3 = A0_3.YesNo
+    L6_3 = A0_3.TEXT_FESEST2015_00245_Q3_000_020
+    L7_3 = A0_3.TEXT_FESEST2015_00245_A3_000_021
+    L8_3 = A0_3.TEXT_FESEST2015_00245_A3_000_022
+    L9_3 = A0_3.DEFAULT_YES
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    if L4_3 == true then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_FESEST2015_00245_FRIENDLYSYLPH00556_000_030
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_FESEST2015_00245_SYSTEM_400_031
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+      L3_3 = 1
     end
-    return 1
+    return L3_3
   end
-end)()
-;(function()
-  local L1_12
-  L1_12 = FesEst2015
-  L1_12.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00003 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = FesEst2015
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

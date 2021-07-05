@@ -1,251 +1,776 @@
-(function()
-  print("CmnDefLinkShell loaded")
-  function CmnDefLinkShell.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1)
-    A2_2:WaitForTurn()
-    if A1_1:IsHowTo(A0_0.HOWTO_LINKSHELL) == false then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ME)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_001, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_002, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_003, false)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_004, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_005, true)
-      A0_0:HowTo(A0_0.HOWTO_LINKSHELL)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefLinkShell loaded"
+  L0_2(L1_2)
+  L0_2 = CmnDefLinkShell
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L3_3 = 0
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsHowTo
+    L6_3 = A0_3.HOWTO_LINKSHELL
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 == false then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EMOTE_ME
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_001
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_002
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_003
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_004
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_TALK_005
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.HowTo
+      L6_3 = A0_3.HOWTO_LINKSHELL
+      L4_3(L5_3, L6_3)
+      L3_3 = 1
     end
-    if 1 ~= 1 then
-      A2_2:TurnTo(A1_1)
-      A2_2:WaitForTurn()
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFLINKSHELL_00006_MAIN_TALK_001, true)
+    if L3_3 ~= 1 then
+      L5_3 = A2_3
+      L4_3 = A2_3.TurnTo
+      L6_3 = A1_3
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.WaitForTurn
+      L4_3(L5_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAIN_TALK_001
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    return 1
+    return L3_3
   end
-  function CmnDefLinkShell.OnScene00001(A0_3, A1_4, A2_5, A3_6)
-    local L4_7, L5_8, L6_9, L7_10
-    L4_7 = 0
-    L5_8 = true
-    repeat
-      while true do
-        repeat
-          if L5_8 == true then
-            L6_9 = true
-            L7_10 = nil
-            if A3_6 == 1 then
-              L7_10 = 3
-            else
-              L7_10 = A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A4_000_1)
-            end
-            if L7_10 == 1 then
-              A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-              A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_001, false)
-              A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_002, false)
-              A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_003, false)
-              A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_ME)
-              A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_004, true)
-            elseif L7_10 == 2 then
-              A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_TALK_001, true)
-              while true do
-                if A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1) == 1 then
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_GUIDE_001, false)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_GUIDE_002, false)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_GUIDE_003, true)
-                elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1) == 2 then
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK2)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_001, true)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_002_SYS, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_003_SYS, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_004_SYS, false)
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_005, true)
-                elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1) == 3 then
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_001, false)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_002, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_003_SYS, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_004_SYS, true)
-                elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1) == 4 then
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_CHAT_GUIDE_001, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_CHAT_GUIDE_002_SYS, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_CHAT_GUIDE_003_SYS, true)
-                elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1) == 5 then
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK1)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_LEADER_GUIDE_001, false)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_LEADER_GUIDE_002, false)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_LEADER_GUIDE_003, true)
-                elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1) == 6 then
-                  A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_001, true)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_002_SYS, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_003_SYS, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_004_SYS, false)
-                  A0_3:SystemTalk(A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_005_SYS, true)
-                elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1) == 7 then
-                  A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_BREAK_GUIDE_001, true)
-                end
-              end
-              L6_9 = false
-            elseif L7_10 == 3 then
-              if A1_4:IsWorldTravelling() == true then
-                A0_3:LogMessage(A0_3.LOG_MESSAGE_WKT_ERROR_SELF)
-                return 0
-              end
-              if A3_6 == 1 then
-                A3_6 = 0
-              else
-                A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_TALK_001, true)
-              end
-              if A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A5_000_1) == 1 then
-                L4_7 = 2
-                return L4_7
-              elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A5_000_1) == 2 then
-                L4_7 = 3
-                return L4_7
-              elseif A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A5_000_1) == 3 then
-                L4_7 = 4
-                return L4_7
-              end
-            end
-            L5_8 = false
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefLinkShell
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3
+    L4_3 = 0
+    L5_3 = true
+    while L5_3 == true do
+      L6_3 = true
+      L7_3 = nil
+      if A3_3 == 1 then
+        L7_3 = 3
+      else
+        L9_3 = A0_3
+        L8_3 = A0_3.Menu
+        L10_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_Q1_000_1
+        L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A1_000_1
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A2_000_1
+        L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A3_000_1
+        L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAINMENU_A4_000_1
+        L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L7_3 = L8_3
+      end
+      if L7_3 == 1 then
+        L9_3 = A2_3
+        L8_3 = A2_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L8_3(L9_3, L10_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_001
+        L13_3 = false
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_002
+        L13_3 = false
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_003
+        L13_3 = false
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_EMOTE_ME
+        L8_3(L9_3, L10_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_FIRST_GUIDE_004
+        L13_3 = true
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      elseif L7_3 == 2 then
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_TALK_001
+        L13_3 = true
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        while L6_3 == true do
+          L9_3 = A0_3
+          L8_3 = A0_3.Menu
+          L10_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_Q1_000_1
+          L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A1_000_1
+          L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A2_000_1
+          L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A3_000_1
+          L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A4_000_1
+          L15_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A5_000_1
+          L16_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A6_000_1
+          L17_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A7_000_1
+          L18_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_GUIDEMENU_A8_000_1
+          L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3)
+          if L8_3 == 1 then
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_GUIDE_001
+            L14_3 = false
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_GUIDE_002
+            L14_3 = false
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_GUIDE_003
+            L14_3 = true
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          elseif L8_3 == 2 then
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_001
+            L14_3 = true
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_002_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_003_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_004_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ADD_GUIDE_005
+            L14_3 = true
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          elseif L8_3 == 3 then
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_001
+            L14_3 = false
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_002
+            L14_3 = false
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_003_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_ENTER_GUIDE_004_SYS
+            L12_3 = true
+            L9_3(L10_3, L11_3, L12_3)
+          elseif L8_3 == 4 then
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_CHAT_GUIDE_001
+            L14_3 = false
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_CHAT_GUIDE_002_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_CHAT_GUIDE_003_SYS
+            L12_3 = true
+            L9_3(L10_3, L11_3, L12_3)
+          elseif L8_3 == 5 then
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEADER_GUIDE_001
+            L14_3 = false
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEADER_GUIDE_002
+            L14_3 = false
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEADER_GUIDE_003
+            L14_3 = true
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          elseif L8_3 == 6 then
+            L10_3 = A2_3
+            L9_3 = A2_3.PlayActionTimeline
+            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L9_3(L10_3, L11_3)
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_001
+            L14_3 = true
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_002_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_003_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_004_SYS
+            L12_3 = false
+            L9_3(L10_3, L11_3, L12_3)
+            L10_3 = A0_3
+            L9_3 = A0_3.SystemTalk
+            L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_LEAVE_GUIDE_005_SYS
+            L12_3 = true
+            L9_3(L10_3, L11_3, L12_3)
+          elseif L8_3 == 7 then
+            L10_3 = A2_3
+            L9_3 = A2_3.Talk
+            L11_3 = A1_3
+            L12_3 = A0_3
+            L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_BREAK_GUIDE_001
+            L14_3 = true
+            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          else
+            L6_3 = false
           end
-        until L6_9 == true
-      end
-    until A0_3:Menu(A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_Q1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A1_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A2_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A4_000_1, A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A5_000_1) == 4
-  end
-  function CmnDefLinkShell.OnScene00002(A0_11, A1_12, A2_13)
-    local L3_14, L4_15
-    L4_15 = A0_11
-    L3_14 = A0_11.CheckLinkshellCount
-    L3_14 = L3_14(L4_15)
-    if L3_14 then
-      L4_15 = A2_13
-      L3_14 = A2_13.Talk
-      L3_14(L4_15, A1_12, A0_11, A0_11.TEXT_CMNDEFLINKSHELL_00006_MAKE_PROCEDURE_OK_000_1, true)
-    else
-      L4_15 = A2_13
-      L3_14 = A2_13.Talk
-      L3_14(L4_15, A1_12, A0_11, A0_11.TEXT_CMNDEFLINKSHELL_00006_MAKE_PROCEDURE_NG_000_1, true)
-      L3_14 = 2
-      return L3_14
-    end
-    L4_15 = A0_11
-    L3_14 = A0_11.PromptName
-    L3_14 = L3_14(L4_15, A0_11.NAME_TYPE_LINKSHELL, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD, "", A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3)
-    while true do
-      if L3_14 == nil then
-        L4_15 = 2
-        return L4_15
-      end
-      L4_15 = A0_11.FormatString
-      L4_15 = L4_15(A0_11, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_MESSAGE, L3_14)
-      if A0_11:YesNo(L4_15, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_YES, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_NO, A0_11.DEFAULT_YES) == true then
-        if A0_11:CreateLinkshell(L3_14) == 0 then
-          A2_13:PlayActionTimeline(A0_11.ACTION_TIMELINE_EVENT_ITEM)
-          A0_11:LogMessage(A0_11.SUCCESS_LOG, L3_14)
-          A2_13:Talk(A1_12, A0_11, A0_11.TEXT_CMNDEFLINKSHELL_00006_MAKE_SUCCESS_001, true)
-          return 0
+        end
+      elseif L7_3 == 3 then
+        L9_3 = A1_3
+        L8_3 = A1_3.IsWorldTravelling
+        L8_3 = L8_3(L9_3)
+        if L8_3 == true then
+          L9_3 = A0_3
+          L8_3 = A0_3.LogMessage
+          L10_3 = A0_3.LOG_MESSAGE_WKT_ERROR_SELF
+          L8_3(L9_3, L10_3)
+          L8_3 = 0
+          return L8_3
+        end
+        if A3_3 == 1 then
+          A3_3 = 0
         else
-          L3_14 = A0_11:PromptName(A0_11.NAME_TYPE_LINKSHELL, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD, L3_14, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_TALK_001
+          L13_3 = true
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        end
+        L9_3 = A0_3
+        L8_3 = A0_3.Menu
+        L10_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_Q1_000_1
+        L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A1_000_1
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A2_000_1
+        L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A4_000_1
+        L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_PROCEDUREMENU_A5_000_1
+        L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        if L8_3 == 1 then
+          L4_3 = 2
+          return L4_3
+        elseif L8_3 == 2 then
+          L4_3 = 3
+          return L4_3
+        elseif L8_3 == 3 then
+          L4_3 = 4
+          return L4_3
+        elseif L8_3 == 4 then
         end
       else
-        L3_14 = A0_11:PromptName(A0_11.NAME_TYPE_LINKSHELL, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD, "", A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2, A0_11.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3)
+        L5_3 = false
       end
     end
-    L4_15 = 0
-    return L4_15
   end
-  function CmnDefLinkShell.OnScene00003(A0_16, A1_17, A2_18)
-    local L3_19, L4_20, L5_21, L6_22, L7_23
-    L4_20 = A0_16
-    L3_19 = A0_16.LinkshellList
-    L5_21 = A1_17
-    L6_22 = A2_18
-    L7_23 = 1
-    L5_21 = L3_19(L4_20, L5_21, L6_22, L7_23)
-    if L3_19 == 0 and L4_20 == 0 or L3_19 == nil then
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnDefLinkShell
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    L4_3 = A0_3
+    L3_3 = A0_3.CheckLinkshellCount
+    L3_3 = L3_3(L4_3)
+    if L3_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_PROCEDURE_OK_000_1
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    else
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_PROCEDURE_NG_000_1
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L3_3 = 2
+      return L3_3
+    end
+    L4_3 = A0_3
+    L3_3 = A0_3.PromptName
+    L5_3 = A0_3.NAME_TYPE_LINKSHELL
+    L6_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0
+    L7_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD
+    L8_3 = ""
+    L9_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1
+    L10_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2
+    L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    while true do
+      if L3_3 == nil then
+        L4_3 = 2
+        return L4_3
+      end
+      L5_3 = A0_3
+      L4_3 = A0_3.FormatString
+      L6_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_MESSAGE
+      L7_3 = L3_3
+      L4_3 = L4_3(L5_3, L6_3, L7_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.YesNo
+      L7_3 = L4_3
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_YES
+      L9_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_NO
+      L10_3 = A0_3.DEFAULT_YES
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      if L5_3 == true then
+        L7_3 = A0_3
+        L6_3 = A0_3.CreateLinkshell
+        L8_3 = L3_3
+        L6_3 = L6_3(L7_3, L8_3)
+        L7_3 = ""
+        if L6_3 == 0 then
+          L9_3 = A2_3
+          L8_3 = A2_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.LogMessage
+          L10_3 = A0_3.SUCCESS_LOG
+          L11_3 = L3_3
+          L8_3(L9_3, L10_3, L11_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_MAKE_SUCCESS_001
+          L13_3 = true
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L8_3 = 0
+          return L8_3
+        else
+          L9_3 = A0_3
+          L8_3 = A0_3.PromptName
+          L10_3 = A0_3.NAME_TYPE_LINKSHELL
+          L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0
+          L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD
+          L13_3 = L3_3
+          L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1
+          L15_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2
+          L16_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3
+          L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L3_3 = L8_3
+        end
+      else
+        L7_3 = A0_3
+        L6_3 = A0_3.PromptName
+        L8_3 = A0_3.NAME_TYPE_LINKSHELL
+        L9_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0
+        L10_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD
+        L11_3 = ""
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1
+        L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2
+        L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3
+        L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L3_3 = L6_3
+      end
+    end
+    L4_3 = 0
+    return L4_3
+  end
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnDefLinkShell
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LinkshellList
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L7_3 = 1
+    L3_3, L4_3, L5_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+    if L3_3 == 0 and L4_3 == 0 or L3_3 == nil then
       return
     else
-      L7_23 = A0_16
-      L6_22 = A0_16.PromptName
-      L6_22 = L6_22(L7_23, A0_16.NAME_TYPE_LINKSHELL, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD, L5_21, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3)
+      L7_3 = A0_3
+      L6_3 = A0_3.PromptName
+      L8_3 = A0_3.NAME_TYPE_LINKSHELL
+      L9_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0
+      L10_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD
+      L11_3 = L5_3
+      L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1
+      L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2
+      L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3
+      L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
       while true do
-        if L6_22 == nil then
+        if L6_3 == nil then
           return
         end
-        L7_23 = A0_16.FormatString
-        L7_23 = L7_23(A0_16, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_MESSAGE, L6_22)
-        if A0_16:YesNo(L7_23, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_YES, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_NO, A0_16.DEFAULT_YES) then
-          if A0_16:RenameLinkshell(L3_19, L4_20, L6_22) == 0 then
-            A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-            A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CMNDEFLINKSHELL_00006_NAMECHANGE_SUCCESS_001, true)
-            return 1
-          elseif A0_16:RenameLinkshell(L3_19, L4_20, L6_22) == A0_16.INFO_ERROR_1 or A0_16:RenameLinkshell(L3_19, L4_20, L6_22) == A0_16.INFO_ERROR_2 then
-            return
+        L8_3 = A0_3
+        L7_3 = A0_3.FormatString
+        L9_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_MESSAGE
+        L10_3 = L6_3
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.YesNo
+        L10_3 = L7_3
+        L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_YES
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_CONFIRM_NO
+        L13_3 = A0_3.DEFAULT_YES
+        L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        if L8_3 then
+          L10_3 = A0_3
+          L9_3 = A0_3.RenameLinkshell
+          L11_3 = L3_3
+          L12_3 = L4_3
+          L13_3 = L6_3
+          L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3)
+          if L9_3 == 0 then
+            L11_3 = A2_3
+            L10_3 = A2_3.PlayActionTimeline
+            L12_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L10_3(L11_3, L12_3)
+            L11_3 = A2_3
+            L10_3 = A2_3.Talk
+            L12_3 = A1_3
+            L13_3 = A0_3
+            L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_NAMECHANGE_SUCCESS_001
+            L15_3 = true
+            L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
+            L10_3 = 1
+            return L10_3
+          else
+            L10_3 = A0_3.INFO_ERROR_1
+            if L9_3 ~= L10_3 then
+              L10_3 = A0_3.INFO_ERROR_2
+            end
+            if L9_3 == L10_3 then
+              return
+            end
           end
         else
-          L6_22 = L5_21
+          L6_3 = L5_3
         end
-        L6_22 = A0_16:PromptName(A0_16.NAME_TYPE_LINKSHELL, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD, L6_22, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2, A0_16.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3)
+        L10_3 = A0_3
+        L9_3 = A0_3.PromptName
+        L11_3 = A0_3.NAME_TYPE_LINKSHELL
+        L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE0
+        L13_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_HEAD
+        L14_3 = L6_3
+        L15_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE1
+        L16_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE2
+        L17_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_PROMPT_MESSAGE3
+        L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+        L6_3 = L9_3
       end
     end
   end
-  function CmnDefLinkShell.OnScene00004(A0_24, A1_25, A2_26)
-    local L3_27, L4_28, L5_29
-    L4_28 = A0_24
-    L3_27 = A0_24.LinkshellList
-    L5_29 = A1_25
-    L5_29 = L3_27(L4_28, L5_29, A2_26, 2)
-    if L3_27 == 0 and L4_28 == 0 or L3_27 == nil then
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnDefLinkShell
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L4_3 = A0_3
+    L3_3 = A0_3.LinkshellList
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L7_3 = 2
+    L3_3, L4_3, L5_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+    if L3_3 == 0 and L4_3 == 0 or L3_3 == nil then
       return
     else
-      if A0_24:YesNoCheck(A0_24.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_WARNING, A0_24.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_YES, A0_24.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_NO, A0_24.DEFAULT_YES, A0_24.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_CONFIRM, false, L5_29) and A0_24:DisbandLinkshell(L3_27, L4_28) == 0 then
-        A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CMNDEFLINKSHELL_00006_BREAK_SUCCESS_001, true)
-        return 1
-      else
+      L7_3 = A0_3
+      L6_3 = A0_3.YesNoCheck
+      L8_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_WARNING
+      L9_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_YES
+      L10_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_NO
+      L11_3 = A0_3.DEFAULT_YES
+      L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_BREAK_CONFIRM
+      L13_3 = false
+      L14_3 = L5_3
+      L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      if L6_3 then
+        L8_3 = A0_3
+        L7_3 = A0_3.DisbandLinkshell
+        L9_3 = L3_3
+        L10_3 = L4_3
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        if L7_3 == 0 then
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_BREAK_SUCCESS_001
+          L13_3 = true
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L8_3 = 1
+          return L8_3
+        else
+        end
       end
     end
   end
-  function CmnDefLinkShell.LinkshellList(A0_30, A1_31, A2_32, A3_33)
-    local L4_34, L5_35, L6_36, L7_37
-    L4_34 = {}
-    L5_35 = {}
-    L6_36 = {}
-    L7_37 = A0_30.GetLinkshellList
-    L5_35[1], L6_36[1], L4_34[2], L5_35[2], L6_36[2], L4_34[3], L5_35[3], L6_36[3], L4_34[4], L5_35[4], L6_36[4], L4_34[5], L5_35[5], L6_36[5], L4_34[6], L5_35[6], L6_36[6], L4_34[7], L5_35[7], L6_36[7], L4_34[8], L5_35[8], L6_36[8], L7_37 = A0_30, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, L7_37(A0_30)
-    L4_34[1] = L7_37
-    L7_37 = {}
-    for _FORV_13_ = 1, #L4_34 do
-      if L4_34[_FORV_13_] == 0 and L5_35[_FORV_13_] == 0 then
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CmnDefLinkShell
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3
+    L4_3 = {}
+    L5_3 = {}
+    L6_3 = {}
+    L8_3 = A0_3
+    L7_3 = A0_3.GetLinkshellList
+    L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3 = L7_3(L8_3)
+    L6_3[8] = L30_3
+    L5_3[8] = L29_3
+    L4_3[8] = L28_3
+    L6_3[7] = L27_3
+    L5_3[7] = L26_3
+    L4_3[7] = L25_3
+    L6_3[6] = L24_3
+    L5_3[6] = L23_3
+    L4_3[6] = L22_3
+    L6_3[5] = L21_3
+    L5_3[5] = L20_3
+    L4_3[5] = L19_3
+    L6_3[4] = L18_3
+    L5_3[4] = L17_3
+    L4_3[4] = L16_3
+    L6_3[3] = L15_3
+    L5_3[3] = L14_3
+    L4_3[3] = L13_3
+    L6_3[2] = L12_3
+    L5_3[2] = L11_3
+    L4_3[2] = L10_3
+    L6_3[1] = L9_3
+    L5_3[1] = L8_3
+    L4_3[1] = L7_3
+    L7_3 = {}
+    L8_3 = {}
+    L9_3 = 1
+    L10_3 = 1
+    L11_3 = #L4_3
+    L12_3 = 1
+    for L13_3 = L10_3, L11_3, L12_3 do
+      L14_3 = L4_3[L13_3]
+      if L14_3 == 0 then
+        L14_3 = L5_3[L13_3]
+        if L14_3 == 0 then
+      end
       else
-        L7_37[1] = L6_36[_FORV_13_]
-        ;({})[1] = _FORV_13_
+        L14_3 = L6_3[L13_3]
+        L7_3[L9_3] = L14_3
+        L8_3[L9_3] = L13_3
+        L9_3 = L9_3 + 1
       end
     end
-    L7_37[_FOR_ + 1] = A0_30.TEXT_CMNDEFLINKSHELL_00006_00005_MENU_RETURN
-    if #L7_37 == 1 then
-      if A3_33 == 1 then
-        A2_32:Talk(A1_31, A0_30, A0_30.TEXT_CMNDEFLINKSHELL_00006_NAMECHANGE_PROCEDURE_NG_000_1, true)
+    L10_3 = #L7_3
+    L10_3 = L10_3 + 1
+    L11_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_MENU_RETURN
+    L7_3[L10_3] = L11_3
+    L10_3 = #L7_3
+    if L10_3 == 1 then
+      if A3_3 == 1 then
+        L11_3 = A2_3
+        L10_3 = A2_3.Talk
+        L12_3 = A1_3
+        L13_3 = A0_3
+        L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_NAMECHANGE_PROCEDURE_NG_000_1
+        L15_3 = true
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
       else
-        A2_32:Talk(A1_31, A0_30, A0_30.TEXT_CMNDEFLINKSHELL_00006_BREAK_PROCEDURE_NG_000_1, true)
+        L11_3 = A2_3
+        L10_3 = A2_3.Talk
+        L12_3 = A1_3
+        L13_3 = A0_3
+        L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_BREAK_PROCEDURE_NG_000_1
+        L15_3 = true
+        L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
       end
-      return 0, 0, ""
-    elseif A3_33 == 1 then
-      A2_32:Talk(A1_31, A0_30, A0_30.TEXT_CMNDEFLINKSHELL_00006_NAMECHANGE_PROCEDURE_OK_000_1, true)
+      L10_3 = 0
+      L11_3 = 0
+      L12_3 = ""
+      return L10_3, L11_3, L12_3
+    elseif A3_3 == 1 then
+      L11_3 = A2_3
+      L10_3 = A2_3.Talk
+      L12_3 = A1_3
+      L13_3 = A0_3
+      L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_NAMECHANGE_PROCEDURE_OK_000_1
+      L15_3 = true
+      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A2_32:Talk(A1_31, A0_30, A0_30.TEXT_CMNDEFLINKSHELL_00006_BREAK_PROCEDURE_OK_000_1, true)
+      L11_3 = A2_3
+      L10_3 = A2_3.Talk
+      L12_3 = A1_3
+      L13_3 = A0_3
+      L14_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_BREAK_PROCEDURE_OK_000_1
+      L15_3 = true
+      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3)
     end
-    if A0_30:Menu(A0_30.TEXT_CMNDEFLINKSHELL_00006_00005_MENU_SELECT, unpack(L7_37)) ~= #L7_37 then
-      return L4_34[({})[A0_30:Menu(A0_30.TEXT_CMNDEFLINKSHELL_00006_00005_MENU_SELECT, unpack(L7_37))]], L5_35[({})[A0_30:Menu(A0_30.TEXT_CMNDEFLINKSHELL_00006_00005_MENU_SELECT, unpack(L7_37))]], L6_36[({})[A0_30:Menu(A0_30.TEXT_CMNDEFLINKSHELL_00006_00005_MENU_SELECT, unpack(L7_37))]]
+    L11_3 = A0_3
+    L10_3 = A0_3.Menu
+    L12_3 = A0_3.TEXT_CMNDEFLINKSHELL_00006_00005_MENU_SELECT
+    L13_3 = unpack
+    L14_3 = L7_3
+    L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3 = L13_3(L14_3)
+    L10_3 = L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3)
+    L11_3 = #L7_3
+    if L10_3 ~= L11_3 then
+      L11_3 = L8_3[L10_3]
+      L11_3 = L4_3[L11_3]
+      L12_3 = L8_3[L10_3]
+      L12_3 = L5_3[L12_3]
+      L13_3 = L8_3[L10_3]
+      L13_3 = L6_3[L13_3]
+      return L11_3, L12_3, L13_3
     else
-      return 0, 0, ""
+      L11_3 = 0
+      L12_3 = 0
+      L13_3 = ""
+      return L11_3, L12_3, L13_3
     end
   end
-end)()
-;(function()
-  local L1_38
-  L1_38 = CmnDefLinkShell
-  L1_38.SCRIPT_VERSION = 1
-end)()
+  L0_2.LinkshellList = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefLinkShell
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

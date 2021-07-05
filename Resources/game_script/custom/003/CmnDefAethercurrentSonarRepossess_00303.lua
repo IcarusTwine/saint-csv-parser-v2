@@ -1,70 +1,258 @@
-(function()
-  print("CmnDefAethercurrentSonarRepossess")
-  function CmnDefAethercurrentSonarRepossess.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    if A1_1:IsReward(A0_0.COMPASS_REWARD) then
-      if A2_2:GetBaseId() == A0_0.ENPC_ID_01 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_050, true)
-      elseif A2_2:GetBaseId() == A0_0.ENPC_ID_02 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GAUFRID_000_050, true)
-      elseif A2_2:GetBaseId() == A0_0.ENPC_ID_03 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_100_000, false)
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_000_050, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefAethercurrentSonarRepossess"
+  L0_2(L1_2)
+  L0_2 = CmnDefAethercurrentSonarRepossess
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsReward
+    L6_3 = A0_3.COMPASS_REWARD
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 then
+      L4_3 = A0_3.ENPC_ID_01
+      if L3_3 == L4_3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_050
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
       else
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_050, true)
+        L4_3 = A0_3.ENPC_ID_02
+        if L3_3 == L4_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GAUFRID_000_050
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        else
+          L4_3 = A0_3.ENPC_ID_03
+          if L3_3 == L4_3 then
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_100_000
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_000_050
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          else
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_050
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          end
+        end
       end
-      return 0
+      L4_3 = 0
+      return L4_3
     end
-    if A2_2:GetBaseId() == A0_0.ENPC_ID_01 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_000, true)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A0_0:Wait(10)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
-      A2_2:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
-    elseif A2_2:GetBaseId() == A0_0.ENPC_ID_02 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GAUFRID_000_000, true)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A0_0:Wait(10)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
-      A2_2:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
-    elseif A2_2:GetBaseId() == A0_0.ENPC_ID_03 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_100_000, false)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_000_000, true)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A0_0:Wait(10)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
-      A2_2:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
+    L4_3 = A0_3.ENPC_ID_01
+    if L3_3 == L4_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.CancelActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L4_3(L5_3, L6_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.Wait
+      L6_3 = 10
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.WaitForActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+      L4_3(L5_3, L6_3)
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_000, true)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A0_0:Wait(10)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
-      A2_2:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GIVE)
+      L4_3 = A0_3.ENPC_ID_02
+      if L3_3 == L4_3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GAUFRID_000_000
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.CancelActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+        L4_3(L5_3, L6_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.WaitForActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+        L4_3(L5_3, L6_3)
+      else
+        L4_3 = A0_3.ENPC_ID_03
+        if L3_3 == L4_3 then
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_100_000
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_JESSWREN_000_000
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.CancelActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L4_3(L5_3, L6_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.Wait
+          L6_3 = 10
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.WaitForActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+          L4_3(L5_3, L6_3)
+        else
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_CMNDEFAETHERCURRENTSONARREPOSSESS_00303_GIBRILLONT_000_000
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.CancelActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L4_3(L5_3, L6_3)
+          L5_3 = A0_3
+          L4_3 = A0_3.Wait
+          L6_3 = 10
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.WaitForActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_GIVE
+          L4_3(L5_3, L6_3)
+        end
+      end
     end
-    A0_0:LogMessage(A0_0.LOGMSG_GET, A0_0.COMPASS_ITEM)
-    return 1
+    L5_3 = A0_3
+    L4_3 = A0_3.LogMessage
+    L6_3 = A0_3.LOGMSG_GET
+    L7_3 = A0_3.COMPASS_ITEM
+    L4_3(L5_3, L6_3, L7_3)
+    L4_3 = 1
+    return L4_3
   end
-end)()
-;(function()
-  local L0_3
-  L0_3 = CmnDefAethercurrentSonarRepossess
-  L0_3.SCRIPT_VERSION = 1
-  L0_3 = CmnDefAethercurrentSonarRepossess
-  function L0_3.IsAcceptEvent(A0_4, A1_5, A2_6, A3_7, A4_8, A5_9)
-    if A1_5:IsQuestCompleted(A0_4.PREQUEST) then
-      return true
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefAethercurrentSonarRepossess
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefAethercurrentSonarRepossess
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestCompleted
+    L8_3 = A0_3.PREQUEST
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 then
+      L6_3 = true
+      return L6_3
     end
-    return false
+    L6_3 = false
+    return L6_3
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

@@ -1,49 +1,204 @@
-(function()
-  print("RegDra2BanMogPlate")
-  function RegDra2BanMogPlate.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3
-    L3_3 = A0_0:Menu(A0_0.TEXT_REGDRA2BANMOGPLATE_00361_Q1_000_000, A0_0.TEXT_REGDRA2BANMOGPLATE_00361_A1_000_000, A0_0.TEXT_REGDRA2BANMOGPLATE_00361_A1_000_001)
-    A0_0:Wait(10)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegDra2BanMogPlate"
+  L0_2(L1_2)
+  L0_2 = RegDra2BanMogPlate
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.Menu
+    L6_3 = A0_3.TEXT_REGDRA2BANMOGPLATE_00361_Q1_000_000
+    L7_3 = A0_3.TEXT_REGDRA2BANMOGPLATE_00361_A1_000_000
+    L8_3 = A0_3.TEXT_REGDRA2BANMOGPLATE_00361_A1_000_001
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+    L3_3 = L4_3
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
     if L3_3 == 1 then
-      return 1
+      L4_3 = 1
+      return L4_3
     else
-      A0_0:CancelEventScene()
+      L5_3 = A0_3
+      L4_3 = A0_3.CancelEventScene
+      L4_3(L5_3)
     end
   end
-  function RegDra2BanMogPlate.OnScene00001(A0_4, A1_5, A2_6)
-    A0_4:ChangeBGMVolume(0.5)
-    A0_4:Wait(30)
-    A1_5:Visible(A0_4.VISIBLE_HIDE)
-    A0_4:Wait(10)
-    A2_6:Visible(A0_4.VISIBLE_HIDE)
-    A0_4:Wait(10)
-    A0_4:PlayCamera(6, A2_6)
-    A0_4:UpdownDolly(-3.2, -3.2, 0, 0, 0)
-    A0_4:UpdownPan(0, 0, 0, 0, 0)
-    A0_4:SideDolly(0, 0, 0, 0, 0)
-    A0_4:SidePan(0, 0, 0, 0, 0)
-    A0_4:Zoom(-3, -3, 0, 0, 0)
-    A0_4:Wait(10)
-    A0_4:Wait(30)
-    A0_4:FadeIn(A0_4.FADE_DEFAULT)
-    A0_4:WaitForFade()
-    A0_4:Wait(45)
-    A0_4:UpdownDolly(-3.2, -5, 400, 0, 200)
-    A0_4:UpdownPan(0, 30, 400, 0, 200)
-    A0_4:SideDolly(0, 0, 0, 0, 0)
-    A0_4:SidePan(0, 0, 0, 0, 0)
-    A0_4:Zoom(-3, -7, 400, 0, 200)
-    A2_6:Talk(A1_5, A0_4, A0_4.TEXT_REGDRA2BANMOGPLATE_00361_VIEWTHEPLATE00361_000_000, false, A0_4.TALK_SHAPE_DOCUMENT)
-    A2_6:Talk(A1_5, A0_4, A0_4.TEXT_REGDRA2BANMOGPLATE_00361_VIEWTHEPLATE00361_100_000, true, A0_4.TALK_SHAPE_DOCUMENT)
-    A0_4:Wait(10)
-    A0_4:FadeOut(A0_4.FADE_DEFAULT)
-    A0_4:WaitForFade()
-    A0_4:Wait(30)
-    return 1
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegDra2BanMogPlate
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.ChangeBGMVolume
+    L5_3 = 0.5
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 30
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.Visible
+    L5_3 = A0_3.VISIBLE_HIDE
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Visible
+    L5_3 = A0_3.VISIBLE_HIDE
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PlayCamera
+    L5_3 = 6
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -3.2
+    L6_3 = -3.2
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownPan
+    L5_3 = 0
+    L6_3 = 0
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SideDolly
+    L5_3 = 0
+    L6_3 = 0
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SidePan
+    L5_3 = 0
+    L6_3 = 0
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = -3
+    L6_3 = -3
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 30
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeIn
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 45
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownDolly
+    L5_3 = -3.2
+    L6_3 = -5
+    L7_3 = 400
+    L8_3 = 0
+    L9_3 = 200
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.UpdownPan
+    L5_3 = 0
+    L6_3 = 30
+    L7_3 = 400
+    L8_3 = 0
+    L9_3 = 200
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SideDolly
+    L5_3 = 0
+    L6_3 = 0
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SidePan
+    L5_3 = 0
+    L6_3 = 0
+    L7_3 = 0
+    L8_3 = 0
+    L9_3 = 0
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Zoom
+    L5_3 = -3
+    L6_3 = -7
+    L7_3 = 400
+    L8_3 = 0
+    L9_3 = 200
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BANMOGPLATE_00361_VIEWTHEPLATE00361_000_000
+    L8_3 = false
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGDRA2BANMOGPLATE_00361_VIEWTHEPLATE00361_100_000
+    L8_3 = true
+    L9_3 = A0_3.TALK_SHAPE_DOCUMENT
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.FadeOut
+    L5_3 = A0_3.FADE_DEFAULT
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.WaitForFade
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 30
+    L3_3(L4_3, L5_3)
+    L3_3 = 1
+    return L3_3
   end
-end)()
-;(function()
-  local L1_7
-  L1_7 = RegDra2BanMogPlate
-  L1_7.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegDra2BanMogPlate
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

@@ -1,51 +1,153 @@
-(function()
-  print("CmnDefTomestoneConvert")
-  function CmnDefTomestoneConvert.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6, L7_7, L8_8, L9_9, L10_10
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefTomestoneConvert"
+  L0_2(L1_2)
+  L0_2 = CmnDefTomestoneConvert
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3
     L3_3 = 0
-    L5_5 = A0_0
-    L4_4 = A0_0.GetTomestoneConvertNum
-    L4_4 = L4_4(L5_5)
-    if L4_4 > 1 then
-      L5_5 = {}
-      for L9_9 = 0, L4_4 - 1 do
-        L10_10 = #L5_5
-        L10_10 = L10_10 + 1
-        L5_5[L10_10] = A0_0:GetTomestoneConvertTitle(L9_9)
+    L5_3 = A0_3
+    L4_3 = A0_3.GetTomestoneConvertNum
+    L4_3 = L4_3(L5_3)
+    if 1 < L4_3 then
+      L5_3 = {}
+      L6_3 = 0
+      L7_3 = L4_3 - 1
+      L8_3 = 1
+      for L9_3 = L6_3, L7_3, L8_3 do
+        L10_3 = #L5_3
+        L10_3 = L10_3 + 1
+        L12_3 = A0_3
+        L11_3 = A0_3.GetTomestoneConvertTitle
+        L13_3 = L9_3
+        L11_3 = L11_3(L12_3, L13_3)
+        L5_3[L10_3] = L11_3
       end
-      L5_5[L6_6] = L7_7
-      L9_9 = unpack
-      L10_10 = L5_5
-      L10_10 = L9_9(L10_10)
-      if L6_6 >= 1 and L4_4 >= L6_6 then
-        L3_3 = L6_6 - 1
+      L6_3 = #L5_3
+      L6_3 = L6_3 + 1
+      L7_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_WHICH_CANCEL
+      L5_3[L6_3] = L7_3
+      L7_3 = A0_3
+      L6_3 = A0_3.Menu
+      L8_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_WHICH_Q
+      L9_3 = unpack
+      L10_3 = L5_3
+      L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3 = L9_3(L10_3)
+      L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+      if 1 <= L6_3 and L4_3 >= L6_3 then
+        L3_3 = L6_3 - 1
       else
-        return L7_7
+        L7_3 = -1
+        return L7_3
       end
     end
-    L5_5 = A0_0.GetTomestoneConvertData
-    L10_10 = L5_5(L6_6, L7_7)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFTOMESTONECONVERT_00391_HELP, false, nil, nil, nil, nil, L6_6)
-    if L8_8 == 0 then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFTOMESTONECONVERT_00391_TALK_NOT_HAVE, true, nil, nil, nil, nil, L6_6, L7_7)
-      return -1
+    L6_3 = A0_3
+    L5_3 = A0_3.GetTomestoneConvertData
+    L7_3 = L3_3
+    L5_3, L6_3, L7_3, L8_3, L9_3, L10_3 = L5_3(L6_3, L7_3)
+    L12_3 = A2_3
+    L11_3 = A2_3.Talk
+    L13_3 = A1_3
+    L14_3 = A0_3
+    L15_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_HELP
+    L16_3 = false
+    L17_3 = nil
+    L18_3 = nil
+    L19_3 = nil
+    L20_3 = nil
+    L21_3 = L6_3
+    L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3)
+    if L8_3 == 0 then
+      L12_3 = A2_3
+      L11_3 = A2_3.Talk
+      L13_3 = A1_3
+      L14_3 = A0_3
+      L15_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_TALK_NOT_HAVE
+      L16_3 = true
+      L17_3 = nil
+      L18_3 = nil
+      L19_3 = nil
+      L20_3 = nil
+      L21_3 = L6_3
+      L22_3 = L7_3
+      L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+      L11_3 = -1
+      return L11_3
     end
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFTOMESTONECONVERT_00391_TALK_Q, true, nil, nil, nil, nil, L6_6, L8_8, L7_7, L10_10)
-    if A0_0:YesNo(A0_0.TEXT_CMNDEFTOMESTONECONVERT_00391_EXCHANGE_Q, nil, nil, A0_0.DEFAULT_NO, L6_6, L8_8, L7_7, L10_10) == false then
-      return -1
+    L12_3 = A2_3
+    L11_3 = A2_3.Talk
+    L13_3 = A1_3
+    L14_3 = A0_3
+    L15_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_TALK_Q
+    L16_3 = true
+    L17_3 = nil
+    L18_3 = nil
+    L19_3 = nil
+    L20_3 = nil
+    L21_3 = L6_3
+    L22_3 = L8_3
+    L23_3 = L7_3
+    L24_3 = L10_3
+    L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.YesNo
+    L13_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_EXCHANGE_Q
+    L14_3 = nil
+    L15_3 = nil
+    L16_3 = A0_3.DEFAULT_NO
+    L17_3 = L6_3
+    L18_3 = L8_3
+    L19_3 = L7_3
+    L20_3 = L10_3
+    L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3)
+    if L11_3 == false then
+      L12_3 = -1
+      return L12_3
     end
-    if A1_1:GetMaxItemStackable(L7_7) == 0 then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFTOMESTONECONVERT_00391_TALK_NOT_GET, true, nil, nil, nil, nil, L7_7)
-      return -1
+    L13_3 = A1_3
+    L12_3 = A1_3.GetMaxItemStackable
+    L14_3 = L7_3
+    L12_3 = L12_3(L13_3, L14_3)
+    if L12_3 == 0 then
+      L14_3 = A2_3
+      L13_3 = A2_3.Talk
+      L15_3 = A1_3
+      L16_3 = A0_3
+      L17_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_TALK_NOT_GET
+      L18_3 = true
+      L19_3 = nil
+      L20_3 = nil
+      L21_3 = nil
+      L22_3 = nil
+      L23_3 = L7_3
+      L13_3(L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3)
+      L13_3 = -1
+      return L13_3
     end
-    if L10_10 > A1_1:GetMaxItemStackable(L7_7) and A0_0:YesNo(A0_0.TEXT_CMNDEFTOMESTONECONVERT_00391_OVERMAX_Q, nil, nil, A0_0.DEFAULT_NO, L7_7) == false then
-      return -1
+    if L10_3 > L12_3 then
+      L14_3 = A0_3
+      L13_3 = A0_3.YesNo
+      L15_3 = A0_3.TEXT_CMNDEFTOMESTONECONVERT_00391_OVERMAX_Q
+      L16_3 = nil
+      L17_3 = nil
+      L18_3 = A0_3.DEFAULT_NO
+      L19_3 = L7_3
+      L13_3 = L13_3(L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
+      if L13_3 == false then
+        L14_3 = -1
+        return L14_3
+      end
     end
-    return L5_5
+    return L5_3
   end
-end)()
-;(function()
-  local L1_11
-  L1_11 = CmnDefTomestoneConvert
-  L1_11.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefTomestoneConvert
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

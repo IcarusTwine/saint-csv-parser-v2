@@ -1,57 +1,143 @@
-(function()
-  print("CtsEtcVoyagerMoogle")
-  function CtsEtcVoyagerMoogle.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6
-    L4_4 = A0_0
-    L3_3 = A0_0.IsOpenedFestival
-    L5_5 = 88
-    L3_3 = L3_3(L4_4, L5_5)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsEtcVoyagerMoogle"
+  L0_2(L1_2)
+  L0_2 = CtsEtcVoyagerMoogle
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsOpenedFestival
+    L5_3 = 88
+    L3_3 = L3_3(L4_3, L5_3)
     L3_3 = L3_3 ~= false
-    L5_5 = A0_0
-    L4_4 = A0_0.IsOpenedFestival
-    L6_6 = 13
-    L4_4 = L4_4(L5_5, L6_6)
-    L4_4 = L4_4 ~= false
-    L6_6 = A0_0
-    L5_5 = A0_0.IsOpenedFestival
-    L5_5 = L5_5(L6_6, 119)
-    L5_5 = L5_5 ~= false
-    L6_6 = {}
-    if L5_5 ~= false then
-      table.insert(L6_6, A0_0:GetEventHandlerTitle(A0_0.NEST5))
-      ;({})[#L6_6] = A0_0.NEST5
+    L5_3 = A0_3
+    L4_3 = A0_3.IsOpenedFestival
+    L6_3 = 13
+    L4_3 = L4_3(L5_3, L6_3)
+    L4_3 = L4_3 ~= false
+    L6_3 = A0_3
+    L5_3 = A0_3.IsOpenedFestival
+    L7_3 = 119
+    L5_3 = L5_3(L6_3, L7_3)
+    L5_3 = L5_3 ~= false
+    L6_3 = {}
+    L7_3 = {}
+    if L5_3 ~= false then
+      L8_3 = table
+      L8_3 = L8_3.insert
+      L9_3 = L6_3
+      L11_3 = A0_3
+      L10_3 = A0_3.GetEventHandlerTitle
+      L12_3 = A0_3.NEST5
+      L10_3, L11_3, L12_3 = L10_3(L11_3, L12_3)
+      L8_3(L9_3, L10_3, L11_3, L12_3)
+      L8_3 = #L6_3
+      L9_3 = A0_3.NEST5
+      L7_3[L8_3] = L9_3
     end
     if L3_3 ~= false then
-      table.insert(L6_6, A0_0:GetEventHandlerTitle(A0_0.NEST2))
-      ;({})[#L6_6] = A0_0.NEST2
+      L8_3 = table
+      L8_3 = L8_3.insert
+      L9_3 = L6_3
+      L11_3 = A0_3
+      L10_3 = A0_3.GetEventHandlerTitle
+      L12_3 = A0_3.NEST2
+      L10_3, L11_3, L12_3 = L10_3(L11_3, L12_3)
+      L8_3(L9_3, L10_3, L11_3, L12_3)
+      L8_3 = #L6_3
+      L9_3 = A0_3.NEST2
+      L7_3[L8_3] = L9_3
     end
-    table.insert(L6_6, A0_0:GetEventHandlerTitle(A0_0.NEST3))
-    ;({})[#L6_6] = A0_0.NEST3
-    table.insert(L6_6, A0_0:GetEventHandlerTitle(A0_0.NEST4))
-    ;({})[#L6_6] = A0_0.NEST4
-    if L4_4 ~= false then
-      table.insert(L6_6, A0_0:GetEventHandlerTitle(A0_0.NEST1))
-      ;({})[#L6_6] = A0_0.NEST1
+    L8_3 = table
+    L8_3 = L8_3.insert
+    L9_3 = L6_3
+    L11_3 = A0_3
+    L10_3 = A0_3.GetEventHandlerTitle
+    L12_3 = A0_3.NEST3
+    L10_3, L11_3, L12_3 = L10_3(L11_3, L12_3)
+    L8_3(L9_3, L10_3, L11_3, L12_3)
+    L8_3 = #L6_3
+    L9_3 = A0_3.NEST3
+    L7_3[L8_3] = L9_3
+    L8_3 = table
+    L8_3 = L8_3.insert
+    L9_3 = L6_3
+    L11_3 = A0_3
+    L10_3 = A0_3.GetEventHandlerTitle
+    L12_3 = A0_3.NEST4
+    L10_3, L11_3, L12_3 = L10_3(L11_3, L12_3)
+    L8_3(L9_3, L10_3, L11_3, L12_3)
+    L8_3 = #L6_3
+    L9_3 = A0_3.NEST4
+    L7_3[L8_3] = L9_3
+    if L4_3 ~= false then
+      L8_3 = table
+      L8_3 = L8_3.insert
+      L9_3 = L6_3
+      L11_3 = A0_3
+      L10_3 = A0_3.GetEventHandlerTitle
+      L12_3 = A0_3.NEST1
+      L10_3, L11_3, L12_3 = L10_3(L11_3, L12_3)
+      L8_3(L9_3, L10_3, L11_3, L12_3)
+      L8_3 = #L6_3
+      L9_3 = A0_3.NEST1
+      L7_3[L8_3] = L9_3
     end
-    if #L6_6 == 1 then
-      return true, ({})[#L6_6]
+    L8_3 = #L6_3
+    if L8_3 == 1 then
+      L8_3 = true
+      L9_3 = #L6_3
+      L9_3 = L7_3[L9_3]
+      return L8_3, L9_3
     end
-    table.insert(L6_6, A0_0:GetAddonText(A0_0.ADDON_CANCEL))
-    if A0_0:Menu(A0_0.TEXT_CTSETCVOYAGERMOOGLE_00566_Q1_000_000, unpack(L6_6)) == 0 or A0_0:Menu(A0_0.TEXT_CTSETCVOYAGERMOOGLE_00566_Q1_000_000, unpack(L6_6)) == #L6_6 then
-      return 0
+    L8_3 = table
+    L8_3 = L8_3.insert
+    L9_3 = L6_3
+    L11_3 = A0_3
+    L10_3 = A0_3.GetAddonText
+    L12_3 = A0_3.ADDON_CANCEL
+    L10_3, L11_3, L12_3 = L10_3(L11_3, L12_3)
+    L8_3(L9_3, L10_3, L11_3, L12_3)
+    L9_3 = A0_3
+    L8_3 = A0_3.Menu
+    L10_3 = A0_3.TEXT_CTSETCVOYAGERMOOGLE_00566_Q1_000_000
+    L11_3 = unpack
+    L12_3 = L6_3
+    L11_3, L12_3 = L11_3(L12_3)
+    L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3)
+    if L8_3 ~= 0 then
+      L9_3 = #L6_3
+      if L8_3 ~= L9_3 then
+        goto lbl_107
+      end
     end
-    A2_2:TurnTo(A1_1, false)
-    return true, ({})[A0_0:Menu(A0_0.TEXT_CTSETCVOYAGERMOOGLE_00566_Q1_000_000, unpack(L6_6))]
+    L9_3 = 0
+    do return L9_3 end
+    ::lbl_107::
+    L10_3 = A2_3
+    L9_3 = A2_3.TurnTo
+    L11_3 = A1_3
+    L12_3 = false
+    L9_3(L10_3, L11_3, L12_3)
+    L9_3 = true
+    L10_3 = L7_3[L8_3]
+    return L9_3, L10_3
   end
-end)()
-;(function()
-  local L0_7
-  L0_7 = CtsEtcVoyagerMoogle
-  L0_7.SCRIPT_VERSION = 2
-  L0_7 = CtsEtcVoyagerMoogle
-  function L0_7.IsAnnounce(A0_8)
-    local L1_9
-    L1_9 = true
-    return L1_9
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsEtcVoyagerMoogle
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = CtsEtcVoyagerMoogle
+  function L1_2(A0_3)
+    local L1_3
+    L1_3 = true
+    return L1_3
   end
-end)()
+  L0_2.IsAnnounce = L1_2
+end
+L0_1()

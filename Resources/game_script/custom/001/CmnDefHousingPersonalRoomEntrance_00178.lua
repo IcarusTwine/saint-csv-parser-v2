@@ -1,156 +1,372 @@
-(function()
-  print("CmnDefHousingPersonalRoomEntrance")
-  function CmnDefHousingPersonalRoomEntrance.BuyRoom(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5
-    if A1_1 == 0 then
-      L4_4 = A0_0
-      L3_3 = A0_0.SystemTalk
-      L5_5 = A0_0.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_NO_PERMIT_TO_BUY1
-      L3_3(L4_4, L5_5, false)
-      L4_4 = A0_0
-      L3_3 = A0_0.SystemTalk
-      L5_5 = A0_0.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_NO_PERMIT_TO_BUY2
-      L3_3(L4_4, L5_5, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefHousingPersonalRoomEntrance"
+  L0_2(L1_2)
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    if A1_3 == 0 then
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_NO_PERMIT_TO_BUY1
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_NO_PERMIT_TO_BUY2
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
       L3_3 = 0
       return L3_3
     end
-    L4_4 = A0_0
-    L3_3 = A0_0.FormatString
-    L5_5 = A0_0.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_TITLE
-    L3_3 = L3_3(L4_4, L5_5, A2_2)
-    L5_5 = A0_0
-    L4_4 = A0_0.YesNo
-    L4_4 = L4_4(L5_5, L3_3, A0_0.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_YES, A0_0.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_NO, A0_0.DEFAULT_NO)
-    if L4_4 == true then
-      L5_5 = A0_0.GetAddonText
-      L5_5 = L5_5(A0_0, A0_0.DEFAULT_NAME_PRIVATE_ROOM)
-      return 1, L5_5
+    L4_3 = A0_3
+    L3_3 = A0_3.FormatString
+    L5_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_TITLE
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.YesNo
+    L6_3 = L3_3
+    L7_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_YES
+    L8_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_NO
+    L9_3 = A0_3.DEFAULT_NO
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    if L4_3 == true then
+      L6_3 = A0_3
+      L5_3 = A0_3.GetAddonText
+      L7_3 = A0_3.DEFAULT_NAME_PRIVATE_ROOM
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 1
+      L7_3 = L5_3
+      return L6_3, L7_3
     end
-    L5_5 = 0
-    return L5_5
+    L5_3 = 0
+    return L5_3
   end
-  function CmnDefHousingPersonalRoomEntrance.BuyWorkshop(A0_6, A1_7)
-    local L2_8
-    L2_8 = A0_6.FormatString
-    L2_8 = L2_8(A0_6, A0_6.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_WORKSHOP_CONF, A1_7)
-    if A0_6:YesNo(L2_8, A0_6.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_YES, A0_6.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_NO, A0_6.DEFAULT_NO) == true then
-      return A0_6.CLIENT_RESULT_BUY_WORKSHOP
+  L0_2.BuyRoom = L1_2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L3_3 = A0_3
+    L2_3 = A0_3.FormatString
+    L4_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_WORKSHOP_CONF
+    L5_3 = A1_3
+    L2_3 = L2_3(L3_3, L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNo
+    L5_3 = L2_3
+    L6_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_YES
+    L7_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_CONFIRM_NO
+    L8_3 = A0_3.DEFAULT_NO
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    if L3_3 == true then
+      L4_3 = A0_3.CLIENT_RESULT_BUY_WORKSHOP
+      return L4_3
     end
-    return 0
+    L4_3 = 0
+    return L4_3
   end
-  function CmnDefHousingPersonalRoomEntrance.MoveToOthersRoom(A0_9, A1_10, A2_11, A3_12)
-    local L4_13
-    L4_13 = A0_9.HousingPersonalRoomPortal
-    L4_13 = L4_13(A0_9, A1_10, A2_11, A3_12)
-    if L4_13 ~= 0 then
-      return 3, L4_13
+  L0_2.BuyWorkshop = L1_2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.HousingPersonalRoomPortal
+    L6_3 = A1_3
+    L7_3 = A2_3
+    L8_3 = A3_3
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+    if L4_3 ~= 0 then
+      L5_3 = 3
+      L6_3 = L4_3
+      return L5_3, L6_3
     end
-    return 0
+    L5_3 = 0
+    return L5_3
   end
-  function CmnDefHousingPersonalRoomEntrance.EntranceMenu(A0_14, A1_15, A2_16, A3_17, A4_18, A5_19, A6_20, A7_21, A8_22, A9_23, A10_24, A11_25, A12_26, A13_27, A14_28)
-    local L15_29
-    L15_29 = A0_14.FormatString
-    L15_29 = L15_29(A0_14, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_WORKSHOP_MENU, A13_27)
-    if A10_24 == 0 and A7_21 == 1 then
-      if A14_28 == 1 then
-        if A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A12_26, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-          return A0_14.CLIENT_RESULT_WARP_TO_WORKSHOP
-        elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A12_26, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 2 then
-          return A0_14:BuyRoom(A9_23, A5_19)
+  L0_2.MoveToOthersRoom = L1_2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3, A8_3, A9_3, A10_3, A11_3, A12_3, A13_3, A14_3)
+    local L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3
+    L16_3 = A0_3
+    L15_3 = A0_3.FormatString
+    L17_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_BUY_WORKSHOP_MENU
+    L18_3 = A13_3
+    L15_3 = L15_3(L16_3, L17_3, L18_3)
+    if A10_3 == 0 and A7_3 == 1 then
+      if A14_3 == 1 then
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP
+        L20_3 = A12_3
+        L21_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3)
+        if L16_3 == 1 then
+          L17_3 = A0_3.CLIENT_RESULT_WARP_TO_WORKSHOP
+          return L17_3
+        elseif L16_3 == 2 then
+          L18_3 = A0_3
+          L17_3 = A0_3.BuyRoom
+          L19_3 = A9_3
+          L20_3 = A5_3
+          return L17_3(L18_3, L19_3, L20_3)
         end
-      elseif A0_14:Menu(A11_25, A12_26, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-        return A0_14:BuyRoom(A9_23, A5_19)
-      elseif A0_14:Menu(A11_25, A12_26, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 2 then
-        return A0_14:BuyWorkshop(A13_27)
+      else
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A12_3
+        L20_3 = L15_3
+        L21_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3)
+        if L16_3 == 1 then
+          L18_3 = A0_3
+          L17_3 = A0_3.BuyRoom
+          L19_3 = A9_3
+          L20_3 = A5_3
+          return L17_3(L18_3, L19_3, L20_3)
+        elseif L16_3 == 2 then
+          L18_3 = A0_3
+          L17_3 = A0_3.BuyWorkshop
+          L19_3 = A13_3
+          return L17_3(L18_3, L19_3)
+        end
       end
-    elseif A10_24 == 1 and A6_20 == 0 and A7_21 == 1 then
-      if A14_28 == 1 then
-        if A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A12_26, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-          return A0_14.CLIENT_RESULT_WARP_TO_WORKSHOP
-        elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A12_26, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 2 then
-          return A0_14:MoveToOthersRoom(A2_16, A3_17, A4_18)
+    elseif A10_3 == 1 and A6_3 == 0 and A7_3 == 1 then
+      if A14_3 == 1 then
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP
+        L20_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM
+        L21_3 = A12_3
+        L22_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+        if L16_3 == 1 then
+          L17_3 = A0_3.CLIENT_RESULT_WARP_TO_WORKSHOP
+          return L17_3
+        elseif L16_3 == 2 then
+          L18_3 = A0_3
+          L17_3 = A0_3.MoveToOthersRoom
+          L19_3 = A2_3
+          L20_3 = A3_3
+          L21_3 = A4_3
+          return L17_3(L18_3, L19_3, L20_3, L21_3)
         else
-          if A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A12_26, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 3 then
-            return A0_14:BuyRoom(A9_23, A5_19)
+          if L16_3 == 3 then
+            L18_3 = A0_3
+            L17_3 = A0_3.BuyRoom
+            L19_3 = A9_3
+            L20_3 = A5_3
+            return L17_3(L18_3, L19_3, L20_3)
           else
           end
         end
-      elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A12_26, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-        return A0_14:MoveToOthersRoom(A2_16, A3_17, A4_18)
-      elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A12_26, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 2 then
-        return A0_14:BuyRoom(A9_23, A5_19)
-      elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A12_26, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 3 then
-        return A0_14:BuyWorkshop(A13_27)
-      end
-    elseif A10_24 == 1 and A6_20 == 1 and A7_21 == 1 then
-      if A14_28 == 1 then
-        if A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-          return A0_14.CLIENT_RESULT_WARP_TO_WORKSHOP
-        elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 2 then
-          return 2
-        elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 3 then
-          return A0_14:MoveToOthersRoom(A2_16, A3_17, A4_18)
+      else
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM
+        L20_3 = A12_3
+        L21_3 = L15_3
+        L22_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+        if L16_3 == 1 then
+          L18_3 = A0_3
+          L17_3 = A0_3.MoveToOthersRoom
+          L19_3 = A2_3
+          L20_3 = A3_3
+          L21_3 = A4_3
+          return L17_3(L18_3, L19_3, L20_3, L21_3)
+        elseif L16_3 == 2 then
+          L18_3 = A0_3
+          L17_3 = A0_3.BuyRoom
+          L19_3 = A9_3
+          L20_3 = A5_3
+          return L17_3(L18_3, L19_3, L20_3)
+        elseif L16_3 == 3 then
+          L18_3 = A0_3
+          L17_3 = A0_3.BuyWorkshop
+          L19_3 = A13_3
+          return L17_3(L18_3, L19_3)
         end
-      elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-        return 2
-      elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 2 then
-        return A0_14:MoveToOthersRoom(A2_16, A3_17, A4_18)
-      elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, L15_29, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 3 then
-        return A0_14:BuyWorkshop(A13_27)
       end
-    elseif A10_24 == 1 and A7_21 == 0 then
-      if A14_28 == 1 then
-        if A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-          return A0_14.CLIENT_RESULT_WARP_TO_WORKSHOP
-        elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 2 then
-          return A0_14:MoveToOthersRoom(A2_16, A3_17, A4_18)
+    elseif A10_3 == 1 and A6_3 == 1 and A7_3 == 1 then
+      if A14_3 == 1 then
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP
+        L20_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM
+        L21_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM
+        L22_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+        if L16_3 == 1 then
+          L17_3 = A0_3.CLIENT_RESULT_WARP_TO_WORKSHOP
+          return L17_3
+        elseif L16_3 == 2 then
+          L17_3 = 2
+          return L17_3
+        elseif L16_3 == 3 then
+          L18_3 = A0_3
+          L17_3 = A0_3.MoveToOthersRoom
+          L19_3 = A2_3
+          L20_3 = A3_3
+          L21_3 = A4_3
+          return L17_3(L18_3, L19_3, L20_3, L21_3)
         end
-      elseif A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-        return A0_14:MoveToOthersRoom(A2_16, A3_17, A4_18)
+      else
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_MY_ROOM
+        L20_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM
+        L21_3 = L15_3
+        L22_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3)
+        if L16_3 == 1 then
+          L17_3 = 2
+          return L17_3
+        elseif L16_3 == 2 then
+          L18_3 = A0_3
+          L17_3 = A0_3.MoveToOthersRoom
+          L19_3 = A2_3
+          L20_3 = A3_3
+          L21_3 = A4_3
+          return L17_3(L18_3, L19_3, L20_3, L21_3)
+        elseif L16_3 == 3 then
+          L18_3 = A0_3
+          L17_3 = A0_3.BuyWorkshop
+          L19_3 = A13_3
+          return L17_3(L18_3, L19_3)
+        end
       end
-    else
-      if A10_24 == 0 and A7_21 == 0 and A14_28 == 1 and A0_14:Menu(A11_25, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP, A0_14.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT) == 1 then
-        return A0_14.CLIENT_RESULT_WARP_TO_WORKSHOP
+    elseif A10_3 == 1 and A7_3 == 0 then
+      if A14_3 == 1 then
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP
+        L20_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM
+        L21_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3, L21_3)
+        if L16_3 == 1 then
+          L17_3 = A0_3.CLIENT_RESULT_WARP_TO_WORKSHOP
+          return L17_3
+        elseif L16_3 == 2 then
+          L18_3 = A0_3
+          L17_3 = A0_3.MoveToOthersRoom
+          L19_3 = A2_3
+          L20_3 = A3_3
+          L21_3 = A4_3
+          return L17_3(L18_3, L19_3, L20_3, L21_3)
+        end
+      else
+        L17_3 = A0_3
+        L16_3 = A0_3.Menu
+        L18_3 = A11_3
+        L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_GO_OTHER_ROOM
+        L20_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+        L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3)
+        if L16_3 == 1 then
+          L18_3 = A0_3
+          L17_3 = A0_3.MoveToOthersRoom
+          L19_3 = A2_3
+          L20_3 = A3_3
+          L21_3 = A4_3
+          return L17_3(L18_3, L19_3, L20_3, L21_3)
+        end
+      end
+    elseif A10_3 == 0 and A7_3 == 0 and A14_3 == 1 then
+      L17_3 = A0_3
+      L16_3 = A0_3.Menu
+      L18_3 = A11_3
+      L19_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_GOTO_WORKSHOP
+      L20_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_EXIT
+      L16_3 = L16_3(L17_3, L18_3, L19_3, L20_3)
+      if L16_3 == 1 then
+        L17_3 = A0_3.CLIENT_RESULT_WARP_TO_WORKSHOP
+        return L17_3
       else
       end
     end
   end
-  function CmnDefHousingPersonalRoomEntrance.OnScene00000(A0_30, A1_31, A2_32)
-    local L3_33, L4_34, L5_35, L6_36, L7_37, L8_38, L9_39, L10_40, L11_41, L12_42, L13_43, L14_44, L15_45
-    L4_34 = A0_30
-    L3_33 = A0_30.GetPersonalRoomStatus
-    L12_42 = L3_33(L4_34)
-    L13_43 = 0
-    if L4_34 > 0 then
-      L13_43 = 1
+  L0_2.EntranceMenu = L1_2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetPersonalRoomStatus
+    L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3 = L3_3(L4_3)
+    L13_3 = 0
+    if 0 < L4_3 then
+      L13_3 = 1
     end
-    L15_45 = A0_30
-    L14_44 = A0_30.FormatString
-    L14_44 = L14_44(L15_45, A0_30.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_BUY_ROOM, L5_35)
-    L15_45 = ""
-    return A0_30:EntranceMenu(A1_31, A2_32, L3_33, L4_34, L5_35, L6_36, L7_37, L8_38, L9_39, L13_43, L15_45, L14_44, L10_40, L12_42)
+    L15_3 = A0_3
+    L14_3 = A0_3.FormatString
+    L16_3 = A0_3.TEXT_CMNDEFHOUSINGPERSONALROOMENTRANCE_00178_MENU_BUY_ROOM
+    L17_3 = L5_3
+    L14_3 = L14_3(L15_3, L16_3, L17_3)
+    L15_3 = ""
+    L17_3 = A0_3
+    L16_3 = A0_3.EntranceMenu
+    L18_3 = A1_3
+    L19_3 = A2_3
+    L20_3 = L3_3
+    L21_3 = L4_3
+    L22_3 = L5_3
+    L23_3 = L6_3
+    L24_3 = L7_3
+    L25_3 = L8_3
+    L26_3 = L9_3
+    L27_3 = L13_3
+    L28_3 = L15_3
+    L29_3 = L14_3
+    L30_3 = L10_3
+    L31_3 = L12_3
+    return L16_3(L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3, L30_3, L31_3)
   end
-  function CmnDefHousingPersonalRoomEntrance.IsAcceptEvent(A0_46, A1_47, A2_48, A3_49, A4_50, A5_51)
-    return A0_46:IsVisiblePersonalRoomEntrance(A2_48, A3_49)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3
+    L7_3 = A0_3
+    L6_3 = A0_3.IsVisiblePersonalRoomEntrance
+    L8_3 = A2_3
+    L9_3 = A3_3
+    return L6_3(L7_3, L8_3, L9_3)
   end
-  function CmnDefHousingPersonalRoomEntrance.IsTargetingPossible(A0_52, A1_53, A2_54)
-    return A0_52:IsTargetablePersonalRoomEntrance(A1_53, A2_54)
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsTargetablePersonalRoomEntrance
+    L5_3 = A1_3
+    L6_3 = A2_3
+    return L3_3(L4_3, L5_3, L6_3)
   end
-end)()
-;(function()
-  local L0_55, L1_56
-  L0_55 = CmnDefHousingPersonalRoomEntrance
-  L0_55.SCRIPT_VERSION = 1
-  L0_55 = CmnDefHousingPersonalRoomEntrance
-  L0_55.CLIENT_RESULT_NONE = 0
-  L0_55 = CmnDefHousingPersonalRoomEntrance
-  L0_55.CLIENT_RESULT_BUY_PROOM = 1
-  L0_55 = CmnDefHousingPersonalRoomEntrance
-  L0_55.CLIENT_RESULT_WARP_TO_MYROOM = 2
-  L0_55 = CmnDefHousingPersonalRoomEntrance
-  L0_55.CLIENT_RESULT_WARP_TO_PROOM = 3
-  L0_55 = CmnDefHousingPersonalRoomEntrance
-  L0_55.CLIENT_RESULT_BUY_WORKSHOP = 4
-  L0_55 = CmnDefHousingPersonalRoomEntrance
-  L0_55.CLIENT_RESULT_WARP_TO_WORKSHOP = 5
-end)()
+  L0_2.IsTargetingPossible = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  L0_2.CLIENT_RESULT_NONE = 0
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  L0_2.CLIENT_RESULT_BUY_PROOM = 1
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  L0_2.CLIENT_RESULT_WARP_TO_MYROOM = 2
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  L0_2.CLIENT_RESULT_WARP_TO_PROOM = 3
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  L0_2.CLIENT_RESULT_BUY_WORKSHOP = 4
+  L0_2 = CmnDefHousingPersonalRoomEntrance
+  L0_2.CLIENT_RESULT_WARP_TO_WORKSHOP = 5
+end
+L0_1()

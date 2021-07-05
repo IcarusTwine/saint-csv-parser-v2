@@ -46,7 +46,7 @@ class QuestTest implements ParseInterface
         $QuestClassJobRewardCsv = $this->csv("QuestClassJobReward");
         $ClassJobCategoryCsv = $this->csv("ClassJobCategory");
         $EmoteCsv = $this->csv("Emote");
-        $TomestonesItemCsv = $this->csv("TomestonesItem");
+        $StainCsv = $this->csv("Stain");
         $ContentFinderConditionCsv = $this->csv("ContentFinderCondition");
         $ExVersionCsv = $this->csv("ExVersion");
         $GrandCompanyCsv = $this->csv("GrandCompany");
@@ -130,7 +130,7 @@ class QuestTest implements ParseInterface
             $ArgArray = [];
             $EnemyArray = [];
             $ItemArray = [];
-            if ($id != 69637) continue;
+            if ($id != 65780) continue;
             if (empty($Quest['Name'])) continue;
             //produce argument array
             foreach(range(0,49) as $i){
@@ -191,7 +191,11 @@ class QuestTest implements ParseInterface
                 $Npc = $Quest["Script{Arg}[$i]"];
                 if (($Npc > 1000000) && ($Npc < 2000000)) {
                     if (empty($ENpcResidentCsv->at($Npc)['Singular'])) continue;
-                    $NpcName = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames)['Name'];
+                    $NpcNamefnc = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames);
+                    $NpcName = $NpcNamefnc["Name"];
+                    if ($NpcNamefnc["IsEnglish"] === false){
+                        continue;
+                    }
                     $NpcsInvolved[] = $NpcName;
                     $NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
                 }
@@ -200,34 +204,44 @@ class QuestTest implements ParseInterface
                 $Npc = $Quest["Listener[$i]"];
                 if (($Npc > 1000000) && ($Npc < 2000000)) {
                     if (empty($ENpcResidentCsv->at($Npc)['Singular'])) continue;
-                    $NpcName = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames)['Name'];
+                    $NpcNamefnc = $this->NameFormat($Npc, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Npc], $LGBArray, $BadNames);
+                    $NpcName = $NpcNamefnc["Name"];
+                    if ($NpcNamefnc["IsEnglish"] === false){
+                        continue;
+                    }
                     $NpcsInvolved[] = $NpcName;
-                    $NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
+                    //$NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
                 }
             }
             if ($Quest["Target{End}"] < 2000000){
                 $lastnpc = array_key_last($NPCSubPagesArray);
-                $FinalNpcName = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames)['Name'];
-                $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $Quest['Name'] ."}}";
-                if (!empty($NPCSubPagesArray[$lastnpc])){
-                    if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
-                        $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
-                        $NpcsInvolved[] = $FinalNpcName;
+                $NpcNamefnc = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames);
+                if ($NpcNamefnc["IsEnglish"] != false){
+                    $FinalNpcName = $NpcNamefnc["Name"];
+                    $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $Quest['Name'] ."}}";
+                    if (!empty($NPCSubPagesArray[$lastnpc])){
+                        if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
+                            $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
+                            $NpcsInvolved[] = $FinalNpcName;
+                        }
                     }
                 }
             }
             if ($Quest["Issuer{Start}"] < 2000000){
                 if (!empty($NPCSubPagesArray)){
                     $firstnpc = $NPCSubPagesArray[0];
-                    $FirstNpcName = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)['Name'];
-                    $FirstNPC = "{{QuestNPC|Name=$FirstNpcName|ID=". $Quest["Issuer{Start}"] ."|Quest=". $Quest['Name'] ."}}";
-                    if ($firstnpc != $FirstNPC){
-                        array_unshift($NPCSubPagesArray,$FirstNPC);
+                    $FirstNpcName = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames);
+                    $FirstNpcName = $NpcNamefnc["Name"];
+                    if ($NpcNamefnc["IsEnglish"] != false){
+                        $FirstNPC = "{{QuestNPC|Name=$FirstNpcName|ID=". $Quest["Issuer{Start}"] ."|Quest=". $Quest['Name'] ."}}";
+                        if ($firstnpc != $FirstNPC){
+                            array_unshift($NPCSubPagesArray,$FirstNPC);
+                        }
                     }
                 }
             }
             if ($Quest["Issuer{Start}"] < 2000000){
-                $NpcsInvolved[] = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)['Name'];
+                $NpcsInvolved[] = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)["Name"];
             } else {
                 $NpcsInvolved[] = $EObjNameCsv->at($Quest["Issuer{Start}"])['Singular'];
             }
@@ -552,13 +566,16 @@ class QuestTest implements ParseInterface
                     if (empty($Quest["Item{Reward}[$i]"])) continue;
                     if ($Quest["Stain{Reward}[$i]"] === "0"){
                         $Stain = "";
+                        $StainHex = "";
                     } else {
                         $Stain = $ItemCsv->at($StainTransientCsv->at($Quest["Stain{Reward}[$i]"])['Item{1}'])['Name'];
+                        $StainHex = $StainCsv->at($Quest["Stain{Reward}[$i]"])['Color'];
                     }
                     $ItemRewards[] = array(
                         "Item" => $ItemCsv->at($Quest["Item{Reward}[$i]"])['Name'],
                         "Count" => $Quest["ItemCount{Reward}[$i]"],
                         "Stain" => $Stain,
+                        "StainHex" => $StainHex,
                     );
                 }
             }
@@ -571,15 +588,18 @@ class QuestTest implements ParseInterface
             $OptionalItemRewards = [];
             foreach(range(0,4) as $i){
                 if (empty($Quest["OptionalItem{Reward}[$i]"])) continue;
-                if ($Quest["Stain{Reward}[$i]"] === "0"){
+                if ($Quest["OptionalItemStain{Reward}[$i]"] === "0"){
                     $Stain = "";
+                    $StainHex = "";
                 } else {
                     $Stain = $ItemCsv->at($StainTransientCsv->at($Quest["OptionalItemStain{Reward}[$i]"])['Item{1}'])['Name'];
+                    $StainHex = $StainCsv->at($Quest["OptionalItemStain{Reward}[$i]"])['Color'];
                 }
                 $OptionalItemRewards[] = array(
                     "Item" => $ItemCsv->at($Quest["OptionalItem{Reward}[$i]"])['Name'],
                     "Count" => $Quest["OptionalItemCount{Reward}[$i]"],
                     "Stain" => $Stain,
+                    "StainHex" => $StainHex,
                     "IsHQ" => $Quest["OptionalItemIsHQ{Reward}[$i]"],
                 );
             }
@@ -598,7 +618,7 @@ class QuestTest implements ParseInterface
             };
             if (!empty($ContentArray[$Quest['InstanceContent{Unlock}']])){
                 if ($Quest['InstanceContent{Unlock}']) {
-                    $RewardArray[] = "\n|Misc Reward = [[". preg_replace("/\<Emphasis>|\<\/Emphasis>/", "", ucfirst($ContentArray[$Quest['InstanceContent{Unlock}']])) ."]] unlocked.";
+                    $RewardArray[] = "\n|Instance Reward = [[". preg_replace("/\<Emphasis>|\<\/Emphasis>/", "", ucfirst($ContentArray[$Quest['InstanceContent{Unlock}']])) ."]] unlocked.";
                 }
             }
             if (!empty($AchievementArray[$id])) {
@@ -619,18 +639,18 @@ class QuestTest implements ParseInterface
             $ItemCount = 0;
             foreach($ItemRewards as $Item){
                 $ItemCount++;
-                $Job = "";
-                if (!empty($Item["Job"])){
-                    $Job = $Item["Job"]." ";
-                }
                 if (!empty($Item["Item"])){
-                    $RewardArray[] = "|QuestReward $ItemCount $Job= ".$Item["Item"];
+                    $RewardArray[] = "|QuestReward $ItemCount = ".$Item["Item"];
+                }
+                if (!empty($Item["Job"])){
+                    $RewardArray[] = "|QuestReward $ItemCount Job = ".$Item["Job"];
                 }
                 if ($Item["Count"] > 1){
                     $RewardArray[] = "|QuestReward $ItemCount Count = ".$Item["Count"];
                 }
                 if (!empty($Item["Stain"])){
                     $RewardArray[] = "|QuestReward $ItemCount Dye = ".$Item["Stain"];
+                    $RewardArray[] = "|QuestReward $ItemCount Dye Hex = ".$this->colorToHex($Item["StainHex"]);
                 }
             }
             $OptionItemCount = 0;
@@ -644,6 +664,7 @@ class QuestTest implements ParseInterface
                 }
                 if (!empty($Item["Stain"])){
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount Dye = ".$Item["Stain"];
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Dye Hex = ".$this->colorToHex($Item["StainHex"]);
                 }
                 if ($Item["IsHQ"] === "True"){
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount HQ = x";
@@ -697,7 +718,10 @@ class QuestTest implements ParseInterface
 
                 }
                 if ($value['Type'] === "EOBJECT"){
-                    $ObjectArrayNames[] = ucwords($EObjNameCsv->at($value['Value'])['Singular']);
+                    if ($EObjNameCsv->at($value['Value'])['Singular'] === "Destination") continue;
+                    if (!empty($EObjNameCsv->at($value['Value'])['Singular'])) {
+                        $ObjectArrayNames[] = str_replace(",","",ucwords($EObjNameCsv->at($value['Value'])['Singular']));
+                    }
                     $MatchItemArray[$EObjNameCsv->at($value['Value'])['Singular']] = array(
                         "Singular" => $EObjNameCsv->at($value['Value'])['Singular'],
                         "Plural" => $EObjNameCsv->at($value['Value'])['Plural'],
@@ -722,9 +746,17 @@ class QuestTest implements ParseInterface
                 $Plural = $Item['Plural'];
                 $Objectives = str_replace(" $Singular ", " [[".$Item['Name']."|".$Item['Singular']."]] ", $Objectives);
                 $Objectives = str_replace(" $Plural ", " [[".$Item['Name']."|".$Item['Plural']."]] ", $Objectives);
+                $Objectives = str_replace(" $Singular.", " [[".$Item['Name']."|".$Item['Singular']."]].", $Objectives);
+                $Objectives = str_replace(" $Plural.", " [[".$Item['Name']."|".$Item['Plural']."]].", $Objectives);
             }
             foreach($NpcsInvolved as $Npc){
-                $Objectives = str_replace($Npc, "[[".$Npc."|".$Npc."]]", $Objectives);
+                if (stripos($Objectives,$Npc.".") !== false){
+                    $Objectives = str_replace($Npc.".", "[[".$Npc."|".$Npc."]].", $Objectives);
+                } elseif (stripos($Objectives," ".$Npc." ") !== false){
+                    $Objectives = str_replace(" ".$Npc." ", " [[".$Npc."|".$Npc."]] ", $Objectives);
+                } elseif (stripos($Objectives,"*".$Npc." ") !== false){
+                    $Objectives = str_replace("*".$Npc." ", "*[[".$Npc."|".$Npc."]] ", $Objectives);
+                }
             }
             $NpcsInvolved = implode(",",$NpcsInvolved);
 

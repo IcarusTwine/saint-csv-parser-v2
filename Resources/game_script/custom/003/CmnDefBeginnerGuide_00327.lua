@@ -1,564 +1,1888 @@
-(function()
-  print("CmnDefBeginnerGuide")
-  function CmnDefBeginnerGuide.OnScene00000(A0_0, A1_1, A2_2, A3_3)
-    local L4_4, L5_5, L6_6, L7_7
-    L5_5 = A0_0
-    L4_4 = A0_0.getSequence
-    L6_6 = A1_1
-    L4_4 = L4_4(L5_5, L6_6)
-    L5_5 = 0
-    L6_6 = 0
-    L7_7 = {}
-    A2_2:TurnTo(A1_1, false)
-    A2_2:LookAt(A1_1)
-    A2_2:WaitForTurn()
-    if A1_1:IsBeginnerGuideFlags(A0_0.BEGINNER_GUIDE_FLAG_WELCOME) == false then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_100_000, true)
-      A0_0:Wait(10)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_GREETING)
-      A0_0:setBeginnerGuideFlagWelcome(A1_1)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefBeginnerGuide"
+  L0_2(L1_2)
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    L5_3 = A0_3
+    L4_3 = A0_3.getSequence
+    L6_3 = A1_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = 0
+    L6_3 = 0
+    L7_3 = {}
+    L9_3 = A2_3
+    L8_3 = A2_3.TurnTo
+    L10_3 = A1_3
+    L11_3 = false
+    L8_3(L9_3, L10_3, L11_3)
+    L9_3 = A2_3
+    L8_3 = A2_3.LookAt
+    L10_3 = A1_3
+    L8_3(L9_3, L10_3)
+    L9_3 = A2_3
+    L8_3 = A2_3.WaitForTurn
+    L8_3(L9_3)
+    L9_3 = A1_3
+    L8_3 = A1_3.IsBeginnerGuideFlags
+    L10_3 = A0_3.BEGINNER_GUIDE_FLAG_WELCOME
+    L8_3 = L8_3(L9_3, L10_3)
+    if L8_3 == false then
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_100_000
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 10
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.CancelActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_GREETING
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.setBeginnerGuideFlagWelcome
+      L10_3 = A1_3
+      L8_3(L9_3, L10_3)
     end
-    if L4_4 == A0_0.BEGINNER_GUIDE_SEQ_01 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_000, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_001, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_002, false)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_003, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_004, true)
-      A0_0:Wait(10)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_005, false)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_006, false)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_007, false)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_008, true)
-      A0_0:Wait(10)
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_02 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_015, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_016, true)
-      A0_0:Wait(10)
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_03 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_020, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_021, false)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_022, false)
-      if A2_2:GetBaseId() == A0_0.ENPC_BEGINNER_GUIDE_MASTER then
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_025, true)
+    L8_3 = A0_3.BEGINNER_GUIDE_SEQ_01
+    if L4_3 == L8_3 then
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_000
+      L13_3 = false
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_001
+      L13_3 = false
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_002
+      L13_3 = false
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.CancelActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_003
+      L13_3 = false
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_004
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 10
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.SystemTalk
+      L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_005
+      L11_3 = false
+      L8_3(L9_3, L10_3, L11_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.SystemTalk
+      L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_006
+      L11_3 = false
+      L8_3(L9_3, L10_3, L11_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.SystemTalk
+      L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_007
+      L11_3 = false
+      L8_3(L9_3, L10_3, L11_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.SystemTalk
+      L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_008
+      L11_3 = true
+      L8_3(L9_3, L10_3, L11_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 10
+      L8_3(L9_3, L10_3)
+    else
+      L8_3 = A0_3.BEGINNER_GUIDE_SEQ_02
+      if L4_3 == L8_3 then
+        L9_3 = A2_3
+        L8_3 = A2_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L8_3(L9_3, L10_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_015
+        L13_3 = false
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_016
+        L13_3 = true
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 10
+        L8_3(L9_3, L10_3)
       else
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_030, true)
+        L8_3 = A0_3.BEGINNER_GUIDE_SEQ_03
+        if L4_3 == L8_3 then
+          L9_3 = A2_3
+          L8_3 = A2_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_020
+          L13_3 = false
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_021
+          L13_3 = false
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.CancelActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_022
+          L13_3 = false
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.GetBaseId
+          L8_3 = L8_3(L9_3)
+          L9_3 = A0_3.ENPC_BEGINNER_GUIDE_MASTER
+          if L8_3 == L9_3 then
+            L9_3 = A2_3
+            L8_3 = A2_3.Talk
+            L10_3 = A1_3
+            L11_3 = A0_3
+            L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_025
+            L13_3 = true
+            L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          else
+            L9_3 = A2_3
+            L8_3 = A2_3.Talk
+            L10_3 = A1_3
+            L11_3 = A0_3
+            L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_030
+            L13_3 = true
+            L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          end
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 10
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.unlockTutorialContent
+          L10_3 = A1_3
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.SystemTalk
+          L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_035
+          L11_3 = true
+          L8_3(L9_3, L10_3, L11_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 10
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.TutorialContent
+          L8_3(L9_3)
+          return
+        else
+          L8_3 = A0_3.BEGINNER_GUIDE_SEQ_04
+          if L4_3 == L8_3 then
+            L9_3 = A2_3
+            L8_3 = A2_3.PlayActionTimeline
+            L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+            L8_3(L9_3, L10_3)
+            L9_3 = A2_3
+            L8_3 = A2_3.Talk
+            L10_3 = A1_3
+            L11_3 = A0_3
+            L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_040
+            L13_3 = true
+            L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.Wait
+            L10_3 = 10
+            L8_3(L9_3, L10_3)
+            L9_3 = A0_3
+            L8_3 = A0_3.TutorialContent
+            L8_3(L9_3)
+            return
+          else
+            L8_3 = A0_3.BEGINNER_GUIDE_SEQ_05
+            if L4_3 == L8_3 then
+              L9_3 = A2_3
+              L8_3 = A2_3.PlayActionTimeline
+              L10_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+              L8_3(L9_3, L10_3)
+              L9_3 = A2_3
+              L8_3 = A2_3.Talk
+              L10_3 = A1_3
+              L11_3 = A0_3
+              L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_050
+              L13_3 = false
+              L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+              L9_3 = A2_3
+              L8_3 = A2_3.Talk
+              L10_3 = A1_3
+              L11_3 = A0_3
+              L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_051
+              L13_3 = true
+              L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+              L9_3 = A0_3
+              L8_3 = A0_3.Wait
+              L10_3 = 10
+              L8_3(L9_3, L10_3)
+              L9_3 = A0_3
+              L8_3 = A0_3.setBeginnerGuideFlagContentCompleted
+              L10_3 = A1_3
+              L8_3(L9_3, L10_3)
+            else
+              L8_3 = A0_3.BEGINNER_GUIDE_SEQ_06
+              if L4_3 == L8_3 then
+                L9_3 = A2_3
+                L8_3 = A2_3.PlayActionTimeline
+                L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                L8_3(L9_3, L10_3)
+                L9_3 = A2_3
+                L8_3 = A2_3.Talk
+                L10_3 = A1_3
+                L11_3 = A0_3
+                L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_060
+                L13_3 = true
+                L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                L9_3 = A0_3
+                L8_3 = A0_3.Wait
+                L10_3 = 10
+                L8_3(L9_3, L10_3)
+              else
+                L8_3 = A0_3.BEGINNER_GUIDE_SEQ_10
+                if L4_3 == L8_3 then
+                  L9_3 = A2_3
+                  L8_3 = A2_3.PlayActionTimeline
+                  L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                  L8_3(L9_3, L10_3)
+                  L9_3 = A2_3
+                  L8_3 = A2_3.Talk
+                  L10_3 = A1_3
+                  L11_3 = A0_3
+                  L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_070
+                  L13_3 = false
+                  L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                  L9_3 = A2_3
+                  L8_3 = A2_3.Talk
+                  L10_3 = A1_3
+                  L11_3 = A0_3
+                  L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_071
+                  L13_3 = true
+                  L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                  L9_3 = A0_3
+                  L8_3 = A0_3.Wait
+                  L10_3 = 10
+                  L8_3(L9_3, L10_3)
+                  L9_3 = A2_3
+                  L8_3 = A2_3.CancelActionTimeline
+                  L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                  L8_3(L9_3, L10_3)
+                else
+                  L8_3 = A0_3.BEGINNER_GUIDE_SEQ_11
+                  if L4_3 == L8_3 then
+                    L9_3 = A2_3
+                    L8_3 = A2_3.PlayActionTimeline
+                    L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                    L8_3(L9_3, L10_3)
+                    L9_3 = A2_3
+                    L8_3 = A2_3.Talk
+                    L10_3 = A1_3
+                    L11_3 = A0_3
+                    L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_080
+                    L13_3 = false
+                    L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                    L9_3 = A2_3
+                    L8_3 = A2_3.CancelActionTimeline
+                    L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                    L8_3(L9_3, L10_3)
+                    L9_3 = A2_3
+                    L8_3 = A2_3.PlayActionTimeline
+                    L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                    L8_3(L9_3, L10_3)
+                    L9_3 = A2_3
+                    L8_3 = A2_3.Talk
+                    L10_3 = A1_3
+                    L11_3 = A0_3
+                    L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_081
+                    L13_3 = false
+                    L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                    L9_3 = A2_3
+                    L8_3 = A2_3.Talk
+                    L10_3 = A1_3
+                    L11_3 = A0_3
+                    L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_082
+                    L13_3 = true
+                    L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                    L9_3 = A0_3
+                    L8_3 = A0_3.Wait
+                    L10_3 = 10
+                    L8_3(L9_3, L10_3)
+                  else
+                    L8_3 = A0_3.BEGINNER_GUIDE_SEQ_12
+                    if L4_3 == L8_3 then
+                      L9_3 = A2_3
+                      L8_3 = A2_3.PlayActionTimeline
+                      L10_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+                      L8_3(L9_3, L10_3)
+                      L9_3 = A2_3
+                      L8_3 = A2_3.Talk
+                      L10_3 = A1_3
+                      L11_3 = A0_3
+                      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_090
+                      L13_3 = true
+                      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+                      L9_3 = A0_3
+                      L8_3 = A0_3.Wait
+                      L10_3 = 10
+                      L8_3(L9_3, L10_3)
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
       end
-      A0_0:Wait(10)
-      A0_0:unlockTutorialContent(A1_1)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_035, true)
-      A0_0:Wait(10)
-      A0_0:TutorialContent()
-      return
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_04 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_040, true)
-      A0_0:Wait(10)
-      A0_0:TutorialContent()
-      return
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_05 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_JOY)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_050, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_051, true)
-      A0_0:Wait(10)
-      A0_0:setBeginnerGuideFlagContentCompleted(A1_1)
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_06 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_060, true)
-      A0_0:Wait(10)
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_10 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_070, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_071, true)
-      A0_0:Wait(10)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_11 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_080, false)
-      A2_2:CancelActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_081, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_082, true)
-      A0_0:Wait(10)
-    elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_12 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_090, true)
-      A0_0:Wait(10)
     end
     while true do
-      L5_5 = 0
-      L6_6 = 0
-      if L4_4 == A0_0.BEGINNER_GUIDE_SEQ_01 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_02 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_03 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_04 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_05 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_06 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_10 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_08,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_09,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_11 then
-        L7_7 = {
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-          A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-        }
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
-      elseif L4_4 == A0_0.BEGINNER_GUIDE_SEQ_12 then
-        if A1_1:IsHowTo(A0_0.HOWTO_MENTOR) == false then
-          A0_0:HowTo(A0_0.HOWTO_MENTOR)
-        end
-        if A1_1:IsMentor() == false then
-          L7_7 = {
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-          }
+      L5_3 = 0
+      L6_3 = 0
+      L8_3 = A0_3.BEGINNER_GUIDE_SEQ_01
+      if L4_3 == L8_3 then
+        L8_3 = {}
+        L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03
+        L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04
+        L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05
+        L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06
+        L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+        L8_3[1] = L9_3
+        L8_3[2] = L10_3
+        L8_3[3] = L11_3
+        L8_3[4] = L12_3
+        L8_3[5] = L13_3
+        L7_3 = L8_3
+        L9_3 = A0_3
+        L8_3 = A0_3.Menu
+        L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+        L11_3 = unpack
+        L12_3 = L7_3
+        L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+        L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L5_3 = L8_3
+      else
+        L8_3 = A0_3.BEGINNER_GUIDE_SEQ_02
+        if L4_3 == L8_3 then
+          L8_3 = {}
+          L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03
+          L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04
+          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05
+          L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06
+          L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+          L8_3[1] = L9_3
+          L8_3[2] = L10_3
+          L8_3[3] = L11_3
+          L8_3[4] = L12_3
+          L8_3[5] = L13_3
+          L7_3 = L8_3
+          L9_3 = A0_3
+          L8_3 = A0_3.Menu
+          L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+          L11_3 = unpack
+          L12_3 = L7_3
+          L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+          L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+          L5_3 = L8_3
         else
-          L7_7 = {
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_13,
-            A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
-          }
+          L8_3 = A0_3.BEGINNER_GUIDE_SEQ_03
+          if L4_3 == L8_3 then
+            L8_3 = {}
+            L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+            L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02
+            L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+            L8_3[1] = L9_3
+            L8_3[2] = L10_3
+            L8_3[3] = L11_3
+            L8_3[4] = L12_3
+            L7_3 = L8_3
+            L9_3 = A0_3
+            L8_3 = A0_3.Menu
+            L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+            L11_3 = unpack
+            L12_3 = L7_3
+            L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+            L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+            L5_3 = L8_3
+          else
+            L8_3 = A0_3.BEGINNER_GUIDE_SEQ_04
+            if L4_3 == L8_3 then
+              L8_3 = {}
+              L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+              L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+              L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02
+              L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+              L8_3[1] = L9_3
+              L8_3[2] = L10_3
+              L8_3[3] = L11_3
+              L8_3[4] = L12_3
+              L7_3 = L8_3
+              L9_3 = A0_3
+              L8_3 = A0_3.Menu
+              L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+              L11_3 = unpack
+              L12_3 = L7_3
+              L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+              L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+              L5_3 = L8_3
+            else
+              L8_3 = A0_3.BEGINNER_GUIDE_SEQ_05
+              if L4_3 == L8_3 then
+                L8_3 = {}
+                L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+                L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02
+                L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+                L8_3[1] = L9_3
+                L8_3[2] = L10_3
+                L8_3[3] = L11_3
+                L8_3[4] = L12_3
+                L7_3 = L8_3
+                L9_3 = A0_3
+                L8_3 = A0_3.Menu
+                L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+                L11_3 = unpack
+                L12_3 = L7_3
+                L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+                L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                L5_3 = L8_3
+              else
+                L8_3 = A0_3.BEGINNER_GUIDE_SEQ_06
+                if L4_3 == L8_3 then
+                  L8_3 = {}
+                  L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+                  L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02
+                  L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+                  L8_3[1] = L9_3
+                  L8_3[2] = L10_3
+                  L8_3[3] = L11_3
+                  L8_3[4] = L12_3
+                  L7_3 = L8_3
+                  L9_3 = A0_3
+                  L8_3 = A0_3.Menu
+                  L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+                  L11_3 = unpack
+                  L12_3 = L7_3
+                  L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+                  L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                  L5_3 = L8_3
+                else
+                  L8_3 = A0_3.BEGINNER_GUIDE_SEQ_10
+                  if L4_3 == L8_3 then
+                    L8_3 = {}
+                    L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12
+                    L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_08
+                    L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_09
+                    L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02
+                    L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+                    L14_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+                    L15_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+                    L8_3[1] = L9_3
+                    L8_3[2] = L10_3
+                    L8_3[3] = L11_3
+                    L8_3[4] = L12_3
+                    L8_3[5] = L13_3
+                    L8_3[6] = L14_3
+                    L8_3[7] = L15_3
+                    L7_3 = L8_3
+                    L9_3 = A0_3
+                    L8_3 = A0_3.Menu
+                    L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+                    L11_3 = unpack
+                    L12_3 = L7_3
+                    L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+                    L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                    L5_3 = L8_3
+                  else
+                    L8_3 = A0_3.BEGINNER_GUIDE_SEQ_11
+                    if L4_3 == L8_3 then
+                      L8_3 = {}
+                      L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12
+                      L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07
+                      L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02
+                      L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30
+                      L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+                      L14_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+                      L15_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+                      L8_3[1] = L9_3
+                      L8_3[2] = L10_3
+                      L8_3[3] = L11_3
+                      L8_3[4] = L12_3
+                      L8_3[5] = L13_3
+                      L8_3[6] = L14_3
+                      L8_3[7] = L15_3
+                      L7_3 = L8_3
+                      L9_3 = A0_3
+                      L8_3 = A0_3.Menu
+                      L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+                      L11_3 = unpack
+                      L12_3 = L7_3
+                      L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+                      L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                      L5_3 = L8_3
+                    else
+                      L8_3 = A0_3.BEGINNER_GUIDE_SEQ_12
+                      if L4_3 == L8_3 then
+                        L9_3 = A1_3
+                        L8_3 = A1_3.IsHowTo
+                        L10_3 = A0_3.HOWTO_MENTOR
+                        L8_3 = L8_3(L9_3, L10_3)
+                        if L8_3 == false then
+                          L9_3 = A0_3
+                          L8_3 = A0_3.HowTo
+                          L10_3 = A0_3.HOWTO_MENTOR
+                          L8_3(L9_3, L10_3)
+                        end
+                        L9_3 = A1_3
+                        L8_3 = A1_3.IsMentor
+                        L8_3 = L8_3(L9_3)
+                        if L8_3 == false then
+                          L8_3 = {}
+                          L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12
+                          L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02
+                          L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30
+                          L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+                          L14_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+                          L15_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+                          L8_3[1] = L9_3
+                          L8_3[2] = L10_3
+                          L8_3[3] = L11_3
+                          L8_3[4] = L12_3
+                          L8_3[5] = L13_3
+                          L8_3[6] = L14_3
+                          L8_3[7] = L15_3
+                          L7_3 = L8_3
+                        else
+                          L8_3 = {}
+                          L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12
+                          L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02
+                          L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30
+                          L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+                          L14_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+                          L15_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_13
+                          L16_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+                          L8_3[1] = L9_3
+                          L8_3[2] = L10_3
+                          L8_3[3] = L11_3
+                          L8_3[4] = L12_3
+                          L8_3[5] = L13_3
+                          L8_3[6] = L14_3
+                          L8_3[7] = L15_3
+                          L8_3[8] = L16_3
+                          L7_3 = L8_3
+                        end
+                        L9_3 = A0_3
+                        L8_3 = A0_3.Menu
+                        L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE
+                        L11_3 = unpack
+                        L12_3 = L7_3
+                        L11_3, L12_3, L13_3, L14_3, L15_3, L16_3 = L11_3(L12_3)
+                        L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+                        L5_3 = L8_3
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
         end
-        L5_5 = A0_0:Menu(A0_0.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_TITLE, unpack(L7_7))
       end
-      if L5_5 > 0 then
-        L6_6 = L7_7[L5_5]
-        if A0_0:onSelect(A1_1, A2_2, L6_6, A3_3) == false then
+      if 0 < L5_3 then
+        L6_3 = L7_3[L5_3]
+        L9_3 = A0_3
+        L8_3 = A0_3.onSelect
+        L10_3 = A1_3
+        L11_3 = A2_3
+        L12_3 = L6_3
+        L13_3 = A3_3
+        L8_3 = L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        if L8_3 == false then
           break
         end
       else
         break
       end
-      L4_4 = A0_0:getSequence(A1_1)
+      L9_3 = A0_3
+      L8_3 = A0_3.getSequence
+      L10_3 = A1_3
+      L8_3 = L8_3(L9_3, L10_3)
+      L4_3 = L8_3
     end
   end
-  function CmnDefBeginnerGuide.onSelect(A0_8, A1_9, A2_10, A3_11, A4_12)
-    local L5_13, L6_14, L7_15, L8_16
-    L6_14 = A0_8
-    L5_13 = A0_8.getSequence
-    L7_15 = A1_9
-    L5_13 = L5_13(L6_14, L7_15)
-    L6_14 = 0
-    L7_15 = 0
-    L8_16 = {}
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L6_3 = A0_3
+    L5_3 = A0_3.getSequence
+    L7_3 = A1_3
+    L5_3 = L5_3(L6_3, L7_3)
+    L6_3 = 0
+    L7_3 = 0
+    L8_3 = {}
     while true do
-      L6_14 = 0
-      L7_15 = 0
-      if A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00 then
-        return false
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01 then
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02 then
-        L8_16 = {
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
-        }
-        L6_14 = A0_8:Menu(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02, unpack(L8_16))
-        if L6_14 < A0_8.UI_RESULT_MENU_CLOSED then
-          return false
-        end
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02 then
-        L8_16 = {
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
-        }
-        L6_14 = A0_8:Menu(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02, unpack(L8_16))
-        if L6_14 < A0_8.UI_RESULT_MENU_CLOSED then
-          return false
-        end
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK2)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_100, true)
-        A0_8:Wait(10)
-        if L5_13 == A0_8.BEGINNER_GUIDE_SEQ_10 or L5_13 == A0_8.BEGINNER_GUIDE_SEQ_11 or L5_13 == A0_8.BEGINNER_GUIDE_SEQ_12 then
-          A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_101, false)
+      L6_3 = 0
+      L7_3 = 0
+      L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_00
+      if A3_3 == L9_3 then
+        L9_3 = false
+        return L9_3
+      else
+        L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
+        if A3_3 == L9_3 then
         else
-          A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_101, false)
-        end
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_102, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04 then
-        if L5_13 == A0_8.BEGINNER_GUIDE_SEQ_10 or L5_13 == A0_8.BEGINNER_GUIDE_SEQ_11 or L5_13 == A0_8.BEGINNER_GUIDE_SEQ_12 then
-          A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_100_120, true)
-          A0_8:Wait(10)
-        else
-          A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_120, true)
-          A0_8:Wait(10)
-        end
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_121, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_122, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_123, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_123, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_124, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_130, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_131, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_132, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_110, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_111, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_111, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_112, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_113, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_114, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07 then
-        L8_16 = {
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_08,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_09,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_10,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_11,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_50,
-          A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
-        }
-        L6_14 = A0_8:Menu(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07, unpack(L8_16))
-        if L6_14 < A0_8.UI_RESULT_MENU_CLOSED then
-          return false
-        end
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_08 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_140, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_141, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_141, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_142, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_142, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_143, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_144, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_09 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK1)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_150, false)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_151, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_152, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_153, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_154, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_155, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_155, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_156, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_157, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_158, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_159, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_10 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_160, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_161, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_162, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_11 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_170, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_171, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_172, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_172, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_101_172, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_173, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_174, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_175, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_176, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_50 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK2)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_250, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_251, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_252, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_253, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_254, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_255, true)
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12 then
-        A0_8:Wait(10)
-        if A0_8:MentorQualified(A4_12) == true then
-          if A0_8:MentorConfirm(A4_12) == true then
-            if A0_8:becomeMentor(A1_9) == true then
-              A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EMOTE_PRAISE)
-              A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_185, true)
-              A0_8:Wait(10)
-              A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_186, false)
-              A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_186, false)
-              A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_187, true)
-              return false
+          L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02
+          if A3_3 == L9_3 then
+            L9_3 = {}
+            L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03
+            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04
+            L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05
+            L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06
+            L14_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
+            L9_3[1] = L10_3
+            L9_3[2] = L11_3
+            L9_3[3] = L12_3
+            L9_3[4] = L13_3
+            L9_3[5] = L14_3
+            L8_3 = L9_3
+            L10_3 = A0_3
+            L9_3 = A0_3.Menu
+            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02
+            L12_3 = unpack
+            L13_3 = L8_3
+            L12_3, L13_3, L14_3, L15_3 = L12_3(L13_3)
+            L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+            L6_3 = L9_3
+            L9_3 = A0_3.UI_RESULT_MENU_CLOSED
+            if L6_3 < L9_3 then
+              L9_3 = false
+              return L9_3
             end
           else
-            A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_ADD_YES)
-            A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_190, true)
-            A0_8:Wait(10)
+            L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02
+            if A3_3 == L9_3 then
+              L9_3 = {}
+              L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03
+              L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04
+              L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05
+              L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
+              L9_3[1] = L10_3
+              L9_3[2] = L11_3
+              L9_3[3] = L12_3
+              L9_3[4] = L13_3
+              L8_3 = L9_3
+              L10_3 = A0_3
+              L9_3 = A0_3.Menu
+              L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02_02
+              L12_3 = unpack
+              L13_3 = L8_3
+              L12_3, L13_3, L14_3, L15_3 = L12_3(L13_3)
+              L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+              L6_3 = L9_3
+              L9_3 = A0_3.UI_RESULT_MENU_CLOSED
+              if L6_3 < L9_3 then
+                L9_3 = false
+                return L9_3
+              end
+            else
+              L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_03
+              if A3_3 == L9_3 then
+                L10_3 = A2_3
+                L9_3 = A2_3.PlayActionTimeline
+                L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                L9_3(L10_3, L11_3)
+                L10_3 = A2_3
+                L9_3 = A2_3.Talk
+                L11_3 = A1_3
+                L12_3 = A0_3
+                L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_100
+                L14_3 = true
+                L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                L10_3 = A0_3
+                L9_3 = A0_3.Wait
+                L11_3 = 10
+                L9_3(L10_3, L11_3)
+                L9_3 = A0_3.BEGINNER_GUIDE_SEQ_10
+                if L5_3 ~= L9_3 then
+                  L9_3 = A0_3.BEGINNER_GUIDE_SEQ_11
+                  if L5_3 ~= L9_3 then
+                    L9_3 = A0_3.BEGINNER_GUIDE_SEQ_12
+                    if L5_3 ~= L9_3 then
+                      goto lbl_95
+                    end
+                  end
+                end
+                L10_3 = A0_3
+                L9_3 = A0_3.SystemTalk
+                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_101
+                L12_3 = false
+                L9_3(L10_3, L11_3, L12_3)
+                goto lbl_99
+                ::lbl_95::
+                L10_3 = A0_3
+                L9_3 = A0_3.SystemTalk
+                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_101
+                L12_3 = false
+                L9_3(L10_3, L11_3, L12_3)
+                ::lbl_99::
+                L10_3 = A0_3
+                L9_3 = A0_3.SystemTalk
+                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_102
+                L12_3 = true
+                L9_3(L10_3, L11_3, L12_3)
+                L10_3 = A0_3
+                L9_3 = A0_3.Wait
+                L11_3 = 10
+                L9_3(L10_3, L11_3)
+              else
+                L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_04
+                if A3_3 == L9_3 then
+                  L9_3 = A0_3.BEGINNER_GUIDE_SEQ_10
+                  if L5_3 ~= L9_3 then
+                    L9_3 = A0_3.BEGINNER_GUIDE_SEQ_11
+                    if L5_3 ~= L9_3 then
+                      L9_3 = A0_3.BEGINNER_GUIDE_SEQ_12
+                      if L5_3 ~= L9_3 then
+                        goto lbl_132
+                      end
+                    end
+                  end
+                  L10_3 = A2_3
+                  L9_3 = A2_3.PlayActionTimeline
+                  L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                  L9_3(L10_3, L11_3)
+                  L10_3 = A2_3
+                  L9_3 = A2_3.Talk
+                  L11_3 = A1_3
+                  L12_3 = A0_3
+                  L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_100_120
+                  L14_3 = true
+                  L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.Wait
+                  L11_3 = 10
+                  L9_3(L10_3, L11_3)
+                  goto lbl_144
+                  ::lbl_132::
+                  L10_3 = A2_3
+                  L9_3 = A2_3.PlayActionTimeline
+                  L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                  L9_3(L10_3, L11_3)
+                  L10_3 = A2_3
+                  L9_3 = A2_3.Talk
+                  L11_3 = A1_3
+                  L12_3 = A0_3
+                  L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_120
+                  L14_3 = true
+                  L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.Wait
+                  L11_3 = 10
+                  L9_3(L10_3, L11_3)
+                  ::lbl_144::
+                  L10_3 = A0_3
+                  L9_3 = A0_3.SystemTalk
+                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_121
+                  L12_3 = false
+                  L9_3(L10_3, L11_3, L12_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.SystemTalk
+                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_122
+                  L12_3 = false
+                  L9_3(L10_3, L11_3, L12_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.SystemTalk
+                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_123
+                  L12_3 = false
+                  L9_3(L10_3, L11_3, L12_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.SystemTalk
+                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_123
+                  L12_3 = false
+                  L9_3(L10_3, L11_3, L12_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.SystemTalk
+                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_124
+                  L12_3 = true
+                  L9_3(L10_3, L11_3, L12_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.Wait
+                  L11_3 = 10
+                  L9_3(L10_3, L11_3)
+                else
+                  L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_05
+                  if A3_3 == L9_3 then
+                    L10_3 = A2_3
+                    L9_3 = A2_3.PlayActionTimeline
+                    L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+                    L9_3(L10_3, L11_3)
+                    L10_3 = A2_3
+                    L9_3 = A2_3.Talk
+                    L11_3 = A1_3
+                    L12_3 = A0_3
+                    L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_130
+                    L14_3 = true
+                    L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                    L10_3 = A0_3
+                    L9_3 = A0_3.Wait
+                    L11_3 = 10
+                    L9_3(L10_3, L11_3)
+                    L10_3 = A0_3
+                    L9_3 = A0_3.SystemTalk
+                    L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_131
+                    L12_3 = false
+                    L9_3(L10_3, L11_3, L12_3)
+                    L10_3 = A0_3
+                    L9_3 = A0_3.SystemTalk
+                    L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_132
+                    L12_3 = true
+                    L9_3(L10_3, L11_3, L12_3)
+                    L10_3 = A0_3
+                    L9_3 = A0_3.Wait
+                    L11_3 = 10
+                    L9_3(L10_3, L11_3)
+                  else
+                    L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_06
+                    if A3_3 == L9_3 then
+                      L10_3 = A2_3
+                      L9_3 = A2_3.PlayActionTimeline
+                      L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+                      L9_3(L10_3, L11_3)
+                      L10_3 = A2_3
+                      L9_3 = A2_3.Talk
+                      L11_3 = A1_3
+                      L12_3 = A0_3
+                      L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_110
+                      L14_3 = true
+                      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                      L10_3 = A0_3
+                      L9_3 = A0_3.Wait
+                      L11_3 = 10
+                      L9_3(L10_3, L11_3)
+                      L10_3 = A0_3
+                      L9_3 = A0_3.SystemTalk
+                      L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_111
+                      L12_3 = false
+                      L9_3(L10_3, L11_3, L12_3)
+                      L10_3 = A0_3
+                      L9_3 = A0_3.SystemTalk
+                      L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_111
+                      L12_3 = false
+                      L9_3(L10_3, L11_3, L12_3)
+                      L10_3 = A0_3
+                      L9_3 = A0_3.SystemTalk
+                      L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_112
+                      L12_3 = false
+                      L9_3(L10_3, L11_3, L12_3)
+                      L10_3 = A0_3
+                      L9_3 = A0_3.SystemTalk
+                      L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_113
+                      L12_3 = false
+                      L9_3(L10_3, L11_3, L12_3)
+                      L10_3 = A0_3
+                      L9_3 = A0_3.SystemTalk
+                      L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_114
+                      L12_3 = true
+                      L9_3(L10_3, L11_3, L12_3)
+                      L10_3 = A0_3
+                      L9_3 = A0_3.Wait
+                      L11_3 = 10
+                      L9_3(L10_3, L11_3)
+                    else
+                      L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07
+                      if A3_3 == L9_3 then
+                        L9_3 = {}
+                        L10_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_08
+                        L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_09
+                        L12_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_10
+                        L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_11
+                        L14_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_50
+                        L15_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
+                        L9_3[1] = L10_3
+                        L9_3[2] = L11_3
+                        L9_3[3] = L12_3
+                        L9_3[4] = L13_3
+                        L9_3[5] = L14_3
+                        L9_3[6] = L15_3
+                        L8_3 = L9_3
+                        L10_3 = A0_3
+                        L9_3 = A0_3.Menu
+                        L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07
+                        L12_3 = unpack
+                        L13_3 = L8_3
+                        L12_3, L13_3, L14_3, L15_3 = L12_3(L13_3)
+                        L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+                        L6_3 = L9_3
+                        L9_3 = A0_3.UI_RESULT_MENU_CLOSED
+                        if L6_3 < L9_3 then
+                          L9_3 = false
+                          return L9_3
+                        end
+                      else
+                        L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_08
+                        if A3_3 == L9_3 then
+                          L10_3 = A2_3
+                          L9_3 = A2_3.PlayActionTimeline
+                          L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+                          L9_3(L10_3, L11_3)
+                          L10_3 = A2_3
+                          L9_3 = A2_3.Talk
+                          L11_3 = A1_3
+                          L12_3 = A0_3
+                          L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_140
+                          L14_3 = true
+                          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.Wait
+                          L11_3 = 10
+                          L9_3(L10_3, L11_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.SystemTalk
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_141
+                          L12_3 = false
+                          L9_3(L10_3, L11_3, L12_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.SystemTalk
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_141
+                          L12_3 = false
+                          L9_3(L10_3, L11_3, L12_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.SystemTalk
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_142
+                          L12_3 = false
+                          L9_3(L10_3, L11_3, L12_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.SystemTalk
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_142
+                          L12_3 = false
+                          L9_3(L10_3, L11_3, L12_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.SystemTalk
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_143
+                          L12_3 = false
+                          L9_3(L10_3, L11_3, L12_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.SystemTalk
+                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_144
+                          L12_3 = true
+                          L9_3(L10_3, L11_3, L12_3)
+                          L10_3 = A0_3
+                          L9_3 = A0_3.Wait
+                          L11_3 = 10
+                          L9_3(L10_3, L11_3)
+                        else
+                          L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_09
+                          if A3_3 == L9_3 then
+                            L10_3 = A2_3
+                            L9_3 = A2_3.PlayActionTimeline
+                            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                            L9_3(L10_3, L11_3)
+                            L10_3 = A2_3
+                            L9_3 = A2_3.Talk
+                            L11_3 = A1_3
+                            L12_3 = A0_3
+                            L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_150
+                            L14_3 = false
+                            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                            L10_3 = A2_3
+                            L9_3 = A2_3.Talk
+                            L11_3 = A1_3
+                            L12_3 = A0_3
+                            L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_151
+                            L14_3 = true
+                            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.Wait
+                            L11_3 = 10
+                            L9_3(L10_3, L11_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_152
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_153
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_154
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_155
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_155
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_156
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_157
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_158
+                            L12_3 = false
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.SystemTalk
+                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_159
+                            L12_3 = true
+                            L9_3(L10_3, L11_3, L12_3)
+                            L10_3 = A0_3
+                            L9_3 = A0_3.Wait
+                            L11_3 = 10
+                            L9_3(L10_3, L11_3)
+                          else
+                            L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_10
+                            if A3_3 == L9_3 then
+                              L10_3 = A2_3
+                              L9_3 = A2_3.PlayActionTimeline
+                              L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                              L9_3(L10_3, L11_3)
+                              L10_3 = A2_3
+                              L9_3 = A2_3.Talk
+                              L11_3 = A1_3
+                              L12_3 = A0_3
+                              L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_160
+                              L14_3 = true
+                              L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                              L10_3 = A0_3
+                              L9_3 = A0_3.Wait
+                              L11_3 = 10
+                              L9_3(L10_3, L11_3)
+                              L10_3 = A0_3
+                              L9_3 = A0_3.SystemTalk
+                              L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_161
+                              L12_3 = false
+                              L9_3(L10_3, L11_3, L12_3)
+                              L10_3 = A0_3
+                              L9_3 = A0_3.SystemTalk
+                              L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_162
+                              L12_3 = true
+                              L9_3(L10_3, L11_3, L12_3)
+                              L10_3 = A0_3
+                              L9_3 = A0_3.Wait
+                              L11_3 = 10
+                              L9_3(L10_3, L11_3)
+                            else
+                              L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_11
+                              if A3_3 == L9_3 then
+                                L10_3 = A2_3
+                                L9_3 = A2_3.PlayActionTimeline
+                                L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+                                L9_3(L10_3, L11_3)
+                                L10_3 = A2_3
+                                L9_3 = A2_3.Talk
+                                L11_3 = A1_3
+                                L12_3 = A0_3
+                                L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_170
+                                L14_3 = true
+                                L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.Wait
+                                L11_3 = 10
+                                L9_3(L10_3, L11_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_171
+                                L12_3 = false
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_172
+                                L12_3 = false
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_172
+                                L12_3 = false
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_101_172
+                                L12_3 = false
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_173
+                                L12_3 = false
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_174
+                                L12_3 = false
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_175
+                                L12_3 = false
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.SystemTalk
+                                L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_176
+                                L12_3 = true
+                                L9_3(L10_3, L11_3, L12_3)
+                                L10_3 = A0_3
+                                L9_3 = A0_3.Wait
+                                L11_3 = 10
+                                L9_3(L10_3, L11_3)
+                              else
+                                L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_50
+                                if A3_3 == L9_3 then
+                                  L10_3 = A2_3
+                                  L9_3 = A2_3.PlayActionTimeline
+                                  L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                                  L9_3(L10_3, L11_3)
+                                  L10_3 = A2_3
+                                  L9_3 = A2_3.Talk
+                                  L11_3 = A1_3
+                                  L12_3 = A0_3
+                                  L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_250
+                                  L14_3 = true
+                                  L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                  L10_3 = A0_3
+                                  L9_3 = A0_3.Wait
+                                  L11_3 = 10
+                                  L9_3(L10_3, L11_3)
+                                  L10_3 = A0_3
+                                  L9_3 = A0_3.SystemTalk
+                                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_251
+                                  L12_3 = false
+                                  L9_3(L10_3, L11_3, L12_3)
+                                  L10_3 = A0_3
+                                  L9_3 = A0_3.SystemTalk
+                                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_252
+                                  L12_3 = false
+                                  L9_3(L10_3, L11_3, L12_3)
+                                  L10_3 = A0_3
+                                  L9_3 = A0_3.SystemTalk
+                                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_253
+                                  L12_3 = false
+                                  L9_3(L10_3, L11_3, L12_3)
+                                  L10_3 = A0_3
+                                  L9_3 = A0_3.SystemTalk
+                                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_254
+                                  L12_3 = false
+                                  L9_3(L10_3, L11_3, L12_3)
+                                  L10_3 = A0_3
+                                  L9_3 = A0_3.SystemTalk
+                                  L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_255
+                                  L12_3 = true
+                                  L9_3(L10_3, L11_3, L12_3)
+                                  L10_3 = A0_3
+                                  L9_3 = A0_3.Wait
+                                  L11_3 = 10
+                                  L9_3(L10_3, L11_3)
+                                else
+                                  L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_12
+                                  if A3_3 == L9_3 then
+                                    L10_3 = A0_3
+                                    L9_3 = A0_3.Wait
+                                    L11_3 = 10
+                                    L9_3(L10_3, L11_3)
+                                    L10_3 = A0_3
+                                    L9_3 = A0_3.MentorQualified
+                                    L11_3 = A4_3
+                                    L9_3 = L9_3(L10_3, L11_3)
+                                    if L9_3 == true then
+                                      L10_3 = A0_3
+                                      L9_3 = A0_3.MentorConfirm
+                                      L11_3 = A4_3
+                                      L9_3 = L9_3(L10_3, L11_3)
+                                      if L9_3 == true then
+                                        L10_3 = A0_3
+                                        L9_3 = A0_3.becomeMentor
+                                        L11_3 = A1_3
+                                        L9_3 = L9_3(L10_3, L11_3)
+                                        if L9_3 == true then
+                                          L10_3 = A2_3
+                                          L9_3 = A2_3.PlayActionTimeline
+                                          L11_3 = A0_3.ACTION_TIMELINE_EMOTE_PRAISE
+                                          L9_3(L10_3, L11_3)
+                                          L10_3 = A2_3
+                                          L9_3 = A2_3.Talk
+                                          L11_3 = A1_3
+                                          L12_3 = A0_3
+                                          L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_185
+                                          L14_3 = true
+                                          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.Wait
+                                          L11_3 = 10
+                                          L9_3(L10_3, L11_3)
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.SystemTalk
+                                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_186
+                                          L12_3 = false
+                                          L9_3(L10_3, L11_3, L12_3)
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.SystemTalk
+                                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_100_186
+                                          L12_3 = false
+                                          L9_3(L10_3, L11_3, L12_3)
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.SystemTalk
+                                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_187
+                                          L12_3 = true
+                                          L9_3(L10_3, L11_3, L12_3)
+                                          L9_3 = false
+                                          return L9_3
+                                        end
+                                      else
+                                        L10_3 = A2_3
+                                        L9_3 = A2_3.PlayActionTimeline
+                                        L11_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+                                        L9_3(L10_3, L11_3)
+                                        L10_3 = A2_3
+                                        L9_3 = A2_3.Talk
+                                        L11_3 = A1_3
+                                        L12_3 = A0_3
+                                        L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_190
+                                        L14_3 = true
+                                        L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                        L10_3 = A0_3
+                                        L9_3 = A0_3.Wait
+                                        L11_3 = 10
+                                        L9_3(L10_3, L11_3)
+                                      end
+                                    end
+                                  else
+                                    L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_13
+                                    if A3_3 == L9_3 then
+                                      L10_3 = A2_3
+                                      L9_3 = A2_3.PlayActionTimeline
+                                      L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                                      L9_3(L10_3, L11_3)
+                                      L10_3 = A2_3
+                                      L9_3 = A2_3.Talk
+                                      L11_3 = A1_3
+                                      L12_3 = A0_3
+                                      L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_200
+                                      L14_3 = true
+                                      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                      L10_3 = A0_3
+                                      L9_3 = A0_3.Wait
+                                      L11_3 = 10
+                                      L9_3(L10_3, L11_3)
+                                      L10_3 = A0_3
+                                      L9_3 = A0_3.YesNoAddonCheck
+                                      L11_3 = A0_3.ADDON_RESIGN_MENTOR_CONFIRM
+                                      L12_3 = nil
+                                      L13_3 = nil
+                                      L14_3 = A0_3.DEFAULT_NO
+                                      L15_3 = A0_3.ADDON_RESIGN_MENTOR_CHECKBOX
+                                      L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+                                      if L9_3 == true then
+                                        L10_3 = A0_3
+                                        L9_3 = A0_3.resignMentor
+                                        L11_3 = A1_3
+                                        L9_3 = L9_3(L10_3, L11_3)
+                                        if L9_3 == true then
+                                          L10_3 = A2_3
+                                          L9_3 = A2_3.PlayActionTimeline
+                                          L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+                                          L9_3(L10_3, L11_3)
+                                          L10_3 = A2_3
+                                          L9_3 = A2_3.Talk
+                                          L11_3 = A1_3
+                                          L12_3 = A0_3
+                                          L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_205
+                                          L14_3 = true
+                                          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                          L9_3 = false
+                                          return L9_3
+                                        end
+                                      else
+                                        L10_3 = A2_3
+                                        L9_3 = A2_3.PlayActionTimeline
+                                        L11_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY
+                                        L9_3(L10_3, L11_3)
+                                        L10_3 = A2_3
+                                        L9_3 = A2_3.Talk
+                                        L11_3 = A1_3
+                                        L12_3 = A0_3
+                                        L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_210
+                                        L14_3 = true
+                                        L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                        L10_3 = A0_3
+                                        L9_3 = A0_3.Wait
+                                        L11_3 = 10
+                                        L9_3(L10_3, L11_3)
+                                      end
+                                    else
+                                      L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14
+                                      if A3_3 == L9_3 then
+                                        L10_3 = A2_3
+                                        L9_3 = A2_3.PlayActionTimeline
+                                        L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+                                        L9_3(L10_3, L11_3)
+                                        L10_3 = A2_3
+                                        L9_3 = A2_3.Talk
+                                        L11_3 = A1_3
+                                        L12_3 = A0_3
+                                        L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_220
+                                        L14_3 = true
+                                        L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                        L10_3 = A0_3
+                                        L9_3 = A0_3.Wait
+                                        L11_3 = 10
+                                        L9_3(L10_3, L11_3)
+                                        L10_3 = A1_3
+                                        L9_3 = A1_3.IsReward
+                                        L11_3 = A0_3.REWARD_TUTORIAL_CONTENT
+                                        L9_3 = L9_3(L10_3, L11_3)
+                                        if L9_3 == false then
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.unlockTutorialContent
+                                          L11_3 = A1_3
+                                          L9_3(L10_3, L11_3)
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.SystemTalk
+                                          L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_225
+                                          L12_3 = true
+                                          L9_3(L10_3, L11_3, L12_3)
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.Wait
+                                          L11_3 = 10
+                                          L9_3(L10_3, L11_3)
+                                        end
+                                        L10_3 = A0_3
+                                        L9_3 = A0_3.TutorialContent
+                                        L9_3(L10_3)
+                                        L9_3 = false
+                                        return L9_3
+                                      else
+                                        L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15
+                                        if A3_3 == L9_3 then
+                                          L10_3 = A2_3
+                                          L9_3 = A2_3.PlayActionTimeline
+                                          L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+                                          L9_3(L10_3, L11_3)
+                                          L10_3 = A2_3
+                                          L9_3 = A2_3.Talk
+                                          L11_3 = A1_3
+                                          L12_3 = A0_3
+                                          L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_230
+                                          L14_3 = false
+                                          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                          L10_3 = A2_3
+                                          L9_3 = A2_3.GetBaseId
+                                          L9_3 = L9_3(L10_3)
+                                          L10_3 = A0_3.ENPC_BEGINNER_GUIDE_MASTER
+                                          if L9_3 == L10_3 then
+                                            L10_3 = A2_3
+                                            L9_3 = A2_3.Talk
+                                            L11_3 = A1_3
+                                            L12_3 = A0_3
+                                            L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_235
+                                            L14_3 = true
+                                            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                          else
+                                            L10_3 = A2_3
+                                            L9_3 = A2_3.Talk
+                                            L11_3 = A1_3
+                                            L12_3 = A0_3
+                                            L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_240
+                                            L14_3 = true
+                                            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                          end
+                                          L10_3 = A0_3
+                                          L9_3 = A0_3.Wait
+                                          L11_3 = 10
+                                          L9_3(L10_3, L11_3)
+                                        else
+                                          L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30
+                                          if A3_3 == L9_3 then
+                                            L10_3 = A2_3
+                                            L9_3 = A2_3.PlayActionTimeline
+                                            L11_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+                                            L9_3(L10_3, L11_3)
+                                            L10_3 = A2_3
+                                            L9_3 = A2_3.Talk
+                                            L11_3 = A1_3
+                                            L12_3 = A0_3
+                                            L13_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_300
+                                            L14_3 = true
+                                            L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+                                            L10_3 = A0_3
+                                            L9_3 = A0_3.Wait
+                                            L11_3 = 10
+                                            L9_3(L10_3, L11_3)
+                                            L10_3 = A0_3
+                                            L9_3 = A0_3.SystemTalk
+                                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_301
+                                            L12_3 = false
+                                            L9_3(L10_3, L11_3, L12_3)
+                                            L10_3 = A0_3
+                                            L9_3 = A0_3.SystemTalk
+                                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_302
+                                            L12_3 = false
+                                            L9_3(L10_3, L11_3, L12_3)
+                                            L10_3 = A0_3
+                                            L9_3 = A0_3.SystemTalk
+                                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_303
+                                            L12_3 = false
+                                            L9_3(L10_3, L11_3, L12_3)
+                                            L10_3 = A0_3
+                                            L9_3 = A0_3.SystemTalk
+                                            L11_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_304
+                                            L12_3 = true
+                                            L9_3(L10_3, L11_3, L12_3)
+                                            L10_3 = A0_3
+                                            L9_3 = A0_3.Wait
+                                            L11_3 = 10
+                                            L9_3(L10_3, L11_3)
+                                          end
+                                        end
+                                      end
+                                    end
+                                  end
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                    end
+                  end
+                end
+              end
+            end
           end
         end
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_13 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK2)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_200, true)
-        A0_8:Wait(10)
-        if A0_8:YesNoAddonCheck(A0_8.ADDON_RESIGN_MENTOR_CONFIRM, nil, nil, A0_8.DEFAULT_NO, A0_8.ADDON_RESIGN_MENTOR_CHECKBOX) == true then
-          if A0_8:resignMentor(A1_9) == true then
-            A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-            A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_205, true)
-            return false
-          end
-        else
-          A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EMOTE_JOY)
-          A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_210, true)
-          A0_8:Wait(10)
-        end
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_14 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_220, true)
-        A0_8:Wait(10)
-        if A1_9:IsReward(A0_8.REWARD_TUTORIAL_CONTENT) == false then
-          A0_8:unlockTutorialContent(A1_9)
-          A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_225, true)
-          A0_8:Wait(10)
-        end
-        A0_8:TutorialContent()
-        return false
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_15 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK1)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_230, false)
-        if A2_10:GetBaseId() == A0_8.ENPC_BEGINNER_GUIDE_MASTER then
-          A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_235, true)
-        else
-          A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_240, true)
-        end
-        A0_8:Wait(10)
-      elseif A3_11 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_30 then
-        A2_10:PlayActionTimeline(A0_8.ACTION_TIMELINE_EVENT_TALK2)
-        A2_10:Talk(A1_9, A0_8, A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_COACH00327_000_300, true)
-        A0_8:Wait(10)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_301, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_302, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_303, false)
-        A0_8:SystemTalk(A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_SYSTEM_000_304, true)
-        A0_8:Wait(10)
       end
-      if L6_14 > 0 then
-        L7_15 = L8_16[L6_14]
-        if L7_15 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01 then
-          break
-        elseif L7_15 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02 or L7_15 == A0_8.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07 or A0_8:onSelect(A1_9, A2_10, L7_15, A4_12) == false then
-          return false
-        end
-      else
+      if not (0 < L6_3) then
         break
       end
-    end
-    return true
-  end
-  function CmnDefBeginnerGuide.setBeginnerGuideFlagWelcome(A0_17, A1_18)
-    if A1_18:IsBeginnerGuideFlags(A0_17.BEGINNER_GUIDE_FLAG_WELCOME) == false then
-      return A0_17:YieldEventScene(A0_17.YIELD_BEGINNER_GUIDE, A0_17.BEGINNER_GUIDE_YIELD_SET_FLAGS, A0_17.BEGINNER_GUIDE_FLAG_WELCOME) == 1
-    end
-    return false
-  end
-  function CmnDefBeginnerGuide.setBeginnerGuideFlagContentCompleted(A0_19, A1_20)
-    if A1_20:IsBeginnerGuideFlags(A0_19.BEGINNER_GUIDE_FLAG_CONTENT_COMPLETED) == false then
-      return A0_19:YieldEventScene(A0_19.YIELD_BEGINNER_GUIDE, A0_19.BEGINNER_GUIDE_YIELD_SET_FLAGS, A0_19.BEGINNER_GUIDE_FLAG_CONTENT_COMPLETED) == 1
-    end
-    return false
-  end
-  function CmnDefBeginnerGuide.unlockTutorialContent(A0_21, A1_22)
-    if A1_22:IsReward(A0_21.REWARD_TUTORIAL_CONTENT) == false then
-      if A0_21:YieldEventScene(A0_21.YIELD_BEGINNER_GUIDE, A0_21.BEGINNER_GUIDE_YIELD_UNLOCK_CONTENT) == 1 == true then
-        A0_21:ScreenImage(A0_21.SCREEN_IMAGE_UNLOCK_TUTORIAL_CONTENT)
-        A0_21:Wait(60)
+      L7_3 = L8_3[L6_3]
+      L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_01
+      if L7_3 == L9_3 then
+        break
+      else
+        L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_02
+        if L7_3 ~= L9_3 then
+          L9_3 = A0_3.TEXT_CMNDEFBEGINNERGUIDE_00327_MENU_07
+          if L7_3 ~= L9_3 then
+            L10_3 = A0_3
+            L9_3 = A0_3.onSelect
+            L11_3 = A1_3
+            L12_3 = A2_3
+            L13_3 = L7_3
+            L14_3 = A4_3
+            L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+            if L9_3 ~= false then
+              goto lbl_723
+            end
+          end
+        end
+        L9_3 = false
+        do return L9_3 end
+        goto lbl_723
+        break
       end
-      return A0_21:YieldEventScene(A0_21.YIELD_BEGINNER_GUIDE, A0_21.BEGINNER_GUIDE_YIELD_UNLOCK_CONTENT) == 1
+      ::lbl_723::
     end
-    return false
+    L9_3 = true
+    return L9_3
   end
-  function CmnDefBeginnerGuide.becomeMentor(A0_23, A1_24)
-    if A1_24:IsMentorQualified() == true then
-      if A0_23:YieldEventScene(A0_23.YIELD_BEGINNER_GUIDE, A0_23.BEGINNER_GUIDE_YIELD_BECOME_MENTOR) == A0_23.BECOME_MENTOR_RESULT_SUCCESS_BATTLE then
-        A0_23:ScreenImage(A0_23.SCREEN_IMAGE_BECOME_MENTOR_BATTLE)
-        return true
-      elseif A0_23:YieldEventScene(A0_23.YIELD_BEGINNER_GUIDE, A0_23.BEGINNER_GUIDE_YIELD_BECOME_MENTOR) == A0_23.BECOME_MENTOR_RESULT_SUCCESS_LIVE then
-        A0_23:ScreenImage(A0_23.SCREEN_IMAGE_BECOME_MENTOR_LIVE)
-        return true
-      elseif A0_23:YieldEventScene(A0_23.YIELD_BEGINNER_GUIDE, A0_23.BEGINNER_GUIDE_YIELD_BECOME_MENTOR) == A0_23.BECOME_MENTOR_RESULT_SUCCESS_BATTLE_AND_LIVE then
-        A0_23:ScreenImage(A0_23.SCREEN_IMAGE_BECOME_MENTOR_BATTLE)
-        A0_23:ScreenImage(A0_23.SCREEN_IMAGE_BECOME_MENTOR_LIVE)
-        return true
-      elseif A0_23:YieldEventScene(A0_23.YIELD_BEGINNER_GUIDE, A0_23.BEGINNER_GUIDE_YIELD_BECOME_MENTOR) == A0_23.BECOME_MENTOR_RESULT_ERROR_IN_FIND_CONTENT then
-        A0_23:LogMessage(A0_23.LOGMSG_BECOME_MENTOR_ERROR_IN_FIND_CONTENT)
+  L0_2.onSelect = L1_2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3
+    L3_3 = A1_3
+    L2_3 = A1_3.IsBeginnerGuideFlags
+    L4_3 = A0_3.BEGINNER_GUIDE_FLAG_WELCOME
+    L2_3 = L2_3(L3_3, L4_3)
+    if L2_3 == false then
+      L3_3 = A0_3
+      L2_3 = A0_3.YieldEventScene
+      L4_3 = A0_3.YIELD_BEGINNER_GUIDE
+      L5_3 = A0_3.BEGINNER_GUIDE_YIELD_SET_FLAGS
+      L6_3 = A0_3.BEGINNER_GUIDE_FLAG_WELCOME
+      L2_3 = L2_3(L3_3, L4_3, L5_3, L6_3)
+      L2_3 = L2_3 == 1
+      return L2_3
+    end
+    L2_3 = false
+    return L2_3
+  end
+  L0_2.setBeginnerGuideFlagWelcome = L1_2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3
+    L3_3 = A1_3
+    L2_3 = A1_3.IsBeginnerGuideFlags
+    L4_3 = A0_3.BEGINNER_GUIDE_FLAG_CONTENT_COMPLETED
+    L2_3 = L2_3(L3_3, L4_3)
+    if L2_3 == false then
+      L3_3 = A0_3
+      L2_3 = A0_3.YieldEventScene
+      L4_3 = A0_3.YIELD_BEGINNER_GUIDE
+      L5_3 = A0_3.BEGINNER_GUIDE_YIELD_SET_FLAGS
+      L6_3 = A0_3.BEGINNER_GUIDE_FLAG_CONTENT_COMPLETED
+      L2_3 = L2_3(L3_3, L4_3, L5_3, L6_3)
+      L2_3 = L2_3 == 1
+      return L2_3
+    end
+    L2_3 = false
+    return L2_3
+  end
+  L0_2.setBeginnerGuideFlagContentCompleted = L1_2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3
+    L3_3 = A1_3
+    L2_3 = A1_3.IsReward
+    L4_3 = A0_3.REWARD_TUTORIAL_CONTENT
+    L2_3 = L2_3(L3_3, L4_3)
+    if L2_3 == false then
+      L3_3 = A0_3
+      L2_3 = A0_3.YieldEventScene
+      L4_3 = A0_3.YIELD_BEGINNER_GUIDE
+      L5_3 = A0_3.BEGINNER_GUIDE_YIELD_UNLOCK_CONTENT
+      L2_3 = L2_3(L3_3, L4_3, L5_3)
+      L2_3 = L2_3 == 1
+      if L2_3 == true then
+        L4_3 = A0_3
+        L3_3 = A0_3.ScreenImage
+        L5_3 = A0_3.SCREEN_IMAGE_UNLOCK_TUTORIAL_CONTENT
+        L3_3(L4_3, L5_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.Wait
+        L5_3 = 60
+        L3_3(L4_3, L5_3)
+      end
+      return L2_3
+    end
+    L2_3 = false
+    return L2_3
+  end
+  L0_2.unlockTutorialContent = L1_2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3
+    L3_3 = A1_3
+    L2_3 = A1_3.IsMentorQualified
+    L2_3 = L2_3(L3_3)
+    if L2_3 == true then
+      L3_3 = A0_3
+      L2_3 = A0_3.YieldEventScene
+      L4_3 = A0_3.YIELD_BEGINNER_GUIDE
+      L5_3 = A0_3.BEGINNER_GUIDE_YIELD_BECOME_MENTOR
+      L2_3 = L2_3(L3_3, L4_3, L5_3)
+      L3_3 = A0_3.BECOME_MENTOR_RESULT_SUCCESS_BATTLE
+      if L2_3 == L3_3 then
+        L4_3 = A0_3
+        L3_3 = A0_3.ScreenImage
+        L5_3 = A0_3.SCREEN_IMAGE_BECOME_MENTOR_BATTLE
+        L3_3(L4_3, L5_3)
+        L3_3 = true
+        return L3_3
+      else
+        L3_3 = A0_3.BECOME_MENTOR_RESULT_SUCCESS_LIVE
+        if L2_3 == L3_3 then
+          L4_3 = A0_3
+          L3_3 = A0_3.ScreenImage
+          L5_3 = A0_3.SCREEN_IMAGE_BECOME_MENTOR_LIVE
+          L3_3(L4_3, L5_3)
+          L3_3 = true
+          return L3_3
+        else
+          L3_3 = A0_3.BECOME_MENTOR_RESULT_SUCCESS_BATTLE_AND_LIVE
+          if L2_3 == L3_3 then
+            L4_3 = A0_3
+            L3_3 = A0_3.ScreenImage
+            L5_3 = A0_3.SCREEN_IMAGE_BECOME_MENTOR_BATTLE
+            L3_3(L4_3, L5_3)
+            L4_3 = A0_3
+            L3_3 = A0_3.ScreenImage
+            L5_3 = A0_3.SCREEN_IMAGE_BECOME_MENTOR_LIVE
+            L3_3(L4_3, L5_3)
+            L3_3 = true
+            return L3_3
+          else
+            L3_3 = A0_3.BECOME_MENTOR_RESULT_ERROR_IN_FIND_CONTENT
+            if L2_3 == L3_3 then
+              L4_3 = A0_3
+              L3_3 = A0_3.LogMessage
+              L5_3 = A0_3.LOGMSG_BECOME_MENTOR_ERROR_IN_FIND_CONTENT
+              L3_3(L4_3, L5_3)
+            end
+          end
+        end
       end
     end
-    return false
+    L2_3 = false
+    return L2_3
   end
-  function CmnDefBeginnerGuide.resignMentor(A0_25, A1_26)
-    if A1_26:IsMentor() == true then
-      if A0_25:YieldEventScene(A0_25.YIELD_BEGINNER_GUIDE, A0_25.BEGINNER_GUIDE_YIELD_RESIGN_MENTOR) == A0_25.RESIGN_MENTOR_RESULT_SUCCESS then
-        return true
-      elseif A0_25:YieldEventScene(A0_25.YIELD_BEGINNER_GUIDE, A0_25.BEGINNER_GUIDE_YIELD_RESIGN_MENTOR) == A0_25.RESIGN_MENTOR_RESULT_ERROR_IN_FIND_CONTENT then
-        A0_25:LogMessage(A0_25.LOGMSG_RESIGN_MENTOR_ERROR_IN_FIND_CONTENT)
+  L0_2.becomeMentor = L1_2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3
+    L3_3 = A1_3
+    L2_3 = A1_3.IsMentor
+    L2_3 = L2_3(L3_3)
+    if L2_3 == true then
+      L3_3 = A0_3
+      L2_3 = A0_3.YieldEventScene
+      L4_3 = A0_3.YIELD_BEGINNER_GUIDE
+      L5_3 = A0_3.BEGINNER_GUIDE_YIELD_RESIGN_MENTOR
+      L2_3 = L2_3(L3_3, L4_3, L5_3)
+      L3_3 = A0_3.RESIGN_MENTOR_RESULT_SUCCESS
+      if L2_3 == L3_3 then
+        L3_3 = true
+        return L3_3
+      else
+        L3_3 = A0_3.RESIGN_MENTOR_RESULT_ERROR_IN_FIND_CONTENT
+        if L2_3 == L3_3 then
+          L4_3 = A0_3
+          L3_3 = A0_3.LogMessage
+          L5_3 = A0_3.LOGMSG_RESIGN_MENTOR_ERROR_IN_FIND_CONTENT
+          L3_3(L4_3, L5_3)
+        end
       end
     end
-    return false
+    L2_3 = false
+    return L2_3
   end
-end)()
-;(function()
-  local L0_27, L1_28
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.SCRIPT_VERSION = 1
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_01 = 1
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_02 = 2
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_03 = 3
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_04 = 4
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_05 = 5
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_06 = 6
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_10 = 10
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_11 = 11
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_SEQ_12 = 12
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_YIELD_SET_FLAGS = 1
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_YIELD_UNLOCK_CONTENT = 2
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_YIELD_BECOME_MENTOR = 3
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BEGINNER_GUIDE_YIELD_RESIGN_MENTOR = 4
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BECOME_MENTOR_RESULT_ERROR_UNKNOWN = 0
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BECOME_MENTOR_RESULT_SUCCESS_BATTLE = 1
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BECOME_MENTOR_RESULT_SUCCESS_LIVE = 2
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BECOME_MENTOR_RESULT_SUCCESS_BATTLE_AND_LIVE = 3
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.BECOME_MENTOR_RESULT_ERROR_IN_FIND_CONTENT = 4
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.RESIGN_MENTOR_RESULT_ERROR_UNKNOWN = 0
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.RESIGN_MENTOR_RESULT_SUCCESS = 1
-  L0_27 = CmnDefBeginnerGuide
-  L0_27.RESIGN_MENTOR_RESULT_ERROR_IN_FIND_CONTENT = 2
-  L0_27 = CmnDefBeginnerGuide
-  function L1_28(A0_29, A1_30, A2_31, A3_32, A4_33, A5_34)
-    if A0_29:getSequence(A1_30) == A0_29.BEGINNER_GUIDE_SEQ_01 or A0_29:getSequence(A1_30) == A0_29.BEGINNER_GUIDE_SEQ_03 or A0_29:getSequence(A1_30) == A0_29.BEGINNER_GUIDE_SEQ_04 or A0_29:getSequence(A1_30) == A0_29.BEGINNER_GUIDE_SEQ_05 or A0_29:getSequence(A1_30) == A0_29.BEGINNER_GUIDE_SEQ_10 or A0_29:getSequence(A1_30) == A0_29.BEGINNER_GUIDE_SEQ_11 or A0_29:getSequence(A1_30) == A0_29.BEGINNER_GUIDE_SEQ_12 then
-      return true
+  L0_2.resignMentor = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_01 = 1
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_02 = 2
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_03 = 3
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_04 = 4
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_05 = 5
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_06 = 6
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_10 = 10
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_11 = 11
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_SEQ_12 = 12
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_YIELD_SET_FLAGS = 1
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_YIELD_UNLOCK_CONTENT = 2
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_YIELD_BECOME_MENTOR = 3
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BEGINNER_GUIDE_YIELD_RESIGN_MENTOR = 4
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BECOME_MENTOR_RESULT_ERROR_UNKNOWN = 0
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BECOME_MENTOR_RESULT_SUCCESS_BATTLE = 1
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BECOME_MENTOR_RESULT_SUCCESS_LIVE = 2
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BECOME_MENTOR_RESULT_SUCCESS_BATTLE_AND_LIVE = 3
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.BECOME_MENTOR_RESULT_ERROR_IN_FIND_CONTENT = 4
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.RESIGN_MENTOR_RESULT_ERROR_UNKNOWN = 0
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.RESIGN_MENTOR_RESULT_SUCCESS = 1
+  L0_2 = CmnDefBeginnerGuide
+  L0_2.RESIGN_MENTOR_RESULT_ERROR_IN_FIND_CONTENT = 2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A0_3
+    L6_3 = A0_3.getSequence
+    L8_3 = A1_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.BEGINNER_GUIDE_SEQ_01
+    if L6_3 ~= L7_3 then
+      L7_3 = A0_3.BEGINNER_GUIDE_SEQ_03
+      if L6_3 ~= L7_3 then
+        L7_3 = A0_3.BEGINNER_GUIDE_SEQ_04
+        if L6_3 ~= L7_3 then
+          L7_3 = A0_3.BEGINNER_GUIDE_SEQ_05
+          if L6_3 ~= L7_3 then
+            L7_3 = A0_3.BEGINNER_GUIDE_SEQ_10
+            if L6_3 ~= L7_3 then
+              L7_3 = A0_3.BEGINNER_GUIDE_SEQ_11
+              if L6_3 ~= L7_3 then
+                L7_3 = A0_3.BEGINNER_GUIDE_SEQ_12
+                if L6_3 ~= L7_3 then
+                  goto lbl_27
+                end
+              end
+            end
+          end
+        end
+      end
     end
-    return false
+    L7_3 = true
+    do return L7_3 end
+    ::lbl_27::
+    L7_3 = false
+    return L7_3
   end
-  L0_27.IsAnnounce = L1_28
-  L0_27 = CmnDefBeginnerGuide
-  function L1_28(A0_35, A1_36)
-    if A1_36:IsBecameMentor() == true then
-      return A0_35.BEGINNER_GUIDE_SEQ_12
-    elseif A1_36:IsMentorQualified() == true then
-      return A0_35.BEGINNER_GUIDE_SEQ_11
-    elseif A1_36:GetClassLevelMax() >= A0_35.MENTOR_CLASS_LEVEL then
-      return A0_35.BEGINNER_GUIDE_SEQ_10
-    elseif A1_36:IsBeginnerGuideFlags(A0_35.BEGINNER_GUIDE_FLAG_CONTENT_COMPLETED) == true then
-      return A0_35.BEGINNER_GUIDE_SEQ_06
-    elseif A1_36:IsTutorialContentCompletedAny() == true then
-      return A0_35.BEGINNER_GUIDE_SEQ_05
-    elseif A1_36:IsReward(A0_35.REWARD_TUTORIAL_CONTENT) == true then
-      return A0_35.BEGINNER_GUIDE_SEQ_04
-    elseif A1_36:GetBattleClassLevelMax() >= A0_35.TUTORIAL_CONTENT_UNLOCK_LEVEL then
-      return A0_35.BEGINNER_GUIDE_SEQ_03
-    elseif A1_36:IsBeginnerGuideFlags(A0_35.BEGINNER_GUIDE_FLAG_WELCOME) == true then
-      return A0_35.BEGINNER_GUIDE_SEQ_02
+  L0_2.IsAnnounce = L1_2
+  L0_2 = CmnDefBeginnerGuide
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
+    L3_3 = A1_3
+    L2_3 = A1_3.GetClassLevelMax
+    L2_3 = L2_3(L3_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetBattleClassLevelMax
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsBeginnerGuideFlags
+    L6_3 = A0_3.BEGINNER_GUIDE_FLAG_CONTENT_COMPLETED
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.IsBecameMentor
+    L5_3 = L5_3(L6_3)
+    if L5_3 == true then
+      L5_3 = A0_3.BEGINNER_GUIDE_SEQ_12
+      return L5_3
+    else
+      L6_3 = A1_3
+      L5_3 = A1_3.IsMentorQualified
+      L5_3 = L5_3(L6_3)
+      if L5_3 == true then
+        L5_3 = A0_3.BEGINNER_GUIDE_SEQ_11
+        return L5_3
+      else
+        L5_3 = A0_3.MENTOR_CLASS_LEVEL
+        if L2_3 >= L5_3 then
+          L5_3 = A0_3.BEGINNER_GUIDE_SEQ_10
+          return L5_3
+        elseif L4_3 == true then
+          L5_3 = A0_3.BEGINNER_GUIDE_SEQ_06
+          return L5_3
+        else
+          L6_3 = A1_3
+          L5_3 = A1_3.IsTutorialContentCompletedAny
+          L5_3 = L5_3(L6_3)
+          if L5_3 == true then
+            L5_3 = A0_3.BEGINNER_GUIDE_SEQ_05
+            return L5_3
+          else
+            L6_3 = A1_3
+            L5_3 = A1_3.IsReward
+            L7_3 = A0_3.REWARD_TUTORIAL_CONTENT
+            L5_3 = L5_3(L6_3, L7_3)
+            if L5_3 == true then
+              L5_3 = A0_3.BEGINNER_GUIDE_SEQ_04
+              return L5_3
+            else
+              L5_3 = A0_3.TUTORIAL_CONTENT_UNLOCK_LEVEL
+              if L3_3 >= L5_3 then
+                L5_3 = A0_3.BEGINNER_GUIDE_SEQ_03
+                return L5_3
+              else
+                L6_3 = A1_3
+                L5_3 = A1_3.IsBeginnerGuideFlags
+                L7_3 = A0_3.BEGINNER_GUIDE_FLAG_WELCOME
+                L5_3 = L5_3(L6_3, L7_3)
+                if L5_3 == true then
+                  L5_3 = A0_3.BEGINNER_GUIDE_SEQ_02
+                  return L5_3
+                end
+              end
+            end
+          end
+        end
+      end
     end
-    return A0_35.BEGINNER_GUIDE_SEQ_01
+    L5_3 = A0_3.BEGINNER_GUIDE_SEQ_01
+    return L5_3
   end
-  L0_27.getSequence = L1_28
-end)()
+  L0_2.getSequence = L1_2
+end
+L0_1()

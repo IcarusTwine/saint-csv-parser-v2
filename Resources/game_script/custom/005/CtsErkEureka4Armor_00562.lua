@@ -1,97 +1,203 @@
-(function()
-  print("CtsErkEureka4Armor")
-  function CtsErkEureka4Armor.OnScene00001_001(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_000_000, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka4Armor"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka4Armor
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CtsErkEureka4Armor.OnScene00002_001(A0_3, A1_4, A2_5, A3_6)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    if A3_6 == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_100_020, true)
+  L0_2.OnScene00001_001 = L1_2
+  L0_2 = CtsErkEureka4Armor
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    if A3_3 == true then
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_100_020
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_000_020, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.PlayActionTimeline
+      L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+      L4_3(L5_3, L6_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_000_020
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
   end
-  function CtsErkEureka4Armor.OnScene00003_001(A0_7, A1_8, A2_9)
-    A2_9:TurnTo(A1_8, false)
-    A2_9:WaitForTurn()
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_000_010, true)
+  L0_2.OnScene00002_001 = L1_2
+  L0_2 = CtsErkEureka4Armor
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_CRAFSMAN00532_000_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-end)()
-;(function()
-  local L1_10
-  L1_10 = CtsErkEureka4Armor
-  L1_10.SCRIPT_VERSION = 2
-end)()
-;(function()
-  print("CtsErkEureka4Armor")
-  function CtsErkEureka4Armor.OnScene00000(A0_11, A1_12, A2_13)
+  L0_2.OnScene00003_001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsErkEureka4Armor
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka4Armor"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka4Armor
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function CtsErkEureka4Armor.OnScene00001(A0_14, A1_15, A2_16)
-    A0_14:OnScene00001_001(A1_15, A2_16)
-    return A0_14.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsErkEureka4Armor
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00001_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4Armor.OnScene00002(A0_17, A1_18, A2_19, A3_20)
-    local L4_21, L5_22, L6_23, L7_24, L8_25
-    L4_21 = A3_20 ~= 0
-    L5_22 = {}
-    L6_23 = {}
-    L7_24 = #L5_22
-    L7_24 = L7_24 + 1
-    L8_25 = A0_17.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_001
-    L5_22[L7_24] = L8_25
-    L7_24 = #L6_23
-    L7_24 = L7_24 + 1
-    L6_23[L7_24] = 1
-    if L4_21 == true then
-      L7_24 = #L5_22
-      L7_24 = L7_24 + 1
-      L8_25 = A0_17.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_002
-      L5_22[L7_24] = L8_25
-      L7_24 = #L6_23
-      L7_24 = L7_24 + 1
-      L6_23[L7_24] = 2
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsErkEureka4Armor
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L4_3 = A3_3 ~= 0
+    L5_3 = {}
+    L6_3 = {}
+    L7_3 = #L5_3
+    L7_3 = L7_3 + 1
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_001
+    L5_3[L7_3] = L8_3
+    L7_3 = #L6_3
+    L7_3 = L7_3 + 1
+    L6_3[L7_3] = 1
+    if L4_3 == true then
+      L7_3 = #L5_3
+      L7_3 = L7_3 + 1
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_002
+      L5_3[L7_3] = L8_3
+      L7_3 = #L6_3
+      L7_3 = L7_3 + 1
+      L6_3[L7_3] = 2
     end
-    L7_24 = #L5_22
-    L7_24 = L7_24 + 1
-    L8_25 = A0_17.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_003
-    L5_22[L7_24] = L8_25
-    L7_24 = #L6_23
-    L7_24 = L7_24 + 1
-    L6_23[L7_24] = 3
-    L7_24 = #L5_22
-    L7_24 = L7_24 + 1
-    L8_25 = A0_17.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_004
-    L5_22[L7_24] = L8_25
-    L7_24 = #L6_23
-    L7_24 = L7_24 + 1
-    L6_23[L7_24] = 4
+    L7_3 = #L5_3
+    L7_3 = L7_3 + 1
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_003
+    L5_3[L7_3] = L8_3
+    L7_3 = #L6_3
+    L7_3 = L7_3 + 1
+    L6_3[L7_3] = 3
+    L7_3 = #L5_3
+    L7_3 = L7_3 + 1
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_A1_000_004
+    L5_3[L7_3] = L8_3
+    L7_3 = #L6_3
+    L7_3 = L7_3 + 1
+    L6_3[L7_3] = 4
     while true do
-      L8_25 = A0_17
-      L7_24 = A0_17.Menu
-      L7_24 = L7_24(L8_25, A0_17.TEXT_CTSERKEUREKA4ARMOR_00562_Q1_000_000, unpack(L5_22))
-      L8_25 = L6_23[L7_24]
-      if L8_25 == 1 then
-        return A0_17.EUREKA_EVENT_RESULT_NEXT, 1
-      elseif L8_25 == 2 then
-        return A0_17.EUREKA_EVENT_RESULT_NEXT, 2
-      elseif L8_25 == 3 then
-        A0_17:OnScene00002_001(A1_18, A2_19, L4_21)
+      L8_3 = A0_3
+      L7_3 = A0_3.Menu
+      L9_3 = A0_3.TEXT_CTSERKEUREKA4ARMOR_00562_Q1_000_000
+      L10_3 = unpack
+      L11_3 = L5_3
+      L10_3, L11_3, L12_3, L13_3 = L10_3(L11_3)
+      L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+      L8_3 = L6_3[L7_3]
+      if L8_3 == 1 then
+        L9_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+        L10_3 = 1
+        return L9_3, L10_3
+      elseif L8_3 == 2 then
+        L9_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+        L10_3 = 2
+        return L9_3, L10_3
+      elseif L8_3 == 3 then
+        L10_3 = A0_3
+        L9_3 = A0_3.OnScene00002_001
+        L11_3 = A1_3
+        L12_3 = A2_3
+        L13_3 = L4_3
+        L9_3(L10_3, L11_3, L12_3, L13_3)
       else
         break
       end
     end
-    L7_24 = A0_17.EUREKA_EVENT_RESULT_END
-    return L7_24
+    L7_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L7_3
   end
-  function CtsErkEureka4Armor.OnScene00003(A0_26, A1_27, A2_28)
-    A0_26:OnScene00003_001(A1_27, A2_28)
-    return A0_26.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsErkEureka4Armor
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00003_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-end)()
+  L0_2.OnScene00003 = L1_2
+end
+L0_1()

@@ -1,81 +1,242 @@
-(function()
-  local L0_0
-  L0_0 = print
-  L0_0("RegRoc2SkyIslandShop")
-  L0_0 = {
-    {num = 1},
-    {num = 5},
-    {num = 10}
-  }
-  function RegRoc2SkyIslandShop.OnScene00000(A0_1, A1_2, A2_3)
-    A2_3:PlayActionTimeline(A0_1.ACTION_TIMELINE_EVENT_TALK1, A1_2)
-    A2_3:Talk(A1_2, A0_1, A0_1.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_000, false)
-    A2_3:Talk(A1_2, A0_1, A0_1.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_010, true)
-    A0_1:Wait(10)
-    A0_1:SystemTalk(A0_1.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_011, false)
-    A0_1:SystemTalk(A0_1.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_012, false)
-    A0_1:SystemTalk(A0_1.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_013, false)
-    A0_1:SystemTalk(A0_1.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_014, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2, L2_2, L3_2
+  L0_2 = print
+  L1_2 = "RegRoc2SkyIslandShop"
+  L0_2(L1_2)
+  L0_2 = {}
+  L1_2 = {}
+  L1_2.num = 1
+  L2_2 = {}
+  L2_2.num = 5
+  L3_2 = {}
+  L3_2.num = 10
+  L0_2[1] = L1_2
+  L0_2[2] = L2_2
+  L0_2[3] = L3_2
+  L1_2 = RegRoc2SkyIslandShop
+  function L2_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_010
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_011
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_012
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_013
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_SYSTEM_000_014
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function RegRoc2SkyIslandShop.OnScene00100(A0_4, A1_5, A2_6)
-    A2_6:PlayActionTimeline(A0_4.ACTION_TIMELINE_EVENT_TALK1, A1_5)
-    A2_6:Talk(A1_5, A0_4, A0_4.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_000, false)
-    A2_6:Talk(A1_5, A0_4, A0_4.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_020, true)
+  L1_2.OnScene00000 = L2_2
+  L1_2 = RegRoc2SkyIslandShop
+  function L2_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_000
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_020
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function RegRoc2SkyIslandShop.OnScene00200(A0_7, A1_8, A2_9)
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK1, A1_8)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_000, true)
+  L1_2.OnScene00100 = L2_2
+  L1_2 = RegRoc2SkyIslandShop
+  function L2_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_JAQUOINIE_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function RegRoc2SkyIslandShop.OnScene00201(A0_10, A1_11, A2_12)
-    local L3_13, L4_14
-    L4_14 = A1_11
-    L3_13 = A1_11.GetNumOfItems
-    L3_13 = L3_13(L4_14, A0_10.ITEM_TICKET)
-    L4_14 = {}
-    for _FORV_8_ = 1, #_UPVALUE0_ do
-      L4_14[_FORV_8_] = A0_10:FormatString(A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_A1_000_001, A0_10.ITEM_TICKET, _UPVALUE0_[_FORV_8_].num, _UPVALUE0_[_FORV_8_].num * A0_10.PRICE_TICKET)
+  L1_2.OnScene00200 = L2_2
+  L1_2 = RegRoc2SkyIslandShop
+  function L2_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3
+    L4_3 = A1_3
+    L3_3 = A1_3.GetNumOfItems
+    L5_3 = A0_3.ITEM_TICKET
+    L3_3 = L3_3(L4_3, L5_3)
+    L4_3 = {}
+    L5_3 = 1
+    L6_3 = L0_2
+    L6_3 = #L6_3
+    L7_3 = 1
+    for L8_3 = L5_3, L6_3, L7_3 do
+      L10_3 = A0_3
+      L9_3 = A0_3.FormatString
+      L11_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_A1_000_001
+      L12_3 = A0_3.ITEM_TICKET
+      L13_3 = L0_2
+      L13_3 = L13_3[L8_3]
+      L13_3 = L13_3.num
+      L14_3 = L0_2
+      L14_3 = L14_3[L8_3]
+      L14_3 = L14_3.num
+      L15_3 = A0_3.PRICE_TICKET
+      L14_3 = L14_3 * L15_3
+      L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+      L4_3[L8_3] = L9_3
     end
-    L4_14[_FOR_ + 1] = A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_A1_000_002
+    L5_3 = #L4_3
+    L5_3 = L5_3 + 1
+    L6_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_A1_000_002
+    L4_3[L5_3] = L6_3
     while true do
-      if 1 <= A0_10:Menu(A0_10:FormatString(A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_Q1_000_000, L3_13), unpack(L4_14)) and A0_10:Menu(A0_10:FormatString(A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_Q1_000_000, L3_13), unpack(L4_14)) < 1 + #_UPVALUE0_ then
-        if A0_10:YesNoItem(A0_10:FormatString(A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_Q2_000_000, A0_10.ITEM_TICKET, _UPVALUE0_[A0_10:Menu(A0_10:FormatString(A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_Q1_000_000, L3_13), unpack(L4_14))].num, _UPVALUE0_[A0_10:Menu(A0_10:FormatString(A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_Q1_000_000, L3_13), unpack(L4_14))].num * A0_10.PRICE_TICKET), A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_A2_000_001, A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_A2_000_002, A0_10.DEFAULT_NO, A0_10.ITEM_TICKET) == true then
-          return 1, _UPVALUE0_[A0_10:Menu(A0_10:FormatString(A0_10.TEXT_REGROC2SKYISLANDSHOP_00312_Q1_000_000, L3_13), unpack(L4_14))].num
-        end
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L8_3 = A0_3
+      L7_3 = A0_3.FormatString
+      L9_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_Q1_000_000
+      L10_3 = L3_3
+      L7_3 = L7_3(L8_3, L9_3, L10_3)
+      L8_3 = unpack
+      L9_3 = L4_3
+      L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3 = L8_3(L9_3)
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      if 1 <= L5_3 then
+        L6_3 = L0_2
+        L6_3 = #L6_3
+        L6_3 = 1 + L6_3
+        if L5_3 < L6_3 then
+          L6_3 = L0_2
+          L6_3 = L6_3[L5_3]
+          L8_3 = A0_3
+          L7_3 = A0_3.YesNoItem
+          L10_3 = A0_3
+          L9_3 = A0_3.FormatString
+          L11_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_Q2_000_000
+          L12_3 = A0_3.ITEM_TICKET
+          L13_3 = L6_3.num
+          L14_3 = L6_3.num
+          L15_3 = A0_3.PRICE_TICKET
+          L14_3 = L14_3 * L15_3
+          L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+          L10_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_A2_000_001
+          L11_3 = A0_3.TEXT_REGROC2SKYISLANDSHOP_00312_A2_000_002
+          L12_3 = A0_3.DEFAULT_NO
+          L13_3 = A0_3.ITEM_TICKET
+          L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+          if L7_3 == true then
+            L8_3 = 1
+            L9_3 = L6_3.num
+            return L8_3, L9_3
+          end
+      end
       else
-        return 0
+        L6_3 = 0
+        return L6_3
       end
     end
   end
-  function RegRoc2SkyIslandShop.OnScene00202(A0_15, A1_16, A2_17, ...)
-    local L4_19, L5_20
-    L5_20 = ...
-    if L4_19 == A0_15.RESULT_SUCCESS then
-      A0_15:LogMessage(A0_15.LOGMSG_NPCSHOP_LOG_BUY, A0_15.ITEM_TICKET, L5_20, L5_20 * A0_15.PRICE_TICKET)
-    elseif L4_19 == A0_15.RESULT_INVENTORY_FULL then
-      A0_15:LogMessage(A0_15.LOGMSG_NPCSHOP_ERROR_INVENTORY_FULL)
-    elseif L4_19 == A0_15.RESULT_NO_GIL then
-      A0_15:LogMessage(A0_15.LOGMSG_NPCSHOP_ERROR_INVALID_GIL)
+  L1_2.OnScene00201 = L2_2
+  L1_2 = RegRoc2SkyIslandShop
+  function L2_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3, L5_3 = ...
+    L6_3 = A0_3.RESULT_SUCCESS
+    if L4_3 == L6_3 then
+      L7_3 = A0_3
+      L6_3 = A0_3.LogMessage
+      L8_3 = A0_3.LOGMSG_NPCSHOP_LOG_BUY
+      L9_3 = A0_3.ITEM_TICKET
+      L10_3 = L5_3
+      L11_3 = A0_3.PRICE_TICKET
+      L11_3 = L5_3 * L11_3
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    else
+      L6_3 = A0_3.RESULT_INVENTORY_FULL
+      if L4_3 == L6_3 then
+        L7_3 = A0_3
+        L6_3 = A0_3.LogMessage
+        L8_3 = A0_3.LOGMSG_NPCSHOP_ERROR_INVENTORY_FULL
+        L6_3(L7_3, L8_3)
+      else
+        L6_3 = A0_3.RESULT_NO_GIL
+        if L4_3 == L6_3 then
+          L7_3 = A0_3
+          L6_3 = A0_3.LogMessage
+          L8_3 = A0_3.LOGMSG_NPCSHOP_ERROR_INVALID_GIL
+          L6_3(L7_3, L8_3)
+        end
+      end
     end
   end
-end)()
-;(function()
-  local L0_21, L1_22
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.SCRIPT_VERSION = 1
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.SCENE_NORIGHTTALK_START = 0
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.SCENE_NOINTROTALK_START = 100
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.SCENE_TICKETSHOP_START = 200
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.SCENE_TICKETSHOP_SELECT = 201
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.SCENE_TICKETSHOP_RESULT = 202
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.RESULT_SUCCESS = 1
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.RESULT_INVENTORY_FULL = 2
-  L0_21 = RegRoc2SkyIslandShop
-  L0_21.RESULT_NO_GIL = 3
-end)()
+  L1_2.OnScene00202 = L2_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.SCENE_NORIGHTTALK_START = 0
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.SCENE_NOINTROTALK_START = 100
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.SCENE_TICKETSHOP_START = 200
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.SCENE_TICKETSHOP_SELECT = 201
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.SCENE_TICKETSHOP_RESULT = 202
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.RESULT_SUCCESS = 1
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.RESULT_INVENTORY_FULL = 2
+  L0_2 = RegRoc2SkyIslandShop
+  L0_2.RESULT_NO_GIL = 3
+end
+L0_1()

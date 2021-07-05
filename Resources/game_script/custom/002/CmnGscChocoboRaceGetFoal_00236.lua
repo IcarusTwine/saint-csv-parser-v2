@@ -1,59 +1,202 @@
-(function()
-  print("CmnGscChocoboRaceGetFoal")
-  function CmnGscChocoboRaceGetFoal.OnScene00000(A0_0, A1_1, A2_2)
-    A0_0:RequestRacingChocoboParam()
-    A2_2:LookAt(A1_1)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_TALK_ACTOR, true)
-    if A0_0:HasRacingChocoboRegistrationCardItem() == false then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_001_01, false)
-      A0_0:SystemTalk(A0_0.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_001_02, true)
-      return 0
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnGscChocoboRaceGetFoal"
+  L0_2(L1_2)
+  L0_2 = CmnGscChocoboRaceGetFoal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.RequestRacingChocoboParam
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_TALK_ACTOR
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.HasRacingChocoboRegistrationCardItem
+    L3_3 = L3_3(L4_3)
+    if L3_3 == false then
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_001_01
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_001_02
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
+      L3_3 = 0
+      return L3_3
     end
-    return 1
+    L3_3 = 1
+    return L3_3
   end
-  function CmnGscChocoboRaceGetFoal.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_002_01, false)
-    A0_3:SystemTalk(A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_002_02, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnGscChocoboRaceGetFoal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_002_01
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_ERROR_002_02
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnGscChocoboRaceGetFoal.OnScene00002(A0_6, A1_7, A2_8, A3_9, A4_10)
-    local L5_11
-    L5_11 = A0_6.LoadMovePosition
-    L5_11(A0_6, A0_6.LQ_MARKER_001)
-    L5_11 = A0_6.CreateChocobo
-    L5_11 = L5_11(A0_6, A3_9, 0, 0, 0, A0_6.LQ_MARKER_001)
-    A0_6:Wait(60)
-    A1_7:Visible(A0_6.VISIBLE_HIDE)
-    L5_11:Direction(180)
-    L5_11:LookAt()
-    L5_11:Position(L5_11, A0_6.ARRANGE_TYPE_FRONT, -28.5)
-    L5_11:Position(L5_11, A0_6.ARRANGE_TYPE_LEFT, -25)
-    A0_6:PlayLandscapeCamera(A0_6.LQ_MARKER_001)
-    A0_6:Zoom(-7, -7, 0)
-    A0_6:UpdownDolly(-2, -2, 0)
-    A0_6:UpdownPan(3, 3, 0)
-    A0_6:ChangeBGMVolume(0.5)
-    A0_6:FadeIn(A0_6.FADE_DEFAULT)
-    L5_11:PlayActionTimeline(A0_6.LQ_ACTIONTIMELINE_001)
-    A0_6:Wait(150)
-    A0_6:DisableSceneSkip()
-    A0_6:FadeOut(A0_6.FADE_DEFAULT)
-    A0_6:WaitForFade()
-    A2_8:LookAt(A1_7)
-    A0_6:EnableSceneSkip()
-    return A4_10
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnGscChocoboRaceGetFoal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L6_3 = A0_3
+    L5_3 = A0_3.LoadMovePosition
+    L7_3 = A0_3.LQ_MARKER_001
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.CreateChocobo
+    L7_3 = A3_3
+    L8_3 = 0
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = A0_3.LQ_MARKER_001
+    L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 60
+    L6_3(L7_3, L8_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.Visible
+    L8_3 = A0_3.VISIBLE_HIDE
+    L6_3(L7_3, L8_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.Direction
+    L8_3 = 180
+    L6_3(L7_3, L8_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.LookAt
+    L6_3(L7_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.Position
+    L8_3 = L5_3
+    L9_3 = A0_3.ARRANGE_TYPE_FRONT
+    L10_3 = -28.5
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.Position
+    L8_3 = L5_3
+    L9_3 = A0_3.ARRANGE_TYPE_LEFT
+    L10_3 = -25
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.PlayLandscapeCamera
+    L8_3 = A0_3.LQ_MARKER_001
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Zoom
+    L8_3 = -7
+    L9_3 = -7
+    L10_3 = 0
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.UpdownDolly
+    L8_3 = -2
+    L9_3 = -2
+    L10_3 = 0
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.UpdownPan
+    L8_3 = 3
+    L9_3 = 3
+    L10_3 = 0
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.ChangeBGMVolume
+    L8_3 = 0.5
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.FadeIn
+    L8_3 = A0_3.FADE_DEFAULT
+    L6_3(L7_3, L8_3)
+    L7_3 = L5_3
+    L6_3 = L5_3.PlayActionTimeline
+    L8_3 = A0_3.LQ_ACTIONTIMELINE_001
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 150
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.DisableSceneSkip
+    L6_3(L7_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.FadeOut
+    L8_3 = A0_3.FADE_DEFAULT
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.WaitForFade
+    L6_3(L7_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.LookAt
+    L8_3 = A1_3
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.EnableSceneSkip
+    L6_3(L7_3)
+    return A4_3
   end
-  function CmnGscChocoboRaceGetFoal.OnScene00003(A0_12, A1_13, A2_14)
-    A2_14:LookAt(A1_13)
-    A0_12:Wait(5)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_001_01, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnGscChocoboRaceGetFoal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 5
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNGSCCHOCOBORACEGETFOAL_00236_001_01
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-end)()
-;(function()
-  local L0_15
-  L0_15 = CmnGscChocoboRaceGetFoal
-  L0_15.SCRIPT_VERSION = 1
-  L0_15 = CmnGscChocoboRaceGetFoal
-  function L0_15.IsAcceptEvent(A0_16, A1_17, A2_18, A3_19, A4_20, A5_21)
-    return A0_16:CanRacingChocoboCouplingTalk(A1_17) == true
+  L0_2.OnScene00003 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnGscChocoboRaceGetFoal
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnGscChocoboRaceGetFoal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A0_3
+    L6_3 = A0_3.CanRacingChocoboCouplingTalk
+    L8_3 = A1_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L6_3 = L6_3 == true
+    return L6_3
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

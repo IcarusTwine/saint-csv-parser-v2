@@ -1,94 +1,179 @@
-(function()
-  print("CmnDefIdleCamera")
-  function CmnDefIdleCamera.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6
-    L4_4 = A0_0
-    L3_3 = A0_0.GetIdleCameraInterval
-    L3_3 = L3_3(L4_4)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefIdleCamera"
+  L0_2(L1_2)
+  L0_2 = CmnDefIdleCamera
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetIdleCameraInterval
+    L3_3 = L3_3(L4_3)
     if L3_3 == 0 then
       L3_3 = 1
     end
-    L4_4 = A0_0.WAIT_IDLE_CAMERA_RESULT_TIMEOUT
-    L6_6 = A0_0
-    L5_5 = A0_0.IsIdleCameraFadeDisabled
-    L5_5 = L5_5(L6_6)
-    L6_6 = 30
-    if L5_5 == true then
-      L6_6 = 1
+    L4_3 = A0_3.WAIT_IDLE_CAMERA_RESULT_TIMEOUT
+    L6_3 = A0_3
+    L5_3 = A0_3.IsIdleCameraFadeDisabled
+    L5_3 = L5_3(L6_3)
+    L6_3 = 30
+    if L5_3 == true then
+      L6_3 = 1
     end
     while true do
-      L4_4 = A0_0.WAIT_IDLE_CAMERA_RESULT_TIMEOUT
-      if A0_0:PlayIdleCamera() == true then
-        if L4_4 ~= A0_0.WAIT_IDLE_CAMERA_RESULT_SWITCHING then
-          A0_0:Wait(L6_6)
-          A0_0:FadeIn(A0_0.FADE_SHORT)
-          A0_0:WaitForFade()
+      L4_3 = A0_3.WAIT_IDLE_CAMERA_RESULT_TIMEOUT
+      L8_3 = A0_3
+      L7_3 = A0_3.PlayIdleCamera
+      L7_3 = L7_3(L8_3)
+      if L7_3 == true then
+        L7_3 = A0_3.WAIT_IDLE_CAMERA_RESULT_SWITCHING
+        if L4_3 ~= L7_3 then
+          L8_3 = A0_3
+          L7_3 = A0_3.Wait
+          L9_3 = L6_3
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.FadeIn
+          L9_3 = A0_3.FADE_SHORT
+          L7_3(L8_3, L9_3)
+          L8_3 = A0_3
+          L7_3 = A0_3.WaitForFade
+          L7_3(L8_3)
         end
-        L4_4 = A0_0:WaitForIdleCamera(L3_3)
-      elseif L3_3 > 10 then
-        A0_0:Wait(10)
+        L8_3 = A0_3
+        L7_3 = A0_3.WaitForIdleCamera
+        L9_3 = L3_3
+        L7_3 = L7_3(L8_3, L9_3)
+        L4_3 = L7_3
+      elseif 10 < L3_3 then
+        L8_3 = A0_3
+        L7_3 = A0_3.Wait
+        L9_3 = 10
+        L7_3(L8_3, L9_3)
       else
-        A0_0:Wait(L3_3)
+        L8_3 = A0_3
+        L7_3 = A0_3.Wait
+        L9_3 = L3_3
+        L7_3(L8_3, L9_3)
       end
-      if L4_4 ~= A0_0.WAIT_IDLE_CAMERA_RESULT_SWITCHING and L5_5 == false then
-        A0_0:FadeOut(A0_0.FADE_SHORT)
-        A0_0:WaitForFade()
+      L7_3 = A0_3.WAIT_IDLE_CAMERA_RESULT_SWITCHING
+      if L4_3 ~= L7_3 and L5_3 == false then
+        L8_3 = A0_3
+        L7_3 = A0_3.FadeOut
+        L9_3 = A0_3.FADE_SHORT
+        L7_3(L8_3, L9_3)
+        L8_3 = A0_3
+        L7_3 = A0_3.WaitForFade
+        L7_3(L8_3)
       end
     end
   end
-  function CmnDefIdleCamera.OnUI(A0_7, A1_8, A2_9)
-    local L3_10
-    L3_10 = A0_7.IsCurrentEventClientEvent
-    L3_10 = L3_10(A0_7)
-    if L3_10 == true then
-      L3_10 = A0_7.UI_EVENT_IDLE_CAMERA
-      if A2_9 == L3_10 then
-        L3_10 = A1_8.SetSceneEndRollback
-        L3_10(A1_8, A0_7.ROLLBACK_ACTIONTIMELINE, false)
-        L3_10 = A1_8.SetSceneEndRollback
-        L3_10(A1_8, A0_7.ROLLBACK_POSITION, false)
-        L3_10 = A1_8.SetSceneEndRollback
-        L3_10(A1_8, A0_7.ROLLBACK_DIRECTION, false)
-        L3_10 = A0_7.SCENE_FLAGS_NO_DEFAULT_CAMERA
-        L3_10 = L3_10 + A0_7.SCENE_FLAGS_HIDE_UI
-        L3_10 = L3_10 + A0_7.SCENE_FLAGS_DISABLE_CANCEL_EMOTE
-        if A0_7:IsIdleCameraFadeDisabled() == false then
-          L3_10 = L3_10 + A0_7.SCENE_FLAGS_FADE_OUT
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefIdleCamera
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsCurrentEventClientEvent
+    L3_3 = L3_3(L4_3)
+    if L3_3 == true then
+      L3_3 = A0_3.UI_EVENT_IDLE_CAMERA
+      if A2_3 == L3_3 then
+        L4_3 = A1_3
+        L3_3 = A1_3.SetSceneEndRollback
+        L5_3 = A0_3.ROLLBACK_ACTIONTIMELINE
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A1_3
+        L3_3 = A1_3.SetSceneEndRollback
+        L5_3 = A0_3.ROLLBACK_POSITION
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A1_3
+        L3_3 = A1_3.SetSceneEndRollback
+        L5_3 = A0_3.ROLLBACK_DIRECTION
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L3_3 = A0_3.SCENE_FLAGS_NO_DEFAULT_CAMERA
+        L4_3 = A0_3.SCENE_FLAGS_HIDE_UI
+        L3_3 = L3_3 + L4_3
+        L4_3 = A0_3.SCENE_FLAGS_DISABLE_CANCEL_EMOTE
+        L3_3 = L3_3 + L4_3
+        L5_3 = A0_3
+        L4_3 = A0_3.IsIdleCameraFadeDisabled
+        L4_3 = L4_3(L5_3)
+        if L4_3 == false then
+          L4_3 = A0_3.SCENE_FLAGS_FADE_OUT
+          L3_3 = L3_3 + L4_3
         end
-        A0_7:PlayClientEventScene(0, L3_10, A2_9)
+        L5_3 = A0_3
+        L4_3 = A0_3.PlayClientEventScene
+        L6_3 = 0
+        L7_3 = L3_3
+        L8_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3, L8_3)
       end
     end
   end
-end)()
-;(function()
-  local L0_11, L1_12
-  L0_11 = CmnDefIdleCamera
-  L0_11.SCRIPT_VERSION = 1
-  L0_11 = CmnDefIdleCamera
-  function L1_12(A0_13, A1_14, A2_15, A3_16, A4_17)
-    if A1_14:IsReplaying() == true then
-      return 0
+  L0_2.OnUI = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefIdleCamera
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefIdleCamera
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3
+    L6_3 = A1_3
+    L5_3 = A1_3.IsReplaying
+    L5_3 = L5_3(L6_3)
+    if L5_3 == true then
+      L5_3 = 0
+      return L5_3
     end
-    return A0_13.EVENT_STATE_MOUNT_NORMAL
+    L5_3 = A0_3.EVENT_STATE_MOUNT_NORMAL
+    return L5_3
   end
-  L0_11.GetConditionId = L1_12
-  L0_11 = CmnDefIdleCamera
-  function L1_12(A0_18, A1_19, A2_20, A3_21, A4_22)
-    if A1_19:IsReplaying() == true then
-      return 0
+  L0_2.GetConditionId = L1_2
+  L0_2 = CmnDefIdleCamera
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3
+    L6_3 = A1_3
+    L5_3 = A1_3.IsReplaying
+    L5_3 = L5_3(L6_3)
+    if L5_3 == true then
+      L5_3 = 0
+      return L5_3
     end
-    return A0_18.PERMISSION_IDLE_CAMERA
+    L5_3 = A0_3.PERMISSION_IDLE_CAMERA
+    return L5_3
   end
-  L0_11.GetPermissionId = L1_12
-  L0_11 = CmnDefIdleCamera
-  function L1_12(A0_23, A1_24, A2_25, A3_26, A4_27, A5_28, A6_29)
-    if A5_28 == A0_23.EVENT_UI and A6_29 == A0_23.UI_EVENT_IDLE_CAMERA then
-      if A1_24:IsReplaying() == true then
-        return true
+  L0_2.GetPermissionId = L1_2
+  L0_2 = CmnDefIdleCamera
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3)
+    local L7_3, L8_3
+    L7_3 = A0_3.EVENT_UI
+    if A5_3 == L7_3 then
+      L7_3 = A0_3.UI_EVENT_IDLE_CAMERA
+      if A6_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.IsReplaying
+        L7_3 = L7_3(L8_3)
+        if L7_3 == true then
+          L7_3 = true
+          return L7_3
+        end
+        L8_3 = A1_3
+        L7_3 = A1_3.IsActionMoving
+        L7_3 = L7_3(L8_3)
+        L7_3 = L7_3 == false
+        return L7_3
       end
-      return A1_24:IsActionMoving() == false and A1_24:IsKnockBacking() == false
     end
-    return false
+    L7_3 = false
+    return L7_3
   end
-  L0_11.IsAcceptEvent = L1_12
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

@@ -1,22 +1,67 @@
-(function()
-  print("RegFstEpicMoogle")
-  function RegFstEpicMoogle.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1, A1_1)
-    if A0_0:isEpicQuestComplete(A1_1) == true then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGFSTEPICMOOGLE_00133_EPICMOOGLE_000_010, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGFSTEPICMOOGLE_00133_EPICMOOGLE_000_011, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegFstEpicMoogle"
+  L0_2(L1_2)
+  L0_2 = RegFstEpicMoogle
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.isEpicQuestComplete
+    L5_3 = A1_3
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_REGFSTEPICMOOGLE_00133_EPICMOOGLE_000_010
+      L9_3 = false
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_REGFSTEPICMOOGLE_00133_EPICMOOGLE_000_011
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGFSTEPICMOOGLE_00133_EPICMOOGLE_000_001, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_REGFSTEPICMOOGLE_00133_EPICMOOGLE_000_001
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
   end
-end)()
-;(function()
-  local L0_3
-  L0_3 = RegFstEpicMoogle
-  L0_3.SCRIPT_VERSION = 1
-  L0_3 = RegFstEpicMoogle
-  function L0_3.isEpicQuestComplete(A0_4, A1_5)
-    return A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_WAR) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_PLD) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_MNK) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_DRG) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_BLM) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_WHM) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_BRD) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_SMN) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_SCH) == true or A1_5:IsQuestCompleted(A0_4.EPIC_QUEST_NIN) == true or A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_WAR) > 0 or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_PLD) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_MNK) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_DRG) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_BLM) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_WHM) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_BRD) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_SMN) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_SCH) or 0 < A1_5:GetNumOfItems(A0_4.EQUIP_EPIC_NIN)
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegFstEpicMoogle
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = RegFstEpicMoogle
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3
+    L3_3 = A1_3
+    L2_3 = A1_3.IsQuestCompleted
+    L4_3 = A0_3.EPIC_QUEST_WAR
+    L2_3 = L2_3(L3_3, L4_3)
+    L2_3 = L2_3 == true
+    return L2_3
   end
-end)()
+  L0_2.isEpicQuestComplete = L1_2
+end
+L0_1()

@@ -1,36 +1,135 @@
-(function()
-  print("RegOth3SuinoSato")
-  function RegOth3SuinoSato.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_BASE_IDLE4)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_000, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegOth3SuinoSato"
+  L0_2(L1_2)
+  L0_2 = RegOth3SuinoSato
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE4
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     while true do
-      if A0_0:Menu(A0_0.TEXT_REGOTH3SUINOSATO_00409_Q1_000_100, A0_0.TEXT_REGOTH3SUINOSATO_00409_A1_000_101, A0_0.TEXT_REGOTH3SUINOSATO_00409_A1_000_102, A0_0.TEXT_REGOTH3SUINOSATO_00409_A1_000_103) == 1 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_TALK)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_200, false)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_201, false)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_202, true)
-      elseif A0_0:Menu(A0_0.TEXT_REGOTH3SUINOSATO_00409_Q1_000_100, A0_0.TEXT_REGOTH3SUINOSATO_00409_A1_000_101, A0_0.TEXT_REGOTH3SUINOSATO_00409_A1_000_102, A0_0.TEXT_REGOTH3SUINOSATO_00409_A1_000_103) == 2 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_TALK)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_300, false)
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_301, false)
-        if A1_1:IsQuestCompleted(A0_0.QUEST_02) == true then
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_320, true)
-        elseif A1_1:IsQuestCompleted(A0_0.QUEST_01) == true then
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_310, true)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_Q1_000_100
+      L6_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_A1_000_101
+      L7_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_A1_000_102
+      L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_A1_000_103
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_TALK
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_200
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_201
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_202
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_TALK
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_300
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_301
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A1_3
+        L4_3 = A1_3.IsQuestCompleted
+        L6_3 = A0_3.QUEST_02
+        L4_3 = L4_3(L5_3, L6_3)
+        if L4_3 == true then
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_320
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
         else
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_302, true)
+          L5_3 = A1_3
+          L4_3 = A1_3.IsQuestCompleted
+          L6_3 = A0_3.QUEST_01
+          L4_3 = L4_3(L5_3, L6_3)
+          if L4_3 == true then
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_310
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          else
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGOTH3SUINOSATO_00409_SASANAMI_302
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          end
         end
       else
-        return 0
+        L4_3 = 0
+        return L4_3
       end
     end
   end
-end)()
-;(function()
-  local L1_3
-  L1_3 = RegOth3SuinoSato
-  L1_3.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegOth3SuinoSato
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

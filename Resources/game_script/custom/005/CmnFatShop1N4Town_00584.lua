@@ -1,165 +1,502 @@
-(function()
-  print("CmnFatShop1N4Town")
-  function CmnFatShop1N4Town.OnScene00000(A0_0, A1_1, A2_2, A3_3)
-    A0_0:OnPreTalk(A1_1, A2_2)
-    if A0_0:OnTalk_Unlock(A1_1, A2_2) == false then
-      A0_0:CancelEventScene()
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnFatShop1N4Town"
+  L0_2(L1_2)
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.OnPreTalk
+    L6_3 = A1_3
+    L7_3 = A2_3
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.OnTalk_Unlock
+    L6_3 = A1_3
+    L7_3 = A2_3
+    L4_3 = L4_3(L5_3, L6_3, L7_3)
+    if L4_3 == false then
+      L6_3 = A0_3
+      L5_3 = A0_3.CancelEventScene
+      L5_3(L6_3)
     end
-    A0_0:Wait(10)
-    if A0_0:OnAfterUnlocked(A1_1, A2_2) == false then
-      A0_0:CancelEventScene()
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.OnAfterUnlocked
+    L7_3 = A1_3
+    L8_3 = A2_3
+    L5_3 = L5_3(L6_3, L7_3, L8_3)
+    if L5_3 == false then
+      L6_3 = A0_3
+      L5_3 = A0_3.CancelEventScene
+      L5_3(L6_3)
     end
   end
-  function CmnFatShop1N4Town.OnScene00001(A0_4, A1_5, A2_6)
-    A0_4:OnPreTalk(A1_5, A2_6)
-    if A0_4:OnTalk_Greeting(A1_5, A2_6) == false then
-      A0_4:CancelEventScene()
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnPreTalk
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.OnTalk_Greeting
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 == false then
+      L4_3 = A0_3
+      L3_3 = A0_3.CancelEventScene
+      L3_3(L4_3)
     end
-    A0_4:OnScene00002(A1_5, A2_6)
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00002
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnFatShop1N4Town.OnScene00002(A0_7, A1_8, A2_9)
-    if A1_8:IsHowTo(A0_7.FATESHOP_HOWTO) == false then
-      A0_7:HowTo(A0_7.FATESHOP_HOWTO)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsHowTo
+    L5_3 = A0_3.FATESHOP_HOWTO
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == false then
+      L4_3 = A0_3
+      L3_3 = A0_3.HowTo
+      L5_3 = A0_3.FATESHOP_HOWTO
+      L3_3(L4_3, L5_3)
     end
   end
-  function CmnFatShop1N4Town.OnScene00003(A0_10, A1_11, A2_12)
-    A0_10:OnPreTalk(A1_11, A2_12)
-    A0_10:OnTalk_Unqualified(A1_11, A2_12)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnPreTalk
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.OnTalk_Unqualified
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnFatShop1N4Town.OnPreTalk(A0_13, A1_14, A2_15)
-    if A2_15:IsEventNpc() == true then
-      A2_15:TurnTo(A1_14, false)
-      A2_15:WaitForTurn()
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.IsEventNpc
+    L3_3 = L3_3(L4_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.TurnTo
+      L5_3 = A1_3
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.WaitForTurn
+      L3_3(L4_3)
     end
   end
-  function CmnFatShop1N4Town.OnTalk_Unqualified_TheCrystarium_Gramsol(A0_16, A1_17, A2_18)
-    if A1_17:IsQuestCompleted(A0_16.QST_LUCKMF111) == false and A0_16:IsAllFateShopPhaseMax(A1_17) == false then
-      A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EMOTE_FUME)
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_000_001, true)
-    elseif A1_17:IsQuestCompleted(A0_16.QST_LUCKMF111) == false and A0_16:IsAllFateShopPhaseMax(A1_17) == true then
-      A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EMOTE_FUME)
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_001_001, true)
-      A0_16:Wait(10)
-      A0_16:SystemTalk(A0_16.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_002, true)
-    elseif A1_17:IsQuestCompleted(A0_16.QST_LUCKMF111) == true and A0_16:IsAllFateShopPhaseMax(A1_17) == false then
-      A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EMOTE_FUME)
-      A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_001_001, true)
-      A0_16:Wait(10)
-      A0_16:SystemTalk(A0_16.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_012, true)
+  L0_2.OnPreTalk = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QST_LUCKMF111
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.IsAllFateShopPhaseMax
+    L6_3 = A1_3
+    L4_3 = L4_3(L5_3, L6_3)
+    if L3_3 == false and L4_3 == false then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EMOTE_FUME
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_000_001
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    elseif L3_3 == false and L4_3 == true then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EMOTE_FUME
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_001_001
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 10
+      L5_3(L6_3, L7_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_002
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+    elseif L3_3 == true and L4_3 == false then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EMOTE_FUME
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_001_001
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 10
+      L5_3(L6_3, L7_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_012
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
     else
-      return false
+      L5_3 = false
+      return L5_3
     end
-    return true
+    L5_3 = true
+    return L5_3
   end
-  function CmnFatShop1N4Town.OnTalk_Unlock_TheCrystarium_Gramsol(A0_19, A1_20, A2_21)
-    A2_21:PlayActionTimeline(A0_19.ACTION_TIMELINE_EMOTE_JOY_STRONG)
-    A2_21:Talk(A1_20, A0_19, A0_19.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_002_001, true)
+  L0_2.OnTalk_Unqualified_TheCrystarium_Gramsol = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_JOY_STRONG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_002_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnFatShop1N4Town.OnTalk_Greeting_TheCrystarium_Gramsol(A0_22, A1_23, A2_24)
-    A2_24:PlayActionTimeline(A0_22.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_24:Talk(A1_23, A0_22, A0_22.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_003_001, true)
+  L0_2.OnTalk_Unlock_TheCrystarium_Gramsol = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_GRAMSOL_003_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnFatShop1N4Town.OnTalk_Unqualified_Eulmore_Pedronille(A0_25, A1_26, A2_27)
-    if A1_26:IsQuestCompleted(A0_25.QST_LUCKMF111) == false and A0_25:IsAllFateShopPhaseMax(A1_26) == false then
-      A2_27:PlayActionTimeline(A0_25.ACTION_TIMELINE_EVENT_TALK2)
-      A2_27:Talk(A1_26, A0_25, A0_25.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_000_001, true)
-    elseif A1_26:IsQuestCompleted(A0_25.QST_LUCKMF111) == false and A0_25:IsAllFateShopPhaseMax(A1_26) == true then
-      A2_27:PlayActionTimeline(A0_25.ACTION_TIMELINE_EVENT_TALK1)
-      A2_27:Talk(A1_26, A0_25, A0_25.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_001_001, true)
-      A0_25:Wait(10)
-      A0_25:SystemTalk(A0_25.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_002, true)
-    elseif A1_26:IsQuestCompleted(A0_25.QST_LUCKMF111) == true and A0_25:IsAllFateShopPhaseMax(A1_26) == false then
-      A2_27:PlayActionTimeline(A0_25.ACTION_TIMELINE_EVENT_TALK1)
-      A2_27:Talk(A1_26, A0_25, A0_25.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_001_001, true)
-      A0_25:Wait(10)
-      A0_25:SystemTalk(A0_25.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_012, true)
+  L0_2.OnTalk_Greeting_TheCrystarium_Gramsol = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QST_LUCKMF111
+    L3_3 = L3_3(L4_3, L5_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.IsAllFateShopPhaseMax
+    L6_3 = A1_3
+    L4_3 = L4_3(L5_3, L6_3)
+    if L3_3 == false and L4_3 == false then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_000_001
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    elseif L3_3 == false and L4_3 == true then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_001_001
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 10
+      L5_3(L6_3, L7_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_002
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+    elseif L3_3 == true and L4_3 == false then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_001_001
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Wait
+      L7_3 = 10
+      L5_3(L6_3, L7_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_001_012
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
     else
-      return false
+      L5_3 = false
+      return L5_3
     end
-    return true
+    L5_3 = true
+    return L5_3
   end
-  function CmnFatShop1N4Town.OnTalk_Unlock_Eulmore_Pedronille(A0_28, A1_29, A2_30)
-    A2_30:PlayActionTimeline(A0_28.ACTION_TIMELINE_EVENT_TALK1)
-    A2_30:Talk(A1_29, A0_28, A0_28.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_002_001, true)
+  L0_2.OnTalk_Unqualified_Eulmore_Pedronille = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_002_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnFatShop1N4Town.OnTalk_Greeting_Eulmore_Pedronille(A0_31, A1_32, A2_33)
-    A2_33:PlayActionTimeline(A0_31.ACTION_TIMELINE_EVENT_TALK2)
-    A2_33:Talk(A1_32, A0_31, A0_31.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_003_001, true)
+  L0_2.OnTalk_Unlock_Eulmore_Pedronille = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_PEDRONILLE_003_001
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnFatShop1N4Town.OnTalk_Unqualified(A0_34, A1_35, A2_36)
-    if A2_36:GetBaseId() == A0_34.FATESHOP_ENPCID_THECRYSTARIUM then
-      A0_34:OnTalk_Unqualified_TheCrystarium_Gramsol(A1_35, A2_36)
-    elseif A2_36:GetBaseId() == A0_34.FATESHOP_ENPCID_EULMORE then
-      A0_34:OnTalk_Unqualified_Eulmore_Pedronille(A1_35, A2_36)
+  L0_2.OnTalk_Greeting_Eulmore_Pedronille = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.FATESHOP_ENPCID_THECRYSTARIUM
+    if L3_3 == L4_3 then
+      L5_3 = A0_3
+      L4_3 = A0_3.OnTalk_Unqualified_TheCrystarium_Gramsol
+      L6_3 = A1_3
+      L7_3 = A2_3
+      L4_3(L5_3, L6_3, L7_3)
     else
-      return false
-    end
-    return true
-  end
-  function CmnFatShop1N4Town.OnTalk_Unlock(A0_37, A1_38, A2_39)
-    if A2_39:GetBaseId() == A0_37.FATESHOP_ENPCID_THECRYSTARIUM then
-      A0_37:OnTalk_Unlock_TheCrystarium_Gramsol(A1_38, A2_39)
-    elseif A2_39:GetBaseId() == A0_37.FATESHOP_ENPCID_EULMORE then
-      A0_37:OnTalk_Unlock_Eulmore_Pedronille(A1_38, A2_39)
-    else
-      return false
-    end
-    return true
-  end
-  function CmnFatShop1N4Town.OnAfterUnlocked(A0_40, A1_41, A2_42)
-    local L3_43, L4_44
-    L4_44 = A2_42
-    L3_43 = A2_42.GetBaseId
-    L3_43 = L3_43(L4_44)
-    L4_44 = -1
-    if L3_43 == A0_40.FATESHOP_ENPCID_THECRYSTARIUM then
-      L4_44 = A0_40.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_999_001
-    elseif L3_43 == A0_40.FATESHOP_ENPCID_EULMORE then
-      L4_44 = A0_40.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_999_002
-    else
-      return false
-    end
-    A0_40:ScenarioMessage(L4_44)
-    A0_40:Wait(30)
-    A0_40:SystemTalk(A0_40.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_002_002, true)
-    return true
-  end
-  function CmnFatShop1N4Town.OnTalk_Greeting(A0_45, A1_46, A2_47)
-    if A2_47:GetBaseId() == A0_45.FATESHOP_ENPCID_THECRYSTARIUM then
-      A0_45:OnTalk_Greeting_TheCrystarium_Gramsol(A1_46, A2_47)
-    elseif A2_47:GetBaseId() == A0_45.FATESHOP_ENPCID_EULMORE then
-      A0_45:OnTalk_Greeting_Eulmore_Pedronille(A1_46, A2_47)
-    else
-      return false
-    end
-    return true
-  end
-  function CmnFatShop1N4Town.IsAllFateShopPhaseMax(A0_48, A1_49)
-    local L2_50
-    L2_50 = {
-      A0_48.FATESHOP_REWARD_LAKELAND1,
-      A0_48.FATESHOP_REWARD_LAKELAND2,
-      A0_48.FATESHOP_REWARD_KHOLUSIA1,
-      A0_48.FATESHOP_REWARD_KHOLUSIA2,
-      A0_48.FATESHOP_REWARD_AMHARAENG1,
-      A0_48.FATESHOP_REWARD_AMHARAENG2,
-      A0_48.FATESHOP_REWARD_ILMHEG1,
-      A0_48.FATESHOP_REWARD_ILMHEG2,
-      A0_48.FATESHOP_REWARD_RAKTIKA1,
-      A0_48.FATESHOP_REWARD_RAKTIKA2,
-      A0_48.FATESHOP_REWARD_THETEMPEST1,
-      A0_48.FATESHOP_REWARD_THETEMPEST2
-    }
-    for _FORV_6_ = 1, #L2_50 do
-      if A1_49:IsReward(L2_50[_FORV_6_]) == false then
-        return false
+      L4_3 = A0_3.FATESHOP_ENPCID_EULMORE
+      if L3_3 == L4_3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.OnTalk_Unqualified_Eulmore_Pedronille
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      else
+        L4_3 = false
+        return L4_3
       end
     end
-    return _FOR_
+    L4_3 = true
+    return L4_3
   end
-end)()
-;(function()
-  local L1_51
-  L1_51 = CmnFatShop1N4Town
-  L1_51.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnTalk_Unqualified = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.FATESHOP_ENPCID_THECRYSTARIUM
+    if L3_3 == L4_3 then
+      L5_3 = A0_3
+      L4_3 = A0_3.OnTalk_Unlock_TheCrystarium_Gramsol
+      L6_3 = A1_3
+      L7_3 = A2_3
+      L4_3(L5_3, L6_3, L7_3)
+    else
+      L4_3 = A0_3.FATESHOP_ENPCID_EULMORE
+      if L3_3 == L4_3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.OnTalk_Unlock_Eulmore_Pedronille
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      else
+        L4_3 = false
+        return L4_3
+      end
+    end
+    L4_3 = true
+    return L4_3
+  end
+  L0_2.OnTalk_Unlock = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = -1
+    L5_3 = A0_3.FATESHOP_ENPCID_THECRYSTARIUM
+    if L3_3 == L5_3 then
+      L4_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_999_001
+    else
+      L5_3 = A0_3.FATESHOP_ENPCID_EULMORE
+      if L3_3 == L5_3 then
+        L4_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_999_002
+      else
+        L5_3 = false
+        return L5_3
+      end
+    end
+    L6_3 = A0_3
+    L5_3 = A0_3.ScenarioMessage
+    L7_3 = L4_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 30
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.SystemTalk
+    L7_3 = A0_3.TEXT_CMNFATSHOP1N4TOWN_00584_SYSTEM_002_002
+    L8_3 = true
+    L5_3(L6_3, L7_3, L8_3)
+    L5_3 = true
+    return L5_3
+  end
+  L0_2.OnAfterUnlocked = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.FATESHOP_ENPCID_THECRYSTARIUM
+    if L3_3 == L4_3 then
+      L5_3 = A0_3
+      L4_3 = A0_3.OnTalk_Greeting_TheCrystarium_Gramsol
+      L6_3 = A1_3
+      L7_3 = A2_3
+      L4_3(L5_3, L6_3, L7_3)
+    else
+      L4_3 = A0_3.FATESHOP_ENPCID_EULMORE
+      if L3_3 == L4_3 then
+        L5_3 = A0_3
+        L4_3 = A0_3.OnTalk_Greeting_Eulmore_Pedronille
+        L6_3 = A1_3
+        L7_3 = A2_3
+        L4_3(L5_3, L6_3, L7_3)
+      else
+        L4_3 = false
+        return L4_3
+      end
+    end
+    L4_3 = true
+    return L4_3
+  end
+  L0_2.OnTalk_Greeting = L1_2
+  L0_2 = CmnFatShop1N4Town
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L2_3 = {}
+    L3_3 = A0_3.FATESHOP_REWARD_LAKELAND1
+    L4_3 = A0_3.FATESHOP_REWARD_LAKELAND2
+    L5_3 = A0_3.FATESHOP_REWARD_KHOLUSIA1
+    L6_3 = A0_3.FATESHOP_REWARD_KHOLUSIA2
+    L7_3 = A0_3.FATESHOP_REWARD_AMHARAENG1
+    L8_3 = A0_3.FATESHOP_REWARD_AMHARAENG2
+    L9_3 = A0_3.FATESHOP_REWARD_ILMHEG1
+    L10_3 = A0_3.FATESHOP_REWARD_ILMHEG2
+    L11_3 = A0_3.FATESHOP_REWARD_RAKTIKA1
+    L12_3 = A0_3.FATESHOP_REWARD_RAKTIKA2
+    L13_3 = A0_3.FATESHOP_REWARD_THETEMPEST1
+    L14_3 = A0_3.FATESHOP_REWARD_THETEMPEST2
+    L2_3[1] = L3_3
+    L2_3[2] = L4_3
+    L2_3[3] = L5_3
+    L2_3[4] = L6_3
+    L2_3[5] = L7_3
+    L2_3[6] = L8_3
+    L2_3[7] = L9_3
+    L2_3[8] = L10_3
+    L2_3[9] = L11_3
+    L2_3[10] = L12_3
+    L2_3[11] = L13_3
+    L2_3[12] = L14_3
+    L3_3 = 1
+    L4_3 = #L2_3
+    L5_3 = 1
+    for L6_3 = L3_3, L4_3, L5_3 do
+      L8_3 = A1_3
+      L7_3 = A1_3.IsReward
+      L9_3 = L2_3[L6_3]
+      L7_3 = L7_3(L8_3, L9_3)
+      if L7_3 == false then
+        L7_3 = false
+        return L7_3
+      end
+    end
+    L3_3 = true
+    return L3_3
+  end
+  L0_2.IsAllFateShopPhaseMax = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnFatShop1N4Town
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

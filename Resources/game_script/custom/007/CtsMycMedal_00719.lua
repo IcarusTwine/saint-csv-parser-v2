@@ -1,283 +1,719 @@
-(function()
-  print("CtsMycMedal")
-  function CtsMycMedal.OnScene00010(A0_0, A1_1, A2_2, A3_3, A4_4)
-    local L5_5
-    L5_5 = A2_2.TurnTo
-    L5_5(A2_2, A1_1, false)
-    L5_5 = A2_2.WaitForTurn
-    L5_5(A2_2)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsMycMedal"
+  L0_2(L1_2)
+  L0_2 = CtsMycMedal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
     if A3_3 == 0 then
-      if A4_4 == 1 then
-        L5_5 = A2_2.PlayActionTimeline
-        L5_5(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        L5_5 = A2_2.Talk
-        L5_5(A2_2, A1_1, A0_0, A0_0.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_000, true)
+      if A4_3 == 1 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_000
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
       end
-      L5_5 = A0_0.Menu
-      L5_5 = L5_5(A0_0, A0_0.TEXT_CTSMYCMEDAL_00719_Q1_000_000, A0_0.TEXT_CTSMYCMEDAL_00719_A1_000_000, A0_0.TEXT_CTSMYCMEDAL_00719_A1_000_001, A0_0.TEXT_CTSMYCMEDAL_00719_A1_000_002, A0_0.TEXT_CTSMYCMEDAL_00719_A1_000_010)
-      if L5_5 == 0 then
-        L5_5 = 4
-      elseif L5_5 == 3 then
-        return L5_5, A0_0.DESCRIPTION
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L7_3 = A0_3.TEXT_CTSMYCMEDAL_00719_Q1_000_000
+      L8_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A1_000_000
+      L9_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A1_000_001
+      L10_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A1_000_002
+      L11_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A1_000_010
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+      if L5_3 == 0 then
+        L5_3 = 4
+      elseif L5_3 == 3 then
+        L6_3 = L5_3
+        L7_3 = A0_3.DESCRIPTION
+        return L6_3, L7_3
       end
-      return L5_5
+      return L5_3
     else
-      if A4_4 == 1 then
-        L5_5 = A2_2.PlayActionTimeline
-        L5_5(A2_2, A0_0.ACTION_TIMELINE_EVENT_TALK2)
-        L5_5 = A2_2.Talk
-        L5_5(A2_2, A1_1, A0_0, A0_0.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_010, true)
+      if A4_3 == 1 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_010
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
       end
-      L5_5 = A0_0.Menu
-      L5_5 = L5_5(A0_0, A0_0.TEXT_CTSMYCMEDAL_00719_Q1_000_000, A0_0.TEXT_CTSMYCMEDAL_00719_A1_000_002, A0_0.TEXT_CTSMYCMEDAL_00719_A1_000_010)
-      if L5_5 == 0 then
-        L5_5 = 2
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L7_3 = A0_3.TEXT_CTSMYCMEDAL_00719_Q1_000_000
+      L8_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A1_000_002
+      L9_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A1_000_010
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+      if L5_3 == 0 then
+        L5_3 = 2
       end
-      L5_5 = L5_5 + 2
-      if L5_5 == 3 then
-        return L5_5, A0_0.DESCRIPTION
+      L5_3 = L5_3 + 2
+      if L5_3 == 3 then
+        L6_3 = L5_3
+        L7_3 = A0_3.DESCRIPTION
+        return L6_3, L7_3
       end
-      return L5_5
+      return L5_3
     end
   end
-  function CtsMycMedal.OnScene00020(A0_6, A1_7, A2_8, A3_9, A4_10, A5_11)
-    if A5_11 < A4_10 + A0_6.supplyCertificate then
-      A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK3)
-      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_100, false)
-      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_101, true)
-      return 0
+  L0_2.OnScene00010 = L1_2
+  L0_2 = CtsMycMedal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L6_3 = A0_3.supplyCertificate
+    L6_3 = A4_3 + L6_3
+    if A5_3 < L6_3 then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK3
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_100
+      L11_3 = false
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_101
+      L11_3 = true
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+      L6_3 = 0
+      return L6_3
     end
-    if A3_9 < A0_6.passCertificate then
-      A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK3)
-      A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_110, true)
-      A0_6:Wait(10)
-      A0_6:SystemTalk(A0_6.TEXT_CTSMYCMEDAL_00719_SYSTEM_000_111, true, A0_6.passCertificate)
-      return 0
+    L6_3 = A0_3.passCertificate
+    if A3_3 < L6_3 then
+      L7_3 = A2_3
+      L6_3 = A2_3.PlayActionTimeline
+      L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK3
+      L6_3(L7_3, L8_3)
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_110
+      L11_3 = true
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.Wait
+      L8_3 = 10
+      L6_3(L7_3, L8_3)
+      L7_3 = A0_3
+      L6_3 = A0_3.SystemTalk
+      L8_3 = A0_3.TEXT_CTSMYCMEDAL_00719_SYSTEM_000_111
+      L9_3 = true
+      L10_3 = A0_3.passCertificate
+      L6_3(L7_3, L8_3, L9_3, L10_3)
+      L6_3 = 0
+      return L6_3
     end
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_120, true)
-    A0_6:Wait(10)
-    if A0_6:YesNo(A0_6.TEXT_CTSMYCMEDAL_00719_Q2_000_000, nil, nil, A0_6.DEFAULT_NO, A3_9, A0_6.passCertificate, A0_6.supplyCertificate) == false then
-      return 0
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_120
+    L11_3 = true
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.YesNo
+    L8_3 = A0_3.TEXT_CTSMYCMEDAL_00719_Q2_000_000
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = A0_3.DEFAULT_NO
+    L12_3 = A3_3
+    L13_3 = A0_3.passCertificate
+    L14_3 = A0_3.supplyCertificate
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    if L6_3 == false then
+      L7_3 = 0
+      return L7_3
     end
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_130, true)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ITEM)
-    A0_6:Wait(20)
-    A1_7:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_ITEM)
-    return 1
+    L8_3 = A2_3
+    L7_3 = A2_3.Talk
+    L9_3 = A1_3
+    L10_3 = A0_3
+    L11_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_130
+    L12_3 = true
+    L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+    L8_3 = A2_3
+    L7_3 = A2_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L7_3(L8_3, L9_3)
+    L8_3 = A0_3
+    L7_3 = A0_3.Wait
+    L9_3 = 20
+    L7_3(L8_3, L9_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.PlayActionTimeline
+    L9_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L7_3(L8_3, L9_3)
+    L7_3 = 1
+    return L7_3
   end
-  function CtsMycMedal.OnScene00025(A0_12, A1_13, A2_14, A3_15)
-    A2_14:WaitForActionTimeline(A0_12.ACTION_TIMELINE_EVENT_ITEM)
-    A1_13:WaitForActionTimeline(A0_12.ACTION_TIMELINE_EVENT_ITEM)
-    if A3_15 >= 20 then
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_145, true)
-    elseif A3_15 >= 4 then
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_140, true)
+  L0_2.OnScene00020 = L1_2
+  L0_2 = CtsMycMedal
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.WaitForActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L4_3(L5_3, L6_3)
+    if 20 <= A3_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_145
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    elseif 4 <= A3_3 then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_140
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     else
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_135, true)
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_135
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
     end
-    A0_12:Wait(10)
-    return 0
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 10
+    L4_3(L5_3, L6_3)
+    L4_3 = 0
+    return L4_3
   end
-  function CtsMycMedal.OnScene00030(A0_16, A1_17, A2_18, A3_19, A4_20, A5_21, A6_22, A7_23, A8_24, A9_25, A10_26)
-    local L11_27, L12_28, L13_29, L14_30, L15_31, L16_32, L17_33
-    L12_28 = A2_18
-    L11_27 = A2_18.PlayActionTimeline
-    L13_29 = A0_16.ACTION_TIMELINE_EVENT_ADD_YES
-    L11_27(L12_28, L13_29)
-    L12_28 = A2_18
-    L11_27 = A2_18.Talk
-    L13_29 = A1_17
-    L14_30 = A0_16
-    L15_31 = A0_16.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_210
-    L16_32 = true
-    L11_27(L12_28, L13_29, L14_30, L15_31, L16_32)
-    L12_28 = A0_16
-    L11_27 = A0_16.Wait
-    L13_29 = 10
-    L11_27(L12_28, L13_29)
-    L11_27 = {}
-    L12_28 = {}
-    L13_29 = {}
-    if A4_20 < A10_26 then
-      L14_30 = #L11_27
-      L14_30 = L14_30 + 1
-      L16_32 = A0_16
-      L15_31 = A0_16.FormatString
-      L17_33 = A0_16.TEXT_CTSMYCMEDAL_00719_A3_000_000
-      L15_31 = L15_31(L16_32, L17_33, A4_20, A10_26, A5_21)
-      L11_27[L14_30] = L15_31
-      L14_30 = #L13_29
-      L14_30 = L14_30 + 1
-      L13_29[L14_30] = 0
-      L14_30 = #L12_28
-      L14_30 = L14_30 + 1
-      L15_31 = #L12_28
-      L15_31 = L15_31 + 1
-      L12_28[L14_30] = L15_31
+  L0_2.OnScene00025 = L1_2
+  L0_2 = CtsMycMedal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3, A6_3, A7_3, A8_3, A9_3, A10_3)
+    local L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3
+    L12_3 = A2_3
+    L11_3 = A2_3.PlayActionTimeline
+    L13_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L11_3(L12_3, L13_3)
+    L12_3 = A2_3
+    L11_3 = A2_3.Talk
+    L13_3 = A1_3
+    L14_3 = A0_3
+    L15_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_210
+    L16_3 = true
+    L11_3(L12_3, L13_3, L14_3, L15_3, L16_3)
+    L12_3 = A0_3
+    L11_3 = A0_3.Wait
+    L13_3 = 10
+    L11_3(L12_3, L13_3)
+    L11_3 = {}
+    L12_3 = {}
+    L13_3 = {}
+    if A4_3 < A10_3 then
+      L14_3 = #L11_3
+      L14_3 = L14_3 + 1
+      L16_3 = A0_3
+      L15_3 = A0_3.FormatString
+      L17_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A3_000_000
+      L18_3 = A4_3
+      L19_3 = A10_3
+      L20_3 = A5_3
+      L15_3 = L15_3(L16_3, L17_3, L18_3, L19_3, L20_3)
+      L11_3[L14_3] = L15_3
+      L14_3 = #L13_3
+      L14_3 = L14_3 + 1
+      L13_3[L14_3] = 0
+      L14_3 = #L12_3
+      L14_3 = L14_3 + 1
+      L15_3 = #L12_3
+      L15_3 = L15_3 + 1
+      L12_3[L14_3] = L15_3
     end
-    if A6_22 < A10_26 then
-      L14_30 = #L11_27
-      L14_30 = L14_30 + 1
-      L16_32 = A0_16
-      L15_31 = A0_16.FormatString
-      L17_33 = A0_16.TEXT_CTSMYCMEDAL_00719_A3_000_001
-      L15_31 = L15_31(L16_32, L17_33, A6_22, A10_26, A7_23)
-      L11_27[L14_30] = L15_31
-      L14_30 = #L13_29
-      L14_30 = L14_30 + 1
-      L13_29[L14_30] = 1
-      L14_30 = #L12_28
-      L14_30 = L14_30 + 1
-      L15_31 = #L12_28
-      L15_31 = L15_31 + 1
-      L12_28[L14_30] = L15_31
+    if A6_3 < A10_3 then
+      L14_3 = #L11_3
+      L14_3 = L14_3 + 1
+      L16_3 = A0_3
+      L15_3 = A0_3.FormatString
+      L17_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A3_000_001
+      L18_3 = A6_3
+      L19_3 = A10_3
+      L20_3 = A7_3
+      L15_3 = L15_3(L16_3, L17_3, L18_3, L19_3, L20_3)
+      L11_3[L14_3] = L15_3
+      L14_3 = #L13_3
+      L14_3 = L14_3 + 1
+      L13_3[L14_3] = 1
+      L14_3 = #L12_3
+      L14_3 = L14_3 + 1
+      L15_3 = #L12_3
+      L15_3 = L15_3 + 1
+      L12_3[L14_3] = L15_3
     end
-    if A8_24 < A10_26 then
-      L14_30 = #L11_27
-      L14_30 = L14_30 + 1
-      L16_32 = A0_16
-      L15_31 = A0_16.FormatString
-      L17_33 = A0_16.TEXT_CTSMYCMEDAL_00719_A3_000_002
-      L15_31 = L15_31(L16_32, L17_33, A8_24, A10_26, A9_25)
-      L11_27[L14_30] = L15_31
-      L14_30 = #L13_29
-      L14_30 = L14_30 + 1
-      L13_29[L14_30] = 2
-      L14_30 = #L12_28
-      L14_30 = L14_30 + 1
-      L15_31 = #L12_28
-      L15_31 = L15_31 + 1
-      L12_28[L14_30] = L15_31
+    if A8_3 < A10_3 then
+      L14_3 = #L11_3
+      L14_3 = L14_3 + 1
+      L16_3 = A0_3
+      L15_3 = A0_3.FormatString
+      L17_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A3_000_002
+      L18_3 = A8_3
+      L19_3 = A10_3
+      L20_3 = A9_3
+      L15_3 = L15_3(L16_3, L17_3, L18_3, L19_3, L20_3)
+      L11_3[L14_3] = L15_3
+      L14_3 = #L13_3
+      L14_3 = L14_3 + 1
+      L13_3[L14_3] = 2
+      L14_3 = #L12_3
+      L14_3 = L14_3 + 1
+      L15_3 = #L12_3
+      L15_3 = L15_3 + 1
+      L12_3[L14_3] = L15_3
     end
-    L14_30 = #L11_27
-    L14_30 = L14_30 + 1
-    L15_31 = A0_16.TEXT_CTSMYCMEDAL_00719_A3_000_010
-    L11_27[L14_30] = L15_31
+    L14_3 = #L11_3
+    L14_3 = L14_3 + 1
+    L15_3 = A0_3.TEXT_CTSMYCMEDAL_00719_A3_000_010
+    L11_3[L14_3] = L15_3
     while true do
-      L15_31 = A0_16
-      L14_30 = A0_16.Menu
-      L17_33 = A0_16
-      L16_32 = A0_16.FormatString
-      L16_32 = L16_32(L17_33, A0_16.TEXT_CTSMYCMEDAL_00719_Q3_000_000, A3_19)
-      L17_33 = unpack
-      L17_33 = L17_33(L11_27)
-      L14_30 = L14_30(L15_31, L16_32, L17_33, L17_33(L11_27))
-      L15_31 = {
-        L16_32,
-        L17_33,
-        A9_25
-      }
-      L16_32 = A5_21
-      L17_33 = A7_23
-      if L14_30 ~= 0 then
-        L16_32 = #L11_27
-      end
-      if L14_30 == L16_32 then
-        L16_32 = 0
-        L17_33 = 0
-        return L16_32, L17_33
-      else
-        L16_32 = L12_28[L14_30]
-        L17_33 = L13_29[L14_30]
-        L17_33 = L17_33 + 1
-        L17_33 = L15_31[L17_33]
-        if A3_19 >= L17_33 then
-          L17_33 = nil
-          if L13_29[L14_30] == 0 then
-            L17_33 = A0_16:YesNo(A0_16.TEXT_CTSMYCMEDAL_00719_Q4_000_000, nil, nil, A0_16.DEFAULT_NO, A5_21)
-          elseif L13_29[L14_30] == 1 then
-            L17_33 = A0_16:YesNo(A0_16.TEXT_CTSMYCMEDAL_00719_Q4_000_001, nil, nil, A0_16.DEFAULT_NO, A7_23)
-          elseif L13_29[L14_30] == 2 then
-            L17_33 = A0_16:YesNo(A0_16.TEXT_CTSMYCMEDAL_00719_Q4_000_002, nil, nil, A0_16.DEFAULT_NO, A9_25)
-          else
-            return 0, 0
-          end
-          if L17_33 == true then
-            L16_32 = L13_29[L14_30]
-            A2_18:Talk(A1_17, A0_16, A0_16.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_250, true)
-            A0_16:Wait(10)
-            A2_18:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_ITEM)
-            A0_16:Wait(20)
-            A1_17:PlayActionTimeline(A0_16.ACTION_TIMELINE_EVENT_ITEM)
-            return 1, L16_32
-          end
-        else
-          L17_33 = A2_18.PlayActionTimeline
-          L17_33(A2_18, A0_16.ACTION_TIMELINE_EVENT_THINK)
-          L17_33 = A2_18.Talk
-          L17_33(A2_18, A1_17, A0_16, A0_16.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_230, false)
-          L17_33 = A2_18.Talk
-          L17_33(A2_18, A1_17, A0_16, A0_16.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_061, true)
-          L17_33 = A0_16.Wait
-          L17_33(A0_16, 30)
-          L17_33 = 0
-          return L17_33, 0
+      L15_3 = A0_3
+      L14_3 = A0_3.Menu
+      L17_3 = A0_3
+      L16_3 = A0_3.FormatString
+      L18_3 = A0_3.TEXT_CTSMYCMEDAL_00719_Q3_000_000
+      L19_3 = A3_3
+      L16_3 = L16_3(L17_3, L18_3, L19_3)
+      L17_3 = unpack
+      L18_3 = L11_3
+      L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3 = L17_3(L18_3)
+      L14_3 = L14_3(L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+      L15_3 = {}
+      L16_3 = A5_3
+      L17_3 = A7_3
+      L18_3 = A9_3
+      L15_3[1] = L16_3
+      L15_3[2] = L17_3
+      L15_3[3] = L18_3
+      if L14_3 ~= 0 then
+        L16_3 = #L11_3
+        if L14_3 ~= L16_3 then
+          goto lbl_100
         end
       end
+      L16_3 = 0
+      L17_3 = 0
+      do return L16_3, L17_3 end
+      goto lbl_189
+      ::lbl_100::
+      L16_3 = L12_3[L14_3]
+      L17_3 = L13_3[L14_3]
+      L17_3 = L17_3 + 1
+      L17_3 = L15_3[L17_3]
+      if A3_3 >= L17_3 then
+        L17_3 = nil
+        L18_3 = L13_3[L14_3]
+        if L18_3 == 0 then
+          L19_3 = A0_3
+          L18_3 = A0_3.YesNo
+          L20_3 = A0_3.TEXT_CTSMYCMEDAL_00719_Q4_000_000
+          L21_3 = nil
+          L22_3 = nil
+          L23_3 = A0_3.DEFAULT_NO
+          L24_3 = A5_3
+          L18_3 = L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+          L17_3 = L18_3
+        else
+          L18_3 = L13_3[L14_3]
+          if L18_3 == 1 then
+            L19_3 = A0_3
+            L18_3 = A0_3.YesNo
+            L20_3 = A0_3.TEXT_CTSMYCMEDAL_00719_Q4_000_001
+            L21_3 = nil
+            L22_3 = nil
+            L23_3 = A0_3.DEFAULT_NO
+            L24_3 = A7_3
+            L18_3 = L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+            L17_3 = L18_3
+          else
+            L18_3 = L13_3[L14_3]
+            if L18_3 == 2 then
+              L19_3 = A0_3
+              L18_3 = A0_3.YesNo
+              L20_3 = A0_3.TEXT_CTSMYCMEDAL_00719_Q4_000_002
+              L21_3 = nil
+              L22_3 = nil
+              L23_3 = A0_3.DEFAULT_NO
+              L24_3 = A9_3
+              L18_3 = L18_3(L19_3, L20_3, L21_3, L22_3, L23_3, L24_3)
+              L17_3 = L18_3
+            else
+              L18_3 = 0
+              L19_3 = 0
+              return L18_3, L19_3
+            end
+          end
+        end
+        if L17_3 == true then
+          L16_3 = L13_3[L14_3]
+          L19_3 = A2_3
+          L18_3 = A2_3.Talk
+          L20_3 = A1_3
+          L21_3 = A0_3
+          L22_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_250
+          L23_3 = true
+          L18_3(L19_3, L20_3, L21_3, L22_3, L23_3)
+          L19_3 = A0_3
+          L18_3 = A0_3.Wait
+          L20_3 = 10
+          L18_3(L19_3, L20_3)
+          L19_3 = A2_3
+          L18_3 = A2_3.PlayActionTimeline
+          L20_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+          L18_3(L19_3, L20_3)
+          L19_3 = A0_3
+          L18_3 = A0_3.Wait
+          L20_3 = 20
+          L18_3(L19_3, L20_3)
+          L19_3 = A1_3
+          L18_3 = A1_3.PlayActionTimeline
+          L20_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+          L18_3(L19_3, L20_3)
+          L18_3 = 1
+          L19_3 = L16_3
+          return L18_3, L19_3
+        end
+      else
+        L18_3 = A2_3
+        L17_3 = A2_3.PlayActionTimeline
+        L19_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+        L17_3(L18_3, L19_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_230
+        L22_3 = false
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3)
+        L18_3 = A2_3
+        L17_3 = A2_3.Talk
+        L19_3 = A1_3
+        L20_3 = A0_3
+        L21_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_061
+        L22_3 = true
+        L17_3(L18_3, L19_3, L20_3, L21_3, L22_3)
+        L18_3 = A0_3
+        L17_3 = A0_3.Wait
+        L19_3 = 30
+        L17_3(L18_3, L19_3)
+        L17_3 = 0
+        L18_3 = 0
+        return L17_3, L18_3
+      end
+      ::lbl_189::
     end
   end
-  function CtsMycMedal.OnScene00040(A0_34, A1_35, A2_36, A3_37)
-    A2_36:CancelActionTimelineAll()
-    A2_36:TurnTo(0, false, true)
-    A2_36:WaitForTurn()
-    A2_36:Idle(A0_34.ACTION_TIMELINE_EVENT_BASE_IDLE)
-    A1_35:Position(A2_36, A0_34.ARRANGE_TYPE_FRONT, 2.5)
-    A1_35:Direction(A2_36)
-    A1_35:LookAt(A2_36)
-    A1_35:PlayActionTimeline(A0_34.ACTION_TIMELINE_FACIAL_BOSSY, nil, A0_34.AUTO_SHAKE_TIMELINE)
-    A0_34:PlayTwoShotCamera(A0_34.TWOSHOT_TYPE_RIGHT_ZOOM, A2_36, A1_35)
-    A0_34:Orbit(-15, -15, 0, 0, 0)
-    A0_34:UpdownPan(-2, -2, 0, 0, 0)
-    A0_34:Zoom(0.2, 0.2, 0, 0, 0)
-    A0_34:ChangeBGMVolume(0)
-    A0_34:Wait(30)
-    A0_34:PlayBGM(A0_34.BGM_MUSIC_NO_MUSIC)
-    A0_34:FadeIn(A0_34.FADE_DEFAULT)
-    A0_34:WaitForFade()
-    A0_34:PlayBGM(A0_34.BGM_MUSIC_EVENT_VICTORY_01)
-    A0_34:ChangeBGMVolume(0.5)
-    A2_36:PlayActionTimeline(A0_34.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_270, false)
-    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_271, true)
-    A0_34:Wait(10)
-    A0_34:PlayTargetRelationCamera(A2_36, -9.9222, 1.7211, 1.403, 89.2148, 0.2314, 1.6969, 1.7969)
-    A0_34:Wait(15)
-    A2_36:PlayActionTimeline(A0_34.ACTION_TIMELINE_EVENT_TALK2)
-    A2_36:Talk(A1_35, A0_34, A0_34.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_272, true)
-    A0_34:Wait(10)
-    A2_36:PlayActionTimeline(A0_34.ACTION_TIMELINE_EMOTE_SALUTE)
-    A0_34:Wait(60)
-    A0_34:PlayCamera(9, A1_35)
-    A0_34:Zoom(-0.1, -0.1, 0, 0, 0)
-    A0_34:Orbit(-20, -20, 0, 0, 0)
-    A0_34:Wait(15)
-    A1_35:PlayActionTimeline(A0_34.ACTION_TIMELINE_EVENT_SPIRIT)
-    A1_35:WaitForActionTimeline(A0_34.ACTION_TIMELINE_EVENT_SPIRIT)
-    A0_34:SystemTalk(A0_34.TEXT_CTSMYCMEDAL_00719_SYSTEM_000_273, true)
-    A0_34:Wait(10)
-    A0_34:FadeOut(A0_34.FADE_DEFAULT)
-    A0_34:WaitForFade()
-    A0_34:DisableSceneSkip()
-    A1_35:CancelActionTimelineAll()
-    A0_34:Wait(30)
-    A0_34:EnableSceneSkip()
-    return A3_37
+  L0_2.OnScene00030 = L1_2
+  L0_2 = CtsMycMedal
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L5_3 = A1_3
+    L4_3 = A1_3.GetRace
+    L4_3 = L4_3(L5_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.CancelActionTimelineAll
+    L5_3(L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = 0
+    L8_3 = false
+    L9_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Idle
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Position
+    L7_3 = A2_3
+    L8_3 = A0_3.ARRANGE_TYPE_FRONT
+    L9_3 = 2.5
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Direction
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_FACIAL_BOSSY
+    L8_3 = nil
+    L9_3 = A0_3.AUTO_SHAKE_TIMELINE
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayTwoShotCamera
+    L7_3 = A0_3.TWOSHOT_TYPE_RIGHT_ZOOM
+    L8_3 = A2_3
+    L9_3 = A1_3
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Orbit
+    L7_3 = -15
+    L8_3 = -15
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.UpdownPan
+    L7_3 = -2
+    L8_3 = -2
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Zoom
+    L7_3 = 0.2
+    L8_3 = 0.2
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.ChangeBGMVolume
+    L7_3 = 0
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 30
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayBGM
+    L7_3 = A0_3.BGM_MUSIC_NO_MUSIC
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.FadeIn
+    L7_3 = A0_3.FADE_DEFAULT
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.WaitForFade
+    L5_3(L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayBGM
+    L7_3 = A0_3.BGM_MUSIC_EVENT_VICTORY_01
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.ChangeBGMVolume
+    L7_3 = 0.5
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_270
+    L10_3 = false
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_271
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayTargetRelationCamera
+    L7_3 = A2_3
+    L8_3 = -9.9222
+    L9_3 = 1.7211
+    L10_3 = 1.403
+    L11_3 = 89.2148
+    L12_3 = 0.2314
+    L13_3 = 1.6969
+    L14_3 = 1.7969
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 15
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_272
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EMOTE_SALUTE
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 60
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayCamera
+    L7_3 = 9
+    L8_3 = A1_3
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Zoom
+    L7_3 = -0.1
+    L8_3 = -0.1
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Orbit
+    L7_3 = -20
+    L8_3 = -20
+    L9_3 = 0
+    L10_3 = 0
+    L11_3 = 0
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 15
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_SPIRIT
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.WaitForActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_SPIRIT
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.SystemTalk
+    L7_3 = A0_3.TEXT_CTSMYCMEDAL_00719_SYSTEM_000_273
+    L8_3 = true
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.FadeOut
+    L7_3 = A0_3.FADE_DEFAULT
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.WaitForFade
+    L5_3(L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.DisableSceneSkip
+    L5_3(L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.CancelActionTimelineAll
+    L5_3(L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 30
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.EnableSceneSkip
+    L5_3(L6_3)
+    return A3_3
   end
-  function CtsMycMedal.OnScene00045(A0_38, A1_39, A2_40)
-    A2_40:WaitForActionTimeline(A0_38.ACTION_TIMELINE_EVENT_ITEM)
-    A1_39:WaitForActionTimeline(A0_38.ACTION_TIMELINE_EVENT_ITEM)
-    A2_40:Talk(A1_39, A0_38, A0_38.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_251, true)
-    A0_38:Wait(10)
-    return 0
+  L0_2.OnScene00040 = L1_2
+  L0_2 = CtsMycMedal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.WaitForActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSMYCMEDAL_00719_RESISTANCECOUNCILOR_000_251
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L3_3 = 0
+    return L3_3
   end
-end)()
-;(function()
-  local L0_41
-  L0_41 = CtsMycMedal
-  L0_41.SCRIPT_VERSION = 2
-  L0_41 = CtsMycMedal
-  function L0_41.OnInitialize(A0_42)
-    A0_42:AddNestEventHandler(A0_42.DESCRIPTION)
+  L0_2.OnScene00045 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsMycMedal
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = CtsMycMedal
+  function L1_2(A0_3)
+    local L1_3, L2_3, L3_3
+    L2_3 = A0_3
+    L1_3 = A0_3.AddNestEventHandler
+    L3_3 = A0_3.DESCRIPTION
+    L1_3(L2_3, L3_3)
   end
-end)()
+  L0_2.OnInitialize = L1_2
+end
+L0_1()

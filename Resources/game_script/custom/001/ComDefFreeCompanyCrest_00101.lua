@@ -1,146 +1,227 @@
-(function()
-  print("ComDefFreeCompanyCrest")
-  function ComDefFreeCompanyCrest.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6, L7_7, L8_8, L9_9, L10_10, L11_11, L12_12, L13_13, L14_14, L15_15, L16_16, L17_17, L18_18, L19_19, L20_20, L21_21, L22_22
-    L4_4 = A0_0
-    L3_3 = A0_0.GetFcStatus
-    L12_12 = L3_3(L4_4)
-    L14_14 = A0_0
-    L13_13 = A0_0.GetNpcGrandCompany
-    L15_15 = A1_1
-    L16_16 = A2_2
-    L13_13 = L13_13(L14_14, L15_15, L16_16)
-    L14_14 = 0
-    L16_16 = A2_2
-    L15_15 = A2_2.GetBaseId
-    L15_15 = L15_15(L16_16)
-    L16_16 = A0_0.NPC_OF_LIMSA
-    if L15_15 == L16_16 then
-      L14_14 = 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ComDefFreeCompanyCrest"
+  L0_2(L1_2)
+  L0_2 = ComDefFreeCompanyCrest
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3, L26_3, L27_3, L28_3, L29_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetFcStatus
+    L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3 = L3_3(L4_3)
+    L14_3 = A0_3
+    L13_3 = A0_3.GetNpcGrandCompany
+    L15_3 = A1_3
+    L16_3 = A2_3
+    L13_3 = L13_3(L14_3, L15_3, L16_3)
+    L14_3 = 0
+    L16_3 = A2_3
+    L15_3 = A2_3.GetBaseId
+    L15_3 = L15_3(L16_3)
+    L16_3 = A0_3.NPC_OF_LIMSA
+    if L15_3 == L16_3 then
+      L14_3 = 1
     else
-      L16_16 = A2_2
-      L15_15 = A2_2.GetBaseId
-      L15_15 = L15_15(L16_16)
-      L16_16 = A0_0.NPC_OF_GRIDANIA
-      if L15_15 == L16_16 then
-        L14_14 = 2
+      L16_3 = A2_3
+      L15_3 = A2_3.GetBaseId
+      L15_3 = L15_3(L16_3)
+      L16_3 = A0_3.NPC_OF_GRIDANIA
+      if L15_3 == L16_3 then
+        L14_3 = 2
       else
-        L14_14 = 3
+        L14_3 = 3
       end
     end
-    L16_16 = A2_2
-    L15_15 = A2_2.TurnTo
-    L17_17 = A1_1
-    L15_15(L16_16, L17_17)
-    L16_16 = A2_2
-    L15_15 = A2_2.WaitForTurn
-    L15_15(L16_16)
-    L16_16 = A2_2
-    L15_15 = A2_2.PlayActionTimeline
-    L17_17 = A0_0.ACTION_TIMELINE_EVENT_TALK2
-    L18_18 = A1_1
-    L15_15(L16_16, L17_17, L18_18)
-    L16_16 = A2_2
-    L15_15 = A2_2.Talk
-    L17_17 = A1_1
-    L18_18 = A0_0
-    L19_19 = A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR01
-    L20_20 = true
-    L21_21, L22_22 = nil, nil
-    L15_15(L16_16, L17_17, L18_18, L19_19, L20_20, L21_21, L22_22, nil, nil, L14_14)
-    L16_16 = A0_0
-    L15_15 = A0_0.GetNpcGrandCompany
-    L17_17 = A1_1
-    L18_18 = A2_2
-    L15_15 = L15_15(L16_16, L17_17, L18_18)
-    L16_16 = A0_0.FC_STATUS_TYPE_NORMAL
-    if L3_3 ~= L16_16 then
-      L17_17 = A2_2
-      L16_16 = A2_2.Talk
-      L18_18 = A1_1
-      L19_19 = A0_0
-      L20_20 = A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ERR1
-      L21_21 = true
-      L16_16(L17_17, L18_18, L19_19, L20_20, L21_21)
+    L16_3 = A2_3
+    L15_3 = A2_3.TurnTo
+    L17_3 = A1_3
+    L15_3(L16_3, L17_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.WaitForTurn
+    L15_3(L16_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.PlayActionTimeline
+    L17_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L18_3 = A1_3
+    L15_3(L16_3, L17_3, L18_3)
+    L16_3 = A2_3
+    L15_3 = A2_3.Talk
+    L17_3 = A1_3
+    L18_3 = A0_3
+    L19_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR01
+    L20_3 = true
+    L21_3 = nil
+    L22_3 = nil
+    L23_3 = nil
+    L24_3 = nil
+    L25_3 = L14_3
+    L15_3(L16_3, L17_3, L18_3, L19_3, L20_3, L21_3, L22_3, L23_3, L24_3, L25_3)
+    L16_3 = A0_3
+    L15_3 = A0_3.GetNpcGrandCompany
+    L17_3 = A1_3
+    L18_3 = A2_3
+    L15_3 = L15_3(L16_3, L17_3, L18_3)
+    L16_3 = A0_3.FC_STATUS_TYPE_NORMAL
+    if L3_3 ~= L16_3 then
+      L17_3 = A2_3
+      L16_3 = A2_3.Talk
+      L18_3 = A1_3
+      L19_3 = A0_3
+      L20_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ERR1
+      L21_3 = true
+      L16_3(L17_3, L18_3, L19_3, L20_3, L21_3)
       return
     end
-    if L4_4 ~= L15_15 then
-      L17_17 = A2_2
-      L16_16 = A2_2.Talk
-      L18_18 = A1_1
-      L19_19 = A0_0
-      L20_20 = A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ERR3
-      L21_21 = true
-      L16_16(L17_17, L18_18, L19_19, L20_20, L21_21)
+    if L4_3 ~= L15_3 then
+      L17_3 = A2_3
+      L16_3 = A2_3.Talk
+      L18_3 = A1_3
+      L19_3 = A0_3
+      L20_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ERR3
+      L21_3 = true
+      L16_3(L17_3, L18_3, L19_3, L20_3, L21_3)
       return
     end
-    L16_16 = {L17_17, L18_18}
-    L17_17 = A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A1
-    L18_18 = 1
-    L17_17 = {L18_18, L19_19}
-    L18_18 = A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A2
-    L19_19 = 2
-    L18_18 = {L19_19, L20_20}
-    L19_19 = A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A3
-    L20_20 = 3
-    L19_19 = {L20_20, L21_21}
-    L20_20 = A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A4
-    L21_21 = 4
-    L20_20 = 1
-    L21_21 = {}
-    if L11_11 == 1 then
-      L21_21[L20_20] = L16_16
-      L20_20 = L20_20 + 1
-      if L12_12 == 1 then
-        L21_21[L20_20] = L17_17
-        L20_20 = L20_20 + 1
+    L16_3 = {}
+    L17_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A1
+    L18_3 = 1
+    L16_3[1] = L17_3
+    L16_3[2] = L18_3
+    L17_3 = {}
+    L18_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A2
+    L19_3 = 2
+    L17_3[1] = L18_3
+    L17_3[2] = L19_3
+    L18_3 = {}
+    L19_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A3
+    L20_3 = 3
+    L18_3[1] = L19_3
+    L18_3[2] = L20_3
+    L19_3 = {}
+    L20_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_A4
+    L21_3 = 4
+    L19_3[1] = L20_3
+    L19_3[2] = L21_3
+    L20_3 = 1
+    L21_3 = {}
+    if L11_3 == 1 then
+      L21_3[L20_3] = L16_3
+      L20_3 = L20_3 + 1
+      if L12_3 == 1 then
+        L21_3[L20_3] = L17_3
+        L20_3 = L20_3 + 1
       end
-      L21_21[L20_20] = L18_18
-      L20_20 = L20_20 + 1
-      L21_21[L20_20] = L19_19
-    elseif L12_12 == 1 then
-      L21_21[L20_20] = L17_17
-      L20_20 = L20_20 + 1
-      L21_21[L20_20] = L18_18
-      L20_20 = L20_20 + 1
-      L21_21[L20_20] = L19_19
+      L21_3[L20_3] = L18_3
+      L20_3 = L20_3 + 1
+      L21_3[L20_3] = L19_3
+    elseif L12_3 == 1 then
+      L21_3[L20_3] = L17_3
+      L20_3 = L20_3 + 1
+      L21_3[L20_3] = L18_3
+      L20_3 = L20_3 + 1
+      L21_3[L20_3] = L19_3
     else
-      L21_21[L20_20] = L18_18
-      L20_20 = L20_20 + 1
-      L21_21[L20_20] = L19_19
+      L21_3[L20_3] = L18_3
+      L20_3 = L20_3 + 1
+      L21_3[L20_3] = L19_3
     end
-    L22_22 = {}
-    for _FORV_26_ = 1, #L21_21 do
-      L22_22[_FORV_26_] = L21_21[_FORV_26_][1]
+    L22_3 = {}
+    L23_3 = 1
+    L24_3 = #L21_3
+    L25_3 = 1
+    for L26_3 = L23_3, L24_3, L25_3 do
+      L27_3 = L21_3[L26_3]
+      L27_3 = L27_3[1]
+      L22_3[L26_3] = L27_3
     end
-    if 0 < A0_0:Menu(A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_Q1, unpack(L22_22)) and A0_0:Menu(A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_Q1, unpack(L22_22)) <= #L21_21 then
+    L24_3 = A0_3
+    L23_3 = A0_3.Menu
+    L25_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_Q1
+    L26_3 = unpack
+    L27_3 = L22_3
+    L26_3, L27_3, L28_3, L29_3 = L26_3(L27_3)
+    L23_3 = L23_3(L24_3, L25_3, L26_3, L27_3, L28_3, L29_3)
+    if 0 < L23_3 then
+      L24_3 = #L21_3
+      if L23_3 <= L24_3 then
+        L24_3 = L21_3[L23_3]
+        L23_3 = L24_3[2]
+      end
     end
-    if L21_21[A0_0:Menu(A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_Q1, unpack(L22_22))][2] == 1 then
-      A0_0:FreeCompanyCrestEditor()
-    elseif L21_21[A0_0:Menu(A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_Q1, unpack(L22_22))][2] == 2 then
-      A0_0:FreeCompanyCrestDecal()
-    elseif L21_21[A0_0:Menu(A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_Q1, unpack(L22_22))][2] == 3 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2, A1_1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_010, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_011, false)
-      A0_0:SystemTalk(A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_012, false)
-      A0_0:SystemTalk(A0_0.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_013, true)
+    if L23_3 == 1 then
+      L25_3 = A0_3
+      L24_3 = A0_3.FreeCompanyCrestEditor
+      L24_3(L25_3)
+    elseif L23_3 == 2 then
+      L25_3 = A0_3
+      L24_3 = A0_3.FreeCompanyCrestDecal
+      L24_3(L25_3)
+    elseif L23_3 == 3 then
+      L25_3 = A2_3
+      L24_3 = A2_3.PlayActionTimeline
+      L26_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L27_3 = A1_3
+      L24_3(L25_3, L26_3, L27_3)
+      L25_3 = A2_3
+      L24_3 = A2_3.Talk
+      L26_3 = A1_3
+      L27_3 = A0_3
+      L28_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_010
+      L29_3 = false
+      L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+      L25_3 = A2_3
+      L24_3 = A2_3.Talk
+      L26_3 = A1_3
+      L27_3 = A0_3
+      L28_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_011
+      L29_3 = false
+      L24_3(L25_3, L26_3, L27_3, L28_3, L29_3)
+      L25_3 = A0_3
+      L24_3 = A0_3.SystemTalk
+      L26_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_012
+      L27_3 = false
+      L24_3(L25_3, L26_3, L27_3)
+      L25_3 = A0_3
+      L24_3 = A0_3.SystemTalk
+      L26_3 = A0_3.TEXT_COMDEFFREECOMPANYCREST_00101_TALK_ACTOR_013
+      L27_3 = true
+      L24_3(L25_3, L26_3, L27_3)
     end
   end
-end)()
-;(function()
-  local L0_23
-  L0_23 = ComDefFreeCompanyCrest
-  L0_23.SCRIPT_VERSION = 1
-  L0_23 = ComDefFreeCompanyCrest
-  function L0_23.GetNpcGrandCompany(A0_24, A1_25, A2_26)
-    if A2_26:GetBaseId() == A0_24.NPC_OF_LIMSA then
-      return A0_24.MAELSTROM
-    elseif A2_26:GetBaseId() == A0_24.NPC_OF_GRIDANIA then
-      return A0_24.ORDER_OF_TWIN_ADDER
-    elseif A2_26:GetBaseId() == A0_24.NPC_OF_ULDAH then
-      return A0_24.IMMORTAL_FLAMES
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ComDefFreeCompanyCrest
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = ComDefFreeCompanyCrest
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.NPC_OF_LIMSA
+    if L3_3 == L4_3 then
+      L4_3 = A0_3.MAELSTROM
+      return L4_3
+    else
+      L4_3 = A0_3.NPC_OF_GRIDANIA
+      if L3_3 == L4_3 then
+        L4_3 = A0_3.ORDER_OF_TWIN_ADDER
+        return L4_3
+      else
+        L4_3 = A0_3.NPC_OF_ULDAH
+        if L3_3 == L4_3 then
+          L4_3 = A0_3.IMMORTAL_FLAMES
+          return L4_3
+        end
+      end
     end
-    return A0_24.GRAND_COMPANY_INVALID
+    L4_3 = A0_3.GRAND_COMPANY_INVALID
+    return L4_3
   end
-end)()
+  L0_2.GetNpcGrandCompany = L1_2
+end
+L0_1()

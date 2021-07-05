@@ -1,455 +1,1200 @@
-(function()
-  print("CmnDefWeddingRecovery")
-  function CmnDefWeddingRecovery.OnScene00000(A0_0, A1_1, A2_2, A3_3)
-    local L4_4
-    L4_4 = 0
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefWeddingRecovery"
+  L0_2(L1_2)
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3
+    L4_3 = 0
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
     if A3_3 == 1 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_950, true)
-      if A0_0:Menu(A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q10_000_950, A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_A10_000_951, A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_A10_000_952) == 1 then
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_240, true)
-        A0_0:SystemTalk(A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_240, true)
-        L4_4 = 1
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_950
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q10_000_950
+      L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A10_000_951
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A10_000_952
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+      if L5_3 == 1 then
+        L7_3 = A2_3
+        L6_3 = A2_3.PlayActionTimeline
+        L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L6_3(L7_3, L8_3)
+        L7_3 = A2_3
+        L6_3 = A2_3.Talk
+        L8_3 = A1_3
+        L9_3 = A0_3
+        L10_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_240
+        L11_3 = true
+        L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.SystemTalk
+        L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_240
+        L9_3 = true
+        L6_3(L7_3, L8_3, L9_3)
+        L4_3 = 1
       end
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_BOW)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_000, true)
-      A0_0:SystemTalk(A0_0.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_001, true)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_000
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_001
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
     end
-    return L4_4
+    return L4_3
   end
-  function CmnDefWeddingRecovery.OnScene00001(A0_5, A1_6, A2_7, ...)
-    local L4_9, L5_10, L6_11, L7_12, L8_13, L9_14, L10_15, L11_16, L12_17, L13_18, L14_19
-    L4_9 = 0
-    L5_10 = 0
-    L6_11 = {
-      [9] = ...
-    }
-    L14_19 = ...
-    ;({
-      [9] = ...
-    })[1] = L7_12
-    ;({
-      [9] = ...
-    })[2] = L8_13
-    ;({
-      [9] = ...
-    })[3] = L9_14
-    ;({
-      [9] = ...
-    })[4] = L10_15
-    ;({
-      [9] = ...
-    })[5] = L11_16
-    ;({
-      [9] = ...
-    })[6] = L12_17
-    ;({
-      [9] = ...
-    })[7] = L13_18
-    ;({
-      [9] = ...
-    })[8] = L14_19
-    L7_12 = {}
-    L8_13 = A2_7.Talk
-    L12_17 = A0_5.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_241
-    L13_18 = true
-    L8_13(L9_14, L10_15, L11_16, L12_17, L13_18)
-    L8_13 = 1
-    for L12_17, L13_18 in L9_14(L10_15) do
-      L14_19 = A0_5.FormatString
-      L14_19 = L14_19(A0_5, A0_5.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_900, L13_18)
-      if L14_19 ~= nil then
-        L8_13 = L8_13 + 1
-        table.insert(L7_12, L14_19)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L4_3 = 0
+    L5_3 = 0
+    L6_3 = {}
+    L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3 = ...
+    L6_3[1] = L7_3
+    L6_3[2] = L8_3
+    L6_3[3] = L9_3
+    L6_3[4] = L10_3
+    L6_3[5] = L11_3
+    L6_3[6] = L12_3
+    L6_3[7] = L13_3
+    L6_3[8] = L14_3
+    L6_3[9] = L15_3
+    L6_3[10] = L16_3
+    L6_3[11] = L17_3
+    L7_3 = {}
+    L9_3 = A2_3
+    L8_3 = A2_3.Talk
+    L10_3 = A1_3
+    L11_3 = A0_3
+    L12_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_241
+    L13_3 = true
+    L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+    L8_3 = 1
+    L9_3 = pairs
+    L10_3 = L6_3
+    L9_3, L10_3, L11_3 = L9_3(L10_3)
+    for L12_3, L13_3 in L9_3, L10_3, L11_3 do
+      L15_3 = A0_3
+      L14_3 = A0_3.FormatString
+      L16_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_900
+      L17_3 = L13_3
+      L14_3 = L14_3(L15_3, L16_3, L17_3)
+      if L14_3 ~= nil then
+        L8_3 = L8_3 + 1
+        L15_3 = table
+        L15_3 = L15_3.insert
+        L16_3 = L7_3
+        L17_3 = L14_3
+        L15_3(L16_3, L17_3)
       else
-        return L4_9
+        return L4_3
       end
     end
-    L9_14(L10_15, L11_16)
-    L12_17 = unpack
-    L13_18 = L7_12
-    L14_19 = L12_17(L13_18)
-    if L9_14 > 0 then
-      if L8_13 <= L9_14 then
-        L10_15(L11_16)
+    L9_3 = table
+    L9_3 = L9_3.insert
+    L10_3 = L7_3
+    L11_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A6_000_254
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Menu
+    L11_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q6_000_250
+    L12_3 = unpack
+    L13_3 = L7_3
+    L12_3, L13_3, L14_3, L15_3, L16_3, L17_3 = L12_3(L13_3)
+    L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+    if 0 < L9_3 then
+      if L8_3 <= L9_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.CancelEventScene
+        L10_3(L11_3)
       end
-      L5_10 = L6_11[L9_14]
-      L12_17 = L5_10
-      if L10_15 == true then
-        L12_17 = A0_5
-        L13_18 = A0_5.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q9_000_260
-        L14_19 = A0_5.TEXT_CMNDEFWEDDINGRECOVERY_00214_A9_000_261
-        if L10_15 == 1 then
-          L4_9 = 1
+      L5_3 = L6_3[L9_3]
+      L11_3 = A0_3
+      L10_3 = A0_3.npcTradeWeddingItem
+      L12_3 = L5_3
+      L10_3 = L10_3(L11_3, L12_3)
+      if L10_3 == true then
+        L10_3 = 0
+        L12_3 = A0_3
+        L11_3 = A0_3.Menu
+        L13_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q9_000_260
+        L14_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A9_000_261
+        L15_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A9_000_262
+        L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3)
+        L10_3 = L11_3
+        if L10_3 == 1 then
+          L4_3 = 1
         else
-          L12_17 = A0_5
-          L11_16(L12_17)
+          L12_3 = A0_3
+          L11_3 = A0_3.CancelNpcTrade
+          L11_3(L12_3)
         end
       end
     end
-    return L10_15, L11_16
+    L10_3 = L4_3
+    L11_3 = L5_3
+    return L10_3, L11_3
   end
-  function CmnDefWeddingRecovery.OnScene00002(A0_20, A1_21, A2_22)
-    A2_22:PlayActionTimeline(A0_20.ACTION_TIMELINE_EVENT_TALK2)
-    A2_22:Talk(A1_21, A0_20, A0_20.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_270, true)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_270
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnDefWeddingRecovery.OnScene00003(A0_23, A1_24, A2_25)
-    A0_23:SystemTalk(A0_23.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_271, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_271
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnDefWeddingRecovery.OnScene00004(A0_26, A1_27, A2_28)
-    local L3_29, L4_30
-    L4_30 = A2_28
-    L3_29 = A2_28.TurnTo
-    L3_29(L4_30, A1_27, false)
-    L4_30 = A2_28
-    L3_29 = A2_28.WaitForTurn
-    L3_29(L4_30)
-    L3_29 = 0
-    L4_30 = A2_28.PlayActionTimeline
-    L4_30(A2_28, A0_26.ACTION_TIMELINE_EVENT_TALK2)
-    L4_30 = A2_28.Talk
-    L4_30(A2_28, A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_010, true)
-    L4_30 = A0_26.Menu
-    L4_30 = L4_30(A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q2_000_030, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_031, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_032, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_100_032, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_033, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_034, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_035, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_101_035, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_102_035, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_100_035, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_036)
-    if L4_30 ~= 9 then
-      if L4_30 == 1 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK1)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_050, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_051, false)
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EMOTE_NO)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_052, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_053, false)
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_054, false)
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK2)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_055, true)
-      elseif L4_30 == 2 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK1)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_060, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_061, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_062, false)
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_063, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_064, true)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_065, true)
-      elseif L4_30 == 3 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK1)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_100_060, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_061, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_062, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_063, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_064, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_065, false)
-        if A1_27:IsQuestAccepted(A0_26.QUEST_WEDDING) == true then
-          A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_066, false, A1_27:GetWeddingPlan() + 1)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L3_3 = 0
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_010
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Menu
+    L6_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q2_000_030
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_031
+    L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_032
+    L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_100_032
+    L10_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_033
+    L11_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_034
+    L12_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_035
+    L13_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_101_035
+    L14_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_102_035
+    L15_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_100_035
+    L16_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A2_000_036
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+    if L4_3 ~= 9 then
+      if L4_3 == 1 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_050
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_051
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EMOTE_NO
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_052
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_053
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_054
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_055
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      elseif L4_3 == 2 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_060
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_061
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_062
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_063
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_064
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_065
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 3 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_100_060
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_061
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_062
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_063
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_064
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_065
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A1_3
+        L5_3 = A1_3.IsQuestAccepted
+        L7_3 = A0_3.QUEST_WEDDING
+        L5_3 = L5_3(L6_3, L7_3)
+        if L5_3 == true then
+          L6_3 = A1_3
+          L5_3 = A1_3.GetWeddingPlan
+          L5_3 = L5_3(L6_3)
+          L7_3 = A0_3
+          L6_3 = A0_3.SystemTalk
+          L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_066
+          L9_3 = false
+          L10_3 = L5_3 + 1
+          L6_3(L7_3, L8_3, L9_3, L10_3)
         end
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_067, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_068, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_101_068, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_069, true)
-      elseif L4_30 == 4 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK1)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_070, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_071, false)
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_072, false)
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK2)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_073, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_074, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_075, false)
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK1)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_076, true)
-      elseif L4_30 == 5 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK2)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_080, true)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_081, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_082, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_083, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_083, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_084, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_085, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_086, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_087, false)
-        if A1_27:IsQuestAccepted(A0_26.QUEST_WEDDING) == true then
-          A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_088, true, A1_27:GetWeddingPlan() + 1)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_067
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_068
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_101_068
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_069
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 4 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_070
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_071
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_072
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_073
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_074
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_075
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_076
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      elseif L4_3 == 5 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_080
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_081
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_082
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_083
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_083
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_084
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_085
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_086
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_087
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A1_3
+        L5_3 = A1_3.IsQuestAccepted
+        L7_3 = A0_3.QUEST_WEDDING
+        L5_3 = L5_3(L6_3, L7_3)
+        if L5_3 == true then
+          L6_3 = A1_3
+          L5_3 = A1_3.GetWeddingPlan
+          L5_3 = L5_3(L6_3)
+          L7_3 = A0_3
+          L6_3 = A0_3.SystemTalk
+          L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_088
+          L9_3 = true
+          L10_3 = L5_3 + 1
+          L6_3(L7_3, L8_3, L9_3, L10_3)
         end
-      elseif L4_30 == 6 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK2)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_090, true)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_091, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_091, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_092, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_093, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_094, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_095, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_096, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_097, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_098, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_099, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_100, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_101, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_102, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_103, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_104, true)
-      elseif L4_30 == 7 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK2)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_120_100, false)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_120_101, true)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_120_102, true)
-      elseif L4_30 == 8 then
-        A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK2)
-        A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_130_100, true)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_101, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_102, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_103, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_104, true)
+      elseif L4_3 == 6 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_090
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_091
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_091
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_092
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_093
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_094
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_095
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_096
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_097
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_098
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_099
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_100
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_101
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_102
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_103
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_104
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 7 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_120_100
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_120_101
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_120_102
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+      elseif L4_3 == 8 then
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_130_100
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_101
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_102
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_103
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_130_104
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
       end
     else
-      A2_28:PlayActionTimeline(A0_26.ACTION_TIMELINE_EVENT_TALK1)
-      A2_28:Talk(A1_27, A0_26, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_130, true)
-      A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_131, false)
-      A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_131, false)
-      A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_132, true)
-      L4_30 = A0_26:Menu(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q3_000_140, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_000_141, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_000_142)
-      if L4_30 == 1 then
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_142, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_101_142, false)
-        A0_26:SystemTalk(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_101_143, true)
-        L4_30 = A0_26:Menu(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q3_100_143, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_100_144, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_100_145)
-        if L4_30 == 1 then
-          L4_30 = A0_26:Menu(A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q3_200_146, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_200_147, A0_26.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_200_148)
-          if L4_30 == 1 then
-            L3_29 = 1
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_130
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_131
+      L8_3 = false
+      L5_3(L6_3, L7_3, L8_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_131
+      L8_3 = false
+      L5_3(L6_3, L7_3, L8_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_132
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.Menu
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q3_000_140
+      L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_000_141
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_000_142
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+      L4_3 = L5_3
+      if L4_3 == 1 then
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_142
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_101_142
+        L8_3 = false
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.SystemTalk
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_101_143
+        L8_3 = true
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Menu
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q3_100_143
+        L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_100_144
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_100_145
+        L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+        L4_3 = L5_3
+        if L4_3 == 1 then
+          L6_3 = A0_3
+          L5_3 = A0_3.Menu
+          L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q3_200_146
+          L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_200_147
+          L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A3_200_148
+          L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+          L4_3 = L5_3
+          if L4_3 == 1 then
+            L3_3 = 1
           end
         end
       end
     end
-    return L3_29
+    return L3_3
   end
-  function CmnDefWeddingRecovery.OnScene00005(A0_31, A1_32, A2_33, ...)
-    local L4_35, L5_36
-    L4_35 = 0
-    L5_36 = select
-    L5_36 = L5_36("#", ...)
-    if L5_36 == 0 then
-      return L4_35
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = 0
+    L5_3 = select
+    L6_3 = "#"
+    L7_3, L8_3 = ...
+    L5_3 = L5_3(L6_3, L7_3, L8_3)
+    if L5_3 == 0 then
+      return L4_3
     end
-    L5_36 = {
-      ...
-    }
-    if A0_31:npcTradeWeddingItem(L5_36[1]) == true then
-      L4_35 = 1
+    L5_3 = {}
+    L6_3, L7_3, L8_3 = ...
+    L5_3[1] = L6_3
+    L5_3[2] = L7_3
+    L5_3[3] = L8_3
+    L7_3 = A0_3
+    L6_3 = A0_3.npcTradeWeddingItem
+    L8_3 = L5_3[1]
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 == true then
+      L4_3 = 1
     end
-    return L4_35
+    return L4_3
   end
-  function CmnDefWeddingRecovery.OnScene00006(A0_37, A1_38, A2_39)
-    A2_39:Talk(A1_38, A0_37, A0_37.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_165, true)
+  L0_2.OnScene00005 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_165
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnDefWeddingRecovery.OnScene00007(A0_40, A1_41, A2_42)
-    A0_40:SystemTalk(A0_40.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_170, true)
+  L0_2.OnScene00006 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_170
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnDefWeddingRecovery.OnScene00008(A0_43, A1_44, A2_45)
-    A2_45:Talk(A1_44, A0_43, A0_43.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_242, false)
-    A0_43:SystemTalk(A0_43.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_175, true)
+  L0_2.OnScene00007 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_242
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_175
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnDefWeddingRecovery.OnScene00009(A0_46, A1_47, A2_48)
-    local L3_49, L4_50, L5_51, L6_52
-    L4_50 = A2_48
-    L3_49 = A2_48.TurnTo
-    L5_51 = A1_47
-    L6_52 = false
-    L3_49(L4_50, L5_51, L6_52)
-    L4_50 = A2_48
-    L3_49 = A2_48.WaitForTurn
-    L3_49(L4_50)
-    L3_49 = 0
-    L5_51 = A2_48
-    L4_50 = A2_48.PlayActionTimeline
-    L6_52 = A0_46.ACTION_TIMELINE_EVENT_TALK2
-    L4_50(L5_51, L6_52)
-    L5_51 = A2_48
-    L4_50 = A2_48.Talk
-    L6_52 = A1_47
-    L4_50(L5_51, L6_52, A0_46, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_100_200, true)
-    L5_51 = A0_46
-    L4_50 = A0_46.Menu
-    L6_52 = A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q4_000_201
-    L4_50 = L4_50(L5_51, L6_52, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_201, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_202, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_203, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_204)
-    if L4_50 == 1 then
-      L6_52 = A2_48
-      L5_51 = A2_48.PlayActionTimeline
-      L5_51(L6_52, A0_46.ACTION_TIMELINE_EVENT_TALK1)
-      L6_52 = A2_48
-      L5_51 = A2_48.Talk
-      L5_51(L6_52, A1_47, A0_46, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_180, false)
-      L6_52 = A2_48
-      L5_51 = A2_48.Talk
-      L5_51(L6_52, A1_47, A0_46, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_181, false)
-      L6_52 = A2_48
-      L5_51 = A2_48.Talk
-      L5_51(L6_52, A1_47, A0_46, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_182, true)
-      L6_52 = A0_46
-      L5_51 = A0_46.SystemTalk
-      L5_51(L6_52, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_182, true)
-    elseif L4_50 == 2 then
-      L5_51 = false
-      L6_52 = false
-      if A1_47:GetNumOfItems(A0_46.ITEM_MARRIAGE_RING, L5_51, L6_52) == 0 then
-        A0_46:SystemTalk(A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_222, true)
-        A0_46:CancelEventScene()
+  L0_2.OnScene00008 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L3_3 = 0
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_100_200
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Menu
+    L6_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q4_000_201
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_201
+    L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_202
+    L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_203
+    L10_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A4_000_204
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+    if L4_3 == 1 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_180
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_181
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_182
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_182
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+    elseif L4_3 == 2 then
+      L5_3 = false
+      L6_3 = false
+      L8_3 = A1_3
+      L7_3 = A1_3.GetNumOfItems
+      L9_3 = A0_3.ITEM_MARRIAGE_RING
+      L10_3 = L5_3
+      L11_3 = L6_3
+      L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3)
+      if L7_3 == 0 then
+        L8_3 = A0_3
+        L7_3 = A0_3.SystemTalk
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_222
+        L10_3 = true
+        L7_3(L8_3, L9_3, L10_3)
+        L8_3 = A0_3
+        L7_3 = A0_3.CancelEventScene
+        L7_3(L8_3)
       end
-      A2_48:PlayActionTimeline(A0_46.ACTION_TIMELINE_EVENT_TALK1)
-      A2_48:Talk(A1_47, A0_46, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_200, false)
-      A2_48:Talk(A1_47, A0_46, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_100_202, true)
-      A0_46:SystemTalk(A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_203, true)
-      L3_49 = 1
-    elseif L4_50 == 3 then
-      L6_52 = A2_48
-      L5_51 = A2_48.PlayActionTimeline
-      L5_51(L6_52, A0_46.ACTION_TIMELINE_EVENT_TALK1)
-      L6_52 = A2_48
-      L5_51 = A2_48.Talk
-      L5_51(L6_52, A1_47, A0_46, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_240, true)
-      L6_52 = A0_46
-      L5_51 = A0_46.SystemTalk
-      L5_51(L6_52, A0_46.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_240, true)
-      L3_49 = 2
+      L8_3 = A2_3
+      L7_3 = A2_3.PlayActionTimeline
+      L9_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L7_3(L8_3, L9_3)
+      L8_3 = A2_3
+      L7_3 = A2_3.Talk
+      L9_3 = A1_3
+      L10_3 = A0_3
+      L11_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_200
+      L12_3 = false
+      L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+      L8_3 = A2_3
+      L7_3 = A2_3.Talk
+      L9_3 = A1_3
+      L10_3 = A0_3
+      L11_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_100_202
+      L12_3 = true
+      L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+      L8_3 = A0_3
+      L7_3 = A0_3.SystemTalk
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_203
+      L10_3 = true
+      L7_3(L8_3, L9_3, L10_3)
+      L3_3 = 1
+    elseif L4_3 == 3 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_240
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.SystemTalk
+      L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_100_240
+      L8_3 = true
+      L5_3(L6_3, L7_3, L8_3)
+      L3_3 = 2
     end
-    return L3_49
+    return L3_3
   end
-  function CmnDefWeddingRecovery.OnScene00010(A0_53, A1_54, A2_55)
-    local L3_56, L4_57
-    L3_56 = 0
-    L4_57 = 0
-    L4_57 = A0_53:Menu(A0_53.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q5_000_202, A0_53.TEXT_CMNDEFWEDDINGRECOVERY_00214_A5_000_203, A0_53.TEXT_CMNDEFWEDDINGRECOVERY_00214_A5_000_204)
-    if L4_57 ~= 1 then
-      A0_53:CancelEventScene()
+  L0_2.OnScene00009 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L3_3 = 0
+    L4_3 = 0
+    L6_3 = A0_3
+    L5_3 = A0_3.Menu
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q5_000_202
+    L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A5_000_203
+    L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A5_000_204
+    L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+    L4_3 = L5_3
+    if L4_3 ~= 1 then
+      L6_3 = A0_3
+      L5_3 = A0_3.CancelEventScene
+      L5_3(L6_3)
     end
-    if A0_53:npcTradeWeddingItem(A0_53.ITEM_MARRIAGE_RING) == true then
-      if L4_57 == 1 then
-        L4_57 = A0_53:Menu(A0_53.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q8_100_205, A0_53.TEXT_CMNDEFWEDDINGRECOVERY_00214_A8_100_206, A0_53.TEXT_CMNDEFWEDDINGRECOVERY_00214_A8_100_207)
+    L6_3 = A0_3
+    L5_3 = A0_3.npcTradeWeddingItem
+    L7_3 = A0_3.ITEM_MARRIAGE_RING
+    L5_3 = L5_3(L6_3, L7_3)
+    if L5_3 == true then
+      if L4_3 == 1 then
+        L6_3 = A0_3
+        L5_3 = A0_3.Menu
+        L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q8_100_205
+        L8_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A8_100_206
+        L9_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A8_100_207
+        L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+        L4_3 = L5_3
       end
-      if L4_57 == 1 then
-        L3_56 = 1
+      if L4_3 == 1 then
+        L3_3 = 1
       else
-        A0_53:CancelNpcTrade()
+        L6_3 = A0_3
+        L5_3 = A0_3.CancelNpcTrade
+        L5_3(L6_3)
       end
     end
-    return L3_56
+    return L3_3
   end
-  function CmnDefWeddingRecovery.OnScene00011(A0_58, A1_59, A2_60)
-    A2_60:PlayActionTimeline(A0_58.ACTION_TIMELINE_EVENT_TALK2)
-    A2_60:Talk(A1_59, A0_58, A0_58.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_210, true)
+  L0_2.OnScene00010 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_210
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnDefWeddingRecovery.OnScene00012(A0_61, A1_62, A2_63)
-    A2_63:PlayActionTimeline(A0_61.ACTION_TIMELINE_EVENT_TALK2)
-    A2_63:Talk(A1_62, A0_61, A0_61.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_220, true)
-    A0_61:SystemTalk(A0_61.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_221, true)
+  L0_2.OnScene00011 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_220
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_221
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnDefWeddingRecovery.OnScene00013(A0_64, A1_65, A2_66, ...)
-    local L4_68, L5_69, L6_70, L7_71, L8_72, L9_73, L10_74, L11_75, L12_76, L13_77, L14_78
-    L4_68 = 0
-    L5_69 = 0
-    L6_70 = select
-    L7_71 = "#"
-    L14_78 = ...
-    L6_70 = L6_70(L7_71, L8_72, L9_73, L10_74, L11_75, L12_76, L13_77, L14_78, ...)
-    if L6_70 == 0 then
-      L7_71 = A2_66
-      L6_70 = A2_66.Talk
-      L8_72 = A1_65
-      L6_70(L7_71, L8_72, L9_73, L10_74, L11_75)
-      return L4_68
+  L0_2.OnScene00012 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L4_3 = 0
+    L5_3 = 0
+    L6_3 = select
+    L7_3 = "#"
+    L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3 = ...
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+    if L6_3 == 0 then
+      L7_3 = A2_3
+      L6_3 = A2_3.Talk
+      L8_3 = A1_3
+      L9_3 = A0_3
+      L10_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_242
+      L11_3 = true
+      L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+      return L4_3
     end
-    L7_71 = A2_66
-    L6_70 = A2_66.Talk
-    L8_72 = A1_65
-    L6_70(L7_71, L8_72, L9_73, L10_74, L11_75)
-    L6_70 = {
-      [9] = ...
-    }
-    L14_78 = ...
-    ;({
-      [9] = ...
-    })[1] = L7_71
-    ;({
-      [9] = ...
-    })[2] = L8_72
-    ;({
-      [9] = ...
-    })[3] = L9_73
-    ;({
-      [9] = ...
-    })[4] = L10_74
-    ;({
-      [9] = ...
-    })[5] = L11_75
-    ;({
-      [9] = ...
-    })[6] = L12_76
-    ;({
-      [9] = ...
-    })[7] = L13_77
-    ;({
-      [9] = ...
-    })[8] = L14_78
-    L7_71 = {}
-    L8_72 = 1
-    for L12_76, L13_77 in L9_73(L10_74) do
-      L14_78 = A0_64.FormatString
-      L14_78 = L14_78(A0_64, A0_64.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_900, L13_77)
-      if L14_78 ~= nil then
-        L8_72 = L8_72 + 1
-        table.insert(L7_71, L14_78)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_241
+    L11_3 = true
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L6_3 = {}
+    L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3 = ...
+    L6_3[1] = L7_3
+    L6_3[2] = L8_3
+    L6_3[3] = L9_3
+    L6_3[4] = L10_3
+    L6_3[5] = L11_3
+    L6_3[6] = L12_3
+    L6_3[7] = L13_3
+    L6_3[8] = L14_3
+    L6_3[9] = L15_3
+    L6_3[10] = L16_3
+    L6_3[11] = L17_3
+    L7_3 = {}
+    L8_3 = 1
+    L9_3 = pairs
+    L10_3 = L6_3
+    L9_3, L10_3, L11_3 = L9_3(L10_3)
+    for L12_3, L13_3 in L9_3, L10_3, L11_3 do
+      L15_3 = A0_3
+      L14_3 = A0_3.FormatString
+      L16_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_900
+      L17_3 = L13_3
+      L14_3 = L14_3(L15_3, L16_3, L17_3)
+      if L14_3 ~= nil then
+        L8_3 = L8_3 + 1
+        L15_3 = table
+        L15_3 = L15_3.insert
+        L16_3 = L7_3
+        L17_3 = L14_3
+        L15_3(L16_3, L17_3)
       else
-        return L4_68
+        return L4_3
       end
     end
-    L9_73(L10_74, L11_75)
-    L12_76 = unpack
-    L13_77 = L7_71
-    L14_78 = L12_76(L13_77)
-    if L9_73 > 0 then
-      if L8_72 <= L9_73 then
-        L10_74(L11_75)
+    L9_3 = table
+    L9_3 = L9_3.insert
+    L10_3 = L7_3
+    L11_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A6_000_254
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Menu
+    L11_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q6_000_250
+    L12_3 = unpack
+    L13_3 = L7_3
+    L12_3, L13_3, L14_3, L15_3, L16_3, L17_3 = L12_3(L13_3)
+    L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+    if 0 < L9_3 then
+      if L8_3 <= L9_3 then
+        L11_3 = A0_3
+        L10_3 = A0_3.CancelEventScene
+        L10_3(L11_3)
       end
-      L5_69 = L6_70[L9_73]
-      L12_76 = L5_69
-      if L10_74 == true then
-        L12_76 = A0_64
-        L13_77 = A0_64.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q9_000_260
-        L14_78 = A0_64.TEXT_CMNDEFWEDDINGRECOVERY_00214_A9_000_261
-        if L10_74 == 1 then
-          L4_68 = 1
+      L5_3 = L6_3[L9_3]
+      L11_3 = A0_3
+      L10_3 = A0_3.npcTradeWeddingItem
+      L12_3 = L5_3
+      L10_3 = L10_3(L11_3, L12_3)
+      if L10_3 == true then
+        L10_3 = 0
+        L12_3 = A0_3
+        L11_3 = A0_3.Menu
+        L13_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_Q9_000_260
+        L14_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A9_000_261
+        L15_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_A9_000_262
+        L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3)
+        L10_3 = L11_3
+        if L10_3 == 1 then
+          L4_3 = 1
         else
-          L12_76 = A0_64
-          L11_75(L12_76)
+          L12_3 = A0_3
+          L11_3 = A0_3.CancelNpcTrade
+          L11_3(L12_3)
         end
       end
     end
-    return L10_74, L11_75
+    L10_3 = L4_3
+    L11_3 = L5_3
+    return L10_3, L11_3
   end
-  function CmnDefWeddingRecovery.OnScene00014(A0_79, A1_80, A2_81)
-    A2_81:PlayActionTimeline(A0_79.ACTION_TIMELINE_EVENT_TALK2)
-    A2_81:Talk(A1_80, A0_79, A0_79.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_270, true)
+  L0_2.OnScene00013 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_DEACON00214_000_270
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnDefWeddingRecovery.OnScene00015(A0_82, A1_83, A2_84)
-    A0_82:SystemTalk(A0_82.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_271, true)
+  L0_2.OnScene00014 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNDEFWEDDINGRECOVERY_00214_SYSTEM_000_271
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnDefWeddingRecovery.npcTradeWeddingItem(A0_85, A1_86)
-    A0_85:SetIsOnlyNonStackItemNpcTrade(true)
-    if A0_85:NpcTrade(A0_85.NPC_TRADE_INVENTORY_MODE_NORMAL, nil, nil, A1_86, 1, false) == 1 then
-      return true
+  L0_2.OnScene00015 = L1_2
+  L0_2 = CmnDefWeddingRecovery
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L3_3 = A0_3
+    L2_3 = A0_3.SetIsOnlyNonStackItemNpcTrade
+    L4_3 = true
+    L2_3(L3_3, L4_3)
+    L3_3 = A0_3
+    L2_3 = A0_3.NpcTrade
+    L4_3 = A0_3.NPC_TRADE_INVENTORY_MODE_NORMAL
+    L5_3 = nil
+    L6_3 = nil
+    L7_3 = A1_3
+    L8_3 = 1
+    L9_3 = false
+    L2_3 = L2_3(L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3)
+    if L2_3 == 1 then
+      L2_3 = true
+      return L2_3
     end
-    return false
+    L2_3 = false
+    return L2_3
   end
-end)()
-;(function()
-  local L1_87
-  L1_87 = CmnDefWeddingRecovery
-  L1_87.SCRIPT_VERSION = 1
-end)()
+  L0_2.npcTradeWeddingItem = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefWeddingRecovery
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

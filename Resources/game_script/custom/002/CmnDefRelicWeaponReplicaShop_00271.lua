@@ -1,137 +1,235 @@
-(function()
-  print("CmnDefRelicWeaponReplicaShop")
-  function CmnDefRelicWeaponReplicaShop.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6, L7_7, L8_8, L9_9, L10_10, L11_11, L12_12
-    L3_3 = {
-      L4_4,
-      L5_5,
-      L6_6,
-      L7_7,
-      L8_8,
-      L9_9,
-      L10_10,
-      L11_11,
-      L12_12,
-      A0_0.RELIC_9,
-      A0_0.RELIC_10
-    }
-    L4_4 = A0_0.RELIC_0
-    L5_5 = A0_0.RELIC_1
-    L6_6 = A0_0.RELIC_2
-    L7_7 = A0_0.RELIC_3
-    L11_11 = A0_0.RELIC_7
-    L12_12 = A0_0.RELIC_8
-    L4_4 = {
-      L5_5,
-      L6_6,
-      L7_7,
-      L8_8,
-      L9_9,
-      L10_10,
-      L11_11,
-      L12_12,
-      A0_0.SHOP_8,
-      A0_0.SHOP_9,
-      A0_0.SHOP_10
-    }
-    L5_5 = A0_0.SHOP_0
-    L6_6 = A0_0.SHOP_1
-    L7_7 = A0_0.SHOP_2
-    L11_11 = A0_0.SHOP_6
-    L12_12 = A0_0.SHOP_7
-    L5_5 = {
-      L6_6,
-      L7_7,
-      L8_8,
-      L9_9,
-      L10_10,
-      L11_11,
-      L12_12,
-      298,
-      299,
-      300,
-      301
-    }
-    L6_6 = 291
-    L7_7 = 292
-    L11_11 = 296
-    L12_12 = 297
-    L6_6 = {}
-    L7_7 = {}
-    for L11_11 = 1, #L3_3 do
-      L12_12 = A1_1.GetNumOfItems
-      L12_12 = L12_12(A1_1, L3_3[L11_11])
-      if not (L12_12 > 0) then
-        L12_12 = A1_1.IsReward
-        L12_12 = L12_12(A1_1, L5_5[L11_11])
-      elseif L12_12 then
-        L12_12 = A0_0.GetEventHandlerTitle
-        L12_12 = L12_12(A0_0, L4_4[L11_11])
-        table.insert(L6_6, L12_12)
-        table.insert(L7_7, L11_11)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefRelicWeaponReplicaShop"
+  L0_2(L1_2)
+  L0_2 = CmnDefRelicWeaponReplicaShop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3
+    L3_3 = {}
+    L4_3 = A0_3.RELIC_0
+    L5_3 = A0_3.RELIC_1
+    L6_3 = A0_3.RELIC_2
+    L7_3 = A0_3.RELIC_3
+    L8_3 = A0_3.RELIC_4
+    L9_3 = A0_3.RELIC_5
+    L10_3 = A0_3.RELIC_6
+    L11_3 = A0_3.RELIC_7
+    L12_3 = A0_3.RELIC_8
+    L13_3 = A0_3.RELIC_9
+    L14_3 = A0_3.RELIC_10
+    L3_3[1] = L4_3
+    L3_3[2] = L5_3
+    L3_3[3] = L6_3
+    L3_3[4] = L7_3
+    L3_3[5] = L8_3
+    L3_3[6] = L9_3
+    L3_3[7] = L10_3
+    L3_3[8] = L11_3
+    L3_3[9] = L12_3
+    L3_3[10] = L13_3
+    L3_3[11] = L14_3
+    L4_3 = {}
+    L5_3 = A0_3.SHOP_0
+    L6_3 = A0_3.SHOP_1
+    L7_3 = A0_3.SHOP_2
+    L8_3 = A0_3.SHOP_3
+    L9_3 = A0_3.SHOP_4
+    L10_3 = A0_3.SHOP_5
+    L11_3 = A0_3.SHOP_6
+    L12_3 = A0_3.SHOP_7
+    L13_3 = A0_3.SHOP_8
+    L14_3 = A0_3.SHOP_9
+    L15_3 = A0_3.SHOP_10
+    L4_3[1] = L5_3
+    L4_3[2] = L6_3
+    L4_3[3] = L7_3
+    L4_3[4] = L8_3
+    L4_3[5] = L9_3
+    L4_3[6] = L10_3
+    L4_3[7] = L11_3
+    L4_3[8] = L12_3
+    L4_3[9] = L13_3
+    L4_3[10] = L14_3
+    L4_3[11] = L15_3
+    L5_3 = {}
+    L6_3 = 291
+    L7_3 = 292
+    L8_3 = 293
+    L9_3 = 294
+    L10_3 = 295
+    L11_3 = 296
+    L12_3 = 297
+    L13_3 = 298
+    L14_3 = 299
+    L15_3 = 300
+    L16_3 = 301
+    L5_3[1] = L6_3
+    L5_3[2] = L7_3
+    L5_3[3] = L8_3
+    L5_3[4] = L9_3
+    L5_3[5] = L10_3
+    L5_3[6] = L11_3
+    L5_3[7] = L12_3
+    L5_3[8] = L13_3
+    L5_3[9] = L14_3
+    L5_3[10] = L15_3
+    L5_3[11] = L16_3
+    L6_3 = {}
+    L7_3 = {}
+    L8_3 = 1
+    L9_3 = #L3_3
+    L10_3 = 1
+    for L11_3 = L8_3, L9_3, L10_3 do
+      L13_3 = A1_3
+      L12_3 = A1_3.GetNumOfItems
+      L14_3 = L3_3[L11_3]
+      L12_3 = L12_3(L13_3, L14_3)
+      if not (0 < L12_3) then
+        L13_3 = A1_3
+        L12_3 = A1_3.IsReward
+        L14_3 = L5_3[L11_3]
+        L12_3 = L12_3(L13_3, L14_3)
+        if not L12_3 then
+          goto lbl_69
+        end
       end
+      L13_3 = A0_3
+      L12_3 = A0_3.GetEventHandlerTitle
+      L14_3 = L4_3[L11_3]
+      L12_3 = L12_3(L13_3, L14_3)
+      L13_3 = table
+      L13_3 = L13_3.insert
+      L14_3 = L6_3
+      L15_3 = L12_3
+      L13_3(L14_3, L15_3)
+      L13_3 = table
+      L13_3 = L13_3.insert
+      L14_3 = L7_3
+      L15_3 = L11_3
+      L13_3(L14_3, L15_3)
+      ::lbl_69::
     end
-    if L8_8 <= 0 then
-      L8_8(L9_9, L10_10)
-      L11_11 = A0_0
-      L12_12 = A0_0.TEXT_CMNDEFRELICWEAPONREPLICASHOP_00271_TALK_ACTOR
-      L8_8(L9_9, L10_10, L11_11, L12_12, true)
-      return L8_8
+    L8_3 = #L6_3
+    if L8_3 <= 0 then
+      L9_3 = A2_3
+      L8_3 = A2_3.LookAt
+      L10_3 = A1_3
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_CMNDEFRELICWEAPONREPLICASHOP_00271_TALK_ACTOR
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L8_3 = -1
+      return L8_3
     else
-      L8_8(L9_9, L10_10)
-      L11_11 = L8_8
-      L9_9(L10_10, L11_11)
-      L11_11 = A0_0.TEXT_CMNDEFRELICWEAPONREPLICASHOP_00271_MENU_TITLE
-      L12_12 = unpack
-      L12_12 = L12_12(L6_6)
-      if L9_9 == L10_10 or L9_9 == 0 then
-        return L10_10
+      L9_3 = A2_3
+      L8_3 = A2_3.TurnTo
+      L10_3 = A1_3
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.GetAddonText
+      L10_3 = A0_3.ADDON_ABORT
+      L8_3 = L8_3(L9_3, L10_3)
+      L9_3 = table
+      L9_3 = L9_3.insert
+      L10_3 = L6_3
+      L11_3 = L8_3
+      L9_3(L10_3, L11_3)
+      L10_3 = A0_3
+      L9_3 = A0_3.Menu
+      L11_3 = A0_3.TEXT_CMNDEFRELICWEAPONREPLICASHOP_00271_MENU_TITLE
+      L12_3 = unpack
+      L13_3 = L6_3
+      L12_3, L13_3, L14_3, L15_3, L16_3 = L12_3(L13_3)
+      L9_3 = L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+      L10_3 = #L6_3
+      if L9_3 == L10_3 or L9_3 == 0 then
+        L10_3 = -1
+        return L10_3
       else
-        return L10_10
+        L10_3 = L7_3[L9_3]
+        return L10_3
       end
     end
   end
-end)()
-;(function()
-  local L0_13, L1_14
-  L0_13 = CmnDefRelicWeaponReplicaShop
-  L0_13.SCRIPT_VERSION = 1
-  L0_13 = CmnDefRelicWeaponReplicaShop
-  function L1_14(A0_15)
-    for _FORV_6_ = 1, #{
-      A0_15.RELIC_0,
-      A0_15.RELIC_1,
-      A0_15.RELIC_2,
-      A0_15.RELIC_3,
-      A0_15.RELIC_4,
-      A0_15.RELIC_5,
-      A0_15.RELIC_6,
-      A0_15.RELIC_7,
-      A0_15.RELIC_8,
-      A0_15.RELIC_9,
-      A0_15.RELIC_10
-    } do
-      A0_15:AddNestEventHandler(({
-        A0_15.SHOP_0,
-        A0_15.SHOP_1,
-        A0_15.SHOP_2,
-        A0_15.SHOP_3,
-        A0_15.SHOP_4,
-        A0_15.SHOP_5,
-        A0_15.SHOP_6,
-        A0_15.SHOP_7,
-        A0_15.SHOP_8,
-        A0_15.SHOP_9,
-        A0_15.SHOP_10
-      })[_FORV_6_])
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefRelicWeaponReplicaShop
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefRelicWeaponReplicaShop
+  function L1_2(A0_3)
+    local L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L1_3 = {}
+    L2_3 = A0_3.RELIC_0
+    L3_3 = A0_3.RELIC_1
+    L4_3 = A0_3.RELIC_2
+    L5_3 = A0_3.RELIC_3
+    L6_3 = A0_3.RELIC_4
+    L7_3 = A0_3.RELIC_5
+    L8_3 = A0_3.RELIC_6
+    L9_3 = A0_3.RELIC_7
+    L10_3 = A0_3.RELIC_8
+    L11_3 = A0_3.RELIC_9
+    L12_3 = A0_3.RELIC_10
+    L1_3[1] = L2_3
+    L1_3[2] = L3_3
+    L1_3[3] = L4_3
+    L1_3[4] = L5_3
+    L1_3[5] = L6_3
+    L1_3[6] = L7_3
+    L1_3[7] = L8_3
+    L1_3[8] = L9_3
+    L1_3[9] = L10_3
+    L1_3[10] = L11_3
+    L1_3[11] = L12_3
+    L2_3 = {}
+    L3_3 = A0_3.SHOP_0
+    L4_3 = A0_3.SHOP_1
+    L5_3 = A0_3.SHOP_2
+    L6_3 = A0_3.SHOP_3
+    L7_3 = A0_3.SHOP_4
+    L8_3 = A0_3.SHOP_5
+    L9_3 = A0_3.SHOP_6
+    L10_3 = A0_3.SHOP_7
+    L11_3 = A0_3.SHOP_8
+    L12_3 = A0_3.SHOP_9
+    L13_3 = A0_3.SHOP_10
+    L2_3[1] = L3_3
+    L2_3[2] = L4_3
+    L2_3[3] = L5_3
+    L2_3[4] = L6_3
+    L2_3[5] = L7_3
+    L2_3[6] = L8_3
+    L2_3[7] = L9_3
+    L2_3[8] = L10_3
+    L2_3[9] = L11_3
+    L2_3[10] = L12_3
+    L2_3[11] = L13_3
+    L3_3 = 1
+    L4_3 = #L1_3
+    L5_3 = 1
+    for L6_3 = L3_3, L4_3, L5_3 do
+      L8_3 = A0_3
+      L7_3 = A0_3.AddNestEventHandler
+      L9_3 = L2_3[L6_3]
+      L7_3(L8_3, L9_3)
     end
   end
-  L0_13.OnInitialize = L1_14
-  L0_13 = CmnDefRelicWeaponReplicaShop
-  function L1_14(A0_16, A1_17, A2_18, A3_19, A4_20, A5_21)
-    local L6_22
-    L6_22 = true
-    return L6_22
+  L0_2.OnInitialize = L1_2
+  L0_2 = CmnDefRelicWeaponReplicaShop
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3
+    L6_3 = true
+    return L6_3
   end
-  L0_13.IsAcceptEvent = L1_14
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

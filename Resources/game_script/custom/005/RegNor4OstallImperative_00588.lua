@@ -1,84 +1,365 @@
-(function()
-  print("RegNor4OstallImperative")
-  function RegNor4OstallImperative.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A0_0:OnGreeting(A1_1, A2_2)
-    A0_0:OnHearing(A1_1, A2_2)
-    return 0
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegNor4OstallImperative"
+  L0_2(L1_2)
+  L0_2 = RegNor4OstallImperative
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.OnGreeting
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.OnHearing
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = 0
+    return L3_3
   end
-  function RegNor4OstallImperative.OnGreeting(A0_3, A1_4, A2_5)
-    if A0_3:IsQuestSequenceOrMore(A1_4, A0_3.QST_LUCKMF111, A0_3.QST_SEQ_11) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_070, true)
-    elseif A1_4:IsQuestCompleted(A0_3.QST_LUCKME114) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_060, true)
-    elseif A0_3:IsQuestSequenceOrMore(A1_4, A0_3.QST_LUCKMD101, A0_3.QST_SEQ_FINISH) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BIG)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_050, true)
-    elseif A1_4:IsQuestCompleted(A0_3.QST_LUCKMC121) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_040, true)
-    elseif A0_3:IsQuestSequenceOrMore(A1_4, A0_3.QST_LUCKMB104, A0_3.QST_SEQ_FINISH) == true then
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_030, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegNor4OstallImperative
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsQuestSequenceOrMore
+    L5_3 = A1_3
+    L6_3 = A0_3.QST_LUCKMF111
+    L7_3 = A0_3.QST_SEQ_11
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_070
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_FACIAL_SMILE)
-      A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FINGER)
-      A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_000, true)
-    end
-    A0_3:Wait(10)
-  end
-  function RegNor4OstallImperative.OnHearing(A0_6, A1_7, A2_8)
-    while true do
-      if A0_6:Menu(A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_Q1_000_000, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_001, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_002, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_003) == 1 then
-        A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK1)
-        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_200, false)
-        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_201, false)
-        if A0_6:IsQuestSequenceOrMore(A1_7, A0_6.QST_LUCKMF111, A0_6.QST_SEQ_11) == true then
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_202, false)
-          A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK2)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_220, true)
-        elseif A1_7:IsQuestCompleted(A0_6.QST_LUCKME114) == true then
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_202, false)
-          A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_210, true)
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestCompleted
+      L5_3 = A0_3.QST_LUCKME114
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+        L3_3(L4_3, L5_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_060
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      else
+        L4_3 = A0_3
+        L3_3 = A0_3.IsQuestSequenceOrMore
+        L5_3 = A1_3
+        L6_3 = A0_3.QST_LUCKMD101
+        L7_3 = A0_3.QST_SEQ_FINISH
+        L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+        if L3_3 == true then
+          L4_3 = A2_3
+          L3_3 = A2_3.PlayActionTimeline
+          L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+          L3_3(L4_3, L5_3)
+          L4_3 = A2_3
+          L3_3 = A2_3.Talk
+          L5_3 = A1_3
+          L6_3 = A0_3
+          L7_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_050
+          L8_3 = true
+          L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
         else
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_202, true)
+          L4_3 = A1_3
+          L3_3 = A1_3.IsQuestCompleted
+          L5_3 = A0_3.QST_LUCKMC121
+          L3_3 = L3_3(L4_3, L5_3)
+          if L3_3 == true then
+            L4_3 = A2_3
+            L3_3 = A2_3.PlayActionTimeline
+            L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+            L3_3(L4_3, L5_3)
+            L4_3 = A2_3
+            L3_3 = A2_3.Talk
+            L5_3 = A1_3
+            L6_3 = A0_3
+            L7_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_040
+            L8_3 = true
+            L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          else
+            L4_3 = A0_3
+            L3_3 = A0_3.IsQuestSequenceOrMore
+            L5_3 = A1_3
+            L6_3 = A0_3.QST_LUCKMB104
+            L7_3 = A0_3.QST_SEQ_FINISH
+            L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3)
+            if L3_3 == true then
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_030
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+            else
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_FACIAL_SMILE
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FINGER
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_000
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+            end
+          end
         end
-      elseif A0_6:Menu(A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_Q1_000_000, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_001, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_002, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_003) == 2 then
-        A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_400, false)
-        A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_401, false)
-        if A0_6:IsQuestSequenceOrMore(A1_7, A0_6.QST_LUCKMF111, A0_6.QST_SEQ_11) == true then
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_402, false)
-          A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK2)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_420, true)
-        elseif A0_6:IsQuestSequenceOrMore(A1_7, A0_6.QST_LUCKMD101, A0_6.QST_SEQ_FINISH) == true then
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_402, false)
-          A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_410, true)
+      end
+    end
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+  end
+  L0_2.OnGreeting = L1_2
+  L0_2 = RegNor4OstallImperative
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    while true do
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_Q1_000_000
+      L6_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_001
+      L7_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_002
+      L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_A1_000_003
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_200
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_201
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.IsQuestSequenceOrMore
+        L6_3 = A1_3
+        L7_3 = A0_3.QST_LUCKMF111
+        L8_3 = A0_3.QST_SEQ_11
+        L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+        if L4_3 == true then
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_202
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_220
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
         else
-          A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_402, true)
+          L5_3 = A1_3
+          L4_3 = A1_3.IsQuestCompleted
+          L6_3 = A0_3.QST_LUCKME114
+          L4_3 = L4_3(L5_3, L6_3)
+          if L4_3 == true then
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_202
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_210
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          else
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_202
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          end
+        end
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.PlayActionTimeline
+        L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L4_3(L5_3, L6_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_400
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_401
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.IsQuestSequenceOrMore
+        L6_3 = A1_3
+        L7_3 = A0_3.QST_LUCKMF111
+        L8_3 = A0_3.QST_SEQ_11
+        L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+        if L4_3 == true then
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_402
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_420
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        else
+          L5_3 = A0_3
+          L4_3 = A0_3.IsQuestSequenceOrMore
+          L6_3 = A1_3
+          L7_3 = A0_3.QST_LUCKMD101
+          L8_3 = A0_3.QST_SEQ_FINISH
+          L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+          if L4_3 == true then
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_402
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_410
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          else
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGNOR4OSTALLIMPERATIVE_00588_PAULARD_000_402
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          end
         end
       else
         break
       end
     end
   end
-  function RegNor4OstallImperative.IsQuestSequenceOrMore(A0_9, A1_10, A2_11, A3_12)
-    if A1_10:IsQuestCompleted(A2_11) == true then
-      return true
+  L0_2.OnHearing = L1_2
+  L0_2 = RegNor4OstallImperative
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestCompleted
+    L6_3 = A2_3
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 == true then
+      L4_3 = true
+      return L4_3
     end
-    if A3_12 ~= nil and A1_10:IsQuestAccepted(A2_11) == true and A3_12 <= A1_10:GetQuestSequence(A2_11) then
-      return true
+    if A3_3 ~= nil then
+      L5_3 = A1_3
+      L4_3 = A1_3.IsQuestAccepted
+      L6_3 = A2_3
+      L4_3 = L4_3(L5_3, L6_3)
+      if L4_3 == true then
+        L5_3 = A1_3
+        L4_3 = A1_3.GetQuestSequence
+        L6_3 = A2_3
+        L4_3 = L4_3(L5_3, L6_3)
+        if A3_3 <= L4_3 then
+          L5_3 = true
+          return L5_3
+        end
+      end
     end
-    return false
+    L4_3 = false
+    return L4_3
   end
-end)()
-;(function()
-  local L1_13
-  L1_13 = RegNor4OstallImperative
-  L1_13.SCRIPT_VERSION = 2
-end)()
+  L0_2.IsQuestSequenceOrMore = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegNor4OstallImperative
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()

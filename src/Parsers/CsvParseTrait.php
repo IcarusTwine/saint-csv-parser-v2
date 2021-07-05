@@ -732,7 +732,7 @@ trait CsvParseTrait
         if (stripos($NameFormatted,"�")){
             $output['IsEnglish'] = false; 
         }
-        $KillArray = array("Â", "Â (Unknown)", "—", "(A", "(B", "(Unknown)", "A", "B", "C", "D", "E", ":", "—C()", "—D()", "—()", "Â()");
+        $KillArray = array("�","Â", "Â (Unknown)", "—", "(A", "(B", "(Unknown)", "A", "B", "C", "D", "E", ":", "—C()", "—D()", "—()", "Â()");
         if (in_array($NameFormatted, $KillArray)) {
             $output['IsEnglish'] = false;
         }
@@ -1259,7 +1259,7 @@ trait CsvParseTrait
             }
         }
         $codesolid = file_get_contents($LuaFile);
-        $codeexp = explode("function",$codesolid);
+        $codeexp = explode("L0_2.",$codesolid);
         //get all scenes
         $SceneArray = [];
         foreach($codeexp as $chunks){
@@ -1285,7 +1285,6 @@ trait CsvParseTrait
         }
         
         foreach($codeexp as $chunk){
-            $LuaDefinedArray = [];
             //tidy code up (explode then remove linebreaks, tabs)
             $code = $chunk;
             $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$code)))));
@@ -1302,342 +1301,72 @@ trait CsvParseTrait
                     };
                     //get scene number
                     if (strpos($_lua[$_pos],"OnScene")!==false){
-                        if (preg_match('/OnScene(.*?)\(+/', $_lua[$_pos], $match) == 1) {
+                        if (preg_match('/OnScene(.*?) +/', $_lua[$_pos], $match) == 1) {
                             $SceneNo = ltrim($match[1], '0');
                             if (empty($SceneNo)){
                                 $SceneNo = "0";
                             }
-                            //gen vars from functions : 
-                            if (preg_match('/\((.*?)\)+/', $_lua[0], $match) == 1) {
-                                $funcvararray = explode(",",$match[1]);
-                                foreach($funcvararray as $key => $var){
-                                    $var = str_replace(" ","",$var);
-                                    if ($key === 0){
-                                        $ObjectArray[$var] = "self";
-                                    }elseif ($key === 1){
-                                        $ObjectArray[$var] = "player";
-                                    }elseif ($key === 2){
-                                        if (($SceneNo === "0")){
-                                            $ObjectArray[$var] = $QuestData["Issuer{Start}"];
-                                        }elseif ($SceneNo === $LastScene){
-                                            $ObjectArray[$var] = $QuestData["Target{End}"];
-                                        } else {
-                                            $ObjectArray[$var] = "Target";
-                                        }
-                                    }else {
-                                        $ObjectArray[$var] = "Unknown";
-                                    }
-                                }
-                            }
                         }                        
                     }
-                    $Function = "";
-                    $Variable = "";
-                    $Object = "";
-                    //type 1
-                    if (strpos($_lua[$_pos],":")!==false){
-                        //if found "A2_29:PlayActionTimeline("
-                        //grab firstvar 
-                        $GetObjVar = explode(":",$_lua[$_pos]);
-                        $ObjVar = $GetObjVar[0];
-                        //Grab the variable we need and find where it's defined
-                        if (!empty($ObjectArray[$ObjVar])){
-                            $Object = "".$ObjectArray[$ObjVar]."";
-                        }
-                        //get function name
-                        if (preg_match('/\:(.*?)\(+/', $_lua[$_pos], $match) == 1) {
-                            $Function = "".$match[1]."";
-                        }
-                        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                            $CutVariable = explode(",",$match[1]);
-                            $Variable = "".$CutVariable[0]."";
-                        }
-                        //if character is created then set a variable for that character
-                        if ($Function === "CreateCharacter"){
-                            $ObjectName = "";
-                            if (!empty($ArgArray[$CutVariable[0]])){
-                                $ObjectName = $ArgArray[$CutVariable[0]];
-                            }
-                            $GetVar = explode(" = ",$_lua[$_pos]);
-                            $ReplaceVar = $GetVar[0];
-                            $ObjectArray[$ReplaceVar] = $ObjectName;
-                        }
-                        if ($Function === "Menu"){
-                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                $a = 0;
-                                $VariablesExp = explode(", ",$match[1]);
-                                //$VariablesYesNo = [];
-                                $VariablesMenu = [];
-                                foreach($VariablesExp as $Variables){
-                                    $VariablesMenu[] = ltrim(strstr($Variables, '.'),'.');
+                    //gen vars from functions : 
+                    if (preg_match('/function L1_2\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                        if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
+                            $funcvararray = explode(", ",$match[1]);
+                            foreach($funcvararray as $key => $var){
+                                if ($key === 0){
+                                    $ObjectArray[$var] = "self";
+                                }elseif ($key === 1){
+                                    $ObjectArray[$var] = "player";
+                                }elseif ($key === 2){
+                                    if (($SceneNo === "0")){
+                                        $ObjectArray[$var] = $QuestData["Issuer{Start}"];
+                                    }elseif ($SceneNo === $LastScene){
+                                        $ObjectArray[$var] = $QuestData["Target{End}"];
+                                    } else {
+                                        $ObjectArray[$var] = "Target";
+                                    }
+                                }else {
+                                    $ObjectArray[$var] = "Unknown";
                                 }
-                                //add refuse text
-                                $MenuEnd = false;
-                                $Answers = [];
-                                while($MenuEnd === false){
-                                    $_pos++;
-                                    if ($_pos >= $_lines){
-                                        break;
-                                    }
-                                    if (strpos($_lua[$_pos],"Menu") !== false){
-                                        $a++;
-                                        $_pos++;
-                                    }
-                                    if (strpos($_lua[$_pos],"TEXT") !== false){
-                                        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                            $CutVariable = explode(",",$match[1]);
-                                            $VariableMenu = $CutVariable[0];
-                                            $Answers[$a][] = $VariableMenu;
-                                        }
-                                    }
-                                    if ($_lua[$_pos] === "else"){
-                                        $a++;
-                                    }
-                                    if ($_lua[$_pos] === "end"){
-                                        $MenuEnd = true;
-                                        $VariablesMenu["Answers"] = $Answers;
-                                        break;
-                                    }
-                                }
-                                $Variable = $VariablesMenu;
                             }
                         }
-                        if ($Function === "YesNo"){
-                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                $YesNoNo = [];
-                                $YesNoYes = [];
-                                $VariablesExp = explode(", ",$match[1]);
-                                if (strpos(end($VariablesExp),"TEXT") === false){
-                                    array_pop($VariablesExp);
-                                }
-                                if (strpos($VariablesExp[0],"TEXT") === false){
-                                    unset($VariablesExp[0]);
-                                }
-                                $VariablesYesNo = [];
-                                foreach($VariablesExp as $Variables){
-                                    $VariablesYesNo[] = ltrim(strstr($Variables, '.'),'.');
-                                }
-                                //add refuse text
-                                $StorePos = $_pos;
-                                $YesNoEnd = false;
-                                $YesNo = "Yes";
-                                while($YesNoEnd === false){
-                                    $_pos++;
-                                    if ($_pos >= $_lines){
-                                        break;
-                                    }
-                                    if ($YesNo === "Yes") {
-                                        if (strpos($_lua[$_pos],"TEXT") !== false){
-                                            if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                                $CutVariable = explode(",",$match[1]);
-                                                $VariableNo = $CutVariable[0];
-                                                $YesNoYes[] = $CsvTextArray[$VariableNo];
-                                            }
-                                        }
-                                        if ($_lua[$_pos] === "end"){
-                                            $YesNo = "No";
-                                            $VariablesYesNo["Affirmative"] = $YesNoYes;
-                                        }
-                                        if (strpos($_lua[$_pos],"else") !== false){
-                                            $YesNo = "No";
-                                            $VariablesYesNo["Affirmative"] = $YesNoYes;
-                                        }
-                                    }
-                                    if ($YesNo === "No") {
-                                        if (strpos($_lua[$_pos],"TEXT") !== false){
-                                            if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                                $CutVariable = explode(",",$match[1]);
-                                                $VariableNo = $CutVariable[0];
-                                                $YesNoNo[] = $CsvTextArray[$VariableNo];
-                                            }
-                                        }
-                                        if ($_lua[$_pos] === "end"){
-                                            $YesNo = "Break";
-                                            $YesNoEnd = true;
-                                            $VariablesYesNo["Negative"] = $YesNoNo;
-                                            break;
-                                        }
-                                    }
-                                }
-                                $Variable = $VariablesYesNo;
-                            }
-                        }
-                        $Array = array(
-                            "Type" => $Function,
-                            "Target" => $Object,
-                            "Variables" => $Variable
-                        );
-                        $OutArray[] = $Array;
                     }
-                    $Function = "";
-                    $Variable = "";
-                    $Object = "";
-                    //type 2
-                    if (preg_match("/[A-Z][0-9]_[0-9]+\(/", $_lua[$_pos], $match)){
-                        //if found "L5_35(L6_36, 10)"
-                        //grab firstvar 
-                        
-                        $GetObjVar = explode(" = ",$_lua[$_pos]);
-                        $ObjVar = $GetObjVar[0];
-                        //Grab the variable we need and find where it's defined
-                        $ToFind = str_replace("(","",$match[0]);
-                        if (!empty($ObjectArray[$ObjVar])){
-                            $Object = "".$ObjectArray[$ObjVar]."";
+                    $Replacement = "";
+                    if (strpos($_lua[$_pos]," = ")!== false){
+                        $ExplodeLine = explode(" = ",$_lua[$_pos]);
+                        if (strpos($ExplodeLine[0]," ")!== false){
+                            //if or for etc, skip
+                        } else {
+                            if (preg_match('/[A-Z][0-9]+_[0-9]+\n/', $ExplodeLine[1], $match) == 1) {
+                                $Replacement = $ObjectArray[$ExplodeLine[1]];
+                                $ObjectArray[$ExplodeLine[0]] = $Replacement;
+                            } elseif (preg_match('/[A-Z][0-9]+_[0-9]+\./', $ExplodeLine[1], $match) == 1) {
+                                $ObjectArray[$ExplodeLine[0]] = $match[1];
+                            } else{
+                                $ObjectArray[$ExplodeLine[0]] = $ExplodeLine[1];
+                            }
                         }
-                        $found = false;
-                        //set the orignal position to call back to
-                        $StorePos = $_pos;
-                        while($found === false){
-                            $_pos--;
-                            if ($_pos < 0){
-                                $_pos = $StorePos;
-                                break;
-                            }
-                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+\./", $_lua[$_pos], $match)){
-                                $matchExplode = explode(" = ", $match[0]);
-                                $MatchTarget = str_ireplace(".","",$matchExplode[1]);
-                                $Function = "";
-                                $Variable = "";
-                                if (!empty($ObjectArray[$MatchTarget])){
-                                    $Object = "".$ObjectArray[$MatchTarget]."";
-                                }
-                                if ($matchExplode[0] === $ToFind){
-                                    $GetFuncNameExp = explode(".", $_lua[$_pos]);
-                                    $Function = "".$GetFuncNameExp[1]."";
-                                    //if character is created then set a variable for that character
-                                    //set back to origonal pos
-                                    $_pos = $StorePos;
-                                    if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                        $CutVariable = explode(",",$match[1]);
-                                        if(!empty($CutVariable[1])){
-                                            $Variable = "".$CutVariable[1]."";
-                                        } else {
-                                            $Variable = "Self";
-                                        }
-                                        if ($Function === "CreateCharacter"){
-                                            $ObjectName = "";
-                                            if (!empty($ArgArray[$CutVariable[0]])){
-                                                $ObjectName = $ArgArray[$CutVariable[0]];
-                                            }
-                                            $_pos++;
-                                            if (preg_match("/[A-Z][0-9]_[0-9]+ = [A-Z][0-9]_[0-9]+/", $_lua[$_pos], $match)){
-                                                $GetVar = explode(" = ",$_lua[$_pos]);
-                                                $ReplaceVar = $GetVar[0];
-                                                $ObjectArray[$ReplaceVar] = $ObjectName;
-                                                $ReplaceVar = $GetVar[1];
-                                                $ObjectArray[$ReplaceVar] = $ObjectName;
-                                                $_pos = $StorePos;
-                                            }
-                                        }
-                                        if ($Function === "Menu"){
-                                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                                $a = 0;
-                                                $VariablesExp = explode(", ",$match[1]);
-                                                //$VariablesYesNo = [];
-                                                $VariablesMenu = [];
-                                                foreach($VariablesExp as $Variables){
-                                                    $VariablesMenu[] = ltrim(strstr($Variables, '.'),'.');
-                                                }
-                                                //add refuse text
-                                                $MenuEnd = false;
-                                                $Answers = [];
-                                                while($MenuEnd === false){
-                                                    $_pos++;
-                                                    if ($_pos >= $_lines){
-                                                        break;
-                                                    }
-                                                    if (strpos($_lua[$_pos],"Menu") !== false){
-                                                        $a++;
-                                                        $_pos++;
-                                                    }
-                                                    if (strpos($_lua[$_pos],"TEXT") !== false){
-                                                        if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                                            $CutVariable = explode(",",$match[1]);
-                                                            $VariableMenu = $CutVariable[0];
-                                                            $Answers[$a][] = $VariableMenu;
-                                                        }
-                                                    }
-                                                    if ($_lua[$_pos] === "else"){
-                                                        $a++;
-                                                    }
-                                                    if ($_lua[$_pos] === "end"){
-                                                        $MenuEnd = true;
-                                                        $VariablesMenu["Answers"] = $Answers;
-                                                        break;
-                                                    }
-                                                }
-                                                $Variable = $VariablesMenu;
-                                            }
-                                        }
-                                        if ($Function === "YesNo"){
-                                            if (preg_match('/\((.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                                $YesNoNo = [];
-                                                $VariablesExp = explode(", ",$match[1]);
-                                                if (strpos(end($VariablesExp),"TEXT") === false){
-                                                    array_pop($VariablesExp);
-                                                }
-                                                if (strpos($VariablesExp[0],"TEXT") === false){
-                                                    unset($VariablesExp[0]);
-                                                }
-                                                $VariablesYesNo = [];
-                                                foreach($VariablesExp as $Variables){
-                                                    $VariablesYesNo[] = ltrim(strstr($Variables, '.'),'.');
-                                                }
-                                                //add refuse text
-                                                $StorePos = $_pos;
-                                                $YesNoEnd = false;
-                                                $YesNo = "Yes";
-                                                while($YesNoEnd === false){
-                                                    $_pos++;
-                                                    if ($_pos >= $_lines){
-                                                        break;
-                                                    }
-                                                    if ($YesNo === "Yes") {
-                                                        if (strpos($_lua[$_pos],"TEXT") !== false){
-                                                            if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                                                $CutVariable = explode(",",$match[1]);
-                                                                $VariableNo = $CutVariable[0];
-                                                                $YesNoYes[] = $CsvTextArray[$VariableNo];
-                                                            }
-                                                        }
-                                                        if ($_lua[$_pos] === "end"){
-                                                            $YesNo = "No";
-                                                            $VariablesYesNo["Affirmative"] = $YesNoYes;
-                                                        }
-                                                        if (strpos($_lua[$_pos],"else") !== false){
-                                                            $YesNo = "No";
-                                                            $VariablesYesNo["Affirmative"] = $YesNoYes;
-                                                        }
-                                                    }
-                                                    if ($YesNo === "No") {
-                                                        if (strpos($_lua[$_pos],"TEXT") !== false){
-                                                            if (preg_match('/\.(.*?)\)+/', $_lua[$_pos], $match) == 1) {
-                                                                $CutVariable = explode(",",$match[1]);
-                                                                $VariableNo = $CutVariable[0];
-                                                                $YesNoNo[] = $CsvTextArray[$VariableNo];
-                                                            }
-                                                        }
-                                                        if ($_lua[$_pos] === "end"){
-                                                            $YesNo = "Break";
-                                                            $YesNoEnd = true;
-                                                            $VariablesYesNo["Negative"] = $YesNoNo;
-                                                            break;
-                                                        }
-                                                    }
-                                                }
-                                                $Variable = $VariablesYesNo;
-                                            }
-                                        }
-                                    }
-                                    $Array = array(
-                                        "Type" => $Function,
-                                        "Target" => $Object,
-                                        "Variables" => $Variable
-                                    );
-                                    $OutArray[] = $Array;
-                                    $found = true;
+                    }
+                    if (preg_match('/[A-Z][0-9]+_[0-9]+\(/', $_lua[$_pos])) {
+                        if (strpos($_lua[$_pos],"function") === false){
+                            $ExplodeLine = explode("(",$_lua[$_pos]);
+                            if (strpos($ExplodeLine[0]," = ") !== false){
+                                if (preg_match('/ = [A-Z][0-9]+_[0-9]+\(/', $_lua[$_pos], $correctmatch)) {
+                                    $ExplodeLine[0] = str_replace("(","",str_replace(" = ","",$correctmatch[1]));
                                 }
                             }
+                            $Function = $ObjectArray[$ExplodeLine[0]];
+                            $VariableLine = str_replace(")","",$ExplodeLine[1]);
+                            $RawVariables = explode(", ",$VariableLine);
+                            $Variables = [];
+                            foreach($RawVariables as $Variable){
+                                $Variables[] = $ObjectArray[$Variable]; 
+                            }
+                            $OutArray[] = array(
+                                "Scene" => $SceneNo,
+                                "Function" => $Function,
+                                "Variables" => $Variables
+                            );
                         }
                     }
                     $_pos++;
@@ -3475,5 +3204,15 @@ trait CsvParseTrait
         $CurencyArray[28] = 30341;
 
         return $CurencyArray;
+    }
+    
+    /**
+     * Color -> Hex convertor
+     */
+    private function colorToHex($Color)
+    {
+        $ColorOut = strtoupper(dechex($Color));
+
+        return $ColorOut;
     }
 }

@@ -1,42 +1,108 @@
-(function()
-  print("CtsMycPlayEventAfterContent")
-  function CtsMycPlayEventAfterContent.OnScene00000(A0_0, A1_1, A2_2, A3_3)
-    if A0_0:YesNo(A0_0.TEXT_CTSMYCPLAYEVENTAFTERCONTENT_00677_Q1_000_000, nil, nil) == true then
-      if A1_1:GetQuestSequence(A0_0.QUEST) == 1 then
-        A0_0:ContinueEventBGM()
-        A0_0:PlayBGM(A0_0.BGM_VICTORY)
-        A0_0:FadeOut(A0_0.FADE_SHORT, A0_0.FADE_LAYER_MIDDLE_NO_LOADING)
-        A0_0:WaitForFade()
-        A0_0:Skip(A0_0.SKIP_FINALIZE_AUTO_FADEIN)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsMycPlayEventAfterContent"
+  L0_2(L1_2)
+  L0_2 = CtsMycPlayEventAfterContent
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.YesNo
+    L6_3 = A0_3.TEXT_CTSMYCPLAYEVENTAFTERCONTENT_00677_Q1_000_000
+    L7_3 = nil
+    L8_3 = nil
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+    if L4_3 == true then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestSequence
+      L7_3 = A0_3.QUEST
+      L5_3 = L5_3(L6_3, L7_3)
+      if L5_3 == 1 then
+        L6_3 = A0_3
+        L5_3 = A0_3.ContinueEventBGM
+        L5_3(L6_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.PlayBGM
+        L7_3 = A0_3.BGM_VICTORY
+        L5_3(L6_3, L7_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.FadeOut
+        L7_3 = A0_3.FADE_SHORT
+        L8_3 = A0_3.FADE_LAYER_MIDDLE_NO_LOADING
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.WaitForFade
+        L5_3(L6_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Skip
+        L7_3 = A0_3.SKIP_FINALIZE_AUTO_FADEIN
+        L5_3(L6_3, L7_3)
       end
       return A3_3
     else
-      A0_0:CancelEventScene()
+      L6_3 = A0_3
+      L5_3 = A0_3.CancelEventScene
+      L5_3(L6_3)
     end
   end
-  function CtsMycPlayEventAfterContent.OnScene00001(A0_4, A1_5, A2_6, A3_7)
-    if A0_4:YesNo(A0_4.TEXT_CTSMYCPLAYEVENTAFTERCONTENT_00677_Q1_000_000, nil, nil) == true then
-      if A1_5:GetQuestSequence(A0_4.QUEST_55) == 5 then
-        A0_4:LastingBGM()
-        A0_4:FadeOut(A0_4.FADE_SHORT, A0_4.FADE_LAYER_MIDDLE_NO_LOADING)
-        A0_4:WaitForFade()
-        A0_4:Skip(A0_4.SKIP_FINALIZE_AUTO_FADEIN)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsMycPlayEventAfterContent
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3
+    L5_3 = A0_3
+    L4_3 = A0_3.YesNo
+    L6_3 = A0_3.TEXT_CTSMYCPLAYEVENTAFTERCONTENT_00677_Q1_000_000
+    L7_3 = nil
+    L8_3 = nil
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3)
+    if L4_3 == true then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestSequence
+      L7_3 = A0_3.QUEST_55
+      L5_3 = L5_3(L6_3, L7_3)
+      if L5_3 == 5 then
+        L6_3 = A0_3
+        L5_3 = A0_3.LastingBGM
+        L5_3(L6_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.FadeOut
+        L7_3 = A0_3.FADE_SHORT
+        L8_3 = A0_3.FADE_LAYER_MIDDLE_NO_LOADING
+        L5_3(L6_3, L7_3, L8_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.WaitForFade
+        L5_3(L6_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Skip
+        L7_3 = A0_3.SKIP_FINALIZE_AUTO_FADEIN
+        L5_3(L6_3, L7_3)
       end
-      return A3_7
+      return A3_3
     else
-      A0_4:CancelEventScene()
+      L6_3 = A0_3
+      L5_3 = A0_3.CancelEventScene
+      L5_3(L6_3)
     end
   end
-end)()
-;(function()
-  local L0_8
-  L0_8 = CtsMycPlayEventAfterContent
-  L0_8.SCRIPT_VERSION = 2
-  L0_8 = CtsMycPlayEventAfterContent
-  function L0_8.IsAcceptEvent(A0_9, A1_10, A2_11, A3_12, A4_13, A5_14)
-    if A5_14 == A0_9.EVENT_ENTER_TERRITORY then
-      return false
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsMycPlayEventAfterContent
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = CtsMycPlayEventAfterContent
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3
+    L6_3 = A0_3.EVENT_ENTER_TERRITORY
+    if A5_3 == L6_3 then
+      L6_3 = false
+      return L6_3
     end
-    return true
+    L6_3 = true
+    return L6_3
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

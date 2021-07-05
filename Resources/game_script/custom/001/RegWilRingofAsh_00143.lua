@@ -1,82 +1,342 @@
-(function()
-  print("RegWilRingofAsh")
-  function RegWilRingofAsh.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    if A1_1:IsQuestCompleted(A0_0.QUEST1) == true then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_150, true)
-    elseif A1_1:IsQuestCompleted(A0_0.QUEST0) == true then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_050, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegWilRingofAsh"
+  L0_2(L1_2)
+  L0_2 = RegWilRingofAsh
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST1
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_150
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000, true)
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestCompleted
+      L5_3 = A0_3.QUEST0
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_050
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      else
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      end
     end
   end
-  function RegWilRingofAsh.OnScene00001(A0_3, A1_4, A2_5)
-    if A1_4:IsQuestCompleted(A0_3.QUEST1) == true then
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegWilRingofAsh
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST1
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
       while true do
-        if A0_3:Menu(A0_3.TEXT_REGWILRINGOFASH_00143_Q3_000_000, A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_001, A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_002, A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_003) == 1 then
-          A2_5:TurnTo(A1_4, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_200, false)
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_ADD_NO)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_201, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_202, false)
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_203, false)
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_204, true)
-        elseif A0_3:Menu(A0_3.TEXT_REGWILRINGOFASH_00143_Q3_000_000, A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_001, A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_002, A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_003) == 2 then
-          A2_5:TurnTo(A1_4, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_210, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_211, false)
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_212, true)
+        L4_3 = A0_3
+        L3_3 = A0_3.Menu
+        L5_3 = A0_3.TEXT_REGWILRINGOFASH_00143_Q3_000_000
+        L6_3 = A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_001
+        L7_3 = A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_002
+        L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_A3_000_003
+        L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        if L3_3 == 1 then
+          L5_3 = A2_3
+          L4_3 = A2_3.TurnTo
+          L6_3 = A1_3
+          L7_3 = false
+          L4_3(L5_3, L6_3, L7_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_200
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_201
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_202
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_203
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_204
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        elseif L3_3 == 2 then
+          L5_3 = A2_3
+          L4_3 = A2_3.TurnTo
+          L6_3 = A1_3
+          L7_3 = false
+          L4_3(L5_3, L6_3, L7_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_210
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_211
+          L9_3 = false
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.PlayActionTimeline
+          L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+          L4_3(L5_3, L6_3)
+          L5_3 = A2_3
+          L4_3 = A2_3.Talk
+          L6_3 = A1_3
+          L7_3 = A0_3
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_212
+          L9_3 = true
+          L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
         else
-          return 0
+          L4_3 = 0
+          return L4_3
         end
       end
     else
-      if A1_4:IsQuestCompleted(A0_3.QUEST0) == true then
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestCompleted
+      L5_3 = A0_3.QUEST0
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
         while true do
-          if A0_3:Menu(A0_3.TEXT_REGWILRINGOFASH_00143_Q2_000_000, A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_001, A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_002, A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_003) == 1 then
-            A2_5:TurnTo(A1_4, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_100, false)
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_101, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_102, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_103, false)
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_104, true)
-          elseif A0_3:Menu(A0_3.TEXT_REGWILRINGOFASH_00143_Q2_000_000, A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_001, A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_002, A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_003) == 2 then
-            A2_5:TurnTo(A1_4, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_110, false)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_111, false)
-            A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-            A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_112, true)
+          L4_3 = A0_3
+          L3_3 = A0_3.Menu
+          L5_3 = A0_3.TEXT_REGWILRINGOFASH_00143_Q2_000_000
+          L6_3 = A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_001
+          L7_3 = A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_002
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_A2_000_003
+          L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          if L3_3 == 1 then
+            L5_3 = A2_3
+            L4_3 = A2_3.TurnTo
+            L6_3 = A1_3
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_100
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_101
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_102
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_103
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_104
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          elseif L3_3 == 2 then
+            L5_3 = A2_3
+            L4_3 = A2_3.TurnTo
+            L6_3 = A1_3
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_110
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_111
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_000_112
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
           else
-            return 0
+            L4_3 = 0
+            return L4_3
           end
         end
-      while true do
-        elseif A0_3:Menu(A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000Q, A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A1, A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A2, A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A3) == 1 then
-          A2_5:TurnTo(A1_4, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_010, false)
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_011, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_012, true)
-        elseif A0_3:Menu(A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000Q, A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A1, A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A2, A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A3) == 2 then
-          A2_5:TurnTo(A1_4, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_020, false)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_021, false)
-          A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY)
-          A2_5:Talk(A1_4, A0_3, A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_022, true)
-        else
-          return 0
+      else
+        while true do
+          L4_3 = A0_3
+          L3_3 = A0_3.Menu
+          L5_3 = A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000Q
+          L6_3 = A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A1
+          L7_3 = A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A2
+          L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_SCENE00000A3
+          L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          if L3_3 == 1 then
+            L5_3 = A2_3
+            L4_3 = A2_3.TurnTo
+            L6_3 = A1_3
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_010
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_011
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_012
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          elseif L3_3 == 2 then
+            L5_3 = A2_3
+            L4_3 = A2_3.TurnTo
+            L6_3 = A1_3
+            L7_3 = false
+            L4_3(L5_3, L6_3, L7_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_020
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_021
+            L9_3 = false
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.PlayActionTimeline
+            L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ANGRY
+            L4_3(L5_3, L6_3)
+            L5_3 = A2_3
+            L4_3 = A2_3.Talk
+            L6_3 = A1_3
+            L7_3 = A0_3
+            L8_3 = A0_3.TEXT_REGWILRINGOFASH_00143_LLOONGAH_022
+            L9_3 = true
+            L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+          else
+            L4_3 = 0
+            return L4_3
+          end
         end
       end
     end
   end
-end)()
-;(function()
-  local L1_6
-  L1_6 = RegWilRingofAsh
-  L1_6.SCRIPT_VERSION = 1
-end)()
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegWilRingofAsh
+  L0_2.SCRIPT_VERSION = 1
+end
+L0_1()

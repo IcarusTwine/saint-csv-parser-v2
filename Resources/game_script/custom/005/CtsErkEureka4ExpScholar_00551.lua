@@ -1,439 +1,1692 @@
-(function()
-  print("CtsErkEureka4ExpScholar")
-  function CtsErkEureka4ExpScholar.OnScene00001_001(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_000, true, nil, nil, nil, A0_0.SPEAK_NORMAL_MIDDLE)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka4ExpScholar"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_000
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00002_001(A0_3, A1_4, A2_5)
-    A2_5:TurnTo(A1_4, false)
-    A2_5:WaitForTurn()
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EMOTE_PSYCH)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_010, true, nil, nil, nil, A0_3.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00001_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_PSYCH
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_010
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00003_001(A0_6, A1_7, A2_8)
-    A2_8:TurnTo(A1_7, false)
-    A2_8:WaitForTurn()
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK2)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_040, true, nil, nil, nil, A0_6.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00002_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_040
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00004_001(A0_9, A1_10, A2_11)
-    A2_11:TurnTo(A1_10, false)
-    A2_11:WaitForTurn()
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_050, true, nil, nil, nil, A0_9.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00003_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_050
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00005_001(A0_12, A1_13, A2_14)
-    A2_14:TurnTo(A1_13, false)
-    A2_14:WaitForTurn()
-    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_060, true, nil, nil, nil, A0_12.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00004_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_060
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00006_001(A0_15, A1_16, A2_17)
-    A2_17:TurnTo(A1_16, false)
-    A2_17:WaitForTurn()
-    A2_17:PlayActionTimeline(A0_15.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_17:Talk(A1_16, A0_15, A0_15.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_070, true, nil, nil, nil, A0_15.SPEAK_NORMAL_MIDDLE)
-    A0_15:Wait(10)
-    A0_15:SystemTalk(A0_15.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_071, true)
+  L0_2.OnScene00005_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_070
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_071
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00007_001(A0_18, A1_19, A2_20)
-    A2_20:TurnTo(A1_19, false)
-    A2_20:WaitForTurn()
-    A2_20:PlayActionTimeline(A0_18.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_20:Talk(A1_19, A0_18, A0_18.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_080, true, nil, nil, nil, A0_18.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00006_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_080
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00008_001(A0_21, A1_22, A2_23)
-    A2_23:TurnTo(A1_22, false)
-    A2_23:WaitForTurn()
-    A2_23:PlayActionTimeline(A0_21.ACTION_TIMELINE_EVENT_TALK2)
-    A2_23:Talk(A1_22, A0_21, A0_21.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_090, true, nil, nil, nil, A0_21.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00007_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_090
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00009_001(A0_24, A1_25, A2_26)
-    A2_26:TurnTo(A1_25, false)
-    A2_26:WaitForTurn()
-    A2_26:PlayActionTimeline(A0_24.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_26:Talk(A1_25, A0_24, A0_24.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_100, true, nil, nil, nil, A0_24.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00008_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_100
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00010_001(A0_27, A1_28, A2_29)
-    A2_29:TurnTo(A1_28, false)
-    A2_29:WaitForTurn()
-    A2_29:PlayActionTimeline(A0_27.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_29:Talk(A1_28, A0_27, A0_27.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_110, true, nil, nil, nil, A0_27.SPEAK_NORMAL_MIDDLE)
-    A0_27:Wait(10)
-    A0_27:SystemTalk(A0_27.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_111, true)
+  L0_2.OnScene00009_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_110
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_111
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00011_001(A0_30, A1_31, A2_32)
-    A2_32:TurnTo(A1_31, false)
-    A2_32:WaitForTurn()
-    A2_32:PlayActionTimeline(A0_30.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_32:Talk(A1_31, A0_30, A0_30.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_120, true, nil, nil, nil, A0_30.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00010_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_120
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00012_001(A0_33, A1_34, A2_35)
-    A2_35:TurnTo(A1_34, false)
-    A2_35:WaitForTurn()
-    A2_35:PlayActionTimeline(A0_33.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_35:Talk(A1_34, A0_33, A0_33.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_130, true, nil, nil, nil, A0_33.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00011_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_130
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00013_001(A0_36, A1_37, A2_38)
-    A2_38:TurnTo(A1_37, false)
-    A2_38:WaitForTurn()
-    A2_38:PlayActionTimeline(A0_36.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_38:Talk(A1_37, A0_36, A0_36.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_140, true, nil, nil, nil, A0_36.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00012_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_140
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00014_001(A0_39, A1_40, A2_41)
-    A2_41:TurnTo(A1_40, false)
-    A2_41:WaitForTurn()
-    A2_41:PlayActionTimeline(A0_39.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_41:Talk(A1_40, A0_39, A0_39.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_150, true, nil, nil, nil, A0_39.SPEAK_NORMAL_MIDDLE)
-    A0_39:Wait(10)
-    A0_39:SystemTalk(A0_39.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_151, true)
+  L0_2.OnScene00013_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_150
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_151
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00015_001(A0_42, A1_43, A2_44)
-    A2_44:TurnTo(A1_43, false)
-    A2_44:WaitForTurn()
-    A2_44:PlayActionTimeline(A0_42.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_44:Talk(A1_43, A0_42, A0_42.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_160, true, nil, nil, nil, A0_42.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00014_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_160
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00016_001(A0_45, A1_46, A2_47)
-    A2_47:TurnTo(A1_46, false)
-    A2_47:WaitForTurn()
-    A2_47:PlayActionTimeline(A0_45.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_47:Talk(A1_46, A0_45, A0_45.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170, true, nil, nil, nil, A0_45.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00015_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00017_001(A0_48, A1_49, A2_50)
-    A2_50:TurnTo(A1_49, false)
-    A2_50:WaitForTurn()
-    A2_50:PlayActionTimeline(A0_48.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_50:Talk(A1_49, A0_48, A0_48.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170, true, nil, nil, nil, A0_48.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00016_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00018_001(A0_51, A1_52, A2_53)
-    A2_53:TurnTo(A1_52, false)
-    A2_53:WaitForTurn()
-    A2_53:PlayActionTimeline(A0_51.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_53:Talk(A1_52, A0_51, A0_51.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170, true, nil, nil, nil, A0_51.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00017_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00019_001(A0_54, A1_55, A2_56)
-    A2_56:TurnTo(A1_55, false)
-    A2_56:WaitForTurn()
-    A2_56:PlayActionTimeline(A0_54.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_56:Talk(A1_55, A0_54, A0_54.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170, true, nil, nil, nil, A0_54.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00018_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00020_001(A0_57, A1_58, A2_59)
-    A2_59:TurnTo(A1_58, false)
-    A2_59:WaitForTurn()
-    A2_59:PlayActionTimeline(A0_57.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_59:Talk(A1_58, A0_57, A0_57.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170, true, nil, nil, nil, A0_57.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00019_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_170
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00100_001(A0_60, A1_61, A2_62)
-    A2_62:TurnTo(A1_61, false)
-    A2_62:WaitForTurn()
-    A2_62:PlayActionTimeline(A0_60.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_62:Talk(A1_61, A0_60, A0_60.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_180, true, nil, nil, nil, A0_60.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00020_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_180
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00101_001(A0_63, A1_64, A2_65, A3_66)
-    A2_65:TurnTo(A1_64, false)
-    A2_65:WaitForTurn()
-    A2_65:PlayActionTimeline(A0_63.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_65:Talk(A1_64, A0_63, A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_190, true, nil, nil, nil, A0_63.SPEAK_NORMAL_MIDDLE)
-    A0_63:Wait(30)
-    A2_65:CancelActionTimeline(A0_63.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-    A2_65:PlayActionTimeline(A0_63.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_65:Talk(A1_64, A0_63, A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_191, false, nil, nil, nil, A0_63.SPEAK_NORMAL_MIDDLE)
-    A2_65:Talk(A1_64, A0_63, A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_192, true, nil, nil, nil, A0_63.SPEAK_NORMAL_MIDDLE)
-    A0_63:Wait(30)
-    A2_65:CancelActionTimeline(A0_63.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_65:PlayActionTimeline(A0_63.ACTION_TIMELINE_EVENT_TALK1)
-    A2_65:Talk(A1_64, A0_63, A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_193, false, nil, nil, nil, A0_63.SPEAK_NORMAL_MIDDLE)
-    A2_65:Talk(A1_64, A0_63, A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_194, false, nil, nil, nil, A0_63.SPEAK_NORMAL_MIDDLE)
-    A2_65:Talk(A1_64, A0_63, A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_195, true, nil, nil, nil, A0_63.SPEAK_NORMAL_MIDDLE)
-    A0_63:Wait(30)
-    if A0_63:YesNoCheck(A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNOCHECK_000_000, nil, nil, A0_63.DEFAULT_NO, A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_CHECKBOX_000_000, false) == true then
-      if A0_63:YesNo(A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNO_000_001, nil, nil) == true then
-        A0_63:ScreenImage(A0_63.SCREEN_IMAGE_01)
-        A0_63:Wait(120)
-        A0_63:SystemTalk(A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_050_197, false)
-        A0_63:SystemTalk(A0_63.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_051_197, true)
+  L0_2.OnScene00100_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_190
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_191
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_192
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_193
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_194
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_195
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.YesNoCheck
+    L6_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNOCHECK_000_000
+    L7_3 = nil
+    L8_3 = nil
+    L9_3 = A0_3.DEFAULT_NO
+    L10_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_CHECKBOX_000_000
+    L11_3 = false
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    if L4_3 == true then
+      L6_3 = A0_3
+      L5_3 = A0_3.YesNo
+      L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNO_000_001
+      L8_3 = nil
+      L9_3 = nil
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+      if L5_3 == true then
+        L7_3 = A0_3
+        L6_3 = A0_3.ScreenImage
+        L8_3 = A0_3.SCREEN_IMAGE_01
+        L6_3(L7_3, L8_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.Wait
+        L8_3 = 120
+        L6_3(L7_3, L8_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.SystemTalk
+        L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_050_197
+        L9_3 = false
+        L6_3(L7_3, L8_3, L9_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.SystemTalk
+        L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_051_197
+        L9_3 = true
+        L6_3(L7_3, L8_3, L9_3)
       else
-        A0_63:CancelEventScene()
+        L7_3 = A0_3
+        L6_3 = A0_3.CancelEventScene
+        L6_3(L7_3)
       end
     else
-      A0_63:CancelEventScene()
+      L6_3 = A0_3
+      L5_3 = A0_3.CancelEventScene
+      L5_3(L6_3)
     end
   end
-  function CtsErkEureka4ExpScholar.OnScene00102_001(A0_67, A1_68, A2_69)
-    A2_69:TurnTo(A1_68, false)
-    A2_69:WaitForTurn()
-    return (A0_67:PublicDungeonDescription(A1_68, A2_69))
+  L0_2.OnScene00101_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PublicDungeonDescription
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00103_001(A0_70, A1_71, A2_72)
-    A2_72:TurnTo(A1_71, false)
-    A2_72:WaitForTurn()
-    return (A0_70:PublicDungeonDescription(A1_71, A2_72))
+  L0_2.OnScene00102_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PublicDungeonDescription
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00200_001(A0_73, A1_74, A2_75)
-    A2_75:TurnTo(A1_74, false)
-    A2_75:WaitForTurn()
-    A2_75:PlayActionTimeline(A0_73.ACTION_TIMELINE_EVENT_THINK)
-    A2_75:Talk(A1_74, A0_73, A0_73.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_200, true, nil, nil, nil, A0_73.SPEAK_NORMAL_MIDDLE)
+  L0_2.OnScene00103_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_200
+    L8_3 = true
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00201_001(A0_76, A1_77, A2_78, A3_79)
-    A2_78:TurnTo(A1_77, false)
-    A2_78:WaitForTurn()
-    A2_78:PlayActionTimeline(A0_76.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_210, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
-    A0_76:Wait(30)
-    A2_78:CancelActionTimeline(A0_76.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-    A2_78:PlayActionTimeline(A0_76.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_211, false, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_212, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
-    A0_76:Wait(30)
-    A2_78:CancelActionTimeline(A0_76.ACTION_TIMELINE_EVENT_TALK_BIG)
-    A2_78:PlayActionTimeline(A0_76.ACTION_TIMELINE_EVENT_TALK1)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_213, false, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_214, false, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
-    A2_78:Talk(A1_77, A0_76, A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_215, true, nil, nil, nil, A0_76.SPEAK_NORMAL_MIDDLE)
-    A0_76:Wait(30)
-    if A0_76:YesNoCheck(A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNOCHECK_000_001, nil, nil, A0_76.DEFAULT_NO, A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_CHECKBOX_000_001, false) == true then
-      if A0_76:YesNo(A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNO_000_003, nil, nil) == true then
-        A0_76:ScreenImage(A0_76.SCREEN_IMAGE_01)
-        A0_76:Wait(120)
-        A0_76:SystemTalk(A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_050_217, false)
-        A0_76:SystemTalk(A0_76.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_051_217, true)
+  L0_2.OnScene00200_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L5_3 = A2_3
+    L4_3 = A2_3.TurnTo
+    L6_3 = A1_3
+    L7_3 = false
+    L4_3(L5_3, L6_3, L7_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.WaitForTurn
+    L4_3(L5_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_210
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_211
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_212
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.CancelActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.PlayActionTimeline
+    L6_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L4_3(L5_3, L6_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_213
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_214
+    L9_3 = false
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_215
+    L9_3 = true
+    L10_3 = nil
+    L11_3 = nil
+    L12_3 = nil
+    L13_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.Wait
+    L6_3 = 30
+    L4_3(L5_3, L6_3)
+    L5_3 = A0_3
+    L4_3 = A0_3.YesNoCheck
+    L6_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNOCHECK_000_001
+    L7_3 = nil
+    L8_3 = nil
+    L9_3 = A0_3.DEFAULT_NO
+    L10_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_CHECKBOX_000_001
+    L11_3 = false
+    L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3)
+    if L4_3 == true then
+      L6_3 = A0_3
+      L5_3 = A0_3.YesNo
+      L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_YESNO_000_003
+      L8_3 = nil
+      L9_3 = nil
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3)
+      if L5_3 == true then
+        L7_3 = A0_3
+        L6_3 = A0_3.ScreenImage
+        L8_3 = A0_3.SCREEN_IMAGE_01
+        L6_3(L7_3, L8_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.Wait
+        L8_3 = 120
+        L6_3(L7_3, L8_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.SystemTalk
+        L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_050_217
+        L9_3 = false
+        L6_3(L7_3, L8_3, L9_3)
+        L7_3 = A0_3
+        L6_3 = A0_3.SystemTalk
+        L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_051_217
+        L9_3 = true
+        L6_3(L7_3, L8_3, L9_3)
       else
-        A0_76:CancelEventScene()
+        L7_3 = A0_3
+        L6_3 = A0_3.CancelEventScene
+        L6_3(L7_3)
       end
     else
-      A0_76:CancelEventScene()
+      L6_3 = A0_3
+      L5_3 = A0_3.CancelEventScene
+      L5_3(L6_3)
     end
   end
-  function CtsErkEureka4ExpScholar.OnScene00202_001(A0_80, A1_81, A2_82)
-    A2_82:TurnTo(A1_81, false)
-    A2_82:WaitForTurn()
-    return (A0_80:PublicDungeonDescription(A1_81, A2_82))
+  L0_2.OnScene00201_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PublicDungeonDescription
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00203_001(A0_83, A1_84, A2_85)
-    A2_85:TurnTo(A1_84, false)
-    A2_85:WaitForTurn()
-    return (A0_83:PublicDungeonDescription(A1_84, A2_85))
+  L0_2.OnScene00202_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.PublicDungeonDescription
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.PublicDungeonDescription(A0_86, A1_87, A2_88)
+  L0_2.OnScene00203_001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
     while true do
-      while A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q1_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_002) == 1 do
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q1_000_000
+      L6_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_001
+      L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_000
+      L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_002
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      if L3_3 == 1 then
         while true do
-          while true do
-            while true do
-              while true do
-                while true do
-                  while true do
-                    while true do
-                      while true do
-                        A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-                        A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK2)
-                        A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-                        A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_BIG)
-                        A2_88:CancelActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-                        if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008) == 1 then
-                          A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-                          A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_220, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-                          A0_86:Wait(10)
-                          A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_221, false)
-                          A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_222, true)
-                        end
-                      end
-                      if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008) == 2 then
-                        A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK2)
-                        A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_230, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-                        A0_86:Wait(10)
-                        A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_231, false, 639)
-                        A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_232, true)
-                      end
-                    end
-                    if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008) == 3 then
-                      A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-                      A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_240, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-                      A0_86:Wait(10)
-                      A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_241, false)
-                      A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_242, false)
-                      A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_243, false)
-                      A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_244, false)
-                      A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_245, true)
-                    end
-                  end
-                  if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008) == 4 then
-                    A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_BIG)
-                    A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_250, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-                    A0_86:Wait(10)
-                    A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_251, false)
-                    A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_252, true)
-                  end
-                end
-                if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008) == 5 then
-                  A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-                  A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_260, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-                  A0_86:Wait(10)
-                  A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_261, true)
-                end
-              end
-              if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008) == 6 then
-                A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK2)
-                A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_270, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-                A0_86:Wait(10)
-                A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_271, false)
-                A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_272, true)
-              end
-            end
-            if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008) == 7 then
-              A2_88:PlayActionTimeline(A0_86.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-              A2_88:Talk(A1_87, A0_86, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_280, true, nil, nil, nil, A0_86.SPEAK_NORMAL_MIDDLE)
-              A0_86:Wait(10)
-              A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_281, false)
-              A0_86:SystemTalk(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_282, true)
-            end
+          L5_3 = A0_3
+          L4_3 = A0_3.Menu
+          L6_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q2_000_000
+          L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_001
+          L8_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_002
+          L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_003
+          L10_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_004
+          L11_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_005
+          L12_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_006
+          L13_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_007
+          L14_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A2_000_008
+          L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.CancelActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+          L5_3(L6_3, L7_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.CancelActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L5_3(L6_3, L7_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.CancelActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+          L5_3(L6_3, L7_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.CancelActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+          L5_3(L6_3, L7_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.CancelActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+          L5_3(L6_3, L7_3)
+          if L4_3 == 1 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_220
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_221
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_222
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          elseif L4_3 == 2 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_230
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_231
+            L8_3 = false
+            L9_3 = 639
+            L5_3(L6_3, L7_3, L8_3, L9_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_232
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          elseif L4_3 == 3 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_240
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_241
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_242
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_243
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_244
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_245
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          elseif L4_3 == 4 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_250
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_251
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_252
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          elseif L4_3 == 5 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_260
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_261
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          elseif L4_3 == 6 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_270
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_271
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_272
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          elseif L4_3 == 7 then
+            L6_3 = A2_3
+            L5_3 = A2_3.PlayActionTimeline
+            L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+            L5_3(L6_3, L7_3)
+            L6_3 = A2_3
+            L5_3 = A2_3.Talk
+            L7_3 = A1_3
+            L8_3 = A0_3
+            L9_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_INV00463_000_280
+            L10_3 = true
+            L11_3 = nil
+            L12_3 = nil
+            L13_3 = nil
+            L14_3 = A0_3.SPEAK_NORMAL_MIDDLE
+            L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.Wait
+            L7_3 = 10
+            L5_3(L6_3, L7_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_281
+            L8_3 = false
+            L5_3(L6_3, L7_3, L8_3)
+            L6_3 = A0_3
+            L5_3 = A0_3.SystemTalk
+            L7_3 = A0_3.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_SYSTEM_000_282
+            L8_3 = true
+            L5_3(L6_3, L7_3, L8_3)
+          else
+            goto lbl_228
           end
-          break
         end
-      end
-      if A0_86:Menu(A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_Q1_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_001, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_000, A0_86.TEXT_CTSERKEUREKA4EXPSCHOLAR_00551_A1_000_002) == 2 then
-        return true
+      elseif L3_3 == 2 then
+        L4_3 = true
+        return L4_3
       else
         break
       end
+      ::lbl_228::
     end
   end
-end)()
-;(function()
-  local L1_89
-  L1_89 = CtsErkEureka4ExpScholar
-  L1_89.SCRIPT_VERSION = 2
-end)()
-;(function()
-  print("CtsErkEureka4ExpScholar")
-  function CtsErkEureka4ExpScholar.OnScene00000(A0_90, A1_91, A2_92)
+  L0_2.PublicDungeonDescription = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CtsErkEureka4ExpScholar"
+  L0_2(L1_2)
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
   end
-  function CtsErkEureka4ExpScholar.OnScene00001(A0_93, A1_94, A2_95)
-    A0_93:OnScene00001_001(A1_94, A2_95)
-    return A0_93.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00001_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00002(A0_96, A1_97, A2_98)
-    A0_96:OnScene00002_001(A1_97, A2_98)
-    return A0_96.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00002_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00003(A0_99, A1_100, A2_101)
-    A0_99:OnScene00003_001(A1_100, A2_101)
-    return A0_99.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00003_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00004(A0_102, A1_103, A2_104)
-    A0_102:OnScene00004_001(A1_103, A2_104)
-    return A0_102.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00004_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00005(A0_105, A1_106, A2_107)
-    A0_105:OnScene00005_001(A1_106, A2_107)
-    return A0_105.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00004 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00005_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00006(A0_108, A1_109, A2_110)
-    A0_108:OnScene00006_001(A1_109, A2_110)
-    return A0_108.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00005 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00006_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00007(A0_111, A1_112, A2_113)
-    A0_111:OnScene00007_001(A1_112, A2_113)
-    return A0_111.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00006 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00007_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00008(A0_114, A1_115, A2_116)
-    A0_114:OnScene00008_001(A1_115, A2_116)
-    return A0_114.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00007 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00008_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00009(A0_117, A1_118, A2_119)
-    A0_117:OnScene00009_001(A1_118, A2_119)
-    return A0_117.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00008 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00009_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00010(A0_120, A1_121, A2_122)
-    A0_120:OnScene00010_001(A1_121, A2_122)
-    return A0_120.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00009 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00010_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00011(A0_123, A1_124, A2_125)
-    A0_123:OnScene00011_001(A1_124, A2_125)
-    return A0_123.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00010 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00011_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00012(A0_126, A1_127, A2_128)
-    A0_126:OnScene00012_001(A1_127, A2_128)
-    return A0_126.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00011 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00012_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00013(A0_129, A1_130, A2_131)
-    A0_129:OnScene00013_001(A1_130, A2_131)
-    return A0_129.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00012 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00013_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00014(A0_132, A1_133, A2_134)
-    A0_132:OnScene00014_001(A1_133, A2_134)
-    return A0_132.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00013 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00014_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00015(A0_135, A1_136, A2_137)
-    A0_135:OnScene00015_001(A1_136, A2_137)
-    return A0_135.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00014 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00015_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00016(A0_138, A1_139, A2_140)
-    A0_138:OnScene00016_001(A1_139, A2_140)
-    return A0_138.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00015 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00016_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00017(A0_141, A1_142, A2_143)
-    A0_141:OnScene00017_001(A1_142, A2_143)
-    return A0_141.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00016 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00017_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00018(A0_144, A1_145, A2_146)
-    A0_144:OnScene00018_001(A1_145, A2_146)
-    return A0_144.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00017 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00018_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00019(A0_147, A1_148, A2_149)
-    A0_147:OnScene00019_001(A1_148, A2_149)
-    return A0_147.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00018 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00019_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00020(A0_150, A1_151, A2_152)
-    A0_150:OnScene00020_001(A1_151, A2_152)
-    return A0_150.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00019 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00020_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00100(A0_153, A1_154, A2_155)
-    A0_153:OnScene00100_001(A1_154, A2_155)
-    return A0_153.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00020 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00100_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00101(A0_156, A1_157, A2_158, A3_159)
-    local L4_160
-    L4_160 = A3_159 ~= 0
-    A0_156:OnScene00101_001(A1_157, A2_158, L4_160)
-    return A0_156.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00100 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A3_3 ~= 0
+    L6_3 = A0_3
+    L5_3 = A0_3.OnScene00101_001
+    L7_3 = A1_3
+    L8_3 = A2_3
+    L9_3 = L4_3
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+    return L5_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00102(A0_161, A1_162, A2_163)
-    if A0_161:OnScene00102_001(A1_162, A2_163) == true then
-      return A0_161.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00101 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00102_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 == true then
+      L4_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+      return L4_3
     end
-    return A0_161.EUREKA_EVENT_RESULT_END
+    L4_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L4_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00103(A0_164, A1_165, A2_166)
-    if A0_164:OnScene00103_001(A1_165, A2_166) == true then
-      return A0_164.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00102 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00103_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 == true then
+      L4_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+      return L4_3
     end
-    return A0_164.EUREKA_EVENT_RESULT_END
+    L4_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L4_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00200(A0_167, A1_168, A2_169)
-    A0_167:OnScene00200_001(A1_168, A2_169)
-    return A0_167.EUREKA_EVENT_RESULT_END
+  L0_2.OnScene00103 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00200_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3(L4_3, L5_3, L6_3)
+    L3_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L3_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00201(A0_170, A1_171, A2_172, A3_173)
-    local L4_174
-    L4_174 = A3_173 ~= 0
-    A0_170:OnScene00201_001(A1_171, A2_172, L4_174)
-    return A0_170.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00200 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A3_3 ~= 0
+    L6_3 = A0_3
+    L5_3 = A0_3.OnScene00201_001
+    L7_3 = A1_3
+    L8_3 = A2_3
+    L9_3 = L4_3
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L5_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+    return L5_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00202(A0_175, A1_176, A2_177)
-    if A0_175:OnScene00202_001(A1_176, A2_177) == true then
-      return A0_175.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00201 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00202_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 == true then
+      L4_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+      return L4_3
     end
-    return A0_175.EUREKA_EVENT_RESULT_END
+    L4_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L4_3
   end
-  function CtsErkEureka4ExpScholar.OnScene00203(A0_178, A1_179, A2_180)
-    if A0_178:OnScene00203_001(A1_179, A2_180) == true then
-      return A0_178.EUREKA_EVENT_RESULT_NEXT
+  L0_2.OnScene00202 = L1_2
+  L0_2 = CtsErkEureka4ExpScholar
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.OnScene00203_001
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 == true then
+      L4_3 = A0_3.EUREKA_EVENT_RESULT_NEXT
+      return L4_3
     end
-    return A0_178.EUREKA_EVENT_RESULT_END
+    L4_3 = A0_3.EUREKA_EVENT_RESULT_END
+    return L4_3
   end
-end)()
+  L0_2.OnScene00203 = L1_2
+end
+L0_1()

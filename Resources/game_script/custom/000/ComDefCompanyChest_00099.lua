@@ -1,26 +1,45 @@
-(function()
-  print("ComDefCompanyChest")
-  function ComDefCompanyChest.OnScene00000(A0_0, A1_1, A2_2)
-    A0_0:CompanyChest()
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ComDefCompanyChest"
+  L0_2(L1_2)
+  L0_2 = ComDefCompanyChest
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3
+    L4_3 = A0_3
+    L3_3 = A0_3.CompanyChest
+    L3_3(L4_3)
   end
-end)()
-;(function()
-  local L0_3, L1_4
-  L0_3 = ComDefCompanyChest
-  L0_3.SCRIPT_VERSION = 1
-  L0_3 = ComDefCompanyChest
-  function L1_4(A0_5, A1_6, A2_7, A3_8, A4_9)
-    local L5_10
-    L5_10 = A0_5.EVENT_STATE_STORAGE
-    return L5_10
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ComDefCompanyChest
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = ComDefCompanyChest
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3
+    L5_3 = A0_3.EVENT_STATE_STORAGE
+    return L5_3
   end
-  L0_3.GetConditionId = L1_4
-  L0_3 = ComDefCompanyChest
-  function L1_4(A0_11, A1_12, A2_13)
-    if A0_11:IsWorkshopTerritory() then
-      return A1_12:IsInOwnLand()
+  L0_2.GetConditionId = L1_2
+  L0_2 = ComDefCompanyChest
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3
+    L4_3 = A0_3
+    L3_3 = A0_3.IsWorkshopTerritory
+    L3_3 = L3_3(L4_3)
+    if L3_3 then
+      L4_3 = A1_3
+      L3_3 = A1_3.IsInOwnLand
+      return L3_3(L4_3)
     end
-    return A1_12:IsFreeCompany()
+    L4_3 = A1_3
+    L3_3 = A1_3.IsFreeCompany
+    return L3_3(L4_3)
   end
-  L0_3.IsTargetingPossible = L1_4
-end)()
+  L0_2.IsTargetingPossible = L1_2
+end
+L0_1()

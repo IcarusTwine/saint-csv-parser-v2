@@ -1,308 +1,783 @@
-(function()
-  print("SubWil095 loaded")
-  function SubWil095.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3
-    L3_3 = A0_0.GetQuestId
-    L3_3 = L3_3(A0_0)
-    A2_2:LookAt(A1_1)
-    if A0_0:QuestOffer(A2_2, A1_1) then
-      A2_2:TurnTo(A1_1)
-      A2_2:WaitForTurn()
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_SUBWIL095_00503_DRUNKENSTAG_000, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_SUBWIL095_00503_DRUNKENSTAG_001, false)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ITEM)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_SUBWIL095_00503_DRUNKENSTAG_002, true)
-      A0_0:QuestAccepted()
-      return 1
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "SubWil095 loaded"
+  L0_2(L1_2)
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.LookAt
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.QuestOffer
+    L7_3 = A2_3
+    L8_3 = A1_3
+    L5_3 = L5_3(L6_3, L7_3, L8_3)
+    if L5_3 then
+      L6_3 = A2_3
+      L5_3 = A2_3.TurnTo
+      L7_3 = A1_3
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.WaitForTurn
+      L5_3(L6_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_SUBWIL095_00503_DRUNKENSTAG_000
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_SUBWIL095_00503_DRUNKENSTAG_001
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+      L5_3(L6_3, L7_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_SUBWIL095_00503_DRUNKENSTAG_002
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.QuestAccepted
+      L5_3(L6_3)
+      L5_3 = 1
+      return L5_3
     else
-      return 0
+      L5_3 = 0
+      return L5_3
     end
   end
-  function SubWil095.OnScene00001(A0_4, A1_5, A2_6)
-    local L3_7
-    L3_7 = A0_4.GetQuestId
-    L3_7 = L3_7(A0_4)
-    A1_5:SetSceneEndRollback(A0_4.ROLLBACK_DIRECTION, false)
-    A1_5:SetSceneEndRollback(A0_4.ROLLBACK_POSITION, false)
-    A1_5:TurnTo(A2_6, false)
-    A1_5:WaitForTurn()
+  L0_2.OnScene00000 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.SetSceneEndRollback
+    L7_3 = A0_3.ROLLBACK_DIRECTION
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.SetSceneEndRollback
+    L7_3 = A0_3.ROLLBACK_POSITION
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.TurnTo
+    L7_3 = A2_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.WaitForTurn
+    L5_3(L6_3)
   end
-  function SubWil095.OnScene00002(A0_8, A1_9, A2_10)
-    local L3_11
-    L3_11 = A0_8.GetQuestId
-    L3_11 = L3_11(A0_8)
-    A0_8:ScenarioMessage(A0_8.TEXT_SUBWIL095_00503_POP_MESSAGE)
+  L0_2.OnScene00001 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.ScenarioMessage
+    L7_3 = A0_3.TEXT_SUBWIL095_00503_POP_MESSAGE
+    L5_3(L6_3, L7_3)
   end
-  function SubWil095.OnScene00003(A0_12, A1_13, A2_14)
-    local L3_15
-    L3_15 = A0_12.GetQuestId
-    L3_15 = L3_15(A0_12)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
   end
-  function SubWil095.OnScene00004(A0_16, A1_17, A2_18)
-    local L3_19
-    L3_19 = A0_16.GetQuestId
-    L3_19 = L3_19(A0_16)
-    A1_17:SetSceneEndRollback(A0_16.ROLLBACK_DIRECTION, false)
-    A1_17:SetSceneEndRollback(A0_16.ROLLBACK_POSITION, false)
-    A1_17:TurnTo(A2_18, false)
-    A1_17:WaitForTurn()
+  L0_2.OnScene00003 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.SetSceneEndRollback
+    L7_3 = A0_3.ROLLBACK_DIRECTION
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.SetSceneEndRollback
+    L7_3 = A0_3.ROLLBACK_POSITION
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.TurnTo
+    L7_3 = A2_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.WaitForTurn
+    L5_3(L6_3)
   end
-  function SubWil095.OnScene00005(A0_20, A1_21, A2_22)
-    local L3_23
-    L3_23 = A0_20.GetQuestId
-    L3_23 = L3_23(A0_20)
-    A0_20:ScenarioMessage(A0_20.TEXT_SUBWIL095_00503_POP_MESSAGE)
+  L0_2.OnScene00004 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.ScenarioMessage
+    L7_3 = A0_3.TEXT_SUBWIL095_00503_POP_MESSAGE
+    L5_3(L6_3, L7_3)
   end
-  function SubWil095.OnScene00006(A0_24, A1_25, A2_26)
-    local L3_27
-    L3_27 = A0_24.GetQuestId
-    L3_27 = L3_27(A0_24)
+  L0_2.OnScene00005 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
   end
-  function SubWil095.OnScene00007(A0_28, A1_29, A2_30)
-    local L3_31
-    L3_31 = A0_28.GetQuestId
-    L3_31 = L3_31(A0_28)
-    A1_29:SetSceneEndRollback(A0_28.ROLLBACK_DIRECTION, false)
-    A1_29:SetSceneEndRollback(A0_28.ROLLBACK_POSITION, false)
-    A1_29:TurnTo(A2_30, false)
-    A1_29:WaitForTurn()
+  L0_2.OnScene00006 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.SetSceneEndRollback
+    L7_3 = A0_3.ROLLBACK_DIRECTION
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.SetSceneEndRollback
+    L7_3 = A0_3.ROLLBACK_POSITION
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.TurnTo
+    L7_3 = A2_3
+    L8_3 = false
+    L5_3(L6_3, L7_3, L8_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.WaitForTurn
+    L5_3(L6_3)
   end
-  function SubWil095.OnScene00008(A0_32, A1_33, A2_34)
-    local L3_35
-    L3_35 = A0_32.GetQuestId
-    L3_35 = L3_35(A0_32)
-    A0_32:ScenarioMessage(A0_32.TEXT_SUBWIL095_00503_POP_MESSAGE)
+  L0_2.OnScene00007 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.ScenarioMessage
+    L7_3 = A0_3.TEXT_SUBWIL095_00503_POP_MESSAGE
+    L5_3(L6_3, L7_3)
   end
-  function SubWil095.OnScene00009(A0_36, A1_37, A2_38)
-    local L3_39
-    L3_39 = A0_36.GetQuestId
-    L3_39 = L3_39(A0_36)
+  L0_2.OnScene00008 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
   end
-  function SubWil095.OnScene00010(A0_40, A1_41, A2_42)
-    local L3_43, L4_44, L5_45, L6_46, L7_47, L8_48, L9_49
-    L4_44 = A0_40
-    L3_43 = A0_40.GetQuestId
-    L3_43 = L3_43(L4_44)
-    L5_45 = A1_41
-    L4_44 = A1_41.GetQuestSequence
-    L4_44 = L4_44(L5_45, L6_46)
-    L5_45 = A2_42.TurnTo
-    L5_45(L6_46, L7_47)
-    L5_45 = A2_42.WaitForTurn
-    L5_45(L6_46)
-    L5_45 = A2_42.PlayActionTimeline
-    L5_45(L6_46, L7_47)
-    L5_45 = A2_42.Talk
-    L9_49 = A0_40.TEXT_SUBWIL095_00503_DRUNKENSTAG_010
-    L5_45(L6_46, L7_47, L8_48, L9_49, true)
-    L5_45 = 1
-    for L9_49 = 1, L5_45 do
-      A0_40:SetNpcTradeItem(L9_49, unpack(A0_40:GetNpcTradeItemInfo(L9_49, L4_44, A2_42:GetBaseId())))
+  L0_2.OnScene00009 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.TurnTo
+    L7_3 = A1_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.WaitForTurn
+    L5_3(L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_SUBWIL095_00503_DRUNKENSTAG_010
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L5_3 = 1
+    L6_3 = 1
+    L7_3 = L5_3
+    L8_3 = 1
+    for L9_3 = L6_3, L7_3, L8_3 do
+      L11_3 = A0_3
+      L10_3 = A0_3.SetNpcTradeItem
+      L12_3 = L9_3
+      L13_3 = unpack
+      L15_3 = A0_3
+      L14_3 = A0_3.GetNpcTradeItemInfo
+      L16_3 = L9_3
+      L17_3 = L4_3
+      L19_3 = A2_3
+      L18_3 = A2_3.GetBaseId
+      L18_3, L19_3 = L18_3(L19_3)
+      L14_3, L15_3, L16_3, L17_3, L18_3, L19_3 = L14_3(L15_3, L16_3, L17_3, L18_3, L19_3)
+      L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3 = L13_3(L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
+      L10_3(L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
     end
-    L9_49 = nil
-    if L6_46 == 1 then
-      return L6_46
+    L7_3 = A0_3
+    L6_3 = A0_3.NpcTrade
+    L8_3 = A0_3.NPC_TRADE_INVENTORY_MODE_EVENT
+    L9_3 = nil
+    L10_3 = nil
+    L11_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    if L6_3 == 1 then
+      return L6_3
     else
     end
   end
-  function SubWil095.OnScene00011(A0_50, A1_51, A2_52)
-    local L3_53, L4_54, L5_55, L6_56
-    L4_54 = A0_50
-    L3_53 = A0_50.GetQuestId
-    L3_53 = L3_53(L4_54)
-    L5_55 = A1_51
-    L4_54 = A1_51.GetQuestSequence
-    L6_56 = L3_53
-    L4_54 = L4_54(L5_55, L6_56)
-    L6_56 = A1_51
-    L5_55 = A1_51.PlayActionTimeline
-    L5_55(L6_56, A0_50.ACTION_TIMELINE_EVENT_ITEM)
-    L6_56 = A0_50
-    L5_55 = A0_50.Wait
-    L5_55(L6_56, 15)
-    L6_56 = A2_52
-    L5_55 = A2_52.PlayActionTimeline
-    L5_55(L6_56, A0_50.ACTION_TIMELINE_EMOTE_YES_STRONG)
-    L6_56 = A2_52
-    L5_55 = A2_52.Talk
-    L5_55(L6_56, A1_51, A0_50, A0_50.TEXT_SUBWIL095_00503_DRUNKENSTAG_011, false)
-    L6_56 = A2_52
-    L5_55 = A2_52.Talk
-    L5_55(L6_56, A1_51, A0_50, A0_50.TEXT_SUBWIL095_00503_DRUNKENSTAG_012, true)
-    L6_56 = A0_50
-    L5_55 = A0_50.QuestReward
-    L6_56 = L5_55(L6_56, A2_52, A1_51)
-    if L5_55 then
-      A0_50:QuestCompleted()
+  L0_2.OnScene00010 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 15
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.PlayActionTimeline
+    L7_3 = A0_3.ACTION_TIMELINE_EMOTE_YES_STRONG
+    L5_3(L6_3, L7_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_SUBWIL095_00503_DRUNKENSTAG_011
+    L10_3 = false
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.Talk
+    L7_3 = A1_3
+    L8_3 = A0_3
+    L9_3 = A0_3.TEXT_SUBWIL095_00503_DRUNKENSTAG_012
+    L10_3 = true
+    L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.QuestReward
+    L7_3 = A2_3
+    L8_3 = A1_3
+    L5_3, L6_3 = L5_3(L6_3, L7_3, L8_3)
+    if L5_3 then
+      L8_3 = A0_3
+      L7_3 = A0_3.QuestCompleted
+      L7_3(L8_3)
     else
-      A0_50:CancelNpcTrade()
+      L8_3 = A0_3
+      L7_3 = A0_3.CancelNpcTrade
+      L7_3(L8_3)
     end
-    return L5_55, L6_56
+    L7_3 = L5_3
+    L8_3 = L6_3
+    return L7_3, L8_3
   end
-  function SubWil095.OnScene00012(A0_57, A1_58, A2_59)
-    local L3_60
-    L3_60 = A0_57.GetQuestId
-    L3_60 = L3_60(A0_57)
+  L0_2.OnScene00011 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
   end
-  function SubWil095.GetEventItems(A0_61, A1_62)
-    local L2_63
-    L2_63 = A0_61.GetQuestId
-    L2_63 = L2_63(A0_61)
-    if A1_62:GetQuestSequence(L2_63) == A0_61.SEQ_0 then
-    elseif A1_62:GetQuestSequence(L2_63) == A0_61.SEQ_1 then
-      return A0_61.ITEM0, A1_62:GetQuestUI8CH(L2_63), false
-    elseif A1_62:GetQuestSequence(L2_63) == A0_61.SEQ_FINISH then
-      return A0_61.ITEM0, A1_62:GetQuestUI8BH(L2_63), false
-    end
-  end
-  function SubWil095.IsTodoChecked(A0_64, A1_65, A2_66)
-    local L3_67
-    L3_67 = A0_64.GetQuestId
-    L3_67 = L3_67(A0_64)
-    if A1_65:GetQuestSequence(L3_67) == A0_64.SEQ_0 then
-      return false
-    end
-    if A2_66 == 0 then
-      return A1_65:GetQuestUI8AH(L3_67) >= 3
-    elseif A2_66 == 1 then
-      return false
-    end
-  end
-end)()
-;(function()
-  local L0_68, L1_69
-  L0_68 = SubWil095
-  L0_68.SCRIPT_VERSION = 1
-  L0_68 = SubWil095
-  function L1_69(A0_70)
-    local L1_71
-  end
-  L0_68.OnInitialize = L1_69
-  L0_68 = SubWil095
-  function L1_69(A0_72, A1_73, A2_74, A3_75, A4_76)
-    local L5_77
-    L5_77 = A0_72.GetQuestId
-    L5_77 = L5_77(A0_72)
-    if A1_73:GetQuestSequence(L5_77) == A0_72.SEQ_1 then
-      if A3_75 == A0_72.EOBJECT0 then
-        return A1_73:GetQuestBitFlag8(L5_77, 1) == false
-      elseif A4_76 == A0_72.ENEMY0 then
-        return 1 > A1_73:GetQuestUI8AL(L5_77)
-      elseif A3_75 == A0_72.EOBJECT1 then
-        return A1_73:GetQuestBitFlag8(L5_77, 2) == false
-      elseif A4_76 == A0_72.ENEMY1 then
-        return 1 > A1_73:GetQuestUI8BH(L5_77)
-      elseif A3_75 == A0_72.EOBJECT2 then
-        return A1_73:GetQuestBitFlag8(L5_77, 3) == false
-      elseif A4_76 == A0_72.ENEMY2 then
-        return 1 > A1_73:GetQuestUI8BL(L5_77)
-      end
-    end
-    return false
-  end
-  L0_68.IsAcceptEvent = L1_69
-  L0_68 = SubWil095
-  function L1_69(A0_78, A1_79, A2_80, A3_81, A4_82)
-    local L5_83
-    L5_83 = A0_78.GetQuestId
-    L5_83 = L5_83(A0_78)
-    if A1_79:GetQuestSequence(L5_83) == A0_78.SEQ_1 then
-      if A3_81 == A0_78.EOBJECT0 then
-        return A1_79:GetQuestBitFlag8(L5_83, 1) == false
-      elseif A4_82 == A0_78.ENEMY0 then
-        return 1 > A1_79:GetQuestUI8AL(L5_83)
-      elseif A3_81 == A0_78.EOBJECT1 then
-        return A1_79:GetQuestBitFlag8(L5_83, 2) == false
-      elseif A4_82 == A0_78.ENEMY1 then
-        return 1 > A1_79:GetQuestUI8BH(L5_83)
-      elseif A3_81 == A0_78.EOBJECT2 then
-        return A1_79:GetQuestBitFlag8(L5_83, 3) == false
-      elseif A4_82 == A0_78.ENEMY2 then
-        return 1 > A1_79:GetQuestUI8BL(L5_83)
-      end
-    end
-    return false
-  end
-  L0_68.IsAnnounce = L1_69
-  L0_68 = SubWil095
-  function L1_69(A0_84, A1_85, A2_86)
-    local L3_87
-    L3_87 = A0_84.GetQuestId
-    L3_87 = L3_87(A0_84)
-    if A1_85:GetQuestSequence(L3_87) == A0_84.SEQ_0 then
-      return 0, 0
-    end
-    if A2_86 == 0 then
-      return A1_85:GetQuestUI8AH(L3_87), 3
-    elseif A2_86 == 1 then
-      return A1_85:GetQuestUI8AL(L3_87), 0
-    end
-  end
-  L0_68.GetTodoArgs = L1_69
-  L0_68 = SubWil095
-  function L1_69(A0_88, A1_89, A2_90)
-    local L3_91
-    L3_91 = A0_88.GetQuestId
-    L3_91 = L3_91(A0_88)
-    if A1_89:GetQuestSequence(L3_91) == A0_88.SEQ_1 then
-    elseif A1_89:GetQuestSequence(L3_91) == A0_88.SEQ_FINISH then
-    end
-    return A0_88:IsBattleNpcTriggerOwner(A1_89, A2_90, false), false
-  end
-  L0_68.GetGimmickState = L1_69
-  L0_68 = SubWil095
-  function L1_69(A0_92, A1_93, A2_94, A3_95)
-    if A2_94 == A0_92.SEQ_0 then
-    elseif A2_94 == A0_92.SEQ_1 then
-    elseif A2_94 == A0_92.SEQ_FINISH and A3_95 == A0_92.ACTOR0 then
-      ({})[1] = {
-        A0_92.ITEM0,
-        3,
-        false,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      }
-      return ({})[A1_93]
-    end
-  end
-  L0_68.GetNpcTradeItemInfo = L1_69
-  L0_68 = SubWil095
-  function L1_69(A0_96, A1_97, A2_98)
-    local L3_99, L4_100, L5_101, L6_102, L7_103, L8_104, L9_105, L10_106
-    L3_99 = {}
-    L4_100 = A0_96.SEQ_0
-    if A1_97 == L4_100 then
+  L0_2.OnScene00012 = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3)
+    local L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
+    L3_3 = A0_3
+    L2_3 = A0_3.GetQuestId
+    L2_3 = L2_3(L3_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetQuestSequence
+    L5_3 = L2_3
+    L3_3 = L3_3(L4_3, L5_3)
+    L4_3 = A0_3.SEQ_0
+    if L3_3 == L4_3 then
     else
-      L4_100 = A0_96.SEQ_1
-      if A1_97 == L4_100 then
+      L4_3 = A0_3.SEQ_1
+      if L3_3 == L4_3 then
+        L4_3 = A0_3.ITEM0
+        L6_3 = A1_3
+        L5_3 = A1_3.GetQuestUI8CH
+        L7_3 = L2_3
+        L5_3 = L5_3(L6_3, L7_3)
+        L6_3 = false
+        return L4_3, L5_3, L6_3
       else
-        L4_100 = A0_96.SEQ_FINISH
-        if A1_97 == L4_100 then
-          L4_100 = A0_96.ACTOR0
-          if A2_98 == L4_100 then
-            L4_100 = 1
-            L5_101 = 1
-            for L9_105 = 1, L4_100 do
-              for _FORV_13_ = 1, #A0_96:GetNpcTradeItemInfo(L9_105, A1_97, A2_98) do
-                L3_99[L5_101] = A0_96:GetNpcTradeItemInfo(L9_105, A1_97, A2_98)[_FORV_13_]
-                L5_101 = L5_101 + 1
+        L4_3 = A0_3.SEQ_FINISH
+        if L3_3 == L4_3 then
+          L4_3 = A0_3.ITEM0
+          L6_3 = A1_3
+          L5_3 = A1_3.GetQuestUI8BH
+          L7_3 = L2_3
+          L5_3 = L5_3(L6_3, L7_3)
+          L6_3 = false
+          return L4_3, L5_3, L6_3
+        end
+      end
+    end
+  end
+  L0_2.GetEventItems = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = false
+      return L5_3
+    end
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AH
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L5_3 = 3 <= L5_3
+      return L5_3
+    elseif A2_3 == 1 then
+      L5_3 = false
+      return L5_3
+    end
+  end
+  L0_2.IsTodoChecked = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = SubWil095
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = SubWil095
+  function L1_2(A0_3)
+    local L1_3
+  end
+  L0_2.OnInitialize = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_1
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.EOBJECT0
+      if A3_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.GetQuestBitFlag8
+        L9_3 = L5_3
+        L10_3 = 1
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        L7_3 = L7_3 == false
+        return L7_3
+      else
+        L7_3 = A0_3.ENEMY0
+        if A4_3 == L7_3 then
+          L7_3 = 1
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8AL
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          L9_3 = L7_3 > L8_3
+          return L9_3
+        else
+          L7_3 = A0_3.EOBJECT1
+          if A3_3 == L7_3 then
+            L8_3 = A1_3
+            L7_3 = A1_3.GetQuestBitFlag8
+            L9_3 = L5_3
+            L10_3 = 2
+            L7_3 = L7_3(L8_3, L9_3, L10_3)
+            L7_3 = L7_3 == false
+            return L7_3
+          else
+            L7_3 = A0_3.ENEMY1
+            if A4_3 == L7_3 then
+              L7_3 = 1
+              L9_3 = A1_3
+              L8_3 = A1_3.GetQuestUI8BH
+              L10_3 = L5_3
+              L8_3 = L8_3(L9_3, L10_3)
+              L9_3 = L7_3 > L8_3
+              return L9_3
+            else
+              L7_3 = A0_3.EOBJECT2
+              if A3_3 == L7_3 then
+                L8_3 = A1_3
+                L7_3 = A1_3.GetQuestBitFlag8
+                L9_3 = L5_3
+                L10_3 = 3
+                L7_3 = L7_3(L8_3, L9_3, L10_3)
+                L7_3 = L7_3 == false
+                return L7_3
+              else
+                L7_3 = A0_3.ENEMY2
+                if A4_3 == L7_3 then
+                  L7_3 = 1
+                  L9_3 = A1_3
+                  L8_3 = A1_3.GetQuestUI8BL
+                  L10_3 = L5_3
+                  L8_3 = L8_3(L9_3, L10_3)
+                  L9_3 = L7_3 > L8_3
+                  return L9_3
+                end
               end
             end
           end
         end
       end
     end
-    return L3_99
+    L7_3 = false
+    return L7_3
   end
-  L0_68.GetNpcTradeItems = L1_69
-end)()
+  L0_2.IsAcceptEvent = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetQuestSequence
+    L8_3 = L5_3
+    L6_3 = L6_3(L7_3, L8_3)
+    L7_3 = A0_3.SEQ_1
+    if L6_3 == L7_3 then
+      L7_3 = A0_3.EOBJECT0
+      if A3_3 == L7_3 then
+        L8_3 = A1_3
+        L7_3 = A1_3.GetQuestBitFlag8
+        L9_3 = L5_3
+        L10_3 = 1
+        L7_3 = L7_3(L8_3, L9_3, L10_3)
+        L7_3 = L7_3 == false
+        return L7_3
+      else
+        L7_3 = A0_3.ENEMY0
+        if A4_3 == L7_3 then
+          L7_3 = 1
+          L9_3 = A1_3
+          L8_3 = A1_3.GetQuestUI8AL
+          L10_3 = L5_3
+          L8_3 = L8_3(L9_3, L10_3)
+          L9_3 = L7_3 > L8_3
+          return L9_3
+        else
+          L7_3 = A0_3.EOBJECT1
+          if A3_3 == L7_3 then
+            L8_3 = A1_3
+            L7_3 = A1_3.GetQuestBitFlag8
+            L9_3 = L5_3
+            L10_3 = 2
+            L7_3 = L7_3(L8_3, L9_3, L10_3)
+            L7_3 = L7_3 == false
+            return L7_3
+          else
+            L7_3 = A0_3.ENEMY1
+            if A4_3 == L7_3 then
+              L7_3 = 1
+              L9_3 = A1_3
+              L8_3 = A1_3.GetQuestUI8BH
+              L10_3 = L5_3
+              L8_3 = L8_3(L9_3, L10_3)
+              L9_3 = L7_3 > L8_3
+              return L9_3
+            else
+              L7_3 = A0_3.EOBJECT2
+              if A3_3 == L7_3 then
+                L8_3 = A1_3
+                L7_3 = A1_3.GetQuestBitFlag8
+                L9_3 = L5_3
+                L10_3 = 3
+                L7_3 = L7_3(L8_3, L9_3, L10_3)
+                L7_3 = L7_3 == false
+                return L7_3
+              else
+                L7_3 = A0_3.ENEMY2
+                if A4_3 == L7_3 then
+                  L7_3 = 1
+                  L9_3 = A1_3
+                  L8_3 = A1_3.GetQuestUI8BL
+                  L10_3 = L5_3
+                  L8_3 = L8_3(L9_3, L10_3)
+                  L9_3 = L7_3 > L8_3
+                  return L9_3
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+    L7_3 = false
+    return L7_3
+  end
+  L0_2.IsAnnounce = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L5_3 = A0_3.SEQ_0
+    if L4_3 == L5_3 then
+      L5_3 = 0
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+    if A2_3 == 0 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AH
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 3
+      return L5_3, L6_3
+    elseif A2_3 == 1 then
+      L6_3 = A1_3
+      L5_3 = A1_3.GetQuestUI8AL
+      L7_3 = L3_3
+      L5_3 = L5_3(L6_3, L7_3)
+      L6_3 = 0
+      return L5_3, L6_3
+    end
+  end
+  L0_2.GetTodoArgs = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A0_3
+    L3_3 = A0_3.GetQuestId
+    L3_3 = L3_3(L4_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.GetQuestSequence
+    L6_3 = L3_3
+    L4_3 = L4_3(L5_3, L6_3)
+    L6_3 = A2_3
+    L5_3 = A2_3.GetBaseId
+    L5_3 = L5_3(L6_3)
+    L6_3 = A0_3.SEQ_1
+    if L4_3 == L6_3 then
+    else
+      L6_3 = A0_3.SEQ_FINISH
+      if L4_3 == L6_3 then
+      end
+    end
+    L7_3 = A0_3
+    L6_3 = A0_3.IsBattleNpcTriggerOwner
+    L8_3 = A1_3
+    L9_3 = A2_3
+    L10_3 = false
+    L6_3 = L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = false
+    return L6_3, L7_3
+  end
+  L0_2.GetGimmickState = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3, L20_3
+    L5_3 = A0_3
+    L4_3 = A0_3.GetQuestId
+    L4_3 = L4_3(L5_3)
+    L5_3 = {}
+    L6_3 = A0_3.SEQ_0
+    if A2_3 == L6_3 then
+    else
+      L6_3 = A0_3.SEQ_1
+      if A2_3 == L6_3 then
+      else
+        L6_3 = A0_3.SEQ_FINISH
+        if A2_3 == L6_3 then
+          L6_3 = A0_3.ACTOR0
+          if A3_3 == L6_3 then
+            L6_3 = {}
+            L7_3 = A0_3.ITEM0
+            L8_3 = 3
+            L9_3 = false
+            L10_3 = 0
+            L11_3 = 0
+            L12_3 = 0
+            L13_3 = 0
+            L14_3 = 0
+            L15_3 = 0
+            L16_3 = 0
+            L17_3 = 0
+            L18_3 = 0
+            L19_3 = 0
+            L20_3 = 0
+            L6_3[1] = L7_3
+            L6_3[2] = L8_3
+            L6_3[3] = L9_3
+            L6_3[4] = L10_3
+            L6_3[5] = L11_3
+            L6_3[6] = L12_3
+            L6_3[7] = L13_3
+            L6_3[8] = L14_3
+            L6_3[9] = L15_3
+            L6_3[10] = L16_3
+            L6_3[11] = L17_3
+            L6_3[12] = L18_3
+            L6_3[13] = L19_3
+            L6_3[14] = L20_3
+            L5_3[1] = L6_3
+            L6_3 = L5_3[A1_3]
+            return L6_3
+          end
+        end
+      end
+    end
+  end
+  L0_2.GetNpcTradeItemInfo = L1_2
+  L0_2 = SubWil095
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3
+    L3_3 = {}
+    L4_3 = A0_3.SEQ_0
+    if A1_3 == L4_3 then
+    else
+      L4_3 = A0_3.SEQ_1
+      if A1_3 == L4_3 then
+      else
+        L4_3 = A0_3.SEQ_FINISH
+        if A1_3 == L4_3 then
+          L4_3 = A0_3.ACTOR0
+          if A2_3 == L4_3 then
+            L4_3 = 1
+            L5_3 = 1
+            L6_3 = 1
+            L7_3 = L4_3
+            L8_3 = 1
+            for L9_3 = L6_3, L7_3, L8_3 do
+              L10_3 = 1
+              L12_3 = A0_3
+              L11_3 = A0_3.GetNpcTradeItemInfo
+              L13_3 = L9_3
+              L14_3 = A1_3
+              L15_3 = A2_3
+              L11_3 = L11_3(L12_3, L13_3, L14_3, L15_3)
+              L11_3 = #L11_3
+              L12_3 = 1
+              for L13_3 = L10_3, L11_3, L12_3 do
+                L15_3 = A0_3
+                L14_3 = A0_3.GetNpcTradeItemInfo
+                L16_3 = L9_3
+                L17_3 = A1_3
+                L18_3 = A2_3
+                L14_3 = L14_3(L15_3, L16_3, L17_3, L18_3)
+                L14_3 = L14_3[L13_3]
+                L3_3[L5_3] = L14_3
+                L5_3 = L5_3 + 1
+              end
+            end
+          end
+        end
+      end
+    end
+    return L3_3
+  end
+  L0_2.GetNpcTradeItems = L1_2
+end
+L0_1()

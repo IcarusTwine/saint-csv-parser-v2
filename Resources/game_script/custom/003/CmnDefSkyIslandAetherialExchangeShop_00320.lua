@@ -1,34 +1,109 @@
-(function()
-  print("CmnDefSkyIslandAetherialExchangeShop")
-  function CmnDefSkyIslandAetherialExchangeShop.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1, A1_1)
-    if A2_2:GetBaseId() == A0_0.ENPC1 then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_001, true)
-    elseif A2_2:GetBaseId() == A0_0.ENPC2 then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_011, true)
-    elseif A2_2:GetBaseId() == A0_0.ENPC3 then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_021, true)
-    elseif A2_2:GetBaseId() == A0_0.ENPC4 then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_031, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefSkyIslandAetherialExchangeShop"
+  L0_2(L1_2)
+  L0_2 = CmnDefSkyIslandAetherialExchangeShop
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.GetBaseId
+    L3_3 = L3_3(L4_3)
+    L4_3 = A0_3.ENPC1
+    if L3_3 == L4_3 then
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_001
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      if A2_2:GetBaseId() == A0_0.ENPC5 then
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_041, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.GetBaseId
+      L3_3 = L3_3(L4_3)
+      L4_3 = A0_3.ENPC2
+      if L3_3 == L4_3 then
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_011
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
       else
+        L4_3 = A2_3
+        L3_3 = A2_3.GetBaseId
+        L3_3 = L3_3(L4_3)
+        L4_3 = A0_3.ENPC3
+        if L3_3 == L4_3 then
+          L4_3 = A2_3
+          L3_3 = A2_3.Talk
+          L5_3 = A1_3
+          L6_3 = A0_3
+          L7_3 = A0_3.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_021
+          L8_3 = true
+          L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        else
+          L4_3 = A2_3
+          L3_3 = A2_3.GetBaseId
+          L3_3 = L3_3(L4_3)
+          L4_3 = A0_3.ENPC4
+          if L3_3 == L4_3 then
+            L4_3 = A2_3
+            L3_3 = A2_3.Talk
+            L5_3 = A1_3
+            L6_3 = A0_3
+            L7_3 = A0_3.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_031
+            L8_3 = true
+            L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          else
+            L4_3 = A2_3
+            L3_3 = A2_3.GetBaseId
+            L3_3 = L3_3(L4_3)
+            L4_3 = A0_3.ENPC5
+            if L3_3 == L4_3 then
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_CMNDEFSKYISLANDAETHERIALEXCHANGESHOP_00320_041
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+            else
+            end
+          end
+        end
       end
     end
-    return A0_0.NEXT_SHOP
+    L3_3 = A0_3.NEXT_SHOP
+    return L3_3
   end
-end)()
-;(function()
-  local L0_3
-  L0_3 = CmnDefSkyIslandAetherialExchangeShop
-  L0_3.SCRIPT_VERSION = 1
-  L0_3 = CmnDefSkyIslandAetherialExchangeShop
-  L0_3.NEXT_EXIT = 0
-  L0_3 = CmnDefSkyIslandAetherialExchangeShop
-  L0_3.NEXT_SHOP = 1
-  L0_3 = CmnDefSkyIslandAetherialExchangeShop
-  function L0_3.OnInitialize(A0_4)
-    A0_4:AddNestEventHandler(A0_4.SHOP_DISPOSAL)
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefSkyIslandAetherialExchangeShop
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefSkyIslandAetherialExchangeShop
+  L0_2.NEXT_EXIT = 0
+  L0_2 = CmnDefSkyIslandAetherialExchangeShop
+  L0_2.NEXT_SHOP = 1
+  L0_2 = CmnDefSkyIslandAetherialExchangeShop
+  function L1_2(A0_3)
+    local L1_3, L2_3, L3_3
+    L2_3 = A0_3
+    L1_3 = A0_3.AddNestEventHandler
+    L3_3 = A0_3.SHOP_DISPOSAL
+    L1_3(L2_3, L3_3)
   end
-end)()
+  L0_2.OnInitialize = L1_2
+end
+L0_1()

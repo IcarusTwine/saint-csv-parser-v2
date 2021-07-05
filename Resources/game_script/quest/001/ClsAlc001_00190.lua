@@ -1,57 +1,206 @@
-(function()
-  print("ClsAlc001 loaded")
-  function ClsAlc001.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4
-    L4_4 = A2_2
-    L3_3 = A2_2.TurnTo
-    L3_3(L4_4, A1_1)
-    L4_4 = A2_2
-    L3_3 = A2_2.WaitForTurn
-    L3_3(L4_4)
-    L4_4 = A1_1
-    L3_3 = A1_1.GetClassLevel
-    L3_3 = L3_3(L4_4, A0_0.CLASS_JOB_ALCHEMIST)
-    L4_4 = false
-    if L3_3 >= 0 then
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1, A1_1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_000, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_001, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_002, true)
-      L4_4 = A0_0:YesNo(A0_0.TEXT_CLSALC001_00190_Q1_1, A0_0.TEXT_CLSALC001_00190_A1_1, A0_0.TEXT_CLSALC001_00190_A1_2, A0_0.DEFAULT_NO)
-      if L4_4 == true then
-        if A1_1:IsQuestAcceptQualified(A0_0:GetQuestId()) == true then
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_YES, A1_1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_030, false)
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1, A1_1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_031, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_032, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_033, false)
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK, A1_1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_034, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_035, false)
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK2, A1_1)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_036, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_037, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_038, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "ClsAlc001 loaded"
+  L0_2(L1_2)
+  L0_2 = ClsAlc001
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.GetClassLevel
+    L5_3 = A0_3.CLASS_JOB_ALCHEMIST
+    L3_3 = L3_3(L4_3, L5_3)
+    L4_3 = false
+    if 0 <= L3_3 then
+      L6_3 = A2_3
+      L5_3 = A2_3.PlayActionTimeline
+      L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L8_3 = A1_3
+      L5_3(L6_3, L7_3, L8_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_000
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_001
+      L10_3 = false
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A2_3
+      L5_3 = A2_3.Talk
+      L7_3 = A1_3
+      L8_3 = A0_3
+      L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_002
+      L10_3 = true
+      L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L6_3 = A0_3
+      L5_3 = A0_3.YesNo
+      L7_3 = A0_3.TEXT_CLSALC001_00190_Q1_1
+      L8_3 = A0_3.TEXT_CLSALC001_00190_A1_1
+      L9_3 = A0_3.TEXT_CLSALC001_00190_A1_2
+      L10_3 = A0_3.DEFAULT_NO
+      L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+      L4_3 = L5_3
+      if L4_3 == true then
+        L6_3 = A1_3
+        L5_3 = A1_3.IsQuestAcceptQualified
+        L8_3 = A0_3
+        L7_3 = A0_3.GetQuestId
+        L7_3, L8_3, L9_3, L10_3 = L7_3(L8_3)
+        L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        if L5_3 == true then
+          L6_3 = A2_3
+          L5_3 = A2_3.PlayActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+          L8_3 = A1_3
+          L5_3(L6_3, L7_3, L8_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_030
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.PlayActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+          L8_3 = A1_3
+          L5_3(L6_3, L7_3, L8_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_031
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_032
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_033
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.PlayActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+          L8_3 = A1_3
+          L5_3(L6_3, L7_3, L8_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_034
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_035
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.PlayActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L8_3 = A1_3
+          L5_3(L6_3, L7_3, L8_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_036
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_037
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_038
+          L10_3 = true
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
         else
-          A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_NO)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_020, false)
-          A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_021, false)
-          A0_0:SystemTalk(A0_0.TEXT_CLSALC001_00190_SYS_022, true)
+          L6_3 = A2_3
+          L5_3 = A2_3.PlayActionTimeline
+          L7_3 = A0_3.ACTION_TIMELINE_EMOTE_NO
+          L5_3(L6_3, L7_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_020
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A2_3
+          L5_3 = A2_3.Talk
+          L7_3 = A1_3
+          L8_3 = A0_3
+          L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_021
+          L10_3 = false
+          L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+          L6_3 = A0_3
+          L5_3 = A0_3.SystemTalk
+          L7_3 = A0_3.TEXT_CLSALC001_00190_SYS_022
+          L8_3 = true
+          L5_3(L6_3, L7_3, L8_3)
         end
       else
-        A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_ANGRY)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_010, false)
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CLSALC001_00190_DEITRICH_011, true)
+        L6_3 = A2_3
+        L5_3 = A2_3.PlayActionTimeline
+        L7_3 = A0_3.ACTION_TIMELINE_EMOTE_ANGRY
+        L5_3(L6_3, L7_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_010
+        L10_3 = false
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+        L6_3 = A2_3
+        L5_3 = A2_3.Talk
+        L7_3 = A1_3
+        L8_3 = A0_3
+        L9_3 = A0_3.TEXT_CLSALC001_00190_DEITRICH_011
+        L10_3 = true
+        L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
       end
     end
-    return L4_4
+    return L4_3
   end
-end)()
-;(function()
-  local L0_5, L1_6
-  L0_5 = ClsAlc001
-  L0_5.SCRIPT_VERSION = 1
-  L0_5 = ClsAlc001
-  L0_5.SCENE_0 = 0
-end)()
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = ClsAlc001
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = ClsAlc001
+  L0_2.SCENE_0 = 0
+end
+L0_1()

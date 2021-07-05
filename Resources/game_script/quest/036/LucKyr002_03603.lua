@@ -1,41 +1,152 @@
-(function()
-  print("LucKyr002 loaded")
-  function LucKyr002.OnScene00000(A0_0, A1_1, A2_2)
-    if A1_1:IsQuestAcceptQualified(A0_0:GetQuestId()) == true then
-      A2_2:TurnTo(A1_1, false)
-      A2_2:WaitForTurn()
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_BOW)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_001, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_002, false)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_ONEHAND)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK1)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_003, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_004, false)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_005, true)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_YES)
-      A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_YES)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_YES)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ARMS)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_006, true)
-      A1_1:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A1_1:WaitForActionTimeline(A0_0.ACTION_TIMELINE_EVENT_THINK)
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EMOTE_BOW)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_007, true)
-      return 1, 0
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "LucKyr002 loaded"
+  L0_2(L1_2)
+  L0_2 = LucKyr002
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestAcceptQualified
+    L6_3 = A0_3
+    L5_3 = A0_3.GetQuestId
+    L5_3, L6_3, L7_3, L8_3 = L5_3(L6_3)
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.TurnTo
+      L5_3 = A1_3
+      L6_3 = false
+      L3_3(L4_3, L5_3, L6_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.WaitForTurn
+      L3_3(L4_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_001
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_002
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_ONEHAND
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_003
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_004
+      L8_3 = false
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_005
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A1_3
+      L3_3 = A1_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+      L3_3(L4_3, L5_3)
+      L4_3 = A1_3
+      L3_3 = A1_3.WaitForActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_ARMS
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_006
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A1_3
+      L3_3 = A1_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L3_3(L4_3, L5_3)
+      L4_3 = A1_3
+      L3_3 = A1_3.WaitForActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EMOTE_BOW
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_007
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L3_3 = 1
+      L4_3 = 0
+      return L3_3, L4_3
     else
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_LUCKYR002_03603_MOWEN_000_008, true)
-      A0_0:Wait(15)
-      A0_0:SystemTalk(A0_0.TEXT_LUCKYR002_03603_SYSTEM_000_009, true)
-      return 0, 0
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_LUCKYR002_03603_MOWEN_000_008
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 15
+      L3_3(L4_3, L5_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.SystemTalk
+      L5_3 = A0_3.TEXT_LUCKYR002_03603_SYSTEM_000_009
+      L6_3 = true
+      L3_3(L4_3, L5_3, L6_3)
+      L3_3 = 0
+      L4_3 = 0
+      return L3_3, L4_3
     end
   end
-end)()
-;(function()
-  local L0_3
-  L0_3 = LucKyr002
-  L0_3.SCRIPT_VERSION = 2
-  L0_3 = LucKyr002
-  function L0_3.OnInitialize(A0_4)
-    local L1_5
+  L0_2.OnScene00000 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = LucKyr002
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = LucKyr002
+  function L1_2(A0_3)
+    local L1_3
   end
-end)()
+  L0_2.OnInitialize = L1_2
+end
+L0_1()

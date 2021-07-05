@@ -1,224 +1,721 @@
-(function()
-  print("CmnDefRelicWeapon020Trade")
-  function CmnDefRelicWeapon020Trade.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3, L4_4, L5_5, L6_6
-    L4_4 = A2_2
-    L3_3 = A2_2.LookAt
-    L3_3(L4_4, L5_5)
-    L4_4 = A1_1
-    L3_3 = A1_1.HaveAnyRelicWeapon010
-    L3_3 = L3_3(L4_4)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefRelicWeapon020Trade"
+  L0_2(L1_2)
+  L0_2 = CmnDefRelicWeapon020Trade
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.HaveAnyRelicWeapon010
+    L3_3 = L3_3(L4_3)
     if L3_3 == true then
-      L4_4 = A1_1
-      L3_3 = A1_1.HaveAtmaAll
-      L3_3 = L3_3(L4_4)
+      L4_3 = A1_3
+      L3_3 = A1_3.HaveAtmaAll
+      L3_3 = L3_3(L4_3)
       if L3_3 == true then
-        L4_4 = A2_2
-        L3_3 = A2_2.PlayActionTimeline
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A2_2
-        L3_3 = A2_2.Talk
-        L3_3(L4_4, L5_5, L6_6, A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_000, true)
-        L4_4 = A0_0
-        L3_3 = A0_0.Wait
-        L3_3(L4_4, L5_5)
-        L3_3 = {
-          [4] = L4_4(L5_5)
-        }
-        L4_4 = A1_1.GetRelicWeapon010CatalogIds
-        L4_4 = L4_4(L5_5)
-        ;({
-          [4] = L4_4(L5_5)
-        })[1] = L4_4
-        ;({
-          [4] = L4_4(L5_5)
-        })[2] = L5_5
-        ;({
-          [4] = L4_4(L5_5)
-        })[3] = L6_6
-        L4_4 = {}
-        for _FORV_8_ = 1, #L3_3 do
-          L4_4[_FORV_8_] = A0_0:FormatString(A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_CHOICES, L3_3[_FORV_8_])
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+        L6_3 = A1_3
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_000
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.Wait
+        L5_3 = 10
+        L3_3(L4_3, L5_3)
+        L3_3 = {}
+        L5_3 = A1_3
+        L4_3 = A1_3.GetRelicWeapon010CatalogIds
+        L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3 = L4_3(L5_3)
+        L3_3[1] = L4_3
+        L3_3[2] = L5_3
+        L3_3[3] = L6_3
+        L3_3[4] = L7_3
+        L3_3[5] = L8_3
+        L3_3[6] = L9_3
+        L3_3[7] = L10_3
+        L3_3[8] = L11_3
+        L3_3[9] = L12_3
+        L3_3[10] = L13_3
+        L4_3 = {}
+        L5_3 = 1
+        L6_3 = #L3_3
+        L7_3 = 1
+        for L8_3 = L5_3, L6_3, L7_3 do
+          L10_3 = A0_3
+          L9_3 = A0_3.FormatString
+          L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_CHOICES
+          L12_3 = L3_3[L8_3]
+          L9_3 = L9_3(L10_3, L11_3, L12_3)
+          L4_3[L8_3] = L9_3
         end
-        L5_5(L6_6, A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_CANCEL)
-        if L5_5 > 0 then
-          if L6_6 ~= nil then
-            if A1_1:HaveRelicWeapon010(L6_6) == true then
-              if A0_0:YesNo(A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_MESSAGE, A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_YES, A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_NO, A0_0.DEFAULT_NO, L6_6) == true then
-                return L6_6
+        L5_3 = table
+        L5_3 = L5_3.insert
+        L6_3 = L4_3
+        L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_CANCEL
+        L5_3(L6_3, L7_3)
+        L6_3 = A0_3
+        L5_3 = A0_3.Menu
+        L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_MENU_TITLE
+        L8_3 = unpack
+        L9_3 = L4_3
+        L8_3, L9_3, L10_3, L11_3, L12_3, L13_3 = L8_3(L9_3)
+        L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+        if 0 < L5_3 then
+          L6_3 = L3_3[L5_3]
+          if L6_3 ~= nil then
+            L8_3 = A1_3
+            L7_3 = A1_3.HaveRelicWeapon010
+            L9_3 = L6_3
+            L7_3 = L7_3(L8_3, L9_3)
+            if L7_3 == true then
+              L8_3 = A0_3
+              L7_3 = A0_3.YesNo
+              L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_MESSAGE
+              L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_YES
+              L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_YESNO_NO
+              L12_3 = A0_3.DEFAULT_NO
+              L13_3 = L6_3
+              L7_3 = L7_3(L8_3, L9_3, L10_3, L11_3, L12_3, L13_3)
+              if L7_3 == true then
+                return L6_3
               end
             else
-              A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_QUESTION)
-              A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_020, true)
-              A0_0:Wait(10)
-              A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_020, false)
-              A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_025, true)
+              L8_3 = A2_3
+              L7_3 = A2_3.PlayActionTimeline
+              L9_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_QUESTION
+              L7_3(L8_3, L9_3)
+              L8_3 = A2_3
+              L7_3 = A2_3.Talk
+              L9_3 = A1_3
+              L10_3 = A0_3
+              L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_020
+              L12_3 = true
+              L7_3(L8_3, L9_3, L10_3, L11_3, L12_3)
+              L8_3 = A0_3
+              L7_3 = A0_3.Wait
+              L9_3 = 10
+              L7_3(L8_3, L9_3)
+              L8_3 = A0_3
+              L7_3 = A0_3.SystemTalk
+              L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_020
+              L10_3 = false
+              L7_3(L8_3, L9_3, L10_3)
+              L8_3 = A0_3
+              L7_3 = A0_3.SystemTalk
+              L9_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_025
+              L10_3 = true
+              L7_3(L8_3, L9_3, L10_3)
             end
           end
         end
-      end
+    end
     else
-      L4_4 = A1_1
-      L3_3 = A1_1.HaveAnyRelicWeapon020
-      L3_3 = L3_3(L4_4)
+      L4_3 = A1_3
+      L3_3 = A1_3.HaveAnyRelicWeapon020
+      L3_3 = L3_3(L4_3)
       if L3_3 == true then
-        L4_4 = A2_2
-        L3_3 = A2_2.PlayActionTimeline
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A2_2
-        L3_3 = A2_2.Talk
-        L3_3(L4_4, L5_5, L6_6, A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_030, true)
-        L4_4 = A0_0
-        L3_3 = A0_0.Wait
-        L3_3(L4_4, L5_5)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+        L6_3 = A1_3
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_030
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.Wait
+        L5_3 = 10
+        L3_3(L4_3, L5_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_035
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_036
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_036
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_037
+        L6_3 = true
+        L3_3(L4_3, L5_3, L6_3)
       else
-        L4_4 = A2_2
-        L3_3 = A2_2.PlayActionTimeline
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A2_2
-        L3_3 = A2_2.Talk
-        L3_3(L4_4, L5_5, L6_6, A0_0.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_040, true)
-        L4_4 = A0_0
-        L3_3 = A0_0.Wait
-        L3_3(L4_4, L5_5)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
-        L4_4 = A0_0
-        L3_3 = A0_0.SystemTalk
-        L3_3(L4_4, L5_5, L6_6)
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+        L6_3 = A1_3
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_040
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.Wait
+        L5_3 = 10
+        L3_3(L4_3, L5_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_035
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_036
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_036
+        L6_3 = false
+        L3_3(L4_3, L5_3, L6_3)
+        L4_3 = A0_3
+        L3_3 = A0_3.SystemTalk
+        L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_037
+        L6_3 = true
+        L3_3(L4_3, L5_3, L6_3)
       end
     end
     L3_3 = 0
     return L3_3
   end
-  function CmnDefRelicWeapon020Trade.OnScene00001(A0_7, A1_8, A2_9, ...)
-    local L4_11, L5_12
-    L4_11 = (...)
-    L5_12 = A1_8.GetTradeRelicWeapon020CatalogId
-    L5_12 = L5_12(A1_8, L4_11)
-    A1_8:Position(A2_9, A0_7.ARRANGE_TYPE_BASE_FRONT, 1.5)
-    A1_8:Direction(A2_9)
-    A1_8:LookAt(A2_9)
-    A0_7:Wait(10)
-    A2_9:Direction(A1_8)
-    A2_9:LookAt(A1_8)
-    A0_7:Wait(10)
-    A0_7:PlayTwoShotCamera(A0_7.TWOSHOT_TYPE_LEFT_ZOOM, A1_8, A2_9, 0)
-    A0_7:Wait(30)
-    A0_7:ChangeBGMVolume(0.5)
-    A0_7:FadeIn(A0_7.FADE_DEFAULT)
-    A0_7:WaitForFade()
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_ADD_YES)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_050, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
-    A0_7:Wait(10)
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_TALK2)
-    A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_051, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
-    A0_7:Wait(10)
-    A0_7:FadeOut(A0_7.FADE_SHORT, A0_7.FADE_LAYER_BACK)
-    A0_7:WaitForFade()
-    A1_8:Equip(A0_7.EQUIP_TYPE_WEAPON, L5_12, A0_7.WEAPON_SLOT_MAIN)
-    A1_8:Equip(A0_7.EQUIP_TYPE_WEAPON, 0, A0_7.WEAPON_SLOT_SUB)
-    A1_8:Direction(180)
-    A0_7:Wait(10)
-    if L5_12 == A0_7.ITEM_EPIC_PLD_020 then
-      A1_8:Equip(A0_7.EQUIP_TYPE_WEAPON, A0_7.ITEM_EPIC_PLD_SUB_020, A0_7.WEAPON_SLOT_SUB)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefRelicWeapon020Trade
+  function L1_2(A0_3, A1_3, A2_3, ...)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3
+    L4_3 = (...)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetTradeRelicWeapon020CatalogId
+    L7_3 = L4_3
+    L5_3 = L5_3(L6_3, L7_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.Position
+    L8_3 = A2_3
+    L9_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L10_3 = 1.5
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.Direction
+    L8_3 = A2_3
+    L6_3(L7_3, L8_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.LookAt
+    L8_3 = A2_3
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Direction
+    L8_3 = A1_3
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.LookAt
+    L8_3 = A1_3
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.PlayTwoShotCamera
+    L8_3 = A0_3.TWOSHOT_TYPE_LEFT_ZOOM
+    L9_3 = A1_3
+    L10_3 = A2_3
+    L11_3 = 0
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 30
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.ChangeBGMVolume
+    L8_3 = 0.5
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.FadeIn
+    L8_3 = A0_3.FADE_DEFAULT
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.WaitForFade
+    L6_3(L7_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_050
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.PlayActionTimeline
+    L8_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L6_3(L7_3, L8_3)
+    L7_3 = A2_3
+    L6_3 = A2_3.Talk
+    L8_3 = A1_3
+    L9_3 = A0_3
+    L10_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_051
+    L11_3 = true
+    L12_3 = nil
+    L13_3 = nil
+    L14_3 = nil
+    L15_3 = A0_3.SPEAK_NORMAL_MIDDLE
+    L6_3(L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.FadeOut
+    L8_3 = A0_3.FADE_SHORT
+    L9_3 = A0_3.FADE_LAYER_BACK
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.WaitForFade
+    L6_3(L7_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.Equip
+    L8_3 = A0_3.EQUIP_TYPE_WEAPON
+    L9_3 = L5_3
+    L10_3 = A0_3.WEAPON_SLOT_MAIN
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.Equip
+    L8_3 = A0_3.EQUIP_TYPE_WEAPON
+    L9_3 = 0
+    L10_3 = A0_3.WEAPON_SLOT_SUB
+    L6_3(L7_3, L8_3, L9_3, L10_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.Direction
+    L8_3 = 180
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L6_3 = A0_3.ITEM_EPIC_PLD_020
+    if L5_3 == L6_3 then
+      L7_3 = A1_3
+      L6_3 = A1_3.Equip
+      L8_3 = A0_3.EQUIP_TYPE_WEAPON
+      L9_3 = A0_3.ITEM_EPIC_PLD_SUB_020
+      L10_3 = A0_3.WEAPON_SLOT_SUB
+      L6_3(L7_3, L8_3, L9_3, L10_3)
     end
-    A0_7:Wait(10)
-    A0_7:PlayCamera(38, A1_8)
-    if A1_8:GetRace() == A0_7.RACE_LALAFELL then
-      A0_7:Zoom(5.5, 5.5, 0, 0, 0)
-      A0_7:UpdownPan(3, 3, 0, 0, 0)
-    elseif A1_8:GetRace() == A0_7.RACE_ELEZEN then
-      if A1_8:GetSex() == A0_7.SEX_MALE then
-        A0_7:Zoom(4, 4, 0, 0, 0)
-        A0_7:UpdownPan(8, 8, 0, 0, 0)
-      else
-        A0_7:Zoom(4, 4, 0, 0, 0)
-        A0_7:UpdownPan(6, 6, 0, 0, 0)
-      end
-    elseif A1_8:GetRace() == A0_7.RACE_ROEGADYN or A1_8:GetRace() == A0_7.RACE_AURA then
-      if A1_8:GetSex() == A0_7.SEX_MALE then
-        A0_7:Zoom(4, 4, 0, 0, 0)
-        A0_7:UpdownPan(10, 10, 0, 0, 0)
-      else
-        A0_7:Zoom(4, 4, 0, 0, 0)
-        A0_7:UpdownPan(5, 5, 0, 0, 0)
-      end
-    elseif A1_8:GetRace() == A0_7.RACE_MICOTTAE then
-      if A1_8:GetSex() == A0_7.SEX_MALE then
-        A0_7:Zoom(4, 4, 0, 0, 0)
-        A0_7:UpdownPan(5, 5, 0, 0, 0)
-      else
-        A0_7:Zoom(4.5, 4.5, 0, 0, 0)
-        A0_7:UpdownPan(4, 4, 0, 0, 0)
-      end
-    elseif A1_8:GetRace() == A0_7.RACE_JJM then
-      A0_7:Zoom(4, 4, 0, 0, 0)
-      A0_7:UpdownPan(10, 10, 0, 0, 0)
-    elseif A1_8:GetRace() == A0_7.RACE_JJF then
-      A0_7:Zoom(4, 4, 0, 0, 0)
-      A0_7:UpdownPan(6, 6, 0, 0, 0)
-    elseif A1_8:GetTribe() == A0_7.TRIBE_HIGHLANDER and A1_8:GetSex() == A0_7.SEX_MALE then
-      A0_7:Zoom(4, 4, 0, 0, 0)
-      A0_7:UpdownPan(6, 6, 0, 0, 0)
+    L7_3 = A0_3
+    L6_3 = A0_3.Wait
+    L8_3 = 10
+    L6_3(L7_3, L8_3)
+    L7_3 = A0_3
+    L6_3 = A0_3.PlayCamera
+    L8_3 = 38
+    L9_3 = A1_3
+    L6_3(L7_3, L8_3, L9_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetRace
+    L6_3 = L6_3(L7_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.GetTribe
+    L7_3 = L7_3(L8_3)
+    L9_3 = A1_3
+    L8_3 = A1_3.GetSex
+    L8_3 = L8_3(L9_3)
+    L9_3 = A0_3.RACE_LALAFELL
+    if L6_3 == L9_3 then
+      L10_3 = A0_3
+      L9_3 = A0_3.Zoom
+      L11_3 = 5.5
+      L12_3 = 5.5
+      L13_3 = 0
+      L14_3 = 0
+      L15_3 = 0
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+      L10_3 = A0_3
+      L9_3 = A0_3.UpdownPan
+      L11_3 = 3
+      L12_3 = 3
+      L13_3 = 0
+      L14_3 = 0
+      L15_3 = 0
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
     else
-      A0_7:Zoom(4, 4, 0, 0, 0)
-      A0_7:UpdownPan(5, 5, 0, 0, 0)
+      L9_3 = A0_3.RACE_ELEZEN
+      if L6_3 == L9_3 then
+        L9_3 = A0_3.SEX_MALE
+        if L8_3 == L9_3 then
+          L10_3 = A0_3
+          L9_3 = A0_3.Zoom
+          L11_3 = 4
+          L12_3 = 4
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+          L10_3 = A0_3
+          L9_3 = A0_3.UpdownPan
+          L11_3 = 8
+          L12_3 = 8
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+        else
+          L10_3 = A0_3
+          L9_3 = A0_3.Zoom
+          L11_3 = 4
+          L12_3 = 4
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+          L10_3 = A0_3
+          L9_3 = A0_3.UpdownPan
+          L11_3 = 6
+          L12_3 = 6
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+        end
+      else
+        L9_3 = A0_3.RACE_ROEGADYN
+        if L6_3 ~= L9_3 then
+          L9_3 = A0_3.RACE_AURA
+          if L6_3 ~= L9_3 then
+            goto lbl_209
+          end
+        end
+        L9_3 = A0_3.SEX_MALE
+        if L8_3 == L9_3 then
+          L10_3 = A0_3
+          L9_3 = A0_3.Zoom
+          L11_3 = 4
+          L12_3 = 4
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+          L10_3 = A0_3
+          L9_3 = A0_3.UpdownPan
+          L11_3 = 10
+          L12_3 = 10
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+        else
+          L10_3 = A0_3
+          L9_3 = A0_3.Zoom
+          L11_3 = 4
+          L12_3 = 4
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+          L10_3 = A0_3
+          L9_3 = A0_3.UpdownPan
+          L11_3 = 5
+          L12_3 = 5
+          L13_3 = 0
+          L14_3 = 0
+          L15_3 = 0
+          L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+          goto lbl_316
+          ::lbl_209::
+          L9_3 = A0_3.RACE_MICOTTAE
+          if L6_3 == L9_3 then
+            L9_3 = A0_3.SEX_MALE
+            if L8_3 == L9_3 then
+              L10_3 = A0_3
+              L9_3 = A0_3.Zoom
+              L11_3 = 4
+              L12_3 = 4
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 0
+              L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+              L10_3 = A0_3
+              L9_3 = A0_3.UpdownPan
+              L11_3 = 5
+              L12_3 = 5
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 0
+              L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+            else
+              L10_3 = A0_3
+              L9_3 = A0_3.Zoom
+              L11_3 = 4.5
+              L12_3 = 4.5
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 0
+              L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+              L10_3 = A0_3
+              L9_3 = A0_3.UpdownPan
+              L11_3 = 4
+              L12_3 = 4
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 0
+              L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+            end
+          else
+            L9_3 = A0_3.RACE_JJM
+            if L6_3 == L9_3 then
+              L10_3 = A0_3
+              L9_3 = A0_3.Zoom
+              L11_3 = 4
+              L12_3 = 4
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 0
+              L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+              L10_3 = A0_3
+              L9_3 = A0_3.UpdownPan
+              L11_3 = 10
+              L12_3 = 10
+              L13_3 = 0
+              L14_3 = 0
+              L15_3 = 0
+              L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+            else
+              L9_3 = A0_3.RACE_JJF
+              if L6_3 == L9_3 then
+                L10_3 = A0_3
+                L9_3 = A0_3.Zoom
+                L11_3 = 4
+                L12_3 = 4
+                L13_3 = 0
+                L14_3 = 0
+                L15_3 = 0
+                L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+                L10_3 = A0_3
+                L9_3 = A0_3.UpdownPan
+                L11_3 = 6
+                L12_3 = 6
+                L13_3 = 0
+                L14_3 = 0
+                L15_3 = 0
+                L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+              else
+                L9_3 = A0_3.TRIBE_HIGHLANDER
+                if L7_3 == L9_3 then
+                  L9_3 = A0_3.SEX_MALE
+                  if L8_3 == L9_3 then
+                    L10_3 = A0_3
+                    L9_3 = A0_3.Zoom
+                    L11_3 = 4
+                    L12_3 = 4
+                    L13_3 = 0
+                    L14_3 = 0
+                    L15_3 = 0
+                    L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+                    L10_3 = A0_3
+                    L9_3 = A0_3.UpdownPan
+                    L11_3 = 6
+                    L12_3 = 6
+                    L13_3 = 0
+                    L14_3 = 0
+                    L15_3 = 0
+                    L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+                end
+                else
+                  L10_3 = A0_3
+                  L9_3 = A0_3.Zoom
+                  L11_3 = 4
+                  L12_3 = 4
+                  L13_3 = 0
+                  L14_3 = 0
+                  L15_3 = 0
+                  L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+                  L10_3 = A0_3
+                  L9_3 = A0_3.UpdownPan
+                  L11_3 = 5
+                  L12_3 = 5
+                  L13_3 = 0
+                  L14_3 = 0
+                  L15_3 = 0
+                  L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3)
+                end
+              end
+            end
+          end
+        end
+      end
     end
-    A0_7:Wait(30)
-    A2_9:Idle(A0_7.ACTION_TIMELINE_EVENT_BASE_IDLE)
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_BASE_IDLE1)
-    A0_7:Wait(10)
-    A1_8:LookAt()
-    A1_8:PlayActionTimeline(A0_7.LOC_ACTION1, nil, A0_7.AUTO_SHAKE_ENABLE, A0_7.ACTION_NO_INTERPOLATE)
-    A1_8:PlayVfx(A0_7.LOC_VFX1)
-    A0_7:FadeIn(A0_7.FADE_DEFAULT, A0_7.FADE_LAYER_BACK)
-    A0_7:WaitForFade()
-    A0_7:Wait(30)
-    A2_9:PlayActionTimeline(A0_7.ACTION_TIMELINE_EVENT_ADD_YES)
-    if L5_12 == A0_7.ITEM_EPIC_PLD_020 then
-      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_057, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE)
+    ::lbl_316::
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 30
+    L9_3(L10_3, L11_3)
+    L10_3 = A2_3
+    L9_3 = A2_3.Idle
+    L11_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+    L9_3(L10_3, L11_3)
+    L10_3 = A2_3
+    L9_3 = A2_3.PlayActionTimeline
+    L11_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE1
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.LookAt
+    L9_3(L10_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.PlayActionTimeline
+    L11_3 = A0_3.LOC_ACTION1
+    L12_3 = nil
+    L13_3 = A0_3.AUTO_SHAKE_ENABLE
+    L14_3 = A0_3.ACTION_NO_INTERPOLATE
+    L9_3(L10_3, L11_3, L12_3, L13_3, L14_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.PlayVfx
+    L11_3 = A0_3.LOC_VFX1
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.FadeIn
+    L11_3 = A0_3.FADE_DEFAULT
+    L12_3 = A0_3.FADE_LAYER_BACK
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.WaitForFade
+    L9_3(L10_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 30
+    L9_3(L10_3, L11_3)
+    L10_3 = A2_3
+    L9_3 = A2_3.PlayActionTimeline
+    L11_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_YES
+    L9_3(L10_3, L11_3)
+    L9_3 = A0_3.ITEM_EPIC_PLD_020
+    if L5_3 == L9_3 then
+      L10_3 = A2_3
+      L9_3 = A2_3.Talk
+      L11_3 = A1_3
+      L12_3 = A0_3
+      L13_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_057
+      L14_3 = true
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L18_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3)
     else
-      A2_9:Talk(A1_8, A0_7, A0_7.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_056, true, nil, nil, nil, A0_7.SPEAK_NORMAL_MIDDLE, L5_12)
+      L10_3 = A2_3
+      L9_3 = A2_3.Talk
+      L11_3 = A1_3
+      L12_3 = A0_3
+      L13_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_056
+      L14_3 = true
+      L15_3 = nil
+      L16_3 = nil
+      L17_3 = nil
+      L18_3 = A0_3.SPEAK_NORMAL_MIDDLE
+      L19_3 = L5_3
+      L9_3(L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3, L18_3, L19_3)
     end
-    A0_7:Wait(10)
-    A0_7:SystemTalk(A0_7.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_059, false, L4_11)
-    A0_7:SystemTalk(A0_7.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_060, true)
-    A0_7:Wait(10)
-    A0_7:FadeOut(A0_7.FADE_DEFAULT)
-    A0_7:WaitForFade()
-    A1_8:CancelActionTimeline(A0_7.LOC_ACTION1)
-    A1_8:LookAt()
-    A2_9:LookAt()
-    A0_7:Wait(30)
-    return L4_11
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.SystemTalk
+    L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_059
+    L12_3 = false
+    L13_3 = L4_3
+    L9_3(L10_3, L11_3, L12_3, L13_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.SystemTalk
+    L11_3 = A0_3.TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_060
+    L12_3 = true
+    L9_3(L10_3, L11_3, L12_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 10
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.FadeOut
+    L11_3 = A0_3.FADE_DEFAULT
+    L9_3(L10_3, L11_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.WaitForFade
+    L9_3(L10_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.CancelActionTimeline
+    L11_3 = A0_3.LOC_ACTION1
+    L9_3(L10_3, L11_3)
+    L10_3 = A1_3
+    L9_3 = A1_3.LookAt
+    L9_3(L10_3)
+    L10_3 = A2_3
+    L9_3 = A2_3.LookAt
+    L9_3(L10_3)
+    L10_3 = A0_3
+    L9_3 = A0_3.Wait
+    L11_3 = 30
+    L9_3(L10_3, L11_3)
+    return L4_3
   end
-end)()
-;(function()
-  local L0_13
-  L0_13 = CmnDefRelicWeapon020Trade
-  L0_13.SCRIPT_VERSION = 1
-  L0_13 = CmnDefRelicWeapon020Trade
-  function L0_13.IsAcceptEvent(A0_14, A1_15, A2_16, A3_17, A4_18, A5_19)
-    return A1_15:IsQuestCompleted(A0_14.QUEST_JOB_REL_001) == true
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefRelicWeapon020Trade
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefRelicWeapon020Trade
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestCompleted
+    L8_3 = A0_3.QUEST_JOB_REL_001
+    L6_3 = L6_3(L7_3, L8_3)
+    L6_3 = L6_3 == true
+    return L6_3
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

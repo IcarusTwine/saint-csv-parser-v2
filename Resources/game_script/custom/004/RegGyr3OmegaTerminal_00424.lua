@@ -1,568 +1,2518 @@
-(function()
-  print("RegGyr3OmegaTerminal")
-  function RegGyr3OmegaTerminal.OnScene00000(A0_0, A1_1, A2_2)
-    local L3_3
-    L3_3 = A1_1.IsQuestCompleted
-    L3_3 = L3_3(A1_1, A0_0.QUEST_STMBDR106)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegGyr3OmegaTerminal"
+  L0_2(L1_2)
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_STMBDR106
+    L3_3 = L3_3(L4_3, L5_3)
     if L3_3 == true then
-      L3_3 = A2_2.Talk
-      L3_3(A2_2, A1_1, A0_0, A0_0.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_001, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_001
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      L3_3 = A2_2.Talk
-      L3_3(A2_2, A1_1, A0_0, A0_0.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_000, true)
-      L3_3 = A0_0.Wait
-      L3_3(A0_0, 30)
-      L3_3 = A2_2.Talk
-      L3_3(A2_2, A1_1, A0_0, A0_0.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_100, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_000
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L4_3 = A0_3
+      L3_3 = A0_3.Wait
+      L5_3 = 30
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_100
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
       L3_3 = 0
       return L3_3
     end
-    L3_3 = A0_0.ContentMenu
-    L3_3 = L3_3(A0_0, A1_1, A2_2)
-    if L3_3 > 0 and L3_3 <= #A0_0.InstanceContentList then
-      return 1, L3_3
+    L4_3 = A0_3
+    L3_3 = A0_3.ContentMenu
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if 0 < L3_3 then
+      L4_3 = A0_3.InstanceContentList
+      L4_3 = #L4_3
+      if L3_3 <= L4_3 then
+        L4_3 = 1
+        L5_3 = L3_3
+        return L4_3, L5_3
+    end
     elseif L3_3 == -2 then
-      A0_0:OnGuide00000(A1_1, A2_2)
+      L5_3 = A0_3
+      L4_3 = A0_3.OnGuide00000
+      L6_3 = A1_3
+      L7_3 = A2_3
+      L4_3(L5_3, L6_3, L7_3)
     end
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_800, true)
-    return 0
+    L5_3 = A2_3
+    L4_3 = A2_3.Talk
+    L6_3 = A1_3
+    L7_3 = A0_3
+    L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_800
+    L9_3 = true
+    L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+    L4_3 = 0
+    return L4_3
   end
-  function RegGyr3OmegaTerminal.ContentMenu(A0_4, A1_5, A2_6)
-    local L3_7, L4_8, L5_9, L6_10, L7_11, L8_12, L9_13
-    L3_7 = {}
-    L4_8 = {}
-    for L8_12 = 1, #L6_10 do
-      L9_13 = A0_4.InstanceContentList
-      L9_13 = L9_13[L8_12]
-      L9_13 = L9_13[1]
-      if A0_4:GetInstanceContentUnlock(A1_5, L8_12) then
-        if L9_13 == A0_4.ID_RAID_OMEGA_DIMENSION_CASTLE_001_HARD then
-          L3_7[#L3_7 + 1] = A0_4:FormatString(A0_4.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_110, L9_13)
-        elseif L9_13 == A0_4.ID_RAID_OMEGA_SIGMA_001_HARD then
-          L3_7[#L3_7 + 1] = A0_4:FormatString(A0_4.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_111, L9_13)
-        elseif L9_13 == A0_4.ID_RAID_OMEGA_ALPHA_001_HARD then
-          L3_7[#L3_7 + 1] = A0_4:FormatString(A0_4.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_112, L9_13)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3
+    L3_3 = {}
+    L4_3 = {}
+    L5_3 = 1
+    L6_3 = A0_3.InstanceContentList
+    L6_3 = #L6_3
+    L7_3 = 1
+    for L8_3 = L5_3, L6_3, L7_3 do
+      L9_3 = A0_3.InstanceContentList
+      L9_3 = L9_3[L8_3]
+      L9_3 = L9_3[1]
+      L11_3 = A0_3
+      L10_3 = A0_3.GetInstanceContentUnlock
+      L12_3 = A1_3
+      L13_3 = L8_3
+      L10_3 = L10_3(L11_3, L12_3, L13_3)
+      if L10_3 then
+        L10_3 = A0_3.ID_RAID_OMEGA_DIMENSION_CASTLE_001_HARD
+        if L9_3 == L10_3 then
+          L10_3 = #L3_3
+          L10_3 = L10_3 + 1
+          L12_3 = A0_3
+          L11_3 = A0_3.FormatString
+          L13_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_110
+          L14_3 = L9_3
+          L11_3 = L11_3(L12_3, L13_3, L14_3)
+          L3_3[L10_3] = L11_3
+        else
+          L10_3 = A0_3.ID_RAID_OMEGA_SIGMA_001_HARD
+          if L9_3 == L10_3 then
+            L10_3 = #L3_3
+            L10_3 = L10_3 + 1
+            L12_3 = A0_3
+            L11_3 = A0_3.FormatString
+            L13_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_111
+            L14_3 = L9_3
+            L11_3 = L11_3(L12_3, L13_3, L14_3)
+            L3_3[L10_3] = L11_3
+          else
+            L10_3 = A0_3.ID_RAID_OMEGA_ALPHA_001_HARD
+            if L9_3 == L10_3 then
+              L10_3 = #L3_3
+              L10_3 = L10_3 + 1
+              L12_3 = A0_3
+              L11_3 = A0_3.FormatString
+              L13_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_112
+              L14_3 = L9_3
+              L11_3 = L11_3(L12_3, L13_3, L14_3)
+              L3_3[L10_3] = L11_3
+            end
+          end
         end
-        L4_8[#L4_8 + 1] = L8_12
+        L10_3 = #L4_3
+        L10_3 = L10_3 + 1
+        L4_3[L10_3] = L8_3
       end
     end
-    L3_7[L5_9] = L6_10
-    L4_8[L5_9] = -2
-    L3_7[L5_9] = L6_10
-    L8_12 = unpack
-    L9_13 = L3_7
-    L9_13 = L8_12(L9_13)
-    if L5_9 > 0 then
-      if L5_9 <= L6_10 then
-        return L6_10
+    L5_3 = #L3_3
+    L5_3 = L5_3 + 1
+    L6_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_120
+    L3_3[L5_3] = L6_3
+    L5_3 = #L4_3
+    L5_3 = L5_3 + 1
+    L4_3[L5_3] = -2
+    L5_3 = #L3_3
+    L5_3 = L5_3 + 1
+    L6_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A1_000_130
+    L3_3[L5_3] = L6_3
+    L6_3 = A0_3
+    L5_3 = A0_3.Menu
+    L7_3 = ""
+    L8_3 = unpack
+    L9_3 = L3_3
+    L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3 = L8_3(L9_3)
+    L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+    if 0 < L5_3 then
+      L6_3 = #L4_3
+      if L5_3 <= L6_3 then
+        L6_3 = L4_3[L5_3]
+        return L6_3
       end
     end
-    return L6_10
+    L6_3 = -1
+    return L6_3
   end
-  function RegGyr3OmegaTerminal.OnScene00001(A0_14, A1_15, A2_16, A3_17)
-    local L4_18
-    L4_18 = A0_14.InstanceContentList
-    L4_18 = L4_18[A3_17]
-    L4_18 = L4_18[1]
-    A0_14:ChangeBGMVolume(0)
-    A0_14:Wait(30)
-    A0_14:PlayBGM(A0_14.BGM_MUSIC_NO_MUSIC)
-    A1_15:Position(A2_16, A0_14.ARRANGE_TYPE_BASE_FRONT, 2.5)
-    A1_15:Visible(A0_14.VISIBLE_HIDE)
-    A1_15:Direction(A2_16)
-    A1_15:LookAt(A2_16)
-    A0_14:Wait(10)
-    if L4_18 == A0_14.INSTANCECONTENT0 then
-      A0_14:PlayWorldPositionCamera(115.9582, 2.0645, 60.7565, 116.2908, 1.9412, 62.0078, 1.3007)
-      A0_14:Zoom(0, -1, 600, 0, 60)
-      A0_14:Wait(10)
-      A0_14:FadeIn(A0_14.FADE_DEFAULT)
-      A0_14:WaitForFade()
-      A0_14:Wait(30)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_200, false)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_201, false)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_202, true)
-      A0_14:Wait(30)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_203, true)
-      A0_14:Wait(30)
-      A0_14:PlayBGM(A0_14.BGM_MUSIC_EVENT_THEME_CRYSTAL)
-      A0_14:ChangeBGMVolume(0.5)
-      A1_15:LookAt(0, 15)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_BOW, nil, A0_14.AUTO_SHAKE_ENABLE)
-      A0_14:Wait(120)
-      A0_14:PlayCamera(6, A1_15)
-      A0_14:UpdownDolly(-0.1, -0.1, 0, 0, 0)
-      A0_14:Zoom(0, 0.1, 150, 0, 30)
-      A1_15:Visible(A0_14.VISIBLE_SHOW)
-      A0_14:Wait(90)
-      A0_14:PlayWorldPositionCamera(117.8215, 4.3554, 57.5114, 116.1417, 1.6715, 61.4433, 5.0482)
-      A0_14:FollowLookAt(A0_14.FOLLOW_LOOKAT_ON)
-      A0_14:UpdownDolly(0, 3, 1200, 0, 60)
-      A0_14:Orbit(15, -60, 1200, 0, 60)
-      A1_15:AutoShake(false)
-      A0_14:Wait(60)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_204, true)
-      A1_15:LookAt(A2_16)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_WHAT)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_SURPRISED, nil, A0_14.AUTO_SHAKE_ENABLE)
-      A0_14:Wait(20)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_205, false)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_206, true)
-      A0_14:Wait(20)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_207, true)
-      A0_14:Wait(20)
-      A1_15:AutoShake(false)
-      A0_14:Wait(10)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_STAGGER)
-      A0_14:DisableSceneSkip()
-      A0_14:ScreenImage(A0_14.SCREENIMAGE0)
-      A0_14:EnableSceneSkip()
-      A0_14:Wait(60)
-      A0_14:DisableSceneSkip()
-      A0_14:LogMessageContentOpen(A0_14.INSTANCECONTENT0)
-      A0_14:EnableSceneSkip()
-      A0_14:Wait(60)
-    elseif L4_18 == A0_14.INSTANCECONTENT1 then
-      A1_15:LookAt(0, 15)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_BOW, nil, A0_14.AUTO_SHAKE_ENABLE)
-      A0_14:Wait(120)
-      A0_14:PlayBGM(A0_14.BGM_EX2_BANFORT_KOJIN_GOOD)
-      A0_14:ChangeBGMVolume(0.5)
-      A0_14:PlayWorldPositionCamera(115.9582, 2.0645, 60.7565, 116.2908, 1.9412, 62.0078, 1.3007)
-      A0_14:Zoom(0, -1, 600, 0, 60)
-      A0_14:Wait(10)
-      A0_14:FadeIn(A0_14.FADE_DEFAULT)
-      A0_14:WaitForFade()
-      A0_14:Wait(30)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_220, false)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_221, true)
-      A0_14:Wait(30)
-      A0_14:PlayCamera(6, A1_15)
-      A0_14:UpdownDolly(-0.1, -0.1, 0, 0, 0)
-      A0_14:Zoom(0, 0.1, 150, 0, 30)
-      A1_15:Visible(A0_14.VISIBLE_SHOW)
-      A0_14:Wait(90)
-      A0_14:PlayWorldPositionCamera(117.8215, 4.3554, 57.5114, 116.1417, 1.6715, 61.4433, 5.0482)
-      A0_14:FollowLookAt(A0_14.FOLLOW_LOOKAT_ON)
-      A0_14:UpdownDolly(0, 3, 1200, 0, 60)
-      A0_14:Orbit(15, -60, 1200, 0, 60)
-      A1_15:AutoShake(false)
-      A0_14:Wait(60)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_222, false)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_100_222, true)
-      A1_15:LookAt(A2_16)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_FREEZE)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_SURPRISED, nil, A0_14.AUTO_SHAKE_ENABLE)
-      A0_14:Wait(40)
-      A0_14:PlayCamera(6, A1_15)
-      A0_14:UpdownDolly(-0.1, -0.1, 0, 0, 0)
-      A0_14:Zoom(0, 0.1, 150, 0, 30)
-      A0_14:Wait(20)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_223, false)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_224, true)
-      A1_15:AutoShake(false)
-      A0_14:Wait(10)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_WORRY)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_EMOTE_STAGGER)
-      A0_14:Wait(60)
-      A0_14:PlayWorldPositionCamera(115.9582, 2.0645, 60.7565, 116.2908, 1.9412, 62.0078, 1.3007)
-      A0_14:Zoom(-0.5, 0, 600, 0, 60)
-      A1_15:Visible(A0_14.VISIBLE_HIDE)
-      A0_14:Wait(10)
-      A0_14:DisableSceneSkip()
-      A0_14:ScreenImage(A0_14.SCREENIMAGE1)
-      A0_14:EnableSceneSkip()
-      A0_14:Wait(60)
-      A0_14:DisableSceneSkip()
-      A0_14:LogMessageContentOpen(A0_14.INSTANCECONTENT1)
-      A0_14:EnableSceneSkip()
-      A0_14:Wait(60)
-    elseif L4_18 == A0_14.INSTANCECONTENT2 then
-      A0_14:InvisibleStandCharacter(A0_14.INVIS_ACTOR0)
-      A0_14:PlayTargetRelationCamera(A2_16, -19.8215, 7.7985, 3.542, 1.3827, 1.4934, 1.3555, 6.7906)
-      A0_14:FollowLookAt(A0_14.FOLLOW_LOOKAT_ON)
-      A0_14:Orbit(0, 20, 600, 0, 60)
-      A0_14:UpdownDolly(0, -2, 600, 0, 60)
-      A0_14:Wait(10)
-      A0_14:PlayBGM(A0_14.BGM_MUSIC_EVENT_THEME_CRYSTAL)
-      A0_14:ChangeBGMVolume(0.5)
-      A1_15:Visible(A0_14.VISIBLE_SHOW)
-      A0_14:Wait(10)
-      A0_14:FadeIn(A0_14.FADE_DEFAULT)
-      A0_14:WaitForFade()
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_240, false)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_241, true)
-      A0_14:Wait(10)
-      A0_14:PlayTargetRelationCamera(A2_16, -0.3996, 1.6734, 1.4835, 0.028, 0.5832, 1.3416, 1.0994)
-      A0_14:Zoom(0.1, -0.1, 900, 0, 60)
-      A0_14:Wait(10)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_242, true)
-      A0_14:ChangeBGMVolume(0)
-      A0_14:Wait(30)
-      A0_14:PlaySE(A0_14.SE_SEARCH)
-      A0_14:Wait(120)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_243, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_FREEZE)
-      A0_14:PlayBGM(A0_14.BGM_MUSIC_EX2_RAID_OMEGA_01)
-      A0_14:ChangeBGMVolume(0.5)
-      A0_14:Wait(30)
-      A0_14:PlayCamera(6, A1_15)
-      A0_14:UpdownDolly(-0.05, -0.05, 0, 0, 0)
-      A0_14:Wait(40)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_SALUTE)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_GIRD_UP, nil, A0_14.AUTO_SHAKE_ENABLE)
-      A0_14:Wait(40)
-      A0_14:PlayTargetRelationCamera(A2_16, -38.6303, 1.8011, 1.0773, -6.3139, 0.6287, 1.2914, 1.3309)
-      A0_14:FollowLookAt(A0_14.FOLLOW_LOOKAT_OFF)
-      A0_14:SideDolly(-0.1, 0.1, 600, 0, 60)
-      A1_15:Visible(A0_14.VISIBLE_HIDE)
-      A1_15:CancelActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_SALUTE)
-      A0_14:Wait(20)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_244, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A0_14:Wait(30)
-      A0_14:PlayTargetRelationCamera(A2_16, -28.1427, 5.1179, 0.5278, 0.8661, 1.0267, 1.3364, 4.3255)
-      A0_14:FollowLookAt(A0_14.FOLLOW_LOOKAT_ON)
-      A0_14:Orbit(20, 0, 600, 0, 60)
-      A0_14:UpdownDolly(-1, 0, 600, 0, 60)
-      A1_15:Visible(A0_14.VISIBLE_SHOW)
-      A1_15:AutoShake(false)
-      A0_14:Wait(30)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_245, false, A0_14.TALK_SHAPE_LINKSHELL)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_246, false, A0_14.TALK_SHAPE_LINKSHELL)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_247, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A1_15:WaitForActionTimeline(A0_14.ACTION_TIMELINE_EVENT_GIRD_UP)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_EVENT_BASE_IDLE)
-      A0_14:Wait(30)
-      A0_14:PlayCamera(6, A1_15)
-      A0_14:UpdownDolly(-0.05, -0.05, 0, 0, 0)
-      A0_14:Wait(20)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_248, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_WHAT, nil, A0_14.AUTO_SHAKE_TIMELINE)
-      A0_14:Wait(30)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_249, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A0_14:Wait(20)
-      A0_14:PlayTargetRelationCamera(A2_16, -0.3996, 1.6734, 1.4835, 0.028, 0.5832, 1.3416, 1.0994)
-      A0_14:Zoom(-0.1, 0.2, 900, 0, 60)
-      A1_15:AutoShake(false)
-      A0_14:Wait(10)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_250, false, A0_14.TALK_SHAPE_LINKSHELL)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_251, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A0_14:Wait(30)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_252, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A0_14:ChangeBGMVolume(0)
-      A0_14:Wait(30)
-      A0_14:PlayBGM(A0_14.BGM_MUSIC_NO_MUSIC)
-      A0_14:Wait(90)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_253, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_DOUBTFUL, nil, A0_14.AUTO_SHAKE_TIMELINE)
-      A0_14:Wait(30)
-      A0_14:PlayCamera(6, A1_15)
-      A0_14:FollowLookAt(A0_14.FOLLOW_LOOKAT_OFF)
-      A0_14:UpdownDolly(-0.05, -0.05, 0, 0, 0)
-      A0_14:SideDolly(-0.1, 0.1, 600, 0, 60)
-      A0_14:Wait(20)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_254, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A0_14:Wait(20)
-      A0_14:PlayTargetRelationCamera(A2_16, -38.6303, 1.8011, 1.0773, -6.3139, 0.6287, 1.2914, 1.3309)
-      A0_14:FollowLookAt(A0_14.FOLLOW_LOOKAT_OFF)
-      A0_14:SideDolly(-0.1, 0.2, 900, 0, 60)
-      A1_15:AutoShake(false)
-      A0_14:Wait(60)
-      A2_16:Talk(A1_15, A0_14, A0_14.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_255, true, A0_14.TALK_SHAPE_LINKSHELL)
-      A0_14:Wait(30)
-      A0_14:PlaySE(A0_14.SE_NOISE)
-      A0_14:Wait(90)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_WRYSMILE_CL)
-      A0_14:Wait(60)
-      A0_14:PlayCamera(6, A1_15)
-      A0_14:UpdownDolly(-0.05, -0.05, 0, 0, 0)
-      A0_14:Wait(60)
-      A1_15:PlayActionTimeline(A0_14.ACTION_TIMELINE_FACIAL_BOW, nil, A0_14.AUTO_SHAKE_TIMELINE)
-      A1_15:LookAt(0, -15)
-      A0_14:Wait(60)
-      A0_14:DisableSceneSkip()
-      A0_14:ScreenImage(A0_14.SCREENIMAGE2)
-      A0_14:EnableSceneSkip()
-      A0_14:Wait(60)
-      A0_14:DisableSceneSkip()
-      A0_14:LogMessageContentOpen(A0_14.INSTANCECONTENT2)
-      A0_14:EnableSceneSkip()
-      A0_14:Wait(60)
-    end
-    A0_14:FadeOut(A0_14.FADE_DEFAULT)
-    A0_14:WaitForFade()
-    A0_14:Wait(30)
-    return 1, A3_17
-  end
-  function RegGyr3OmegaTerminal.OnGuide00000(A0_19, A1_20, A2_21)
-    if A1_20:IsQuestCompleted(A0_19.QUEST_STMBDR304) == true then
-      A0_19:StmBdr304Comp(A1_20, A2_21)
-    elseif A1_20:IsQuestCompleted(A0_19.QUEST_STMBDR205) == true then
-      A0_19:StmBdr205Comp(A1_20, A2_21)
+  L0_2.ContentMenu = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3
+    L4_3 = A0_3.InstanceContentList
+    L4_3 = L4_3[A3_3]
+    L4_3 = L4_3[1]
+    L6_3 = A0_3
+    L5_3 = A0_3.ChangeBGMVolume
+    L7_3 = 0
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 30
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.PlayBGM
+    L7_3 = A0_3.BGM_MUSIC_NO_MUSIC
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Position
+    L7_3 = A2_3
+    L8_3 = A0_3.ARRANGE_TYPE_BASE_FRONT
+    L9_3 = 2.5
+    L5_3(L6_3, L7_3, L8_3, L9_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Visible
+    L7_3 = A0_3.VISIBLE_HIDE
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.Direction
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.LookAt
+    L7_3 = A2_3
+    L5_3(L6_3, L7_3)
+    L6_3 = A0_3
+    L5_3 = A0_3.Wait
+    L7_3 = 10
+    L5_3(L6_3, L7_3)
+    L6_3 = A1_3
+    L5_3 = A1_3.GetRace
+    L5_3 = L5_3(L6_3)
+    L7_3 = A1_3
+    L6_3 = A1_3.GetTribe
+    L6_3 = L6_3(L7_3)
+    L8_3 = A1_3
+    L7_3 = A1_3.GetSex
+    L7_3 = L7_3(L8_3)
+    L8_3 = A0_3.INSTANCECONTENT0
+    if L4_3 == L8_3 then
+      L9_3 = A0_3
+      L8_3 = A0_3.PlayWorldPositionCamera
+      L10_3 = 115.9582
+      L11_3 = 2.0645
+      L12_3 = 60.7565
+      L13_3 = 116.2908
+      L14_3 = 1.9412
+      L15_3 = 62.0078
+      L16_3 = 1.3007
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Zoom
+      L10_3 = 0
+      L11_3 = -1
+      L12_3 = 600
+      L13_3 = 0
+      L14_3 = 60
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 10
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.FadeIn
+      L10_3 = A0_3.FADE_DEFAULT
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.WaitForFade
+      L8_3(L9_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 30
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_200
+      L13_3 = false
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_201
+      L13_3 = false
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_202
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 30
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_203
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 30
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.PlayBGM
+      L10_3 = A0_3.BGM_MUSIC_EVENT_THEME_CRYSTAL
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.ChangeBGMVolume
+      L10_3 = 0.5
+      L8_3(L9_3, L10_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.LookAt
+      L10_3 = 0
+      L11_3 = 15
+      L8_3(L9_3, L10_3, L11_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_FACIAL_BOW
+      L11_3 = nil
+      L12_3 = A0_3.AUTO_SHAKE_ENABLE
+      L8_3(L9_3, L10_3, L11_3, L12_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 120
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.PlayCamera
+      L10_3 = 6
+      L11_3 = A1_3
+      L8_3(L9_3, L10_3, L11_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.UpdownDolly
+      L10_3 = -0.1
+      L11_3 = -0.1
+      L12_3 = 0
+      L13_3 = 0
+      L14_3 = 0
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Zoom
+      L10_3 = 0
+      L11_3 = 0.1
+      L12_3 = 150
+      L13_3 = 0
+      L14_3 = 30
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.Visible
+      L10_3 = A0_3.VISIBLE_SHOW
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 90
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.PlayWorldPositionCamera
+      L10_3 = 117.8215
+      L11_3 = 4.3554
+      L12_3 = 57.5114
+      L13_3 = 116.1417
+      L14_3 = 1.6715
+      L15_3 = 61.4433
+      L16_3 = 5.0482
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.FollowLookAt
+      L10_3 = A0_3.FOLLOW_LOOKAT_ON
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.UpdownDolly
+      L10_3 = 0
+      L11_3 = 3
+      L12_3 = 1200
+      L13_3 = 0
+      L14_3 = 60
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Orbit
+      L10_3 = 15
+      L11_3 = -60
+      L12_3 = 1200
+      L13_3 = 0
+      L14_3 = 60
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.AutoShake
+      L10_3 = false
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 60
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_204
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.LookAt
+      L10_3 = A2_3
+      L8_3(L9_3, L10_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_FACIAL_WHAT
+      L8_3(L9_3, L10_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EVENT_SURPRISED
+      L11_3 = nil
+      L12_3 = A0_3.AUTO_SHAKE_ENABLE
+      L8_3(L9_3, L10_3, L11_3, L12_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 20
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_205
+      L13_3 = false
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_206
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 20
+      L8_3(L9_3, L10_3)
+      L9_3 = A2_3
+      L8_3 = A2_3.Talk
+      L10_3 = A1_3
+      L11_3 = A0_3
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_207
+      L13_3 = true
+      L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 20
+      L8_3(L9_3, L10_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.AutoShake
+      L10_3 = false
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 10
+      L8_3(L9_3, L10_3)
+      L9_3 = A1_3
+      L8_3 = A1_3.PlayActionTimeline
+      L10_3 = A0_3.ACTION_TIMELINE_EMOTE_STAGGER
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.DisableSceneSkip
+      L8_3(L9_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.ScreenImage
+      L10_3 = A0_3.SCREENIMAGE0
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.EnableSceneSkip
+      L8_3(L9_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 60
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.DisableSceneSkip
+      L8_3(L9_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.LogMessageContentOpen
+      L10_3 = A0_3.INSTANCECONTENT0
+      L8_3(L9_3, L10_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.EnableSceneSkip
+      L8_3(L9_3)
+      L9_3 = A0_3
+      L8_3 = A0_3.Wait
+      L10_3 = 60
+      L8_3(L9_3, L10_3)
     else
-      A0_19:StmBdr106Comp(A1_20, A2_21)
+      L8_3 = A0_3.INSTANCECONTENT1
+      if L4_3 == L8_3 then
+        L9_3 = A1_3
+        L8_3 = A1_3.LookAt
+        L10_3 = 0
+        L11_3 = 15
+        L8_3(L9_3, L10_3, L11_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_FACIAL_BOW
+        L11_3 = nil
+        L12_3 = A0_3.AUTO_SHAKE_ENABLE
+        L8_3(L9_3, L10_3, L11_3, L12_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 120
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.PlayBGM
+        L10_3 = A0_3.BGM_EX2_BANFORT_KOJIN_GOOD
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.ChangeBGMVolume
+        L10_3 = 0.5
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.PlayWorldPositionCamera
+        L10_3 = 115.9582
+        L11_3 = 2.0645
+        L12_3 = 60.7565
+        L13_3 = 116.2908
+        L14_3 = 1.9412
+        L15_3 = 62.0078
+        L16_3 = 1.3007
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Zoom
+        L10_3 = 0
+        L11_3 = -1
+        L12_3 = 600
+        L13_3 = 0
+        L14_3 = 60
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 10
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.FadeIn
+        L10_3 = A0_3.FADE_DEFAULT
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.WaitForFade
+        L8_3(L9_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 30
+        L8_3(L9_3, L10_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_220
+        L13_3 = false
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_221
+        L13_3 = true
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 30
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.PlayCamera
+        L10_3 = 6
+        L11_3 = A1_3
+        L8_3(L9_3, L10_3, L11_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.UpdownDolly
+        L10_3 = -0.1
+        L11_3 = -0.1
+        L12_3 = 0
+        L13_3 = 0
+        L14_3 = 0
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Zoom
+        L10_3 = 0
+        L11_3 = 0.1
+        L12_3 = 150
+        L13_3 = 0
+        L14_3 = 30
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.Visible
+        L10_3 = A0_3.VISIBLE_SHOW
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 90
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.PlayWorldPositionCamera
+        L10_3 = 117.8215
+        L11_3 = 4.3554
+        L12_3 = 57.5114
+        L13_3 = 116.1417
+        L14_3 = 1.6715
+        L15_3 = 61.4433
+        L16_3 = 5.0482
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.FollowLookAt
+        L10_3 = A0_3.FOLLOW_LOOKAT_ON
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.UpdownDolly
+        L10_3 = 0
+        L11_3 = 3
+        L12_3 = 1200
+        L13_3 = 0
+        L14_3 = 60
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Orbit
+        L10_3 = 15
+        L11_3 = -60
+        L12_3 = 1200
+        L13_3 = 0
+        L14_3 = 60
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.AutoShake
+        L10_3 = false
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 60
+        L8_3(L9_3, L10_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_222
+        L13_3 = false
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_100_222
+        L13_3 = true
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.LookAt
+        L10_3 = A2_3
+        L8_3(L9_3, L10_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_FACIAL_FREEZE
+        L8_3(L9_3, L10_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_EVENT_SURPRISED
+        L11_3 = nil
+        L12_3 = A0_3.AUTO_SHAKE_ENABLE
+        L8_3(L9_3, L10_3, L11_3, L12_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 40
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.PlayCamera
+        L10_3 = 6
+        L11_3 = A1_3
+        L8_3(L9_3, L10_3, L11_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.UpdownDolly
+        L10_3 = -0.1
+        L11_3 = -0.1
+        L12_3 = 0
+        L13_3 = 0
+        L14_3 = 0
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Zoom
+        L10_3 = 0
+        L11_3 = 0.1
+        L12_3 = 150
+        L13_3 = 0
+        L14_3 = 30
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 20
+        L8_3(L9_3, L10_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_223
+        L13_3 = false
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A2_3
+        L8_3 = A2_3.Talk
+        L10_3 = A1_3
+        L11_3 = A0_3
+        L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_224
+        L13_3 = true
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.AutoShake
+        L10_3 = false
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 10
+        L8_3(L9_3, L10_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_FACIAL_WORRY
+        L8_3(L9_3, L10_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.PlayActionTimeline
+        L10_3 = A0_3.ACTION_TIMELINE_EMOTE_STAGGER
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 60
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.PlayWorldPositionCamera
+        L10_3 = 115.9582
+        L11_3 = 2.0645
+        L12_3 = 60.7565
+        L13_3 = 116.2908
+        L14_3 = 1.9412
+        L15_3 = 62.0078
+        L16_3 = 1.3007
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Zoom
+        L10_3 = -0.5
+        L11_3 = 0
+        L12_3 = 600
+        L13_3 = 0
+        L14_3 = 60
+        L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+        L9_3 = A1_3
+        L8_3 = A1_3.Visible
+        L10_3 = A0_3.VISIBLE_HIDE
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 10
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.DisableSceneSkip
+        L8_3(L9_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.ScreenImage
+        L10_3 = A0_3.SCREENIMAGE1
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.EnableSceneSkip
+        L8_3(L9_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 60
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.DisableSceneSkip
+        L8_3(L9_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.LogMessageContentOpen
+        L10_3 = A0_3.INSTANCECONTENT1
+        L8_3(L9_3, L10_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.EnableSceneSkip
+        L8_3(L9_3)
+        L9_3 = A0_3
+        L8_3 = A0_3.Wait
+        L10_3 = 60
+        L8_3(L9_3, L10_3)
+      else
+        L8_3 = A0_3.INSTANCECONTENT2
+        if L4_3 == L8_3 then
+          L9_3 = A0_3
+          L8_3 = A0_3.InvisibleStandCharacter
+          L10_3 = A0_3.INVIS_ACTOR0
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayTargetRelationCamera
+          L10_3 = A2_3
+          L11_3 = -19.8215
+          L12_3 = 7.7985
+          L13_3 = 3.542
+          L14_3 = 1.3827
+          L15_3 = 1.4934
+          L16_3 = 1.3555
+          L17_3 = 6.7906
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.FollowLookAt
+          L10_3 = A0_3.FOLLOW_LOOKAT_ON
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Orbit
+          L10_3 = 0
+          L11_3 = 20
+          L12_3 = 600
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.UpdownDolly
+          L10_3 = 0
+          L11_3 = -2
+          L12_3 = 600
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 10
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayBGM
+          L10_3 = A0_3.BGM_MUSIC_EVENT_THEME_CRYSTAL
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.ChangeBGMVolume
+          L10_3 = 0.5
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.Visible
+          L10_3 = A0_3.VISIBLE_SHOW
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 10
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.FadeIn
+          L10_3 = A0_3.FADE_DEFAULT
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.WaitForFade
+          L8_3(L9_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_240
+          L13_3 = false
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_241
+          L13_3 = true
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 10
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayTargetRelationCamera
+          L10_3 = A2_3
+          L11_3 = -0.3996
+          L12_3 = 1.6734
+          L13_3 = 1.4835
+          L14_3 = 0.028
+          L15_3 = 0.5832
+          L16_3 = 1.3416
+          L17_3 = 1.0994
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Zoom
+          L10_3 = 0.1
+          L11_3 = -0.1
+          L12_3 = 900
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 10
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_242
+          L13_3 = true
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.ChangeBGMVolume
+          L10_3 = 0
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlaySE
+          L10_3 = A0_3.SE_SEARCH
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 120
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_243
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_FACIAL_FREEZE
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayBGM
+          L10_3 = A0_3.BGM_MUSIC_EX2_RAID_OMEGA_01
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.ChangeBGMVolume
+          L10_3 = 0.5
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayCamera
+          L10_3 = 6
+          L11_3 = A1_3
+          L8_3(L9_3, L10_3, L11_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.UpdownDolly
+          L10_3 = -0.05
+          L11_3 = -0.05
+          L12_3 = 0
+          L13_3 = 0
+          L14_3 = 0
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 40
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_FACIAL_SALUTE
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_EVENT_GIRD_UP
+          L11_3 = nil
+          L12_3 = A0_3.AUTO_SHAKE_ENABLE
+          L8_3(L9_3, L10_3, L11_3, L12_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 40
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayTargetRelationCamera
+          L10_3 = A2_3
+          L11_3 = -38.6303
+          L12_3 = 1.8011
+          L13_3 = 1.0773
+          L14_3 = -6.3139
+          L15_3 = 0.6287
+          L16_3 = 1.2914
+          L17_3 = 1.3309
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.FollowLookAt
+          L10_3 = A0_3.FOLLOW_LOOKAT_OFF
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.SideDolly
+          L10_3 = -0.1
+          L11_3 = 0.1
+          L12_3 = 600
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.Visible
+          L10_3 = A0_3.VISIBLE_HIDE
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.CancelActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_FACIAL_SALUTE
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 20
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_244
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayTargetRelationCamera
+          L10_3 = A2_3
+          L11_3 = -28.1427
+          L12_3 = 5.1179
+          L13_3 = 0.5278
+          L14_3 = 0.8661
+          L15_3 = 1.0267
+          L16_3 = 1.3364
+          L17_3 = 4.3255
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.FollowLookAt
+          L10_3 = A0_3.FOLLOW_LOOKAT_ON
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Orbit
+          L10_3 = 20
+          L11_3 = 0
+          L12_3 = 600
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.UpdownDolly
+          L10_3 = -1
+          L11_3 = 0
+          L12_3 = 600
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.Visible
+          L10_3 = A0_3.VISIBLE_SHOW
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.AutoShake
+          L10_3 = false
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_245
+          L13_3 = false
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_246
+          L13_3 = false
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_247
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.WaitForActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_EVENT_GIRD_UP
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_EVENT_BASE_IDLE
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayCamera
+          L10_3 = 6
+          L11_3 = A1_3
+          L8_3(L9_3, L10_3, L11_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.UpdownDolly
+          L10_3 = -0.05
+          L11_3 = -0.05
+          L12_3 = 0
+          L13_3 = 0
+          L14_3 = 0
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 20
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_248
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_FACIAL_WHAT
+          L11_3 = nil
+          L12_3 = A0_3.AUTO_SHAKE_TIMELINE
+          L8_3(L9_3, L10_3, L11_3, L12_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_249
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 20
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayTargetRelationCamera
+          L10_3 = A2_3
+          L11_3 = -0.3996
+          L12_3 = 1.6734
+          L13_3 = 1.4835
+          L14_3 = 0.028
+          L15_3 = 0.5832
+          L16_3 = 1.3416
+          L17_3 = 1.0994
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Zoom
+          L10_3 = -0.1
+          L11_3 = 0.2
+          L12_3 = 900
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.AutoShake
+          L10_3 = false
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 10
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_250
+          L13_3 = false
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_251
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_252
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.ChangeBGMVolume
+          L10_3 = 0
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayBGM
+          L10_3 = A0_3.BGM_MUSIC_NO_MUSIC
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 90
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_253
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_FACIAL_DOUBTFUL
+          L11_3 = nil
+          L12_3 = A0_3.AUTO_SHAKE_TIMELINE
+          L8_3(L9_3, L10_3, L11_3, L12_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayCamera
+          L10_3 = 6
+          L11_3 = A1_3
+          L8_3(L9_3, L10_3, L11_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.FollowLookAt
+          L10_3 = A0_3.FOLLOW_LOOKAT_OFF
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.UpdownDolly
+          L10_3 = -0.05
+          L11_3 = -0.05
+          L12_3 = 0
+          L13_3 = 0
+          L14_3 = 0
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.SideDolly
+          L10_3 = -0.1
+          L11_3 = 0.1
+          L12_3 = 600
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 20
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_254
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 20
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayTargetRelationCamera
+          L10_3 = A2_3
+          L11_3 = -38.6303
+          L12_3 = 1.8011
+          L13_3 = 1.0773
+          L14_3 = -6.3139
+          L15_3 = 0.6287
+          L16_3 = 1.2914
+          L17_3 = 1.3309
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3, L15_3, L16_3, L17_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.FollowLookAt
+          L10_3 = A0_3.FOLLOW_LOOKAT_OFF
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.SideDolly
+          L10_3 = -0.1
+          L11_3 = 0.2
+          L12_3 = 900
+          L13_3 = 0
+          L14_3 = 60
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.AutoShake
+          L10_3 = false
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 60
+          L8_3(L9_3, L10_3)
+          L9_3 = A2_3
+          L8_3 = A2_3.Talk
+          L10_3 = A1_3
+          L11_3 = A0_3
+          L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_255
+          L13_3 = true
+          L14_3 = A0_3.TALK_SHAPE_LINKSHELL
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 30
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlaySE
+          L10_3 = A0_3.SE_NOISE
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 90
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_FACIAL_WRYSMILE_CL
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 60
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.PlayCamera
+          L10_3 = 6
+          L11_3 = A1_3
+          L8_3(L9_3, L10_3, L11_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.UpdownDolly
+          L10_3 = -0.05
+          L11_3 = -0.05
+          L12_3 = 0
+          L13_3 = 0
+          L14_3 = 0
+          L8_3(L9_3, L10_3, L11_3, L12_3, L13_3, L14_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 60
+          L8_3(L9_3, L10_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.PlayActionTimeline
+          L10_3 = A0_3.ACTION_TIMELINE_FACIAL_BOW
+          L11_3 = nil
+          L12_3 = A0_3.AUTO_SHAKE_TIMELINE
+          L8_3(L9_3, L10_3, L11_3, L12_3)
+          L9_3 = A1_3
+          L8_3 = A1_3.LookAt
+          L10_3 = 0
+          L11_3 = -15
+          L8_3(L9_3, L10_3, L11_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 60
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.DisableSceneSkip
+          L8_3(L9_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.ScreenImage
+          L10_3 = A0_3.SCREENIMAGE2
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.EnableSceneSkip
+          L8_3(L9_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 60
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.DisableSceneSkip
+          L8_3(L9_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.LogMessageContentOpen
+          L10_3 = A0_3.INSTANCECONTENT2
+          L8_3(L9_3, L10_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.EnableSceneSkip
+          L8_3(L9_3)
+          L9_3 = A0_3
+          L8_3 = A0_3.Wait
+          L10_3 = 60
+          L8_3(L9_3, L10_3)
+        end
+      end
+    end
+    L9_3 = A0_3
+    L8_3 = A0_3.FadeOut
+    L10_3 = A0_3.FADE_DEFAULT
+    L8_3(L9_3, L10_3)
+    L9_3 = A0_3
+    L8_3 = A0_3.WaitForFade
+    L8_3(L9_3)
+    L9_3 = A0_3
+    L8_3 = A0_3.Wait
+    L10_3 = 30
+    L8_3(L9_3, L10_3)
+    L8_3 = 1
+    L9_3 = A3_3
+    return L8_3, L9_3
+  end
+  L0_2.OnScene00001 = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QUEST_STMBDR304
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A0_3
+      L3_3 = A0_3.StmBdr304Comp
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L3_3(L4_3, L5_3, L6_3)
+    else
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestCompleted
+      L5_3 = A0_3.QUEST_STMBDR205
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
+        L4_3 = A0_3
+        L3_3 = A0_3.StmBdr205Comp
+        L5_3 = A1_3
+        L6_3 = A2_3
+        L3_3(L4_3, L5_3, L6_3)
+      else
+        L4_3 = A0_3
+        L3_3 = A0_3.StmBdr106Comp
+        L5_3 = A1_3
+        L6_3 = A2_3
+        L3_3(L4_3, L5_3, L6_3)
+      end
     end
   end
-  function RegGyr3OmegaTerminal.StmBdr106Comp(A0_22, A1_23, A2_24)
+  L0_2.OnGuide00000 = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3
     while true do
-      A0_22:Wait(10)
-      if A0_22:Menu("", A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 1 then
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_500, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_501, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_502, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_503, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_504, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_505, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_506, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_507, true)
-        A0_22:Wait(10)
-      elseif A0_22:Menu("", A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 2 then
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_510, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_511, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_512, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_513, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_514, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_515, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_516, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_517, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_518, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_519, false)
-        A2_24:Talk(A1_23, A0_22, A0_22.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_520, true)
-        A0_22:Wait(10)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = ""
+      L6_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400
+      L7_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410
+      L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.Wait
+      L6_3 = 10
+      L4_3(L5_3, L6_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_500
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_501
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_502
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_503
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_504
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_505
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_506
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_507
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_510
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_511
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_512
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_513
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_514
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_515
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_516
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_517
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_518
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_519
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_520
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
       else
         break
       end
     end
   end
-  function RegGyr3OmegaTerminal.StmBdr205Comp(A0_25, A1_26, A2_27)
+  L0_2.StmBdr106Comp = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3
     while true do
-      A0_25:Wait(10)
-      if A0_25:Menu("", A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 1 then
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_500, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_501, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_502, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_503, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_504, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_505, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_506, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_507, true)
-        A0_25:Wait(10)
-      elseif A0_25:Menu("", A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 2 then
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_510, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_511, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_512, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_513, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_514, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_515, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_516, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_517, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_518, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_519, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_520, true)
-        A0_25:Wait(10)
-      elseif A0_25:Menu("", A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 3 then
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_530, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_531, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_532, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_533, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_534, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_535, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_536, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_537, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_538, true)
-        A0_25:Wait(10)
-      elseif A0_25:Menu("", A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 4 then
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_540, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_541, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_542, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_543, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_544, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_545, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_546, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_547, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_548, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_549, false)
-        A2_27:Talk(A1_26, A0_25, A0_25.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_550, true)
-        A0_25:Wait(10)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = ""
+      L6_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400
+      L7_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410
+      L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411
+      L9_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412
+      L10_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.Wait
+      L6_3 = 10
+      L4_3(L5_3, L6_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_500
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_501
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_502
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_503
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_504
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_505
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_506
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_507
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_510
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_511
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_512
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_513
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_514
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_515
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_516
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_517
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_518
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_519
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_520
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_530
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_531
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_532
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_533
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_534
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_535
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_536
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_537
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_538
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 4 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_540
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_541
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_542
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_543
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_544
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_545
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_546
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_547
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_548
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_549
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_550
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
       else
         break
       end
     end
   end
-  function RegGyr3OmegaTerminal.StmBdr304Comp(A0_28, A1_29, A2_30)
+  L0_2.StmBdr205Comp = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
     while true do
-      A0_28:Wait(10)
-      if A0_28:Menu("", A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_413, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_414, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 1 then
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_500, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_501, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_502, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_503, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_504, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_505, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_506, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_507, true)
-        A0_28:Wait(10)
-      elseif A0_28:Menu("", A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_413, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_414, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 2 then
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_510, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_511, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_512, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_513, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_514, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_515, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_516, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_517, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_518, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_519, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_520, true)
-        A0_28:Wait(10)
-      elseif A0_28:Menu("", A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_413, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_414, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 3 then
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_530, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_531, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_532, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_533, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_534, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_535, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_536, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_537, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_538, true)
-        A0_28:Wait(10)
-      elseif A0_28:Menu("", A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_413, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_414, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 4 then
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_540, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_541, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_542, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_543, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_544, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_545, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_546, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_547, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_548, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_549, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_550, true)
-        A0_28:Wait(10)
-      elseif A0_28:Menu("", A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_413, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_414, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 5 then
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_560, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_561, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_562, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_563, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_564, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_565, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_566, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_567, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_568, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_569, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_570, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_571, true)
-        A0_28:Wait(10)
-      elseif A0_28:Menu("", A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_413, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_414, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420) == 6 then
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_580, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_581, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_582, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_583, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_584, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_585, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_586, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_587, false)
-        A2_30:Talk(A1_29, A0_28, A0_28.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_588, true)
-        A0_28:Wait(10)
+      L4_3 = A0_3
+      L3_3 = A0_3.Menu
+      L5_3 = ""
+      L6_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_400
+      L7_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_410
+      L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_411
+      L9_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_412
+      L10_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_413
+      L11_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_414
+      L12_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_A2_000_420
+      L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+      L5_3 = A0_3
+      L4_3 = A0_3.Wait
+      L6_3 = 10
+      L4_3(L5_3, L6_3)
+      if L3_3 == 1 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_500
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_501
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_502
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_503
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_504
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_505
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_506
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_507
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 2 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_510
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_511
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_512
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_513
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_514
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_515
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_516
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_517
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_518
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_519
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_520
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 3 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_530
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_531
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_532
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_533
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_534
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_535
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_536
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_537
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_538
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 4 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_540
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_541
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_542
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_543
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_544
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_545
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_546
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_547
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_548
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_549
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_550
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 5 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_560
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_561
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_562
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_563
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_564
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_565
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_566
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_567
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_568
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_569
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_570
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_571
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
+      elseif L3_3 == 6 then
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_580
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_581
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_582
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_583
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_584
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_585
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_586
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_587
+        L9_3 = false
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGGYR3OMEGATERMINAL_00424_OMEGATERMINAL_000_588
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+        L5_3 = A0_3
+        L4_3 = A0_3.Wait
+        L6_3 = 10
+        L4_3(L5_3, L6_3)
       else
         break
       end
     end
   end
-end)()
-;(function()
-  local L0_31, L1_32
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.SCRIPT_VERSION = 2
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.ID_RAID_OMEGA_DIMENSION_CASTLE_001_HARD = 30053
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.ID_RAID_OMEGA_SIGMA_001_HARD = 30063
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.ID_RAID_OMEGA_ALPHA_001_HARD = 30073
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.QUEST_STMBDR106 = 68469
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.QUEST_STMBDR205 = 68571
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.QUEST_STMBDR304 = 68693
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.MAP_MARKER_ANNOUNCE_FUNCTION_OPEN_OFFER = 71141
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.MAP_MARKER_ANNOUNCE_FUNCTION_OPEN_LOCKED_OFFER = 71151
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.ANNOUNCE_FUNCTION_OPEN_OFFER = 71341
-  L0_31 = RegGyr3OmegaTerminal
-  L0_31.ANNOUNCE_FUNCTION_OPEN_LOCKED_OFFER = 71351
-  L0_31 = RegGyr3OmegaTerminal
-  L1_32 = {
-    {
-      RegGyr3OmegaTerminal.ID_RAID_OMEGA_DIMENSION_CASTLE_001_HARD,
-      0,
-      RegGyr3OmegaTerminal.QUEST_STMBDR106
-    },
-    {
-      RegGyr3OmegaTerminal.ID_RAID_OMEGA_SIGMA_001_HARD,
-      0,
-      RegGyr3OmegaTerminal.QUEST_STMBDR205
-    },
-    {
-      RegGyr3OmegaTerminal.ID_RAID_OMEGA_ALPHA_001_HARD,
-      0,
-      RegGyr3OmegaTerminal.QUEST_STMBDR304
-    }
-  }
-  L0_31.InstanceContentList = L1_32
-  L0_31 = RegGyr3OmegaTerminal
-  function L1_32(A0_33, A1_34, A2_35)
-    local L3_36, L4_37, L5_38
-    L3_36 = A0_33.InstanceContentList
-    L3_36 = L3_36[A2_35]
-    L3_36 = L3_36[1]
-    L4_37 = A0_33.InstanceContentList
-    L4_37 = L4_37[A2_35]
-    L4_37 = L4_37[2]
-    L5_38 = A0_33.InstanceContentList
-    L5_38 = L5_38[A2_35]
-    L5_38 = L5_38[3]
-    if A0_33:IsInstanceContentEnable(L3_36) == false then
-      return false
+  L0_2.StmBdr304Comp = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.SCRIPT_VERSION = 2
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.ID_RAID_OMEGA_DIMENSION_CASTLE_001_HARD = 30053
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.ID_RAID_OMEGA_SIGMA_001_HARD = 30063
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.ID_RAID_OMEGA_ALPHA_001_HARD = 30073
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.QUEST_STMBDR106 = 68469
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.QUEST_STMBDR205 = 68571
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.QUEST_STMBDR304 = 68693
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.MAP_MARKER_ANNOUNCE_FUNCTION_OPEN_OFFER = 71141
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.MAP_MARKER_ANNOUNCE_FUNCTION_OPEN_LOCKED_OFFER = 71151
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.ANNOUNCE_FUNCTION_OPEN_OFFER = 71341
+  L0_2 = RegGyr3OmegaTerminal
+  L0_2.ANNOUNCE_FUNCTION_OPEN_LOCKED_OFFER = 71351
+  L0_2 = RegGyr3OmegaTerminal
+  L1_2 = {}
+  L2_2 = {}
+  L3_2 = RegGyr3OmegaTerminal
+  L3_2 = L3_2.ID_RAID_OMEGA_DIMENSION_CASTLE_001_HARD
+  L4_2 = 0
+  L5_2 = RegGyr3OmegaTerminal
+  L5_2 = L5_2.QUEST_STMBDR106
+  L2_2[1] = L3_2
+  L2_2[2] = L4_2
+  L2_2[3] = L5_2
+  L3_2 = {}
+  L4_2 = RegGyr3OmegaTerminal
+  L4_2 = L4_2.ID_RAID_OMEGA_SIGMA_001_HARD
+  L5_2 = 0
+  L6_2 = RegGyr3OmegaTerminal
+  L6_2 = L6_2.QUEST_STMBDR205
+  L3_2[1] = L4_2
+  L3_2[2] = L5_2
+  L3_2[3] = L6_2
+  L4_2 = {}
+  L5_2 = RegGyr3OmegaTerminal
+  L5_2 = L5_2.ID_RAID_OMEGA_ALPHA_001_HARD
+  L6_2 = 0
+  L7_2 = RegGyr3OmegaTerminal
+  L7_2 = L7_2.QUEST_STMBDR304
+  L4_2[1] = L5_2
+  L4_2[2] = L6_2
+  L4_2[3] = L7_2
+  L1_2[1] = L2_2
+  L1_2[2] = L3_2
+  L1_2[3] = L4_2
+  L0_2.InstanceContentList = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L3_3 = A0_3.InstanceContentList
+    L3_3 = L3_3[A2_3]
+    L3_3 = L3_3[1]
+    L4_3 = A0_3.InstanceContentList
+    L4_3 = L4_3[A2_3]
+    L4_3 = L4_3[2]
+    L5_3 = A0_3.InstanceContentList
+    L5_3 = L5_3[A2_3]
+    L5_3 = L5_3[3]
+    L7_3 = A0_3
+    L6_3 = A0_3.IsInstanceContentEnable
+    L8_3 = L3_3
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 == false then
+      L6_3 = false
+      return L6_3
     end
-    if A1_34:IsInstanceContentUnlocked(L3_36) == true then
-      return false
+    L7_3 = A1_3
+    L6_3 = A1_3.IsInstanceContentUnlocked
+    L8_3 = L3_3
+    L6_3 = L6_3(L7_3, L8_3)
+    if L6_3 == true then
+      L6_3 = false
+      return L6_3
     end
-    if L4_37 ~= 0 and A1_34:IsInstanceContentCompleted(L4_37) == false then
-      return false
-    end
-    if L5_38 ~= 0 and A1_34:IsQuestCompleted(L5_38) == false then
-      return false
-    end
-    return true
-  end
-  L0_31.GetInstanceContentUnlock = L1_32
-  L0_31 = RegGyr3OmegaTerminal
-  function L1_32(A0_39, A1_40, A2_41, A3_42, A4_43)
-    local L5_44, L6_45, L7_46, L8_47
-    for L8_47 = 1, #L6_45 do
-      if A0_39:GetInstanceContentUnlock(A1_40, L8_47) then
-        return true
+    if L4_3 ~= 0 then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsInstanceContentCompleted
+      L8_3 = L4_3
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 == false then
+        L6_3 = false
+        return L6_3
       end
     end
-    return L5_44
+    if L5_3 ~= 0 then
+      L7_3 = A1_3
+      L6_3 = A1_3.IsQuestCompleted
+      L8_3 = L5_3
+      L6_3 = L6_3(L7_3, L8_3)
+      if L6_3 == false then
+        L6_3 = false
+        return L6_3
+      end
+    end
+    L6_3 = true
+    return L6_3
   end
-  L0_31.IsAnnounce = L1_32
-  L0_31 = RegGyr3OmegaTerminal
-  function L1_32(A0_48, A1_49, A2_50, A3_51, A4_52)
-    local L5_53
-    L5_53 = A0_48.ANNOUNCE_FUNCTION_OPEN_OFFER
-    return L5_53
+  L0_2.GetInstanceContentUnlock = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L5_3 = 1
+    L6_3 = A0_3.InstanceContentList
+    L6_3 = #L6_3
+    L7_3 = 1
+    for L8_3 = L5_3, L6_3, L7_3 do
+      L10_3 = A0_3
+      L9_3 = A0_3.GetInstanceContentUnlock
+      L11_3 = A1_3
+      L12_3 = L8_3
+      L9_3 = L9_3(L10_3, L11_3, L12_3)
+      if L9_3 then
+        L9_3 = true
+        return L9_3
+      end
+    end
+    L5_3 = false
+    return L5_3
   end
-  L0_31.GetAnnounceIcon = L1_32
-  L0_31 = RegGyr3OmegaTerminal
-  function L1_32(A0_54, A1_55, A2_56, A3_57, A4_58)
-    local L5_59
-    L5_59 = A0_54.MAP_MARKER_ANNOUNCE_FUNCTION_OPEN_OFFER
-    return L5_59
+  L0_2.IsAnnounce = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3
+    L5_3 = A0_3.ANNOUNCE_FUNCTION_OPEN_OFFER
+    return L5_3
   end
-  L0_31.GetMapIcon = L1_32
-end)()
+  L0_2.GetAnnounceIcon = L1_2
+  L0_2 = RegGyr3OmegaTerminal
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3)
+    local L5_3
+    L5_3 = A0_3.MAP_MARKER_ANNOUNCE_FUNCTION_OPEN_OFFER
+    return L5_3
+  end
+  L0_2.GetMapIcon = L1_2
+end
+L0_1()

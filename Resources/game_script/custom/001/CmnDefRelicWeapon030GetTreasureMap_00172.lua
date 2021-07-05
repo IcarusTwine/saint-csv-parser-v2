@@ -1,41 +1,153 @@
-(function()
-  print("CmnDefRelicWeapon030GetTreasureMap")
-  function CmnDefRelicWeapon030GetTreasureMap.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:LookAt(A1_1)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_010, false)
-    A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_ADD_NO)
-    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_011, true)
-    A0_0:Wait(10)
-    A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_SYSTEM_000_020, false)
-    A0_0:SystemTalk(A0_0.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_SYSTEM_000_021, true)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "CmnDefRelicWeapon030GetTreasureMap"
+  L0_2(L1_2)
+  L0_2 = CmnDefRelicWeapon030GetTreasureMap
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_010
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ADD_NO
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_011
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.Wait
+    L5_3 = 10
+    L3_3(L4_3, L5_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_SYSTEM_000_020
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.SystemTalk
+    L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_SYSTEM_000_021
+    L6_3 = true
+    L3_3(L4_3, L5_3, L6_3)
   end
-  function CmnDefRelicWeapon030GetTreasureMap.OnScene00001(A0_3, A1_4, A2_5)
-    A2_5:LookAt(A1_4)
-    A2_5:PlayActionTimeline(A0_3.ACTION_TIMELINE_EVENT_THINK, A1_4)
-    A2_5:Talk(A1_4, A0_3, A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_030, true)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = CmnDefRelicWeapon030GetTreasureMap
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_THINK
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_030
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnDefRelicWeapon030GetTreasureMap.OnScene00002(A0_6, A1_7, A2_8)
-    A2_8:LookAt(A1_7)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_000, true)
-    return (A0_6:YesNo(A0_6.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_Q1_000_000, A0_6.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_A1_000_001, A0_6.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_A1_000_002, A0_6.DEFAULT_NO))
+  L0_2.OnScene00001 = L1_2
+  L0_2 = CmnDefRelicWeapon030GetTreasureMap
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_000
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.YesNo
+    L5_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_Q1_000_000
+    L6_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_A1_000_001
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_A1_000_002
+    L8_3 = A0_3.DEFAULT_NO
+    L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    return L3_3
   end
-  function CmnDefRelicWeapon030GetTreasureMap.OnScene00003(A0_9, A1_10, A2_11)
-    A2_11:LookAt(A1_10)
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EMOTE_SHRUG, A1_10)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_050, true)
+  L0_2.OnScene00002 = L1_2
+  L0_2 = CmnDefRelicWeapon030GetTreasureMap
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EMOTE_SHRUG
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_050
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function CmnDefRelicWeapon030GetTreasureMap.OnScene00004(A0_12, A1_13, A2_14)
-    A2_14:LookAt(A1_13)
-    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_ITEM, A1_13)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_005, true)
+  L0_2.OnScene00003 = L1_2
+  L0_2 = CmnDefRelicWeapon030GetTreasureMap
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_ITEM
+    L6_3 = A1_3
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_CMNDEFRELICWEAPON030GETTREASUREMAP_00172_AURIANA_000_005
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-end)()
-;(function()
-  local L0_15
-  L0_15 = CmnDefRelicWeapon030GetTreasureMap
-  L0_15.SCRIPT_VERSION = 1
-  L0_15 = CmnDefRelicWeapon030GetTreasureMap
-  function L0_15.IsAcceptEvent(A0_16, A1_17, A2_18, A3_19, A4_20, A5_21)
-    return A1_17:IsQuestCompleted(A0_16.QUEST_JOB_REL_003) == true
+  L0_2.OnScene00004 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = CmnDefRelicWeapon030GetTreasureMap
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = CmnDefRelicWeapon030GetTreasureMap
+  function L1_2(A0_3, A1_3, A2_3, A3_3, A4_3, A5_3)
+    local L6_3, L7_3, L8_3
+    L7_3 = A1_3
+    L6_3 = A1_3.IsQuestCompleted
+    L8_3 = A0_3.QUEST_JOB_REL_003
+    L6_3 = L6_3(L7_3, L8_3)
+    L6_3 = L6_3 == true
+    return L6_3
   end
-end)()
+  L0_2.IsAcceptEvent = L1_2
+end
+L0_1()

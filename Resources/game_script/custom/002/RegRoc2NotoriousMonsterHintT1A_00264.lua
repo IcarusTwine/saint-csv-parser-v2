@@ -1,88 +1,258 @@
-(function()
-  print("RegRoc2NotoriousMonsterHintT1A")
-  function RegRoc2NotoriousMonsterHintT1A.OnScene00000(A0_0, A1_1, A2_2, A3_3)
-    A2_2:LookAt(A1_1)
-    if A1_1:IsQuestCompleted(A0_0.QUEST_UNLOCK_CHECK1) == false then
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_000, true)
-      return 0
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegRoc2NotoriousMonsterHintT1A"
+  L0_2(L1_2)
+  L0_2 = RegRoc2NotoriousMonsterHintT1A
+  function L1_2(A0_3, A1_3, A2_3, A3_3)
+    local L4_3, L5_3, L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3
+    L5_3 = A2_3
+    L4_3 = A2_3.LookAt
+    L6_3 = A1_3
+    L4_3(L5_3, L6_3)
+    L5_3 = A1_3
+    L4_3 = A1_3.IsQuestCompleted
+    L6_3 = A0_3.QUEST_UNLOCK_CHECK1
+    L4_3 = L4_3(L5_3, L6_3)
+    if L4_3 == false then
+      L5_3 = A2_3
+      L4_3 = A2_3.Talk
+      L6_3 = A1_3
+      L7_3 = A0_3
+      L8_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_000
+      L9_3 = true
+      L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
+      L4_3 = 0
+      return L4_3
     else
       if A3_3 == 0 then
-        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_001, true)
+        L5_3 = A2_3
+        L4_3 = A2_3.Talk
+        L6_3 = A1_3
+        L7_3 = A0_3
+        L8_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_001
+        L9_3 = true
+        L4_3(L5_3, L6_3, L7_3, L8_3, L9_3)
       end
       while true do
-        while true do
-          if A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q1_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_002, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_003, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_004) == 1 then
-            return 1
-          elseif A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q1_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_002, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_003, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_004) == 2 then
-            return 2
-          elseif A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q1_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_002, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_003, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_004) == 3 then
-            while true do
-              while true do
-                while true do
-                  while true do
-                    while true do
-                      while true do
-                        while true do
-                          if A1_1:IsQuestCompleted(A0_0.QUEST_UNLOCK_CHECK2) == false then
-                            if A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008) == 1 then
-                              A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_010, false)
-                              A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_011, false)
-                              A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_012, true)
-                            end
-                            if A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008) == 2 then
-                              A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_040, false)
-                              A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_041, false)
-                              A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_042, true)
-                            end
-                            break
-                          end
-                        end
-                      end
-                      if A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_002, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_003, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008) == 1 then
-                        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_010, false)
-                        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_011, false)
-                        A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_012, true)
-                      end
-                    end
-                    if A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_002, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_003, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008) == 2 then
-                      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_020, false)
-                      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_021, false)
-                      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_022, true)
-                    end
-                  end
-                  if A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_002, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_003, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008) == 3 then
-                    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_030, false)
-                    A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_031, true)
-                  end
-                end
-                if A0_0:Menu(A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_002, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_003, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008) == 4 then
-                  A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_040, false)
-                  A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_041, false)
-                  A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_042, true)
-                end
+        L5_3 = A0_3
+        L4_3 = A0_3.Menu
+        L6_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q1_000_000
+        L7_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_001
+        L8_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_002
+        L9_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_003
+        L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_000_004
+        L4_3 = L4_3(L5_3, L6_3, L7_3, L8_3, L9_3, L10_3)
+        if L4_3 == 1 then
+          L5_3 = 1
+          return L5_3
+        elseif L4_3 == 2 then
+          L5_3 = 2
+          return L5_3
+        elseif L4_3 == 3 then
+          while true do
+            L6_3 = A1_3
+            L5_3 = A1_3.IsQuestCompleted
+            L7_3 = A0_3.QUEST_UNLOCK_CHECK2
+            L5_3 = L5_3(L6_3, L7_3)
+            if L5_3 == false then
+              L6_3 = A0_3
+              L5_3 = A0_3.Menu
+              L7_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000
+              L8_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001
+              L9_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004
+              L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008
+              L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3)
+              if L5_3 == 1 then
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_010
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_011
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_012
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+              elseif L5_3 == 2 then
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_040
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_041
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_042
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+              else
+                goto lbl_190
               end
-              break
+            else
+              L6_3 = A0_3
+              L5_3 = A0_3.Menu
+              L7_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_Q2_000_000
+              L8_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_001
+              L9_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_002
+              L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_003
+              L11_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_004
+              L12_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A2_000_008
+              L5_3 = L5_3(L6_3, L7_3, L8_3, L9_3, L10_3, L11_3, L12_3)
+              if L5_3 == 1 then
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_010
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_011
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_012
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+              elseif L5_3 == 2 then
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_020
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_021
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_022
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+              elseif L5_3 == 3 then
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_030
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_031
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+              elseif L5_3 == 4 then
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_040
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_041
+                L11_3 = false
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+                L7_3 = A2_3
+                L6_3 = A2_3.Talk
+                L8_3 = A1_3
+                L9_3 = A0_3
+                L10_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_000_042
+                L11_3 = true
+                L6_3(L7_3, L8_3, L9_3, L10_3, L11_3)
+              else
+                goto lbl_190
+              end
             end
-            break
           end
+        else
+          break
         end
+        ::lbl_190::
       end
     end
-    return 0
+    L4_3 = 0
+    return L4_3
   end
-  function RegRoc2NotoriousMonsterHintT1A.OnScene00001(A0_4, A1_5, A2_6)
-    A2_6:LookAt(A1_5)
-    A2_6:Talk(A1_5, A0_4, A0_4.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_100_002, true)
-    return 0
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegRoc2NotoriousMonsterHintT1A
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.LookAt
+    L5_3 = A1_3
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGROC2NOTORIOUSMONSTERHINTT1A_00264_ARDOLAIN_A1_100_002
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L3_3 = 0
+    return L3_3
   end
-end)()
-;(function()
-  local L0_7
-  L0_7 = RegRoc2NotoriousMonsterHintT1A
-  L0_7.SCRIPT_VERSION = 1
-  L0_7 = RegRoc2NotoriousMonsterHintT1A
-  function L0_7.OnInitialize(A0_8)
-    A0_8:AddNestEventHandler(A0_8.MOBSHOP1)
-    A0_8:AddNestEventHandler(A0_8.MOBSHOP2)
+  L0_2.OnScene00001 = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegRoc2NotoriousMonsterHintT1A
+  L0_2.SCRIPT_VERSION = 1
+  L0_2 = RegRoc2NotoriousMonsterHintT1A
+  function L1_2(A0_3)
+    local L1_3, L2_3, L3_3
+    L2_3 = A0_3
+    L1_3 = A0_3.AddNestEventHandler
+    L3_3 = A0_3.MOBSHOP1
+    L1_3(L2_3, L3_3)
+    L2_3 = A0_3
+    L1_3 = A0_3.AddNestEventHandler
+    L3_3 = A0_3.MOBSHOP2
+    L1_3(L2_3, L3_3)
   end
-end)()
+  L0_2.OnInitialize = L1_2
+end
+L0_1()

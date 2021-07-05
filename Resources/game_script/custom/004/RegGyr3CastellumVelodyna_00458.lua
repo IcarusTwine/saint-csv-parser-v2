@@ -1,67 +1,270 @@
-(function()
-  print("RegGyr3CastellumVelodyna")
-  function RegGyr3CastellumVelodyna.OnScene00000(A0_0, A1_1, A2_2)
-    A2_2:TurnTo(A1_1, false)
-    A2_2:WaitForTurn()
-    if A0_0:IsBanAnaQuestStarted(A1_1, A2_2) == false then
-      A0_0:OnSelectedNotBanAnaOpened(A1_1, A2_2)
+local L0_1
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = print
+  L1_2 = "RegGyr3CastellumVelodyna"
+  L0_2(L1_2)
+  L0_2 = RegGyr3CastellumVelodyna
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.TurnTo
+    L5_3 = A1_3
+    L6_3 = false
+    L3_3(L4_3, L5_3, L6_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.WaitForTurn
+    L3_3(L4_3)
+    L4_3 = A0_3
+    L3_3 = A0_3.IsBanAnaQuestStarted
+    L5_3 = A1_3
+    L6_3 = A2_3
+    L3_3 = L3_3(L4_3, L5_3, L6_3)
+    if L3_3 == false then
+      L4_3 = A0_3
+      L3_3 = A0_3.OnSelectedNotBanAnaOpened
+      L5_3 = A1_3
+      L6_3 = A2_3
+      L3_3(L4_3, L5_3, L6_3)
     else
-      A2_2:PlayActionTimeline(A0_0.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_2:Talk(A1_1, A0_0, A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_000, true)
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_000
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
       while true do
-        if A0_0:Menu(A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_Q1_000_000, A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_001, A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_002, A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_004) == 1 then
-          A0_0:OnSelectedAboutYou(A1_1, A2_2)
-        elseif A0_0:Menu(A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_Q1_000_000, A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_001, A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_002, A0_0.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_004) == 2 then
-          A0_0:OnSelectedWhatIsThePlace(A1_1, A2_2)
+        L4_3 = A0_3
+        L3_3 = A0_3.Menu
+        L5_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_Q1_000_000
+        L6_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_001
+        L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_002
+        L8_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_A1_000_004
+        L3_3 = L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        if L3_3 == 1 then
+          L5_3 = A0_3
+          L4_3 = A0_3.OnSelectedAboutYou
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
+        elseif L3_3 == 2 then
+          L5_3 = A0_3
+          L4_3 = A0_3.OnSelectedWhatIsThePlace
+          L6_3 = A1_3
+          L7_3 = A2_3
+          L4_3(L5_3, L6_3, L7_3)
         else
           break
         end
       end
     end
-    return 0
+    L3_3 = 0
+    return L3_3
   end
-  function RegGyr3CastellumVelodyna.IsBanAnaQuestStarted(A0_3, A1_4, A2_5)
-    return A1_4:IsQuestCompleted(A0_3.QST_BANANA001)
+  L0_2.OnScene00000 = L1_2
+  L0_2 = RegGyr3CastellumVelodyna
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QST_BANANA001
+    return L3_3(L4_3, L5_3)
   end
-  function RegGyr3CastellumVelodyna.OnSelectedNotBanAnaOpened(A0_6, A1_7, A2_8)
-    A2_8:PlayActionTimeline(A0_6.ACTION_TIMELINE_EVENT_TALK1)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_500, false)
-    A2_8:Talk(A1_7, A0_6, A0_6.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_501, true)
+  L0_2.IsBanAnaQuestStarted = L1_2
+  L0_2 = RegGyr3CastellumVelodyna
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_500
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_501
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function RegGyr3CastellumVelodyna.OnSelectedAboutYou(A0_9, A1_10, A2_11)
-    A2_11:PlayActionTimeline(A0_9.ACTION_TIMELINE_EVENT_TALK2)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_001, false)
-    A2_11:Talk(A1_10, A0_9, A0_9.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_002, true)
+  L0_2.OnSelectedNotBanAnaOpened = L1_2
+  L0_2 = RegGyr3CastellumVelodyna
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_001
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_002
+    L8_3 = true
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
   end
-  function RegGyr3CastellumVelodyna.OnSelectedWhatIsThePlace(A0_12, A1_13, A2_14)
-    A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK1)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_010, false)
-    A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_011, false)
-    if A1_13:IsQuestCompleted(A0_12.QST_BANANA006) == true then
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_070, true)
-    elseif A1_13:IsQuestCompleted(A0_12.QST_BANANA005) == true then
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK_BIG)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_060, false)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_061, true)
-    elseif A1_13:IsQuestCompleted(A0_12.QST_BANANA004) == true then
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_050, false)
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK2)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_051, true)
-    elseif A1_13:IsQuestCompleted(A0_12.QST_BANANA003) == true then
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK_BOTHHAND)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_040, true)
-    elseif A1_13:IsQuestCompleted(A0_12.QST_BANANA002) == true then
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK_FOREFINGER)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_030, true)
+  L0_2.OnSelectedAboutYou = L1_2
+  L0_2 = RegGyr3CastellumVelodyna
+  function L1_2(A0_3, A1_3, A2_3)
+    local L3_3, L4_3, L5_3, L6_3, L7_3, L8_3
+    L4_3 = A2_3
+    L3_3 = A2_3.PlayActionTimeline
+    L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK1
+    L3_3(L4_3, L5_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_010
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A2_3
+    L3_3 = A2_3.Talk
+    L5_3 = A1_3
+    L6_3 = A0_3
+    L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_011
+    L8_3 = false
+    L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+    L4_3 = A1_3
+    L3_3 = A1_3.IsQuestCompleted
+    L5_3 = A0_3.QST_BANANA006
+    L3_3 = L3_3(L4_3, L5_3)
+    if L3_3 == true then
+      L4_3 = A2_3
+      L3_3 = A2_3.PlayActionTimeline
+      L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+      L3_3(L4_3, L5_3)
+      L4_3 = A2_3
+      L3_3 = A2_3.Talk
+      L5_3 = A1_3
+      L6_3 = A0_3
+      L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_070
+      L8_3 = true
+      L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
     else
-      A2_14:PlayActionTimeline(A0_12.ACTION_TIMELINE_EVENT_TALK2)
-      A2_14:Talk(A1_13, A0_12, A0_12.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_020, true)
+      L4_3 = A1_3
+      L3_3 = A1_3.IsQuestCompleted
+      L5_3 = A0_3.QST_BANANA005
+      L3_3 = L3_3(L4_3, L5_3)
+      if L3_3 == true then
+        L4_3 = A2_3
+        L3_3 = A2_3.PlayActionTimeline
+        L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BIG
+        L3_3(L4_3, L5_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_060
+        L8_3 = false
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        L4_3 = A2_3
+        L3_3 = A2_3.Talk
+        L5_3 = A1_3
+        L6_3 = A0_3
+        L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_061
+        L8_3 = true
+        L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+      else
+        L4_3 = A1_3
+        L3_3 = A1_3.IsQuestCompleted
+        L5_3 = A0_3.QST_BANANA004
+        L3_3 = L3_3(L4_3, L5_3)
+        if L3_3 == true then
+          L4_3 = A2_3
+          L3_3 = A2_3.Talk
+          L5_3 = A1_3
+          L6_3 = A0_3
+          L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_050
+          L8_3 = false
+          L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          L4_3 = A2_3
+          L3_3 = A2_3.PlayActionTimeline
+          L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+          L3_3(L4_3, L5_3)
+          L4_3 = A2_3
+          L3_3 = A2_3.Talk
+          L5_3 = A1_3
+          L6_3 = A0_3
+          L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_051
+          L8_3 = true
+          L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+        else
+          L4_3 = A1_3
+          L3_3 = A1_3.IsQuestCompleted
+          L5_3 = A0_3.QST_BANANA003
+          L3_3 = L3_3(L4_3, L5_3)
+          if L3_3 == true then
+            L4_3 = A2_3
+            L3_3 = A2_3.PlayActionTimeline
+            L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_BOTHHAND
+            L3_3(L4_3, L5_3)
+            L4_3 = A2_3
+            L3_3 = A2_3.Talk
+            L5_3 = A1_3
+            L6_3 = A0_3
+            L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_040
+            L8_3 = true
+            L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+          else
+            L4_3 = A1_3
+            L3_3 = A1_3.IsQuestCompleted
+            L5_3 = A0_3.QST_BANANA002
+            L3_3 = L3_3(L4_3, L5_3)
+            if L3_3 == true then
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK_FOREFINGER
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_030
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+            else
+              L4_3 = A2_3
+              L3_3 = A2_3.PlayActionTimeline
+              L5_3 = A0_3.ACTION_TIMELINE_EVENT_TALK2
+              L3_3(L4_3, L5_3)
+              L4_3 = A2_3
+              L3_3 = A2_3.Talk
+              L5_3 = A1_3
+              L6_3 = A0_3
+              L7_3 = A0_3.TEXT_REGGYR3CASTELLUMVELODYNA_00458_SLEEPINGCOEURL_000_020
+              L8_3 = true
+              L3_3(L4_3, L5_3, L6_3, L7_3, L8_3)
+            end
+          end
+        end
+      end
     end
   end
-end)()
-;(function()
-  local L1_15
-  L1_15 = RegGyr3CastellumVelodyna
-  L1_15.SCRIPT_VERSION = 2
-end)()
+  L0_2.OnSelectedWhatIsThePlace = L1_2
+end
+L0_1()
+function L0_1(...)
+  local L0_2, L1_2
+  L0_2 = RegGyr3CastellumVelodyna
+  L0_2.SCRIPT_VERSION = 2
+end
+L0_1()
