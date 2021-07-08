@@ -367,7 +367,7 @@ class QuestTest implements ParseInterface
                     $SeqNo = ltrim($SeqNo, '0');
                     if (empty($SeqNo)){
                         $SeqNo = "0";
-                    }/
+                    }
                     $SeqNo = $SeqNo;
                     $ToDoSeqArray[$SeqNo] = $textdataCsv['unknown_2'];
                     $LastSeq = $SeqNo;
