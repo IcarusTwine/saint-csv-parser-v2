@@ -68,8 +68,20 @@ class QuestTest implements ParseInterface
         $GCRankLimsaMaleTextCsv = $this->csv("GCRankLimsaMaleText");
         $GCRankGridaniaMaleTextCsv = $this->csv("GCRankGridaniaMaleText");
         $GCRankUldahMaleTextCsv = $this->csv("GCRankUldahMaleText");
+        $TerritoryTypeCsv = $this->csv("TerritoryType");
+        $ScenarioTreeCsv = $this->csv("ScenarioTree");
+        $TownCsv = $this->csv("Town");
+        $AdventureExPhaseCsv = $this->csv("AdventureExPhase");
+        $AetherCurrentCsv = $this->csv("AetherCurrent");
+        $AetheryteCsv = $this->csv("Aetheryte");
+        $AozActionTransientCsv = $this->csv("AozActionTransient");
+        $AozActionCsv = $this->csv("AozAction");
+        $CollectablesShopCsv = $this->csv("CollectablesShop");
+        $CraftActionCsv = $this->csv("CraftAction");
+        $DawnQuestAnnounceCsv = $this->csv("DawnQuestAnnounce");
+        $DawnContentCsv = $this->csv("DawnContent");
 
-
+        
         //send csvs to function when needed : 
         $CSVData["ENpcResidentCsv"] = $ENpcResidentCsv;
         $CSVData["ScreenImageCsv"] = $ScreenImageCsv;
@@ -78,6 +90,7 @@ class QuestTest implements ParseInterface
         $CSVData["BGMCsv"] = $BGMCsv;
         $CSVData["SECsv"] = $SECsv;
         $CSVData["ENpcBaseCsv"] = $ENpcBaseCsv;
+        $CSVData["LevelCsv"] = $LevelCsv;
         //get festivals:
         
         $Festivaljdata = file_get_contents("Patch/FestivalNames.json");
@@ -114,6 +127,54 @@ class QuestTest implements ParseInterface
                 $ContentArray[$ContentLink] = str_replace(",","&#44;",ucfirst($Name));
             }
         }
+
+        //produce new variables data
+        foreach($AdventureExPhaseCsv->data as $id => $ExPhase) {
+            $QuestNumber = $ExPhase["Quest"];
+            if (empty($QuestNumber)) continue;
+            $AdventureExPhaseData[$QuestNumber] = $ExPhase;
+        }
+        foreach($AetherCurrentCsv->data as $id => $Current) {
+            $QuestNumber = $Current["Quest"];
+            if (empty($QuestNumber)) continue;
+            $CurrentData[$QuestNumber] = true;
+        }
+        foreach($AetheryteCsv->data as $id => $Aetheryte) {
+            $QuestNumber = $Current["Quest"];
+            if (empty($QuestNumber)) continue;
+            $PlaceName = $PlaceNameCsv->at($Aetheryte["AethernetName"])['Name'];
+            $AetheryteData[$QuestNumber] = $PlaceName;
+        }
+        foreach($AozActionTransientCsv->data as $id => $Aoz) {
+            $QuestNumber = $Aoz["RequiredForQuest"];
+            if (empty($QuestNumber)) continue;
+            $Action = $ActionCsv->at($AozActionCsv->at($id)['Action'])['Name'];
+            $AozActionData[$QuestNumber] = $Action;
+        }
+        foreach($CollectablesShopCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData['Name'];
+            $ShopData[$QuestNumber] = $Variable;
+        }
+        foreach($ContentFinderConditionCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["UnlockQuest"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData['Name'];
+            $ContentFinderConditionData[$QuestNumber][] = $Variable;
+        }
+        foreach($CraftActionCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["QuestRequirement"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData['Name'];
+            $CraftActionData[$QuestNumber] = $Variable;
+        }
+        foreach($DawnQuestAnnounceCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $DawnQuestAnnounceData[$QuestNumber] = $SheetData;
+        }
+        
         
         $this->PatchCheck($Patch, "Quest", $QuestCsv);
         $PatchNumber = $this->getPatch("Quest");
@@ -123,6 +184,7 @@ class QuestTest implements ParseInterface
         $BadNames = $this->NameChecker($EventItemCsv, $ItemCsv);
         $CSVData["BadNames"] = $BadNames;
         $IconArray = [];
+        $UndefinedArray = [];
         $this->io->progressStart($QuestCsv->total);
         foreach ($QuestCsv->data as $id => $Quest) {
             $this->io->progressAdvance();
@@ -133,7 +195,8 @@ class QuestTest implements ParseInterface
             $ArgArray = [];
             $EnemyArray = [];
             $ItemArray = [];
-            if ($id != 65780) continue;
+            $LuaRewards = [];
+            if ($id != 69305) continue;
             if (empty($Quest['Name'])) continue;
             //produce argument array
             foreach(range(0,49) as $i){
@@ -189,6 +252,9 @@ class QuestTest implements ParseInterface
                 );
                 $UInt8B++;
             }
+            //$this->saveExtra("_Listeners.json",json_encode($ListenerArray,JSON_PRETTY_PRINT));
+            //$this->saveExtra("_ToDo.json",json_encode($ToDoArray,JSON_PRETTY_PRINT));
+
             $NPCSubPagesArray = [];
             foreach(range(0,49) as $i) {
                 $Npc = $Quest["Script{Arg}[$i]"];
@@ -248,10 +314,40 @@ class QuestTest implements ParseInterface
             } else {
                 $NpcsInvolved[] = $EObjNameCsv->at($Quest["Issuer{Start}"])['Singular'];
             }
+            //make small map
+            $NPCStartId = "|Issuing NPC Map = ".$Quest["Issuer{Start}"];
+            $x = $LevelCsv->at($Quest["Issuer{Location}"])['X'];
+            $y = $LevelCsv->at($Quest["Issuer{Location}"])['Z'];
+            $TerritoryID = $LevelCsv->at($Quest["Issuer{Location}"])['Territory'];
+            $MapId = $LevelCsv->at($Quest["Issuer{Location}"])['Map'];
+            $StarterPos = $this->GetLGBPosArrm($x, $y, $TerritoryID, $TerritoryTypeCsv, $MapCsv, $MapId);
+            $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryID)['PlaceName'])['Name'];
+            $NpcMapCodeName = $TerritoryTypeCsv->at($TerritoryID)['Name'];
+            $MapID = $TerritoryTypeCsv->at($TerritoryID)['Map'];
+            if ($MapCsv->at($MapID)["PlaceName{Sub}"] > 0) {
+                $sub = " - ".$PlaceNameCsv->at($MapCsv->at($MapID)["PlaceName{Sub}"])['Name']."";
+            } elseif ($MapCsv->at($MapID)["PlaceName"] > 0) {
+                $sub = "";
+            }
+            $code = substr($NpcMapCodeName, 0, 4);
+            if ($code == "z3e2") {
+                $MapName = "The Prima Vista Tiring Room";
+            }
+            if ($code == "f1d9") {
+                $MapName = "The Haunted Manor";
+            }
+            $BasePlaceName = "$code - {$MapName}{$sub}";
+            $StarterMap = "$NPCStartId\n";
+            //var_dump($StarterPos);
+            $PX = round($StarterPos["PX"] / 13.65, 1) - 10;
+            $PY = round($StarterPos["PY"] / 13.65, 1) - 10;
+            $StarterMap .= "|base = $BasePlaceName\n";
+            $StarterMap .= "|x = $PX\n";
+            $StarterMap .= "|y = $PY\n";
             $LuaFile = $Quest["Id"];
             var_dump($LuaFile);
-            var_dump($Quest['Name']);
-            var_dump($id);
+            //var_dump($Quest['Name']);
+            //var_dump($id);
             $folder = substr(explode('_', $LuaFile)[1], 0, 3);
             $textdata = $this->csv("quest/{$folder}/{$LuaFile}");
             $ToDoSeqArray = [];
@@ -378,6 +474,43 @@ class QuestTest implements ParseInterface
                     break;
                 }
             }
+            $NewVariables = [];
+            if (!empty($AdventureExPhaseData[$id])){
+                $NewVariables[] = "|SightSeeing Unlock = ".$ExVersionCsv->at($AdventureExPhaseData[$id]["unknown_4"])['Name']."\n";
+            }
+            if (!empty($CurrentData[$id])){
+                $NewVariables[] = "|AetherCurrent Unlock = x\n";
+            }
+            if (!empty($AetheryteData[$id])){
+                $NewVariables[] = "|Aetheryte Unlock = ".$AetheryteData[$id]."\n";
+            }
+            if (!empty($AozActionData[$id])){
+                $NewVariables[] = "|Requires Action = ".$AozActionData[$id]."\n";
+            }
+            if (!empty($ShopData[$id])){
+                $NewVariables[] = "|Unlocks Shop = ".$ShopData[$id]."\n";
+            }
+            if (!empty($ContentFinderConditionData[$id])){
+                $contents = implode(",",$ContentFinderConditionData[$id]);
+                $NewVariables[] = "|Unlocks Content = ".$contents."\n";
+            }
+            if (!empty($CraftActionData[$id])){
+                $NewVariables[] = "|Unlocks Action = ".$CraftActionData[$id]."\n";
+            }
+            if (!empty($DawnQuestAnnounceData[$id])){
+                $Content = $ContentFinderConditionCsv->at($DawnContentCsv->at($DawnQuestAnnounceData[$id]['Content'])['Content'])['Name'];
+                $DawnNpcs = [];
+                foreach(range(0,5) as $i){
+                    if (empty($ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'])) continue;
+                    $DawnNpcs[] = $ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'];
+                }
+                $NewVariables[] = "|Allows Trust Content = ".$Content."\n";
+                $NewVariables[] = "|Allows Trust Npcs = ".implode(",",$DawnNpcs)."\n";
+            }
+
+
+
+
             $unknown_1508 = "";
             if (!empty($Quest["unknown_1508"])){
                 $unknown_1508 = "|unknown_1508 = ".$Quest["unknown_1508"]."\n";
@@ -446,6 +579,15 @@ class QuestTest implements ParseInterface
             if (!empty($Quest["Mount{Required}"])){
                 $Mount = ucwords($MountCsv->at($Quest["Mount{Required}"])['Singular'])." (Mount)";
             }
+            $ScenarioTree = "";
+            if (!empty($ScenarioTreeCsv->at($id)['unknown_5'])){
+                if (!empty($ScenarioTreeCsv->at($id)['Type'])){
+                    $ScenarioTree .= "|QuestChapter = ".$ScenarioTreeCsv->at($id)['unknown_4']."\n";
+                    $ScenarioTree .= "|SubChapter = ".$ScenarioTreeCsv->at($id)['unknown_7']."\n";
+                    $ScenarioTree .= "|Required Affiliation = ".$TownCsv->at($ScenarioTreeCsv->at($id)['Type'])['Name']."\n";
+                }
+            }
+
             $RequiredClassArray = [];
             $RequiredClassNo = 0;
             foreach(range(0,1) as $i){
@@ -508,7 +650,7 @@ class QuestTest implements ParseInterface
             }
             $BeastTribe = implode("\n",$BeastTribeArray);
             $HousingRequired = "";
-            if ($Quest["BeastTribe"] === "True"){
+            if ($Quest["IsHouseRequired"] === "True"){
                 $HousingRequired = "|Housing Required = x\n";
             }
 
@@ -617,7 +759,7 @@ class QuestTest implements ParseInterface
                     $RewardArray[] = "|Action Reward = ".$GeneralActionCsv->at($Quest["GeneralAction{Reward}[$i]"])['Name']."";
             }
             if (!empty($Quest["Other{Reward}"])) {
-                $RewardArray[] = "|Misc Reward = ".$QuestRewardOtherCsv->at($Quest["Other{Reward}"])['Name'];
+                $LuaRewards[] = $QuestRewardOtherCsv->at($Quest["Other{Reward}"])['Name'];
             };
             if (!empty($ContentArray[$Quest['InstanceContent{Unlock}']])){
                 if ($Quest['InstanceContent{Unlock}']) {
@@ -636,7 +778,7 @@ class QuestTest implements ParseInterface
                 $RewardArray[] = "|Relations = ".$Quest["ReputationReward"];
             }
             if (!empty($Quest["ClassJob{Unlock}"])) {
-                $RewardArray[] = "|Misc Reward = Unlocks ".ucwords($ClassJobCsv->at($Quest["ClassJob{Unlock}"])['Name']);
+                $LuaRewards[] = "Unlocks ".ucwords($ClassJobCsv->at($Quest["ClassJob{Unlock}"])['Name']);
             }
             
             $ItemCount = 0;
@@ -769,8 +911,17 @@ class QuestTest implements ParseInterface
             }
 
 
-            $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
-
+            //$QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
+            if (!empty($QuestFormat["Rewards"])){
+                foreach($QuestFormat["Rewards"] as $i){
+                    $LuaRewards[] = $i;
+                }
+            }
+            if (!empty($QuestFormat["Undefined"])){
+                $UndefinedArray[$LuaFile] = $QuestFormat["Undefined"];
+            }
+            $NewVariablesImp = implode($NewVariables);
+            $MiscRewards = "|Misc Reward = ".implode(",",$LuaRewards);
             $QuestOutput = "{{-start-}}\n";
             $QuestOutput .= "$HeaderUnknown";
             $QuestOutput .= "'''".$Quest["Name"]."'''\n";
@@ -781,9 +932,10 @@ class QuestTest implements ParseInterface
             $QuestOutput .= "|Section = $QuestSection\n";
             $QuestOutput .= "|Type = $QuestType\n";
             $QuestOutput .= "|Subtype = $QuestSubType\n";
+            $QuestOutput .= "|Order = $Sort\n";
+            $QuestOutput .= "$ScenarioTree\n";
             $QuestOutput .= "$unknown_1508";
             $QuestOutput .= "$unknown_1514";
-            $QuestOutput .= "|Order = $Sort\n";
             $QuestOutput .= "|Header Image = $Header\n";
             $QuestOutput .= "|Icontype = $IconType.png\n";
             $QuestOutput .= "|Event = $Event\n";
@@ -817,8 +969,14 @@ class QuestTest implements ParseInterface
             $QuestOutput .= "$unknown_1516";
             $QuestOutput .= "\n";
             $QuestOutput .= "$Rewards\n";
+            $QuestOutput .= "$MiscRewards\n";
+            $QuestOutput .= "\n";
+            $QuestOutput .= "$StarterMap\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "|Journal =\n$JournalOut\n";
+            $QuestOutput .= "\n";
+            $QuestOutput .= "\n";
+            $QuestOutput .= "$NewVariablesImp\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "}}\n";
             $QuestOutput .= "{{-stop-}}\n";
@@ -828,15 +986,16 @@ class QuestTest implements ParseInterface
             $QuestOutput .= "{{-stop-}}\n";
             $QuestOutput .= "{{-start-}}\n";
             $QuestOutput .= "'''Loremonger:".$Quest["Name"]."'''\n";
-            $QuestOutput .= $QuestFormat['Lore']."\n";
+            //$QuestOutput .= $QuestFormat['Lore']."\n";
             $QuestOutput .= "{{-stop-}}\n";
             $FinalOutput[] = $QuestOutput;
         }
         $FinalOut = implode($FinalOutput);
-        $IconArray = array_merge($IconArray,$QuestFormat["Icons"]);
+        //$IconArray = array_merge($IconArray,$QuestFormat["Icons"]);
         $IconArray = array_unique($IconArray);
         $IconArrayCount = count($IconArray);
         $console = $console->section();
+        $this->saveExtra("_UNDEFINED.json",json_encode($UndefinedArray,JSON_PRETTY_PRINT));
         if (!empty($IconArray)) {
             $this->io->text('Copying Quest Images ...');
             $i = 0;
