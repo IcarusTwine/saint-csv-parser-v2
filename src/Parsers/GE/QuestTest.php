@@ -80,6 +80,20 @@ class QuestTest implements ParseInterface
         $CraftActionCsv = $this->csv("CraftAction");
         $DawnQuestAnnounceCsv = $this->csv("DawnQuestAnnounce");
         $DawnContentCsv = $this->csv("DawnContent");
+        $DescriptionPageCsv = $this->csv("DescriptionPage");
+        $DpsChallengeCsv = $this->csv("DpsChallenge");
+        $DpsChallengeOfficerCsv = $this->csv("DpsChallengeOfficer");
+        $GatheringItemCsv = $this->csv("GatheringItem");
+        $GilShopCsv = $this->csv("GilShop");
+        $GilShopItemCsv = $this->csv("GilShopItem");
+        $DescriptionCsv = $this->csv("Description");
+        $MobHuntOrderTypeCsv = $this->csv("MobHuntOrderType");
+        $MountFlyingConditionCsv = $this->csv("MountFlyingCondition");
+        $QuestBattleCsv = $this->csv("QuestBattle");
+        $RecipeCsv = $this->csv("Recipe");
+        $SatisfactionNpcCsv = $this->csv("SatisfactionNpc");
+        $SpecialShopCsv = $this->csv("SpecialShop");
+        $QuestDerivedClassCsv = $this->csv("QuestDerivedClass");
 
         
         //send csvs to function when needed : 
@@ -155,7 +169,7 @@ class QuestTest implements ParseInterface
             $QuestNumber = $SheetData["Quest"];
             if (empty($QuestNumber)) continue;
             $Variable = $SheetData['Name'];
-            $ShopData[$QuestNumber] = $Variable;
+            $ShopData[$QuestNumber][] = $Variable;
         }
         foreach($ContentFinderConditionCsv->data as $id => $SheetData) {
             $QuestNumber = $SheetData["UnlockQuest"];
@@ -174,7 +188,96 @@ class QuestTest implements ParseInterface
             if (empty($QuestNumber)) continue;
             $DawnQuestAnnounceData[$QuestNumber] = $SheetData;
         }
-        
+        foreach($DescriptionCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData['Text[Long]'];
+            $DescriptionData[$QuestNumber] = $Variable;
+        }
+        foreach($DescriptionPageCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData['Text[0]'];
+            $DescriptionPageData[$QuestNumber][] = $Variable;
+        }
+        foreach($DpsChallengeOfficerCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["UnlockQuest"];
+            if (empty($QuestNumber)) continue;
+            foreach(range(0,24) as $i){
+                if (empty($DpsChallengeCsv->at($SheetData["ChallengeName[$i]"])['Name'])) continue;
+                $Variable = str_replace(",","&#44;",$DpsChallengeCsv->at($SheetData["ChallengeName[$i]"])['Name']);
+                $DpsChallengeOfficerData[$QuestNumber][] = $Variable;
+            }
+        }
+        foreach($GatheringItemCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["unknown_4"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData['Item'];
+            $GatheringItemData[$QuestNumber][] = $Variable;
+        }
+        foreach($GilShopCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData['Name'];
+            $ShopData[$QuestNumber][] = $Variable;
+        }
+        foreach($GilShopItemCsv->data as $id => $SheetData) {
+            $NewID = explode(".",$id);
+            $Variable = $NewID[0];
+            if (!empty($GilShopCsv->at($NewID[0])['Name'])){
+                $Variable = $GilShopCsv->at($NewID[0])['Name'];
+            }
+            foreach(range(0,1) as $a){
+                if (!empty($SheetData["Quest{Required}[$a]"])){
+                    $NewQuestID = $SheetData["Quest{Required}[$a]"];
+                    $GilShopItemData[$NewQuestID]["Shop"][] = $Variable;
+                    $GilShopItemData[$NewQuestID]["Items"][] = $ItemCsv->at($SheetData['Item'])['Name'];
+                }
+            }
+        }
+        foreach($SpecialShopCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest{Unlock}"];
+            $Variable = $SheetData["Name"];
+            if (empty($Variable)){
+                $Variable = $id;
+            }
+            $ShopData[$QuestNumber][] = $Variable;
+            foreach(range(0,59) as $a){
+                if (!empty($SheetData["Item{Receive}[$a][0]"])){
+                    $NewQuestID = $SheetData["Quest{Item}[$a]"];
+                    $GilShopItemData[$NewQuestID]["Shop"][] = $Variable;
+                    $GilShopItemData[$NewQuestID]["Items"][] = $ItemCsv->at($SheetData["Item{Receive}[$a][0]"])['Name'];
+                }
+            }
+        }
+        foreach($MobHuntOrderTypeCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $EventItemCsv->at($SheetData['EventItem'])['Name'];
+            $MobHuntOrderTypeData[$QuestNumber] = $Variable;
+        }
+        foreach($MountFlyingConditionCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $MountFlyingConditionData[$QuestNumber] = true;
+        }
+        foreach($QuestBattleCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest"];
+            if (empty($QuestNumber)) continue;
+            $QuestBattleData[$QuestNumber] = true;
+        }
+        foreach($RecipeCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["unknown_38"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $SheetData["Item{Required}"];
+            $RecipeData[$QuestNumber][] = $Variable;
+        }
+        foreach($SatisfactionNpcCsv->data as $id => $SheetData) {
+            $QuestNumber = $SheetData["Quest{Required}"];
+            if (empty($QuestNumber)) continue;
+            $Variable = $ENpcResidentCsv->at($SheetData["Npc"])['Singular'];
+            $SatisfactionNpcData[$QuestNumber] = $Variable;
+        }
         
         $this->PatchCheck($Patch, "Quest", $QuestCsv);
         $PatchNumber = $this->getPatch("Quest");
@@ -196,8 +299,11 @@ class QuestTest implements ParseInterface
             $EnemyArray = [];
             $ItemArray = [];
             $LuaRewards = [];
-            if ($id != 69305) continue;
-            if (empty($Quest['Name'])) continue;
+            $ItemArrayNames = [];
+            //if ($id != 66959) continue;
+            
+            $QuestName = $Quest['Name'];
+            if (empty($QuestName)) continue;
             //produce argument array
             foreach(range(0,49) as $i){
                 if (empty($Quest["Script{Instruction}[$i]"])) break;
@@ -266,7 +372,7 @@ class QuestTest implements ParseInterface
                         continue;
                     }
                     $NpcsInvolved[] = $NpcName;
-                    $NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
+                    $NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $QuestName ."}}";
                 }
             }
             foreach(range(0,63) as $i) {
@@ -282,37 +388,39 @@ class QuestTest implements ParseInterface
                     //$NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
                 }
             }
-            if ($Quest["Target{End}"] < 2000000){
-                $lastnpc = array_key_last($NPCSubPagesArray);
-                $NpcNamefnc = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames);
-                if ($NpcNamefnc["IsEnglish"] != false){
-                    $FinalNpcName = $NpcNamefnc["Name"];
-                    $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $Quest['Name'] ."}}";
-                    if (!empty($NPCSubPagesArray[$lastnpc])){
-                        if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
-                            $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
-                            $NpcsInvolved[] = $FinalNpcName;
-                        }
-                    }
-                }
-            }
-            if ($Quest["Issuer{Start}"] < 2000000){
-                if (!empty($NPCSubPagesArray)){
-                    $firstnpc = $NPCSubPagesArray[0];
-                    $FirstNpcName = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames);
-                    $FirstNpcName = $NpcNamefnc["Name"];
+            if (!empty($Quest["Target{End}"])){
+                if ($Quest["Target{End}"] < 2000000){
+                    $lastnpc = array_key_last($NPCSubPagesArray);
+                    $NpcNamefnc = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames);
                     if ($NpcNamefnc["IsEnglish"] != false){
-                        $FirstNPC = "{{QuestNPC|Name=$FirstNpcName|ID=". $Quest["Issuer{Start}"] ."|Quest=". $Quest['Name'] ."}}";
-                        if ($firstnpc != $FirstNPC){
-                            array_unshift($NPCSubPagesArray,$FirstNPC);
+                        $FinalNpcName = $NpcNamefnc["Name"];
+                        $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $QuestName ."}}";
+                        if (!empty($NPCSubPagesArray[$lastnpc])){
+                            if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
+                                $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
+                                $NpcsInvolved[] = $FinalNpcName;
+                            }
                         }
                     }
                 }
-            }
-            if ($Quest["Issuer{Start}"] < 2000000){
-                $NpcsInvolved[] = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)["Name"];
-            } else {
-                $NpcsInvolved[] = $EObjNameCsv->at($Quest["Issuer{Start}"])['Singular'];
+                if ($Quest["Issuer{Start}"] < 2000000){
+                    if (!empty($NPCSubPagesArray)){
+                        $firstnpc = $NPCSubPagesArray[0];
+                        $FirstNpcName = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames);
+                        $FirstNpcName = $NpcNamefnc["Name"];
+                        if ($NpcNamefnc["IsEnglish"] != false){
+                            $FirstNPC = "{{QuestNPC|Name=$FirstNpcName|ID=". $Quest["Issuer{Start}"] ."|Quest=". $QuestName ."}}";
+                            if ($firstnpc != $FirstNPC){
+                                array_unshift($NPCSubPagesArray,$FirstNPC);
+                            }
+                        }
+                    }
+                }
+                if ($Quest["Issuer{Start}"] < 2000000){
+                    $NpcsInvolved[] = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)["Name"];
+                } else {
+                    $NpcsInvolved[] = $EObjNameCsv->at($Quest["Issuer{Start}"])['Singular'];
+                }
             }
             //make small map
             $NPCStartId = "|Issuing NPC Map = ".$Quest["Issuer{Start}"];
@@ -474,6 +582,7 @@ class QuestTest implements ParseInterface
                     break;
                 }
             }
+            $MatchItemArray = [];
             $NewVariables = [];
             if (!empty($AdventureExPhaseData[$id])){
                 $NewVariables[] = "|SightSeeing Unlock = ".$ExVersionCsv->at($AdventureExPhaseData[$id]["unknown_4"])['Name']."\n";
@@ -488,7 +597,7 @@ class QuestTest implements ParseInterface
                 $NewVariables[] = "|Requires Action = ".$AozActionData[$id]."\n";
             }
             if (!empty($ShopData[$id])){
-                $NewVariables[] = "|Unlocks Shop = ".$ShopData[$id]."\n";
+                $NewVariables[] = "|Unlocks Shop = ".implode(",",$ShopData[$id])."\n";
             }
             if (!empty($ContentFinderConditionData[$id])){
                 $contents = implode(",",$ContentFinderConditionData[$id]);
@@ -506,6 +615,48 @@ class QuestTest implements ParseInterface
                 }
                 $NewVariables[] = "|Allows Trust Content = ".$Content."\n";
                 $NewVariables[] = "|Allows Trust Npcs = ".implode(",",$DawnNpcs)."\n";
+            }
+            if (!empty($DescriptionData[$id])){
+                $NewVariables[] = "|Unlocks Active Help = ".$DescriptionData[$id]."\n";
+            }
+            if (!empty($DescriptionPageData[$id])){
+                $NewVariables[] = "|Unlocks Page = ".implode(",",$DescriptionPageData[$id])."\n";
+            }
+            if (!empty($DpsChallengeOfficerData[$id])){
+                $NewVariables[] = "|Unlocks Access To = ".implode(",",$DpsChallengeOfficerData[$id])."\n";
+            }
+            if (!empty($GatheringItemData[$id])){
+                foreach ($GatheringItemData[$id] as $Item){
+                    $ItemArrayNames[] = $ItemCsv->at($Item)['Name'];
+                    $MatchItemArray[$ItemCsv->at($Item)['Singular']] = array(
+                        "Singular" => $ItemCsv->at($Item)['Singular'],
+                        "Plural" => $ItemCsv->at($Item)['Plural'],
+                        "Name" => $ItemCsv->at($Item)['Name'],
+                    );
+                }
+            }
+            if (!empty($GilShopItemData[$id])){
+                $NewVariables[] = "|Shop Sells = ".implode(",",$GilShopItemData[$id]["Shop"])."\n";
+                $NewVariables[] = "|Shop Sells Items = ".implode(",",$GilShopItemData[$id]["Items"])."\n";
+            }
+            if (!empty($MobHuntOrderTypeData[$id])){
+                $NewVariables[] = "|Unlocks Hunt Access To = ".$MobHuntOrderTypeData[$id]."\n";
+            }
+            if (!empty($MountFlyingConditionData[$id])){
+                $NewVariables[] = "|Unlocks Flying for expansion = x\n";
+            }
+            if (!empty($QuestBattleData[$id])){
+                $NewVariables[] = "|Quest Battle = x\n";
+            }
+            if (!empty($QuestDerivedClassCsv->at($id)['ClassJob'])){
+                $Variable = ucwords($ClassJobCsv->at($QuestDerivedClassCsv->at($id)['ClassJob'])['Name']);
+                $NewVariables[] = "|Derived Class = $Variable\n";
+            }
+            if (!empty($RecipeData[$id])){;
+                $NewVariables[] = "|Required Recipes/Items = ".implode(",",$RecipeData[$id])."\n";
+            }
+            if (!empty($SatisfactionNpcData[$id])){;
+                $NewVariables[] = "|Unlocks Satisfaction for = ".$SatisfactionNpcData[$id]."\n";
             }
 
 
@@ -840,8 +991,6 @@ class QuestTest implements ParseInterface
                 }
             }
             $ObjectArrayNames = [];
-            $ItemArrayNames = [];
-            $MatchItemArray = [];
             foreach($ItemArray as $key => $value){
                 if ($value['Type'] === "ITEM"){
                     if ($value['Value'] < 2000000){
