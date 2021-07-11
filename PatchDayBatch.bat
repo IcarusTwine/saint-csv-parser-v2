@@ -39,4 +39,6 @@ php bin/console app:parse:csv GE:Storable
 php bin/console app:parse:csv GE:BlueMageContent
 php bin/console app:parse:csv GE:NpcsPagesAll
 php bin/console app:parse:csv GE:Orchestrion
+php bin/console app:parse:csv GE:NamingConventions
+php bin/console app:parse:csv GE:Quest2
 pause

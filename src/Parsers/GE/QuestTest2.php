@@ -9,9 +9,9 @@ use PDO;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 /**
- * php bin/console app:parse:csv GE:QuestTest
+ * php bin/console app:parse:csv GE:QuestTest2
  */
-class QuestTest implements ParseInterface
+class QuestTest2 implements ParseInterface
 {
     use CsvParseTrait;
 
@@ -1178,7 +1178,7 @@ class QuestTest implements ParseInterface
         // save
         $this->io->progressFinish();
         $console->writeln(" Saving... ");
-        $info = $this->save("QuestTest.txt", 999999);
+        $info = $this->save("QuestTest2.txt", 999999);
 
     }
 }

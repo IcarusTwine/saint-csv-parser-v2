@@ -620,7 +620,7 @@ $ColorStateEnum[3] = "ColorStateReset";
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
             $this->io->progressAdvance();
-            if ($id != 132) continue;
+            //if ($id != 137) continue;
             $DataArray = [];
             $fishingspotarray = [];
             if (!empty($FishingSpotArray[$id])) {
@@ -769,7 +769,31 @@ $ColorStateEnum[3] = "ColorStateReset";
                             $DataArray["Type"] = $mappyType;
                             $DataWindowTextOut = makeDataTable($DataArray);
                             $PopupText = "$BNpcNameID<br>$HP<br>(X:$PosX,Y:$PosY)";
-                            $bnpcarray[] = array(
+                            //$bnpcarray[] = array(
+                            //    "layer" => "bnpc",
+                            //    "type" => "Feature",
+                            //    "iconUrl" => "060004_hr1",
+                            //    "properties" => array (
+                            //        "dataid" => $mappyData->BNpcNameID,
+                            //        "amenity" => "bnpc",
+                            //        "name" => $BNpcNameID,
+                            //        "popup" => $PopupText,
+                            //        "type" => "Marker",
+                            //        "datawindow" => $DataWindowTextOut,
+                            //        "tooltip" => array (
+                            //            "direction" => "",
+                            //            "text" => "",
+                            //        )
+                            //    ),
+                            //    "geometry" => array (
+                            //        "type" => "Point",
+                            //        "coordinates" => [
+                            //            $PixelX,
+                            //            $PixelY,
+                            //        ]
+                            //    )
+                            //);
+                            $bnpcarray[$BNpcNameID][] = array(
                                 "layer" => "bnpc",
                                 "type" => "Feature",
                                 "iconUrl" => "060004_hr1",
@@ -1832,7 +1856,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                                                 $SBText = $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Text'];
                                                 $SBIcon = sprintf("%06d", $DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['Icon']);
                                                 $IconArray[] = $SBIcon;
-                                                $SBTarget = $BNpcNameCsv->at($DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['ActionIcon'])['Singular'];
+                                                $SBTarget = $BNpcNameCsv->at($DynamicEventSingleBattleCsv->at($DynamicEventCsv->at($FateID)['SingleBattle'])['BNpcName'])['Singular'];
                                                 $SingleBattle = "<br><b>Battle Target: <i>$SBTarget</i></b><br>\n<img src=\"../icons/".$SBIcon.".png\" max-width=\"350\"></b><br>\n<br>\"$SBText\"";
                                             }
                                             $description = "<br><br>".str_replace("'","",str_replace(array("\r", "\n", "\t", "\0", "\x0b"), '<br>', $DynamicEventCsv->at($FateID)['Description']));
@@ -3298,17 +3322,39 @@ $ColorStateEnum[3] = "ColorStateReset";
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/adventure.geojson.js", 'w');
                     fwrite($js_file_Feature, $adventure_Json);
                     fclose($js_file_Feature);
-
-                    
-                $bnpcOut["type"] = "FeatureCollection";
-                $bnpcOut["timestamp"] = time();
-                $bnpcOut["features"] = $bnpcarray;
-                $bnpc_Json = "var bnpcGeo = ".json_encode($bnpcOut,JSON_PRETTY_PRINT)."";
+                $bnpc_Json = [];
+                $bnpclabels = [];
+                $bnpclayergroup = [];
+                $bnpcpoilayer = [];
+                $clusterGen = [];
+                $bnpcsearch = [];
+                foreach($bnpcarray as $name => $bnpc){
+                    $bnpcOut = [];
+                    $bnpcOut["type"] = "FeatureCollection";
+                    $bnpcOut["timestamp"] = time();
+                    $bnpcOut["features"] = $bnpc;
+                    $bnpc_Json[] = "var _".str_replace(array(" ","-","'"),"_",$name)."Geo = ".json_encode($bnpcOut,JSON_PRETTY_PRINT)."";
+                    $bnpclabels[] = "{label: '<img src=../../icons/060004_hr1.png width=18/>".str_replace("'","\'",$name)."', layer: _".str_replace(array(" ","-","'"),"_",$name)."},";
+                    $bnpclayergroup[] = "var _".str_replace(array(" ","-","'"),"_",$name)." = L.layerGroup();";
+                    $bnpcsearch[] = "_".str_replace(array(" ","-","'"),"_",$name)."";
+                    $bnpcpoilayer[] = "_".str_replace(array(" ","-","'"),"_",$name)."Cluster.addTo(_".str_replace(array(" ","-","'"),"_",$name)."),";
+                    $clusterGen[] = "
+                    var _".str_replace(array(" ","-","'"),"_",$name)."Cluster = L.markerClusterGroup({showCoverageOnHover: true,maxClusterRadius: 100,iconCreateFunction: function(cluster) {
+                        return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060004_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
+                    }});
+                    var _".str_replace(array(" ","-","'"),"_",$name)."GeoForm = L.geoJson(_".str_replace(array(" ","-","'"),"_",$name)."Geo, geojsonOpts);
+                    _".str_replace(array(" ","-","'"),"_",$name)."Cluster.addLayer(_".str_replace(array(" ","-","'"),"_",$name)."GeoForm);";
+                }
+                $bnpc_Jsonimp = implode("\n\n",$bnpc_Json);
+                $bnpc_lables = implode("\n",$bnpclabels);
+                $bnpc_layergroup = implode("\n",$bnpclayergroup);
+                $bnpc_poi = implode("\n",$bnpcpoilayer);
+                $bnpc_cluster = implode("\n",$clusterGen);
+                $bnpc_search = implode(",",$bnpcsearch);
                 if (!file_exists("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json")) { mkdir("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json", 0777, true); }
                     $js_file_Feature = fopen("E:\Users\user\Desktop\FF14 Wiki GE\ARRM/$FolderRegion/$FolderNameUrl/json/bnpc.geojson.js", 'w');
-                    fwrite($js_file_Feature, $bnpc_Json);
+                    fwrite($js_file_Feature, $bnpc_Jsonimp);
                     fclose($js_file_Feature);
-
                     
                 $gatheringOut["type"] = "FeatureCollection";
                 $gatheringOut["timestamp"] = time();
@@ -3646,6 +3692,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <a href=\"../../index.html\" class=\"w3-bar-item w3-button w3-mobile w3-green\">Home</a>
                 <button onclick=\"document.getElementById('arrmabout').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;\"><img src=\"../../assets/linkshell.uld-10-3-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
                 <button onclick=\"document.getElementById('mapabout').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;\"><img src=\"../../assets/linkshell.uld-10-6-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
+                <button onclick=\"document.getElementById('arrmnew').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;\"><img src=\"../../assets/achievement.uld-10-11-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
+
                 <span class=\"w3-bar-item w3-wide\"><b>$MapNameUrl</b></span>
                 </div>
                 
@@ -3818,10 +3866,10 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var targetmarker = L.layerGroup();
                 var linevfx = L.layerGroup();
                 var prefetchrange = L.layerGroup();
-                var bnpc = L.layerGroup();
                 var treasure = L.layerGroup();
                 var tripletriad = L.layerGroup();
                 $varimplode
+                $bnpc_layergroup
                 var fateCluster = L.markerClusterGroup({spiderfyOnMaxZoom: true,showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
                     return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/063914.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
@@ -3899,18 +3947,13 @@ $ColorStateEnum[3] = "ColorStateReset";
                 var chairGeoForm = L.geoJson(chairGeo, geojsonOpts);
                 chairCluster.addLayer(chairGeoForm);
                 
-                var bnpcCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
-                    return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060004_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
-                }});
-                var bnpcGeoForm = L.geoJson(bnpcGeo, geojsonOpts);
-                bnpcCluster.addLayer(bnpcGeoForm);
                 
                 var gatheringCluster = L.markerClusterGroup({showCoverageOnHover: false,maxClusterRadius: 10,iconCreateFunction: function(cluster) {
                     return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060433.png width=48/>' + cluster.getChildCount() + '</div>' });
                 }});
                 var gatheringGeoForm = L.geoJson(gatheringGeo, geojsonOpts);
                 gatheringCluster.addLayer(gatheringGeoForm);
-
+                $bnpc_cluster
 
                 var poiLayers = L.layerGroup([
                     L.geoJson(mapmarkerGeo, geojsonOpts).addTo(mapmarker),
@@ -3925,9 +3968,9 @@ $ColorStateEnum[3] = "ColorStateReset";
                     envlocationCluster.addTo(envlocation),
                     targetmarkerCluster.addTo(targetmarker),
                     chairCluster.addTo(chair),
-                    bnpcCluster.addTo(bnpc),
                     gatheringCluster.addTo(gathering),
                     $addtoimplode
+                    $bnpc_poi
                     L.geoJson(poprangeGeo, geojsonOpts).addTo(poprange),
                     L.geoJson(exitrangeGeo, geojsonOpts).addTo(exitrange),
                     L.geoJson(maprangeGeo, geojsonOpts).addTo(maprange),
@@ -3942,7 +3985,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                     L.geoJson(tripletriadGeo, geojsonOpts).addTo(tripletriad),
                     SGCluster.addTo(sharedgroup)
                 ]);
-                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker,prefetchrange, fishingspot, adventure, bnpc, gathering,tripletriad])
+                var searchLayer = L.layerGroup([mapmarker, Vfx, fate, light, sound, enpc, sharedgroup, envset, treasure, poprange, exitrange, maprange, eobj, current, envlocation, eventrange,collisionbox,linevfx,clientpath,targetmarker,prefetchrange, fishingspot, adventure, gathering,tripletriad,$bnpc_search])
 
                 var searchControl = new L.Control.Search({
                     layer: searchLayer,
@@ -4020,7 +4063,12 @@ $ColorStateEnum[3] = "ColorStateReset";
                         ]
                     },
                     {label: '<img src=../../icons/060433.png width=18/><span title=\"\">Gathering</span>', layer: gathering},
-                    {label: '<img src=../../icons/060004_hr1.png width=18/><span title=\"\">Monsters</span>', layer: bnpc},
+                    {label: '<img src=../../icons/060004_hr1.png width=18/><span title=\"\">Monsters</span>',
+                        collapsed: true,
+                        children: [
+                        $bnpc_lables
+                        ]
+                    },
                     {label: '<img src=../../icons/configcharacterchatlogringtone.uld-5-12-hr.png width=18/><span title=\"\">Vistas</span>', layer: adventure},
                     ]
                 },
@@ -4232,6 +4280,18 @@ $ColorStateEnum[3] = "ColorStateReset";
                   </div>
                 </div>
               </div>
+              <div id=\"arrmnew\" class=\"w3-modal\">
+              <div class=\"w3-modal-content\">
+                <div class=\"w3-container w3-text-black\">
+                  <span onclick=\"document.getElementById('arrmnew').style.display='none'\"
+                  class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
+                  <h1><center><b>Latest Updates:</b></center><br></h1>
+                  <ul>
+                  <li>10/07/2021 - A Selection list of BNPC's have now been added: Thank you to a user from google forms for the suggestion.</li>
+                  </ul>
+                </div>
+              </div>
+              </div>
                 </body>
                 </html>
                 ";
@@ -4408,7 +4468,8 @@ $ColorStateEnum[3] = "ColorStateReset";
         <body>
             <div class=\"w3-bar w3-white\">
               <button onclick=\"document.getElementById('arrmabout').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;height: 36px;\"><img src=\"../../assets/linkshell.uld-10-3-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
-    
+              <button onclick=\"document.getElementById('arrmnew').style.display='block'\" class=\"w3-bar-item w3-button w3-right\" style=\"width: 32px;height: 36px;\"><img src=\"../../assets/achievement.uld-10-11-hr.png\" style=\"height: 38px;position: relative; top:-8px; left:-19px\"/></button>
+
             <form class=\"w3-bar-item\" style=\"height: 30px;position:relative\" role=\"form\">
                 <div class=\"form-group\">
                   <input type=\"input\"style=\"height: 30px;position:relative; top:-3px;\" class=\"form-control input-lg\" id=\"txt-search\" placeholder=\"Search\">
@@ -4713,7 +4774,7 @@ $ColorStateEnum[3] = "ColorStateReset";
             <h1><center><b>About A Realm Remapped</b></center><br></h1>
             A Realm Remapped is a collection of all maps and locations in FINAL FANTASY XIV including FATEs, Treasure maps, Vistas, Aether Currents and more !<br>The main purpose of this is to allow for 100% accuracy for all objects found in zones to date.<br>Please be aware that these maps, although are complete, take a big amount of time to produce, if there is any zone you wish to see and is not here then please contact me on discord at <b>Icarus Twine#7006</b>
             If you wish to contribute / support / suggest changes then please do so at the links below :<br>
-            (Discord) <a href=\"https://discord.gg/wSmXFZpk\" class=\"w3-bar-item\">https://discord.gg/wSmXFZpk</a><br>
+            (Discord) <a href=\"https://discord.gg/Mbhyv4WqZB\" class=\"w3-bar-item\">https://discord.gg/Mbhyv4WqZB</a><br>
             (Google Forms) <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfUbCXKmZxxXw-3as3CdBYQresgghBeF4hXO7C8f0r4kXa38A/viewform?usp=sf_link\" class=\"w3-bar-item\">Here</a><br>
            (Patreon) <a href=\"https://www.patreon.com/ARealmRemapped\" class=\"w3-bar-item\">https://www.patreon.com/ARealmRemapped</a><br>
            
@@ -4739,12 +4800,24 @@ $ColorStateEnum[3] = "ColorStateReset";
            <br><b>Everyone at the SaintCoinach team</b> (<a href=\"https://github.com/IcarusTwine/SaintCoinach/\">https://github.com/IcarusTwine/SaintCoinach)</a>
            <br><b><h5>Patreons:</h5></b>
            <br><b><h5>Testers:</h5></b>
-           <br><b>ArcaneDisgea</b>
+           <b>ArcaneDisgea</b>
            <br><b>Ferthi</b>
            <br><b>Nemekh</b>
           </div>
         </div>
-      </div>
+        </div>
+        <div id=\"arrmnew\" class=\"w3-modal\">
+        <div class=\"w3-modal-content\">
+          <div class=\"w3-container w3-text-black\">
+            <span onclick=\"document.getElementById('arrmnew').style.display='none'\"
+            class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
+            <h1><center><b>Latest Updates:</b></center><br></h1>
+            <ul>
+            <li>10/07/2021 - A Selection list of BNPC's have now been added: Thank you to a user from google forms for the suggestion.</li>
+            </ul>
+          </div>
+        </div>
+        </div>
         </footer>
          
         <script>

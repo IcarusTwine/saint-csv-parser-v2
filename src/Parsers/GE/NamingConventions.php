@@ -444,9 +444,9 @@ class NamingConventions implements ParseInterface
         foreach($FinalOutput as $Race => $Table){
             $FinalOutArray .= "{{-start-}}\n";
             $FinalOutArray .= "'''$Race Naming Conventions/List'''\n";
-            $FinalOutArray .= '{| class="itembox shadowed" style="color:white; width:100%; cellpadding=0; cellspacing=1;" border={{{border{{!}}0}}}\n';
-            $FinalOutArray .= '|-\n';
-            $FinalOutArray .= '|{{#tag:tabber|\n';
+            $FinalOutArray .= "{| class=\"itembox shadowed\" style=\"color:white; width:100%; cellpadding=0; cellspacing=1;\" border={{{border{{!}}0}}}";
+            $FinalOutArray .= "|-\n";
+            $FinalOutArray .= "|{{#tag:tabber|\n";
             foreach($Table as $Tribe => $Data){
                 $FinalOutArray .= "$Tribe=\n";
                 $FinalOutArray .= "$Data=\n";
