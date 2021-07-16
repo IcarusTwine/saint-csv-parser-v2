@@ -19,7 +19,7 @@ class Items implements ParseInterface
         | Name           = {name}
         | Subheading     = {subheading}{description}{slots}{advancedmelding}{stack}{requires}
         | Required Level = {level}
-        | Item Level     = {itemlevel}{untradable}{unique}{extractable}{sells}{dyeallowed}{crestallowed}{glamour}{desynthesis}{repair}{MarketProhib}{setbonus}{bonus}{damage}{defense}{block}{itemaction}
+        | Item Level     = {itemlevel}{untradable}{unique}{extractable}{sells}{dyeallowed}{crestallowed}{glamour}{desynthesis}{repair}{MarketProhib}{setbonus}{bonus}{damage}{defense}{block}{itemaction}{ItemMatchExact}
         }}{Bottom}";
 
     public function parse()
@@ -29,7 +29,7 @@ class Items implements ParseInterface
         // if I want to use pywikibot to create these pages, this should be true. Otherwise if I want to create pages
         // manually, set to false
         $Bot = "true";
-
+        $oldcount = 0;
         // grab CSV files we want to use
         $ItemCsv = $this->csv("Item");
         $TripleTriadCardCsv = $this->csv("TripleTriadCard");
@@ -52,6 +52,21 @@ class Items implements ParseInterface
         $DesynthArray = json_decode($jdata,true);
         $MateriaCsv = $this->csv("Materia");
 
+        $BadCharacterSearch = array("–", "—", "<Emphasis>", "</Emphasis>", "''", "?","#","[","]");
+        $BadCharacterReplace = array("-", "-", null, null, null, null,"","(",")");
+        //produce array of equipment for match
+        foreach ($ItemCsv->data as $id => $Item) {
+            $ModelID = $Item["Model{Main}"];
+            $itemUiCategory = $Item["EquipSlotCategory"];
+            if ($itemUiCategory === "2"){
+                $ModelID = $Item["Model{Sub}"];
+            }
+            if ($ModelID === "0, 0, 0, 0") continue;
+            if ($itemUiCategory === "0") continue;
+            $ExplodeModel = explode(", ",$ModelID);
+            $ModelKeyExact = $ExplodeModel[0]."-".$ExplodeModel[1]."-".$ExplodeModel[2];
+            $ModelArray[$itemUiCategory][$ModelKeyExact][] = str_replace($BadCharacterSearch, $BadCharacterReplace, $Item["Name"]);
+        }
         // (optional) start a progress bar
         $this->io->progressStart($ItemCsv->total);
         
@@ -70,8 +85,6 @@ class Items implements ParseInterface
             $itemUiCategory = $ItemUiCategoryCsv->at($item['ItemUICategory']);
             $Collectable = $item['IsCollectable'];
             // remove Emphasis, comma, and wiki italic '' code in names
-            $BadCharacterSearch = array("–", "—", "<Emphasis>", "</Emphasis>", "''", "?");
-            $BadCharacterReplace = array("-", "-", null, null, null, null);
             $Name = str_replace($BadCharacterSearch, $BadCharacterReplace, $item['Name']);
             //$Name = str_replace("&", "and", $Name);
 
@@ -787,32 +800,57 @@ class Items implements ParseInterface
 
             // Icon copying. Uncomment this section if you want icon copying to run while Item parsing is happening.
 
-            if ($item['Icon']) {
-                $itemIcon = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
-                //$itemIconHq = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
-                if (!file_exists($itemIcon)) {
-                    continue;
+            //if ($item['Icon']) {
+            //    $itemIcon = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
+            //    //$itemIconHq = $this->getInputFolder() .'/icon/'. $this->iconize($item['Icon'], true);
+            //    if (!file_exists($itemIcon)) {
+            //        continue;
+            //    }
+            //    // ensure output directory exists
+            //    $outputDirectory = $this->getOutputFolder() . "/$PatchID/80pxitemicons";
+            //    if (!is_dir($outputDirectory)) {
+            //        mkdir($outputDirectory, 0777, true);
+            //    }
+            //    $iconFileName = "{$outputDirectory}/". str_replace(" ", "_", str_replace("/", "-", $Name)) ."_Icon.png";
+            //    //$iconFileNameHq = "{$outputDirectory}/". str_replace(" ", "_", str_replace("/", "-", $Name)) ."_HQ_Icon.png";
+            //    copy($itemIcon, $iconFileName);
+            //    // if hq exists, copy that
+            //    //if (file_exists($itemIconHq)) {
+            //    //    //console output
+            //    //    $this->io->text(
+            //    //        sprintf(
+            //    //            '- copy <info>%s</info> to <info>%s</info>', $itemIconHq, $itemIconHq
+            //    //        )
+            //    //    );
+            //    //    copy($itemIconHq, $iconFileNameHq);
+            //}
+            //grab item model matches
+            $ItemMatchExact = "";
+            $ItemMatchArray = [];
+            $ItemExactMatchArray = [];
+            $ModelID = $item["Model{Main}"];
+            $ItemUiCategory = $item["EquipSlotCategory"];
+            // if shield
+            if ($ItemUiCategory === "2"){
+                $ModelID = $Item["Model{Sub}"];
+            }
+            $ModelExplode = explode(", ",$ModelID);
+            $ModelKeyExact = $ModelExplode[0]."-".$ModelExplode[1]."-".$ModelExplode[2];
+            if (!empty($ModelArray[$ItemUiCategory][$ModelKeyExact])){
+                $ItemExactMatchArray = array_merge($ItemExactMatchArray, $ModelArray[$ItemUiCategory][$ModelKeyExact]);
+            }
+            if (!empty($ItemExactMatchArray)){
+                foreach($ItemExactMatchArray as $key => $value){
+                    if ($value === $Name)
+                    unset($ItemExactMatchArray[$key]);
                 }
-
-                // ensure output directory exists
-                $outputDirectory = $this->getOutputFolder() . "/$PatchID/80pxitemicons";
-                if (!is_dir($outputDirectory)) {
-                    mkdir($outputDirectory, 0777, true);
+                if (!empty($ItemExactMatchArray)){
+                    $Count = count($ItemExactMatchArray);
+                    $ItemMatchExact = "\n| Shared Models = $Count";
+                    $JSON_Matches[$id] = $ItemExactMatchArray;
+                    $ItemMatchOutput[] = "{{-start-}}\n'''".$Name."/Shared Models'''\n".implode(",",$ItemExactMatchArray)."\n{{-stop-}}";
+                    $Replace[] = "python pwb.py replace -page:\"$Name\" -summary:AddedItemMatch -pt:0 -always -regex \"\\n}}\" \"\\n| Shared Models = $Count\\n}}\"";
                 }
-
-                $iconFileName = "{$outputDirectory}/". str_replace(" ", "_", str_replace("/", "-", $Name)) ."_Icon.png";
-                //$iconFileNameHq = "{$outputDirectory}/". str_replace(" ", "_", str_replace("/", "-", $Name)) ."_HQ_Icon.png";
-
-                copy($itemIcon, $iconFileName);
-                // if hq exists, copy that
-                //if (file_exists($itemIconHq)) {
-                //    //console output
-                //    $this->io->text(
-                //        sprintf(
-                //            '- copy <info>%s</info> to <info>%s</info>', $itemIconHq, $itemIconHq
-                //        )
-                //    );
-                //    copy($itemIconHq, $iconFileNameHq);
             }
 
             // Save some data
@@ -865,6 +903,8 @@ class Items implements ParseInterface
                 '{itemaction}' => $ItemAction,
                 '{MarketProhib}' => $MarketProhib,
                 '{Collectable}' => " |Collectable = ". $Collectable,
+                '{ItemMatchExact}' => $ItemMatchExact,
+
                 '{Bottom}' => $Bottom,
             ];
 
@@ -872,7 +912,9 @@ class Items implements ParseInterface
             // need to look into using item-specific regex, if required.
              $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
         }
-
+        $this->saveExtra("ItemMatches.json",json_encode($JSON_Matches,JSON_PRETTY_PRINT|JSON_FORCE_OBJECT), true, true);
+        $this->saveExtra("ItemMatch.txt",implode("\n",$ItemMatchOutput));
+        $this->saveExtra("ReplaceItemMatch.bat",implode("\n",$Replace));
         // save our data to the filename: GeItemWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');

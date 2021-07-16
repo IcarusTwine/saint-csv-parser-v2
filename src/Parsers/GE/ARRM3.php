@@ -620,7 +620,8 @@ $ColorStateEnum[3] = "ColorStateReset";
         
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
             $this->io->progressAdvance();
-            //if ($id != 137) continue;
+            //STARTBOT
+            //if ($id != 131) continue;
             $DataArray = [];
             $fishingspotarray = [];
             if (!empty($FishingSpotArray[$id])) {
@@ -702,7 +703,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                     }
                     $MapNameUrl = str_replace($replacearray,"",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub");
                     $FolderNameUrl = str_replace($replacearray,"",str_replace(" ", "_",$PlaceNameCsv->at($MapCsv->at($newMapId)['PlaceName'])['Name']."$UrlSub"));
-                    $linkedmapsarray[] = "{label: '<a href=\"../$FolderNameUrl/$FolderNameUrl.html\">$FolderNameUrl</a>'},";
+                    $linkedmapsarray[] = "{label: \"<a href=\\\"../$FolderNameUrl/$FolderNameUrl.html\\\">$FolderNameUrl</a>\"},";
                 }
             }
             foreach($MapIndexArray[$id] as $key => $zonevalue){
@@ -747,8 +748,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                     $Hash = $mappyData->Hash;
                     $BNpcBaseID = $mappyData->BNpcBaseID;
                     $BNpcNameID = ucwords($BNpcNameCsv->at($mappyData->BNpcNameID)['Singular']);
-                    $NoThanksArray = array("Earthly Star", "Demi-Bahamut", "Seraph", "Demi-Phoenix", "Esteem", "Automaton Queen", "Bunshin");
-                    if (in_array($BNpcNameID, $NoThanksArray)) continue;
+                    $NoThanksArray = array("earthly star", "demi-bahamut", "seraph", "demi-phoenix", "esteem", "automaton queen", "bunshin");
+                    if (in_array(strtolower($BNpcNameID), $NoThanksArray)) continue;
                     $FateID = $mappyData->FateID;
                     $HP = $mappyData->HP;
                     $PixelX = ($mappyData->PixelX);
@@ -3333,17 +3334,17 @@ $ColorStateEnum[3] = "ColorStateReset";
                     $bnpcOut["type"] = "FeatureCollection";
                     $bnpcOut["timestamp"] = time();
                     $bnpcOut["features"] = $bnpc;
-                    $bnpc_Json[] = "var _".str_replace(array(" ","-","'"),"_",$name)."Geo = ".json_encode($bnpcOut,JSON_PRETTY_PRINT)."";
-                    $bnpclabels[] = "{label: '<img src=../../icons/060004_hr1.png width=18/>".str_replace("'","\'",$name)."', layer: _".str_replace(array(" ","-","'"),"_",$name)."},";
-                    $bnpclayergroup[] = "var _".str_replace(array(" ","-","'"),"_",$name)." = L.layerGroup();";
-                    $bnpcsearch[] = "_".str_replace(array(" ","-","'"),"_",$name)."";
-                    $bnpcpoilayer[] = "_".str_replace(array(" ","-","'"),"_",$name)."Cluster.addTo(_".str_replace(array(" ","-","'"),"_",$name)."),";
+                    $bnpc_Json[] = "var _".str_replace(array(" ","-","'","&"),"_",$name)."Geo = ".json_encode($bnpcOut,JSON_PRETTY_PRINT)."";
+                    $bnpclabels[] = "{label: '<img src=../../icons/060004_hr1.png width=18/>".str_replace("'","\'",$name)."', layer: _".str_replace(array(" ","-","'","&"),"_",$name)."},";
+                    $bnpclayergroup[] = "var _".str_replace(array(" ","-","'","&"),"_",$name)." = L.layerGroup();";
+                    $bnpcsearch[] = "_".str_replace(array(" ","-","'","&"),"_",$name)."";
+                    $bnpcpoilayer[] = "_".str_replace(array(" ","-","'","&"),"_",$name)."Cluster.addTo(_".str_replace(array(" ","-","'","&"),"_",$name)."),";
                     $clusterGen[] = "
-                    var _".str_replace(array(" ","-","'"),"_",$name)."Cluster = L.markerClusterGroup({showCoverageOnHover: true,maxClusterRadius: 100,iconCreateFunction: function(cluster) {
+                    var _".str_replace(array(" ","-","'","&"),"_",$name)."Cluster = L.markerClusterGroup({showCoverageOnHover: true,maxClusterRadius: 100,iconCreateFunction: function(cluster) {
                         return L.divIcon({iconAnchor:[24,24], html: '<div class=\"markerImage\"><img src=../../icons/060004_hr1.png width=48/>' + cluster.getChildCount() + '</div>' });
                     }});
-                    var _".str_replace(array(" ","-","'"),"_",$name)."GeoForm = L.geoJson(_".str_replace(array(" ","-","'"),"_",$name)."Geo, geojsonOpts);
-                    _".str_replace(array(" ","-","'"),"_",$name)."Cluster.addLayer(_".str_replace(array(" ","-","'"),"_",$name)."GeoForm);";
+                    var _".str_replace(array(" ","-","'","&"),"_",$name)."GeoForm = L.geoJson(_".str_replace(array(" ","-","'","&"),"_",$name)."Geo, geojsonOpts);
+                    _".str_replace(array(" ","-","'","&"),"_",$name)."Cluster.addLayer(_".str_replace(array(" ","-","'","&"),"_",$name)."GeoForm);";
                 }
                 $bnpc_Jsonimp = implode("\n\n",$bnpc_Json);
                 $bnpc_lables = implode("\n",$bnpclabels);

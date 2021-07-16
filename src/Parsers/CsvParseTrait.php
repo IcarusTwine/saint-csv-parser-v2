@@ -3301,17 +3301,19 @@ trait CsvParseTrait
                 mkdir("{$folder}/{$PatchID}/", 0777, true);
             }
             $fileopen = fopen("{$folder}/{$PatchID}/{$filename}", 'w');
+            $pathtext = "{$folder}/{$PatchID}/{$filename}";
         } else {
             $folder = str_replace("/output","",$this->projectDirectory . getenv('OUTPUT_DIRECTORY'));
             if (!file_exists("{$folder}/Resources/")) {
                 mkdir("{$folder}/Resources/", 0777, true);
             }
             $fileopen = fopen("{$folder}/Resources/{$filename}", 'w');
+            $pathtext = "{$folder}/Resources/{$filename}";
         }
         fwrite($fileopen, $data);
         fclose($fileopen);
 
-        return $this->io->text("Saved {$folder}/{$PatchID}/{$filename}");
+        return $this->io->text("Saved $pathtext");
     }
     /**
      * Save to a file, if chunk size
