@@ -381,20 +381,20 @@
     "LayerId": 249052,
     "Name": "FATE_003",
     "_InstanceObjects": 52,
-    "InstanceObjectCount": 2,
+    "InstanceObjectCount": 1,
     "ToolModeVisible": 1,
     "ToolModeReadOnly": 0,
     "IsBushLayer": 0,
     "PS3Visible": 1,
-    "_LayerSetReferencedList": 200,
+    "_LayerSetReferencedList": 128,
     "FestivalID": 0,
     "FestivalPhaseID": 0,
     "IsTemporary": 0,
     "IsHousing": 0,
     "VersionMask": 77,
-    "ObSetReferencedList": 216,
+    "ObSetReferencedList": 144,
     "ObSetReferencedListCount": 0,
-    "ObSetEnableReferencedList": 216,
+    "ObSetEnableReferencedList": 144,
     "ObSetEnableReferencedListCount": 0,
     "LayerSetReferencedList": {
       "ReferencedType": 1,
@@ -430,39 +430,11 @@
             "Enabled": 0
           }
         }
-      },
-      {
-        "AssetType": 45,
-        "InstanceId": 8049875,
-        "Name": "",
-        "Transform": {
-          "Translation": {
-            "x": 617.1318,
-            "y": -58.44236,
-            "z": 178.0946
-          },
-          "Rotation": {
-            "x": -4.7922134E-05,
-            "y": -4.7922134E-05,
-            "z": -4.7922134E-05
-          },
-          "Scale": {
-            "x": 1.998901,
-            "y": 0.9917603,
-            "z": 0.9917603
-          }
-        },
-        "Object": {
-          "ParentData": {
-            "BaseId": 2010759
-          },
-          "BoundInstanceId": 0
-        }
       }
     ],
     "LayerSetReferences": [
       {
-        "LayerSetId": 2
+        "LayerSetId": 1
       }
     ],
     "OBSetReferencedList": [],

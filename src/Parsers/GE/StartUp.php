@@ -105,7 +105,7 @@ class StartUp implements ParseInterface
         }
         fclose($handle2);
         $SaintCommands = array(
-            "rawexd",
+            //"rawexd",
             "maps",
             "uihd"
         );
@@ -127,10 +127,10 @@ class StartUp implements ParseInterface
                     @ flush();
                 }
             }
-            $CachePath = $ini['Cache']."/$PatchID/rawexd";
-            $src = "$SaintPath/$PatchID/rawexd";
-            $console->writeln("Copying to cache/\n");
-            recurseCopy($src, $CachePath);
+           //$CachePath = $ini['Cache']."/$PatchID/rawexd";
+           //$src = "$SaintPath/$PatchID/rawexd";
+           //$console->writeln("Copying to cache/\n");
+           //recurseCopy($src, $CachePath);
         }
         $console->writeln("<question>Would you like to produce LGB Files?</question>");
         $console->writeln("(yes/no)\n");

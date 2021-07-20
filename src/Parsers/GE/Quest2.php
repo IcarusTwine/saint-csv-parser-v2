@@ -125,6 +125,7 @@ class Quest2 implements ParseInterface
         ];
         
         $BeastTribeRanks = array (
+            0 => "Neutral",
             1 => "Neutral",
             2 => "Recognized",
             3 => "Friendly",
@@ -313,7 +314,7 @@ class Quest2 implements ParseInterface
             $LuaRewards = [];
             $ItemArrayNames = [];
             //if (($id < 69590) || ($id > 69592)) continue; // next event
-            if ($id != 65658) continue;
+            //if ($id != 65658) continue;
             
             $QuestName = $Quest['Name'];
             if (empty($QuestName)) continue;
@@ -405,7 +406,7 @@ class Quest2 implements ParseInterface
                 if ($Quest["Target{End}"] < 2000000){
                     $lastnpc = array_key_last($NPCSubPagesArray);
                     $NpcNamefnc = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames);
-                    var_dump($NpcNamefnc["Name"]);
+                    //var_dump($NpcNamefnc["Name"]);
                     if ($NpcNamefnc["IsEnglish"] != false){
                         $FinalNpcName = $NpcNamefnc["Name"];
                         $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $QuestName ."}}";
@@ -469,7 +470,7 @@ class Quest2 implements ParseInterface
             $StarterMap .= "|x = $PX\n";
             $StarterMap .= "|y = $PY\n";
             $LuaFile = $Quest["Id"];
-            var_dump($LuaFile);
+            //var_dump($LuaFile);
             //var_dump($Quest['Name']);
             //var_dump($id);
             $folder = substr(explode('_', $LuaFile)[1], 0, 3);
@@ -827,6 +828,7 @@ class Quest2 implements ParseInterface
             $MinCalc = 0;
             $MaxCalc = 0;
             if (!empty($Quest["BeastTribe"])){
+                var_dump($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus']);
                 $MinCalc = $BeastTribeRankBonusCsv->at($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus'])[$BeastTribeRanks[$Quest["BeastReputationRank"]]];
                 $MaxRank = $BeastTribeCsv->at($Quest["BeastTribe"])['MaxRank'];
                 $MaxCalc = $BeastTribeRankBonusCsv->at($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus'])[$BeastTribeRanks[$MaxRank]];
@@ -1176,8 +1178,8 @@ class Quest2 implements ParseInterface
             $i = 0;
             foreach ($IconArray as $value){
                 $i++;
-                $console->overwrite(" Saving -> $i / $IconArrayCount");
                 $IconID = sprintf("%06d", $value);
+                $console->overwrite(" Saving Icon $IconID -> $i / $IconArrayCount");
                 if (!file_exists($this->getOutputFolder() ."/$PatchID/QuestImages/$IconID.png")) {
                     // ensure output directory exists
                     $IconOutputDirectory = $this->getOutputFolder() ."/$PatchID/QuestImages/";

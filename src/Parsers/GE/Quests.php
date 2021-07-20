@@ -146,14 +146,14 @@ class Quests implements ParseInterface
             $questRewards = [];
             $RewardNumber = false;
             foreach (range(0, 5) as $i) {
-                $guaranteeditemname = $ItemCsv->at($quest["Item{Reward}[0][{$i}]"])['Name'];
-                if ($quest["ItemCount{Reward}[0][{$i}]"] > 0) {
+                $guaranteeditemname = $ItemCsv->at($quest["Item{Reward}[{$i}]"])['Name'];
+                if ($quest["ItemCount{Reward}[{$i}]"] > 0) {
                     $RewardNumber = ($RewardNumber + 1);
                     $string = "\n|QuestReward ". $RewardNumber ." = ". $guaranteeditemname;
 
                     //Show the Qty if more than 1 is received.
-                    if ($quest["ItemCount{Reward}[0][{$i}]"] > 1) {
-                        $string .= "\n|QuestReward ". $RewardNumber ." Count = ". $quest["ItemCount{Reward}[0][{$i}]"] ."\n";
+                    if ($quest["ItemCount{Reward}[{$i}]"] > 1) {
+                        $string .= "\n|QuestReward ". $RewardNumber ." Count = ". $quest["ItemCount{Reward}[{$i}]"] ."\n";
                     }
 
                     $questRewards[] = $string;

@@ -17,7 +17,7 @@ php bin/console app:parse:csv GE:KhloeShop
 php bin/console app:parse:csv GE:LuaExporter
 php bin/console app:parse:csv GE:Minions
 php bin/console app:parse:csv GE:Mounts
-php bin/console app:parse:csv GE:Quests
+::php bin/console app:parse:csv GE:Quests
 php bin/console app:parse:csv GE:Retainer
 php bin/console app:parse:csv GE:RetainerEXP
 php bin/console app:parse:csv GE:Satisfaction
@@ -40,5 +40,5 @@ php bin/console app:parse:csv GE:BlueMageContent
 php bin/console app:parse:csv GE:NpcsPagesAll
 php bin/console app:parse:csv GE:Orchestrion
 php bin/console app:parse:csv GE:NamingConventions
-::php bin/console app:parse:csv GE:Quest2
+php bin/console app:parse:csv GE:Quest2
 pause
