@@ -9,9 +9,9 @@ use PDO;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 /**
- * php bin/console app:parse:csv GE:QuestTest2
+ * php bin/console app:parse:csv GE:Quest2
  */
-class QuestTest2 implements ParseInterface
+class Quest2 implements ParseInterface
 {
     use CsvParseTrait;
 
@@ -94,6 +94,7 @@ class QuestTest2 implements ParseInterface
         $SatisfactionNpcCsv = $this->csv("SatisfactionNpc");
         $SpecialShopCsv = $this->csv("SpecialShop");
         $QuestDerivedClassCsv = $this->csv("QuestDerivedClass");
+        $BeastTribeRankBonusCsv = $this->csv("BeastRankBonus");
 
         
         //send csvs to function when needed : 
@@ -122,6 +123,17 @@ class QuestTest2 implements ParseInterface
             2 => "\n|TomestoneLow = ",
             3 => "\n|TomestoneHigh = ",
         ];
+        
+        $BeastTribeRanks = array (
+            1 => "Neutral",
+            2 => "Recognized",
+            3 => "Friendly",
+            4 => "Trusted",
+            5 => "Respected",
+            6 => "Honored",
+            7 => "Sworn",
+            8 => "Allied/Bloodsworn",
+        );
         
         //make Trait array
         foreach ($TraitCsv->data as $id => $Trait) {
@@ -300,7 +312,8 @@ class QuestTest2 implements ParseInterface
             $ItemArray = [];
             $LuaRewards = [];
             $ItemArrayNames = [];
-            //if ($id != 66959) continue;
+            //if (($id < 69590) || ($id > 69592)) continue; // next event
+            if ($id != 65658) continue;
             
             $QuestName = $Quest['Name'];
             if (empty($QuestName)) continue;
@@ -392,6 +405,7 @@ class QuestTest2 implements ParseInterface
                 if ($Quest["Target{End}"] < 2000000){
                     $lastnpc = array_key_last($NPCSubPagesArray);
                     $NpcNamefnc = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames);
+                    var_dump($NpcNamefnc["Name"]);
                     if ($NpcNamefnc["IsEnglish"] != false){
                         $FinalNpcName = $NpcNamefnc["Name"];
                         $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $QuestName ."}}";
@@ -399,6 +413,8 @@ class QuestTest2 implements ParseInterface
                             if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
                                 $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
                                 $NpcsInvolved[] = $FinalNpcName;
+                            }else {
+                                $NPCSubPagesArray[] = str_replace("}}","|Questend=True}}",$EndNPC);
                             }
                         }
                     }
@@ -808,14 +824,22 @@ class QuestTest2 implements ParseInterface
 
             //rewards
             //Show EXPReward if more than zero and round it down (if needed) Otherwise, blank it.
+            $MinCalc = 0;
+            $MaxCalc = 0;
+            if (!empty($Quest["BeastTribe"])){
+                $MinCalc = $BeastTribeRankBonusCsv->at($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus'])[$BeastTribeRanks[$Quest["BeastReputationRank"]]];
+                $MaxRank = $BeastTribeCsv->at($Quest["BeastTribe"])['MaxRank'];
+                $MaxCalc = $BeastTribeRankBonusCsv->at($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus'])[$BeastTribeRanks[$MaxRank]];
+            }
             $ParamGrow = $ParamGrowCsv->at($QuestLevel);
-            $QuestEXP = floor(($Quest["ExpFactor"] * $ParamGrow['ScaledQuestXP'] * $ParamGrow['QuestExpModifier']) / 100);
+            $QuestEXP = floor(($Quest["ExpFactor"] * $ParamGrow['ScaledQuestXP'] * $ParamGrow['QuestExpModifier']) / 100) * ($MinCalc / 100);
             if ($Quest['Level{Max}'] > 0) {
                 $ParamGrowMaxLevel = $ParamGrowCsv->at($Quest['Level{Max}']);
-                $QuestEXPMaxLevel = floor(($Quest["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100);
+                $QuestEXPMaxLevel = floor(($Quest["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100) * ($MaxCalc / 100);
                 $QuestEXP = "$QuestEXP-$QuestEXPMaxLevel";
             }
             //QuestExp^
+            //{{ht|Amount varies by level of class completing quest|209250-354442}}
             $RewardArray = [];
             if (!empty($QuestEXP)) {
                 $RewardArray[] = "|EXPReward = $QuestEXP";
@@ -946,7 +970,7 @@ class QuestTest2 implements ParseInterface
                 }
                 if (!empty($Item["Stain"])){
                     $RewardArray[] = "|QuestReward $ItemCount Dye = ".$Item["Stain"];
-                    $RewardArray[] = "|QuestReward $ItemCount Dye Hex = ".$this->colorToHex($Item["StainHex"]);
+                    $RewardArray[] = "|QuestReward $ItemCount Dyehex = ".$this->colorToHex($Item["StainHex"]);
                 }
             }
             $OptionItemCount = 0;
@@ -960,7 +984,7 @@ class QuestTest2 implements ParseInterface
                 }
                 if (!empty($Item["Stain"])){
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount Dye = ".$Item["Stain"];
-                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Dye Hex = ".$this->colorToHex($Item["StainHex"]);
+                    $RewardArray[] = "|QuestRewardOption $OptionItemCount Dyehex = ".$this->colorToHex($Item["StainHex"]);
                 }
                 if ($Item["IsHQ"] === "True"){
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount HQ = x";
@@ -1046,10 +1070,12 @@ class QuestTest2 implements ParseInterface
             foreach($NpcsInvolved as $Npc){
                 if (stripos($Objectives,$Npc.".") !== false){
                     $Objectives = str_replace($Npc.".", "[[".$Npc."|".$Npc."]].", $Objectives);
-                } elseif (stripos($Objectives," ".$Npc." ") !== false){
+                } if (stripos($Objectives," ".$Npc." ") !== false){
                     $Objectives = str_replace(" ".$Npc." ", " [[".$Npc."|".$Npc."]] ", $Objectives);
-                } elseif (stripos($Objectives,"*".$Npc." ") !== false){
+                } if (stripos($Objectives,"*".$Npc." ") !== false){
                     $Objectives = str_replace("*".$Npc." ", "*[[".$Npc."|".$Npc."]] ", $Objectives);
+                } if (stripos($Objectives,"*".$Npc." ") !== false){
+                    $Objectives = str_replace(" ".$Npc."'", "*[[".$Npc."|".$Npc."]] ", $Objectives);
                 }
             }
             $NpcsInvolved = implode(",",$NpcsInvolved);
@@ -1074,7 +1100,7 @@ class QuestTest2 implements ParseInterface
             $QuestOutput = "{{-start-}}\n";
             $QuestOutput .= "$HeaderUnknown";
             $QuestOutput .= "'''".$Quest["Name"]."'''\n";
-            $QuestOutput .= "{{ARR Infobox Quest\n";
+            $QuestOutput .= "{{ARR Infobox Quest2\n";
             $QuestOutput .= "|Patch = $PatchFixed\n";
             $QuestOutput .= "|Expansion = $Expansion\n";
             $QuestOutput .= "|Name = ".$Quest["Name"]."\n";
@@ -1178,7 +1204,7 @@ class QuestTest2 implements ParseInterface
         // save
         $this->io->progressFinish();
         $console->writeln(" Saving... ");
-        $info = $this->save("QuestTest2.txt", 999999);
+        $info = $this->save("Quest2.txt", 999999);
 
     }
 }

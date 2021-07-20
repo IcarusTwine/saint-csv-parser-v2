@@ -46,7 +46,7 @@ class LodestoneParser implements ParseInterface
         //https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/?page=1
         $console->writeln(" Starting");
         $FoundCount = 0;
-        foreach(range(1,999) as $i){
+        foreach(range(432,999) as $i){
             $Data = "";
             $context = stream_context_create(array('http'=>array('protocol_version'=>'1.1')));
             $Url = "https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/?page=$i";

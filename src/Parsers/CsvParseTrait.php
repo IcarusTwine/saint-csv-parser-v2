@@ -1682,13 +1682,15 @@ trait CsvParseTrait
                             }
                             $Answers = implode($AnswerArray);
                             $Responses = [];
-                            foreach($MenuArray["Responses"] as $key => $ResponseArray){
-                                $Speaker = $ResponseArray["TrueSpeaker"];
-                                $Responses[] = "|Reply$key={{Loremquote|".$Speaker."|link=y|";
-                                foreach($ResponseArray["Line"] as $Response){
-                                    $Responses[] = $Response;
+                            if (!empty($MenuArray["Responses"])){
+                                foreach($MenuArray["Responses"] as $key => $ResponseArray){
+                                    $Speaker = $ResponseArray["TrueSpeaker"];
+                                    $Responses[] = "|Reply$key={{Loremquote|".$Speaker."|link=y|";
+                                    foreach($ResponseArray["Line"] as $Response){
+                                        $Responses[] = $Response;
+                                    }
+                                    $Responses[] = "}}";
                                 }
-                                $Responses[] = "}}";
                             }
                             $ResponsesOut = implode($Responses);
                             $LinedArray .= "{{Loremtable|Width=$AnswerCount|Question=$Question$Answers$ResponsesOut}}";
@@ -1702,7 +1704,7 @@ trait CsvParseTrait
                         if (empty($Line['Speaker'])){
                             if (!empty($Line['Variables'][0])){
                                 $SpeakerId = $Line['Variables'][0];
-                                var_dump($Line['Variables']);
+                                //var_dump($Line['Variables']);
                                 if ($SpeakerId === "Target"){
                                     $Speaker = "";
                                 } else {

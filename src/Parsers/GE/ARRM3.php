@@ -79,9 +79,16 @@ class ARRM3 implements ParseInterface
         $TripleTriadRuleCsv = $this->csv('TripleTriadRule');
 
 
+        //UPDATES: 
+        $UpdateArray[] = "<li>16/07/2021 - Most* items are now linked to the lodestone if you hover over them.<br>This was thanks to a user suggestion and I appreciate the challenge!</li>";
+        $UpdateArray[] = "<li>10/07/2021 - A Selection list of BNPC's have now been added: Thank you to a user from google forms for the suggestion.</li>";
+
         $this->PatchCheck($Patch, "TerritoryType", $TerritoryTypeCsv);
         $PatchNumber = $this->getPatch("TerritoryType");
-
+        
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $HashArray = json_decode(file_get_contents("$Resources/LodestoneHashes.json"),true);
 
         $replacearray = array(":","<Emphasis>","</Emphasis>");
         $AssetTypeEnums[0] = "AssetNone"; //zero matches LGB
@@ -613,7 +620,6 @@ $ColorStateEnum[3] = "ColorStateReset";
             }
         }
         $IconArray = [];
-        $ini = parse_ini_file('src/Parsers/config.ini');
         $MainPath = $ini['MainPath'];
         $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
         
@@ -621,7 +627,7 @@ $ColorStateEnum[3] = "ColorStateReset";
         foreach ($TerritoryTypeCsv->data as $id => $Territory) {
             $this->io->progressAdvance();
             //STARTBOT
-            //if ($id != 131) continue;
+            //if ($id != 141) continue;
             $DataArray = [];
             $fishingspotarray = [];
             if (!empty($FishingSpotArray[$id])) {
@@ -862,22 +868,31 @@ $ColorStateEnum[3] = "ColorStateReset";
                             $gpointItem = [];
                             foreach (range(0, 7) as $i) {
                                 if ($gatheringPointBaseCsv->at($gpoint)["Item[$i]"] == 0) continue;
+                                $ItemHash = "";
                                 switch ($gpointbase) {
                                     case 0:
                                     case 1:
                                     case 2:
                                     case 3:
                                         $gpointItemSingle = $ItemCsv->at($gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"])["Name"];
+                                        if (!empty($HashArray[$gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"]])){
+                                            $ItemHash = $HashArray[$gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"]]['pagehash'];
+                                        }
                                     break;
                                     case 4:
                                         $gpointItemSingle = $ItemCsv->at($spearfishingItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"])["Name"];
+                                        if (!empty($HashArray[$spearfishingItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"]])){
+                                            $ItemHash = $HashArray[$spearfishingItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"]]['pagehash'];
+                                        }
                                     break;
                                 }
                                 if ($gatheringpointcsv->at($NodeID)['Type'] == 3) {
                                     $gpointItemSingle = $EventItemCsv->at($gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"])["Name"];
+                                    if (!empty($HashArray[$gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"]])){
+                                        $ItemHash = $HashArray[$gatheringItemCsv->at($gatheringPointBaseCsv->at($gpoint)["Item[$i]"])["Item"]]['pagehash'];
+                                    }
                                 }
-        
-                                $gpointItemString = "Item: ". $gpointItemSingle ."<br>";
+                                $gpointItemString = "Item: <a href=\"https://eu.finalfantasyxiv.com/lodestone/playguide/db/item/$ItemHash/\" class=\"eorzeadb_link\">$gpointItemSingle</a><br>";
                                 $gpointItem[] = $gpointItemString;
                             }
                             $gpointItem = implode($gpointItem);
@@ -3685,6 +3700,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                 <script src=\"../../assets/js/L.Control.Window.js\"></script>
                 <script src=\"../../assets/js/leaflet.markercluster.js\"></script>
                 <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
+                <script src=\"https://img.finalfantasyxiv.com/lds/pc/global/js/eorzeadb/loader.js?v2\"></script>
                 
                 </head>
                 <body style=\"height: 100%; margin: 0;\">
@@ -4288,7 +4304,7 @@ $ColorStateEnum[3] = "ColorStateReset";
                   class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
                   <h1><center><b>Latest Updates:</b></center><br></h1>
                   <ul>
-                  <li>10/07/2021 - A Selection list of BNPC's have now been added: Thank you to a user from google forms for the suggestion.</li>
+                  ".implode("\n",$UpdateArray)."
                   </ul>
                 </div>
               </div>
@@ -4529,7 +4545,7 @@ $ColorStateEnum[3] = "ColorStateReset";
         
                 <div class=\"w3-border\">
                   <div class=\"w3-red w3-wide w3-text-black\">
-                  <p>16/06/2021 - finished all suggestions</p>
+                  ".implode("\n",$UpdateArray)."
                 </div>
                   <ul>
                   </ul>
@@ -4814,7 +4830,7 @@ $ColorStateEnum[3] = "ColorStateReset";
             class=\"w3-button w3-display-topright\"><img src=../../assets/achievement.uld-3-0-hr.png height=25/></span>
             <h1><center><b>Latest Updates:</b></center><br></h1>
             <ul>
-            <li>10/07/2021 - A Selection list of BNPC's have now been added: Thank you to a user from google forms for the suggestion.</li>
+            ".implode("\n",$UpdateArray)."
             </ul>
           </div>
         </div>
