@@ -224,7 +224,7 @@ class Quest2 implements ParseInterface
             }
         }
         foreach($GatheringItemCsv->data as $id => $SheetData) {
-            $QuestNumber = $SheetData["unknown_4"];
+            $QuestNumber = $SheetData["Quest"];
             if (empty($QuestNumber)) continue;
             $Variable = $SheetData['Item'];
             $GatheringItemData[$QuestNumber][] = $Variable;
@@ -280,7 +280,7 @@ class Quest2 implements ParseInterface
             $QuestBattleData[$QuestNumber] = true;
         }
         foreach($RecipeCsv->data as $id => $SheetData) {
-            $QuestNumber = $SheetData["unknown_38"];
+            $QuestNumber = $SheetData["Quest"];
             if (empty($QuestNumber)) continue;
             $Variable = $SheetData["Item{Required}"];
             $RecipeData[$QuestNumber][] = $Variable;
@@ -562,6 +562,7 @@ class Quest2 implements ParseInterface
             $HeaderUnknown = "";
             if (!empty($Quest["Header"])){
                 $HeaderUnknown = "{{Unknown Header Option?}}\n";
+                $UnknownArray[] = $Quest["Name"];
             }
             $Sort = $Quest["SortKey"];
             $Expansion = $ExVersionCsv->at($Quest["Expansion"])['Name'];
@@ -602,7 +603,7 @@ class Quest2 implements ParseInterface
             $MatchItemArray = [];
             $NewVariables = [];
             if (!empty($AdventureExPhaseData[$id])){
-                $NewVariables[] = "|SightSeeing Unlock = ".$ExVersionCsv->at($AdventureExPhaseData[$id]["unknown_4"])['Name']."\n";
+                $NewVariables[] = "|SightSeeing Unlock = ".$ExVersionCsv->at($AdventureExPhaseData[$id]["Expansion"])['Name']."\n";
             }
             if (!empty($CurrentData[$id])){
                 $NewVariables[] = "|AetherCurrent Unlock = x\n";
@@ -965,8 +966,7 @@ class Quest2 implements ParseInterface
             }
             $TomestoneCheck = $Quest["Tomestone{Reward}"];
             if (!empty($TomestoneCheck)) {
-                $RewardArray[] = $TomestoneList[$TomestoneCheck];
-                $RewardArray[] = "|TomeStone Amount = ".$Quest["TomestoneCount{Reward}"];
+                $RewardArray[] = "|".$TomestoneList[$TomestoneCheck]." = ".$Quest["TomestoneCount{Reward}"];
             }
             if (!empty($Quest["ReputationReward"])) {
                 $RewardArray[] = "|Relations = ".$Quest["ReputationReward"];
@@ -1216,6 +1216,7 @@ class Quest2 implements ParseInterface
                 }
             }
         }
+        print_r($UnknownArray);
         $data = GeFormatter::format(self::WIKI_FORMAT, [
             '{QuestOutput}'  => $FinalOut,
         ]);
