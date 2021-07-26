@@ -95,6 +95,7 @@ class Quest2 implements ParseInterface
         $SpecialShopCsv = $this->csv("SpecialShop");
         $QuestDerivedClassCsv = $this->csv("QuestDerivedClass");
         $BeastTribeRankBonusCsv = $this->csv("BeastRankBonus");
+        $DescriptionStringCsv = $this->csv("DescriptionString");
 
         
         //send csvs to function when needed : 
@@ -167,7 +168,7 @@ class Quest2 implements ParseInterface
             $CurrentData[$QuestNumber] = true;
         }
         foreach($AetheryteCsv->data as $id => $Aetheryte) {
-            $QuestNumber = $Current["Quest"];
+            $QuestNumber = $Aetheryte["RequiredQuest"];
             if (empty($QuestNumber)) continue;
             $PlaceName = $PlaceNameCsv->at($Aetheryte["AethernetName"])['Name'];
             $AetheryteData[$QuestNumber] = $PlaceName;
@@ -188,7 +189,7 @@ class Quest2 implements ParseInterface
             $QuestNumber = $SheetData["UnlockQuest"];
             if (empty($QuestNumber)) continue;
             $Variable = $SheetData['Name'];
-            $ContentFinderConditionData[$QuestNumber][] = $Variable;
+            $ContentFinderConditionData[$QuestNumber][] = ucfirst(str_replace(",","&#44;",$Variable));
         }
         foreach($CraftActionCsv->data as $id => $SheetData) {
             $QuestNumber = $SheetData["QuestRequirement"];
@@ -210,7 +211,7 @@ class Quest2 implements ParseInterface
         foreach($DescriptionPageCsv->data as $id => $SheetData) {
             $QuestNumber = $SheetData["Quest"];
             if (empty($QuestNumber)) continue;
-            $Variable = $SheetData['Text[0]'];
+            $Variable = $DescriptionStringCsv->at($SheetData['Text[0]'])['Text'];
             $DescriptionPageData[$QuestNumber][] = $Variable;
         }
         foreach($DpsChallengeOfficerCsv->data as $id => $SheetData) {
@@ -258,7 +259,6 @@ class Quest2 implements ParseInterface
             foreach(range(0,59) as $a){
                 if (!empty($SheetData["Item{Receive}[$a][0]"])){
                     $NewQuestID = $SheetData["Quest{Item}[$a]"];
-                    $GilShopItemData[$NewQuestID]["Shop"][] = $Variable;
                     $GilShopItemData[$NewQuestID]["Items"][] = $ItemCsv->at($SheetData["Item{Receive}[$a][0]"])['Name'];
                 }
             }
@@ -314,7 +314,7 @@ class Quest2 implements ParseInterface
             $LuaRewards = [];
             $ItemArrayNames = [];
             //if (($id < 69590) || ($id > 69592)) continue; // next event
-            //if ($id != 65658) continue;
+            //if ($id != 67881) continue;
             
             $QuestName = $Quest['Name'];
             if (empty($QuestName)) continue;
@@ -616,12 +616,24 @@ class Quest2 implements ParseInterface
             if (!empty($ShopData[$id])){
                 $NewVariables[] = "|Unlocks Shop = ".implode(",",$ShopData[$id])."\n";
             }
+            $UnlockDutyArray = [];
+            foreach($ArgArray as $Instruction => $Arg){
+                if (strpos($Instruction,"INSTANCE") !== false){
+                    if (!empty($ContentArray[$Arg])){
+                        $UnlockDutyArray[] = $ContentArray[$Arg];
+                    }
+                }
+            }
+            if (!empty($UnlockDutyArray)){
+                $InstanceContentOut = implode(",",array_unique($UnlockDutyArray));
+                $NewVariables[] = "|Unlocks Duty = ".$InstanceContentOut."\n";
+            }
             if (!empty($ContentFinderConditionData[$id])){
-                $contents = implode(",",$ContentFinderConditionData[$id]);
+                $contents = implode(",",array_unique($ContentFinderConditionData[$id]));
                 $NewVariables[] = "|Unlocks Content = ".$contents."\n";
             }
             if (!empty($CraftActionData[$id])){
-                $NewVariables[] = "|Unlocks Action = ".$CraftActionData[$id]."\n";
+                $NewVariables[] = "|Action Reward = ".$CraftActionData[$id]."\n";
             }
             if (!empty($DawnQuestAnnounceData[$id])){
                 $Content = $ContentFinderConditionCsv->at($DawnContentCsv->at($DawnQuestAnnounceData[$id]['Content'])['Content'])['Name'];
@@ -630,7 +642,7 @@ class Quest2 implements ParseInterface
                     if (empty($ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'])) continue;
                     $DawnNpcs[] = $ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'];
                 }
-                $NewVariables[] = "|Allows Trust Content = ".$Content."\n";
+                //$NewVariables[] = "|Allows Trust Content = ".$Content."\n";
                 $NewVariables[] = "|Allows Trust Npcs = ".implode(",",$DawnNpcs)."\n";
             }
             if (!empty($DescriptionData[$id])){
@@ -640,7 +652,7 @@ class Quest2 implements ParseInterface
                 $NewVariables[] = "|Unlocks Page = ".implode(",",$DescriptionPageData[$id])."\n";
             }
             if (!empty($DpsChallengeOfficerData[$id])){
-                $NewVariables[] = "|Unlocks Access To = ".implode(",",$DpsChallengeOfficerData[$id])."\n";
+                $NewVariables[] = "|Stone Sky Sea = x\n";
             }
             if (!empty($GatheringItemData[$id])){
                 foreach ($GatheringItemData[$id] as $Item){
@@ -653,21 +665,20 @@ class Quest2 implements ParseInterface
                 }
             }
             if (!empty($GilShopItemData[$id])){
-                $NewVariables[] = "|Shop Sells = ".implode(",",$GilShopItemData[$id]["Shop"])."\n";
                 $NewVariables[] = "|Shop Sells Items = ".implode(",",$GilShopItemData[$id]["Items"])."\n";
             }
             if (!empty($MobHuntOrderTypeData[$id])){
                 $NewVariables[] = "|Unlocks Hunt Access To = ".$MobHuntOrderTypeData[$id]."\n";
             }
             if (!empty($MountFlyingConditionData[$id])){
-                $NewVariables[] = "|Unlocks Flying for expansion = x\n";
+                $NewVariables[] = "|Unlocks Flying for expansion = $Expansion\n";
             }
             if (!empty($QuestBattleData[$id])){
                 $NewVariables[] = "|Quest Battle = x\n";
             }
             if (!empty($QuestDerivedClassCsv->at($id)['ClassJob'])){
                 $Variable = ucwords($ClassJobCsv->at($QuestDerivedClassCsv->at($id)['ClassJob'])['Name']);
-                $NewVariables[] = "|Derived Class = $Variable\n";
+                //$NewVariables[] = "|Derived Class = $Variable\n";//needs fixing
             }
             if (!empty($RecipeData[$id])){;
                 $NewVariables[] = "|Required Recipes/Items = ".implode(",",$RecipeData[$id])."\n";
@@ -825,23 +836,29 @@ class Quest2 implements ParseInterface
 
             //rewards
             //Show EXPReward if more than zero and round it down (if needed) Otherwise, blank it.
-            $MinCalc = 0;
-            $MaxCalc = 0;
+            $MinCalc = 1;
+            $MaxCalc = 1;
             if (!empty($Quest["BeastTribe"])){
-                var_dump($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus']);
                 $MinCalc = $BeastTribeRankBonusCsv->at($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus'])[$BeastTribeRanks[$Quest["BeastReputationRank"]]];
                 $MaxRank = $BeastTribeCsv->at($Quest["BeastTribe"])['MaxRank'];
                 $MaxCalc = $BeastTribeRankBonusCsv->at($BeastTribeCsv->at($Quest["BeastTribe"])['BeastRankBonus'])[$BeastTribeRanks[$MaxRank]];
             }
             $ParamGrow = $ParamGrowCsv->at($QuestLevel);
-            $QuestEXP = floor(($Quest["ExpFactor"] * $ParamGrow['ScaledQuestXP'] * $ParamGrow['QuestExpModifier']) / 100) * ($MinCalc / 100);
+            if ($MinCalc === 1){
+                $QuestEXP = floor(($Quest["ExpFactor"] * $ParamGrow['ScaledQuestXP'] * $ParamGrow['QuestExpModifier']) / 100);
+            } else {
+                $QuestEXP = floor((($Quest["ExpFactor"] * $ParamGrow['ScaledQuestXP'] * $ParamGrow['QuestExpModifier']) / 100) * ($MinCalc / 100));
+            }
             if ($Quest['Level{Max}'] > 0) {
                 $ParamGrowMaxLevel = $ParamGrowCsv->at($Quest['Level{Max}']);
-                $QuestEXPMaxLevel = floor(($Quest["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100) * ($MaxCalc / 100);
+                if ($MinCalc === 1){
+                    $QuestEXPMaxLevel = floor(($Quest["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100);
+                } else {
+                    $QuestEXPMaxLevel = floor((($Quest["ExpFactor"] * $ParamGrowMaxLevel['ScaledQuestXP'] * $ParamGrowMaxLevel['QuestExpModifier']) / 100) * ($MaxCalc / 100));
+                }
                 $QuestEXP = "$QuestEXP-$QuestEXPMaxLevel";
             }
             //QuestExp^
-            //{{ht|Amount varies by level of class completing quest|209250-354442}}
             $RewardArray = [];
             if (!empty($QuestEXP)) {
                 $RewardArray[] = "|EXPReward = $QuestEXP";

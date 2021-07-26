@@ -52,6 +52,8 @@ class Items implements ParseInterface
         $DesynthArray = json_decode($jdata,true);
         $MateriaCsv = $this->csv("Materia");
 
+        $JSON_Matches = [];
+        $ItemMatchOutput = [];
         $BadCharacterSearch = array("–", "—", "<Emphasis>", "</Emphasis>", "''", "?","#","[","]");
         $BadCharacterReplace = array("-", "-", null, null, null, null,"","(",")");
         //produce array of equipment for match
@@ -79,6 +81,7 @@ class Items implements ParseInterface
 
             // skip ones without a name
             if (empty($item['Name'])) continue;
+            //if ($item['ItemSpecialBonus'] !== "8") continue;
             $Patch = $PatchNumber[$id];
 
             // grab item ui category for this item
@@ -914,7 +917,7 @@ class Items implements ParseInterface
         }
         $this->saveExtra("ItemMatches.json",json_encode($JSON_Matches,JSON_PRETTY_PRINT|JSON_FORCE_OBJECT), true, true);
         $this->saveExtra("ItemMatch.txt",implode("\n",$ItemMatchOutput));
-        $this->saveExtra("ReplaceItemMatch.bat",implode("\n",$Replace));
+        //$this->saveExtra("ReplaceItemMatch.bat",implode("\n",$Replace));
         // save our data to the filename: GeItemWiki.txt
         $this->io->progressFinish();
         $this->io->text('Saving ...');
