@@ -96,6 +96,7 @@ class Quest2 implements ParseInterface
         $QuestDerivedClassCsv = $this->csv("QuestDerivedClass");
         $BeastTribeRankBonusCsv = $this->csv("BeastRankBonus");
         $DescriptionStringCsv = $this->csv("DescriptionString");
+        $DeliveryQuestCsv = $this->csv("DeliveryQuest");
 
         
         //send csvs to function when needed : 
@@ -117,7 +118,7 @@ class Quest2 implements ParseInterface
         foreach ($AchievementCsv->data as $id => $Achievement) {
             if($AchievementCategoryCsv->at($Achievement['AchievementCategory'])['AchievementKind'] !== "8") continue;
             $Key = $Achievement['Key'];
-            $AchievementArray[$Key] = $Achievement['Name'];
+            $AchievementArray[$Key] = $Achievement['Name']." (Achievement)";
         }
         $TomestoneList = [
             1 => "\n|ARRTomestone = ",
@@ -136,7 +137,50 @@ class Quest2 implements ParseInterface
             7 => "Sworn",
             8 => "Allied/Bloodsworn",
         );
-        
+        $QuestAdditions = array (
+            65594 => " (Ul'dah)",
+            65595 => " (Limsa Lominsa)",
+            65596 => " (Gridania)",
+            66700 => " (Gridania)",
+            66701 => " (Gridania)",
+            66704 => " (Limsa Lominsa)",
+            66705 => " (Limsa Lominsa)",
+            66708 => " (Ul'dah)",
+            66709 => " (Ul'dah)",
+            66699 => " (Gridania)",
+            66703 => " (Limsa Lominsa)",
+            66703 => " (Gridania)",
+            66707 => " (Ul'dah)",
+            66702 => " (Gridania)",
+            66706 => " (Limsa Lominsa)",
+            66710 => " (Ul'dah)",
+            65621 => " (LNC)", 
+            65644 => " (MRD)", 
+            65645 => " (ACN)", 
+            65659 => " (ARC)", 
+            65660 => " (CNJ)", 
+            66104 => " (GLA)", 
+            66105 => " (PGL)", 
+            66106 => " (THM)", 
+            66209 => " (Gridania)",
+            66210 => " (Ul'dah)",
+            66968 => " (Gridania)",
+            66969 => " (Limsa Lominsa)",
+            66970 => " (Ul'dah)",
+            66030 => " (Quest)",
+            65955 => " (Quest)",
+            69191 => " (Quest)",
+            67010 => " (Quest)",
+            68089 => " (Quest)",
+            66738 => " (Quest)",
+            67205 => " (Quest)",
+            66246 => " (MSQ)",
+            67313 => " (Sidequest)",
+            68222 => " (Quest)",
+            66328 => " (28)",
+            67417 => " (56)",
+            69273 => " (Quest)",
+        );
         //make Trait array
         foreach ($TraitCsv->data as $id => $Trait) {
             if (empty($Trait['Quest'])) continue;
@@ -276,8 +320,9 @@ class Quest2 implements ParseInterface
         }
         foreach($QuestBattleCsv->data as $id => $SheetData) {
             $QuestNumber = $SheetData["Quest"];
+            $Scene = $SheetData["QuestBattleScene"];
             if (empty($QuestNumber)) continue;
-            $QuestBattleData[$QuestNumber] = true;
+            $QuestBattleData[$QuestNumber][$Scene] = $id;
         }
         foreach($RecipeCsv->data as $id => $SheetData) {
             $QuestNumber = $SheetData["Quest"];
@@ -314,9 +359,13 @@ class Quest2 implements ParseInterface
             $LuaRewards = [];
             $ItemArrayNames = [];
             //if (($id < 69590) || ($id > 69592)) continue; // next event
-            //if ($id != 67881) continue;
+            //if ($id != 65703) continue;
+            $Addon = "";
+            if (in_array($id, $QuestAdditions)){
+                $Addon = $QuestAdditions[$id];
+            }
             
-            $QuestName = $Quest['Name'];
+            $QuestName = $Quest['Name']."$Addon";
             if (empty($QuestName)) continue;
             //produce argument array
             foreach(range(0,49) as $i){
@@ -481,7 +530,7 @@ class Quest2 implements ParseInterface
             $QuestData = [];
             $QuestData["Issuer{Start}"] = $Quest["Issuer{Start}"];
             $QuestData["Target{End}"] = $Quest["Target{End}"];
-            $QuestData["Name"] = $Quest["Name"];
+            $QuestData["Name"] = $Quest["Name"]."$Addon";
             $QuestStartLocation = $PlaceNameCsv->at($MapCsv->at($LevelCsv->at($Quest["Issuer{Location}"])['Map'])['PlaceName'])['Name'];
             $QuestData["QuestStartLocation"] = $QuestStartLocation;
             foreach ($textdata->data as $key => $textdataCsv) {
@@ -540,7 +589,11 @@ class Quest2 implements ParseInterface
 
             //General Info
             $QuestType = $JournalCategoryCsv->at($JournalGenreCsv->at($Quest['JournalGenre'])['JournalCategory'])['Name'];
+            if (empty($Quest['JournalGenre'])){
+                $QuestType = "";
+            }
             $QuestSubType = $JournalGenreCsv->at($Quest['JournalGenre'])['Name'];
+            if ($Quest['JournalGenre'] )
             $QuestSection = $JournalSectionCsv->at($JournalCategoryCsv->at($JournalGenreCsv->at($Quest['JournalGenre'])['JournalCategory'])['JournalSection'])['Name'];
             $EventIcon = $Quest['Icon{Special}'];
             if (empty($Quest['Icon{Special}'])){
@@ -559,11 +612,11 @@ class Quest2 implements ParseInterface
                 $IconArray[] = sprintf("%06d",$Quest["Icon"]);
                 $Header = sprintf("%06d",$Quest["Icon"]).".png";
             }
-            $HeaderUnknown = "";
-            if (!empty($Quest["Header"])){
-                $HeaderUnknown = "{{Unknown Header Option?}}\n";
-                $UnknownArray[] = $Quest["Name"];
-            }
+            //$HeaderUnknown = "";
+            //if (!empty($Quest["Header"])){
+            //    $HeaderUnknown = "{{Unknown Header Option?}}\n";
+            //    $UnknownArray[] = $Quest["Name"];
+            //}
             $Sort = $Quest["SortKey"];
             $Expansion = $ExVersionCsv->at($Quest["Expansion"])['Name'];
             $Event = "";
@@ -574,8 +627,13 @@ class Quest2 implements ParseInterface
                 $Event = $splitfes[0]."".$Addition;
             }
             $DeliveryQuest = "";
-            if (!empty($Quest["DeliveryQuest"])){
-                $DeliveryQuest = "|Delivery Quest = ".$Quest["DeliveryQuest"];
+            //if (!empty($Quest["DeliveryQuest"])){
+            //    $DeliveryQuest = "|Delivery Quest = ".$QuestCsv->at($DeliveryQuestCsv->at($Quest["DeliveryQuest"])['Quest'])['Name']."\n";
+            //}
+            $Satisfaction = "";
+            if (!empty($Quest["unknown_36"])){
+                $Satisfaction = "|Satisfaction Quest Level = ".$Quest["unknown_36"]."\n";
+                $Satisfaction .= "|Satisfaction Quest NPC = ".$ENpcResidentCsv->at($SatisfactionNpcCsv->at($Quest["unknown_35"])['Npc'])['Singular']."\n";
             }
             $SpecialChar = "";
             if (strpos($Quest['Name'], " ") !== false) {
@@ -625,6 +683,12 @@ class Quest2 implements ParseInterface
                     }
                 }
             }
+            $HowToArray = [];
+            foreach($ArgArray as $Instruction => $Arg){
+                if (strpos($Instruction,"HOW_TO") !== false){
+                    $HowToArray[] = $HowToCsv->at($Arg)['Name'];
+                }
+            }
             if (!empty($UnlockDutyArray)){
                 $InstanceContentOut = implode(",",array_unique($UnlockDutyArray));
                 $NewVariables[] = "|Unlocks Duty = ".$InstanceContentOut."\n";
@@ -647,7 +711,7 @@ class Quest2 implements ParseInterface
                 $NewVariables[] = "|Allows Trust Npcs = ".implode(",",$DawnNpcs)."\n";
             }
             if (!empty($DescriptionData[$id])){
-                $NewVariables[] = "|Unlocks Active Help = ".$DescriptionData[$id]."\n";
+                $HowToArray[] = "".$DescriptionData[$id]."";
             }
             if (!empty($DescriptionPageData[$id])){
                 $NewVariables[] = "|Unlocks Page = ".implode(",",$DescriptionPageData[$id])."\n";
@@ -674,8 +738,45 @@ class Quest2 implements ParseInterface
             if (!empty($MountFlyingConditionData[$id])){
                 $NewVariables[] = "|Unlocks Flying for expansion = $Expansion\n";
             }
+            //this should be replaced when lua implemented
+            $QuestBattleOutput = "";
             if (!empty($QuestBattleData[$id])){
+                $QBId = $QuestBattleData[$id][1];
                 $NewVariables[] = "|Quest Battle = x\n";
+                $QuestBattleChecklist[] = $QuestName;
+                $QuestBattleOutput = "|Quest Battle Sync = ".$QuestBattleCsv->at($QBId)["LevelSync"]."\n";
+                $QuestBattleOutput .= "|Quest Battle TimeLimit = ".$QuestBattleCsv->at($QBId)["TimeLimit"]."\n";
+                //1140471
+                foreach($QuestBattleData[$id] as $QuestBattle){
+                    foreach(range(0,199) as $i){
+                        $Instruction = $QuestBattleCsv->at($QuestBattle)["ScriptInstruction[$i]"];
+                        $Argument = $QuestBattleCsv->at($QuestBattle)["ScriptValue[$i]"];
+                        if (empty($Instruction)) break;
+                        if ($Argument < 1000000) continue;
+                        //enpc 
+                        if ($Argument < 1140471) {
+                            $NpcsInvolved[] = $this->NameFormat($Argument, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Argument], $LGBArray, $BadNames)["Name"];
+                        }
+                        if ($Argument > 1140471) {
+                            if (!empty($LevelCsv->at($Argument)['Type'])){
+                                $LevelType = $LevelCsv->at($Argument)['Type'];
+                                $Object = $LevelCsv->at($Argument)['Object'];
+                                switch ($LevelType) {
+                                    case 8:
+                                        $NpcsInvolved[] = $this->NameFormat($Object, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Object], $LGBArray, $BadNames)["Name"];
+                                    break;
+                                    case 9:
+                                        if (!empty($BNPCData[$Object])){
+                                            $BnpcName = $BNPCData[$Object];
+                                            $EnemyArray[] = ucwords($BNpcNameCsv->at($BnpcName)['Singular']);
+                                        }
+                                    break;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
             }
             if (!empty($QuestDerivedClassCsv->at($id)['ClassJob'])){
                 $Variable = ucwords($ClassJobCsv->at($QuestDerivedClassCsv->at($id)['ClassJob'])['Name']);
@@ -731,7 +832,7 @@ class Quest2 implements ParseInterface
             $QuestData["Previous2"] = "";
             foreach(range(0,2) as $i){
                 if (empty($Quest["PreviousQuest[$i]"])) continue;
-                $PrevQuestName = str_replace(",","&#44;",$QuestCsv->at($Quest["PreviousQuest[$i]"])['Name']);
+                $PrevQuestName = str_replace(",","&#44;",$QuestCsv->at($Quest["PreviousQuest[$i]"])['Name'])."$Addon";
                 if ($i === 0) {
                     $QuestData["Previous1"] = $PrevQuestName;
                 }
@@ -745,7 +846,7 @@ class Quest2 implements ParseInterface
             $QuestLockArray = [];
             foreach(range(0,1) as $i){
                 if (empty($Quest["QuestLock[$i]"])) continue;
-                $QuestLockArray[] = str_replace(",","&#44;",$QuestCsv->at($Quest["QuestLock[$i]"])['Name']);
+                $QuestLockArray[] = str_replace(",","&#44;",$QuestCsv->at($Quest["QuestLock[$i]"])['Name'])."$Addon";
             }
             $QuestLock = implode(",",$QuestLockArray);
             //InstanceContent
@@ -791,36 +892,31 @@ class Quest2 implements ParseInterface
             if (!empty($Quest["unknown_19"])){
                 $unknown_19 = "|unknown_19 = ".$Quest["unknown_19"]."\n";
             }
-            $unknown_35 = "";
-            if (!empty($Quest["unknown_35"])){
-                $unknown_35 = "|unknown_35 = ".$Quest["unknown_35"]."\n";
-            }
-            $unknown_36 = "";
-            if (!empty($Quest["unknown_36"])){
-                $unknown_36 = "|unknown_36 = ".$Quest["unknown_36"]."\n";
-            }
             $unknown_1516 = "";
             if (!empty($Quest["unknown_1516"])){
                 $unknown_1516 = "|unknown_1516 = ".$Quest["unknown_1516"]."\n";
             }
             //end of unknowns
-
-            $GCRequired = "";
-            if ($Quest["GrandCompany"] != "0"){
-                $GCRequired = $GrandCompanyCsv->at($Quest["GrandCompany"])['Name'];
-            }
             $GCRankRequired = "";
             if ($Quest["GrandCompanyRank"] != "0"){
                 switch($Quest["GrandCompany"]){
                     case '1'://Maelstrom
-                        $GCRankRequired = $GCRankLimsaMaleTextCsv->at($Quest["GrandCompanyRank"])['Singular'];
+                        $GCRankRequired = "|Grand Company Rank Requirement = ".$GCRankLimsaMaleTextCsv->at($Quest["GrandCompanyRank"])['Singular'];
                     break;
                     case '2'://Order
-                        $GCRankRequired = $GCRankGridaniaMaleTextCsv->at($Quest["GrandCompanyRank"])['Singular'];
+                        $GCRankRequired = "|Grand Company Rank Requirement = ".$GCRankGridaniaMaleTextCsv->at($Quest["GrandCompanyRank"])['Singular'];
                     break;
                     case '3'://Flame
-                        $GCRankRequired = $GCRankUldahMaleTextCsv->at($Quest["GrandCompanyRank"])['Singular'];
+                        $GCRankRequired = "|Grand Company Rank Requirement = ".$GCRankUldahMaleTextCsv->at($Quest["GrandCompanyRank"])['Singular'];
                     break;
+                }
+            }
+
+            $GCRequired = "";
+            if ($Quest["GrandCompany"] != "0"){
+                $GCRequired = "|Grand Company Requirement = ".$GrandCompanyCsv->at($Quest["GrandCompany"])['Name'];
+                if (empty($Quest["GrandCompanyRank"])){
+                    $GCRankRequired = "|Grand Company Rank Requirement = Private Third Class";
                 }
             }
             $BeastTribeArray = [];
@@ -867,9 +963,9 @@ class Quest2 implements ParseInterface
             if (!empty($Quest["GilReward"])) {
                 $RewardArray[] = "|GilReward = ".$Quest["GilReward"];
             }
-            if (!empty($Quest["unknown_1443"])) {
-                $RewardArray[] = "|Currency Reward = ".$ItemCsv->at($Quest["unknown_1443"])['Name'];
-                $RewardArray[] = "|Currency Count = ".$Quest["GCSeals"];
+            if (!empty($Quest["CurrencyReward"])) {
+                $RewardArray[] = "|Currency Reward = ".$ItemCsv->at($Quest["CurrencyReward"])['Name'];
+                $RewardArray[] = "|Currency Count = ".$Quest["CurrencyRewardCount"];
             }
             $ItemRewards = [];
             foreach(range(0,2) as $i){
@@ -1114,15 +1210,19 @@ class Quest2 implements ParseInterface
             if (!empty($QuestFormat["Undefined"])){
                 $UndefinedArray[$LuaFile] = $QuestFormat["Undefined"];
             }
+            $HowToOut = "";
+            if (!empty($HowToArray)){
+                $HowToOut = "|Unlocks Active Help = ".implode(",",array_unique($HowToArray));
+            }
             $NewVariablesImp = implode($NewVariables);
             $MiscRewards = "|Misc Reward = ".implode(",",$LuaRewards);
             $QuestOutput = "{{-start-}}\n";
-            $QuestOutput .= "$HeaderUnknown";
-            $QuestOutput .= "'''".$Quest["Name"]."'''\n";
+            //$QuestOutput .= "$HeaderUnknown";
+            $QuestOutput .= "'''".$Quest["Name"]."$Addon'''\n";
             $QuestOutput .= "{{ARR Infobox Quest2\n";
             $QuestOutput .= "|Patch = $PatchFixed\n";
             $QuestOutput .= "|Expansion = $Expansion\n";
-            $QuestOutput .= "|Name = ".$Quest["Name"]."\n";
+            $QuestOutput .= "|Name = ".$Quest["Name"]."$Addon\n";
             $QuestOutput .= "|Section = $QuestSection\n";
             $QuestOutput .= "|Type = $QuestType\n";
             $QuestOutput .= "|Subtype = $QuestSubType\n";
@@ -1142,9 +1242,11 @@ class Quest2 implements ParseInterface
             $QuestOutput .= "$ItemArray\n";
             $QuestOutput .= "|Objects Involved = $ObjectArray\n";
             $QuestOutput .= "$DeliveryQuest\n";
+            $QuestOutput .= "$Satisfaction\n";
             $QuestOutput .= "$Repeatable";
             $QuestOutput .= "$HousingRequired\n";
             $QuestOutput .= "$SpecialChar";
+            $QuestOutput .= "$HowToOut\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "|Level = $QuestLevel\n";
             $QuestOutput .= "|Required Quests = $PreviousQuests\n";
@@ -1155,11 +1257,9 @@ class Quest2 implements ParseInterface
             $QuestOutput .= "$unknown_11";
             $QuestOutput .= "$unknown_18";
             $QuestOutput .= "$unknown_19";
-            $QuestOutput .= "|Grand Company Requirement = $GCRequired\n";
-            $QuestOutput .= "|Grand Company Rank Requirement = $GCRankRequired\n";
+            $QuestOutput .= "$GCRequired\n";
+            $QuestOutput .= "$GCRankRequired\n";
             $QuestOutput .= "$BeastTribe\n";
-            $QuestOutput .= "$unknown_35";
-            $QuestOutput .= "$unknown_36";
             $QuestOutput .= "$unknown_1516";
             $QuestOutput .= "\n";
             $QuestOutput .= "$Rewards\n";
@@ -1171,20 +1271,54 @@ class Quest2 implements ParseInterface
             $QuestOutput .= "\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "$NewVariablesImp\n";
+            $QuestOutput .= "$QuestBattleOutput\n";
             $QuestOutput .= "\n";
             $QuestOutput .= "}}\n";
             $QuestOutput .= "{{-stop-}}\n";
             $QuestOutput .= "{{-start-}}\n";
-            $QuestOutput .= "'''".$Quest["Name"]."/NPCs'''\n";
+            $QuestOutput .= "'''".$Quest["Name"]."$Addon/NPCs'''\n";
             $QuestOutput .= implode("\n",$NPCSubPagesArray)."\n";
             $QuestOutput .= "{{-stop-}}\n";
-            $QuestOutput .= "{{-start-}}\n";
-            $QuestOutput .= "'''Loremonger:".$Quest["Name"]."'''\n";
+            //$QuestOutput .= "{{-start-}}\n";
+            //$QuestOutput .= "'''Loremonger:".$Quest["Name"]."$Addon'''\n";
             //$QuestOutput .= $QuestFormat['Lore']."\n";
+            //$QuestOutput .= "{{-stop-}}\n";
+            $QuestOutput .= "{{-start-}}\n";
+            $QuestOutput .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
+            $QuestOutput .= "{{Player Quest Data\n";
+            $QuestOutput .= "|Name = {{subst:PAGENAME}}\n";
+            $QuestOutput .= "|Miscellaneous Requirement =\n";
+            $QuestOutput .= "|Miscellaneous Reward =\n";
+            $QuestOutput .= "|Disambig =\n";
+            $QuestOutput .= "|Notes =\n";
+            $QuestOutput .= "}}\n";
             $QuestOutput .= "{{-stop-}}\n";
+
+            if (strpos($QuestOutput,"<")!== false){
+                $SymbolChecklist[] = "".$Quest["Name"]."".$Addon."";
+            }
+
+            
+            $QuestOutputInit = "{{-start-}}\n";
+            $QuestOutputInit .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
+            $QuestOutputInit .= "{{Player Quest Data\n";
+            $QuestOutputInit .= "|Name = {{subst:PAGENAME}}\n";
+            $QuestOutputInit .= "|Miscellaneous Requirement =\n";
+            $QuestOutputInit .= "|Miscellaneous Reward =\n";
+            $QuestOutputInit .= "|Disambig =\n";
+            $QuestOutputInit .= "|Notes =\n";
+            $QuestOutputInit .= "}}\n";
+            $QuestOutputInit .= "{{-stop-}}\n";
+            $FinalOutputInit[] = $QuestOutputInit;
             $FinalOutput[] = $QuestOutput;
         }
         $FinalOut = implode($FinalOutput);
+        $FinalOutInit = implode($FinalOutputInit);
+        $SymbolChecklistOut = implode("\n",$SymbolChecklist);
+        $QuestBattleChecklistOut = implode("\n",$QuestBattleChecklist);
+        $this->saveExtra("_InitQuestNotes.txt",$FinalOutInit);
+        $this->saveExtra("_SymbolQuests.txt",$SymbolChecklistOut);
+        $this->saveExtra("_QuestBattles.txt",$QuestBattleChecklistOut);
         //$IconArray = array_merge($IconArray,$QuestFormat["Icons"]);
         $IconArray = array_unique($IconArray);
         $IconArrayCount = count($IconArray);
@@ -1216,7 +1350,6 @@ class Quest2 implements ParseInterface
                 }
             }
         }
-        print_r($UnknownArray);
         $data = GeFormatter::format(self::WIKI_FORMAT, [
             '{QuestOutput}'  => $FinalOut,
         ]);

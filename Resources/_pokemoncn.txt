@@ -1,0 +1,928 @@
+t_newbie_npc1a - STRING
+ - STRING
+7E2FF6C77DF1F5C8_## - HASH 1
+3922F4E5EDEA7838_## - HASH 1
+6CDC3F829E62FC2B_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+1DD63D455CEEB72D_## - HASH 1
+5F9D1F8D00351A70_## - HASH 1
+DB14A042E4B4A259_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+3F9CACB1A93DF43D_## - HASH 1
+658E4C8D542F5D55_## - HASH 1
+1237AB940E00D5D4_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+6937ADE0CAB0D9B2_## - HASH 1
+854C48499317F220_## - HASH 1
+ACF60E56A255A8F4_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+4 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+777D1E201621EF8B_## - HASH 1
+70777EB29DADEB2C_## - HASH 1
+BFC6D2A62D14888E_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+ADA98A9F9EFA21D5_## - HASH 1
+4E9CBAFCBBBC576D_## - HASH 1
+A942E73A19827FE7_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+E02B9EE9AC9B7C6D_## - HASH 1
+109B8CB9AE69ED30_## - HASH 1
+ABBB1538B3B9687B_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+ECC556F707AC2C44_## - HASH 1
+CC1D846462E82F3A_## - HASH 1
+15F90228BF41D3EA_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+4 - Unknown2
+31BA462F065B86AD_## - HASH 1
+A51DA72F86BE546A_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+507161D342404698_## - HASH 1
+D9D1B43D3912AEEF_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+14A9DF43846E1E41_## - HASH 1
+FFDB768533952030_## - HASH 1
+31622D99EBD68494_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+A761C8937B95F77C_## - HASH 1
+D5BB619C8CD5FFFC_## - HASH 1
+50E5CB2F1C60193B_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+57BBCE59A7E21FC0_## - HASH 1
+6943D2317B9525D9_## - HASH 1
+FF252C10FE3B96E1_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+FC688CEB0FD7AACD_## - HASH 1
+36287348B2701FFE_## - HASH 1
+C9B5F125458977E4_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+5F9D375E3B586832_## - HASH 1
+EECD1B1A0886ABE0_## - HASH 1
+607BA8ECCE425970_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+0DB4D5690E74481D_## - HASH 1
+13E2E93E639276AA_## - HASH 1
+1531E8A770A687D9_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+48BA68F8BEFC66F9_## - HASH 1
+B498B254C678D5A9_## - HASH 1
+0B89BCF6FDFC835F_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+66839C74FE73B377_## - HASH 1
+0564D44112364683_## - HASH 1
+C62DB38D5DDA54F5_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+9DECCBD1CCC1081D_## - HASH 1
+68B904844056018A_## - HASH 1
+500AB327961D1815_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+179BEA8C3D6FB11A_## - HASH 1
+01D6425FB6C4629B_## - HASH 1
+E74D34D815CF33A1_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+569289A68225AF76_## - HASH 1
+494BB1D5B2BDAC65_## - HASH 1
+D5BDD1B18E57EAC5_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+1635B9DE88CF478C_## - HASH 1
+8DCA3CA4AD47A63D_## - HASH 1
+75CA969122878996_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+FC0BC503625ED1B3_## - HASH 1
+20C63D9E58306047_## - HASH 1
+E79D29900A03003D_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+3 - Unknown2
+7310DF6CBB6CC3FC_## - HASH 1
+AEE627E5A3DCE2DE_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+D958FD95F5787329_## - HASH 1
+1B09E4609ED36B60_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+D6481AA566FA2C95_## - HASH 1
+8FAA6FAD89418AC5_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+E0B90A4DA9238F49_## - HASH 1
+14058A4F430CBB47_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+B4F3B9E6B160AAF8_## - HASH 1
+7AB3B00EE6C7FD2D_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+27852B0FA47511DF_## - HASH 1
+2F83FFE299880C9A_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+A2374C5D71CBEEB2_## - HASH 1
+20AD6D2B01F2DC48_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+FF9CC61F76C97A98_## - HASH 1
+8BC290D4ED89FB79_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+742203F5CC29C7D9_## - HASH 1
+96EA833F21D06FC0_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+721FC105FEAEEEB6_## - HASH 1
+EBDDA7A32503E61E_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+4 - Unknown2
+43ACC0CE0A546626_## - HASH 1
+567A037B2C6005B5_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+5 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+844681EBFD1CC9DA_## - HASH 1
+8E1EAC3EF263AA9E_## - HASH 1
+613DDDB23CDB569F_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+12B8A26ED138F94B_## - HASH 1
+AD235EC1F89B4AF0_## - HASH 1
+3B21F6CDB8E86AD0_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+D17C642CB24B9605_## - HASH 1
+B053C2BD618B6E15_## - HASH 1
+A0801DF85A0A23C9_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+1E518C4872BEB4F4_## - HASH 1
+00D883854C57E552_## - HASH 1
+75BB00C47DAC294A_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+81613D402AC25C4E_## - HASH 1
+147246B875C8497F_## - HASH 1
+0578236D7F9511AE_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_start - FX UI
+1 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+F0152CCE37A3F623_## - HASH 1
+81E6EFE92E29376A_## - HASH 1
+4958B636FF7E10A0_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+9572A2FF71A70C76_## - HASH 1
+68215BBAFBB28D80_## - HASH 1
+435A358F5DD3CAE2_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+65E4CC4E423FC069_## - HASH 1
+B57FE454909E19CA_## - HASH 1
+ACDBC87B3C880D03_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+4 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+652F8F55F12EB2E6_## - HASH 1
+5E93C69C94E99CAC_## - HASH 1
+AB68ABDFC570940F_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_end - FX UI
+5 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+23E05401F6FA7A63_## - HASH 1
+8EEC34F6EDB940FE_## - HASH 1
+41ACD77228E79E7A_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+E80F0F9D3D32E8C6_## - HASH 1
+A3EF2F6E5BDD45B8_## - HASH 1
+EA04D8FBB6C72F40_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+FA0C1D7C296EFF66_## - HASH 1
+B3D1F8EF11F08967_## - HASH 1
+9F6AEE84F8443821_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+3 - Unknown2
+1F18BD7435AB0E22_## - HASH 1
+FFEEE013CE975DB0_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+715AF2EFF3D31513_## - HASH 1
+795C899DC3FA36F8_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+F7119FA6E6C5B124_## - HASH 1
+8A175870D2B4E550_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+3 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+51A0C9E917EC1978_## - HASH 1
+07296E7E84EBB866_## - HASH 1
+E2971D476884E678_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+814AB12074BDC0BF_## - HASH 1
+C9F3761030F0438C_## - HASH 1
+8EDC0EF29AB730C3_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+CB8AD08CBDF4EAA4_## - HASH 1
+3AC1C66CCE7C8F6F_## - HASH 1
+1B64B30D0BC78C67_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+2F8DF19C6159C8AB_## - HASH 1
+7159A95BACBCEBE1_## - HASH 1
+D30648B172719918_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+C57CD81A0129CDCD_## - HASH 1
+6ADD4A84D5C81859_## - HASH 1
+268B56A212E29E07_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+4114C2E649792B26_## - HASH 1
+95C4EF6E86CD1BBB_## - HASH 1
+22FDE17538C28B36_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+38FF3247215611DA_## - HASH 1
+D8D80E120C1C7366_## - HASH 1
+04CED387626618EC_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+290C2545EFD32B97_## - HASH 1
+BD8C499E2B0DCBD3_## - HASH 1
+BEBDCC46FE2E8E6B_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+4 - Unknown2
+9B3368ADE377ECC2_## - HASH 1
+E806C735270DB95A_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+025A35341E300331_## - HASH 1
+3661EB0EC297A135_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+54A995751B158709_## - HASH 1
+506C25528A1B207D_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+3 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+4E9D18D9CFD966EF_## - HASH 1
+C0B3A267DC33DCF1_## - HASH 1
+E7CC1452369D94C8_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+E0383728B91A655D_## - HASH 1
+2E9D65E9785D9063_## - HASH 1
+ECDB548C4ABE9B53_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+CC296711A7FF7566_## - HASH 1
+A8F26BDAA314C105_## - HASH 1
+0FD3AC45699B69A1_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+7385F551A41C445B_## - HASH 1
+8A81456EE57BE930_## - HASH 1
+8B3946A9B15E7075_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+20B5988529D8604D_## - HASH 1
+6576AC2FCFD60F3A_## - HASH 1
+636EFC63A134082B_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+A74D631A3EC1A8B7_## - HASH 1
+D0EB4042D336ED25_## - HASH 1
+2B90FD592D2F5396_## - HASH 1
+pref_BattleGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+7FE191A3CFEA7FA6_## - HASH 1
+B233F0FEF5191BCC_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+210 - Unknown1
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_start - FX UI
+1 - Unknown2
+9C9A2D4AC39FBAAD_## - HASH 1
+55BCCBEF29FF71B5_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+DA6BF2E40167B1AE_## - HASH 1
+5D2958DF54BA942A_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+1023E8500C21504A_## - HASH 1
+F199F61A41D6ED78_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ - FX UI
+ - FX UI
+4 - Unknown2
+304FC9B5C7CF5E4C_## - HASH 1
+146D8AA63E0CFA5D_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ - FX UI
+ - FX UI
+5 - Unknown2
+513F9474B5D8CC97_## - HASH 1
+4DF5045378600E1E_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_end - FX UI
+6 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+A6A8B882657A3C4A_## - HASH 1
+F75375820B82EE6F_## - HASH 1
+C7199E42DEB9649E_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+7 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+94804BDA25084476_## - HASH 1
+B391F3A297B2B49A_## - HASH 1
+4B4DACC6DB147A4B_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+186FB3BE492B287A_## - HASH 1
+92B8ED60B95BE313_## - HASH 1
+27FD714BAAACEB43_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
+ - STRING
+ - STRING
+0A1A8BE33E4E490A_## - HASH 1
+1C96B07C0D784C0B_## - HASH 1
+5A569738274221C0_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+ - STRING
+ - STRING
+ - STRING
+1A8FDABB53CBEEEE_## - HASH 1
+B90413F04F49D958_## - HASH 1
+F026B71DD8A47FFB_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+7D5998A054E9040E_## - HASH 1
+698CDAE8A230B314_## - HASH 1
+C697E0598CC09BDC_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+E3298DC1E06CF1F3_## - HASH 1
+BD5D2A425AF51CDC_## - HASH 1
+E27006E7C2CDC115_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+4410F5B4F0759A93_## - HASH 1
+D27F065A5F0184AC_## - HASH 1
+02D4722CFD6ECB86_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+3 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+F7EF234DA8F6341E_## - HASH 1
+0B38FB168AD20431_## - HASH 1
+AF6A4BBEF69B4BFC_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+AF54747157087E93_## - HASH 1
+F80E5A521257EF2D_## - HASH 1
+C50D6AD73255EAB9_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+AAF85035D02141EE_## - HASH 1
+5C26758447837982_## - HASH 1
+1827339043729852_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+3 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+A0499B208E0A55CD_## - HASH 1
+D76B27C0B9F23BF3_## - HASH 1
+8FD3559E87719FF6_## - HASH 1
+pref_OutSideGuideDialogPage_NPCIntro - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+3B03C4E91A50FDFF_## - HASH 1
+F3142226127C0FAD_## - HASH 1
+3E59771F0F16F7CA_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+9817DA2B1CCBA497_## - HASH 1
+FFBBDA0F41682CFF_## - HASH 1
+6B6531945C956F2D_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+191AF37856FAEFD2_## - HASH 1
+4DE026852F9E0570_## - HASH 1
+B87D1C0662C1795F_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_start - FX UI
+1 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+B81195DD7CDE649E_## - HASH 1
+4BFD045F07DE7B1F_## - HASH 1
+2091939ABEF4C439_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+096DF1BD2FD6E148_## - HASH 1
+D0F678DF6E682293_## - HASH 1
+BF90B2F0188FBCA8_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_start - FX UI
+1 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+5C0F529CFB4BF9FE_## - HASH 1
+238AA5CFEBE7C252_## - HASH 1
+6650E444486C3614_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_start - FX UI
+1 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+F84D833489820591_## - HASH 1
+CFF8753DEA81C6C4_## - HASH 1
+BF98E5191D8686E2_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+05C45855FE295D39_## - HASH 1
+08A0A1BDA756046B_## - HASH 1
+F083ED9F250641C2_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+3 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+B29789F8E2F3862E_## - HASH 1
+4392526185B9D9A1_## - HASH 1
+671B793E6D626962_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_start - FX UI
+1 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+D23017FA2F78D4E7_## - HASH 1
+F5AD80B50B3CB188_## - HASH 1
+875267BD7DDD3DF3_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+2 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+5B68117997FAC59B_## - HASH 1
+4C28E99EB599721D_## - HASH 1
+DB17F8CAA9F7E3BE_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+358B2CA625F9C164_## - HASH 1
+5E66AEDA0053B290_## - HASH 1
+92984C01ABEAF317_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+ - STRING
+ - STRING
+ - STRING
+35F73DF7B2594320_## - HASH 1
+EA623B8FA2787697_## - HASH 1
+7D0F2B75AE2C5B3C_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+F534EEE111C39B8D_## - HASH 1
+CE0B5F0C5BADAAC6_## - HASH 1
+646D2E775C16BDEF_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+ - STRING
+t_newbie_npc2a - STRING
+0B38BFD668B8D1E4_## - HASH 1
+FD200DD8C4075DCA_## - HASH 1
+6DDA0C088FDCDB9F_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ani_fxui_npcdialogwidget_roleinfo2_start - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+A9FED7D80D41A4EB_## - HASH 1
+A0506FF100A72E17_## - HASH 1
+2A38BEB3A8245F34_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+D16E18FCA6A20AD5_## - HASH 1
+0B787F0C1B1C91ED_## - HASH 1
+5819979F99CF71EE_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+0988DE1B52CDA6A5_## - HASH 1
+8F35843DBE75967E_## - HASH 1
+8FD2964C558B3E62_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+04F1BB97191FBC43_## - HASH 1
+53A100BD1681F98D_## - HASH 1
+FC8D0B256AA2D7A9_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ - FX UI
+ - FX UI
+2 - Unknown2
+ - STRING
+ - STRING
+F5B86FA49E2C1FD7_## - HASH 1
+1725277119091381_## - HASH 1
+0789BF550B3D729C_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+B1D019A5A5A50315_## - HASH 1
+5E0DC64A848CB9CE_## - HASH 1
+7F25DB669FBE6B3A_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+210 - Unknown1
+ani_fxui_npcdialogWidget_roleinfo1_start - FX UI
+ - FX UI
+1 - Unknown2
+t_newbie_npc1a - STRING
+ - STRING
+1D6CBA9D6F0BA129_## - HASH 1
+BD9D25B112529D26_## - HASH 1
+C3677D83239F15AE_## - HASH 1
+pref_OutSideGuideDialogPage_Portrait_FullLength - Pref
+ani_fxui_npcdialogwidget_roleinfo1_end - FX UI
+ - FX UI
+2 - Unknown2
