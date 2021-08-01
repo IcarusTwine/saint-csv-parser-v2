@@ -1,0 +1,437 @@
+[
+    {
+        "Icon": "t_TrainerLevel_icon_Qualifying.png",
+        "1338": 760,
+        "1346": 7,
+        "1379": 1,
+        "Description": {
+            "en": "Ranked Match",
+            "chs": "排位赛\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Combate clasificatorio",
+            "fr": "",
+            "it": "",
+            "jp": "ランクマッチ",
+            "ko": "랭크매치",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 2
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_Friend.png",
+        "Description": {
+            "en": "Friends",
+            "chs": "好友\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Amigos",
+            "fr": "",
+            "it": "",
+            "jp": "フレンド",
+            "ko": "친구",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 7
+    },
+    {
+        "Icon": "t_TrainerLevel_iocn_QuickFight.png",
+        "1379": 1,
+        "Description": {
+            "en": "Quick Battle",
+            "chs": "快速对战\r",
+            "cht": "\r",
+            "de": "Schneller Kampf",
+            "es": "Combate rápido",
+            "fr": "Partie rapide",
+            "it": "Lotta rapida",
+            "jp": "クイックバトル",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 8
+    },
+    {
+        "Icon": "t_helditem_SecondSpace.png",
+        "Description": {
+            "en": "Progression",
+            "chs": "成长之路\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Crecimiento",
+            "fr": "",
+            "it": "",
+            "jp": "成長ルート",
+            "ko": "성장 과정",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 11
+    },
+    {
+        "Icon": "t_LevelUpPage_icon2.png",
+        "Description": {
+            "en": "Settings",
+            "chs": "设置\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Ajustes",
+            "fr": "",
+            "it": "",
+            "jp": "設定",
+            "ko": "설정",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 9
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_RankingList.png",
+        "Description": {
+            "en": "Rankings",
+            "chs": "排行榜\r",
+            "cht": "\r",
+            "de": "Ranglisten",
+            "es": "Clasificaciones",
+            "fr": "Classements",
+            "it": "Classifiche",
+            "jp": "ランキング",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 10
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_Mail.png",
+        "Description": {
+            "en": "Mail",
+            "chs": "邮件\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Mensajes",
+            "fr": "",
+            "it": "",
+            "jp": "メール",
+            "ko": "메일",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 12
+    },
+    {
+        "Icon": "t_helditem_ThirdSpace.png",
+        "Description": {
+            "en": "Item Box",
+            "chs": "道具箱\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Baúl",
+            "fr": "",
+            "it": "",
+            "jp": "アイテムボックス",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 1
+    },
+    {
+        "Icon": "t_LevelUpPage_icon2.png",
+        "Description": {
+            "en": "Purchase Gems",
+            "chs": "宝石购买\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Comprar gemas",
+            "fr": "",
+            "it": "",
+            "jp": "ジェム購入",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1583": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 13
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_PassCheck.png",
+        "1338": 760,
+        "1346": 7,
+        "1379": 1,
+        "Description": {
+            "en": "Battle Pass",
+            "chs": "对战通行证\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Pase de combate",
+            "fr": "",
+            "it": "",
+            "jp": "バトルパス",
+            "ko": "배틀 패스",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 4
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_Shop.png",
+        "1379": 1,
+        "Description": {
+            "en": "Shop",
+            "chs": "商店\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Tienda",
+            "fr": "",
+            "it": "",
+            "jp": "ショップ",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 5
+    },
+    {
+        "Icon": "t_LevelUpPage_icon2.png",
+        "Description": {
+            "en": "",
+            "chs": "录像\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 14
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_Activity.png",
+        "Description": {
+            "en": "Events",
+            "chs": "活动\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Eventos",
+            "fr": "",
+            "it": "",
+            "jp": "イベント",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 3
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_EnergyCenter.png",
+        "1338": 610,
+        "1346": 6,
+        "1379": 1,
+        "Description": {
+            "en": "Energy Rewards",
+            "chs": "能量奖励\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Energipremios",
+            "fr": "",
+            "it": "",
+            "jp": "エナジーリワード",
+            "ko": "",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 6
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_LockerRoom.png",
+        "Description": {
+            "en": "Closet",
+            "chs": "更衣室\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Vestuario",
+            "fr": "",
+            "it": "",
+            "jp": "クローゼット",
+            "ko": "클로젯",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 15
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_HeldItem2.png",
+        "1338": 960,
+        "1346": 8,
+        "1379": 1,
+        "Description": {
+            "en": "Held item slot 2",
+            "chs": "第二携带位\r",
+            "cht": "\r",
+            "de": "Zweites getragenes Item",
+            "es": "Ranura de objeto 2",
+            "fr": "Emplacement d'objet tenu 2",
+            "it": "Slot strumenti 2",
+            "jp": "もちものスロット2",
+            "ko": "지닌물건 슬롯2",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "持有物第二槽位将在8级开放",
+        "1749": 1,
+        "Description_CN[1]": "解锁持有物第二槽位",
+        "1824": 17
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_HeldItem3.png",
+        "1338": 2900,
+        "1346": 14,
+        "1379": 1,
+        "Description": {
+            "en": "Held item slot 3",
+            "chs": "第三携带位\r",
+            "cht": "\r",
+            "de": "Drittes getragenes Item",
+            "es": "Ranura de objeto 3",
+            "fr": "Emplacement d'objet tenu 3",
+            "it": "Slot strumenti 3",
+            "jp": "もちものスロット3",
+            "ko": "지닌물건 슬롯3",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "持有物第二槽位将在12级开放",
+        "1749": 1,
+        "Description_CN[1]": "解锁持有物第三槽位",
+        "1824": 18
+    },
+    {
+        "Icon": "t_helditem_ThirdSpace.png",
+        "1338": 160,
+        "1346": 3,
+        "Description": {
+            "en": "Beginner Challenge",
+            "chs": "新手挑战\r",
+            "cht": "\r",
+            "de": "Anfänger-Herausforderung",
+            "es": "Desafío Novel",
+            "fr": "Défi des débutants",
+            "it": "Sfida primi passi",
+            "jp": "ビギナーズチャレンジ",
+            "ko": "비기너즈 챌린지",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 19
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_BattleItem.png",
+        "1338": 310,
+        "1346": 4,
+        "Description": {
+            "en": "Battle Items",
+            "chs": "对战道具\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Objetos de combate",
+            "fr": "",
+            "it": "",
+            "jp": "バトルアイテム",
+            "ko": "배틀 아이템",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 20
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_HeldItem.png",
+        "Description": {
+            "en": "Held Items",
+            "chs": "持有物\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Objetos equipados",
+            "fr": "",
+            "it": "",
+            "jp": "もちもの",
+            "ko": "지닌물건",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1530": 1,
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 21
+    },
+    {
+        "Icon": "t_TrainerLevel_icon_lvlup.png",
+        "1338": 2500,
+        "1346": 13,
+        "Description": {
+            "en": "Held Item Upgrades",
+            "chs": "持有物升级\r",
+            "cht": "\r",
+            "de": "Verbesserung getragener Items",
+            "es": "Mejorar objeto equipado",
+            "fr": "Amélioration d'objets tenus",
+            "it": "Potenziamento strumenti assegnabili",
+            "jp": "もちものアップグレード",
+            "ko": "지닌물건 업그레이드",
+            "tc": "\r"
+        },
+        "Description_CN[0]": "排位赛将在6级开放",
+        "1749": 1,
+        "Description_CN[1]": "排位赛",
+        "1824": 22
+    }
+]
