@@ -160,16 +160,17 @@ class test implements ParseInterface
             $binnum = implode($binarray);
             return bindec(intval($binnum));
         }
-        var_dump(wireType("8A"));
-        var_dump(wireType("F7"));
-        var_dump(wireType("0C"));
-        //var_dump(bufferVal(array("CF","0C")));
-        var_dump(wireType("07"));
-        var_dump(wireType("D2"));
-        var_dump(wireType("85"));
-        var_dump(wireType("0C"));
-        var_dump(wireType("03"));
+        //var_dump(wireType("A2"));
+        //var_dump(wireType("F9"));
+        //var_dump(wireType("0C"));
+        ////var_dump(bufferVal(array("CF","0C")));
+        //var_dump(wireType("05"));
+        //var_dump(wireType("D2"));
+        //var_dump(wireType("85"));
+        //var_dump(wireType("0C"));
+        //var_dump(wireType("03"));
         //var_dump(bufferVal(array("C0","84","3D")));
+        $debug = 1;
         foreach($files as $FileNameraw){
             $filename = str_replace("databin_","",$FileNameraw);
             var_dump($filename);
@@ -210,15 +211,19 @@ class test implements ParseInterface
                     if ($pos > $limit){
                         break;
                     }
+                    var_dump($Chunk[$pos]);
                     $WireType = wireType($Chunk[$pos])["WireType"];
                     switch ($WireType) {
                         case 0:
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $Byte2 = $Chunk[$pos];
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $Byte3 = $Chunk[$pos];
                             $a = bufferVal(array($Byte2,$Byte3));
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $Value = hexdec($Chunk[$pos]);
                             $found = false;
                             $ValueCalc = [];
@@ -232,6 +237,7 @@ class test implements ParseInterface
                                 } else {
                                     $ValueCalc[] = $Chunk[$pos];
                                     $pos++;
+                                    if ($debug){var_dump($Chunk[$pos]);}
                                 }
                             }
                             $pos++;
@@ -239,22 +245,32 @@ class test implements ParseInterface
                         break;
                         case 2:
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $Byte2 = $Chunk[$pos];
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $Byte3 = $Chunk[$pos];
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $a = bufferVal(array($Byte2,$Byte3));
                             $Length = hexdec($Chunk[$pos]);
+                            if ($debug){var_dump("Length -> ".$Length);}
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             if (wireType($Chunk[$pos])['WireType'] === 2){
                                 $pos++;
+                                if ($debug){var_dump($Chunk[$pos]);}
                                 $Byte2_2 = $Chunk[$pos];
                                 $pos++;
+                                if ($debug){var_dump($Chunk[$pos]);}
                                 $Byte3_2 = $Chunk[$pos];
                                 $a_2 = bufferVal(array($Byte2_2,$Byte3_2));
                                 $pos++;
+                                if ($debug){var_dump($Chunk[$pos]);}
                                 $Length_2 = hexdec($Chunk[$pos]);
+                                if ($debug){var_dump("Length -> ".$Length_2);}
                                 $pos++;
+                                if ($debug){var_dump($Chunk[$pos]);}
                                 $TempArray = [];
                                 $a_2_temp = intval($Chunk[$pos]);
                                 $ByteArray = [];
@@ -268,17 +284,21 @@ class test implements ParseInterface
                             for ($i=0; $i < $Length; $i++) { 
                                 $String .= hex2str($Chunk[$pos]);
                                 $pos++;
+                                if ($debug){var_dump($Chunk[$pos]);}
                             }
                             $Output[$Num][$a][] = utf8_encode($String);
                             //$Output[$Num][$a] = ($String);
                         break;
                         case 1:
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $Byte2 = $Chunk[$pos];
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             $Byte3 = $Chunk[$pos];
                             $a = bufferVal(array($Byte2,$Byte3));
                             $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
                             //$Length = hexdec($Chunk[$pos]);
                             $Length = 4;
                             $ByteArray = [];
