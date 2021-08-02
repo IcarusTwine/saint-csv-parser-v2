@@ -21,14 +21,6 @@
         "1294":{
             "Def" : "Icon",
             "Type" : "Texture"
-        },
-        "1528":{
-            "Def" : "Description_CN[0]",
-            "Type" : "String"
-        },
-        "1764":{
-            "Def" : "Description_CN[1]",
-            "Type" : "String"
         }
     },
     "System_Help": {

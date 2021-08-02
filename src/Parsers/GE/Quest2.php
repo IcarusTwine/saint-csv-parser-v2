@@ -125,7 +125,6 @@ class Quest2 implements ParseInterface
             2 => "\n|TomestoneLow = ",
             3 => "\n|TomestoneHigh = ",
         ];
-        
         $BeastTribeRanks = array (
             0 => "Neutral",
             1 => "Neutral",
@@ -138,48 +137,47 @@ class Quest2 implements ParseInterface
             8 => "Allied/Bloodsworn",
         );
         $QuestAdditions = array (
-            65594 => " (Ul'dah)",
-            65595 => " (Limsa Lominsa)",
-            65596 => " (Gridania)",
-            66700 => " (Gridania)",
-            66701 => " (Gridania)",
-            66704 => " (Limsa Lominsa)",
-            66705 => " (Limsa Lominsa)",
-            66708 => " (Ul'dah)",
-            66709 => " (Ul'dah)",
-            66699 => " (Gridania)",
-            66703 => " (Limsa Lominsa)",
-            66703 => " (Gridania)",
-            66707 => " (Ul'dah)",
-            66702 => " (Gridania)",
-            66706 => " (Limsa Lominsa)",
-            66710 => " (Ul'dah)",
-            65621 => " (LNC)", 
-            65644 => " (MRD)", 
-            65645 => " (ACN)", 
-            65659 => " (ARC)", 
-            65660 => " (CNJ)", 
-            66104 => " (GLA)", 
-            66105 => " (PGL)", 
-            66106 => " (THM)", 
-            66209 => " (Gridania)",
-            66210 => " (Ul'dah)",
-            66968 => " (Gridania)",
-            66969 => " (Limsa Lominsa)",
-            66970 => " (Ul'dah)",
-            66030 => " (Quest)",
-            65955 => " (Quest)",
-            69191 => " (Quest)",
-            67010 => " (Quest)",
-            68089 => " (Quest)",
-            66738 => " (Quest)",
-            67205 => " (Quest)",
-            66246 => " (MSQ)",
-            67313 => " (Sidequest)",
-            68222 => " (Quest)",
-            66328 => " (28)",
-            67417 => " (56)",
-            69273 => " (Quest)",
+            "65594" => " (Ul'dah)",
+            "65595" => " (Limsa Lominsa)",
+            "65596" => " (Gridania)",
+            "66700" => " (Gridania)",
+            "66701" => " (Gridania)",
+            "66704" => " (Limsa Lominsa)",
+            "66705" => " (Limsa Lominsa)",
+            "66708" => " (Ul'dah)",
+            "66709" => " (Ul'dah)",
+            "66699" => " (Gridania)",
+            "66703" => " (Limsa Lominsa)",
+            "66707" => " (Ul'dah)",
+            "66702" => " (Gridania)",
+            "66706" => " (Limsa Lominsa)",
+            "66710" => " (Ul'dah)",
+            "65621" => " (LNC)", 
+            "65644" => " (MRD)", 
+            "65645" => " (ACN)", 
+            "65659" => " (ARC)", 
+            "65660" => " (CNJ)", 
+            "66104" => " (GLA)", 
+            "66105" => " (PGL)", 
+            "66106" => " (THM)", 
+            "66209" => " (Gridania)",
+            "66210" => " (Ul'dah)",
+            "66968" => " (Gridania)",
+            "66969" => " (Limsa Lominsa)",
+            "66970" => " (Ul'dah)",
+            "66030" => " (Quest)",
+            "65955" => " (Quest)",
+            "69191" => " (Quest)",
+            "67010" => " (Quest)",
+            "68089" => " (Quest)",
+            "66738" => " (Quest)",
+            "67205" => " (Quest)",
+            "66246" => " (MSQ)",
+            "67313" => " (Sidequest)",
+            "68222" => " (Quest)",
+            "66328" => " (28)",
+            "67417" => " (56)",
+            "69273" => " (Quest)",
         );
         //make Trait array
         foreach ($TraitCsv->data as $id => $Trait) {
@@ -359,9 +357,9 @@ class Quest2 implements ParseInterface
             $LuaRewards = [];
             $ItemArrayNames = [];
             //if (($id < 69590) || ($id > 69592)) continue; // next event
-            //if ($id != 65703) continue;
+            //if ($id != 65594) continue;
             $Addon = "";
-            if (in_array($id, $QuestAdditions)){
+            if (isset($QuestAdditions[$id])){
                 $Addon = $QuestAdditions[$id];
             }
             
@@ -874,7 +872,7 @@ class Quest2 implements ParseInterface
             foreach(range(0,1) as $i){
                 if (!empty($Quest["ClassJobCategory[$i]"])){
                     $RequiredClassNo++;
-                    $RequiredClassArray[] = "|RequiredClasses $RequiredClassNo = ".$ClassJobCategoryCsv->at($Quest["ClassJobCategory[$i]"])['Name'];
+                    $RequiredClassArray[] = "|RequiredClasses $RequiredClassNo = ".str_replace("All Classes","Any Class",$ClassJobCategoryCsv->at($Quest["ClassJobCategory[$i]"])['Name']);
                     $RequiredClassArray[] = "|RequiredClasses $RequiredClassNo Level = ".$Quest["ClassJobLevel[$i]"];
                 }
             }
@@ -1286,7 +1284,7 @@ class Quest2 implements ParseInterface
             $QuestOutput .= "{{-start-}}\n";
             $QuestOutput .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
             $QuestOutput .= "{{Player Quest Data\n";
-            $QuestOutput .= "|Name = {{subst:PAGENAME}}\n";
+            $QuestOutput .= "|Name = {{subst:BASEPAGENAME}}\n";
             $QuestOutput .= "|Miscellaneous Requirement =\n";
             $QuestOutput .= "|Miscellaneous Reward =\n";
             $QuestOutput .= "|Disambig =\n";
@@ -1302,23 +1300,25 @@ class Quest2 implements ParseInterface
             $QuestOutputInit = "{{-start-}}\n";
             $QuestOutputInit .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
             $QuestOutputInit .= "{{Player Quest Data\n";
-            $QuestOutputInit .= "|Name = {{subst:PAGENAME}}\n";
+            $QuestOutputInit .= "|Name = {{subst:BASEPAGENAME}}\n";
             $QuestOutputInit .= "|Miscellaneous Requirement =\n";
             $QuestOutputInit .= "|Miscellaneous Reward =\n";
             $QuestOutputInit .= "|Disambig =\n";
             $QuestOutputInit .= "|Notes =\n";
             $QuestOutputInit .= "}}\n";
             $QuestOutputInit .= "{{-stop-}}\n";
-            $FinalOutputInit[] = $QuestOutputInit;
-            $FinalOutput[] = $QuestOutput;
+            $FinalOutputInit[] = str_replace(array(" "," "),"",$QuestOutputInit);
+            $FinalOutput[] = str_replace(array(" "," "),"",$QuestOutput);
         }
-        $FinalOut = implode($FinalOutput);
         $FinalOutInit = implode($FinalOutputInit);
+        $this->saveExtra("_InitQuestNotes.txt",$FinalOutInit);
+        //$FinalOut = implode($FinalOutput);
         $SymbolChecklistOut = implode("\n",$SymbolChecklist);
         $QuestBattleChecklistOut = implode("\n",$QuestBattleChecklist);
-        $this->saveExtra("_InitQuestNotes.txt",$FinalOutInit);
-        $this->saveExtra("_SymbolQuests.txt",$SymbolChecklistOut);
-        $this->saveExtra("_QuestBattles.txt",$QuestBattleChecklistOut);
+        //$CheckList = implode("\n",$newlist);
+        //$this->saveExtra("_CheckList.txt",$CheckList);
+        //$this->saveExtra("_SymbolQuests.txt",$SymbolChecklistOut);
+        //$this->saveExtra("_QuestBattles.txt",$QuestBattleChecklistOut);
         //$IconArray = array_merge($IconArray,$QuestFormat["Icons"]);
         $IconArray = array_unique($IconArray);
         $IconArrayCount = count($IconArray);

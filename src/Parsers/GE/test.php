@@ -130,7 +130,7 @@ class test implements ParseInterface
         $path = "C:/Users/jonso/Desktop/New folder (3)/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
         $files = array(
-            "Error_Code",
+            "Passive_Skill",
         );
         function wireType($value){
             //conv to binary
@@ -160,6 +160,26 @@ class test implements ParseInterface
             $binnum = implode($binarray);
             return bindec(intval($binnum));
         }
+        $TestArray = explode(" ","82 CF 0C 07 DA
+        E2 B3 2C 00 00 00 8A F7 0C 08 D2 85 0C 04");
+        foreach($TestArray as $Byte){
+            var_dump(wireType($Byte));
+        }
+        function varint($Chunk,$pos,$debug = 0){ //0	Varint	int32, int64, uint32, uint64, sint32, sint64, bool, enum
+            $pos++;
+            $msb = 1;
+            while ($msb === 1){
+                $msb = wireType($Chunk[$pos]["WireType"]);
+                if ($msb === 0){
+                    break;
+                } else {
+                    $Bytes[] = $Chunk[$pos];
+                    $pos++;
+                }
+            }
+        }
+
+
         function buffer($Chunk,$pos,$debug = 0){
             if ($debug){var_dump("New Chunk");}
             $pos = $pos;
@@ -172,9 +192,11 @@ class test implements ParseInterface
                 if ($debug){var_dump($Chunk[$pos]);}
                 switch ($WireType) {
                     case 0:
+                        //var_dump("WireType 0 Found = ".$Chunk[$pos]);
                         $pos++;
                         if ($debug){var_dump($Chunk[$pos]);}
                         $Byte2 = $Chunk[$pos];
+                        $Byte3 = "00";
                         if (wireType($Byte2)['Binary']['MSB'] === 1){
                             $pos++;
                             if ($debug){var_dump($Chunk[$pos]);}
@@ -185,13 +207,15 @@ class test implements ParseInterface
                         }
                         $pos++;
                         if ($debug){var_dump($Chunk[$pos]);}
-                        $Value = hexdec($Chunk[$pos]);
+                        //$Value = hexdec($Chunk[$pos]);
                         $found = false;
                         $ValueCalc = [];
                         while ($found === false) {
                             $Value = hexdec($Chunk[$pos]);
-                            if (wireType($Value)['Binary']['MSB'] === 0){
+                            if (wireType($Chunk[$pos])['Binary']['MSB'] === 0){
                                 $ValueCalc[] = $Chunk[$pos];
+                                //var_dump("0 - Values:");
+                                //var_dump($ValueCalc);
                                 $Value = bufferVal($ValueCalc);
                                 $found = true;
                                 break;
@@ -208,6 +232,7 @@ class test implements ParseInterface
                         $pos++;
                         if ($debug){var_dump($Chunk[$pos]);}
                         $Byte2 = $Chunk[$pos];
+                        $Byte3 = "00";
                         if (wireType($Byte2)['Binary']['MSB'] === 1){
                             $pos++;
                             if ($debug){var_dump($Chunk[$pos]);}
@@ -250,12 +275,20 @@ class test implements ParseInterface
                                 $Output[$a][] = $Data["Output"];
                                 $pos = $Data["Pos"];
                             } else {
-                                $ByteArray = [];
+                                //$ByteArray = [];
+                                //for ($i=0; $i < $Length; $i++) { 
+                                //    $ByteArray[] = intval($Chunk[$pos]);
+                                //    $pos++;
+                                //}
+                                //$Output[$a][] = $ByteArray;
+                                $String = "";
                                 for ($i=0; $i < $Length; $i++) { 
-                                    $ByteArray[] = intval($Chunk[$pos]);
+                                    if ($debug){var_dump($Chunk[$pos]);}
+                                    $String .= hex2str($Chunk[$pos]);
+                                    if ($debug){var_dump($String);}
                                     $pos++;
                                 }
-                                $Output[$a][] = $ByteArray;
+                                $Output[$a][] = $String;
                             }
                         } else {
                             $String = "";
@@ -265,12 +298,13 @@ class test implements ParseInterface
                                 if ($debug){var_dump($String);}
                                 $pos++;
                             }
-                            $Output[$a][] = utf8_encode($String);
+                            $Output[$a][] = $String;
                         }
                         //$Output[$Num][$a] = ($String);
                     break;
                     
                     default:
+                    $pos++;
                     break;
                 }
             }
@@ -278,18 +312,19 @@ class test implements ParseInterface
             $Out["Output"] = $Output;
             return $Out;
         }
-        var_dump(wireType("E2"));
-        var_dump(wireType("E5"));
-        var_dump(wireType("0C"));
-        var_dump(wireType("12"));
-        //var_dump(wireType("98"));
-        //var_dump(wireType("F1"));
-        //var_dump(wireType("09"));
+        //var_dump(wireType("A0"));
         //var_dump(wireType("01"));
+        //var_dump(wireType("A4"));
+        //var_dump(wireType("00"));
+        //var_dump(wireType("07"));
+        //var_dump(wireType("DA"));
+        //var_dump(wireType("E2"));
+        //var_dump(wireType("B3"));
+        //var_dump(wireType("2C"));
         //var_dump(wireType("03"));
         //var_dump(bufferVal(array("C0","84","3D")));
         ////var_dump(bufferVal(array("CF","0C")));
-        $debug = 1;
+        $debug = 0;
         foreach($files as $FileNameraw){
             $filename = str_replace("databin_","",$FileNameraw);
             var_dump($filename);
@@ -325,48 +360,49 @@ class test implements ParseInterface
             $Output = [];
             foreach($Chunks as $Num => $Chunk){
                  $pos = 0;
-                 $Output[] = buffer($Chunk,$pos,1);
+                 $Output[] = buffer($Chunk,$pos,$debug)["Output"];
             }
-            var_dump($Output);
             foreach($Output as $Key1 => $Data1){
                 foreach($Data1 as $Value1 => $Info1){
-                    if (!empty($AllDefs_Json[$filename][$Value1])){
-                        $Def1 = $AllDefs_Json[$filename][$Value1]["Def"];
-                        if (empty($AllDefs_Json[$filename][$Value1]["Type"])){
-                            $Type1 = "";
+                    foreach($Info1 as $ValueOutput){
+                        if (!empty($AllDefs_Json[$filename][$Value1])){
+                            $Def1 = $AllDefs_Json[$filename][$Value1]["Def"];
+                            if (empty($AllDefs_Json[$filename][$Value1]["Type"])){
+                                $Type1 = "";
+                            } else {
+                                $Type1 = $AllDefs_Json[$filename][$Value1]["Type"];
+                            }
+                            switch ($Type1) {
+                                case 'Transient':
+                                    $OutArray[$Key1][$Def1] = array(
+                                        "en" => $LanguageMap_en[$ValueOutput],
+                                        "chs" => $LanguageMap_chs[$ValueOutput],
+                                        "cht" => $LanguageMap_cht[$ValueOutput],
+                                        "de" => $LanguageMap_de[$ValueOutput],
+                                        "es" => $LanguageMap_es[$ValueOutput],
+                                        "fr" => $LanguageMap_fr[$ValueOutput],
+                                        "it" => $LanguageMap_it[$ValueOutput],
+                                        "jp" => $LanguageMap_jp[$ValueOutput],
+                                        "ko" => $LanguageMap_ko[$ValueOutput],
+                                        "tc" => $LanguageMap_tc[$ValueOutput],
+                                    );
+                                break;
+                                case 'Texture':
+                                    $OutArray[$Key1][$Def1] = $ValueOutput.".png";
+                                break;
+                                
+                                default:
+                                    $OutArray[$Key1][$Def1] = $ValueOutput;
+                                break;
+                            }
                         } else {
-                            $Type1 = $AllDefs_Json[$filename][$Value1]["Type"];
+                            $Def1 = $Value1;
+                        $OutArray[$Key1][$Def1] = $ValueOutput;
                         }
-                        switch ($Type1) {
-                            case 'Transient':
-                                $OutArray[$Key1][$Def1] = array(
-                                    "en" => $LanguageMap_en[$Info1],
-                                    "chs" => $LanguageMap_chs[$Info1],
-                                    "cht" => $LanguageMap_cht[$Info1],
-                                    "de" => $LanguageMap_de[$Info1],
-                                    "es" => $LanguageMap_es[$Info1],
-                                    "fr" => $LanguageMap_fr[$Info1],
-                                    "it" => $LanguageMap_it[$Info1],
-                                    "jp" => $LanguageMap_jp[$Info1],
-                                    "ko" => $LanguageMap_ko[$Info1],
-                                    "tc" => $LanguageMap_tc[$Info1],
-                                );
-                            break;
-                            case 'Texture':
-                                $OutArray[$Key1][$Def1] = $Info1.".png";
-                            break;
-                            
-                            default:
-                                $OutArray[$Key1][$Def1] = $Info1;
-                            break;
-                        }
-                    } else {
-                        $Def1 = $Value1;
-                        $OutArray[$Key1][$Def1] = $Info1;
                     }
                 }
             }
-            $this->saveExtra("PokemonUniteApi/$filename.json",JSON_Encode($OutArray,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+            $this->saveExtra("PokemonUniteApi/Api/$filename.json",JSON_Encode($OutArray,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
     
         }
     }
