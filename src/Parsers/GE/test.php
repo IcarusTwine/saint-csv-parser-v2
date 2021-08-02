@@ -130,7 +130,7 @@ class test implements ParseInterface
         $path = "C:/Users/jonso/Desktop/New folder (3)/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
         $files = array(
-            "Passive_Skill",
+            "Error_Code",
         );
         function wireType($value){
             //conv to binary
@@ -160,16 +160,135 @@ class test implements ParseInterface
             $binnum = implode($binarray);
             return bindec(intval($binnum));
         }
-        //var_dump(wireType("A2"));
-        //var_dump(wireType("F9"));
-        //var_dump(wireType("0C"));
-        ////var_dump(bufferVal(array("CF","0C")));
-        //var_dump(wireType("05"));
-        //var_dump(wireType("D2"));
-        //var_dump(wireType("85"));
-        //var_dump(wireType("0C"));
+        function buffer($Chunk,$pos,$debug = 0){
+            if ($debug){var_dump("New Chunk");}
+            $pos = $pos;
+            $limit = count($Chunk);
+            while ($pos < $limit){
+                if ($pos > $limit){
+                    break;
+                }
+                $WireType = wireType($Chunk[$pos])["WireType"];
+                if ($debug){var_dump($Chunk[$pos]);}
+                switch ($WireType) {
+                    case 0:
+                        $pos++;
+                        if ($debug){var_dump($Chunk[$pos]);}
+                        $Byte2 = $Chunk[$pos];
+                        if (wireType($Byte2)['Binary']['MSB'] === 1){
+                            $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
+                            $Byte3 = $Chunk[$pos];
+                            $a = bufferVal(array($Byte2,$Byte3));
+                        } else {
+                            $a = hexdec($Chunk[$pos]);
+                        }
+                        $pos++;
+                        if ($debug){var_dump($Chunk[$pos]);}
+                        $Value = hexdec($Chunk[$pos]);
+                        $found = false;
+                        $ValueCalc = [];
+                        while ($found === false) {
+                            $Value = hexdec($Chunk[$pos]);
+                            if (wireType($Value)['Binary']['MSB'] === 0){
+                                $ValueCalc[] = $Chunk[$pos];
+                                $Value = bufferVal($ValueCalc);
+                                $found = true;
+                                break;
+                            } else {
+                                $ValueCalc[] = $Chunk[$pos];
+                                $pos++;
+                                if ($debug){var_dump($Chunk[$pos]);}
+                            }
+                        }
+                        $pos++;
+                        $Output[$a][] = $Value;
+                    break;
+                    case 1:
+                        $pos++;
+                        if ($debug){var_dump($Chunk[$pos]);}
+                        $Byte2 = $Chunk[$pos];
+                        if (wireType($Byte2)['Binary']['MSB'] === 1){
+                            $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
+                            $Byte3 = $Chunk[$pos];
+                            $a = bufferVal(array($Byte2,$Byte3));
+                        } else {
+                            $a = hexdec($Chunk[$pos]);
+                        }
+                        $pos++;
+                        if ($debug){var_dump($Chunk[$pos]);}
+                        //$Length = hexdec($Chunk[$pos]);
+                        $Length = 4;
+                        $ByteArray = [];
+                        for ($i=0; $i < $Length; $i++) { 
+                            $ByteArray[] = intval($Chunk[$pos]);
+                            $pos++;
+                        }
+                        $Output[$a][] = $ByteArray;
+                    break;
+                    case 2:
+                        $pos++;
+                        if ($debug){var_dump($Chunk[$pos]);}
+                        $Byte2 = $Chunk[$pos];
+                        if (wireType($Byte2)['Binary']['MSB'] === 1){
+                            $pos++;
+                            if ($debug){var_dump($Chunk[$pos]);}
+                            $Byte3 = $Chunk[$pos];
+                            $a = bufferVal(array($Byte2,$Byte3));
+                        } else {
+                            $a = hexdec($Chunk[$pos]);
+                        }
+                        $pos++;
+                        $Length = hexdec($Chunk[$pos]);
+                        if ($debug){var_dump("Length -> ".$Length);}
+                        $pos++;
+                        if ($debug){var_dump($Chunk[$pos]);}
+                        if (wireType($Chunk[$pos])['Binary']['MSB'] === 1){
+                            if (wireType($Chunk[$pos])['WireType'] === 2){
+                                $Data = buffer($Chunk,$pos,$debug);
+                                $Output[$a][] = $Data["Output"];
+                                $pos = $Data["Pos"];
+                            } else {
+                                $ByteArray = [];
+                                for ($i=0; $i < $Length; $i++) { 
+                                    $ByteArray[] = intval($Chunk[$pos]);
+                                    $pos++;
+                                }
+                                $Output[$a][] = $ByteArray;
+                            }
+                        } else {
+                            $String = "";
+                            for ($i=0; $i < $Length; $i++) { 
+                                if ($debug){var_dump($Chunk[$pos]);}
+                                $String .= hex2str($Chunk[$pos]);
+                                if ($debug){var_dump($String);}
+                                $pos++;
+                            }
+                            $Output[$a][] = utf8_encode($String);
+                        }
+                        //$Output[$Num][$a] = ($String);
+                    break;
+                    
+                    default:
+                    break;
+                }
+            }
+            $Out["Pos"] = $pos;
+            $Out["Output"] = $Output;
+            return $Out;
+        }
+        var_dump(wireType("E2"));
+        var_dump(wireType("E5"));
+        var_dump(wireType("0C"));
+        var_dump(wireType("12"));
+        //var_dump(wireType("98"));
+        //var_dump(wireType("F1"));
+        //var_dump(wireType("09"));
+        //var_dump(wireType("01"));
         //var_dump(wireType("03"));
         //var_dump(bufferVal(array("C0","84","3D")));
+        ////var_dump(bufferVal(array("CF","0C")));
         $debug = 1;
         foreach($files as $FileNameraw){
             $filename = str_replace("databin_","",$FileNameraw);
@@ -205,117 +324,10 @@ class test implements ParseInterface
             }
             $Output = [];
             foreach($Chunks as $Num => $Chunk){
-                $pos = 0;
-                $limit = count($Chunk);
-                while ($pos < $limit){
-                    if ($pos > $limit){
-                        break;
-                    }
-                    var_dump($Chunk[$pos]);
-                    $WireType = wireType($Chunk[$pos])["WireType"];
-                    switch ($WireType) {
-                        case 0:
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte2 = $Chunk[$pos];
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte3 = $Chunk[$pos];
-                            $a = bufferVal(array($Byte2,$Byte3));
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Value = hexdec($Chunk[$pos]);
-                            $found = false;
-                            $ValueCalc = [];
-                            while ($found === false) {
-                                $Value = hexdec($Chunk[$pos]);
-                                if (wireType($Value)['Binary']['MSB'] === 0){
-                                    $ValueCalc[] = $Chunk[$pos];
-                                    $Value = bufferVal($ValueCalc);
-                                    $found = true;
-                                    break;
-                                } else {
-                                    $ValueCalc[] = $Chunk[$pos];
-                                    $pos++;
-                                    if ($debug){var_dump($Chunk[$pos]);}
-                                }
-                            }
-                            $pos++;
-                            $Output[$Num][$a][] = $Value;
-                        break;
-                        case 2:
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte2 = $Chunk[$pos];
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte3 = $Chunk[$pos];
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $a = bufferVal(array($Byte2,$Byte3));
-                            $Length = hexdec($Chunk[$pos]);
-                            if ($debug){var_dump("Length -> ".$Length);}
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            if (wireType($Chunk[$pos])['WireType'] === 2){
-                                $pos++;
-                                if ($debug){var_dump($Chunk[$pos]);}
-                                $Byte2_2 = $Chunk[$pos];
-                                $pos++;
-                                if ($debug){var_dump($Chunk[$pos]);}
-                                $Byte3_2 = $Chunk[$pos];
-                                $a_2 = bufferVal(array($Byte2_2,$Byte3_2));
-                                $pos++;
-                                if ($debug){var_dump($Chunk[$pos]);}
-                                $Length_2 = hexdec($Chunk[$pos]);
-                                if ($debug){var_dump("Length -> ".$Length_2);}
-                                $pos++;
-                                if ($debug){var_dump($Chunk[$pos]);}
-                                $TempArray = [];
-                                $a_2_temp = intval($Chunk[$pos]);
-                                $ByteArray = [];
-                                for ($i=0; $i < $Length_2; $i++) { 
-                                    $ByteArray[] = intval($Chunk[$pos]);
-                                    $pos++;
-                                };
-                                $TempArray[$a_2][$a_2_temp] = $ByteArray;
-                            }
-                            $String = "";
-                            for ($i=0; $i < $Length; $i++) { 
-                                $String .= hex2str($Chunk[$pos]);
-                                $pos++;
-                                if ($debug){var_dump($Chunk[$pos]);}
-                            }
-                            $Output[$Num][$a][] = utf8_encode($String);
-                            //$Output[$Num][$a] = ($String);
-                        break;
-                        case 1:
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte2 = $Chunk[$pos];
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte3 = $Chunk[$pos];
-                            $a = bufferVal(array($Byte2,$Byte3));
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            //$Length = hexdec($Chunk[$pos]);
-                            $Length = 4;
-                            $ByteArray = [];
-                            for ($i=0; $i < $Length; $i++) { 
-                                $ByteArray[] = intval($Chunk[$pos]);
-                                $pos++;
-                            }
-                            $Output[$Num][$a][] = $ByteArray;
-                        break;
-                        
-                        default:
-                        $pos++;
-                        break;
-                    }
-                }
+                 $pos = 0;
+                 $Output[] = buffer($Chunk,$pos,1);
             }
-            //var_dump($Output);
+            var_dump($Output);
             foreach($Output as $Key1 => $Data1){
                 foreach($Data1 as $Value1 => $Info1){
                     if (!empty($AllDefs_Json[$filename][$Value1])){
