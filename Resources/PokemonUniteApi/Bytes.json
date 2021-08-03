@@ -1,0 +1,1412 @@
+[
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "EA",
+            "Full": "11101010",
+            "MSB": 1,
+            "Dec": 234
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "A0",
+            "Full": "10100000",
+            "MSB": 1,
+            "Dec": 160
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "0A",
+            "Full": "00001010",
+            "MSB": 0,
+            "Dec": 10
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "03",
+            "Full": "00000011",
+            "MSB": 0,
+            "Dec": 3
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 18,
+        "Binary": {
+            "Hex": "D2",
+            "Full": "11010010",
+            "MSB": 1,
+            "Dec": 210
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 9,
+        "Binary": {
+            "Hex": "C9",
+            "Full": "11001001",
+            "MSB": 1,
+            "Dec": 201
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 11,
+        "Binary": {
+            "Hex": "0B",
+            "Full": "00001011",
+            "MSB": 0,
+            "Dec": 11
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 7,
+        "Binary": {
+            "Hex": "07",
+            "Full": "00000111",
+            "MSB": 0,
+            "Dec": 7
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 20,
+        "Binary": {
+            "Hex": "74",
+            "Full": "01110100",
+            "MSB": 0,
+            "Dec": 116
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 31,
+        "Binary": {
+            "Hex": "5F",
+            "Full": "01011111",
+            "MSB": 0,
+            "Dec": 95
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 16,
+        "Binary": {
+            "Hex": "30",
+            "Full": "00110000",
+            "MSB": 0,
+            "Dec": 48
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "37",
+            "Full": "00110111",
+            "MSB": 0,
+            "Dec": 55
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 25,
+        "Binary": {
+            "Hex": "39",
+            "Full": "00111001",
+            "MSB": 0,
+            "Dec": 57
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 16,
+        "Binary": {
+            "Hex": "50",
+            "Full": "01010000",
+            "MSB": 0,
+            "Dec": 80
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 24,
+        "Binary": {
+            "Hex": "B8",
+            "Full": "10111000",
+            "MSB": 1,
+            "Dec": 184
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 19,
+        "Binary": {
+            "Hex": "93",
+            "Full": "10010011",
+            "MSB": 1,
+            "Dec": 147
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 28,
+        "Binary": {
+            "Hex": "DC",
+            "Full": "11011100",
+            "MSB": 1,
+            "Dec": 220
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 18,
+        "Binary": {
+            "Hex": "92",
+            "Full": "10010010",
+            "MSB": 1,
+            "Dec": 146
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "B1",
+            "Full": "10110001",
+            "MSB": 1,
+            "Dec": 177
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "2C",
+            "Full": "00101100",
+            "MSB": 0,
+            "Dec": 44
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 26,
+        "Binary": {
+            "Hex": "BA",
+            "Full": "10111010",
+            "MSB": 1,
+            "Dec": 186
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 9,
+        "Binary": {
+            "Hex": "C9",
+            "Full": "11001001",
+            "MSB": 1,
+            "Dec": 201
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "0A",
+            "Full": "00001010",
+            "MSB": 0,
+            "Dec": 10
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 1,
+        "Binary": {
+            "Hex": "61",
+            "Full": "01100001",
+            "MSB": 0,
+            "Dec": 97
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 7,
+        "Binary": {
+            "Hex": "67",
+            "Full": "01100111",
+            "MSB": 0,
+            "Dec": 103
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 5,
+        "Binary": {
+            "Hex": "65",
+            "Full": "01100101",
+            "MSB": 0,
+            "Dec": 101
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 31,
+        "Binary": {
+            "Hex": "5F",
+            "Full": "01011111",
+            "MSB": 0,
+            "Dec": 95
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 16,
+        "Binary": {
+            "Hex": "30",
+            "Full": "00110000",
+            "MSB": 0,
+            "Dec": 48
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "37",
+            "Full": "00110111",
+            "MSB": 0,
+            "Dec": 55
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 25,
+        "Binary": {
+            "Hex": "39",
+            "Full": "00111001",
+            "MSB": 0,
+            "Dec": 57
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 31,
+        "Binary": {
+            "Hex": "5F",
+            "Full": "01011111",
+            "MSB": 0,
+            "Dec": 95
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 16,
+        "Binary": {
+            "Hex": "50",
+            "Full": "01010000",
+            "MSB": 0,
+            "Dec": 80
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 2,
+        "Binary": {
+            "Hex": "82",
+            "Full": "10000010",
+            "MSB": 1,
+            "Dec": 130
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 15,
+        "Binary": {
+            "Hex": "CF",
+            "Full": "11001111",
+            "MSB": 1,
+            "Dec": 207
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 4,
+        "Binary": {
+            "Hex": "04",
+            "Full": "00000100",
+            "MSB": 0,
+            "Dec": 4
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "8A",
+            "Full": "10001010",
+            "MSB": 1,
+            "Dec": 138
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "F7",
+            "Full": "11110111",
+            "MSB": 1,
+            "Dec": 247
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 8,
+        "Binary": {
+            "Hex": "08",
+            "Full": "00001000",
+            "MSB": 0,
+            "Dec": 8
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 18,
+        "Binary": {
+            "Hex": "D2",
+            "Full": "11010010",
+            "MSB": 1,
+            "Dec": 210
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 5,
+        "Binary": {
+            "Hex": "85",
+            "Full": "10000101",
+            "MSB": 1,
+            "Dec": 133
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 4,
+        "Binary": {
+            "Hex": "04",
+            "Full": "00000100",
+            "MSB": 0,
+            "Dec": 4
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "8A",
+            "Full": "10001010",
+            "MSB": 1,
+            "Dec": 138
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "F7",
+            "Full": "11110111",
+            "MSB": 1,
+            "Dec": 247
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 7,
+        "Binary": {
+            "Hex": "07",
+            "Full": "00000111",
+            "MSB": 0,
+            "Dec": 7
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 18,
+        "Binary": {
+            "Hex": "D2",
+            "Full": "11010010",
+            "MSB": 1,
+            "Dec": 210
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 5,
+        "Binary": {
+            "Hex": "85",
+            "Full": "10000101",
+            "MSB": 1,
+            "Dec": 133
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "03",
+            "Full": "00000011",
+            "MSB": 0,
+            "Dec": 3
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "8A",
+            "Full": "10001010",
+            "MSB": 1,
+            "Dec": 138
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "F7",
+            "Full": "11110111",
+            "MSB": 1,
+            "Dec": 247
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 7,
+        "Binary": {
+            "Hex": "07",
+            "Full": "00000111",
+            "MSB": 0,
+            "Dec": 7
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 18,
+        "Binary": {
+            "Hex": "D2",
+            "Full": "11010010",
+            "MSB": 1,
+            "Dec": 210
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 5,
+        "Binary": {
+            "Hex": "85",
+            "Full": "10000101",
+            "MSB": 1,
+            "Dec": 133
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "03",
+            "Full": "00000011",
+            "MSB": 0,
+            "Dec": 3
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 2,
+        "Binary": {
+            "Hex": "A2",
+            "Full": "10100010",
+            "MSB": 1,
+            "Dec": 162
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 25,
+        "Binary": {
+            "Hex": "F9",
+            "Full": "11111001",
+            "MSB": 1,
+            "Dec": 249
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 12,
+        "Binary": {
+            "Hex": "0C",
+            "Full": "00001100",
+            "MSB": 0,
+            "Dec": 12
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 6,
+        "Binary": {
+            "Hex": "06",
+            "Full": "00000110",
+            "MSB": 0,
+            "Dec": 6
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 8,
+        "Binary": {
+            "Hex": "E8",
+            "Full": "11101000",
+            "MSB": 1,
+            "Dec": 232
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 7,
+        "Binary": {
+            "Hex": "07",
+            "Full": "00000111",
+            "MSB": 0,
+            "Dec": 7
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 1,
+        "Binary": {
+            "Hex": "01",
+            "Full": "00000001",
+            "MSB": 0,
+            "Dec": 1
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 0,
+        "Binary": {
+            "Hex": "00",
+            "Full": "00000000",
+            "MSB": 0,
+            "Dec": 0
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "AA",
+            "Full": "10101010",
+            "MSB": 1,
+            "Dec": 170
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 4,
+        "Binary": {
+            "Hex": "E4",
+            "Full": "11100100",
+            "MSB": 1,
+            "Dec": 228
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 13,
+        "Binary": {
+            "Hex": "0D",
+            "Full": "00001101",
+            "MSB": 0,
+            "Dec": 13
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 19,
+        "Binary": {
+            "Hex": "13",
+            "Full": "00010011",
+            "MSB": 0,
+            "Dec": 19
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 18,
+        "Binary": {
+            "Hex": "32",
+            "Full": "00110010",
+            "MSB": 0,
+            "Dec": 50
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 20,
+        "Binary": {
+            "Hex": "34",
+            "Full": "00110100",
+            "MSB": 0,
+            "Dec": 52
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 20,
+        "Binary": {
+            "Hex": "34",
+            "Full": "00110100",
+            "MSB": 0,
+            "Dec": 52
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 25,
+        "Binary": {
+            "Hex": "39",
+            "Full": "00111001",
+            "MSB": 0,
+            "Dec": 57
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 18,
+        "Binary": {
+            "Hex": "32",
+            "Full": "00110010",
+            "MSB": 0,
+            "Dec": 50
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 5,
+        "Binary": {
+            "Hex": "45",
+            "Full": "01000101",
+            "MSB": 0,
+            "Dec": 69
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 6,
+        "Binary": {
+            "Hex": "46",
+            "Full": "01000110",
+            "MSB": 0,
+            "Dec": 70
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 1,
+        "Binary": {
+            "Hex": "41",
+            "Full": "01000001",
+            "MSB": 0,
+            "Dec": 65
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 20,
+        "Binary": {
+            "Hex": "34",
+            "Full": "00110100",
+            "MSB": 0,
+            "Dec": 52
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "37",
+            "Full": "00110111",
+            "MSB": 0,
+            "Dec": 55
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 22,
+        "Binary": {
+            "Hex": "36",
+            "Full": "00110110",
+            "MSB": 0,
+            "Dec": 54
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 19,
+        "Binary": {
+            "Hex": "33",
+            "Full": "00110011",
+            "MSB": 0,
+            "Dec": 51
+        }
+    },
+    {
+        "WireType": 4,
+        "FieldID": 4,
+        "Binary": {
+            "Hex": "44",
+            "Full": "01000100",
+            "MSB": 0,
+            "Dec": 68
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 31,
+        "Binary": {
+            "Hex": "5F",
+            "Full": "01011111",
+            "MSB": 0,
+            "Dec": 95
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "23",
+            "Full": "00100011",
+            "MSB": 0,
+            "Dec": 35
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "23",
+            "Full": "00100011",
+            "MSB": 0,
+            "Dec": 35
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 26,
+        "Binary": {
+            "Hex": "FA",
+            "Full": "11111010",
+            "MSB": 1,
+            "Dec": 250
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 16,
+        "Binary": {
+            "Hex": "F0",
+            "Full": "11110000",
+            "MSB": 1,
+            "Dec": 240
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 13,
+        "Binary": {
+            "Hex": "0D",
+            "Full": "00001101",
+            "MSB": 0,
+            "Dec": 13
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 19,
+        "Binary": {
+            "Hex": "13",
+            "Full": "00010011",
+            "MSB": 0,
+            "Dec": 19
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 6,
+        "Binary": {
+            "Hex": "46",
+            "Full": "01000110",
+            "MSB": 0,
+            "Dec": 70
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 1,
+        "Binary": {
+            "Hex": "41",
+            "Full": "01000001",
+            "MSB": 0,
+            "Dec": 65
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 24,
+        "Binary": {
+            "Hex": "38",
+            "Full": "00111000",
+            "MSB": 0,
+            "Dec": 56
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 16,
+        "Binary": {
+            "Hex": "30",
+            "Full": "00110000",
+            "MSB": 0,
+            "Dec": 48
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 22,
+        "Binary": {
+            "Hex": "36",
+            "Full": "00110110",
+            "MSB": 0,
+            "Dec": 54
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "37",
+            "Full": "00110111",
+            "MSB": 0,
+            "Dec": 55
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 6,
+        "Binary": {
+            "Hex": "46",
+            "Full": "01000110",
+            "MSB": 0,
+            "Dec": 70
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 23,
+        "Binary": {
+            "Hex": "37",
+            "Full": "00110111",
+            "MSB": 0,
+            "Dec": 55
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 25,
+        "Binary": {
+            "Hex": "39",
+            "Full": "00111001",
+            "MSB": 0,
+            "Dec": 57
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 19,
+        "Binary": {
+            "Hex": "33",
+            "Full": "00110011",
+            "MSB": 0,
+            "Dec": 51
+        }
+    },
+    {
+        "WireType": 1,
+        "FieldID": 17,
+        "Binary": {
+            "Hex": "31",
+            "Full": "00110001",
+            "MSB": 0,
+            "Dec": 49
+        }
+    },
+    {
+        "WireType": 5,
+        "FieldID": 5,
+        "Binary": {
+            "Hex": "45",
+            "Full": "01000101",
+            "MSB": 0,
+            "Dec": 69
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 22,
+        "Binary": {
+            "Hex": "36",
+            "Full": "00110110",
+            "MSB": 0,
+            "Dec": 54
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 24,
+        "Binary": {
+            "Hex": "38",
+            "Full": "00111000",
+            "MSB": 0,
+            "Dec": 56
+        }
+    },
+    {
+        "WireType": 7,
+        "FieldID": 31,
+        "Binary": {
+            "Hex": "5F",
+            "Full": "01011111",
+            "MSB": 0,
+            "Dec": 95
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "23",
+            "Full": "00100011",
+            "MSB": 0,
+            "Dec": 35
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "23",
+            "Full": "00100011",
+            "MSB": 0,
+            "Dec": 35
+        }
+    },
+    {
+        "WireType": 0,
+        "FieldID": 16,
+        "Binary": {
+            "Hex": "F0",
+            "Full": "11110000",
+            "MSB": 1,
+            "Dec": 240
+        }
+    },
+    {
+        "WireType": 2,
+        "FieldID": 10,
+        "Binary": {
+            "Hex": "CA",
+            "Full": "11001010",
+            "MSB": 1,
+            "Dec": 202
+        }
+    },
+    {
+        "WireType": 6,
+        "FieldID": 14,
+        "Binary": {
+            "Hex": "0E",
+            "Full": "00001110",
+            "MSB": 0,
+            "Dec": 14
+        }
+    },
+    {
+        "WireType": 3,
+        "FieldID": 3,
+        "Binary": {
+            "Hex": "03",
+            "Full": "00000011",
+            "MSB": 0,
+            "Dec": 3
+        }
+    }
+]

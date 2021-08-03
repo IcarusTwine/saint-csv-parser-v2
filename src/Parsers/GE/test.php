@@ -18,13 +18,16 @@ class test implements ParseInterface
     public function parse()
     {
         include (dirname(__DIR__) . '/Paths.php');
+        
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
         function hex2str($hex) {
             $str = '';
             for($i=0;$i<strlen($hex);$i+=2) $str .= chr(hexdec(substr($hex,$i,2)));
             return $str;
         }
         
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_en";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_en";
 
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -33,7 +36,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_en[$Explode[0]] = $Explode[1]; 
         }
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_chs";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_chs";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -43,7 +46,7 @@ class test implements ParseInterface
             $LanguageMap_chs[$Explode[0]] = $Explode[1]; 
         }
         
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_cht";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_cht";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -53,7 +56,7 @@ class test implements ParseInterface
             $LanguageMap_cht[$Explode[0]] = $Explode[1]; 
         }
 
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_de";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_de";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -62,7 +65,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_de[$Explode[0]] = $Explode[1]; 
         }
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_fr";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_fr";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -71,7 +74,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_fr[$Explode[0]] = $Explode[1]; 
         }
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_es";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_es";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -80,7 +83,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_es[$Explode[0]] = $Explode[1]; 
         }
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_it";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_it";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -90,7 +93,7 @@ class test implements ParseInterface
             $LanguageMap_it[$Explode[0]] = $Explode[1]; 
         }
 
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_jp";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_jp";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -99,7 +102,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_jp[$Explode[0]] = $Explode[1]; 
         }
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_ko";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_ko";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -108,7 +111,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_ko[$Explode[0]] = $Explode[1]; 
         }
-        $filename = "C:\Users\jonso\Desktop\New folder (3)\LanguageMap\languagemap_tc";
+        $filename = "$Resources\PokemonUniteApi\LanguageMap\languagemap_tc";
         
         $handle = file_get_contents($filename); 
         $LanguageMapExp = explode("\n",$handle);
@@ -117,7 +120,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_tc[$Explode[0]] = $Explode[1]; 
         }
-        $AllDefs = file_get_contents("E:\saint-csv-parser-v2\Resources\PokemonSheetDefs.json"); 
+        $AllDefs = file_get_contents("$Resources\PokemonSheetDefs.json"); 
         //$FileName = "NPCDialog";
         //$FileName = "Pokemon_Hero_Evolution";
         $AllDefs_Json = json_decode($AllDefs,true);
@@ -127,7 +130,7 @@ class test implements ParseInterface
                 $KeysArray[] = "\x".implode("\x",$Keys);
             }
         }
-        $path = "C:/Users/jonso/Desktop/New folder (3)/Databins/";
+        $path = "$Resources\PokemonUniteApi/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
         $files = array(
             "Passive_Skill",
@@ -160,11 +163,12 @@ class test implements ParseInterface
             $binnum = implode($binarray);
             return bindec(intval($binnum));
         }
-        $TestArray = explode(" ","82 CF 0C 07 DA
-        E2 B3 2C 00 00 00 8A F7 0C 08 D2 85 0C 04");
+        $TestArray = explode(" ","EA A0 0A 03 00 00 00 D2 C9 0B 07 74 5F 30 37 39 50 31 B8 93 0C DC 92 B1 2C BA C9 0C 0A 61 67 65 5F 30 37 39 5F 50 31 82 CF 0C 04 00 00 00 00 8A F7 0C 08 D2 85 0C 04 00 00 00 00 8A F7 0C 07 D2 85 0C 03 00 00 00 8A F7 0C 07 D2 85 0C 03 00 00 00 A2 F9 0C 06 E8 07 01 00 00 00 AA E4 0D 13 31 32 34 34 39 32 45 31 46 41 34 37 31 36 33 44 5F 23 23 FA F0 0D 13 46 41 31 38 31 30 36 37 46 37 39 33 31 45 36 38 5F 23 23 F0 CA 0E 03");
         foreach($TestArray as $Byte){
-            var_dump(wireType($Byte));
+            $TestAr[] = (wireType($Byte));
         }
+        $this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+
         function varint($Chunk,$pos,$debug = 0){ //0	Varint	int32, int64, uint32, uint64, sint32, sint64, bool, enum
             $pos++;
             $msb = 1;
@@ -177,6 +181,25 @@ class test implements ParseInterface
                     $pos++;
                 }
             }
+        }
+        
+        function lendel($Chunk,$pos,$debug = 0){//2	Length-delimited	string, bytes, embedded messages, packed repeated fields
+            $pos++;
+            $msb = 1;
+            $Bytes = [];
+            while ($msb === 1){
+                $msb = wireType($Chunk[$pos]["WireType"]);
+                if ($msb === 0){
+                    $Bytes[] = $Chunk[$pos];
+                    $Header = bufferVal($Bytes);
+                    break;
+                } else {
+                    $Bytes[] = $Chunk[$pos];
+                    $pos++;
+                }
+            }
+            $pos++;
+            $Length = hexdec($Chunk[$pos]);
         }
 
 
@@ -329,7 +352,7 @@ class test implements ParseInterface
             $filename = str_replace("databin_","",$FileNameraw);
             var_dump($filename);
             if (in_array($filename,$SkipArray)) continue;
-            $filePath = "C:/Users/jonso/Desktop/New folder (3)/Databins/databin_$filename";
+            $filePath = "$Resources\PokemonUniteApi/Databins/databin_$filename";
             $handle = fopen($filePath, "rb"); 
             $fsize = filesize($filePath); 
             $contents = fread($handle, $fsize); 
