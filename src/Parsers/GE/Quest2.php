@@ -1115,10 +1115,14 @@ class Quest2 implements ParseInterface
                     }
                 }
                 if (stripos($Argument,"ITEM") !== false){
-                    $ItemArray[] = array(
-                        "Value" => $Value,
-                        "Type" => "ITEM",
-                    );
+                    if (stripos($Argument,"RITEM") == false){
+
+                    } else {
+                        $ItemArray[] = array(
+                            "Value" => $Value,
+                            "Type" => "ITEM",
+                        );
+                    }
                 }
                 if (stripos($Argument,"EOBJECT") !== false){
                     $ItemArray[] = array(
