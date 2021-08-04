@@ -164,34 +164,59 @@ class test implements ParseInterface
             return bindec(intval($binnum));
         }
         $TestArray = explode(" ","EA A0 0A 03 00 00 00 D2 C9 0B 07 74 5F 30 37 39 50 31 B8 93 0C DC 92 B1 2C BA C9 0C 0A 61 67 65 5F 30 37 39 5F 50 31 82 CF 0C 04 00 00 00 00 8A F7 0C 08 D2 85 0C 04 00 00 00 00 8A F7 0C 07 D2 85 0C 03 00 00 00 8A F7 0C 07 D2 85 0C 03 00 00 00 A2 F9 0C 06 E8 07 01 00 00 00 AA E4 0D 13 31 32 34 34 39 32 45 31 46 41 34 37 31 36 33 44 5F 23 23 FA F0 0D 13 46 41 31 38 31 30 36 37 46 37 39 33 31 45 36 38 5F 23 23 F0 CA 0E 03");
-        foreach($TestArray as $Byte){
-            $TestAr[] = (wireType($Byte));
-        }
-        $this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
-
+        
         function varint($Chunk,$pos,$debug = 0){ //0	Varint	int32, int64, uint32, uint64, sint32, sint64, bool, enum
+            
             $pos++;
-            $msb = 1;
-            while ($msb === 1){
-                $msb = wireType($Chunk[$pos]["WireType"]);
+            $found = 1;
+            $Header = 0;
+            while ($found === 1){
+                $msb = wireType($Chunk[$pos])["Binary"]["MSB"];
                 if ($msb === 0){
+                    $Bytes[] = $Chunk[$pos];
+                    $Header = bufferVal($Bytes);
+                    $found = 0;
                     break;
                 } else {
                     $Bytes[] = $Chunk[$pos];
                     $pos++;
                 }
             }
+            $pos++;
+            $ByteArray = [];
+            $found = 1;
+            $Bytes = [];
+            while ($found === 1){
+                $msb = wireType($Chunk[$pos])["Binary"]["MSB"];
+                if ($msb === 0){
+                    $Bytes[] = $Chunk[$pos];
+                    $ByteArray = bufferVal($Bytes);
+                    $found = 0;
+                    break;
+                } else {
+                    $Bytes[] = $Chunk[$pos];
+                    $pos++;
+                }
+            }
+            $pos++;
+            $Output["Data"][$Header] = $ByteArray;
+            $Output["Pos"] = $pos;
+            
+            return $Output;
         }
         
         function lendel($Chunk,$pos,$debug = 0){//2	Length-delimited	string, bytes, embedded messages, packed repeated fields
             $pos++;
-            $msb = 1;
+            $found = 1;
             $Bytes = [];
-            while ($msb === 1){
-                $msb = wireType($Chunk[$pos]["WireType"]);
+            $Header = 0;
+            while ($found === 1){
+                $msb = wireType($Chunk[$pos])["Binary"]["MSB"];
                 if ($msb === 0){
                     $Bytes[] = $Chunk[$pos];
+                    // error is here
                     $Header = bufferVal($Bytes);
+                    $found = 0;
                     break;
                 } else {
                     $Bytes[] = $Chunk[$pos];
@@ -200,140 +225,45 @@ class test implements ParseInterface
             }
             $pos++;
             $Length = hexdec($Chunk[$pos]);
-        }
-
-
-        function buffer($Chunk,$pos,$debug = 0){
-            if ($debug){var_dump("New Chunk");}
-            $pos = $pos;
-            $limit = count($Chunk);
-            while ($pos < $limit){
-                if ($pos > $limit){
-                    break;
-                }
-                $WireType = wireType($Chunk[$pos])["WireType"];
-                if ($debug){var_dump($Chunk[$pos]);}
-                switch ($WireType) {
-                    case 0:
-                        //var_dump("WireType 0 Found = ".$Chunk[$pos]);
+            $pos++;
+            $StorePos = $pos;
+            $String = "";
+            $ByteArray = [];
+            if ((161 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 247)){
+                //possibly a chinese character
+                $pos++;
+                if ((161 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 254)){
+                    //totally a chinese character 
+                    $pos = $StorePos;
+                    for ($i=0; $i < $Length; $i++) { 
+                        $String .= $Chunk[$pos];
                         $pos++;
-                        if ($debug){var_dump($Chunk[$pos]);}
-                        $Byte2 = $Chunk[$pos];
-                        $Byte3 = "00";
-                        if (wireType($Byte2)['Binary']['MSB'] === 1){
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte3 = $Chunk[$pos];
-                            $a = bufferVal(array($Byte2,$Byte3));
-                        } else {
-                            $a = hexdec($Chunk[$pos]);
-                        }
-                        $pos++;
-                        if ($debug){var_dump($Chunk[$pos]);}
-                        //$Value = hexdec($Chunk[$pos]);
-                        $found = false;
-                        $ValueCalc = [];
-                        while ($found === false) {
-                            $Value = hexdec($Chunk[$pos]);
-                            if (wireType($Chunk[$pos])['Binary']['MSB'] === 0){
-                                $ValueCalc[] = $Chunk[$pos];
-                                //var_dump("0 - Values:");
-                                //var_dump($ValueCalc);
-                                $Value = bufferVal($ValueCalc);
-                                $found = true;
-                                break;
-                            } else {
-                                $ValueCalc[] = $Chunk[$pos];
-                                $pos++;
-                                if ($debug){var_dump($Chunk[$pos]);}
-                            }
-                        }
-                        $pos++;
-                        $Output[$a][] = $Value;
-                    break;
-                    case 1:
-                        $pos++;
-                        if ($debug){var_dump($Chunk[$pos]);}
-                        $Byte2 = $Chunk[$pos];
-                        $Byte3 = "00";
-                        if (wireType($Byte2)['Binary']['MSB'] === 1){
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte3 = $Chunk[$pos];
-                            $a = bufferVal(array($Byte2,$Byte3));
-                        } else {
-                            $a = hexdec($Chunk[$pos]);
-                        }
-                        $pos++;
-                        if ($debug){var_dump($Chunk[$pos]);}
-                        //$Length = hexdec($Chunk[$pos]);
-                        $Length = 4;
-                        $ByteArray = [];
-                        for ($i=0; $i < $Length; $i++) { 
-                            $ByteArray[] = intval($Chunk[$pos]);
-                            $pos++;
-                        }
-                        $Output[$a][] = $ByteArray;
-                    break;
-                    case 2:
-                        $pos++;
-                        if ($debug){var_dump($Chunk[$pos]);}
-                        $Byte2 = $Chunk[$pos];
-                        if (wireType($Byte2)['Binary']['MSB'] === 1){
-                            $pos++;
-                            if ($debug){var_dump($Chunk[$pos]);}
-                            $Byte3 = $Chunk[$pos];
-                            $a = bufferVal(array($Byte2,$Byte3));
-                        } else {
-                            $a = hexdec($Chunk[$pos]);
-                        }
-                        $pos++;
-                        $Length = hexdec($Chunk[$pos]);
-                        if ($debug){var_dump("Length -> ".$Length);}
-                        $pos++;
-                        if ($debug){var_dump($Chunk[$pos]);}
-                        if (wireType($Chunk[$pos])['Binary']['MSB'] === 1){
-                            if (wireType($Chunk[$pos])['WireType'] === 2){
-                                $Data = buffer($Chunk,$pos,$debug);
-                                $Output[$a][] = $Data["Output"];
-                                $pos = $Data["Pos"];
-                            } else {
-                                //$ByteArray = [];
-                                //for ($i=0; $i < $Length; $i++) { 
-                                //    $ByteArray[] = intval($Chunk[$pos]);
-                                //    $pos++;
-                                //}
-                                //$Output[$a][] = $ByteArray;
-                                $String = "";
-                                for ($i=0; $i < $Length; $i++) { 
-                                    if ($debug){var_dump($Chunk[$pos]);}
-                                    $String .= hex2str($Chunk[$pos]);
-                                    if ($debug){var_dump($String);}
-                                    $pos++;
-                                }
-                                $Output[$a][] = $String;
-                            }
-                        } else {
-                            $String = "";
-                            for ($i=0; $i < $Length; $i++) { 
-                                if ($debug){var_dump($Chunk[$pos]);}
-                                $String .= hex2str($Chunk[$pos]);
-                                if ($debug){var_dump($String);}
-                                $pos++;
-                            }
-                            $Output[$a][] = $String;
-                        }
-                        //$Output[$Num][$a] = ($String);
-                    break;
-                    
-                    default:
+                    }
+                    $Output["Data"][$Header] = hex2str($String);
+                    $Output["Pos"] = $pos;
+                    return $Output;
+                };
+                //could be a value, dunno. whatever.
+            } elseif ((32 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 127)){
+                // eng string
+                $pos = $StorePos;
+                for ($i=0; $i < $Length; $i++) { 
+                    $String .= $Chunk[$pos];
                     $pos++;
-                    break;
                 }
+                $Output["Data"][$Header] = hex2str($String);
+                $Output["Pos"] = $pos;
+                return $Output;
+            } else {
+                $pos = $StorePos;
+                for ($i=0; $i < $Length; $i++) { 
+                    $ByteArray[] = wireType($Chunk[$pos])['Binary']["Dec"];
+                    $pos++;
+                }
+                $Output["Data"][$Header] = $ByteArray;
+                $Output["Pos"] = $pos;
+                return $Output;
             }
-            $Out["Pos"] = $pos;
-            $Out["Output"] = $Output;
-            return $Out;
         }
         //var_dump(wireType("A0"));
         //var_dump(wireType("01"));
@@ -380,10 +310,43 @@ class test implements ParseInterface
                 }
                 $Chunks[] = $Array;
             }
+            
+            foreach($Chunks as $Chunk){
+                foreach($Chunk as $Byte){
+                    $TestAr[] = (wireType($Byte));
+                }
+            }
+            //$this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+    
             $Output = [];
             foreach($Chunks as $Num => $Chunk){
-                 $pos = 0;
-                 $Output[] = buffer($Chunk,$pos,$debug)["Output"];
+                $pos = 0;
+                $limit = count($Chunk);
+                $Chunks = [];
+                $OutputChunk = [];
+                while ($pos < $limit){
+                    if ($pos > $limit){
+                        break;
+                    }
+                    switch (wireType($Chunk[$pos])['WireType']) {
+                        case 0:
+                            $Data = varint($Chunk,$pos);
+                            $OutputChunk[] = $Data["Data"];
+                            $pos = $Data["Pos"];
+                        break;
+                        case 2:
+                            var_dump($Chunk[$pos]);
+                            $Data = lendel($Chunk,$pos);
+                            $OutputChunk[] = $Data["Data"];
+                            $pos = $Data["Pos"];
+                        break;
+                        
+                        
+                        default:
+                        break;
+                    }
+                }
+                $Output[] = $OutputChunk;
             }
             foreach($Output as $Key1 => $Data1){
                 foreach($Data1 as $Value1 => $Info1){
