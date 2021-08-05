@@ -1,0 +1,314 @@
+{
+    "0": {
+        "Texture_Male": "t_face_male0_1.png",
+        "1443": {
+            "0": 7
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female0_1.png",
+        "1824": {
+            "0": 1
+        }
+    },
+    "1": {
+        "Texture_Male": "t_face_male1_1.png",
+        "1443": {
+            "0": 7
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female1_1.png",
+        "1824": {
+            "0": 2
+        }
+    },
+    "2": {
+        "Texture_Male": "t_face_male2_1.png",
+        "1443": {
+            "0": 7
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female2_1.png",
+        "1824": {
+            "0": 3
+        }
+    },
+    "3": {
+        "Texture_Male": "t_face_male3_1.png",
+        "1443": {
+            "0": 7
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female3_1.png",
+        "1824": {
+            "0": 4
+        }
+    },
+    "4": {
+        "Texture_Male": "t_face_male4_1.png",
+        "1443": {
+            "0": 7
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female4_1.png",
+        "1824": {
+            "0": 5
+        }
+    },
+    "5": {
+        "Texture_Male": "t_face_male5_1.png",
+        "1443": {
+            "0": 7
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female5_1.png",
+        "1824": {
+            "0": 6
+        }
+    },
+    "6": {
+        "Texture_Male": "t_face_male0_2.png",
+        "1443": {
+            "0": 8
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female0_2.png",
+        "1824": {
+            "0": 7
+        }
+    },
+    "7": {
+        "Texture_Male": "t_face_male1_2.png",
+        "1443": {
+            "0": 8
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female1_2.png",
+        "1824": {
+            "0": 8
+        }
+    },
+    "8": {
+        "Texture_Male": "t_face_male2_2.png",
+        "1443": {
+            "0": 8
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female2_2.png",
+        "1824": {
+            "0": 9
+        }
+    },
+    "9": {
+        "Texture_Male": "t_face_male3_2.png",
+        "1443": {
+            "0": 8
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female3_2.png",
+        "1824": {
+            "0": 10
+        }
+    },
+    "10": {
+        "Texture_Male": "t_face_male4_2.png",
+        "1443": {
+            "0": 8
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female4_2.png",
+        "1824": {
+            "0": 11
+        }
+    },
+    "11": {
+        "Texture_Male": "t_face_male5_2.png",
+        "1443": {
+            "0": 8
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female5_2.png",
+        "1824": {
+            "0": 12
+        }
+    },
+    "12": {
+        "Texture_Male": "t_face_male0_3.png",
+        "1443": {
+            "0": 9
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female0_3.png",
+        "1824": {
+            "0": 13
+        }
+    },
+    "13": {
+        "Texture_Male": "t_face_male1_3.png",
+        "1443": {
+            "0": 9
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female1_3.png",
+        "1824": {
+            "0": 14
+        }
+    },
+    "14": {
+        "Texture_Male": "t_face_male2_3.png",
+        "1443": {
+            "0": 9
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female2_3.png",
+        "1824": {
+            "0": 15
+        }
+    },
+    "15": {
+        "Texture_Male": "t_face_male3_3.png",
+        "1443": {
+            "0": 9
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female3_3.png",
+        "1824": {
+            "0": 16
+        }
+    },
+    "16": {
+        "Texture_Male": "t_face_male4_3.png",
+        "1443": {
+            "0": 9
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female4_3.png",
+        "1824": {
+            "0": 17
+        }
+    },
+    "17": {
+        "Texture_Male": "t_face_male5_3.png",
+        "1443": {
+            "0": 9
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female5_3.png",
+        "1824": {
+            "0": 18
+        }
+    },
+    "18": {
+        "Texture_Male": "t_face_male0_4.png",
+        "1443": {
+            "0": 10
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female0_4.png",
+        "1824": {
+            "0": 19
+        }
+    },
+    "19": {
+        "Texture_Male": "t_face_male1_4.png",
+        "1443": {
+            "0": 10
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female1_4.png",
+        "1824": {
+            "0": 20
+        }
+    },
+    "20": {
+        "Texture_Male": "t_face_male2_4.png",
+        "1443": {
+            "0": 10
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female2_4.png",
+        "1824": {
+            "0": 21
+        }
+    },
+    "21": {
+        "Texture_Male": "t_face_male3_4.png",
+        "1443": {
+            "0": 10
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female3_4.png",
+        "1824": {
+            "0": 22
+        }
+    },
+    "22": {
+        "Texture_Male": "t_face_male4_4.png",
+        "1443": {
+            "0": 10
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female4_4.png",
+        "1824": {
+            "0": 23
+        }
+    },
+    "23": {
+        "Texture_Male": "t_face_male5_4.png",
+        "1443": {
+            "0": 10
+        },
+        "1487": {
+            "0": 0
+        },
+        "Texture_Female": "t_face_female5_4.png",
+        "1824": {
+            "0": 24
+        }
+    }
+}

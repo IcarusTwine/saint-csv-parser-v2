@@ -128,7 +128,7 @@ class test implements ParseInterface
         $path = "$Resources\PokemonUniteApi/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
         $files = array(
-            "Activity_Base",
+            "Languagemap",
         );
         function hex2str($hex) {
             $str = '';
@@ -163,64 +163,78 @@ class test implements ParseInterface
             $binnum = implode($binarray);
             return bindec(intval($binnum));
         }
-        function varint($Chunk,$pos,$found = 0,$SetLength = 0,$debug = 0){ //0	Varint	int32, int64, uint32, uint64, sint32, sint64, bool, enum
+        function varint($Chunk,$pos,$found = 0,$SetLength = 0,$CN = 0,$debug = 0){ //0	Varint	int32, int64, uint32, uint64, sint32, sint64, bool, enum
             
-            $pos++;
             $Header = 0;
-            if ($found === 1){
-                $Header = wireType($Chunk[$pos])["FieldID"];
-                if ($debug === 1){var_dump($Chunk[$pos]."- varint Header01(preset)");}
-            } else {
-                while ($found === 0){
-                    $msb = wireType($Chunk[$pos])["Binary"]["MSB"];
-                    if ($msb === 0){
-                        $Bytes[] = $Chunk[$pos];
-                        if ($debug === 1){var_dump("Header Bytes Varint");
+            if ($CN === 0){
+                $pos++;
+                if ($found === 1){
+                    $Header = wireType($Chunk[$pos])["FieldID"];
+                    if ($debug === 1){var_dump($Chunk[$pos]."- varint Header01(preset)");}
+                } else {
+                    while ($found === 0){
+                        $msb = wireType($Chunk[$pos])["Binary"]["MSB"];
+                        if ($msb === 0){
+                            $Bytes[] = $Chunk[$pos];
+                            if ($debug === 1){var_dump("Header Bytes Varint");
+                            var_dump($Bytes);}
+                            $Header = bufferVal($Bytes);
+                            $found = 1;
+                            break;
+                        } else {
+                            $Bytes[] = $Chunk[$pos];
+                            $pos++;
+                        }
+                    }
+                }
+                $pos++;
+                $ByteArray = [];
+                $found = 1;
+                $Bytes = [];
+                if ($SetLength === 0){
+                    if ($debug === 1){var_dump($SetLength."- varint SetLength");}
+                    while ($found === 1){
+                        $msb = wireType($Chunk[$pos])["Binary"]["MSB"];
+                        if ($msb === 0){
+                            $Bytes[] = $Chunk[$pos];
+                            if ($debug === 1){var_dump("Data Bytes Varint");
                         var_dump($Bytes);}
-                        $Header = bufferVal($Bytes);
-                        $found = 1;
-                        break;
-                    } else {
-                        $Bytes[] = $Chunk[$pos];
-                        $pos++;
-                        //var_dump($Chunk[$pos]."- varint Header02");
+                            $ByteArray = bufferVal($Bytes);
+                            $pos++;
+                            $found = 1;
+                            break;
+                        } else {
+                            $Bytes[] = $Chunk[$pos];
+                            $pos++;
+                        }
                     }
-                }
-            }
-            $pos++;
-            $ByteArray = [];
-            $found = 1;
-            $Bytes = [];
-            if ($SetLength === 0){
-                if ($debug === 1){var_dump($SetLength."- varint SetLength");}
-                while ($found === 1){
-                    $msb = wireType($Chunk[$pos])["Binary"]["MSB"];
-                    if ($msb === 0){
-                        $Bytes[] = $Chunk[$pos];
-                        if ($debug === 1){var_dump("Data Bytes Varint");
-                    var_dump($Bytes);}
-                        $ByteArray = bufferVal($Bytes);
-                        $pos++;
-                        $found = 1;
-                        break;
-                    } else {
-                        $Bytes[] = $Chunk[$pos];
+                } else {
+                    if ($debug === 1){var_dump($SetLength."- varint SetLength");}
+                    $SetLength = $SetLength - 2;
+                    for ($i=0; $i < $SetLength; $i++) { 
+                        $ByteArray[] = wireType($Chunk[$pos])['Binary']["Dec"];
+                        if ($debug === 1){ var_dump($Chunk[$pos]."- varint SetLength Byte");}
                         $pos++;
                     }
                 }
+                $Output["Data"][$Header][] = $ByteArray;
+                $Output["Pos"] = $pos;
+                
+                return $Output;
             } else {
                 if ($debug === 1){var_dump($SetLength."- varint SetLength");}
-                $SetLength = $SetLength - 2;
                 for ($i=0; $i < $SetLength; $i++) { 
-                    $ByteArray[] = wireType($Chunk[$pos])['Binary']["Dec"];
+                    $ByteArray[] = $Chunk[$pos];
                     if ($debug === 1){ var_dump($Chunk[$pos]."- varint SetLength Byte");}
                     $pos++;
                 }
+                $ByteArray = hex2str(implode($ByteArray));
+                var_dump($ByteArray);
+                $Output["Data"][$Header][] = $ByteArray;
+                $Output["Pos"] = $pos;
+                
+                return $Output;
             }
-            $Output["Data"][$Header][] = $ByteArray;
-            $Output["Pos"] = $pos;
-            
-            return $Output;
         }
         
         function lendel($Chunk,$pos,$debug = 0){//2	Length-delimited	string, bytes, embedded messages, packed repeated fields
@@ -299,7 +313,7 @@ class test implements ParseInterface
                     else {
                         $pos = $StorePos;
                         if ($debug === 1){var_dump("Running Varint inside Lendel 02");}
-                        $Data = varint($Chunk,$pos,$found = 1,$Length);
+                        $Data = varint($Chunk,$pos,$found = 1,$Length,$CN = 0);
                         $pos = $Data["Pos"];
                         $Output["Data"][$Header][] = $Data["Data"];
                         $Output["Pos"] = $pos;
@@ -346,7 +360,7 @@ class test implements ParseInterface
                 return $Output;
             }
         }
-        $debug = 0;
+        $debug = 1;
         foreach($files as $FileNameraw){
             $filename = str_replace("databin_","",$FileNameraw);
             var_dump($filename);
@@ -380,12 +394,12 @@ class test implements ParseInterface
                 $Chunks[] = $Array;
             }
             
-            //foreach($Chunks as $Chunk){
-            //    foreach($Chunk as $Byte){
-            //        $TestAr[] = (wireType($Byte));
-            //    }
-            //}
-            //$this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+            foreach($Chunks as $Chunk){
+                foreach($Chunk as $Byte){
+                    $TestAr[] = (wireType($Byte));
+                }
+            }
+            $this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
     
             $Output = [];
             foreach($Chunks as $Num => $Chunk){
@@ -400,7 +414,7 @@ class test implements ParseInterface
                     if ($debug === 1){var_dump("Chunk -".$Num);
                     var_dump($pos);
                     var_dump($Chunk[$pos]);}
-                    //sleep(1);
+                    sleep(1);
                     switch (wireType($Chunk[$pos])['WireType']) {
                         case 0:
                             if ($debug === 1){var_dump($Chunk[$pos]."- Start Varint");}

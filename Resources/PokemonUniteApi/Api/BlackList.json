@@ -1,0 +1,662 @@
+{
+    "0": {
+        "Device_Model": "MSM8916",
+        "Device_Name": "OPPO A33;OPPO A33M",
+        "ID": 20299
+    },
+    "1": {
+        "Device_Model": "MSM8916",
+        "Device_Name": "VIVO Y51A;VIVO Y51",
+        "ID": 20300
+    },
+    "2": {
+        "Device_Model": "MT6797",
+        "Device_Name": "REDMI NOTE 4",
+        "ID": 20257
+    },
+    "3": {
+        "Device_Model": "MT6797M",
+        "Device_Name": "LE X620;LE X520",
+        "ID": 20258
+    },
+    "4": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "OPPO A57;OPPO A57T",
+        "ID": 20276
+    },
+    "5": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "DIG-AL00;DIG-TL10",
+        "ID": 20277
+    },
+    "6": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "TRT-AL00A;TRT-TL10;TRT-AL00;TRT-TL10A",
+        "ID": 20278
+    },
+    "7": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "REDMI NOTE 5A",
+        "ID": 20279
+    },
+    "8": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "VIVO Y55A;VIVO Y55;VIVO Y55L",
+        "ID": 20280
+    },
+    "9": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "VIVO Y66;VIVO Y66L",
+        "ID": 20281
+    },
+    "10": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "LDN-AL00;LDN-AL20;LDN-TL20",
+        "ID": 20282
+    },
+    "11": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "ATU-AL10;ATU-TL10",
+        "ID": 20283
+    },
+    "12": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "DLI-AL10;DLI-TL20",
+        "ID": 20284
+    },
+    "13": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "AUM-AL00;AUM-TL20",
+        "ID": 20285
+    },
+    "14": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "VIVO Y66I A;VIVO Y66I",
+        "ID": 20286
+    },
+    "15": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "VIVO Y71A",
+        "ID": 20287
+    },
+    "16": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "SLA-AL00;SLA-TL10",
+        "ID": 20288
+    },
+    "17": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "VIVO Y71",
+        "ID": 20289
+    },
+    "18": {
+        "Device_Model": "MSM8976Pro",
+        "Device_Name": "OPPO R9S PLUS;OPPO R9S PLUST",
+        "ID": 20186
+    },
+    "19": {
+        "Device_Model": "MSM8976Pro",
+        "Device_Name": "VIVO X9PLUS;VIVO X9PLUS L",
+        "ID": 20187
+    },
+    "20": {
+        "Device_Model": "MSM8976SG",
+        "Device_Name": "VIVO X9S PLUS;VIVO X9S PLUS L",
+        "ID": 20188
+    },
+    "21": {
+        "Device_Model": "MSM8976",
+        "Device_Name": "OPPO R9 PLUSM A;OPPO R9 PLUSTM A",
+        "ID": 20196
+    },
+    "22": {
+        "Device_Model": "MSM8976",
+        "Device_Name": "VIVO X6S A",
+        "ID": 20197
+    },
+    "23": {
+        "Device_Model": "MSM8976",
+        "Device_Name": "VIVO X7PLUS",
+        "ID": 20198
+    },
+    "24": {
+        "Device_Model": "MSM8976",
+        "Device_Name": "VIVO X7",
+        "ID": 20199
+    },
+    "25": {
+        "Device_Model": "MSM8976",
+        "Device_Name": "VIVO X9S;VIVO X9S L",
+        "ID": 20200
+    },
+    "26": {
+        "Device_Model": "MSM8976",
+        "Device_Name": "VIVO XPLAY5A",
+        "ID": 20201
+    },
+    "27": {
+        "Device_Model": "MSM8956",
+        "Device_Name": "REDMI NOTE 3",
+        "ID": 20202
+    },
+    "28": {
+        "Device_Model": "MT6762",
+        "Device_Name": "V1732A;V1732T",
+        "ID": 20274
+    },
+    "29": {
+        "Device_Model": "MT6750",
+        "Device_Name": "OPPO A37M;OPPO A37T",
+        "ID": 20290
+    },
+    "30": {
+        "Device_Model": "MT6750",
+        "Device_Name": "OPPO A59S;OPPO A59ST",
+        "ID": 20291
+    },
+    "31": {
+        "Device_Model": "MT6750",
+        "Device_Name": "OPPO A59M",
+        "ID": 20292
+    },
+    "32": {
+        "Device_Model": "MT6750",
+        "Device_Name": "VIVO Y67A;VIVO Y67L;VIVO Y67",
+        "ID": 20293
+    },
+    "33": {
+        "Device_Model": "MT6750",
+        "Device_Name": "JMM-AL00;JMM-AL10",
+        "ID": 20294
+    },
+    "34": {
+        "Device_Model": "MT6739",
+        "Device_Name": "DRA-AL00;DRA-TL00",
+        "ID": 20295
+    },
+    "35": {
+        "Device_Model": "MSM8939",
+        "Device_Name": "R7PLUSM;R7PLUS",
+        "ID": 20296
+    },
+    "36": {
+        "Device_Model": "MSM8939",
+        "Device_Name": "VIVO V3MAX A",
+        "ID": 20297
+    },
+    "37": {
+        "Device_Model": "MSM8939",
+        "Device_Name": "VIVO V3M A",
+        "ID": 20298
+    },
+    "38": {
+        "Device_Model": "MSM8996",
+        "Device_Name": "SM-G9350",
+        "ID": 20203
+    },
+    "39": {
+        "Device_Model": "MSM8996",
+        "Device_Name": "VIVO XPLAY6",
+        "ID": 20204
+    },
+    "40": {
+        "Device_Model": "MSM8996Lite",
+        "Device_Name": "MI 5",
+        "ID": 20205
+    },
+    "41": {
+        "Device_Model": "MT6763",
+        "Device_Name": "VIVO Y75A;VIVO Y75",
+        "ID": 20270
+    },
+    "42": {
+        "Device_Model": "MT6752",
+        "Device_Name": "OPPO R7S;OPPO R7SM",
+        "ID": 20230
+    },
+    "43": {
+        "Device_Model": "MT6752",
+        "Device_Name": "VIVO X5MAX",
+        "ID": 20231
+    },
+    "44": {
+        "Device_Model": "MT6752",
+        "Device_Name": "VIVO X6D;VIVO X6L",
+        "ID": 20232
+    },
+    "45": {
+        "Device_Model": "MT6752",
+        "Device_Name": "VIVO X6PLUS D",
+        "ID": 20233
+    },
+    "46": {
+        "Device_Model": "SDM632",
+        "Device_Name": "REDMI 7",
+        "ID": 30215
+    },
+    "47": {
+        "Device_Model": "SDM632",
+        "Device_Name": "BKK-AL10;BKK-AL00;BKK-TL00",
+        "ID": 30216
+    },
+    "48": {
+        "Device_Model": "MSM8953Pro",
+        "Device_Name": "V1730EA",
+        "ID": 30217
+    },
+    "49": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "OPPO A77;OPPO A77T",
+        "ID": 30218
+    },
+    "50": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "OPPO R9S;OPPO R9st",
+        "ID": 30219
+    },
+    "51": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "OPPO+R9s",
+        "ID": 30220
+    },
+    "52": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "vivo X9L;VIVO X9I;vivo X9",
+        "ID": 30221
+    },
+    "53": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "vivo+X9",
+        "ID": 30222
+    },
+    "54": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "VIVO Y79A;VIVO Y79",
+        "ID": 30223
+    },
+    "55": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "HUAWEI CAZ-AL10;HUAWEI CAZ-TL20;HUAWEI CAZ-TL10",
+        "ID": 30224
+    },
+    "56": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "HUAWEI MLA-AL10",
+        "ID": 30225
+    },
+    "57": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "MI 5X",
+        "ID": 30226
+    },
+    "58": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "MI MAX 2",
+        "ID": 30227
+    },
+    "59": {
+        "Device_Model": "MSM8953",
+        "Device_Name": "REDMI 5 PLUS",
+        "ID": 30228
+    },
+    "60": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "PIC-AL00;PIC-TL00",
+        "ID": 30229
+    },
+    "61": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "BAC-AL00;BAC-TL00",
+        "ID": 30230
+    },
+    "62": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "ANE-AL00;ANE-TL00",
+        "ID": 30231
+    },
+    "63": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "BAH2-W09;BAH2-AL10",
+        "ID": 30232
+    },
+    "64": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "FIG-AL10;FIG-AL00;FIG-TL10",
+        "ID": 30233
+    },
+    "65": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "FLA-AL10;FLA-AL20;FLA-TL10",
+        "ID": 30234
+    },
+    "66": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "AGS2-W09;AGS2-AL00",
+        "ID": 30235
+    },
+    "67": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "AGS2-W09HN",
+        "ID": 30236
+    },
+    "68": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "RNE-AL00",
+        "ID": 30237
+    },
+    "69": {
+        "Device_Model": "Kirin655",
+        "Device_Name": "BLN-AL40",
+        "ID": 30238
+    },
+    "70": {
+        "Device_Model": "Kirin655",
+        "Device_Name": "PRA-AL00X;PRA-AL00;PRA-TL10",
+        "ID": 30239
+    },
+    "71": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "LLD-AL20;LLD-AL30",
+        "ID": 30240
+    },
+    "72": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "LLD-AL10;LLD-AL00",
+        "ID": 30241
+    },
+    "73": {
+        "Device_Model": "Kirin655",
+        "Device_Name": "BLN-AL10;BLN-TL10;BLN-AL20",
+        "ID": 30242
+    },
+    "74": {
+        "Device_Model": "Kirin659",
+        "Device_Name": "BND-AL10;BND-AL00;BND-TL10",
+        "ID": 30243
+    },
+    "75": {
+        "Device_Model": "SDM439",
+        "Device_Name": "V1818A;V1818T",
+        "ID": 30244
+    },
+    "76": {
+        "Device_Model": "SDM439",
+        "Device_Name": "Redmi 8A",
+        "ID": 30245
+    },
+    "77": {
+        "Device_Model": "Kirin650",
+        "Device_Name": "NEM-AL10;NEM-TL00",
+        "ID": 30246
+    },
+    "78": {
+        "Device_Model": "MT6755",
+        "Device_Name": "OPPO R9km;oppo r9tm;oppo r9m;OPPO R9T",
+        "ID": 30247
+    },
+    "79": {
+        "Device_Model": "MT6755",
+        "Device_Name": "M5 NOTE",
+        "ID": 30248
+    },
+    "80": {
+        "Device_Model": "SDM450",
+        "Device_Name": "PBAM00;PBBM30;PBBT30;PBAT00",
+        "ID": 30249
+    },
+    "81": {
+        "Device_Model": "SDM450",
+        "Device_Name": "PBFM00;PBFT00",
+        "ID": 30250
+    },
+    "82": {
+        "Device_Model": "SDM450",
+        "Device_Name": "VIVO Y85A;VIVO Y85",
+        "ID": 30251
+    },
+    "83": {
+        "Device_Model": "SDM450",
+        "Device_Name": "DUB-AL00;DUB-AL00A;DUB-AL20;DUB-TL00",
+        "ID": 30252
+    },
+    "84": {
+        "Device_Model": "SDM450",
+        "Device_Name": "LND-AL30;LND-TL40;LND-AL40",
+        "ID": 30253
+    },
+    "85": {
+        "Device_Model": "MT6797M",
+        "Device_Name": "LE X620;Le X520",
+        "ID": 30254
+    },
+    "86": {
+        "Device_Model": "MT6765",
+        "Device_Name": "MOA-AL20",
+        "ID": 30255
+    },
+    "87": {
+        "Device_Model": "MT6765",
+        "Device_Name": "PDBM00",
+        "ID": 30256
+    },
+    "88": {
+        "Device_Model": "MT6765",
+        "Device_Name": "V1901A",
+        "ID": 30257
+    },
+    "89": {
+        "Device_Model": "MT6765",
+        "Device_Name": "V1901T",
+        "ID": 30258
+    },
+    "90": {
+        "Device_Model": "MT6765",
+        "Device_Name": "V1930A",
+        "ID": 30259
+    },
+    "91": {
+        "Device_Model": "MT6765",
+        "Device_Name": "MED-AL00",
+        "ID": 30260
+    },
+    "92": {
+        "Device_Model": "MT6765",
+        "Device_Name": "MRD-AL00",
+        "ID": 30261
+    },
+    "93": {
+        "Device_Model": "MT6765",
+        "Device_Name": "MI PLAY",
+        "ID": 30262
+    },
+    "94": {
+        "Device_Model": "MT6765",
+        "Device_Name": "JAT-AL00;JAT-TL00",
+        "ID": 30263
+    },
+    "95": {
+        "Device_Model": "MT6765",
+        "Device_Name": "MOA-AL00",
+        "ID": 30264
+    },
+    "96": {
+        "Device_Model": "Kirin658",
+        "Device_Name": "WAS-AL00",
+        "ID": 30265
+    },
+    "97": {
+        "Device_Model": "MT6763T",
+        "Device_Name": "OPPO A73;OPPO A73T",
+        "ID": 30266
+    },
+    "98": {
+        "Device_Model": "MT6763T",
+        "Device_Name": "OPPO A79;OPPO A79K;OPPO A79t;OPPO A79KT",
+        "ID": 30267
+    },
+    "99": {
+        "Device_Model": "MT6763T",
+        "Device_Name": "OPPO A83;OPPO A83T",
+        "ID": 30268
+    },
+    "100": {
+        "Device_Model": "MT6763",
+        "Device_Name": "vivo Y75A;VIVO Y75",
+        "ID": 30269
+    },
+    "101": {
+        "Device_Model": "MT6762",
+        "Device_Name": "Redmi 6;REDMI 6A",
+        "ID": 30270
+    },
+    "102": {
+        "Device_Model": "MT6762",
+        "Device_Name": "VIVO Y83A;VIVO Y83",
+        "ID": 30271
+    },
+    "103": {
+        "Device_Model": "MT6762",
+        "Device_Name": "V1818CA;V1818CT",
+        "ID": 30272
+    },
+    "104": {
+        "Device_Model": "MT6762",
+        "Device_Name": "V1732A;V1732T",
+        "ID": 30273
+    },
+    "105": {
+        "Device_Model": "MT6762R",
+        "Device_Name": "KSA-AL10",
+        "ID": 30274
+    },
+    "106": {
+        "Device_Model": "MT6757CD",
+        "Device_Name": "GIONEE S10;GIONEE S10L",
+        "ID": 30275
+    },
+    "107": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "OPPO A57;OPPO A57t",
+        "ID": 30276
+    },
+    "108": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "OPPO+A57",
+        "ID": 30277
+    },
+    "109": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "BAH3-W09",
+        "ID": 30278
+    },
+    "110": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "DIG-AL00;DIG-TL10",
+        "ID": 30279
+    },
+    "111": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "TRT-AL00A;TRT-TL10;TRT-AL00;TRT-TL10A",
+        "ID": 30280
+    },
+    "112": {
+        "Device_Model": "MSM8940",
+        "Device_Name": "REDMI NOTE 5A",
+        "ID": 30281
+    },
+    "113": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "VIVO Y55A;vivo Y55;VIVO Y55L",
+        "ID": 30282
+    },
+    "114": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "VIVO Y66;VIVO Y66L",
+        "ID": 30283
+    },
+    "115": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "LDN-AL00;LDN-AL20;LDN-TL20",
+        "ID": 30284
+    },
+    "116": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "ATU-AL10;ATU-TL10",
+        "ID": 30285
+    },
+    "117": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "DLI-AL10;DLI-TL20",
+        "ID": 30286
+    },
+    "118": {
+        "Device_Model": "MSM8937",
+        "Device_Name": "AUM-AL00;AUM-TL20",
+        "ID": 30287
+    },
+    "119": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "VIVO Y66I A;VIVO Y66I",
+        "ID": 30288
+    },
+    "120": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "vivo Y71A",
+        "ID": 30289
+    },
+    "121": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "SLA-AL00;SLA-TL10",
+        "ID": 30290
+    },
+    "122": {
+        "Device_Model": "MSM8917",
+        "Device_Name": "vivo Y71",
+        "ID": 30291
+    },
+    "123": {
+        "Device_Model": "MSM8920",
+        "Device_Name": "S10CL",
+        "ID": 30292
+    },
+    "124": {
+        "Device_Model": "MT6750",
+        "Device_Name": "OPPO A37M;OPPO A37t",
+        "ID": 30293
+    },
+    "125": {
+        "Device_Model": "MT6750",
+        "Device_Name": "OPPO A59S;OPPO A59st",
+        "ID": 30294
+    },
+    "126": {
+        "Device_Model": "MT6750",
+        "Device_Name": "vivo Y67A;VIVO Y67L;VIVO Y67",
+        "ID": 30295
+    },
+    "127": {
+        "Device_Model": "MT6750",
+        "Device_Name": "JMM-AL00;JMM-AL10",
+        "ID": 30296
+    },
+    "128": {
+        "Device_Model": "MT6739",
+        "Device_Name": "DRA-AL00;DRA-TL00",
+        "ID": 30297
+    },
+    "129": {
+        "Device_Model": "MT6739",
+        "Device_Name": "DUA-AL00;DUA-TL00",
+        "ID": 30298
+    },
+    "130": {
+        "Device_Model": "MSM8952",
+        "Device_Name": "CAM-AL00;CAM-TL00;CAM-TL00H",
+        "ID": 30299
+    },
+    "131": {
+        "Device_Model": "MSM8916",
+        "Device_Name": "OPPO A33;oppo a33m",
+        "ID": 30300
+    }
+}

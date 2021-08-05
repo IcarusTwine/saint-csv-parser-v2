@@ -1,0 +1,98 @@
+{
+    "0": {
+        "ID": 1,
+        "Name": "Hint_Info_Active_Point_Get_Score",
+        "Description": {
+            "en": "{0}+ Score Bonus: +{1}",
+            "chs": "本次对战分数大于{0}：+{1}\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "スコア{0}超えボーナス：+{1}",
+            "ko": "",
+            "tc": "\r"
+        }
+    },
+    "1": {
+        "ID": 2,
+        "Name": "Hint_Info_Active_Point_Winning_Streak",
+        "Description": {
+            "en": "Win Streak (×{0}) Bonus: +{1}",
+            "chs": "{0}连胜：+{1}\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "{0}連勝ボーナス：+{1}",
+            "ko": "",
+            "tc": "\r"
+        }
+    },
+    "2": {
+        "ID": 3,
+        "Name": "Hint_Info_Active_Point_Ranked_Division_Protect",
+        "Description": {
+            "en": "<color=#fff332>Rank Down Prevention: −{0}</color>",
+            "chs": "<color=#fff332>触发掉段保护：-{0}</color>\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "<color=#fff332>ランクダウン防止：-{0}</color>",
+            "ko": "",
+            "tc": "\r"
+        }
+    },
+    "3": {
+        "ID": 4,
+        "Name": "Hint_Info_Active_Point_No_Hangup",
+        "Description": {
+            "en": "",
+            "chs": "单局无挂机：+{0}\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "【ROM確認用】正々堂々ボーナス：+{0}（仮）",
+            "ko": "",
+            "tc": "\r"
+        }
+    },
+    "4": {
+        "ID": 5,
+        "Name": "Hint_Info_Active_Point_Double_Score_Comeback",
+        "Description": {
+            "en": "",
+            "chs": "双倍得分逆转战局：+{0}\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "【ROM確認用】ダブルスコア逆転勝利ボーナス：+{0}",
+            "ko": "",
+            "tc": "\r"
+        }
+    },
+    "5": {
+        "ID": 6,
+        "Name": "Hint_Info_Active_Point_Interrupt_Give_Score",
+        "Description": {
+            "en": "{0}+ Goals Blocked Bonus: +{1}",
+            "chs": "{0}次打断对方得分：+{1}\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "ゴール阻止ボーナス（{0}回以上）：+{1}",
+            "ko": "",
+            "tc": "\r"
+        }
+    }
+}

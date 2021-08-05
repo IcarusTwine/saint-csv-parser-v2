@@ -1,0 +1,2247 @@
+{
+    "0": {
+        "ID": 1,
+        "Device_Name": "coolpad c105"
+    },
+    "1": {
+        "ID": 2,
+        "Device_Name": "xiaomi mi 4w"
+    },
+    "2": {
+        "ID": 3,
+        "Device_Name": "huawei nexus 6p"
+    },
+    "3": {
+        "ID": 4,
+        "Device_Name": "huawei huawei rio-al00"
+    },
+    "4": {
+        "ID": 5,
+        "Device_Name": "Meizu m2"
+    },
+    "5": {
+        "ID": 6,
+        "Device_Name": "Xiaomi MI 4LTE"
+    },
+    "6": {
+        "ID": 7,
+        "Device_Name": "Xiaomi Redmi 3S"
+    },
+    "7": {
+        "ID": 8,
+        "Device_Name": "Xiaomi Mi-4c"
+    },
+    "8": {
+        "ID": 9,
+        "Device_Name": "Xiaomi 2014812"
+    },
+    "9": {
+        "ID": 10,
+        "Device_Name": "samsung SM-A5000"
+    },
+    "10": {
+        "ID": 11,
+        "Device_Name": "Xiaomi Redmi 3"
+    },
+    "11": {
+        "ID": 12,
+        "Device_Name": "OPPO OPPO R9 Plusm A"
+    },
+    "12": {
+        "ID": 13,
+        "Device_Name": "Xiaomi MI 3C"
+    },
+    "13": {
+        "ID": 14,
+        "Device_Name": "Meizu m3 note"
+    },
+    "14": {
+        "ID": 15,
+        "Device_Name": "GiONEE GN9010"
+    },
+    "15": {
+        "ID": 16,
+        "Device_Name": "HUAWEI HUAWEI NXT-CL00"
+    },
+    "16": {
+        "ID": 17,
+        "Device_Name": "Xiaomi Redmi Note 2"
+    },
+    "17": {
+        "ID": 18,
+        "Device_Name": "Xiaomi MI NOTE LTE"
+    },
+    "18": {
+        "ID": 19,
+        "Device_Name": "vivo vivo X6Plus D"
+    },
+    "19": {
+        "ID": 20,
+        "Device_Name": "vivo vivo Xplay5A"
+    },
+    "20": {
+        "ID": 21,
+        "Device_Name": "samsung GT-N7100"
+    },
+    "21": {
+        "ID": 22,
+        "Device_Name": "Meizu m2 note"
+    },
+    "22": {
+        "ID": 23,
+        "Device_Name": "Meizu m1 metal"
+    },
+    "23": {
+        "ID": 24,
+        "Device_Name": "Meizu m1 note"
+    },
+    "24": {
+        "ID": 25,
+        "Device_Name": "vivo vivo X5pro D"
+    },
+    "25": {
+        "ID": 26,
+        "Device_Name": "vivo vivo X5M"
+    },
+    "26": {
+        "ID": 27,
+        "Device_Name": "vivo vivo X5L"
+    },
+    "27": {
+        "ID": 28,
+        "Device_Name": "HUAWEI EVA-AL00"
+    },
+    "28": {
+        "ID": 29,
+        "Device_Name": "Xiaomi MI 5"
+    },
+    "29": {
+        "ID": 30,
+        "Device_Name": "Xiaomi Redmi Note 3"
+    },
+    "30": {
+        "ID": 31,
+        "Device_Name": "Meizu MX4 Pro"
+    },
+    "31": {
+        "ID": 32,
+        "Device_Name": "HUAWEI Che1-CL20"
+    },
+    "32": {
+        "ID": 33,
+        "Device_Name": "OPPO X9007"
+    },
+    "33": {
+        "ID": 34,
+        "Device_Name": "samsung SM-N9008V"
+    },
+    "34": {
+        "ID": 35,
+        "Device_Name": "vivo vivo X5S L"
+    },
+    "35": {
+        "ID": 36,
+        "Device_Name": "vivo vivo X5Max+"
+    },
+    "36": {
+        "ID": 37,
+        "Device_Name": "Xiaomi MI 2S"
+    },
+    "37": {
+        "ID": 38,
+        "Device_Name": "vivo vivo V3Max A"
+    },
+    "38": {
+        "ID": 39,
+        "Device_Name": "vivo vivo X7"
+    },
+    "39": {
+        "ID": 40,
+        "Device_Name": "vivo vivo X6S A"
+    },
+    "40": {
+        "ID": 41,
+        "Device_Name": "vivo vivo X6A"
+    },
+    "41": {
+        "ID": 42,
+        "Device_Name": "vivo vivo X6D"
+    },
+    "42": {
+        "ID": 43,
+        "Device_Name": "vivo vivo V3M A"
+    },
+    "43": {
+        "ID": 44,
+        "Device_Name": "OPPO OPPO R9m"
+    },
+    "44": {
+        "ID": 45,
+        "Device_Name": "Xiaomi HM NOTE 1S"
+    },
+    "45": {
+        "ID": 46,
+        "Device_Name": "Meizu PRO 6 Plus"
+    },
+    "46": {
+        "ID": 47,
+        "Device_Name": "vivo vivo X7Plus"
+    },
+    "47": {
+        "ID": 48,
+        "Device_Name": "OPPO OPPO R9s Plus"
+    },
+    "48": {
+        "ID": 49,
+        "Device_Name": "vivo vivo X9Plus"
+    },
+    "49": {
+        "ID": 50,
+        "Device_Name": "Xiaomi MIX"
+    },
+    "50": {
+        "ID": 51,
+        "Device_Name": "Xiaomi MI 5s"
+    },
+    "51": {
+        "ID": 52,
+        "Device_Name": "coolpad C105-8"
+    },
+    "52": {
+        "ID": 53,
+        "Device_Name": "coolpad C105-6"
+    },
+    "53": {
+        "ID": 54,
+        "Device_Name": "samsung SM-G9350"
+    },
+    "54": {
+        "ID": 55,
+        "Device_Name": "samsung SM-G925F"
+    },
+    "55": {
+        "ID": 56,
+        "Device_Name": "ZUK ZUK Z2121"
+    },
+    "56": {
+        "ID": 57,
+        "Device_Name": "OPPO OPPO R9 Plustm A"
+    },
+    "57": {
+        "ID": 58,
+        "Device_Name": "HUAWEI DUK-AL20"
+    },
+    "58": {
+        "ID": 59,
+        "Device_Name": "oppo oppo r9s plust"
+    },
+    "59": {
+        "ID": 60,
+        "Device_Name": "samsung sm-g9550"
+    },
+    "60": {
+        "ID": 61,
+        "Device_Name": "samsung sm-g9500"
+    },
+    "61": {
+        "ID": 62,
+        "Device_Name": "vivo vivo xplay6"
+    },
+    "62": {
+        "ID": 63,
+        "Device_Name": "vivo vivo x9plus l"
+    },
+    "63": {
+        "ID": 64,
+        "Device_Name": "oppo oppo r11*"
+    },
+    "64": {
+        "ID": 65,
+        "Device_Name": "meizu pro 7-h"
+    },
+    "65": {
+        "ID": 66,
+        "Device_Name": "meizu pro 7 plus"
+    },
+    "66": {
+        "ID": 67,
+        "Device_Name": "xiaomi mi 6*"
+    },
+    "67": {
+        "ID": 68,
+        "Device_Name": "gionee m2017"
+    },
+    "68": {
+        "ID": 69,
+        "Device_Name": "samsung sm-g9508"
+    },
+    "69": {
+        "ID": 70,
+        "Device_Name": "vivo vivo x9plus_"
+    },
+    "70": {
+        "ID": 71,
+        "Device_Name": "everest 8848 m4"
+    },
+    "71": {
+        "ID": 72,
+        "Device_Name": "vivo vivo x20"
+    },
+    "72": {
+        "ID": 73,
+        "Device_Name": "vivo vivo x20A"
+    },
+    "73": {
+        "ID": 74,
+        "Device_Name": "vivo vivo x9s"
+    },
+    "74": {
+        "ID": 75,
+        "Device_Name": "vivo vivo x9s plus"
+    },
+    "75": {
+        "ID": 76,
+        "Device_Name": "Xiaomi MIX 2"
+    },
+    "76": {
+        "ID": 77,
+        "Device_Name": "Xiaomi Mi Note 3"
+    },
+    "77": {
+        "ID": 78,
+        "Device_Name": "samsung sm-n9508"
+    },
+    "78": {
+        "ID": 79,
+        "Device_Name": "samsung sm-n9500"
+    },
+    "79": {
+        "ID": 80,
+        "Device_Name": "vivo vivo x20plus"
+    },
+    "80": {
+        "ID": 81,
+        "Device_Name": "vivo vivo x20plus a"
+    },
+    "81": {
+        "ID": 82,
+        "Device_Name": "htc htc u-3w"
+    },
+    "82": {
+        "ID": 83,
+        "Device_Name": "nubia nx595j"
+    },
+    "83": {
+        "ID": 84,
+        "Device_Name": "vivo vivo xplay6l"
+    },
+    "84": {
+        "ID": 85,
+        "Device_Name": "vivo vivo x9s plus l"
+    },
+    "85": {
+        "ID": 86,
+        "Device_Name": "vivo vivo x9s l"
+    },
+    "86": {
+        "ID": 87,
+        "Device_Name": "vivo vivo 1720"
+    },
+    "87": {
+        "ID": 88,
+        "Device_Name": "vivo vivo 1721"
+    },
+    "88": {
+        "ID": 89,
+        "Device_Name": "smartisan os105"
+    },
+    "89": {
+        "1409": {
+            "0": "7|7"
+        },
+        "ID": 90,
+        "Device_Name": "HUAWEI ALP-TL00"
+    },
+    "90": {
+        "1409": {
+            "0": "7|7"
+        },
+        "ID": 91,
+        "Device_Name": "HUAWEI ALP-AL00"
+    },
+    "91": {
+        "ID": 92,
+        "Device_Name": "HUAWEI BLA-AL00"
+    },
+    "92": {
+        "ID": 93,
+        "Device_Name": "HUAWEI BLA-TL00"
+    },
+    "93": {
+        "ID": 94,
+        "Device_Name": "HUAWEI BKL-AL20"
+    },
+    "94": {
+        "ID": 95,
+        "Device_Name": "HUAWEI BKL-AL00"
+    },
+    "95": {
+        "ID": 96,
+        "Device_Name": "HUAWEI BKL-TL10"
+    },
+    "96": {
+        "1409": {
+            "0": "7|7"
+        },
+        "ID": 97,
+        "Device_Name": "unknown him-al00"
+    },
+    "97": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 98,
+        "Device_Name": "vivo vivo x21a"
+    },
+    "98": {
+        "1409": {
+            "0": "8|8"
+        },
+        "ID": 99,
+        "Device_Name": "xiaomi mix 2s"
+    },
+    "99": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 100,
+        "Device_Name": "oppo pacm00"
+    },
+    "100": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 101,
+        "Device_Name": "OPPO PACT00"
+    },
+    "101": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 102,
+        "Device_Name": "OPPO CPH1835"
+    },
+    "102": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 103,
+        "Device_Name": "OPPO CPH1819"
+    },
+    "103": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 104,
+        "Device_Name": "OPPO CPH1821"
+    },
+    "104": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 105,
+        "Device_Name": "OPPO PAAM00"
+    },
+    "105": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 106,
+        "Device_Name": "OPPO PAAT00"
+    },
+    "106": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 107,
+        "Device_Name": "OPPO CPH1831"
+    },
+    "107": {
+        "1409": {
+            "0": "8|10"
+        },
+        "Version": "1.97",
+        "ID": 108,
+        "Device_Name": "OPPO CPH1833"
+    },
+    "108": {
+        "ID": 109,
+        "Device_Name": "Xiaomi Redmi Note 5"
+    },
+    "109": {
+        "ID": 110,
+        "Device_Name": "Xiaomi Redmi Note 5 Pro"
+    },
+    "110": {
+        "Version": "1.97",
+        "ID": 111,
+        "Device_Name": "vivo vivo X21"
+    },
+    "111": {
+        "Version": "1.97",
+        "ID": 112,
+        "Device_Name": "vivo vivo X21UD"
+    },
+    "112": {
+        "Version": "1.97",
+        "ID": 113,
+        "Device_Name": "vivo vivo X21UD A"
+    },
+    "113": {
+        "ID": 114,
+        "Device_Name": "vivo vivo X20Plus UD"
+    },
+    "114": {
+        "Version": "1.92",
+        "ID": 115,
+        "Device_Name": "Xiaomi MI 8"
+    },
+    "115": {
+        "Version": "1.92",
+        "ID": 116,
+        "Device_Name": "Xiaomi MI 8 SE"
+    },
+    "116": {
+        "Version": "1.92",
+        "ID": 117,
+        "Device_Name": "Xiaomi MI 8 Explorer Edition"
+    },
+    "117": {
+        "Version": "1.95",
+        "ID": 118,
+        "Device_Name": "Xiaomi Redmi 6 Pro"
+    },
+    "118": {
+        "ID": 119,
+        "Device_Name": "samsung SM-G9600"
+    },
+    "119": {
+        "ID": 120,
+        "Device_Name": "samsung SM-G9608"
+    },
+    "120": {
+        "ID": 121,
+        "Device_Name": "samsung SM-G9650"
+    },
+    "121": {
+        "ID": 122,
+        "Device_Name": "samsung SM-G9300"
+    },
+    "122": {
+        "ID": 123,
+        "Device_Name": "samsung SM-G9308"
+    },
+    "123": {
+        "ID": 124,
+        "Device_Name": "samsung SM-G9250"
+    },
+    "124": {
+        "ID": 125,
+        "Device_Name": "samsung SM-G950U"
+    },
+    "125": {
+        "ID": 126,
+        "Device_Name": "samsung SM-G955U"
+    },
+    "126": {
+        "ID": 127,
+        "Device_Name": "samsung SM-G960U"
+    },
+    "127": {
+        "ID": 128,
+        "Device_Name": "samsung SM-G965U"
+    },
+    "128": {
+        "ID": 129,
+        "Device_Name": "samsung SM-N950U"
+    },
+    "129": {
+        "ID": 130,
+        "Device_Name": "Meizu MEIZU E3"
+    },
+    "130": {
+        "ID": 131,
+        "Device_Name": "Meizu 15 Plus"
+    },
+    "131": {
+        "ID": 132,
+        "Device_Name": "Meizu 15"
+    },
+    "132": {
+        "ID": 133,
+        "Device_Name": "Meizu M15"
+    },
+    "133": {
+        "Version": "1.94",
+        "ID": 134,
+        "Device_Name": "HUAWEI ANE-LX1"
+    },
+    "134": {
+        "Version": "1.94",
+        "ID": 135,
+        "Device_Name": "HUAWEI ANE-LX2"
+    },
+    "135": {
+        "Version": "1.94",
+        "ID": 136,
+        "Device_Name": "HUAWEI ANE-LX3"
+    },
+    "136": {
+        "Version": "1.94",
+        "ID": 137,
+        "Device_Name": "HUAWEI ANE-LX2J"
+    },
+    "137": {
+        "Version": "1.94",
+        "ID": 138,
+        "Device_Name": "HUAWEI ANE-HWV32"
+    },
+    "138": {
+        "Version": "1.94",
+        "ID": 139,
+        "Device_Name": "HUAWEI ANE-AL00"
+    },
+    "139": {
+        "Version": "1.94",
+        "ID": 140,
+        "Device_Name": "HUAWEI ANE-TL00"
+    },
+    "140": {
+        "Version": "1.94",
+        "ID": 141,
+        "Device_Name": "HUAWEI EML-L09"
+    },
+    "141": {
+        "Version": "1.94",
+        "ID": 142,
+        "Device_Name": "HUAWEI EML-L29"
+    },
+    "142": {
+        "Version": "1.94",
+        "ID": 143,
+        "Device_Name": "HUAWEI EML-AL00"
+    },
+    "143": {
+        "Version": "1.94",
+        "ID": 144,
+        "Device_Name": "HUAWEI EML-TL00"
+    },
+    "144": {
+        "Version": "1.94",
+        "ID": 145,
+        "Device_Name": "HUAWEI COL-L29"
+    },
+    "145": {
+        "Version": "1.94",
+        "ID": 146,
+        "Device_Name": "HUAWEI COL-AL00"
+    },
+    "146": {
+        "Version": "1.94",
+        "ID": 147,
+        "Device_Name": "HUAWEI COL-AL10"
+    },
+    "147": {
+        "Version": "1.94",
+        "ID": 148,
+        "Device_Name": "HUAWEI COL-TL00"
+    },
+    "148": {
+        "Version": "1.94",
+        "ID": 149,
+        "Device_Name": "HUAWEI COL-TL10"
+    },
+    "149": {
+        "Version": "1.94",
+        "ID": 150,
+        "Device_Name": "HUAWEI CLT-L09"
+    },
+    "150": {
+        "Version": "1.94",
+        "ID": 151,
+        "Device_Name": "HUAWEI CLT-L29"
+    },
+    "151": {
+        "Version": "1.94",
+        "ID": 152,
+        "Device_Name": "HUAWEI CLT-L04"
+    },
+    "152": {
+        "Version": "1.94",
+        "ID": 153,
+        "Device_Name": "HUAWEI CLT-AL00"
+    },
+    "153": {
+        "Version": "1.94",
+        "ID": 154,
+        "Device_Name": "HUAWEI CLT-TL00"
+    },
+    "154": {
+        "ID": 155,
+        "Device_Name": "samsung SM-G8850"
+    },
+    "155": {
+        "ID": 156,
+        "Device_Name": "samsung SM-G8750"
+    },
+    "156": {
+        "ID": 157,
+        "Device_Name": "OPPO PADM00"
+    },
+    "157": {
+        "ID": 158,
+        "Device_Name": "OPPO PADT00"
+    },
+    "158": {
+        "ID": 159,
+        "Device_Name": "OPPO CPH1837"
+    },
+    "159": {
+        "ID": 160,
+        "Device_Name": "OPPO CPH1839"
+    },
+    "160": {
+        "ID": 161,
+        "Device_Name": "OPPO CPH1859"
+    },
+    "161": {
+        "ID": 162,
+        "Device_Name": "OPPO CPH1861"
+    },
+    "162": {
+        "ID": 163,
+        "Device_Name": "Xiaomi MI 6X"
+    },
+    "163": {
+        "Version": "2.05",
+        "ID": 164,
+        "Device_Name": "vivo vivo x21i A"
+    },
+    "164": {
+        "Version": "2.05",
+        "ID": 165,
+        "Device_Name": "vivo vivo x21i"
+    },
+    "165": {
+        "Version": "1.94",
+        "ID": 166,
+        "Device_Name": "HUAWEI LLD-AL30"
+    },
+    "166": {
+        "Version": "1.94",
+        "ID": 167,
+        "Device_Name": "HUAWEI LLD-AL20"
+    },
+    "167": {
+        "Version": "1.94",
+        "ID": 168,
+        "Device_Name": "HUAWEI CLT-AL01"
+    },
+    "168": {
+        "Version": "1.94",
+        "ID": 169,
+        "Device_Name": "HUAWEI CLT-TL01"
+    },
+    "169": {
+        "ID": 170,
+        "Device_Name": "HUAWEI NEO-AL00"
+    },
+    "170": {
+        "ID": 171,
+        "Device_Name": "HUAWEI HWI-AL00"
+    },
+    "171": {
+        "ID": 172,
+        "Device_Name": "HUAWEI HWI-TL00"
+    },
+    "172": {
+        "ID": 173,
+        "Device_Name": "HUAWEI NEO-L29"
+    },
+    "173": {
+        "ID": 174,
+        "Device_Name": "OPPO OPPO R9tm"
+    },
+    "174": {
+        "ID": 175,
+        "Device_Name": "OPPO OPPO R9s"
+    },
+    "175": {
+        "ID": 176,
+        "Device_Name": "OPPO OPPO R9st"
+    },
+    "176": {
+        "ID": 177,
+        "Device_Name": "OPPO OPPO R9sk"
+    },
+    "177": {
+        "ID": 178,
+        "Device_Name": "OPPO OPPO R9skt"
+    },
+    "178": {
+        "ID": 179,
+        "Device_Name": "vivo vivo Y83"
+    },
+    "179": {
+        "ID": 180,
+        "Device_Name": "vivo vivo Y83A"
+    },
+    "180": {
+        "ID": 181,
+        "Device_Name": "vivo vivo Y79"
+    },
+    "181": {
+        "ID": 182,
+        "Device_Name": "vivo vivo Y79A"
+    },
+    "182": {
+        "ID": 183,
+        "Device_Name": "vivo vivo Z1"
+    },
+    "183": {
+        "ID": 184,
+        "Device_Name": "vivo vivo Z1i"
+    },
+    "184": {
+        "ID": 185,
+        "Device_Name": "blackshark SKR-A0"
+    },
+    "185": {
+        "ID": 186,
+        "Device_Name": "nubia NX563J"
+    },
+    "186": {
+        "ID": 187,
+        "Device_Name": "nubia NX609J"
+    },
+    "187": {
+        "ID": 188,
+        "Device_Name": "nubia NX569J"
+    },
+    "188": {
+        "ID": 189,
+        "Device_Name": "nubia NX569H"
+    },
+    "189": {
+        "ID": 190,
+        "Device_Name": "nubia NX606J"
+    },
+    "190": {
+        "ID": 191,
+        "Device_Name": "smartisan os103"
+    },
+    "191": {
+        "ID": 192,
+        "Device_Name": "OnePlus ONEPLUS A5010"
+    },
+    "192": {
+        "ID": 193,
+        "Device_Name": "OnePlus ONEPLUS A5000"
+    },
+    "193": {
+        "ID": 194,
+        "Device_Name": "OnePlus ONEPLUS A3010"
+    },
+    "194": {
+        "ID": 195,
+        "Device_Name": "OnePlus ONEPLUS A3000"
+    },
+    "195": {
+        "ID": 196,
+        "Device_Name": "Meitu MP1718"
+    },
+    "196": {
+        "ID": 197,
+        "Device_Name": "OnePlus ONEPLUS A3003"
+    },
+    "197": {
+        "ID": 198,
+        "Device_Name": "Xiaomi MI 5s Plus"
+    },
+    "198": {
+        "ID": 199,
+        "Device_Name": "Xiaomi MI Note 2"
+    },
+    "199": {
+        "ID": 200,
+        "Device_Name": "vivo vivo NEX S"
+    },
+    "200": {
+        "ID": 201,
+        "Device_Name": "vivo vivo NEX A"
+    },
+    "201": {
+        "ID": 202,
+        "Device_Name": "vivo vivo NEX"
+    },
+    "202": {
+        "ID": 203,
+        "Device_Name": "nubia NX611J"
+    },
+    "203": {
+        "ID": 204,
+        "Device_Name": "OnePlus ONEPLUS A6000"
+    },
+    "204": {
+        "ID": 205,
+        "Device_Name": "OnePlus ONEPLUS A6003"
+    },
+    "205": {
+        "Version": "1.94",
+        "ID": 206,
+        "Device_Name": "HUAWEI CLT-AL00l"
+    },
+    "206": {
+        "Version": "1.91",
+        "ID": 207,
+        "Device_Name": "Lenovo Lenovo L78011"
+    },
+    "207": {
+        "ID": 208,
+        "Device_Name": "samsung SM-N9600"
+    },
+    "208": {
+        "ID": 209,
+        "Device_Name": "samsung SM-N9608"
+    },
+    "209": {
+        "ID": 210,
+        "Device_Name": "OPPO PAFT10"
+    },
+    "210": {
+        "ID": 211,
+        "Device_Name": "OPPO PAHM00"
+    },
+    "211": {
+        "ID": 212,
+        "Device_Name": "OPPO CPH1875"
+    },
+    "212": {
+        "ID": 213,
+        "Device_Name": "OPPO CPH1871"
+    },
+    "213": {
+        "ID": 214,
+        "Device_Name": "OPPO PAFM00"
+    },
+    "214": {
+        "ID": 215,
+        "Device_Name": "OPPO PAFT00"
+    },
+    "215": {
+        "ID": 216,
+        "Device_Name": "smartisan DE106"
+    },
+    "216": {
+        "ID": 217,
+        "Device_Name": "smartisan OE106"
+    },
+    "217": {
+        "1409": {
+            "0": "2|6"
+        },
+        "Version": "2.05",
+        "ID": 218,
+        "Device_Name": "HUAWEI RVL-AL09"
+    },
+    "218": {
+        "ID": 219,
+        "Device_Name": "samsung SM-N960N"
+    },
+    "219": {
+        "ID": 220,
+        "Device_Name": "samsung SM-N960F"
+    },
+    "220": {
+        "Version": "1.86",
+        "ID": 221,
+        "Device_Name": "motorola XT1941-2"
+    },
+    "221": {
+        "Version": "1.91",
+        "ID": 222,
+        "Device_Name": "motorola XT1942-1"
+    },
+    "222": {
+        "Version": "1.91",
+        "ID": 223,
+        "Device_Name": "motorola XT1943-1"
+    },
+    "223": {
+        "Version": "1.91",
+        "ID": 224,
+        "Device_Name": "Lenovo Lenovo L50841"
+    },
+    "224": {
+        "Version": "1.85",
+        "ID": 225,
+        "Device_Name": "Meizu 16th Plus"
+    },
+    "225": {
+        "Version": "1.85",
+        "ID": 226,
+        "Device_Name": "Meizu 16th"
+    },
+    "226": {
+        "Version": "1.85",
+        "ID": 227,
+        "Device_Name": "Meizu 16 X"
+    },
+    "227": {
+        "ID": 228,
+        "Device_Name": "vivo V1809T"
+    },
+    "228": {
+        "ID": 229,
+        "Device_Name": "vivo V1809A"
+    },
+    "229": {
+        "Version": "1.96",
+        "ID": 230,
+        "Device_Name": "Xiaomi MI 8 Lite"
+    },
+    "230": {
+        "Version": "1.92",
+        "ID": 231,
+        "Device_Name": "Xiaomi MI 8 UD"
+    },
+    "231": {
+        "Version": "1.93",
+        "ID": 232,
+        "Device_Name": "HUAWEI HMA-AL00"
+    },
+    "232": {
+        "Version": "1.93",
+        "ID": 233,
+        "Device_Name": "HUAWEI HMA-TL00"
+    },
+    "233": {
+        "Version": "1.93",
+        "ID": 234,
+        "Device_Name": "HUAWEI HMA-L09"
+    },
+    "234": {
+        "Version": "1.93",
+        "ID": 235,
+        "Device_Name": "HUAWEI HMA-L29"
+    },
+    "235": {
+        "Version": "2.03",
+        "ID": 236,
+        "Device_Name": "HUAWEI LYA-AL00"
+    },
+    "236": {
+        "Version": "2.03",
+        "ID": 237,
+        "Device_Name": "HUAWEI LYA-AL10"
+    },
+    "237": {
+        "Version": "2.03",
+        "ID": 238,
+        "Device_Name": "HUAWEI LYA-TL00"
+    },
+    "238": {
+        "Version": "2.03",
+        "ID": 239,
+        "Device_Name": "HUAWEI LYA-L09"
+    },
+    "239": {
+        "Version": "2.03",
+        "ID": 240,
+        "Device_Name": "HUAWEI LYA-L0C"
+    },
+    "240": {
+        "Version": "2.03",
+        "ID": 241,
+        "Device_Name": "HUAWEI LYA-AL00P"
+    },
+    "241": {
+        "Version": "2.03",
+        "ID": 242,
+        "Device_Name": "HUAWEI LYA-L29"
+    },
+    "242": {
+        "Version": "1.94",
+        "ID": 243,
+        "Device_Name": "HUAWEI EVR-AL00"
+    },
+    "243": {
+        "Version": "1.94",
+        "ID": 244,
+        "Device_Name": "HUAWEI EVR-TL00"
+    },
+    "244": {
+        "Version": "1.94",
+        "ID": 245,
+        "Device_Name": "HUAWEI EVR-L29"
+    },
+    "245": {
+        "ID": 246,
+        "Device_Name": "Huawei PAN-AL00"
+    },
+    "246": {
+        "ID": 247,
+        "Device_Name": "Huawei PAN-TL00"
+    },
+    "247": {
+        "ID": 248,
+        "Device_Name": "Huawei PAN-L09"
+    },
+    "248": {
+        "ID": 249,
+        "Device_Name": "Huawei PAN-L29"
+    },
+    "249": {
+        "ID": 250,
+        "Device_Name": "Huawei SUE-AL00"
+    },
+    "250": {
+        "ID": 251,
+        "Device_Name": "Huawei SUE-TL00"
+    },
+    "251": {
+        "ID": 252,
+        "Device_Name": "Huawei SUE-L09"
+    },
+    "252": {
+        "ID": 253,
+        "Device_Name": "Huawei SUE-L29"
+    },
+    "253": {
+        "ID": 254,
+        "Device_Name": "Huawei MCN-AL00"
+    },
+    "254": {
+        "ID": 255,
+        "Device_Name": "Huawei MCN-TL00"
+    },
+    "255": {
+        "ID": 256,
+        "Device_Name": "Huawei MCN-L09"
+    },
+    "256": {
+        "ID": 257,
+        "Device_Name": "Huawei MCN-L29"
+    },
+    "257": {
+        "ID": 258,
+        "Device_Name": "Huawei COL-L09"
+    },
+    "258": {
+        "ID": 259,
+        "Device_Name": "Huawei PAR-AL00"
+    },
+    "259": {
+        "ID": 260,
+        "Device_Name": "Huawei PAR-TL00"
+    },
+    "260": {
+        "ID": 261,
+        "Device_Name": "Huawei PAR-L09"
+    },
+    "261": {
+        "ID": 262,
+        "Device_Name": "Huawei PAR-L29"
+    },
+    "262": {
+        "ID": 263,
+        "Device_Name": "Huawei COR-AL10"
+    },
+    "263": {
+        "ID": 264,
+        "Device_Name": "Huawei COR-AL00"
+    },
+    "264": {
+        "ID": 265,
+        "Device_Name": "Huawei COR-TL00"
+    },
+    "265": {
+        "ID": 266,
+        "Device_Name": "Huawei COR-L09"
+    },
+    "266": {
+        "ID": 267,
+        "Device_Name": "Huawei COR-L29"
+    },
+    "267": {
+        "ID": 268,
+        "Device_Name": "Huawei INE-AL10"
+    },
+    "268": {
+        "ID": 269,
+        "Device_Name": "Huawei INE-AL00"
+    },
+    "269": {
+        "ID": 270,
+        "Device_Name": "Huawei INE-TL00"
+    },
+    "270": {
+        "ID": 271,
+        "Device_Name": "Huawei INE-L09"
+    },
+    "271": {
+        "ID": 272,
+        "Device_Name": "Huawei INE-L29"
+    },
+    "272": {
+        "Version": "1.9",
+        "ID": 273,
+        "Device_Name": "Huawei ARE-AL00"
+    },
+    "273": {
+        "Version": "1.9",
+        "ID": 274,
+        "Device_Name": "Huawei ARE-AL10"
+    },
+    "274": {
+        "Version": "1.9",
+        "ID": 275,
+        "Device_Name": "Huawei ARE-TL10"
+    },
+    "275": {
+        "Version": "1.9",
+        "ID": 276,
+        "Device_Name": "Huawei ARS-AL00"
+    },
+    "276": {
+        "Version": "1.9",
+        "ID": 277,
+        "Device_Name": "Huawei ARS-L22"
+    },
+    "277": {
+        "ID": 278,
+        "Device_Name": "Huawei JSN-AL00"
+    },
+    "278": {
+        "ID": 279,
+        "Device_Name": "Huawei JSN-TL00"
+    },
+    "279": {
+        "ID": 280,
+        "Device_Name": "Huawei JSN-L21"
+    },
+    "280": {
+        "ID": 281,
+        "Device_Name": "Huawei JSN-L22"
+    },
+    "281": {
+        "ID": 282,
+        "Device_Name": "Huawei JSN-L23"
+    },
+    "282": {
+        "ID": 283,
+        "Device_Name": "Huawei JSN-L42"
+    },
+    "283": {
+        "ID": 284,
+        "Device_Name": "Huawei JSN-L4"
+    },
+    "284": {
+        "ID": 285,
+        "Device_Name": "Huawei JKM-AL00"
+    },
+    "285": {
+        "ID": 286,
+        "Device_Name": "Huawei JKM-TL00"
+    },
+    "286": {
+        "Version": "1.95",
+        "ID": 287,
+        "Device_Name": "Huawei PCT-AL10"
+    },
+    "287": {
+        "Version": "1.95",
+        "ID": 288,
+        "Device_Name": "Huawei PCT-TL10"
+    },
+    "288": {
+        "ID": 289,
+        "Device_Name": "Huawei VNA-AL10"
+    },
+    "289": {
+        "ID": 290,
+        "Device_Name": "Huawei VNA-TL10"
+    },
+    "290": {
+        "Version": "1.95",
+        "ID": 291,
+        "Device_Name": "Huawei VCE-AL00"
+    },
+    "291": {
+        "Version": "1.95",
+        "ID": 292,
+        "Device_Name": "Huawei VCE-TL00"
+    },
+    "292": {
+        "ID": 293,
+        "Device_Name": "Huawei EVR-L09"
+    },
+    "293": {
+        "ID": 294,
+        "Device_Name": "vivo V1730EA"
+    },
+    "294": {
+        "ID": 295,
+        "Device_Name": "vivo V1731CA"
+    },
+    "295": {
+        "ID": 296,
+        "Device_Name": "vivo V1813BA"
+    },
+    "296": {
+        "ID": 297,
+        "Device_Name": "vivo V1813BT"
+    },
+    "297": {
+        "ID": 298,
+        "Device_Name": "vivo V1814A"
+    },
+    "298": {
+        "ID": 299,
+        "Device_Name": "vivo V1814T"
+    },
+    "299": {
+        "ID": 300,
+        "Device_Name": "vivo V1816A"
+    },
+    "300": {
+        "ID": 301,
+        "Device_Name": "vivo V1816T"
+    },
+    "301": {
+        "ID": 302,
+        "Device_Name": "vivo V1818A"
+    },
+    "302": {
+        "ID": 303,
+        "Device_Name": "vivo V1818T"
+    },
+    "303": {
+        "ID": 304,
+        "Device_Name": "samsung SM-W2019"
+    },
+    "304": {
+        "ID": 305,
+        "Device_Name": "samsung SM-A9200"
+    },
+    "305": {
+        "ID": 306,
+        "Device_Name": "samsung SM-G8870"
+    },
+    "306": {
+        "ID": 307,
+        "Device_Name": "blackshark AWM-A0"
+    },
+    "307": {
+        "ID": 308,
+        "Device_Name": "Xiaomi MIX 3"
+    },
+    "308": {
+        "ID": 309,
+        "Device_Name": "Xiaomi MI 8 Explorer Edition"
+    },
+    "309": {
+        "ID": 310,
+        "Device_Name": "Xiaomi MI 6"
+    },
+    "310": {
+        "ID": 311,
+        "Device_Name": "OPPO PBEM00"
+    },
+    "311": {
+        "ID": 312,
+        "Device_Name": "OPPO PBET00"
+    },
+    "312": {
+        "ID": 313,
+        "Device_Name": "OPPO PBDM00"
+    },
+    "313": {
+        "ID": 314,
+        "Device_Name": "OPPO PBDT00"
+    },
+    "314": {
+        "ID": 315,
+        "Device_Name": "OnePlus ONEPLUS A6013"
+    },
+    "315": {
+        "ID": 316,
+        "Device_Name": "OnePlus ONEPLUS A6010"
+    },
+    "316": {
+        "ID": 317,
+        "Device_Name": "OnePlus ONEPLUS A6000"
+    },
+    "317": {
+        "ID": 318,
+        "Device_Name": "OnePlus ONEPLUS A6003"
+    },
+    "318": {
+        "ID": 319,
+        "Device_Name": "Meizu M1822"
+    },
+    "319": {
+        "ID": 320,
+        "Device_Name": "Meizu M1852"
+    },
+    "320": {
+        "ID": 321,
+        "Device_Name": "Meizu M1813"
+    },
+    "321": {
+        "ID": 322,
+        "Device_Name": "Meizu M1816"
+    },
+    "322": {
+        "ID": 323,
+        "Device_Name": "Meizu PRO 7-S"
+    },
+    "323": {
+        "ID": 324,
+        "Device_Name": "Meizu M6 Note"
+    },
+    "324": {
+        "ID": 325,
+        "Device_Name": "Meizu Meizu S6"
+    },
+    "325": {
+        "ID": 326,
+        "Device_Name": "Meizu M5 Note"
+    },
+    "326": {
+        "ID": 327,
+        "Device_Name": "Meizu MX6"
+    },
+    "327": {
+        "ID": 328,
+        "Device_Name": "Meizu MEIZU M6"
+    },
+    "328": {
+        "ID": 329,
+        "Device_Name": "Meizu PRO 6"
+    },
+    "329": {
+        "ID": 330,
+        "Device_Name": "Meizu PRO 6s"
+    },
+    "330": {
+        "ID": 331,
+        "Device_Name": "Meizu M1 E"
+    },
+    "331": {
+        "ID": 332,
+        "Device_Name": "Meizu M3 Max"
+    },
+    "332": {
+        "ID": 333,
+        "Device_Name": "Meizu PRO 5"
+    },
+    "333": {
+        "Version": "2.1",
+        "ID": 334,
+        "Device_Name": "OPPO PBAT00"
+    },
+    "334": {
+        "ID": 335,
+        "Device_Name": "OPPO PBCM30"
+    },
+    "335": {
+        "Version": "2.1",
+        "ID": 336,
+        "Device_Name": "OPPO PBAM00"
+    },
+    "336": {
+        "ID": 337,
+        "Device_Name": "OPPO PBCM10"
+    },
+    "337": {
+        "ID": 338,
+        "Device_Name": "OPPO PBCT10"
+    },
+    "338": {
+        "ID": 339,
+        "Device_Name": "Huawei HRY-AL00"
+    },
+    "339": {
+        "ID": 340,
+        "Device_Name": "Huawei HRY-AL00a"
+    },
+    "340": {
+        "ID": 341,
+        "Device_Name": "Huawei HRY-TL00"
+    },
+    "341": {
+        "ID": 342,
+        "Device_Name": "Huawei HRY-LX1"
+    },
+    "342": {
+        "ID": 343,
+        "Device_Name": "Huawei HRY-LX1MEB"
+    },
+    "343": {
+        "ID": 344,
+        "Device_Name": "Huawei HRY-LX2"
+    },
+    "344": {
+        "ID": 345,
+        "Device_Name": "Huawei HRY-AL00T"
+    },
+    "345": {
+        "ID": 346,
+        "Device_Name": "Huawei HRY-AL00Ta"
+    },
+    "346": {
+        "ID": 347,
+        "Device_Name": "Huawei HRY-TL00T"
+    },
+    "347": {
+        "ID": 348,
+        "Device_Name": "Huawei HRY-LX1T"
+    },
+    "348": {
+        "ID": 349,
+        "Device_Name": "Huawei POT-AL00"
+    },
+    "349": {
+        "ID": 350,
+        "Device_Name": "Huawei POT-AL00a"
+    },
+    "350": {
+        "ID": 351,
+        "Device_Name": "Huawei POT-TL00"
+    },
+    "351": {
+        "ID": 352,
+        "Device_Name": "Huawei POT-LX1"
+    },
+    "352": {
+        "ID": 353,
+        "Device_Name": "Huawei POT-LX1AF"
+    },
+    "353": {
+        "ID": 354,
+        "Device_Name": "Huawei POT-LX2J"
+    },
+    "354": {
+        "ID": 355,
+        "Device_Name": "Huawei POT-LX3"
+    },
+    "355": {
+        "ID": 356,
+        "Device_Name": "Huawei BKK-AL10"
+    },
+    "356": {
+        "ID": 357,
+        "Device_Name": "Huawei BKK-AL00"
+    },
+    "357": {
+        "ID": 358,
+        "Device_Name": "Huawei BKK-TL00"
+    },
+    "358": {
+        "ID": 359,
+        "Device_Name": "Huawei BKK-L21"
+    },
+    "359": {
+        "ID": 360,
+        "Device_Name": "Huawei BKK-L22"
+    },
+    "360": {
+        "ID": 361,
+        "Device_Name": "Huawei JAT-AL00"
+    },
+    "361": {
+        "ID": 362,
+        "Device_Name": "Huawei JAT-TL00"
+    },
+    "362": {
+        "ID": 363,
+        "Device_Name": "Huawei JAT-L29"
+    },
+    "363": {
+        "ID": 364,
+        "Device_Name": "Huawei JAT-LX1"
+    },
+    "364": {
+        "ID": 365,
+        "Device_Name": "Huawei JAT-LX3"
+    },
+    "365": {
+        "ID": 366,
+        "Device_Name": "Huawei MRD-LX1"
+    },
+    "366": {
+        "ID": 367,
+        "Device_Name": "Huawei MRD-LX1N"
+    },
+    "367": {
+        "ID": 368,
+        "Device_Name": "Huawei MRD-LX1F"
+    },
+    "368": {
+        "ID": 369,
+        "Device_Name": "Huawei MRD-LX2"
+    },
+    "369": {
+        "ID": 370,
+        "Device_Name": "Huawei MRD-LX3"
+    },
+    "370": {
+        "ID": 371,
+        "Device_Name": "Huawei MRD-AL00"
+    },
+    "371": {
+        "ID": 372,
+        "Device_Name": "Huawei MRD-TL00"
+    },
+    "372": {
+        "Version": "2.02",
+        "ID": 373,
+        "Device_Name": "Huawei DUB-AL20"
+    },
+    "373": {
+        "Version": "2.02",
+        "ID": 374,
+        "Device_Name": "Huawei DUB-LX1"
+    },
+    "374": {
+        "Version": "2.02",
+        "ID": 375,
+        "Device_Name": "Huawei DUB-LX2"
+    },
+    "375": {
+        "Version": "2.02",
+        "ID": 376,
+        "Device_Name": "Huawei DUB-LX3"
+    },
+    "376": {
+        "ID": 377,
+        "Device_Name": "vivo vivoZ1i"
+    },
+    "377": {
+        "ID": 378,
+        "Device_Name": "vivo V1818BT"
+    },
+    "378": {
+        "ID": 379,
+        "Device_Name": "vivo V1818BA"
+    },
+    "379": {
+        "ID": 380,
+        "Device_Name": "vivo V1818CA"
+    },
+    "380": {
+        "ID": 381,
+        "Device_Name": "vivo V1818CT"
+    },
+    "381": {
+        "ID": 382,
+        "Device_Name": "vivo V1821T"
+    },
+    "382": {
+        "ID": 383,
+        "Device_Name": "vivo V1821A"
+    },
+    "383": {
+        "ID": 384,
+        "Device_Name": "vivo vivoZ1"
+    },
+    "384": {
+        "ID": 385,
+        "Device_Name": "vivo V1732A"
+    },
+    "385": {
+        "ID": 386,
+        "Device_Name": "vivo V1732T"
+    },
+    "386": {
+        "Version": "1.95",
+        "ID": 387,
+        "Device_Name": "HUAWEI VCE-L22"
+    },
+    "387": {
+        "Version": "1.95",
+        "ID": 388,
+        "Device_Name": "HUAWEI PCT-L29"
+    },
+    "388": {
+        "ID": 389,
+        "Device_Name": "vivo V1813A"
+    },
+    "389": {
+        "ID": 390,
+        "Device_Name": "vivo V1813T"
+    },
+    "390": {
+        "ID": 391,
+        "Device_Name": "Xiaomi MIX 3 The Palace Museum Edition"
+    },
+    "391": {
+        "Version": "1.96",
+        "ID": 392,
+        "Device_Name": "Xiaomi MI PLAY"
+    },
+    "392": {
+        "Version": "1.92",
+        "ID": 393,
+        "Device_Name": "Xiaomi POCOPHONE F1"
+    },
+    "393": {
+        "Version": "1.95",
+        "ID": 394,
+        "Device_Name": "Xiaomi Redmi Note 6 Pro"
+    },
+    "394": {
+        "Version": "1.9",
+        "ID": 395,
+        "Device_Name": "HUAWEI ARS-TL00"
+    },
+    "395": {
+        "Version": "2.03",
+        "ID": 396,
+        "Device_Name": "HUAWEI ELE-AL00"
+    },
+    "396": {
+        "Version": "2.03",
+        "ID": 397,
+        "Device_Name": "HUAWEI ELE-AL00m"
+    },
+    "397": {
+        "Version": "2.03",
+        "ID": 398,
+        "Device_Name": "HUAWEI ELE-TL00"
+    },
+    "398": {
+        "Version": "2.03",
+        "ID": 399,
+        "Device_Name": "HUAWEI ELE-L09"
+    },
+    "399": {
+        "Version": "2.03",
+        "ID": 400,
+        "Device_Name": "HUAWEI ELE-L09m"
+    },
+    "400": {
+        "Version": "2.03",
+        "ID": 401,
+        "Device_Name": "HUAWEI ELE-L29"
+    },
+    "401": {
+        "Version": "2.03",
+        "ID": 402,
+        "Device_Name": "HUAWEI ELE-L04"
+    },
+    "402": {
+        "Version": "2.03",
+        "ID": 403,
+        "Device_Name": "HUAWEI VOG-AL00"
+    },
+    "403": {
+        "Version": "2.03",
+        "ID": 404,
+        "Device_Name": "HUAWEI VOG-AL00m"
+    },
+    "404": {
+        "Version": "2.03",
+        "ID": 405,
+        "Device_Name": "HUAWEI VOG-AL10"
+    },
+    "405": {
+        "Version": "2.03",
+        "ID": 406,
+        "Device_Name": "HUAWEI VOG-TL00"
+    },
+    "406": {
+        "Version": "2.03",
+        "ID": 407,
+        "Device_Name": "HUAWEI VOG-L09"
+    },
+    "407": {
+        "Version": "2.03",
+        "ID": 408,
+        "Device_Name": "HUAWEI VOG-L04"
+    },
+    "408": {
+        "Version": "2.03",
+        "ID": 409,
+        "Device_Name": "HUAWEI VOG-L29"
+    },
+    "409": {
+        "Version": "2.03",
+        "ID": 410,
+        "Device_Name": "HUAWEI VOG-L09m"
+    },
+    "410": {
+        "Version": "2.03",
+        "ID": 411,
+        "Device_Name": "HUAWEI VOG-L09t"
+    },
+    "411": {
+        "Version": "2.03",
+        "ID": 412,
+        "Device_Name": "HUAWEI VOG-L0J"
+    },
+    "412": {
+        "Version": "2.1",
+        "ID": 413,
+        "Device_Name": "vivo V1836A"
+    },
+    "413": {
+        "Version": "2.1",
+        "ID": 414,
+        "Device_Name": "vivo V1836T"
+    },
+    "414": {
+        "Version": "1.9",
+        "ID": 415,
+        "Device_Name": "SM-G9700 S10"
+    },
+    "415": {
+        "Version": "1.9",
+        "ID": 416,
+        "Device_Name": "SM-G9708 S10 CMCC DP"
+    },
+    "416": {
+        "Version": "1.9",
+        "ID": 417,
+        "Device_Name": "SM-G9730 S10e"
+    },
+    "417": {
+        "Version": "1.9",
+        "ID": 418,
+        "Device_Name": "SM-G9750 S10+"
+    },
+    "418": {
+        "ID": 419,
+        "Device_Name": "OPPO PCCM00"
+    },
+    "419": {
+        "ID": 420,
+        "Device_Name": "OPPO PCCT00"
+    },
+    "420": {
+        "ID": 421,
+        "Device_Name": "OPPO PCAT00"
+    },
+    "421": {
+        "ID": 422,
+        "Device_Name": "OPPO PCAM10"
+    },
+    "422": {
+        "ID": 423,
+        "Device_Name": "OPPO PCAT10"
+    },
+    "423": {
+        "ID": 424,
+        "Device_Name": "OPPO PCEM00"
+    },
+    "424": {
+        "ID": 425,
+        "Device_Name": "OPPO PCET00"
+    },
+    "425": {
+        "ID": 426,
+        "Device_Name": "OPPO PCAM00"
+    },
+    "426": {
+        "ID": 427,
+        "Device_Name": "Xiaomi MI 5C"
+    },
+    "427": {
+        "1409": {
+            "0": "3|3"
+        },
+        "ID": 428,
+        "Device_Name": "OPPO PCDM10"
+    },
+    "428": {
+        "Version": "1.85",
+        "ID": 429,
+        "Device_Name": "samsung SM-G9700"
+    },
+    "429": {
+        "Version": "1.85",
+        "ID": 430,
+        "Device_Name": "samsung SM-G970XC"
+    },
+    "430": {
+        "Version": "1.85",
+        "ID": 431,
+        "Device_Name": "samsung SM-G9708"
+    },
+    "431": {
+        "Version": "1.85",
+        "ID": 432,
+        "Device_Name": "samsung SM-G970N"
+    },
+    "432": {
+        "Version": "1.85",
+        "ID": 433,
+        "Device_Name": "samsung SM-G970F"
+    },
+    "433": {
+        "Version": "1.85",
+        "ID": 434,
+        "Device_Name": "samsung SM-G970U"
+    },
+    "434": {
+        "Version": "1.85",
+        "ID": 435,
+        "Device_Name": "samsung SM-G970J"
+    },
+    "435": {
+        "Version": "1.85",
+        "ID": 436,
+        "Device_Name": "samsung SM-G970D"
+    },
+    "436": {
+        "Version": "1.91",
+        "ID": 437,
+        "Device_Name": "samsung SM-G973XC"
+    },
+    "437": {
+        "Version": "1.91",
+        "ID": 438,
+        "Device_Name": "samsung SM-G9738"
+    },
+    "438": {
+        "Version": "1.91",
+        "ID": 439,
+        "Device_Name": "samsung SM-G973N"
+    },
+    "439": {
+        "Version": "1.91",
+        "ID": 440,
+        "Device_Name": "samsung SM-G973F"
+    },
+    "440": {
+        "Version": "1.91",
+        "ID": 441,
+        "Device_Name": "samsung SM-G973U"
+    },
+    "441": {
+        "Version": "1.91",
+        "ID": 442,
+        "Device_Name": "samsung SM-G973J"
+    },
+    "442": {
+        "Version": "1.91",
+        "ID": 443,
+        "Device_Name": "samsung SM-G973D"
+    },
+    "443": {
+        "Version": "1.91",
+        "ID": 444,
+        "Device_Name": "samsung SM-G9750"
+    },
+    "444": {
+        "Version": "1.91",
+        "ID": 445,
+        "Device_Name": "samsung SM-G975XC"
+    },
+    "445": {
+        "Version": "1.91",
+        "ID": 446,
+        "Device_Name": "samsung SM-G9758"
+    },
+    "446": {
+        "Version": "1.91",
+        "ID": 447,
+        "Device_Name": "samsung SM-G975N"
+    },
+    "447": {
+        "Version": "1.91",
+        "ID": 448,
+        "Device_Name": "samsung SM-G975F"
+    },
+    "448": {
+        "Version": "1.91",
+        "ID": 449,
+        "Device_Name": "samsung SM-G975U"
+    },
+    "449": {
+        "Version": "1.91",
+        "ID": 450,
+        "Device_Name": "samsung SM-G975J"
+    },
+    "450": {
+        "Version": "1.91",
+        "ID": 451,
+        "Device_Name": "samsung SM-G976D"
+    },
+    "451": {
+        "Version": "1.91",
+        "ID": 452,
+        "Device_Name": "samsung SM-G9770"
+    },
+    "452": {
+        "Version": "1.91",
+        "ID": 453,
+        "Device_Name": "samsung SM-G977N"
+    },
+    "453": {
+        "Version": "1.91",
+        "ID": 454,
+        "Device_Name": "samsung SM-G9730"
+    },
+    "454": {
+        "ID": 455,
+        "Device_Name": "realme RMX1901"
+    },
+    "455": {
+        "ID": 456,
+        "Device_Name": "realme RMX1911"
+    },
+    "456": {
+        "ID": 457,
+        "Device_Name": "Realme RMX1851"
+    },
+    "457": {
+        "ID": 458,
+        "Device_Name": "realme RMX1991"
+    },
+    "458": {
+        "ID": 459,
+        "Device_Name": "realme RMX1921"
+    },
+    "459": {
+        "ID": 460,
+        "Device_Name": "realme RMX1971"
+    },
+    "460": {
+        "Version": "1.94",
+        "ID": 461,
+        "Device_Name": "HUAWEI EML-L09"
+    },
+    "461": {
+        "Version": "1.94",
+        "ID": 462,
+        "Device_Name": "HUAWEI EML-L29"
+    },
+    "462": {
+        "Version": "1.94",
+        "ID": 463,
+        "Device_Name": "HUAWEI EML-AL00"
+    },
+    "463": {
+        "Version": "1.94",
+        "ID": 464,
+        "Device_Name": "HUAWEI EML-TL00"
+    },
+    "464": {
+        "Version": "1.92",
+        "ID": 465,
+        "Device_Name": "Xiaomi MI 9"
+    },
+    "465": {
+        "Version": "2.06",
+        "ID": 466,
+        "Device_Name": "vivo X21A"
+    },
+    "466": {
+        "Version": "2.06",
+        "ID": 467,
+        "Device_Name": "vivo X21"
+    },
+    "467": {
+        "Version": "2.06",
+        "ID": 468,
+        "Device_Name": "vivo X21UD A"
+    },
+    "468": {
+        "Version": "2.06",
+        "ID": 469,
+        "Device_Name": "vivo X21UD"
+    },
+    "469": {
+        "Version": "2.1",
+        "ID": 470,
+        "Device_Name": "OnePlus HD1900"
+    },
+    "470": {
+        "Version": "2.1",
+        "ID": 471,
+        "Device_Name": "OnePlus HD1901"
+    },
+    "471": {
+        "Version": "2.1",
+        "ID": 472,
+        "Device_Name": "OnePlus HD1903"
+    },
+    "472": {
+        "Version": "2.1",
+        "ID": 473,
+        "Device_Name": "OnePlus HD1905"
+    },
+    "473": {
+        "Version": "2.1",
+        "ID": 474,
+        "Device_Name": "OnePlus HD1907"
+    },
+    "474": {
+        "Version": "2.1",
+        "ID": 475,
+        "Device_Name": "EXSS8865 HD1910"
+    },
+    "475": {
+        "ID": 476,
+        "Device_Name": "oneplus GM1910"
+    },
+    "476": {
+        "ID": 477,
+        "Device_Name": "Blackshark SKR-A0"
+    },
+    "477": {
+        "ID": 478,
+        "Device_Name": "Blackshark SKR-H0"
+    },
+    "478": {
+        "ID": 479,
+        "Device_Name": "OnePlus GM1900"
+    },
+    "479": {
+        "ID": 480,
+        "Device_Name": "Oneplus GM1910"
+    },
+    "480": {
+        "ID": 481,
+        "Device_Name": "OnePlus HD1910"
+    },
+    "481": {
+        "ID": 482,
+        "Device_Name": "OnePlus HD1911"
+    },
+    "482": {
+        "ID": 483,
+        "Device_Name": "OnePlus HD1913"
+    },
+    "483": {
+        "ID": 484,
+        "Device_Name": "OnePlus HD1917"
+    },
+    "484": {
+        "ID": 485,
+        "Device_Name": "OnePlus HD1925"
+    },
+    "485": {
+        "ID": 486,
+        "Device_Name": "Xiaomi MI CC 9"
+    },
+    "486": {
+        "ID": 487,
+        "Device_Name": "Xiaomi MI 8"
+    },
+    "487": {
+        "ID": 488,
+        "Device_Name": "Xiaomi Redmi K20 Pro"
+    },
+    "488": {
+        "ID": 489,
+        "Device_Name": "Xiaomi Redmi Note 7 Pro"
+    },
+    "489": {
+        "ID": 490,
+        "Device_Name": "Xiaomi Redmi K20 Pro Premium Edition"
+    },
+    "490": {
+        "ID": 491,
+        "Device_Name": "Xiaomi Redmi K20"
+    },
+    "491": {
+        "ID": 492,
+        "Device_Name": "Xiaomi Redmi Note 7"
+    },
+    "492": {
+        "Version": "2.06",
+        "ID": 493,
+        "Device_Name": "VIVO V1932A"
+    },
+    "493": {
+        "ID": 494,
+        "Device_Name": "HUAWEI RLI-AN00"
+    },
+    "494": {
+        "ID": 495,
+        "Device_Name": "HUAWEI RLI-N29"
+    },
+    "495": {
+        "ID": 496,
+        "Device_Name": "HUAWEI TAH-AN00"
+    },
+    "496": {
+        "ID": 497,
+        "Device_Name": "HUAWEI TAH-N29"
+    },
+    "497": {
+        "Version": "2.01",
+        "ID": 498,
+        "Device_Name": "HUAWEI WLZ-AL10"
+    },
+    "498": {
+        "Version": "2.01",
+        "ID": 499,
+        "Device_Name": "HUAWEI WLZ-AN00"
+    },
+    "499": {
+        "Version": "2.01",
+        "ID": 500,
+        "Device_Name": "HUAWEI OXF-AN00"
+    },
+    "500": {
+        "Version": "2.01",
+        "ID": 501,
+        "Device_Name": "HUAWEI OXF-AN10"
+    },
+    "501": {
+        "ID": 502,
+        "Device_Name": "HUAWEI TAH-AN00m"
+    },
+    "502": {
+        "ID": 503,
+        "Device_Name": "HUAWEI RHA-AN00m"
+    },
+    "503": {
+        "Version": "2.15",
+        "ID": 504,
+        "Device_Name": "EBG-AN00"
+    },
+    "504": {
+        "Version": "2.15",
+        "ID": 505,
+        "Device_Name": "EBG-TN00"
+    },
+    "505": {
+        "Version": "2.15",
+        "ID": 506,
+        "Device_Name": "EBG-AN10"
+    },
+    "506": {
+        "Version": "2.15",
+        "ID": 507,
+        "Device_Name": "JER-AN10"
+    },
+    "507": {
+        "Version": "2.15",
+        "ID": 508,
+        "Device_Name": "JER-TN10"
+    }
+}

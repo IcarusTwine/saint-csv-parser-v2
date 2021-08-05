@@ -39,6 +39,162 @@
             "Type" : "String"
         }
     },
+    "ActivityTask": {
+        "1530":{
+            "Def" : "Announce",
+            "Type" : "String"
+        },
+        "1850":{
+            "Def" : "Transient",
+            "Type" : "Transient"
+        }
+    },
+    "AndroidDeviceConfig": {
+        "1515":{
+            "Def" : "Version",
+            "Type" : "String"
+        },
+        "1824":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1874":{
+            "Def" : "Device_Name",
+            "Type" : "String"
+        }
+    },
+    "AvatarColor": {
+        "1313":{
+            "Def" : "Eye_Icon",
+            "Type" : "Texture"
+        }
+    },
+    "AvatarItem": {
+        "1250":{
+            "Def" : "Female_Icon",
+            "Type" : "Texture"
+        },
+        "1267":{
+            "Def" : "Female_Name",
+            "Type" : "Transient"
+        },
+        "1416":{
+            "Def" : "Male_Icon",
+            "Type" : "Texture"
+        },
+        "1518":{
+            "Def" : "Male_Name",
+            "Type" : "Transient"
+        },
+        "1613":{
+            "Def" : "Female_Description",
+            "Type" : "Transient"
+        },
+        "1855":{
+            "Def" : "Male_Description",
+            "Type" : "Transient"
+        }
+    },
+    "BattleNotify": {
+        "1391":{
+            "Def" : "Announce",
+            "Type" : "Transient"
+        },
+        "1466":{
+            "Def" : "UI_Animation",
+            "Type" : "String"
+        }
+    },
+    "BattlePassSeason": {
+        "1758":{
+            "Def" : "Announce",
+            "Type" : "Transient"
+        },
+        "1791":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        }
+    },
+    "BattlePassTaskBase": {
+        "1530":{
+            "Def" : "Objective",
+            "Type" : "Transient"
+        },
+        "1850":{
+            "Def" : "Description",
+            "Type" : "String"
+        }
+    },
+    "BattleSignalCommunicate": {
+        "1361":{
+            "Def" : "UI",
+            "Type" : "String"
+        },
+        "1553":{
+            "Def" : "Animation",
+            "Type" : "String"
+        },
+        "1607":{
+            "Def" : "Announce",
+            "Type" : "Transient"
+        }
+    },
+    "BattleStat": {
+        "1551":{
+            "Def" : "Name",
+            "Type" : "String"
+        },
+        "1822":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "Behaviac_Valuation": {
+        "1458":{
+            "Def" : "Name",
+            "Type" : "String"
+        }
+    },
+    "BlackList": {
+        "1426":{
+            "Def" : "Device_Model",
+            "Type" : "String"
+        },
+        "1713":{
+            "Def" : "Device_Name",
+            "Type" : "String"
+        },
+        "1833":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "Chat_FastChatInRoom": {
+        "1587":{
+            "Def" : "Message",
+            "Type" : "String"
+        },
+        "1822":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "Chat_Type": {
+        "1600":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "CreateRoleShowAvatar": {
+        "1727":{
+            "Def" : "Texture_Male",
+            "Type" : "Texture"
+        },
+        "1835":{
+            "Def" : "Texture_Female",
+            "Type" : "Texture"
+        }
+    },
     "Error_Code": {
         "1260":{
             "Def" : "Error_Code_Num",
@@ -50,6 +206,172 @@
         },
         "1836":{
             "Def" : "Message",
+            "Type" : "Transient"
+        }
+    },
+    "FaceIcon": {
+        "1294":{
+            "Def" : "Texture_Male",
+            "Type" : "Texture"
+        },
+        "1527":{
+            "Def" : "Texture_Female",
+            "Type" : "Texture"
+        }
+    },
+    "FashChatText": {
+        "1541":{
+            "Def" : "Message[0]",
+            "Type" : "Transient"
+        },
+        "1587":{
+            "Def" : "Message[1]",
+            "Type" : "Transient"
+        },
+        "1730":{
+            "Def" : "Sticker_URL",
+            "Type" : "String"
+        },
+        "1822":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "FloatWord": {
+        "1391":{
+            "Def" : "Message",
+            "Type" : "Transient"
+        },
+        "1824":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "FontMap": {
+        "1747":{
+            "Def" : "Font",
+            "Type" : "String"
+        }
+    },
+    "Formula": {
+        "1625":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1827":{
+            "Def" : "Formula",
+            "Type" : "String"
+        }
+    },
+    "FortifiedNormalAttack": {
+        "1864":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "GainScoreAction": {
+        "1414":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "Get_Score_Reward": {
+        "1824":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "GuideDialog": {
+        "1391":{
+            "Def" : "Description[0]",
+            "Type" : "Transient"
+        },
+        "1424":{
+            "Def" : "Description[1]",
+            "Type" : "Transient"
+        },
+        "1559":{
+            "Def" : "Page_Pref",
+            "Type" : "String"
+        }
+    },
+    "HeadIcon": {
+        "1294":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1552":{
+            "Def" : "Male_Texture",
+            "Type" : "Texture"
+        },
+        "1762":{
+            "Def" : "Female_Texture",
+            "Type" : "Texture"
+        }
+    },
+    "HeldItemLevelUpDesign": {
+        "1294":{
+            "Def" : "Texture",
+            "Type" : "Texture"
+        },
+        "1736":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        },
+        "1764":{
+            "Def" : "Name",
+            "Type" : "Transient"
+        }
+    },
+    "Hint_Info": {
+        "1507":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1579":{
+            "Def" : "Name",
+            "Type" : "String"
+        },
+        "1836":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        }
+    },
+    "IOSDeviceConfig": {
+        "1824":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1874":{
+            "Def" : "Name",
+            "Type" : "String"
+        }
+    },
+    "Item_Base": {
+        "1275":{
+            "Def" : "Icon",
+            "Type" : "Texture"
+        },
+        "1417":{
+            "Def" : "Pref",
+            "Type" : "String"
+        },
+        "1461":{
+            "Def" : "Name",
+            "Type" : "String"
+        },
+        "1566":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "Languages_Change": {
+        "1768":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1776":{
+            "Def" : "Name",
             "Type" : "Transient"
         }
     },
