@@ -1,6 +1,60 @@
 {
+    "Active_Skill_Monster": {
+        "1481":{
+            "Def" : "Icon",
+            "Type" : "Texture"
+        },
+        "1565":{
+            "Def" : "AGE_Skill",
+            "Type" : "String"
+        },
+        "1764":{
+            "Def" : "Name",
+            "Type" : "Transient"
+        },
+        "1776":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        }
+    },
+    "Activity_Base": {
+        "1293":{
+            "Def" : "URL_Header[0]",
+            "Type" : "String"
+        },
+        "1302":{
+            "Def" : "Title_Short",
+            "Type" : "String"
+        },
+        "1319":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        },
+        "1715":{
+            "Def" : "Title",
+            "Type" : "Transient"
+        },
+        "1799":{
+            "Def" : "URL_Header[1]",
+            "Type" : "String"
+        }
+    },
+    "Error_Code": {
+        "1260":{
+            "Def" : "Error_Code_Num",
+            "Type" : "Number"
+        },
+        "1637":{
+            "Def" : "Error_Code",
+            "Type" : "String"
+        },
+        "1836":{
+            "Def" : "Message",
+            "Type" : "Transient"
+        }
+    },
     "Pokemon_Avatar_Default": {
-        "9":{
+        "1481":{
             "Def" : "Icon",
             "Type" : "Texture"
         },
@@ -8,9 +62,27 @@
             "Def" : "Name",
             "Type" : "String"
         },
-        "8":{
+        "1800":{
             "Def" : "Pref",
             "Type" : "String"
+        }
+    },
+    "Shop": {
+        "1273":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        },
+        "1512":{
+            "Def" : "Transient",
+            "Type" : "Transient"
+        },
+        "1596":{
+            "Def" : "Warning",
+            "Type" : "String"
+        },
+        "1736":{
+            "Def" : "Name",
+            "Type" : "Transient"
         }
     },
     "SystemUnlock": {
@@ -33,15 +105,61 @@
             "Type" : "Transient"
         }
     },
-    "Error_Code": {
-        "1260":{
-            "Def" : "Error_Code_Num"
+    "Pokemon_Hero": {
+        "1374":{
+            "Def" : "Root",
+            "Type" : "String"
         },
-        "1637":{
-            "Def" : "Error_Code[1]"
+        "1395":{
+            "Def" : "Battle_Texture_Root",
+            "Type" : "Texture"
         },
-        "1836":{
-            "Def" : "Message",
+        "1539":{
+            "Def" : "Skill_Panel",
+            "Type" : "Pref"
+        },
+        "1550":{
+            "Def" : "Skill_Panel[Switch]",
+            "Type" : "Pref"
+        },
+        "1560":{
+            "Def" : "Battle_Model",
+            "Type" : "Model"
+        },
+        "1567":{
+            "Def" : "Hero_Widget",
+            "Type" : "Pref"
+        },
+        "1672":{
+            "Def" : "AGE_Born[0]",
+            "Type" : "String"
+        },
+        "1693":{
+            "Def" : "AGE_Dead",
+            "Type" : "String"
+        },
+        "1835":{
+            "Def" : "Minimap_Icon",
+            "Type" : "Pref"
+        },
+        "1852":{
+            "Def" : "Cry",
+            "Type" : "SoundEffect"
+        },
+        "1857":{
+            "Def" : "AGE_Born[1]",
+            "Type" : "String"
+        },
+        "1859":{
+            "Def" : "Battle_Texture",
+            "Type" : "Texture"
+        },
+        "1771":{
+            "Def" : "Name",
+            "Type" : "String"
+        },
+        "1772":{
+            "Def" : "Name_Transient",
             "Type" : "Transient"
         }
     }
