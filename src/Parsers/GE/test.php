@@ -128,7 +128,7 @@ class test implements ParseInterface
         $path = "$Resources\PokemonUniteApi/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
         $files = array(
-            "Languagemap",
+            "Pokemon_Base",
         );
         function hex2str($hex) {
             $str = '';
@@ -154,6 +154,11 @@ class test implements ParseInterface
         }
         $SkipArray = array(
             "fake_ServerList",
+            "Active_Skill_Hero",
+            "HeadIcon_Base",
+            "Newbie_Conf",
+            "OutSide_InGame_Bytes_Def",
+            "TranslationReq",
         );
         function bufferVal($bytes){
             foreach($bytes as $byte){
@@ -236,7 +241,6 @@ class test implements ParseInterface
                 return $Output;
             }
         }
-        
         function lendel($Chunk,$pos,$debug = 0){//2	Length-delimited	string, bytes, embedded messages, packed repeated fields
             $pos++;
             //var_dump($Chunk[$pos]."- Lendel Header01");
@@ -263,6 +267,13 @@ class test implements ParseInterface
             $pos++;
             //var_dump($Chunk[$pos]);
             $Length = hexdec($Chunk[$pos]);
+            $LengthsVal = [];
+            if (wireType($Chunk[$pos])["Binary"]["MSB"] === 1){
+                $LengthsVal[] = $Chunk[$pos];
+                $pos++;
+                $LengthsVal[] = $Chunk[$pos];
+                $Length = bufferVal($LengthsVal);
+            }
             if ($debug === 1){var_dump($Length." - Lendel Length");}
             if ($Length === 0){
                 $ByteArray = [];
@@ -280,58 +291,7 @@ class test implements ParseInterface
             //var_dump($Chunk[$pos]);
             $StorePos = $pos;
             $ByteArray = [];
-            if ((161 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 247)){
-                //possibly a chinese character
-                $pos++;
-                if ((161 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 254)){
-                    //almost possibly a chinese character 
-                    $pos++;
-                    if ((161 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 247)){
-                        $pos++;
-                        if ((161 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 254)){
-                            $pos = $StorePos;
-                            $String = "";
-                            for ($i=0; $i < $Length; $i++) { 
-                                $String .= $Chunk[$pos];
-                                $pos++;
-                            }
-                            //$Output["Data"][$Header][] = $String;
-                            $Output["Data"][$Header][] = hex2str($String);
-                            $Output["Pos"] = $pos;
-                            return $Output;
-                        }
-                        else {
-                            $pos = $StorePos;
-                            if ($debug === 1){var_dump("Running Varint inside Lendel 01");}
-                            $Data = varint($Chunk,$pos,$found = 1,$Length);
-                            $pos = $Data["Pos"];
-                            $Output["Data"][$Header][] = $Data["Data"];
-                            $Output["Pos"] = $pos;
-                            return $Output;
-                        }
-                    }
-                    else {
-                        $pos = $StorePos;
-                        if ($debug === 1){var_dump("Running Varint inside Lendel 02");}
-                        $Data = varint($Chunk,$pos,$found = 1,$Length,$CN = 0);
-                        $pos = $Data["Pos"];
-                        $Output["Data"][$Header][] = $Data["Data"];
-                        $Output["Pos"] = $pos;
-                        return $Output;
-                    }
-                }
-                //could be a value, dunno. whatever.
-                //nested value
-                else {
-                    $pos = $StorePos;
-                    $Data = varint($Chunk,$pos,$found = 1,$Length);
-                    $pos = $Data["Pos"];
-                    $Output["Data"][$Header][] = $Data["Data"];
-                    $Output["Pos"] = $pos;
-                    return $Output;
-                }
-            } elseif ((32 <= wireType($Chunk[$pos])["Binary"]["Dec"]) && (wireType($Chunk[$pos])["Binary"]["Dec"] <= 127)){
-                // eng string
+            if (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,1) === "0"){// eng string
                 $String = "";
                 for ($i=0; $i < $Length; $i++) { 
                     $String .= $Chunk[$pos];
@@ -341,7 +301,28 @@ class test implements ParseInterface
                 //var_dump($Output);
                 $Output["Pos"] = $pos;
                 return $Output;
-            } else {
+            }elseif (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,3) === "110"){// CN string 2 bytes
+                $String = "";
+                for ($i=0; $i < $Length; $i++) { 
+                    $String .= $Chunk[$pos];
+                    $pos++;
+                }
+                $Output["Data"][$Header][] = hex2str($String);
+                //var_dump($Output);
+                $Output["Pos"] = $pos;
+                return $Output;
+            }elseif (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,4) === "1110"){// CN string 2 bytes
+                $String = "";
+                for ($i=0; $i < $Length; $i++) { 
+                    $String .= $Chunk[$pos];
+                    $pos++;
+                }
+                $Output["Data"][$Header][] = hex2str($String);
+                //var_dump($Output);
+                $Output["Pos"] = $pos;
+                return $Output;
+            }
+                else {
                 $pos = $StorePos;
                 $ByteArray = [];
                 for ($i=0; $i < $Length; $i++) { 
@@ -360,7 +341,7 @@ class test implements ParseInterface
                 return $Output;
             }
         }
-        $debug = 1;
+        $debug = 0;
         foreach($files as $FileNameraw){
             $filename = str_replace("databin_","",$FileNameraw);
             var_dump($filename);
@@ -394,12 +375,12 @@ class test implements ParseInterface
                 $Chunks[] = $Array;
             }
             
-            foreach($Chunks as $Chunk){
-                foreach($Chunk as $Byte){
-                    $TestAr[] = (wireType($Byte));
-                }
-            }
-            $this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+           //foreach($Chunks as $Chunk){
+           //    foreach($Chunk as $Byte){
+           //        $TestAr[] = (wireType($Byte));
+           //    }
+           //}
+           //$this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
     
             $Output = [];
             foreach($Chunks as $Num => $Chunk){
@@ -413,8 +394,8 @@ class test implements ParseInterface
                     }
                     if ($debug === 1){var_dump("Chunk -".$Num);
                     var_dump($pos);
-                    var_dump($Chunk[$pos]);}
-                    sleep(1);
+                    var_dump($Chunk[$pos]);
+                    sleep(1);}
                     switch (wireType($Chunk[$pos])['WireType']) {
                         case 0:
                             if ($debug === 1){var_dump($Chunk[$pos]."- Start Varint");}
@@ -445,6 +426,7 @@ class test implements ParseInterface
                 $Output[] = $OutputChunk;
                 //sleep(4);
             }
+            $FinalOutput = [];
             foreach($Output as $Key => $Value){
                 $ChunkNumber = $Key;
                 foreach($Value as $Key2 => $Value2){
@@ -490,5 +472,59 @@ class test implements ParseInterface
             $this->saveExtra("PokemonUniteApi/Api/$filename.json",$Jsonify, true, true);
     
         }
+        
+        $JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\Api/$filename.json"),true); 
+        $Output = [];
+        foreach($JSON as $Key => $Value){
+            if (!empty($Value["ID"])){
+                $KeyDef = $Value["ID"];
+            } else {
+                $KeyDef = $Key;
+            }
+            $Headers = "";
+            $TableData = "";
+            foreach($Value as $Header => $Data){
+                $Headers .= "<th>$Header</th>";
+                if (is_array($Data)){
+                    $TableData .= "<td>0</td>";
+                } else {
+                    if (stripos($Data,".png") !== false){
+                        $TableData .= "<td><img src='../alltex/Texture2D/".$Data."'/></td>";
+                    } else {
+                        $TableData .= "<td>".$Data."</td>";
+                    }
+                }
+            }
+            $OutputString = "<!DOCTYPE html>\n";
+            $OutputString .= "<html lang=\"en\">\n";
+            $OutputString .= "<title>W3.CSS Template</title>\n";
+            $OutputString .= "<meta charset=\"UTF-8\">\n";
+            $OutputString .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n";
+            $OutputString .= "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">\n";
+            $OutputString .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">            \n";
+            $OutputString .= "<style>
+            body {font-family: \"Lato\", sans-serif}
+            .mySlides {display: none}
+            figure{
+                display: inline-block;
+            }
+            table, th, td {
+              border: 1px solid black;
+            }
+            </style>\n";
+            $OutputString .= "<body>\n";
+            $OutputString .= "<table class=\"w3-table-all\">\n";
+            $OutputString .= "<tr>\n";
+            $OutputString .= "$Headers\n";
+            $OutputString .= "</tr>\n";
+            $OutputString .= "<tr>\n";
+            $OutputString .= "$TableData\n";
+            $OutputString .= "</tr>\n";
+            $OutputString .= "</table>\n";
+            $OutputString .= "</body>\n";
+            $OutputString .= "</html>\n";
+            $Output[] = $OutputString;
+        }
+        $this->saveExtra("PokemonUniteApi/Parsed/test.html",implode("\n\n",$Output), true, true);
     }
 }

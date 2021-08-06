@@ -79,12 +79,24 @@
             "Type" : "Transient"
         },
         "1416":{
-            "Def" : "Male_Icon",
+            "Def" : "Male_Icon[0]",
+            "Type" : "Texture"
+        },
+        "1469":{
+            "Def" : "Pref_Lobby[0]",
+            "Type" : "String"
+        },
+        "1516":{
+            "Def" : "Male_Icon[1]",
             "Type" : "Texture"
         },
         "1518":{
             "Def" : "Male_Name",
             "Type" : "Transient"
+        },
+        "1578":{
+            "Def" : "Pref_Lobby[1]",
+            "Type" : "String"
         },
         "1613":{
             "Def" : "Female_Description",
@@ -387,6 +399,96 @@
         "1800":{
             "Def" : "Pref",
             "Type" : "String"
+        }
+    },
+    "Pokemon_Base": {
+        "1261":{
+            "Def" : "Stone_Icon",
+            "Type" : "Texture"
+        },
+        "1263":{
+            "Def" : "Name",
+            "Type" : "String"
+        },
+        "1310":{
+            "Def" : "Growth_Description",
+            "Type" : "String"
+        },
+        "1315":{
+            "Def" : "Custom_Plan",
+            "Type" : "String"
+        },
+        "1360":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1383":{
+            "Def" : "Main_Icon",
+            "Type" : "Texture"
+        },
+        "1448":{
+            "Def" : "Type",
+            "Type" : "Transient"
+        },
+        "1450":{
+            "Def" : "Background_Image",
+            "Type" : "String"
+        },
+        "1481":{
+            "Def" : "Sub_Icon",
+            "Type" : "Texture"
+        },
+        "1506":{
+            "Def" : "Size",
+            "Type" : "Transient"
+        },
+        "1602":{
+            "Def" : "Announce",
+            "Type" : "String"
+        },
+        "1611":{
+            "Def" : "Evoution[1]",
+            "Type" : "Transient"
+        },
+        "1658":{
+            "Def" : "Difficulty",
+            "Type" : "Transient"
+        },
+        "1677":{
+            "Def" : "Evoution[2]",
+            "Type" : "Transient"
+        },
+        "1713":{
+            "Def" : "Evoution[3]",
+            "Type" : "Transient"
+        },
+        "1732":{
+            "Def" : "Pokemon_Image",
+            "Type" : "String"
+        },
+        "1744":{
+            "Def" : "Avatar_Panel_BG",
+            "Type" : "Texture"
+        },
+        "1772":{
+            "Def" : "Whole_Icon",
+            "Type" : "Texture"
+        },
+        "1784":{
+            "Def" : "Type_Description",
+            "Type" : "Transient"
+        },
+        "1822":{
+            "Def" : "How_To_Obtain",
+            "Type" : "Transient"
+        },
+        "1835":{
+            "Def" : "Skill_Description",
+            "Type" : "String"
+        },
+        "1853":{
+            "Def" : "Weight",
+            "Type" : "Transient"
         }
     },
     "Shop": {

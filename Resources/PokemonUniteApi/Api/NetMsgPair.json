@@ -1,0 +1,46 @@
+{
+    "0": {
+        "1254": {
+            "0": "PB_CSID_CREATE_ROOM_REQ"
+        },
+        "1257": {
+            "0": "PB_SCID_JOIN_ROOM_NTF"
+        },
+        "1824": {
+            "0": 1
+        }
+    },
+    "1": {
+        "1254": {
+            "0": "PB_CSID_SHOWID_JOIN_ROOM_REQ"
+        },
+        "1257": {
+            "0": "PB_SCID_SHOWID_JOIN_ROOM_RSP"
+        },
+        "1824": {
+            "0": 2
+        }
+    },
+    "2": {
+        "1254": {
+            "0": "PB_CSID_SET_NEWBIE_STATE_INFO_REQ"
+        },
+        "1257": {
+            "0": "PB_SCID_NEWBIE_STATE_INFO_NTF"
+        },
+        "1824": {
+            "0": 3
+        }
+    },
+    "3": {
+        "1254": {
+            "0": "PB_CSID_GET_TUTORIAL_REWARD_REQ"
+        },
+        "1257": {
+            "0": "PB_SCID_GET_TUTORIAL_REWARD_RSP"
+        },
+        "1824": {
+            "0": 4
+        }
+    }
+}
