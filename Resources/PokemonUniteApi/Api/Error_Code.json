@@ -1,8 +1,6 @@
 {
     "0": {
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_Succ",
         "Message": {
             "en": "",
@@ -19,9 +17,7 @@
     },
     "1": {
         "Error_Code_Num": 1,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_Failed",
         "Message": {
             "en": "Failed.",
@@ -38,9 +34,7 @@
     },
     "2": {
         "Error_Code_Num": 2,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_Test",
         "Message": {
             "en": "An error occurred. (Error Code: 2)",
@@ -57,9 +51,7 @@
     },
     "3": {
         "Error_Code_Num": 3,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TestCase_Code1",
         "Message": {
             "en": "An error occurred. (Error Code: 3)",
@@ -76,9 +68,7 @@
     },
     "4": {
         "Error_Code_Num": 4,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_TestCase_Code2",
         "Message": {
             "en": "An error occurred. (Error Code: 4)",
@@ -95,9 +85,7 @@
     },
     "5": {
         "Error_Code_Num": 5,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_TestCase_Code3",
         "Message": {
             "en": "An error occurred. (Error Code: 5)",
@@ -114,9 +102,7 @@
     },
     "6": {
         "Error_Code_Num": 6,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_Common_ParamInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 6)",
@@ -133,9 +119,7 @@
     },
     "7": {
         "Error_Code_Num": 7,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_LogicDataUnregister",
         "Message": {
             "en": "An error occurred. (Error Code: 7)",
@@ -152,9 +136,7 @@
     },
     "8": {
         "Error_Code_Num": 8,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_NoData",
         "Message": {
             "en": "An error occurred. (Error Code: 8)",
@@ -171,9 +153,7 @@
     },
     "9": {
         "Error_Code_Num": 9,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntResAttrFull",
         "Message": {
             "en": "An error occurred. (Error Code: 9)",
@@ -190,9 +170,7 @@
     },
     "10": {
         "Error_Code_Num": 10,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntAttrResInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 10)",
@@ -209,9 +187,7 @@
     },
     "11": {
         "Error_Code_Num": 11,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntAttrNotEnough",
         "Message": {
             "en": "An error occurred. (Error Code: 11)",
@@ -228,9 +204,7 @@
     },
     "12": {
         "Error_Code_Num": 12,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntAttrChgValInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 12)",
@@ -247,9 +221,7 @@
     },
     "13": {
         "Error_Code_Num": 13,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntAttrBPExpAddFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 13)",
@@ -266,9 +238,7 @@
     },
     "14": {
         "Error_Code_Num": 14,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntAttrNotDelRes",
         "Message": {
             "en": "An error occurred. (Error Code: 14)",
@@ -285,9 +255,7 @@
     },
     "15": {
         "Error_Code_Num": 15,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_ResVersionLimit",
         "Message": {
             "en": "Please update to the latest version of the game.",
@@ -304,9 +272,7 @@
     },
     "16": {
         "Error_Code_Num": 16,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_Insert_Data_Exist",
         "Message": {
             "en": "An error occurred. (Error Code: 16)",
@@ -323,9 +289,7 @@
     },
     "17": {
         "Error_Code_Num": 17,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_DB_Data_Version_Not_Right",
         "Message": {
             "en": "An error occurred. (Error Code: 17)",
@@ -342,9 +306,7 @@
     },
     "18": {
         "Error_Code_Num": 18,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Common_DB_Op_Limit",
         "Message": {
             "en": "An error occurred. (Error Code: 18)",
@@ -361,9 +323,7 @@
     },
     "19": {
         "Error_Code_Num": 101,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AllocDS_Failed",
         "Message": {
             "en": "An error occurred. (Error Code: 101)",
@@ -380,9 +340,7 @@
     },
     "20": {
         "Error_Code_Num": 102,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_FreeDS_Failed",
         "Message": {
             "en": "An error occurred. (Error Code: 102)",
@@ -399,9 +357,7 @@
     },
     "21": {
         "Error_Code_Num": 103,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DscAllocDs_Failed",
         "Message": {
             "en": "An error occurred. (Error Code: 103)",
@@ -418,9 +374,7 @@
     },
     "22": {
         "Error_Code_Num": 104,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NotEnoughCoin",
         "Message": {
             "en": "An error occurred. (Error Code: 104)",
@@ -437,9 +391,7 @@
     },
     "23": {
         "Error_Code_Num": 105,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NotCoinResFull",
         "Message": {
             "en": "An error occurred. (Error Code: 105)",
@@ -456,9 +408,7 @@
     },
     "24": {
         "Error_Code_Num": 106,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NotCoinCfgNotExist",
         "Message": {
             "en": "An error occurred. (Error Code: 106)",
@@ -475,9 +425,7 @@
     },
     "25": {
         "Error_Code_Num": 107,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OpCouponsMustPlatformLogin",
         "Message": {
             "en": "An error occurred. (Error Code: 107)",
@@ -494,9 +442,7 @@
     },
     "26": {
         "Error_Code_Num": 200,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_FeatureOpened",
         "Message": {
             "en": "An error occurred. (Error Code: 200)",
@@ -513,9 +459,7 @@
     },
     "27": {
         "Error_Code_Num": 1001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GetVideoFrapError",
         "Message": {
             "en": "An error occurred. (Error Code: 1001)",
@@ -532,9 +476,7 @@
     },
     "28": {
         "Error_Code_Num": 1002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ReqBootSingleToVideo",
         "Message": {
             "en": "An error occurred. (Error Code: 1002)",
@@ -551,9 +493,7 @@
     },
     "29": {
         "Error_Code_Num": 1003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DeskHasStartGame",
         "Message": {
             "en": "That battle has already started.",
@@ -570,9 +510,7 @@
     },
     "30": {
         "Error_Code_Num": 1004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AccountNotInDesk",
         "Message": {
             "en": "The battle has already ended.",
@@ -589,9 +527,7 @@
     },
     "31": {
         "Error_Code_Num": 1005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DeskStateInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 1005)",
@@ -608,9 +544,7 @@
     },
     "32": {
         "Error_Code_Num": 1006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_FrapCacheIsBroken",
         "Message": {
             "en": "An error occurred. (Error Code: 1006)",
@@ -627,9 +561,7 @@
     },
     "33": {
         "Error_Code_Num": 1007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_CurLenBigThanVideoLen",
         "Message": {
             "en": "An error occurred. (Error Code: 1007)",
@@ -646,9 +578,7 @@
     },
     "34": {
         "Error_Code_Num": 1008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_CampAcntNumLimit",
         "Message": {
             "en": "That lobby is full.",
@@ -665,9 +595,7 @@
     },
     "35": {
         "Error_Code_Num": 1009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RepeatIntoTheRoom",
         "Message": {
             "en": "You are already in that lobby.",
@@ -684,9 +612,7 @@
     },
     "36": {
         "Error_Code_Num": 1010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_StillInOtherRoom",
         "Message": {
             "en": "You cannot enter multiple lobbies at the same time.",
@@ -703,9 +629,7 @@
     },
     "37": {
         "Error_Code_Num": 1011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RoomFailure",
         "Message": {
             "en": "An error occurred. (Error Code: 1011)",
@@ -722,9 +646,7 @@
     },
     "38": {
         "Error_Code_Num": 1012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_JoinRoomFailure",
         "Message": {
             "en": "Unable to enter lobby. Please try again later.",
@@ -741,9 +663,7 @@
     },
     "39": {
         "Error_Code_Num": 1013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PrepareDeskFail",
         "Message": {
             "en": "Failed to start battle. Please try again later.",
@@ -760,9 +680,7 @@
     },
     "40": {
         "Error_Code_Num": 1014,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AllocDS_Desk_NotExist",
         "Message": {
             "en": "An error occurred. (Error Code: 1014)",
@@ -779,9 +697,7 @@
     },
     "41": {
         "Error_Code_Num": 1015,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AllocDS_Param_Invalid",
         "Message": {
             "en": "An error occurred. (Error Code: 1015)",
@@ -798,9 +714,7 @@
     },
     "42": {
         "Error_Code_Num": 1016,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DSFile_NotExist",
         "Message": {
             "en": "An error occurred. (Error Code: 1016)",
@@ -817,9 +731,7 @@
     },
     "43": {
         "Error_Code_Num": 1017,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DSEntry_NullPtr",
         "Message": {
             "en": "An error occurred. (Error Code: 1017)",
@@ -836,9 +748,7 @@
     },
     "44": {
         "Error_Code_Num": 1018,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DSEntry_HasFreed",
         "Message": {
             "en": "An error occurred. (Error Code: 1018)",
@@ -855,9 +765,7 @@
     },
     "45": {
         "Error_Code_Num": 1019,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Double_KillDsFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 1019)",
@@ -874,9 +782,7 @@
     },
     "46": {
         "Error_Code_Num": 1020,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DSEntry_FreeFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 1020)",
@@ -893,9 +799,7 @@
     },
     "47": {
         "Error_Code_Num": 1021,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_FreeDs_Pid_Invalid",
         "Message": {
             "en": "An error occurred. (Error Code: 1021)",
@@ -912,9 +816,7 @@
     },
     "48": {
         "Error_Code_Num": 1022,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_FetchDS_Param",
         "Message": {
             "en": "An error occurred. (Error Code: 1022)",
@@ -931,9 +833,7 @@
     },
     "49": {
         "Error_Code_Num": 1023,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ForkDs_Failed",
         "Message": {
             "en": "An error occurred. (Error Code: 1023)",
@@ -950,9 +850,7 @@
     },
     "50": {
         "Error_Code_Num": 1026,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GSTrans2RelayBuffUnpackFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 1026)",
@@ -969,9 +867,7 @@
     },
     "51": {
         "Error_Code_Num": 1027,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GSTrans2RelayBuffpackFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 1027)",
@@ -988,9 +884,7 @@
     },
     "52": {
         "Error_Code_Num": 1028,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_CannotChooseHero",
         "Message": {
             "en": "You do not have a Unite license for that Pokémon.",
@@ -1007,9 +901,7 @@
     },
     "53": {
         "Error_Code_Num": 1029,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HadChooseHero",
         "Message": {
             "en": "An error occurred. (Error Code: 1029)",
@@ -1026,9 +918,7 @@
     },
     "54": {
         "Error_Code_Num": 1030,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_UsedPokemonCreateFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 1030)",
@@ -1045,9 +935,7 @@
     },
     "55": {
         "Error_Code_Num": 1031,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HasNotChoosePokemon",
         "Message": {
             "en": "Please select a Pokémon.",
@@ -1064,9 +952,7 @@
     },
     "56": {
         "Error_Code_Num": 1033,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HadLockHero",
         "Message": {
             "en": "You have already selected a Pokémon.",
@@ -1083,9 +969,7 @@
     },
     "57": {
         "Error_Code_Num": 1034,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PackHeroBriefFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 1034)",
@@ -1102,9 +986,7 @@
     },
     "58": {
         "Error_Code_Num": 1035,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_SkillRecommendTypeInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 1035)",
@@ -1121,9 +1003,7 @@
     },
     "59": {
         "Error_Code_Num": 1036,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_SkillRecommendNumInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 1036)",
@@ -1140,9 +1020,7 @@
     },
     "60": {
         "Error_Code_Num": 1037,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_LockHeroNotSameAsChoose",
         "Message": {
             "en": "An error occurred. (Error Code: 1037)",
@@ -1159,9 +1037,7 @@
     },
     "61": {
         "Error_Code_Num": 1038,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ChooseSameHeroInCamp",
         "Message": {
             "en": "Another Trainer has already selected that Pokémon.",
@@ -1178,9 +1054,7 @@
     },
     "62": {
         "Error_Code_Num": 1039,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PackPokemonAvatarBriefFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 1039)",
@@ -1197,9 +1071,7 @@
     },
     "63": {
         "Error_Code_Num": 1040,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ChgWayTipTypeSame",
         "Message": {
             "en": "You have already selected that path.",
@@ -1216,9 +1088,7 @@
     },
     "64": {
         "Error_Code_Num": 1041,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ChgWayTipTypeInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 1041)",
@@ -1235,9 +1105,7 @@
     },
     "65": {
         "Error_Code_Num": 2001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_Abort",
         "Message": {
             "en": "An error occurred. (Error Code: 2001)",
@@ -1254,9 +1122,7 @@
     },
     "66": {
         "Error_Code_Num": 2002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_Ohters",
         "Message": {
             "en": "An error occurred. (Error Code: 2002)",
@@ -1273,9 +1139,7 @@
     },
     "67": {
         "Error_Code_Num": 2003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_TeamerLeave",
         "Message": {
             "en": "Matching has stopped because a Trainer left the lobby.",
@@ -1292,9 +1156,7 @@
     },
     "68": {
         "Error_Code_Num": 2004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_TypeInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2004)",
@@ -1311,9 +1173,7 @@
     },
     "69": {
         "Error_Code_Num": 2005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_ChkStartFail",
         "Message": {
             "en": "An error occurred. (Error Code: 2005)",
@@ -1330,9 +1190,7 @@
     },
     "70": {
         "Error_Code_Num": 2006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_NewAcntFail",
         "Message": {
             "en": "An error occurred. (Error Code: 2006)",
@@ -1349,9 +1207,7 @@
     },
     "71": {
         "Error_Code_Num": 2007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_NewRoomFail",
         "Message": {
             "en": "An error occurred. (Error Code: 2007)",
@@ -1368,9 +1224,7 @@
     },
     "72": {
         "Error_Code_Num": 2008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Match_StartFail",
         "Message": {
             "en": "An error occurred. (Error Code: 2008)",
@@ -1387,9 +1241,7 @@
     },
     "73": {
         "Error_Code_Num": 2101,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RelayLimit",
         "Message": {
             "en": "An error occurred. (Error Code: 2101)",
@@ -1406,9 +1258,7 @@
     },
     "74": {
         "Error_Code_Num": 2102,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_GameAbort",
         "Message": {
             "en": "An error occurred. (Error Code: 2102)",
@@ -1425,9 +1275,7 @@
     },
     "75": {
         "Error_Code_Num": 2103,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_Timeout",
         "Message": {
             "en": "The lobby was closed because the waiting time was too long.",
@@ -1444,9 +1292,7 @@
     },
     "76": {
         "Error_Code_Num": 2104,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_AcntLeave",
         "Message": {
             "en": "A Trainer left the lobby.",
@@ -1463,9 +1309,7 @@
     },
     "77": {
         "Error_Code_Num": 2105,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_Others",
         "Message": {
             "en": "Resetting lobby.",
@@ -1482,9 +1326,7 @@
     },
     "78": {
         "Error_Code_Num": 2106,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_Unconfirm",
         "Message": {
             "en": "Confirm your participation in the battle.",
@@ -1501,9 +1343,7 @@
     },
     "79": {
         "Error_Code_Num": 2107,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_TeamerUnconfirm",
         "Message": {
             "en": "One or more Trainers have not yet confirmed their participation.",
@@ -1520,9 +1360,7 @@
     },
     "80": {
         "Error_Code_Num": 2108,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_TeamerLeave",
         "Message": {
             "en": "A Trainer left the lobby.",
@@ -1539,9 +1377,7 @@
     },
     "81": {
         "Error_Code_Num": 2109,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_OthesUnconfirm",
         "Message": {
             "en": "One or more Trainers have not yet confirmed their participation.",
@@ -1558,9 +1394,7 @@
     },
     "82": {
         "Error_Code_Num": 2110,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_OthersLeave",
         "Message": {
             "en": "A Trainer left the lobby.",
@@ -1577,9 +1411,7 @@
     },
     "83": {
         "Error_Code_Num": 2111,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_NotFound",
         "Message": {
             "en": "No lobby found.",
@@ -1596,9 +1428,7 @@
     },
     "84": {
         "Error_Code_Num": 2112,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_AlreadyStart",
         "Message": {
             "en": "That battle has already started.",
@@ -1615,9 +1445,7 @@
     },
     "85": {
         "Error_Code_Num": 2113,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_VersionLimit",
         "Message": {
             "en": "An error occurred. (Error Code: 2113)",
@@ -1634,9 +1462,7 @@
     },
     "86": {
         "Error_Code_Num": 2114,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MemberFull",
         "Message": {
             "en": "That lobby is full.",
@@ -1653,9 +1479,7 @@
     },
     "87": {
         "Error_Code_Num": 2115,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_PrivilegeLimit",
         "Message": {
             "en": "An error occurred. (Error Code: 2115)",
@@ -1672,9 +1496,7 @@
     },
     "88": {
         "Error_Code_Num": 2116,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_SomeonNotReady",
         "Message": {
             "en": "One or more Trainers aren’t ready yet.",
@@ -1691,9 +1513,7 @@
     },
     "89": {
         "Error_Code_Num": 2117,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_AcntNotInRoom",
         "Message": {
             "en": "That Trainer is not in the lobby.",
@@ -1710,9 +1530,7 @@
     },
     "90": {
         "Error_Code_Num": 2118,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MasterOperInvalid",
         "Message": {
             "en": "The team leader cannot be changed right now.",
@@ -1729,9 +1547,7 @@
     },
     "91": {
         "Error_Code_Num": 2119,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_ChgposBusy",
         "Message": {
             "en": "That Trainer is currently considering a position change with another Trainer. Please try again shortly.",
@@ -1748,9 +1564,7 @@
     },
     "92": {
         "Error_Code_Num": 2120,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_ChgposRefuse",
         "Message": {
             "en": "Position change declined.",
@@ -1767,9 +1581,7 @@
     },
     "93": {
         "Error_Code_Num": 2121,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_ChgposCancel",
         "Message": {
             "en": "The Trainer canceled the position change.",
@@ -1786,9 +1598,7 @@
     },
     "94": {
         "Error_Code_Num": 2122,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_QuitMultiGameFail",
         "Message": {
             "en": "An error occurred when leaving the battle. Please try again later.",
@@ -1805,9 +1615,7 @@
     },
     "95": {
         "Error_Code_Num": 2123,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_HeroInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2123)",
@@ -1824,9 +1632,7 @@
     },
     "96": {
         "Error_Code_Num": 2124,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MapInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2124)",
@@ -1843,9 +1649,7 @@
     },
     "97": {
         "Error_Code_Num": 2125,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MapModeInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2125)",
@@ -1862,9 +1666,7 @@
     },
     "98": {
         "Error_Code_Num": 2126,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_TypeInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2126)",
@@ -1881,9 +1683,7 @@
     },
     "99": {
         "Error_Code_Num": 2127,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MasterInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2127)",
@@ -1900,9 +1700,7 @@
     },
     "100": {
         "Error_Code_Num": 2128,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_CampInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2128)",
@@ -1919,9 +1717,7 @@
     },
     "101": {
         "Error_Code_Num": 2129,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_CampPosInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2129)",
@@ -1938,9 +1734,7 @@
     },
     "102": {
         "Error_Code_Num": 2130,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_ChgposFail",
         "Message": {
             "en": "Position change failed. Please try again later.",
@@ -1957,9 +1751,7 @@
     },
     "103": {
         "Error_Code_Num": 2131,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_NoMapCanUse",
         "Message": {
             "en": "An error occurred. (Error Code: 2131)",
@@ -1976,9 +1768,7 @@
     },
     "104": {
         "Error_Code_Num": 2132,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_StartChkFail",
         "Message": {
             "en": "The battle has already started.",
@@ -1995,9 +1785,7 @@
     },
     "105": {
         "Error_Code_Num": 2133,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_AcntInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2133)",
@@ -2014,9 +1802,7 @@
     },
     "106": {
         "Error_Code_Num": 2134,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_HasNoMember",
         "Message": {
             "en": "An error occurred. (Error Code: 2134)",
@@ -2033,9 +1819,7 @@
     },
     "107": {
         "Error_Code_Num": 2135,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_NewRoomFail",
         "Message": {
             "en": "Failed to create lobby. Please try again later.",
@@ -2052,9 +1836,7 @@
     },
     "108": {
         "Error_Code_Num": 2136,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_NewAcntFail",
         "Message": {
             "en": "An error occurred. (Error Code: 2136)",
@@ -2071,9 +1853,7 @@
     },
     "109": {
         "Error_Code_Num": 2137,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_AddAcntFail",
         "Message": {
             "en": "An error occurred. (Error Code: 2137)",
@@ -2090,9 +1870,7 @@
     },
     "110": {
         "Error_Code_Num": 2138,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_StartFail",
         "Message": {
             "en": "Failed to start battle. Please try again later.",
@@ -2109,9 +1887,7 @@
     },
     "111": {
         "Error_Code_Num": 2139,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_StateInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2139)",
@@ -2128,9 +1904,7 @@
     },
     "112": {
         "Error_Code_Num": 2140,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_InMatchType",
         "Message": {
             "en": "An error occurred. (Error Code: 2140)",
@@ -2147,9 +1921,7 @@
     },
     "113": {
         "Error_Code_Num": 2141,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_SomeoneSettle",
         "Message": {
             "en": "One or more Trainers are still calculating.",
@@ -2166,9 +1938,7 @@
     },
     "114": {
         "Error_Code_Num": 2142,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RoomToMatch",
         "Message": {
             "en": "An error occurred. (Error Code: 2142)",
@@ -2185,9 +1955,7 @@
     },
     "115": {
         "Error_Code_Num": 2143,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_Matching",
         "Message": {
             "en": "Matching currently under way. Please try again later.",
@@ -2204,9 +1972,7 @@
     },
     "116": {
         "Error_Code_Num": 2144,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_ChgposWait",
         "Message": {
             "en": "",
@@ -2223,9 +1989,7 @@
     },
     "117": {
         "Error_Code_Num": 2145,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MapInvalidPokemon",
         "Message": {
             "en": "An error occurred. (Error Code: 2145)",
@@ -2242,9 +2006,7 @@
     },
     "118": {
         "Error_Code_Num": 2146,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MapInvalidNoMap",
         "Message": {
             "en": "An error occurred. (Error Code: 2006)",
@@ -2261,9 +2023,7 @@
     },
     "119": {
         "Error_Code_Num": 2147,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MapInvalidToMorePlayer",
         "Message": {
             "en": "Incorrect number of Trainers. Cannot switch modes.",
@@ -2280,9 +2040,7 @@
     },
     "120": {
         "Error_Code_Num": 2148,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_MapInvalidNotOpenTime",
         "Message": {
             "en": "Limited-time map. Don’t miss information to come at a later date!",
@@ -2299,9 +2057,7 @@
     },
     "121": {
         "Error_Code_Num": 2149,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_InvalidPlayerNum",
         "Message": {
             "en": "The battle cannot start because the numbers of Trainers do not match.",
@@ -2318,9 +2074,7 @@
     },
     "122": {
         "Error_Code_Num": 2150,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RankedMatchNotOpen",
         "Message": {
             "en": "Ranked matches are not being held yet. Please check official information to come at a later date.",
@@ -2337,9 +2091,7 @@
     },
     "123": {
         "Error_Code_Num": 2151,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_InRoomSettleInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 2151)",
@@ -2356,9 +2108,7 @@
     },
     "124": {
         "Error_Code_Num": 2152,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RaceNotOpen",
         "Message": {
             "en": "",
@@ -2375,9 +2125,7 @@
     },
     "125": {
         "Error_Code_Num": 2153,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RelaxNotOpen",
         "Message": {
             "en": "",
@@ -2394,9 +2142,7 @@
     },
     "126": {
         "Error_Code_Num": 2154,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RankNotOpen",
         "Message": {
             "en": "",
@@ -2413,9 +2159,7 @@
     },
     "127": {
         "Error_Code_Num": 2155,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_LegendNotOpen",
         "Message": {
             "en": "",
@@ -2432,9 +2176,7 @@
     },
     "128": {
         "Error_Code_Num": 2156,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_InvalidSubMode",
         "Message": {
             "en": "An error occurred. (Error Code: 2156)",
@@ -2451,9 +2193,7 @@
     },
     "129": {
         "Error_Code_Num": 2157,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_SameSubMode",
         "Message": {
             "en": "Please try that operation again later.",
@@ -2470,9 +2210,7 @@
     },
     "130": {
         "Error_Code_Num": 2158,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_NoOtherSubMode",
         "Message": {
             "en": "An error occurred. (Error Code: 2158)",
@@ -2489,9 +2227,7 @@
     },
     "131": {
         "Error_Code_Num": 2159,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RoomToRank",
         "Message": {
             "en": "Ranked match cannot be selected while in friendly match mode.",
@@ -2508,9 +2244,7 @@
     },
     "132": {
         "Error_Code_Num": 2160,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_SomeoneHasNoMap",
         "Message": {
             "en": "This is a limited-time mode. That map cannot be opened right now.",
@@ -2527,9 +2261,7 @@
     },
     "133": {
         "Error_Code_Num": 2161,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_RankedDivisionDiffTooBig",
         "Message": {
             "en": "One or more Trainers have not reached the required rank.",
@@ -2546,9 +2278,7 @@
     },
     "134": {
         "Error_Code_Num": 2162,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Room_CloseForUpdateServer",
         "Message": {
             "en": "The server is currently undergoing maintenance. Please try again later.",
@@ -2565,9 +2295,7 @@
     },
     "135": {
         "Error_Code_Num": 2201,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Showid_ResourceLimit",
         "Message": {
             "en": "An error occurred. (Error Code: 2201)",
@@ -2584,9 +2312,7 @@
     },
     "136": {
         "Error_Code_Num": 2202,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Showid_NotFound",
         "Message": {
             "en": "Could not find lobby.",
@@ -2603,9 +2329,7 @@
     },
     "137": {
         "Error_Code_Num": 2203,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Showid_InvaildParam",
         "Message": {
             "en": "An error occurred. (Error Code: 2203)",
@@ -2622,9 +2346,7 @@
     },
     "138": {
         "Error_Code_Num": 2204,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Showid_ErrState",
         "Message": {
             "en": "That Trainer is currently in a battle.",
@@ -2641,9 +2363,7 @@
     },
     "139": {
         "Error_Code_Num": 2205,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Showid_ErrRoomState",
         "Message": {
             "en": "That Trainer is still in the lobby.",
@@ -2660,9 +2380,7 @@
     },
     "140": {
         "Error_Code_Num": 2301,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Mail_NotExist",
         "Message": {
             "en": "That mail message has already been deleted.",
@@ -2679,9 +2397,7 @@
     },
     "141": {
         "Error_Code_Num": 2302,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Mail_NoBatchDel",
         "Message": {
             "en": "You have no mail.",
@@ -2698,9 +2414,7 @@
     },
     "142": {
         "Error_Code_Num": 2303,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Mail_NotReady",
         "Message": {
             "en": "A mail error occurred. Please try again shortly.",
@@ -2717,9 +2431,7 @@
     },
     "143": {
         "Error_Code_Num": 2304,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Mail_InvalidType",
         "Message": {
             "en": "An error occurred. (Error Code: 2304)",
@@ -2736,9 +2448,7 @@
     },
     "144": {
         "Error_Code_Num": 2305,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Mail_InvalidMailID",
         "Message": {
             "en": "An error occurred. (Error Code: 2305)",
@@ -2755,9 +2465,7 @@
     },
     "145": {
         "Error_Code_Num": 2306,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Mail_NoAccess",
         "Message": {
             "en": "There are no items to claim.",
@@ -2774,9 +2482,7 @@
     },
     "146": {
         "Error_Code_Num": 3000,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GetTopNumberTypeError",
         "Message": {
             "en": "An error occurred. (Error Code: 3000)",
@@ -2793,9 +2499,7 @@
     },
     "147": {
         "Error_Code_Num": 3001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GetTopNError",
         "Message": {
             "en": "Ranking search timed out. Please try again later.",
@@ -2812,9 +2516,7 @@
     },
     "148": {
         "Error_Code_Num": 3002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GetTopNextError",
         "Message": {
             "en": "An error occurred during the ranking search. Please try again later.",
@@ -2831,9 +2533,7 @@
     },
     "149": {
         "Error_Code_Num": 3003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GetTopNTimeOut",
         "Message": {
             "en": "Ranking search timed out. Please try again later.",
@@ -2850,9 +2550,7 @@
     },
     "150": {
         "Error_Code_Num": 3004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_GetTopNFreqOverLimit",
         "Message": {
             "en": "Please wait before refreshing again.",
@@ -2869,9 +2567,7 @@
     },
     "151": {
         "Error_Code_Num": 4001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_WhiteList_Player_Not_Exist",
         "Message": {
             "en": "",
@@ -2888,9 +2584,7 @@
     },
     "152": {
         "Error_Code_Num": 4002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_WhiteList_Password_Invalid",
         "Message": {
             "en": "Incorrect password.",
@@ -2907,9 +2601,7 @@
     },
     "153": {
         "Error_Code_Num": 4003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_WhiteList_DeviceSeq_Invalid",
         "Message": {
             "en": "That account is already logged in on another device.",
@@ -2926,9 +2618,7 @@
     },
     "154": {
         "Error_Code_Num": 5001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntFightHistoryListNotExist",
         "Message": {
             "en": "No battle records exist.",
@@ -2945,9 +2635,7 @@
     },
     "155": {
         "Error_Code_Num": 6001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OnlineChk",
         "Message": {
             "en": "You are already logged in.",
@@ -2964,13 +2652,9 @@
     },
     "156": {
         "Error_Code_Num": 6002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_LoginStateReconn",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "An error occurred. (Error Code: 6002)",
             "chs": "游戏异常（错误码：6002）\r",
@@ -2986,9 +2670,7 @@
     },
     "157": {
         "Error_Code_Num": 6003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Protocol",
         "Message": {
             "en": "An error occurred. (Error Code: 6003)",
@@ -3005,9 +2687,7 @@
     },
     "158": {
         "Error_Code_Num": 6004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RegisterNameDup",
         "Message": {
             "en": "That Trainer name is already in use.",
@@ -3024,9 +2704,7 @@
     },
     "159": {
         "Error_Code_Num": 6005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DuplicateLogin",
         "Message": {
             "en": "You are currently logged in on another device.",
@@ -3043,13 +2721,9 @@
     },
     "160": {
         "Error_Code_Num": 6006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RedirectGamesvr",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "A log-in error occurred. Please restart the game.",
             "chs": "游戏异常，请尝试重启游戏\r",
@@ -3065,9 +2739,7 @@
     },
     "161": {
         "Error_Code_Num": 6007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Coroutine",
         "Message": {
             "en": "An error occurred. (Error Code: 6007)",
@@ -3084,9 +2756,7 @@
     },
     "162": {
         "Error_Code_Num": 6008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TcaplusTimeout",
         "Message": {
             "en": "A time-out occurred.",
@@ -3103,9 +2773,7 @@
     },
     "163": {
         "Error_Code_Num": 6009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TcaplusFail",
         "Message": {
             "en": "An error occurred. (Error Code: 6009)",
@@ -3122,9 +2790,7 @@
     },
     "164": {
         "Error_Code_Num": 6010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntReleased",
         "Message": {
             "en": "An error occurred. (Error Code: 6010)",
@@ -3141,9 +2807,7 @@
     },
     "165": {
         "Error_Code_Num": 6011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntSeqNotMatch",
         "Message": {
             "en": "An error occurred. (Error Code: 6011)",
@@ -3160,9 +2824,7 @@
     },
     "166": {
         "Error_Code_Num": 6012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_SSMsgTimeout",
         "Message": {
             "en": "An error occurred. (Error Code: 6012)",
@@ -3179,9 +2841,7 @@
     },
     "167": {
         "Error_Code_Num": 6013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_CenterAcntFail",
         "Message": {
             "en": "An error occurred. (Error Code: 6013)",
@@ -3198,9 +2858,7 @@
     },
     "168": {
         "Error_Code_Num": 6014,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntNotLoginState",
         "Message": {
             "en": "An error occurred. (Error Code: 6014)",
@@ -3217,9 +2875,7 @@
     },
     "169": {
         "Error_Code_Num": 6015,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntLoginKicked",
         "Message": {
             "en": "An error occurred. (Error Code: 6015)",
@@ -3236,9 +2892,7 @@
     },
     "170": {
         "Error_Code_Num": 6016,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntLoginFail",
         "Message": {
             "en": "An error occurred. (Error Code: 6016)",
@@ -3255,9 +2909,7 @@
     },
     "171": {
         "Error_Code_Num": 6017,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RegisterNameNull",
         "Message": {
             "en": "An error occurred. (Error Code: 6017)",
@@ -3274,9 +2926,7 @@
     },
     "172": {
         "Error_Code_Num": 6018,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RegisterNotNeed",
         "Message": {
             "en": "An error occurred. (Error Code: 6018)",
@@ -3293,13 +2943,9 @@
     },
     "173": {
         "Error_Code_Num": 6019,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_VersionNotMatch",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "An update is available. Please restart the game.",
             "chs": "检测到有新的内容更新，请重启客户端进行更新\r",
@@ -3315,13 +2961,9 @@
     },
     "174": {
         "Error_Code_Num": 6020,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResUpdated",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "An update is available. Please restart the game.",
             "chs": "检测到有新的内容更新，请重启客户端进行更新\r",
@@ -3337,9 +2979,7 @@
     },
     "175": {
         "Error_Code_Num": 6021,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TcaplusFetch",
         "Message": {
             "en": "An error occurred. (Error Code: 6021)",
@@ -3356,9 +2996,7 @@
     },
     "176": {
         "Error_Code_Num": 6022,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TcaplusRecord",
         "Message": {
             "en": "An error occurred. (Error Code: 6022)",
@@ -3375,9 +3013,7 @@
     },
     "177": {
         "Error_Code_Num": 6023,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TcaplusMgr",
         "Message": {
             "en": "An error occurred. (Error Code: 6023)",
@@ -3394,9 +3030,7 @@
     },
     "178": {
         "Error_Code_Num": 6024,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RegisterNameInvalid",
         "Message": {
             "en": "Contains invalid characters.",
@@ -3413,9 +3047,7 @@
     },
     "179": {
         "Error_Code_Num": 6025,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_InvalidGender",
         "Message": {
             "en": "Data error. Please select again.",
@@ -3432,13 +3064,9 @@
     },
     "180": {
         "Error_Code_Num": 6026,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_Invalid_Device",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "This account cannot be linked.",
             "chs": "您的账号无法在此设备上登录，请在账号所绑定的设备上进行游戏。\r",
@@ -3454,13 +3082,9 @@
     },
     "181": {
         "Error_Code_Num": 6027,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_Not_In_WhiteList",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "Trial requirements not met. Please check official information to come at a later date.",
             "chs": "很抱歉，您不符合本次测试资格。请关注后续官方测试公告。\r",
@@ -3476,13 +3100,9 @@
     },
     "182": {
         "Error_Code_Num": 6028,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_Register_Full",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "The server has reached its maximum number of users. Please check official information concerning future developments.",
             "chs": "服务器注册已满，请关注后续官方测试信息。\r",
@@ -3498,13 +3118,9 @@
     },
     "183": {
         "Error_Code_Num": 6029,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_Lower_Tag",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "The server has not yet opened. Please wait for the opening notification.",
             "chs": "服务器尚未开放，开放时间请留意官方公告。\r",
@@ -3520,13 +3136,9 @@
     },
     "184": {
         "Error_Code_Num": 6030,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_IPLimit",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "",
             "chs": "很抱歉，您所在的地区无法登录该游戏。请查看官方网站说明，或联系官方客服。\r",
@@ -3542,9 +3154,7 @@
     },
     "185": {
         "Error_Code_Num": 6031,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_DeviceBind",
         "Message": {
             "en": "This will link your account. Once your account is linked, you will no longer be able to link with other save data.",
@@ -3561,13 +3171,9 @@
     },
     "186": {
         "Error_Code_Num": 6032,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_LoginForbidden_1",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "This account has been suspended until {0} due to a violation of the Privacy Notice. Please inquire with customer support for more information.",
             "chs": "您的账号目前处于封禁状态，封禁结束于 {0}。原因：您的行为违反保密协议规定。如有问题，请联系客服。\r",
@@ -3583,13 +3189,9 @@
     },
     "187": {
         "Error_Code_Num": 6033,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_LoginForbidden_2",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "This account has been suspended until {0} due to actions that jeopardize the safety of the game. Please inquire with customer support for more information.",
             "chs": "您的账号目前处于封禁状态，封禁结束于 {0}。原因：您的行为影响游戏安全。如有问题，请联系客服。\r",
@@ -3605,13 +3207,9 @@
     },
     "188": {
         "Error_Code_Num": 6034,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_LoginForbidden_3",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "This account has been suspended until {0} due to problematic conduct. Please inquire with customer support for more information.",
             "chs": "您的账号目前处于封禁状态，封禁结束于 {0}。原因：您出现多次消极游戏。如有问题，请联系客服。\r",
@@ -3627,13 +3225,9 @@
     },
     "189": {
         "Error_Code_Num": 6035,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_ResoutionForbidden",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "This device is not supported.",
             "chs": "当前机型暂未适配\r",
@@ -3649,9 +3243,7 @@
     },
     "190": {
         "Error_Code_Num": 6036,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_LoginVersionBackwarded",
         "Message": {
             "en": "An error occurred. (Error Code: 6036)",
@@ -3668,9 +3260,7 @@
     },
     "191": {
         "Error_Code_Num": 6037,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_LoginOffRestartDiffVersion",
         "Message": {
             "en": "An error occurred. (Error Code: 6037)",
@@ -3687,9 +3277,7 @@
     },
     "192": {
         "Error_Code_Num": 6038,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HotUpdateKickOut",
         "Message": {
             "en": "Updating server. Please try again later.",
@@ -3706,9 +3294,7 @@
     },
     "193": {
         "Error_Code_Num": 6039,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HotUpdateLoginFail",
         "Message": {
             "en": "Updating server. Please try again later.",
@@ -3725,9 +3311,7 @@
     },
     "194": {
         "Error_Code_Num": 6040,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HotUpdateQuitRoom",
         "Message": {
             "en": "Updating server. Please try again later.",
@@ -3744,9 +3328,7 @@
     },
     "195": {
         "Error_Code_Num": 6041,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_LoginFreqOverLimit",
         "Message": {
             "en": "Server congested. Please try again later.",
@@ -3763,9 +3345,7 @@
     },
     "196": {
         "Error_Code_Num": 6042,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_LoginFull",
         "Message": {
             "en": "Server full. Please try again later.",
@@ -3782,9 +3362,7 @@
     },
     "197": {
         "Error_Code_Num": 7001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HotStartLimit",
         "Message": {
             "en": "An error occurred. (Error Code: 7001)",
@@ -3801,9 +3379,7 @@
     },
     "198": {
         "Error_Code_Num": 8001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonUnexists",
         "Message": {
             "en": "You do not have a Unite license for that Pokémon.",
@@ -3820,9 +3396,7 @@
     },
     "199": {
         "Error_Code_Num": 8002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonBagFull",
         "Message": {
             "en": "Item box is full.",
@@ -3839,9 +3413,7 @@
     },
     "200": {
         "Error_Code_Num": 8003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonSysNotReady",
         "Message": {
             "en": "An error occurred. (Error Code: 8003)",
@@ -3858,9 +3430,7 @@
     },
     "201": {
         "Error_Code_Num": 8004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonAllocFail",
         "Message": {
             "en": "An error occurred. (Error Code: 8004)",
@@ -3877,9 +3447,7 @@
     },
     "202": {
         "Error_Code_Num": 8005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonAddFail",
         "Message": {
             "en": "An error occurred. (Error Code: 8005)",
@@ -3896,9 +3464,7 @@
     },
     "203": {
         "Error_Code_Num": 8006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonNotInit",
         "Message": {
             "en": "An error occurred. (Error Code: 8006)",
@@ -3915,9 +3481,7 @@
     },
     "204": {
         "Error_Code_Num": 8007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonIdNotInCfg",
         "Message": {
             "en": "An error occurred. (Error Code: 8007)",
@@ -3934,9 +3498,7 @@
     },
     "205": {
         "Error_Code_Num": 8008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonFriendshipLevelMax",
         "Message": {
             "en": "",
@@ -3953,9 +3515,7 @@
     },
     "206": {
         "Error_Code_Num": 8009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonFriendshipInvalidCfg",
         "Message": {
             "en": "",
@@ -3972,9 +3532,7 @@
     },
     "207": {
         "Error_Code_Num": 8010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonNotRelease",
         "Message": {
             "en": "An error occurred. (Error Code: 8010)",
@@ -3991,9 +3549,7 @@
     },
     "208": {
         "Error_Code_Num": 8011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonHasOwned",
         "Message": {
             "en": "You already have a Unite license for that Pokémon.",
@@ -4010,9 +3566,7 @@
     },
     "209": {
         "Error_Code_Num": 8012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonTransmuteNotCfg",
         "Message": {
             "en": "An error occurred. (Error Code: 8012)",
@@ -4029,9 +3583,7 @@
     },
     "210": {
         "Error_Code_Num": 8013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PokemonNoAbleDeleteForeverPokemon",
         "Message": {
             "en": "An error occurred. (Error Code: 8013)",
@@ -4048,9 +3600,7 @@
     },
     "211": {
         "Error_Code_Num": 9001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DirTcaplusFail",
         "Message": {
             "en": "An error occurred. (Error Code: 9001)",
@@ -4067,9 +3617,7 @@
     },
     "212": {
         "Error_Code_Num": 9002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DirNoGamesvrAvailable",
         "Message": {
             "en": "There are no servers available that you can connect to.",
@@ -4086,9 +3634,7 @@
     },
     "213": {
         "Error_Code_Num": 10001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_UndefineResourceType",
         "Message": {
             "en": "An error occurred. (Error Code: 10001)",
@@ -4105,9 +3651,7 @@
     },
     "214": {
         "Error_Code_Num": 10002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_ParamInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 10002)",
@@ -4124,9 +3668,7 @@
     },
     "215": {
         "Error_Code_Num": 10003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_NotFoundResourceLogicMgr",
         "Message": {
             "en": "An error occurred. (Error Code: 10003)",
@@ -4143,9 +3685,7 @@
     },
     "216": {
         "Error_Code_Num": 10004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_BagFull",
         "Message": {
             "en": "An error occurred. (Error Code: 10004)",
@@ -4162,9 +3702,7 @@
     },
     "217": {
         "Error_Code_Num": 10005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_AddResourceFail",
         "Message": {
             "en": "An error occurred. (Error Code: 10005)",
@@ -4181,9 +3719,7 @@
     },
     "218": {
         "Error_Code_Num": 10006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_ResourceCanNotDelete",
         "Message": {
             "en": "An error occurred. (Error Code: 10006)",
@@ -4200,9 +3736,7 @@
     },
     "219": {
         "Error_Code_Num": 10007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_DeleteFail_UnExpect",
         "Message": {
             "en": "An error occurred. (Error Code: 10007)",
@@ -4219,9 +3753,7 @@
     },
     "220": {
         "Error_Code_Num": 10008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_WriteBackDB_Error",
         "Message": {
             "en": "An error occurred. (Error Code: 10008)",
@@ -4238,9 +3770,7 @@
     },
     "221": {
         "Error_Code_Num": 10009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_NotFoundResourceHandleLogic",
         "Message": {
             "en": "An error occurred. (Error Code: 10009)",
@@ -4257,9 +3787,7 @@
     },
     "222": {
         "Error_Code_Num": 10010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_BagFullButHaveNoHandleLogic",
         "Message": {
             "en": "An error occurred. (Error Code: 10010)",
@@ -4276,9 +3804,7 @@
     },
     "223": {
         "Error_Code_Num": 10011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgrSysNotReady",
         "Message": {
             "en": "An error occurred. (Error Code: 10011)",
@@ -4295,9 +3821,7 @@
     },
     "224": {
         "Error_Code_Num": 10012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PackageNotInit",
         "Message": {
             "en": "An error occurred. (Error Code: 10012)",
@@ -4314,9 +3838,7 @@
     },
     "225": {
         "Error_Code_Num": 10013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_DelObjIDButNotDelObj",
         "Message": {
             "en": "An error occurred. (Error Code: 10013)",
@@ -4333,9 +3855,7 @@
     },
     "226": {
         "Error_Code_Num": 10014,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ResourceMgr_ResIdValid",
         "Message": {
             "en": "An error occurred. (Error Code: 10014)",
@@ -4352,9 +3872,7 @@
     },
     "227": {
         "Error_Code_Num": 11001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_ParamInvaild",
         "Message": {
             "en": "An error occurred. (Error Code: 11001)",
@@ -4371,9 +3889,7 @@
     },
     "228": {
         "Error_Code_Num": 11002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_BagFull",
         "Message": {
             "en": "Item box is full.",
@@ -4390,9 +3906,7 @@
     },
     "229": {
         "Error_Code_Num": 11003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_SysNotReady",
         "Message": {
             "en": "An error occurred. (Error Code: 11003)",
@@ -4409,9 +3923,7 @@
     },
     "230": {
         "Error_Code_Num": 11004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_ShmDataLost",
         "Message": {
             "en": "An error occurred. (Error Code: 11004)",
@@ -4428,9 +3940,7 @@
     },
     "231": {
         "Error_Code_Num": 11005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_NotFoundResInAcnt",
         "Message": {
             "en": "An error occurred. (Error Code: 11005)",
@@ -4447,9 +3957,7 @@
     },
     "232": {
         "Error_Code_Num": 11006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_GetObjIDByPosFail",
         "Message": {
             "en": "An error occurred. (Error Code: 11006)",
@@ -4466,9 +3974,7 @@
     },
     "233": {
         "Error_Code_Num": 11007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_IDNotExistInCfg",
         "Message": {
             "en": "An error occurred. (Error Code: 11007)",
@@ -4485,9 +3991,7 @@
     },
     "234": {
         "Error_Code_Num": 11008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_DeleteNotEnough",
         "Message": {
             "en": "Insufficient items.",
@@ -4504,9 +4008,7 @@
     },
     "235": {
         "Error_Code_Num": 11009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItemAddFail",
         "Message": {
             "en": "An error occurred. (Error Code: 11009)",
@@ -4523,9 +4025,7 @@
     },
     "236": {
         "Error_Code_Num": 11010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItemAllocFail",
         "Message": {
             "en": "An error occurred. (Error Code: 11010)",
@@ -4542,9 +4042,7 @@
     },
     "237": {
         "Error_Code_Num": 11011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItemNtyDataFail",
         "Message": {
             "en": "An error occurred. (Error Code: 11011)",
@@ -4561,9 +4059,7 @@
     },
     "238": {
         "Error_Code_Num": 11012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_MatchCancle",
         "Message": {
             "en": "Matching canceled.",
@@ -4580,9 +4076,7 @@
     },
     "239": {
         "Error_Code_Num": 11013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BecomeMaster",
         "Message": {
             "en": "You are now the team leader.",
@@ -4599,9 +4093,7 @@
     },
     "240": {
         "Error_Code_Num": 11014,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AIModeReturn",
         "Message": {
             "en": "An error occurred. (Error Code: 11014)",
@@ -4618,9 +4110,7 @@
     },
     "241": {
         "Error_Code_Num": 11015,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_UseReqParamInvaild",
         "Message": {
             "en": "An error occurred. (Error Code: 11015)",
@@ -4637,9 +4127,7 @@
     },
     "242": {
         "Error_Code_Num": 11016,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_CanNotBeUsed",
         "Message": {
             "en": "That item cannot be used.",
@@ -4656,9 +4144,7 @@
     },
     "243": {
         "Error_Code_Num": 11017,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_ResIDUniqueIDNotMatch",
         "Message": {
             "en": "An error occurred. (Error Code: 11017)",
@@ -4675,9 +4161,7 @@
     },
     "244": {
         "Error_Code_Num": 11018,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_UseTypeInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 11017)",
@@ -4694,9 +4178,7 @@
     },
     "245": {
         "Error_Code_Num": 11019,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_SellReqParamInvaild",
         "Message": {
             "en": "An error occurred. (Error Code: 11019)",
@@ -4713,9 +4195,7 @@
     },
     "246": {
         "Error_Code_Num": 11020,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_CanNotBeSell",
         "Message": {
             "en": "That item cannot be sold.",
@@ -4732,9 +4212,7 @@
     },
     "247": {
         "Error_Code_Num": 11021,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_UnKnown_UseType",
         "Message": {
             "en": "An error occurred. (Error Code: 11021)",
@@ -4751,9 +4229,7 @@
     },
     "248": {
         "Error_Code_Num": 11022,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_TransmuteNotCfg",
         "Message": {
             "en": "An error occurred. (Error Code: 11022)",
@@ -4770,9 +4246,7 @@
     },
     "249": {
         "Error_Code_Num": 11023,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_Invalid_Num",
         "Message": {
             "en": "An error occurred. (Error Code: 11023)",
@@ -4789,9 +4263,7 @@
     },
     "250": {
         "Error_Code_Num": 11024,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_CanNotBeLevelUp",
         "Message": {
             "en": "That item cannot be upgraded.",
@@ -4808,9 +4280,7 @@
     },
     "251": {
         "Error_Code_Num": 11025,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_LevelMax",
         "Message": {
             "en": "This cannot be upgraded any further.",
@@ -4827,9 +4297,7 @@
     },
     "252": {
         "Error_Code_Num": 11026,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_FragmentNotEnough",
         "Message": {
             "en": "",
@@ -4846,9 +4314,7 @@
     },
     "253": {
         "Error_Code_Num": 11027,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_ChgTypeInvalid",
         "Message": {
             "en": "",
@@ -4865,9 +4331,7 @@
     },
     "254": {
         "Error_Code_Num": 11028,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeldItem_SlotNotEnough",
         "Message": {
             "en": "Cannot hold any more held items.",
@@ -4884,9 +4348,7 @@
     },
     "255": {
         "Error_Code_Num": 11029,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_HadResNotOptChest",
         "Message": {
             "en": "An error occurred. (Error Code: 11029)",
@@ -4903,9 +4365,7 @@
     },
     "256": {
         "Error_Code_Num": 11030,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_OptionalChestSelectResInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 11030)",
@@ -4922,9 +4382,7 @@
     },
     "257": {
         "Error_Code_Num": 11031,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_OptChestNoContent",
         "Message": {
             "en": "An error occurred. (Error Code: 11031)",
@@ -4941,9 +4399,7 @@
     },
     "258": {
         "Error_Code_Num": 11032,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_OptChestCntErr",
         "Message": {
             "en": "An error occurred. (Error Code: 11032)",
@@ -4960,9 +4416,7 @@
     },
     "259": {
         "Error_Code_Num": 11033,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_SelectSameRes",
         "Message": {
             "en": "",
@@ -4979,9 +4433,7 @@
     },
     "260": {
         "Error_Code_Num": 11034,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OutSideItem_Repeated",
         "Message": {
             "en": "That item is already being held by a Pokémon.",
@@ -4998,9 +4450,7 @@
     },
     "261": {
         "Error_Code_Num": 12001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DropSystem_DropPackFail",
         "Message": {
             "en": "An error occurred. (Error Code: 12001)",
@@ -5017,9 +4467,7 @@
     },
     "262": {
         "Error_Code_Num": 12002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_DropSystem_UnValidDropID",
         "Message": {
             "en": "An error occurred. (Error Code: 12002)",
@@ -5036,9 +4484,7 @@
     },
     "263": {
         "Error_Code_Num": 13001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_AddSelf",
         "Message": {
             "en": "You cannot send a friend request to yourself.",
@@ -5055,9 +4501,7 @@
     },
     "264": {
         "Error_Code_Num": 13002,
-        "1265": {
-            "0": 2
-        },
+        "1265": "2",
         "Error_Code": "Err_Friend_NotReady",
         "Message": {
             "en": "Currently loading. Please try again later.",
@@ -5074,9 +4518,7 @@
     },
     "265": {
         "Error_Code_Num": 13003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_SelfFull",
         "Message": {
             "en": "Your friend list is full.",
@@ -5093,9 +4535,7 @@
     },
     "266": {
         "Error_Code_Num": 13004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_TargetFull",
         "Message": {
             "en": "That Trainer’s friend list is full.",
@@ -5112,9 +4552,7 @@
     },
     "267": {
         "Error_Code_Num": 13005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_Already",
         "Message": {
             "en": "That Trainer is already your friend.",
@@ -5131,9 +4569,7 @@
     },
     "268": {
         "Error_Code_Num": 13006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_Deny",
         "Message": {
             "en": "",
@@ -5150,9 +4586,7 @@
     },
     "269": {
         "Error_Code_Num": 13007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_AddReqDuplicated",
         "Message": {
             "en": "You have already sent a friend request to that Trainer.",
@@ -5169,9 +4603,7 @@
     },
     "270": {
         "Error_Code_Num": 13008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_NoRequest",
         "Message": {
             "en": "You are already friends with that Trainer.",
@@ -5188,9 +4620,7 @@
     },
     "271": {
         "Error_Code_Num": 13009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_InBlackList",
         "Message": {
             "en": "",
@@ -5207,9 +4637,7 @@
     },
     "272": {
         "Error_Code_Num": 13010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_NotOnline",
         "Message": {
             "en": "That Trainer is currently offline.",
@@ -5226,9 +4654,7 @@
     },
     "273": {
         "Error_Code_Num": 13011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_CanNotReqJoin",
         "Message": {
             "en": "You cannot currently request to participate.",
@@ -5245,9 +4671,7 @@
     },
     "274": {
         "Error_Code_Num": 13012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_CanNotInvite",
         "Message": {
             "en": "That Trainer cannot be invited right now.",
@@ -5264,9 +4688,7 @@
     },
     "275": {
         "Error_Code_Num": 13013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_CanNotAllow",
         "Message": {
             "en": "You cannot add other Trainers right now.",
@@ -5283,9 +4705,7 @@
     },
     "276": {
         "Error_Code_Num": 13014,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_NotFriend",
         "Message": {
             "en": "That Trainer is not your friend.",
@@ -5302,9 +4722,7 @@
     },
     "277": {
         "Error_Code_Num": 13015,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_SearchStringInvalid",
         "Message": {
             "en": "Contains prohibited words. Please revise and try again.",
@@ -5321,9 +4739,7 @@
     },
     "278": {
         "Error_Code_Num": 13016,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_SearchStringTooLong",
         "Message": {
             "en": "Your message is too long.",
@@ -5340,9 +4756,7 @@
     },
     "279": {
         "Error_Code_Num": 13017,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_Ban_AddFriend",
         "Message": {
             "en": "The add friend feature has been suspended.",
@@ -5359,9 +4773,7 @@
     },
     "280": {
         "Error_Code_Num": 13018,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Friend_Ban_BeAddFriend",
         "Message": {
             "en": "You cannot add that Trainer as a friend.",
@@ -5378,9 +4790,7 @@
     },
     "281": {
         "Error_Code_Num": 14001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarUnexists",
         "Message": {
             "en": "An error occurred. (Error Code: 14001)",
@@ -5397,9 +4807,7 @@
     },
     "282": {
         "Error_Code_Num": 14002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarBagFull",
         "Message": {
             "en": "You cannot have any more fashion items.",
@@ -5416,9 +4824,7 @@
     },
     "283": {
         "Error_Code_Num": 14003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarSysNotReady",
         "Message": {
             "en": "An error occurred. (Error Code: 14003)",
@@ -5435,9 +4841,7 @@
     },
     "284": {
         "Error_Code_Num": 14004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarAllocFail",
         "Message": {
             "en": "An error occurred. (Error Code: 14004)",
@@ -5454,9 +4858,7 @@
     },
     "285": {
         "Error_Code_Num": 14005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarAddFail",
         "Message": {
             "en": "An error occurred. (Error Code: 14005)",
@@ -5473,9 +4875,7 @@
     },
     "286": {
         "Error_Code_Num": 14006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarNotInit",
         "Message": {
             "en": "An error occurred. (Error Code: 14006)",
@@ -5492,9 +4892,7 @@
     },
     "287": {
         "Error_Code_Num": 14007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarIdNotInCfg",
         "Message": {
             "en": "An error occurred. (Error Code: 14007)",
@@ -5511,9 +4909,7 @@
     },
     "288": {
         "Error_Code_Num": 14008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarNotRelease",
         "Message": {
             "en": "An error occurred. (Error Code: 14008)",
@@ -5530,9 +4926,7 @@
     },
     "289": {
         "Error_Code_Num": 14009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarSlotTypeFail",
         "Message": {
             "en": "An error occurred. (Error Code: 14009)",
@@ -5549,9 +4943,7 @@
     },
     "290": {
         "Error_Code_Num": 14010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarGenderFail",
         "Message": {
             "en": "An error occurred. (Error Code: 14010)",
@@ -5568,9 +4960,7 @@
     },
     "291": {
         "Error_Code_Num": 14011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarHasOwned",
         "Message": {
             "en": "You already have that fashion item.",
@@ -5587,9 +4977,7 @@
     },
     "292": {
         "Error_Code_Num": 14012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarTransmute",
         "Message": {
             "en": "An error occurred. (Error Code: 14012)",
@@ -5606,9 +4994,7 @@
     },
     "293": {
         "Error_Code_Num": 14013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarNukeByTop",
         "Message": {
             "en": "Choose your innerwear.",
@@ -5625,9 +5011,7 @@
     },
     "294": {
         "Error_Code_Num": 14014,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvatarNukeByBottom",
         "Message": {
             "en": "Choose your bottoms.",
@@ -5644,9 +5028,7 @@
     },
     "295": {
         "Error_Code_Num": 14015,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AvataUnAbleDelForever",
         "Message": {
             "en": "An error occurred. (Error Code: 14015)",
@@ -5663,9 +5045,7 @@
     },
     "296": {
         "Error_Code_Num": 14500,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PureTest",
         "Message": {
             "en": "An error occurred. (Error Code: 14000)",
@@ -5682,9 +5062,7 @@
     },
     "297": {
         "Error_Code_Num": 15001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Sns_ReqTimeout",
         "Message": {
             "en": "Operation timed out. Please try again later.",
@@ -5701,9 +5079,7 @@
     },
     "298": {
         "Error_Code_Num": 15002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Sns_FieldInvalid",
         "Message": {
             "en": "Operation timed out. Please try again later.",
@@ -5720,9 +5096,7 @@
     },
     "299": {
         "Error_Code_Num": 15003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Sns_NotPlatformLogin",
         "Message": {
             "en": "",
@@ -5739,9 +5113,7 @@
     },
     "300": {
         "Error_Code_Num": 16001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattlePass_BatchGetLevelReward_NoReward",
         "Message": {
             "en": "There are no claimable rewards.",
@@ -5758,9 +5130,7 @@
     },
     "301": {
         "Error_Code_Num": 16002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattlePass_InvalidSeasonState",
         "Message": {
             "en": "The ranked match season has not yet begun.",
@@ -5777,9 +5147,7 @@
     },
     "302": {
         "Error_Code_Num": 16003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattlePass_AlreadyBuyPass",
         "Message": {
             "en": "You have already purchased that battle pass.",
@@ -5796,9 +5164,7 @@
     },
     "303": {
         "Error_Code_Num": 16004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattlePass_SeasonUnexist",
         "Message": {
             "en": "An error occurred. (Error Code: 16004)",
@@ -5815,9 +5181,7 @@
     },
     "304": {
         "Error_Code_Num": 16005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattlePass_Addition_Treasure_NoReward",
         "Message": {
             "en": "",
@@ -5834,9 +5198,7 @@
     },
     "305": {
         "Error_Code_Num": 16006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattlePass_InvalidTargetLevel",
         "Message": {
             "en": "An error occurred. (Error Code: 16006)",
@@ -5853,9 +5215,7 @@
     },
     "306": {
         "Error_Code_Num": 16007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattlePass_NoPass",
         "Message": {
             "en": "A battle pass is required to purchase battle pass levels.",
@@ -5872,9 +5232,7 @@
     },
     "307": {
         "Error_Code_Num": 17001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BringItem_NotUnlock",
         "Message": {
             "en": "",
@@ -5891,9 +5249,7 @@
     },
     "308": {
         "Error_Code_Num": 17002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BringItem_Already_Unlock",
         "Message": {
             "en": "",
@@ -5910,9 +5266,7 @@
     },
     "309": {
         "Error_Code_Num": 17003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BringItem_System_NotOpen",
         "Message": {
             "en": "",
@@ -5929,9 +5283,7 @@
     },
     "310": {
         "Error_Code_Num": 17004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BringItem_IndexInvalid",
         "Message": {
             "en": "",
@@ -5948,9 +5300,7 @@
     },
     "311": {
         "Error_Code_Num": 17005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BringItem_MapModeInvalid",
         "Message": {
             "en": "",
@@ -5967,9 +5317,7 @@
     },
     "312": {
         "Error_Code_Num": 18001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopUnexists",
         "Message": {
             "en": "An error occurred. (Error Code: 18001)",
@@ -5986,9 +5334,7 @@
     },
     "313": {
         "Error_Code_Num": 18002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopNotOnTime",
         "Message": {
             "en": "An error occurred. (Error Code: 18002)",
@@ -6005,9 +5351,7 @@
     },
     "314": {
         "Error_Code_Num": 18003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopBuyNumFail",
         "Message": {
             "en": "Maximum item purchase limit exceeded.",
@@ -6024,9 +5368,7 @@
     },
     "315": {
         "Error_Code_Num": 18004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopBuyLimit",
         "Message": {
             "en": "You cannot purchase any more of that item.",
@@ -6043,9 +5385,7 @@
     },
     "316": {
         "Error_Code_Num": 18005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopTypeUnexists",
         "Message": {
             "en": "An error occurred. (Error Code: 18005)",
@@ -6062,9 +5402,7 @@
     },
     "317": {
         "Error_Code_Num": 18006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopAvatarNumFail",
         "Message": {
             "en": "An error occurred. (Error Code: 18006)",
@@ -6081,9 +5419,7 @@
     },
     "318": {
         "Error_Code_Num": 18007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopAvatarExists",
         "Message": {
             "en": "You already have that item.",
@@ -6100,9 +5436,7 @@
     },
     "319": {
         "Error_Code_Num": 18008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopUnexistsItem",
         "Message": {
             "en": "An error occurred. Please reselect items.",
@@ -6119,9 +5453,7 @@
     },
     "320": {
         "Error_Code_Num": 18009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopUnexistsPay",
         "Message": {
             "en": "An error occurred. (Error Code: 18009)",
@@ -6138,9 +5470,7 @@
     },
     "321": {
         "Error_Code_Num": 18010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopTypeMix",
         "Message": {
             "en": "An error occurred. (Error Code: 18010)",
@@ -6157,9 +5487,7 @@
     },
     "322": {
         "Error_Code_Num": 18011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopPayNotEnough",
         "Message": {
             "en": "Insufficient funds.",
@@ -6176,9 +5504,7 @@
     },
     "323": {
         "Error_Code_Num": 18012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopAsyncWait",
         "Message": {
             "en": "Syncing items. Please wait.",
@@ -6195,9 +5521,7 @@
     },
     "324": {
         "Error_Code_Num": 18013,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopItemExist",
         "Message": {
             "en": "You already have that item.",
@@ -6214,9 +5538,7 @@
     },
     "325": {
         "Error_Code_Num": 18014,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopTooFast",
         "Message": {
             "en": "Please allow some time between actions.",
@@ -6233,9 +5555,7 @@
     },
     "326": {
         "Error_Code_Num": 18015,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopSDKPayFail",
         "Message": {
             "en": "Payment failed.",
@@ -6252,9 +5572,7 @@
     },
     "327": {
         "Error_Code_Num": 18016,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopCfgPriceFail",
         "Message": {
             "en": "An error occurred. (Error Code: 18016)",
@@ -6271,9 +5589,7 @@
     },
     "328": {
         "Error_Code_Num": 18017,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopCoinTypeUnexists",
         "Message": {
             "en": "An error occurred. (Error Code: 18017)",
@@ -6290,9 +5606,7 @@
     },
     "329": {
         "Error_Code_Num": 18018,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ShopNotBeautyItem",
         "Message": {
             "en": "An error occurred. (Error Code: 18018)",
@@ -6309,9 +5623,7 @@
     },
     "330": {
         "Error_Code_Num": 19001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_EnergyTicketNotEnough",
         "Message": {
             "en": "",
@@ -6328,9 +5640,7 @@
     },
     "331": {
         "Error_Code_Num": 19002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_EnergyCurHadNotReward",
         "Message": {
             "en": "There are currently no rewards.",
@@ -6347,9 +5657,7 @@
     },
     "332": {
         "Error_Code_Num": 19003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_EnergyBagGridNotEnough",
         "Message": {
             "en": "There is not enough space in your item box.",
@@ -6366,9 +5674,7 @@
     },
     "333": {
         "Error_Code_Num": 20001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterAlreadyExist",
         "Message": {
             "en": "You already have that Holowear.",
@@ -6385,9 +5691,7 @@
     },
     "334": {
         "Error_Code_Num": 20002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterNotExists",
         "Message": {
             "en": "An error occurred. (Error Code: 20002)",
@@ -6404,9 +5708,7 @@
     },
     "335": {
         "Error_Code_Num": 20003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterForOnePokemonReachLimit",
         "Message": {
             "en": "An error occurred. (Error Code: 20003)",
@@ -6423,9 +5725,7 @@
     },
     "336": {
         "Error_Code_Num": 20004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterSysNotReady",
         "Message": {
             "en": "An error occurred. (Error Code: 20004)",
@@ -6442,9 +5742,7 @@
     },
     "337": {
         "Error_Code_Num": 20005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterIDInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 20005)",
@@ -6461,9 +5759,7 @@
     },
     "338": {
         "Error_Code_Num": 20006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterAddFail",
         "Message": {
             "en": "An error occurred. (Error Code: 20006)",
@@ -6480,9 +5776,7 @@
     },
     "339": {
         "Error_Code_Num": 20007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterBagFull",
         "Message": {
             "en": "An error occurred. (Error Code: 20007)",
@@ -6499,9 +5793,7 @@
     },
     "340": {
         "Error_Code_Num": 20008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterNotRelease",
         "Message": {
             "en": "An error occurred. (Error Code: 20008)",
@@ -6518,9 +5810,7 @@
     },
     "341": {
         "Error_Code_Num": 20009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterNotForThisPokemon",
         "Message": {
             "en": "An error occurred. (Error Code: 20009)",
@@ -6537,9 +5827,7 @@
     },
     "342": {
         "Error_Code_Num": 20010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterWearPokemonIDInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 20010)",
@@ -6556,9 +5844,7 @@
     },
     "343": {
         "Error_Code_Num": 20011,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterTransmuteNotCfg",
         "Message": {
             "en": "An error occurred. (Error Code: 20011)",
@@ -6575,9 +5861,7 @@
     },
     "344": {
         "Error_Code_Num": 20012,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PasterAllocFail",
         "Message": {
             "en": "An error occurred. (Error Code: 20012)",
@@ -6594,9 +5878,7 @@
     },
     "345": {
         "Error_Code_Num": 21001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ChatInCD",
         "Message": {
             "en": "You must wait {0} second(s) to speak again.",
@@ -6613,9 +5895,7 @@
     },
     "346": {
         "Error_Code_Num": 21002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_InvaildContent",
         "Message": {
             "en": "That message cannot be sent.",
@@ -6632,9 +5912,7 @@
     },
     "347": {
         "Error_Code_Num": 21003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NotFriend",
         "Message": {
             "en": "That Trainer is not your friend.",
@@ -6651,9 +5929,7 @@
     },
     "348": {
         "Error_Code_Num": 21004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NotMeetTogatherFightTime",
         "Message": {
             "en": "You cannot chat with that Trainer because you have not battled together enough times.",
@@ -6670,9 +5946,7 @@
     },
     "349": {
         "Error_Code_Num": 21005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_FastChatCfgNotMeet",
         "Message": {
             "en": "An error occurred. (Error Code: 21005)",
@@ -6689,9 +5963,7 @@
     },
     "350": {
         "Error_Code_Num": 21006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BanChat",
         "Message": {
             "en": "",
@@ -6708,9 +5980,7 @@
     },
     "351": {
         "Error_Code_Num": 22001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RankedMatch_LevelLimit",
         "Message": {
             "en": "Ranked matches are unlocked at Trainer level six.",
@@ -6727,9 +5997,7 @@
     },
     "352": {
         "Error_Code_Num": 22002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RankedMatch_NotEnoughPokemon",
         "Message": {
             "en": "You must have five or more Unite licenses to participate.",
@@ -6746,9 +6014,7 @@
     },
     "353": {
         "Error_Code_Num": 22003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RankedMatch_InvalidTeamMemberNumType",
         "Message": {
             "en": "Five Trainers are required to battle.",
@@ -6765,13 +6031,9 @@
     },
     "354": {
         "Error_Code_Num": 22004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RankedMatch_NotInCurrentSeason",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "A new season has begun. Check out the ranked matches!",
             "chs": "新赛季已开启，请先进入排位赛\r",
@@ -6787,13 +6049,9 @@
     },
     "355": {
         "Error_Code_Num": 22005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RankedMatch_TeamMemberNumTypeNotFit",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "An error occurred. (Error Code: 22005)",
             "chs": "游戏异常（错误码：22005）\r",
@@ -6809,13 +6067,9 @@
     },
     "356": {
         "Error_Code_Num": 22006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RankedMatch_ForbidTime",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "Ranked matches are currently unavailable.",
             "chs": "当前时间段无法进入排位赛\r",
@@ -6831,13 +6085,9 @@
     },
     "357": {
         "Error_Code_Num": 22007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_RankedMatch_SeasonNotEqual",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "An error occurred. (Error Code: 22007)",
             "chs": "游戏异常（错误码：22007）\r",
@@ -6853,9 +6103,7 @@
     },
     "358": {
         "Error_Code_Num": 22101,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BattleStateInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 22101)",
@@ -6872,13 +6120,9 @@
     },
     "359": {
         "Error_Code_Num": 22110,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AntiAdditionGameForbidden",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "",
             "chs": "今日游戏时长已达到防沉迷限制\r",
@@ -6894,9 +6138,7 @@
     },
     "360": {
         "Error_Code_Num": 23001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_CarryEquipmentRepeatedID",
         "Message": {
             "en": "",
@@ -6913,9 +6155,7 @@
     },
     "361": {
         "Error_Code_Num": 23002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_CarryEquipmentPlanIDInvalid",
         "Message": {
             "en": "",
@@ -6932,9 +6172,7 @@
     },
     "362": {
         "Error_Code_Num": 23003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_CarryEquipmentNumInvalid",
         "Message": {
             "en": "",
@@ -6951,9 +6189,7 @@
     },
     "363": {
         "Error_Code_Num": 23004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Maximumnumberoflottery",
         "Message": {
             "en": "",
@@ -6970,13 +6206,9 @@
     },
     "364": {
         "Error_Code_Num": 23101,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_KickOff_Ban",
-        "1651": {
-            "0": 1
-        },
+        "1651": "1",
         "Message": {
             "en": "This account has been suspended.",
             "chs": "您的账号已被封禁\r",
@@ -6992,9 +6224,7 @@
     },
     "365": {
         "Error_Code_Num": 23102,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_MatchRoomPlayerEntered",
         "Message": {
             "en": "You are already in a lobby.",
@@ -7011,9 +6241,7 @@
     },
     "366": {
         "Error_Code_Num": 24001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_KickOff_StopServer",
         "Message": {
             "en": "That server is closed.",
@@ -7030,9 +6258,7 @@
     },
     "367": {
         "Error_Code_Num": 25001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NewbieGift_NotGotYet",
         "Message": {
             "en": "That reward cannot be earned yet.",
@@ -7049,9 +6275,7 @@
     },
     "368": {
         "Error_Code_Num": 25002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NewbieGift_AlreadyFetched",
         "Message": {
             "en": "You have already claimed that reward.",
@@ -7068,9 +6292,7 @@
     },
     "369": {
         "Error_Code_Num": 26001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainnerExpGift_Already_Get",
         "Message": {
             "en": "You have already claimed that reward.",
@@ -7087,9 +6309,7 @@
     },
     "370": {
         "Error_Code_Num": 26002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainnerExpGift_NotMeetExp_Get",
         "Message": {
             "en": "Claim requirements not met.",
@@ -7106,9 +6326,7 @@
     },
     "371": {
         "Error_Code_Num": 26003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainnerExpGift_NotAbleTo_Get",
         "Message": {
             "en": "An error occurred. (Error Code: 26003)",
@@ -7125,9 +6343,7 @@
     },
     "372": {
         "Error_Code_Num": 26004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainnerExpGift_Invaild_Gift",
         "Message": {
             "en": "An error occurred. (Error Code: 26004)",
@@ -7144,9 +6360,7 @@
     },
     "373": {
         "Error_Code_Num": 26005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainnerExp_NotAbleTo_Sub",
         "Message": {
             "en": "",
@@ -7163,9 +6377,7 @@
     },
     "374": {
         "Error_Code_Num": 27001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconIDInvalid",
         "Message": {
             "en": "",
@@ -7182,9 +6394,7 @@
     },
     "375": {
         "Error_Code_Num": 27002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconAlreadyExist",
         "Message": {
             "en": "",
@@ -7201,9 +6411,7 @@
     },
     "376": {
         "Error_Code_Num": 27003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconAddFail",
         "Message": {
             "en": "",
@@ -7220,9 +6428,7 @@
     },
     "377": {
         "Error_Code_Num": 27004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconNumInValid",
         "Message": {
             "en": "",
@@ -7239,9 +6445,7 @@
     },
     "378": {
         "Error_Code_Num": 27005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconNotInCfg",
         "Message": {
             "en": "",
@@ -7258,9 +6462,7 @@
     },
     "379": {
         "Error_Code_Num": 27006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconTransmuteNotExist",
         "Message": {
             "en": "",
@@ -7277,9 +6479,7 @@
     },
     "380": {
         "Error_Code_Num": 27007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconPackFull",
         "Message": {
             "en": "",
@@ -7296,9 +6496,7 @@
     },
     "381": {
         "Error_Code_Num": 27008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconNotExist",
         "Message": {
             "en": "",
@@ -7315,9 +6513,7 @@
     },
     "382": {
         "Error_Code_Num": 27009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_HeadIconChangeFail",
         "Message": {
             "en": "",
@@ -7334,9 +6530,7 @@
     },
     "383": {
         "Error_Code_Num": 28001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ActivityExchangeParamErr",
         "Message": {
             "en": "",
@@ -7353,9 +6547,7 @@
     },
     "384": {
         "Error_Code_Num": 28002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ActivityExchangeCheckFail",
         "Message": {
             "en": "",
@@ -7372,9 +6564,7 @@
     },
     "385": {
         "Error_Code_Num": 28003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ActivityExchangeAddDoneCntFail",
         "Message": {
             "en": "",
@@ -7391,9 +6581,7 @@
     },
     "386": {
         "Error_Code_Num": 28004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ActivityExchangeDelAddOpFail",
         "Message": {
             "en": "",
@@ -7410,9 +6598,7 @@
     },
     "387": {
         "Error_Code_Num": 29001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterActivityNotExist",
         "Message": {
             "en": "",
@@ -7429,9 +6615,7 @@
     },
     "388": {
         "Error_Code_Num": 29002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterHasFinished",
         "Message": {
             "en": "",
@@ -7448,9 +6632,7 @@
     },
     "389": {
         "Error_Code_Num": 29003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterIntervalLimit",
         "Message": {
             "en": "",
@@ -7467,9 +6649,7 @@
     },
     "390": {
         "Error_Code_Num": 29004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterDayLimit",
         "Message": {
             "en": "",
@@ -7486,9 +6666,7 @@
     },
     "391": {
         "Error_Code_Num": 29005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterVerificationOutTime",
         "Message": {
             "en": "",
@@ -7505,9 +6683,7 @@
     },
     "392": {
         "Error_Code_Num": 29006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterVerificationError",
         "Message": {
             "en": "",
@@ -7524,9 +6700,7 @@
     },
     "393": {
         "Error_Code_Num": 29007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterSessionIDError",
         "Message": {
             "en": "",
@@ -7543,9 +6717,7 @@
     },
     "394": {
         "Error_Code_Num": 29008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterNoregisted",
         "Message": {
             "en": "",
@@ -7562,9 +6734,7 @@
     },
     "395": {
         "Error_Code_Num": 29009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterRequestTimeOut",
         "Message": {
             "en": "",
@@ -7581,9 +6751,7 @@
     },
     "396": {
         "Error_Code_Num": 29010,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PhoneRegisterResponseError",
         "Message": {
             "en": "",
@@ -7600,9 +6768,7 @@
     },
     "397": {
         "Error_Code_Num": 30001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_SystemLockHistoryExpNotEnought",
         "Message": {
             "en": "Unlocked by raising your Trainer level in battles.",
@@ -7619,9 +6785,7 @@
     },
     "398": {
         "Error_Code_Num": 30002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_SystemLockFriendHistoryExpNotEnought",
         "Message": {
             "en": "You cannot invite that Trainer because they are not a high enough Trainer level.",
@@ -7638,9 +6802,7 @@
     },
     "399": {
         "Error_Code_Num": 30003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_SystemLockEnterMapExpNotEnought",
         "Message": {
             "en": "One or more Trainers on the team have not unlocked {0}.",
@@ -7657,9 +6819,7 @@
     },
     "400": {
         "Error_Code_Num": 30004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_SystemLockEnterSystemExpNotEnought",
         "Message": {
             "en": "One or more Trainers on your team have not unlocked that mode.",
@@ -7676,9 +6836,7 @@
     },
     "401": {
         "Error_Code_Num": 31000,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainerItemAlreadyExist",
         "Message": {
             "en": "You already have that battle item.",
@@ -7695,9 +6853,7 @@
     },
     "402": {
         "Error_Code_Num": 31001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainerItemNotExists",
         "Message": {
             "en": "You have no battle items.",
@@ -7714,9 +6870,7 @@
     },
     "403": {
         "Error_Code_Num": 31002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainerItemReachLimit",
         "Message": {
             "en": "Maximum number of battle items reached.",
@@ -7733,9 +6887,7 @@
     },
     "404": {
         "Error_Code_Num": 31003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainerItemSysNotReady",
         "Message": {
             "en": "An error occurred. (Error Code: 31003)",
@@ -7752,9 +6904,7 @@
     },
     "405": {
         "Error_Code_Num": 31004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainerItemIDInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 31004)",
@@ -7771,9 +6921,7 @@
     },
     "406": {
         "Error_Code_Num": 31005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_PackBriefTrainerItemFail",
         "Message": {
             "en": "An error occurred. (Error Code: 31005)",
@@ -7790,9 +6938,7 @@
     },
     "407": {
         "Error_Code_Num": 31006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TrainerItemPokemonIDInvalid",
         "Message": {
             "en": "An error occurred. (Error Code: 31006)",
@@ -7809,9 +6955,7 @@
     },
     "408": {
         "Error_Code_Num": 32000,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_MultiBuff_OpTypeError",
         "Message": {
             "en": "An error occurred. (Error Code: 32000)",
@@ -7828,9 +6972,7 @@
     },
     "409": {
         "Error_Code_Num": 32001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_MultiBuff_UnSupportMultiBuffSubType",
         "Message": {
             "en": "An error occurred. (Error Code: 32001)",
@@ -7847,9 +6989,7 @@
     },
     "410": {
         "Error_Code_Num": 33004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ReqUserNameIsNull",
         "Message": {
             "en": "Enter your Trainer name.",
@@ -7866,9 +7006,7 @@
     },
     "411": {
         "Error_Code_Num": 33005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ReqUserNameLengthIsTooLong",
         "Message": {
             "en": "Your Trainer name is too long.",
@@ -7885,9 +7023,7 @@
     },
     "412": {
         "Error_Code_Num": 33006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ReqUserNameIllegal",
         "Message": {
             "en": "Contains invalid characters.",
@@ -7904,9 +7040,7 @@
     },
     "413": {
         "Error_Code_Num": 33007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_InRenameCDLimit",
         "Message": {
             "en": "You must wait before changing your Trainer name again.",
@@ -7923,9 +7057,7 @@
     },
     "414": {
         "Error_Code_Num": 33008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_OldNewNameSame",
         "Message": {
             "en": "That Trainer name is already in use.",
@@ -7942,9 +7074,7 @@
     },
     "415": {
         "Error_Code_Num": 33009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NameIsAlreadyExist",
         "Message": {
             "en": "That Trainer name is already in use.",
@@ -7961,9 +7091,7 @@
     },
     "416": {
         "Error_Code_Num": 34001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TimeLimitedPasterIDNotExist",
         "Message": {
             "en": "An error occurred. (Error Code: 34001)",
@@ -7980,9 +7108,7 @@
     },
     "417": {
         "Error_Code_Num": 34002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TimeLimitedSecondError",
         "Message": {
             "en": "",
@@ -7999,9 +7125,7 @@
     },
     "418": {
         "Error_Code_Num": 34003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_TimeLimitedNotPokemon",
         "Message": {
             "en": "This item can be used after obtaining a Unite license.",
@@ -8018,9 +7142,7 @@
     },
     "419": {
         "Error_Code_Num": 35001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BackToRoomCreditNotEnough",
         "Message": {
             "en": "Random matches can be joined by having 60 fair-play points or more.",
@@ -8037,9 +7159,7 @@
     },
     "420": {
         "Error_Code_Num": 35002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_BackToRankRoomCreditNotEnough",
         "Message": {
             "en": "Ranked matches can be joined by having 80 fair-play points or more.",
@@ -8056,9 +7176,7 @@
     },
     "421": {
         "Error_Code_Num": 35003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ChangeRoomCreditNotEnough",
         "Message": {
             "en": "",
@@ -8075,9 +7193,7 @@
     },
     "422": {
         "Error_Code_Num": 35004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ChangeRankRoomCreditNotEnough",
         "Message": {
             "en": "",
@@ -8094,9 +7210,7 @@
     },
     "423": {
         "Error_Code_Num": 35005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_InviteToJoinCreditNotEnough",
         "Message": {
             "en": "That friend does not have enough fair-play points.",
@@ -8113,9 +7227,7 @@
     },
     "424": {
         "Error_Code_Num": 35006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_InBannedForRejectMatchConfirm",
         "Message": {
             "en": "You have been penalized for unfair play. You cannot battle right now.",
@@ -8132,9 +7244,7 @@
     },
     "425": {
         "Error_Code_Num": 36001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Accusation_Self",
         "Message": {
             "en": "You cannot report yourself.",
@@ -8151,9 +7261,7 @@
     },
     "426": {
         "Error_Code_Num": 36002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Accusation_Already",
         "Message": {
             "en": "Reported.",
@@ -8170,9 +7278,7 @@
     },
     "427": {
         "Error_Code_Num": 36003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Accusation_NotInBattle",
         "Message": {
             "en": "",
@@ -8189,9 +7295,7 @@
     },
     "428": {
         "Error_Code_Num": 36004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Accusation_InvalidReason",
         "Message": {
             "en": "",
@@ -8208,9 +7312,7 @@
     },
     "429": {
         "Error_Code_Num": 36005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Accusation_RoomTypeNotSupported",
         "Message": {
             "en": "An error occurred. (Error Code: 36005)",
@@ -8227,9 +7329,7 @@
     },
     "430": {
         "Error_Code_Num": 37001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_AcntAddExpFailed",
         "Message": {
             "en": "An error occurred. (Error Code: 37001)",
@@ -8246,9 +7346,7 @@
     },
     "431": {
         "Error_Code_Num": 38001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NewbieChallengeClosed",
         "Message": {
             "en": "The Beginner Challenge has ended.",
@@ -8265,9 +7363,7 @@
     },
     "432": {
         "Error_Code_Num": 38002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NewbieChallengeRewarded",
         "Message": {
             "en": "You have already claimed that reward.",
@@ -8284,9 +7380,7 @@
     },
     "433": {
         "Error_Code_Num": 38003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NewbieChallengeUnlock",
         "Message": {
             "en": "That mission has not been unlocked.",
@@ -8303,9 +7397,7 @@
     },
     "434": {
         "Error_Code_Num": 38004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NewbieChallengeRewardFail",
         "Message": {
             "en": "Failed to claim reward.",
@@ -8322,9 +7414,7 @@
     },
     "435": {
         "Error_Code_Num": 38005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_NewbieChallengeUnfinished",
         "Message": {
             "en": "You have not completed that daily mission.",
@@ -8341,9 +7431,7 @@
     },
     "436": {
         "Error_Code_Num": 39001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ActivationCode_Used",
         "Message": {
             "en": "",
@@ -8360,9 +7448,7 @@
     },
     "437": {
         "Error_Code_Num": 39002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ActivationCode_Not_Exist",
         "Message": {
             "en": "",
@@ -8379,9 +7465,7 @@
     },
     "438": {
         "Error_Code_Num": 39003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ActivationCode_Expire",
         "Message": {
             "en": "",
@@ -8398,9 +7482,7 @@
     },
     "439": {
         "Error_Code_Num": 40001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Duplicate",
         "Message": {
             "en": "",
@@ -8417,9 +7499,7 @@
     },
     "440": {
         "Error_Code_Num": 40002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Reach_limit",
         "Message": {
             "en": "",
@@ -8436,9 +7516,7 @@
     },
     "441": {
         "Error_Code_Num": 40003,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Reach_limit_This_Type",
         "Message": {
             "en": "",
@@ -8455,9 +7533,7 @@
     },
     "442": {
         "Error_Code_Num": 40004,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Effect_Not_Exist",
         "Message": {
             "en": "",
@@ -8474,9 +7550,7 @@
     },
     "443": {
         "Error_Code_Num": 40005,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Background_Not_Exist",
         "Message": {
             "en": "",
@@ -8493,9 +7567,7 @@
     },
     "444": {
         "Error_Code_Num": 40006,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Frame_Not_Exist",
         "Message": {
             "en": "",
@@ -8512,9 +7584,7 @@
     },
     "445": {
         "Error_Code_Num": 40007,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Expression_Not_Exist",
         "Message": {
             "en": "",
@@ -8531,9 +7601,7 @@
     },
     "446": {
         "Error_Code_Num": 40008,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Action_Not_Exist",
         "Message": {
             "en": "",
@@ -8550,9 +7618,7 @@
     },
     "447": {
         "Error_Code_Num": 40009,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_ContestantRes_Pokemon_Not_Exist",
         "Message": {
             "en": "",
@@ -8569,9 +7635,7 @@
     },
     "448": {
         "Error_Code_Num": 43001,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Task_NotExist",
         "Message": {
             "en": "An error occurred. (Error Code: 43001)",
@@ -8588,9 +7652,7 @@
     },
     "449": {
         "Error_Code_Num": 43002,
-        "1265": {
-            "0": 1
-        },
+        "1265": "1",
         "Error_Code": "Err_Task_AddProcessFail",
         "Message": {
             "en": "An error occurred. (Error Code: 43002)",

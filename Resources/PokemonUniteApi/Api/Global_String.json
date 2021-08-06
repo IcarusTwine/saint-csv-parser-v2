@@ -1,535 +1,269 @@
 {
     "0": {
-        "1525": {
-            "0": 1
-        },
-        "1554": {
-            "0": "pref_Indicator_Select_Skill"
-        }
+        "1525": "1",
+        "1554": "pref_Indicator_Select_Skill"
     },
     "1": {
-        "1525": {
-            "0": 2
-        },
-        "1554": {
-            "0": "pref_fx_levelup"
-        }
+        "1525": "2",
+        "1554": "pref_fx_levelup"
     },
     "2": {
-        "1525": {
-            "0": 3
-        },
-        "1554": {
-            "0": "pref_Indicator_Lock"
-        }
+        "1525": "3",
+        "1554": "pref_Indicator_Lock"
     },
     "3": {
-        "1525": {
-            "0": 9
-        },
-        "1554": {
-            "0": "age_item_drop_A1"
-        }
+        "1525": "9",
+        "1554": "age_item_drop_A1"
     },
     "4": {
-        "1525": {
-            "0": 10
-        },
-        "1554": {
-            "0": "age_item_pickup_P1"
-        }
+        "1525": "10",
+        "1554": "age_item_pickup_P1"
     },
     "5": {
-        "1525": {
-            "0": 11
-        },
-        "1554": {
-            "0": "t_Ingame_BT_Icon_Upgrade"
-        }
+        "1525": "11",
+        "1554": "t_Ingame_BT_Icon_Upgrade"
     },
     "6": {
-        "1525": {
-            "0": 23
-        },
-        "1554": {
-            "0": "pref_Indicator_Select_Attack"
-        }
+        "1525": "23",
+        "1554": "pref_Indicator_Select_Attack"
     },
     "7": {
-        "1525": {
-            "0": 12
-        },
-        "1554": {
-            "0": "t_Ingame_BT_Icon_Change"
-        }
+        "1525": "12",
+        "1554": "t_Ingame_BT_Icon_Change"
     },
     "8": {
-        "1525": {
-            "0": 13
-        },
-        "1554": {
-            "0": "生命+"
-        }
+        "1525": "13",
+        "1554": "生命+"
     },
     "9": {
-        "1525": {
-            "0": 14
-        },
-        "1554": {
-            "0": "生命恢复+"
-        }
+        "1525": "14",
+        "1554": "生命恢复+"
     },
     "10": {
-        "1525": {
-            "0": 15
-        },
-        "1554": {
-            "0": "攻击+"
-        }
+        "1525": "15",
+        "1554": "攻击+"
     },
     "11": {
-        "1525": {
-            "0": 16
-        },
-        "1554": {
-            "0": "防御+"
-        }
+        "1525": "16",
+        "1554": "防御+"
     },
     "12": {
-        "1525": {
-            "0": 17
-        },
-        "1554": {
-            "0": "特攻+"
-        }
+        "1525": "17",
+        "1554": "特攻+"
     },
     "13": {
-        "1525": {
-            "0": 18
-        },
-        "1554": {
-            "0": "特防+"
-        }
+        "1525": "18",
+        "1554": "特防+"
     },
     "14": {
-        "1525": {
-            "0": 19
-        },
-        "1554": {
-            "0": "攻速+"
-        }
+        "1525": "19",
+        "1554": "攻速+"
     },
     "15": {
-        "1525": {
-            "0": 20
-        },
-        "1554": {
-            "0": "移速+"
-        }
+        "1525": "20",
+        "1554": "移速+"
     },
     "16": {
-        "1525": {
-            "0": 21
-        },
-        "1554": {
-            "0": "伤害免疫率+"
-        }
+        "1525": "21",
+        "1554": "伤害免疫率+"
     },
     "17": {
-        "1525": {
-            "0": 22
-        },
-        "1554": {
-            "0": "提供能量比率+"
-        }
+        "1525": "22",
+        "1554": "提供能量比率+"
     },
     "18": {
-        "1525": {
-            "0": 25
-        },
-        "1554": {
-            "0": "物理减伤率+"
-        }
+        "1525": "25",
+        "1554": "物理减伤率+"
     },
     "19": {
-        "1525": {
-            "0": 26
-        },
-        "1554": {
-            "0": "法术减伤率+"
-        }
+        "1525": "26",
+        "1554": "法术减伤率+"
     },
     "20": {
-        "1525": {
-            "0": 27
-        },
-        "1554": {
-            "0": "暴击率+"
-        }
+        "1525": "27",
+        "1554": "暴击率+"
     },
     "21": {
-        "1525": {
-            "0": 28
-        },
-        "1554": {
-            "0": "暴击伤害+"
-        }
+        "1525": "28",
+        "1554": "暴击伤害+"
     },
     "22": {
-        "1525": {
-            "0": 31
-        }
+        "1525": "31"
     },
     "23": {
-        "1525": {
-            "0": 32
-        },
-        "1554": {
-            "0": "t_Ingame_BT_score_off"
-        }
+        "1525": "32",
+        "1554": "t_Ingame_BT_score_off"
     },
     "24": {
-        "1525": {
-            "0": 33
-        },
-        "1554": {
-            "0": "t_Ingame_BT_score_on"
-        }
+        "1525": "33",
+        "1554": "t_Ingame_BT_score_on"
     },
     "25": {
-        "1525": {
-            "0": 35
-        },
-        "1554": {
-            "0": "Play_UI_Switch_vSwitch"
-        }
+        "1525": "35",
+        "1554": "Play_UI_Switch_vSwitch"
     },
     "26": {
-        "1525": {
-            "0": 36
-        },
-        "1554": {
-            "0": "Play_UI_Boundary_vNS"
-        }
+        "1525": "36",
+        "1554": "Play_UI_Boundary_vNS"
     },
     "27": {
-        "1525": {
-            "0": 37
-        },
-        "1554": {
-            "0": "swivib_zzd"
-        }
+        "1525": "37",
+        "1554": "swivib_zzd"
     },
     "28": {
-        "1525": {
-            "0": 38
-        },
-        "1554": {
-            "0": "actor_pref_fx_guide_branch"
-        }
+        "1525": "38",
+        "1554": "actor_pref_fx_guide_branch"
     },
     "29": {
-        "1525": {
-            "0": 39
-        },
-        "1554": {
-            "0": "pref_Indicator_lockline_auto"
-        }
+        "1525": "39",
+        "1554": "pref_Indicator_lockline_auto"
     },
     "30": {
-        "1525": {
-            "0": 41
-        },
-        "1554": {
-            "0": "root_pref_ui_battle_joystick/pref_ui_battle_joystick(Clone)/Panel/Joystick"
-        }
+        "1525": "41",
+        "1554": "root_pref_ui_battle_joystick/pref_ui_battle_joystick(Clone)/Panel/Joystick"
     },
     "31": {
-        "1525": {
-            "0": 42
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/NormalAtk"
-        }
+        "1525": "42",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/NormalAtk"
     },
     "32": {
-        "1525": {
-            "0": 43
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CommonSkill0"
-        }
+        "1525": "43",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CommonSkill0"
     },
     "33": {
-        "1525": {
-            "0": 44
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CommonSkill1"
-        }
+        "1525": "44",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CommonSkill1"
     },
     "34": {
-        "1525": {
-            "0": 45
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CommonSkill3"
-        }
+        "1525": "45",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CommonSkill3"
     },
     "35": {
-        "1525": {
-            "0": 46
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/4-Skill0"
-        }
+        "1525": "46",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/4-Skill0"
     },
     "36": {
-        "1525": {
-            "0": 47
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/4-Skill1"
-        }
+        "1525": "47",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/4-Skill1"
     },
     "37": {
-        "1525": {
-            "0": 48
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/4-Skill3"
-        }
+        "1525": "48",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/4-Skill3"
     },
     "38": {
-        "1525": {
-            "0": 49
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CaptureSkill"
-        }
+        "1525": "49",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/CaptureSkill"
     },
     "39": {
-        "1525": {
-            "0": 50
-        },
-        "1554": {
-            "0": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/ExtraSkill1"
-        }
+        "1525": "50",
+        "1554": "root_pref_OperatorPanel2Skill_BattlePage/pref_OperatorPanel2Skill_BattlePage(Clone)/Panel/SkillForm/AtkSkill/ExtraSkill1"
     },
     "40": {
-        "1525": {
-            "0": 51
-        },
-        "1554": {
-            "0": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/PanelTotalScoreCountDown/MatchCountDownObj/NormalCountDown"
-        }
+        "1525": "51",
+        "1554": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/PanelTotalScoreCountDown/MatchCountDownObj/NormalCountDown"
     },
     "41": {
-        "1525": {
-            "0": 52
-        },
-        "1554": {
-            "0": "root_pref_ui_Tpc2FT_2lanes_long_V2_BattlePage/pref_ui_Tpc2FT_2lanes_long_V2_BattlePage(Clone)"
-        }
+        "1525": "52",
+        "1554": "root_pref_ui_Tpc2FT_2lanes_long_V2_BattlePage/pref_ui_Tpc2FT_2lanes_long_V2_BattlePage(Clone)"
     },
     "42": {
-        "1525": {
-            "0": 53
-        },
-        "1554": {
-            "0": "root_pref_SignalPage/pref_SignalPage(Clone)"
-        }
+        "1525": "53",
+        "1554": "root_pref_SignalPage/pref_SignalPage(Clone)"
     },
     "43": {
-        "1525": {
-            "0": 54
-        },
-        "1554": {
-            "0": "root_pref_ui_minimap_GModPd1Mini_v3/pref_ui_minimap_GModPd1Mini_v3(Clone)"
-        }
+        "1525": "54",
+        "1554": "root_pref_ui_minimap_GModPd1Mini_v3/pref_ui_minimap_GModPd1Mini_v3(Clone)"
     },
     "44": {
-        "1525": {
-            "0": 55
-        },
-        "1554": {
-            "0": "root_pref_BattleChatPage/pref_BattleChatPage(Clone)"
-        }
+        "1525": "55",
+        "1554": "root_pref_BattleChatPage/pref_BattleChatPage(Clone)"
     },
     "45": {
-        "1525": {
-            "0": 56
-        },
-        "1554": {
-            "0": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/selfKDA"
-        }
+        "1525": "56",
+        "1554": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/selfKDA"
     },
     "46": {
-        "1525": {
-            "0": 57
-        },
-        "1554": {
-            "0": "root_pref_BattleEquipmentEntryPage/pref_BattleEquipmentEntryPage(Clone)"
-        }
+        "1525": "57",
+        "1554": "root_pref_BattleEquipmentEntryPage/pref_BattleEquipmentEntryPage(Clone)"
     },
     "47": {
-        "1525": {
-            "0": 58
-        },
-        "1554": {
-            "0": "root_pref_ui_battle_screen_touch/pref_ui_battle_screen_touch(Clone)"
-        }
+        "1525": "58",
+        "1554": "root_pref_ui_battle_screen_touch/pref_ui_battle_screen_touch(Clone)"
     },
     "48": {
-        "1525": {
-            "0": 59
-        },
-        "1554": {
-            "0": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/PanelTotalScoreCountDown/Scores/AllyScore"
-        }
+        "1525": "59",
+        "1554": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/PanelTotalScoreCountDown/Scores/AllyScore"
     },
     "49": {
-        "1525": {
-            "0": 60
-        },
-        "1554": {
-            "0": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/PanelTotalScoreCountDown/Scores/OpponentScore"
-        }
+        "1525": "60",
+        "1554": "root_pref_GModTpc2FT2LanesPage/pref_GModTpc2FT2LanesPage(Clone)/PanelTotalScoreCountDown/Scores/OpponentScore"
     },
     "50": {
-        "1525": {
-            "0": 61
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/NormalAtk"
-        }
+        "1525": "61",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/NormalAtk"
     },
     "51": {
-        "1525": {
-            "0": 62
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CommonSkill0"
-        }
+        "1525": "62",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CommonSkill0"
     },
     "52": {
-        "1525": {
-            "0": 63
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CommonSkill1"
-        }
+        "1525": "63",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CommonSkill1"
     },
     "53": {
-        "1525": {
-            "0": 64
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CommonSkill3"
-        }
+        "1525": "64",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CommonSkill3"
     },
     "54": {
-        "1525": {
-            "0": 65
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/pref_Swi_BattleSkill4Skill0"
-        }
+        "1525": "65",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/pref_Swi_BattleSkill4Skill0"
     },
     "55": {
-        "1525": {
-            "0": 66
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/pref_Swi_BattleSkill4Skill1"
-        }
+        "1525": "66",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/pref_Swi_BattleSkill4Skill1"
     },
     "56": {
-        "1525": {
-            "0": 67
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/pref_Swi_BattleSkill4Skill3"
-        }
+        "1525": "67",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/pref_Swi_BattleSkill4Skill3"
     },
     "57": {
-        "1525": {
-            "0": 68
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CaptureSkill"
-        }
+        "1525": "68",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/CaptureSkill"
     },
     "58": {
-        "1525": {
-            "0": 69
-        },
-        "1554": {
-            "0": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/ExtraSkill1"
-        }
+        "1525": "69",
+        "1554": "root_pref_Swi_OperatorPanel2Skill_BattlePage/pref_Swi_OperatorPanel2Skill_BattlePage(Clone)/SkillForm/AtkSkill/ExtraSkill1"
     },
     "59": {
-        "1525": {
-            "0": 70
-        },
-        "1554": {
-            "0": "Play_UI_CheckPoint_Signal"
-        }
+        "1525": "70",
+        "1554": "Play_UI_CheckPoint_Signal"
     },
     "60": {
-        "1525": {
-            "0": 71
-        },
-        "1554": {
-            "0": "entity_CommonBulletVision"
-        }
+        "1525": "71",
+        "1554": "entity_CommonBulletVision"
     },
     "61": {
-        "1525": {
-            "0": 201
-        },
-        "1554": {
-            "0": "age_rob_score01"
-        }
+        "1525": "201",
+        "1554": "age_rob_score01"
     },
     "62": {
-        "1525": {
-            "0": 202
-        },
-        "1554": {
-            "0": "age_rob_score02"
-        }
+        "1525": "202",
+        "1554": "age_rob_score02"
     },
     "63": {
-        "1525": {
-            "0": 203
-        },
-        "1554": {
-            "0": "age_rob_score03"
-        }
+        "1525": "203",
+        "1554": "age_rob_score03"
     },
     "64": {
-        "1525": {
-            "0": 204
-        },
-        "1554": {
-            "0": "pref_Indicator_Select_Attack"
-        }
+        "1525": "204",
+        "1554": "pref_Indicator_Select_Attack"
     },
     "65": {
-        "1525": {
-            "0": 205
-        },
-        "1554": {
-            "0": "pref_Indicator_Select_Attack"
-        }
+        "1525": "205",
+        "1554": "pref_Indicator_Select_Attack"
     },
     "66": {
-        "1525": {
-            "0": 206
-        },
-        "1554": {
-            "0": "pref_Indicator_Lock_yellow"
-        }
+        "1525": "206",
+        "1554": "pref_Indicator_Lock_yellow"
     }
 }

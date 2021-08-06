@@ -127,13 +127,32 @@ class test implements ParseInterface
         }
         $path = "$Resources\PokemonUniteApi/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
-        $files = array(
-            "Pokemon_Base",
-        );
+        //$files = array(
+        //    "HeadIcon",
+        //);
         function hex2str($hex) {
             $str = '';
             for($i=0;$i<strlen($hex);$i+=2) $str .= chr(hexdec(substr($hex,$i,2)));
             return $str;
+        }
+        function recursive_implode(array $array, $glue = ',', $include_keys = false, $trim_all = true)
+        {
+        	$glued_string = '';
+        
+        	// Recursively iterates array and adds key/value to glued string
+        	array_walk_recursive($array, function($value, $key) use ($glue, $include_keys, &$glued_string)
+        	{
+        		$include_keys and $glued_string .= $key.$glue;
+        		$glued_string .= $value.$glue;
+        	});
+        
+        	// Removes last $glue from string
+        	strlen($glue) > 0 and $glued_string = substr($glued_string, 0, -strlen($glue));
+        
+        	// Trim ALL whitespace
+        	$trim_all and $glued_string = preg_replace("/(\s)/ixsm", '', $glued_string);
+        
+        	return (string) $glued_string;
         }
         function wireType($value){
             //conv to binary
@@ -153,12 +172,13 @@ class test implements ParseInterface
             return($Output);
         }
         $SkipArray = array(
-            "fake_ServerList",
-            "Active_Skill_Hero",
-            "HeadIcon_Base",
-            "Newbie_Conf",
-            "OutSide_InGame_Bytes_Def",
-            "TranslationReq",
+            "fake_ServerList",//non protobuf
+            "Newbie_Conf",//empty
+            "OutSide_InGame_Bytes_Def",//non protobuf
+            "TranslationReq",//non protobuf
+            "OutSideItem_Base",//check
+            "Pokemon_StatGrowth",//check
+            "SkillSlot_LevelUp",//check
         );
         function bufferVal($bytes){
             foreach($bytes as $byte){
@@ -291,7 +311,10 @@ class test implements ParseInterface
             //var_dump($Chunk[$pos]);
             $StorePos = $pos;
             $ByteArray = [];
-            if (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,1) === "0"){// eng string
+            if ((substr(wireType($Chunk[$pos])["Binary"]["Full"],0,2) === "01") || 
+            (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,3) === "011") || 
+            (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,3) === "010") || 
+            (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,3) === "001")){// eng string
                 $String = "";
                 for ($i=0; $i < $Length; $i++) { 
                     $String .= $Chunk[$pos];
@@ -307,7 +330,16 @@ class test implements ParseInterface
                     $String .= $Chunk[$pos];
                     $pos++;
                 }
-                $Output["Data"][$Header][] = hex2str($String);
+                if (preg_match("//u", hex2str($String))) {
+                    $Output["Data"][$Header][] = hex2str($String);
+                } else {
+                    $StringChunk = str_split($String,2);
+                    $String = [];
+                    foreach($StringChunk as $Hex){
+                        $String[] = wireType($Hex)["Binary"]["Dec"];
+                    }
+                    $Output["Data"][$Header][] = "<h5>(BROKEN)</h5>\n<br>".implode(",<br>",$String);
+                }
                 //var_dump($Output);
                 $Output["Pos"] = $pos;
                 return $Output;
@@ -317,7 +349,34 @@ class test implements ParseInterface
                     $String .= $Chunk[$pos];
                     $pos++;
                 }
-                $Output["Data"][$Header][] = hex2str($String);
+                if (preg_match("//u", hex2str($String))) {
+                    $Output["Data"][$Header][] = hex2str($String);
+                } else {
+                    $StringChunk = str_split($String,2);
+                    $String = [];
+                    foreach($StringChunk as $Hex){
+                        $String[] = wireType($Hex)["Binary"]["Dec"];
+                    }
+                    $Output["Data"][$Header][] = "<h5>(BROKEN)</h5>\n<br>".implode(",<br>",$String);
+                }
+                $Output["Pos"] = $pos;
+                return $Output;
+            }elseif (substr(wireType($Chunk[$pos])["Binary"]["Full"],0,4) === "1111"){// CN string 2 bytes
+                $String = "";
+                for ($i=0; $i < $Length; $i++) { 
+                    $String .= $Chunk[$pos];
+                    $pos++;
+                }
+                if (preg_match("//u", hex2str($String))) {
+                    $Output["Data"][$Header][] = hex2str($String);
+                } else {
+                    $StringChunk = str_split($String,2);
+                    $String = [];
+                    foreach($StringChunk as $Hex){
+                        $String[] = wireType($Hex)["Binary"]["Dec"];
+                    }
+                    $Output["Data"][$Header][] = "<h5>(BROKEN)</h5>\n<br>".implode(",<br>",$String);
+                }
                 //var_dump($Output);
                 $Output["Pos"] = $pos;
                 return $Output;
@@ -349,6 +408,7 @@ class test implements ParseInterface
             $filePath = "$Resources\PokemonUniteApi/Databins/databin_$filename";
             $handle = fopen($filePath, "rb"); 
             $fsize = filesize($filePath); 
+            if ($fsize === 0) continue;
             $contents = fread($handle, $fsize); 
             $byteArray = unpack("H*",$contents); 
             $hexarray = str_split(strtoupper($byteArray[1]),2);
@@ -410,7 +470,7 @@ class test implements ParseInterface
                         case 2:
                             if ($debug === 1){var_dump($Chunk[$pos]."- Start lendel");}
                             $Data = null;
-                            $Data = lendel($Chunk,$pos);
+                            $Data = lendel($Chunk,$pos,$debug);
                             $OutputChunk[$Num][] = $Data["Data"];
                             if ($debug === 1){var_dump($Data["Data"]);
                             var_dump("- end lendel");}
@@ -426,6 +486,7 @@ class test implements ParseInterface
                 $Output[] = $OutputChunk;
                 //sleep(4);
             }
+            
             $FinalOutput = [];
             foreach($Output as $Key => $Value){
                 $ChunkNumber = $Key;
@@ -461,6 +522,8 @@ class test implements ParseInterface
                                         break;
                                     }
                                 }
+                            } else {
+                                $Value4 = recursive_implode($Value4,",",false);
                             }
                             $FinalOutput[$ChunkNumber][$DataKey] = $Value4;
                         }
@@ -471,60 +534,60 @@ class test implements ParseInterface
             $Jsonify = JSON_Encode($FinalOutput,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE|JSON_FORCE_OBJECT);
             $this->saveExtra("PokemonUniteApi/Api/$filename.json",$Jsonify, true, true);
     
-        }
-        
-        $JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\Api/$filename.json"),true); 
-        $Output = [];
-        foreach($JSON as $Key => $Value){
-            if (!empty($Value["ID"])){
-                $KeyDef = $Value["ID"];
-            } else {
-                $KeyDef = $Key;
-            }
-            $Headers = "";
-            $TableData = "";
-            foreach($Value as $Header => $Data){
-                $Headers .= "<th>$Header</th>";
-                if (is_array($Data)){
-                    $TableData .= "<td>0</td>";
+            $JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\Api/$filename.json"),true); 
+            $Output = [];
+            foreach($JSON as $Key => $Value){
+                if (!empty($Value["ID"])){
+                    $KeyDef = "<td>".$Value["ID"]."</td>";
                 } else {
-                    if (stripos($Data,".png") !== false){
-                        $TableData .= "<td><img src='../alltex/Texture2D/".$Data."'/></td>";
+                    $KeyDef = "<td>".$Key."</td>";
+                }
+                $Headers = "";
+                $TableData = "";
+                foreach($Value as $Header => $Data){
+                    $Headers .= "<th>$Header</th>";
+                    if (is_array($Data)){
+                        $TableData .= "<td>".recursive_implode($Data,"<br>",false)."</td>";
                     } else {
-                        $TableData .= "<td>".$Data."</td>";
+                        if (stripos($Data,".png") !== false){
+                            $TableData .= "<td><img src='../alltex/Texture2D/".$Data."'/></td>";
+                        } else {
+                            $TableData .= "<td>".$Data."</td>";
+                        }
                     }
                 }
+                $OutputString = "<!DOCTYPE html>\n";
+                $OutputString .= "<html lang=\"en\">\n";
+                $OutputString .= "<title>W3.CSS Template</title>\n";
+                $OutputString .= "<meta charset=\"UTF-8\">\n";
+                $OutputString .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n";
+                $OutputString .= "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">\n";
+                $OutputString .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">            \n";
+                $OutputString .= "<style>
+                body {font-family: \"Lato\", sans-serif}
+                .mySlides {display: none}
+                figure{
+                    display: inline-block;
+                }
+                table, th, td {
+                  border: 1px solid black;
+                }
+                </style>\n";
+                $OutputString .= "<body>\n";
+                $OutputString .= "<table class=\"w3-table-all\">\n";
+                $OutputString .= "<tr>\n";
+                $OutputString .= "<td>Key</td>$Headers\n";
+                $OutputString .= "</tr>\n";
+                $OutputString .= "<tr>\n";
+                $OutputString .= "$KeyDef$TableData\n";
+                $OutputString .= "</tr>\n";
+                $OutputString .= "</table>\n";
+                $OutputString .= "</body>\n";
+                $OutputString .= "</html>\n";
+                $Output[] = $OutputString;
             }
-            $OutputString = "<!DOCTYPE html>\n";
-            $OutputString .= "<html lang=\"en\">\n";
-            $OutputString .= "<title>W3.CSS Template</title>\n";
-            $OutputString .= "<meta charset=\"UTF-8\">\n";
-            $OutputString .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n";
-            $OutputString .= "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">\n";
-            $OutputString .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">            \n";
-            $OutputString .= "<style>
-            body {font-family: \"Lato\", sans-serif}
-            .mySlides {display: none}
-            figure{
-                display: inline-block;
-            }
-            table, th, td {
-              border: 1px solid black;
-            }
-            </style>\n";
-            $OutputString .= "<body>\n";
-            $OutputString .= "<table class=\"w3-table-all\">\n";
-            $OutputString .= "<tr>\n";
-            $OutputString .= "$Headers\n";
-            $OutputString .= "</tr>\n";
-            $OutputString .= "<tr>\n";
-            $OutputString .= "$TableData\n";
-            $OutputString .= "</tr>\n";
-            $OutputString .= "</table>\n";
-            $OutputString .= "</body>\n";
-            $OutputString .= "</html>\n";
-            $Output[] = $OutputString;
+            $this->saveExtra("PokemonUniteApi/Parsed/$filename.html",implode("\n\n",$Output), true, true);
         }
-        $this->saveExtra("PokemonUniteApi/Parsed/test.html",implode("\n\n",$Output), true, true);
+        
     }
 }

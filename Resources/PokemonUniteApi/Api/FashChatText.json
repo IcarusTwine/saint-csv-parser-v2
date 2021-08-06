@@ -1,8 +1,6 @@
 {
     "0": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Hello!",
             "chs": "你好\r",
@@ -16,14 +14,10 @@
             "tc": "\r"
         },
         "ID": 100001,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "1": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "OK!",
             "chs": "好的\r",
@@ -37,14 +31,10 @@
             "tc": "\r"
         },
         "ID": 100002,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "2": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "See ya!",
             "chs": "下次再见\r",
@@ -58,14 +48,10 @@
             "tc": "\r"
         },
         "ID": 100003,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "3": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Just a sec.",
             "chs": "稍等一下\r",
@@ -79,14 +65,10 @@
             "tc": "\r"
         },
         "ID": 100004,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "4": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Thanks!",
             "chs": "谢谢\r",
@@ -100,14 +82,10 @@
             "tc": "\r"
         },
         "ID": 100005,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "5": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Want to join a standard battle?",
             "chs": "要来一局标准对战吗？\r",
@@ -121,14 +99,10 @@
             "tc": "\r"
         },
         "ID": 100006,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "6": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Want to join a quick battle?",
             "chs": "要来一局快速对战吗？\r",
@@ -142,14 +116,10 @@
             "tc": "\r"
         },
         "ID": 100007,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "7": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Want to join a ranked match?",
             "chs": "要来一局排位赛吗？\r",
@@ -163,14 +133,10 @@
             "tc": "\r"
         },
         "ID": 100008,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "8": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Ready?",
             "chs": "准备好了吗？\r",
@@ -184,14 +150,10 @@
             "tc": "\r"
         },
         "ID": 100009,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "9": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Good job!",
             "chs": "真不错！\r",
@@ -205,14 +167,10 @@
             "tc": "\r"
         },
         "ID": 100010,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "10": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Want to battle again?",
             "chs": "再来一局吗？\r",
@@ -226,174 +184,106 @@
             "tc": "\r"
         },
         "ID": 100011,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "11": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/eievui_01.png",
         "ID": 110001,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "12": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/eievui_02.png",
         "ID": 110002,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "13": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/fushigidane.png",
         "ID": 110003,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "14": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/heigani.png",
         "ID": 110004,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "15": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/hitokage.png",
         "ID": 110005,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "16": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/ninfia.png",
         "ID": 110006,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "17": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/pikachu_01.png",
         "ID": 110007,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "18": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/pikachu_02.png",
         "ID": 110008,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "19": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/pikachu_03.png",
         "ID": 110009,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "20": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/pikachu_04.png",
         "ID": 110010,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "21": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/pikachu_no.png",
         "ID": 110011,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "22": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/pikachu_yes.png",
         "ID": 110012,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "23": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/rokon_nice.png",
         "ID": 110013,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "24": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/rukario.png",
         "ID": 110014,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "25": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/yadoran.png",
         "ID": 110015,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "26": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji/zenigame.png",
         "ID": 110016,
-        "1829": {
-            "0": 5
-        }
+        "1829": "5"
     },
     "27": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Hello!",
             "chs": "你好\r",
@@ -407,14 +297,10 @@
             "tc": "\r"
         },
         "ID": 200001,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "28": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Just a sec.",
             "chs": "稍等一下\r",
@@ -428,14 +314,10 @@
             "tc": "\r"
         },
         "ID": 200002,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "29": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "OK!",
             "chs": "好的\r",
@@ -449,14 +331,10 @@
             "tc": "\r"
         },
         "ID": 200003,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "30": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Let’s start the battle!",
             "chs": "开始对战吧\r",
@@ -470,14 +348,10 @@
             "tc": "\r"
         },
         "ID": 200004,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "31": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "You can do it!",
             "chs": "加油！\r",
@@ -491,14 +365,10 @@
             "tc": "\r"
         },
         "ID": 200005,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "32": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use a Supporter Pokémon!",
             "chs": "我选择辅助型宝可梦\r",
@@ -512,14 +382,10 @@
             "tc": "\r"
         },
         "ID": 200006,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "33": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use an Attacker Pokémon!",
             "chs": "我选择攻击型宝可梦\r",
@@ -533,14 +399,10 @@
             "tc": "\r"
         },
         "ID": 200007,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "34": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use a Defender Pokémon!",
             "chs": "我选择防御型宝可梦\r",
@@ -554,14 +416,10 @@
             "tc": "\r"
         },
         "ID": 200008,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "35": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use a Speedster Pokémon!",
             "chs": "我选择敏捷型宝可梦\r",
@@ -575,14 +433,10 @@
             "tc": "\r"
         },
         "ID": 200009,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "36": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use an All-Rounder Pokémon!",
             "chs": "我选择平衡型宝可梦\r",
@@ -596,14 +450,10 @@
             "tc": "\r"
         },
         "ID": 200010,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "37": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll head to the top path.",
             "chs": "我走上路\r",
@@ -617,14 +467,10 @@
             "tc": "\r"
         },
         "ID": 200011,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "38": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll head to the bottom path.",
             "chs": "我走下路\r",
@@ -638,14 +484,10 @@
             "tc": "\r"
         },
         "ID": 200012,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "39": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll head to the central area.",
             "chs": "我走中央区域\r",
@@ -659,14 +501,10 @@
             "tc": "\r"
         },
         "ID": 200013,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "40": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Absol!",
             "chs": "我选阿勃梭鲁\r",
@@ -681,14 +519,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Absol1.png",
         "ID": 210001,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "41": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Alolan Ninetales!",
             "chs": "我选阿罗拉九尾\r",
@@ -703,14 +537,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/AlolanNinetales1.png",
         "ID": 210002,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "42": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Blastoise!",
             "chs": "我选水箭龟\r",
@@ -725,14 +555,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Blastoise1.png",
         "ID": 210003,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "43": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Charizard!",
             "chs": "我选喷火龙\r",
@@ -747,14 +573,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Charizard1.png",
         "ID": 210004,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "44": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Cinderace!",
             "chs": "我选闪焰王牌\r",
@@ -769,14 +591,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Cinderace1.png",
         "ID": 210005,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "45": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Cramorant!",
             "chs": "我选古月鸟\r",
@@ -791,14 +609,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Cramorant1.png",
         "ID": 210006,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "46": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Crustle!",
             "chs": "我选岩殿居蟹\r",
@@ -813,14 +627,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Crustle1.png",
         "ID": 210007,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "47": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Eldegoss!",
             "chs": "我选白蓬蓬\r",
@@ -835,14 +645,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Eldegoss1.png",
         "ID": 210008,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "48": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Garchomp!",
             "chs": "我选烈咬陆鲨\r",
@@ -857,14 +663,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Garchomp1.png",
         "ID": 210009,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "49": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Gardevoir!",
             "chs": "我选沙奈朵\r",
@@ -879,14 +681,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Gardevoir1.png",
         "ID": 210010,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "50": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Gengar!",
             "chs": "我选耿鬼\r",
@@ -901,14 +699,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Gengar1.png",
         "ID": 210011,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "51": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Greninja!",
             "chs": "我选甲贺忍蛙\r",
@@ -923,14 +717,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Greninja1.png",
         "ID": 210012,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "52": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Lucario!",
             "chs": "我选路卡利欧\r",
@@ -945,14 +735,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Lucario1.png",
         "ID": 210013,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "53": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Machamp!",
             "chs": "我选怪力\r",
@@ -967,14 +753,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Machamp1.png",
         "ID": 210014,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "54": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Mr. Mime!",
             "chs": "我选魔墙人偶\r",
@@ -989,14 +771,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/MrMime1.png",
         "ID": 210015,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "55": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Pikachu!",
             "chs": "我选皮卡丘\r",
@@ -1011,14 +789,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Pikachu1.png",
         "ID": 210016,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "56": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Slowbro!",
             "chs": "我选呆壳兽\r",
@@ -1033,14 +807,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Slowbro1.png",
         "ID": 210017,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "57": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Snorlax!",
             "chs": "我选卡比兽\r",
@@ -1055,14 +825,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Snorlax1.png",
         "ID": 210018,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "58": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Talonflame!",
             "chs": "我选烈箭鹰\r",
@@ -1077,14 +843,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Talonflame1.png",
         "ID": 210019,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "59": {
-        "1496": {
-            "0": 2
-        },
+        "1496": "2",
         "Message[0]": {
             "en": "I'm going to choose Venusaur!",
             "chs": "我选妙蛙花\r",
@@ -1099,14 +861,10 @@
         },
         "Sticker_URL": "https://image.pgame.cn.qq.com/nishiki/emoji_lobby/Venusaur1.png",
         "ID": 210020,
-        "1829": {
-            "0": 2
-        }
+        "1829": "2"
     },
     "60": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Hello!",
             "chs": "你好\r",
@@ -1120,14 +878,10 @@
             "tc": "\r"
         },
         "ID": 300001,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "61": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Just a sec.",
             "chs": "稍等一下\r",
@@ -1141,14 +895,10 @@
             "tc": "\r"
         },
         "ID": 300002,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "62": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "OK!",
             "chs": "好的\r",
@@ -1162,14 +912,10 @@
             "tc": "\r"
         },
         "ID": 300003,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "63": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "Let’s start the battle!",
             "chs": "开始对战吧\r",
@@ -1183,14 +929,10 @@
             "tc": "\r"
         },
         "ID": 300004,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "64": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "You can do it!",
             "chs": "加油！\r",
@@ -1204,14 +946,10 @@
             "tc": "\r"
         },
         "ID": 300005,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "65": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use a Supporter Pokémon!",
             "chs": "我选择辅助型宝可梦\r",
@@ -1225,14 +963,10 @@
             "tc": "\r"
         },
         "ID": 300006,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "66": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use an Attacker Pokémon!",
             "chs": "我选择攻击型宝可梦\r",
@@ -1246,14 +980,10 @@
             "tc": "\r"
         },
         "ID": 300007,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "67": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use a Defender Pokémon!",
             "chs": "我选择防御型宝可梦\r",
@@ -1267,14 +997,10 @@
             "tc": "\r"
         },
         "ID": 300008,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "68": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use a Speedster Pokémon!",
             "chs": "我选择敏捷型宝可梦\r",
@@ -1288,14 +1014,10 @@
             "tc": "\r"
         },
         "ID": 300009,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "69": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll use an All-Rounder Pokémon!",
             "chs": "我选择平衡型宝可梦\r",
@@ -1309,14 +1031,10 @@
             "tc": "\r"
         },
         "ID": 300010,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "70": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll head to the top path.",
             "chs": "我走上路\r",
@@ -1330,14 +1048,10 @@
             "tc": "\r"
         },
         "ID": 300011,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "71": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll head to the bottom path.",
             "chs": "我走下路\r",
@@ -1351,14 +1065,10 @@
             "tc": "\r"
         },
         "ID": 300012,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     },
     "72": {
-        "1496": {
-            "0": 1
-        },
+        "1496": "1",
         "Message[1]": {
             "en": "I’ll head to the central area.",
             "chs": "我走中央区域\r",
@@ -1372,8 +1082,6 @@
             "tc": "\r"
         },
         "ID": 300013,
-        "1829": {
-            "0": 3
-        }
+        "1829": "3"
     }
 }

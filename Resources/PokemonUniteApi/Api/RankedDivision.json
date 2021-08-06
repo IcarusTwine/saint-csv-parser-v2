@@ -1,942 +1,1094 @@
 {
     "0": {
-        "1441": {
-            "0": "2FEB10166FCF9528_##"
+        "Class_Name_Short": {
+            "en": "Class 1",
+            "chs": "1阶\r",
+            "cht": "\r",
+            "de": "Klasse 1",
+            "es": "Clase 1",
+            "fr": "Division 1",
+            "it": "Classe 1",
+            "jp": "クラス1",
+            "ko": "클래스1",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_01_03"
+        "Small_Icon": "t_rankSmallIcon_01_03.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Beginner Cup: Class 1",
+            "chs": "新手·1阶\r",
+            "cht": "\r",
+            "de": "Anfänger: Klasse 1",
+            "es": "Principiante: Clase 1",
+            "fr": "Novice - Division 1",
+            "it": "Principiante: classe 1",
+            "jp": "ビギナー・クラス1",
+            "ko": "비기너컵:클래스1",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "80",
+        "Tier": 1,
+        "Big_Icon[0]": "t_rankBigIcon_01.png",
+        "1725": "1",
+        "Cup_Name": {
+            "en": "Beginner Cup",
+            "chs": "新手\r",
+            "cht": "\r",
+            "de": "Anfänger",
+            "es": "Principiante",
+            "fr": "Novice",
+            "it": "Principiante",
+            "jp": "ビギナー",
+            "ko": "비기너컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "2AE676C6463AC1BD_##"
-        },
-        "1663": {
-            "0": 80
-        },
-        "1675": {
-            "0": 1
-        },
-        "1714": {
-            "0": "t_rankBigIcon_01"
-        },
-        "1725": {
-            "0": 1
-        },
-        "1764": {
-            "0": "BD110C8B7AA3E3C9_##"
-        },
-        "1768": {
-            "0": 1
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_01"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_01"
-        },
-        "1862": {
-            "0": 40
-        }
+        "ID": 1,
+        "Loading_Icon": "t_rankLoadingIcon_01.png",
+        "Big_Icon[1]": "t_rankBigIcon_01.png",
+        "1862": "40"
     },
     "1": {
-        "1441": {
-            "0": "EF996C3339287FED_##"
+        "Class_Name_Short": {
+            "en": "Class 2",
+            "chs": "2阶\r",
+            "cht": "\r",
+            "de": "Klasse 2",
+            "es": "Clase 2",
+            "fr": "Division 2",
+            "it": "Classe 2",
+            "jp": "クラス2",
+            "ko": "클래스2",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_01_02"
+        "Small_Icon": "t_rankSmallIcon_01_02.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Beginner Cup: Class 2",
+            "chs": "新手·2阶\r",
+            "cht": "\r",
+            "de": "Anfänger: Klasse 2",
+            "es": "Principiante: Clase 2",
+            "fr": "Novice - Division 2",
+            "it": "Principiante: classe 2",
+            "jp": "ビギナー・クラス2",
+            "ko": "비기너컵:클래스2",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "80",
+        "Tier": 1,
+        "Big_Icon[0]": "t_rankBigIcon_01.png",
+        "1725": "2",
+        "Cup_Name": {
+            "en": "Beginner Cup",
+            "chs": "新手\r",
+            "cht": "\r",
+            "de": "Anfänger",
+            "es": "Principiante",
+            "fr": "Novice",
+            "it": "Principiante",
+            "jp": "ビギナー",
+            "ko": "비기너컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "BF7854B007147347_##"
-        },
-        "1663": {
-            "0": 80
-        },
-        "1675": {
-            "0": 1
-        },
-        "1714": {
-            "0": "t_rankBigIcon_01"
-        },
-        "1725": {
-            "0": 2
-        },
-        "1764": {
-            "0": "4D6ADBBD3EF50920_##"
-        },
-        "1768": {
-            "0": 2
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_01"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_01"
-        },
-        "1862": {
-            "0": 40
-        }
+        "ID": 2,
+        "Loading_Icon": "t_rankLoadingIcon_01.png",
+        "Big_Icon[1]": "t_rankBigIcon_01.png",
+        "1862": "40"
     },
     "2": {
-        "1441": {
-            "0": "C7E46255833EE5BF_##"
+        "Class_Name_Short": {
+            "en": "Class 3",
+            "chs": "3阶\r",
+            "cht": "\r",
+            "de": "Klasse 3",
+            "es": "Clase 3",
+            "fr": "Division 3",
+            "it": "Classe 3",
+            "jp": "クラス3",
+            "ko": "클래스3",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_01_01"
+        "Small_Icon": "t_rankSmallIcon_01_01.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Beginner Cup: Class 3",
+            "chs": "新手·3阶\r",
+            "cht": "\r",
+            "de": "Anfänger: Klasse 3",
+            "es": "Principiante: Clase 3",
+            "fr": "Novice - Division 3",
+            "it": "Principiante: classe 3",
+            "jp": "ビギナー・クラス3",
+            "ko": "비기너컵:클래스3",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "80",
+        "Tier": 1,
+        "Big_Icon[0]": "t_rankBigIcon_01.png",
+        "1725": "3",
+        "Cup_Name": {
+            "en": "Beginner Cup",
+            "chs": "新手\r",
+            "cht": "\r",
+            "de": "Anfänger",
+            "es": "Principiante",
+            "fr": "Novice",
+            "it": "Principiante",
+            "jp": "ビギナー",
+            "ko": "비기너컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "FB9DB9176C5168D1_##"
-        },
-        "1663": {
-            "0": 80
-        },
-        "1675": {
-            "0": 1
-        },
-        "1714": {
-            "0": "t_rankBigIcon_01"
-        },
-        "1725": {
-            "0": 3
-        },
-        "1764": {
-            "0": "F50786C9F0ADF1FD_##"
-        },
-        "1768": {
-            "0": 3
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_01"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_01"
-        },
-        "1862": {
-            "0": 40
-        }
+        "ID": 3,
+        "Loading_Icon": "t_rankLoadingIcon_01.png",
+        "Big_Icon[1]": "t_rankBigIcon_01.png",
+        "1862": "40"
     },
     "3": {
-        "1441": {
-            "0": "56B1A581EAEDCDD8_##"
+        "Class_Name_Short": {
+            "en": "Class 1",
+            "chs": "1阶\r",
+            "cht": "\r",
+            "de": "Klasse 1",
+            "es": "Clase 1",
+            "fr": "Division 1",
+            "it": "Classe 1",
+            "jp": "クラス1",
+            "ko": "클래스1",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_03_04"
+        "Small_Icon": "t_rankSmallIcon_03_04.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Great Cup: Class 1",
+            "chs": "超级·1阶\r",
+            "cht": "\r",
+            "de": "Super: Klasse 1",
+            "es": "Alto: Clase 1",
+            "fr": "Avancé - Division 1",
+            "it": "Mega: classe 1",
+            "jp": "スーパー・クラス1",
+            "ko": "슈퍼컵:클래스1",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "120",
+        "Tier": 2,
+        "Big_Icon[0]": "t_rankBigIcon_02.png",
+        "1725": "4",
+        "Cup_Name": {
+            "en": "Great Cup",
+            "chs": "超级\r",
+            "cht": "\r",
+            "de": "Super",
+            "es": "Alto",
+            "fr": "Avancé",
+            "it": "Mega",
+            "jp": "スーパー",
+            "ko": "슈퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "A20A086E9EEBEDE1_##"
-        },
-        "1663": {
-            "0": 120
-        },
-        "1675": {
-            "0": 2
-        },
-        "1714": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1725": {
-            "0": 4
-        },
-        "1764": {
-            "0": "9A9366377328ABD9_##"
-        },
-        "1768": {
-            "0": 4
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_03"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1862": {
-            "0": 60
-        }
+        "ID": 4,
+        "Loading_Icon": "t_rankLoadingIcon_03.png",
+        "Big_Icon[1]": "t_rankBigIcon_02.png",
+        "1862": "60"
     },
     "4": {
-        "1441": {
-            "0": "BC7754569B704EA9_##"
+        "Class_Name_Short": {
+            "en": "Class 2",
+            "chs": "2阶\r",
+            "cht": "\r",
+            "de": "Klasse 2",
+            "es": "Clase 2",
+            "fr": "Division 2",
+            "it": "Classe 2",
+            "jp": "クラス2",
+            "ko": "클래스2",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_03_03"
+        "Small_Icon": "t_rankSmallIcon_03_03.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Great Cup: Class 2",
+            "chs": "超级·2阶\r",
+            "cht": "\r",
+            "de": "Super: Klasse 2",
+            "es": "Alto: Clase 2",
+            "fr": "Avancé - Division 2",
+            "it": "Mega: classe 2",
+            "jp": "スーパー・クラス2",
+            "ko": "슈퍼컵:클래스2",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "120",
+        "Tier": 2,
+        "Big_Icon[0]": "t_rankBigIcon_02.png",
+        "1725": "5",
+        "Cup_Name": {
+            "en": "Great Cup",
+            "chs": "超级\r",
+            "cht": "\r",
+            "de": "Super",
+            "es": "Alto",
+            "fr": "Avancé",
+            "it": "Mega",
+            "jp": "スーパー",
+            "ko": "슈퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "B17AAA748A8F8727_##"
-        },
-        "1663": {
-            "0": 120
-        },
-        "1675": {
-            "0": 2
-        },
-        "1714": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1725": {
-            "0": 5
-        },
-        "1764": {
-            "0": "3931C4343E6730C0_##"
-        },
-        "1768": {
-            "0": 5
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_03"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1862": {
-            "0": 60
-        }
+        "ID": 5,
+        "Loading_Icon": "t_rankLoadingIcon_03.png",
+        "Big_Icon[1]": "t_rankBigIcon_02.png",
+        "1862": "60"
     },
     "5": {
-        "1441": {
-            "0": "1BDE13238581BB30_##"
+        "Class_Name_Short": {
+            "en": "Class 3",
+            "chs": "3阶\r",
+            "cht": "\r",
+            "de": "Klasse 3",
+            "es": "Clase 3",
+            "fr": "Division 3",
+            "it": "Classe 3",
+            "jp": "クラス3",
+            "ko": "클래스3",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_03_02"
+        "Small_Icon": "t_rankSmallIcon_03_02.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Great Cup: Class 3",
+            "chs": "超级·3阶\r",
+            "cht": "\r",
+            "de": "Super: Klasse 3",
+            "es": "Alto: Clase 3",
+            "fr": "Avancé - Division 3",
+            "it": "Mega: classe 3",
+            "jp": "スーパー・クラス3",
+            "ko": "슈퍼컵:클래스3",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "120",
+        "Tier": 2,
+        "Big_Icon[0]": "t_rankBigIcon_02.png",
+        "1725": "6",
+        "Cup_Name": {
+            "en": "Great Cup",
+            "chs": "超级\r",
+            "cht": "\r",
+            "de": "Super",
+            "es": "Alto",
+            "fr": "Avancé",
+            "it": "Mega",
+            "jp": "スーパー",
+            "ko": "슈퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "0FFCC692EDE86A7C_##"
-        },
-        "1663": {
-            "0": 120
-        },
-        "1675": {
-            "0": 2
-        },
-        "1714": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1725": {
-            "0": 6
-        },
-        "1764": {
-            "0": "9EB561234BA1AC3F_##"
-        },
-        "1768": {
-            "0": 6
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_03"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1862": {
-            "0": 60
-        }
+        "ID": 6,
+        "Loading_Icon": "t_rankLoadingIcon_03.png",
+        "Big_Icon[1]": "t_rankBigIcon_02.png",
+        "1862": "60"
     },
     "6": {
-        "1441": {
-            "0": "4CA9A4BE263C223E_##"
+        "Class_Name_Short": {
+            "en": "Class 4",
+            "chs": "4阶\r",
+            "cht": "\r",
+            "de": "Klasse 4",
+            "es": "Clase 4",
+            "fr": "Division 4",
+            "it": "Classe 4",
+            "jp": "クラス4",
+            "ko": "클래스4",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_03_01"
+        "Small_Icon": "t_rankSmallIcon_03_01.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Great Cup: Class 4",
+            "chs": "超级·4阶\r",
+            "cht": "\r",
+            "de": "Super: Klasse 4",
+            "es": "Alto: Clase 4",
+            "fr": "Avancé - Division 4",
+            "it": "Mega: classe 4",
+            "jp": "スーパー・クラス4",
+            "ko": "슈퍼컵:클래스4",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "120",
+        "Tier": 2,
+        "Big_Icon[0]": "t_rankBigIcon_02.png",
+        "1725": "7",
+        "Cup_Name": {
+            "en": "Great Cup",
+            "chs": "超级\r",
+            "cht": "\r",
+            "de": "Super",
+            "es": "Alto",
+            "fr": "Avancé",
+            "it": "Mega",
+            "jp": "スーパー",
+            "ko": "슈퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "838757651A9B269F_##"
-        },
-        "1663": {
-            "0": 120
-        },
-        "1675": {
-            "0": 2
-        },
-        "1714": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1725": {
-            "0": 7
-        },
-        "1764": {
-            "0": "9F6A3A164EC5EFB7_##"
-        },
-        "1768": {
-            "0": 7
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_03"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_02"
-        },
-        "1862": {
-            "0": 60
-        }
+        "ID": 7,
+        "Loading_Icon": "t_rankLoadingIcon_03.png",
+        "Big_Icon[1]": "t_rankBigIcon_02.png",
+        "1862": "60"
     },
     "7": {
-        "1441": {
-            "0": "DBC56ADD3A45D7AE_##"
+        "Class_Name_Short": {
+            "en": "Class 1",
+            "chs": "1阶\r",
+            "cht": "\r",
+            "de": "Klasse 1",
+            "es": "Clase 1",
+            "fr": "Division 1",
+            "it": "Classe 1",
+            "jp": "クラス1",
+            "ko": "클래스1",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_04_05"
+        "Small_Icon": "t_rankSmallIcon_04_05.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Expert Cup: Class 1",
+            "chs": "高级·1阶\r",
+            "cht": "\r",
+            "de": "Hyper: Klasse 1",
+            "es": "Avanzado: Clase 1",
+            "fr": "Confirmé - Division 1",
+            "it": "Ultra: classe 1",
+            "jp": "ハイパー・クラス1",
+            "ko": "하이퍼컵:클래스1",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "200",
+        "Tier": 3,
+        "Big_Icon[0]": "t_rankBigIcon_03.png",
+        "1725": "8",
+        "Cup_Name": {
+            "en": "Expert Cup",
+            "chs": "高级\r",
+            "cht": "\r",
+            "de": "Hyper",
+            "es": "Avanzado",
+            "fr": "Confirmé",
+            "it": "Ultra",
+            "jp": "ハイパー",
+            "ko": "하이퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "D905B9F0CED57A27_##"
-        },
-        "1663": {
-            "0": 200
-        },
-        "1675": {
-            "0": 3
-        },
-        "1714": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1725": {
-            "0": 8
-        },
-        "1764": {
-            "0": "FE7C757B406C5C42_##"
-        },
-        "1768": {
-            "0": 8
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_04"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 8,
+        "Loading_Icon": "t_rankLoadingIcon_04.png",
+        "Big_Icon[1]": "t_rankBigIcon_03.png",
+        "1862": "100"
     },
     "8": {
-        "1441": {
-            "0": "92417ADF3CF9E98E_##"
+        "Class_Name_Short": {
+            "en": "Class 2",
+            "chs": "2阶\r",
+            "cht": "\r",
+            "de": "Klasse 2",
+            "es": "Clase 2",
+            "fr": "Division 2",
+            "it": "Classe 2",
+            "jp": "クラス2",
+            "ko": "클래스2",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_04_04"
+        "Small_Icon": "t_rankSmallIcon_04_04.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Expert Cup: Class 2",
+            "chs": "高级·2阶\r",
+            "cht": "\r",
+            "de": "Hyper: Klasse 2",
+            "es": "Avanzado: Clase 2",
+            "fr": "Confirmé - Division 2",
+            "it": "Ultra: classe 2",
+            "jp": "ハイパー・クラス2",
+            "ko": "하이퍼컵:클래스2",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "200",
+        "Tier": 3,
+        "Big_Icon[0]": "t_rankBigIcon_03.png",
+        "1725": "9",
+        "Cup_Name": {
+            "en": "Expert Cup",
+            "chs": "高级\r",
+            "cht": "\r",
+            "de": "Hyper",
+            "es": "Avanzado",
+            "fr": "Confirmé",
+            "it": "Ultra",
+            "jp": "ハイパー",
+            "ko": "하이퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "673B8EFF8B38E324_##"
-        },
-        "1663": {
-            "0": 200
-        },
-        "1675": {
-            "0": 3
-        },
-        "1714": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1725": {
-            "0": 9
-        },
-        "1764": {
-            "0": "D651868A982917B4_##"
-        },
-        "1768": {
-            "0": 9
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_04"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 9,
+        "Loading_Icon": "t_rankLoadingIcon_04.png",
+        "Big_Icon[1]": "t_rankBigIcon_03.png",
+        "1862": "100"
     },
     "9": {
-        "1441": {
-            "0": "3A68DCC91B82D174_##"
+        "Class_Name_Short": {
+            "en": "Class 3",
+            "chs": "3阶\r",
+            "cht": "\r",
+            "de": "Klasse 3",
+            "es": "Clase 3",
+            "fr": "Division 3",
+            "it": "Classe 3",
+            "jp": "クラス3",
+            "ko": "클래스3",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_04_03"
+        "Small_Icon": "t_rankSmallIcon_04_03.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Expert Cup: Class 3",
+            "chs": "高级·3阶\r",
+            "cht": "\r",
+            "de": "Hyper: Klasse 3",
+            "es": "Avanzado: Clase 3",
+            "fr": "Confirmé - Division 3",
+            "it": "Ultra: classe 3",
+            "jp": "ハイパー・クラス3",
+            "ko": "하이퍼컵:클래스3",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "200",
+        "Tier": 3,
+        "Big_Icon[0]": "t_rankBigIcon_03.png",
+        "1725": "10",
+        "Cup_Name": {
+            "en": "Expert Cup",
+            "chs": "高级\r",
+            "cht": "\r",
+            "de": "Hyper",
+            "es": "Avanzado",
+            "fr": "Confirmé",
+            "it": "Ultra",
+            "jp": "ハイパー",
+            "ko": "하이퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "3E468351E9579510_##"
-        },
-        "1663": {
-            "0": 200
-        },
-        "1675": {
-            "0": 3
-        },
-        "1714": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1725": {
-            "0": 10
-        },
-        "1764": {
-            "0": "996C6343C2FD8EE0_##"
-        },
-        "1768": {
-            "0": 10
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_04"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 10,
+        "Loading_Icon": "t_rankLoadingIcon_04.png",
+        "Big_Icon[1]": "t_rankBigIcon_03.png",
+        "1862": "100"
     },
     "10": {
-        "1441": {
-            "0": "683BD263699E849C_##"
+        "Class_Name_Short": {
+            "en": "Class 4",
+            "chs": "4阶\r",
+            "cht": "\r",
+            "de": "Klasse 4",
+            "es": "Clase 4",
+            "fr": "Division 4",
+            "it": "Classe 4",
+            "jp": "クラス4",
+            "ko": "클래스4",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_04_02"
+        "Small_Icon": "t_rankSmallIcon_04_02.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Expert Cup: Class 4",
+            "chs": "高级·4阶\r",
+            "cht": "\r",
+            "de": "Hyper: Klasse 4",
+            "es": "Avanzado: Clase 4",
+            "fr": "Confirmé - Division 4",
+            "it": "Ultra: classe 4",
+            "jp": "ハイパー・クラス4",
+            "ko": "하이퍼컵:클래스4",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "200",
+        "Tier": 3,
+        "Big_Icon[0]": "t_rankBigIcon_03.png",
+        "1725": "11",
+        "Cup_Name": {
+            "en": "Expert Cup",
+            "chs": "高级\r",
+            "cht": "\r",
+            "de": "Hyper",
+            "es": "Avanzado",
+            "fr": "Confirmé",
+            "it": "Ultra",
+            "jp": "ハイパー",
+            "ko": "하이퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "2C8FAEFCC531C7E6_##"
-        },
-        "1663": {
-            "0": 200
-        },
-        "1675": {
-            "0": 3
-        },
-        "1714": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1725": {
-            "0": 11
-        },
-        "1764": {
-            "0": "CBF6222D7C22A019_##"
-        },
-        "1768": {
-            "0": 11
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_04"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 11,
+        "Loading_Icon": "t_rankLoadingIcon_04.png",
+        "Big_Icon[1]": "t_rankBigIcon_03.png",
+        "1862": "100"
     },
     "11": {
-        "1441": {
-            "0": "811F49BBCB980D50_##"
+        "Class_Name_Short": {
+            "en": "Class 5",
+            "chs": "5阶\r",
+            "cht": "\r",
+            "de": "Klasse 5",
+            "es": "Clase 5",
+            "fr": "Division 5",
+            "it": "Classe 5",
+            "jp": "クラス5",
+            "ko": "클래스5",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_04_01"
+        "Small_Icon": "t_rankSmallIcon_04_01.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Expert Cup: Class 5",
+            "chs": "高级·5阶\r",
+            "cht": "\r",
+            "de": "Hyper: Klasse 5",
+            "es": "Avanzado: Clase 5",
+            "fr": "Confirmé - Division 5",
+            "it": "Ultra: classe 5",
+            "jp": "ハイパー・クラス5",
+            "ko": "하이퍼컵:클래스5",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "200",
+        "Tier": 3,
+        "Big_Icon[0]": "t_rankBigIcon_03.png",
+        "1725": "12",
+        "Cup_Name": {
+            "en": "Expert Cup",
+            "chs": "高级\r",
+            "cht": "\r",
+            "de": "Hyper",
+            "es": "Avanzado",
+            "fr": "Confirmé",
+            "it": "Ultra",
+            "jp": "ハイパー",
+            "ko": "하이퍼컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "C15F6D09DAB82E36_##"
-        },
-        "1663": {
-            "0": 200
-        },
-        "1675": {
-            "0": 3
-        },
-        "1714": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1725": {
-            "0": 12
-        },
-        "1764": {
-            "0": "AC0B8FDEE7CA7F33_##"
-        },
-        "1768": {
-            "0": 12
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_04"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_03"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 12,
+        "Loading_Icon": "t_rankLoadingIcon_04.png",
+        "Big_Icon[1]": "t_rankBigIcon_03.png",
+        "1862": "100"
     },
     "12": {
-        "1441": {
-            "0": "B46060A8D5003F0F_##"
+        "Class_Name_Short": {
+            "en": "Class 1",
+            "chs": "1阶\r",
+            "cht": "\r",
+            "de": "Klasse 1",
+            "es": "Clase 1",
+            "fr": "Division 1",
+            "it": "Classe 1",
+            "jp": "クラス1",
+            "ko": "클래스1",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_05_05"
+        "Small_Icon": "t_rankSmallIcon_05_05.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Veteran Cup: Class 1",
+            "chs": "精英·1阶\r",
+            "cht": "\r",
+            "de": "Elite: Klasse 1",
+            "es": "Élite: Clase 1",
+            "fr": "Spécialiste - Division 1",
+            "it": "Élite: classe 1",
+            "jp": "エリート・クラス1",
+            "ko": "엘리트컵:클래스1",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "300",
+        "Tier": 4,
+        "Big_Icon[0]": "t_rankBigIcon_04.png",
+        "1725": "13",
+        "Cup_Name": {
+            "en": "Veteran Cup",
+            "chs": "精英\r",
+            "cht": "\r",
+            "de": "Elite",
+            "es": "Élite",
+            "fr": "Spécialiste",
+            "it": "Élite",
+            "jp": "エリート",
+            "ko": "엘리트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "B3D6AFDB4D113DF7_##"
-        },
-        "1663": {
-            "0": 300
-        },
-        "1675": {
-            "0": 4
-        },
-        "1714": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1725": {
-            "0": 13
-        },
-        "1764": {
-            "0": "ED18E12C03C21825_##"
-        },
-        "1768": {
-            "0": 13
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_05"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 13,
+        "Loading_Icon": "t_rankLoadingIcon_05.png",
+        "Big_Icon[1]": "t_rankBigIcon_04.png",
+        "1862": "100"
     },
     "13": {
-        "1441": {
-            "0": "55FFD4043FD3FB97_##"
+        "Class_Name_Short": {
+            "en": "Class 2",
+            "chs": "2阶\r",
+            "cht": "\r",
+            "de": "Klasse 2",
+            "es": "Clase 2",
+            "fr": "Division 2",
+            "it": "Classe 2",
+            "jp": "クラス2",
+            "ko": "클래스2",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_05_04"
+        "Small_Icon": "t_rankSmallIcon_05_04.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Veteran Cup: Class 2",
+            "chs": "精英·2阶\r",
+            "cht": "\r",
+            "de": "Elite: Klasse 2",
+            "es": "Élite: Clase 2",
+            "fr": "Spécialiste - Division 2",
+            "it": "Élite: classe 2",
+            "jp": "エリート・クラス2",
+            "ko": "엘리트컵:클래스2",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "300",
+        "Tier": 4,
+        "Big_Icon[0]": "t_rankBigIcon_04.png",
+        "1725": "14",
+        "Cup_Name": {
+            "en": "Veteran Cup",
+            "chs": "精英\r",
+            "cht": "\r",
+            "de": "Elite",
+            "es": "Élite",
+            "fr": "Spécialiste",
+            "it": "Élite",
+            "jp": "エリート",
+            "ko": "엘리트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "65C6186E5A925E6E_##"
-        },
-        "1663": {
-            "0": 300
-        },
-        "1675": {
-            "0": 4
-        },
-        "1714": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1725": {
-            "0": 14
-        },
-        "1764": {
-            "0": "75C62974278DABF5_##"
-        },
-        "1768": {
-            "0": 14
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_05"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 14,
+        "Loading_Icon": "t_rankLoadingIcon_05.png",
+        "Big_Icon[1]": "t_rankBigIcon_04.png",
+        "1862": "100"
     },
     "14": {
-        "1441": {
-            "0": "9F8B14AC2E34215D_##"
+        "Class_Name_Short": {
+            "en": "Class 3",
+            "chs": "3阶\r",
+            "cht": "\r",
+            "de": "Klasse 3",
+            "es": "Clase 3",
+            "fr": "Division 3",
+            "it": "Classe 3",
+            "jp": "クラス3",
+            "ko": "클래스3",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_05_03"
+        "Small_Icon": "t_rankSmallIcon_05_03.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Veteran Cup: Class 3",
+            "chs": "精英·3阶\r",
+            "cht": "\r",
+            "de": "Elite: Klasse 3",
+            "es": "Élite: Clase 3",
+            "fr": "Spécialiste - Division 3",
+            "it": "Élite: classe 3",
+            "jp": "エリート・クラス3",
+            "ko": "엘리트컵:클래스3",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "300",
+        "Tier": 4,
+        "Big_Icon[0]": "t_rankBigIcon_04.png",
+        "1725": "15",
+        "Cup_Name": {
+            "en": "Veteran Cup",
+            "chs": "精英\r",
+            "cht": "\r",
+            "de": "Elite",
+            "es": "Élite",
+            "fr": "Spécialiste",
+            "it": "Élite",
+            "jp": "エリート",
+            "ko": "엘리트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "D673E8B59581EB68_##"
-        },
-        "1663": {
-            "0": 300
-        },
-        "1675": {
-            "0": 4
-        },
-        "1714": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1725": {
-            "0": 15
-        },
-        "1764": {
-            "0": "B643C54AFD548EDA_##"
-        },
-        "1768": {
-            "0": 15
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_05"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 15,
+        "Loading_Icon": "t_rankLoadingIcon_05.png",
+        "Big_Icon[1]": "t_rankBigIcon_04.png",
+        "1862": "100"
     },
     "15": {
-        "1441": {
-            "0": "B2266EC424BA7931_##"
+        "Class_Name_Short": {
+            "en": "Class 4",
+            "chs": "4阶\r",
+            "cht": "\r",
+            "de": "Klasse 4",
+            "es": "Clase 4",
+            "fr": "Division 4",
+            "it": "Classe 4",
+            "jp": "クラス4",
+            "ko": "클래스4",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_05_02"
+        "Small_Icon": "t_rankSmallIcon_05_02.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Veteran Cup: Class 4",
+            "chs": "精英·4阶\r",
+            "cht": "\r",
+            "de": "Elite: Klasse 4",
+            "es": "Élite: Clase 4",
+            "fr": "Spécialiste - Division 4",
+            "it": "Élite: classe 4",
+            "jp": "エリート・クラス4",
+            "ko": "엘리트컵:클래스4",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "300",
+        "Tier": 4,
+        "Big_Icon[0]": "t_rankBigIcon_04.png",
+        "1725": "16",
+        "Cup_Name": {
+            "en": "Veteran Cup",
+            "chs": "精英\r",
+            "cht": "\r",
+            "de": "Elite",
+            "es": "Élite",
+            "fr": "Spécialiste",
+            "it": "Élite",
+            "jp": "エリート",
+            "ko": "엘리트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "2F15FF3298228412_##"
-        },
-        "1663": {
-            "0": 300
-        },
-        "1675": {
-            "0": 4
-        },
-        "1714": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1725": {
-            "0": 16
-        },
-        "1764": {
-            "0": "D087B9D1847ADD9C_##"
-        },
-        "1768": {
-            "0": 16
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_05"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 16,
+        "Loading_Icon": "t_rankLoadingIcon_05.png",
+        "Big_Icon[1]": "t_rankBigIcon_04.png",
+        "1862": "100"
     },
     "16": {
-        "1441": {
-            "0": "1582A37CF90F0DC0_##"
+        "Class_Name_Short": {
+            "en": "Class 5",
+            "chs": "5阶\r",
+            "cht": "\r",
+            "de": "Klasse 5",
+            "es": "Clase 5",
+            "fr": "Division 5",
+            "it": "Classe 5",
+            "jp": "クラス5",
+            "ko": "클래스5",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_05_01"
+        "Small_Icon": "t_rankSmallIcon_05_01.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Veteran Cup: Class 5",
+            "chs": "精英·5阶\r",
+            "cht": "\r",
+            "de": "Elite: Klasse 5",
+            "es": "Élite: Clase 5",
+            "fr": "Spécialiste - Division 5",
+            "it": "Élite: classe 5",
+            "jp": "エリート・クラス5",
+            "ko": "엘리트컵:클래스5",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "300",
+        "Tier": 4,
+        "Big_Icon[0]": "t_rankBigIcon_04.png",
+        "1725": "17",
+        "Cup_Name": {
+            "en": "Veteran Cup",
+            "chs": "精英\r",
+            "cht": "\r",
+            "de": "Elite",
+            "es": "Élite",
+            "fr": "Spécialiste",
+            "it": "Élite",
+            "jp": "エリート",
+            "ko": "엘리트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "0DC39BBCD2D74ED3_##"
-        },
-        "1663": {
-            "0": 300
-        },
-        "1675": {
-            "0": 4
-        },
-        "1714": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1725": {
-            "0": 17
-        },
-        "1764": {
-            "0": "7931E018C110B06C_##"
-        },
-        "1768": {
-            "0": 17
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_05"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_04"
-        },
-        "1862": {
-            "0": 100
-        }
+        "ID": 17,
+        "Loading_Icon": "t_rankLoadingIcon_05.png",
+        "Big_Icon[1]": "t_rankBigIcon_04.png",
+        "1862": "100"
     },
     "17": {
-        "1441": {
-            "0": "D5587CDA22FEC05B_##"
+        "Class_Name_Short": {
+            "en": "Class 1",
+            "chs": "1阶\r",
+            "cht": "\r",
+            "de": "Klasse 1",
+            "es": "Clase 1",
+            "fr": "Division 1",
+            "it": "Classe 1",
+            "jp": "クラス1",
+            "ko": "클래스1",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_07_05"
+        "Small_Icon": "t_rankSmallIcon_07_05.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Ultra Cup: Class 1",
+            "chs": "专家·1阶\r",
+            "cht": "\r",
+            "de": "Ultra: Klasse 1",
+            "es": "Experto: Clase 1",
+            "fr": "Expert - Division 1",
+            "it": "Esperto: classe 1",
+            "jp": "エキスパート・クラス1",
+            "ko": "엑스퍼트컵:클래스1",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "400",
+        "Tier": 5,
+        "Big_Icon[0]": "t_rankBigIcon_05.png",
+        "1725": "18",
+        "Cup_Name": {
+            "en": "Ultra Cup",
+            "chs": "专家\r",
+            "cht": "\r",
+            "de": "Ultra",
+            "es": "Experto",
+            "fr": "Expert",
+            "it": "Esperto",
+            "jp": "エキスパート",
+            "ko": "엑스퍼트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "4ABB2B313DFEB3B2_##"
-        },
-        "1663": {
-            "0": 400
-        },
-        "1675": {
-            "0": 5
-        },
-        "1714": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1725": {
-            "0": 18
-        },
-        "1764": {
-            "0": "3056EF95648B3AB6_##"
-        },
-        "1768": {
-            "0": 18
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_07"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1862": {
-            "0": 150
-        }
+        "ID": 18,
+        "Loading_Icon": "t_rankLoadingIcon_07.png",
+        "Big_Icon[1]": "t_rankBigIcon_05.png",
+        "1862": "150"
     },
     "18": {
-        "1441": {
-            "0": "96A60E36DF253EFD_##"
+        "Class_Name_Short": {
+            "en": "Class 2",
+            "chs": "2阶\r",
+            "cht": "\r",
+            "de": "Klasse 2",
+            "es": "Clase 2",
+            "fr": "Division 2",
+            "it": "Classe 2",
+            "jp": "クラス2",
+            "ko": "클래스2",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_07_04"
+        "Small_Icon": "t_rankSmallIcon_07_04.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Ultra Cup: Class 2",
+            "chs": "专家·2阶\r",
+            "cht": "\r",
+            "de": "Ultra: Klasse 2",
+            "es": "Experto: Clase 2",
+            "fr": "Expert - Division 2",
+            "it": "Esperto: classe 2",
+            "jp": "エキスパート・クラス2",
+            "ko": "엑스퍼트컵:클래스2",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "400",
+        "Tier": 5,
+        "Big_Icon[0]": "t_rankBigIcon_05.png",
+        "1725": "19",
+        "Cup_Name": {
+            "en": "Ultra Cup",
+            "chs": "专家\r",
+            "cht": "\r",
+            "de": "Ultra",
+            "es": "Experto",
+            "fr": "Expert",
+            "it": "Esperto",
+            "jp": "エキスパート",
+            "ko": "엑스퍼트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "CAF961D8C77C310A_##"
-        },
-        "1663": {
-            "0": 400
-        },
-        "1675": {
-            "0": 5
-        },
-        "1714": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1725": {
-            "0": 19
-        },
-        "1764": {
-            "0": "0F6D4D7648AE5A8E_##"
-        },
-        "1768": {
-            "0": 19
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_07"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1862": {
-            "0": 150
-        }
+        "ID": 19,
+        "Loading_Icon": "t_rankLoadingIcon_07.png",
+        "Big_Icon[1]": "t_rankBigIcon_05.png",
+        "1862": "150"
     },
     "19": {
-        "1441": {
-            "0": "A6AE7D3480D6B9B6_##"
+        "Class_Name_Short": {
+            "en": "Class 3",
+            "chs": "3阶\r",
+            "cht": "\r",
+            "de": "Klasse 3",
+            "es": "Clase 3",
+            "fr": "Division 3",
+            "it": "Classe 3",
+            "jp": "クラス3",
+            "ko": "클래스3",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_07_03"
+        "Small_Icon": "t_rankSmallIcon_07_03.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Ultra Cup: Class 3",
+            "chs": "专家·3阶\r",
+            "cht": "\r",
+            "de": "Ultra: Klasse 3",
+            "es": "Experto: Clase 3",
+            "fr": "Expert - Division 3",
+            "it": "Esperto: classe 3",
+            "jp": "エキスパート・クラス3",
+            "ko": "엑스퍼트컵:클래스3",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "400",
+        "Tier": 5,
+        "Big_Icon[0]": "t_rankBigIcon_05.png",
+        "1725": "20",
+        "Cup_Name": {
+            "en": "Ultra Cup",
+            "chs": "专家\r",
+            "cht": "\r",
+            "de": "Ultra",
+            "es": "Experto",
+            "fr": "Expert",
+            "it": "Esperto",
+            "jp": "エキスパート",
+            "ko": "엑스퍼트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "DEEF337058B6433C_##"
-        },
-        "1663": {
-            "0": 400
-        },
-        "1675": {
-            "0": 5
-        },
-        "1714": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1725": {
-            "0": 20
-        },
-        "1764": {
-            "0": "3C20689847E4920F_##"
-        },
-        "1768": {
-            "0": 20
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_07"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1862": {
-            "0": 150
-        }
+        "ID": 20,
+        "Loading_Icon": "t_rankLoadingIcon_07.png",
+        "Big_Icon[1]": "t_rankBigIcon_05.png",
+        "1862": "150"
     },
     "20": {
-        "1441": {
-            "0": "2B220DD7EC8269DC_##"
+        "Class_Name_Short": {
+            "en": "Class 4",
+            "chs": "4阶\r",
+            "cht": "\r",
+            "de": "Klasse 4",
+            "es": "Clase 4",
+            "fr": "Division 4",
+            "it": "Classe 4",
+            "jp": "クラス4",
+            "ko": "클래스4",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_07_02"
+        "Small_Icon": "t_rankSmallIcon_07_02.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Ultra Cup: Class 4",
+            "chs": "专家·4阶\r",
+            "cht": "\r",
+            "de": "Ultra: Klasse 4",
+            "es": "Experto: Clase 4",
+            "fr": "Expert - Division 4",
+            "it": "Esperto: classe 4",
+            "jp": "エキスパート・クラス4",
+            "ko": "엑스퍼트컵:클래스4",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "400",
+        "Tier": 5,
+        "Big_Icon[0]": "t_rankBigIcon_05.png",
+        "1725": "21",
+        "Cup_Name": {
+            "en": "Ultra Cup",
+            "chs": "专家\r",
+            "cht": "\r",
+            "de": "Ultra",
+            "es": "Experto",
+            "fr": "Expert",
+            "it": "Esperto",
+            "jp": "エキスパート",
+            "ko": "엑스퍼트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "E3C08050524AC689_##"
-        },
-        "1663": {
-            "0": 400
-        },
-        "1675": {
-            "0": 5
-        },
-        "1714": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1725": {
-            "0": 21
-        },
-        "1764": {
-            "0": "385746AA53BCE605_##"
-        },
-        "1768": {
-            "0": 21
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_07"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1862": {
-            "0": 150
-        }
+        "ID": 21,
+        "Loading_Icon": "t_rankLoadingIcon_07.png",
+        "Big_Icon[1]": "t_rankBigIcon_05.png",
+        "1862": "150"
     },
     "21": {
-        "1441": {
-            "0": "7F3435028AFB0BB6_##"
+        "Class_Name_Short": {
+            "en": "Class 5",
+            "chs": "5阶\r",
+            "cht": "\r",
+            "de": "Klasse 5",
+            "es": "Clase 5",
+            "fr": "Division 5",
+            "it": "Classe 5",
+            "jp": "クラス5",
+            "ko": "클래스5",
+            "tc": "\r"
         },
-        "1499": {
-            "0": "t_rankSmallIcon_07_01"
+        "Small_Icon": "t_rankSmallIcon_07_01.png",
+        "1519": "3",
+        "Class_Name_Long": {
+            "en": "Ultra Cup: Class 5",
+            "chs": "专家·5阶\r",
+            "cht": "\r",
+            "de": "Ultra: Klasse 5",
+            "es": "Experto: Clase 5",
+            "fr": "Expert - Division 5",
+            "it": "Esperto: classe 5",
+            "jp": "エキスパート・クラス5",
+            "ko": "엑스퍼트컵:클래스5",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 3
+        "1663": "400",
+        "Tier": 5,
+        "Big_Icon[0]": "t_rankBigIcon_05.png",
+        "1725": "22",
+        "Cup_Name": {
+            "en": "Ultra Cup",
+            "chs": "专家\r",
+            "cht": "\r",
+            "de": "Ultra",
+            "es": "Experto",
+            "fr": "Expert",
+            "it": "Esperto",
+            "jp": "エキスパート",
+            "ko": "엑스퍼트컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "C67E62514BF6D857_##"
-        },
-        "1663": {
-            "0": 400
-        },
-        "1675": {
-            "0": 5
-        },
-        "1714": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1725": {
-            "0": 22
-        },
-        "1764": {
-            "0": "68C3F54032B95249_##"
-        },
-        "1768": {
-            "0": 22
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_07"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_05"
-        },
-        "1862": {
-            "0": 150
-        }
+        "ID": 22,
+        "Loading_Icon": "t_rankLoadingIcon_07.png",
+        "Big_Icon[1]": "t_rankBigIcon_05.png",
+        "1862": "150"
     },
     "22": {
-        "1499": {
-            "0": "t_rankSmallIcon_08_01"
+        "Small_Icon": "t_rankSmallIcon_08_01.png",
+        "1519": "99999",
+        "Class_Name_Long": {
+            "en": "Master Cup",
+            "chs": "大师\r",
+            "cht": "\r",
+            "de": "Meister",
+            "es": "Maestro",
+            "fr": "Maître",
+            "it": "Master",
+            "jp": "マスター",
+            "ko": "마스터컵",
+            "tc": "\r"
         },
-        "1519": {
-            "0": 99999
+        "1663": "400",
+        "Tier": 6,
+        "Big_Icon[0]": "t_rankBigIcon_06.png",
+        "1725": "23",
+        "Cup_Name": {
+            "en": "Master Cup",
+            "chs": "大师\r",
+            "cht": "\r",
+            "de": "Meister",
+            "es": "Maestro",
+            "fr": "Maître",
+            "it": "Master",
+            "jp": "マスター",
+            "ko": "마스터컵",
+            "tc": "\r"
         },
-        "1612": {
-            "0": "A11C178A01EF71DA_##"
-        },
-        "1663": {
-            "0": 400
-        },
-        "1675": {
-            "0": 6
-        },
-        "1714": {
-            "0": "t_rankBigIcon_06"
-        },
-        "1725": {
-            "0": 23
-        },
-        "1764": {
-            "0": "F2261E59256ACA19_##"
-        },
-        "1768": {
-            "0": 23
-        },
-        "1789": {
-            "0": "t_rankLoadingIcon_08"
-        },
-        "1829": {
-            "0": "t_rankBigIcon_06"
-        },
-        "1862": {
-            "0": 150
-        }
+        "ID": 23,
+        "Loading_Icon": "t_rankLoadingIcon_08.png",
+        "Big_Icon[1]": "t_rankBigIcon_06.png",
+        "1862": "150"
     }
 }

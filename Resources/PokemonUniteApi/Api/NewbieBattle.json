@@ -1,136 +1,184 @@
 {
     "0": {
-        "1282": {
-            "0": "pref_FirstGuideSettlementPage"
+        "Pref_Page": "pref_FirstGuideSettlementPage",
+        "Map_Image": "t_Battle_common_bg_map.png",
+        "Targets": "210007,En,0,17",
+        "Chapter_Select_Image": "t_ChapterSelection_image5.png",
+        "ID": 1,
+        "Pokemon": 200025,
+        "Option[0]": {
+            "en": "Practice",
+            "chs": "练习\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Práctica",
+            "fr": "",
+            "it": "",
+            "jp": "練習",
+            "ko": "",
+            "tc": "\r"
         },
-        "1389": {
-            "0": "t_Battle_common_bg_map"
+        "Option[1]": {
+            "en": "Basics 1",
+            "chs": "基础教学1\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "ベーシック1",
+            "ko": "",
+            "tc": "\r"
         },
-        "1411": {
-            "0": "210007,En,0,17"
+        "Objective": {
+            "en": "Learn the rules, and practice scoring goals!",
+            "chs": "学习比赛规则并练习得分吧\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "ルールを覚えて、ゴールの練習をしよう！",
+            "ko": "",
+            "tc": "\r"
         },
-        "1445": {
-            "0": "t_ChapterSelection_image5"
-        },
-        "1563": {
-            "0": 1
-        },
-        "1589": {
-            "0": 200025
-        },
-        "1730": {
-            "0": "EF9FBDAC3F53719C_##"
-        },
-        "1764": {
-            "0": "483F6FFC230E68F8_##"
-        },
-        "1776": {
-            "0": "C9F2C4BE704E706D_##"
-        },
-        "1871": {
-            "0": 20899
-        }
+        "Scene_Map": 20899
     },
     "1": {
-        "1345": {
-            "0": 1
+        "1345": "1",
+        "Map_Image": "t_Battle_common_bg_map.png",
+        "Targets": "100661,My,1,13|100025,My,2,14|190143,My,3,15|100829,My,4,16|100001,En,0,17|190359,En,1,18|180007,En,2,19|190280,En,3,20|190066,En,4,21",
+        "Chapter_Select_Image": "t_ChapterSelection_image6.png",
+        "ID": 2,
+        "Pokemon": 100004,
+        "Option[0]": {
+            "en": "Practice",
+            "chs": "练习\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Práctica",
+            "fr": "",
+            "it": "",
+            "jp": "練習",
+            "ko": "",
+            "tc": "\r"
         },
-        "1389": {
-            "0": "t_Battle_common_bg_map"
+        "Option[1]": {
+            "en": "Basics 2",
+            "chs": "基础教学2\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "ベーシック2",
+            "ko": "",
+            "tc": "\r"
         },
-        "1411": {
-            "0": "100661,My,1,13|100025,My,2,14|190143,My,3,15|100829,My,4,16|100001,En,0,17|190359,En,1,18|180007,En,2,19|190280,En,3,20|190066,En,4,21"
+        "Objective": {
+            "en": "Try a 5-on-5 team battle!",
+            "chs": "进行一场正式的5打5比赛吧\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "5対5のバトルをしてみよう！",
+            "ko": "",
+            "tc": "\r"
         },
-        "1445": {
-            "0": "t_ChapterSelection_image6"
-        },
-        "1563": {
-            "0": 2
-        },
-        "1589": {
-            "0": 100004
-        },
-        "1730": {
-            "0": "EA03027E559F929A_##"
-        },
-        "1764": {
-            "0": "D832D93B1AA4C3EB_##"
-        },
-        "1776": {
-            "0": "DA9C238A20B9B242_##"
-        },
-        "1871": {
-            "0": 20301
-        }
+        "Scene_Map": 20301
     },
     "2": {
-        "1282": {
-            "0": "pref_FirstGuideSettlementPage"
+        "Pref_Page": "pref_FirstGuideSettlementPage",
+        "Map_Image": "t_Battle_common_bg_map.png",
+        "1432": "1",
+        "Chapter_Select_Image": "t_ChapterSelection_image9.png",
+        "1501": "1",
+        "ID": 3,
+        "Pokemon": 300025,
+        "Option[0]": {
+            "en": "Practice",
+            "chs": "练习\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Práctica",
+            "fr": "",
+            "it": "",
+            "jp": "練習",
+            "ko": "",
+            "tc": "\r"
         },
-        "1389": {
-            "0": "t_Battle_common_bg_map"
+        "Option[1]": {
+            "en": "Advanced 1",
+            "chs": "进阶教学1\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "アドバンス1",
+            "ko": "",
+            "tc": "\r"
         },
-        "1432": {
-            "0": 1
+        "Objective": {
+            "en": "Learn about the wild Pokémon of Remoat Stadium!",
+            "chs": "利用洛托姆弱化对方得分区并赢得比赛。\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "レモータスタジアムの野生ポケモンを知ろう！",
+            "ko": "",
+            "tc": "\r"
         },
-        "1445": {
-            "0": "t_ChapterSelection_image9"
-        },
-        "1501": {
-            "0": 1
-        },
-        "1563": {
-            "0": 3
-        },
-        "1589": {
-            "0": 300025
-        },
-        "1730": {
-            "0": "B09C2E1D1DAFBB0D_##"
-        },
-        "1764": {
-            "0": "337BE0F1985D5298_##"
-        },
-        "1776": {
-            "0": "F30B4439CE5F9357_##"
-        },
-        "1871": {
-            "0": 20895
-        }
+        "Scene_Map": 20895
     },
     "3": {
-        "1282": {
-            "0": "pref_FirstGuideSettlementPage"
+        "Pref_Page": "pref_FirstGuideSettlementPage",
+        "Map_Image": "t_Battle_common_bg_map.png",
+        "1432": "1",
+        "Chapter_Select_Image": "t_ChapterSelection_image8.png",
+        "1501": "1",
+        "ID": 4,
+        "Pokemon": 200661,
+        "Option[0]": {
+            "en": "Practice",
+            "chs": "练习\r",
+            "cht": "\r",
+            "de": "",
+            "es": "Práctica",
+            "fr": "",
+            "it": "",
+            "jp": "練習",
+            "ko": "",
+            "tc": "\r"
         },
-        "1389": {
-            "0": "t_Battle_common_bg_map"
+        "Option[1]": {
+            "en": "Advanced 2",
+            "chs": "进阶教学2\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "アドバンス2",
+            "ko": "",
+            "tc": "\r"
         },
-        "1432": {
-            "0": 1
+        "Objective": {
+            "en": "Knock out Zapdos with your teammates, and win the battle!",
+            "chs": "与队友一起打倒闪电鸟并赢得比赛。\r",
+            "cht": "\r",
+            "de": "",
+            "es": "",
+            "fr": "",
+            "it": "",
+            "jp": "チームメイトと一緒にサンダーをKOしてバトルに勝利しよう！",
+            "ko": "",
+            "tc": "\r"
         },
-        "1445": {
-            "0": "t_ChapterSelection_image8"
-        },
-        "1501": {
-            "0": 1
-        },
-        "1563": {
-            "0": 4
-        },
-        "1589": {
-            "0": 200661
-        },
-        "1730": {
-            "0": "226B7C1FA7A71CAB_##"
-        },
-        "1764": {
-            "0": "EDD7EF74C745FFE7_##"
-        },
-        "1776": {
-            "0": "08ED50235BC54BD6_##"
-        },
-        "1871": {
-            "0": 20894
-        }
+        "Scene_Map": 20894
     }
 }

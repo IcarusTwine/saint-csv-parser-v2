@@ -1,156 +1,72 @@
 {
     "0": {
-        "1475": {
-            "0": "t_common_icon_gold"
-        },
-        "1498": {
-            "0": 1
-        },
-        "1756": {
-            "0": 20094
-        }
+        "Reward_Icon[1]": "t_common_icon_gold.png",
+        "ID": 1,
+        "Drop_Static": 20094
     },
     "1": {
-        "1279": {
-            "0": "t_stone_icon_Venusaur"
-        },
-        "1475": {
-            "0": "t_stone_icon_Venusaur"
-        },
-        "1498": {
-            "0": 2
-        },
-        "1756": {
-            "0": 20095
-        }
+        "Reward_Icon[0]": "t_stone_icon_Venusaur.png",
+        "Reward_Icon[1]": "t_stone_icon_Venusaur.png",
+        "ID": 2,
+        "Drop_Static": 20095
     },
     "2": {
-        "1279": {
-            "0": "t_stone_icon_Blastoise"
-        },
-        "1475": {
-            "0": "t_stone_icon_Blastoise"
-        },
-        "1498": {
-            "0": 3
-        },
-        "1756": {
-            "0": 20096
-        }
+        "Reward_Icon[0]": "t_stone_icon_Blastoise.png",
+        "Reward_Icon[1]": "t_stone_icon_Blastoise.png",
+        "ID": 3,
+        "Drop_Static": 20096
     },
     "3": {
-        "1475": {
-            "0": "t_common_icon_fight"
-        },
-        "1498": {
-            "0": 4
-        },
-        "1756": {
-            "0": 20097
-        }
+        "Reward_Icon[1]": "t_common_icon_fight.png",
+        "ID": 4,
+        "Drop_Static": 20097
     },
     "4": {
-        "1498": {
-            "0": 5
-        },
-        "1756": {
-            "0": 20098
-        }
+        "ID": 5,
+        "Drop_Static": 20098
     },
     "5": {
-        "1475": {
-            "0": "t_common_icon_fight"
-        },
-        "1498": {
-            "0": 6
-        },
-        "1756": {
-            "0": 20099
-        }
+        "Reward_Icon[1]": "t_common_icon_fight.png",
+        "ID": 6,
+        "Drop_Static": 20099
     },
     "6": {
-        "1475": {
-            "0": "t_common_icon_gold"
-        },
-        "1498": {
-            "0": 7
-        },
-        "1756": {
-            "0": 20100
-        }
+        "Reward_Icon[1]": "t_common_icon_gold.png",
+        "ID": 7,
+        "Drop_Static": 20100
     },
     "7": {
-        "1279": {
-            "0": "t_stone_icon_Greninja"
-        },
-        "1475": {
-            "0": "t_stone_icon_Greninja"
-        },
-        "1498": {
-            "0": 8
-        },
-        "1756": {
-            "0": 20101
-        }
+        "Reward_Icon[0]": "t_stone_icon_Greninja.png",
+        "Reward_Icon[1]": "t_stone_icon_Greninja.png",
+        "ID": 8,
+        "Drop_Static": 20101
     },
     "8": {
-        "1475": {
-            "0": "t_common_icon_fight"
-        },
-        "1498": {
-            "0": 9
-        },
-        "1756": {
-            "0": 20102
-        }
+        "Reward_Icon[1]": "t_common_icon_fight.png",
+        "ID": 9,
+        "Drop_Static": 20102
     },
     "9": {
-        "1498": {
-            "0": 10
-        },
-        "1756": {
-            "0": 20103
-        }
+        "ID": 10,
+        "Drop_Static": 20103
     },
     "10": {
-        "1475": {
-            "0": "t_common_icon_fight"
-        },
-        "1498": {
-            "0": 11
-        },
-        "1756": {
-            "0": 20104
-        }
+        "Reward_Icon[1]": "t_common_icon_fight.png",
+        "ID": 11,
+        "Drop_Static": 20104
     },
     "11": {
-        "1498": {
-            "0": 12
-        },
-        "1756": {
-            "0": 20105
-        }
+        "ID": 12,
+        "Drop_Static": 20105
     },
     "12": {
-        "1475": {
-            "0": "t_common_icon_fight"
-        },
-        "1498": {
-            "0": 13
-        },
-        "1756": {
-            "0": 20106
-        }
+        "Reward_Icon[1]": "t_common_icon_fight.png",
+        "ID": 13,
+        "Drop_Static": 20106
     },
     "13": {
-        "1475": {
-            "0": "t_common_icon_gold"
-        },
-        "1498": {
-            "0": 14
-        },
-        "1756": {
-            "0": 20107
-        }
+        "Reward_Icon[1]": "t_common_icon_gold.png",
+        "ID": 14,
+        "Drop_Static": 20107
     }
 }

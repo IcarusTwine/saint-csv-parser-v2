@@ -1,4 +1,50 @@
 {
+    "Active_Skill_Hero": {
+        "1364":{
+            "Def" : "Skill_Label",
+            "Type" : "Texture"
+        },
+        "1390":{
+            "Def" : "Pref_Arrow",
+            "Type" : "String"
+        },
+        "1411":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        },
+        "1481":{
+            "Def" : "Skill_Circle",
+            "Type" : "Texture"
+        },
+        "1535":{
+            "Def" : "Skill_Level_Description",
+            "Type" : "String"
+        },
+        "1565":{
+            "Def" : "Model",
+            "Type" : "String"
+        },
+        "1629":{
+            "Def" : "Pref_Arrow_Red",
+            "Type" : "String"
+        },
+        "1764":{
+            "Def" : "Skill_Name",
+            "Type" : "Transient"
+        },
+        "1767":{
+            "Def" : "Skill_Tut",
+            "Type" : "Texture"
+        },
+        "1776":{
+            "Def" : "Skill_Description",
+            "Type" : "Transient"
+        },
+        "1857":{
+            "Def" : "Pref_Auto_Red",
+            "Type" : "String"
+        }
+    },
     "Active_Skill_Monster": {
         "1481":{
             "Def" : "Icon",
@@ -15,6 +61,16 @@
         "1776":{
             "Def" : "Description",
             "Type" : "Transient"
+        }
+    },
+    "AiInfoConfig": {
+        "1764":{
+            "Def" : "Trans",
+            "Type" : "Transient"
+        },
+        "1824":{
+            "Def" : "ID",
+            "Type" : "ID"
         }
     },
     "Activity_Base": {
@@ -229,6 +285,10 @@
         "1527":{
             "Def" : "Texture_Female",
             "Type" : "Texture"
+        },
+        "1824":{
+            "Def" : "ID",
+            "Type" : "ID"
         }
     },
     "FashChatText": {
@@ -322,9 +382,17 @@
         }
     },
     "HeldItemLevelUpDesign": {
+        "1267":{
+            "Def" : "Item_ID",
+            "Type" : "Number"
+        },
         "1294":{
             "Def" : "Texture",
             "Type" : "Texture"
+        },
+        "1325":{
+            "Def" : "Tier",
+            "Type" : "String"
         },
         "1736":{
             "Def" : "Description",
@@ -333,6 +401,18 @@
         "1764":{
             "Def" : "Name",
             "Type" : "Transient"
+        },
+        "1776":{
+            "Def" : "Skill_Description",
+            "Type" : "String"
+        },
+        "1822":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1859":{
+            "Def" : "Level",
+            "Type" : "Number"
         }
     },
     "Hint_Info": {
@@ -347,6 +427,20 @@
         "1836":{
             "Def" : "Description",
             "Type" : "Transient"
+        }
+    },
+    "InherentPropertyDesc": {
+        "1571":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1372":{
+            "Def" : "Stat",
+            "Type" : "String"
+        },
+        "1776":{
+            "Def" : "Description",
+            "Type" : "String"
         }
     },
     "IOSDeviceConfig": {
@@ -387,18 +481,227 @@
             "Type" : "Transient"
         }
     },
+    "Monster_Base_GameMode": {
+        "1445":{
+            "Def" : "Icon",
+            "Type" : "Texture"
+        },
+        "1560":{
+            "Def" : "Model",
+            "Type" : "String"
+        },
+        "1567":{
+            "Def" : "Pref_UI",
+            "Type" : "String"
+        },
+        "1672":{
+            "Def" : "AGE_Start",
+            "Type" : "String"
+        },
+        "1693":{
+            "Def" : "AGE_End",
+            "Type" : "String"
+        },
+        "1835":{
+            "Def" : "Pref_MiniMap",
+            "Type" : "String"
+        }
+    },
+    "Monster_Base_Monster": {
+        "1445":{
+            "Def" : "Icon",
+            "Type" : "Texture"
+        },
+        "1560":{
+            "Def" : "Model",
+            "Type" : "String"
+        },
+        "1567":{
+            "Def" : "Pref_UI",
+            "Type" : "String"
+        },
+        "1672":{
+            "Def" : "AGE_Start",
+            "Type" : "String"
+        },
+        "1693":{
+            "Def" : "AGE_End",
+            "Type" : "String"
+        },
+        "1772":{
+            "Def" : "Name",
+            "Type" : "Transient"
+        },
+        "1835":{
+            "Def" : "Pref_MiniMap",
+            "Type" : "String"
+        }
+    },
+    "Monster_CaptureInfo": {
+        "1416":{
+            "Def" : "ID",
+            "Type" : "ID"
+        }
+    },
+    "Newbie_RewardHero": {
+        "1513":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        }
+    },
+    "NewbieBattle": {
+        "1282":{
+            "Def" : "Pref_Page",
+            "Type" : "String"
+        },
+        "1389":{
+            "Def" : "Map_Image",
+            "Type" : "Texture"
+        },
+        "1411":{
+            "Def" : "Targets",
+            "Type" : "Complex_Link",
+            "Link" : "Pokemon_Hero"
+        },
+        "1445":{
+            "Def" : "Chapter_Select_Image",
+            "Type" : "Texture"
+        },
+        "1563":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1589":{
+            "Def" : "Pokemon",
+            "Type" : "Link",
+            "Link" : "Pokemon_Hero"
+        },
+        "1730":{
+            "Def" : "Option[0]",
+            "Type" : "Transient"
+        },
+        "1764":{
+            "Def" : "Option[1]",
+            "Type" : "Transient"
+        },
+        "1776":{
+            "Def" : "Objective",
+            "Type" : "Transient"
+        },
+        "1871":{
+            "Def" : "Scene_Map",
+            "Type" : "Link",
+            "Link" : "Scene_Map"
+        }
+    },
+    "NewbieChallengeTask": {
+        "1373":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1469":{
+            "Def" : "Reward_Icon",
+            "Type" : "Texture"
+        },
+        "1507":{
+            "Def" : "SubTask_ID",
+            "Type" : "Number"
+        }
+    },
+    "NewbieGift": {
+        "1498":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1279":{
+            "Def" : "Reward_Icon[0]",
+            "Type" : "Texture"
+        },
+        "1475":{
+            "Def" : "Reward_Icon[1]",
+            "Type" : "Texture"
+        },
+        "1756":{
+            "Def" : "Drop_Static",
+            "Type" : "Link",
+            "Link" : "Drop_Static"
+        }
+    },
+    "NPCDialog": {
+        "1269":{
+            "Def" : "Tutorial_ID",
+            "Type" : "ID"
+        },
+        "1391":{
+            "Def" : "Transient[0]",
+            "Type" : "Transient"
+        },
+        "1432":{
+            "Def" : "Transient[1]",
+            "Type" : "Transient"
+        },
+        "1526":{
+            "Def" : "Pref_Portrait",
+            "Type" : "String"
+        },
+        "1596":{
+            "Def" : "Animation_FX",
+            "Type" : "String"
+        }
+    },
+    "OrdinaryTask": {
+        "1530":{
+            "Def" : "Transient[0]",
+            "Type" : "Transient"
+        },
+        "1850":{
+            "Def" : "Transient[1]",
+            "Type" : "Transient"
+        }
+    },
+    "Passive_Skill": {
+        "1481":{
+            "Def" : "Skill_Icon",
+            "Type" : "Texture"
+        },
+        "1609":{
+            "Def" : "AGE_Skill",
+            "Type" : "String"
+        },
+        "1555":{
+            "Def" : "1555",
+            "Type" : "Link",
+            "Link" : "Active_Skill_Hero"
+        },
+        "1776":{
+            "Def" : "Description",
+            "Type" : "Transient"
+        },
+        "1764":{
+            "Def" : "Announce",
+            "Type" : "Transient"
+        }
+    },
     "Pokemon_Avatar_Default": {
         "1481":{
             "Def" : "Icon",
             "Type" : "Texture"
         },
-        "28":{
+        "1339":{
             "Def" : "Name",
             "Type" : "String"
+        },
+        "1462":{
+            "Def" : "Dex_No[0]",
+            "Type" : "Number"
         },
         "1800":{
             "Def" : "Pref",
             "Type" : "String"
+        },
+        "1864":{
+            "Def" : "Dex_No[1]",
+            "Type" : "Number"
         }
     },
     "Pokemon_Base": {
@@ -426,6 +729,10 @@
             "Def" : "Main_Icon",
             "Type" : "Texture"
         },
+        "1428":{
+            "Def" : "Support",
+            "Type" : "Number"
+        },
         "1448":{
             "Def" : "Type",
             "Type" : "Transient"
@@ -442,6 +749,10 @@
             "Def" : "Size",
             "Type" : "Transient"
         },
+        "1551":{
+            "Def" : "Scoring",
+            "Type" : "Number"
+        },
         "1602":{
             "Def" : "Announce",
             "Type" : "String"
@@ -449,6 +760,10 @@
         "1611":{
             "Def" : "Evoution[1]",
             "Type" : "Transient"
+        },
+        "1614":{
+            "Def" : "Offense",
+            "Type" : "Number"
         },
         "1658":{
             "Def" : "Difficulty",
@@ -474,6 +789,10 @@
             "Def" : "Whole_Icon",
             "Type" : "Texture"
         },
+        "1780":{
+            "Def" : "Mobility",
+            "Type" : "Number"
+        },
         "1784":{
             "Def" : "Type_Description",
             "Type" : "Transient"
@@ -489,6 +808,52 @@
         "1853":{
             "Def" : "Weight",
             "Type" : "Transient"
+        },
+        "1856":{
+            "Def" : "Endurance",
+            "Type" : "Number"
+        },
+        "1864":{
+            "Def" : "Dex_No",
+            "Type" : "Number"
+        }
+    },
+    "RankedDivision": {
+        "1441":{
+            "Def" : "Class_Name_Short",
+            "Type" : "Transient"
+        },
+        "1499":{
+            "Def" : "Small_Icon",
+            "Type" : "Texture"
+        },
+        "1612":{
+            "Def" : "Class_Name_Long",
+            "Type" : "Transient"
+        },
+        "1675":{
+            "Def" : "Tier",
+            "Type" : "Number"
+        },
+        "1714":{
+            "Def" : "Big_Icon[0]",
+            "Type" : "Texture"
+        },
+        "1764":{
+            "Def" : "Cup_Name",
+            "Type" : "Transient"
+        },
+        "1768":{
+            "Def" : "ID",
+            "Type" : "ID"
+        },
+        "1789":{
+            "Def" : "Loading_Icon",
+            "Type" : "Texture"
+        },
+        "1829":{
+            "Def" : "Big_Icon[1]",
+            "Type" : "Texture"
         }
     },
     "Shop": {
