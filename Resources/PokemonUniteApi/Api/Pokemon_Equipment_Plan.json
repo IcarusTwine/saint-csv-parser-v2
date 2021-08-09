@@ -1,1102 +1,4822 @@
 {
     "0": {
-        "1267": "1",
-        "1296": "90",
-        "1366": "6",
-        "1579": "0,0,10,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "防御+20攻击+10",
-        "1764": "力量头巾",
-        "1776": "防御+20攻击+10",
-        "1822": "1",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,10,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "防御+20攻击+10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "力量头巾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "防御+20攻击+10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1267": "1",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,20,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "特防+20攻击+20",
-        "1764": "力量头巾",
-        "1776": "特防+20攻击+20",
-        "1822": "2",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,20,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特防+20攻击+20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "力量头巾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特防+20攻击+20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1267": "1",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "攻击+50",
-        "1764": "力量头巾",
-        "1776": "攻击+50",
-        "1822": "3",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "力量头巾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1267": "1",
-        "1296": "180",
-        "1325": "将要进入昏厥状态时，体力最低降至1，持续2秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "昏厥状态短时间内不被打倒",
-        "1764": "力量头巾",
-        "1776": "将要进入昏厥状态时，体力最低降至1，持续2秒",
-        "1822": "4",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "将要进入昏厥状态时，体力最低降至1，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "昏厥状态短时间内不被打倒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "力量头巾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "将要进入昏厥状态时，体力最低降至1，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1267": "1",
-        "1296": "180",
-        "1325": "将要进入昏厥状态时，自身无法选中不可移动，2秒后回复25%最大体力",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "昏厥状态时逐渐回复体力",
-        "1764": "力量头巾",
-        "1776": "将要进入昏厥状态时，自身无法选中不可移动，2秒后回复30%最大体力",
-        "1822": "5",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "将要进入昏厥状态时，自身无法选中不可移动，2秒后回复25%最大体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "昏厥状态时逐渐回复体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "力量头巾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "将要进入昏厥状态时，自身无法选中不可移动，2秒后回复30%最大体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1267": "2",
-        "1296": "90",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0",
-        "1736": "击中要害率+10%",
-        "1764": "锋利之牙",
-        "1776": "击中要害率+10%",
-        "1822": "6",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "击中要害率+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "锋利之牙",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "击中要害率+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1267": "2",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0",
-        "1736": "击中要害率+10%",
-        "1764": "锋利之牙",
-        "1776": "击中要害率+10%",
-        "1822": "7",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "击中要害率+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "锋利之牙",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "击中要害率+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1267": "2",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,184,23,0,0,0,0,0,0,0,0,0",
-        "1736": "击中要害率+10%击中要害增伤+30%",
-        "1764": "锋利之牙",
-        "1776": "击中要害率+10%击中要害增伤+30%",
-        "1822": "8",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,184,23,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "击中要害率+10%击中要害增伤+30%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "锋利之牙",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "击中要害率+10%击中要害增伤+30%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1267": "2",
-        "1296": "180",
-        "1325": "击中要害时附加80+65%攻击加成的范围攻击伤害",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "击中要害时附加范围伤害",
-        "1764": "锋利之牙",
-        "1776": "击中要害时附加80+65%攻击加成的范围攻击伤害",
-        "1822": "9",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "击中要害时附加80+65%攻击加成的范围攻击伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "击中要害时附加范围伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "锋利之牙",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "击中要害时附加80+65%攻击加成的范围攻击伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1267": "2",
-        "1296": "180",
-        "1325": "击中要害时获得25%伤害减免，持续2秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "击中要害时获得受到伤害降低",
-        "1764": "锋利之牙",
-        "1776": "击中要害时获得25%受到伤害降低，持续2秒",
-        "1822": "10",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "击中要害时获得25%伤害减免，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "击中要害时获得受到伤害降低",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "锋利之牙",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "击中要害时获得25%受到伤害降低，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1267": "3",
-        "1296": "90",
-        "1366": "6",
-        "1579": "0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "攻击+30",
-        "1764": "稳固护手",
-        "1776": "攻击+30",
-        "1822": "11",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "稳固护手",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1267": "3",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,20,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "攻击+20攻击速度+10%",
-        "1764": "稳固护手",
-        "1776": "攻击+20攻击速度+10%",
-        "1822": "12",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,20,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+20攻击速度+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "稳固护手",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+20攻击速度+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1267": "3",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,20,0,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "攻击+20移动速度+10%",
-        "1764": "稳固护手",
-        "1776": "攻击+20移动速度+10%",
-        "1822": "13",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,20,0,0,0,0,232,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+20移动速度+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "稳固护手",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+20移动速度+10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1267": "3",
-        "1296": "180",
-        "1325": "普通攻击附加对方6%当前体力的攻击伤害",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,220,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "普通攻击附加额外伤害",
-        "1764": "稳固护手",
-        "1776": "攻击速度+15%普通攻击附加对方6%当前体力的攻击伤害",
-        "1822": "14",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "普通攻击附加对方6%当前体力的攻击伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,220,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "普通攻击附加额外伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "稳固护手",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击速度+15%普通攻击附加对方6%当前体力的攻击伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1267": "3",
-        "1296": "180",
-        "1325": "招式后增加12%移动速度，下次普通攻击附加攻击伤害，持续2秒",
-        "1366": "6",
-        "1555": "300135",
-        "1579": "172,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "使用招式后下一次普通攻击伤害增加",
-        "1764": "稳固护手",
-        "1776": "体力+300，招式后增加12%移动速度，下次普通攻击附加攻击伤害，持续2秒",
-        "1822": "15",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "招式后增加12%移动速度，下次普通攻击附加攻击伤害，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "172,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "使用招式后下一次普通攻击伤害增加",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "稳固护手",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+300，招式后增加12%移动速度，下次普通攻击附加攻击伤害，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1267": "4",
-        "1296": "90",
-        "1366": "6",
-        "1579": "0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "攻击+30",
-        "1764": "强力吊坠",
-        "1776": "攻击+30",
-        "1822": "16",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强力吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1267": "4",
-        "1296": "135",
-        "1366": "6",
-        "1579": "144,3,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "攻击+10体力+400",
-        "1764": "强力吊坠",
-        "1776": "攻击+10体力+400",
-        "1822": "17",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "144,3,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+10体力+400",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强力吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+10体力+400",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "17",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1267": "4",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0",
-        "1736": "伤害增加+8%",
-        "1764": "强力吊坠",
-        "1776": "伤害增加+8%",
-        "1822": "18",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "伤害增加+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强力吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "伤害增加+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "18",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1267": "4",
-        "1296": "180",
-        "1325": "招式命中后降低对方防御45点，持续2秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,0,0,0,0,0,0,0",
-        "1736": "招式命中降低防御",
-        "1764": "强力吊坠",
-        "1776": "等待时间缩减10%，招式命中后降低对方防御45点，持续2秒",
-        "1822": "19",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "招式命中后降低对方防御45点，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,232,7,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "招式命中降低防御",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强力吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "等待时间缩减10%，招式命中后降低对方防御45点，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "19",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1267": "4",
-        "1296": "180",
-        "1325": "使用集结招式后攻击提升20%，持续4秒，打倒后返还30%集结能量",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "使用集结招式后攻击提升",
-        "1764": "强力吊坠",
-        "1776": "使用集结招式后攻击提升20%，持续4秒，打倒后返还30%集结能量",
-        "1822": "20",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "使用集结招式后攻击提升20%，持续4秒，打倒后返还30%集结能量",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "使用集结招式后攻击提升",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强力吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "使用集结招式后攻击提升20%，持续4秒，打倒后返还30%集结能量",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1267": "5",
-        "1296": "90",
-        "1366": "6",
-        "1579": "0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "攻击+30",
-        "1764": "攻击瞄准镜",
-        "1776": "攻击+30",
-        "1822": "21",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "攻击瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "21",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1267": "5",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
-        "1736": "攻击+15等待时间缩减+8%",
-        "1764": "攻击瞄准镜",
-        "1776": "攻击+15等待时间缩减+8%",
-        "1822": "22",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击+15等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "攻击瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击+15等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "22",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "1267": "5",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0",
-        "1736": "攻击穿透+40",
-        "1764": "攻击瞄准镜",
-        "1776": "攻击穿透+40",
-        "1822": "23",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击穿透+40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "攻击瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击穿透+40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "23",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1267": "5",
-        "1296": "180",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,23,0,0",
-        "1736": "攻击穿透+20%",
-        "1764": "攻击瞄准镜",
-        "1776": "攻击穿透百分比+30%",
-        "1822": "24",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,23,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "攻击穿透+20%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "攻击瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "攻击穿透百分比+30%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "24",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "1267": "5",
-        "1296": "180",
-        "1325": "目标受到回复效果降低30%，持续2秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
-        "1736": "目标受到回复效果降低30%",
-        "1764": "攻击瞄准镜",
-        "1776": "等待时间缩减+8%，目标受到回复效果降低30%，持续2秒",
-        "1822": "25",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "目标受到回复效果降低30%，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "目标受到回复效果降低30%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "攻击瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "等待时间缩减+8%，目标受到回复效果降低30%，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "1267": "6",
-        "1296": "90",
-        "1325": "打倒宝可梦后，下一次普通攻击对方宝可梦造成120+160%攻击加成的攻击伤害",
-        "1366": "6",
-        "1499": "0",
-        "1555": "300161",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "打倒宝可梦后下次攻击对对方宝可梦伤害提升",
-        "1764": "棒棒拳套",
-        "1776": "打倒宝可梦后，下一次普通攻击对方宝可梦造成120+160%攻击加成的攻击伤害",
-        "1822": "26",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "打倒宝可梦后，下一次普通攻击对方宝可梦造成120+160%攻击加成的攻击伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300161",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "打倒宝可梦后下次攻击对对方宝可梦伤害提升",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "棒棒拳套",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "打倒宝可梦后，下一次普通攻击对方宝可梦造成120+160%攻击加成的攻击伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "26",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "1267": "6",
-        "1296": "135",
-        "1325": "每次打倒野生宝可梦会对特殊野生宝可梦伤害提升，每层3%，最多叠加15层",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "对特殊野生宝可梦伤害提升",
-        "1764": "棒棒拳套",
-        "1776": "每次打倒野生宝可梦会对特殊野生宝可梦伤害提升，每层3%，最多叠加15层",
-        "1822": "27",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "每次打倒野生宝可梦会对特殊野生宝可梦伤害提升，每层3%，最多叠加15层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "对特殊野生宝可梦伤害提升",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "棒棒拳套",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "每次打倒野生宝可梦会对特殊野生宝可梦伤害提升，每层3%，最多叠加15层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "27",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "1267": "6",
-        "1296": "135",
-        "1325": "招式对40%体力以下的对方宝可梦额外造成25%的伤害",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "对虚弱宝可梦造成额外伤害",
-        "1764": "棒棒拳套",
-        "1776": "招式对40%体力以下的对方宝可梦额外造成25%的伤害",
-        "1822": "28",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "招式对40%体力以下的对方宝可梦额外造成25%的伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "对虚弱宝可梦造成额外伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "棒棒拳套",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "招式对40%体力以下的对方宝可梦额外造成25%的伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "28",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "1267": "6",
-        "1296": "180",
-        "1325": "提升攻击，数值为累计打倒野生宝可梦*5，最多叠加30层",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "打倒野生宝可梦提升攻击",
-        "1764": "棒棒拳套",
-        "1776": "提升攻击，数值为累计打倒野生宝可梦*5，最多叠加30层",
-        "1822": "29",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "提升攻击，数值为累计打倒野生宝可梦*5，最多叠加30层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "打倒野生宝可梦提升攻击",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "棒棒拳套",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "提升攻击，数值为累计打倒野生宝可梦*5，最多叠加30层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "29",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "1267": "6",
-        "1296": "180",
-        "1325": "提升特攻，数值为累计打倒野生宝可梦*8，最多叠加30层",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "打倒野生宝可梦提升特攻",
-        "1764": "棒棒拳套",
-        "1776": "提升特攻，数值为累计打倒野生宝可梦*8，最多叠加30层",
-        "1822": "30",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "提升特攻，数值为累计打倒野生宝可梦*8，最多叠加30层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "打倒野生宝可梦提升特攻",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "棒棒拳套",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "提升特攻，数值为累计打倒野生宝可梦*8，最多叠加30层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "1267": "7",
-        "1296": "90",
-        "1366": "6",
-        "1579": "0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
-        "1736": "特攻+30等待时间缩减+5%",
-        "1764": "聪明之冠",
-        "1776": "特攻+30等待时间缩减+5%",
-        "1822": "31",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+30等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "聪明之冠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+30等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "31",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "1267": "7",
-        "1296": "135",
-        "1366": "6",
-        "1579": "172,2,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "特攻+30体力+300",
-        "1764": "聪明之冠",
-        "1776": "特攻+30体力+300",
-        "1822": "32",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "172,2,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+30体力+300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "聪明之冠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+30体力+300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "32",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "1267": "7",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
-        "1736": "特攻+40等待时间缩减+8%",
-        "1764": "聪明之冠",
-        "1776": "特攻+40等待时间缩减+8%",
-        "1822": "33",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+40等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "聪明之冠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+40等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "33",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "33": {
-        "1267": "7",
-        "1296": "180",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "特攻提升20%",
-        "1764": "聪明之冠",
-        "1776": "提升20%特攻",
-        "1822": "34",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻提升20%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "聪明之冠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "提升20%特攻",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "34",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "34": {
-        "1267": "7",
-        "1296": "180",
-        "1325": "招式命中回复自身30+60%特攻加成的体力",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,60,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
-        "1736": "招式命中回复体力",
-        "1764": "聪明之冠",
-        "1776": "特攻+60等待时间缩减+5%招式命中回复自身30+60%特攻加成的体力",
-        "1822": "35",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "招式命中回复自身30+60%特攻加成的体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,60,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "招式命中回复体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "聪明之冠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+60等待时间缩减+5%招式命中回复自身30+60%特攻加成的体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "35",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "35": {
-        "1267": "8",
-        "1296": "90",
-        "1366": "6",
-        "1579": "150,1,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "特攻+40体力+150",
-        "1764": "便携护盾",
-        "1776": "特攻+40体力+150",
-        "1822": "36",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "150,1,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+40体力+150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "便携护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+40体力+150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "36",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "36": {
-        "1267": "8",
-        "1296": "135",
-        "1325": "8秒没受伤害，获得60+120%特攻加成护盾，护盾碎裂后造成120+60%特攻加成的范围伤害并减速",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "获得护盾碎裂造成伤害和减速",
-        "1764": "便携护盾",
-        "1776": "8秒没受伤害，获得60+120%特攻加成护盾，护盾碎裂后造成120+60%特攻加成的范围伤害并减速",
-        "1822": "37",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "8秒没受伤害，获得60+120%特攻加成护盾，护盾碎裂后造成120+60%特攻加成的范围伤害并减速",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "获得护盾碎裂造成伤害和减速",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "便携护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "8秒没受伤害，获得60+120%特攻加成护盾，护盾碎裂后造成120+60%特攻加成的范围伤害并减速",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "37",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "37": {
-        "1267": "8",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
-        "1736": "特攻+40等待时间缩减+8%",
-        "1764": "便携护盾",
-        "1776": "特攻+40等待时间缩减+8%",
-        "1822": "38",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+40等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "便携护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+40等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "38",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "38": {
-        "1267": "8",
-        "1296": "180",
-        "1325": "体力低于30%时，清除异常状态，每秒回复15%已损失体力，持续3秒",
-        "1366": "6",
-        "1555": "300054",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "清除异常状态，回复体力",
-        "1764": "便携护盾",
-        "1776": "体力低于30%时，清除异常状态，每秒回复15%已损失体力，持续3秒",
-        "1822": "39",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "体力低于30%时，清除异常状态，每秒回复15%已损失体力，持续3秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300054",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "清除异常状态，回复体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "便携护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力低于30%时，清除异常状态，每秒回复15%已损失体力，持续3秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "39",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "39": {
-        "1267": "8",
-        "1296": "180",
-        "1325": "受到伤害时，抵消30%所受伤害，每7秒触发1次",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "周期性抵消伤害",
-        "1764": "便携护盾",
-        "1776": "受到伤害时，抵消30%所受伤害，每7秒触发1次",
-        "1822": "40",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "受到伤害时，抵消30%所受伤害，每7秒触发1次",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "周期性抵消伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "便携护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "受到伤害时，抵消30%所受伤害，每7秒触发1次",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "40": {
-        "1267": "9",
-        "1296": "90",
-        "1325": "升级或打倒对方宝可梦每秒回复4%最大体力，持续4秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "升级或打倒对方宝可梦回复体力",
-        "1764": "特攻瞄准镜",
-        "1776": "特攻+20升级或打倒对方宝可梦每秒回复4%最大体力，持续4秒",
-        "1822": "41",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "升级或打倒对方宝可梦每秒回复4%最大体力，持续4秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "升级或打倒对方宝可梦回复体力",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "特攻瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+20升级或打倒对方宝可梦每秒回复4%最大体力，持续4秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "41",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "41": {
-        "1267": "9",
-        "1296": "135",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>40,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "特攻+40体力+250",
-        "1764": "特攻瞄准镜",
-        "1776": "特攻+40体力+250",
-        "1822": "42",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>40,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+40体力+250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "特攻瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+40体力+250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "42",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "42": {
-        "1267": "9",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0",
-        "1736": "特攻+40特攻穿透+40",
-        "1764": "特攻瞄准镜",
-        "1776": "特攻+40特攻穿透+40",
-        "1822": "43",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+40特攻穿透+40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "特攻瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+40特攻穿透+40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "43",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "43": {
-        "1267": "9",
-        "1296": "180",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,23",
-        "1736": "特攻穿透+20%",
-        "1764": "特攻瞄准镜",
-        "1776": "特攻穿透百分比+30%",
-        "1822": "44",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,23",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻穿透+20%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "特攻瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻穿透百分比+30%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "44",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "44": {
-        "1267": "9",
-        "1296": "180",
-        "1325": "目标回复效果降低30%，持续2秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
-        "1736": "目标回复效果降低30%",
-        "1764": "特攻瞄准镜",
-        "1776": "等待时间缩减+5%，目标回复效果降低30%，持续2秒",
-        "1822": "45",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "目标回复效果降低30%，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "目标回复效果降低30%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "特攻瞄准镜",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "等待时间缩减+5%，目标回复效果降低30%，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "45",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "45": {
-        "1267": "10",
-        "1296": "90",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>30,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "特攻+30体力+200",
-        "1764": "智慧吊坠",
-        "1776": "特攻+30体力+200",
-        "1822": "46",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>30,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+30体力+200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "智慧吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+30体力+200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "46",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "46": {
-        "1267": "10",
-        "1296": "135",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>40,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "特攻+40体力+250",
-        "1764": "智慧吊坠",
-        "1776": "特攻+40体力+250",
-        "1822": "47",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>40,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "特攻+40体力+250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "智慧吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "特攻+40体力+250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "47",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "47": {
-        "1267": "10",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0",
-        "1736": "伤害增加+8%",
-        "1764": "智慧吊坠",
-        "1776": "伤害增加+8%",
-        "1822": "48",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "伤害增加+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "智慧吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "伤害增加+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "48",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "48": {
-        "1267": "10",
-        "1296": "180",
-        "1325": "招式命中后特防降低10，最多叠5层，持续4秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
-        "1736": "招式命中降特防",
-        "1764": "智慧吊坠",
-        "1776": "等待时间缩减+8%，招式命中后特防降低10，最多叠5层，持续4秒",
-        "1822": "49",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "招式命中后特防降低10，最多叠5层，持续4秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "招式命中降特防",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "智慧吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "等待时间缩减+8%，招式命中后特防降低10，最多叠5层，持续4秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "49",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "49": {
-        "1267": "10",
-        "1296": "180",
-        "1325": "使用集结招式后特攻提升20%，持续4秒，打倒后返还30%集结能量",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "使用集结招式后特攻强化",
-        "1764": "智慧吊坠",
-        "1776": "使用集结招式后特攻提升20%，持续4秒，打倒后返还30%集结能量",
-        "1822": "50",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "使用集结招式后特攻提升20%，持续4秒，打倒后返还30%集结能量",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "使用集结招式后特攻强化",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "智慧吊坠",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "使用集结招式后特攻提升20%，持续4秒，打倒后返还30%集结能量",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "50": {
-        "1267": "11",
-        "1296": "90",
-        "1325": "每秒对周围造成1%最大体力伤害",
-        "1366": "6",
-        "1555": "300011",
-        "1579": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+200对周围造成伤害",
-        "1764": "尖刺护具",
-        "1776": "体力+200每秒对周围造成1%最大体力伤害",
-        "1822": "51",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "每秒对周围造成1%最大体力伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300011",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+200对周围造成伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "尖刺护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+200每秒对周围造成1%最大体力伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "51",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "51": {
-        "1267": "11",
-        "1296": "135",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>30,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+250防御+30",
-        "1764": "尖刺护具",
-        "1776": "体力+250防御+30",
-        "1822": "52",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>30,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+250防御+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "尖刺护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+250防御+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "52",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "52": {
-        "1267": "11",
-        "1296": "135",
-        "1366": "6",
-        "1579": "144,3,0,0,0,0,0,0,0,0,0,0,176,9,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "体力+300受攻击伤害减少+12%",
-        "1764": "尖刺护具",
-        "1776": "体力+400受到攻击减少伤害+12%",
-        "1822": "53",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "144,3,0,0,0,0,0,0,0,0,0,0,176,9,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+300受攻击伤害减少+12%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "尖刺护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+400受到攻击减少伤害+12%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "53",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "53": {
-        "1267": "11",
-        "1296": "180",
-        "1325": "受到对方宝可梦普通攻击后反弹25%特攻伤害",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "反弹普通攻击伤害",
-        "1764": "尖刺护具",
-        "1776": "受到对方宝可梦普通攻击后反弹25%特攻伤害",
-        "1822": "54",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "受到对方宝可梦普通攻击后反弹25%特攻伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "反弹普通攻击伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "尖刺护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "受到对方宝可梦普通攻击后反弹25%特攻伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "54",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "54": {
-        "1267": "11",
-        "1296": "180",
-        "1325": "受到对方宝可梦普通攻击后降低30%攻击速度和15%移动速度，持续2秒",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "降低目标攻击、移动速度",
-        "1764": "尖刺护具",
-        "1776": "受到对方宝可梦普通攻击后降低30%攻击速度和15%移动速度，持续2秒",
-        "1822": "55",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "受到对方宝可梦普通攻击后降低30%攻击速度和15%移动速度，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "降低目标攻击、移动速度",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "尖刺护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "受到对方宝可梦普通攻击后降低30%攻击速度和15%移动速度，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "55",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "55": {
-        "1267": "12",
-        "1296": "90",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>196,<br>19,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+250降25%受控时间",
-        "1764": "宝可披风",
-        "1776": "体力+250降低25%妨碍效果",
-        "1822": "56",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>196,<br>19,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+250降25%受控时间",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "宝可披风",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+250降低25%妨碍效果",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "56",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "56": {
-        "1267": "12",
-        "1296": "135",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>30,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+250特防+30",
-        "1764": "宝可披风",
-        "1776": "体力+250特防+30",
-        "1822": "57",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>30,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+250特防+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "宝可披风",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+250特防+30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "57",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "57": {
-        "1267": "12",
-        "1296": "135",
-        "1366": "6",
-        "1579": "144,3,0,0,0,0,0,0,0,0,0,0,0,176,9,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "体力+300受特攻伤害减少+12%",
-        "1764": "宝可披风",
-        "1776": "体力+400特攻减少伤害+12%",
-        "1822": "58",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "144,3,0,0,0,0,0,0,0,0,0,0,0,176,9,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+300受特攻伤害减少+12%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "宝可披风",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+400特攻减少伤害+12%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "58",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "58": {
-        "1267": "12",
-        "1296": "180",
-        "1325": "脱战后获得12%最大体力的特攻吸收护盾",
-        "1366": "6",
-        "1555": "300024",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "脱战获得护盾",
-        "1764": "宝可披风",
-        "1776": "脱战后获得12%最大体力的特攻吸收护盾",
-        "1822": "59",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "脱战后获得12%最大体力的特攻吸收护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300024",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "脱战获得护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "宝可披风",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "脱战后获得12%最大体力的特攻吸收护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "59",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "59": {
-        "1267": "12",
-        "1296": "180",
-        "1325": "受到回复效果提高35%",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,172,27,0,0,0,0,0",
-        "1736": "受到回复效果提高",
-        "1764": "宝可披风",
-        "1776": "受到回复效果提高35%",
-        "1822": "60",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "受到回复效果提高35%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,172,27,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "受到回复效果提高",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "宝可披风",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "受到回复效果提高35%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "60",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "60": {
-        "1267": "13",
-        "1296": "90",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+200等待时间缩减+5%",
-        "1764": "反击护具",
-        "1776": "体力+200等待时间缩减+5%",
-        "1822": "61",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+200等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "反击护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+200等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "61",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "61": {
-        "1267": "13",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
-        "1736": "防御+20等待时间缩减+8%",
-        "1764": "反击护具",
-        "1776": "防御+20等待时间缩减+8%",
-        "1822": "62",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,160,6,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "防御+20等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "反击护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "防御+20等待时间缩减+8%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "62",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "62": {
-        "1267": "13",
-        "1296": "135",
-        "1325": "降低周围对方宝可梦10%防御",
-        "1366": "6",
-        "1555": "300033",
-        "1579": "144,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "体力+400降低周围对方宝可梦防御",
-        "1764": "反击护具",
-        "1776": "体力+400降低周围对方宝可梦10%防御",
-        "1822": "63",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "降低周围对方宝可梦10%防御",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300033",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "144,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+400降低周围对方宝可梦防御",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "反击护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+400降低周围对方宝可梦10%防御",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "63",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "63": {
-        "1267": "13",
-        "1296": "180",
-        "1325": "受到伤害后，对周围造成5%最大体力的范围特攻伤害，等待时间2秒",
-        "1366": "6",
-        "1555": "300034",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "周期性受到伤害后，对周围造成伤害",
-        "1764": "反击护具",
-        "1776": "受到伤害后，对周围造成5%最大体力的范围特攻伤害，等待时间2秒",
-        "1822": "64",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "受到伤害后，对周围造成5%最大体力的范围特攻伤害，等待时间2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300034",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "周期性受到伤害后，对周围造成伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "反击护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "受到伤害后，对周围造成5%最大体力的范围特攻伤害，等待时间2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "64",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "64": {
-        "1267": "13",
-        "1296": "180",
-        "1325": "招式后攻击附带6%最大体力的特攻伤害，降低目标移动速度20%，持续2秒",
-        "1366": "6",
-        "1555": "300035",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
-        "1736": "使用招式后普通攻击强化并减速",
-        "1764": "反击护具",
-        "1776": "等待时间缩减+5%招式后攻击附带6%最大体力的特攻伤害，降低目标移动速度20%，持续2秒",
-        "1822": "65",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "招式后攻击附带6%最大体力的特攻伤害，降低目标移动速度20%，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300035",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "使用招式后普通攻击强化并减速",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "反击护具",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "等待时间缩减+5%招式后攻击附带6%最大体力的特攻伤害，降低目标移动速度20%，持续2秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "65": {
-        "1267": "14",
-        "1296": "90",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>222,<br>2,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+350",
-        "1764": "强壮背心",
-        "1776": "体力+350",
-        "1822": "66",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>222,<br>2,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+350",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强壮背心",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+350",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "66",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "66": {
-        "1267": "14",
-        "1296": "135",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>222,<br>2,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+350等待时间缩减+5%",
-        "1764": "强壮背心",
-        "1776": "体力+350等待时间缩减+5%",
-        "1822": "67",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>222,<br>2,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+350等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强壮背心",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+350等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "67",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "67": {
-        "1267": "14",
-        "1296": "135",
-        "1366": "6",
-        "1579": "144,3,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "体力+400体力回复+50",
-        "1764": "强壮背心",
-        "1776": "体力+400体力回复+50",
-        "1822": "68",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "144,3,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+400体力回复+50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强壮背心",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+400体力回复+50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "68",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "68": {
-        "1267": "14",
-        "1296": "180",
-        "1325": "受到对方宝可梦伤害后自身伤害增加3%，移动速度提高1.5%，最多叠加10层",
-        "1366": "6",
-        "1555": "300044",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "受伤后强化伤害和移动速度",
-        "1764": "强壮背心",
-        "1776": "受到对方宝可梦伤害后自身伤害增加3%，移动速度提高1.5%，最多叠加10层",
-        "1822": "69",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "受到对方宝可梦伤害后自身伤害增加3%，移动速度提高1.5%，最多叠加10层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300044",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "受伤后强化伤害和移动速度",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强壮背心",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "受到对方宝可梦伤害后自身伤害增加3%，移动速度提高1.5%，最多叠加10层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "69",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "69": {
-        "1267": "14",
-        "1296": "180",
-        "1325": "使用集结招式后获得20%最大体力护盾，持续2秒，集结能量回复速度增加10%",
-        "1366": "6",
-        "1481": "2",
-        "1555": "300045",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "使用集结招式后强化",
-        "1764": "强壮背心",
-        "1776": "使用集结招式后获得20%最大体力护盾，持续2秒，集结能量回复速度增加10%",
-        "1822": "70",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "使用集结招式后获得20%最大体力护盾，持续2秒，集结能量回复速度增加10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1481": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300045",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "使用集结招式后强化",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "强壮背心",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "使用集结招式后获得20%最大体力护盾，持续2秒，集结能量回复速度增加10%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "70": {
-        "1267": "15",
-        "1296": "90",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>160,<br>6,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+200移动速度+5%",
-        "1764": "亿奥斯溢散器",
-        "1776": "体力+200移动速度+5%",
-        "1822": "71",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>160,<br>6,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+200移动速度+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯溢散器",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+200移动速度+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "71",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "71": {
-        "1267": "15",
-        "1296": "135",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+250等待时间缩减+5%",
-        "1764": "亿奥斯溢散器",
-        "1776": "体力+250等待时间缩减+5%",
-        "1822": "72",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+250等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯溢散器",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+250等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "72": {
-        "1267": "15",
-        "1296": "135",
-        "1366": "6",
-        "1579": "144,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
-        "1736": "体力+400等待时间缩减+5%",
-        "1764": "亿奥斯溢散器",
-        "1776": "体力+400等待时间缩减+5%",
-        "1822": "73",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "144,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+400等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯溢散器",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+400等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "73",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "73": {
-        "1267": "15",
-        "1296": "180",
-        "1325": "周围友方宝可梦提升8%移动速度和等待时间缩减",
-        "1366": "6",
-        "1555": "300144",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "周围友方宝可梦加速",
-        "1764": "亿奥斯溢散器",
-        "1776": "周围友方宝可梦提升8%移动速度和等待时间缩减",
-        "1822": "74",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "周围友方宝可梦提升8%移动速度和等待时间缩减",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300144",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "周围友方宝可梦加速",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯溢散器",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "周围友方宝可梦提升8%移动速度和等待时间缩减",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "74",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "74": {
-        "1267": "15",
-        "1296": "180",
-        "1325": "周围友方宝可梦提升50点防御和特防",
-        "1366": "6",
-        "1555": "300145",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "周围友方宝可梦减少受到的伤害",
-        "1764": "亿奥斯溢散器",
-        "1776": "周围友方宝可梦提升50点防御和特防",
-        "1822": "75",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "周围友方宝可梦提升50点防御和特防",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "300145",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "周围友方宝可梦减少受到的伤害",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯溢散器",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "周围友方宝可梦提升50点防御和特防",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "75",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "75": {
-        "1267": "16",
-        "1296": "90",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>160,<br>6,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+200移动速度+5%",
-        "1764": "亿奥斯蓄电池",
-        "1776": "体力+200移动速度+5%",
-        "1822": "76",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>200,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>160,<br>6,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+200移动速度+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯蓄电池",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+200移动速度+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "76",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "76": {
-        "1267": "16",
-        "1296": "135",
-        "1366": "6",
-        "1579": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
-        "1736": "体力+250等待时间缩减+5%",
-        "1764": "亿奥斯蓄电池",
-        "1776": "体力+250等待时间缩减+5%",
-        "1822": "77",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "<h5>(BROKEN)</h5><br>250,<br>1,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>244,<br>3,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "体力+250等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯蓄电池",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "体力+250等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "77",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "77": {
-        "1267": "16",
-        "1296": "135",
-        "1325": "得分分值+20%",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "得分分值增加",
-        "1764": "亿奥斯蓄电池",
-        "1776": "得分分值+20%",
-        "1822": "78",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "得分分值+20%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "得分分值增加",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯蓄电池",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "得分分值+20%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "78",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "78": {
-        "1267": "16",
-        "1296": "180",
-        "1325": "提升攻击，数值为累计交分*3，最多叠加50层",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "交分提升攻击",
-        "1764": "亿奥斯蓄电池",
-        "1776": "提升攻击，数值为累计交分*3，最多叠加50层",
-        "1822": "79",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "提升攻击，数值为累计交分*3，最多叠加50层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "交分提升攻击",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯蓄电池",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "提升攻击，数值为累计交分*3，最多叠加50层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "79",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "79": {
-        "1267": "16",
-        "1296": "180",
-        "1325": "提升特攻，数值为累计交分*5，最多叠加50层",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "交分提升特攻",
-        "1764": "亿奥斯蓄电池",
-        "1776": "提升特攻，数值为累计交分*5，最多叠加50层",
-        "1822": "80",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "提升特攻，数值为累计交分*5，最多叠加50层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "交分提升特攻",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "亿奥斯蓄电池",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "提升特攻，数值为累计交分*5，最多叠加50层",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "80": {
-        "1267": "17",
-        "1296": "90",
-        "1366": "6",
-        "1579": "0,0,0,35,0,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "防御+35，特防+35",
-        "1764": "轻石",
-        "1776": "防御+35，特防+35",
-        "1822": "81",
-        "1857": "1",
-        "1859": "1"
+        "1267": {
+            "Data": "17",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,35,0,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "防御+35，特防+35",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "轻石",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "防御+35，特防+35",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "81",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "81": {
-        "1267": "17",
-        "1296": "135",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
-        "1736": "移动速度+5%等待时间缩减+5%",
-        "1764": "轻石",
-        "1776": "移动速度+5%等待时间缩减+5%",
-        "1822": "82",
-        "1857": "1",
-        "1859": "2"
+        "1267": {
+            "Data": "17",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0,0,244,3,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "移动速度+5%等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "轻石",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "移动速度+5%等待时间缩减+5%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "82",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "82": {
-        "1267": "17",
-        "1296": "135",
-        "1325": "得分速度+15%",
-        "1366": "6",
-        "1499": "0",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "交分速度增加",
-        "1764": "轻石",
-        "1776": "得分速度+15%",
-        "1822": "83",
-        "1857": "1",
-        "1859": "3"
+        "1267": {
+            "Data": "17",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "135",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "得分速度+15%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1499": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "交分速度增加",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "轻石",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "得分速度+15%",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "83",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "83": {
-        "1267": "17",
-        "1296": "180",
-        "1325": "交分时获得200%攻击加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "交分时获得攻击加成护盾",
-        "1764": "轻石",
-        "1776": "交分时获得200%攻击加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
-        "1822": "84",
-        "1857": "1",
-        "1859": "4"
+        "1267": {
+            "Data": "17",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "交分时获得200%攻击加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "交分时获得攻击加成护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "轻石",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "交分时获得200%攻击加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "84",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "84": {
-        "1267": "17",
-        "1296": "180",
-        "1325": "交分时获得150%特攻加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
-        "1366": "6",
-        "1579": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-        "1736": "交分时获得特攻加成护盾",
-        "1764": "轻石",
-        "1776": "交分时获得150%特攻加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
-        "1822": "85",
-        "1857": "2",
-        "1859": "4"
+        "1267": {
+            "Data": "17",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1325": {
+            "Data": "交分时获得150%特攻加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1736": {
+            "Data": "交分时获得特攻加成护盾",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "轻石",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "交分时获得150%特攻加成的护盾，护盾存续期间交分无法被打断，等待时间7秒",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1857": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1859": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

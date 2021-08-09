@@ -1,7 +1,19 @@
 {
     "0": {
-        "1414": "190488",
-        "Name": "路卡利欧",
-        "1733": "0"
+        "1414": {
+            "Data": "190488",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "路卡利欧",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1733": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

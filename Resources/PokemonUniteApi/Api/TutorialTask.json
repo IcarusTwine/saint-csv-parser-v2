@@ -1,23 +1,83 @@
 {
     "0": {
-        "1294": "t_tutorial_4_TimeTree",
-        "1401": "401",
-        "1530": "时光之树",
-        "1796": "1",
-        "1850": "激活时光树"
+        "Icon": {
+            "Data": "t_tutorial_4_TimeTree.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1401": {
+            "Data": "401",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "时光之树",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": "激活时光树",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1294": "t_tutorial_4_SlowArea",
-        "1401": "401",
-        "1530": "变速区",
-        "1796": "2",
-        "1850": "摧毁变速区"
+        "Icon": {
+            "Data": "t_tutorial_4_SlowArea.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1401": {
+            "Data": "401",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "变速区",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": "摧毁变速区",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1294": "t_tutorial_4_ScoreArea",
-        "1401": "401",
-        "1530": "变速区",
-        "1796": "3",
-        "1850": "摧毁得分点"
+        "Icon": {
+            "Data": "t_tutorial_4_ScoreArea.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1401": {
+            "Data": "401",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "变速区",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": "摧毁得分点",
+            "Type": "String",
+            "Link": "undefined"
+        }
     }
 }

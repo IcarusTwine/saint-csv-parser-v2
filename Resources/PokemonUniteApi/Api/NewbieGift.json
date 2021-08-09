@@ -1,72 +1,240 @@
 {
     "0": {
-        "Reward_Icon[1]": "t_common_icon_gold.png",
-        "ID": 1,
-        "Drop_Static": 20094
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20094,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "Reward_Icon[0]": "t_stone_icon_Venusaur.png",
-        "Reward_Icon[1]": "t_stone_icon_Venusaur.png",
-        "ID": 2,
-        "Drop_Static": 20095
+        "Reward_Icon[0]": {
+            "Data": "t_stone_icon_Venusaur.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Reward_Icon[1]": {
+            "Data": "t_stone_icon_Venusaur.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20095,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "Reward_Icon[0]": "t_stone_icon_Blastoise.png",
-        "Reward_Icon[1]": "t_stone_icon_Blastoise.png",
-        "ID": 3,
-        "Drop_Static": 20096
+        "Reward_Icon[0]": {
+            "Data": "t_stone_icon_Blastoise.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Reward_Icon[1]": {
+            "Data": "t_stone_icon_Blastoise.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20096,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "Reward_Icon[1]": "t_common_icon_fight.png",
-        "ID": 4,
-        "Drop_Static": 20097
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_fight.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20097,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "ID": 5,
-        "Drop_Static": 20098
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20098,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "Reward_Icon[1]": "t_common_icon_fight.png",
-        "ID": 6,
-        "Drop_Static": 20099
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_fight.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20099,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "Reward_Icon[1]": "t_common_icon_gold.png",
-        "ID": 7,
-        "Drop_Static": 20100
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20100,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "Reward_Icon[0]": "t_stone_icon_Greninja.png",
-        "Reward_Icon[1]": "t_stone_icon_Greninja.png",
-        "ID": 8,
-        "Drop_Static": 20101
+        "Reward_Icon[0]": {
+            "Data": "t_stone_icon_Greninja.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Reward_Icon[1]": {
+            "Data": "t_stone_icon_Greninja.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20101,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "Reward_Icon[1]": "t_common_icon_fight.png",
-        "ID": 9,
-        "Drop_Static": 20102
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_fight.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20102,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "ID": 10,
-        "Drop_Static": 20103
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20103,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "Reward_Icon[1]": "t_common_icon_fight.png",
-        "ID": 11,
-        "Drop_Static": 20104
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_fight.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20104,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "ID": 12,
-        "Drop_Static": 20105
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20105,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "Reward_Icon[1]": "t_common_icon_fight.png",
-        "ID": 13,
-        "Drop_Static": 20106
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_fight.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20106,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "Reward_Icon[1]": "t_common_icon_gold.png",
-        "ID": 14,
-        "Drop_Static": 20107
+        "Reward_Icon[1]": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Drop_Static": {
+            "Data": 20107,
+            "Type": "Link",
+            "Link": "undefined"
+        }
     }
 }

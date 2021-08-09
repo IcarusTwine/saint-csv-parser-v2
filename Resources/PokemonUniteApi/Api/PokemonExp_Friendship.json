@@ -1,25 +1,85 @@
 {
     "0": {
-        "1257": "1",
-        "1296": "icon_name1",
-        "1544": "白丁",
-        "1697": "30"
+        "1257": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "icon_name1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1544": {
+            "Data": "白丁",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1697": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1257": "2",
-        "1296": "icon_name2",
-        "1544": "见习",
-        "1697": "30"
+        "1257": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "icon_name2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1544": {
+            "Data": "见习",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1697": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1257": "3",
-        "1296": "icon_name3",
-        "1544": "成熟",
-        "1697": "140"
+        "1257": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "icon_name3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1544": {
+            "Data": "成熟",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1697": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1257": "4",
-        "1296": "icon_name4",
-        "1544": "精英"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1296": {
+            "Data": "icon_name4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1544": {
+            "Data": "精英",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

@@ -1,10 +1,34 @@
 {
     "0": {
-        "1258": "0,0,0,0,0",
-        "1374": "0,0,0,0,0",
-        "1538": "2",
-        "1579": "0,0,0,0,0,0,0,0",
-        "1680": "30000",
-        "1822": "0"
+        "1258": {
+            "Data": "0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1374": {
+            "Data": "0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1538": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

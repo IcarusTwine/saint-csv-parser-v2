@@ -1,199 +1,723 @@
 {
     "0": {
-        "1402": "t_Icon_Score_1",
-        "1794": "0",
-        "1859": "1"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1402": "t_Icon_Score_1",
-        "1697": "60",
-        "1794": "0",
-        "1859": "2"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 60,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1402": "t_Icon_Score_1",
-        "1697": "160",
-        "1794": "0",
-        "1859": "3"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 160,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1402": "t_Icon_Score_1",
-        "1697": "310",
-        "1794": "0",
-        "1859": "4"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 310,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1402": "t_Icon_Score_1",
-        "1697": "460",
-        "1794": "0",
-        "1859": "5"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 460,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1402": "t_Icon_Score_1",
-        "1697": "610",
-        "1794": "0",
-        "1859": "6"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 610,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1402": "t_Icon_Score_1",
-        "1697": "760",
-        "1794": "0",
-        "1859": "7"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 760,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1402": "t_Icon_Score_1",
-        "1697": "960",
-        "1794": "0",
-        "1859": "8"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 960,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1402": "t_Icon_Score_1",
-        "1697": "1200",
-        "1794": "0",
-        "1859": "9"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 1200,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1402": "t_Icon_Score_1",
-        "1697": "1450",
-        "1794": "0",
-        "1859": "10"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 1450,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1402": "t_Icon_Score_1",
-        "1697": "1700",
-        "1794": "0",
-        "1859": "11"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 1700,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1402": "t_Icon_Score_1",
-        "1697": "2100",
-        "1794": "0",
-        "1859": "12"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 2100,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1402": "t_Icon_Score_1",
-        "1697": "2500",
-        "1794": "0",
-        "1859": "13"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 2500,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1402": "t_Icon_Score_1",
-        "1697": "2900",
-        "1794": "0",
-        "1859": "14"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 2900,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1402": "t_Icon_Score_1",
-        "1697": "3300",
-        "1794": "0",
-        "1859": "15"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 3300,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 15,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1402": "t_Icon_Score_1",
-        "1697": "3700",
-        "1794": "0",
-        "1859": "16"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 3700,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 16,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1402": "t_Icon_Score_1",
-        "1697": "4100",
-        "1794": "0",
-        "1859": "17"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 4100,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 17,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1402": "t_Icon_Score_1",
-        "1697": "4500",
-        "1794": "0",
-        "1859": "18"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 4500,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 18,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1402": "t_Icon_Score_1",
-        "1697": "4900",
-        "1794": "0",
-        "1859": "19"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 4900,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 19,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1402": "t_Icon_Score_1",
-        "1697": "5300",
-        "1794": "0",
-        "1859": "20"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 5300,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1402": "t_Icon_Score_1",
-        "1697": "5900",
-        "1794": "0",
-        "1859": "21"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 5900,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 21,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1402": "t_Icon_Score_1",
-        "1697": "6600",
-        "1794": "0",
-        "1859": "22"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 6600,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 22,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "1402": "t_Icon_Score_1",
-        "1697": "7300",
-        "1794": "0",
-        "1859": "23"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 7300,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 23,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1402": "t_Icon_Score_1",
-        "1697": "8100",
-        "1794": "0",
-        "1859": "24"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 8100,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 24,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "1402": "t_Icon_Score_1",
-        "1697": "8900",
-        "1794": "0",
-        "1859": "25"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 8900,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 25,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "1402": "t_Icon_Score_1",
-        "1697": "9700",
-        "1794": "0",
-        "1859": "26"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 9700,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 26,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "1402": "t_Icon_Score_1",
-        "1697": "10500",
-        "1794": "0",
-        "1859": "27"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 10500,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 27,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "1402": "t_Icon_Score_1",
-        "1697": "11300",
-        "1794": "0",
-        "1859": "28"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 11300,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 28,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "1402": "t_Icon_Score_1",
-        "1697": "12100",
-        "1794": "0",
-        "1859": "29"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 12100,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 29,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "1402": "t_Icon_Score_1",
-        "1697": "12900",
-        "1794": "0",
-        "1859": "30"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 12900,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "1402": "t_Icon_Score_1",
-        "1697": "13700",
-        "1794": "0",
-        "1859": "31"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 13700,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 31,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "1402": "t_Icon_Score_1",
-        "1697": "14500",
-        "1794": "0",
-        "1859": "32"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 14500,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 32,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "1402": "t_Icon_Score_1",
-        "1697": "15300",
-        "1794": "0",
-        "1859": "33"
+        "Icon": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "TrainerExpGift": {
+            "Data": 15300,
+            "Type": "Link",
+            "Link": "undefined"
+        },
+        "1794": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 33,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     }
 }

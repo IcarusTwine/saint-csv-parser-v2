@@ -1,69 +1,257 @@
 {
     "0": {
-        "1378": "45,55",
-        "1545": "1",
-        "1586": "1",
-        "1642": "1",
-        "1798": "宝可梦列表上的红点展示"
+        "1378": {
+            "Data": "45,55",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1586": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "宝可梦列表上的红点展示",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1378": "45,55",
-        "1545": "1",
-        "1642": "2",
-        "1798": "宝可梦列表上的红点展示"
+        "1378": {
+            "Data": "45,55",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "宝可梦列表上的红点展示",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1378": "-260,50",
-        "1545": "1",
-        "1586": "1",
-        "1642": "3",
-        "1798": "时装列表上的红点展示"
+        "1378": {
+            "Data": "-260,50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1586": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "时装列表上的红点展示",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1378": "110,38",
-        "1545": "1",
-        "1586": "1",
-        "1642": "4",
-        "1798": "活动页签列表上的红点展示"
+        "1378": {
+            "Data": "110,38",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1586": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "活动页签列表上的红点展示",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1378": "210,32",
-        "1545": "1",
-        "1642": "5",
-        "1798": "宝可梦Box技能解锁入口"
+        "1378": {
+            "Data": "210,32",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "宝可梦Box技能解锁入口",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1378": "50,70",
-        "1545": "1",
-        "1642": "6",
-        "1798": "宝可梦电子服Item"
+        "1378": {
+            "Data": "50,70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "宝可梦电子服Item",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1378": "40,15",
-        "1545": "1",
-        "1586": "1",
-        "1642": "7",
-        "1798": "宝可梦Box电子服页签"
+        "1378": {
+            "Data": "40,15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1586": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "宝可梦Box电子服页签",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1378": "55,75",
-        "1545": "1",
-        "1586": "1",
-        "1642": "8",
-        "1798": "红点列表ID_携带物解锁栏"
+        "1378": {
+            "Data": "55,75",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1586": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "红点列表ID_携带物解锁栏",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1378": "45,45",
-        "1545": "1",
-        "1586": "1",
-        "1642": "9",
-        "1798": "红点列表ID_道具箱道具"
+        "1378": {
+            "Data": "45,45",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1586": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "红点列表ID_道具箱道具",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1378": "-30,30",
-        "1545": "1",
-        "1586": "1",
-        "1642": "10",
-        "1798": "红点列表ID_时装页签列表展示"
+        "1378": {
+            "Data": "-30,30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1586": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1798": {
+            "Data": "红点列表ID_时装页签列表展示",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

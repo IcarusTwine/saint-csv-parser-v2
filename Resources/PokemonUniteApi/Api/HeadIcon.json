@@ -1,42 +1,138 @@
 {
     "0": {
-        "ID": 11,
-        "Male_Texture": "t_CreateRole_male1_1.png",
-        "Female_Texture": "t_CreateRole_female1_1.png"
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "ID": 12,
-        "Male_Texture": "t_CreateRole_male2_1.png",
-        "Female_Texture": "t_CreateRole_female2_1.png"
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "ID": 13,
-        "Male_Texture": "t_CreateRole_male3_1.png",
-        "Female_Texture": "t_CreateRole_female3_1.png"
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "ID": 14,
-        "Male_Texture": "t_CreateRole_male4_1.png",
-        "Female_Texture": "t_CreateRole_female4_1.png"
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "ID": 21,
-        "Male_Texture": "t_CreateRole_male1_1.png",
-        "Female_Texture": "t_CreateRole_female1_1.png"
+        "ID": {
+            "Data": 21,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "ID": 22,
-        "Male_Texture": "t_CreateRole_male2_1.png",
-        "Female_Texture": "t_CreateRole_female2_1.png"
+        "ID": {
+            "Data": 22,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "ID": 23,
-        "Male_Texture": "t_CreateRole_male3_1.png",
-        "Female_Texture": "t_CreateRole_female3_1.png"
+        "ID": {
+            "Data": 23,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "ID": 24,
-        "Male_Texture": "t_CreateRole_male4_1.png",
-        "Female_Texture": "t_CreateRole_female4_1.png"
+        "ID": {
+            "Data": 24,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Male_Texture": {
+            "Data": "t_CreateRole_male4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Female_Texture": {
+            "Data": "t_CreateRole_female4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     }
 }

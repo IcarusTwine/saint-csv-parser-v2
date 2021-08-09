@@ -1,77 +1,112 @@
 {
     "0": {
         "Description": {
-            "en": "Pokémon that have high Endurance and excel at protecting ally Pokémon.",
-            "chs": "抗打能力较高，擅长保护友方。\r",
-            "cht": "\r",
-            "de": "Dieses Pokémon verfügt über eine hohe Zähigkeit und eignet sich besonders gut dafür, Verbündete zu beschützen.",
-            "es": "Cuenta con un mayor aguante, ideal para defender a los Pokémon aliados.",
-            "fr": "Ce Pokémon à l'endurance élevée excelle à protéger ses alliés.",
-            "it": "Pokémon dalla Resistenza alta, ideale per proteggere gli alleati.",
-            "jp": "高い耐久能力を持つ。味方のポケモンを守ることが得意。",
-            "ko": "높은 내구 능력을 지녔다. 같은 편 포켓몬을 지키는 것이 특기다.",
-            "tc": "\r"
+            "Data": {
+                "en": "Pokémon that have high Endurance and excel at protecting ally Pokémon.",
+                "chs": "抗打能力较高，擅长保护友方。\r",
+                "cht": "\r",
+                "de": "Dieses Pokémon verfügt über eine hohe Zähigkeit und eignet sich besonders gut dafür, Verbündete zu beschützen.",
+                "es": "Cuenta con un mayor aguante, ideal para defender a los Pokémon aliados.",
+                "fr": "Ce Pokémon à l'endurance élevée excelle à protéger ses alliés.",
+                "it": "Pokémon dalla Resistenza alta, ideale per proteggere gli alleati.",
+                "jp": "高い耐久能力を持つ。味方のポケモンを守ることが得意。",
+                "ko": "높은 내구 능력을 지녔다. 같은 편 포켓몬을 지키는 것이 특기다."
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1589": "143"
+        "1589": {
+            "Data": "143",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
         "Description": {
-            "en": "Pokémon that excel at supporting ally Pokémon and restoring their HP.",
-            "chs": "擅长给友方进行回复、辅助友方。\r",
-            "cht": "\r",
-            "de": "Dieses Pokémon ist besonders gut darin, seine Verbündeten zu heilen und sie anderweitig zu unterstützen.",
-            "es": "Perfecto para curar y socorrer a los Pokémon aliados.",
-            "fr": "Ce Pokémon est très doué pour soigner ou soutenir ses alliés.",
-            "it": "Pokémon ideale per aiutare gli alleati e ripristinare i loro PS.",
-            "jp": "味方のポケモンを回復したり、助けたりすることが得意。",
-            "ko": "같은 편 포켓몬을 회복하거나 도와주는 것이 특기다.",
-            "tc": "\r"
+            "Data": {
+                "en": "Pokémon that excel at supporting ally Pokémon and restoring their HP.",
+                "chs": "擅长给友方进行回复、辅助友方。\r",
+                "cht": "\r",
+                "de": "Dieses Pokémon ist besonders gut darin, seine Verbündeten zu heilen und sie anderweitig zu unterstützen.",
+                "es": "Perfecto para curar y socorrer a los Pokémon aliados.",
+                "fr": "Ce Pokémon est très doué pour soigner ou soutenir ses alliés.",
+                "it": "Pokémon ideale per aiutare gli alleati e ripristinare i loro PS.",
+                "jp": "味方のポケモンを回復したり、助けたりすることが得意。",
+                "ko": "같은 편 포켓몬을 회복하거나 도와주는 것이 특기다."
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1589": "829"
+        "1589": {
+            "Data": "829",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
         "Description": {
-            "en": "Pokémon that are characterized by agile movements and that excel at chasing down opposing Pokémon and creating good conditions for scoring.",
-            "chs": "能够快速移动，擅长得分或追击逃跑的对方。\r",
-            "cht": "\r",
-            "de": "Dieses Pokémon zeichnet sich vor allem durch seine Agilität aus. Es schafft gute Bedingungen zum Punkten und flüchtende Gegner können ihm nur schwer entkommen.",
-            "es": "Su gran agilidad lo hace ideal para perseguir a los Pokémon que intenten huir y marcar tantos.",
-            "fr": "Grâce à son agilité élevée, ce Pokémon excelle à poursuivre les adversaires en fuite et à créer les conditions favorables pour marquer des points.",
-            "it": "Pokémon dai movimenti agili e veloci, ideale per inseguire gli avversari in fuga o creare l'occasione giusta per segnare un goal.",
-            "jp": "俊敏な動きが特徴。相手のポケモンが逃げた時に追いかけたり、ゴールに有利な状況を作ったりすることが得意。",
-            "ko": "날렵한 움직임이 특징이다. 상대 편 포켓몬이 도망갈 때 쫓아가거나 골하기 유리한 상황을 만드는 것이 특기다.",
-            "tc": "\r"
+            "Data": {
+                "en": "Pokémon that are characterized by agile movements and that excel at chasing down opposing Pokémon and creating good conditions for scoring.",
+                "chs": "能够快速移动，擅长得分或追击逃跑的对方。\r",
+                "cht": "\r",
+                "de": "Dieses Pokémon zeichnet sich vor allem durch seine Agilität aus. Es schafft gute Bedingungen zum Punkten und flüchtende Gegner können ihm nur schwer entkommen.",
+                "es": "Su gran agilidad lo hace ideal para perseguir a los Pokémon que intenten huir y marcar tantos.",
+                "fr": "Grâce à son agilité élevée, ce Pokémon excelle à poursuivre les adversaires en fuite et à créer les conditions favorables pour marquer des points.",
+                "it": "Pokémon dai movimenti agili e veloci, ideale per inseguire gli avversari in fuga o creare l'occasione giusta per segnare un goal.",
+                "jp": "俊敏な動きが特徴。相手のポケモンが逃げた時に追いかけたり、ゴールに有利な状況を作ったりすることが得意。",
+                "ko": "날렵한 움직임이 특징이다. 상대 편 포켓몬이 도망갈 때 쫓아가거나 골하기 유리한 상황을 만드는 것이 특기다."
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1589": "661"
+        "1589": {
+            "Data": "661",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
         "Description": {
-            "en": "Pokémon that have a great balance of offensive capabilities and Endurance and excel at adapting to a wide variety of situations.",
-            "chs": "攻击能力和抗打能力较均衡，擅长适应各种状况的打法。\r",
-            "cht": "\r",
-            "de": "Dieses Pokémon verfügt über eine ausgeglichene Offensive und Zähigkeit. Es kann seinen Kampfstil an die verschiedensten Situationen anpassen.",
-            "es": "Se adapta muy bien a cualquier situación, por su excelente equilibrio entre capacidad ofensiva y aguante.",
-            "fr": "Ce Pokémon dispose d'un très bon équilibre entre potentiel offensif et endurance. Son style de combat s'adapte à tous types de situations.",
-            "it": "Pokémon con un buon equilibrio tra Offensiva e Resistenza, ideale per ogni occasione.",
-            "jp": "攻撃能力と耐久能力のバランスに優れる。いろいろな状況に対応できる戦い方が得意。",
-            "ko": "밸런스 잡힌 공격 능력과 내구 능력을 지녔다. 다양한 상황에 대응할 수 있는 전법이 특기다.",
-            "tc": "\r"
+            "Data": {
+                "en": "Pokémon that have a great balance of offensive capabilities and Endurance and excel at adapting to a wide variety of situations.",
+                "chs": "攻击能力和抗打能力较均衡，擅长适应各种状况的打法。\r",
+                "cht": "\r",
+                "de": "Dieses Pokémon verfügt über eine ausgeglichene Offensive und Zähigkeit. Es kann seinen Kampfstil an die verschiedensten Situationen anpassen.",
+                "es": "Se adapta muy bien a cualquier situación, por su excelente equilibrio entre capacidad ofensiva y aguante.",
+                "fr": "Ce Pokémon dispose d'un très bon équilibre entre potentiel offensif et endurance. Son style de combat s'adapte à tous types de situations.",
+                "it": "Pokémon con un buon equilibrio tra Offensiva e Resistenza, ideale per ogni occasione.",
+                "jp": "攻撃能力と耐久能力のバランスに優れる。いろいろな状況に対応できる戦い方が得意。",
+                "ko": "밸런스 잡힌 공격 능력과 내구 능력을 지녔다. 다양한 상황에 대응할 수 있는 전법이 특기다."
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1589": "4"
+        "1589": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
         "Description": {
-            "en": "Pokémon that have great offensive capabilities and excel at ranged attacks.",
-            "chs": "攻击能力较高，擅长远距离攻击。\r",
-            "cht": "\r",
-            "de": "Dieses Pokémon verfügt über eine hohe Offensive. Seine Spezialität besteht darin, aus der Ferne anzugreifen.",
-            "es": "Posee una gran capacidad ofensiva y es experto en movimientos de largo alcance.",
-            "fr": "Ce Pokémon possède un très bon potentiel offensif et s'avère très doué pour les attaques à distance.",
-            "it": "Pokémon dall'Offensiva alta, ideale per attacchi a lungo raggio.",
-            "jp": "高い攻撃能力を持つ。遠距離から攻撃することが得意。",
-            "ko": "높은 공격 능력을 지녔다. 원거리에서 공격하는 것이 특기다.",
-            "tc": "\r"
+            "Data": {
+                "en": "Pokémon that have great offensive capabilities and excel at ranged attacks.",
+                "chs": "攻击能力较高，擅长远距离攻击。\r",
+                "cht": "\r",
+                "de": "Dieses Pokémon verfügt über eine hohe Offensive. Seine Spezialität besteht darin, aus der Ferne anzugreifen.",
+                "es": "Posee una gran capacidad ofensiva y es experto en movimientos de largo alcance.",
+                "fr": "Ce Pokémon possède un très bon potentiel offensif et s'avère très doué pour les attaques à distance.",
+                "it": "Pokémon dall'Offensiva alta, ideale per attacchi a lungo raggio.",
+                "jp": "高い攻撃能力を持つ。遠距離から攻撃することが得意。",
+                "ko": "높은 공격 능력을 지녔다. 원거리에서 공격하는 것이 특기다."
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1589": "25"
+        "1589": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

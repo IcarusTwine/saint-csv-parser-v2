@@ -1,107 +1,407 @@
 {
     "0": {
-        "1536": "11",
-        "1764": "得分王",
-        "1776": "得分王",
-        "1804": "t_finalscore_icon_Score",
-        "1871": "1"
+        "1536": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "得分王",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "得分王",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_Score",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1536": "12",
-        "1764": "打倒王",
-        "1776": "打倒王",
-        "1804": "t_finalscore_icon_Beat",
-        "1871": "2"
+        "1536": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "打倒王",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "打倒王",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_Beat",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1536": "13",
-        "1764": "助攻王",
-        "1776": "助攻王",
-        "1804": "t_finalscore_icon_Assist",
-        "1871": "3"
+        "1536": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "助攻王",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "助攻王",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_Assist",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1536": "14",
-        "1764": "团队保护者",
-        "1776": "团队保护者",
-        "1804": "t_finalscore_icon_BearInjury",
-        "1871": "4"
+        "1536": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "团队保护者",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "团队保护者",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BearInjury",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1536": "15",
-        "1764": "团队回复者",
-        "1776": "团队回复者",
-        "1804": "t_finalscore_icon_Treatment",
-        "1871": "5"
+        "1536": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "团队回复者",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "团队回复者",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_Treatment",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1536": "1",
-        "1764": "金牌辅助型",
-        "1776": "金牌辅助型",
-        "1804": "t_finalscore_icon_BestSupport",
-        "1871": "6"
+        "1536": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "金牌辅助型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "金牌辅助型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BestSupport",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1536": "2",
-        "1764": "银牌辅助型",
-        "1776": "银牌辅助型",
-        "1804": "t_finalscore_icon_BetterSupport",
-        "1871": "7"
+        "1536": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "银牌辅助型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "银牌辅助型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BetterSupport",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1536": "3",
-        "1764": "金牌平衡型",
-        "1776": "金牌平衡型",
-        "1804": "t_finalscore_icon_BestBalance",
-        "1871": "8"
+        "1536": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "金牌平衡型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "金牌平衡型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BestBalance",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1536": "4",
-        "1764": "银牌平衡型",
-        "1776": "银牌平衡型",
-        "1804": "t_finalscore_icon_BetterBalance",
-        "1871": "9"
+        "1536": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "银牌平衡型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "银牌平衡型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BetterBalance",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1536": "5",
-        "1764": "金牌攻击型",
-        "1776": "金牌攻击型",
-        "1804": "t_finalscore_icon_BestAttack",
-        "1871": "10"
+        "1536": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "金牌攻击型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "金牌攻击型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BestAttack",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1536": "6",
-        "1764": "银牌攻击型",
-        "1776": "银牌攻击型",
-        "1804": "t_finalscore_icon_BetterAttack",
-        "1871": "11"
+        "1536": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "银牌攻击型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "银牌攻击型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BetterAttack",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1536": "7",
-        "1764": "金牌防御型",
-        "1776": "金牌防御型",
-        "1804": "t_finalscore_icon_BestDefence",
-        "1871": "12"
+        "1536": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "金牌防御型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "金牌防御型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BestDefence",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1536": "8",
-        "1764": "银牌防御型",
-        "1776": "银牌防御型",
-        "1804": "t_finalscore_icon_BetterDefence",
-        "1871": "13"
+        "1536": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "银牌防御型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "银牌防御型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BetterDefence",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1536": "9",
-        "1764": "金牌敏捷型",
-        "1776": "金牌敏捷型",
-        "1804": "t_finalscore_icon_BestAgility",
-        "1871": "14"
+        "1536": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "金牌敏捷型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "金牌敏捷型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BestAgility",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1536": "10",
-        "1764": "银牌敏捷型",
-        "1776": "银牌敏捷型",
-        "1804": "t_finalscore_icon_BetterAgility",
-        "1871": "15"
+        "1536": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1764": {
+            "Data": "银牌敏捷型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1776": {
+            "Data": "银牌敏捷型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1804": {
+            "Data": "t_finalscore_icon_BetterAgility",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1871": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

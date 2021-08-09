@@ -1,42 +1,138 @@
 {
     "0": {
-        "1512": "1",
-        "1513": "0",
-        "1604": "1"
+        "1512": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1512": "0",
-        "1513": "0",
-        "1604": "2"
+        "1512": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1512": "0",
-        "1513": "0",
-        "1604": "6"
+        "1512": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1512": "0",
-        "1513": "0",
-        "1604": "3"
+        "1512": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1512": "0",
-        "1513": "0",
-        "1604": "4"
+        "1512": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1512": "0",
-        "1513": "0",
-        "1604": "5"
+        "1512": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1512": "0",
-        "1513": "0",
-        "1604": "7"
+        "1512": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1512": "0",
-        "1513": "0",
-        "1604": "8"
+        "1512": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1604": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

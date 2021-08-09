@@ -1,6 +1,14 @@
 {
     "0": {
-        "1334": "1",
-        "1510": "0"
+        "1334": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1510": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

@@ -1,86 +1,326 @@
 {
     "0": {
-        "1365": "10",
-        "1466": "system_junei_037",
-        "1680": "2000",
-        "1824": "1",
-        "1849": "干得漂亮"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_037",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "干得漂亮",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1365": "10",
-        "1466": "system_junei_038",
-        "1680": "2000",
-        "1824": "2",
-        "1849": "我来支援了"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_038",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "我来支援了",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1365": "10",
-        "1466": "system_junei_039",
-        "1680": "2000",
-        "1824": "3",
-        "1849": "谨慎对战，提升等级"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_039",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "谨慎对战，提升等级",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1365": "10",
-        "1466": "system_junei_040",
-        "1680": "2000",
-        "1824": "4",
-        "1849": "集结招式已经就绪"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_040",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "集结招式已经就绪",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1365": "10",
-        "1466": "system_junei_041",
-        "1680": "2000",
-        "1824": "5",
-        "1849": "请求支援"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_041",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "请求支援",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1365": "10",
-        "1466": "system_junei_042",
-        "1680": "2000",
-        "1824": "6",
-        "1849": "集结准备团战"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_042",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "集结准备团战",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1365": "10",
-        "1466": "system_junei_043",
-        "1680": "2000",
-        "1824": "7",
-        "1849": "拖住对方，我去得分"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_043",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "拖住对方，我去得分",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1365": "10",
-        "1466": "system_junei_044",
-        "1680": "2000",
-        "1824": "8",
-        "1849": "小心对方得分"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_044",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "小心对方得分",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1365": "10",
-        "1466": "system_junei_045",
-        "1680": "2000",
-        "1824": "9",
-        "1849": "和我一起推进"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_045",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "和我一起推进",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1365": "10",
-        "1466": "system_junei_046",
-        "1680": "2000",
-        "1824": "10",
-        "1849": "防守友方开始点"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_046",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "防守友方开始点",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1365": "10",
-        "1466": "system_junei_047",
-        "1680": "2000",
-        "1824": "11",
-        "1849": "和我一起延长对战时间"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_047",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "和我一起延长对战时间",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1365": "10",
-        "1466": "system_junei_048",
-        "1680": "2000",
-        "1824": "12",
-        "1849": "你们进攻，我防守"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1466": {
+            "Data": "system_junei_048",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1849": {
+            "Data": "你们进攻，我防守",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

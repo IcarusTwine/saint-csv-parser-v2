@@ -1,12 +1,44 @@
 {
     "0": {
-        "1267": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0",
-        "1513": "99999",
-        "1555": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0",
-        "1573": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0",
-        "1685": "0,0",
-        "1719": "0,0,0",
-        "1758": "0",
-        "1805": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0"
+        "1267": {
+            "Data": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1513": {
+            "Data": "99999",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1685": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1719": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1758": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "<h5>(BROKEN)</h5><br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0,<br>242,<br>188,<br>10,<br>0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

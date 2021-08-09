@@ -1,1137 +1,5293 @@
 {
     "0": {
-        "1303": "80",
-        "1313": "130",
-        "1330": "43",
-        "1414": "1",
-        "1425": "115",
-        "1449": "0",
-        "1457": "130",
-        "1460": "70",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_000300_venusaur",
-        "1573": "115",
-        "1620": "100",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "115",
-        "1755": "100",
-        "1839": "1",
-        "1852": "85"
+        "1303": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "43",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_000300_venusaur",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1303": "100",
-        "1313": "110",
-        "1330": "45",
-        "1414": "4",
-        "1425": "123",
-        "1433": "0",
-        "1449": "0",
-        "1457": "110",
-        "1460": "80",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_000600_charizard",
-        "1573": "123",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1665": "0",
-        "1669": "25",
-        "1713": "0",
-        "1721": "123",
-        "1755": "90",
-        "1839": "1",
-        "1852": "80"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "45",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "123",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_000600_charizard",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "123",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1665": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "123",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1303": "100",
-        "1313": "120",
-        "1330": "40",
-        "1414": "7",
-        "1425": "120",
-        "1433": "0",
-        "1457": "120",
-        "1460": "80",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_000900_blastoise",
-        "1573": "120",
-        "1620": "130",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1721": "120",
-        "1755": "100",
-        "1839": "1",
-        "1852": "78"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_000900_blastoise",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "78",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1303": "250",
-        "1313": "120",
-        "1330": "40",
-        "1414": "25",
-        "1425": "120",
-        "1433": "0",
-        "1449": "100",
-        "1457": "120",
-        "1460": "200",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_002500_pikachu",
-        "1573": "120",
-        "1620": "300",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "120",
-        "1755": "250",
-        "1839": "1",
-        "1852": "200"
+        "1303": {
+            "Data": "250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_002500_pikachu",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1303": "92",
-        "1313": "110",
-        "1330": "40",
-        "1414": "35",
-        "1425": "110",
-        "1457": "110",
-        "1460": "71",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_003600_clefable",
-        "1573": "110",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1721": "110",
-        "1755": "100",
-        "1839": "1",
-        "1852": "72"
+        "1303": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "35",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "71",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_003600_clefable",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1303": "140",
-        "1313": "130",
-        "1330": "40",
-        "1414": "37",
-        "1425": "115",
-        "1433": "0",
-        "1449": "50",
-        "1457": "130",
-        "1460": "120",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_003800_ninetales",
-        "1573": "115",
-        "1620": "180",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "115",
-        "1755": "100",
-        "1839": "1",
-        "1852": "85"
+        "1303": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "37",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_003800_ninetales",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1303": "92",
-        "1313": "110",
-        "1330": "40",
-        "1414": "39",
-        "1425": "110",
-        "1457": "110",
-        "1460": "71",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_004000_wigglytuff",
-        "1573": "110",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1721": "110",
-        "1755": "100",
-        "1839": "1",
-        "1852": "72"
+        "1303": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "39",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "71",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_004000_wigglytuff",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1303": "110",
-        "1313": "130",
-        "1330": "40",
-        "1414": "66",
-        "1425": "100",
-        "1433": "0",
-        "1449": "50",
-        "1457": "130",
-        "1460": "90",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_006800_machamp",
-        "1573": "140",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "3",
-        "1721": "140",
-        "1755": "100",
-        "1839": "1",
-        "1852": "85"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "66",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_006800_machamp",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1303": "100",
-        "1313": "110",
-        "1330": "40",
-        "1414": "79",
-        "1425": "110",
-        "1433": "0",
-        "1449": "30",
-        "1457": "110",
-        "1460": "80",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_008000_slowbro",
-        "1573": "110",
-        "1620": "130",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "110",
-        "1755": "100",
-        "1839": "1",
-        "1852": "80"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "79",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_008000_slowbro",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1303": "110",
-        "1313": "85",
-        "1330": "40",
-        "1414": "92",
-        "1425": "100",
-        "1433": "0",
-        "1449": "50",
-        "1457": "85",
-        "1460": "90",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_009400_gengar",
-        "1573": "100",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "90",
-        "1755": "100",
-        "1839": "1",
-        "1852": "55"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_009400_gengar",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "55",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1303": "110",
-        "1313": "100",
-        "1330": "40",
-        "1414": "122",
-        "1425": "100",
-        "1449": "20",
-        "1457": "100",
-        "1460": "90",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_012200_mrmime",
-        "1573": "100",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "10",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "122",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_012200_mrmime",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1303": "90",
-        "1313": "101",
-        "1330": "40",
-        "1414": "143",
-        "1425": "101",
-        "1433": "0",
-        "1449": "20",
-        "1457": "101",
-        "1460": "65",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_014300_snorlax",
-        "1573": "101",
-        "1620": "100",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "101",
-        "1755": "100",
-        "1839": "1",
-        "1852": "90"
+        "1303": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "143",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_014300_snorlax",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1303": "110",
-        "1313": "110",
-        "1330": "40",
-        "1414": "280",
-        "1425": "100",
-        "1433": "0",
-        "1449": "70",
-        "1457": "110",
-        "1460": "90",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_028200_gardevoir",
-        "1573": "100",
-        "1620": "130",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "72"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "280",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_028200_gardevoir",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1303": "120",
-        "1313": "130",
-        "1330": "40",
-        "1414": "359",
-        "1425": "115",
-        "1433": "0",
-        "1449": "70",
-        "1457": "130",
-        "1460": "100",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_035900_absol",
-        "1573": "115",
-        "1620": "150",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "115",
-        "1755": "100",
-        "1839": "1",
-        "1852": "85"
+        "1303": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "359",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_035900_absol",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1303": "92",
-        "1313": "110",
-        "1330": "40",
-        "1414": "443",
-        "1425": "100",
-        "1433": "0",
-        "1449": "8",
-        "1457": "110",
-        "1460": "67",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_044500_garchomp",
-        "1573": "100",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "72"
+        "1303": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "443",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "67",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_044500_garchomp",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1303": "130",
-        "1313": "100",
-        "1330": "40",
-        "1414": "448",
-        "1425": "100",
-        "1433": "0",
-        "1449": "90",
-        "1457": "100",
-        "1460": "100",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_044800_lucario",
-        "1573": "100",
-        "1620": "150",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "448",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_044800_lucario",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1303": "100",
-        "1313": "100",
-        "1330": "45",
-        "1414": "557",
-        "1425": "100",
-        "1449": "0",
-        "1457": "110",
-        "1460": "70",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_055800_crustle",
-        "1573": "100",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "45",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "557",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_055800_crustle",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1303": "100",
-        "1313": "120",
-        "1330": "40",
-        "1414": "656",
-        "1425": "100",
-        "1433": "0",
-        "1449": "30",
-        "1457": "120",
-        "1460": "80",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_065800_greninja",
-        "1573": "100",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "78"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "656",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_065800_greninja",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "78",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1303": "100",
-        "1313": "100",
-        "1330": "40",
-        "1414": "661",
-        "1425": "100",
-        "1433": "0",
-        "1449": "40",
-        "1457": "100",
-        "1460": "70",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_066300_talonflame",
-        "1573": "100",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "90"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "661",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_066300_talonflame",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1303": "117",
-        "1313": "140",
-        "1330": "65",
-        "1333": "20",
-        "1414": "807",
-        "1425": "100",
-        "1457": "140",
-        "1460": "100",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_080700_zeraora",
-        "1573": "100",
-        "1620": "160",
-        "1632": "0",
-        "1642": "100",
-        "1669": "50",
-        "1673": "20",
-        "1707": "20",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "91"
+        "1303": {
+            "Data": "117",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1333": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "807",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_080700_zeraora",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "160",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1673": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1707": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "91",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1303": "110",
-        "1313": "100",
-        "1330": "40",
-        "1414": "813",
-        "1425": "100",
-        "1433": "0",
-        "1449": "65",
-        "1457": "100",
-        "1460": "85",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_081500_cinderace",
-        "1573": "100",
-        "1620": "120",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "813",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_081500_cinderace",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1303": "100",
-        "1313": "120",
-        "1330": "20",
-        "1414": "820",
-        "1425": "120",
-        "1457": "120",
-        "1460": "65",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_002500_pikachu",
-        "1573": "120",
-        "1620": "120",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1721": "120",
-        "1755": "100",
-        "1839": "1",
-        "1852": "78"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "820",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_002500_pikachu",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "78",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "1303": "250",
-        "1313": "140",
-        "1330": "40",
-        "1414": "829",
-        "1425": "100",
-        "1433": "0",
-        "1449": "110",
-        "1457": "140",
-        "1460": "200",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_083000_eldegoss",
-        "1573": "100",
-        "1620": "300",
-        "1632": "0",
-        "1642": "100",
-        "1665": "20",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "200"
+        "1303": {
+            "Data": "250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "829",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_083000_eldegoss",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1665": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1303": "150",
-        "1313": "140",
-        "1330": "40",
-        "1414": "845",
-        "1425": "100",
-        "1433": "0",
-        "1449": "80",
-        "1457": "140",
-        "1460": "100",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_084500_cramorant",
-        "1573": "100",
-        "1620": "200",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "91"
+        "1303": {
+            "Data": "150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "845",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_084500_cramorant",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "91",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "1303": "100",
-        "1313": "280",
-        "1414": "0",
-        "1420": "0",
-        "1425": "100",
-        "1457": "100",
-        "1460": "100",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_9001_male",
-        "1573": "100",
-        "1620": "100",
-        "1642": "100",
-        "1721": "100",
-        "1755": "120",
-        "1839": "1",
-        "1852": "100"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "280",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1420": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_9001_male",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "1303": "100",
-        "1313": "280",
-        "1414": "0",
-        "1420": "0",
-        "1425": "100",
-        "1457": "100",
-        "1460": "100",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_9002_female",
-        "1573": "100",
-        "1620": "100",
-        "1642": "100",
-        "1721": "100",
-        "1755": "120",
-        "1839": "1",
-        "1852": "100"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "280",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1420": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_9002_female",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "1303": "100",
-        "1313": "100",
-        "1414": "0",
-        "1425": "100",
-        "1457": "100",
-        "1460": "65",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_9001_male",
-        "1573": "100",
-        "1620": "100",
-        "1642": "100",
-        "1665": "10",
-        "1721": "100",
-        "1755": "120",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_9001_male",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1665": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "1303": "100",
-        "1313": "100",
-        "1414": "24601",
-        "1425": "100",
-        "1457": "100",
-        "1460": "65",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_9001_male",
-        "1573": "100",
-        "1620": "100",
-        "1642": "100",
-        "1665": "10",
-        "1721": "100",
-        "1755": "120",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "24601",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_9001_male",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1665": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "1303": "130",
-        "1313": "100",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "90",
-        "1457": "100",
-        "1460": "100",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_044801_lucario",
-        "1573": "100",
-        "1620": "150",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_044801_lucario",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "1303": "250",
-        "1313": "120",
-        "1330": "40",
-        "1414": "0",
-        "1425": "120",
-        "1433": "0",
-        "1449": "100",
-        "1457": "120",
-        "1460": "200",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_002502_pikachu",
-        "1573": "120",
-        "1620": "300",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "120",
-        "1755": "250",
-        "1839": "1",
-        "1852": "200"
+        "1303": {
+            "Data": "250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_002502_pikachu",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "1303": "110",
-        "1313": "100",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1449": "20",
-        "1457": "100",
-        "1460": "90",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_012202_mrmime",
-        "1573": "100",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "10",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_012202_mrmime",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "1303": "140",
-        "1313": "130",
-        "1330": "40",
-        "1414": "0",
-        "1425": "115",
-        "1433": "0",
-        "1449": "50",
-        "1457": "130",
-        "1460": "120",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_003802_ninetales",
-        "1573": "115",
-        "1620": "180",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "115",
-        "1755": "100",
-        "1839": "1",
-        "1852": "85"
+        "1303": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_003802_ninetales",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "1303": "100",
-        "1313": "100",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "40",
-        "1457": "100",
-        "1460": "70",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_066302_talonflame",
-        "1573": "100",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "90"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_066302_talonflame",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "33": {
-        "1303": "100",
-        "1313": "110",
-        "1330": "45",
-        "1414": "0",
-        "1425": "123",
-        "1433": "0",
-        "1449": "0",
-        "1457": "110",
-        "1460": "80",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_000602_charizard",
-        "1573": "123",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1665": "0",
-        "1669": "25",
-        "1713": "0",
-        "1721": "123",
-        "1755": "90",
-        "1839": "1",
-        "1852": "80"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "45",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "123",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_000602_charizard",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "123",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1665": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "123",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "34": {
-        "1303": "92",
-        "1313": "110",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "8",
-        "1457": "110",
-        "1460": "67",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_044502_garchomp",
-        "1573": "100",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "72"
+        "1303": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "67",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_044502_garchomp",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "35": {
-        "1303": "92",
-        "1313": "110",
-        "1330": "40",
-        "1414": "0",
-        "1425": "110",
-        "1457": "110",
-        "1460": "71",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_004002_wigglytuff",
-        "1573": "110",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1721": "110",
-        "1755": "100",
-        "1852": "72"
+        "1303": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "71",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_004002_wigglytuff",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "36": {
-        "1303": "100",
-        "1313": "120",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "30",
-        "1457": "120",
-        "1460": "80",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_065802_greninja",
-        "1573": "100",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "78"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_065802_greninja",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "78",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "37": {
-        "1303": "80",
-        "1313": "130",
-        "1330": "43",
-        "1414": "0",
-        "1425": "115",
-        "1449": "0",
-        "1457": "130",
-        "1460": "70",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_000302_venusaur",
-        "1573": "115",
-        "1620": "100",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "115",
-        "1755": "100",
-        "1839": "1",
-        "1852": "85"
+        "1303": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "43",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_000302_venusaur",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "115",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "38": {
-        "1303": "90",
-        "1313": "101",
-        "1330": "40",
-        "1414": "0",
-        "1425": "101",
-        "1433": "0",
-        "1449": "0",
-        "1457": "101",
-        "1460": "65",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_014302_snorlax",
-        "1573": "101",
-        "1620": "100",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "101",
-        "1755": "100",
-        "1839": "1",
-        "1852": "90"
+        "1303": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_014302_snorlax",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "39": {
-        "1303": "110",
-        "1313": "130",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "50",
-        "1457": "130",
-        "1460": "90",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_006802_machamp",
-        "1573": "140",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "3",
-        "1721": "140",
-        "1755": "100",
-        "1839": "1",
-        "1852": "85"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_006802_machamp",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "40": {
-        "1303": "110",
-        "1313": "130",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "50",
-        "1457": "130",
-        "1460": "90",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_006803_machamp",
-        "1573": "140",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "3",
-        "1721": "140",
-        "1755": "100",
-        "1852": "85"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "130",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_006803_machamp",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "41": {
-        "1303": "100",
-        "1313": "100",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "40",
-        "1457": "100",
-        "1460": "70",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_066303_talonflame",
-        "1573": "100",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "90"
+        "1303": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "70",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_066303_talonflame",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "42": {
-        "1303": "92",
-        "1313": "110",
-        "1330": "40",
-        "1414": "0",
-        "1425": "110",
-        "1457": "110",
-        "1460": "71",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_004004_wigglytuff",
-        "1573": "110",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1721": "110",
-        "1755": "100",
-        "1852": "72"
+        "1303": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "71",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_004004_wigglytuff",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "43": {
-        "1303": "250",
-        "1313": "120",
-        "1330": "40",
-        "1414": "0",
-        "1425": "120",
-        "1433": "0",
-        "1449": "100",
-        "1457": "120",
-        "1460": "200",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_002503_pikachu",
-        "1573": "120",
-        "1620": "300",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "120",
-        "1755": "250",
-        "1839": "1",
-        "1852": "200"
+        "1303": {
+            "Data": "250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_002503_pikachu",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "250",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "200",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "44": {
-        "1303": "90",
-        "1313": "101",
-        "1330": "40",
-        "1414": "0",
-        "1425": "101",
-        "1433": "0",
-        "1449": "20",
-        "1457": "101",
-        "1460": "65",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_014304_snorlax",
-        "1573": "101",
-        "1620": "100",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "101",
-        "1755": "100",
-        "1852": "90"
+        "1303": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_014304_snorlax",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "45": {
-        "1303": "110",
-        "1313": "100",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1433": "0",
-        "1449": "65",
-        "1457": "100",
-        "1460": "85",
-        "1530": "0",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_081501_cinderace",
-        "1573": "100",
-        "1620": "120",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "0",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1433": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "85",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_081501_cinderace",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "46": {
-        "1303": "110",
-        "1313": "100",
-        "1330": "40",
-        "1414": "0",
-        "1425": "100",
-        "1449": "20",
-        "1457": "100",
-        "1460": "90",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_012203_mrmime",
-        "1573": "100",
-        "1620": "140",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1713": "10",
-        "1721": "100",
-        "1755": "100",
-        "1839": "1",
-        "1852": "65"
+        "1303": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1449": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "90",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_012203_mrmime",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "140",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1839": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "65",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "47": {
-        "1303": "92",
-        "1313": "110",
-        "1330": "40",
-        "1414": "0",
-        "1425": "110",
-        "1457": "110",
-        "1460": "71",
-        "1536": "100",
-        "1561": "100",
-        "1568": "pref_char_lob_004003_wigglytuff",
-        "1573": "110",
-        "1620": "110",
-        "1632": "0",
-        "1642": "100",
-        "1669": "25",
-        "1721": "110",
-        "1755": "100",
-        "1852": "72"
+        "1303": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1313": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1330": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1425": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1457": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1460": {
+            "Data": "71",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1536": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1561": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1568": {
+            "Data": "pref_char_lob_004003_wigglytuff",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1573": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1620": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1632": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1642": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1721": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1755": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1852": {
+            "Data": "72",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

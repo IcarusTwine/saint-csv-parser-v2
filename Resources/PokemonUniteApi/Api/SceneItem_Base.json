@@ -1,446 +1,2014 @@
 {
     "0": {
-        "1329": "2000",
-        "1414": "300001",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock",
-        "1567": "pref_ui3d_HudUnitWidget",
-        "1588": "1",
-        "1658": "10,0,23",
-        "1659": "1",
-        "1771": "WoodBox",
-        "1772": "伤害响应障碍物",
-        "1775": "0",
-        "1788": "1"
+        "1329": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300001",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1567": {
+            "Data": "pref_ui3d_HudUnitWidget",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "10,0,23",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "WoodBox",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "伤害响应障碍物",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1329": "100",
-        "1414": "300002",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_ExpBox",
-        "1588": "1",
-        "1658": "10,0,24",
-        "1659": "1",
-        "1771": "WoodBox",
-        "1772": "U招式响应障碍物",
-        "1775": "0",
-        "1788": "1"
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300002",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_ExpBox",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "10,0,24",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "WoodBox",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "U招式响应障碍物",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1329": "100",
-        "1414": "300003",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_ExpBox",
-        "1588": "1",
-        "1658": "10,0,25",
-        "1659": "1",
-        "1771": "WoodBox",
-        "1772": "事件响应障碍物",
-        "1775": "0",
-        "1788": "1"
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300003",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_ExpBox",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "10,0,25",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "WoodBox",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "事件响应障碍物",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1329": "100",
-        "1414": "300004",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_ExpBox",
-        "1588": "1",
-        "1658": "10,0,26",
-        "1659": "1",
-        "1771": "WoodBox",
-        "1772": "表现物件",
-        "1775": "0",
-        "1788": "1"
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300004",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_ExpBox",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "10,0,26",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "WoodBox",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "表现物件",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1294": "300",
-        "1329": "1500",
-        "1414": "300005",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_D01",
-        "1567": "pref_ui3d_HudUnitWidget",
-        "1588": "1",
-        "1658": "10,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead02",
-        "1771": "D01",
-        "1772": "伤害响应障碍物01",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "1500",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300005",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_D01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1567": {
+            "Data": "pref_ui3d_HudUnitWidget",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "10,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead02",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "D01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "伤害响应障碍物01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300006",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_E01",
-        "1588": "1",
-        "1658": "25,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "E01",
-        "1772": "事件响应障碍物01",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300006",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_E01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "25,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "E01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "事件响应障碍物01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300007",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_E02",
-        "1588": "1",
-        "1658": "25,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "E02",
-        "1772": "事件响应障碍物02",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300007",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_E02",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "25,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "E02",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "事件响应障碍物02",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300008",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_E04",
-        "1588": "1",
-        "1658": "25,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "E04",
-        "1772": "事件响应障碍物03",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300008",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_E04",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "25,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "E04",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "事件响应障碍物03",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300009",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_E05",
-        "1588": "1",
-        "1658": "25,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "E05",
-        "1772": "事件响应障碍物04",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300009",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_E05",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "25,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "E05",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "事件响应障碍物04",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300010",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_U01",
-        "1588": "1",
-        "1658": "24,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "U01",
-        "1772": "U招式响应障碍物",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300010",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_U01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "24,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "U01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "U招式响应障碍物",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300011",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_U02",
-        "1588": "1",
-        "1658": "24,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "U02",
-        "1772": "U招式响应障碍物",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300011",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_U02",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "24,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "U02",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "U招式响应障碍物",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300012",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_U03",
-        "1588": "1",
-        "1658": "24,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "U03",
-        "1772": "U招式响应障碍物",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300012",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_U03",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "24,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "U03",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "U招式响应障碍物",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300013",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_TPC_v2_Roadblock_U04",
-        "1588": "1",
-        "1658": "24,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_BlockDead",
-        "1771": "U03",
-        "1772": "U招式响应障碍物",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300013",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_TPC_v2_Roadblock_U04",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "24,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_BlockDead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1771": {
+            "Data": "U03",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "U招式响应障碍物",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300014",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_boss_middle_03_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1672": "age_map5v5_GateWall_Boss_born",
-        "1693": "age_map5v5_GateWall_Boss_dead",
-        "1772": "大龙墙升降门_障碍体",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300014",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_boss_middle_03_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1672": {
+            "Data": "age_map5v5_GateWall_Boss_born",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_GateWall_Boss_dead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "大龙墙升降门_障碍体",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300015",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_techbarrier01_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_GateWall_red_up_dead",
-        "1772": "1级点升降门_红方上路",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300015",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_techbarrier01_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_GateWall_red_up_dead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "1级点升降门_红方上路",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300016",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_techbarrier01_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_GateWall_red_down_dead",
-        "1772": "1级点升降门_红方下路",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300016",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_techbarrier01_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_GateWall_red_down_dead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "1级点升降门_红方下路",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300017",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_techbarrier01_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_GateWall_blue_up_dead",
-        "1772": "1级点升降门_蓝方上路",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300017",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_techbarrier01_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_GateWall_blue_up_dead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "1级点升降门_蓝方上路",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300018",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_techbarrier01_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_GateWall_blue_down_dead",
-        "1772": "1级点升降门_蓝方下路",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300018",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_techbarrier01_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_GateWall_blue_down_dead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "1级点升降门_蓝方下路",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300019",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_boss_middle_03",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1772": "大龙墙升降门_模型",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300019",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_boss_middle_03",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "大龙墙升降门_模型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300020",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_techbarrier01",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1772": "1级点升降门_模型",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300020",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_techbarrier01",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "1级点升降门_模型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300021",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_BaseGate_middle_03",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1772": "红方基地屏障门-模型",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300021",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_BaseGate_middle_03",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "红方基地屏障门-模型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300022",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_BaseGate_middle_04",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1772": "蓝方基地屏障门-模型",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300022",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_BaseGate_middle_04",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "蓝方基地屏障门-模型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300023",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_boss_middle_03_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1772": "打野借用大龙门",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300023",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_boss_middle_03_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "打野借用大龙门",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300024",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_boss_middle_04_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_GateWall_midlane_red_dead",
-        "1772": "中路升降门-红方",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300024",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_boss_middle_04_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_GateWall_midlane_red_dead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "中路升降门-红方",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300026",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_boss_middle_04_E",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1693": "age_map5v5_GateWall_midlane_blue_dead",
-        "1772": "中路升降门-蓝方",
-        "1775": "0",
-        "1788": "1"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300026",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_boss_middle_04_E",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1693": {
+            "Data": "age_map5v5_GateWall_midlane_blue_dead",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "中路升降门-蓝方",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "1294": "300",
-        "1329": "100",
-        "1414": "300027",
-        "1430": "3000",
-        "1441": "0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1560": "entity_pref_sm_beach_boss_middle_04",
-        "1588": "1",
-        "1658": "0,0,0",
-        "1659": "1",
-        "1772": "中路升降门_模型",
-        "1775": "0",
-        "1788": "7"
+        "1294": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1329": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "300027",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1430": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1560": {
+            "Data": "entity_pref_sm_beach_boss_middle_04",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1588": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1659": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "中路升降门_模型",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1788": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

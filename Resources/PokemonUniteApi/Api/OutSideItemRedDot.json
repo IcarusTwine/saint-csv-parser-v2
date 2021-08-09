@@ -1,9 +1,21 @@
 {
     "0": {
-        "1312": "11"
+        "1312": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1312": "12",
-        "1684": "1"
+        "1312": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1684": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

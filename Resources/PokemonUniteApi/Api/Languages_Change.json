@@ -1,146 +1,245 @@
 {
     "0": {
-        "1503": "1",
-        "ID": 1,
+        "1503": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "Simplified Chinese",
-            "chs": "简体中文\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Chino simplificado",
-            "fr": "",
-            "it": "",
-            "jp": "简体中文",
-            "ko": "简体中文",
-            "tc": "\r"
+            "Data": {
+                "en": "Simplified Chinese",
+                "chs": "简体中文\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Chino simplificado",
+                "fr": "",
+                "it": "",
+                "jp": "简体中文",
+                "ko": "简体中文"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "1": {
-        "1503": "3",
-        "ID": 2,
+        "1503": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "English",
-            "chs": "英语\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Inglés",
-            "fr": "",
-            "it": "",
-            "jp": "English",
-            "ko": "English",
-            "tc": "\r"
+            "Data": {
+                "en": "English",
+                "chs": "英语\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Inglés",
+                "fr": "",
+                "it": "",
+                "jp": "English",
+                "ko": "English"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "2": {
-        "1503": "2",
-        "ID": 3,
+        "1503": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "Japanese",
-            "chs": "日语\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Japonés",
-            "fr": "",
-            "it": "",
-            "jp": "日本語",
-            "ko": "日本語",
-            "tc": "\r"
+            "Data": {
+                "en": "Japanese",
+                "chs": "日语\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Japonés",
+                "fr": "",
+                "it": "",
+                "jp": "日本語",
+                "ko": "日本語"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "3": {
-        "1503": "4",
-        "ID": 4,
+        "1503": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "",
-            "chs": "韩语\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "韩语\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "4": {
-        "1503": "5",
-        "ID": 5,
+        "1503": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "",
-            "chs": "繁体中文\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "繁体中文\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "5": {
-        "1503": "6",
-        "ID": 6,
+        "1503": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "",
-            "chs": "法语\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "法语\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "6": {
-        "1503": "7",
-        "ID": 7,
+        "1503": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "",
-            "chs": "德语\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "德语\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "7": {
-        "1503": "8",
-        "ID": 8,
+        "1503": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "",
-            "chs": "西班牙语\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "西班牙语\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     },
     "8": {
-        "1503": "9",
-        "ID": 9,
+        "1503": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        },
         "Name": {
-            "en": "",
-            "chs": "意大利语\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "意大利语\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         }
     }
 }

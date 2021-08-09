@@ -1,9 +1,21 @@
 {
     "0": {
-        "Font": "Tencent_Font_en"
+        "Font": {
+            "Data": "Tencent_Font_en",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1565": "1",
-        "Font": "Tencent_Font_en"
+        "1565": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Font": {
+            "Data": "Tencent_Font_en",
+            "Type": "String",
+            "Link": "undefined"
+        }
     }
 }

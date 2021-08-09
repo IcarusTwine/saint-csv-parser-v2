@@ -1,65 +1,335 @@
 {
     "0": {
-        "1294": "t_Skill_Label_daji",
-        "1638": "ff297f",
-        "1652": "282649",
-        "1764": "FD413256313F476C_##",
-        "1824": "1"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_daji.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "ff297f",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Melee",
+                "chs": "近战\r",
+                "cht": "\r",
+                "de": "Nahkampf",
+                "es": "Corto alcance",
+                "fr": "Corps à corps",
+                "it": "Corto raggio",
+                "jp": "近接",
+                "ko": "근거리"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1294": "t_Skill_Label_fanwei",
-        "1638": "ff297f",
-        "1652": "282649",
-        "1764": "A504C8024AB5AF66_##",
-        "1824": "2"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_fanwei.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "ff297f",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Area",
+                "chs": "范围\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Área",
+                "fr": "",
+                "it": "",
+                "jp": "範囲",
+                "ko": "범위"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1294": "t_Skill_Label_dandao",
-        "1638": "ff297f",
-        "1652": "282649",
-        "1764": "AE9FD54BBFE3BFA0_##",
-        "1824": "3"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_dandao.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "ff297f",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Ranged",
+                "chs": "远程\r",
+                "cht": "\r",
+                "de": "Fernkampf",
+                "es": "Largo alcance",
+                "fr": "Projectile",
+                "it": "Lungo raggio",
+                "jp": "遠隔",
+                "ko": "원거리"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1294": "t_Skill_Label_suoding",
-        "1638": "ff297f",
-        "1652": "282649",
-        "1764": "8A4DA70713900AC3_##",
-        "1824": "4"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_suoding.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "ff297f",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Sure Hit",
+                "chs": "必中\r",
+                "cht": "\r",
+                "de": "Treffergarantie",
+                "es": "Infalible",
+                "fr": "Ciblée",
+                "it": "Infallibile",
+                "jp": "必中",
+                "ko": "필중"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1294": "t_Skill_Label_zenyi",
-        "1638": "ffaf3d",
-        "1652": "282649",
-        "1764": "130A3BCDC09807D5_##",
-        "1824": "5"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_zenyi.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "ffaf3d",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Buff",
+                "chs": "能力上升\r",
+                "cht": "\r",
+                "de": "Stärkung",
+                "es": "Beneficio",
+                "fr": "Bonus",
+                "it": "Statistiche ↑",
+                "jp": "能力上昇",
+                "ko": "능력 상승"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1294": "t_Skill_Label_jianyi",
-        "1638": "9c53ff",
-        "1652": "282649",
-        "1764": "B3059F6E619AD882_##",
-        "1824": "6"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_jianyi.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "9c53ff",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Debuff",
+                "chs": "能力下降\r",
+                "cht": "\r",
+                "de": "Schwächung",
+                "es": "Perjuicio",
+                "fr": "Malus",
+                "it": "Statistiche ↓",
+                "jp": "能力低下",
+                "ko": "능력 저하"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1294": "t_Skill_Label_huifu",
-        "1638": "3de549",
-        "1652": "282649",
-        "1764": "467F8388DFFD589A_##",
-        "1824": "7"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_huifu.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "3de549",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Recovery",
+                "chs": "回复\r",
+                "cht": "\r",
+                "de": "Heilung",
+                "es": "Curación",
+                "fr": "Soin",
+                "it": "Recupero",
+                "jp": "回復",
+                "ko": "회복"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1294": "t_Skill_Label_weiyi",
-        "1638": "2ad9ff",
-        "1652": "282649",
-        "1764": "C32CFC09E79DFF8B_##",
-        "1824": "8"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_weiyi.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "2ad9ff",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Dash",
+                "chs": "位移\r",
+                "cht": "\r",
+                "de": "Bewegung",
+                "es": "Avance",
+                "fr": "Déplacement",
+                "it": "Spostamento",
+                "jp": "ムーブ",
+                "ko": "대시"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1294": "t_Skill_Label_kongzhi",
-        "1638": "9c53ff",
-        "1652": "282649",
-        "1764": "92C97E1BD0A91DC0_##",
-        "1824": "9"
+        "Icon_Label": {
+            "Data": "t_Skill_Label_kongzhi.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Color": {
+            "Data": "9c53ff",
+            "Type": "Color",
+            "Link": "undefined"
+        },
+        "1652": {
+            "Data": "282649",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Transient": {
+            "Data": {
+                "en": "Hindrance",
+                "chs": "妨碍\r",
+                "cht": "\r",
+                "de": "Störung",
+                "es": "Restricción",
+                "fr": "Contrôle",
+                "it": "Ostacolo",
+                "jp": "妨害",
+                "ko": "방해"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     }
 }

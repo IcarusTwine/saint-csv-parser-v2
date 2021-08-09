@@ -1,134 +1,390 @@
 {
     "0": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male1.png",
-        "1832": "1",
-        "Texture_Female": "t_suit_female1.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male1.png",
-        "1832": "1",
-        "Texture_Female": "t_suit_female1.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male1.png",
-        "1832": "1",
-        "Texture_Female": "t_suit_female1.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male1.png",
-        "1832": "1",
-        "Texture_Female": "t_suit_female1.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male1.png",
-        "1832": "1",
-        "Texture_Female": "t_suit_female1.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male2.png",
-        "1832": "2",
-        "Texture_Female": "t_suit_female2.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male2.png",
-        "1832": "2",
-        "Texture_Female": "t_suit_female2.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male2.png",
-        "1832": "2",
-        "Texture_Female": "t_suit_female2.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male2.png",
-        "1832": "2",
-        "Texture_Female": "t_suit_female2.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "1487": "0",
-        "Texture_Male": "t_suit_male2.png",
-        "1832": "2",
-        "Texture_Female": "t_suit_female2.png"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Male": {
+            "Data": "t_suit_male2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1832": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_suit_female2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "33": {
-        "1487": "0"
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

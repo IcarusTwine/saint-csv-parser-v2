@@ -1,61 +1,217 @@
 {
     "0": {
-        "1357": "t_Ingame_Minimap_OurScorePoint01",
-        "1402": "t_Icon_Score_1",
-        "1859": "1"
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_OurScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1307": "80",
-        "1357": "t_Ingame_Minimap_EnemyScorePoint01",
-        "1402": "t_Icon_Score_2",
-        "1859": "2"
+        "1307": {
+            "Data": "80",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_EnemyScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1307": "180",
-        "1357": "t_Ingame_Minimap_OurScorePoint01",
-        "1402": "t_Icon_Score_3",
-        "1859": "3"
+        "1307": {
+            "Data": "180",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_OurScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1307": "300",
-        "1357": "t_Ingame_Minimap_EnemyScorePoint01",
-        "1402": "t_Icon_Score_4",
-        "1859": "4"
+        "1307": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_EnemyScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1307": "400",
-        "1357": "t_Ingame_Minimap_OurScorePoint01",
-        "1402": "t_Icon_Score_5",
-        "1859": "5"
+        "1307": {
+            "Data": "400",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_OurScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_5.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1307": "600",
-        "1357": "t_Ingame_Minimap_EnemyScorePoint01",
-        "1402": "t_Icon_Score_6",
-        "1859": "6"
+        "1307": {
+            "Data": "600",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_EnemyScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_6.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1307": "800",
-        "1357": "t_Ingame_Minimap_OurScorePoint01",
-        "1402": "t_Icon_Score_7",
-        "1859": "7"
+        "1307": {
+            "Data": "800",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_OurScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_7.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1307": "1000",
-        "1357": "t_Ingame_Minimap_EnemyScorePoint01",
-        "1402": "t_Icon_Score_8",
-        "1859": "8"
+        "1307": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_EnemyScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_8.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1307": "1200",
-        "1357": "t_Ingame_Minimap_OurScorePoint01",
-        "1402": "t_Icon_Score_9",
-        "1859": "9"
+        "1307": {
+            "Data": "1200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_OurScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_9.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1307": "1500",
-        "1357": "t_Ingame_Minimap_EnemyScorePoint01",
-        "1402": "t_Icon_Score_10",
-        "1859": "10"
+        "1307": {
+            "Data": "1500",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Level_Pic": {
+            "Data": "t_Ingame_Minimap_EnemyScorePoint01.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Badge_Pic": {
+            "Data": "t_Icon_Score_10.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     }
 }

@@ -1,125 +1,473 @@
 {
     "0": {
-        "1485": "14",
-        "1539": "4",
-        "1557": "2,3,4,1,0,0,0,0",
-        "1763": "t_setting_ns_icon_ZL",
-        "1805": "1"
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 4,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "2,3,4,1,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_ZL.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1485": "13",
-        "1539": "2",
-        "1557": "2,3,4,1,0,0,0,0",
-        "1763": "t_setting_ns_icon_L",
-        "1805": "1"
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 2,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "2,3,4,1,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_L.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1485": "17",
-        "1539": "17",
-        "1557": "17,16,0,0,0,0,0,0",
-        "1763": "t_setting_ns_icon_sub",
-        "1805": "1"
+        "ID": {
+            "Data": 17,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 17,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "17,16,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_sub.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1485": "1",
-        "1539": "10",
-        "1557": "0,0,0,0,0,0,0,0",
-        "1763": "t_setting_ns_icon_L1"
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 10,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_L1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1485": "2",
-        "1539": "21",
-        "1557": "0,0,0,0,0,0,0,0",
-        "1763": "t_setting_ns_icon_L2"
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 21,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_L2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1485": "7",
-        "1539": "16",
-        "1557": "8,5,6,9,0,0,0,0",
-        "1763": "t_setting_ns_icon_up",
-        "1805": "1"
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 16,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "8,5,6,9,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_up.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1485": "6",
-        "1539": "6",
-        "1557": "8,5,6,9,0,0,0,0",
-        "1763": "t_setting_ns_icon_right",
-        "1805": "1"
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 6,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "8,5,6,9,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_right.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1485": "5",
-        "1539": "5",
-        "1557": "8,5,6,9,0,0,0,0",
-        "1763": "t_setting_ns_icon_left",
-        "1805": "1"
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 5,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "8,5,6,9,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_left.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1485": "8",
-        "1539": "9",
-        "1557": "8,5,6,9,0,0,0,0",
-        "1763": "t_setting_ns_icon_botttom",
-        "1805": "1"
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 9,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "8,5,6,9,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_botttom.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1485": "16",
-        "1539": "1",
-        "1557": "2,3,4,1,0,0,0,0",
-        "1763": "t_setting_ns_icon_ZR",
-        "1805": "1"
+        "ID": {
+            "Data": 16,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 1,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "2,3,4,1,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_ZR.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1485": "15",
-        "1539": "3",
-        "1557": "2,3,4,1,0,0,0,0",
-        "1763": "t_setting_ns_icon_R",
-        "1805": "1"
+        "ID": {
+            "Data": 15,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 3,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "2,3,4,1,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_R.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1485": "18",
-        "1539": "8",
-        "1557": "17,16,8,0,0,0,0,0",
-        "1763": "t_setting_ns_icon_add",
-        "1805": "1"
+        "ID": {
+            "Data": 18,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 8,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "17,16,8,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_add.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1485": "11",
-        "1539": "13",
-        "1557": "13,19,20,12,0,0,0,0",
-        "1763": "t_setting_ns_icon_A",
-        "1805": "1"
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 13,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "13,19,20,12,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_A.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1485": "12",
-        "1539": "12",
-        "1557": "13,19,20,12,0,0,0,0",
-        "1763": "t_setting_ns_icon_B",
-        "1805": "1"
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 12,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "13,19,20,12,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_B.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1485": "9",
-        "1539": "20",
-        "1557": "13,19,20,12,0,0,0,0",
-        "1763": "t_setting_ns_icon_X",
-        "1805": "1"
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 20,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "13,19,20,12,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_X.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1485": "10",
-        "1539": "21",
-        "1557": "13,19,20,12,0,0,0,0",
-        "1763": "t_setting_ns_icon_Y",
-        "1805": "1"
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 21,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "13,19,20,12,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_Y.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1485": "3",
-        "1539": "11",
-        "1557": "0,0,0,0,0,0,0,0",
-        "1763": "t_setting_ns_icon_R1"
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 11,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "0,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_R1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1485": "4",
-        "1539": "14",
-        "1557": "18,0,0,0,0,0,0,0",
-        "1763": "t_setting_ns_icon_R2",
-        "1805": "1"
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "SwapID": {
+            "Data": 14,
+            "Type": "Num",
+            "Link": "undefined"
+        },
+        "1557": {
+            "Data": "18,0,0,0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Image_White": {
+            "Data": "t_setting_ns_icon_R2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1805": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

@@ -1,6 +1,14 @@
 {
     "0": {
-        "1819": "0",
-        "1860": "1"
+        "1819": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1860": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

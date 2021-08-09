@@ -1,164 +1,668 @@
 {
     "0": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "1"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "4"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "7"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "25"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "37"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "37",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "39"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "39",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "66"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "66",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "79"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "79",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "92"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "92",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "122"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "122",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "143"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "143",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "280"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "280",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "359"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "359",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "443"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "443",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "448"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "448",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "656"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "656",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "661"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "661",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1257": "4",
-        "1274": "300",
-        "1365": "t_common_icon_gold",
-        "1423": "可用于在商城购买宝可梦相关道具",
-        "1458": "3",
-        "1753": "0",
-        "1864": "807"
+        "1257": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1274": {
+            "Data": "300",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_common_icon_gold.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "可用于在商城购买宝可梦相关道具",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1458": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1753": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1864": {
+            "Data": "807",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

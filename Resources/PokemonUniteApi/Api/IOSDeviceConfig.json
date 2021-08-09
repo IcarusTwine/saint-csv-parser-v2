@@ -1,132 +1,396 @@
 {
     "0": {
-        "ID": 1,
-        "Name": "iPhone8,1"
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone8,1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "ID": 2,
-        "Name": "iPhone8,2"
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone8,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "ID": 3,
-        "Name": "iPhone8,3"
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone8,3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "ID": 4,
-        "Name": "iPhone9,1"
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone9,1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "ID": 5,
-        "Name": "iPhone9,2"
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone9,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "ID": 6,
-        "Name": "iPhone9,3"
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone9,3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "ID": 7,
-        "Name": "iPhone9,4"
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone9,4",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "ID": 8,
-        "Name": "iPad5,1"
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad5,1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "ID": 9,
-        "Name": "iPad5,2"
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad5,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "ID": 10,
-        "Name": "iPad6,3"
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad6,3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "ID": 11,
-        "Name": "iPad6,4"
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad6,4",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "ID": 12,
-        "Name": "iPad6,7"
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad6,7",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "ID": 13,
-        "Name": "iPad6,8"
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad6,8",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "ID": 14,
-        "Name": "iPad6,11"
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad6,11",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "ID": 15,
-        "Name": "iPad6,12"
+        "ID": {
+            "Data": 15,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad6,12",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "ID": 16,
-        "Name": "iPhone8,4"
+        "ID": {
+            "Data": 16,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone8,4",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "ID": 17,
-        "Name": "iPhone10,1"
+        "ID": {
+            "Data": 17,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone10,1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "ID": 18,
-        "Name": "iPhone10,2"
+        "ID": {
+            "Data": 18,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone10,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "ID": 19,
-        "Name": "iPad7,3"
+        "ID": {
+            "Data": 19,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad7,3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "ID": 20,
-        "Name": "iPad7,4"
+        "ID": {
+            "Data": 20,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad7,4",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1409": "9|10",
-        "ID": 21,
-        "Name": "iPhone10,3"
+        "1409": {
+            "Data": "9|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 21,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone10,3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1409": "9|10",
-        "ID": 22,
-        "Name": "iPhone10,6"
+        "1409": {
+            "Data": "9|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 22,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone10,6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "ID": 23,
-        "Name": "iPhone10,4"
+        "ID": {
+            "Data": 23,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone10,4",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "ID": 24,
-        "Name": "iPhone10,5"
+        "ID": {
+            "Data": 24,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone10,5",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "ID": 25,
-        "Name": "iPhone7,2"
+        "ID": {
+            "Data": 25,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone7,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "ID": 26,
-        "Name": "iPhone7,1"
+        "ID": {
+            "Data": 26,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone7,1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "ID": 27,
-        "Name": "iPhone6,2"
+        "ID": {
+            "Data": 27,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone6,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "ID": 28,
-        "Name": "iPhone6,1"
+        "ID": {
+            "Data": 28,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone6,1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "ID": 29,
-        "Name": "iPad4,1"
+        "ID": {
+            "Data": 29,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad4,1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "ID": 30,
-        "Name": "iPad4,2"
+        "ID": {
+            "Data": 30,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPad4,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "ID": 31,
-        "Name": "iPhone11,2"
+        "ID": {
+            "Data": 31,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone11,2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "ID": 32,
-        "Name": "iPhone11,6"
+        "ID": {
+            "Data": 32,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Name": {
+            "Data": "iPhone11,6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     }
 }

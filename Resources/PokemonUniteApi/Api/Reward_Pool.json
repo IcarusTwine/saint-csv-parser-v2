@@ -1,37 +1,129 @@
 {
     "0": {
-        "1359": "1",
-        "1530": "0",
-        "1759": "0",
-        "1807": "50"
+        "1359": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1759": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1807": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1359": "2",
-        "1530": "0",
-        "1759": "0",
-        "1807": "50"
+        "1359": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1759": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1807": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1359": "3",
-        "1530": "0",
-        "1759": "0",
-        "1807": "50"
+        "1359": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1759": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1807": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1359": "4",
-        "1530": "0",
-        "1759": "0",
-        "1807": "50"
+        "1359": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1759": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1807": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1359": "5",
-        "1530": "0",
-        "1759": "0",
-        "1807": "150"
+        "1359": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1759": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1807": {
+            "Data": "150",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1359": "6",
-        "1530": "0",
-        "1759": "0"
+        "1359": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1759": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

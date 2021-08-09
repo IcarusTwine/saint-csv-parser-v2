@@ -1,18 +1,66 @@
 {
     "0": {
-        "1295": "5",
-        "1446": "99999",
-        "1646": "10000",
-        "1807": "10000",
-        "1822": "1",
-        "1860": "1"
+        "1295": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1446": {
+            "Data": "99999",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1646": {
+            "Data": "10000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1807": {
+            "Data": "10000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1860": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1295": "6000",
-        "1446": "99999",
-        "1646": "6000",
-        "1807": "10000",
-        "1822": "2",
-        "1860": "2"
+        "1295": {
+            "Data": "6000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1446": {
+            "Data": "99999",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1646": {
+            "Data": "6000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1807": {
+            "Data": "10000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1860": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

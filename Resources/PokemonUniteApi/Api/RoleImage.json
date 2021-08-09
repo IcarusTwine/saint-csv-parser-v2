@@ -1,98 +1,418 @@
 {
     "0": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "7",
-        "1498": "11",
-        "1530": "5",
-        "1570": "0",
-        "1641": "1",
-        "1824": "1",
-        "1845": "0",
-        "1872": "t_CreateRole_male1_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_male1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "8",
-        "1498": "12",
-        "1530": "3",
-        "1570": "0",
-        "1641": "1",
-        "1824": "2",
-        "1845": "0",
-        "1872": "t_CreateRole_male2_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_male2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "9",
-        "1498": "13",
-        "1530": "3",
-        "1570": "0",
-        "1641": "1",
-        "1824": "3",
-        "1845": "0",
-        "1872": "t_CreateRole_male3_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_male3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "10",
-        "1498": "14",
-        "1530": "1",
-        "1570": "0",
-        "1641": "1",
-        "1824": "4",
-        "1845": "0",
-        "1872": "t_CreateRole_male4_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_male4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "7",
-        "1498": "11",
-        "1530": "5",
-        "1570": "0",
-        "1641": "2",
-        "1824": "5",
-        "1845": "0",
-        "1872": "t_CreateRole_female1_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_female1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "8",
-        "1498": "12",
-        "1530": "3",
-        "1570": "0",
-        "1641": "2",
-        "1824": "6",
-        "1845": "0",
-        "1872": "t_CreateRole_female2_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_female2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "9",
-        "1498": "13",
-        "1530": "3",
-        "1570": "0",
-        "1641": "2",
-        "1824": "7",
-        "1845": "0",
-        "1872": "t_CreateRole_female3_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_female3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1264": "0",
-        "1294": "0",
-        "1443": "10",
-        "1498": "14",
-        "1530": "1",
-        "1570": "0",
-        "1641": "2",
-        "1824": "8",
-        "1845": "0",
-        "1872": "t_CreateRole_female4_1"
+        "1264": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1294": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1498": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1530": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1570": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1641": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1845": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_CreateRole_female4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        }
     }
 }

@@ -1,22 +1,70 @@
 {
     "0": {
-        "1254": "PB_CSID_CREATE_ROOM_REQ",
-        "1257": "PB_SCID_JOIN_ROOM_NTF",
-        "1824": "1"
+        "1254": {
+            "Data": "PB_CSID_CREATE_ROOM_REQ",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1257": {
+            "Data": "PB_SCID_JOIN_ROOM_NTF",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1254": "PB_CSID_SHOWID_JOIN_ROOM_REQ",
-        "1257": "PB_SCID_SHOWID_JOIN_ROOM_RSP",
-        "1824": "2"
+        "1254": {
+            "Data": "PB_CSID_SHOWID_JOIN_ROOM_REQ",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1257": {
+            "Data": "PB_SCID_SHOWID_JOIN_ROOM_RSP",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1254": "PB_CSID_SET_NEWBIE_STATE_INFO_REQ",
-        "1257": "PB_SCID_NEWBIE_STATE_INFO_NTF",
-        "1824": "3"
+        "1254": {
+            "Data": "PB_CSID_SET_NEWBIE_STATE_INFO_REQ",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1257": {
+            "Data": "PB_SCID_NEWBIE_STATE_INFO_NTF",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1254": "PB_CSID_GET_TUTORIAL_REWARD_REQ",
-        "1257": "PB_SCID_GET_TUTORIAL_REWARD_RSP",
-        "1824": "4"
+        "1254": {
+            "Data": "PB_CSID_GET_TUTORIAL_REWARD_REQ",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1257": {
+            "Data": "PB_SCID_GET_TUTORIAL_REWARD_RSP",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1824": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

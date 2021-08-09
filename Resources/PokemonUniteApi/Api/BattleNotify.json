@@ -1,1590 +1,3861 @@
 {
     "0": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>比克提尼</color>出现在中央区域！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear",
-        "1497": "1000",
-        "1780": "0",
-        "1822": "1"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>比克提尼</color>出现在中央区域！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>洛托姆</color>出现了！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Rotom_Appear",
-        "1497": "1000",
-        "1607": "1",
-        "1680": "3000",
-        "1780": "6000",
-        "1822": "2"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>洛托姆</color>出现了！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Rotom_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1607": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "6000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>基拉祈</color>出现在中央区域！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear",
-        "1497": "1000",
-        "1780": "0",
-        "1822": "3"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>基拉祈</color>出现在中央区域！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】对战时间已被延长！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_TimeExtended",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "4"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】对战时间已被延长！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_TimeExtended",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#6CD9FF>友方</color>得分区已被摧毁！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "4",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "9"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#6CD9FF>友方</color>得分区已被摧毁！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#F11654>对方</color>得分区已被摧毁！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "4",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "10"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#F11654>对方</color>得分区已被摧毁！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_SingleKill",
-        "1472": "1",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "11"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_SingleKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】二连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_DoubleKill",
-        "1472": "2",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "12"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】二连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_DoubleKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】三连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_TripleKill",
-        "1472": "3",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "13"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】三连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_TripleKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】四连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_QuadraKill",
-        "1472": "4",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "14"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】四连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_QuadraKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】五连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_PentaKill",
-        "1472": "5",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "15"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】五连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_PentaKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "16"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>基拉祈</color>已在海岛上方出现！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "20"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>基拉祈</color>已在海岛上方出现！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>比克提尼</color>已在海岛下方出现！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "5000",
-        "1780": "0",
-        "1822": "21"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>比克提尼</color>已在海岛下方出现！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "5000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "21",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>巴大蝶</color>出现在中央区域！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "system_junei_004",
-        "1497": "1000",
-        "1680": "5000",
-        "1780": "0",
-        "1822": "31"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>巴大蝶</color>出现在中央区域！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "system_junei_004",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "5000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "31",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>超级弹跳装置</color>已激活！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1780": "0",
-        "1822": "32"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>超级弹跳装置</color>已激活！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "32",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】成功得分{SubmitScore}分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "1",
-        "UI_Animation": "Play_system_tpc_05_nicegoal",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "33"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】成功得分{SubmitScore}分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_system_tpc_05_nicegoal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "33",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】已经成功得分5次！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "2",
-        "1472": "5",
-        "1497": "1000",
-        "1680": "2000",
-        "1780": "0",
-        "1822": "34"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】已经成功得分5次！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "34",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】已经成功得分7次！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "2",
-        "1472": "7",
-        "1497": "1000",
-        "1680": "2000",
-        "1780": "0",
-        "1822": "35"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】已经成功得分7次！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "35",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】已经成为得分专家！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "2",
-        "1472": "8",
-        "1497": "1000",
-        "1680": "2000",
-        "1780": "0",
-        "1822": "36"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】已经成为得分专家！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "36",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】全场首次成功得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "3",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "37"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】全场首次成功得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "37",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】摧毁友方得分区！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "4",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "38"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】摧毁友方得分区！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "38",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】摧毁对方得分区！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "4",
-        "1497": "1000",
-        "1680": "5000",
-        "1780": "0",
-        "1822": "39"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】摧毁对方得分区！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "5000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "39",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】暴噬龟已被打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "6",
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "40"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】暴噬龟已被打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】闪电鸟已被打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "6",
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "41"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】闪电鸟已被打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "41",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】尼多王已被打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "42"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】尼多王已被打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "42",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】雷吉奇卡斯已被打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "43"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】雷吉奇卡斯已被打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "43",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "1252": "1",
-        "1365": "10",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>友方暴噬龟</color>开始进攻！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "44"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>友方暴噬龟</color>开始进攻！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "44",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "1252": "1",
-        "1365": "10",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>对方暴噬龟</color>开始进攻！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "45"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>对方暴噬龟</color>开始进攻！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "45",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "1252": "1",
-        "1365": "10",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>友方闪电鸟</color>开始进攻！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "46"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>友方闪电鸟</color>开始进攻！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "46",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "1252": "1",
-        "1365": "10",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>对方闪电鸟</color>开始进攻！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "47"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>对方闪电鸟</color>开始进攻！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "47",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "1252": "1",
-        "1365": "1",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>打倒野生宝可梦可以抓捕他们</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "60000",
-        "1780": "0",
-        "1822": "501"
+        "1365": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>打倒野生宝可梦可以抓捕他们</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "60000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "501",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "1252": "1",
-        "1365": "2",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>点击精灵球</color>，派出野生宝可梦！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "60000",
-        "1780": "0",
-        "1822": "502"
+        "1365": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>点击精灵球</color>，派出野生宝可梦！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "60000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "502",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "33": {
-        "1252": "1",
-        "1365": "3",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】己方得分区有<color=#FFE233>恢复、护盾、攻击强化的效果</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "60000",
-        "1780": "0",
-        "1822": "503"
+        "1365": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】己方得分区有<color=#FFE233>恢复、护盾、攻击强化的效果</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "60000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "503",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "34": {
-        "1252": "1",
-        "1365": "4",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】前往<color=#FFE233>对方得分区</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "60000",
-        "1780": "0",
-        "1822": "504"
+        "1365": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】前往<color=#FFE233>对方得分区</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "60000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "504",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "35": {
-        "1252": "1",
-        "1365": "5",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】进入对方得分区<color=#FFE233>点击精灵球</color>得分\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "60000",
-        "1780": "0",
-        "1822": "505"
+        "1365": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】进入对方得分区<color=#FFE233>点击精灵球</color>得分\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "60000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "505",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "36": {
-        "1252": "1",
-        "1365": "6",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>抓捕野生宝可梦再次得分</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "60000",
-        "1780": "0",
-        "1822": "506"
+        "1365": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>抓捕野生宝可梦再次得分</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "60000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "506",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "37": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "The <color=#FFD200>Time Trees</color> have appeared!",
-            "chs": "<color=#FFD200>时光之树</color>在开始点已出现！\r",
-            "cht": "\r",
-            "de": "Die <color=#FFD200>Zeitbäume</color> sind erschienen!",
-            "es": "¡Han aparecido <color=#FFD200>cronoárboles</color>!",
-            "fr": "Les <color=#FFD200>Arbres Chrono</color> sont apparus !",
-            "it": "Sono apparsi i <color=#FFD200>Cronoalberi</color>!",
-            "jp": "<color=#FFD200>タイムツリー</color>が現れた！",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_TimeTree_Appear",
-        "1497": "1000",
-        "1607": "1",
-        "1680": "3000",
-        "1780": "6000",
-        "1822": "507"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "The <color=#FFD200>Time Trees</color> have appeared!",
+                "chs": "<color=#FFD200>时光之树</color>在开始点已出现！\r",
+                "cht": "\r",
+                "de": "Die <color=#FFD200>Zeitbäume</color> sind erschienen!",
+                "es": "¡Han aparecido <color=#FFD200>cronoárboles</color>!",
+                "fr": "Les <color=#FFD200>Arbres Chrono</color> sont apparus !",
+                "it": "Sono apparsi i <color=#FFD200>Cronoalberi</color>!",
+                "jp": "<color=#FFD200>タイムツリー</color>が現れた！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_TimeTree_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1607": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "6000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "507",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "38": {
-        "1252": "1",
-        "1365": "4",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>助战宝可梦可以帮你承受伤害</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "60000",
-        "1780": "0",
-        "1822": "509"
+        "1365": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>助战宝可梦可以帮你承受伤害</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "60000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "509",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "39": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>10秒后刷新强力野生宝可梦！</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "10000",
-        "1780": "0",
-        "1822": "601"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>10秒后刷新强力野生宝可梦！</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "10000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "601",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "40": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>传说中的宝可梦已出现！</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "10000",
-        "1780": "0",
-        "1822": "602"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>传说中的宝可梦已出现！</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "10000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "602",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "41": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>传说中的宝可梦已出现！</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "10000",
-        "1780": "0",
-        "1822": "603"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>传说中的宝可梦已出现！</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "10000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "603",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "42": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>10秒后刷新强力野生宝可梦！</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "10000",
-        "1780": "0",
-        "1822": "604"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>10秒后刷新强力野生宝可梦！</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "10000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "604",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "43": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFE233>悬赏：比克提尼分数翻倍</color>\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1497": "1000",
-        "1680": "6000",
-        "1780": "0",
-        "1822": "605"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFE233>悬赏：比克提尼分数翻倍</color>\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "6000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "605",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "44": {
-        "1252": "2",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#ff5a5a>友方</color>得分区被弱化，请速去防守\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CxDisturbed_Allies",
-        "1497": "1000",
-        "1607": "1",
-        "1780": "0",
-        "1822": "606"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#ff5a5a>友方</color>得分区被弱化，请速去防守\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CxDisturbed_Allies",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1607": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "606",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "45": {
-        "1252": "2",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#EA39A5>对方</color>得分区被弱化，请集结进攻\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CxDisturbed_Enemy",
-        "1497": "1000",
-        "1607": "1",
-        "1780": "0",
-        "1822": "607"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#EA39A5>对方</color>得分区被弱化，请集结进攻\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CxDisturbed_Enemy",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1607": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "607",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "46": {
-        "1252": "1",
-        "1365": "10",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】向<color=#FFD200>地图中心</color>集结并打倒<color=#FFD200>闪电鸟</color>！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear_ShanDianNiao",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "608"
+        "1365": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】向<color=#FFD200>地图中心</color>集结并打倒<color=#FFD200>闪电鸟</color>！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear_ShanDianNiao",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "608",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "47": {
-        "1252": "1",
-        "1365": "9",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】向<color=#FFD200>地图中心</color>集结并打倒<color=#FFD200>暴噬龟</color>！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear_BaoShiGui",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "609"
+        "1365": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】向<color=#FFD200>地图中心</color>集结并打倒<color=#FFD200>暴噬龟</color>！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear_BaoShiGui",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "609",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "48": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】友方分数反超！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_ScoreReversal",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "610"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】友方分数反超！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_ScoreReversal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "610",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "49": {
-        "1252": "1",
-        "1365": "7",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】对方分数反超！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1252": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_ScoreReversal",
-        "1497": "1000",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "611"
+        "1365": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】对方分数反超！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_ScoreReversal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1497": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "611",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "50": {
-        "1327": "9B433895A7827AA4_##",
-        "Announce": {
-            "en": "First goal!",
-            "chs": "全场首次得分！\r",
-            "cht": "\r",
-            "de": "Erster Treffer!",
-            "es": "¡Primer tanto!",
-            "fr": "Premier panier !",
-            "it": "Primo goal!",
-            "jp": "初ゴール！",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "9B433895A7827AA4_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "3",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "101"
+        "Announce": {
+            "Data": {
+                "en": "First goal!",
+                "chs": "全场首次得分！\r",
+                "cht": "\r",
+                "de": "Erster Treffer!",
+                "es": "¡Primer tanto!",
+                "fr": "Premier panier !",
+                "it": "Primo goal!",
+                "jp": "初ゴール！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "101",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "51": {
-        "1327": "F956E49F3CACCAB6_##",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】五连得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "F956E49F3CACCAB6_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "2",
-        "1472": "5",
-        "1780": "0",
-        "1822": "102"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】五连得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "102",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "52": {
-        "1327": "BF70440473D0EE5E_##",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】七连得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "BF70440473D0EE5E_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "2",
-        "1472": "7",
-        "1780": "0",
-        "1822": "103"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】七连得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "103",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "53": {
-        "1327": "884490B6638E45F0_##",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】得分专家！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "884490B6638E45F0_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "2",
-        "1472": "8",
-        "1780": "0",
-        "1822": "104"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】得分专家！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "104",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "54": {
-        "1327": "1151AD377705130D_##",
-        "1363": "Play_system_tpc_05_nicegoal",
-        "Announce": {
-            "en": "What a goal!",
-            "chs": "大额得分！\r",
-            "cht": "\r",
-            "de": "Guter Treffer!",
-            "es": "¡Puntos a gogó!",
-            "fr": "Joli score !",
-            "it": "Che gran goal!",
-            "jp": "大量得点！",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "1151AD377705130D_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "1",
-        "UI_Animation": "Play_system_tpc_05_nicegoal",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "105"
+        "1363": {
+            "Data": "Play_system_tpc_05_nicegoal",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "What a goal!",
+                "chs": "大额得分！\r",
+                "cht": "\r",
+                "de": "Guter Treffer!",
+                "es": "¡Puntos a gogó!",
+                "fr": "Joli score !",
+                "it": "Che gran goal!",
+                "jp": "大量得点！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_system_tpc_05_nicegoal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "105",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "55": {
-        "1327": "8B757932D531E2F1_##",
-        "Announce": {
-            "en": "Score",
-            "chs": "得分\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Puntuación",
-            "fr": "",
-            "it": "",
-            "jp": "スコア",
-            "ko": "스코어",
-            "tc": "\r"
+        "1327": {
+            "Data": "8B757932D531E2F1_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1680": "3000",
-        "1780": "0",
-        "1822": "106"
+        "Announce": {
+            "Data": {
+                "en": "Score",
+                "chs": "得分\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Puntuación",
+                "fr": "",
+                "it": "",
+                "jp": "スコア",
+                "ko": "스코어"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "106",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "56": {
-        "1327": "9349073440DF4AED_##",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】摧毁对方得分区！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "9349073440DF4AED_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "4",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "107"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】摧毁对方得分区！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "107",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "57": {
         "Announce": {
-            "en": "We’re really struggling!",
-            "chs": "比分落后！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Esto no pinta nada bien...",
-            "fr": "L'équipe adverse domine...",
-            "it": "",
-            "jp": "苦しい戦いだ……！",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "We’re really struggling!",
+                "chs": "比分落后！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Esto no pinta nada bien...",
+                "fr": "L'équipe adverse domine...",
+                "it": "",
+                "jp": "苦しい戦いだ……！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1680": "3000",
-        "1780": "0",
-        "1822": "110"
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "110",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "58": {
         "Announce": {
-            "en": "We’re really struggling!",
-            "chs": "比分落后！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Esto no pinta nada bien...",
-            "fr": "L'équipe adverse domine...",
-            "it": "",
-            "jp": "苦しい戦いだ……！",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "We’re really struggling!",
+                "chs": "比分落后！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Esto no pinta nada bien...",
+                "fr": "L'équipe adverse domine...",
+                "it": "",
+                "jp": "苦しい戦いだ……！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1680": "3000",
-        "1780": "0",
-        "1822": "111"
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "111",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "59": {
         "Announce": {
-            "en": "We’re really struggling!",
-            "chs": "比分落后！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Esto no pinta nada bien...",
-            "fr": "L'équipe adverse domine...",
-            "it": "",
-            "jp": "苦しい戦いだ……！",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "We’re really struggling!",
+                "chs": "比分落后！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Esto no pinta nada bien...",
+                "fr": "L'équipe adverse domine...",
+                "it": "",
+                "jp": "苦しい戦いだ……！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1680": "3000",
-        "1780": "0",
-        "1822": "112"
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "112",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "60": {
         "Announce": {
-            "en": "We’re really struggling!",
-            "chs": "比分落后！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "Esto no pinta nada bien...",
-            "fr": "L'équipe adverse domine...",
-            "it": "",
-            "jp": "苦しい戦いだ……！",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "We’re really struggling!",
+                "chs": "比分落后！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "Esto no pinta nada bien...",
+                "fr": "L'équipe adverse domine...",
+                "it": "",
+                "jp": "苦しい戦いだ……！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1680": "3000",
-        "1780": "0",
-        "1822": "113"
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "113",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "61": {
-        "1327": "23A94C5F1D0BF5F9_##",
-        "Announce": {
-            "en": "KO",
-            "chs": "打倒！\r",
-            "cht": "\r",
-            "de": "K.O.!",
-            "es": "KO",
-            "fr": "K.O.",
-            "it": "KO",
-            "jp": "KO",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "23A94C5F1D0BF5F9_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_SingleKill",
-        "1472": "1",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "201"
+        "Announce": {
+            "Data": {
+                "en": "KO",
+                "chs": "打倒！\r",
+                "cht": "\r",
+                "de": "K.O.!",
+                "es": "KO",
+                "fr": "K.O.",
+                "it": "KO",
+                "jp": "KO",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_SingleKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "201",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "62": {
-        "1327": "C2305AC7F20147EE_##",
-        "Announce": {
-            "en": "",
-            "chs": "连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "C2305AC7F20147EE_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_DoubleKill",
-        "1472": "2",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "202"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_DoubleKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "202",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "63": {
-        "1327": "E8D9506F9A7C8C86_##",
-        "Announce": {
-            "en": "",
-            "chs": "连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "E8D9506F9A7C8C86_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_TripleKill",
-        "1472": "3",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "203"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_TripleKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "203",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "64": {
-        "1327": "9E51A9758BD8AB6B_##",
-        "Announce": {
-            "en": "",
-            "chs": "连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "9E51A9758BD8AB6B_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_QuadraKill",
-        "1472": "4",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "204"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_QuadraKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "204",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "65": {
-        "1327": "A9FEA7F6F32217BF_##",
-        "Announce": {
-            "en": "",
-            "chs": "连打倒！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "A9FEA7F6F32217BF_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "5",
-        "UI_Animation": "Play_UI_PentaKill",
-        "1472": "5",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "205"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "连打倒！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_PentaKill",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1472": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "205",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "66": {
-        "1327": "3D7C305963EBF694_##",
-        "1363": "Play_UI_CheckPoint_CommonEvent",
-        "Announce": {
-            "en": "KO",
-            "chs": "打倒！\r",
-            "cht": "\r",
-            "de": "K.O.!",
-            "es": "KO",
-            "fr": "K.O.",
-            "it": "KO",
-            "jp": "KO",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "3D7C305963EBF694_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_CheckPoint_CommonEvent",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "206"
+        "1363": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "KO",
+                "chs": "打倒！\r",
+                "cht": "\r",
+                "de": "K.O.!",
+                "es": "KO",
+                "fr": "K.O.",
+                "it": "KO",
+                "jp": "KO",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_CheckPoint_CommonEvent",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "206",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "67": {
-        "1327": "382D96F27B5EE05C_##",
-        "1363": "Play_UI_Boss_Defeat",
-        "Announce": {
-            "en": "KO",
-            "chs": "打倒！\r",
-            "cht": "\r",
-            "de": "K.O.!",
-            "es": "KO",
-            "fr": "K.O.",
-            "it": "KO",
-            "jp": "KO",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "382D96F27B5EE05C_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "6",
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "207"
+        "1363": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "KO",
+                "chs": "打倒！\r",
+                "cht": "\r",
+                "de": "K.O.!",
+                "es": "KO",
+                "fr": "K.O.",
+                "it": "KO",
+                "jp": "KO",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "207",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "68": {
-        "1327": "B408449277FDE9C2_##",
-        "1363": "Play_UI_Boss_Defeat",
-        "Announce": {
-            "en": "KO",
-            "chs": "打倒！\r",
-            "cht": "\r",
-            "de": "K.O.!",
-            "es": "KO",
-            "fr": "K.O.",
-            "it": "KO",
-            "jp": "KO",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "B408449277FDE9C2_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1421": "6",
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "208"
+        "1363": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "KO",
+                "chs": "打倒！\r",
+                "cht": "\r",
+                "de": "K.O.!",
+                "es": "KO",
+                "fr": "K.O.",
+                "it": "KO",
+                "jp": "KO",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "208",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "69": {
-        "1327": "48F1BD11761A45FB_##",
-        "1363": "Play_UI_Boss_Defeat",
-        "Announce": {
-            "en": "Your whole team gained Exp. Points and a shield!",
-            "chs": "友方全体获得护盾和经验！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Tu equipo ha obtenido un escudo y puntos de experiencia!",
-            "fr": "L'équipe alliée gagne un bouclier et des des points d'expérience !",
-            "it": "",
-            "jp": "味方チーム全員がシールド＆経験値をゲット！",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "48F1BD11761A45FB_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "209"
+        "1363": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Your whole team gained Exp. Points and a shield!",
+                "chs": "友方全体获得护盾和经验！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Tu equipo ha obtenido un escudo y puntos de experiencia!",
+                "fr": "L'équipe alliée gagne un bouclier et des des points d'expérience !",
+                "it": "",
+                "jp": "味方チーム全員がシールド＆経験値をゲット！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "209",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "70": {
-        "1327": "EB70683FEE36B855_##",
-        "1363": "Play_UI_Boss_Defeat",
-        "Announce": {
-            "en": "Ally team <color=#f9f22a>+20</color> points! All of your opponent’s goal zones are now vulnerable!",
-            "chs": "友方全队<color=#f9f22a>+20</color>分，对方得分区全部弱化！\r",
-            "cht": "\r",
-            "de": "<color=#f9f22a>+20</color> Punkte für dein Team! Die Abwehr der gegnerischen Punktezonen ist jetzt geschwächt!",
-            "es": "¡<color=#f9f22a>20</color> puntos para tu equipo! Las bases enemigas son ahora vulnerables.",
-            "fr": "<color=#f9f22a>+20</color> points pour l'équipe alliée ! Les défenses des objectifs adverses sont affaiblies !",
-            "it": "<color=#f9f22a>+20</color> punti a tutti gli alleati! Ora le aree goal degli avversari sono più vulnerabili!",
-            "jp": "味方チーム<color=#f9f22a>+20</color>点！相手の全ゴールエリアのまもりが弱まった！",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "EB70683FEE36B855_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Defeat",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "210"
+        "1363": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Ally team <color=#f9f22a>+20</color> points! All of your opponent’s goal zones are now vulnerable!",
+                "chs": "友方全队<color=#f9f22a>+20</color>分，对方得分区全部弱化！\r",
+                "cht": "\r",
+                "de": "<color=#f9f22a>+20</color> Punkte für dein Team! Die Abwehr der gegnerischen Punktezonen ist jetzt geschwächt!",
+                "es": "¡<color=#f9f22a>20</color> puntos para tu equipo! Las bases enemigas son ahora vulnerables.",
+                "fr": "<color=#f9f22a>+20</color> points pour l'équipe alliée ! Les défenses des objectifs adverses sont affaiblies !",
+                "it": "<color=#f9f22a>+20</color> punti a tutti gli alleati! Ora le aree goal degli avversari sono più vulnerabili!",
+                "jp": "味方チーム<color=#f9f22a>+20</color>点！相手の全ゴールエリアのまもりが弱まった！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Defeat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "210",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "71": {
-        "1327": "5B9A83B5E555CE36_##",
-        "1363": "Play_UI_Boss_Appear_ShanDianNiao",
-        "Announce": {
-            "en": "<color=#FFD200>{0}</color> appeared!",
-            "chs": "<color=#FFD200>{0}</color>出现了！\r",
-            "cht": "\r",
-            "de": "<color=#FFD200>{0}</color> ist erschienen!",
-            "es": "¡Ha aparecido un <color=#FFD200>{0}</color>!",
-            "fr": "<color=#FFD200>{0}</color> vient d'apparaître !",
-            "it": "È apparso <color=#FFD200>{0}</color>!",
-            "jp": "<color=#FFD200>{0}</color>が現れた！",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "5B9A83B5E555CE36_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear_ShanDianNiao",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "301"
+        "1363": {
+            "Data": "Play_UI_Boss_Appear_ShanDianNiao",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "<color=#FFD200>{0}</color> appeared!",
+                "chs": "<color=#FFD200>{0}</color>出现了！\r",
+                "cht": "\r",
+                "de": "<color=#FFD200>{0}</color> ist erschienen!",
+                "es": "¡Ha aparecido un <color=#FFD200>{0}</color>!",
+                "fr": "<color=#FFD200>{0}</color> vient d'apparaître !",
+                "it": "È apparso <color=#FFD200>{0}</color>!",
+                "jp": "<color=#FFD200>{0}</color>が現れた！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear_ShanDianNiao",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "301",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "72": {
-        "1327": "F3B867E6F91DEDC3_##",
-        "1363": "Play_UI_Boss_Appear_BaoShiGui",
-        "Announce": {
-            "en": "<color=#FFD200>{0}</color> appeared!",
-            "chs": "<color=#FFD200>{0}</color>出现了！\r",
-            "cht": "\r",
-            "de": "<color=#FFD200>{0}</color> ist erschienen!",
-            "es": "¡Ha aparecido un <color=#FFD200>{0}</color>!",
-            "fr": "<color=#FFD200>{0}</color> vient d'apparaître !",
-            "it": "È apparso <color=#FFD200>{0}</color>!",
-            "jp": "<color=#FFD200>{0}</color>が現れた！",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "F3B867E6F91DEDC3_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_Boss_Appear_BaoShiGui",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "302"
+        "1363": {
+            "Data": "Play_UI_Boss_Appear_BaoShiGui",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "<color=#FFD200>{0}</color> appeared!",
+                "chs": "<color=#FFD200>{0}</color>出现了！\r",
+                "cht": "\r",
+                "de": "<color=#FFD200>{0}</color> ist erschienen!",
+                "es": "¡Ha aparecido un <color=#FFD200>{0}</color>!",
+                "fr": "<color=#FFD200>{0}</color> vient d'apparaître !",
+                "it": "È apparso <color=#FFD200>{0}</color>!",
+                "jp": "<color=#FFD200>{0}</color>が現れた！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_Boss_Appear_BaoShiGui",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "302",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "73": {
-        "1327": "4D549301EFE7755C_##",
-        "1363": "Play_UI_TimeTree_Appear",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>时光之树</color>在开始点已出现！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "4D549301EFE7755C_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_TimeTree_Appear",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "303"
+        "1363": {
+            "Data": "Play_UI_TimeTree_Appear",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>时光之树</color>在开始点已出现！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_TimeTree_Appear",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "303",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "74": {
-        "1327": "24DC04E10C1D8EF3_##",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>友方暴噬龟</color>开始进攻！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "24DC04E10C1D8EF3_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1780": "0",
-        "1822": "401"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>友方暴噬龟</color>开始进攻！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "401",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "75": {
-        "1327": "87E9638D7505677A_##",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】<color=#FFD200>友方闪电鸟</color>开始进攻！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "87E9638D7505677A_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1780": "0",
-        "1822": "402"
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】<color=#FFD200>友方闪电鸟</color>开始进攻！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "402",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "76": {
-        "1327": "00AE7BAE665F29ED_##",
-        "1363": "Play_UI_TimeExtended",
-        "Announce": {
-            "en": "",
-            "chs": "【EX】对战时间已被延长！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+        "1327": {
+            "Data": "00AE7BAE665F29ED_##",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "UI_Animation": "Play_UI_TimeExtended",
-        "1680": "3000",
-        "1780": "0",
-        "1822": "403"
+        "1363": {
+            "Data": "Play_UI_TimeExtended",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "",
+                "chs": "【EX】对战时间已被延长！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "UI_Animation": {
+            "Data": "Play_UI_TimeExtended",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1780": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "403",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

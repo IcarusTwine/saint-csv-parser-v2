@@ -1,11 +1,39 @@
 {
     "0": {
-        "1331": "1006",
-        "1366": "50",
-        "1401": "0",
-        "1405": "0",
-        "1446": "兑换测试",
-        "1538": "10",
-        "1549": "0"
+        "1331": {
+            "Data": "1006",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1366": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1401": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1405": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1446": {
+            "Data": "兑换测试",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1538": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1549": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

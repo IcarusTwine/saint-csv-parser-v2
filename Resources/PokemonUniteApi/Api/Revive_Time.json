@@ -1,17 +1,53 @@
 {
     "0": {
-        "1628": "30",
-        "1669": "2",
-        "1728": "1000"
+        "1628": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1728": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1628": "60",
-        "1669": "2",
-        "1728": "6000"
+        "1628": {
+            "Data": "60",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1728": {
+            "Data": "6000",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1628": "120",
-        "1669": "2",
-        "1728": "16000"
+        "1628": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1669": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1728": {
+            "Data": "16000",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

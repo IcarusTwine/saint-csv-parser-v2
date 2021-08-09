@@ -1,70 +1,164 @@
 {
     "0": {
         "Message": {
-            "en": "Not ready yet!",
-            "chs": "尚未准备好\r",
-            "cht": "\r",
-            "de": "Noch nicht bereit!",
-            "es": "No disponible",
-            "fr": "En récupération !",
-            "it": "Non è ancora pronta!",
-            "jp": "まだ使えない",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "Not ready yet!",
+                "chs": "尚未准备好\r",
+                "cht": "\r",
+                "de": "Noch nicht bereit!",
+                "es": "No disponible",
+                "fr": "En récupération !",
+                "it": "Non è ancora pronta!",
+                "jp": "まだ使えない",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1680": "1000",
-        "ID": 1
+        "1680": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1680": "2000",
-        "ID": 2
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1680": "2000",
-        "ID": 3
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1680": "2000",
-        "ID": 4
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1680": "2000",
-        "ID": 5
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1680": "3000",
-        "ID": 6
+        "1680": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1680": "2000",
-        "ID": 7
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1680": "10",
-        "ID": 8
+        "1680": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1680": "2000",
-        "ID": 9
+        "1680": {
+            "Data": "2000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1680": "1000",
-        "ID": 10
+        "1680": {
+            "Data": "1000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "10": {
         "Message": {
-            "en": "Miss",
-            "chs": "未命中\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Esquivado!",
-            "fr": "",
-            "it": "",
-            "jp": "Miss",
-            "ko": "Miss",
-            "tc": "\r"
+            "Data": {
+                "en": "Miss",
+                "chs": "未命中\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Esquivado!",
+                "fr": "",
+                "it": "",
+                "jp": "Miss",
+                "ko": "Miss"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1680": "10",
-        "ID": 11
+        "1680": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     }
 }

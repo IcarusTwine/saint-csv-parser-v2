@@ -1,662 +1,2246 @@
 {
     "0": {
-        "Device_Model": "MSM8916",
-        "Device_Name": "OPPO A33;OPPO A33M",
-        "ID": 20299
+        "Device_Model": {
+            "Data": "MSM8916",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A33;OPPO A33M",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20299,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "Device_Model": "MSM8916",
-        "Device_Name": "VIVO Y51A;VIVO Y51",
-        "ID": 20300
+        "Device_Model": {
+            "Data": "MSM8916",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y51A;VIVO Y51",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20300,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "Device_Model": "MT6797",
-        "Device_Name": "REDMI NOTE 4",
-        "ID": 20257
+        "Device_Model": {
+            "Data": "MT6797",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "REDMI NOTE 4",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20257,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "Device_Model": "MT6797M",
-        "Device_Name": "LE X620;LE X520",
-        "ID": 20258
+        "Device_Model": {
+            "Data": "MT6797M",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "LE X620;LE X520",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20258,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "OPPO A57;OPPO A57T",
-        "ID": 20276
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A57;OPPO A57T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20276,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "DIG-AL00;DIG-TL10",
-        "ID": 20277
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DIG-AL00;DIG-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20277,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "TRT-AL00A;TRT-TL10;TRT-AL00;TRT-TL10A",
-        "ID": 20278
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "TRT-AL00A;TRT-TL10;TRT-AL00;TRT-TL10A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20278,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "REDMI NOTE 5A",
-        "ID": 20279
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "REDMI NOTE 5A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20279,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "VIVO Y55A;VIVO Y55;VIVO Y55L",
-        "ID": 20280
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y55A;VIVO Y55;VIVO Y55L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20280,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "VIVO Y66;VIVO Y66L",
-        "ID": 20281
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y66;VIVO Y66L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20281,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "LDN-AL00;LDN-AL20;LDN-TL20",
-        "ID": 20282
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "LDN-AL00;LDN-AL20;LDN-TL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20282,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "ATU-AL10;ATU-TL10",
-        "ID": 20283
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "ATU-AL10;ATU-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20283,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "DLI-AL10;DLI-TL20",
-        "ID": 20284
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DLI-AL10;DLI-TL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20284,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "AUM-AL00;AUM-TL20",
-        "ID": 20285
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "AUM-AL00;AUM-TL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20285,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "VIVO Y66I A;VIVO Y66I",
-        "ID": 20286
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y66I A;VIVO Y66I",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20286,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "VIVO Y71A",
-        "ID": 20287
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y71A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20287,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "SLA-AL00;SLA-TL10",
-        "ID": 20288
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "SLA-AL00;SLA-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20288,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "VIVO Y71",
-        "ID": 20289
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y71",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20289,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "Device_Model": "MSM8976Pro",
-        "Device_Name": "OPPO R9S PLUS;OPPO R9S PLUST",
-        "ID": 20186
+        "Device_Model": {
+            "Data": "MSM8976Pro",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO R9S PLUS;OPPO R9S PLUST",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20186,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "Device_Model": "MSM8976Pro",
-        "Device_Name": "VIVO X9PLUS;VIVO X9PLUS L",
-        "ID": 20187
+        "Device_Model": {
+            "Data": "MSM8976Pro",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X9PLUS;VIVO X9PLUS L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20187,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "Device_Model": "MSM8976SG",
-        "Device_Name": "VIVO X9S PLUS;VIVO X9S PLUS L",
-        "ID": 20188
+        "Device_Model": {
+            "Data": "MSM8976SG",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X9S PLUS;VIVO X9S PLUS L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20188,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "Device_Model": "MSM8976",
-        "Device_Name": "OPPO R9 PLUSM A;OPPO R9 PLUSTM A",
-        "ID": 20196
+        "Device_Model": {
+            "Data": "MSM8976",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO R9 PLUSM A;OPPO R9 PLUSTM A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20196,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "Device_Model": "MSM8976",
-        "Device_Name": "VIVO X6S A",
-        "ID": 20197
+        "Device_Model": {
+            "Data": "MSM8976",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X6S A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20197,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "Device_Model": "MSM8976",
-        "Device_Name": "VIVO X7PLUS",
-        "ID": 20198
+        "Device_Model": {
+            "Data": "MSM8976",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X7PLUS",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20198,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "Device_Model": "MSM8976",
-        "Device_Name": "VIVO X7",
-        "ID": 20199
+        "Device_Model": {
+            "Data": "MSM8976",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X7",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20199,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "Device_Model": "MSM8976",
-        "Device_Name": "VIVO X9S;VIVO X9S L",
-        "ID": 20200
+        "Device_Model": {
+            "Data": "MSM8976",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X9S;VIVO X9S L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20200,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "Device_Model": "MSM8976",
-        "Device_Name": "VIVO XPLAY5A",
-        "ID": 20201
+        "Device_Model": {
+            "Data": "MSM8976",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO XPLAY5A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20201,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "Device_Model": "MSM8956",
-        "Device_Name": "REDMI NOTE 3",
-        "ID": 20202
+        "Device_Model": {
+            "Data": "MSM8956",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "REDMI NOTE 3",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20202,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "Device_Model": "MT6762",
-        "Device_Name": "V1732A;V1732T",
-        "ID": 20274
+        "Device_Model": {
+            "Data": "MT6762",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1732A;V1732T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20274,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "Device_Model": "MT6750",
-        "Device_Name": "OPPO A37M;OPPO A37T",
-        "ID": 20290
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A37M;OPPO A37T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20290,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "Device_Model": "MT6750",
-        "Device_Name": "OPPO A59S;OPPO A59ST",
-        "ID": 20291
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A59S;OPPO A59ST",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20291,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "Device_Model": "MT6750",
-        "Device_Name": "OPPO A59M",
-        "ID": 20292
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A59M",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20292,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "Device_Model": "MT6750",
-        "Device_Name": "VIVO Y67A;VIVO Y67L;VIVO Y67",
-        "ID": 20293
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y67A;VIVO Y67L;VIVO Y67",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20293,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "33": {
-        "Device_Model": "MT6750",
-        "Device_Name": "JMM-AL00;JMM-AL10",
-        "ID": 20294
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "JMM-AL00;JMM-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20294,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "34": {
-        "Device_Model": "MT6739",
-        "Device_Name": "DRA-AL00;DRA-TL00",
-        "ID": 20295
+        "Device_Model": {
+            "Data": "MT6739",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DRA-AL00;DRA-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20295,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "35": {
-        "Device_Model": "MSM8939",
-        "Device_Name": "R7PLUSM;R7PLUS",
-        "ID": 20296
+        "Device_Model": {
+            "Data": "MSM8939",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "R7PLUSM;R7PLUS",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20296,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "36": {
-        "Device_Model": "MSM8939",
-        "Device_Name": "VIVO V3MAX A",
-        "ID": 20297
+        "Device_Model": {
+            "Data": "MSM8939",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO V3MAX A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20297,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "37": {
-        "Device_Model": "MSM8939",
-        "Device_Name": "VIVO V3M A",
-        "ID": 20298
+        "Device_Model": {
+            "Data": "MSM8939",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO V3M A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20298,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "38": {
-        "Device_Model": "MSM8996",
-        "Device_Name": "SM-G9350",
-        "ID": 20203
+        "Device_Model": {
+            "Data": "MSM8996",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "SM-G9350",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20203,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "39": {
-        "Device_Model": "MSM8996",
-        "Device_Name": "VIVO XPLAY6",
-        "ID": 20204
+        "Device_Model": {
+            "Data": "MSM8996",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO XPLAY6",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20204,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "40": {
-        "Device_Model": "MSM8996Lite",
-        "Device_Name": "MI 5",
-        "ID": 20205
+        "Device_Model": {
+            "Data": "MSM8996Lite",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MI 5",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20205,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "41": {
-        "Device_Model": "MT6763",
-        "Device_Name": "VIVO Y75A;VIVO Y75",
-        "ID": 20270
+        "Device_Model": {
+            "Data": "MT6763",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y75A;VIVO Y75",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20270,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "42": {
-        "Device_Model": "MT6752",
-        "Device_Name": "OPPO R7S;OPPO R7SM",
-        "ID": 20230
+        "Device_Model": {
+            "Data": "MT6752",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO R7S;OPPO R7SM",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20230,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "43": {
-        "Device_Model": "MT6752",
-        "Device_Name": "VIVO X5MAX",
-        "ID": 20231
+        "Device_Model": {
+            "Data": "MT6752",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X5MAX",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20231,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "44": {
-        "Device_Model": "MT6752",
-        "Device_Name": "VIVO X6D;VIVO X6L",
-        "ID": 20232
+        "Device_Model": {
+            "Data": "MT6752",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X6D;VIVO X6L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20232,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "45": {
-        "Device_Model": "MT6752",
-        "Device_Name": "VIVO X6PLUS D",
-        "ID": 20233
+        "Device_Model": {
+            "Data": "MT6752",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO X6PLUS D",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20233,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "46": {
-        "Device_Model": "SDM632",
-        "Device_Name": "REDMI 7",
-        "ID": 30215
+        "Device_Model": {
+            "Data": "SDM632",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "REDMI 7",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30215,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "47": {
-        "Device_Model": "SDM632",
-        "Device_Name": "BKK-AL10;BKK-AL00;BKK-TL00",
-        "ID": 30216
+        "Device_Model": {
+            "Data": "SDM632",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "BKK-AL10;BKK-AL00;BKK-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30216,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "48": {
-        "Device_Model": "MSM8953Pro",
-        "Device_Name": "V1730EA",
-        "ID": 30217
+        "Device_Model": {
+            "Data": "MSM8953Pro",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1730EA",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30217,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "49": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "OPPO A77;OPPO A77T",
-        "ID": 30218
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A77;OPPO A77T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30218,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "50": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "OPPO R9S;OPPO R9st",
-        "ID": 30219
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO R9S;OPPO R9st",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30219,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "51": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "OPPO+R9s",
-        "ID": 30220
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO+R9s",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30220,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "52": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "vivo X9L;VIVO X9I;vivo X9",
-        "ID": 30221
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo X9L;VIVO X9I;vivo X9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30221,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "53": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "vivo+X9",
-        "ID": 30222
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo+X9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30222,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "54": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "VIVO Y79A;VIVO Y79",
-        "ID": 30223
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y79A;VIVO Y79",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30223,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "55": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "HUAWEI CAZ-AL10;HUAWEI CAZ-TL20;HUAWEI CAZ-TL10",
-        "ID": 30224
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CAZ-AL10;HUAWEI CAZ-TL20;HUAWEI CAZ-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30224,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "56": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "HUAWEI MLA-AL10",
-        "ID": 30225
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI MLA-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30225,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "57": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "MI 5X",
-        "ID": 30226
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MI 5X",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30226,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "58": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "MI MAX 2",
-        "ID": 30227
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MI MAX 2",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30227,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "59": {
-        "Device_Model": "MSM8953",
-        "Device_Name": "REDMI 5 PLUS",
-        "ID": 30228
+        "Device_Model": {
+            "Data": "MSM8953",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "REDMI 5 PLUS",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30228,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "60": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "PIC-AL00;PIC-TL00",
-        "ID": 30229
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "PIC-AL00;PIC-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30229,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "61": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "BAC-AL00;BAC-TL00",
-        "ID": 30230
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "BAC-AL00;BAC-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30230,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "62": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "ANE-AL00;ANE-TL00",
-        "ID": 30231
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "ANE-AL00;ANE-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30231,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "63": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "BAH2-W09;BAH2-AL10",
-        "ID": 30232
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "BAH2-W09;BAH2-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30232,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "64": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "FIG-AL10;FIG-AL00;FIG-TL10",
-        "ID": 30233
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "FIG-AL10;FIG-AL00;FIG-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30233,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "65": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "FLA-AL10;FLA-AL20;FLA-TL10",
-        "ID": 30234
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "FLA-AL10;FLA-AL20;FLA-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30234,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "66": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "AGS2-W09;AGS2-AL00",
-        "ID": 30235
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "AGS2-W09;AGS2-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30235,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "67": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "AGS2-W09HN",
-        "ID": 30236
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "AGS2-W09HN",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30236,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "68": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "RNE-AL00",
-        "ID": 30237
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "RNE-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30237,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "69": {
-        "Device_Model": "Kirin655",
-        "Device_Name": "BLN-AL40",
-        "ID": 30238
+        "Device_Model": {
+            "Data": "Kirin655",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "BLN-AL40",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30238,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "70": {
-        "Device_Model": "Kirin655",
-        "Device_Name": "PRA-AL00X;PRA-AL00;PRA-TL10",
-        "ID": 30239
+        "Device_Model": {
+            "Data": "Kirin655",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "PRA-AL00X;PRA-AL00;PRA-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30239,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "71": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "LLD-AL20;LLD-AL30",
-        "ID": 30240
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "LLD-AL20;LLD-AL30",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30240,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "72": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "LLD-AL10;LLD-AL00",
-        "ID": 30241
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "LLD-AL10;LLD-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30241,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "73": {
-        "Device_Model": "Kirin655",
-        "Device_Name": "BLN-AL10;BLN-TL10;BLN-AL20",
-        "ID": 30242
+        "Device_Model": {
+            "Data": "Kirin655",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "BLN-AL10;BLN-TL10;BLN-AL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30242,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "74": {
-        "Device_Model": "Kirin659",
-        "Device_Name": "BND-AL10;BND-AL00;BND-TL10",
-        "ID": 30243
+        "Device_Model": {
+            "Data": "Kirin659",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "BND-AL10;BND-AL00;BND-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30243,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "75": {
-        "Device_Model": "SDM439",
-        "Device_Name": "V1818A;V1818T",
-        "ID": 30244
+        "Device_Model": {
+            "Data": "SDM439",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1818A;V1818T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30244,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "76": {
-        "Device_Model": "SDM439",
-        "Device_Name": "Redmi 8A",
-        "ID": 30245
+        "Device_Model": {
+            "Data": "SDM439",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Redmi 8A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30245,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "77": {
-        "Device_Model": "Kirin650",
-        "Device_Name": "NEM-AL10;NEM-TL00",
-        "ID": 30246
+        "Device_Model": {
+            "Data": "Kirin650",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "NEM-AL10;NEM-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30246,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "78": {
-        "Device_Model": "MT6755",
-        "Device_Name": "OPPO R9km;oppo r9tm;oppo r9m;OPPO R9T",
-        "ID": 30247
+        "Device_Model": {
+            "Data": "MT6755",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO R9km;oppo r9tm;oppo r9m;OPPO R9T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30247,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "79": {
-        "Device_Model": "MT6755",
-        "Device_Name": "M5 NOTE",
-        "ID": 30248
+        "Device_Model": {
+            "Data": "MT6755",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "M5 NOTE",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30248,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "80": {
-        "Device_Model": "SDM450",
-        "Device_Name": "PBAM00;PBBM30;PBBT30;PBAT00",
-        "ID": 30249
+        "Device_Model": {
+            "Data": "SDM450",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "PBAM00;PBBM30;PBBT30;PBAT00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30249,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "81": {
-        "Device_Model": "SDM450",
-        "Device_Name": "PBFM00;PBFT00",
-        "ID": 30250
+        "Device_Model": {
+            "Data": "SDM450",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "PBFM00;PBFT00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30250,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "82": {
-        "Device_Model": "SDM450",
-        "Device_Name": "VIVO Y85A;VIVO Y85",
-        "ID": 30251
+        "Device_Model": {
+            "Data": "SDM450",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y85A;VIVO Y85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30251,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "83": {
-        "Device_Model": "SDM450",
-        "Device_Name": "DUB-AL00;DUB-AL00A;DUB-AL20;DUB-TL00",
-        "ID": 30252
+        "Device_Model": {
+            "Data": "SDM450",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DUB-AL00;DUB-AL00A;DUB-AL20;DUB-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30252,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "84": {
-        "Device_Model": "SDM450",
-        "Device_Name": "LND-AL30;LND-TL40;LND-AL40",
-        "ID": 30253
+        "Device_Model": {
+            "Data": "SDM450",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "LND-AL30;LND-TL40;LND-AL40",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30253,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "85": {
-        "Device_Model": "MT6797M",
-        "Device_Name": "LE X620;Le X520",
-        "ID": 30254
+        "Device_Model": {
+            "Data": "MT6797M",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "LE X620;Le X520",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30254,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "86": {
-        "Device_Model": "MT6765",
-        "Device_Name": "MOA-AL20",
-        "ID": 30255
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MOA-AL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30255,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "87": {
-        "Device_Model": "MT6765",
-        "Device_Name": "PDBM00",
-        "ID": 30256
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "PDBM00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30256,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "88": {
-        "Device_Model": "MT6765",
-        "Device_Name": "V1901A",
-        "ID": 30257
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1901A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30257,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "89": {
-        "Device_Model": "MT6765",
-        "Device_Name": "V1901T",
-        "ID": 30258
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1901T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30258,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "90": {
-        "Device_Model": "MT6765",
-        "Device_Name": "V1930A",
-        "ID": 30259
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1930A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30259,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "91": {
-        "Device_Model": "MT6765",
-        "Device_Name": "MED-AL00",
-        "ID": 30260
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MED-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30260,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "92": {
-        "Device_Model": "MT6765",
-        "Device_Name": "MRD-AL00",
-        "ID": 30261
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MRD-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30261,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "93": {
-        "Device_Model": "MT6765",
-        "Device_Name": "MI PLAY",
-        "ID": 30262
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MI PLAY",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30262,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "94": {
-        "Device_Model": "MT6765",
-        "Device_Name": "JAT-AL00;JAT-TL00",
-        "ID": 30263
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "JAT-AL00;JAT-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30263,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "95": {
-        "Device_Model": "MT6765",
-        "Device_Name": "MOA-AL00",
-        "ID": 30264
+        "Device_Model": {
+            "Data": "MT6765",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "MOA-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30264,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "96": {
-        "Device_Model": "Kirin658",
-        "Device_Name": "WAS-AL00",
-        "ID": 30265
+        "Device_Model": {
+            "Data": "Kirin658",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "WAS-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30265,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "97": {
-        "Device_Model": "MT6763T",
-        "Device_Name": "OPPO A73;OPPO A73T",
-        "ID": 30266
+        "Device_Model": {
+            "Data": "MT6763T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A73;OPPO A73T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30266,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "98": {
-        "Device_Model": "MT6763T",
-        "Device_Name": "OPPO A79;OPPO A79K;OPPO A79t;OPPO A79KT",
-        "ID": 30267
+        "Device_Model": {
+            "Data": "MT6763T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A79;OPPO A79K;OPPO A79t;OPPO A79KT",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30267,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "99": {
-        "Device_Model": "MT6763T",
-        "Device_Name": "OPPO A83;OPPO A83T",
-        "ID": 30268
+        "Device_Model": {
+            "Data": "MT6763T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A83;OPPO A83T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30268,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "100": {
-        "Device_Model": "MT6763",
-        "Device_Name": "vivo Y75A;VIVO Y75",
-        "ID": 30269
+        "Device_Model": {
+            "Data": "MT6763",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo Y75A;VIVO Y75",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30269,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "101": {
-        "Device_Model": "MT6762",
-        "Device_Name": "Redmi 6;REDMI 6A",
-        "ID": 30270
+        "Device_Model": {
+            "Data": "MT6762",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Redmi 6;REDMI 6A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30270,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "102": {
-        "Device_Model": "MT6762",
-        "Device_Name": "VIVO Y83A;VIVO Y83",
-        "ID": 30271
+        "Device_Model": {
+            "Data": "MT6762",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y83A;VIVO Y83",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30271,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "103": {
-        "Device_Model": "MT6762",
-        "Device_Name": "V1818CA;V1818CT",
-        "ID": 30272
+        "Device_Model": {
+            "Data": "MT6762",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1818CA;V1818CT",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30272,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "104": {
-        "Device_Model": "MT6762",
-        "Device_Name": "V1732A;V1732T",
-        "ID": 30273
+        "Device_Model": {
+            "Data": "MT6762",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "V1732A;V1732T",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30273,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "105": {
-        "Device_Model": "MT6762R",
-        "Device_Name": "KSA-AL10",
-        "ID": 30274
+        "Device_Model": {
+            "Data": "MT6762R",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "KSA-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30274,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "106": {
-        "Device_Model": "MT6757CD",
-        "Device_Name": "GIONEE S10;GIONEE S10L",
-        "ID": 30275
+        "Device_Model": {
+            "Data": "MT6757CD",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "GIONEE S10;GIONEE S10L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30275,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "107": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "OPPO A57;OPPO A57t",
-        "ID": 30276
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A57;OPPO A57t",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30276,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "108": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "OPPO+A57",
-        "ID": 30277
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO+A57",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30277,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "109": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "BAH3-W09",
-        "ID": 30278
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "BAH3-W09",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30278,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "110": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "DIG-AL00;DIG-TL10",
-        "ID": 30279
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DIG-AL00;DIG-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30279,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "111": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "TRT-AL00A;TRT-TL10;TRT-AL00;TRT-TL10A",
-        "ID": 30280
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "TRT-AL00A;TRT-TL10;TRT-AL00;TRT-TL10A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30280,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "112": {
-        "Device_Model": "MSM8940",
-        "Device_Name": "REDMI NOTE 5A",
-        "ID": 30281
+        "Device_Model": {
+            "Data": "MSM8940",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "REDMI NOTE 5A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30281,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "113": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "VIVO Y55A;vivo Y55;VIVO Y55L",
-        "ID": 30282
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y55A;vivo Y55;VIVO Y55L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30282,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "114": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "VIVO Y66;VIVO Y66L",
-        "ID": 30283
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y66;VIVO Y66L",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30283,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "115": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "LDN-AL00;LDN-AL20;LDN-TL20",
-        "ID": 30284
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "LDN-AL00;LDN-AL20;LDN-TL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30284,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "116": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "ATU-AL10;ATU-TL10",
-        "ID": 30285
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "ATU-AL10;ATU-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30285,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "117": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "DLI-AL10;DLI-TL20",
-        "ID": 30286
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DLI-AL10;DLI-TL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30286,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "118": {
-        "Device_Model": "MSM8937",
-        "Device_Name": "AUM-AL00;AUM-TL20",
-        "ID": 30287
+        "Device_Model": {
+            "Data": "MSM8937",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "AUM-AL00;AUM-TL20",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30287,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "119": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "VIVO Y66I A;VIVO Y66I",
-        "ID": 30288
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO Y66I A;VIVO Y66I",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30288,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "120": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "vivo Y71A",
-        "ID": 30289
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo Y71A",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30289,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "121": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "SLA-AL00;SLA-TL10",
-        "ID": 30290
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "SLA-AL00;SLA-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30290,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "122": {
-        "Device_Model": "MSM8917",
-        "Device_Name": "vivo Y71",
-        "ID": 30291
+        "Device_Model": {
+            "Data": "MSM8917",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo Y71",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30291,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "123": {
-        "Device_Model": "MSM8920",
-        "Device_Name": "S10CL",
-        "ID": 30292
+        "Device_Model": {
+            "Data": "MSM8920",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "S10CL",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30292,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "124": {
-        "Device_Model": "MT6750",
-        "Device_Name": "OPPO A37M;OPPO A37t",
-        "ID": 30293
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A37M;OPPO A37t",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30293,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "125": {
-        "Device_Model": "MT6750",
-        "Device_Name": "OPPO A59S;OPPO A59st",
-        "ID": 30294
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A59S;OPPO A59st",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30294,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "126": {
-        "Device_Model": "MT6750",
-        "Device_Name": "vivo Y67A;VIVO Y67L;VIVO Y67",
-        "ID": 30295
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo Y67A;VIVO Y67L;VIVO Y67",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30295,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "127": {
-        "Device_Model": "MT6750",
-        "Device_Name": "JMM-AL00;JMM-AL10",
-        "ID": 30296
+        "Device_Model": {
+            "Data": "MT6750",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "JMM-AL00;JMM-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30296,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "128": {
-        "Device_Model": "MT6739",
-        "Device_Name": "DRA-AL00;DRA-TL00",
-        "ID": 30297
+        "Device_Model": {
+            "Data": "MT6739",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DRA-AL00;DRA-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30297,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "129": {
-        "Device_Model": "MT6739",
-        "Device_Name": "DUA-AL00;DUA-TL00",
-        "ID": 30298
+        "Device_Model": {
+            "Data": "MT6739",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "DUA-AL00;DUA-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30298,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "130": {
-        "Device_Model": "MSM8952",
-        "Device_Name": "CAM-AL00;CAM-TL00;CAM-TL00H",
-        "ID": 30299
+        "Device_Model": {
+            "Data": "MSM8952",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "CAM-AL00;CAM-TL00;CAM-TL00H",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30299,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "131": {
-        "Device_Model": "MSM8916",
-        "Device_Name": "OPPO A33;oppo a33m",
-        "ID": 30300
+        "Device_Model": {
+            "Data": "MSM8916",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO A33;oppo a33m",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 30300,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     }
 }

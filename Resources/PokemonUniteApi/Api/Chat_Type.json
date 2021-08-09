@@ -1,27 +1,87 @@
 {
     "0": {
-        "1392": "1",
-        "ID": 1,
-        "1621": "50"
+        "1392": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "1621": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1392": "2",
-        "ID": 1,
-        "1621": "50"
+        "1392": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "1621": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1392": "3",
-        "ID": 1,
-        "1621": "50"
+        "1392": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "1621": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1392": "4",
-        "ID": 1,
-        "1621": "50"
+        "1392": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "1621": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1392": "5",
-        "ID": 1,
-        "1621": "50"
+        "1392": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "1621": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

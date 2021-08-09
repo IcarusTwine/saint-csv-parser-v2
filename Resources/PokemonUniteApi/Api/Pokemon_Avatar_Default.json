@@ -1,222 +1,910 @@
 {
     "0": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 1,
-        "Icon": "t_Pokemon_Venusaur.png",
-        "Pref": "pref_char_bat_000300_venusaur",
-        "Dex_No[1]": 1
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 1,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Venusaur.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_000300_venusaur",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 1,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 4,
-        "Icon": "t_Pokemon_Charizard.png",
-        "Pref": "pref_char_bat_000600_charizard",
-        "Dex_No[1]": 4
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 4,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Charizard.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_000600_charizard",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 4,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 7,
-        "Icon": "t_Pokemon_Blastoise.png",
-        "Pref": "pref_char_bat_000900_blastoise",
-        "Dex_No[1]": 7
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 7,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Blastoise.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_000900_blastoise",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 7,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 25,
-        "Icon": "t_Pokemon_Pikachu.png",
-        "Pref": "pref_char_bat_002500_pikachu",
-        "Dex_No[1]": 25
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 25,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Pikachu.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_002500_pikachu",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 25,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 37,
-        "Icon": "t_Pokemon_Ninetales.png",
-        "Pref": "pref_char_bat_003800_ninetales",
-        "Dex_No[1]": 37
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 37,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Ninetales.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_003800_ninetales",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 37,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 39,
-        "Icon": "t_Pokemon_Wigglytuff.png",
-        "Pref": "pref_char_bat_004000_wigglytuff",
-        "Dex_No[1]": 39
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 39,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Wigglytuff.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_004000_wigglytuff",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 39,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 66,
-        "Icon": "t_Pokemon_Machamp.png",
-        "Pref": "pref_char_bat_006800_machamp",
-        "Dex_No[1]": 66
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 66,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Machamp.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_006800_machamp",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 66,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 79,
-        "Icon": "t_Pokemon_Slowbro.png",
-        "Pref": "pref_char_bat_008000_slowbro",
-        "Dex_No[1]": 79
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 79,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Slowbro.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_008000_slowbro",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 79,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 92,
-        "Icon": "t_Pokemon_Gengar.png",
-        "Pref": "pref_char_bat_009400_gengar",
-        "Dex_No[1]": 92
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 92,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Gengar.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_009400_gengar",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 92,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 122,
-        "Icon": "t_Pokemon_MrMime.png",
-        "Pref": "pref_char_bat_012200_mrmime",
-        "Dex_No[1]": 122
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 122,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_MrMime.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_012200_mrmime",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 122,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 143,
-        "Icon": "t_Pokemon_Snorlax.png",
-        "Pref": "pref_char_bat_014300_snorlax",
-        "Dex_No[1]": 143
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 143,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Snorlax.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_014300_snorlax",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 143,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 280,
-        "Icon": "t_Pokemon_Gardevoir.png",
-        "Pref": "pref_char_bat_028200_gardevoir",
-        "Dex_No[1]": 280
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 280,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Gardevoir.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_028200_gardevoir",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 280,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 359,
-        "Icon": "t_Pokemon_Absol.png",
-        "Pref": "pref_char_bat_035900_Absol",
-        "Dex_No[1]": 359
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 359,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Absol.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_035900_Absol",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 359,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 443,
-        "Icon": "t_Pokemon_Garchomp.png",
-        "Pref": "pref_char_bat_044500_garchomp",
-        "Dex_No[1]": 443
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 443,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Garchomp.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_044500_garchomp",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 443,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 448,
-        "Icon": "t_Pokemon_Lucario.png",
-        "Pref": "pref_char_bat_044800_lucario",
-        "Dex_No[1]": 448
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 448,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Lucario.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_044800_lucario",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 448,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "Name": "默认装扮",
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 557,
-        "Icon": "t_Pokemon_Crustle.png",
-        "Pref": "pref_char_bat_055800_crustle",
-        "Dex_No[1]": 557
+        "Name": {
+            "Data": "默认装扮",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 557,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Crustle.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_055800_crustle",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 557,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 656,
-        "Icon": "t_Pokemon_Greninja.png",
-        "Pref": "pref_char_bat_065800_greninja",
-        "Dex_No[1]": 656
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 656,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Greninja.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_065800_greninja",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 656,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 661,
-        "Icon": "t_Pokemon_Talonflame.png",
-        "Pref": "pref_char_bat_066300_talonflame",
-        "Dex_No[1]": 661
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 661,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Talonflame.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_066300_talonflame",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 661,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 807,
-        "Icon": "t_Pokemon_Zeraora.png",
-        "Pref": "pref_char_bat_080700_zeraora",
-        "Dex_No[1]": 807
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 807,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Zeraora.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_080700_zeraora",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 807,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 829,
-        "Icon": "t_Pokemon_Eldegoss.png",
-        "Pref": "pref_char_bat_083000_eldegoss",
-        "Dex_No[1]": 829
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 829,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Eldegoss.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_083000_eldegoss",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 829,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "Name": "默认装扮",
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 813,
-        "Icon": "t_Pokemon_Cinderace.png",
-        "Pref": "pref_char_bat_081500_cinderace",
-        "Dex_No[1]": 813
+        "Name": {
+            "Data": "默认装扮",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 813,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Cinderace.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_081500_cinderace",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 813,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "Name": "默认装扮",
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 25,
-        "Icon": "t_Pokemon_Pikachu.png",
-        "Pref": "pref_char_bat_002500_pikachu",
-        "Dex_No[1]": 820
+        "Name": {
+            "Data": "默认装扮",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 25,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Pikachu.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_002500_pikachu",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 820,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "Name": "默认装扮",
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 845,
-        "Icon": "t_Pokemon_Cramorant.png",
-        "Pref": "pref_char_bat_084500_cramorant",
-        "Dex_No[1]": 845
+        "Name": {
+            "Data": "默认装扮",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 845,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Cramorant.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_084500_cramorant",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 845,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1340": "0,0,0,0",
-        "1391": "0",
-        "1422": "1",
-        "Dex_No[0]": 37,
-        "Icon": "t_Pokemon_Ninetales.png",
-        "Pref": "pref_char_bat_070000_sylveon",
-        "Dex_No[1]": 700
+        "1340": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1391": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1422": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Dex_No[0]": {
+            "Data": 37,
+            "Type": "Number",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_Pokemon_Ninetales.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "Pref": {
+            "Data": "pref_char_bat_070000_sylveon",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Dex_No[1]": {
+            "Data": 700,
+            "Type": "Number",
+            "Link": "undefined"
+        }
     }
 }

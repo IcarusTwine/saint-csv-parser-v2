@@ -1,7 +1,19 @@
 {
     "0": {
-        "1426": "Kirin970",
-        "1713": "ALP-AL00;ALP-TL00",
-        "1833": "163"
+        "1426": {
+            "Data": "Kirin970",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1713": {
+            "Data": "ALP-AL00;ALP-TL00",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1833": {
+            "Data": "163",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

@@ -1,32 +1,104 @@
 {
     "0": {
-        "1365": "6",
-        "1524": "1",
-        "1763": "99999"
+        "1365": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1524": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1763": {
+            "Data": "99999",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1365": "5",
-        "1524": "2",
-        "1763": "99999"
+        "1365": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1524": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1763": {
+            "Data": "99999",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1365": "4",
-        "1524": "3",
-        "1763": "99999"
+        "1365": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1524": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1763": {
+            "Data": "99999",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1365": "3",
-        "1524": "4",
-        "1763": "99999"
+        "1365": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1524": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1763": {
+            "Data": "99999",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1365": "2",
-        "1524": "5",
-        "1763": "0"
+        "1365": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1524": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1763": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1365": "1",
-        "1524": "6",
-        "1763": "0"
+        "1365": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1524": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1763": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

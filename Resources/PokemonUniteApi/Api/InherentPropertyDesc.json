@@ -1,147 +1,535 @@
 {
     "0": {
-        "Stat": "最大体力",
-        "1469": "1",
-        "ID": 1,
-        "Description": "最大体力+{0}"
+        "Stat": {
+            "Data": "最大体力",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "最大体力+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "Stat": "体力回复",
-        "1469": "1",
-        "ID": 2,
-        "Description": "体力回复+{0}"
+        "Stat": {
+            "Data": "体力回复",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "体力回复+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "Stat": "攻击",
-        "1469": "1",
-        "ID": 3,
-        "Description": "攻击+{0}"
+        "Stat": {
+            "Data": "攻击",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "攻击+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "Stat": "防御",
-        "1469": "1",
-        "ID": 4,
-        "Description": "防御+{0}"
+        "Stat": {
+            "Data": "防御",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "防御+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "Stat": "特攻",
-        "1469": "1",
-        "ID": 5,
-        "Description": "特攻+{0}"
+        "Stat": {
+            "Data": "特攻",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "特攻+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "Stat": "特防",
-        "1469": "1",
-        "ID": 6,
-        "Description": "特防+{0}"
+        "Stat": {
+            "Data": "特防",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "特防+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "Stat": "攻击速度",
-        "1469": "100",
-        "ID": 7,
-        "Description": "攻击速度+{0}%%"
+        "Stat": {
+            "Data": "攻击速度",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "攻击速度+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "Stat": "移动速度",
-        "1469": "10",
-        "ID": 8,
-        "1660": "1",
-        "Description": "移动速度+{0}"
+        "Stat": {
+            "Data": "移动速度",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "1660": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "移动速度+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "Stat": "伤害免疫率",
-        "1469": "100",
-        "ID": 9,
-        "Description": "减少伤害率+{0}%%"
+        "Stat": {
+            "Data": "伤害免疫率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "减少伤害率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "Stat": "提供额能量比率",
-        "1469": "100",
-        "ID": 10,
-        "Description": "提供能量比率+{0}%%"
+        "Stat": {
+            "Data": "提供额能量比率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "提供能量比率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "Stat": "普攻物理吸血率",
-        "1469": "100",
-        "ID": 11,
-        "Description": "攻击吸取率+{0}%%"
+        "Stat": {
+            "Data": "普攻物理吸血率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "攻击吸取率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "Stat": "攻击减少伤害率",
-        "1469": "100",
-        "ID": 12,
-        "Description": "减少攻击伤害率+{0}%%"
+        "Stat": {
+            "Data": "攻击减少伤害率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "减少攻击伤害率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "Stat": "特攻减少伤害率",
-        "1469": "100",
-        "ID": 13,
-        "Description": "减少特攻伤害率+{0}%%"
+        "Stat": {
+            "Data": "特攻减少伤害率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "减少特攻伤害率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "Stat": "击中要害率",
-        "1469": "100",
-        "ID": 14,
-        "Description": "击中要害率+{0}%%"
+        "Stat": {
+            "Data": "击中要害率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "击中要害率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "Stat": "击中要害增伤",
-        "1469": "1",
-        "ID": 15,
-        "Description": "击中要害增伤+{0}"
+        "Stat": {
+            "Data": "击中要害增伤",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 15,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "击中要害增伤+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "Stat": "【EX】韧性",
-        "1469": "100",
-        "ID": 16,
-        "Description": "【EX】韧性+{0}"
+        "Stat": {
+            "Data": "【EX】韧性",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 16,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "【EX】韧性+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "Stat": "等待时间缩减",
-        "1469": "100",
-        "ID": 17,
-        "Description": "等待时间缩减+{0}%%"
+        "Stat": {
+            "Data": "等待时间缩减",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 17,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "等待时间缩减+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "Stat": "造成治疗效果",
-        "1469": "100",
-        "ID": 18,
-        "Description": "造成回复效果+{0}%%"
+        "Stat": {
+            "Data": "造成治疗效果",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 18,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "造成回复效果+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "Stat": "受到治疗效果",
-        "1469": "100",
-        "ID": 19,
-        "Description": "受到回复效果+{0}%%"
+        "Stat": {
+            "Data": "受到治疗效果",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 19,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "受到回复效果+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "Stat": "伤害增加",
-        "1469": "100",
-        "ID": 20,
-        "Description": "伤害增加+{0}%%"
+        "Stat": {
+            "Data": "伤害增加",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "伤害增加+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "Stat": "攻击穿透",
-        "1469": "1",
-        "ID": 21,
-        "Description": "攻击穿透+{0}"
+        "Stat": {
+            "Data": "攻击穿透",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 21,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "攻击穿透+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "Stat": "攻击穿透率",
-        "1469": "100",
-        "ID": 22,
-        "Description": "攻击穿透率+{0}%%"
+        "Stat": {
+            "Data": "攻击穿透率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 22,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "攻击穿透率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "Stat": "特攻穿透",
-        "1469": "1",
-        "ID": 23,
-        "Description": "特攻穿透+{0}"
+        "Stat": {
+            "Data": "特攻穿透",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 23,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "特攻穿透+{0}",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "Stat": "特攻穿透率",
-        "1469": "100",
-        "ID": 24,
-        "Description": "特攻穿透率+{0}%%"
+        "Stat": {
+            "Data": "特攻穿透率",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1469": {
+            "Data": "100",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 24,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "特攻穿透率+{0}%%",
+            "Type": "String",
+            "Link": "undefined"
+        }
     }
 }

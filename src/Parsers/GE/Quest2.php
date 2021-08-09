@@ -344,6 +344,7 @@ class Quest2 implements ParseInterface
         $CSVData["BadNames"] = $BadNames;
         $IconArray = [];
         $UndefinedArray = [];
+        $QuestOutputNPCS = "";
         $this->io->progressStart($QuestCsv->total);
         foreach ($QuestCsv->data as $id => $Quest) {
             $this->io->progressAdvance();
@@ -357,7 +358,7 @@ class Quest2 implements ParseInterface
             $LuaRewards = [];
             $ItemArrayNames = [];
             //if (($id < 69590) || ($id > 69592)) continue; // next event
-            //if ($id != 65594) continue;
+            //if ($id != 69576) continue;
             $Addon = "";
             if (isset($QuestAdditions[$id])){
                 $Addon = $QuestAdditions[$id];
@@ -423,6 +424,20 @@ class Quest2 implements ParseInterface
             //$this->saveExtra("_ToDo.json",json_encode($ToDoArray,JSON_PRETTY_PRINT));
 
             $NPCSubPagesArray = [];
+            if (!empty($Quest["Target{Start}"])){
+                if ($Quest["Issuer{Start}"] < 2000000){
+                    $FirstNpcName = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames);
+                    $FirstNpcName = $NpcNamefnc["Name"];
+                    if ($NpcNamefnc["IsEnglish"] != false){
+                        $NPCSubPagesArray[] = "{{QuestNPC|Name=$FirstNpcName|ID=". $Quest["Issuer{Start}"] ."|Quest=". $QuestName ."}}";
+                    }
+                }
+                if ($Quest["Issuer{Start}"] < 2000000){
+                    $NpcsInvolved[] = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)["Name"];
+                } else {
+                    $NpcsInvolved[] = $EObjNameCsv->at($Quest["Issuer{Start}"])['Singular'];
+                }
+            }
             foreach(range(0,49) as $i) {
                 $Npc = $Quest["Script{Arg}[$i]"];
                 if (($Npc > 1000000) && ($Npc < 2000000)) {
@@ -434,6 +449,23 @@ class Quest2 implements ParseInterface
                     }
                     $NpcsInvolved[] = $NpcName;
                     $NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $QuestName ."}}";
+                    if (empty($LGBArray["PlaceName"][$Npc]["PlaceName"])){
+                        $NPCSTRING ="{{-start-}}'''$NpcName/Map/$Npc'''\n{{NPCMap\n";
+                        $NPCSTRING .="    | base = CutsceneLocation.png\n";
+                        $NPCSTRING .="    | float_link = $NpcName\n";
+                        $NPCSTRING .="    | float_caption = $NpcName\n";
+                        $NPCSTRING .="    | float_caption_coordinates = (x:0.0, y:0.0)\n";
+                        $NPCSTRING .="    | x = 0\n";
+                        $NPCSTRING .="    | y = 0\n";
+                        $NPCSTRING .="    | zone = Cutscene\n";
+                        $NPCSTRING .="    | level_id = 0\n";
+                        $NPCSTRING .="    | npc_id = $Npc\n";
+                        $NPCSTRING .="    | patch = \n";
+                        $NPCSTRING .="    | Sublocation = \n";
+                        $NPCSTRING .="    | CutsceneNPC = x\n";
+                        $NPCSTRING .="  }}\n{{-stop-}}";
+                          $ListenerNPCMaps[] = $NPCSTRING;
+                    }
                 }
             }
             foreach(range(0,63) as $i) {
@@ -446,46 +478,48 @@ class Quest2 implements ParseInterface
                         continue;
                     }
                     $NpcsInvolved[] = $NpcName;
+                    if (empty($LGBArray["PlaceName"][$Npc]["PlaceName"])){
+                        $NPCSTRING ="{{-start-}}'''$NpcName/Map/$Npc'''\n{{NPCMap\n";
+                        $NPCSTRING .="    | base = CutsceneLocation.png\n";
+                        $NPCSTRING .="    | float_link = $NpcName\n";
+                        $NPCSTRING .="    | float_caption = $NpcName\n";
+                        $NPCSTRING .="    | float_caption_coordinates = (x:0.0, y:0.0)\n";
+                        $NPCSTRING .="    | x = 0\n";
+                        $NPCSTRING .="    | y = 0\n";
+                        $NPCSTRING .="    | zone = Cutscene\n";
+                        $NPCSTRING .="    | level_id = 0\n";
+                        $NPCSTRING .="    | npc_id = $Npc\n";
+                        $NPCSTRING .="    | patch = \n";
+                        $NPCSTRING .="    | Sublocation = \n";
+                        $NPCSTRING .="    | CutsceneNPC = x\n";
+                        $NPCSTRING .="  }}\n{{-stop-}}";
+                          $ListenerNPCMaps[] = $NPCSTRING;
+                    }
                     //$NPCSubPagesArray[] = "{{QuestNPC|Name=$NpcName|ID=". $Npc ."|Quest=". $Quest['Name'] ."}}";
                 }
             }
-            if (!empty($Quest["Target{End}"])){
-                if ($Quest["Target{End}"] < 2000000){
-                    $lastnpc = array_key_last($NPCSubPagesArray);
-                    $NpcNamefnc = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames);
-                    //var_dump($NpcNamefnc["Name"]);
-                    if ($NpcNamefnc["IsEnglish"] != false){
-                        $FinalNpcName = $NpcNamefnc["Name"];
-                        $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $QuestName ."}}";
-                        if (!empty($NPCSubPagesArray[$lastnpc])){
-                            if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
-                                $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
-                                $NpcsInvolved[] = $FinalNpcName;
-                            }else {
-                                $NPCSubPagesArray[] = str_replace("}}","|Questend=True}}",$EndNPC);
-                            }
+            if ($Quest["Target{End}"] < 2000000){
+                $lastnpc = array_key_last($NPCSubPagesArray);
+                $NpcNamefnc = $this->NameFormat($Quest["Target{End}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Target{End}"]], $LGBArray, $BadNames);
+                //var_dump($NpcNamefnc["Name"]);
+                if ($NpcNamefnc["IsEnglish"] != false){
+                    $FinalNpcName = $NpcNamefnc["Name"];
+                    $EndNPC = "{{QuestNPC|Name=$FinalNpcName|ID=". $Quest["Target{End}"] ."|Quest=". $QuestName ."}}";
+                    if (!empty($NPCSubPagesArray[$lastnpc])){
+                        if ($EndNPC === $NPCSubPagesArray[$lastnpc]){
+                            $NPCSubPagesArray[$lastnpc] = str_replace("}}","|Questend=True}}",$EndNPC);
+                            $NpcsInvolved[] = $FinalNpcName;
+                        }else {
+                            $NPCSubPagesArray[] = str_replace("}}","|Questend=True}}",$EndNPC);
                         }
                     }
-                }
-                if ($Quest["Issuer{Start}"] < 2000000){
-                    if (!empty($NPCSubPagesArray)){
-                        $firstnpc = $NPCSubPagesArray[0];
-                        $FirstNpcName = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames);
-                        $FirstNpcName = $NpcNamefnc["Name"];
-                        if ($NpcNamefnc["IsEnglish"] != false){
-                            $FirstNPC = "{{QuestNPC|Name=$FirstNpcName|ID=". $Quest["Issuer{Start}"] ."|Quest=". $QuestName ."}}";
-                            if ($firstnpc != $FirstNPC){
-                                array_unshift($NPCSubPagesArray,$FirstNPC);
-                            }
-                        }
-                    }
-                }
-                if ($Quest["Issuer{Start}"] < 2000000){
-                    $NpcsInvolved[] = $this->NameFormat($Quest["Issuer{Start}"], $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$Quest["Issuer{Start}"]], $LGBArray, $BadNames)["Name"];
-                } else {
-                    $NpcsInvolved[] = $EObjNameCsv->at($Quest["Issuer{Start}"])['Singular'];
                 }
             }
+                                
+            $QuestOutputNPCS .= "{{-start-}}\n";
+            $QuestOutputNPCS .= "'''".$Quest["Name"]."$Addon/NPCs'''\n";
+            $QuestOutputNPCS .= implode("\n",$NPCSubPagesArray)."\n";
+            $QuestOutputNPCS .= "{{-stop-}}\n";
             //make small map
             $NPCStartId = "|Issuing NPC Map = ".$Quest["Issuer{Start}"];
             $x = $LevelCsv->at($Quest["Issuer{Location}"])['X'];
@@ -1354,6 +1388,8 @@ class Quest2 implements ParseInterface
                 }
             }
         }
+        $ListenerMaps = implode("\n\n",$ListenerNPCMaps);
+        $this->saveExtra("_Questnpcfix.txt",$QuestOutputNPCS);
         $data = GeFormatter::format(self::WIKI_FORMAT, [
             '{QuestOutput}'  => $FinalOut,
         ]);

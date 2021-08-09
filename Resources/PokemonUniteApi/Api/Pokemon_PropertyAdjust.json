@@ -1,8 +1,24 @@
 {
     "0": {
-        "1293": "1",
-        "1306": "0",
-        "1822": "1",
-        "1863": "2"
+        "1293": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1306": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1863": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

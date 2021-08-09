@@ -1,6 +1,14 @@
 {
     "0": {
-        "1306": "databin_ServerSyncByteList",
-        "1768": "1"
+        "1306": {
+            "Data": "databin_ServerSyncByteList",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

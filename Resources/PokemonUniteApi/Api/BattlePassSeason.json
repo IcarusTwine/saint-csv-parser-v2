@@ -1,392 +1,972 @@
 {
     "0": {
-        "1252": "120",
-        "1345": "500",
-        "1426": "0",
-        "1541": "3",
-        "1600": "1200",
-        "1606": "0",
-        "1613": "1",
-        "1633": "3",
-        "1674": "1",
-        "1679": "0",
-        "1737": "3000",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "500",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "1200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】上半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】上半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "1. Fashionable Style: Pikachu\\n2. Vivid Set\\n3. Sporty Set\\n4. Pikachu Set\\n5. Sacred Style: Alolan Ninetales\\n6. A lot of Aeos tickets and item enhancers",
-            "chs": "1、装扮风格皮卡丘\\n2、动感套装\\n3、田径套装\\n4、皮卡丘套装\\n5、神圣风格阿罗拉九尾\\n6、大量亿奥斯券和亿奥斯电池\r",
-            "cht": "\r",
-            "de": "",
-            "es": "1) Pikachu Elegante\\n2) Conjunto Dinámico\\n3) Conjunto Atleta\\n4) Conjunto Pikachu\\n5) Ninetales de Alola Sagrado\\n6) Cupones Æos y fichas potenciadoras a raudales",
-            "fr": "",
-            "it": "",
-            "jp": "1、おめかしスタイルピカチュウ\\n2、ビビッドセット\\n3、アスリートセット\\n4、ピカチュウセット\\n5、しんせいスタイルアローラキュウコン\\n6、大量のエオスチケット＆もちものきょうかキット\\n",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "1. Fashionable Style: Pikachu\\n2. Vivid Set\\n3. Sporty Set\\n4. Pikachu Set\\n5. Sacred Style: Alolan Ninetales\\n6. A lot of Aeos tickets and item enhancers",
+                "chs": "1、装扮风格皮卡丘\\n2、动感套装\\n3、田径套装\\n4、皮卡丘套装\\n5、神圣风格阿罗拉九尾\\n6、大量亿奥斯券和亿奥斯电池\r",
+                "cht": "\r",
+                "de": "",
+                "es": "1) Pikachu Elegante\\n2) Conjunto Dinámico\\n3) Conjunto Atleta\\n4) Conjunto Pikachu\\n5) Ninetales de Alola Sagrado\\n6) Cupones Æos y fichas potenciadoras a raudales",
+                "fr": "",
+                "it": "",
+                "jp": "1、おめかしスタイルピカチュウ\\n2、ビビッドセット\\n3、アスリートセット\\n4、ピカチュウセット\\n5、しんせいスタイルアローラキュウコン\\n6、大量のエオスチケット＆もちものきょうかキット\\n",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "3"
+        "1853": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1252": "120",
-        "1345": "500",
-        "1426": "0",
-        "1541": "3",
-        "1600": "1200",
-        "1606": "0",
-        "1613": "1",
-        "1633": "3",
-        "1674": "2",
-        "1679": "0",
-        "1737": "3000",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "500",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "1200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】下半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】下半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "",
-            "chs": "【EX】1、这是一个A物品\\n2、这是一个B物品\\n3、这是一个C物品\\n4、这是一个D物品\\n5、这是一个E物品\\n6、这是一个F物品\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】1、这是一个A物品\\n2、这是一个B物品\\n3、这是一个C物品\\n4、这是一个D物品\\n5、这是一个E物品\\n6、这是一个F物品\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "3"
+        "1853": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1252": "120",
-        "1345": "500",
-        "1426": "0",
-        "1541": "3",
-        "1600": "1200",
-        "1606": "0",
-        "1613": "2",
-        "1633": "3",
-        "1674": "3",
-        "1679": "0",
-        "1737": "3000",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "500",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "1200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】上半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】上半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "",
-            "chs": "【EX】1、这是一个A物品\\n2、这是一个B物品\\n3、这是一个C物品\\n4、这是一个D物品\\n5、这是一个E物品\\n6、这是一个F物品\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】1、这是一个A物品\\n2、这是一个B物品\\n3、这是一个C物品\\n4、这是一个D物品\\n5、这是一个E物品\\n6、这是一个F物品\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "3"
+        "1853": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1252": "120",
-        "1345": "500",
-        "1426": "0",
-        "1541": "3",
-        "1600": "1200",
-        "1606": "0",
-        "1613": "2",
-        "1633": "3",
-        "1674": "4",
-        "1679": "0",
-        "1737": "3000",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "500",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "1200",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "3000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】下半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】下半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "",
-            "chs": "【EX】1、这是一个A物品\\n2、这是一个B物品\\n3、这是一个C物品\\n4、这是一个D物品\\n5、这是一个E物品\\n6、这是一个F物品\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】1、这是一个A物品\\n2、这是一个B物品\\n3、这是一个C物品\\n4、这是一个D物品\\n5、这是一个E物品\\n6、这是一个F物品\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "3"
+        "1853": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1252": "120",
-        "1345": "490",
-        "1426": "0",
-        "1541": "3",
-        "1600": "640",
-        "1606": "0",
-        "1613": "3",
-        "1633": "3",
-        "1674": "5",
-        "1679": "0",
-        "1737": "680",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "490",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "640",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "680",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】上半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】上半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "",
-            "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "3"
+        "1853": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1252": "120",
-        "1345": "490",
-        "1426": "0",
-        "1541": "3",
-        "1600": "640",
-        "1606": "0",
-        "1613": "3",
-        "1633": "3",
-        "1674": "6",
-        "1679": "0",
-        "1737": "680",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "490",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "640",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "680",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】下半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】下半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "",
-            "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "10"
+        "1853": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1252": "120",
-        "1345": "490",
-        "1426": "0",
-        "1541": "3",
-        "1600": "640",
-        "1606": "0",
-        "1613": "1",
-        "1633": "3",
-        "1674": "7",
-        "1679": "0",
-        "1737": "680",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "490",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "640",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "680",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】上半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】上半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "",
-            "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "10"
+        "1853": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1252": "120",
-        "1345": "490",
-        "1426": "0",
-        "1541": "3",
-        "1600": "640",
-        "1606": "0",
-        "1613": "1",
-        "1633": "3",
-        "1674": "8",
-        "1679": "0",
-        "1737": "680",
-        "1744": "10",
+        "1252": {
+            "Data": "120",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "490",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "640",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "680",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "",
-            "chs": "【EX】上半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】上半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "",
-            "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
-            "cht": "\r",
-            "de": "",
-            "es": "",
-            "fr": "",
-            "it": "",
-            "jp": "",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "",
+                "chs": "【EX】1、整备服套装\\n2、连帽外套（蓝色）\\n3、蛋壳双肩包（白色）\\n4、印花T恤（黑色）\\n5、大量亿奥斯币和亿奥斯券\r",
+                "cht": "\r",
+                "de": "",
+                "es": "",
+                "fr": "",
+                "it": "",
+                "jp": "",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "10"
+        "1853": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1252": "150",
-        "1345": "490",
-        "1426": "0",
-        "1541": "3",
-        "1600": "840",
-        "1606": "0",
-        "1613": "1",
-        "1633": "3",
-        "1674": "9",
-        "1679": "0",
-        "1737": "985",
-        "1744": "15",
+        "1252": {
+            "Data": "150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "490",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "840",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "985",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "Season Second-Half Match",
-            "chs": "下半赛季\r",
-            "cht": "\r",
-            "de": "",
-            "es": "2.ª mitad",
-            "fr": "",
-            "it": "",
-            "jp": "シーズン後半戦",
-            "ko": "시즌 후반전",
-            "tc": "\r"
+            "Data": {
+                "en": "Season Second-Half Match",
+                "chs": "下半赛季\r",
+                "cht": "\r",
+                "de": "",
+                "es": "2.ª mitad",
+                "fr": "",
+                "it": "",
+                "jp": "シーズン後半戦",
+                "ko": "시즌 후반전"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "1. Fashionable Style: Pikachu\\n2. Vivid Set\\n3. Sporty Set\\n4. Pikachu Set\\n5. Sacred Style: Alolan Ninetales\\n6. A lot of Aeos tickets and item enhancers",
-            "chs": "1、装扮风格皮卡丘\\n2、动感套装\\n3、田径套装\\n4、皮卡丘套装\\n5、神圣风格阿罗拉九尾\\n6、大量亿奥斯券和亿奥斯电池\r",
-            "cht": "\r",
-            "de": "",
-            "es": "1) Pikachu Elegante\\n2) Conjunto Dinámico\\n3) Conjunto Atleta\\n4) Conjunto Pikachu\\n5) Ninetales de Alola Sagrado\\n6) Cupones Æos y fichas potenciadoras a raudales",
-            "fr": "",
-            "it": "",
-            "jp": "1、おめかしスタイルピカチュウ\\n2、ビビッドセット\\n3、アスリートセット\\n4、ピカチュウセット\\n5、しんせいスタイルアローラキュウコン\\n6、大量のエオスチケット＆もちものきょうかキット\\n",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "1. Fashionable Style: Pikachu\\n2. Vivid Set\\n3. Sporty Set\\n4. Pikachu Set\\n5. Sacred Style: Alolan Ninetales\\n6. A lot of Aeos tickets and item enhancers",
+                "chs": "1、装扮风格皮卡丘\\n2、动感套装\\n3、田径套装\\n4、皮卡丘套装\\n5、神圣风格阿罗拉九尾\\n6、大量亿奥斯券和亿奥斯电池\r",
+                "cht": "\r",
+                "de": "",
+                "es": "1) Pikachu Elegante\\n2) Conjunto Dinámico\\n3) Conjunto Atleta\\n4) Conjunto Pikachu\\n5) Ninetales de Alola Sagrado\\n6) Cupones Æos y fichas potenciadoras a raudales",
+                "fr": "",
+                "it": "",
+                "jp": "1、おめかしスタイルピカチュウ\\n2、ビビッドセット\\n3、アスリートセット\\n4、ピカチュウセット\\n5、しんせいスタイルアローラキュウコン\\n6、大量のエオスチケット＆もちものきょうかキット\\n",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "10"
+        "1853": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1252": "150",
-        "1345": "490",
-        "1426": "0",
-        "1541": "3",
-        "1600": "840",
-        "1606": "0",
-        "1613": "1",
-        "1633": "3",
-        "1674": "10",
-        "1679": "0",
-        "1737": "985",
-        "1744": "15",
+        "1252": {
+            "Data": "150",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1345": {
+            "Data": "490",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1426": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1541": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1600": {
+            "Data": "840",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1606": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1613": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1633": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1674": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1679": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1737": {
+            "Data": "985",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1744": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
         "Announce": {
-            "en": "Season First Half",
-            "chs": "上半赛季\r",
-            "cht": "\r",
-            "de": "1. Hälfte der Saison",
-            "es": "Primera parte de la temporada",
-            "fr": "Première moitié de saison",
-            "it": "Prima metà stagione",
-            "jp": "シーズン前半戦",
-            "ko": "시즌 전반전",
-            "tc": "\r"
+            "Data": {
+                "en": "Season First Half",
+                "chs": "上半赛季\r",
+                "cht": "\r",
+                "de": "1. Hälfte der Saison",
+                "es": "Primera parte de la temporada",
+                "fr": "Première moitié de saison",
+                "it": "Prima metà stagione",
+                "jp": "シーズン前半戦",
+                "ko": "시즌 전반전"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
         "Description": {
-            "en": "1. Fashionable Style: Pikachu\\n2. Vivid Set\\n3. Sporty Set\\n4. Pikachu Set\\n5. Sacred Style: Alolan Ninetales\\n6. A lot of Aeos tickets and item enhancers",
-            "chs": "1、装扮风格皮卡丘\\n2、动感套装\\n3、田径套装\\n4、皮卡丘套装\\n5、神圣风格阿罗拉九尾\\n6、大量亿奥斯券和亿奥斯电池\r",
-            "cht": "\r",
-            "de": "",
-            "es": "1) Pikachu Elegante\\n2) Conjunto Dinámico\\n3) Conjunto Atleta\\n4) Conjunto Pikachu\\n5) Ninetales de Alola Sagrado\\n6) Cupones Æos y fichas potenciadoras a raudales",
-            "fr": "",
-            "it": "",
-            "jp": "1、おめかしスタイルピカチュウ\\n2、ビビッドセット\\n3、アスリートセット\\n4、ピカチュウセット\\n5、しんせいスタイルアローラキュウコン\\n6、大量のエオスチケット＆もちものきょうかキット\\n",
-            "ko": "",
-            "tc": "\r"
+            "Data": {
+                "en": "1. Fashionable Style: Pikachu\\n2. Vivid Set\\n3. Sporty Set\\n4. Pikachu Set\\n5. Sacred Style: Alolan Ninetales\\n6. A lot of Aeos tickets and item enhancers",
+                "chs": "1、装扮风格皮卡丘\\n2、动感套装\\n3、田径套装\\n4、皮卡丘套装\\n5、神圣风格阿罗拉九尾\\n6、大量亿奥斯券和亿奥斯电池\r",
+                "cht": "\r",
+                "de": "",
+                "es": "1) Pikachu Elegante\\n2) Conjunto Dinámico\\n3) Conjunto Atleta\\n4) Conjunto Pikachu\\n5) Ninetales de Alola Sagrado\\n6) Cupones Æos y fichas potenciadoras a raudales",
+                "fr": "",
+                "it": "",
+                "jp": "1、おめかしスタイルピカチュウ\\n2、ビビッドセット\\n3、アスリートセット\\n4、ピカチュウセット\\n5、しんせいスタイルアローラキュウコン\\n6、大量のエオスチケット＆もちものきょうかキット\\n",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
         },
-        "1853": "10"
+        "1853": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

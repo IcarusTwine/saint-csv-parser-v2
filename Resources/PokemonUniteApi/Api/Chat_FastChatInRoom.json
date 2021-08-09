@@ -1,34 +1,98 @@
 {
     "0": {
-        "Message": "大家多多指教啦",
-        "ID": 1
+        "Message": {
+            "Data": "大家多多指教啦",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "Message": "我想去地图中间",
-        "ID": 2
+        "Message": {
+            "Data": "我想去地图中间",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "Message": "我想去地图上路",
-        "ID": 3
+        "Message": {
+            "Data": "我想去地图上路",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "Message": "我想去地图下路",
-        "ID": 4
+        "Message": {
+            "Data": "我想去地图下路",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "Message": "多发信号交流",
-        "ID": 5
+        "Message": {
+            "Data": "多发信号交流",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "Message": "稍等下，我拉个朋友进来一起玩。",
-        "ID": 6
+        "Message": {
+            "Data": "稍等下，我拉个朋友进来一起玩。",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "Message": "还有谁的朋友想来的嘛，没的话就开始了。",
-        "ID": 7
+        "Message": {
+            "Data": "还有谁的朋友想来的嘛，没的话就开始了。",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "Message": "大家记得互相加好友哟！",
-        "ID": 8
+        "Message": {
+            "Data": "大家记得互相加好友哟！",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     }
 }

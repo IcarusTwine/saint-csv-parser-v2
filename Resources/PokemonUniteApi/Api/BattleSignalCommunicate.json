@@ -1,1230 +1,3227 @@
 {
     "0": {
-        "1337": "1,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "1",
-        "1491": "1",
-        "1545": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "{0} ready in {1} second(s)!",
-            "chs": "{0}等待时间剩余{1}秒！\r",
-            "cht": "\r",
-            "de": "{0} ist in {1} Sek. bereit!",
-            "es": "¡{0} necesita {1} s!",
-            "fr": "{0} sera disponible dans {1} sec. !",
-            "it": "{0} sarà disponibile tra {1} s!",
-            "jp": "{0}、あと{1}秒！",
-            "ko": "{0} 앞으로 {1}초!",
-            "tc": "\r"
+        "1337": {
+            "Data": "1,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "1"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "{0} ready in {1} second(s)!",
+                "chs": "{0}等待时间剩余{1}秒！\r",
+                "cht": "\r",
+                "de": "{0} ist in {1} Sek. bereit!",
+                "es": "¡{0} necesita {1} s!",
+                "fr": "{0} sera disponible dans {1} sec. !",
+                "it": "{0} sarà disponibile tra {1} s!",
+                "jp": "{0}、あと{1}秒！",
+                "ko": "{0} 앞으로 {1}초!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1337": "3,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "1",
-        "1491": "1",
-        "1545": "1",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "{0} is ready to go!",
-            "chs": "{0}准备就绪！\r",
-            "cht": "\r",
-            "de": "{0} ist bereit!",
-            "es": "¡{0} está disponible!",
-            "fr": "{0} est disponible !",
-            "it": "{0} è disponibile!",
-            "jp": "{0}準備OK！",
-            "ko": "{0} 준비 OK!",
-            "tc": "\r"
+        "1337": {
+            "Data": "3,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "2"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "{0} is ready to go!",
+                "chs": "{0}准备就绪！\r",
+                "cht": "\r",
+                "de": "{0} ist bereit!",
+                "es": "¡{0} está disponible!",
+                "fr": "{0} est disponible !",
+                "it": "{0} è disponibile!",
+                "jp": "{0}準備OK！",
+                "ko": "{0} 준비 OK!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1337": "1,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "1",
-        "1491": "1",
-        "1545": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "{0} ready in {1} second(s)!",
-            "chs": "{0}等待时间剩余{1}秒！\r",
-            "cht": "\r",
-            "de": "{0} ist in {1} Sek. bereit!",
-            "es": "¡{0} necesita {1} s!",
-            "fr": "{0} sera disponible dans {1} sec. !",
-            "it": "{0} sarà disponibile tra {1} s!",
-            "jp": "{0}、あと{1}秒！",
-            "ko": "{0} 앞으로 {1}초!",
-            "tc": "\r"
+        "1337": {
+            "Data": "1,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "1,0",
-        "1822": "3"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "{0} ready in {1} second(s)!",
+                "chs": "{0}等待时间剩余{1}秒！\r",
+                "cht": "\r",
+                "de": "{0} ist in {1} Sek. bereit!",
+                "es": "¡{0} necesita {1} s!",
+                "fr": "{0} sera disponible dans {1} sec. !",
+                "it": "{0} sarà disponibile tra {1} s!",
+                "jp": "{0}、あと{1}秒！",
+                "ko": "{0} 앞으로 {1}초!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "1,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1337": "3,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "1",
-        "1491": "1",
-        "1545": "1",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "{0} is ready to go!",
-            "chs": "{0}准备就绪！\r",
-            "cht": "\r",
-            "de": "{0} ist bereit!",
-            "es": "¡{0} está disponible!",
-            "fr": "{0} est disponible !",
-            "it": "{0} è disponibile!",
-            "jp": "{0}準備OK！",
-            "ko": "{0} 준비 OK!",
-            "tc": "\r"
+        "1337": {
+            "Data": "3,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "1,0",
-        "1822": "4"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "{0} is ready to go!",
+                "chs": "{0}准备就绪！\r",
+                "cht": "\r",
+                "de": "{0} ist bereit!",
+                "es": "¡{0} está disponible!",
+                "fr": "{0} est disponible !",
+                "it": "{0} è disponibile!",
+                "jp": "{0}準備OK！",
+                "ko": "{0} 준비 OK!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "1,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1337": "2,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "2",
-        "1491": "1",
-        "1545": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Unite Move {0}% charged!",
-            "chs": "集结招式当前充能{0}%！\r",
-            "cht": "\r",
-            "de": "Meine Unite-Attacke ist zu {0} % aufgeladen!",
-            "es": "¡Movimiento Unite al {0} %!",
-            "fr": "Ma capacité Unité est chargée à {0} % !",
-            "it": "Preparazione mossa Unite: {0}%.",
-            "jp": "ユナイトわざ、いま{0}%！",
-            "ko": "유나이트 기술, {0}% 충전!",
-            "tc": "\r"
+        "1337": {
+            "Data": "2,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "5"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Unite Move {0}% charged!",
+                "chs": "集结招式当前充能{0}%！\r",
+                "cht": "\r",
+                "de": "Meine Unite-Attacke ist zu {0} % aufgeladen!",
+                "es": "¡Movimiento Unite al {0} %!",
+                "fr": "Ma capacité Unité est chargée à {0} % !",
+                "it": "Preparazione mossa Unite: {0}%.",
+                "jp": "ユナイトわざ、いま{0}%！",
+                "ko": "유나이트 기술, {0}% 충전!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1337": "3,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "2",
-        "1491": "1",
-        "1545": "1",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Unite Move good to go!",
-            "chs": "集结招式准备就绪！\r",
-            "cht": "\r",
-            "de": "Meine Unite-Attacke ist bereit!",
-            "es": "¡Movimiento Unite listo!",
-            "fr": "Ma capacité Unité est prête !",
-            "it": "La mia mossa Unite è pronta!",
-            "jp": "ユナイトわざ準備OK！",
-            "ko": "유나이트 기술 사용 준비 완료!",
-            "tc": "\r"
+        "1337": {
+            "Data": "3,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "6"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Unite Move good to go!",
+                "chs": "集结招式准备就绪！\r",
+                "cht": "\r",
+                "de": "Meine Unite-Attacke ist bereit!",
+                "es": "¡Movimiento Unite listo!",
+                "fr": "Ma capacité Unité est prête !",
+                "it": "La mia mossa Unite è pronta!",
+                "jp": "ユナイトわざ準備OK！",
+                "ko": "유나이트 기술 사용 준비 완료!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1337": "4,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "3",
-        "1491": "1",
-        "1545": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "I need some energy!",
-            "chs": "我需要补充分数！\r",
-            "cht": "\r",
-            "de": "Ich brauche Energie!",
-            "es": "¡Necesito energía!",
-            "fr": "J'ai besoin d'énergie !",
-            "it": "Ho bisogno di energia!",
-            "jp": "エナジーが欲しい！",
-            "ko": "에너지가 필요해!",
-            "tc": "\r"
+        "1337": {
+            "Data": "4,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "7"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "I need some energy!",
+                "chs": "我需要补充分数！\r",
+                "cht": "\r",
+                "de": "Ich brauche Energie!",
+                "es": "¡Necesito energía!",
+                "fr": "J'ai besoin d'énergie !",
+                "it": "Ho bisogno di energia!",
+                "jp": "エナジーが欲しい！",
+                "ko": "에너지가 필요해!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1337": "5,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "3",
-        "1491": "1",
-        "1545": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "My Unite Ball is full! I can score a {0}-point goal!",
-            "chs": "目前携带着{0}分，已达上限！\r",
-            "cht": "\r",
-            "de": "Mein Unite-Ball ist voll! Ich kann einen {0}-Punkte-Treffer landen!",
-            "es": "¡Puedo anotar {0} puntos! ¡Mi Unite Ball está llena!",
-            "fr": "Mon Unité Ball est pleine ! Je peux marquer {0} points ! ",
-            "it": "La mia Unite Ball è piena! Posso segnare {0} punti!",
-            "jp": "{0}スコア分のエナジーを持ってるよ！ユナイトボールが満タン！",
-            "ko": "스코어 {0}만큼 에너지를 가지고 있어! 유나이트볼이 가득 찼어!",
-            "tc": "\r"
+        "1337": {
+            "Data": "5,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "8"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "My Unite Ball is full! I can score a {0}-point goal!",
+                "chs": "目前携带着{0}分，已达上限！\r",
+                "cht": "\r",
+                "de": "Mein Unite-Ball ist voll! Ich kann einen {0}-Punkte-Treffer landen!",
+                "es": "¡Puedo anotar {0} puntos! ¡Mi Unite Ball está llena!",
+                "fr": "Mon Unité Ball est pleine ! Je peux marquer {0} points ! ",
+                "it": "La mia Unite Ball è piena! Posso segnare {0} punti!",
+                "jp": "{0}スコア分のエナジーを持ってるよ！ユナイトボールが満タン！",
+                "ko": "스코어 {0}만큼 에너지를 가지고 있어! 유나이트볼이 가득 찼어!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1337": "6,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "3",
-        "1491": "1",
-        "1545": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "I can score a {0}-point goal!",
-            "chs": "目前携带着{0}分\r",
-            "cht": "\r",
-            "de": "Ich kann {0} [Grm:Qty S=\"Punkt\" P=\"Punkte\" ] erzielen!",
-            "es": "¡Puedo anotar {0} puntos!",
-            "fr": "Je peux marquer {0} points ! ",
-            "it": "Posso segnare {0} punti!",
-            "jp": "{0}スコア分のエナジーを持ってるよ！",
-            "ko": "스코어 {0}만큼 에너지를 가지고 있어!",
-            "tc": "\r"
+        "1337": {
+            "Data": "6,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "9"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "I can score a {0}-point goal!",
+                "chs": "目前携带着{0}分\r",
+                "cht": "\r",
+                "de": "Ich kann {0} [Grm:Qty S=\"Punkt\" P=\"Punkte\" ] erzielen!",
+                "es": "¡Puedo anotar {0} puntos!",
+                "fr": "Je peux marquer {0} points ! ",
+                "it": "Posso segnare {0} punti!",
+                "jp": "{0}スコア分のエナジーを持ってるよ！",
+                "ko": "스코어 {0}만큼 에너지를 가지고 있어!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1337": "1,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "15",
-        "1491": "1",
-        "1545": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "{0} ready in {1} second(s)!",
-            "chs": "{0}等待时间剩余{1}秒！\r",
-            "cht": "\r",
-            "de": "{0} ist in {1} Sek. bereit!",
-            "es": "¡{0} necesita {1} s!",
-            "fr": "{0} sera disponible dans {1} sec. !",
-            "it": "{0} sarà disponibile tra {1} s!",
-            "jp": "{0}、あと{1}秒！",
-            "ko": "{0} 앞으로 {1}초!",
-            "tc": "\r"
+        "1337": {
+            "Data": "1,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "13"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "{0} ready in {1} second(s)!",
+                "chs": "{0}等待时间剩余{1}秒！\r",
+                "cht": "\r",
+                "de": "{0} ist in {1} Sek. bereit!",
+                "es": "¡{0} necesita {1} s!",
+                "fr": "{0} sera disponible dans {1} sec. !",
+                "it": "{0} sarà disponibile tra {1} s!",
+                "jp": "{0}、あと{1}秒！",
+                "ko": "{0} 앞으로 {1}초!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1337": "3,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "15",
-        "1491": "1",
-        "1545": "1",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "{0} is ready to go!",
-            "chs": "{0}准备就绪！\r",
-            "cht": "\r",
-            "de": "{0} ist bereit!",
-            "es": "¡{0} está disponible!",
-            "fr": "{0} est disponible !",
-            "it": "{0} è disponibile!",
-            "jp": "{0}準備OK！",
-            "ko": "{0} 준비 OK!",
-            "tc": "\r"
+        "1337": {
+            "Data": "3,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "14"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "{0} is ready to go!",
+                "chs": "{0}准备就绪！\r",
+                "cht": "\r",
+                "de": "{0} ist bereit!",
+                "es": "¡{0} está disponible!",
+                "fr": "{0} est disponible !",
+                "it": "{0} è disponibile!",
+                "jp": "{0}準備OK！",
+                "ko": "{0} 준비 OK!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "14",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1545": "4",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "I need backup!",
-            "chs": "请求支援！\r",
-            "cht": "\r",
-            "de": "Ich brauche Verstärkung!",
-            "es": "¡Necesito refuerzos!",
-            "fr": "J'ai besoin d'aide !",
-            "it": "Ho bisogno di aiuto!",
-            "jp": "サポートをお願い！",
-            "ko": "지원이 필요해!",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "15"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "I need backup!",
+                "chs": "请求支援！\r",
+                "cht": "\r",
+                "de": "Ich brauche Verstärkung!",
+                "es": "¡Necesito refuerzos!",
+                "fr": "J'ai besoin d'aide !",
+                "it": "Ho bisogno di aiuto!",
+                "jp": "サポートをお願い！",
+                "ko": "지원이 필요해!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "15",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1545": "4",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Headed to the top path!",
-            "chs": "我正在向上路移动！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Voy a la ruta superior!",
-            "fr": "Je prends la voie du haut !",
-            "it": "Vado al percorso superiore!",
-            "jp": "上ルートに移動中！",
-            "ko": "위 루트로 이동하는 중!",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "16"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Headed to the top path!",
+                "chs": "我正在向上路移动！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Voy a la ruta superior!",
+                "fr": "Je prends la voie du haut !",
+                "it": "Vado al percorso superiore!",
+                "jp": "上ルートに移動中！",
+                "ko": "위 루트로 이동하는 중!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1545": "4",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Headed to the central area!",
-            "chs": "我正在向中央区域移动！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Voy a la zona central!",
-            "fr": "Je vais vers la zone centrale !",
-            "it": "Vado all'area centrale!",
-            "jp": "中央エリアに移動中！",
-            "ko": "중앙 에리어로 이동하는 중!",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "17"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Headed to the central area!",
+                "chs": "我正在向中央区域移动！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Voy a la zona central!",
+                "fr": "Je vais vers la zone centrale !",
+                "it": "Vado all'area centrale!",
+                "jp": "中央エリアに移動中！",
+                "ko": "중앙 에리어로 이동하는 중!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "17",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1545": "4",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Headed to the bottom path!",
-            "chs": "我正在向下路移动！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Voy a la ruta inferior!",
-            "fr": "Je prends la voie du bas !",
-            "it": "Vado al percorso inferiore!",
-            "jp": "下ルートに移動中！",
-            "ko": "아래 루트로 이동하는 중!",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "18"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Headed to the bottom path!",
+                "chs": "我正在向下路移动！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Voy a la ruta inferior!",
+                "fr": "Je prends la voie du bas !",
+                "it": "Vado al percorso inferiore!",
+                "jp": "下ルートに移動中！",
+                "ko": "아래 루트로 이동하는 중!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "18",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal_GoodJob",
-        "1421": "5",
-        "1545": "5",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Nice!",
-            "chs": "漂亮！\r",
-            "cht": "\r",
-            "de": "Gut gemacht!",
-            "es": "¡Toma ya!",
-            "fr": "Bien joué !",
-            "it": "Ben fatto!",
-            "jp": "ナイス！",
-            "ko": "좋았어!",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "19"
+        "UI": {
+            "Data": "Play_UI_Signal_GoodJob",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Nice!",
+                "chs": "漂亮！\r",
+                "cht": "\r",
+                "de": "Gut gemacht!",
+                "es": "¡Toma ya!",
+                "fr": "Bien joué !",
+                "it": "Ben fatto!",
+                "jp": "ナイス！",
+                "ko": "좋았어!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "19",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1276": "2",
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal_Gather",
-        "1421": "6",
-        "1545": "5",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Gather here!",
-            "chs": "集合！\r",
-            "cht": "\r",
-            "de": "Sammeln wir uns!",
-            "es": "¡Agrupémonos!",
-            "fr": "Rassemblement !",
-            "it": "Riuniamoci qui!",
-            "jp": "集合！",
-            "ko": "다들 모여!",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "20"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal_Gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Gather here!",
+                "chs": "集合！\r",
+                "cht": "\r",
+                "de": "Sammeln wir uns!",
+                "es": "¡Agrupémonos!",
+                "fr": "Rassemblement !",
+                "it": "Riuniamoci qui!",
+                "jp": "集合！",
+                "ko": "다들 모여!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "20",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1276": "3",
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal_Retreat",
-        "1421": "7",
-        "1545": "5",
-        "Animation": "ani_fxui_minimap_icon_retreat",
-        "Announce": {
-            "en": "Retreat!",
-            "chs": "撤退！\r",
-            "cht": "\r",
-            "de": "Rückzug!",
-            "es": "¡Retirada!",
-            "fr": "Repli !",
-            "it": "Ritirata!",
-            "jp": "撤退！",
-            "ko": "후퇴하자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "21"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal_Retreat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_retreat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Retreat!",
+                "chs": "撤退！\r",
+                "cht": "\r",
+                "de": "Rückzug!",
+                "es": "¡Retirada!",
+                "fr": "Repli !",
+                "it": "Ritirata!",
+                "jp": "撤退！",
+                "ko": "후퇴하자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "21",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "1276": "3",
-        "1337": "10,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "11",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_retreat",
-        "Announce": {
-            "en": "{0} needs backup!",
-            "chs": "保护{0}\r",
-            "cht": "\r",
-            "de": "{0} braucht Verstärkung!",
-            "es": "¡{0} necesita ayuda!",
-            "fr": "Aidons {0} !",
-            "it": "{0} ha bisogno di aiuto!",
-            "jp": "{0}を援護！",
-            "ko": "{0}(을)를 도와야 해!",
-            "tc": "\r"
+        "1276": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "22"
+        "1337": {
+            "Data": "10,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_retreat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "{0} needs backup!",
+                "chs": "保护{0}\r",
+                "cht": "\r",
+                "de": "{0} braucht Verstärkung!",
+                "es": "¡{0} necesita ayuda!",
+                "fr": "Aidons {0} !",
+                "it": "{0} ha bisogno di aiuto!",
+                "jp": "{0}を援護！",
+                "ko": "{0}(을)를 도와야 해!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "22",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "1276": "1",
-        "1337": "11,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "11",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Let’s attack {0}!",
-            "chs": "进攻{0}\r",
-            "cht": "\r",
-            "de": "Greift {0} an!",
-            "es": "¡A por {0}!",
-            "fr": "Attaquons {0} !",
-            "it": "Attacchiamo {0}!",
-            "jp": "{0}を攻撃しよう",
-            "ko": "{0}(을)를 공격하자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "23"
+        "1337": {
+            "Data": "11,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "11",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s attack {0}!",
+                "chs": "进攻{0}\r",
+                "cht": "\r",
+                "de": "Greift {0} an!",
+                "es": "¡A por {0}!",
+                "fr": "Attaquons {0} !",
+                "it": "Attacchiamo {0}!",
+                "jp": "{0}を攻撃しよう",
+                "ko": "{0}(을)를 공격하자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "23",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "1276": "2",
-        "1337": "0,182,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Let’s KO Zapdos together!",
-            "chs": "一起打倒闪电鸟吧！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Acabemos con Zapdos!",
-            "fr": "",
-            "it": "Mandiamo KO Zapdos insieme!",
-            "jp": "一緒にサンダーをKOしよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "24"
+        "1337": {
+            "Data": "0,182,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s KO Zapdos together!",
+                "chs": "一起打倒闪电鸟吧！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Acabemos con Zapdos!",
+                "fr": "",
+                "it": "Mandiamo KO Zapdos insieme!",
+                "jp": "一緒にサンダーをKOしよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "24",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "1276": "2",
-        "1337": "0,181,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Let’s KO Drednaw together!",
-            "chs": "一起打倒暴噬龟吧！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Acabemos con Drednaw!",
-            "fr": "",
-            "it": "Mandiamo KO Drednaw insieme!",
-            "jp": "一緒にカジリガメをKOしよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "25"
+        "1337": {
+            "Data": "0,181,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s KO Drednaw together!",
+                "chs": "一起打倒暴噬龟吧！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Acabemos con Drednaw!",
+                "fr": "",
+                "it": "Mandiamo KO Drednaw insieme!",
+                "jp": "一緒にカジリガメをKOしよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "1276": "1",
-        "1337": "10,243,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Block some goals!",
-            "chs": "阻止对方得分！\r",
-            "cht": "\r",
-            "de": "Lasst sie nicht punkten!",
-            "es": "¡A bloquear tantos de los rivales!",
-            "fr": "Empêchons l'ennemi de marquer !",
-            "it": "Non facciamoli segnare!",
-            "jp": "相手のゴールを阻止しよう！",
-            "ko": "상대가 골 넣는 걸 막아야 해!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "26"
+        "1337": {
+            "Data": "10,243,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Block some goals!",
+                "chs": "阻止对方得分！\r",
+                "cht": "\r",
+                "de": "Lasst sie nicht punkten!",
+                "es": "¡A bloquear tantos de los rivales!",
+                "fr": "Empêchons l'ennemi de marquer !",
+                "it": "Non facciamoli segnare!",
+                "jp": "相手のゴールを阻止しよう！",
+                "ko": "상대가 골 넣는 걸 막아야 해!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "26",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "1276": "1",
-        "1337": "11,243,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Score some goals!",
-            "chs": "发起得分！\r",
-            "cht": "\r",
-            "de": "Lasst uns punkten!",
-            "es": "¡Hay que anotar!",
-            "fr": "Marquons des points !",
-            "it": "Facciamo goal!",
-            "jp": "ゴールを決めよう！",
-            "ko": "골을 넣자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "27"
+        "1337": {
+            "Data": "11,243,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Score some goals!",
+                "chs": "发起得分！\r",
+                "cht": "\r",
+                "de": "Lasst uns punkten!",
+                "es": "¡Hay que anotar!",
+                "fr": "Marquons des points !",
+                "it": "Facciamo goal!",
+                "jp": "ゴールを決めよう！",
+                "ko": "골을 넣자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "27",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "1276": "1",
-        "1337": "10,224,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Block some goals!",
-            "chs": "阻止对方得分！\r",
-            "cht": "\r",
-            "de": "Lasst sie nicht punkten!",
-            "es": "¡A bloquear tantos de los rivales!",
-            "fr": "Empêchons l'ennemi de marquer !",
-            "it": "Non facciamoli segnare!",
-            "jp": "相手のゴールを阻止しよう！",
-            "ko": "상대가 골 넣는 걸 막아야 해!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "28"
+        "1337": {
+            "Data": "10,224,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Block some goals!",
+                "chs": "阻止对方得分！\r",
+                "cht": "\r",
+                "de": "Lasst sie nicht punkten!",
+                "es": "¡A bloquear tantos de los rivales!",
+                "fr": "Empêchons l'ennemi de marquer !",
+                "it": "Non facciamoli segnare!",
+                "jp": "相手のゴールを阻止しよう！",
+                "ko": "상대가 골 넣는 걸 막아야 해!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "28",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "1276": "1",
-        "1337": "11,224,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Score some goals!",
-            "chs": "发起得分！\r",
-            "cht": "\r",
-            "de": "Lasst uns punkten!",
-            "es": "¡Hay que anotar!",
-            "fr": "Marquons des points !",
-            "it": "Facciamo goal!",
-            "jp": "ゴールを決めよう！",
-            "ko": "골을 넣자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "29"
+        "1337": {
+            "Data": "11,224,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Score some goals!",
+                "chs": "发起得分！\r",
+                "cht": "\r",
+                "de": "Lasst uns punkten!",
+                "es": "¡Hay que anotar!",
+                "fr": "Marquons des points !",
+                "it": "Facciamo goal!",
+                "jp": "ゴールを決めよう！",
+                "ko": "골을 넣자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "29",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "1276": "2",
-        "1337": "10,167,156,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Use our Time Tree!",
-            "chs": "前往友方时光之树！\r",
-            "cht": "\r",
-            "de": "Benutzen wir unseren Zeitbaum!",
-            "es": "¡Hora de usar el cronoárbol!",
-            "fr": "Utilisons l'Arbre Chrono !",
-            "it": "Usiamo il nostro Cronoalbero!",
-            "jp": "タイムツリーを使おう！",
-            "ko": "타임 트리를 사용하자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "30"
+        "1337": {
+            "Data": "10,167,156,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Use our Time Tree!",
+                "chs": "前往友方时光之树！\r",
+                "cht": "\r",
+                "de": "Benutzen wir unseren Zeitbaum!",
+                "es": "¡Hora de usar el cronoárbol!",
+                "fr": "Utilisons l'Arbre Chrono !",
+                "it": "Usiamo il nostro Cronoalbero!",
+                "jp": "タイムツリーを使おう！",
+                "ko": "타임 트리를 사용하자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "30",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "1276": "1",
-        "1337": "11,167,156,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Take out their Time Tree!",
-            "chs": "破坏对方时光之树！\r",
-            "cht": "\r",
-            "de": "Weg mit ihrem Zeitbaum!",
-            "es": "¡A por el cronoárbol enemigo!",
-            "fr": "Détruisons l'Arbre Chrono adverse !",
-            "it": "Attacchiamo il loro Cronoalbero!",
-            "jp": "相手のタイムツリーを壊そう！",
-            "ko": "상대 타임 트리를 부수자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "31"
+        "1337": {
+            "Data": "11,167,156,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Take out their Time Tree!",
+                "chs": "破坏对方时光之树！\r",
+                "cht": "\r",
+                "de": "Weg mit ihrem Zeitbaum!",
+                "es": "¡A por el cronoárbol enemigo!",
+                "fr": "Détruisons l'Arbre Chrono adverse !",
+                "it": "Attacchiamo il loro Cronoalbero!",
+                "jp": "相手のタイムツリーを壊そう！",
+                "ko": "상대 타임 트리를 부수자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "31",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "1276": "2",
-        "1337": "10,161,156,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Use our Time Tree!",
-            "chs": "前往友方时光之树！\r",
-            "cht": "\r",
-            "de": "Benutzen wir unseren Zeitbaum!",
-            "es": "¡Hora de usar el cronoárbol!",
-            "fr": "Utilisons l'Arbre Chrono !",
-            "it": "Usiamo il nostro Cronoalbero!",
-            "jp": "タイムツリーを使おう！",
-            "ko": "타임 트리를 사용하자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "32"
+        "1337": {
+            "Data": "10,161,156,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Use our Time Tree!",
+                "chs": "前往友方时光之树！\r",
+                "cht": "\r",
+                "de": "Benutzen wir unseren Zeitbaum!",
+                "es": "¡Hora de usar el cronoárbol!",
+                "fr": "Utilisons l'Arbre Chrono !",
+                "it": "Usiamo il nostro Cronoalbero!",
+                "jp": "タイムツリーを使おう！",
+                "ko": "타임 트리를 사용하자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "32",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "1276": "1",
-        "1337": "11,161,156,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Take out their Time Tree!",
-            "chs": "破坏对方时光之树！\r",
-            "cht": "\r",
-            "de": "Weg mit ihrem Zeitbaum!",
-            "es": "¡A por el cronoárbol enemigo!",
-            "fr": "Détruisons l'Arbre Chrono adverse !",
-            "it": "Attacchiamo il loro Cronoalbero!",
-            "jp": "相手のタイムツリーを壊そう！",
-            "ko": "상대 타임 트리를 부수자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "33"
+        "1337": {
+            "Data": "11,161,156,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Take out their Time Tree!",
+                "chs": "破坏对方时光之树！\r",
+                "cht": "\r",
+                "de": "Weg mit ihrem Zeitbaum!",
+                "es": "¡A por el cronoárbol enemigo!",
+                "fr": "Détruisons l'Arbre Chrono adverse !",
+                "it": "Attacchiamo il loro Cronoalbero!",
+                "jp": "相手のタイムツリーを壊そう！",
+                "ko": "상대 타임 트리를 부수자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "33",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "1276": "3",
-        "1337": "10,185,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_retreat",
-        "Announce": {
-            "en": "Rotom needs backup!",
-            "chs": "保护洛托姆！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Rotom necesita ayuda!",
-            "fr": "",
-            "it": "Rotom ha bisogno di aiuto!",
-            "jp": "ロトムを援護！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "34"
+        "1337": {
+            "Data": "10,185,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_retreat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Rotom needs backup!",
+                "chs": "保护洛托姆！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Rotom necesita ayuda!",
+                "fr": "",
+                "it": "Rotom ha bisogno di aiuto!",
+                "jp": "ロトムを援護！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "34",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "1276": "1",
-        "1337": "11,185,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Let’s block Rotom’s goals!",
-            "chs": "阻止洛托姆得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Hay que bloquear a Rotom!",
-            "fr": "",
-            "it": "Non facciamo segnare Rotom!",
-            "jp": "ロトムのゴールを阻止しよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "35"
+        "1337": {
+            "Data": "11,185,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s block Rotom’s goals!",
+                "chs": "阻止洛托姆得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Hay que bloquear a Rotom!",
+                "fr": "",
+                "it": "Non facciamo segnare Rotom!",
+                "jp": "ロトムのゴールを阻止しよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "35",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "1276": "2",
-        "1337": "0,191,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Let’s KO Rotom together!",
-            "chs": "一起打倒洛托姆吧！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Acabemos con Rotom!",
-            "fr": "",
-            "it": "Mandiamo KO Rotom insieme!",
-            "jp": "一緒にロトムをKOしよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "36"
+        "1337": {
+            "Data": "0,191,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s KO Rotom together!",
+                "chs": "一起打倒洛托姆吧！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Acabemos con Rotom!",
+                "fr": "",
+                "it": "Mandiamo KO Rotom insieme!",
+                "jp": "一緒にロトムをKOしよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "36",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "33": {
-        "1276": "3",
-        "1337": "10,177,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_retreat",
-        "Announce": {
-            "en": "Drednaw needs backup!",
-            "chs": "保护暴噬龟！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Drednaw necesita ayuda!",
-            "fr": "",
-            "it": "Drednaw ha bisogno di aiuto!",
-            "jp": "カジリガメを援護！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "37"
+        "1337": {
+            "Data": "10,177,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_retreat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Drednaw needs backup!",
+                "chs": "保护暴噬龟！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Drednaw necesita ayuda!",
+                "fr": "",
+                "it": "Drednaw ha bisogno di aiuto!",
+                "jp": "カジリガメを援護！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "37",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "34": {
-        "1276": "1",
-        "1337": "11,177,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Let’s block Drednaw’s goals!",
-            "chs": "阻止暴噬龟得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Hay que bloquear a Drednaw!",
-            "fr": "",
-            "it": "Non facciamo segnare Drednaw!",
-            "jp": "カジリガメのゴールを阻止しよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "38"
+        "1337": {
+            "Data": "11,177,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s block Drednaw’s goals!",
+                "chs": "阻止暴噬龟得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Hay que bloquear a Drednaw!",
+                "fr": "",
+                "it": "Non facciamo segnare Drednaw!",
+                "jp": "カジリガメのゴールを阻止しよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "38",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "35": {
-        "1276": "3",
-        "1337": "10,178,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_retreat",
-        "Announce": {
-            "en": "Zapdos needs backup!",
-            "chs": "保护闪电鸟！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Zapdos necesita ayuda!",
-            "fr": "",
-            "it": "Zapdos ha bisogno di aiuto!",
-            "jp": "サンダーを援護！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "39"
+        "1337": {
+            "Data": "10,178,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_retreat",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Zapdos needs backup!",
+                "chs": "保护闪电鸟！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Zapdos necesita ayuda!",
+                "fr": "",
+                "it": "Zapdos ha bisogno di aiuto!",
+                "jp": "サンダーを援護！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "39",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "36": {
-        "1276": "1",
-        "1337": "11,178,234,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Let’s block Zapdos’s goals!",
-            "chs": "阻止闪电鸟得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Hay que bloquear a Zapdos!",
-            "fr": "",
-            "it": "Non facciamo segnare Zapdos!",
-            "jp": "サンダーのゴールを阻止しよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "40"
+        "1337": {
+            "Data": "11,178,234,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s block Zapdos’s goals!",
+                "chs": "阻止闪电鸟得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Hay que bloquear a Zapdos!",
+                "fr": "",
+                "it": "Non facciamo segnare Zapdos!",
+                "jp": "サンダーのゴールを阻止しよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "40",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "37": {
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "8",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Check it out!",
-            "chs": "注意这里\r",
-            "cht": "\r",
-            "de": "Achtung!",
-            "es": "¡Atención!",
-            "fr": "Attention !",
-            "it": "Attenzione!",
-            "jp": "注目！",
-            "ko": "조심해!",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "41"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Check it out!",
+                "chs": "注意这里\r",
+                "cht": "\r",
+                "de": "Achtung!",
+                "es": "¡Atención!",
+                "fr": "Attention !",
+                "it": "Attenzione!",
+                "jp": "注目！",
+                "ko": "조심해!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "41",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "38": {
-        "1337": "0,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "9",
-        "1491": "1",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Returning to base...",
-            "chs": "正在回到开始点\r",
-            "cht": "\r",
-            "de": "Ich kehre zur Basis zurück.",
-            "es": "De vuelta a la salida...",
-            "fr": "Je retourne à la base...",
-            "it": "Torno alla base...",
-            "jp": "スタート地点にリターン中…",
-            "ko": "스타트 지점으로 돌아가는 중...",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1768": "15000",
-        "1789": "6,0",
-        "1822": "42"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Returning to base...",
+                "chs": "正在回到开始点\r",
+                "cht": "\r",
+                "de": "Ich kehre zur Basis zurück.",
+                "es": "De vuelta a la salida...",
+                "fr": "Je retourne à la base...",
+                "it": "Torno alla base...",
+                "jp": "スタート地点にリターン中…",
+                "ko": "스타트 지점으로 돌아가는 중..."
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "6,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "42",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "39": {
-        "1337": "0,181,234,1,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "10",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Attacking Drednaw!",
-            "chs": "正在攻击暴噬龟\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Estoy atacando a Drednaw!",
-            "fr": "",
-            "it": "Sto attaccando Drednaw!",
-            "jp": "カジリガメを攻撃中！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,181,234,1,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1789": "0,0",
-        "1822": "43"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Attacking Drednaw!",
+                "chs": "正在攻击暴噬龟\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Estoy atacando a Drednaw!",
+                "fr": "",
+                "it": "Sto attaccando Drednaw!",
+                "jp": "カジリガメを攻撃中！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "43",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "40": {
-        "1337": "0,182,234,1,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "10",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Attacking Zapdos!",
-            "chs": "正在攻击闪电鸟\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Estoy atacando a Zapdos!",
-            "fr": "",
-            "it": "Sto attaccando Zapdos!",
-            "jp": "サンダーを攻撃中！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,182,234,1,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1789": "0,0",
-        "1822": "44"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Attacking Zapdos!",
+                "chs": "正在攻击闪电鸟\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Estoy atacando a Zapdos!",
+                "fr": "",
+                "it": "Sto attaccando Zapdos!",
+                "jp": "サンダーを攻撃中！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "44",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "41": {
-        "1337": "0,177,234,1,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "10",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Defending our goal zones from Drednaw!",
-            "chs": "正在阻止暴噬龟得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Estoy bloqueando a Drednaw!",
-            "fr": "",
-            "it": "Sto proteggendo le aree goal da Drednaw!",
-            "jp": "カジリガメからゴールを守ってるよ！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,177,234,1,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1789": "0,0",
-        "1822": "45"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Defending our goal zones from Drednaw!",
+                "chs": "正在阻止暴噬龟得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Estoy bloqueando a Drednaw!",
+                "fr": "",
+                "it": "Sto proteggendo le aree goal da Drednaw!",
+                "jp": "カジリガメからゴールを守ってるよ！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "45",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "42": {
-        "1337": "0,178,234,1,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "10",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Defending our goal zones from Zapdos!",
-            "chs": "正在阻止闪电鸟得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Estoy bloqueando a Zapdos!",
-            "fr": "",
-            "it": "Sto proteggendo le aree goal da Zapdos!",
-            "jp": "サンダーからゴールを守ってるよ！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,178,234,1,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1789": "0,0",
-        "1822": "46"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Defending our goal zones from Zapdos!",
+                "chs": "正在阻止闪电鸟得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Estoy bloqueando a Zapdos!",
+                "fr": "",
+                "it": "Sto proteggendo le aree goal da Zapdos!",
+                "jp": "サンダーからゴールを守ってるよ！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "46",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "43": {
-        "1337": "0,185,234,1,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "10",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Defending our goal zones from Rotom!",
-            "chs": "正在阻止洛托姆得分！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Estoy bloqueando a Rotom!",
-            "fr": "",
-            "it": "Sto proteggendo le aree goal da Rotom!",
-            "jp": "ロトムからゴールを守ってるよ！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,185,234,1,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1789": "0,0",
-        "1822": "47"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Defending our goal zones from Rotom!",
+                "chs": "正在阻止洛托姆得分！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Estoy bloqueando a Rotom!",
+                "fr": "",
+                "it": "Sto proteggendo le aree goal da Rotom!",
+                "jp": "ロトムからゴールを守ってるよ！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "47",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "44": {
-        "1337": "0,191,234,1,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "10",
-        "1491": "1",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Attacking Rotom!",
-            "chs": "正在攻击洛托姆\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Estoy atacando a Rotom!",
-            "fr": "",
-            "it": "Sto attaccando Rotom!",
-            "jp": "ロトムを攻撃中！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,191,234,1,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1768": "15000",
-        "1789": "0,0",
-        "1822": "48"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Attacking Rotom!",
+                "chs": "正在攻击洛托姆\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Estoy atacando a Rotom!",
+                "fr": "",
+                "it": "Sto attaccando Rotom!",
+                "jp": "ロトムを攻撃中！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1768": {
+            "Data": "15000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "48",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "45": {
-        "1337": "0,0,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "13",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Defending our goal zones!",
-            "chs": "正在阻止对方得分！\r",
-            "cht": "\r",
-            "de": "Ich verteidige unsere Punktezonen!",
-            "es": "¡Estoy defendiendo nuestras bases!",
-            "fr": "Défendons cet objectif !",
-            "it": "Proteggo le aree goal!",
-            "jp": "相手からゴールを守ってるよ！",
-            "ko": "우리 골 에리어를 지켜야 해!",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,0,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1789": "0,0",
-        "1822": "49"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "13",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Defending our goal zones!",
+                "chs": "正在阻止对方得分！\r",
+                "cht": "\r",
+                "de": "Ich verteidige unsere Punktezonen!",
+                "es": "¡Estoy defendiendo nuestras bases!",
+                "fr": "Défendons cet objectif !",
+                "it": "Proteggo le aree goal!",
+                "jp": "相手からゴールを守ってるよ！",
+                "ko": "우리 골 에리어를 지켜야 해!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "49",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "46": {
-        "1337": "3,0,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "2",
-        "1545": "4",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_common",
-        "Announce": {
-            "en": "Unite Move ready to go!",
-            "chs": "集结招式已就绪！\r",
-            "cht": "\r",
-            "de": "Meine Unite-Attacke ist bereit!",
-            "es": "¡Movimiento Unite listo!",
-            "fr": "Ma capacité Unité est prête !",
-            "it": "La mia mossa Unite è pronta!",
-            "jp": "ユナイトわざ、準備完了！",
-            "ko": "유나이트 기술 준비 완료!",
-            "tc": "\r"
+        "1337": {
+            "Data": "3,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "50"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_common",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Unite Move ready to go!",
+                "chs": "集结招式已就绪！\r",
+                "cht": "\r",
+                "de": "Meine Unite-Attacke ist bereit!",
+                "es": "¡Movimiento Unite listo!",
+                "fr": "Ma capacité Unité est prête !",
+                "it": "La mia mossa Unite è pronta!",
+                "jp": "ユナイトわざ、準備完了！",
+                "ko": "유나이트 기술 준비 완료!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "50",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "47": {
-        "1276": "1",
-        "1337": "0,154,137,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "1552": "1",
-        "Animation": "ani_fxui_minimap_icon_attack",
-        "Announce": {
-            "en": "Score some goals!",
-            "chs": "发起得分！\r",
-            "cht": "\r",
-            "de": "Lasst uns punkten!",
-            "es": "¡Hay que anotar!",
-            "fr": "Marquons des points !",
-            "it": "Facciamo goal!",
-            "jp": "ゴールを決めよう！",
-            "ko": "골을 넣자!",
-            "tc": "\r"
+        "1276": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "52"
+        "1337": {
+            "Data": "0,154,137,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1552": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_attack",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Score some goals!",
+                "chs": "发起得分！\r",
+                "cht": "\r",
+                "de": "Lasst uns punkten!",
+                "es": "¡Hay que anotar!",
+                "fr": "Marquons des points !",
+                "it": "Facciamo goal!",
+                "jp": "ゴールを決めよう！",
+                "ko": "골을 넣자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "52",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "48": {
-        "1337": "0,192,234,1,232,7,136,39",
-        "UI": "Play_UI_Signal",
-        "1421": "10",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "Attacking Regigigas!",
-            "chs": "正在攻击雷吉奇卡斯\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Estoy atacando a Regigigas!",
-            "fr": "",
-            "it": "Sto attaccando Regigigas!",
-            "jp": "レジギガスを攻撃中！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "0,192,234,1,232,7,136,39",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "2",
-        "1789": "0,0",
-        "1822": "53"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Attacking Regigigas!",
+                "chs": "正在攻击雷吉奇卡斯\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Estoy atacando a Regigigas!",
+                "fr": "",
+                "it": "Sto attaccando Regigigas!",
+                "jp": "レジギガスを攻撃中！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "53",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "49": {
-        "1337": "10,243,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "16",
-        "1491": "2",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "We destroyed one of their goal zones!",
-            "chs": "已破坏对方得分区！\r",
-            "cht": "\r",
-            "de": "Zerstören wir ihre Punktezonen!",
-            "es": "¡Hemos destruido una base enemiga!",
-            "fr": "Détruisons l'objectif adverse !",
-            "it": "Ho distrutto un'area goal avversaria!",
-            "jp": "相手のゴールエリアを壊したぞ！",
-            "ko": "상대 골 에리어를 부수자!",
-            "tc": "\r"
+        "1337": {
+            "Data": "10,243,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "1",
-        "1789": "0,0",
-        "1822": "54"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "We destroyed one of their goal zones!",
+                "chs": "已破坏对方得分区！\r",
+                "cht": "\r",
+                "de": "Zerstören wir ihre Punktezonen!",
+                "es": "¡Hemos destruido una base enemiga!",
+                "fr": "Détruisons l'objectif adverse !",
+                "it": "Ho distrutto un'area goal avversaria!",
+                "jp": "相手のゴールエリアを壊したぞ！",
+                "ko": "상대 골 에리어를 부수자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "54",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "50": {
-        "1337": "11,243,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "16",
-        "1491": "2",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "One of our goal zones was destroyed!",
-            "chs": "友方得分区已被破坏！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Hemos perdido una base!",
-            "fr": "",
-            "it": "Una delle nostre aree goal è stata distrutta!",
-            "jp": "味方のゴールエリアが壊された！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "11,243,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "1",
-        "1789": "0,0",
-        "1822": "55"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "One of our goal zones was destroyed!",
+                "chs": "友方得分区已被破坏！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Hemos perdido una base!",
+                "fr": "",
+                "it": "Una delle nostre aree goal è stata distrutta!",
+                "jp": "味方のゴールエリアが壊された！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "55",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "51": {
-        "1337": "10,224,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "16",
-        "1491": "2",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "We destroyed one of their goal zones!",
-            "chs": "已破坏对方得分区！\r",
-            "cht": "\r",
-            "de": "Zerstören wir ihre Punktezonen!",
-            "es": "¡Hemos destruido una base enemiga!",
-            "fr": "Détruisons l'objectif adverse !",
-            "it": "Ho distrutto un'area goal avversaria!",
-            "jp": "相手のゴールエリアを壊したぞ！",
-            "ko": "상대 골 에리어를 부수자!",
-            "tc": "\r"
+        "1337": {
+            "Data": "10,224,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "1",
-        "1789": "0,0",
-        "1822": "56"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "We destroyed one of their goal zones!",
+                "chs": "已破坏对方得分区！\r",
+                "cht": "\r",
+                "de": "Zerstören wir ihre Punktezonen!",
+                "es": "¡Hemos destruido una base enemiga!",
+                "fr": "Détruisons l'objectif adverse !",
+                "it": "Ho distrutto un'area goal avversaria!",
+                "jp": "相手のゴールエリアを壊したぞ！",
+                "ko": "상대 골 에리어를 부수자!"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "56",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "52": {
-        "1337": "11,224,134,3,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "16",
-        "1491": "2",
-        "1545": "3",
-        "1577": "30000",
-        "Announce": {
-            "en": "One of our goal zones was destroyed!",
-            "chs": "友方得分区已被破坏！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Hemos perdido una base!",
-            "fr": "",
-            "it": "Una delle nostre aree goal è stata distrutta!",
-            "jp": "味方のゴールエリアが壊された！",
-            "ko": "",
-            "tc": "\r"
+        "1337": {
+            "Data": "11,224,134,3,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1691": "1",
-        "1789": "0,0",
-        "1822": "57"
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "16",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1491": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1577": {
+            "Data": "30000",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "One of our goal zones was destroyed!",
+                "chs": "友方得分区已被破坏！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Hemos perdido una base!",
+                "fr": "",
+                "it": "Una delle nostre aree goal è stata distrutta!",
+                "jp": "味方のゴールエリアが壊された！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1691": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "57",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "53": {
-        "1276": "2",
-        "1337": "0,168,235,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Let’s KO Articuno together!",
-            "chs": "一起打倒急冻鸟吧！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Acabemos con Articuno!",
-            "fr": "",
-            "it": "Mandiamo KO Articuno insieme!",
-            "jp": "一緒にフリーザーをKOしよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "58"
+        "1337": {
+            "Data": "0,168,235,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s KO Articuno together!",
+                "chs": "一起打倒急冻鸟吧！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Acabemos con Articuno!",
+                "fr": "",
+                "it": "Mandiamo KO Articuno insieme!",
+                "jp": "一緒にフリーザーをKOしよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "58",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "54": {
-        "1276": "2",
-        "1337": "0,169,235,1,0,0",
-        "UI": "Play_UI_Signal",
-        "1421": "12",
-        "1545": "2",
-        "Animation": "ani_fxui_minimap_icon_gather",
-        "Announce": {
-            "en": "Let’s KO Regigigas together!",
-            "chs": "一起打倒雷吉奇卡斯吧！\r",
-            "cht": "\r",
-            "de": "",
-            "es": "¡Acabemos con Regigigas!",
-            "fr": "",
-            "it": "Mandiamo KO Regigigas insieme!",
-            "jp": "一緒にレジギガスをKOしよう！",
-            "ko": "",
-            "tc": "\r"
+        "1276": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
         },
-        "1789": "0,0",
-        "1822": "59"
+        "1337": {
+            "Data": "0,169,235,1,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "UI": {
+            "Data": "Play_UI_Signal",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "1421": {
+            "Data": "12",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1545": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Animation": {
+            "Data": "ani_fxui_minimap_icon_gather",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Announce": {
+            "Data": {
+                "en": "Let’s KO Regigigas together!",
+                "chs": "一起打倒雷吉奇卡斯吧！\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Acabemos con Regigigas!",
+                "fr": "",
+                "it": "Mandiamo KO Regigigas insieme!",
+                "jp": "一緒にレジギガスをKOしよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1789": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "59",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

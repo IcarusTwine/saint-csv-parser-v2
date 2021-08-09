@@ -1,16 +1,64 @@
 {
     "0": {
-        "1258": "0,0,0,0,0",
-        "1374": "0,0,0,0,0",
-        "1414": "0",
-        "1441": "0",
-        "1447": "0",
-        "1467": "0,0,0",
-        "1488": "0,0,0",
-        "1555": "0,0,0",
-        "1579": "0,0",
-        "1658": "0,0,0",
-        "1772": "无情的配表机器",
-        "1775": "0"
+        "1258": {
+            "Data": "0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1374": {
+            "Data": "0,0,0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1414": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1441": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1447": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1467": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1488": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1555": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1579": {
+            "Data": "0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1658": {
+            "Data": "0,0,0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1772": {
+            "Data": "无情的配表机器",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1775": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

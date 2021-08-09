@@ -1,38 +1,194 @@
 {
     "0": {
-        "1491": "3",
-        "1764": "打倒野生宝可梦",
-        "1776": "69B7960FBD445E57_##",
-        "1822": "1"
+        "1491": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "打倒野生宝可梦",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": {
+                "en": "Knock out three wild Pokémon",
+                "chs": "打倒3只野生宝可梦\r",
+                "cht": "\r",
+                "de": "Besiege drei wilde Pokémon.",
+                "es": "Derrota a 3 Pokémon salvajes",
+                "fr": "Mettre K.O. trois Pokémon sauvages",
+                "it": "Manda KO tre Pokémon selvatici.",
+                "jp": "野生ポケモンを3匹KOしよう",
+                "ko": "야생 포켓몬 3마리를 KO시키자"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1491": "2",
-        "1764": "得分次数",
-        "1776": "173DDF3EDE2A53F6_##",
-        "1822": "3"
+        "1491": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "得分次数",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": {
+                "en": "Score two goals",
+                "chs": "进行2次得分\r",
+                "cht": "\r",
+                "de": "Erziele zwei Treffer.",
+                "es": "Marca 2 tantos",
+                "fr": "Marquer des points deux fois",
+                "it": "Segna due goal.",
+                "jp": "ゴールを2回決めよう",
+                "ko": "골을 2번 넣자"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "3",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1491": "2",
-        "1764": "打倒对方宝可梦",
-        "1776": "DCF799C98EEA2010_##",
-        "1822": "2"
+        "1491": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "打倒对方宝可梦",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": {
+                "en": "Knock out two opposing Pokémon",
+                "chs": "打倒对方宝可梦2次\r",
+                "cht": "\r",
+                "de": "Besiege zwei gegnerische Pokémon.",
+                "es": "Derrota a 2 Pokémon rivales",
+                "fr": "Mettre K.O. deux Pokémon adverses",
+                "it": "Manda KO due Pokémon avversari.",
+                "jp": "相手のポケモンを2回KOしよう",
+                "ko": "상대 편 포켓몬을 2번 KO시키자"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "2",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1491": "1",
-        "1764": "摧毁得分区",
-        "1776": "17E888655EC6A0AF_##",
-        "1822": "4"
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "摧毁得分区",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": {
+                "en": "Destroy an opposing goal zone",
+                "chs": "摧毁对方得分区\r",
+                "cht": "\r",
+                "de": "Zerstöre eine gegnerische Punktezone.",
+                "es": "Destruye una base enemiga",
+                "fr": "Détruire un objectif adverse",
+                "it": "Distruggi un'area goal avversaria.",
+                "jp": "相手のゴールエリアを壊そう",
+                "ko": "상대 편 골 에리어를 부수자"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "4",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1491": "1",
-        "1707": "30012",
-        "1764": "打倒闪电鸟",
-        "1776": "27C17B6E3F8D6E07_##",
-        "1822": "5"
+        "1491": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1707": {
+            "Data": "30012",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Description": {
+            "Data": "打倒闪电鸟",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": {
+                "en": "Knock out Zapdos!",
+                "chs": "打倒闪电鸟\r",
+                "cht": "\r",
+                "de": "",
+                "es": "¡Derrota a Zapdos!",
+                "fr": "Mettez Électhor K.O. !",
+                "it": "",
+                "jp": "サンダーをKOしよう！",
+                "ko": ""
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "5",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1764": "继续得分胜利",
-        "1776": "F725A3C91CCE0F62_##",
-        "1822": "7"
+        "Description": {
+            "Data": "继续得分胜利",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "Objective": {
+            "Data": {
+                "en": "Score many goals and win the battle",
+                "chs": "继续得分以取得胜利\r",
+                "cht": "\r",
+                "de": "Erziele viele Punkte und gewinne den Kampf.",
+                "es": "Marca muchos tantos y gana",
+                "fr": "Marquer beaucoup de points et remporter la victoire",
+                "it": "Segna tanti goal e vinci la partita.",
+                "jp": "ゴールをたくさん決めて勝利しよう",
+                "ko": "골을 많이 넣고 승리하자"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "1822": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

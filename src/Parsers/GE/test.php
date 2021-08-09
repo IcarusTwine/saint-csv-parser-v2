@@ -115,7 +115,7 @@ class test implements ParseInterface
             $Explode = explode(" = ",$Line);
             $LanguageMap_tc[$Explode[0]] = $Explode[1]; 
         }
-        $AllDefs = file_get_contents("$Resources\PokemonSheetDefs.json"); 
+        $AllDefs = file_get_contents("$Resources\PokemonUniteApi\PokemonSheetDefs.json"); 
         //$FileName = "NPCDialog";
         //$FileName = "Pokemon_Hero_Evolution";
         $AllDefs_Json = json_decode($AllDefs,true);
@@ -127,9 +127,9 @@ class test implements ParseInterface
         }
         $path = "$Resources\PokemonUniteApi/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
-        //$files = array(
-        //    "HeadIcon",
-        //);
+        $files = array(
+            "SkillSlot_LevelUp",
+        );
         function hex2str($hex) {
             $str = '';
             for($i=0;$i<strlen($hex);$i+=2) $str .= chr(hexdec(substr($hex,$i,2)));
@@ -178,16 +178,38 @@ class test implements ParseInterface
             "TranslationReq",//non protobuf
             "OutSideItem_Base",//check
             "Pokemon_StatGrowth",//check
-            "SkillSlot_LevelUp",//check
+            //"SkillSlot_LevelUp",//check
         );
         function bufferVal($bytes){
             foreach($bytes as $byte){
                 $binary[] = substr(sprintf('%08d', decbin(hexdec($byte))),1);
             }
             $binarray = array_reverse($binary);
-            $binnum = implode($binarray);
+            $binnum = implode($binarray)+0;
             return bindec(intval($binnum));
         }
+        
+        function bufferVal1($bytes){
+            $value = 0;
+            $shift = 0;
+            $MSB = 0x80;
+        }
+        /**
+        this.MSB = 0x80;
+        _varInt() {
+            let value = 0;
+            let shift = 0;
+            // Keep reading while upper bit set
+            do {
+                value += shift < 28 ?
+                    (this.data[this.offset] & this.VALUE) << shift :
+                    (this.data[this.offset] & this.VALUE) * Math.pow(2, shift);
+                shift += 7;
+            } while ((this.data[this.offset++] & this.MSB) === this.MSB);
+            return value;
+        }
+        */
+        sleep(1000);
         function varint($Chunk,$pos,$found = 0,$SetLength = 0,$CN = 0,$debug = 0){ //0	Varint	int32, int64, uint32, uint64, sint32, sint64, bool, enum
             
             $Header = 0;
@@ -435,12 +457,14 @@ class test implements ParseInterface
                 $Chunks[] = $Array;
             }
             
-           //foreach($Chunks as $Chunk){
-           //    foreach($Chunk as $Byte){
-           //        $TestAr[] = (wireType($Byte));
-           //    }
-           //}
-           //$this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+           foreach($Chunks as $no => $Chunk){
+               $TestAr[] = "Chunk: $no start";
+               foreach($Chunk as $Byte){
+                   $TestAr[] = (wireType($Byte));
+               }
+               $TestAr[] = "Chunk: $no end";
+           }
+           $this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
     
             $Output = [];
             foreach($Chunks as $Num => $Chunk){
@@ -486,7 +510,8 @@ class test implements ParseInterface
                 $Output[] = $OutputChunk;
                 //sleep(4);
             }
-            
+            $SaveOut = file_put_contents("E:\saint-csv-parser-v2\Resources\helpme.php", '<?php $arr = ' . var_export($Output, true) . ';');
+
             $FinalOutput = [];
             foreach($Output as $Key => $Value){
                 $ChunkNumber = $Key;
@@ -494,6 +519,8 @@ class test implements ParseInterface
                     foreach($Value2 as $Key3 => $Value3){
                         foreach($Value3 as $Key4 => $Value4){
                             $DataKey = $Key4;
+                            $Type = "undefined";
+                            $Link = "undefined";
                             if (!empty($AllDefs_Json[$filename][$DataKey])){
                                 $Type = $AllDefs_Json[$filename][$DataKey]['Type'];
                                 $DataKey = $AllDefs_Json[$filename][$DataKey]['Def'];
@@ -510,11 +537,15 @@ class test implements ParseInterface
                                                 "it" => $LanguageMap_it[$ValueOutput],
                                                 "jp" => $LanguageMap_jp[$ValueOutput],
                                                 "ko" => $LanguageMap_ko[$ValueOutput],
-                                                "tc" => $LanguageMap_tc[$ValueOutput],
+                                                //"tc" => $LanguageMap_tc[$ValueOutput],
                                             );
                                         break;
                                         case 'Texture':
                                             $Value4 = $ValueOutput.".png";
+                                        break;
+                                        case 'Texture':
+                                            $Value4 = $Value4;
+                                            $Link = $AllDefs_Json[$filename][$DataKey]['Link'];
                                         break;
                                         
                                         default:
@@ -525,7 +556,9 @@ class test implements ParseInterface
                             } else {
                                 $Value4 = recursive_implode($Value4,",",false);
                             }
-                            $FinalOutput[$ChunkNumber][$DataKey] = $Value4;
+                            $FinalOutput[$ChunkNumber][$DataKey]["Data"] = $Value4;
+                            $FinalOutput[$ChunkNumber][$DataKey]["Type"] = $Type;
+                            $FinalOutput[$ChunkNumber][$DataKey]["Link"] = $Link;
                         }
                     }
                 }
@@ -538,21 +571,28 @@ class test implements ParseInterface
             $Output = [];
             foreach($JSON as $Key => $Value){
                 if (!empty($Value["ID"])){
-                    $KeyDef = "<td>".$Value["ID"]."</td>";
+                    $KeyDef = "<td>".$Value["ID"]['Data']."</td>";
                 } else {
                     $KeyDef = "<td>".$Key."</td>";
                 }
                 $Headers = "";
                 $TableData = "";
+                $Types = "<td>Key</td>";
                 foreach($Value as $Header => $Data){
                     $Headers .= "<th>$Header</th>";
-                    if (is_array($Data)){
-                        $TableData .= "<td>".recursive_implode($Data,"<br>",false)."</td>";
+                    if (!empty($Data["Type"])){
+                        $Types .= "<td>".$Data["Type"]."</td>";
+                    }
+                    if (!empty($Value["ID"])){
+                        $KeyDef = "<td>".$Value["ID"]['Data']."</td>";
+                    } 
+                    if (is_array($Data['Data'])){
+                        $TableData .= "<td>".recursive_implode($Data['Data'],"<br>",false)."</td>";
                     } else {
-                        if (stripos($Data,".png") !== false){
-                            $TableData .= "<td><img src='../alltex/Texture2D/".$Data."'/></td>";
+                        if (stripos($Data['Data'],".png") !== false){
+                            $TableData .= "<td><img src='../alltex/Sprite/".$Data['Data']."'/></td>";
                         } else {
-                            $TableData .= "<td>".$Data."</td>";
+                            $TableData .= "<td>".$Data['Data']."</td>";
                         }
                     }
                 }
@@ -578,6 +618,7 @@ class test implements ParseInterface
                 $OutputString .= "<tr>\n";
                 $OutputString .= "<td>Key</td>$Headers\n";
                 $OutputString .= "</tr>\n";
+                $OutputString .= "$Types\n";
                 $OutputString .= "<tr>\n";
                 $OutputString .= "$KeyDef$TableData\n";
                 $OutputString .= "</tr>\n";

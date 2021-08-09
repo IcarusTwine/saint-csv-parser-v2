@@ -1,170 +1,650 @@
 {
     "0": {
-        "Texture_Male": "t_face_male0_1.png",
-        "1443": "7",
-        "1487": "0",
-        "Texture_Female": "t_face_female0_1.png",
-        "ID": 1
+        "Texture_Male": {
+            "Data": "t_face_male0_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female0_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "Texture_Male": "t_face_male1_1.png",
-        "1443": "7",
-        "1487": "0",
-        "Texture_Female": "t_face_female1_1.png",
-        "ID": 2
+        "Texture_Male": {
+            "Data": "t_face_male1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female1_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "Texture_Male": "t_face_male2_1.png",
-        "1443": "7",
-        "1487": "0",
-        "Texture_Female": "t_face_female2_1.png",
-        "ID": 3
+        "Texture_Male": {
+            "Data": "t_face_male2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female2_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "Texture_Male": "t_face_male3_1.png",
-        "1443": "7",
-        "1487": "0",
-        "Texture_Female": "t_face_female3_1.png",
-        "ID": 4
+        "Texture_Male": {
+            "Data": "t_face_male3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female3_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "Texture_Male": "t_face_male4_1.png",
-        "1443": "7",
-        "1487": "0",
-        "Texture_Female": "t_face_female4_1.png",
-        "ID": 5
+        "Texture_Male": {
+            "Data": "t_face_male4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female4_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "Texture_Male": "t_face_male5_1.png",
-        "1443": "7",
-        "1487": "0",
-        "Texture_Female": "t_face_female5_1.png",
-        "ID": 6
+        "Texture_Male": {
+            "Data": "t_face_male5_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female5_1.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "Texture_Male": "t_face_male0_2.png",
-        "1443": "8",
-        "1487": "0",
-        "Texture_Female": "t_face_female0_2.png",
-        "ID": 7
+        "Texture_Male": {
+            "Data": "t_face_male0_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female0_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "Texture_Male": "t_face_male1_2.png",
-        "1443": "8",
-        "1487": "0",
-        "Texture_Female": "t_face_female1_2.png",
-        "ID": 8
+        "Texture_Male": {
+            "Data": "t_face_male1_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female1_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "Texture_Male": "t_face_male2_2.png",
-        "1443": "8",
-        "1487": "0",
-        "Texture_Female": "t_face_female2_2.png",
-        "ID": 9
+        "Texture_Male": {
+            "Data": "t_face_male2_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female2_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "Texture_Male": "t_face_male3_2.png",
-        "1443": "8",
-        "1487": "0",
-        "Texture_Female": "t_face_female3_2.png",
-        "ID": 10
+        "Texture_Male": {
+            "Data": "t_face_male3_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female3_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "Texture_Male": "t_face_male4_2.png",
-        "1443": "8",
-        "1487": "0",
-        "Texture_Female": "t_face_female4_2.png",
-        "ID": 11
+        "Texture_Male": {
+            "Data": "t_face_male4_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female4_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "Texture_Male": "t_face_male5_2.png",
-        "1443": "8",
-        "1487": "0",
-        "Texture_Female": "t_face_female5_2.png",
-        "ID": 12
+        "Texture_Male": {
+            "Data": "t_face_male5_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female5_2.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "Texture_Male": "t_face_male0_3.png",
-        "1443": "9",
-        "1487": "0",
-        "Texture_Female": "t_face_female0_3.png",
-        "ID": 13
+        "Texture_Male": {
+            "Data": "t_face_male0_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female0_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "Texture_Male": "t_face_male1_3.png",
-        "1443": "9",
-        "1487": "0",
-        "Texture_Female": "t_face_female1_3.png",
-        "ID": 14
+        "Texture_Male": {
+            "Data": "t_face_male1_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female1_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "Texture_Male": "t_face_male2_3.png",
-        "1443": "9",
-        "1487": "0",
-        "Texture_Female": "t_face_female2_3.png",
-        "ID": 15
+        "Texture_Male": {
+            "Data": "t_face_male2_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female2_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 15,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "Texture_Male": "t_face_male3_3.png",
-        "1443": "9",
-        "1487": "0",
-        "Texture_Female": "t_face_female3_3.png",
-        "ID": 16
+        "Texture_Male": {
+            "Data": "t_face_male3_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female3_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 16,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "Texture_Male": "t_face_male4_3.png",
-        "1443": "9",
-        "1487": "0",
-        "Texture_Female": "t_face_female4_3.png",
-        "ID": 17
+        "Texture_Male": {
+            "Data": "t_face_male4_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female4_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 17,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "Texture_Male": "t_face_male5_3.png",
-        "1443": "9",
-        "1487": "0",
-        "Texture_Female": "t_face_female5_3.png",
-        "ID": 18
+        "Texture_Male": {
+            "Data": "t_face_male5_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "9",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female5_3.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 18,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "Texture_Male": "t_face_male0_4.png",
-        "1443": "10",
-        "1487": "0",
-        "Texture_Female": "t_face_female0_4.png",
-        "ID": 19
+        "Texture_Male": {
+            "Data": "t_face_male0_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female0_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 19,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "Texture_Male": "t_face_male1_4.png",
-        "1443": "10",
-        "1487": "0",
-        "Texture_Female": "t_face_female1_4.png",
-        "ID": 20
+        "Texture_Male": {
+            "Data": "t_face_male1_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female1_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 20,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "Texture_Male": "t_face_male2_4.png",
-        "1443": "10",
-        "1487": "0",
-        "Texture_Female": "t_face_female2_4.png",
-        "ID": 21
+        "Texture_Male": {
+            "Data": "t_face_male2_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female2_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 21,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "Texture_Male": "t_face_male3_4.png",
-        "1443": "10",
-        "1487": "0",
-        "Texture_Female": "t_face_female3_4.png",
-        "ID": 22
+        "Texture_Male": {
+            "Data": "t_face_male3_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female3_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 22,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "Texture_Male": "t_face_male4_4.png",
-        "1443": "10",
-        "1487": "0",
-        "Texture_Female": "t_face_female4_4.png",
-        "ID": 23
+        "Texture_Male": {
+            "Data": "t_face_male4_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female4_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 23,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "Texture_Male": "t_face_male5_4.png",
-        "1443": "10",
-        "1487": "0",
-        "Texture_Female": "t_face_female5_4.png",
-        "ID": 24
+        "Texture_Male": {
+            "Data": "t_face_male5_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1443": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1487": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Texture_Female": {
+            "Data": "t_face_female5_4.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 24,
+            "Type": "ID",
+            "Link": "undefined"
+        }
     }
 }

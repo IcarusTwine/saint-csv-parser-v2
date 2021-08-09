@@ -1,2215 +1,7003 @@
 {
     "0": {
-        "ID": 1,
-        "Device_Name": "coolpad c105"
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "coolpad c105",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "ID": 2,
-        "Device_Name": "xiaomi mi 4w"
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "xiaomi mi 4w",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "ID": 3,
-        "Device_Name": "huawei nexus 6p"
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "huawei nexus 6p",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "ID": 4,
-        "Device_Name": "huawei huawei rio-al00"
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "huawei huawei rio-al00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "ID": 5,
-        "Device_Name": "Meizu m2"
+        "ID": {
+            "Data": 5,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu m2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "ID": 6,
-        "Device_Name": "Xiaomi MI 4LTE"
+        "ID": {
+            "Data": 6,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 4LTE",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "ID": 7,
-        "Device_Name": "Xiaomi Redmi 3S"
+        "ID": {
+            "Data": 7,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi 3S",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "ID": 8,
-        "Device_Name": "Xiaomi Mi-4c"
+        "ID": {
+            "Data": 8,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Mi-4c",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "ID": 9,
-        "Device_Name": "Xiaomi 2014812"
+        "ID": {
+            "Data": 9,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi 2014812",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "ID": 10,
-        "Device_Name": "samsung SM-A5000"
+        "ID": {
+            "Data": 10,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-A5000",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "ID": 11,
-        "Device_Name": "Xiaomi Redmi 3"
+        "ID": {
+            "Data": 11,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi 3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "ID": 12,
-        "Device_Name": "OPPO OPPO R9 Plusm A"
+        "ID": {
+            "Data": 12,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9 Plusm A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "ID": 13,
-        "Device_Name": "Xiaomi MI 3C"
+        "ID": {
+            "Data": 13,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 3C",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "ID": 14,
-        "Device_Name": "Meizu m3 note"
+        "ID": {
+            "Data": 14,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu m3 note",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "ID": 15,
-        "Device_Name": "GiONEE GN9010"
+        "ID": {
+            "Data": 15,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "GiONEE GN9010",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "ID": 16,
-        "Device_Name": "HUAWEI HUAWEI NXT-CL00"
+        "ID": {
+            "Data": 16,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI HUAWEI NXT-CL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "ID": 17,
-        "Device_Name": "Xiaomi Redmi Note 2"
+        "ID": {
+            "Data": 17,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi Note 2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "ID": 18,
-        "Device_Name": "Xiaomi MI NOTE LTE"
+        "ID": {
+            "Data": 18,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI NOTE LTE",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "18": {
-        "ID": 19,
-        "Device_Name": "vivo vivo X6Plus D"
+        "ID": {
+            "Data": 19,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X6Plus D",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "19": {
-        "ID": 20,
-        "Device_Name": "vivo vivo Xplay5A"
+        "ID": {
+            "Data": 20,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo Xplay5A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "20": {
-        "ID": 21,
-        "Device_Name": "samsung GT-N7100"
+        "ID": {
+            "Data": 21,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung GT-N7100",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "21": {
-        "ID": 22,
-        "Device_Name": "Meizu m2 note"
+        "ID": {
+            "Data": 22,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu m2 note",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "22": {
-        "ID": 23,
-        "Device_Name": "Meizu m1 metal"
+        "ID": {
+            "Data": 23,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu m1 metal",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "23": {
-        "ID": 24,
-        "Device_Name": "Meizu m1 note"
+        "ID": {
+            "Data": 24,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu m1 note",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "24": {
-        "ID": 25,
-        "Device_Name": "vivo vivo X5pro D"
+        "ID": {
+            "Data": 25,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X5pro D",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "25": {
-        "ID": 26,
-        "Device_Name": "vivo vivo X5M"
+        "ID": {
+            "Data": 26,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X5M",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "26": {
-        "ID": 27,
-        "Device_Name": "vivo vivo X5L"
+        "ID": {
+            "Data": 27,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X5L",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "27": {
-        "ID": 28,
-        "Device_Name": "HUAWEI EVA-AL00"
+        "ID": {
+            "Data": 28,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EVA-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "28": {
-        "ID": 29,
-        "Device_Name": "Xiaomi MI 5"
+        "ID": {
+            "Data": 29,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 5",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "29": {
-        "ID": 30,
-        "Device_Name": "Xiaomi Redmi Note 3"
+        "ID": {
+            "Data": 30,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi Note 3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "30": {
-        "ID": 31,
-        "Device_Name": "Meizu MX4 Pro"
+        "ID": {
+            "Data": 31,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu MX4 Pro",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "31": {
-        "ID": 32,
-        "Device_Name": "HUAWEI Che1-CL20"
+        "ID": {
+            "Data": 32,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI Che1-CL20",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "32": {
-        "ID": 33,
-        "Device_Name": "OPPO X9007"
+        "ID": {
+            "Data": 33,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO X9007",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "33": {
-        "ID": 34,
-        "Device_Name": "samsung SM-N9008V"
+        "ID": {
+            "Data": 34,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-N9008V",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "34": {
-        "ID": 35,
-        "Device_Name": "vivo vivo X5S L"
+        "ID": {
+            "Data": 35,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X5S L",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "35": {
-        "ID": 36,
-        "Device_Name": "vivo vivo X5Max+"
+        "ID": {
+            "Data": 36,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X5Max+",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "36": {
-        "ID": 37,
-        "Device_Name": "Xiaomi MI 2S"
+        "ID": {
+            "Data": 37,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 2S",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "37": {
-        "ID": 38,
-        "Device_Name": "vivo vivo V3Max A"
+        "ID": {
+            "Data": 38,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo V3Max A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "38": {
-        "ID": 39,
-        "Device_Name": "vivo vivo X7"
+        "ID": {
+            "Data": 39,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X7",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "39": {
-        "ID": 40,
-        "Device_Name": "vivo vivo X6S A"
+        "ID": {
+            "Data": 40,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X6S A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "40": {
-        "ID": 41,
-        "Device_Name": "vivo vivo X6A"
+        "ID": {
+            "Data": 41,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X6A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "41": {
-        "ID": 42,
-        "Device_Name": "vivo vivo X6D"
+        "ID": {
+            "Data": 42,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X6D",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "42": {
-        "ID": 43,
-        "Device_Name": "vivo vivo V3M A"
+        "ID": {
+            "Data": 43,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo V3M A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "43": {
-        "ID": 44,
-        "Device_Name": "OPPO OPPO R9m"
+        "ID": {
+            "Data": 44,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9m",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "44": {
-        "ID": 45,
-        "Device_Name": "Xiaomi HM NOTE 1S"
+        "ID": {
+            "Data": 45,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi HM NOTE 1S",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "45": {
-        "ID": 46,
-        "Device_Name": "Meizu PRO 6 Plus"
+        "ID": {
+            "Data": 46,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu PRO 6 Plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "46": {
-        "ID": 47,
-        "Device_Name": "vivo vivo X7Plus"
+        "ID": {
+            "Data": 47,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X7Plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "47": {
-        "ID": 48,
-        "Device_Name": "OPPO OPPO R9s Plus"
+        "ID": {
+            "Data": 48,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9s Plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "48": {
-        "ID": 49,
-        "Device_Name": "vivo vivo X9Plus"
+        "ID": {
+            "Data": 49,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X9Plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "49": {
-        "ID": 50,
-        "Device_Name": "Xiaomi MIX"
+        "ID": {
+            "Data": 50,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MIX",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "50": {
-        "ID": 51,
-        "Device_Name": "Xiaomi MI 5s"
+        "ID": {
+            "Data": 51,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 5s",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "51": {
-        "ID": 52,
-        "Device_Name": "coolpad C105-8"
+        "ID": {
+            "Data": 52,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "coolpad C105-8",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "52": {
-        "ID": 53,
-        "Device_Name": "coolpad C105-6"
+        "ID": {
+            "Data": 53,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "coolpad C105-6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "53": {
-        "ID": 54,
-        "Device_Name": "samsung SM-G9350"
+        "ID": {
+            "Data": 54,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9350",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "54": {
-        "ID": 55,
-        "Device_Name": "samsung SM-G925F"
+        "ID": {
+            "Data": 55,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G925F",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "55": {
-        "ID": 56,
-        "Device_Name": "ZUK ZUK Z2121"
+        "ID": {
+            "Data": 56,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "ZUK ZUK Z2121",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "56": {
-        "ID": 57,
-        "Device_Name": "OPPO OPPO R9 Plustm A"
+        "ID": {
+            "Data": 57,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9 Plustm A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "57": {
-        "ID": 58,
-        "Device_Name": "HUAWEI DUK-AL20"
+        "ID": {
+            "Data": 58,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI DUK-AL20",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "58": {
-        "ID": 59,
-        "Device_Name": "oppo oppo r9s plust"
+        "ID": {
+            "Data": 59,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "oppo oppo r9s plust",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "59": {
-        "ID": 60,
-        "Device_Name": "samsung sm-g9550"
+        "ID": {
+            "Data": 60,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung sm-g9550",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "60": {
-        "ID": 61,
-        "Device_Name": "samsung sm-g9500"
+        "ID": {
+            "Data": 61,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung sm-g9500",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "61": {
-        "ID": 62,
-        "Device_Name": "vivo vivo xplay6"
+        "ID": {
+            "Data": 62,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo xplay6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "62": {
-        "ID": 63,
-        "Device_Name": "vivo vivo x9plus l"
+        "ID": {
+            "Data": 63,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x9plus l",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "63": {
-        "ID": 64,
-        "Device_Name": "oppo oppo r11*"
+        "ID": {
+            "Data": 64,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "oppo oppo r11*",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "64": {
-        "ID": 65,
-        "Device_Name": "meizu pro 7-h"
+        "ID": {
+            "Data": 65,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "meizu pro 7-h",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "65": {
-        "ID": 66,
-        "Device_Name": "meizu pro 7 plus"
+        "ID": {
+            "Data": 66,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "meizu pro 7 plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "66": {
-        "ID": 67,
-        "Device_Name": "xiaomi mi 6*"
+        "ID": {
+            "Data": 67,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "xiaomi mi 6*",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "67": {
-        "ID": 68,
-        "Device_Name": "gionee m2017"
+        "ID": {
+            "Data": 68,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "gionee m2017",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "68": {
-        "ID": 69,
-        "Device_Name": "samsung sm-g9508"
+        "ID": {
+            "Data": 69,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung sm-g9508",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "69": {
-        "ID": 70,
-        "Device_Name": "vivo vivo x9plus_"
+        "ID": {
+            "Data": 70,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x9plus_",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "70": {
-        "ID": 71,
-        "Device_Name": "everest 8848 m4"
+        "ID": {
+            "Data": 71,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "everest 8848 m4",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "71": {
-        "ID": 72,
-        "Device_Name": "vivo vivo x20"
+        "ID": {
+            "Data": 72,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x20",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "72": {
-        "ID": 73,
-        "Device_Name": "vivo vivo x20A"
+        "ID": {
+            "Data": 73,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x20A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "73": {
-        "ID": 74,
-        "Device_Name": "vivo vivo x9s"
+        "ID": {
+            "Data": 74,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x9s",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "74": {
-        "ID": 75,
-        "Device_Name": "vivo vivo x9s plus"
+        "ID": {
+            "Data": 75,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x9s plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "75": {
-        "ID": 76,
-        "Device_Name": "Xiaomi MIX 2"
+        "ID": {
+            "Data": 76,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MIX 2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "76": {
-        "ID": 77,
-        "Device_Name": "Xiaomi Mi Note 3"
+        "ID": {
+            "Data": 77,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Mi Note 3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "77": {
-        "ID": 78,
-        "Device_Name": "samsung sm-n9508"
+        "ID": {
+            "Data": 78,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung sm-n9508",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "78": {
-        "ID": 79,
-        "Device_Name": "samsung sm-n9500"
+        "ID": {
+            "Data": 79,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung sm-n9500",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "79": {
-        "ID": 80,
-        "Device_Name": "vivo vivo x20plus"
+        "ID": {
+            "Data": 80,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x20plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "80": {
-        "ID": 81,
-        "Device_Name": "vivo vivo x20plus a"
+        "ID": {
+            "Data": 81,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x20plus a",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "81": {
-        "ID": 82,
-        "Device_Name": "htc htc u-3w"
+        "ID": {
+            "Data": 82,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "htc htc u-3w",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "82": {
-        "ID": 83,
-        "Device_Name": "nubia nx595j"
+        "ID": {
+            "Data": 83,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "nubia nx595j",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "83": {
-        "ID": 84,
-        "Device_Name": "vivo vivo xplay6l"
+        "ID": {
+            "Data": 84,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo xplay6l",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "84": {
-        "ID": 85,
-        "Device_Name": "vivo vivo x9s plus l"
+        "ID": {
+            "Data": 85,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x9s plus l",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "85": {
-        "ID": 86,
-        "Device_Name": "vivo vivo x9s l"
+        "ID": {
+            "Data": 86,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x9s l",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "86": {
-        "ID": 87,
-        "Device_Name": "vivo vivo 1720"
+        "ID": {
+            "Data": 87,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo 1720",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "87": {
-        "ID": 88,
-        "Device_Name": "vivo vivo 1721"
+        "ID": {
+            "Data": 88,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo 1721",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "88": {
-        "ID": 89,
-        "Device_Name": "smartisan os105"
+        "ID": {
+            "Data": 89,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "smartisan os105",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "89": {
-        "1409": "7|7",
-        "ID": 90,
-        "Device_Name": "HUAWEI ALP-TL00"
+        "1409": {
+            "Data": "7|7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 90,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ALP-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "90": {
-        "1409": "7|7",
-        "ID": 91,
-        "Device_Name": "HUAWEI ALP-AL00"
+        "1409": {
+            "Data": "7|7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 91,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ALP-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "91": {
-        "ID": 92,
-        "Device_Name": "HUAWEI BLA-AL00"
+        "ID": {
+            "Data": 92,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI BLA-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "92": {
-        "ID": 93,
-        "Device_Name": "HUAWEI BLA-TL00"
+        "ID": {
+            "Data": 93,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI BLA-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "93": {
-        "ID": 94,
-        "Device_Name": "HUAWEI BKL-AL20"
+        "ID": {
+            "Data": 94,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI BKL-AL20",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "94": {
-        "ID": 95,
-        "Device_Name": "HUAWEI BKL-AL00"
+        "ID": {
+            "Data": 95,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI BKL-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "95": {
-        "ID": 96,
-        "Device_Name": "HUAWEI BKL-TL10"
+        "ID": {
+            "Data": 96,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI BKL-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "96": {
-        "1409": "7|7",
-        "ID": 97,
-        "Device_Name": "unknown him-al00"
+        "1409": {
+            "Data": "7|7",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 97,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "unknown him-al00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "97": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 98,
-        "Device_Name": "vivo vivo x21a"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 98,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x21a",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "98": {
-        "1409": "8|8",
-        "ID": 99,
-        "Device_Name": "xiaomi mix 2s"
+        "1409": {
+            "Data": "8|8",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 99,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "xiaomi mix 2s",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "99": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 100,
-        "Device_Name": "oppo pacm00"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 100,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "oppo pacm00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "100": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 101,
-        "Device_Name": "OPPO PACT00"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 101,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PACT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "101": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 102,
-        "Device_Name": "OPPO CPH1835"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 102,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1835",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "102": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 103,
-        "Device_Name": "OPPO CPH1819"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 103,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1819",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "103": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 104,
-        "Device_Name": "OPPO CPH1821"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 104,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1821",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "104": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 105,
-        "Device_Name": "OPPO PAAM00"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 105,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PAAM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "105": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 106,
-        "Device_Name": "OPPO PAAT00"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 106,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PAAT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "106": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 107,
-        "Device_Name": "OPPO CPH1831"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 107,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1831",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "107": {
-        "1409": "8|10",
-        "Version": "1.97",
-        "ID": 108,
-        "Device_Name": "OPPO CPH1833"
+        "1409": {
+            "Data": "8|10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 108,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1833",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "108": {
-        "ID": 109,
-        "Device_Name": "Xiaomi Redmi Note 5"
+        "ID": {
+            "Data": 109,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi Note 5",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "109": {
-        "ID": 110,
-        "Device_Name": "Xiaomi Redmi Note 5 Pro"
+        "ID": {
+            "Data": 110,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi Note 5 Pro",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "110": {
-        "Version": "1.97",
-        "ID": 111,
-        "Device_Name": "vivo vivo X21"
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 111,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X21",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "111": {
-        "Version": "1.97",
-        "ID": 112,
-        "Device_Name": "vivo vivo X21UD"
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 112,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X21UD",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "112": {
-        "Version": "1.97",
-        "ID": 113,
-        "Device_Name": "vivo vivo X21UD A"
+        "Version": {
+            "Data": "1.97",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 113,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X21UD A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "113": {
-        "ID": 114,
-        "Device_Name": "vivo vivo X20Plus UD"
+        "ID": {
+            "Data": 114,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo X20Plus UD",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "114": {
-        "Version": "1.92",
-        "ID": 115,
-        "Device_Name": "Xiaomi MI 8"
+        "Version": {
+            "Data": "1.92",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 115,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 8",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "115": {
-        "Version": "1.92",
-        "ID": 116,
-        "Device_Name": "Xiaomi MI 8 SE"
+        "Version": {
+            "Data": "1.92",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 116,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 8 SE",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "116": {
-        "Version": "1.92",
-        "ID": 117,
-        "Device_Name": "Xiaomi MI 8 Explorer Edition"
+        "Version": {
+            "Data": "1.92",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 117,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 8 Explorer Edition",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "117": {
-        "Version": "1.95",
-        "ID": 118,
-        "Device_Name": "Xiaomi Redmi 6 Pro"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 118,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi 6 Pro",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "118": {
-        "ID": 119,
-        "Device_Name": "samsung SM-G9600"
+        "ID": {
+            "Data": 119,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9600",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "119": {
-        "ID": 120,
-        "Device_Name": "samsung SM-G9608"
+        "ID": {
+            "Data": 120,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9608",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "120": {
-        "ID": 121,
-        "Device_Name": "samsung SM-G9650"
+        "ID": {
+            "Data": 121,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9650",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "121": {
-        "ID": 122,
-        "Device_Name": "samsung SM-G9300"
+        "ID": {
+            "Data": 122,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9300",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "122": {
-        "ID": 123,
-        "Device_Name": "samsung SM-G9308"
+        "ID": {
+            "Data": 123,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9308",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "123": {
-        "ID": 124,
-        "Device_Name": "samsung SM-G9250"
+        "ID": {
+            "Data": 124,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9250",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "124": {
-        "ID": 125,
-        "Device_Name": "samsung SM-G950U"
+        "ID": {
+            "Data": 125,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G950U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "125": {
-        "ID": 126,
-        "Device_Name": "samsung SM-G955U"
+        "ID": {
+            "Data": 126,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G955U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "126": {
-        "ID": 127,
-        "Device_Name": "samsung SM-G960U"
+        "ID": {
+            "Data": 127,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G960U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "127": {
-        "ID": 128,
-        "Device_Name": "samsung SM-G965U"
+        "ID": {
+            "Data": 128,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G965U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "128": {
-        "ID": 129,
-        "Device_Name": "samsung SM-N950U"
+        "ID": {
+            "Data": 129,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-N950U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "129": {
-        "ID": 130,
-        "Device_Name": "Meizu MEIZU E3"
+        "ID": {
+            "Data": 130,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu MEIZU E3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "130": {
-        "ID": 131,
-        "Device_Name": "Meizu 15 Plus"
+        "ID": {
+            "Data": 131,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu 15 Plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "131": {
-        "ID": 132,
-        "Device_Name": "Meizu 15"
+        "ID": {
+            "Data": 132,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu 15",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "132": {
-        "ID": 133,
-        "Device_Name": "Meizu M15"
+        "ID": {
+            "Data": 133,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M15",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "133": {
-        "Version": "1.94",
-        "ID": 134,
-        "Device_Name": "HUAWEI ANE-LX1"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 134,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ANE-LX1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "134": {
-        "Version": "1.94",
-        "ID": 135,
-        "Device_Name": "HUAWEI ANE-LX2"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 135,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ANE-LX2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "135": {
-        "Version": "1.94",
-        "ID": 136,
-        "Device_Name": "HUAWEI ANE-LX3"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 136,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ANE-LX3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "136": {
-        "Version": "1.94",
-        "ID": 137,
-        "Device_Name": "HUAWEI ANE-LX2J"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 137,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ANE-LX2J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "137": {
-        "Version": "1.94",
-        "ID": 138,
-        "Device_Name": "HUAWEI ANE-HWV32"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 138,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ANE-HWV32",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "138": {
-        "Version": "1.94",
-        "ID": 139,
-        "Device_Name": "HUAWEI ANE-AL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 139,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ANE-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "139": {
-        "Version": "1.94",
-        "ID": 140,
-        "Device_Name": "HUAWEI ANE-TL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 140,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ANE-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "140": {
-        "Version": "1.94",
-        "ID": 141,
-        "Device_Name": "HUAWEI EML-L09"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 141,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "141": {
-        "Version": "1.94",
-        "ID": 142,
-        "Device_Name": "HUAWEI EML-L29"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 142,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "142": {
-        "Version": "1.94",
-        "ID": 143,
-        "Device_Name": "HUAWEI EML-AL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 143,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "143": {
-        "Version": "1.94",
-        "ID": 144,
-        "Device_Name": "HUAWEI EML-TL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 144,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "144": {
-        "Version": "1.94",
-        "ID": 145,
-        "Device_Name": "HUAWEI COL-L29"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 145,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI COL-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "145": {
-        "Version": "1.94",
-        "ID": 146,
-        "Device_Name": "HUAWEI COL-AL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 146,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI COL-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "146": {
-        "Version": "1.94",
-        "ID": 147,
-        "Device_Name": "HUAWEI COL-AL10"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 147,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI COL-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "147": {
-        "Version": "1.94",
-        "ID": 148,
-        "Device_Name": "HUAWEI COL-TL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 148,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI COL-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "148": {
-        "Version": "1.94",
-        "ID": 149,
-        "Device_Name": "HUAWEI COL-TL10"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 149,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI COL-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "149": {
-        "Version": "1.94",
-        "ID": 150,
-        "Device_Name": "HUAWEI CLT-L09"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 150,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "150": {
-        "Version": "1.94",
-        "ID": 151,
-        "Device_Name": "HUAWEI CLT-L29"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 151,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "151": {
-        "Version": "1.94",
-        "ID": 152,
-        "Device_Name": "HUAWEI CLT-L04"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 152,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-L04",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "152": {
-        "Version": "1.94",
-        "ID": 153,
-        "Device_Name": "HUAWEI CLT-AL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 153,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "153": {
-        "Version": "1.94",
-        "ID": 154,
-        "Device_Name": "HUAWEI CLT-TL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 154,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "154": {
-        "ID": 155,
-        "Device_Name": "samsung SM-G8850"
+        "ID": {
+            "Data": 155,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G8850",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "155": {
-        "ID": 156,
-        "Device_Name": "samsung SM-G8750"
+        "ID": {
+            "Data": 156,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G8750",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "156": {
-        "ID": 157,
-        "Device_Name": "OPPO PADM00"
+        "ID": {
+            "Data": 157,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PADM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "157": {
-        "ID": 158,
-        "Device_Name": "OPPO PADT00"
+        "ID": {
+            "Data": 158,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PADT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "158": {
-        "ID": 159,
-        "Device_Name": "OPPO CPH1837"
+        "ID": {
+            "Data": 159,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1837",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "159": {
-        "ID": 160,
-        "Device_Name": "OPPO CPH1839"
+        "ID": {
+            "Data": 160,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1839",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "160": {
-        "ID": 161,
-        "Device_Name": "OPPO CPH1859"
+        "ID": {
+            "Data": 161,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1859",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "161": {
-        "ID": 162,
-        "Device_Name": "OPPO CPH1861"
+        "ID": {
+            "Data": 162,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1861",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "162": {
-        "ID": 163,
-        "Device_Name": "Xiaomi MI 6X"
+        "ID": {
+            "Data": 163,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 6X",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "163": {
-        "Version": "2.05",
-        "ID": 164,
-        "Device_Name": "vivo vivo x21i A"
+        "Version": {
+            "Data": "2.05",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 164,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x21i A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "164": {
-        "Version": "2.05",
-        "ID": 165,
-        "Device_Name": "vivo vivo x21i"
+        "Version": {
+            "Data": "2.05",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 165,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo x21i",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "165": {
-        "Version": "1.94",
-        "ID": 166,
-        "Device_Name": "HUAWEI LLD-AL30"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 166,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LLD-AL30",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "166": {
-        "Version": "1.94",
-        "ID": 167,
-        "Device_Name": "HUAWEI LLD-AL20"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 167,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LLD-AL20",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "167": {
-        "Version": "1.94",
-        "ID": 168,
-        "Device_Name": "HUAWEI CLT-AL01"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 168,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-AL01",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "168": {
-        "Version": "1.94",
-        "ID": 169,
-        "Device_Name": "HUAWEI CLT-TL01"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 169,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-TL01",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "169": {
-        "ID": 170,
-        "Device_Name": "HUAWEI NEO-AL00"
+        "ID": {
+            "Data": 170,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI NEO-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "170": {
-        "ID": 171,
-        "Device_Name": "HUAWEI HWI-AL00"
+        "ID": {
+            "Data": 171,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI HWI-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "171": {
-        "ID": 172,
-        "Device_Name": "HUAWEI HWI-TL00"
+        "ID": {
+            "Data": 172,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI HWI-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "172": {
-        "ID": 173,
-        "Device_Name": "HUAWEI NEO-L29"
+        "ID": {
+            "Data": 173,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI NEO-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "173": {
-        "ID": 174,
-        "Device_Name": "OPPO OPPO R9tm"
+        "ID": {
+            "Data": 174,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9tm",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "174": {
-        "ID": 175,
-        "Device_Name": "OPPO OPPO R9s"
+        "ID": {
+            "Data": 175,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9s",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "175": {
-        "ID": 176,
-        "Device_Name": "OPPO OPPO R9st"
+        "ID": {
+            "Data": 176,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9st",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "176": {
-        "ID": 177,
-        "Device_Name": "OPPO OPPO R9sk"
+        "ID": {
+            "Data": 177,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9sk",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "177": {
-        "ID": 178,
-        "Device_Name": "OPPO OPPO R9skt"
+        "ID": {
+            "Data": 178,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO OPPO R9skt",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "178": {
-        "ID": 179,
-        "Device_Name": "vivo vivo Y83"
+        "ID": {
+            "Data": 179,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo Y83",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "179": {
-        "ID": 180,
-        "Device_Name": "vivo vivo Y83A"
+        "ID": {
+            "Data": 180,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo Y83A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "180": {
-        "ID": 181,
-        "Device_Name": "vivo vivo Y79"
+        "ID": {
+            "Data": 181,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo Y79",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "181": {
-        "ID": 182,
-        "Device_Name": "vivo vivo Y79A"
+        "ID": {
+            "Data": 182,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo Y79A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "182": {
-        "ID": 183,
-        "Device_Name": "vivo vivo Z1"
+        "ID": {
+            "Data": 183,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo Z1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "183": {
-        "ID": 184,
-        "Device_Name": "vivo vivo Z1i"
+        "ID": {
+            "Data": 184,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo Z1i",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "184": {
-        "ID": 185,
-        "Device_Name": "blackshark SKR-A0"
+        "ID": {
+            "Data": 185,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "blackshark SKR-A0",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "185": {
-        "ID": 186,
-        "Device_Name": "nubia NX563J"
+        "ID": {
+            "Data": 186,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "nubia NX563J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "186": {
-        "ID": 187,
-        "Device_Name": "nubia NX609J"
+        "ID": {
+            "Data": 187,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "nubia NX609J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "187": {
-        "ID": 188,
-        "Device_Name": "nubia NX569J"
+        "ID": {
+            "Data": 188,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "nubia NX569J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "188": {
-        "ID": 189,
-        "Device_Name": "nubia NX569H"
+        "ID": {
+            "Data": 189,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "nubia NX569H",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "189": {
-        "ID": 190,
-        "Device_Name": "nubia NX606J"
+        "ID": {
+            "Data": 190,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "nubia NX606J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "190": {
-        "ID": 191,
-        "Device_Name": "smartisan os103"
+        "ID": {
+            "Data": 191,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "smartisan os103",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "191": {
-        "ID": 192,
-        "Device_Name": "OnePlus ONEPLUS A5010"
+        "ID": {
+            "Data": 192,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A5010",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "192": {
-        "ID": 193,
-        "Device_Name": "OnePlus ONEPLUS A5000"
+        "ID": {
+            "Data": 193,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A5000",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "193": {
-        "ID": 194,
-        "Device_Name": "OnePlus ONEPLUS A3010"
+        "ID": {
+            "Data": 194,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A3010",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "194": {
-        "ID": 195,
-        "Device_Name": "OnePlus ONEPLUS A3000"
+        "ID": {
+            "Data": 195,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A3000",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "195": {
-        "ID": 196,
-        "Device_Name": "Meitu MP1718"
+        "ID": {
+            "Data": 196,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meitu MP1718",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "196": {
-        "ID": 197,
-        "Device_Name": "OnePlus ONEPLUS A3003"
+        "ID": {
+            "Data": 197,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A3003",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "197": {
-        "ID": 198,
-        "Device_Name": "Xiaomi MI 5s Plus"
+        "ID": {
+            "Data": 198,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 5s Plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "198": {
-        "ID": 199,
-        "Device_Name": "Xiaomi MI Note 2"
+        "ID": {
+            "Data": 199,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI Note 2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "199": {
-        "ID": 200,
-        "Device_Name": "vivo vivo NEX S"
+        "ID": {
+            "Data": 200,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo NEX S",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "200": {
-        "ID": 201,
-        "Device_Name": "vivo vivo NEX A"
+        "ID": {
+            "Data": 201,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo NEX A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "201": {
-        "ID": 202,
-        "Device_Name": "vivo vivo NEX"
+        "ID": {
+            "Data": 202,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivo NEX",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "202": {
-        "ID": 203,
-        "Device_Name": "nubia NX611J"
+        "ID": {
+            "Data": 203,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "nubia NX611J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "203": {
-        "ID": 204,
-        "Device_Name": "OnePlus ONEPLUS A6000"
+        "ID": {
+            "Data": 204,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A6000",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "204": {
-        "ID": 205,
-        "Device_Name": "OnePlus ONEPLUS A6003"
+        "ID": {
+            "Data": 205,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A6003",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "205": {
-        "Version": "1.94",
-        "ID": 206,
-        "Device_Name": "HUAWEI CLT-AL00l"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 206,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI CLT-AL00l",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "206": {
-        "Version": "1.91",
-        "ID": 207,
-        "Device_Name": "Lenovo Lenovo L78011"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 207,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Lenovo Lenovo L78011",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "207": {
-        "ID": 208,
-        "Device_Name": "samsung SM-N9600"
+        "ID": {
+            "Data": 208,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-N9600",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "208": {
-        "ID": 209,
-        "Device_Name": "samsung SM-N9608"
+        "ID": {
+            "Data": 209,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-N9608",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "209": {
-        "ID": 210,
-        "Device_Name": "OPPO PAFT10"
+        "ID": {
+            "Data": 210,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PAFT10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "210": {
-        "ID": 211,
-        "Device_Name": "OPPO PAHM00"
+        "ID": {
+            "Data": 211,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PAHM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "211": {
-        "ID": 212,
-        "Device_Name": "OPPO CPH1875"
+        "ID": {
+            "Data": 212,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1875",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "212": {
-        "ID": 213,
-        "Device_Name": "OPPO CPH1871"
+        "ID": {
+            "Data": 213,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO CPH1871",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "213": {
-        "ID": 214,
-        "Device_Name": "OPPO PAFM00"
+        "ID": {
+            "Data": 214,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PAFM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "214": {
-        "ID": 215,
-        "Device_Name": "OPPO PAFT00"
+        "ID": {
+            "Data": 215,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PAFT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "215": {
-        "ID": 216,
-        "Device_Name": "smartisan DE106"
+        "ID": {
+            "Data": 216,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "smartisan DE106",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "216": {
-        "ID": 217,
-        "Device_Name": "smartisan OE106"
+        "ID": {
+            "Data": 217,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "smartisan OE106",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "217": {
-        "1409": "2|6",
-        "Version": "2.05",
-        "ID": 218,
-        "Device_Name": "HUAWEI RVL-AL09"
+        "1409": {
+            "Data": "2|6",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "Version": {
+            "Data": "2.05",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 218,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI RVL-AL09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "218": {
-        "ID": 219,
-        "Device_Name": "samsung SM-N960N"
+        "ID": {
+            "Data": 219,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-N960N",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "219": {
-        "ID": 220,
-        "Device_Name": "samsung SM-N960F"
+        "ID": {
+            "Data": 220,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-N960F",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "220": {
-        "Version": "1.86",
-        "ID": 221,
-        "Device_Name": "motorola XT1941-2"
+        "Version": {
+            "Data": "1.86",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 221,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "motorola XT1941-2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "221": {
-        "Version": "1.91",
-        "ID": 222,
-        "Device_Name": "motorola XT1942-1"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 222,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "motorola XT1942-1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "222": {
-        "Version": "1.91",
-        "ID": 223,
-        "Device_Name": "motorola XT1943-1"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 223,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "motorola XT1943-1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "223": {
-        "Version": "1.91",
-        "ID": 224,
-        "Device_Name": "Lenovo Lenovo L50841"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 224,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Lenovo Lenovo L50841",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "224": {
-        "Version": "1.85",
-        "ID": 225,
-        "Device_Name": "Meizu 16th Plus"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 225,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu 16th Plus",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "225": {
-        "Version": "1.85",
-        "ID": 226,
-        "Device_Name": "Meizu 16th"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 226,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu 16th",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "226": {
-        "Version": "1.85",
-        "ID": 227,
-        "Device_Name": "Meizu 16 X"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 227,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu 16 X",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "227": {
-        "ID": 228,
-        "Device_Name": "vivo V1809T"
+        "ID": {
+            "Data": 228,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1809T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "228": {
-        "ID": 229,
-        "Device_Name": "vivo V1809A"
+        "ID": {
+            "Data": 229,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1809A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "229": {
-        "Version": "1.96",
-        "ID": 230,
-        "Device_Name": "Xiaomi MI 8 Lite"
+        "Version": {
+            "Data": "1.96",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 230,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 8 Lite",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "230": {
-        "Version": "1.92",
-        "ID": 231,
-        "Device_Name": "Xiaomi MI 8 UD"
+        "Version": {
+            "Data": "1.92",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 231,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 8 UD",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "231": {
-        "Version": "1.93",
-        "ID": 232,
-        "Device_Name": "HUAWEI HMA-AL00"
+        "Version": {
+            "Data": "1.93",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 232,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI HMA-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "232": {
-        "Version": "1.93",
-        "ID": 233,
-        "Device_Name": "HUAWEI HMA-TL00"
+        "Version": {
+            "Data": "1.93",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 233,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI HMA-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "233": {
-        "Version": "1.93",
-        "ID": 234,
-        "Device_Name": "HUAWEI HMA-L09"
+        "Version": {
+            "Data": "1.93",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 234,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI HMA-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "234": {
-        "Version": "1.93",
-        "ID": 235,
-        "Device_Name": "HUAWEI HMA-L29"
+        "Version": {
+            "Data": "1.93",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 235,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI HMA-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "235": {
-        "Version": "2.03",
-        "ID": 236,
-        "Device_Name": "HUAWEI LYA-AL00"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 236,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LYA-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "236": {
-        "Version": "2.03",
-        "ID": 237,
-        "Device_Name": "HUAWEI LYA-AL10"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 237,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LYA-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "237": {
-        "Version": "2.03",
-        "ID": 238,
-        "Device_Name": "HUAWEI LYA-TL00"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 238,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LYA-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "238": {
-        "Version": "2.03",
-        "ID": 239,
-        "Device_Name": "HUAWEI LYA-L09"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 239,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LYA-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "239": {
-        "Version": "2.03",
-        "ID": 240,
-        "Device_Name": "HUAWEI LYA-L0C"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 240,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LYA-L0C",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "240": {
-        "Version": "2.03",
-        "ID": 241,
-        "Device_Name": "HUAWEI LYA-AL00P"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 241,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LYA-AL00P",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "241": {
-        "Version": "2.03",
-        "ID": 242,
-        "Device_Name": "HUAWEI LYA-L29"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 242,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI LYA-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "242": {
-        "Version": "1.94",
-        "ID": 243,
-        "Device_Name": "HUAWEI EVR-AL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 243,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EVR-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "243": {
-        "Version": "1.94",
-        "ID": 244,
-        "Device_Name": "HUAWEI EVR-TL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 244,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EVR-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "244": {
-        "Version": "1.94",
-        "ID": 245,
-        "Device_Name": "HUAWEI EVR-L29"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 245,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EVR-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "245": {
-        "ID": 246,
-        "Device_Name": "Huawei PAN-AL00"
+        "ID": {
+            "Data": 246,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAN-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "246": {
-        "ID": 247,
-        "Device_Name": "Huawei PAN-TL00"
+        "ID": {
+            "Data": 247,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAN-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "247": {
-        "ID": 248,
-        "Device_Name": "Huawei PAN-L09"
+        "ID": {
+            "Data": 248,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAN-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "248": {
-        "ID": 249,
-        "Device_Name": "Huawei PAN-L29"
+        "ID": {
+            "Data": 249,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAN-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "249": {
-        "ID": 250,
-        "Device_Name": "Huawei SUE-AL00"
+        "ID": {
+            "Data": 250,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei SUE-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "250": {
-        "ID": 251,
-        "Device_Name": "Huawei SUE-TL00"
+        "ID": {
+            "Data": 251,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei SUE-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "251": {
-        "ID": 252,
-        "Device_Name": "Huawei SUE-L09"
+        "ID": {
+            "Data": 252,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei SUE-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "252": {
-        "ID": 253,
-        "Device_Name": "Huawei SUE-L29"
+        "ID": {
+            "Data": 253,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei SUE-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "253": {
-        "ID": 254,
-        "Device_Name": "Huawei MCN-AL00"
+        "ID": {
+            "Data": 254,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MCN-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "254": {
-        "ID": 255,
-        "Device_Name": "Huawei MCN-TL00"
+        "ID": {
+            "Data": 255,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MCN-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "255": {
-        "ID": 256,
-        "Device_Name": "Huawei MCN-L09"
+        "ID": {
+            "Data": 256,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MCN-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "256": {
-        "ID": 257,
-        "Device_Name": "Huawei MCN-L29"
+        "ID": {
+            "Data": 257,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MCN-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "257": {
-        "ID": 258,
-        "Device_Name": "Huawei COL-L09"
+        "ID": {
+            "Data": 258,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei COL-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "258": {
-        "ID": 259,
-        "Device_Name": "Huawei PAR-AL00"
+        "ID": {
+            "Data": 259,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAR-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "259": {
-        "ID": 260,
-        "Device_Name": "Huawei PAR-TL00"
+        "ID": {
+            "Data": 260,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAR-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "260": {
-        "ID": 261,
-        "Device_Name": "Huawei PAR-L09"
+        "ID": {
+            "Data": 261,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAR-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "261": {
-        "ID": 262,
-        "Device_Name": "Huawei PAR-L29"
+        "ID": {
+            "Data": 262,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PAR-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "262": {
-        "ID": 263,
-        "Device_Name": "Huawei COR-AL10"
+        "ID": {
+            "Data": 263,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei COR-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "263": {
-        "ID": 264,
-        "Device_Name": "Huawei COR-AL00"
+        "ID": {
+            "Data": 264,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei COR-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "264": {
-        "ID": 265,
-        "Device_Name": "Huawei COR-TL00"
+        "ID": {
+            "Data": 265,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei COR-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "265": {
-        "ID": 266,
-        "Device_Name": "Huawei COR-L09"
+        "ID": {
+            "Data": 266,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei COR-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "266": {
-        "ID": 267,
-        "Device_Name": "Huawei COR-L29"
+        "ID": {
+            "Data": 267,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei COR-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "267": {
-        "ID": 268,
-        "Device_Name": "Huawei INE-AL10"
+        "ID": {
+            "Data": 268,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei INE-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "268": {
-        "ID": 269,
-        "Device_Name": "Huawei INE-AL00"
+        "ID": {
+            "Data": 269,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei INE-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "269": {
-        "ID": 270,
-        "Device_Name": "Huawei INE-TL00"
+        "ID": {
+            "Data": 270,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei INE-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "270": {
-        "ID": 271,
-        "Device_Name": "Huawei INE-L09"
+        "ID": {
+            "Data": 271,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei INE-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "271": {
-        "ID": 272,
-        "Device_Name": "Huawei INE-L29"
+        "ID": {
+            "Data": 272,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei INE-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "272": {
-        "Version": "1.9",
-        "ID": 273,
-        "Device_Name": "Huawei ARE-AL00"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 273,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei ARE-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "273": {
-        "Version": "1.9",
-        "ID": 274,
-        "Device_Name": "Huawei ARE-AL10"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 274,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei ARE-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "274": {
-        "Version": "1.9",
-        "ID": 275,
-        "Device_Name": "Huawei ARE-TL10"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 275,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei ARE-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "275": {
-        "Version": "1.9",
-        "ID": 276,
-        "Device_Name": "Huawei ARS-AL00"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 276,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei ARS-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "276": {
-        "Version": "1.9",
-        "ID": 277,
-        "Device_Name": "Huawei ARS-L22"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 277,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei ARS-L22",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "277": {
-        "ID": 278,
-        "Device_Name": "Huawei JSN-AL00"
+        "ID": {
+            "Data": 278,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JSN-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "278": {
-        "ID": 279,
-        "Device_Name": "Huawei JSN-TL00"
+        "ID": {
+            "Data": 279,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JSN-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "279": {
-        "ID": 280,
-        "Device_Name": "Huawei JSN-L21"
+        "ID": {
+            "Data": 280,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JSN-L21",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "280": {
-        "ID": 281,
-        "Device_Name": "Huawei JSN-L22"
+        "ID": {
+            "Data": 281,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JSN-L22",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "281": {
-        "ID": 282,
-        "Device_Name": "Huawei JSN-L23"
+        "ID": {
+            "Data": 282,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JSN-L23",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "282": {
-        "ID": 283,
-        "Device_Name": "Huawei JSN-L42"
+        "ID": {
+            "Data": 283,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JSN-L42",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "283": {
-        "ID": 284,
-        "Device_Name": "Huawei JSN-L4"
+        "ID": {
+            "Data": 284,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JSN-L4",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "284": {
-        "ID": 285,
-        "Device_Name": "Huawei JKM-AL00"
+        "ID": {
+            "Data": 285,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JKM-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "285": {
-        "ID": 286,
-        "Device_Name": "Huawei JKM-TL00"
+        "ID": {
+            "Data": 286,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JKM-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "286": {
-        "Version": "1.95",
-        "ID": 287,
-        "Device_Name": "Huawei PCT-AL10"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 287,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PCT-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "287": {
-        "Version": "1.95",
-        "ID": 288,
-        "Device_Name": "Huawei PCT-TL10"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 288,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei PCT-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "288": {
-        "ID": 289,
-        "Device_Name": "Huawei VNA-AL10"
+        "ID": {
+            "Data": 289,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei VNA-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "289": {
-        "ID": 290,
-        "Device_Name": "Huawei VNA-TL10"
+        "ID": {
+            "Data": 290,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei VNA-TL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "290": {
-        "Version": "1.95",
-        "ID": 291,
-        "Device_Name": "Huawei VCE-AL00"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 291,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei VCE-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "291": {
-        "Version": "1.95",
-        "ID": 292,
-        "Device_Name": "Huawei VCE-TL00"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 292,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei VCE-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "292": {
-        "ID": 293,
-        "Device_Name": "Huawei EVR-L09"
+        "ID": {
+            "Data": 293,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei EVR-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "293": {
-        "ID": 294,
-        "Device_Name": "vivo V1730EA"
+        "ID": {
+            "Data": 294,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1730EA",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "294": {
-        "ID": 295,
-        "Device_Name": "vivo V1731CA"
+        "ID": {
+            "Data": 295,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1731CA",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "295": {
-        "ID": 296,
-        "Device_Name": "vivo V1813BA"
+        "ID": {
+            "Data": 296,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1813BA",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "296": {
-        "ID": 297,
-        "Device_Name": "vivo V1813BT"
+        "ID": {
+            "Data": 297,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1813BT",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "297": {
-        "ID": 298,
-        "Device_Name": "vivo V1814A"
+        "ID": {
+            "Data": 298,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1814A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "298": {
-        "ID": 299,
-        "Device_Name": "vivo V1814T"
+        "ID": {
+            "Data": 299,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1814T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "299": {
-        "ID": 300,
-        "Device_Name": "vivo V1816A"
+        "ID": {
+            "Data": 300,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1816A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "300": {
-        "ID": 301,
-        "Device_Name": "vivo V1816T"
+        "ID": {
+            "Data": 301,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1816T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "301": {
-        "ID": 302,
-        "Device_Name": "vivo V1818A"
+        "ID": {
+            "Data": 302,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1818A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "302": {
-        "ID": 303,
-        "Device_Name": "vivo V1818T"
+        "ID": {
+            "Data": 303,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1818T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "303": {
-        "ID": 304,
-        "Device_Name": "samsung SM-W2019"
+        "ID": {
+            "Data": 304,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-W2019",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "304": {
-        "ID": 305,
-        "Device_Name": "samsung SM-A9200"
+        "ID": {
+            "Data": 305,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-A9200",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "305": {
-        "ID": 306,
-        "Device_Name": "samsung SM-G8870"
+        "ID": {
+            "Data": 306,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G8870",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "306": {
-        "ID": 307,
-        "Device_Name": "blackshark AWM-A0"
+        "ID": {
+            "Data": 307,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "blackshark AWM-A0",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "307": {
-        "ID": 308,
-        "Device_Name": "Xiaomi MIX 3"
+        "ID": {
+            "Data": 308,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MIX 3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "308": {
-        "ID": 309,
-        "Device_Name": "Xiaomi MI 8 Explorer Edition"
+        "ID": {
+            "Data": 309,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 8 Explorer Edition",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "309": {
-        "ID": 310,
-        "Device_Name": "Xiaomi MI 6"
+        "ID": {
+            "Data": 310,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "310": {
-        "ID": 311,
-        "Device_Name": "OPPO PBEM00"
+        "ID": {
+            "Data": 311,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBEM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "311": {
-        "ID": 312,
-        "Device_Name": "OPPO PBET00"
+        "ID": {
+            "Data": 312,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBET00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "312": {
-        "ID": 313,
-        "Device_Name": "OPPO PBDM00"
+        "ID": {
+            "Data": 313,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBDM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "313": {
-        "ID": 314,
-        "Device_Name": "OPPO PBDT00"
+        "ID": {
+            "Data": 314,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBDT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "314": {
-        "ID": 315,
-        "Device_Name": "OnePlus ONEPLUS A6013"
+        "ID": {
+            "Data": 315,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A6013",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "315": {
-        "ID": 316,
-        "Device_Name": "OnePlus ONEPLUS A6010"
+        "ID": {
+            "Data": 316,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A6010",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "316": {
-        "ID": 317,
-        "Device_Name": "OnePlus ONEPLUS A6000"
+        "ID": {
+            "Data": 317,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A6000",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "317": {
-        "ID": 318,
-        "Device_Name": "OnePlus ONEPLUS A6003"
+        "ID": {
+            "Data": 318,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus ONEPLUS A6003",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "318": {
-        "ID": 319,
-        "Device_Name": "Meizu M1822"
+        "ID": {
+            "Data": 319,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M1822",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "319": {
-        "ID": 320,
-        "Device_Name": "Meizu M1852"
+        "ID": {
+            "Data": 320,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M1852",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "320": {
-        "ID": 321,
-        "Device_Name": "Meizu M1813"
+        "ID": {
+            "Data": 321,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M1813",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "321": {
-        "ID": 322,
-        "Device_Name": "Meizu M1816"
+        "ID": {
+            "Data": 322,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M1816",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "322": {
-        "ID": 323,
-        "Device_Name": "Meizu PRO 7-S"
+        "ID": {
+            "Data": 323,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu PRO 7-S",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "323": {
-        "ID": 324,
-        "Device_Name": "Meizu M6 Note"
+        "ID": {
+            "Data": 324,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M6 Note",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "324": {
-        "ID": 325,
-        "Device_Name": "Meizu Meizu S6"
+        "ID": {
+            "Data": 325,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu Meizu S6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "325": {
-        "ID": 326,
-        "Device_Name": "Meizu M5 Note"
+        "ID": {
+            "Data": 326,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M5 Note",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "326": {
-        "ID": 327,
-        "Device_Name": "Meizu MX6"
+        "ID": {
+            "Data": 327,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu MX6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "327": {
-        "ID": 328,
-        "Device_Name": "Meizu MEIZU M6"
+        "ID": {
+            "Data": 328,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu MEIZU M6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "328": {
-        "ID": 329,
-        "Device_Name": "Meizu PRO 6"
+        "ID": {
+            "Data": 329,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu PRO 6",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "329": {
-        "ID": 330,
-        "Device_Name": "Meizu PRO 6s"
+        "ID": {
+            "Data": 330,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu PRO 6s",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "330": {
-        "ID": 331,
-        "Device_Name": "Meizu M1 E"
+        "ID": {
+            "Data": 331,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M1 E",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "331": {
-        "ID": 332,
-        "Device_Name": "Meizu M3 Max"
+        "ID": {
+            "Data": 332,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu M3 Max",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "332": {
-        "ID": 333,
-        "Device_Name": "Meizu PRO 5"
+        "ID": {
+            "Data": 333,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Meizu PRO 5",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "333": {
-        "Version": "2.1",
-        "ID": 334,
-        "Device_Name": "OPPO PBAT00"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 334,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBAT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "334": {
-        "ID": 335,
-        "Device_Name": "OPPO PBCM30"
+        "ID": {
+            "Data": 335,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBCM30",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "335": {
-        "Version": "2.1",
-        "ID": 336,
-        "Device_Name": "OPPO PBAM00"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 336,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBAM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "336": {
-        "ID": 337,
-        "Device_Name": "OPPO PBCM10"
+        "ID": {
+            "Data": 337,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBCM10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "337": {
-        "ID": 338,
-        "Device_Name": "OPPO PBCT10"
+        "ID": {
+            "Data": 338,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PBCT10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "338": {
-        "ID": 339,
-        "Device_Name": "Huawei HRY-AL00"
+        "ID": {
+            "Data": 339,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "339": {
-        "ID": 340,
-        "Device_Name": "Huawei HRY-AL00a"
+        "ID": {
+            "Data": 340,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-AL00a",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "340": {
-        "ID": 341,
-        "Device_Name": "Huawei HRY-TL00"
+        "ID": {
+            "Data": 341,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "341": {
-        "ID": 342,
-        "Device_Name": "Huawei HRY-LX1"
+        "ID": {
+            "Data": 342,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-LX1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "342": {
-        "ID": 343,
-        "Device_Name": "Huawei HRY-LX1MEB"
+        "ID": {
+            "Data": 343,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-LX1MEB",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "343": {
-        "ID": 344,
-        "Device_Name": "Huawei HRY-LX2"
+        "ID": {
+            "Data": 344,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-LX2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "344": {
-        "ID": 345,
-        "Device_Name": "Huawei HRY-AL00T"
+        "ID": {
+            "Data": 345,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-AL00T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "345": {
-        "ID": 346,
-        "Device_Name": "Huawei HRY-AL00Ta"
+        "ID": {
+            "Data": 346,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-AL00Ta",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "346": {
-        "ID": 347,
-        "Device_Name": "Huawei HRY-TL00T"
+        "ID": {
+            "Data": 347,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-TL00T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "347": {
-        "ID": 348,
-        "Device_Name": "Huawei HRY-LX1T"
+        "ID": {
+            "Data": 348,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei HRY-LX1T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "348": {
-        "ID": 349,
-        "Device_Name": "Huawei POT-AL00"
+        "ID": {
+            "Data": 349,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei POT-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "349": {
-        "ID": 350,
-        "Device_Name": "Huawei POT-AL00a"
+        "ID": {
+            "Data": 350,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei POT-AL00a",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "350": {
-        "ID": 351,
-        "Device_Name": "Huawei POT-TL00"
+        "ID": {
+            "Data": 351,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei POT-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "351": {
-        "ID": 352,
-        "Device_Name": "Huawei POT-LX1"
+        "ID": {
+            "Data": 352,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei POT-LX1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "352": {
-        "ID": 353,
-        "Device_Name": "Huawei POT-LX1AF"
+        "ID": {
+            "Data": 353,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei POT-LX1AF",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "353": {
-        "ID": 354,
-        "Device_Name": "Huawei POT-LX2J"
+        "ID": {
+            "Data": 354,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei POT-LX2J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "354": {
-        "ID": 355,
-        "Device_Name": "Huawei POT-LX3"
+        "ID": {
+            "Data": 355,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei POT-LX3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "355": {
-        "ID": 356,
-        "Device_Name": "Huawei BKK-AL10"
+        "ID": {
+            "Data": 356,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei BKK-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "356": {
-        "ID": 357,
-        "Device_Name": "Huawei BKK-AL00"
+        "ID": {
+            "Data": 357,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei BKK-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "357": {
-        "ID": 358,
-        "Device_Name": "Huawei BKK-TL00"
+        "ID": {
+            "Data": 358,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei BKK-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "358": {
-        "ID": 359,
-        "Device_Name": "Huawei BKK-L21"
+        "ID": {
+            "Data": 359,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei BKK-L21",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "359": {
-        "ID": 360,
-        "Device_Name": "Huawei BKK-L22"
+        "ID": {
+            "Data": 360,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei BKK-L22",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "360": {
-        "ID": 361,
-        "Device_Name": "Huawei JAT-AL00"
+        "ID": {
+            "Data": 361,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JAT-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "361": {
-        "ID": 362,
-        "Device_Name": "Huawei JAT-TL00"
+        "ID": {
+            "Data": 362,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JAT-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "362": {
-        "ID": 363,
-        "Device_Name": "Huawei JAT-L29"
+        "ID": {
+            "Data": 363,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JAT-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "363": {
-        "ID": 364,
-        "Device_Name": "Huawei JAT-LX1"
+        "ID": {
+            "Data": 364,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JAT-LX1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "364": {
-        "ID": 365,
-        "Device_Name": "Huawei JAT-LX3"
+        "ID": {
+            "Data": 365,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei JAT-LX3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "365": {
-        "ID": 366,
-        "Device_Name": "Huawei MRD-LX1"
+        "ID": {
+            "Data": 366,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MRD-LX1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "366": {
-        "ID": 367,
-        "Device_Name": "Huawei MRD-LX1N"
+        "ID": {
+            "Data": 367,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MRD-LX1N",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "367": {
-        "ID": 368,
-        "Device_Name": "Huawei MRD-LX1F"
+        "ID": {
+            "Data": 368,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MRD-LX1F",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "368": {
-        "ID": 369,
-        "Device_Name": "Huawei MRD-LX2"
+        "ID": {
+            "Data": 369,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MRD-LX2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "369": {
-        "ID": 370,
-        "Device_Name": "Huawei MRD-LX3"
+        "ID": {
+            "Data": 370,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MRD-LX3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "370": {
-        "ID": 371,
-        "Device_Name": "Huawei MRD-AL00"
+        "ID": {
+            "Data": 371,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MRD-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "371": {
-        "ID": 372,
-        "Device_Name": "Huawei MRD-TL00"
+        "ID": {
+            "Data": 372,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei MRD-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "372": {
-        "Version": "2.02",
-        "ID": 373,
-        "Device_Name": "Huawei DUB-AL20"
+        "Version": {
+            "Data": "2.02",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 373,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei DUB-AL20",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "373": {
-        "Version": "2.02",
-        "ID": 374,
-        "Device_Name": "Huawei DUB-LX1"
+        "Version": {
+            "Data": "2.02",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 374,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei DUB-LX1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "374": {
-        "Version": "2.02",
-        "ID": 375,
-        "Device_Name": "Huawei DUB-LX2"
+        "Version": {
+            "Data": "2.02",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 375,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei DUB-LX2",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "375": {
-        "Version": "2.02",
-        "ID": 376,
-        "Device_Name": "Huawei DUB-LX3"
+        "Version": {
+            "Data": "2.02",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 376,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Huawei DUB-LX3",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "376": {
-        "ID": 377,
-        "Device_Name": "vivo vivoZ1i"
+        "ID": {
+            "Data": 377,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivoZ1i",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "377": {
-        "ID": 378,
-        "Device_Name": "vivo V1818BT"
+        "ID": {
+            "Data": 378,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1818BT",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "378": {
-        "ID": 379,
-        "Device_Name": "vivo V1818BA"
+        "ID": {
+            "Data": 379,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1818BA",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "379": {
-        "ID": 380,
-        "Device_Name": "vivo V1818CA"
+        "ID": {
+            "Data": 380,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1818CA",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "380": {
-        "ID": 381,
-        "Device_Name": "vivo V1818CT"
+        "ID": {
+            "Data": 381,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1818CT",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "381": {
-        "ID": 382,
-        "Device_Name": "vivo V1821T"
+        "ID": {
+            "Data": 382,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1821T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "382": {
-        "ID": 383,
-        "Device_Name": "vivo V1821A"
+        "ID": {
+            "Data": 383,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1821A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "383": {
-        "ID": 384,
-        "Device_Name": "vivo vivoZ1"
+        "ID": {
+            "Data": 384,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo vivoZ1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "384": {
-        "ID": 385,
-        "Device_Name": "vivo V1732A"
+        "ID": {
+            "Data": 385,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1732A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "385": {
-        "ID": 386,
-        "Device_Name": "vivo V1732T"
+        "ID": {
+            "Data": 386,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1732T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "386": {
-        "Version": "1.95",
-        "ID": 387,
-        "Device_Name": "HUAWEI VCE-L22"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 387,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VCE-L22",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "387": {
-        "Version": "1.95",
-        "ID": 388,
-        "Device_Name": "HUAWEI PCT-L29"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 388,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI PCT-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "388": {
-        "ID": 389,
-        "Device_Name": "vivo V1813A"
+        "ID": {
+            "Data": 389,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1813A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "389": {
-        "ID": 390,
-        "Device_Name": "vivo V1813T"
+        "ID": {
+            "Data": 390,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1813T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "390": {
-        "ID": 391,
-        "Device_Name": "Xiaomi MIX 3 The Palace Museum Edition"
+        "ID": {
+            "Data": 391,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MIX 3 The Palace Museum Edition",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "391": {
-        "Version": "1.96",
-        "ID": 392,
-        "Device_Name": "Xiaomi MI PLAY"
+        "Version": {
+            "Data": "1.96",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 392,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI PLAY",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "392": {
-        "Version": "1.92",
-        "ID": 393,
-        "Device_Name": "Xiaomi POCOPHONE F1"
+        "Version": {
+            "Data": "1.92",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 393,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi POCOPHONE F1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "393": {
-        "Version": "1.95",
-        "ID": 394,
-        "Device_Name": "Xiaomi Redmi Note 6 Pro"
+        "Version": {
+            "Data": "1.95",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 394,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi Note 6 Pro",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "394": {
-        "Version": "1.9",
-        "ID": 395,
-        "Device_Name": "HUAWEI ARS-TL00"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 395,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ARS-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "395": {
-        "Version": "2.03",
-        "ID": 396,
-        "Device_Name": "HUAWEI ELE-AL00"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 396,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ELE-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "396": {
-        "Version": "2.03",
-        "ID": 397,
-        "Device_Name": "HUAWEI ELE-AL00m"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 397,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ELE-AL00m",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "397": {
-        "Version": "2.03",
-        "ID": 398,
-        "Device_Name": "HUAWEI ELE-TL00"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 398,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ELE-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "398": {
-        "Version": "2.03",
-        "ID": 399,
-        "Device_Name": "HUAWEI ELE-L09"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 399,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ELE-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "399": {
-        "Version": "2.03",
-        "ID": 400,
-        "Device_Name": "HUAWEI ELE-L09m"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 400,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ELE-L09m",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "400": {
-        "Version": "2.03",
-        "ID": 401,
-        "Device_Name": "HUAWEI ELE-L29"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 401,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ELE-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "401": {
-        "Version": "2.03",
-        "ID": 402,
-        "Device_Name": "HUAWEI ELE-L04"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 402,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI ELE-L04",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "402": {
-        "Version": "2.03",
-        "ID": 403,
-        "Device_Name": "HUAWEI VOG-AL00"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 403,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "403": {
-        "Version": "2.03",
-        "ID": 404,
-        "Device_Name": "HUAWEI VOG-AL00m"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 404,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-AL00m",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "404": {
-        "Version": "2.03",
-        "ID": 405,
-        "Device_Name": "HUAWEI VOG-AL10"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 405,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "405": {
-        "Version": "2.03",
-        "ID": 406,
-        "Device_Name": "HUAWEI VOG-TL00"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 406,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "406": {
-        "Version": "2.03",
-        "ID": 407,
-        "Device_Name": "HUAWEI VOG-L09"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 407,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "407": {
-        "Version": "2.03",
-        "ID": 408,
-        "Device_Name": "HUAWEI VOG-L04"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 408,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-L04",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "408": {
-        "Version": "2.03",
-        "ID": 409,
-        "Device_Name": "HUAWEI VOG-L29"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 409,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "409": {
-        "Version": "2.03",
-        "ID": 410,
-        "Device_Name": "HUAWEI VOG-L09m"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 410,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-L09m",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "410": {
-        "Version": "2.03",
-        "ID": 411,
-        "Device_Name": "HUAWEI VOG-L09t"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 411,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-L09t",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "411": {
-        "Version": "2.03",
-        "ID": 412,
-        "Device_Name": "HUAWEI VOG-L0J"
+        "Version": {
+            "Data": "2.03",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 412,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI VOG-L0J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "412": {
-        "Version": "2.1",
-        "ID": 413,
-        "Device_Name": "vivo V1836A"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 413,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1836A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "413": {
-        "Version": "2.1",
-        "ID": 414,
-        "Device_Name": "vivo V1836T"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 414,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo V1836T",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "414": {
-        "Version": "1.9",
-        "ID": 415,
-        "Device_Name": "SM-G9700 S10"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 415,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "SM-G9700 S10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "415": {
-        "Version": "1.9",
-        "ID": 416,
-        "Device_Name": "SM-G9708 S10 CMCC DP"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 416,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "SM-G9708 S10 CMCC DP",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "416": {
-        "Version": "1.9",
-        "ID": 417,
-        "Device_Name": "SM-G9730 S10e"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 417,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "SM-G9730 S10e",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "417": {
-        "Version": "1.9",
-        "ID": 418,
-        "Device_Name": "SM-G9750 S10+"
+        "Version": {
+            "Data": "1.9",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 418,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "SM-G9750 S10+",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "418": {
-        "ID": 419,
-        "Device_Name": "OPPO PCCM00"
+        "ID": {
+            "Data": 419,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCCM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "419": {
-        "ID": 420,
-        "Device_Name": "OPPO PCCT00"
+        "ID": {
+            "Data": 420,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCCT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "420": {
-        "ID": 421,
-        "Device_Name": "OPPO PCAT00"
+        "ID": {
+            "Data": 421,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCAT00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "421": {
-        "ID": 422,
-        "Device_Name": "OPPO PCAM10"
+        "ID": {
+            "Data": 422,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCAM10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "422": {
-        "ID": 423,
-        "Device_Name": "OPPO PCAT10"
+        "ID": {
+            "Data": 423,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCAT10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "423": {
-        "ID": 424,
-        "Device_Name": "OPPO PCEM00"
+        "ID": {
+            "Data": 424,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCEM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "424": {
-        "ID": 425,
-        "Device_Name": "OPPO PCET00"
+        "ID": {
+            "Data": 425,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCET00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "425": {
-        "ID": 426,
-        "Device_Name": "OPPO PCAM00"
+        "ID": {
+            "Data": 426,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCAM00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "426": {
-        "ID": 427,
-        "Device_Name": "Xiaomi MI 5C"
+        "ID": {
+            "Data": 427,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 5C",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "427": {
-        "1409": "3|3",
-        "ID": 428,
-        "Device_Name": "OPPO PCDM10"
+        "1409": {
+            "Data": "3|3",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 428,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OPPO PCDM10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "428": {
-        "Version": "1.85",
-        "ID": 429,
-        "Device_Name": "samsung SM-G9700"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 429,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9700",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "429": {
-        "Version": "1.85",
-        "ID": 430,
-        "Device_Name": "samsung SM-G970XC"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 430,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G970XC",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "430": {
-        "Version": "1.85",
-        "ID": 431,
-        "Device_Name": "samsung SM-G9708"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 431,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9708",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "431": {
-        "Version": "1.85",
-        "ID": 432,
-        "Device_Name": "samsung SM-G970N"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 432,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G970N",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "432": {
-        "Version": "1.85",
-        "ID": 433,
-        "Device_Name": "samsung SM-G970F"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 433,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G970F",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "433": {
-        "Version": "1.85",
-        "ID": 434,
-        "Device_Name": "samsung SM-G970U"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 434,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G970U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "434": {
-        "Version": "1.85",
-        "ID": 435,
-        "Device_Name": "samsung SM-G970J"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 435,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G970J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "435": {
-        "Version": "1.85",
-        "ID": 436,
-        "Device_Name": "samsung SM-G970D"
+        "Version": {
+            "Data": "1.85",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 436,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G970D",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "436": {
-        "Version": "1.91",
-        "ID": 437,
-        "Device_Name": "samsung SM-G973XC"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 437,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G973XC",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "437": {
-        "Version": "1.91",
-        "ID": 438,
-        "Device_Name": "samsung SM-G9738"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 438,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9738",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "438": {
-        "Version": "1.91",
-        "ID": 439,
-        "Device_Name": "samsung SM-G973N"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 439,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G973N",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "439": {
-        "Version": "1.91",
-        "ID": 440,
-        "Device_Name": "samsung SM-G973F"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 440,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G973F",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "440": {
-        "Version": "1.91",
-        "ID": 441,
-        "Device_Name": "samsung SM-G973U"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 441,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G973U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "441": {
-        "Version": "1.91",
-        "ID": 442,
-        "Device_Name": "samsung SM-G973J"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 442,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G973J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "442": {
-        "Version": "1.91",
-        "ID": 443,
-        "Device_Name": "samsung SM-G973D"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 443,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G973D",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "443": {
-        "Version": "1.91",
-        "ID": 444,
-        "Device_Name": "samsung SM-G9750"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 444,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9750",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "444": {
-        "Version": "1.91",
-        "ID": 445,
-        "Device_Name": "samsung SM-G975XC"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 445,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G975XC",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "445": {
-        "Version": "1.91",
-        "ID": 446,
-        "Device_Name": "samsung SM-G9758"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 446,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9758",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "446": {
-        "Version": "1.91",
-        "ID": 447,
-        "Device_Name": "samsung SM-G975N"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 447,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G975N",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "447": {
-        "Version": "1.91",
-        "ID": 448,
-        "Device_Name": "samsung SM-G975F"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 448,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G975F",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "448": {
-        "Version": "1.91",
-        "ID": 449,
-        "Device_Name": "samsung SM-G975U"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 449,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G975U",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "449": {
-        "Version": "1.91",
-        "ID": 450,
-        "Device_Name": "samsung SM-G975J"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 450,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G975J",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "450": {
-        "Version": "1.91",
-        "ID": 451,
-        "Device_Name": "samsung SM-G976D"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 451,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G976D",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "451": {
-        "Version": "1.91",
-        "ID": 452,
-        "Device_Name": "samsung SM-G9770"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 452,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9770",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "452": {
-        "Version": "1.91",
-        "ID": 453,
-        "Device_Name": "samsung SM-G977N"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 453,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G977N",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "453": {
-        "Version": "1.91",
-        "ID": 454,
-        "Device_Name": "samsung SM-G9730"
+        "Version": {
+            "Data": "1.91",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 454,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "samsung SM-G9730",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "454": {
-        "ID": 455,
-        "Device_Name": "realme RMX1901"
+        "ID": {
+            "Data": 455,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "realme RMX1901",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "455": {
-        "ID": 456,
-        "Device_Name": "realme RMX1911"
+        "ID": {
+            "Data": 456,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "realme RMX1911",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "456": {
-        "ID": 457,
-        "Device_Name": "Realme RMX1851"
+        "ID": {
+            "Data": 457,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Realme RMX1851",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "457": {
-        "ID": 458,
-        "Device_Name": "realme RMX1991"
+        "ID": {
+            "Data": 458,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "realme RMX1991",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "458": {
-        "ID": 459,
-        "Device_Name": "realme RMX1921"
+        "ID": {
+            "Data": 459,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "realme RMX1921",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "459": {
-        "ID": 460,
-        "Device_Name": "realme RMX1971"
+        "ID": {
+            "Data": 460,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "realme RMX1971",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "460": {
-        "Version": "1.94",
-        "ID": 461,
-        "Device_Name": "HUAWEI EML-L09"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 461,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-L09",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "461": {
-        "Version": "1.94",
-        "ID": 462,
-        "Device_Name": "HUAWEI EML-L29"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 462,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-L29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "462": {
-        "Version": "1.94",
-        "ID": 463,
-        "Device_Name": "HUAWEI EML-AL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 463,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-AL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "463": {
-        "Version": "1.94",
-        "ID": 464,
-        "Device_Name": "HUAWEI EML-TL00"
+        "Version": {
+            "Data": "1.94",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 464,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI EML-TL00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "464": {
-        "Version": "1.92",
-        "ID": 465,
-        "Device_Name": "Xiaomi MI 9"
+        "Version": {
+            "Data": "1.92",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 465,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 9",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "465": {
-        "Version": "2.06",
-        "ID": 466,
-        "Device_Name": "vivo X21A"
+        "Version": {
+            "Data": "2.06",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 466,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo X21A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "466": {
-        "Version": "2.06",
-        "ID": 467,
-        "Device_Name": "vivo X21"
+        "Version": {
+            "Data": "2.06",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 467,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo X21",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "467": {
-        "Version": "2.06",
-        "ID": 468,
-        "Device_Name": "vivo X21UD A"
+        "Version": {
+            "Data": "2.06",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 468,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo X21UD A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "468": {
-        "Version": "2.06",
-        "ID": 469,
-        "Device_Name": "vivo X21UD"
+        "Version": {
+            "Data": "2.06",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 469,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "vivo X21UD",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "469": {
-        "Version": "2.1",
-        "ID": 470,
-        "Device_Name": "OnePlus HD1900"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 470,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1900",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "470": {
-        "Version": "2.1",
-        "ID": 471,
-        "Device_Name": "OnePlus HD1901"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 471,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1901",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "471": {
-        "Version": "2.1",
-        "ID": 472,
-        "Device_Name": "OnePlus HD1903"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 472,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1903",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "472": {
-        "Version": "2.1",
-        "ID": 473,
-        "Device_Name": "OnePlus HD1905"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 473,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1905",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "473": {
-        "Version": "2.1",
-        "ID": 474,
-        "Device_Name": "OnePlus HD1907"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 474,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1907",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "474": {
-        "Version": "2.1",
-        "ID": 475,
-        "Device_Name": "EXSS8865 HD1910"
+        "Version": {
+            "Data": "2.1",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 475,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "EXSS8865 HD1910",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "475": {
-        "ID": 476,
-        "Device_Name": "oneplus GM1910"
+        "ID": {
+            "Data": 476,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "oneplus GM1910",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "476": {
-        "ID": 477,
-        "Device_Name": "Blackshark SKR-A0"
+        "ID": {
+            "Data": 477,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Blackshark SKR-A0",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "477": {
-        "ID": 478,
-        "Device_Name": "Blackshark SKR-H0"
+        "ID": {
+            "Data": 478,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Blackshark SKR-H0",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "478": {
-        "ID": 479,
-        "Device_Name": "OnePlus GM1900"
+        "ID": {
+            "Data": 479,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus GM1900",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "479": {
-        "ID": 480,
-        "Device_Name": "Oneplus GM1910"
+        "ID": {
+            "Data": 480,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Oneplus GM1910",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "480": {
-        "ID": 481,
-        "Device_Name": "OnePlus HD1910"
+        "ID": {
+            "Data": 481,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1910",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "481": {
-        "ID": 482,
-        "Device_Name": "OnePlus HD1911"
+        "ID": {
+            "Data": 482,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1911",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "482": {
-        "ID": 483,
-        "Device_Name": "OnePlus HD1913"
+        "ID": {
+            "Data": 483,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1913",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "483": {
-        "ID": 484,
-        "Device_Name": "OnePlus HD1917"
+        "ID": {
+            "Data": 484,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1917",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "484": {
-        "ID": 485,
-        "Device_Name": "OnePlus HD1925"
+        "ID": {
+            "Data": 485,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "OnePlus HD1925",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "485": {
-        "ID": 486,
-        "Device_Name": "Xiaomi MI CC 9"
+        "ID": {
+            "Data": 486,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI CC 9",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "486": {
-        "ID": 487,
-        "Device_Name": "Xiaomi MI 8"
+        "ID": {
+            "Data": 487,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi MI 8",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "487": {
-        "ID": 488,
-        "Device_Name": "Xiaomi Redmi K20 Pro"
+        "ID": {
+            "Data": 488,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi K20 Pro",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "488": {
-        "ID": 489,
-        "Device_Name": "Xiaomi Redmi Note 7 Pro"
+        "ID": {
+            "Data": 489,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi Note 7 Pro",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "489": {
-        "ID": 490,
-        "Device_Name": "Xiaomi Redmi K20 Pro Premium Edition"
+        "ID": {
+            "Data": 490,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi K20 Pro Premium Edition",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "490": {
-        "ID": 491,
-        "Device_Name": "Xiaomi Redmi K20"
+        "ID": {
+            "Data": 491,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi K20",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "491": {
-        "ID": 492,
-        "Device_Name": "Xiaomi Redmi Note 7"
+        "ID": {
+            "Data": 492,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "Xiaomi Redmi Note 7",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "492": {
-        "Version": "2.06",
-        "ID": 493,
-        "Device_Name": "VIVO V1932A"
+        "Version": {
+            "Data": "2.06",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 493,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "VIVO V1932A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "493": {
-        "ID": 494,
-        "Device_Name": "HUAWEI RLI-AN00"
+        "ID": {
+            "Data": 494,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI RLI-AN00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "494": {
-        "ID": 495,
-        "Device_Name": "HUAWEI RLI-N29"
+        "ID": {
+            "Data": 495,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI RLI-N29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "495": {
-        "ID": 496,
-        "Device_Name": "HUAWEI TAH-AN00"
+        "ID": {
+            "Data": 496,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI TAH-AN00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "496": {
-        "ID": 497,
-        "Device_Name": "HUAWEI TAH-N29"
+        "ID": {
+            "Data": 497,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI TAH-N29",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "497": {
-        "Version": "2.01",
-        "ID": 498,
-        "Device_Name": "HUAWEI WLZ-AL10"
+        "Version": {
+            "Data": "2.01",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 498,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI WLZ-AL10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "498": {
-        "Version": "2.01",
-        "ID": 499,
-        "Device_Name": "HUAWEI WLZ-AN00"
+        "Version": {
+            "Data": "2.01",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 499,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI WLZ-AN00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "499": {
-        "Version": "2.01",
-        "ID": 500,
-        "Device_Name": "HUAWEI OXF-AN00"
+        "Version": {
+            "Data": "2.01",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 500,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI OXF-AN00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "500": {
-        "Version": "2.01",
-        "ID": 501,
-        "Device_Name": "HUAWEI OXF-AN10"
+        "Version": {
+            "Data": "2.01",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 501,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI OXF-AN10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "501": {
-        "ID": 502,
-        "Device_Name": "HUAWEI TAH-AN00m"
+        "ID": {
+            "Data": 502,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI TAH-AN00m",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "502": {
-        "ID": 503,
-        "Device_Name": "HUAWEI RHA-AN00m"
+        "ID": {
+            "Data": 503,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "HUAWEI RHA-AN00m",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "503": {
-        "Version": "2.15",
-        "ID": 504,
-        "Device_Name": "EBG-AN00"
+        "Version": {
+            "Data": "2.15",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 504,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "EBG-AN00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "504": {
-        "Version": "2.15",
-        "ID": 505,
-        "Device_Name": "EBG-TN00"
+        "Version": {
+            "Data": "2.15",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 505,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "EBG-TN00",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "505": {
-        "Version": "2.15",
-        "ID": 506,
-        "Device_Name": "EBG-AN10"
+        "Version": {
+            "Data": "2.15",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 506,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "EBG-AN10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "506": {
-        "Version": "2.15",
-        "ID": 507,
-        "Device_Name": "JER-AN10"
+        "Version": {
+            "Data": "2.15",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 507,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "JER-AN10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "507": {
-        "Version": "2.15",
-        "ID": 508,
-        "Device_Name": "JER-TN10"
+        "Version": {
+            "Data": "2.15",
+            "Type": "String",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 508,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Device_Name": {
+            "Data": "JER-TN10",
+            "Type": "String",
+            "Link": "undefined"
+        }
     }
 }

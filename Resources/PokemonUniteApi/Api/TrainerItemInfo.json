@@ -1,32 +1,164 @@
 {
     "0": {
-        "1309": "86FD455BCADFF96A_##",
-        "1537": "t_trainerItem_1002002001",
-        "1727": "0"
+        "Description": {
+            "Data": {
+                "en": "Trainer Level 10 Rewards",
+                "chs": "训练家等级10级奖励\r",
+                "cht": "\r",
+                "de": "Belohnung für Trainer-Level 10",
+                "es": "Recompensas para Entrenadores de Nv. 10",
+                "fr": "",
+                "it": "",
+                "jp": "トレーナーレベル10到達報酬",
+                "ko": "트레이너 레벨 10 달성 보상"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_trainerItem_1002002001.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1727": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1309": "17E4B8CB2A7842E5_##",
-        "1537": "t_trainerItem_1002002002",
-        "1727": "0"
+        "Description": {
+            "Data": {
+                "en": "Trainer Level 8 Rewards",
+                "chs": "训练家等级8级奖励\r",
+                "cht": "\r",
+                "de": "Belohnung für Trainer-Level 8",
+                "es": "Recompensas para Entrenadores de Nv. 8",
+                "fr": "",
+                "it": "",
+                "jp": "トレーナーレベル8到達報酬",
+                "ko": "트레이너 레벨 8 달성 보상"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_trainerItem_1002002002.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1727": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1309": "F6EEB2CDB5D3E6E9_##",
-        "1537": "t_trainerItem_1002002003",
-        "1727": "0"
+        "Description": {
+            "Data": {
+                "en": "Trainer Level 15 Rewards",
+                "chs": "训练家等级15级奖励\r",
+                "cht": "\r",
+                "de": "Belohnung für Trainer-Level 15",
+                "es": "Recompensas para Entrenadores de Nv. 15",
+                "fr": "",
+                "it": "",
+                "jp": "トレーナーレベル15到達報酬",
+                "ko": "트레이너 레벨 15 달성 보상"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_trainerItem_1002002003.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1727": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1309": "0C834E04AE65664C_##",
-        "1537": "t_trainerItem_1002002004",
-        "1727": "0"
+        "Description": {
+            "Data": {
+                "en": "Trainer Level 4 Rewards",
+                "chs": "训练家等级4级奖励\r",
+                "cht": "\r",
+                "de": "Belohnung für Trainer-Level 4",
+                "es": "Recompensas para Entrenadores de Nv. 4",
+                "fr": "",
+                "it": "",
+                "jp": "トレーナーレベル4到達報酬",
+                "ko": "트레이너 레벨 4 달성 보상"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_trainerItem_1002002004.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1727": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1309": "CC3437984E216517_##",
-        "1537": "t_trainerItem_1002002005",
-        "1727": "0"
+        "Description": {
+            "Data": {
+                "en": "Trainer Level 14 Rewards",
+                "chs": "训练家等级14级奖励\r",
+                "cht": "\r",
+                "de": "Belohnung für Trainer-Level 14",
+                "es": "Recompensas para Entrenadores de Nv. 14",
+                "fr": "",
+                "it": "",
+                "jp": "トレーナーレベル14到達報酬",
+                "ko": "트레이너 레벨 14 달성 보상"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_trainerItem_1002002005.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1727": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1309": "C89BFF5653B15A0D_##",
-        "1537": "t_trainerItem_1002002006",
-        "1727": "0"
+        "Description": {
+            "Data": {
+                "en": "Trainer Level 18 Rewards",
+                "chs": "训练家等级18级奖励\r",
+                "cht": "\r",
+                "de": "Belohnung für Trainer-Level 18",
+                "es": "Recompensas para Entrenadores de Nv. 18",
+                "fr": "",
+                "it": "",
+                "jp": "トレーナーレベル18到達報酬",
+                "ko": "트레이너 레벨 18 달성 보상"
+            },
+            "Type": "Transient",
+            "Link": "undefined"
+        },
+        "Icon": {
+            "Data": "t_trainerItem_1002002006.png",
+            "Type": "Texture",
+            "Link": "undefined"
+        },
+        "1727": {
+            "Data": "0",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

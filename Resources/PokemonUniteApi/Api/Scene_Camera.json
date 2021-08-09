@@ -1,164 +1,668 @@
 {
     "0": {
-        "1254": "camera_common",
-        "1317": "(42.566,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,21,-21)",
-        "1767": "214",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(42.566,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,21,-21)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "214",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "208",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "208",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "20801",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "20801",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "20802",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "20802",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "4": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "20803",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "20803",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "5": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "20804",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "20804",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "6": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "20805",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "20805",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "7": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "20806",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "20806",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "8": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "20899",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "20899",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "9": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "211",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "211",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "10": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "21101",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "21101",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "11": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "401",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "401",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "12": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "9999",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "9999",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "13": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "301",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "301",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "14": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "302",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "302",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "15": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "303",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "303",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "16": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "304",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "304",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     },
     "17": {
-        "1254": "camera_common",
-        "1317": "(45,0,0)",
-        "1411": "pref_MinimapCameraframeIcon",
-        "1526": "10",
-        "1531": "(0,18.85,-18.6)",
-        "1767": "305",
-        "1841": "25"
+        "1254": {
+            "Data": "camera_common",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1317": {
+            "Data": "(45,0,0)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1411": {
+            "Data": "pref_MinimapCameraframeIcon",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1526": {
+            "Data": "10",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1531": {
+            "Data": "(0,18.85,-18.6)",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1767": {
+            "Data": "305",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "1841": {
+            "Data": "25",
+            "Type": "undefined",
+            "Link": "undefined"
+        }
     }
 }

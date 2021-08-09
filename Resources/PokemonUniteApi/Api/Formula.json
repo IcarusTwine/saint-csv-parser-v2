@@ -1,19 +1,55 @@
 {
     "0": {
-        "1395": "1",
-        "ID": 1,
-        "Formula": "1+A"
+        "1395": {
+            "Data": "1",
+            "Type": "undefined",
+            "Link": "undefined"
+        },
+        "ID": {
+            "Data": 1,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Formula": {
+            "Data": "1+A",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "1": {
-        "ID": 2,
-        "Formula": "A * A + 2 * A + 1"
+        "ID": {
+            "Data": 2,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Formula": {
+            "Data": "A * A + 2 * A + 1",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "2": {
-        "ID": 3,
-        "Formula": "B * A / 1000"
+        "ID": {
+            "Data": 3,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Formula": {
+            "Data": "B * A / 1000",
+            "Type": "String",
+            "Link": "undefined"
+        }
     },
     "3": {
-        "ID": 4,
-        "Formula": "B * A / 1000 + C * A * A / 2 / 1000000"
+        "ID": {
+            "Data": 4,
+            "Type": "ID",
+            "Link": "undefined"
+        },
+        "Formula": {
+            "Data": "B * A / 1000 + C * A * A / 2 / 1000000",
+            "Type": "String",
+            "Link": "undefined"
+        }
     }
 }
