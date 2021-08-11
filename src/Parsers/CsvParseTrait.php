@@ -3286,7 +3286,7 @@ trait CsvParseTrait
     /**
      * Save to output file for extra
      */
-    public function saveExtra($filename, $SourceData, $dontformat = false, $CustomPath = false)
+    public function saveExtra($filename, $SourceData, $dontformat = false, $CustomPath = false, $Pokemon = false)
     {   
         if ($dontformat = true){
             $data = $SourceData;
@@ -3304,6 +3304,10 @@ trait CsvParseTrait
             }
             $fileopen = fopen("{$folder}/{$PatchID}/{$filename}", 'w');
             $pathtext = "{$folder}/{$PatchID}/{$filename}";
+        } elseif ($Pokemon === true){
+            $folder = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/";
+            $fileopen = fopen("{$folder}{$filename}", 'w');
+            $pathtext = "{$folder}{$filename}";
         } else {
             $folder = str_replace("/output","",$this->projectDirectory . getenv('OUTPUT_DIRECTORY'));
             if (!file_exists("{$folder}/Resources/")) {

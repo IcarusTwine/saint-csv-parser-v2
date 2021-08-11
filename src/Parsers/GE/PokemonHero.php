@@ -4,6 +4,7 @@ namespace App\Parsers\GE;
 
 use App\Parsers\CsvParseTrait;
 use App\Parsers\ParseInterface;
+use Symfony\Component\Console\Output\ConsoleOutput;
 
 /**
  * php bin/console app:parse:csv GE:PokemonHero
@@ -18,6 +19,7 @@ class PokemonHero implements ParseInterface
     public function parse()
     {
         include (dirname(__DIR__) . '/Paths.php');
+        $console = new ConsoleOutput();
 
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
@@ -66,6 +68,10 @@ class PokemonHero implements ParseInterface
             $Main_Icon = $Pokemon['Main_Icon']['Data'];
             $Small_Icon = $Pokemon['Sub_Icon']['Data'];
             $Start_Icon = $Pokemon['Whole_Icon']['Data'];
+            $IconArray[] = $Pokemon['Whole_Icon']['Data'];
+            $IconArray[] = $Pokemon['Sub_Icon']['Data'];
+            $IconArray[] = $Pokemon['Main_Icon']['Data'];
+            $IconArray[] = $Pokemon['License_Icon']['Data'];
 
             $ReccomendedEquipID = $Pokemon_Hero_Array[$Pokemon_ID]['Recommend_Equipment']['Data'];
             $ReccomendedEquip = "";
@@ -78,6 +84,9 @@ class PokemonHero implements ParseInterface
             $Evo = "";
             foreach($Pokemon_Hero_Evolution_Array[$Pokemon_ID] as $Evolution){
                 $EvolutionNum = $Evolution['Evolution_Order']['Data'];
+                $IconArray[] = $Evolution['Small_Icon']['Data'];
+                $IconArray[] = $Evolution['Portrait']['Data'];
+                $IconArray[] = $Evolution['Name']['Data']['en'];
                 $Evo .= "|Evolution_$EvolutionNum Name = ". $Evolution['Name']['Data']['en']."\n";
                 $Evo .= "|Evolution_$EvolutionNum Portrait = ". $Evolution['Portrait']['Data']."\n";
                 $Evo .= "|Evolution_$EvolutionNum Small_Icon = ". $Evolution['Small_Icon']['Data']."\n";
@@ -85,7 +94,7 @@ class PokemonHero implements ParseInterface
             }
 
             $OutputString = "{{-start-}}\n";
-            $OutputString .= "'''Pokemon/$Name'''\n";
+            $OutputString .= "'''$Name'''\n";
             $OutputString .= "{{Pokemon Hero\n";
             $OutputString .= "|PokeDex = $PokeDex\n";
             $OutputString .= "|Name = $Name\n";
@@ -96,11 +105,11 @@ class PokemonHero implements ParseInterface
             $OutputString .= "|Difficulty = $Difficulty\n";
             $OutputString .= "|Type_Description = $TypeDesc\n";
             $OutputString .= "\n";
-            $OutputString .= "|Support = $Support\n";
-            $OutputString .= "|Scoring = $Scoring\n";
             $OutputString .= "|Offense = $Offense\n";
-            $OutputString .= "|Mobility = $Mobility\n";
             $OutputString .= "|Endurance = $Endurance\n";
+            $OutputString .= "|Mobility = $Mobility\n";
+            $OutputString .= "|Scoring = $Scoring\n";
+            $OutputString .= "|Support = $Support\n";
             $OutputString .= "|Base_HP = $Base_HP\n";
             $OutputString .= "|Base_Attack = $Base_Attack\n";
             $OutputString .= "\n";
@@ -124,6 +133,35 @@ class PokemonHero implements ParseInterface
         $data = [
             '{output}' => implode("\n\n",$Output),
         ];
+        
+        $IconArray = array_unique($IconArray);
+        $IconArrayCount = count($IconArray);
+        
+        //var_dump($IconArray);
+        $console = $console->section();
+        if (!empty($IconArray)) {
+            $this->io->text('Copying Quest Images ...');
+            $i = 0;
+            foreach ($IconArray as $value){
+                $i++;
+                $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
+                if (!file_exists("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$value")) {
+                    // ensure output directory exists
+                    $IconOutputDirectory = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/";
+                    if (!is_dir($IconOutputDirectory)) {
+                        mkdir($IconOutputDirectory, 0777, true);
+                    }
+                    // copy the input icon to the output filename
+                    var_dump("E:\saint-csv-parser-v2\Resources\PokemonUniteApi\alltex\Texture2D/$value");
+                    if(file_exists("E:\saint-csv-parser-v2\Resources\PokemonUniteApi\alltex\Texture2D/$value")){
+                        var_dump($value);
+                        copy("E:\saint-csv-parser-v2\Resources\PokemonUniteApi\alltex\Texture2D/$value", $IconOutputDirectory."/$value");
+                    } else {
+                        $MissingIconArray[] = $value;
+                    }
+                }
+            }
+        }
         $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
 
 

@@ -128,7 +128,7 @@ class test implements ParseInterface
         $path = "$Resources\PokemonUniteApi/Databins/";
         $files = array_diff(scandir($path), array('.', '..'));
         $files = array(
-            "SkillSlot_LevelUp",
+            "TrainerExpGift",
         );
         function hex2str($hex) {
             $str = '';
@@ -182,18 +182,53 @@ class test implements ParseInterface
         );
         function bufferVal($bytes){
             foreach($bytes as $byte){
-                $binary[] = substr(sprintf('%08d', decbin(hexdec($byte))),1);
+                $NewByte = hexdec($byte);
+                if ($NewByte > 127){
+                    $NewByte = $NewByte - 256;
+                }
+                //var_dump($NewByte);
+                $DecByte = decbin($NewByte);
+                var_dump($DecByte);
+                $DecByte = (($DecByte << 1) ^ ($DecByte >> 63));
+                $binary[] = substr(sprintf('%08d', $DecByte),1);
+
             }
+            var_dump($binary);
             $binarray = array_reverse($binary);
-            $binnum = implode($binarray)+0;
-            return bindec(intval($binnum));
+            $binnum = implode($binarray);
+            return bindec($binnum);
         }
+        //var_dump(bufferVal(array("96","01"))); // 150, correct
+        
+
+        //var_dump(bufferVal(array("C5","D3","B7","04"))); // 0, incorrect, should be 9300112
+        
+        //var_dump(bufferVal(array("14"))); // 20, correct
         
         function bufferVal1($bytes){
             $value = 0;
             $shift = 0;
             $MSB = 0x80;
+            $Offset = 0;
+            do {
+                $value += $shift < 28 ?
+                    (intval($bytes[$Offset]) & $value) << $shift
+                    :
+                    (intval($bytes[$Offset]) & $value) << pow(2,$shift);
+                $shift += 7;
+            } while ((intval($bytes[$Offset++]) & $MSB) === $MSB);
+            return $value;
         }
+        var_dump(wireType("0A")); // 0, incorrect, should be 9306610
+        //var_dump(bufferVal1(array("96","01"))); // 150, correct
+        //
+        //var_dump(bufferVal1(array("F3","09"))); // 1267, incorrect, should be 20275
+//
+        //var_dump(bufferVal1(array("C5","D3","B7","04"))); // 0, incorrect, should be 9300112
+        //
+        //var_dump(bufferVal1(array("14"))); // 20, correct
+
+        //var_dump(bufferVal(array("96","01")));
         /**
         this.MSB = 0x80;
         _varInt() {
@@ -209,7 +244,7 @@ class test implements ParseInterface
             return value;
         }
         */
-        sleep(1000);
+        //sleep(1000);
         function varint($Chunk,$pos,$found = 0,$SetLength = 0,$CN = 0,$debug = 0){ //0	Varint	int32, int64, uint32, uint64, sint32, sint64, bool, enum
             
             $Header = 0;
@@ -437,6 +472,14 @@ class test implements ParseInterface
             $pos = 0;
             $limit = count($hexarray);
             $Chunks = [];
+            
+            foreach($hexarray as $no => $Hex){
+                //foreach($Chunk as $Byte){
+                    $TestAr[] = (wireType($Hex));
+                //}
+            }
+            $this->saveExtra("PokemonUniteApi/Bytesfull.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+     
             while ($pos < $limit){
                 if ($pos > $limit){
                     break;
@@ -458,177 +501,13 @@ class test implements ParseInterface
             }
             
            foreach($Chunks as $no => $Chunk){
-               $TestAr[] = "Chunk: $no start";
-               foreach($Chunk as $Byte){
-                   $TestAr[] = (wireType($Byte));
-               }
-               $TestAr[] = "Chunk: $no end";
-           }
-           $this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
-    
-            $Output = [];
-            foreach($Chunks as $Num => $Chunk){
-                $pos = 0;
-                $limit = count($Chunk);
-                $Chunks = [];
-                $OutputChunk = [];
-                while ($pos < $limit){
-                    if ($pos > $limit){
-                        break;
-                    }
-                    if ($debug === 1){var_dump("Chunk -".$Num);
-                    var_dump($pos);
-                    var_dump($Chunk[$pos]);
-                    sleep(1);}
-                    switch (wireType($Chunk[$pos])['WireType']) {
-                        case 0:
-                            if ($debug === 1){var_dump($Chunk[$pos]."- Start Varint");}
-                            $Data = null;
-                            $Data = varint($Chunk,$pos);
-                            $OutputChunk[$Num][] = $Data["Data"];
-                            if ($debug === 1){var_dump($Data);
-                            var_dump("- end Varint");}
-                            $pos = $Data["Pos"];
-                            //sleep(4);
-                        break;
-                        case 2:
-                            if ($debug === 1){var_dump($Chunk[$pos]."- Start lendel");}
-                            $Data = null;
-                            $Data = lendel($Chunk,$pos,$debug);
-                            $OutputChunk[$Num][] = $Data["Data"];
-                            if ($debug === 1){var_dump($Data["Data"]);
-                            var_dump("- end lendel");}
-                            $pos = $Data["Pos"];
-                            //sleep(4);
-                        break;
-                        
-                        
-                        default:
-                        break;
-                    }
-                }
-                $Output[] = $OutputChunk;
-                //sleep(4);
+            $TestAr[] = "Chunk: $no start";
+            foreach($Chunk as $Byte){
+                $TestAr[] = (wireType($Byte));
             }
-            $SaveOut = file_put_contents("E:\saint-csv-parser-v2\Resources\helpme.php", '<?php $arr = ' . var_export($Output, true) . ';');
-
-            $FinalOutput = [];
-            foreach($Output as $Key => $Value){
-                $ChunkNumber = $Key;
-                foreach($Value as $Key2 => $Value2){
-                    foreach($Value2 as $Key3 => $Value3){
-                        foreach($Value3 as $Key4 => $Value4){
-                            $DataKey = $Key4;
-                            $Type = "undefined";
-                            $Link = "undefined";
-                            if (!empty($AllDefs_Json[$filename][$DataKey])){
-                                $Type = $AllDefs_Json[$filename][$DataKey]['Type'];
-                                $DataKey = $AllDefs_Json[$filename][$DataKey]['Def'];
-                                foreach($Value4 as $ValueOutput){
-                                    switch ($Type) {
-                                        case 'Transient':
-                                            $Value4 = array(
-                                                "en" => $LanguageMap_en[$ValueOutput],
-                                                "chs" => $LanguageMap_chs[$ValueOutput],
-                                                "cht" => $LanguageMap_cht[$ValueOutput],
-                                                "de" => $LanguageMap_de[$ValueOutput],
-                                                "es" => $LanguageMap_es[$ValueOutput],
-                                                "fr" => $LanguageMap_fr[$ValueOutput],
-                                                "it" => $LanguageMap_it[$ValueOutput],
-                                                "jp" => $LanguageMap_jp[$ValueOutput],
-                                                "ko" => $LanguageMap_ko[$ValueOutput],
-                                                //"tc" => $LanguageMap_tc[$ValueOutput],
-                                            );
-                                        break;
-                                        case 'Texture':
-                                            $Value4 = $ValueOutput.".png";
-                                        break;
-                                        case 'Texture':
-                                            $Value4 = $Value4;
-                                            $Link = $AllDefs_Json[$filename][$DataKey]['Link'];
-                                        break;
-                                        
-                                        default:
-                                            $Value4 = $ValueOutput;
-                                        break;
-                                    }
-                                }
-                            } else {
-                                $Value4 = recursive_implode($Value4,",",false);
-                            }
-                            $FinalOutput[$ChunkNumber][$DataKey]["Data"] = $Value4;
-                            $FinalOutput[$ChunkNumber][$DataKey]["Type"] = $Type;
-                            $FinalOutput[$ChunkNumber][$DataKey]["Link"] = $Link;
-                        }
-                    }
-                }
-            }
-            $SaveOut = file_put_contents("E:\saint-csv-parser-v2\Resources\helpme.php", '<?php $arr = ' . var_export($FinalOutput, true) . ';');
-            $Jsonify = JSON_Encode($FinalOutput,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE|JSON_FORCE_OBJECT);
-            $this->saveExtra("PokemonUniteApi/Api/$filename.json",$Jsonify, true, true);
-    
-            $JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\Api/$filename.json"),true); 
-            $Output = [];
-            foreach($JSON as $Key => $Value){
-                if (!empty($Value["ID"])){
-                    $KeyDef = "<td>".$Value["ID"]['Data']."</td>";
-                } else {
-                    $KeyDef = "<td>".$Key."</td>";
-                }
-                $Headers = "";
-                $TableData = "";
-                $Types = "<td>Key</td>";
-                foreach($Value as $Header => $Data){
-                    $Headers .= "<th>$Header</th>";
-                    if (!empty($Data["Type"])){
-                        $Types .= "<td>".$Data["Type"]."</td>";
-                    }
-                    if (!empty($Value["ID"])){
-                        $KeyDef = "<td>".$Value["ID"]['Data']."</td>";
-                    } 
-                    if (is_array($Data['Data'])){
-                        $TableData .= "<td>".recursive_implode($Data['Data'],"<br>",false)."</td>";
-                    } else {
-                        if (stripos($Data['Data'],".png") !== false){
-                            $TableData .= "<td><img src='../alltex/Sprite/".$Data['Data']."'/></td>";
-                        } else {
-                            $TableData .= "<td>".$Data['Data']."</td>";
-                        }
-                    }
-                }
-                $OutputString = "<!DOCTYPE html>\n";
-                $OutputString .= "<html lang=\"en\">\n";
-                $OutputString .= "<title>W3.CSS Template</title>\n";
-                $OutputString .= "<meta charset=\"UTF-8\">\n";
-                $OutputString .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n";
-                $OutputString .= "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">\n";
-                $OutputString .= "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">            \n";
-                $OutputString .= "<style>
-                body {font-family: \"Lato\", sans-serif}
-                .mySlides {display: none}
-                figure{
-                    display: inline-block;
-                }
-                table, th, td {
-                  border: 1px solid black;
-                }
-                </style>\n";
-                $OutputString .= "<body>\n";
-                $OutputString .= "<table class=\"w3-table-all\">\n";
-                $OutputString .= "<tr>\n";
-                $OutputString .= "<td>Key</td>$Headers\n";
-                $OutputString .= "</tr>\n";
-                $OutputString .= "$Types\n";
-                $OutputString .= "<tr>\n";
-                $OutputString .= "$KeyDef$TableData\n";
-                $OutputString .= "</tr>\n";
-                $OutputString .= "</table>\n";
-                $OutputString .= "</body>\n";
-                $OutputString .= "</html>\n";
-                $Output[] = $OutputString;
-            }
-            $this->saveExtra("PokemonUniteApi/Parsed/$filename.html",implode("\n\n",$Output), true, true);
+            $TestAr[] = "Chunk: $no end";
         }
-        
+        $this->saveExtra("PokemonUniteApi/Bytes.json",JSON_Encode($TestAr,JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE), true, true);
+    }
     }
 }

@@ -1,849 +1,224 @@
 {
     "0": {
-        "Icon": {
-            "Data": "t_stone_icon_Slowbro.png",
-            "Type": "Texture",
-            "Link": "undefined"
-        },
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 60,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15002,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1759": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "2",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "1": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 160,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15003,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "3",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "2": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 310,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15004,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "4",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "3": {
-        "Icon": {
-            "Data": "t_stone_icon_Gardevoir.png",
-            "Type": "Texture",
-            "Link": "undefined"
-        },
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 460,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15005,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1759": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "5",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "4": {
-        "Description": {
-            "Data": {
-                "en": "A Pokémon holding this item will gradually recover HP when it is not in combat.",
-                "chs": "携带后脱离战斗会回复体力\r",
-                "cht": "\r",
-                "de": "Dieses Item regeneriert die KP seines Trägers, wenn dieser gerade nicht kämpft.",
-                "es": "Dale este objeto a un Pokémon para que recupere PS cuando no esté luchando.",
-                "fr": "Faire tenir cet objet à votre Pokémon régénère continuellement ses PV lorsqu'il ne se bat pas.",
-                "it": "Se assegnato a un Pokémon, questo strumento gli fa recuperare PS quando non sta lottando.",
-                "jp": "持たせると、戦っていない時にHPが継続回復します。",
-                "ko": "지니게 하면 싸우고 있지 않을 때 HP가 지속적으로 회복됩니다."
-            },
-            "Type": "Transient",
-            "Link": "undefined"
-        },
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 610,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15006,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "6",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "5": {
-        "Description": {
-            "Data": {
-                "en": "You can raise your rank by consistently winning ranked matches. You’ll have to give it your all in battle when aiming for higher ranks!",
-                "chs": "排位赛中获胜可以提升自己的段位，挑战自己的极限吧！\r",
-                "cht": "\r",
-                "de": "Du kannst im Rang aufsteigen, indem du Rangkämpfe gewinnst. Gib dein Bestes, um die höchsten Ränge zu erreichen!",
-                "es": "Tu rango irá aumentando conforme acumules victorias en los combates clasificatorios. ¡Da lo mejor de ti en el campo y apunta a lo más alto!",
-                "fr": "En enchaînant les victoires en parties classées, vous augmenterez votre rang. Donnez-vous à fond pour gravir les divisions !",
-                "it": "Accumulando vittorie nelle lotte competitive, potrai salire di rango. Metticela tutta e arriverai in cima!",
-                "jp": "ランクマッチで勝利を重ねるとランクが上がっていきます。最高のバトルをしてランクアップを目指そう！",
-                "ko": "랭크매치에서 승리를 쌓아가면 랭크가 올라갑니다. 최고의 배틀을 하고 랭크 업을 노리자!"
-            },
-            "Type": "Transient",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 760,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 2,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "7",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "6": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 960,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15008,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "8",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "7": {
-        "Description": {
-            "Data": {
-                "en": "A Pokémon holding this item will have increased critical-hit damage.",
-                "chs": "携带后会心一击增强\r",
-                "cht": "\r",
-                "de": "Dieses Item erhöht den Volltrefferschaden seines Trägers.",
-                "es": "Dale este objeto a un Pokémon para aumentar el daño por golpe crítico.",
-                "fr": "Faire tenir cet objet à votre Pokémon augmente les dégâts de ses coups critiques.",
-                "it": "Se assegnato a un Pokémon, questo strumento potenzia i suoi brutti colpi.",
-                "jp": "持たせると、急所ダメージが増加します。",
-                "ko": "지니게 하면 급소 데미지가 증가합니다."
-            },
-            "Type": "Transient",
-            "Link": "undefined"
-        },
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 1200,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15009,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "9",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "8": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 1450,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15010,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "10",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "9": {
-        "Icon": {
-            "Data": "t_stone_icon_MrMime.png",
-            "Type": "Texture",
-            "Link": "undefined"
-        },
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 1700,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15011,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1759": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "11",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "10": {
-        "Description": {
-            "Data": {
-                "en": "A Pokémon holding this item will have increased Sp. Atk.",
-                "chs": "携带后提高特攻\r",
-                "cht": "\r",
-                "de": "Dieses Item erhöht den Spezial-Angriff seines Trägers.",
-                "es": "Dale este objeto a un Pokémon para aumentar su Ataque Especial.",
-                "fr": "Faire tenir cet objet à votre Pokémon augmente son Attaque Spéciale.",
-                "it": "Se assegnato a un Pokémon, questo strumento aumenta il suo Attacco Speciale.",
-                "jp": "持たせると、特攻が増加します。",
-                "ko": "지니게 하면 특수공격이 증가합니다."
-            },
-            "Type": "Transient",
-            "Link": "undefined"
-        },
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 2100,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15012,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "12",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "11": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 2500,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15017,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "13",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "12": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 2900,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15014,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "14",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "13": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 3300,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15015,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "15",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "14": {
-        "Icon": {
-            "Data": "t_stone_icon_Cramorant.png",
-            "Type": "Texture",
-            "Link": "undefined"
-        },
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 3700,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15016,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1759": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "16",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "15": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 4100,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15017,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "17",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "16": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "1521": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 4500,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15018,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "18",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "17": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 4900,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15019,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "19",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "18": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 5300,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15020,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "20",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "19": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 5900,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15021,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "21",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "20": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 6600,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15022,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "22",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "21": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 7300,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15023,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "23",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "22": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 8100,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15024,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "24",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "23": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 8900,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15025,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "25",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "24": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 9700,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15026,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "26",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "25": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 10500,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15027,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "27",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "26": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 11300,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15028,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "28",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "27": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 12100,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15029,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "29",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "28": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 12900,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15030,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "30",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "29": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 13700,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15031,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "31",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "30": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 14500,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15032,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "32",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
     },
     "31": {
-        "1458": {
-            "Data": "1",
-            "Type": "undefined",
-            "Link": "undefined"
-        },
-        "Trainer_Level": {
-            "Data": 15300,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "Drop_Static": {
-            "Data": 15033,
-            "Type": "Link",
-            "Link": "undefined"
-        },
-        "1859": {
-            "Data": "33",
+        "0": {
+            "Data": "0",
             "Type": "undefined",
             "Link": "undefined"
         }
