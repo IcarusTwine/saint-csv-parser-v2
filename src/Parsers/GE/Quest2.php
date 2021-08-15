@@ -1112,6 +1112,10 @@ class Quest2 implements ParseInterface
                 if (!empty($Item["Job"])){
                     $RewardArray[] = "|QuestReward $ItemCount Job = ".$Item["Job"];
                 }
+                if ($Item["Count"] == 0) {
+                    var_dump($QuestName);
+                    var_dump($Item['Item']);
+                }
                 if ($Item["Count"] > 1){
                     $RewardArray[] = "|QuestReward $ItemCount Count = ".$Item["Count"];
                 }
@@ -1125,6 +1129,10 @@ class Quest2 implements ParseInterface
                 $OptionItemCount++;
                 if (!empty($Item["Item"])){
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount = ".$Item["Item"];
+                }
+                if ($Item["Count"] == 0) {
+                    var_dump($QuestName);
+                    var_dump($Item['Item']);
                 }
                 if ($Item["Count"] > 1){
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount Count = ".$Item["Count"];

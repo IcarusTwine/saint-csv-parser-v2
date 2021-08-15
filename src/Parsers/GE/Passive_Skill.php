@@ -7,9 +7,9 @@ use App\Parsers\ParseInterface;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 /**
- * php bin/console app:parse:csv GE:Active_Skill_Hero
+ * php bin/console app:parse:csv GE:Passive_Skill
  */
-class Active_Skill_Hero implements ParseInterface
+class Passive_Skill implements ParseInterface
 {
     use CsvParseTrait;
 
@@ -22,14 +22,8 @@ class Active_Skill_Hero implements ParseInterface
         $console = new ConsoleOutput();
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $Active_Skill_Hero_JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\ProtoApi/Active_Skill_Hero.json"),true); 
+        $Passive_Skill_JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\ProtoApi/Passive_Skill.json"),true); 
         
-        $SkillLogo_JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\Api/SkillLogo.json"),true); 
-        foreach($SkillLogo_JSON as $id => $data){
-            $ID = $data['ID']['Data'];
-            $SkillLogo_Array[$ID] = $data;   
-        }
-
         $Pokemon_Hero_JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\Api/Pokemon_Base.json"),true); 
         foreach($Pokemon_Hero_JSON as $id => $data){
             $ID = str_pad($data['Dex_No']['Data'],3,"0",STR_PAD_LEFT);
@@ -48,16 +42,41 @@ class Active_Skill_Hero implements ParseInterface
 
         $IconArray = [];
         $OutputString = "";
-        foreach ($Active_Skill_Hero_JSON as $id => $Skill) {
-            if (empty($Skill['Skill_Icon'])) continue;
-            if (empty($LanguageMap_en[$Skill['Hash_Skill_Name']])) continue;
-            //get pokemon id from texture:
-            $pkmid1 = str_split(str_replace("t_","",$Skill['Skill_Icon']),3);
-            $PokemonID = $pkmid1[0];
-            unset($pkmid1[0]);
-            $pkmid2 = implode($pkmid1);
-            
-
+        foreach ($Passive_Skill_JSON as $id => $Skill) {
+            if (empty($Skill['Icon'])) continue;
+            if (strpos($Skill['AGE'],"age_")!== false){
+                //get pokemon id from age:
+                $Ageexp = explode("_",$Skill['AGE']);
+                if (!empty($Pokemon_Hero_Array[$Ageexp[1]])){
+                    $PKID = $Pokemon_Hero_Array[$Ageexp[1]];
+                } else {
+                    $Check = explode("_",$Skill['Icon']);
+                    $PkID = str_split($Check[1],3);
+                    if (!empty($Pokemon_Hero_Array[$PkID[0]])){
+                        $PKID = $Pokemon_Hero_Array[$PkID[0]];
+                    } else {
+                        $PKID = $Ageexp[1];
+                    }
+                }
+                $Name = $LanguageMap_en[$Skill['Announce']];
+                if (empty($Name)) continue;
+                $Description = $LanguageMap_en[$Skill['Description']];
+                $Icon = $Skill['Icon'];
+                $IconArray[] = $Skill['Icon'];
+                $PassiveString = "'''$Name'''\n";
+                $PassiveString .= "{{Pokemon Skill\n";
+                $PassiveString .= "    |Name = $Name\n";
+                $PassiveString .= "    |Pokemon = $PKID\n";
+                $PassiveString .= "    |Icon = $Icon\n";
+                $PassiveString .= "    |Type = \n";
+                $PassiveString .= "    |Slot = Passive\n";
+                $PassiveString .= "    |MoveType = \n";
+                $PassiveString .= "    |Description = $Description\n";
+                $PassiveString .= "    |Cooldown = 0s\n";
+                $PassiveString .= "    |Level = Passive\n";
+                $PassiveString .= "}}\n";
+                $Output[] = $PassiveString;
+            }
         }
         $data = [
             '{output}' => implode("\n\n",$Output),
@@ -97,7 +116,7 @@ class Active_Skill_Hero implements ParseInterface
 
         // save
         $this->io->text('Saving data ...');
-        $this->saveExtra("Output/Active_Skill_Hero.txt",implode("\n\n",$Output), true, true, true);
+        $this->saveExtra("Output/Passive_Skill.txt",implode("\n\n",$Output), true, true, true);
 
         //$info = $this->save("/Pokemon_Unite/Active_Skill_Hero.txt", 999999);
     }
