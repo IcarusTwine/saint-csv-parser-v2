@@ -33,12 +33,12 @@ trait PokemonParseTrait
         $JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\ProtoApi/$filename.json"),true); 
         
         foreach($JSON as $id => $data){
-            if (empty($key)){
-                $key = $id;
+            if (!empty($key)){
+                $NewKey = $data[$key];
+                $Array[$NewKey] = $data;
             } else {
-                $key = $data[$key];
+                $Array[$id] = $data;
             }
-            $Array[$key] = $data;   
         }
         return $Array;
     }
@@ -57,8 +57,12 @@ trait PokemonParseTrait
         }
         return $LanguageMap;
     }
-    public function copyImages($IconArray)
+    public function copyImages($IconArray,$SubFolder)
     {
+        $CheckDir = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+        if (!is_dir($CheckDir)) {
+            mkdir($CheckDir, 0777, true);
+        }
         $this->io->text('Copying Images ...');
         $i = 0;
         $IconArray = array_unique($IconArray);
@@ -67,10 +71,10 @@ trait PokemonParseTrait
             $i++;
             $console = new ConsoleOutput();
             $console = $console->section();
-            $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
-            if (!file_exists("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$value.png")) {
+            if (!file_exists("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
                 // ensure output directory exists
-                $IconOutputDirectory = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/";
+                $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
+                $IconOutputDirectory = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
                 if (!is_dir($IconOutputDirectory)) {
                     mkdir($IconOutputDirectory, 0777, true);
                 }
@@ -99,5 +103,22 @@ trait PokemonParseTrait
         fclose($fileopen);
 
         return $this->io->text("Saved $pathtext");
+    }
+    
+    /**
+     * Create an inout/output
+     */
+    public function setInputOutput(InputInterface$input, OutputInterface $output)
+    {
+        $this->io = new SymfonyStyle($input, $output);
+        return $this;
+    }
+    /**
+     * Set project directory
+     */
+    public function setProjectDirectory(string $projectDirectory)
+    {
+        $this->projectDirectory = $projectDirectory;
+        return $this;
     }
 }
