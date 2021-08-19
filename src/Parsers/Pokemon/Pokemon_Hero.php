@@ -40,10 +40,19 @@ class Pokemon_Hero implements ParseInterface
         // loop through data
         foreach ($Pokemon_Hero as $id => $Hero) {
             $Base_HP = $Hero['BaseHP'];
+            $SvBase_HP = $Hero['BaseHP'];
             $StatGrowthID = $Hero['StatGrowth'];
             $Base_Attack = $Hero['BaseAttack'];
+            $BaseSpAtk = $Hero['BaseSpAtk'];
+            $BaseSpDef = $Hero['BaseSpDef'];
+            $BaseSpeed = $Hero['BaseSpeed'];
+            $BaseDef = $Hero['BaseDef'];
+            $SvBaseAtk = $Hero['BaseAttack'];
+            $SvBaseSpAtk = $Hero['BaseSpAtk'];
+            $SvBaseSpDef = $Hero['BaseSpDef'];
+            $SvBaseSpeed = $Hero['BaseSpeed'];
+            $SvBaseDef = $Hero['BaseDef'];
             $Pokemon_BaseID = $Hero['PokemonBase'];
-
             if (empty($Pokemon_Base[$Pokemon_BaseID]['Name'])){
                 $Pokemon_BaseID = $Hero['LinkToSheet01'];
             }
@@ -62,32 +71,43 @@ class Pokemon_Hero implements ParseInterface
             $GrowthString .= "{| class=\"wikitable\"\n";
             $GrowthString .= "! Lv\n";
             $GrowthString .= "! HP\n";
-            $GrowthString .= "! unk1\n";
-            $GrowthString .= "! unk2\n";
-            $GrowthString .= "! unk3\n";
-            $GrowthString .= "! unk4\n";
-            $GrowthString .= "! unk5\n";
-            $GrowthString .= "! unk6\n";
-            $GrowthString .= "! unk7\n";
-            $GrowthString .= "! unk8\n";
-            $GrowthString .= "! unk9\n";
-            $GrowthString .= "! unk10\n";
-            $GrowthString .= "! unk11\n";
-            $GrowthString .= "! unk12\n";
-            $GrowthString .= "! unk13\n";
-            $GrowthString .= "! unk14\n";
-            $GrowthString .= "! unk15\n";
-            $GrowthString .= "! unk16\n";
+            $GrowthString .= "! Attack\n";
+            $GrowthString .= "! Def\n";
+            $GrowthString .= "! Sp.Atk\n";
+            $GrowthString .= "! Sp.Def\n";
+            $GrowthString .= "! Speed\n";
             $GrowthString .= "|-\n";
             $GrowthArray = [];
             foreach ($Pokemon_StatGrowth_Array[$StatGrowthID] as $value) {
                 $GrowthArray[] = "|".$value['Level'];
                 $HPInc = $value["Growth"][0];
+                $AttackInc = $value["Growth"][1];
+                $DefInc = $value["Growth"][2];
+                $SpAtkInc = $value["Growth"][3];
+                $SpDefInc = $value["Growth"][5];
+
                 $HPCalc = $Base_HP + $HPInc;
-                $GrowthArray[] = "|".$HPCalc;
-                foreach(range(1,16) as $i){
-                    $GrowthArray[] = "|".$value["Growth"][$i]."";
-                }
+                $Base_HP = $HPCalc;
+
+                $DefCalc = $BaseDef + $DefInc;
+                $BaseDef = $DefCalc;
+
+                $SpDefCalc = $BaseSpDef + $SpDefInc;
+                $BaseSpDef = $SpDefCalc;
+
+                $SpAtkCalc = $BaseSpAtk + $SpAtkInc;
+                $BaseSpAtk = $SpAtkCalc;
+
+                
+                $AtkCalc = $Base_Attack + $AttackInc;
+                $Base_Attack = $AtkCalc;
+
+                $GrowthArray[] = "|".$Base_HP;
+                $GrowthArray[] = "|".$Base_Attack;
+                $GrowthArray[] = "|".$BaseDef;
+                $GrowthArray[] = "|".$BaseSpDef;
+                $GrowthArray[] = "|".$BaseSpAtk;
+                $GrowthArray[] = "|".$BaseSpeed;
                 $GrowthArray[] = "|-";
             }
             $GrowthString .= implode("\n",$GrowthArray)."\n";
@@ -97,7 +117,9 @@ class Pokemon_Hero implements ParseInterface
             $ReccomendedEquipItem = [];
             foreach($Pokemon_Base[$Pokemon_BaseID]['RecommendEquipment'] as $i => $ReccomendedEquip){
                 $Item = $LanguageMap_en[$OutSideItem_Base[$ReccomendedEquip]['Name']];
+                $ItemIcon = $OutSideItem_Base[$ReccomendedEquip]['Icon'];
                 $ReccomendedEquipItem[] = "|ReccomendedEquip_$i = $Item";
+                $ReccomendedEquipItem[] = "|ReccomendedEquip_$i Icon = $ItemIcon.png";
             }
             $ReccomendedEquipOut = implode("\n",$ReccomendedEquipItem);
             $CardIcon = $Pokemon_Base[$Pokemon_BaseID]['CardIcon'];
@@ -121,7 +143,8 @@ class Pokemon_Hero implements ParseInterface
                 $Evo[] = "|Evolution_$Age Level = 1";
             }
             $EvoOut = implode("\n",$Evo);
-            $Tag1 = $LanguageMap_en[$Pokemon_Base[$Pokemon_BaseID]['Tag1']];
+            $Tag1 = $LanguageMap_en[$Pokemon_Base[$Pokemon_BaseID]['Tag1'][0]];
+            $Difficulty = $LanguageMap_en[$Pokemon_Base[$Pokemon_BaseID]['Tag1'][1]];
             $OccupationTypeDesc = $LanguageMap_en[$Pokemon_Base[$Pokemon_BaseID]['OccupationTypeDesc']];
             $Obtain = $LanguageMap_en[$Pokemon_Base[$Pokemon_BaseID]['GetDesc']];
             $Weight = $LanguageMap_en[$Pokemon_Base[$Pokemon_BaseID]['Weight']];
@@ -139,17 +162,24 @@ class Pokemon_Hero implements ParseInterface
             $OutputString .= "|Type = $Category\n";
             $OutputString .= "|Size = $Height\n";
             $OutputString .= "|Weight = $Weight\n";
+            $OutputString .= "|Tag1 = $Tag1\n";
+            $OutputString .= "|Tag2 = \n";
             $OutputString .= "\n";
-            $OutputString .= "|Difficulty = $Tag1\n";
+            $OutputString .= "|Difficulty = $Difficulty\n";
             $OutputString .= "|Type_Description = $OccupationTypeDesc\n";
+            $OutputString .= "|Description = \n";
             $OutputString .= "\n";
             $OutputString .= "|Offense = $Offense\n";
             $OutputString .= "|Endurance = $Endurance\n";
             $OutputString .= "|Mobility = $Mobility\n";
             $OutputString .= "|Scoring = $Scoring\n";
             $OutputString .= "|Support = $Support\n";
-            $OutputString .= "|Base_HP = $Base_HP\n";
-            $OutputString .= "|Base_Attack = $Base_Attack\n";
+            $OutputString .= "|Base_HP = $SvBase_HP\n";
+            $OutputString .= "|Base_Attack = $SvBaseAtk\n";
+            $OutputString .= "|Base_Def = $SvBaseDef\n";
+            $OutputString .= "|Base_SpAtk = $SvBaseSpAtk\n"; 
+            $OutputString .= "|Base_SpDef = $SvBaseSpDef\n"; 
+            $OutputString .= "|Base_Speed = $SvBaseSpeed\n";
             $OutputString .= "\n";
             $OutputString .= "|Obtain = $Obtain\n";
             $OutputString .= "\n";
