@@ -91,7 +91,6 @@ trait PokemonParseTrait
     }
 
     /**
-    /**
      * Save to output file for extra
      */
     public function saveExtra($filename, $SourceData)
@@ -120,5 +119,31 @@ trait PokemonParseTrait
     {
         $this->projectDirectory = $projectDirectory;
         return $this;
+    }
+    /**
+     * Set project directory
+     */
+    public function getTalent_Plan_ChooseType_Enum($num)
+    {
+        switch ($num) {
+            case 1: //Skill Choice
+                return "Option";
+            break;
+            case 2: //upgrade
+                return "Upgrade";
+            break;
+            case 3: //reserveExpPool??
+                return "reserveExpPool";
+            break;
+            case 4: //evolution
+                return "Evolution";
+            break;
+            case 5: //unite move
+                return "Unite Move";
+            break;
+            case 6: //Base
+                return "Base";
+            break;
+        }
     }
 }
