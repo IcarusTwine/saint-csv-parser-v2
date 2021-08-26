@@ -112,6 +112,14 @@ trait PokemonParseTrait
         $this->io = new SymfonyStyle($input, $output);
         return $this;
     }
+    
+    /**
+     * GetVer
+     */
+    public function getVer()
+    {
+        return "1.1.1";
+    }
     /**
      * Set project directory
      */

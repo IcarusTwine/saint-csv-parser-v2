@@ -14,18 +14,23 @@ class Pokemon_Hero implements ParseInterface
 
     public function parse()
     {
+        $Version = $this->getVer();
         // grab CSV files we want to use
         $LanguageMap_en = $this->languagemap("en");
 
-        $Pokemon_Base = $this->json('Pokemon_Base');
-        $OutSideItem_Base = $this->json('OutSideItem_Base');
-        $Pokemon_Hero = $this->json('Pokemon_Hero');
-        $Talent_Plan = $this->json('Talent_Plan');
-        $Pokemon_Talent = $this->json('Pokemon_Talent');
-        $Pokemon_Hero_Evolution = $this->json('Pokemon_Hero_Evolution');
+        $Pokemon_Base = $this->json("/$Version/databin_Pokemon_Base");
+        $OutSideItem_Base = $this->json("/$Version/databin_OutSideItem_Base");
+        $Pokemon_Hero = $this->json("/$Version/databin_Pokemon_Hero");
+        $Talent_Plan = $this->json("/$Version/databin_Talent_Plan");
+        $Pokemon_Talent = $this->json("/$Version/databin_Pokemon_Talent");
+        $Pokemon_Hero_Evolution = $this->json("/$Version/databin_Pokemon_Hero_Evolution");
+        $Active_Skill_Hero = $this->json("/$Version/databin_Active_Skill_Hero");
+        $Passive_skill = $this->json("/$Version/databin_Passive_skill");
+        $Pokemon_StatGrowth = $this->json("/$Version/databin_Pokemon_StatGrowth");
 
         // (optional) start a progress bar
         $IconArray = [];
+        $SkillIconArray = [];
         //get evolutions array
 
         // loop through data
@@ -45,6 +50,23 @@ class Pokemon_Hero implements ParseInterface
             $ReccomendedEquipOut = implode("\n",$DefaultHeldItem);
 
             $OccupationType = $Hero['OccupationType']; //need to set up an enum for this
+            switch ($OccupationType) {
+                case 6:
+                    $Tag2 = "Supporter";
+                break;
+                case 7:
+                    $Tag2 = "All-Rounder";
+                break;
+                case 8:
+                    $Tag2 = "Attacker";
+                break;
+                case 9:
+                    $Tag2 = "Defender";
+                break;
+                case 10:
+                    $Tag2 = "Speedster";
+                break;
+            }
 
             $BigIconPath = $Hero['BigIconPath'];//Card Icon (Main)
             $IconArray[] = $BigIconPath;
@@ -102,16 +124,78 @@ class Pokemon_Hero implements ParseInterface
             //Rates
             $BaseSupportEnergyRate = $Pokemon_Hero[$MainUnitID]['BaseSupportEnergyRate'] / 1000 ."s";
             $AttackFrequency = $Pokemon_Hero[$MainUnitID]['AttackFrequency'] / 1000 ."s";
+            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitID]['AttackFrequency'];
 
             //links to stats?
             $StatId = $Pokemon_Hero[$MainUnitID]['StatId'];
+            $StatTable = [];
+            $StatTable[] = "{{-start-}}";
+            $StatTable[] = "'''$Name/Growth'''";
+            $StatTable[] = "{| class=\"wikitable\"";
+            $HP = $BaseHp;
+            $HPRecovery = $BaseHpRecover;
+            $Attack = $BaseAttack;
+            $Def = $BaseDef;
+            $SpAtk = $BaseSpecAttack;
+            $SpDef = $BaseSpecDef;
+            $AtkSpeed = $BaseAttackFrequency;
+            $Speed = $BaseMoveSpeed;
+            $CritHitPer = 0;
+            $CritHitDm = 0;
+            $CD = 0;
+            $StatTable[] = "! Level !!HP!!HP Recovery!!Attack!!Def!!Sp.Atk!!Sp.Def!!Attack Speed!!Speed!!Crit-Hit %!!Crit-Hit Damage!!Cooldown";
+            foreach($Pokemon_StatGrowth[$StatId] as $StatGrowth){
+                $HP = $HP + $StatGrowth['Property'][0];
+                $HPRecovery = $HPRecovery + $StatGrowth['Property'][1];
+                $Attack = $Attack + $StatGrowth['Property'][2];
+                $Def = $Def + $StatGrowth['Property'][3];
+                $SpAtk = $SpAtk + $StatGrowth['Property'][4];
+                $SpDef = $SpDef + $StatGrowth['Property'][5];
+                $AtkSpeed = $AtkSpeed + ($StatGrowth['Property'][6]);
+                $Speed = $Speed + $StatGrowth['Property'][7];
+                $AtkSpeed = "0";
+                
+                $CritHitPer = $CritHitPer + $StatGrowth['Property'][13]; // / 100
+                $CritHitDm = $CritHitDm + $StatGrowth['Property'][14];
+                $CD = $CD + $StatGrowth['Property'][16]; // / 1000
+                $StatTable[] = "|-";
+                $StatTable[] = "|".$StatGrowth['Level']."||$HP||$HPRecovery||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed."||$Speed||".$CritHitPer / 100 ."%||$CritHitDm||-".$CD / 1000 ."s";
+            }
+            $StatTable[] = "|}";
+            $StatTable[] = "{{-stop-}}";
+            $StatsTables[] = implode("\n",$StatTable);
 
             //SkillLinks
-            $NormalSkillId = $Pokemon_Hero[$MainUnitID]['StatId'];
+            $NormalSkillId = $Pokemon_Hero[$MainUnitID]['NormalSkillId']; // Basic Attack
             
             //PassiveSkill
             $PassiveSkillId = $Pokemon_Hero[$MainUnitID]['PassiveSkillId'][0];
-
+            $PassiveSkillName = $LanguageMap_en[$Passive_skill[$PassiveSkillId]['Name']];
+            $PassiveSkillDesc = $LanguageMap_en[$Passive_skill[$PassiveSkillId]['Desc']];
+            $PassiveSkillIconSkill = $Passive_skill[$PassiveSkillId]['IconPath'];
+            $SkillType = $Passive_skill[$PassiveSkillId]['PassiveSkillType'];
+            $PassiveSkillCD = $Passive_skill[$PassiveSkillId]['PassiveColdDown'] / 1000;
+            $IconArray[] = $PassiveSkillIconSkill;
+            $SkillString = "{{-start-}}\n";
+            $SkillString .= "'''$PassiveSkillName'''\n";
+            $SkillString .= "{{Pokemon Skill\n";
+            $SkillString .= "|Name = $PassiveSkillName\n";
+            $SkillString .= "|Pokemon = $Name\n";
+            $SkillString .= "|Icon = $PassiveSkillIconSkill\n";
+            $SkillString .= "|Type = \n";
+            $SkillString .= "|Slot = Passive\n";
+            $SkillString .= "|Level = 1 (Passive)\n";
+            $SkillString .= "\n";
+            $SkillString .= "|MoveType = \n";
+            $SkillString .= "|Target_Type = \n";
+            $SkillString .= "|Range = \n";
+            $SkillString .= "|Follow_Range = \n";
+            $SkillString .= "|Description = $PassiveSkillDesc\n";
+            $SkillString .= "|Cooldown = ".$PassiveSkillCD."s\n";
+            $SkillString .= "|SkillID = $PassiveSkillId\n";
+            $SkillString .= "}}\n";
+            $SkillString .= "{{-stop-}}\n";
+            $SkillArray[] = $SkillString;
             //Talent Links
             $TalentGroupId = $Pokemon_Hero[$MainUnitID]['TalentGroupId'];
             // can generate skills here
@@ -139,6 +223,63 @@ class Pokemon_Hero implements ParseInterface
                             $Slot = "UniteMove";
                         break;
                     }
+                    $IconSkill = "";
+                    if (!empty($Pokemon_Talent[$TalentId]['IconPath'])){
+                        $IconSkill = $Pokemon_Talent[$TalentId]['IconPath'];
+                        $SkillIconArray[] = $IconSkill;
+                    }
+                    $TutIcon = "";
+                    if (!empty($Pokemon_Talent[$TalentId]['DescImgPath'])){
+                        $TutIcon = $Pokemon_Talent[$TalentId]['DescImgPath'];
+                        $SkillIconArray[] = $TutIcon;
+                    }
+                    $EffectType = $LanguageMap_en[$Pokemon_Talent[$TalentId]['EffectLabel']];
+                    $SkillID = $Pokemon_Talent[$TalentId]['ActiveSkill'];
+                    $Cooldown = $Active_Skill_Hero[$SkillID]['CDTime'] / 1000;
+                    $RangeAppointType = $Active_Skill_Hero[$SkillID]['RangeAppointType'];
+                    switch ($RangeAppointType) {
+                        case 1:
+                            $TargetType = "Wedge";
+                        break;
+                        case 2:
+                            $TargetType = "Arrow";
+                        break;
+                        case 3:
+                            $TargetType = "Circle";
+                        break;
+                        case 4:
+                            $TargetType = "None";
+                        break;
+                    }
+                    $Range = $Active_Skill_Hero[$SkillID]['MaxAttackDis'] / 1000;
+                    $MaxFollowDis = $Active_Skill_Hero[$SkillID]['MaxFollowDis'] / 1000;
+                    $PreviousSkillID = "";
+                    if ($Active_Skill_Hero[$SkillID]['PreSkillId'] !== 0){
+                        $PreviousSkillID = $Active_Skill_Hero[$SkillID]['PreSkillId'];
+                    }
+
+                    $SkillString = "{{-start-}}\n";
+                    $SkillString .= "'''$SkillName'''\n";
+                    $SkillString .= "{{Pokemon Skill\n";
+                    $SkillString .= "|Name = $SkillName\n";
+                    $SkillString .= "|Pokemon = $Name\n";
+                    $SkillString .= "|Icon = $IconSkill\n";
+                    $SkillString .= "|Type = $EffectType\n";
+                    $SkillString .= "|Slot = $Slot\n";
+                    $SkillString .= "|Icon_Tutorial = $TutIcon\n";
+                    $SkillString .= "|Level = $TriggerLevel\n";
+                    $SkillString .= "\n";
+                    $SkillString .= "|MoveType = $Type\n";
+                    $SkillString .= "|Target_Type = $TargetType\n";
+                    $SkillString .= "|Range = ".$Range."m\n";
+                    $SkillString .= "|Follow_Range = ".$MaxFollowDis."m\n";
+                    $SkillString .= "|Description = \n";
+                    $SkillString .= "|Cooldown = ".$Cooldown."s\n";
+                    $SkillString .= "|SkillID = $SkillID\n";
+                    $SkillString .= "|PreviousSkillID = $PreviousSkillID\n";
+                    $SkillString .= "}}\n";
+                    $SkillString .= "{{-stop-}}\n";
+                    $SkillArray[] = $SkillString;
                 }
             }
             $Evo[] = "|Evolution_1 Level = 1";
@@ -159,11 +300,12 @@ class Pokemon_Hero implements ParseInterface
             $OutputString .= "|Size = $Height\n";
             $OutputString .= "|Weight = $Weight\n";
             $OutputString .= "|Tag1 = $Tag1\n";
-            $OutputString .= "|Tag2 = $OccupationType\n";
+            $OutputString .= "|Tag2 = $Tag2\n";
             $OutputString .= "\n";
             $OutputString .= "|Difficulty = $Difficulty\n";
             $OutputString .= "|Type_Description = $OccupationTypeDesc\n";
-            $OutputString .= "|Description = \n";
+            $OutputString .= "\n";
+            $OutputString .= "|Suggested_Lane = $Lane\n";
             $OutputString .= "\n";
             $OutputString .= "|Offense = $Offense\n";
             $OutputString .= "|Endurance = $Endurance\n";
@@ -177,6 +319,7 @@ class Pokemon_Hero implements ParseInterface
             $OutputString .= "|Base_SpDef = $BaseSpecDef\n"; 
             $OutputString .= "|Base_Speed = $BaseMoveSpeed\n";
             $OutputString .= "|Base_HPRecover = $BaseHpRecover\n";
+            $OutputString .= "|Base_AtkSpeed = $BaseAttackFrequency\n";
             $OutputString .= "\n";
             $OutputString .= "|Obtain = $Obtain\n";
             $OutputString .= "\n";
@@ -201,8 +344,13 @@ class Pokemon_Hero implements ParseInterface
         if (!empty($IconArray)) {
             $this->copyImages($IconArray,"Pokemon_Hero");
         }
+        if (!empty($SkillIconArray)) {
+            $this->copyImages($SkillIconArray,"Pokemon_Skill");
+        }
         // (optional) finish progress bar
         $this->saveExtra("Output\Pokemon_Hero.txt",implode("\n\n",$Output));
+        $this->saveExtra("Output\Pokemon_Skill.txt",implode("\n\n",$SkillArray));
+        $this->saveExtra("Output\Pokemon_Growth.txt",implode("\n\n",$StatsTables));
 
         // save
         $this->io->text('Saving data ...');
