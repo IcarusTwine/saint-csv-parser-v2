@@ -59,7 +59,10 @@ trait PokemonParseTrait
     }
     public function copyImages($IconArray,$SubFolder)
     {
-        $CheckDir = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Cache = str_replace("cache","output",$ini['Cache']);
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $CheckDir = "$Cache\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
         if (!is_dir($CheckDir)) {
             mkdir($CheckDir, 0777, true);
         }
@@ -71,17 +74,17 @@ trait PokemonParseTrait
             $i++;
             $console = new ConsoleOutput();
             $console = $console->section();
-            if (!file_exists("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
+            if (!file_exists("$Cache\output\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
                 // ensure output directory exists
                 $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
-                $IconOutputDirectory = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+                $IconOutputDirectory = "$Cache\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
                 if (!is_dir($IconOutputDirectory)) {
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("E:\saint-csv-parser-v2\Resources\PokemonUniteApi\alltex\Texture2D/$value.png")){
+                if(file_exists("$Resources\Resources\PokemonUniteApi\alltex\Texture2D/$value.png")){
                     var_dump($value);
-                    copy("E:\saint-csv-parser-v2\Resources\PokemonUniteApi\alltex\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
+                    copy("$Resources\Resources\PokemonUniteApi\alltex\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
                 }
@@ -91,7 +94,10 @@ trait PokemonParseTrait
     }
     public function copySprites($IconArray,$SubFolder)
     {
-        $CheckDir = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Cache = str_replace("cache","output",$ini['Cache']);
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $CheckDir = "$Cache\Pokemon_Unite 1.0.0/Images/$SubFolder/";
         if (!is_dir($CheckDir)) {
             mkdir($CheckDir, 0777, true);
         }
@@ -103,17 +109,17 @@ trait PokemonParseTrait
             $i++;
             $console = new ConsoleOutput();
             $console = $console->section();
-            if (!file_exists("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
+            if (!file_exists("$Cache\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
                 // ensure output directory exists
                 $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
-                $IconOutputDirectory = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+                $IconOutputDirectory = "$Cache\Pokemon_Unite 1.0.0/Images/$SubFolder/";
                 if (!is_dir($IconOutputDirectory)) {
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("E:\saint-csv-parser-v2\Resources\PokemonUniteApi\alltex\Sprite/$value.png")){
+                if(file_exists("$Resources\Resources\PokemonUniteApi\alltex\Sprite/$value.png")){
                     var_dump($value);
-                    copy("E:\saint-csv-parser-v2\Resources\PokemonUniteApi\alltex\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                    copy("$Resources\Resources\PokemonUniteApi\alltex\Sprite/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
                 }
@@ -127,7 +133,10 @@ trait PokemonParseTrait
      */
     public function saveExtra($filename, $SourceData)
     {   
-        $folder = "E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0/";
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Cache = str_replace("cache","output",$ini['Cache']);
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $folder = "$Cache\Pokemon_Unite 1.0.0/";
         $fileopen = fopen("{$folder}{$filename}", 'w');
         $pathtext = "{$folder}{$filename}";
         fwrite($fileopen, $SourceData);
@@ -150,7 +159,7 @@ trait PokemonParseTrait
      */
     public function getVer()
     {
-        return "1.1.1";
+        return "0.3.0";
     }
     /**
      * Set project directory
