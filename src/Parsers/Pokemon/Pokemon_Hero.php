@@ -18,14 +18,14 @@ class Pokemon_Hero implements ParseInterface
         // grab CSV files we want to use
         $LanguageMap_en = $this->languagemap("en");
 
-        $Pokemon_Base = $this->json("/$Version/databin_Pokemon_Base");
-        $OutSideItem_Base = $this->json("/$Version/databin_OutSideItem_Base");
-        $Pokemon_Hero = $this->json("/$Version/databin_Pokemon_Hero");
-        $Talent_Plan = $this->json("/$Version/databin_Talent_Plan");
-        $Pokemon_Talent = $this->json("/$Version/databin_Pokemon_Talent");
-        $Pokemon_Hero_Evolution = $this->json("/$Version/databin_Pokemon_Hero_Evolution");
-        $Active_Skill_Hero = $this->json("/$Version/databin_Active_Skill_Hero");
-        $Passive_skill = $this->json("/$Version/databin_Passive_skill");
+        $Pokemon_Base = $this->json("/$Version/Pokemon_Base");
+        $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
+        $Pokemon_Hero = $this->json("/$Version/Pokemon_Hero");
+        $Talent_Plan = $this->json("/$Version/Talent_Plan");
+        $Pokemon_Talent = $this->json("/$Version/Pokemon_Talent");
+        $Pokemon_Hero_Evolution = $this->json("/$Version/Pokemon_Hero_Evolution");
+        $Active_Skill_Hero = $this->json("/$Version/Active_Skill_Hero");
+        $Passive_skill = $this->json("/$Version/Passive_skill");
         $Pokemon_StatGrowth = $this->json("/$Version/databin_Pokemon_StatGrowth");
 
         // (optional) start a progress bar
