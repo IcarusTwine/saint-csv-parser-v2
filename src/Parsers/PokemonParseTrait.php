@@ -60,9 +60,9 @@ trait PokemonParseTrait
     public function copyImages($IconArray,$SubFolder)
     {
         $ini = parse_ini_file('src/Parsers/config.ini');
-        $Cache = str_replace("cache","output",$ini['Cache']);
+        $output = str_replace("cache","output",$ini['Cache']);
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $CheckDir = "$Cache\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+        $CheckDir = "$output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
         if (!is_dir($CheckDir)) {
             mkdir($CheckDir, 0777, true);
         }
@@ -74,19 +74,19 @@ trait PokemonParseTrait
             $i++;
             $console = new ConsoleOutput();
             $console = $console->section();
-            if (!file_exists("$Cache\output\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
+            if (!file_exists("$output\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
                 // ensure output directory exists
                 $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
-                $IconOutputDirectory = "$Cache\output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+                $IconOutputDirectory = "$output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
                 if (!is_dir($IconOutputDirectory)) {
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("$Resources\Resources\PokemonUniteApi\alltex\Texture2D/$value.png")){
-                    var_dump($value);
-                    copy("$Resources\Resources\PokemonUniteApi\alltex\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("$Resources\PokemonUniteApi\alltex\Texture2D/$value.png")){
+                    copy("$Resources\PokemonUniteApi\alltex\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
+                    var_dump($value." - Missing");
                 }
             }
         }
@@ -95,9 +95,9 @@ trait PokemonParseTrait
     public function copySprites($IconArray,$SubFolder)
     {
         $ini = parse_ini_file('src/Parsers/config.ini');
-        $Cache = str_replace("cache","output",$ini['Cache']);
+        $output = str_replace("cache","output",$ini['Cache']);
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $CheckDir = "$Cache\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+        $CheckDir = "$output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
         if (!is_dir($CheckDir)) {
             mkdir($CheckDir, 0777, true);
         }
@@ -109,19 +109,19 @@ trait PokemonParseTrait
             $i++;
             $console = new ConsoleOutput();
             $console = $console->section();
-            if (!file_exists("$Cache\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
+            if (!file_exists("$output\Pokemon_Unite 1.0.0/Images/$SubFolder/$value.png")) {
                 // ensure output directory exists
                 $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
-                $IconOutputDirectory = "$Cache\Pokemon_Unite 1.0.0/Images/$SubFolder/";
+                $IconOutputDirectory = "$output\Pokemon_Unite 1.0.0/Images/$SubFolder/";
                 if (!is_dir($IconOutputDirectory)) {
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("$Resources\Resources\PokemonUniteApi\alltex\Sprite/$value.png")){
-                    var_dump($value);
-                    copy("$Resources\Resources\PokemonUniteApi\alltex\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("$Resources\PokemonUniteApi\alltex\Sprite/$value.png")){
+                    copy("$Resources\PokemonUniteApi\alltex\Sprite/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
+                    var_dump($value." - Missing");
                 }
             }
         }
