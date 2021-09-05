@@ -195,4 +195,83 @@ trait PokemonParseTrait
             break;
         }
     }
+    /**
+     * Effect Sub Type Enum
+     */
+    public function EffectSubType($num)
+    {
+        switch ($num) {
+            case 0:
+                return "Invalid";
+            break;
+            case 1: 
+                return "Damage Increase";
+            break;
+            case 2:
+                return "Defence Increase";
+            break;
+            case 3:
+                return "Move Speed Increase";
+            break;
+            case 4:
+                return "Shield";
+            break;
+            case 5:
+                return "Continuous Healing";
+            break;
+            case 6:
+                return "Damage";
+            break;
+            case 7:
+                return "Poisoning";
+            break;
+            case 8:
+                return "Burning";
+            break;
+            case 9:
+                return "Move Speed Decrease";
+            break;
+            case 10:
+                return "Dizziness";
+            break;
+            case 11:
+                return "Immobilize";
+            break;
+            case 12:
+                return "Frozen";
+            break;
+            case 13:
+                return "Oppression";
+            break;
+            case 14:
+                return "Fly";
+            break;
+            case 15:
+                return "Sneered";
+            break;
+        }
+    }
+    /**
+     * Effect Sub Type Enum
+     */
+    public function EffectType($num)
+    {
+        switch ($num) {
+            case 0:
+                return "Invalid";
+            break;
+            case 1: 
+                return "Positive";
+            break;
+            case 2:
+                return "Negative";
+            break;
+            case 3:
+                return "Control";
+            break;
+            case 4:
+                return "Persist";
+            break;
+        }
+    }
 }

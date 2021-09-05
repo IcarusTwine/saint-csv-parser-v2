@@ -26,7 +26,8 @@ class Pokemon_Hero implements ParseInterface
         $Pokemon_Hero_Evolution = $this->json("/$Version/Pokemon_Hero_Evolution");
         $Active_Skill_Hero = $this->json("/$Version/Active_Skill_Hero");
         $Passive_skill = $this->json("/$Version/Passive_skill");
-        $Pokemon_StatGrowth = $this->json("/$Version/databin_Pokemon_StatGrowth");
+        $Pokemon_StatGrowth = $this->json("/$Version/Pokemon_StatGrowth");
+        $SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
 
         // (optional) start a progress bar
         $IconArray = [];
@@ -236,6 +237,106 @@ class Pokemon_Hero implements ParseInterface
                     $EffectType = $LanguageMap_en[$Pokemon_Talent[$TalentId]['EffectLabel']];
                     $SkillID = $Pokemon_Talent[$TalentId]['ActiveSkill'];
                     $Cooldown = $Active_Skill_Hero[$SkillID]['CDTime'] / 1000;
+                    $RefEffectGroupIds = $Active_Skill_Hero[$SkillID]['RefEffectGroupIds'];
+                    $SimpleDesc = $Active_Skill_Hero[$SkillID]['SimpleDesc'];
+                    $RefStatOut = [];
+                    $RefForm = [];
+                    $Description = $LanguageMap_en[$Active_Skill_Hero[$SkillID]['Desc']];
+                    foreach($RefEffectGroupIds as $RefEffectID){
+                        if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
+                            $RefDuration = $SkillEffect_Group_Hero[$RefEffectID]['Duration'];
+                            $RefEffectType = $this->EffectType($SkillEffect_Group_Hero[$RefEffectID]['EffectType']);
+                            $Refsub_EffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffectID]['sub_EffectType']);
+                            $RefGrowType = $SkillEffect_Group_Hero[$RefEffectID]['GrowType'];
+                            $RefDamageLimitToMonster = $SkillEffect_Group_Hero[$RefEffectID]['DamageLimitToMonster'];
+                            $RefIsCrit = $SkillEffect_Group_Hero[$RefEffectID]['IsCrit'];
+                            $RefEffectSlotIndex = $SkillEffect_Group_Hero[$RefEffectID]['EffectSlotIndex'];
+                            foreach($SkillEffect_Group_Hero[$RefEffectID]['SkillEffect'] as $i){
+                                $RefStatTable = [];
+                                $RefType = $i['Type'];
+                                $RefDur = $i['Duration'];
+                                $RefStatTable[] = "{| class=\"wikitable\"";
+                                $RefStatTable[] = "!_!!Duration!!Type!!Stat_1!!Stat_2!!Stat_3!!Stat_4!!Stat_5!!Stat_6!!Stat_7!!Stat_8!!Stat_9!!Stat_10!!Stat_11!!Stat_12!!Stat_13!!Stat_14!!Stat_15";
+                                $GrowPara = implode("||",$i["GrowPara"]);
+                                $Para = implode("||",$i["Para"]);
+                                $RefStatTable[] = "|-";
+                                $RefStatTable[] = "|Para||$RefDur||$RefType||$Para";
+                                $RefStatTable[] = "|-";
+                                $RefStatTable[] = "|GrowPara||$RefDur||$RefType||$GrowPara";
+                                $RefStatTable[] = "|}";
+                                $RefStatOut[] = implode("\n",$RefStatTable);
+                            }
+                            $Form = [];
+                            foreach($SkillEffect_Group_Hero[$RefEffectID]['SkillEffect'] as $i){
+                                $ParaType = $i['Type'];
+                                switch ($ParaType) {
+                                    case 0:
+                                        
+                                    break;
+                                    case 1:
+                                        $Form[] = "Damage = ".$i['Para'][1]." + ( ".$i['Para'][2] / 100 ."% * [Atk] )";
+                                    break;
+                                    case 2:
+                                        $Form[] = "Damage = ".$i['Para'][1]." + ( ".$i['Para'][3] / 100 ."% * [Sp.Atk] )";
+                                    break;
+                                    case 3:
+                                        $Form[] = "Damage = ".$i['Para'][2] / 100 ."% * [Atk]";
+                                    break;
+                                    case 4:
+                                        $Form[] = "Heal = ".$i['Para'][1]." + ( ".$i['Para'][2] / 100 ."% * [Atk] )";
+                                    break;
+                                    case 5:
+                                        $Form[] = "Increases Attack speed by = ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 7:
+                                        $Form[] = "Increases Movement speed by ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 8:
+                                        $Form[] = "Cause ".$i['Para'][1] / 100 ."% Slow on target";
+                                    break;
+                                    case 10:
+                                        $Form[] = "Damage Reduction = ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 15:
+                                        $Form[] = "Increases Attack by = ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 16:
+                                        $Form[] = "Reduce targets Attack by = ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 18:
+                                        $Form[] = "Increases Attack Speed by = ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 29:
+                                        $Form[] = "Reduce Moves CD by = ".$i['Para'][3] / 100 ."%";
+                                    break;
+                                    case 32:
+                                        $Form[] = "Boost Attack by = ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 34:
+                                        $Form[] = "Shield = ".$i['Para'][1]." + ( ".$i['Para'][2] / 100 ."% * [Atk] )";
+                                    break;
+                                    case 35:
+                                        $Form[] = "Boost Damage = ".$i['Para'][0] / 100 ."%";
+                                    break;
+                                    case 38:
+                                        $Form[] = "Dash Distance??? = ".$i['Para'][1] / 100 ."m";
+                                    break;
+                                    case 50:
+                                        $Form[] = "Increases Attack Speed by = ".$i['Para'][1] / 100 ."%";
+                                    break;
+                                    case 73:
+                                        $Form[] = "+".$i['Para'][1] / 100 ."% CritHit";
+                                    break;
+                                    
+                                    default:
+                                        $Form[] = "Other - ". $ParaType;
+                                    break;
+                                }
+                            }
+                            $RefForm[] = implode("\n",$Form);
+                        }
+                    }
+
                     $RangeAppointType = $Active_Skill_Hero[$SkillID]['RangeAppointType'];
                     switch ($RangeAppointType) {
                         case 1:
@@ -257,7 +358,6 @@ class Pokemon_Hero implements ParseInterface
                     if ($Active_Skill_Hero[$SkillID]['PreSkillId'] !== 0){
                         $PreviousSkillID = $Active_Skill_Hero[$SkillID]['PreSkillId'];
                     }
-
                     $SkillString = "{{-start-}}\n";
                     $SkillString .= "'''$SkillName'''\n";
                     $SkillString .= "{{Pokemon Skill\n";
@@ -273,11 +373,23 @@ class Pokemon_Hero implements ParseInterface
                     $SkillString .= "|Target_Type = $TargetType\n";
                     $SkillString .= "|Range = ".$Range."m\n";
                     $SkillString .= "|Follow_Range = ".$MaxFollowDis."m\n";
-                    $SkillString .= "|Description = \n";
+                    $SkillString .= "|Description = $Description\n";
                     $SkillString .= "|Cooldown = ".$Cooldown."s\n";
                     $SkillString .= "|SkillID = $SkillID\n";
                     $SkillString .= "|PreviousSkillID = $PreviousSkillID\n";
                     $SkillString .= "}}\n";
+                    $SkillString .= "{{-stop-}}\n";
+                    $SkillString .= "{{-start-}}\n";
+                    $SkillString .= "|RefStats =\n". implode("\n--\n",$RefForm)."\n\n";
+                    $SkillString .= "|Desc = $SimpleDesc\n";
+                    $SkillString .= "|RefDuration = $RefDuration\n";
+                    $SkillString .= "|RefEffectType = $RefEffectType\n";
+                    $SkillString .= "|Refsub_EffectType = $Refsub_EffectType\n";
+                    $SkillString .= "|RefGrowType = $RefGrowType\n";
+                    $SkillString .= "|RefDamageLimitToMonster = $RefDamageLimitToMonster\n";
+                    $SkillString .= "|RefIsCrit = $RefIsCrit\n";
+                    $SkillString .= "|RefEffectSlotIndex = $RefEffectSlotIndex\n";
+                    $SkillString .= implode("\n",$RefStatOut)."\n";
                     $SkillString .= "{{-stop-}}\n";
                     $SkillArray[] = $SkillString;
                 }

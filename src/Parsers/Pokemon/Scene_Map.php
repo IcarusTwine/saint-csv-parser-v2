@@ -28,6 +28,8 @@ class Scene_Map implements ParseInterface
         // loop through data
         foreach ($Scene_Map as $id => $Scene) {
             if ($Scene['ShowInList'] === false) continue;
+            $Name = $LanguageMap_en[$Scene['Remarks']];
+            if (empty($Name)) continue;
             $OutCombatTime = $Scene['OutCombatTime'] / 1000 ."s";
             $SurrenderCDTime = $Scene['SurrenderCDTime']."s";
             $DoubleScoreTime = $Scene['DoubleScoreTime'] / 1000 ."s";
@@ -40,7 +42,6 @@ class Scene_Map implements ParseInterface
             $MapIcon = $Scene['MapIcon'];
             $IconArray[] = $MapIcon;
             $ScoreMinimapDisplay = $Scene['ScoreMinimapDisplay'];
-            $Name = $LanguageMap_en[$Scene['Remarks']];
             $MaxLevel = $Scene['MaxLevel'];
             $PickTimeOut = $Scene['PickTimeOut'];
             $HeldDisplay = $Scene['HeldDisplay'];
@@ -85,13 +86,14 @@ class Scene_Map implements ParseInterface
             
             $String = "{{-start-}}\n";
             $String .= "'''$Name'''\n";
-            $String .= "{{Pokemon Map\n";
+            $String .= "{{Pokemon Arena\n";
             $String .= "|Name = $Name\n";
             $String .= "|MapIcon = $MapIcon\n";
             $String .= "|MatchTime = $MatchTime\n";
             $String .= "|TeamPlayers = $TeamAmtPlayers\n";
             $String .= "|GameMode = $GameMode\n";
             $String .= "|MapSubMode = $MapSubMode\n";
+            $String .= "|MiniMap = {$Name}_Minimap\n";
             $String .= "\n";
             $String .= "|OutCombatTime = $OutCombatTime\n";
             $String .= "|SurrenderCDTime = $SurrenderCDTime\n";
