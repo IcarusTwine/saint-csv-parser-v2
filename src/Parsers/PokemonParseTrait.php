@@ -274,4 +274,36 @@ trait PokemonParseTrait
             break;
         }
     }
+    /**
+     * Energy Type
+     */
+    public function getEnergyType($num)
+    {
+        switch ($num) {
+            case 0:
+                return "Invalid";
+            break;
+            case 1: 
+                return "Free";
+            break;
+            case 2:
+                return "ComNormal";
+            break;
+            case 3:
+                return "ComCriSkill";
+            break;
+            case 4:
+                return "AutoRecoverCriSkill";
+            break;
+            case 5:
+                return "NormalMp";
+            break;
+            case 6:
+                return "NormalEnergy";
+            break;
+            case 7:
+                return "MonsterPatient";
+            break;
+        }
+    }
 }

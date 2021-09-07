@@ -28,11 +28,23 @@ class Pokemon_Hero implements ParseInterface
         $Passive_skill = $this->json("/$Version/Passive_skill");
         $Pokemon_StatGrowth = $this->json("/$Version/Pokemon_StatGrowth");
         $SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
+        $SkillLogo = $this->json("/$Version/SkillLogo");
 
         // (optional) start a progress bar
         $IconArray = [];
         $SkillIconArray = [];
-        //get evolutions array
+
+        $DisamArray = array(
+            "Blaze",
+            "Close Combat",
+            "Confusion",
+            "Feint",
+            "Flame Charge",
+            "Psychic",
+            "Slash",
+            "Sludge Bomb",
+            "Surf",            
+        );
 
         // loop through data
         foreach ($Pokemon_Base as $id => $Hero) {
@@ -209,7 +221,6 @@ class Pokemon_Hero implements ParseInterface
                     $EvolutionLevels[] = $TriggerLevel;
                 } else {
                     $TalentId = $Talent['TalentId'];
-                    $SkillName = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']];
                     $Type = $this->getTalent_Plan_ChooseType_Enum($Talent['ChooseType']);
                     $TriggerLevel = $Talent['TriggerLevel'];
                     $SkillIndexInSlot = $Talent['SkillIndexInSlot'];
@@ -229,19 +240,23 @@ class Pokemon_Hero implements ParseInterface
                         $IconSkill = $Pokemon_Talent[$TalentId]['IconPath'];
                         $SkillIconArray[] = $IconSkill;
                     }
+                    $Property = implode(",",$Pokemon_Talent[$TalentId]['Property']);
                     $TutIcon = "";
                     if (!empty($Pokemon_Talent[$TalentId]['DescImgPath'])){
                         $TutIcon = $Pokemon_Talent[$TalentId]['DescImgPath'];
                         $SkillIconArray[] = $TutIcon;
                     }
-                    $EffectType = $LanguageMap_en[$Pokemon_Talent[$TalentId]['EffectLabel']];
                     $SkillID = $Pokemon_Talent[$TalentId]['ActiveSkill'];
+                    $EffectType = $LanguageMap_en[$SkillLogo[$Active_Skill_Hero[$SkillID]['SkillLogo'][0]]['Name']];
                     $Cooldown = $Active_Skill_Hero[$SkillID]['CDTime'] / 1000;
                     $RefEffectGroupIds = $Active_Skill_Hero[$SkillID]['RefEffectGroupIds'];
                     $SimpleDesc = $Active_Skill_Hero[$SkillID]['SimpleDesc'];
                     $RefStatOut = [];
                     $RefForm = [];
-                    $Description = $LanguageMap_en[$Active_Skill_Hero[$SkillID]['Desc']];
+                    $Description = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentDesc']];
+                    if (empty($Description)){
+                        $Description = $LanguageMap_en[$Active_Skill_Hero[$SkillID]['Desc']];
+                    }
                     foreach($RefEffectGroupIds as $RefEffectID){
                         if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
                             $RefDuration = $SkillEffect_Group_Hero[$RefEffectID]['Duration'];
@@ -274,58 +289,89 @@ class Pokemon_Hero implements ParseInterface
                                         
                                     break;
                                     case 1:
-                                        $Form[] = "Damage = ".$i['Para'][1]." + ( ".$i['Para'][2] / 100 ."% * [Atk] )";
+                                        $Form[] = "Damage = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
                                     break;
                                     case 2:
-                                        $Form[] = "Damage = ".$i['Para'][1]." + ( ".$i['Para'][3] / 100 ."% * [Sp.Atk] )";
+                                        $Form[] = "Damage = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][3] / 100 ."% * [Sp.Atk] )}}";
                                     break;
                                     case 3:
-                                        $Form[] = "Damage = ".$i['Para'][2] / 100 ."% * [Atk]";
+                                        $Form[] = "Damage = {{Color|e6923e|".$i['Para'][2] / 100 ."% * [Atk]}}";
                                     break;
                                     case 4:
-                                        $Form[] = "Heal = ".$i['Para'][1]." + ( ".$i['Para'][2] / 100 ."% * [Atk] )";
+                                        $Form[] = "Heal = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
                                     break;
                                     case 5:
-                                        $Form[] = "Increases Attack speed by = ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Increases Attack speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
                                     break;
                                     case 7:
-                                        $Form[] = "Increases Movement speed by ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Increases Movement speed by {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
                                     break;
                                     case 8:
-                                        $Form[] = "Cause ".$i['Para'][1] / 100 ."% Slow on target";
+                                        $Form[] = "Cause {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}} Slow on target";
                                     break;
                                     case 10:
-                                        $Form[] = "Damage Reduction = ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Damage Reduction = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
                                     break;
                                     case 15:
-                                        $Form[] = "Increases Attack by = ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Increases Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
                                     break;
                                     case 16:
-                                        $Form[] = "Reduce targets Attack by = ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Reduce targets Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                                    break;
+                                    case 17:
+                                        $Form[] = "Increases Def by = {{Color|bfbeb6|".$i['Para'][1]."}}";
+                                    break;
+                                    case 19:
+                                        $Form[] = "Increase Sp.Atk by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
                                     break;
                                     case 18:
-                                        $Form[] = "Increases Attack Speed by = ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Increases Move Speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                                    break;
+                                    case 20:
+                                        $Form[] = "???";
+                                    break;
+                                    case 22:
+                                        $Form[] = "Decrease Targets Def and Sp.Def by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
                                     break;
                                     case 29:
-                                        $Form[] = "Reduce Moves CD by = ".$i['Para'][3] / 100 ."%";
+                                        $Form[] = "Reduce Moves CD by = {{Color|bfbeb6|".$i['Para'][3] / 100 ."%}}";
                                     break;
                                     case 32:
-                                        $Form[] = "Boost Attack by = ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Boost Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
                                     break;
                                     case 34:
-                                        $Form[] = "Shield = ".$i['Para'][1]." + ( ".$i['Para'][2] / 100 ."% * [Atk] )";
+                                        $Extra = "";
+                                        if ($i['Para'][10] !== 0){
+                                            $Extra = "Heals for ".$i['Para'][7] / 1000 ."s";
+                                        }
+                                        $Form[] = "Shield = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][2] / 100 ."% * [Atk] )}} $Extra";
                                     break;
                                     case 35:
-                                        $Form[] = "Boost Damage = ".$i['Para'][0] / 100 ."%";
+                                        $Form[] = "Boost Damage = {{Color|bfbeb6|".$i['Para'][0] / 100 ."%}}";
                                     break;
                                     case 38:
-                                        $Form[] = "Dash Distance??? = ".$i['Para'][1] / 100 ."m";
+                                        $Form[] = "Dash Distance??? = {{Color|bfbeb6|".$i['Para'][1] / 100 ."m}}";
                                     break;
                                     case 50:
-                                        $Form[] = "Increases Attack Speed by = ".$i['Para'][1] / 100 ."%";
+                                        $Form[] = "Increases Attack Speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                                    break;
+                                    case 55:
+                                        $Form[] = "Floats Target for = {{Color|bfbeb6|".$i['Para'][1] / 1000 ."s}}";
+                                    break;
+                                    case 56:
+                                        $Form[] = "???";
+                                    break;
+                                    case 61:
+                                        $Form[] = "Summon Double";
+                                    break;
+                                    case 66:
+                                        $Form[] = "Reduce Def + Sp.Def by {{Color|bfbeb6|".$i['Para'][6] / 100 ."}}% and increase Atk + Sp.Atk with a ratio of {{Color|bfbeb6|".$i['Para'][1].":".$i['Para'][3]."}}";
                                     break;
                                     case 73:
-                                        $Form[] = "+".$i['Para'][1] / 100 ."% CritHit";
+                                        $Form[] = "Increase Crit Hit by {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                                    break;
+                                    case 76:
+                                        $Form[] = "Increases Move Speed in area by = ???";
                                     break;
                                     
                                     default:
@@ -358,6 +404,28 @@ class Pokemon_Hero implements ParseInterface
                     if ($Active_Skill_Hero[$SkillID]['PreSkillId'] !== 0){
                         $PreviousSkillID = $Active_Skill_Hero[$SkillID]['PreSkillId'];
                     }
+                    if (in_array(str_replace("+","",$LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']]),$DisamArray)){
+                        $SkillName = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']]." ($Name)";
+                        if (strpos($SkillName,"+")!== false){
+                            $SkillName = str_replace("+","",$LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']])." ($Name)+";
+                        }
+                    } else {
+                        $SkillName = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']];
+                    }
+                    $Base_Skill = "";
+                    $Base_Skill_Icon = "";
+                    $BaseSkillID = round($SkillID, -1);
+                    if (($Type !== "Base") || ($Type !== "Passive") || ($Type !== "Unite Move")){
+                        if (!empty($Active_Skill_Hero[$BaseSkillID])){
+                            $Base_Skill = $LanguageMap_en[$Active_Skill_Hero[$BaseSkillID]['Name']];
+                            $Base_Skill_Icon = $Active_Skill_Hero[$BaseSkillID]['IconPath'];
+                        }
+                    }
+                    if ($Type === "Unite Move"){
+                        $Slot = "UniteMove";
+                    }
+
+
                     $SkillString = "{{-start-}}\n";
                     $SkillString .= "'''$SkillName'''\n";
                     $SkillString .= "{{Pokemon Skill\n";
@@ -377,19 +445,19 @@ class Pokemon_Hero implements ParseInterface
                     $SkillString .= "|Cooldown = ".$Cooldown."s\n";
                     $SkillString .= "|SkillID = $SkillID\n";
                     $SkillString .= "|PreviousSkillID = $PreviousSkillID\n";
-                    $SkillString .= "}}\n";
-                    $SkillString .= "{{-stop-}}\n";
-                    $SkillString .= "{{-start-}}\n";
-                    $SkillString .= "|RefStats =\n". implode("\n--\n",$RefForm)."\n\n";
-                    $SkillString .= "|Desc = $SimpleDesc\n";
-                    $SkillString .= "|RefDuration = $RefDuration\n";
+                    $SkillString .= "|Base_Skill = $Base_Skill\n";
+                    $SkillString .= "|Base_Skill_Icon  = $Base_Skill_Icon\n";
+                    $SkillString .= "|RefStats =\n". implode("\n\n",$RefForm)."\n\n";
+                    //'$SkillString .= "|Desc = $SimpleDesc\n";
+                    $SkillString .= "|RefDuration = ".$RefDuration / 1000 ."s\n";
                     $SkillString .= "|RefEffectType = $RefEffectType\n";
                     $SkillString .= "|Refsub_EffectType = $Refsub_EffectType\n";
-                    $SkillString .= "|RefGrowType = $RefGrowType\n";
-                    $SkillString .= "|RefDamageLimitToMonster = $RefDamageLimitToMonster\n";
+                    //$SkillString .= "|RefGrowType = $RefGrowType\n";
+                    //$SkillString .= "|RefDamageLimitToMonster = $RefDamageLimitToMonster\n";
                     $SkillString .= "|RefIsCrit = $RefIsCrit\n";
-                    $SkillString .= "|RefEffectSlotIndex = $RefEffectSlotIndex\n";
-                    $SkillString .= implode("\n",$RefStatOut)."\n";
+                    //$SkillString .= "|Property = $Property\n";
+                    //$SkillString .= implode("\n",$RefStatOut)."\n";
+                    $SkillString .= "}}\n";
                     $SkillString .= "{{-stop-}}\n";
                     $SkillArray[] = $SkillString;
                 }
