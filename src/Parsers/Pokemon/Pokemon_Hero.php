@@ -29,6 +29,7 @@ class Pokemon_Hero implements ParseInterface
         $Pokemon_StatGrowth = $this->json("/$Version/Pokemon_StatGrowth");
         $SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
         $SkillLogo = $this->json("/$Version/SkillLogo");
+        $InherentPropertyDesc = $this->json("/$Version/InherentPropertyDesc");
 
         // (optional) start a progress bar
         $IconArray = [];
@@ -50,7 +51,7 @@ class Pokemon_Hero implements ParseInterface
         foreach ($Pokemon_Base as $id => $Hero) {
             $Evo = [];
             if ($Hero['HideInBox'] === true) continue; //not released or shown to be usable
-            $PkID = $id; // dex number
+            $PkID = $Hero['PokemonId']; // dex number
             $CardIcon = $Hero['PokemonCard']; //Stone Icon (Shop)
             $IconArray[] = $CardIcon;
 
@@ -130,14 +131,16 @@ class Pokemon_Hero implements ParseInterface
             $BaseHp = $Pokemon_Hero[$MainUnitID]['BaseHp'];
             $BaseAttack = $Pokemon_Hero[$MainUnitID]['BaseAttack'];
             $BaseDef = $Pokemon_Hero[$MainUnitID]['BaseDef'];
-            $BaseMoveSpeed = $Pokemon_Hero[$MainUnitID]['BaseMoveSpeed'];
+            $PropertyNoDiv = $InherentPropertyDesc[8]['FormatDivisor'];
+            $BaseMoveSpeed = $Pokemon_Hero[$MainUnitID]['BaseMoveSpeed'] / $PropertyNoDiv;
             $BaseHpRecover = $Pokemon_Hero[$MainUnitID]['BaseHpRecover'];
             $BaseSpecAttack = $Pokemon_Hero[$MainUnitID]['BaseSpecAttack'];
             
             //Rates
             $BaseSupportEnergyRate = $Pokemon_Hero[$MainUnitID]['BaseSupportEnergyRate'] / 1000 ."s";
             $AttackFrequency = $Pokemon_Hero[$MainUnitID]['AttackFrequency'] / 1000 ."s";
-            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitID]['AttackFrequency'];
+            $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
+            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitID]['AttackFrequency'] / $PropertyNoDiv;
 
             //links to stats?
             $StatId = $Pokemon_Hero[$MainUnitID]['StatId'];
@@ -158,21 +161,87 @@ class Pokemon_Hero implements ParseInterface
             $CD = 0;
             $StatTable[] = "! Level !!HP!!HP Recovery!!Attack!!Def!!Sp.Atk!!Sp.Def!!Attack Speed!!Speed!!Crit-Hit %!!Crit-Hit Damage!!Cooldown";
             foreach($Pokemon_StatGrowth[$StatId] as $StatGrowth){
-                $HP = $HP + $StatGrowth['Property'][0];
-                $HPRecovery = $HPRecovery + $StatGrowth['Property'][1];
-                $Attack = $Attack + $StatGrowth['Property'][2];
-                $Def = $Def + $StatGrowth['Property'][3];
-                $SpAtk = $SpAtk + $StatGrowth['Property'][4];
-                $SpDef = $SpDef + $StatGrowth['Property'][5];
-                $AtkSpeed = $AtkSpeed + ($StatGrowth['Property'][6]);
-                $Speed = $Speed + $StatGrowth['Property'][7];
-                $AtkSpeed = "0";
+
+                $PropertyNoDiv = $InherentPropertyDesc[1]['FormatDivisor'];
+                if ($InherentPropertyDesc[1]['AllowFloatNum'] === false){
+                $HP = floor($HP + $StatGrowth['Property'][0] / $PropertyNoDiv);
+                } else {
+                    $HP = $HP + $StatGrowth['Property'][0] / $PropertyNoDiv;
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[2]['FormatDivisor'];
+                if ($InherentPropertyDesc[2]['AllowFloatNum'] === false){
+                    $HPRecovery = floor($HPRecovery + $StatGrowth['Property'][1] / $PropertyNoDiv);
+                } else {
+                    $HPRecovery = $HPRecovery + $StatGrowth['Property'][1] / $PropertyNoDiv;
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[3]['FormatDivisor'];
+                if ($InherentPropertyDesc[3]['AllowFloatNum'] === false){
+                    $Attack = floor($Attack + $StatGrowth['Property'][2] / $PropertyNoDiv);
+                } else {
+                    $Attack = $Attack + $StatGrowth['Property'][2] / $PropertyNoDiv;
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[4]['FormatDivisor'];
+                if ($InherentPropertyDesc[4]['AllowFloatNum'] === false){
+                    $Def = floor($Def + $StatGrowth['Property'][3] / $PropertyNoDiv);
+                }else {
+                    $Def = $Def + $StatGrowth['Property'][3] / $PropertyNoDiv;
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[5]['FormatDivisor'];
+                if ($InherentPropertyDesc[5]['AllowFloatNum'] === false){
+                    $SpAtk = floor($SpAtk + $StatGrowth['Property'][4] / $PropertyNoDiv);
+                } else {
+                    $SpAtk = $SpAtk + $StatGrowth['Property'][4] / $PropertyNoDiv;
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[6]['FormatDivisor'];
+                if ($InherentPropertyDesc[6]['AllowFloatNum'] === false){
+                    $SpDef = floor($SpDef + $StatGrowth['Property'][5] / $PropertyNoDiv);
+                } else {
+                    $SpDef = $SpDef + $StatGrowth['Property'][5] / $PropertyNoDiv;
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
+                if ($InherentPropertyDesc[7]['AllowFloatNum'] === false){
+                    $AtkSpeed = floor($AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv));
+                } else {
+                    $AtkSpeed = $AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv);
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[8]['FormatDivisor'];
+                if ($InherentPropertyDesc[8]['AllowFloatNum'] === false){
+                    $Speed = floor($Speed + ($StatGrowth['Property'][7] / $PropertyNoDiv));
+                } else {
+                    $Speed = $Speed + ($StatGrowth['Property'][7] / $PropertyNoDiv);
+                }
+
                 
-                $CritHitPer = $CritHitPer + $StatGrowth['Property'][13]; // / 100
-                $CritHitDm = $CritHitDm + $StatGrowth['Property'][14];
-                $CD = $CD + $StatGrowth['Property'][16]; // / 1000
+                $PropertyNoDiv = $InherentPropertyDesc[14]['FormatDivisor'];
+                if ($InherentPropertyDesc[14]['AllowFloatNum'] === false){
+                    $CritHitPer = floor($CritHitPer + $StatGrowth['Property'][13] / $PropertyNoDiv); // / 100
+                } else {
+                    $CritHitPer = $CritHitPer + $StatGrowth['Property'][13] / $PropertyNoDiv; // / 100
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[15]['FormatDivisor'];
+                if ($InherentPropertyDesc[15]['AllowFloatNum'] === false){
+                    $CritHitDm = floor($CritHitDm + $StatGrowth['Property'][14] / $PropertyNoDiv);
+                } else {
+                    $CritHitDm = $CritHitDm + $StatGrowth['Property'][14] / $PropertyNoDiv;
+                }
+
+                $PropertyNoDiv = $InherentPropertyDesc[17]['FormatDivisor'];
+                if ($InherentPropertyDesc[17]['AllowFloatNum'] === false){
+                    $CD = $CD + $StatGrowth['Property'][16] / $PropertyNoDiv; // / 1000
+                } else {
+                    $CD = floor($CD + $StatGrowth['Property'][16] / $PropertyNoDiv); // / 1000
+                }
+
                 $StatTable[] = "|-";
-                $StatTable[] = "|".$StatGrowth['Level']."||$HP||$HPRecovery||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed."||$Speed||".$CritHitPer / 100 ."%||$CritHitDm||-".$CD / 1000 ."s";
+                $StatTable[] = "|".$StatGrowth['Level']."||$HP||$HPRecovery||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed."%||$Speed||".$CritHitPer."%||$CritHitDm||-".$CD."%";
             }
             $StatTable[] = "|}";
             $StatTable[] = "{{-stop-}}";
@@ -284,100 +353,7 @@ class Pokemon_Hero implements ParseInterface
                             $Form = [];
                             foreach($SkillEffect_Group_Hero[$RefEffectID]['SkillEffect'] as $i){
                                 $ParaType = $i['Type'];
-                                switch ($ParaType) {
-                                    case 0:
-                                        
-                                    break;
-                                    case 1:
-                                        $Form[] = "Damage = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
-                                    break;
-                                    case 2:
-                                        $Form[] = "Damage = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][3] / 100 ."% * [Sp.Atk] )}}";
-                                    break;
-                                    case 3:
-                                        $Form[] = "Damage = {{Color|e6923e|".$i['Para'][2] / 100 ."% * [Atk]}}";
-                                    break;
-                                    case 4:
-                                        $Form[] = "Heal = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
-                                    break;
-                                    case 5:
-                                        $Form[] = "Increases Attack speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 7:
-                                        $Form[] = "Increases Movement speed by {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 8:
-                                        $Form[] = "Cause {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}} Slow on target";
-                                    break;
-                                    case 10:
-                                        $Form[] = "Damage Reduction = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 15:
-                                        $Form[] = "Increases Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 16:
-                                        $Form[] = "Reduce targets Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 17:
-                                        $Form[] = "Increases Def by = {{Color|bfbeb6|".$i['Para'][1]."}}";
-                                    break;
-                                    case 19:
-                                        $Form[] = "Increase Sp.Atk by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 18:
-                                        $Form[] = "Increases Move Speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 20:
-                                        $Form[] = "???";
-                                    break;
-                                    case 22:
-                                        $Form[] = "Decrease Targets Def and Sp.Def by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 29:
-                                        $Form[] = "Reduce Moves CD by = {{Color|bfbeb6|".$i['Para'][3] / 100 ."%}}";
-                                    break;
-                                    case 32:
-                                        $Form[] = "Boost Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 34:
-                                        $Extra = "";
-                                        if ($i['Para'][10] !== 0){
-                                            $Extra = "Heals for ".$i['Para'][7] / 1000 ."s";
-                                        }
-                                        $Form[] = "Shield = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][2] / 100 ."% * [Atk] )}} $Extra";
-                                    break;
-                                    case 35:
-                                        $Form[] = "Boost Damage = {{Color|bfbeb6|".$i['Para'][0] / 100 ."%}}";
-                                    break;
-                                    case 38:
-                                        $Form[] = "Dash Distance??? = {{Color|bfbeb6|".$i['Para'][1] / 100 ."m}}";
-                                    break;
-                                    case 50:
-                                        $Form[] = "Increases Attack Speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 55:
-                                        $Form[] = "Floats Target for = {{Color|bfbeb6|".$i['Para'][1] / 1000 ."s}}";
-                                    break;
-                                    case 56:
-                                        $Form[] = "???";
-                                    break;
-                                    case 61:
-                                        $Form[] = "Summon Double";
-                                    break;
-                                    case 66:
-                                        $Form[] = "Reduce Def + Sp.Def by {{Color|bfbeb6|".$i['Para'][6] / 100 ."}}% and increase Atk + Sp.Atk with a ratio of {{Color|bfbeb6|".$i['Para'][1].":".$i['Para'][3]."}}";
-                                    break;
-                                    case 73:
-                                        $Form[] = "Increase Crit Hit by {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
-                                    break;
-                                    case 76:
-                                        $Form[] = "Increases Move Speed in area by = ???";
-                                    break;
-                                    
-                                    default:
-                                        $Form[] = "Other - ". $ParaType;
-                                    break;
-                                }
+                                $Form[] = $this->getSkillEffect($ParaType,$i);
                             }
                             $RefForm[] = implode("\n",$Form);
                         }
@@ -499,7 +475,7 @@ class Pokemon_Hero implements ParseInterface
             $OutputString .= "|Base_SpDef = $BaseSpecDef\n"; 
             $OutputString .= "|Base_Speed = $BaseMoveSpeed\n";
             $OutputString .= "|Base_HPRecover = $BaseHpRecover\n";
-            $OutputString .= "|Base_AtkSpeed = $BaseAttackFrequency\n";
+            $OutputString .= "|Base_AtkSpeed = $BaseAttackFrequency%\n";
             $OutputString .= "\n";
             $OutputString .= "|Obtain = $Obtain\n";
             $OutputString .= "\n";
