@@ -275,6 +275,20 @@ trait PokemonParseTrait
         }
     }
     /**
+     * GrowType
+     */
+    public function getGrowType($num)
+    {
+        switch ($num) {
+            case 0:
+                return "Invalid";
+            break;
+            case 1: 
+                return "ExpLevel";
+            break;
+        }
+    }
+    /**
      * Energy Type
      */
     public function getEnergyType($num)
@@ -302,7 +316,7 @@ trait PokemonParseTrait
                 return "NormalEnergy";
             break;
             case 7:
-                return "MonsterPatient";
+                return "Upon not being attacked";
             break;
         }
     }
@@ -399,89 +413,89 @@ trait PokemonParseTrait
                 }if ($SubType === "Percent"){
                     return "Damage = ".$i['Para'][1] / 100 ."%";
                 }  else {
-                    return "Damage = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
+                    return "Damage = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
                 }
                 
             break;
             case 2:
-                return "Damage = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][3] / 100 ."% * [Sp.Atk] )}}";
+                return "Damage = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][3] / 100 ."% * [Sp.Atk] )}}";
             break;
             case 3:
                 return "Damage = {{Color|e6923e|".$i['Para'][2] / 100 ."% * [Atk]}}";
             break;
             case 4:
-                return "Heal = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
+                return "Heal = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
             break;
             case 5:
-                return "Increases Attack speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Increases Attack speed by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 7:
-                return "Increases Movement speed by {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Increases Movement speed by {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 8:
-                return "Cause {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}} Slow on target";
+                return "Cause {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}} Slow on target";
             break;
             case 10:
-                return "Damage Reduction = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Damage Reduction = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 11:
-                return "Increase Max HP by = {{Color|bfbeb6|".$i['Para'][1]."}}";
+                return "Increase Max HP by = {{Color|style=outlineblack|white|".$i['Para'][1]."}}";
             break;
             case 15:
-                return "Increases Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Increases Attack by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 16:
-                return "Reduce targets Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Reduce targets Attack by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 17:
-                return "Increases Def by = {{Color|bfbeb6|".$i['Para'][1]."}}";
+                return "Increases Def by = {{Color|style=outlineblack|white|".$i['Para'][1]."}}";
             break;
             case 19:
-                return "Increase Sp.Atk by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Increase Sp.Atk by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 18:
-                return "Increases Move Speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Increases Move Speed by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 20:
                 return "???";
             break;
             case 22:
-                return "Decrease Targets Def and Sp.Def by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Decrease Targets Def and Sp.Def by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 29:
-                return "Reduce Moves CD by = {{Color|bfbeb6|".$i['Para'][3] / 100 ."%}}";
+                return "Reduce Moves CD by = {{Color|style=outlineblack|white|".$i['Para'][3] / 100 ."%}}";
             break;
             case 30:
                 return $i['Para'][1];
             break;
             case 32:
-                return "Boost Attack by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Boost Attack by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 34:
                 $Extra = "";
                 if ($i['Para'][10] !== 0){
                     $Extra = "Heals for ".$i['Para'][7] / 1000 ."s";
                 } if (!empty($i['Para'][4])){
-                    return "Shield = {{Color|bfbeb6|".$i['Para'][4] / 100 ."%}} $Extra";
+                    return "Shield = {{Color|style=outlineblack|white|".$i['Para'][4] / 100 ."%}} $Extra";
                 } else {
-                    return "Shield = {{Color|bfbeb6|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][2] / 100 ."% * [Atk] )}} $Extra";
+                    return "Shield = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][2] / 100 ."% * [Atk] )}} $Extra";
                 }
                 
             break;
             case 35:
-                return "Boost Damage = {{Color|bfbeb6|".$i['Para'][0] / 100 ."%}}";
+                return "Boost Damage = {{Color|style=outlineblack|white|".$i['Para'][0] / 100 ."%}}";
             break;
             case 38:
-                return "Dash Distance??? = {{Color|bfbeb6|".$i['Para'][1] / 100 ."m}}";
+                return "Dash Distance??? = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."m}}";
             break;
             case 46:
-                return "Gain {{Color|bfbeb6|".$i['Para'][1]."}} Exp points";
+                return "Gain {{Color|style=outlineblack|white|".$i['Para'][1]."}} Exp points";
             break;
             case 50:
-                return "Increases Attack Speed by = {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Increases Attack Speed by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 55:
-                return "Floats Target for = {{Color|bfbeb6|".$i['Para'][1] / 1000 ."s}}";
+                return "Floats Target for = {{Color|style=outlineblack|white|".$i['Para'][1] / 1000 ."s}}";
             break;
             case 56:
                 return "???";
@@ -490,16 +504,16 @@ trait PokemonParseTrait
                 return "Summon Double";
             break;
             case 66:
-                return "Reduce Def + Sp.Def by {{Color|bfbeb6|".$i['Para'][6] / 100 ."}}% and increase Atk + Sp.Atk with a ratio of {{Color|bfbeb6|".$i['Para'][1].":".$i['Para'][3]."}}";
+                return "Reduce Def + Sp.Def by {{Color|style=outlineblack|white|".$i['Para'][6] / 100 ."}}% and increase Atk + Sp.Atk with a ratio of {{Color|style=outlineblack|white|".$i['Para'][1].":".$i['Para'][3]."}}";
             break;
             case 73:
-                return "Increase Crit Hit by {{Color|bfbeb6|".$i['Para'][1] / 100 ."%}}";
+                return "Increase Crit Hit by {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
             break;
             case 76:
                 return "Increases Move Speed in area by = ???";
             break;
             case 80:
-                return "Gain {{Color|bfbeb6|".$i['Para'][1] / 1000 ."%}} Exp";
+                return "Gain {{Color|style=outlineblack|white|".$i['Para'][1] / 1000 ."%}} Exp";
             break;
             
             default:

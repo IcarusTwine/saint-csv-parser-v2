@@ -18,7 +18,7 @@ class PokemonExpGold_Base implements ParseInterface
         $Version = $this->getVer();
         $LanguageMap_en = $this->languagemap("en");
 
-        $PokemonExpGold_Base = $this->json("/$Version/databin_PokemonExpGold_Base");
+        $PokemonExpGold_Base = $this->json("/$Version/PokemonExpGold_Base");
 
         // (optional) start a progress bar
         $IconArray = [];
@@ -27,7 +27,6 @@ class PokemonExpGold_Base implements ParseInterface
         // loop through data
         foreach ($PokemonExpGold_Base as $id => $ExpGold) {
             $StatTable = [];
-            $StatTable[] = "{{-start-}}";
             $StatTable[] = "{| class=\"wikitable\"";
             $StatTable[] = "!Level!!LvlUpExp!!BaseKillExp!!ReviveTimeByLevel!!StorageExp!!StorageExpConversion";
 
@@ -51,13 +50,12 @@ class PokemonExpGold_Base implements ParseInterface
                 }
                 $StorageExpConversion = 0;
                 if (!empty($data['StorageExpConversion'])){
-                    $StorageExpConversion = $data['StorageExpConversion'];
+                    $StorageExpConversion = $data['StorageExpConversion'] / 100 ."%";
                 }
                 $StatTable[] = "|-";
                 $StatTable[] = "|$level||$LvlUpExp||$BaseKillExp||$ReviveTimeByLevel||$StorageExp||$StorageExpConversion";
             }
             $StatTable[] = "|}";
-            $StatTable[] = "{{-stop-}}";
             $Output[] = implode("\n",$StatTable);
         }
         if (!empty($IconArray)) {

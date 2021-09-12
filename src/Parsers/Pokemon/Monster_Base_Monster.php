@@ -27,7 +27,7 @@ class Monster_Base_Monster implements ParseInterface
         $SkillIconArray = [];
 
 
-
+        $DebugArray[] = "Name,Id,LastTime,UnitIdAfterCapture,BaseHp,ResourcePath,DeadAge,Tag1,Tag2,Tag3,Tag4,EntityTag1,EntityTag2,EntityTag3";
         // loop through data
         foreach ($Monster_Base_Monster as $id => $Monster) {
             if (empty($LanguageMap_en[$Monster['NameCn']])) continue;
@@ -40,7 +40,7 @@ class Monster_Base_Monster implements ParseInterface
                 case '2094':
                     $Map = "Auroma Park";
                 break;
-                case '2210':
+                case '2080':
                     $Map = "Mer Stadium";
                 break;
                 case '2081':
@@ -54,6 +54,7 @@ class Monster_Base_Monster implements ParseInterface
             }
             if ($Map === false) continue;
             $Name = $LanguageMap_en[$Monster['NameCn']]." ($Map)";
+            //$Name = $LanguageMap_en[$Monster['NameCn']]."";
             $NameRaw = $LanguageMap_en[$Monster['NameCn']];
             $BodyDisappearTime = $Monster['BodyDisappearTime'] / 1000 ."s";
             $BaseSpecDef = $Monster['BaseSpecDef'];
@@ -63,13 +64,13 @@ class Monster_Base_Monster implements ParseInterface
             $NormalAttackFrequency = $Monster['NormalAttackFrequency'];
             $EnergyArray = [];
             $EnergyArray[] = "{{{!}} class=\"wikitable\"";
-            $EnergyArray[] = "!Type!!Value!!Recover";
+            $EnergyArray[] = "!Trigger!!Value!!Recover";
 
             foreach($Monster['Energy'] as $i => $Energy){
                 if ($Energy['Type'] === 0) continue;
                 $EnergyType = $this->getEnergyType($Energy['Type']);
-                $EnergyVal = $Energy['Val'];
-                $EnergyRecover = $Energy['Recover'];
+                $EnergyVal = $Energy['Val'] / 100 . "%";
+                $EnergyRecover = $Energy['Recover']/ 100 ."%";
                 $EnergyId = $Energy['Id'];
                 $EnergyArray[] = "{{!}}-";
                 $EnergyArray[] = "{{!}}$EnergyType{{!}}{{!}}$EnergyVal{{!}}{{!}}$EnergyRecover";
@@ -141,7 +142,7 @@ class Monster_Base_Monster implements ParseInterface
                 $StatTable[] = "{{-start-}}";
                 $StatTable[] = "'''$Name/Growth'''";
                 $StatTable[] = "{| class=\"wikitable\"";
-                $StatTable[] = "! Time !!HP!!Score!!EXP!!HP Recovery!!Attack!!Def!!Sp.Atk!!Sp.Def!!Attack Speed!!Speed"; $HP = $BaseHp;
+                $StatTable[] = "! Time M:S !!HP!!Score!!EXP!!HP Recovery!!Attack!!Def!!Sp.Atk!!Sp.Def!!Attack Speed!!Speed"; $HP = $BaseHp;
                 $HPRecovery = "0";
                 $Attack = $BaseAttack;
                 $Def = $BaseDef;
@@ -162,9 +163,9 @@ class Monster_Base_Monster implements ParseInterface
                     $Speed = $Speed + $StatGrowth['Property'][7];
                     $Score = $Score + $StatGrowth['KillGoldGrowth'];
                     $EXP = $EXP + $StatGrowth['KillExpGrowth'];
-    
+                    $Time = gmdate("i:s",$StatGrowth['Time'] / 1000);
                     $StatTable[] = "|-";
-                    $StatTable[] = "|".$StatGrowth['Time'] / 1000 ."s||$HP||$Score||$EXP||$HPRecovery||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed."||$Speed";
+                    $StatTable[] = "|".gmdate("i:s",$StatGrowth['Time'] / 1000) ."||$HP||$Score||$EXP||$HPRecovery||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed / 100 ."%||".$Speed / 10 ."";
                 }
                 $StatTable[] = "|}";
                 $StatTable[] = "{{-stop-}}";
@@ -172,8 +173,11 @@ class Monster_Base_Monster implements ParseInterface
             } else {
                 continue;
             }
-
-
+            $ResourcePath = $Monster['ResourcePath'];
+            $DeadAge = $Monster['DeadAge'];
+            $Tags = implode(",",$Monster['Tag']);
+            $EntityTags = implode(",",$Monster['EntityTag']);
+            $DebugArray[] = "$Name,$id,$Time,$UnitIdAfterCapture,$BaseHp,$ResourcePath,$DeadAge,$Tags,$EntityTags";
 
             foreach($Monster['PassiveSkillId'] as $PassiveSkillId){
                 if ($PassiveSkillId === 0) continue;
@@ -182,14 +186,14 @@ class Monster_Base_Monster implements ParseInterface
             $OutputString .= "'''$Name'''\n";
             $OutputString .= "{{Pokemon Monster\n";
             $OutputString .= "|Name = $NameRaw\n";
-            $OutputString .= "|Arena = $Map\n";
+            //$OutputString .= "|Arena = $Map\n";
             $OutputString .= "|BaseSpecDef = $BaseSpecDef\n";
             $OutputString .= "|BaseHp = $BaseHp\n";
-            $OutputString .= "|AttackSpeed = $NormalAttackFrequency\n";
+            $OutputString .= "|AttackSpeed = ".$NormalAttackFrequency / 100 ."%\n";
             $OutputString .= "|BaseAttack = $BaseAttack\n";
             $OutputString .= "|BaseSpecAttack = $BaseSpecAttack\n";
             $OutputString .= "|BaseDef = $BaseDef\n";
-            $OutputString .= "|BaseMoveSpeed = $BaseMoveSpeed\n";
+            $OutputString .= "|BaseMoveSpeed = ".$BaseMoveSpeed / 10 ."\n";
             $OutputString .= "|BaseKillGold = $BaseKillGold\n";
             $OutputString .= "|BaseKillExp = $BaseKillExp\n";
             $OutputString .= "|EvolveName = $EvolveName\n";
@@ -227,6 +231,7 @@ class Monster_Base_Monster implements ParseInterface
 
         // (optional) finish progress bar
         $this->saveExtra("Output\Monster_Base_Monster.txt",implode("\n\n",$Output));
+        $this->saveExtra("Output\Monster_Debug.csv",implode("\n",$DebugArray));
         //$this->saveExtra("Output\Monster_Base_Monster_Stats.txt",implode("\n\n",$StatsTableUni));
 
         // save

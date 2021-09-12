@@ -47,7 +47,6 @@ class BattlePassSeason implements ParseInterface
             $ElitePassLevelUp = $Season['ElitePassLevelUp'];
             $SeasonStartTime = str_split($Season['SeasonStartTime'],2);  
             $SeasonEndTime = str_split($Season['SeasonEndTime'],2);
-
             $StartYear = $SeasonStartTime[0]."".$SeasonStartTime[1];
             $StartMonth = $SeasonStartTime[2];
             $StartDay = $SeasonStartTime[3];

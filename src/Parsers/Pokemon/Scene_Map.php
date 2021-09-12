@@ -75,7 +75,7 @@ class Scene_Map implements ParseInterface
                 $BaseKillExp = $data['BaseKillExp'];
                 $ReviveTimeByLevel = $data['ReviveTimeByLevel'] / 1000 ."s";
                 $StorageExp = $data['StorageExp'];
-                $StorageExpConversion = $data['StorageExpConversion'];
+                $StorageExpConversion = $data['StorageExpConversion'] / 100 . "%";
                 $StatTable[] = "|-";
                 $StatTable[] = "|$level||$LevelUpExp||$BaseKillExp||$ReviveTimeByLevel||$StorageExp||$StorageExpConversion";
             }
