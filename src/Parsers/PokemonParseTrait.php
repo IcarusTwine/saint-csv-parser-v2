@@ -223,7 +223,7 @@ trait PokemonParseTrait
                 return "Damage";
             break;
             case 7:
-                return "Poisoning";
+                return "Poison";
             break;
             case 8:
                 return "Burning";
@@ -232,7 +232,7 @@ trait PokemonParseTrait
                 return "Move Speed Decrease";
             break;
             case 10:
-                return "Dizziness";
+                return "Stun";
             break;
             case 11:
                 return "Immobilize";
@@ -339,7 +339,7 @@ trait PokemonParseTrait
                 return "Def";
             break;
             case 4:
-                return "Sp.Atk";
+                return "Sp. Atk";
             break;
             case 5:
                 return "Sp.Def";
@@ -363,7 +363,7 @@ trait PokemonParseTrait
                 return "Atk Dmg Reduce Rate";
             break;
             case 12:
-                return "Sp.Atk Dmg Reduce Rate";
+                return "Sp. Atk Dmg Reduce Rate";
             break;
             case 13:
                 return "Crit Chance";
@@ -397,128 +397,744 @@ trait PokemonParseTrait
             break;
         }
     }
+    /**
+     * PassiveSkillType
+     */
+    public function getPassiveSkillType($num, $PassiveSkillTypePara)
+    {
+        switch ($num) {
+            case 0:
+                return "Invalid";
+            break;
+            case 1:
+                return "When a pokemon is killed: ";
+            break;
+            case 2:
+                return "When the player is killed: ";
+            break;
+            case 3:
+                return "After {{Color|style=outlineblack|white|".$PassiveSkillTypePara[0] / 1000 ."}} s: ";
+            break;
+            case 4:
+                return "Upon Entering Battle: ";
+            break;
+            case 5:
+                return "Upon getting an Assist: ";
+            break;
+            case 6:
+                return "HP: ";
+            break;
+            case 7:
+                return "Damage: ";
+            break;
+            case 8:
+                return "When player takes Damage: ";
+            break;
+            case 9:
+                return "When player revives: ";
+            break;
+            case 10:
+                return "When player is immobilized: ";
+            break;
+            case 11:
+                return "When player is cured: ";
+            break;
+            case 12:
+                return "When player levels up: ";
+            break;
+            case 13:
+                return "When player unlocks a skill: ";
+            break;
+            case 14:
+                return "When player uses a skill: ";
+            break;
+            case 15:
+                return "When player enters grass: ";
+            break;
+            case 16:
+                return "When player gets a special buff: ";
+            break;
+            case 17:
+                return "When player scores: ";
+            break;
+        }
+    }
     
     /**
      * Property Names
      */
-    public function getSkillEffect($type, $i, $SubType = "")
-    {
+    public function getSkillEffect($type, $i, $SubType = "",$GrowType)
+    {   
+        $GrowExtra = "";
+        if ($GrowType === "ExpLevel"){
+            $GrowExtra = " + {{Color|black|(".$i['GrowPara'][1]." x (Level -1) )}}";
+        }
+        //depending on type
+        //param[0] 
+        //1 = constant
+        //2 = Percent
+        //4 = max hp
+        $Param0 = $i['Para'][0];
+
         switch ($type) {
-            case 0:
+            case 1: //PB_SkillFunc_Type_PhysHurt
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Enemy Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Damage:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}$GrowExtra";
+            break;
+            case 2: //PB_SkillFunc_Type_MagicHurt
+                switch ($Param0) {
+                    case 1: //Percent
+                        $Para = $i['Para'][3] / 100 ."%";
+                        return "Damage:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|cb75e0|( $Para * [Sp. Atk] )}}$GrowExtra";
+                    break;
+                    case 2: //constant
+                        $Para = $i['Para'][3]."";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1] / 100 ."% of Enemy Max HP";
+                        return "Damage:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][3]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                
                 
             break;
-            case 1:
-                if (!empty($i['Para'][4])){
-                    return "Damage = ".$i['Para'][4] / 100 ."%";
-                }if ($SubType === "Percent"){
-                    return "Damage = ".$i['Para'][1] / 100 ."%";
-                }  else {
-                    return "Damage = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
+            case 3: //PB_SkillFunc_Type_RealHurt
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Enemy Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "True Damage:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}$GrowExtra";
+            break;
+            
+            case 4: //PB_SkillFunc_Type_AddHP
+                switch ($Param0) {
+                    case 1: //Percent
+                        $Para = $i['Para'][3] / 100 ."%";
+                    break;
+                    case 2: //constant
+                        $Para = $i['Para'][3]."";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][3]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][3]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Heal:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|cb75e0|( $Para * [Sp. Atk] )}}$GrowExtra";
+                
+            break;
+            case 5: //PB_SkillFunc_Type_IncAtkSpeed
+                switch ($Param0) {
+                    case 1: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 2: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Increase Attack Speed by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
+            break;
+            
+            case 7: //PB_SkillFunc_Type_IncMoveSpeed
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Increase Movement Speed by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                
+            break;
+            
+            case 8: //PB_SkillFunc_Type_DecMoveSpeed
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return ":\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                
+            break;
+            case 10: //PB_SkillFunc_Type_HurtReduceRate
+                switch ($Param0) {
+                    case 1: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 2: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Reduce Damage by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
+            break;
+            case 15: //PB_SkillFunc_Type_IncAtk
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Increase Attack by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
+            break;
+            
+            case 16: //PB_SkillFunc_Type_DecAtk
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Reduce Targets Atk by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                
+            break;
+            
+            case 17: //PB_SkillFunc_Type_IncDefend
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Increase Def by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
+            break;
+            case 18: //PB_SkillFunc_Type_DecDefend
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Decrease Targets Def by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
+            break;
+            case 19: //PB_SkillFunc_Type_IncAp
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Increase Sp. Atk by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
+            break;
+            case 20: //PB_SkillFunc_Type_DecAp
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Reduce Targets Sp. Atk by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                
+            break;
+            
+            case 22: //PB_SkillFunc_Type_DecResist
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Reduce Targets Sp.Def by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                
+            break;
+            case 29: //PB_SkillFunc_Type_Dec_SkillCD
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][3]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][3] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][3]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][3]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Skill CD Decrease by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                
+            break;
+            case 32: //PB_SkillFunc_Type_DamageGain
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Damage Increase by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                
+            break;
+            case 34: //PB_SkillFunc_Type_Protect
+                if (!empty($i['Para'][2])){
+                    return "Shields user for:\n {{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}$GrowExtra";
                 }
-                
-            break;
-            case 2:
-                return "Damage = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][3] / 100 ."% * [Sp.Atk] )}}";
-            break;
-            case 3:
-                return "Damage = {{Color|e6923e|".$i['Para'][2] / 100 ."% * [Atk]}}";
-            break;
-            case 4:
-                return "Heal = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}";
-            break;
-            case 5:
-                return "Increases Attack speed by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 7:
-                return "Increases Movement speed by {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 8:
-                return "Cause {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}} Slow on target";
-            break;
-            case 10:
-                return "Damage Reduction = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 11:
-                return "Increase Max HP by = {{Color|style=outlineblack|white|".$i['Para'][1]."}}";
-            break;
-            case 15:
-                return "Increases Attack by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 16:
-                return "Reduce targets Attack by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 17:
-                return "Increases Def by = {{Color|style=outlineblack|white|".$i['Para'][1]."}}";
-            break;
-            case 19:
-                return "Increase Sp.Atk by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 18:
-                return "Increases Move Speed by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 20:
-                return "???";
-            break;
-            case 22:
-                return "Decrease Targets Def and Sp.Def by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 29:
-                return "Reduce Moves CD by = {{Color|style=outlineblack|white|".$i['Para'][3] / 100 ."%}}";
-            break;
-            case 30:
-                return $i['Para'][1];
-            break;
-            case 32:
-                return "Boost Attack by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
-            break;
-            case 34:
-                $Extra = "";
-                if ($i['Para'][10] !== 0){
-                    $Extra = "Heals for ".$i['Para'][7] / 1000 ."s";
-                } if (!empty($i['Para'][4])){
-                    return "Shield = {{Color|style=outlineblack|white|".$i['Para'][4] / 100 ."%}} $Extra";
-                } else {
-                    return "Shield = {{Color|style=outlineblack|white|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][2] / 100 ."% * [Atk] )}} $Extra";
+                if (!empty($i['Para'][3])){
+                    return "Shields user for:\n {{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][3] / 100 ."% * [Sp. Atk] )}}$GrowExtra";
                 }
+                //return "Swap Rate :\n{{Color|style=bold|black|$Para}}$GrowExtra";
                 
             break;
-            case 35:
-                return "Boost Damage = {{Color|style=outlineblack|white|".$i['Para'][0] / 100 ."%}}";
+            case 35: //PB_SkillFunc_Type_SuckBlood
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Percent of Attack Healed to user:\n{{Color|style=bold|black|".$i['Para'][0] / 100 ."%}}$GrowExtra";
+                
             break;
-            case 38:
-                return "Dash Distance??? = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."m}}";
+            case 38: //PB_SkillFunc_Type_CriticalChance
+                switch ($Param0) {
+                    case 1: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 2: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Increase Critical Chance by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
             break;
-            case 46:
-                return "Gain {{Color|style=outlineblack|white|".$i['Para'][1]."}} Exp points";
+            case 50: //PB_SkillFunc_Type_ChangePhysicDefPenetration
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Change Def Pen by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
             break;
-            case 50:
-                return "Increases Attack Speed by = {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
+            
+            case 55: //PB_SkillFunc_Type_FakeBloodRecovery
+                switch ($Param0) {
+                    case 0: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Restore Oblivious health by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
             break;
-            case 55:
-                return "Floats Target for = {{Color|style=outlineblack|white|".$i['Para'][1] / 1000 ."s}}";
+            case 56: //PB_SkillFunc_Type_ExchangeProperty
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //Ratios
+                        $Para = $i['Para'][1]/100 ."% <-> ".$i['Para'][2] / 100 ."%";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Swap Rate :\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
             break;
-            case 56:
-                return "???";
+            case 61: //PB_SkillFunc_Type_HeroPeopertyToPet
+                return "Spawns substitute";
+                
             break;
-            case 61:
-                return "Summon Double";
+            case 76: //PB_SkillFunc_Type_HeroPeopertyToPet
+                return "";
+                
             break;
-            case 66:
-                return "Reduce Def + Sp.Def by {{Color|style=outlineblack|white|".$i['Para'][6] / 100 ."}}% and increase Atk + Sp.Atk with a ratio of {{Color|style=outlineblack|white|".$i['Para'][1].":".$i['Para'][3]."}}";
+            case 66: //PB_SkillFunc_Type_PropertyTransform
+                return "Change Sp. Def into Attack and Sp. Atk by a ratio of :\n{{Color|style=bold|black|".$i['Para'][1]."}}$GrowExtra:{{Color|style=bold|black|".$i['Para'][2]."}}$GrowExtra:{{Color|style=bold|black|".$i['Para'][3]."}}";
+                
             break;
-            case 73:
-                return "Increase Crit Hit by {{Color|style=outlineblack|white|".$i['Para'][1] / 100 ."%}}";
+            case 73: //PB_SkillFunc_Type_ChangeDamageCritChance
+                $Addon = "";
+                if (!empty($i['Para'][5])){
+                    $Addon = " and {{Color|style=bold|black|".$i['Para'][5] / 100 ."%}}$GrowExtra";
+                }
+                switch ($Param0) {
+                    case 1: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 2: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //Ratios
+                        $Para = $i['Para'][1]/100 ."% <-> ".$i['Para'][2] / 100 ."%";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Temporarily increase this skills Crit Rate by:\n{{Color|style=bold|black|$Para}}$GrowExtra$Addon";
+                
             break;
-            case 76:
-                return "Increases Move Speed in area by = ???";
-            break;
-            case 80:
-                return "Gain {{Color|style=outlineblack|white|".$i['Para'][1] / 1000 ."%}} Exp";
+            case 81: //PB_SkillFunc_Type_EnhancedEffect
+                switch ($Param0) {
+                    case 0: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 3: //Percent
+                        $Para = $i['Para'][2] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                    break;
+                };
+                return "Berries give percent extra HP:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                
             break;
             
             default:
-                return "Other - ". $type;
+                return "Other Type - $type";
             break;
         }
+//         PB_SkillFunc_Type_PhysHurt
+// PB_SkillFunc_Type_MagicHurt
+// PB_SkillFunc_Type_RealHurt
+// PB_SkillFunc_Type_AddHP
+// PB_SkillFunc_Type_IncAtkSpeed
+// PB_SkillFunc_Type_DecAtkSpeed
+// PB_SkillFunc_Type_IncMoveSpeed
+// PB_SkillFunc_Type_DecMoveSpeed
+// PB_SkillFunc_Type_AddEP
+// !PB_SkillFunc_Type_HurtReduceRate
+// PB_SkillFunc_Type_IncMaxHP
+// PB_SkillFunc_Type_DecMaxHP
+// !PB_SkillFunc_Type_Inc_HP_Recover
+// !PB_SkillFunc_Type_Dec_HP_Recover
+// PB_SkillFunc_Type_IncAtk
+// PB_SkillFunc_Type_DecAtk
+// PB_SkillFunc_Type_IncDefend
+// PB_SkillFunc_Type_DecDefend
+// PB_SkillFunc_Type_IncAp
+// PB_SkillFunc_Type_DecAp
+// PB_SkillFunc_Type_IncResist
+// PB_SkillFunc_Type_DecResist
+// !PB_SkillFunc_Type_Inc_EP_Recover
+// !PB_SkillFunc_Type_Dec_EP_Recover
+// +PB_SkillFunc_Type_Dec_Energy_Orgin_Recover
+// !PB_SkillFunc_Type_SceneItem_Hurt
+// *PB_SkillFunc_Type_Dec_Support_Energy_Rate
+// PB_SkillFunc_Type_Support_Energy_For_Attacker
+// PB_SkillFunc_Type_Dec_SkillCD
+// PB_SkillFunc_Type_ExtraEffect
+// PB_SkillFunc_Type_CallMonster
+// PB_SkillFunc_Type_DamageGain
+// #PB_SkillFunc_Type_CanNotBeSelected
+// PB_SkillFunc_Type_Protect
+// PB_SkillFunc_Type_SuckBlood
+// &PB_SkillFunc_Type_PhysicDmgReduceRate
+// %PB_SkillFunc_Type_MagicDmgReduceRate
+// !PB_SkillFunc_Type_CriticalChance
+// !PB_SkillFunc_Type_CriticalDamage
+// PB_SkillFunc_Type_Resistence
+// +PB_SkillFunc_Type_PhysicNormalAtkLifeSteal
+// $PB_SkillFunc_Type_CooldownReduction
+// "PB_SkillFunc_Type_HealProvideRate
+// PB_SkillFunc_Type_HealGetRate
+// PB_SkillFunc_Type_Dispersion
+// PB_SkillFunc_Type_AddExp
+// PB_SkillFunc_Type_Stealth
+// PB_SkillFunc_Type_IncScore
+//  PB_SkillFunc_Type_ReflectDamage
+// -PB_SkillFunc_Type_ChangePhysicDefPenetration
+// 1PB_SkillFunc_Type_ChangePhysicDefPenetrationRate
+// ,PB_SkillFunc_Type_ChangeMagicDefPenetration
+// 0PB_SkillFunc_Type_ChangeMagicDefPenetrationRate
+// !PB_SkillFunc_Type_FakeBloodState
+// $PB_SkillFunc_Type_FakeBloodRecovery
+// #PB_SkillFunc_Type_ExchangeProperty
+// 0PB_SkillFunc_Type_DamageGrowthWhenHitSameTarget
+// &PB_SkillFunc_Type_ImmuneToSkillEffect
+// &PB_SkillFunc_Type_ChangeGotScoreSpeed
+// PB_SkillFunc_Type_IgnoreDead
+// $PB_SkillFunc_Type_HeroPeopertyToPet
+// $PB_SkillFunc_Type_ChangeVisionRange
+// -PB_SkillFunc_Type_DamageChangeToPropertyMain
+// /PB_SkillFunc_Type_DamageChangeToPropertyActive
+// %PB_SkillFunc_Type_BackAttackCritical
+// $PB_SkillFunc_Type_PropertyTransform
+// PB_SkillFunc_Type_ResistEffect
+//  PB_SkillFunc_Type_EnhanceEffect
+// $PB_SkillFunc_Type_SetHPRecoverLimit
+// 'PB_SkillFunc_Type_ImmuneCriticalDamage
+// &PB_SkillFunc_Type_HeroScoreToProperty
+// $PB_SkillFunc_Type_QuickResurrection
+// )PB_SkillFunc_Type_ChangeDamageCritChance
+// PB_SkillFunc_Type_AddGold
+// 'PB_SkillFunc_Type_BuffOverlayTransform
+// PB_SkillFunc_Type_DamageHit
+// #PB_SkillFunc_Type_ChangeScoreLimit
+// PB_SkillFunc_Type_KillRobSkill
+// $PB_SkillFunc_Type_SetGainScoreLimit
+//  PB_SkillFunc_Type_KillSharedExp
+// !PB_SkillFunc_Type_EnhancedEffect
+// PB_SkillFunc_Type_OpenVision
+// !PB_SkillFunc_Type_TransferDamage
+
     }
 }
