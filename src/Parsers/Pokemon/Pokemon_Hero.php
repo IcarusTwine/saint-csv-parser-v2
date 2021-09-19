@@ -60,7 +60,11 @@ class Pokemon_Hero implements ParseInterface
         foreach ($Pokemon_Base as $id => $Hero) {
             $Evo = [];
             $PokemonMoveList = [];
-            if ($Hero['HideInBox'] === true) continue; //not released or shown to be usable
+            //if ($Hero['HideInBox'] === true) continue; //not released or shown to be usable
+            $Released = "";
+            if ($Hero['HideInBox'] === true){
+                $Released = "|Unreleased = yes";
+            }
             $PkID = $Hero['PokemonId']; // dex number
             $CardIcon = $Hero['PokemonCard']; //Stone Icon (Shop)
             $IconArray[] = $CardIcon;
@@ -721,6 +725,7 @@ class Pokemon_Hero implements ParseInterface
                     $SkillString = "{{-start-}}\n";
                     $SkillString .= "'''$SkillName'''\n";
                     $SkillString .= "{{Pokemon Skill\n";
+                    $SkillString .= "$Released\n";
                     $SkillString .= "|Name = $SkillName\n";
                     $SkillString .= "|Pokemon = $Name\n";
                     $SkillString .= "|Icon = $IconSkill\n";
