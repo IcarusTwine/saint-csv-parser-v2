@@ -109,6 +109,7 @@ class Items implements ParseInterface
             $Params = $Item['ItemParam'];
             $IsCanSell = $Item['IsCanSell'];
             //does OutSideItemBase -> Item_Base?
+            $UrlArray[$Name] = $Name;
             $String = "{{-start-}}\n";
             $String .= "'''$Name'''\n";
             $String .= "{{Item\n";
@@ -209,6 +210,7 @@ class Items implements ParseInterface
                     # code...
                 break;
             }
+            $UrlArray[$AvatarName] = $AvatarName;
             $String = "{{-start-}}\n";
             $String .= "'''$AvatarName'''\n";
             $String .= "{{Item\n";
@@ -250,6 +252,7 @@ class Items implements ParseInterface
                 $ContainArray[] = $ContainName;
             }
             $ContainArrayOut = implode(",",$ContainArray);
+            $UrlArray[$Name] = $Name;
             $String = "{{-start-}}\n";
             $String .= "'''$Name'''\n";
             $String .= "{{Item\n";
@@ -289,6 +292,7 @@ class Items implements ParseInterface
             
             $PokemonId = $Item['PokemonId'];
             $PokemonName = $LanguageMap_en[$Pokemon_Base[$PokemonId]['NameRemark']];
+            $UrlArray[$Name] = $Name;
             $String = "{{-start-}}\n";
             $String .= "'''$Name'''\n";
             $String .= "{{Item\n";
@@ -310,6 +314,13 @@ class Items implements ParseInterface
         if (!empty($IconArray)) {
             $this->copySprites($IconArray,"Items");
         }
+        //$UrlArray[$SeasonHalf] = $SeasonHalf;
+        $sitemapjson = file_get_contents("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0\sitemap.json");
+        $sitemapjson_array = json_decode($sitemapjson, true);
+        $combiarray = array_merge($sitemapjson_array,$UrlArray);
+        $combiarray = array_unique($combiarray);
+        $this->saveExtra("sitemap.json",json_encode($combiarray,JSON_PRETTY_PRINT));
+        //
         // (optional) finish progress bar
         $this->saveExtra("Output\Items.txt",implode("\n\n",$Output));
 

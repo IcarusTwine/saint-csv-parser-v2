@@ -467,7 +467,7 @@ trait PokemonParseTrait
     {   
         $GrowExtra = "";
         if ($GrowType === "ExpLevel"){
-            $GrowExtra = " + {{Color|black|(".$i['GrowPara'][1]." x (Level -1) )}}";
+            $GrowExtra = " + {{Color|white|(".$i['GrowPara'][1]." x (Level -1))}}";
         }
         //depending on type
         //param[0] 
@@ -496,20 +496,20 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Damage:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}$GrowExtra";
+                return "Damage:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][1]."}} + {{Color|e6923e|(".$i['Para'][2] / 100 ."% * [Atk])}}$GrowExtra</code>";
             break;
             case 2: //PB_SkillFunc_Type_MagicHurt
                 switch ($Param0) {
                     case 1: //Percent
                         $Para = $i['Para'][3] / 100 ."%";
-                        return "Damage:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|cb75e0|( $Para * [Sp. Atk] )}}$GrowExtra";
+                        return "Damage:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][1]."}} + {{Color|cb75e0|($Para * [Sp. Atk])}}$GrowExtra</code>";
                     break;
                     case 2: //constant
                         $Para = $i['Para'][3]."";
                     break;
                     case 4: //Max HP
                         $Para = $i['Para'][1] / 100 ."% of Enemy Max HP";
-                        return "Damage:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                        return "Damage:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                     break;
                     case 5: //???
                         $Para = $i['Para'][3]."???";
@@ -541,7 +541,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "True Damage:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}$GrowExtra";
+                return "True Damage:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][1]."}} + {{Color|e6923e|(".$i['Para'][2] / 100 ."% * [Atk])}}$GrowExtra</code>";
             break;
             
             case 4: //PB_SkillFunc_Type_AddHP
@@ -563,7 +563,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Heal:\n{{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|cb75e0|( $Para * [Sp. Atk] )}}$GrowExtra";
+                return "Heal:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][1]."}} + {{Color|cb75e0|($Para * [Sp. Atk])}}$GrowExtra</code>";
                 
             break;
             case 5: //PB_SkillFunc_Type_IncAtkSpeed
@@ -573,6 +573,9 @@ trait PokemonParseTrait
                     break;
                     case 2: //constant
                         $Para = $i['Para'][1]."";
+                    break;
+                    case 3: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
                     break;
                     case 4: //Max HP
                         $Para = $i['Para'][1]."% of Max HP";
@@ -585,7 +588,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Increase Attack Speed by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Increase Attack Speed by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             
@@ -608,12 +611,15 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Increase Movement Speed by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                return "Increase Movement Speed by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             
             case 8: //PB_SkillFunc_Type_DecMoveSpeed
                 switch ($Param0) {
+                    case 0: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
                     case 1: //constant
                         $Para = $i['Para'][1]."";
                     break;
@@ -631,7 +637,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return ":\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                return ":\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             case 10: //PB_SkillFunc_Type_HurtReduceRate
@@ -653,7 +659,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Reduce Damage by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Reduce incoming Damage by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             case 15: //PB_SkillFunc_Type_IncAtk
@@ -675,7 +681,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Increase Attack by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Increase Attack by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             
@@ -698,7 +704,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Reduce Targets Atk by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                return "Reduce Targets Atk by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             
@@ -721,7 +727,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Increase Def by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Increase Def by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             case 18: //PB_SkillFunc_Type_DecDefend
@@ -743,7 +749,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Decrease Targets Def by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Decrease Targets Def by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             case 19: //PB_SkillFunc_Type_IncAp
@@ -765,7 +771,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Increase Sp. Atk by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Increase Sp. Atk by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             case 20: //PB_SkillFunc_Type_DecAp
@@ -787,7 +793,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Reduce Targets Sp. Atk by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                return "Reduce Targets Sp. Atk by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             
@@ -810,7 +816,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Reduce Targets Sp.Def by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                return "Reduce Targets Sp.Def by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             case 29: //PB_SkillFunc_Type_Dec_SkillCD
@@ -819,6 +825,9 @@ trait PokemonParseTrait
                         $Para = $i['Para'][3]."";
                     break;
                     case 2: //Percent
+                        $Para = $i['Para'][3] / 100 ."%";
+                    break;
+                    case 3: //Percent
                         $Para = $i['Para'][3] / 100 ."%";
                     break;
                     case 4: //Max HP
@@ -832,7 +841,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Skill CD Decrease by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                return "Skill CD Decrease by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             case 32: //PB_SkillFunc_Type_DamageGain
@@ -854,17 +863,17 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Damage Increase by:\n{{Color|style=bold|black|".$Para."}}$GrowExtra";
+                return "Damage Increase by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             case 34: //PB_SkillFunc_Type_Protect
                 if (!empty($i['Para'][2])){
-                    return "Shields user for:\n {{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|e6923e|( ".$i['Para'][2] / 100 ."% * [Atk] )}}$GrowExtra";
+                    return "Shields user for:\n<br> <code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][1]."}} + {{Color|e6923e|(".$i['Para'][2] / 100 ."% * [Atk])}}$GrowExtra</code>";
                 }
                 if (!empty($i['Para'][3])){
-                    return "Shields user for:\n {{Color|style=bold|black|".$i['Para'][1]."}} + {{Color|cb75e0|( ".$i['Para'][3] / 100 ."% * [Sp. Atk] )}}$GrowExtra";
+                    return "Shields user for:\n<br> <code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][1]."}} + {{Color|cb75e0|(".$i['Para'][3] / 100 ."% * [Sp. Atk])}}$GrowExtra</code>";
                 }
-                //return "Swap Rate :\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                //return "Swap Rate :\n<br>{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             case 35: //PB_SkillFunc_Type_SuckBlood
@@ -884,9 +893,10 @@ trait PokemonParseTrait
                     
                     default:
                         var_dump("Param0 is = $Param0");
+                        $Para = $i['Para'][0] / 100 ."%";
                     break;
                 };
-                return "Percent of Attack Healed to user:\n{{Color|style=bold|black|".$i['Para'][0] / 100 ."%}}$GrowExtra";
+                return "Percent of Attack Healed to user:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][0] / 100 ."%}}$GrowExtra</code>";
                 
             break;
             case 38: //PB_SkillFunc_Type_CriticalChance
@@ -908,7 +918,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Increase Critical Chance by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Increase Critical Chance by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             case 50: //PB_SkillFunc_Type_ChangePhysicDefPenetration
@@ -930,7 +940,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Change Def Pen by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Change Def Pen by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             
@@ -956,7 +966,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Restore Oblivious health by:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Restore Oblivious health by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             case 56: //PB_SkillFunc_Type_ExchangeProperty
@@ -973,12 +983,28 @@ trait PokemonParseTrait
                     case 5: //Ratios
                         $Para = $i['Para'][1]/100 ."% <-> ".$i['Para'][2] / 100 ."%";
                     break;
+                    case 6: //Ratios
+                        $Para = $i['Para'][1]/100 ."% <-> ".$i['Para'][2] / 100 ."%";
+                    break;
                     
                     default:
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Swap Rate :\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Swap Rate :\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
+                
+            break;
+            case 59: //PB_SkillFunc_Type_ChangeGotScoreSpeed
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1] /1000 ."";
+                    break;
+                    
+                    default:
+                    $Para = $i['Para'][0] / 1000 ."";
+                    break;
+                };
+                return "Score Speed reduced by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}%$GrowExtra";
                 
             break;
             case 61: //PB_SkillFunc_Type_HeroPeopertyToPet
@@ -990,13 +1016,13 @@ trait PokemonParseTrait
                 
             break;
             case 66: //PB_SkillFunc_Type_PropertyTransform
-                return "Change Sp. Def into Attack and Sp. Atk by a ratio of :\n{{Color|style=bold|black|".$i['Para'][1]."}}$GrowExtra:{{Color|style=bold|black|".$i['Para'][2]."}}$GrowExtra:{{Color|style=bold|black|".$i['Para'][3]."}}";
+                return "Change Sp. Def into Attack and Sp. Atk by a ratio of :\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$i['Para'][1]."}}$GrowExtra:{{Color|style=bold|white|".$i['Para'][2]."}}$GrowExtra:{{Color|style=bold|white|".$i['Para'][3]."}}</code>";
                 
             break;
             case 73: //PB_SkillFunc_Type_ChangeDamageCritChance
                 $Addon = "";
                 if (!empty($i['Para'][5])){
-                    $Addon = " and {{Color|style=bold|black|".$i['Para'][5] / 100 ."%}}$GrowExtra";
+                    $Addon = " and {{Color|style=bold|white|".$i['Para'][5] / 100 ."%}}$GrowExtra</code>";
                 }
                 switch ($Param0) {
                     case 1: //Percent
@@ -1016,7 +1042,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Temporarily increase this skills Crit Rate by:\n{{Color|style=bold|black|$Para}}$GrowExtra$Addon";
+                return "Temporarily increase this skills Crit Rate by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>$Addon";
                 
             break;
             case 81: //PB_SkillFunc_Type_EnhancedEffect
@@ -1044,7 +1070,7 @@ trait PokemonParseTrait
                         var_dump("Param0 is = $Param0");
                     break;
                 };
-                return "Berries give percent extra HP:\n{{Color|style=bold|black|$Para}}$GrowExtra";
+                return "Berries give percent extra HP:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|$Para}}$GrowExtra</code>";
                 
             break;
             

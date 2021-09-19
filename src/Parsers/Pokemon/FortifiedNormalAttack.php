@@ -193,7 +193,8 @@ class FortifiedNormalAttack implements ParseInterface
             }
             $RefOut = array_unique($RefOut);
             $RefOutStr = implode("\n\n",$RefOut)."\n\n";
-
+            $UrlName = "Basic Attack ($PokemonName)";
+            $UrlArray[$UrlName] = $UrlName;
             $OutString ="{{-start-}}\n";
             $OutString .="'''Basic Attack ($PokemonName)'''\n";
             $OutString .="{{Pokemon Skill\n";
@@ -217,6 +218,13 @@ class FortifiedNormalAttack implements ParseInterface
         if (!empty($IconArray)) {
             $this->copyImages($IconArray,"FortifiedNormalAttack");
         }
+        //$UrlArray[$SeasonHalf] = $SeasonHalf;
+        $sitemapjson = file_get_contents("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0\sitemap.json");
+        $sitemapjson_array = json_decode($sitemapjson, true);
+        $combiarray = array_merge($sitemapjson_array,$UrlArray);
+        $combiarray = array_unique($combiarray);
+        $this->saveExtra("sitemap.json",json_encode($combiarray,JSON_PRETTY_PRINT));
+        $this->saveExtra("Output\BattlePassSeason.txt",implode("\n\n",$Output));
         // (optional) finish progress bar
         $this->saveExtra("Output\FortifiedNormalAttack.txt",implode("\n\n",$Output));
 

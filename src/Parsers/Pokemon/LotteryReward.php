@@ -18,7 +18,8 @@ class LotteryReward implements ParseInterface
         $Version = $this->getVer();
         $LanguageMap_en = $this->languagemap("en");
 
-        $LotteryReward = $this->json("/$Version/LotteryReward");
+        $LotteryReward = $this->json("/1.1.1/LotteryReward");
+        //$LotteryReward = $this->json("/$Version/LotteryReward");
         $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
         $AvatarItem = $this->json("/$Version/AvatarItem");
         $Pokemon_Avatar_Base = $this->json("/$Version/Pokemon_Avatar_Base");
@@ -47,6 +48,7 @@ class LotteryReward implements ParseInterface
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
             }
             if ($ResourceId > 1004000001 && $ResourceId < 1006000000){
+                if (empty($AvatarItem[$ResourceId])) continue;
                 $ItemName = $LanguageMap_en[$AvatarItem[$ResourceId]['AvatarName']];
             }
             if ($ResourceId > 1006000001 && $ResourceId < 1007000000){
@@ -58,25 +60,30 @@ class LotteryReward implements ParseInterface
             if ($ResourceId > 1007001001 && $ResourceId < 1007011001){
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
             }
-
-            $String = "{{-start-}}\n";
+            if (empty($ItemName)) continue;
+            $String = "<div>\n";
             $String .= "{{Pokemon LotteryReward\n";
             $String .= "|Item = $ItemName\n";
             $String .= "|Amount = $ResourceNum\n";
             $String .= "|Probability = $RewardProbability%\n";
             $String .= "}}\n";
-            $String .= "{{-stop-}}\n";
+            $String .= "</div>\n";
             $Outputs[$Pool][] = $String;
         }
+        $Output[] = "<tabber>";
         foreach($Outputs as $PoolNo => $PoolData){
-            $Output[] = "\nPool ID : $PoolNo";
+            $Output[] = "$PoolNo=";
+            $Output[] = "<div style=\"display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;\">";
             $Output[] = implode("\n",$PoolData);
+            $Output[] = "</div>";
+            $Output[] = "|-|";
         }
+        $Output[] = "</tabber>";
         if (!empty($IconArray)) {
             $this->copyImages($IconArray,"LotteryReward");
         }
         // (optional) finish progress bar
-        $this->saveExtra("Output\LotteryReward.txt",implode("\n\n",$Output));
+        $this->saveExtra("Output\LotteryReward.txt",implode("\n",$Output));
 
         // save
         $this->io->text('Saving data ...');

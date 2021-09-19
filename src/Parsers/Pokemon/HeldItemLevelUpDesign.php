@@ -96,7 +96,7 @@ class HeldItemLevelUpDesign implements ParseInterface
                             $NewType = $NewSkillEff['Type'];
                             var_dump($NewType);
                             $SubType = "Percent";
-                            $this->getSkillEffect($NewType,$i,$SubType);
+                            $this->getSkillEffect($NewType,$i,$SubType,$GrowType);
                         } else {
                             $Form[] = $this->getSkillEffect($ParaType,$i);
                         }
@@ -135,6 +135,8 @@ class HeldItemLevelUpDesign implements ParseInterface
             foreach($GroupIcons as $Icons){
                 $IconArray[] = $Icons;
             }
+            $UrlName = "{$Name}_Upgrade";
+            $UrlArray[$UrlName] = $UrlName;
             $OutString = "{{-start-}}\n";
             $OutString .= "'''{$Name}_Upgrade'''\n";
             $OutString .= "'''{{HeldItem\n";
@@ -148,6 +150,13 @@ class HeldItemLevelUpDesign implements ParseInterface
             $OutString .= implode("\n",$StatTable)."\n";
             $Output[] = $OutString;
         }
+        //$UrlArray[$SeasonHalf] = $SeasonHalf;
+        $sitemapjson = file_get_contents("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0\sitemap.json");
+        $sitemapjson_array = json_decode($sitemapjson, true);
+        $combiarray = array_merge($sitemapjson_array,$UrlArray);
+        $combiarray = array_unique($combiarray);
+        $this->saveExtra("sitemap.json",json_encode($combiarray,JSON_PRETTY_PRINT));
+        //
         if (!empty($IconArray)) {
             $this->copyImages($IconArray,"HeldItemLevelUpDesign");
         }

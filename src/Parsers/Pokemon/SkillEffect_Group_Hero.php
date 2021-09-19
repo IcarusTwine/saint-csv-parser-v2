@@ -18,8 +18,9 @@ class SkillEffect_Group_Hero implements ParseInterface
         $Version = $this->getVer();
         $LanguageMap_en = $this->languagemap("en");
         
-        $SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
-        //$SkillEffect_Group_Hero = $this->json("/1.1.1/databin_SkillEffect_Group_Hero");
+        //$SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
+        //$SkillEffect_Group_Hero = $this->json("/1.1.1/SkillEffect_Group_Hero");
+        $SkillEffect_Group_Hero = $this->json("/1.1.1/SkillEffect_Group_Monster");
         $Pokemon_Base = $this->json("/$Version/Pokemon_Base");
 
         // (optional) start a progress bar
@@ -74,8 +75,8 @@ class SkillEffect_Group_Hero implements ParseInterface
                 $IsAssists = "False";
             }
             $EffectClearRule = $Skill['EffectClearRule'];
-            //$sub_EffectType = $this->EffectSubType($Skill['sub_EffectType']);
-            $sub_EffectType = "";
+            $SubEffectType = $this->EffectSubType($Skill['SubEffectType']);
+            //$sub_EffectType = "";
             $GrowType = $this->getGrowType($Skill['GrowType']);
             $DamageLimitToMonster = $Skill['DamageLimitToMonster'];
             $OverlayLimit = $Skill['OverlayLimit'];
@@ -93,58 +94,23 @@ class SkillEffect_Group_Hero implements ParseInterface
             $HurtReduceRatio = $Skill['HurtReduceRatio'];
 
             $BaseTablestr .= "$PokemonName,$Name,$Icon,$id,$BuffPriority,$HurtReducetype,$Duration,$EffectSlotType,$IsInheritKill,$EffectName,$EffectType,$HurtReduceMinRatio,$IsAssists,";
-            $BaseTablestr .= "$EffectClearRule,$sub_EffectType,$GrowType,$DamageLimitToMonster,$OverlayLimit,$IsOpenBuff,$IsCrit,$EffectOverRule,$HurtReduceRatio,";
-            // $BaseTable[] = "'''$Name'''";
-            // $BaseTable[] = "<h1>$Name</h1>[[File:$Icon.png]]";
-            // $BaseTable[] = "{| class=\"wikitable\"";
-            // $BaseTable[] = "!Key!!Value";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|ID||$id";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|BuffPriority||$BuffPriority";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|HurtReducetype||$HurtReducetype";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|Duration||$Duration";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|EffectSlotType||$EffectSlotType";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|IsInheritKill||$IsInheritKill";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|EffectName||$EffectName";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|EffectType||$EffectType";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|HurtReduceMinRatio||$HurtReduceMinRatio";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|IsAssists||$IsAssists";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|EffectClearRule||$EffectClearRule";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|sub_EffectType||$sub_EffectType";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|GrowType||$GrowType";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|DamageLimitToMonster||$DamageLimitToMonster";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|OverlayLimit||$OverlayLimit";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|IsOpenBuff||$IsOpenBuff";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|IsCrit||$IsCrit";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|EffectOverRule||$EffectOverRule";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|HurtReduceRatio||$HurtReduceRatio";
-            // $BaseTable[] = "|-";
-            // $BaseTable[] = "|}";
+            $BaseTablestr .= "$EffectClearRule,$SubEffectType,$GrowType,$DamageLimitToMonster,$OverlayLimit,$IsOpenBuff,$IsCrit,$EffectOverRule,$HurtReduceRatio,";
+            $Sub = "";
+            if ($SubEffectType !== "Invalid"){
+                $Sub = $SubEffectType." ";
+            }
             foreach($Skill['SkillEffect'] as $SkillEffect){
                 if ($SkillEffect['Type'] === 0) continue;
+                $SubDuration = $SkillEffect['Duration'];
+                $Dur = "";
+                if ($SubDuration > 0){
+                    $Dur = " for {{Color|style=outlinewhite|black|".$SubDuration / 100 ."s}}";
+                } 
                 //$BaseTable[] = "{| class=\"wikitable\"";
                 //$BaseTable[] = "!Formula";
                 //$BaseTable[] = "|-";
                 $BaseTablestr .= $SkillEffect['Type'].",";
-                $BaseTablestr .= str_replace("\n","",$this->getSkillEffect($SkillEffect['Type'],$SkillEffect)).",";
+                $BaseTablestr .= $Sub."".str_replace("\n","",$this->getSkillEffect($SkillEffect['Type'],$SkillEffect,$SubType = "",$GrowType))."$Dur,";
                 foreach($SkillEffect['Para'] as $num => $value){
                     $BaseTablestr .= $value.",";
                 }

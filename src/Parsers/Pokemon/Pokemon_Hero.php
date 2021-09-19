@@ -22,19 +22,21 @@ class Pokemon_Hero implements ParseInterface
         $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
         $Pokemon_Hero = $this->json("/$Version/Pokemon_Hero");
         //$Talent_Plan = $this->json("/$Version/Talent_Plan");
-        $Talent_PlanRaw = $this->json("/1.1.1/databin_Talent_Plan");
+        $Talent_PlanRaw = $this->json("/1.1.1/Talent_Plan");
         foreach($Talent_PlanRaw as $TalentID){
             $GroupID = $TalentID['GroupId'];
             $Talent_Plan[$GroupID][] = $TalentID;
         }
         $Pokemon_Talent = $this->json("/$Version/Pokemon_Talent");
         $Pokemon_Hero_Evolution = $this->json("/$Version/Pokemon_Hero_Evolution");
-        $Active_Skill_Hero = $this->json("/$Version/Active_Skill_Hero");
+        $Active_Skill_Hero_Old = $this->json("/$Version/Active_Skill_Hero");
+        $Active_Skill_Hero = $this->json("/1.1.1/Active_Skill_Hero");
         $Passive_skillOld = $this->json("/$Version/Passive_skill");
-        $Passive_skill = $this->json("/1.1.1/databin_Passive_skill");
+        $Passive_skill = $this->json("/1.1.1/Passive_skill");
         $Pokemon_StatGrowth = $this->json("/$Version/Pokemon_StatGrowth");
         //$SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
-        $SkillEffect_Group_Hero = $this->json("/1.1.1/databin_SkillEffect_Group_Hero");
+        $SkillEffect_Group_Hero = $this->json("/1.1.1/SkillEffect_Group_Hero");
+        $FortifiedNormalAttack = $this->json("/1.1.1/FortifiedNormalAttack");
         $SkillLogo = $this->json("/$Version/SkillLogo");
         $InherentPropertyDesc = $this->json("/$Version/InherentPropertyDesc");
 
@@ -57,6 +59,7 @@ class Pokemon_Hero implements ParseInterface
         // loop through data
         foreach ($Pokemon_Base as $id => $Hero) {
             $Evo = [];
+            $PokemonMoveList = [];
             if ($Hero['HideInBox'] === true) continue; //not released or shown to be usable
             $PkID = $Hero['PokemonId']; // dex number
             $CardIcon = $Hero['PokemonCard']; //Stone Icon (Shop)
@@ -91,8 +94,8 @@ class Pokemon_Hero implements ParseInterface
 
             $BigIconPath = $Hero['BigIconPath'];//Card Icon (Main)
             $IconArray[] = $BigIconPath;
-            $Icon = $Hero['IconPath'];//mini square icon
-            $IconArray[] = $Icon;
+            $IconPkm = $Hero['IconPath'];//mini square icon
+            $IconArray[] = $IconPkm;
 
             //main stat names
             $Support = $Hero['Auxiliary'];
@@ -152,6 +155,7 @@ class Pokemon_Hero implements ParseInterface
             //links to stats?
             $StatId = $Pokemon_Hero[$MainUnitID]['StatId'];
             $StatTable = [];
+            if (empty($Name)) continue;
             $StatTable[] = "{{-start-}}";
             $StatTable[] = "'''$Name/Growth'''";
             $StatTable[] = "{| class=\"wikitable\"";
@@ -256,10 +260,167 @@ class Pokemon_Hero implements ParseInterface
 
             //SkillLinks
             $NormalSkillId = $Pokemon_Hero[$MainUnitID]['NormalSkillId']; // Basic Attack
+            $BasicAttackCD = $Active_Skill_Hero[$NormalSkillId]['CDTime'] / 1000 ."s";
+            $MaxAttackDis = $Active_Skill_Hero[$NormalSkillId]['MaxAttackDis'] / 1000 ."m";
+            $RefForm = [];
+            $BaseTable = [];
+            foreach($Active_Skill_Hero[$NormalSkillId]['RefEffectGroupIds'] as $icount => $RefEffectID){
+                if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
+                    if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
+                        $BaseTable = [];
+                        $RefName = $SkillEffect_Group_Hero[$RefEffectID]['ActionPath'];
+                        $BuffPriority = $SkillEffect_Group_Hero[$RefEffectID]['BuffPriority'];
+                        $HurtReducetype = $SkillEffect_Group_Hero[$RefEffectID]['HurtReducetype'];
+                        $Duration = $SkillEffect_Group_Hero[$RefEffectID]['Duration'] / 1000 ."s";
+                        $EffectSlotType = $SkillEffect_Group_Hero[$RefEffectID]['EffectSlotType'];
+                        $Icon = $SkillEffect_Group_Hero[$RefEffectID]['EffectPath'];
+                        $IsInheritKill = $SkillEffect_Group_Hero[$RefEffectID]['IsInheritKill'];
+                        $EffectName = $SkillEffect_Group_Hero[$RefEffectID]['EffectName'];
+                        $EffectType = $this->EffectType($SkillEffect_Group_Hero[$RefEffectID]['EffectType']);
+                        $HurtReduceMinRatio = $SkillEffect_Group_Hero[$RefEffectID]['HurtReduceMinRatio'];
+                        $IsAssists = $SkillEffect_Group_Hero[$RefEffectID]['IsAssists'];
+                        $EffectClearRule = $SkillEffect_Group_Hero[$RefEffectID]['EffectClearRule'];
+                        $subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffectID]['SubEffectType']);
+                        $sub_EffectType = "";
+                        $GrowType = $this->getGrowType($SkillEffect_Group_Hero[$RefEffectID]['GrowType']);
+                        $DamageLimitToMonster = $SkillEffect_Group_Hero[$RefEffectID]['DamageLimitToMonster'];
+                        $OverlayLimit = $SkillEffect_Group_Hero[$RefEffectID]['OverlayLimit'];
+                        $IsOpenBuff = $SkillEffect_Group_Hero[$RefEffectID]['IsOpenBuff'];
+                        $IsCrit = $SkillEffect_Group_Hero[$RefEffectID]['IsCrit'];
+                        $EffectOverRule = $SkillEffect_Group_Hero[$RefEffectID]['EffectOverRule'];
+                        $HurtReduceRatio = $SkillEffect_Group_Hero[$RefEffectID]['HurtReduceRatio'];
+                        $Count = $icount + 1;
+                        $Overlay = "";
+                        if ($OverlayLimit > 1){
+                            $Overlay = "\n-Stacks up to {{Color|style=bold|black|$OverlayLimit}} times.\n";
+                            $BaseTable[] = $Overlay;
+                        }
+                        $Sub = "";
+                        if ($subEffectType !== "Invalid"){
+                            $Sub = $subEffectType." ";
+                        }
+                        //$BaseTable[] = "Additional=\n".$SkillEffect_Group_Hero[$RefEffectID]['EffectGroupId']; //debug
+                        foreach($SkillEffect_Group_Hero[$RefEffectID]['SkillEffect'] as $SkillEffect){
+                            if ($SkillEffect['Type'] === 0) continue;
+                            //$BaseTable[] = "Type = ".$SkillEffect['Type']; //debug
+                            //$BaseTable[] = implode(",",$SkillEffect['Para']); //debug
+                            $SubDuration = $SkillEffect['Duration'];
+                            $Dur = "";
+                            if ($SubDuration > 0){
+                                $Dur = " for {{Color|style=outlinewhite|black|".$SubDuration / 100 ."s}}";
+                            } 
+                            $SkillOut = "$Sub".$this->getSkillEffect($SkillEffect['Type'],$SkillEffect,$SubType = "",$GrowType)."$Dur";
+                            $BaseTable[] = "$SkillOut<br>";
+                        }
+            
+                        $RefForm[] = implode("\n",$BaseTable);
+                    }
+
+                }
+            }
+            $BaseTable = [];
+            // if (!empty($FortifiedNormalAttack[$MainUnitID])){
+            //     foreach($FortifiedNormalAttack[$MainUnitID] as $FortifiedData){
+            //         foreach($FortifiedNormalAttack[$MainUnitID]['SkillCondition'] as $BoostedSkill){
+            //             foreach($BoostedSkill['Skills'] as $SkillRefEffectID){
+            //                 if (empty($SkillRefEffectID)) continue;
+            //                 foreach($Active_Skill_Hero[$SkillRefEffectID]['RefEffectGroupIds'] as $icount => $RefEffectID){
+            //                     if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
+            //                         if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
+            //                             $BaseTable = [];
+            //                             $RefName = $SkillEffect_Group_Hero[$RefEffectID]['ActionPath'];
+            //                             $BuffPriority = $SkillEffect_Group_Hero[$RefEffectID]['BuffPriority'];
+            //                             $HurtReducetype = $SkillEffect_Group_Hero[$RefEffectID]['HurtReducetype'];
+            //                             $Duration = $SkillEffect_Group_Hero[$RefEffectID]['Duration'] / 1000 ."s";
+            //                             $EffectSlotType = $SkillEffect_Group_Hero[$RefEffectID]['EffectSlotType'];
+            //                             $Icon = $SkillEffect_Group_Hero[$RefEffectID]['EffectPath'];
+            //                             $IsInheritKill = $SkillEffect_Group_Hero[$RefEffectID]['IsInheritKill'];
+            //                             $EffectName = $SkillEffect_Group_Hero[$RefEffectID]['EffectName'];
+            //                             $EffectType = $this->EffectType($SkillEffect_Group_Hero[$RefEffectID]['EffectType']);
+            //                             $HurtReduceMinRatio = $SkillEffect_Group_Hero[$RefEffectID]['HurtReduceMinRatio'];
+            //                             $IsAssists = $SkillEffect_Group_Hero[$RefEffectID]['IsAssists'];
+            //                             $EffectClearRule = $SkillEffect_Group_Hero[$RefEffectID]['EffectClearRule'];
+            //                             $subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffectID]['SubEffectType']);
+            //                             $sub_EffectType = "";
+            //                             $GrowType = $this->getGrowType($SkillEffect_Group_Hero[$RefEffectID]['GrowType']);
+            //                             $DamageLimitToMonster = $SkillEffect_Group_Hero[$RefEffectID]['DamageLimitToMonster'];
+            //                             $OverlayLimit = $SkillEffect_Group_Hero[$RefEffectID]['OverlayLimit'];
+            //                             $IsOpenBuff = $SkillEffect_Group_Hero[$RefEffectID]['IsOpenBuff'];
+            //                             $IsCrit = $SkillEffect_Group_Hero[$RefEffectID]['IsCrit'];
+            //                             $EffectOverRule = $SkillEffect_Group_Hero[$RefEffectID]['EffectOverRule'];
+            //                             $HurtReduceRatio = $SkillEffect_Group_Hero[$RefEffectID]['HurtReduceRatio'];
+            //                             $Count = $icount + 1;
+            //                             $Overlay = "";
+            //                             if ($OverlayLimit > 1){
+            //                                 $Overlay = "\n-Stacks up to {{Color|style=bold|black|$OverlayLimit}} times.\n";
+            //                                 $BaseTable[] = $Overlay;
+            //                             }
+            //                             $Sub = "";
+            //                             if ($subEffectType !== "Invalid"){
+            //                                 $Sub = $subEffectType." ";
+            //                             }
+            //                             //$BaseTable[] = "Additional=\n".$SkillEffect_Group_Hero[$RefEffectID]['EffectGroupId']; //debug
+            //                             foreach($SkillEffect_Group_Hero[$RefEffectID]['SkillEffect'] as $SkillEffect){
+            //                                 if ($SkillEffect['Type'] === 0) continue;
+            //                                 //$BaseTable[] = "Type = ".$SkillEffect['Type']; //debug
+            //                                 //$BaseTable[] = implode(",",$SkillEffect['Para']); //debug
+            //                                 $SubDuration = $SkillEffect['Duration'];
+            //                                 $Dur = "";
+            //                                 if ($SubDuration > 0){
+            //                                     $Dur = " for {{Color|style=outlinewhite|black|".$SubDuration / 100 ."s}}";
+            //                                 }
+            //                                 $BaseTable[] = "{{{!}} class=\"wikitable\"";
+            //                                 $BaseTable[] = "{{!}}-";
+            //                                 $SkillOut = "$Sub".$this->getSkillEffect($SkillEffect['Type'],$SkillEffect,$SubType = "",$GrowType)."$Dur";
+            //                                 $BaseTable[] = "{{!}}$SkillOut";
+            //                                 $BaseTable[] = "{{!}}}";
+            //                             }
+                            
+            //                             $RefForm[] = implode("\n",$BaseTable);
+            //                         }
+
+            //                     }
+            //                 }
+            //             }
+            //         }
+    
+            //     }
+            // }
+            $SkillString = "{{-start-}}\n";
+            $SkillString .= "'''Basic Attack ($Name)'''\n";
+            $SkillString .= "{{Pokemon Skill\n";
+            $SkillString .= "|Name = Basic Attack ($Name)\n";
+            $SkillString .= "|Pokemon = $Name\n";
+            $SkillString .= "|Icon = t_Skill_Ingame_BT_Skill1\n";
+            $SkillString .= "|Type = \n";
+            $SkillString .= "|Slot = BasicAttack\n";
+            $SkillString .= "\n";
+            $SkillString .= "|MoveType = \n";
+            $SkillString .= "|Target_Type = \n";
+            $SkillString .= "|Range = $MaxAttackDis\n";
+            $SkillString .= "|Description = \n";
+            $SkillString .= "|Cooldown = ".$BasicAttackCD."\n";
+            $SkillString .= "|SkillID = $NormalSkillId\n";
+            $SkillString .= "|RefStats =\n". implode("\n\n",array_unique($RefForm))."\n\n";
+            $SkillString .= "}}\n";
+            $SkillString .= "{{-stop-}}\n";
+            $SkillArray[] = $SkillString;
+            $RefForm = [];
             
             //PassiveSkill
             $PassiveSkillId = $Pokemon_Hero[$MainUnitID]['PassiveSkillId'][0];
+            $PassiveSkillIdall = $Pokemon_Hero[$MainUnitID]['PassiveSkillId'];
             $PassiveSkillName = $LanguageMap_en[$Passive_skillOld[$PassiveSkillId]['Name']];
+            if (in_array(str_replace("+","",$LanguageMap_en[$Passive_skillOld[$PassiveSkillId]['Name']]),$DisamArray)){
+                $PassiveSkillName = $LanguageMap_en[$Passive_skillOld[$PassiveSkillId]['Name']]." ($Name)";
+                //var_dump($PassiveSkillName);
+                if (strpos($PassiveSkillName,"+")!== false){
+                    $PassiveSkillName = str_replace("+","",$LanguageMap_en[$Passive_skillOld[$PassiveSkillId]['Name']])." ($Name)+";
+                }
+            } else {
+                $PassiveSkillName = $LanguageMap_en[$Passive_skillOld[$PassiveSkillId]['Name']];
+            }
+            $PokemonMoveList["Passive"]["PassiveName"] = $PassiveSkillName;
             $PassiveSkillDesc = $LanguageMap_en[$Passive_skillOld[$PassiveSkillId]['Desc']];
             $PassiveSkillIconSkill = $Passive_skill[$PassiveSkillId]['IconPath'];
             $SkillType = $Passive_skill[$PassiveSkillId]['PassiveSkillType'];
@@ -314,11 +475,59 @@ class Pokemon_Hero implements ParseInterface
                         if ($SubDuration > 0){
                             $Dur = " for {{Color|style=outlinewhite|black|".$SubDuration / 100 ."s}}";
                         } 
-                        $BaseTable[] = "{{{!}} class=\"wikitable\"";
-                        $BaseTable[] = "{{!}}-";
                         $SkillOut = "$Sub".$this->getSkillEffect($SkillEffect['Type'],$SkillEffect,$SubType = "",$GrowType)."$Dur";
-                        $BaseTable[] = "{{!}}$SkillOut";
-                        $BaseTable[] = "{{!}}}";
+                        $BaseTable[] = "$SkillOut<br>";
+                    }
+        
+                    $RefForm[] = implode("\n",$BaseTable);
+                }
+            }
+            foreach($PassiveSkillIdall as $icount => $RefEffectID){
+                if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
+                    $BaseTable = [];
+                    $RefName = $SkillEffect_Group_Hero[$RefEffectID]['ActionPath'];
+                    $BuffPriority = $SkillEffect_Group_Hero[$RefEffectID]['BuffPriority'];
+                    $HurtReducetype = $SkillEffect_Group_Hero[$RefEffectID]['HurtReducetype'];
+                    $Duration = $SkillEffect_Group_Hero[$RefEffectID]['Duration'] / 1000 ."s";
+                    $EffectSlotType = $SkillEffect_Group_Hero[$RefEffectID]['EffectSlotType'];
+                    $Icon = $SkillEffect_Group_Hero[$RefEffectID]['EffectPath'];
+                    $IsInheritKill = $SkillEffect_Group_Hero[$RefEffectID]['IsInheritKill'];
+                    $EffectName = $SkillEffect_Group_Hero[$RefEffectID]['EffectName'];
+                    $EffectType = $this->EffectType($SkillEffect_Group_Hero[$RefEffectID]['EffectType']);
+                    $HurtReduceMinRatio = $SkillEffect_Group_Hero[$RefEffectID]['HurtReduceMinRatio'];
+                    $IsAssists = $SkillEffect_Group_Hero[$RefEffectID]['IsAssists'];
+                    $EffectClearRule = $SkillEffect_Group_Hero[$RefEffectID]['EffectClearRule'];
+                    $subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffectID]['SubEffectType']);
+                    $sub_EffectType = "";
+                    $GrowType = $this->getGrowType($SkillEffect_Group_Hero[$RefEffectID]['GrowType']);
+                    $DamageLimitToMonster = $SkillEffect_Group_Hero[$RefEffectID]['DamageLimitToMonster'];
+                    $OverlayLimit = $SkillEffect_Group_Hero[$RefEffectID]['OverlayLimit'];
+                    $IsOpenBuff = $SkillEffect_Group_Hero[$RefEffectID]['IsOpenBuff'];
+                    $IsCrit = $SkillEffect_Group_Hero[$RefEffectID]['IsCrit'];
+                    $EffectOverRule = $SkillEffect_Group_Hero[$RefEffectID]['EffectOverRule'];
+                    $HurtReduceRatio = $SkillEffect_Group_Hero[$RefEffectID]['HurtReduceRatio'];
+                    $Count = $icount + 1;
+                    $Overlay = "";
+                    if ($OverlayLimit > 1){
+                        $Overlay = "\n-Stacks up to {{Color|style=bold|black|$OverlayLimit}} times.\n";
+                        $BaseTable[] = $Overlay;
+                    }
+                    $Sub = "";
+                    if ($subEffectType !== "Invalid"){
+                        $Sub = $subEffectType." ";
+                    }
+                    //$BaseTable[] = "Additional=\n".$SkillEffect_Group_Hero[$RefEffectID]['EffectGroupId']; //debug
+                    foreach($SkillEffect_Group_Hero[$RefEffectID]['SkillEffect'] as $SkillEffect){
+                        if ($SkillEffect['Type'] === 0) continue;
+                        //$BaseTable[] = "Type = ".$SkillEffect['Type']; //debug
+                        //$BaseTable[] = implode(",",$SkillEffect['Para']); //debug
+                        $SubDuration = $SkillEffect['Duration'];
+                        $Dur = "";
+                        if ($SubDuration > 0){
+                            $Dur = " for {{Color|style=outlinewhite|black|".$SubDuration / 100 ."s}}";
+                        } 
+                        $SkillOut = "$Sub".$this->getSkillEffect($SkillEffect['Type'],$SkillEffect,$SubType = "",$GrowType)."$Dur";
+                        $BaseTable[] = "$SkillOut<br>";
                     }
         
                     $RefForm[] = implode("\n",$BaseTable);
@@ -326,6 +535,7 @@ class Pokemon_Hero implements ParseInterface
             }
             $BaseTable = [];
             $IconArray[] = $PassiveSkillIconSkill;
+            $UrlArray[$PassiveSkillName] = $PassiveSkillName;
             $SkillString = "{{-start-}}\n";
             $SkillString .= "'''$PassiveSkillName'''\n";
             $SkillString .= "{{Pokemon Skill\n";
@@ -353,6 +563,8 @@ class Pokemon_Hero implements ParseInterface
             // can generate skills here
             // but need to grab evolution levels from here as well
             $EvolutionLevels = [];
+            $op = 0;
+            $opb = 0;
             foreach ($Talent_Plan[$TalentGroupId] as $id => $Talent) {
                 if ($Talent['ChooseType'] === 3) continue; // reserve exp pool
                 if ($Talent['ChooseType'] === 4) { //evolutions
@@ -374,6 +586,14 @@ class Pokemon_Hero implements ParseInterface
                             $Slot = "UniteMove";
                         break;
                     }
+                    if ($Type === "Option"){
+                        $op++;
+                        $Type = "$Type$op";
+                    }
+                    if ($Type === "Base"){
+                        $opb++;
+                        $Type = "$Type$opb";
+                    }
                     $IconSkill = "";
                     if (!empty($Pokemon_Talent[$TalentId]['IconPath'])){
                         $IconSkill = $Pokemon_Talent[$TalentId]['IconPath'];
@@ -386,7 +606,7 @@ class Pokemon_Hero implements ParseInterface
                         $SkillIconArray[] = $TutIcon;
                     }
                     $SkillID = $Pokemon_Talent[$TalentId]['ActiveSkill'];
-                    $EffectType = $LanguageMap_en[$SkillLogo[$Active_Skill_Hero[$SkillID]['SkillLogo'][0]]['Name']];
+                    $IconEffectType = $LanguageMap_en[$SkillLogo[$Active_Skill_Hero[$SkillID]['SkillLogo'][0]]['Name']];
                     $Cooldown = $Active_Skill_Hero[$SkillID]['CDTime'] / 1000;
                     $RefEffectGroupIds = $Active_Skill_Hero[$SkillID]['RefEffectGroupIds'];
                     $SimpleDesc = $Active_Skill_Hero[$SkillID]['SimpleDesc'];
@@ -394,7 +614,7 @@ class Pokemon_Hero implements ParseInterface
                     $RefForm = [];
                     $Description = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentDesc']];
                     if (empty($Description)){
-                        $Description = $LanguageMap_en[$Active_Skill_Hero[$SkillID]['Desc']];
+                        $Description = $LanguageMap_en[$Active_Skill_Hero_Old[$SkillID]['Desc']];
                     }
                     if (in_array(str_replace("+","",$LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']]),$DisamArray)){
                         $SkillName = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']]." ($Name)";
@@ -404,6 +624,7 @@ class Pokemon_Hero implements ParseInterface
                     } else {
                         $SkillName = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']];
                     }
+                    $PokemonMoveList[$Slot][$Type] = $SkillName;
                     foreach($RefEffectGroupIds as $icount => $RefEffectID){
                         if (!empty($SkillEffect_Group_Hero[$RefEffectID])){
                             $BaseTable = [];
@@ -426,6 +647,10 @@ class Pokemon_Hero implements ParseInterface
                             $OverlayLimit = $SkillEffect_Group_Hero[$RefEffectID]['OverlayLimit'];
                             $IsOpenBuff = $SkillEffect_Group_Hero[$RefEffectID]['IsOpenBuff'];
                             $IsCrit = $SkillEffect_Group_Hero[$RefEffectID]['IsCrit'];
+                            if ($IsCrit === 1){
+                                $CanCrit = "\n<b>Move can crit</b>\n";
+                                $BaseTable[] = $CanCrit;
+                            }
                             $EffectOverRule = $SkillEffect_Group_Hero[$RefEffectID]['EffectOverRule'];
                             $HurtReduceRatio = $SkillEffect_Group_Hero[$RefEffectID]['HurtReduceRatio'];
                             $Count = $icount + 1;
@@ -448,11 +673,8 @@ class Pokemon_Hero implements ParseInterface
                                 if ($SubDuration > 0){
                                     $Dur = " for {{Color|style=bold|black|".$SubDuration / 100 ."s}}";
                                 } 
-                                $BaseTable[] = "{{{!}} class=\"wikitable\"";
-                                $BaseTable[] = "{{!}}-";
                                 $SkillOut = "$Sub".$this->getSkillEffect($SkillEffect['Type'],$SkillEffect,$SubType = "",$GrowType)."$Dur";
-                                $BaseTable[] = "{{!}}$SkillOut";
-                                $BaseTable[] = "{{!}}}";
+                                $BaseTable[] = "$SkillOut<br>";
                             }
                 
                             $RefForm[] = implode("\n",$BaseTable);
@@ -485,7 +707,7 @@ class Pokemon_Hero implements ParseInterface
                     $BaseSkillID = round($SkillID, -1);
                     if (($Type !== "Base") || ($Type !== "Passive") || ($Type !== "Unite Move")){
                         if (!empty($Active_Skill_Hero[$BaseSkillID])){
-                            $Base_Skill = $LanguageMap_en[$Active_Skill_Hero[$BaseSkillID]['Name']];
+                            $Base_Skill = $LanguageMap_en[$Active_Skill_Hero_Old[$BaseSkillID]['Name']];
                             $Base_Skill_Icon = $Active_Skill_Hero[$BaseSkillID]['IconPath'];
                         }
                     }
@@ -494,13 +716,15 @@ class Pokemon_Hero implements ParseInterface
                     }
 
                     if (empty($Name)) continue;
+                    $Description = str_replace("Upgrade:","<b style=\"color:#ffbe4b;font-size: 100%; text-shadow: 1px 1px 10px black, 0 0 7px darkblue;\">Upgrade:</b><br>",$Description);
+                    $UrlArray[$SkillName] = $SkillName;
                     $SkillString = "{{-start-}}\n";
                     $SkillString .= "'''$SkillName'''\n";
                     $SkillString .= "{{Pokemon Skill\n";
                     $SkillString .= "|Name = $SkillName\n";
                     $SkillString .= "|Pokemon = $Name\n";
                     $SkillString .= "|Icon = $IconSkill\n";
-                    $SkillString .= "|Type = $EffectType\n";
+                    $SkillString .= "|Type = $IconEffectType\n";
                     $SkillString .= "|Slot = $Slot\n";
                     $SkillString .= "|Icon_Tutorial = $TutIcon\n";
                     $SkillString .= "|Level = $TriggerLevel\n";
@@ -532,8 +756,33 @@ class Pokemon_Hero implements ParseInterface
                 }
             }
             $EvoOut = implode("\n",$Evo);
-
+            $Moves = "";
+            foreach($PokemonMoveList as $MoveTitle => $Move){
+                foreach($Move as $SubTitle => $MoveName){
+                    if ($SubTitle === "Base3") continue;
+                    if ($SubTitle === "Base4") continue;
+                    if ($SubTitle === "Upgrade") continue;
+                    if ($SubTitle === "Option1") {
+                        $SubTitle = "Base11";
+                    }
+                    if ($SubTitle === "Option2") {
+                        $SubTitle = "Base12";
+                    }
+                    if ($SubTitle === "Option3") {
+                        $SubTitle = "Base21";
+                    }
+                    if ($SubTitle === "Option4") {
+                        $SubTitle = "Base22";
+                    }
+                    if ($SubTitle === "Unite Move") {
+                        $SubTitle = "UniteName";
+                    }
+                    $Moves .= "|$SubTitle = $MoveName\n";
+                }
+            }
             $OutputString = "{{-start-}}\n";
+            $UrlArray[$Name] = $Name;
+            if (empty($Name)) continue;
             $OutputString .= "'''$Name'''\n";
             $OutputString .= "{{Pokemon Hero\n";
             $OutputString .= "|PokeDex = $PkID\n";
@@ -567,7 +816,7 @@ class Pokemon_Hero implements ParseInterface
             $OutputString .= "\n";
             $OutputString .= "|LicenseIcon = $CardIcon.png\n";
             $OutputString .= "|Main_Icon = $BigIconPath.png\n";
-            $OutputString .= "|Small_Icon = $Icon.png\n";
+            $OutputString .= "|Small_Icon = $IconPkm.png\n";
             //$OutputString .= "|Start_Icon = $Small_Icon.png\n";
             $OutputString .= "\n";
             $OutputString .= "\n";
@@ -576,6 +825,7 @@ class Pokemon_Hero implements ParseInterface
             $OutputString .= "$ReccomendedEquipOut\n";
             $OutputString .= "\n";
             $OutputString .= "|Pokemon_ID = $MainUnitID\n";
+            $OutputString .= "$Moves\n";
             $OutputString .= "}}\n";
             $OutputString .= "{{-stop-}}\n";
             $OutputString .= "\n";
@@ -589,6 +839,14 @@ class Pokemon_Hero implements ParseInterface
         if (!empty($SkillIconArray)) {
             $this->copyImages($SkillIconArray,"Pokemon_Skill");
         }
+        
+        $sitemapjson = file_get_contents("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0\sitemap.json");
+        $sitemapjson_array = json_decode($sitemapjson, true);
+        $combiarray = array_merge($sitemapjson_array,$UrlArray);
+        $combiarray = array_unique($combiarray);
+        $this->saveExtra("sitemap.json",json_encode($combiarray,JSON_PRETTY_PRINT));
+        $this->saveExtra("Output\BattlePassSeason.txt",implode("\n\n",$Output));
+        
         // (optional) finish progress bar
         $this->saveExtra("Output\Pokemon_Hero.txt",implode("\n\n",$Output));
         $this->saveExtra("Output\Pokemon_Skill.txt",implode("\n\n",$SkillArray));

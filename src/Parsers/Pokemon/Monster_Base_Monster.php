@@ -182,6 +182,7 @@ class Monster_Base_Monster implements ParseInterface
             foreach($Monster['PassiveSkillId'] as $PassiveSkillId){
                 if ($PassiveSkillId === 0) continue;
             }
+            $UrlArray[$Name] = $Name;
             $OutputString = "{{-start-}}\n";
             $OutputString .= "'''$Name'''\n";
             $OutputString .= "{{Pokemon Monster\n";
@@ -229,6 +230,13 @@ class Monster_Base_Monster implements ParseInterface
         }
         //$StatsTableUni = array_unique($StatsTable);
 
+        //$UrlArray[$SeasonHalf] = $SeasonHalf;
+        $sitemapjson = file_get_contents("E:\saint-csv-parser-v2\output\Pokemon_Unite 1.0.0\sitemap.json");
+        $sitemapjson_array = json_decode($sitemapjson, true);
+        $combiarray = array_merge($sitemapjson_array,$UrlArray);
+        $combiarray = array_unique($combiarray);
+        $this->saveExtra("sitemap.json",json_encode($combiarray,JSON_PRETTY_PRINT));
+        //
         // (optional) finish progress bar
         $this->saveExtra("Output\Monster_Base_Monster.txt",implode("\n\n",$Output));
         $this->saveExtra("Output\Monster_Debug.csv",implode("\n",$DebugArray));

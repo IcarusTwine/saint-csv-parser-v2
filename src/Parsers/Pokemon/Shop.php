@@ -61,7 +61,7 @@ class Shop implements ParseInterface
             }
             switch ($ShopType) {
                 case 1:
-                    $ShopName = "Aoes Emporium";
+                    $ShopName = "Aeos Emporium";
                     $SubShop = "Fashion";
                     $Output[$ShopName][$SubShop][] = "{{ShopItem";
                     $Output[$ShopName][$SubShop][] = "{{!}}Name = $Name";
@@ -113,7 +113,7 @@ class Shop implements ParseInterface
                     $Output[$ShopName][$SubShop][] = "\n";
                 break;
                 case 5:
-                    $ShopName = "Aoes Emporium";
+                    $ShopName = "Aeos Emporium";
                     $SubShop = "Items";
                     $Output[$ShopName][$SubShop][] = "{{ShopItem";
                     $Output[$ShopName][$SubShop][] = "{{!}}Name = $Name";
@@ -139,7 +139,7 @@ class Shop implements ParseInterface
                     $Output[$ShopName][$SubShop][] = "\n";
                 break;
                 case 8:
-                    $ShopName = "Aoes Emporium";
+                    $ShopName = "Aeos Emporium";
                     $SubShop = "Fashion Ticket Exchange";
                     $Output[$ShopName][$SubShop][] = "{{ShopItem";
                     $Output[$ShopName][$SubShop][] = "{{!}}Name = $Name";
