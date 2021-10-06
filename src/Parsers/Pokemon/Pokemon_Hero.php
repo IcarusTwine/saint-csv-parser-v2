@@ -390,7 +390,13 @@ class Pokemon_Hero implements ParseInterface
     
             //     }
             // }
-            $SkillString = "{{-start-}}\n";
+            $SkillString = "";
+            if ($Patch === true){
+                $SkillString .= "{{-start-}}\n";
+                $SkillString .= "$Version\n";
+                $SkillString .= "{{-stop-}}\n";
+            }
+            $SkillString .= "{{-start-}}\n";
             $SkillString .= "'''Basic Attack ($Name)'''\n";
             $SkillString .= "{{Pokemon Skill\n";
             $SkillString .= "|Name = Basic Attack ($Name)\n";
@@ -540,7 +546,13 @@ class Pokemon_Hero implements ParseInterface
             $BaseTable = [];
             $IconArray[] = $PassiveSkillIconSkill;
             $UrlArray[$PassiveSkillName] = $PassiveSkillName;
-            $SkillString = "{{-start-}}\n";
+            $SkillString = "";
+            if ($Patch === true){
+                $SkillString .= "{{-start-}}\n";
+                $SkillString .= "$Version\n";
+                $SkillString .= "{{-stop-}}\n";
+            }
+            $SkillString .= "{{-start-}}\n";
             $SkillString .= "'''$PassiveSkillName'''\n";
             $SkillString .= "{{Pokemon Skill\n";
             $SkillString .= "|Name = $PassiveSkillName\n";
@@ -614,6 +626,12 @@ class Pokemon_Hero implements ParseInterface
                     $Cooldown = $Active_Skill_Hero[$SkillID]['CDTime'] / 1000;
                     $RefEffectGroupIds = $Active_Skill_Hero[$SkillID]['RefEffectGroupIds'];
                     $SimpleDesc = $Active_Skill_Hero[$SkillID]['SimpleDesc'];
+                    $AffectRange = "0";
+                    if (!empty($Active_Skill_Hero[$SkillID]['AffectRange'])){
+                        $AffectRange = $Active_Skill_Hero[$SkillID]['AffectRange'] / 1000;
+                    } elseif (!empty($Active_Skill_Hero_Old[$SkillID]['AffectRange'])) {
+                        $AffectRange = $Active_Skill_Hero_Old[$SkillID]['AffectRange'] / 1000;
+                    }
                     $RefStatOut = [];
                     $RefForm = [];
                     $Description = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentDesc']];
@@ -722,7 +740,13 @@ class Pokemon_Hero implements ParseInterface
                     if (empty($Name)) continue;
                     $Description = str_replace("Upgrade:","<b style=\"color:#ffbe4b;font-size: 100%; text-shadow: 1px 1px 10px black, 0 0 7px darkblue;\">Upgrade:</b><br>",$Description);
                     $UrlArray[$SkillName] = $SkillName;
-                    $SkillString = "{{-start-}}\n";
+                    $SkillString = "";
+                    if ($Patch === true){
+                        $SkillString .= "{{-start-}}\n";
+                        $SkillString .= "$Version\n";
+                        $SkillString .= "{{-stop-}}\n";
+                    }
+                    $SkillString .= "{{-start-}}\n";
                     $SkillString .= "'''$SkillName'''\n";
                     $SkillString .= "{{Pokemon Skill\n";
                     $SkillString .= "$Released\n";
@@ -737,6 +761,7 @@ class Pokemon_Hero implements ParseInterface
                     $SkillString .= "|MoveType = $Type\n";
                     $SkillString .= "|Target_Type = $TargetType\n";
                     $SkillString .= "|Range = ".$Range."m\n";
+                    $SkillString .= "|EffectRange = ".$AffectRange."m\n";
                     $SkillString .= "|Follow_Range = ".$MaxFollowDis."m\n";
                     $SkillString .= "|Description = $Description\n";
                     $SkillString .= "|Cooldown = ".$Cooldown."s\n";
@@ -785,7 +810,13 @@ class Pokemon_Hero implements ParseInterface
                     $Moves .= "|$SubTitle = $MoveName\n";
                 }
             }
-            $OutputString = "{{-start-}}\n";
+            $OutputString = "";
+            if ($Patch === true){
+                $OutputString .= "{{-start-}}\n";
+                $OutputString .= "$Version\n";
+                $OutputString .= "{{-stop-}}\n";
+            }
+            $OutputString .= "{{-start-}}\n";
             $UrlArray[$Name] = $Name;
             if (empty($Name)) continue;
             $OutputString .= "'''$Name'''\n";

@@ -21,8 +21,11 @@ class LotteryReward implements ParseInterface
         $LotteryReward = $this->json("/1.1.1/LotteryReward");
         //$LotteryReward = $this->json("/$Version/LotteryReward");
         $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
+        $OutSideItem_Base_New = $this->json("/1.1.1/OutSideItem_Base");
         $AvatarItem = $this->json("/$Version/AvatarItem");
+        $AvatarItem_New = $this->json("/1.1.1/AvatarItem");
         $Pokemon_Avatar_Base = $this->json("/$Version/Pokemon_Avatar_Base");
+        $Pokemon_Avatar_Base_New = $this->json("/1.1.1/Pokemon_Avatar_Base");
 
         // (optional) start a progress bar
         $IconArray = [];
@@ -37,30 +40,40 @@ class LotteryReward implements ParseInterface
             $ItemName = "";
             if ($ResourceId > 1 && $ResourceId < 999999){
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1000000001 && $ResourceId < 1000000100){
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1000000101 && $ResourceId < 1000000201){
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1002000001 && $ResourceId < 1004000000){
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1004000001 && $ResourceId < 1006000000){
                 if (empty($AvatarItem[$ResourceId])) continue;
                 $ItemName = $LanguageMap_en[$AvatarItem[$ResourceId]['AvatarName']];
+                $ItemDetail = $AvatarItem_New[$ResourceId]["AvatarPrefabMale"][0];
             }
             if ($ResourceId > 1006000001 && $ResourceId < 1007000000){
                 $ItemName = $LanguageMap_en[$Pokemon_Avatar_Base[$ResourceId]['PokemonAvatarName']];
+                $ItemDetail = $Pokemon_Avatar_Base_New[$ResourceId]["InsideAvatar"][0];
             }
             if ($ResourceId > 1007000001 && $ResourceId < 1007001000){
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1007001001 && $ResourceId < 1007011001){
                 $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
-            if (empty($ItemName)) continue;
+            if (empty($ItemName)) {
+                $ItemName = $ItemDetail;
+            }
             $String = "<div>\n";
             $String .= "{{Pokemon LotteryReward\n";
             $String .= "|Item = $ItemName\n";

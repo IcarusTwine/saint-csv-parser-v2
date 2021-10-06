@@ -18,7 +18,8 @@ class PokemonExpGold_Base implements ParseInterface
         $Version = $this->getVer();
         $LanguageMap_en = $this->languagemap("en");
 
-        $PokemonExpGold_Base = $this->json("/$Version/PokemonExpGold_Base");
+        //$PokemonExpGold_Base = $this->json("/$Version/PokemonExpGold_Base");
+        $PokemonExpGold_Base = $this->json("/1.2.1.4/PokemonExpGold_Base");
         //$PokemonExpGold_Base = $this->json("/1.1.1/databin_PokemonExpGold_Base");
 
         // (optional) start a progress bar
