@@ -16,30 +16,18 @@ class Pokemon_Hero_New implements ParseInterface
     {
         $Version = $this->getVer();
         // grab CSV files we want to use
-        $LanguageMap_en = $this->languagemap("en");
-
-        $Pokemon_Base_Old = $this->json("/$Version/Pokemon_Base");
-        $Pokemon_Base = $this->json("/1.1.1/Pokemon_Base");
+        $LanguageMap_en = $this->languagemap("En");
+        $Pokemon_Base = $this->json("/$Version/Pokemon_Base");
         $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
-        //$Pokemon_Hero = $this->json("/$Version/Pokemon_Hero");
-        $Pokemon_Hero = $this->json("/1.1.1/Pokemon_Hero");
-        //$Talent_Plan = $this->json("/$Version/Talent_Plan");
-        $Talent_PlanRaw = $this->json("/1.1.1/Talent_Plan");
-        foreach($Talent_PlanRaw as $TalentID){
-            $GroupID = $TalentID['GroupId'];
-            $Talent_Plan[$GroupID][] = $TalentID;
-        }
-        $Pokemon_Talent_Old = $this->json("/$Version/Pokemon_Talent");
-        $Pokemon_Talent = $this->json("/1.1.1/Pokemon_Talent");
+        $Pokemon_Hero = $this->json("/$Version/Pokemon_Hero");
+        $Talent_Plan = $this->json("/$Version/Talent_Plan");
+        $Pokemon_Talent = $this->json("/$Version/Pokemon_Talent");
         $Pokemon_Hero_Evolution = $this->json("/$Version/Pokemon_Hero_Evolution");
-        $Active_Skill_Hero_Old = $this->json("/$Version/Active_Skill_Hero");
-        $Active_Skill_Hero = $this->json("/1.1.1/Active_Skill_Hero");
-        $Passive_skillOld = $this->json("/$Version/Passive_skill");
-        $Passive_skill = $this->json("/1.1.1/Passive_skill");
+        $Active_Skill_Hero = $this->json("/$Version/Active_Skill_Hero");
+        $Passive_skill = $this->json("/$Version/Passive_skill");
         $Pokemon_StatGrowth = $this->json("/$Version/Pokemon_StatGrowth");
-        //$SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
-        $SkillEffect_Group_Hero = $this->json("/1.1.1/SkillEffect_Group_Hero");
-        $FortifiedNormalAttack = $this->json("/1.1.1/FortifiedNormalAttack");
+        $SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
+        $FortifiedNormalAttack = $this->json("/$Version/FortifiedNormalAttack");
         $SkillLogo = $this->json("/$Version/SkillLogo");
         $InherentPropertyDesc = $this->json("/$Version/InherentPropertyDesc");
 
@@ -69,14 +57,9 @@ class Pokemon_Hero_New implements ParseInterface
         foreach ($Pokemon_Base as $id => $Base) {
             $EvolutionLevels = [];
             if ($id === 999999) continue;
-            if (empty($Pokemon_Base_Old[$id])) continue;
             $MainUnitId = $Base['MainUnitId'];
             $TalentGroupId = $Pokemon_Hero[$MainUnitId]['TalentGroupId'];
-            if (!empty($Pokemon_Base_Old[$id])){
-                $Name = $LanguageMap_en[$Pokemon_Base_Old[$id]['NameRemark']];
-            } else {
-                $Name = "Unknown";
-            }
+            $Name = $Pokemon_Base[$id]['EnglishName'];
             $Released = "";
             if ($Base['HideInBox'] === true){
                 $Released = "|Unreleased = yes";
@@ -87,8 +70,8 @@ class Pokemon_Hero_New implements ParseInterface
             $RefForm = [];
             $PassiveIDGroup = $Pokemon_Hero[$MainUnitId]['PassiveSkillId'];
             $PassiveSkillName = "Unknown";
-            if (!empty($Passive_skillOld[$PassiveIDGroup[0]])){
-                $PassiveSkillName = $LanguageMap_en[$Passive_skillOld[$PassiveIDGroup[0]]['Name']];
+            if (!empty($Passive_skill[$PassiveIDGroup[0]])){
+                $PassiveSkillName = $LanguageMap_en[$Passive_skill[$PassiveIDGroup[0]]['Name']];
             }
             $PassiveSkillId = $PassiveIDGroup[0];
             foreach($PassiveIDGroup as $PassiveID){
@@ -100,7 +83,7 @@ class Pokemon_Hero_New implements ParseInterface
                             if ($RefEffect > 10){
                                 if (!empty($SkillEffect_Group_Hero[$RefEffect])){
                                     $GrowType = $this->getGrowType($SkillEffect_Group_Hero[$RefEffect]['GrowType']);
-                                    $subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffect]['SubEffectType']);
+                                    //$subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffect]['SubEffectType']);
                                     $OverlayLimit = $SkillEffect_Group_Hero[$RefEffect]['OverlayLimit'];
                                     $IsCrit = $SkillEffect_Group_Hero[$RefEffect]['IsCrit'];
                                     if ($IsCrit === 1){
@@ -113,9 +96,9 @@ class Pokemon_Hero_New implements ParseInterface
                                         $BaseTable[] = $Overlay;
                                     }
                                     $Sub = "";
-                                    if ($subEffectType !== "Invalid"){
-                                        $Sub = $subEffectType." ";
-                                    }
+                                    //if ($subEffectType !== "Invalid"){
+                                    //    $Sub = $subEffectType." ";
+                                    //}
                                     foreach($SkillEffect_Group_Hero[$RefEffect]['SkillEffect'] as $SkillEffect){
                                         if ($SkillEffect['Type'] === 0) continue;
                                         //$BaseTable[] = "Type = ".$SkillEffect['Type']; //debug
@@ -140,7 +123,7 @@ class Pokemon_Hero_New implements ParseInterface
                             if ($RefEffect > 10){
                                 if (!empty($SkillEffect_Group_Hero[$RefEffect])){
                                     $GrowType = $this->getGrowType($SkillEffect_Group_Hero[$RefEffect]['GrowType']);
-                                    $subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffect]['SubEffectType']);
+                                    //$subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffect]['SubEffectType']);
                                     $OverlayLimit = $SkillEffect_Group_Hero[$RefEffect]['OverlayLimit'];
                                     $IsCrit = $SkillEffect_Group_Hero[$RefEffect]['IsCrit'];
                                     if ($IsCrit === 1){
@@ -153,9 +136,9 @@ class Pokemon_Hero_New implements ParseInterface
                                         $BaseTable[] = $Overlay;
                                     }
                                     $Sub = "";
-                                    if ($subEffectType !== "Invalid"){
-                                        $Sub = $subEffectType." ";
-                                    }
+                                    //if ($subEffectType !== "Invalid"){
+                                    //    $Sub = $subEffectType." ";
+                                    //}
                                     foreach($SkillEffect_Group_Hero[$RefEffect]['SkillEffect'] as $SkillEffect){
                                         if ($SkillEffect['Type'] === 0) continue;
                                         //$BaseTable[] = "Type = ".$SkillEffect['Type']; //debug
@@ -180,10 +163,10 @@ class Pokemon_Hero_New implements ParseInterface
             $PassiveIconPath = "Unknown";
             $PassiveSkillDesc = "Unknown";
             $PassiveSkillCD = "Unknown";
-            if (!empty($Passive_skillOld[$PassiveIDGroup[0]])){
+            if (!empty($Passive_skill[$PassiveIDGroup[0]])){
                 $PassiveIconPath = $Passive_skill[$PassiveIDGroup[0]]['IconPath'];
                 $IconArray[] = $PassiveIconPath;
-                $PassiveSkillDesc = $LanguageMap_en[$Passive_skillOld[$PassiveIDGroup[0]]['Desc']];
+                $PassiveSkillDesc = $LanguageMap_en[$Passive_skill[$PassiveIDGroup[0]]['Desc']];
                 $PassiveSkillCD = $Passive_skill[$PassiveIDGroup[0]]['PassiveColdDown'] / 1000 ."s";
             }
             $PassiveSkillId = $PassiveIDGroup[0];
@@ -200,6 +183,7 @@ class Pokemon_Hero_New implements ParseInterface
             $SkillString .= "'''$PassiveSkillName'''\n";
             $SkillString .= "{{Pokemon Skill\n";
             $SkillString .= "|Name = $PassiveSkillName\n";
+            $SkillString .= "|LastUpdate = $Version\n";
             $SkillString .= "|Pokemon = $Name\n";
             $SkillString .= "|Icon = $PassiveIconPath\n";
             $SkillString .= "|Type = \n";
@@ -243,7 +227,7 @@ class Pokemon_Hero_New implements ParseInterface
                             if ($RefEffect > 10){
                                 if (!empty($SkillEffect_Group_Hero[$RefEffect])){
                                     $GrowType = $this->getGrowType($SkillEffect_Group_Hero[$RefEffect]['GrowType']);
-                                    $subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffect]['SubEffectType']);
+                                    //$subEffectType = $this->EffectSubType($SkillEffect_Group_Hero[$RefEffect]['SubEffectType']);
                                     $OverlayLimit = $SkillEffect_Group_Hero[$RefEffect]['OverlayLimit'];
                                     $IsCrit = $SkillEffect_Group_Hero[$RefEffect]['IsCrit'];
                                     if ($IsCrit === 1){
@@ -256,9 +240,9 @@ class Pokemon_Hero_New implements ParseInterface
                                         $BaseTable[] = $Overlay;
                                     }
                                     $Sub = "";
-                                    if ($subEffectType !== "Invalid"){
-                                        $Sub = $subEffectType." ";
-                                    }
+                                    //if ($subEffectType !== "Invalid"){
+                                    //    $Sub = $subEffectType." ";
+                                    //}
                                     foreach($SkillEffect_Group_Hero[$RefEffect]['SkillEffect'] as $SkillEffect){
                                         if ($SkillEffect['Type'] === 0) continue;
                                         //$BaseTable[] = "Type = ".$SkillEffect['Type']; //debug
@@ -281,21 +265,18 @@ class Pokemon_Hero_New implements ParseInterface
                     $RefForm[] = implode("\n",array_unique($BaseTable));
                     
                     $Description = "";
-                    if (!empty($Pokemon_Talent_Old[$TalentId])){
-                        $Description = $LanguageMap_en[$Pokemon_Talent_Old[$TalentId]['TalentDesc']];
+                    if (!empty($Pokemon_Talent[$TalentId])){
+                        $Description = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentDesc']];
                         if (empty($Description)){
-                            $Description = $LanguageMap_en[$Active_Skill_Hero_Old[$SkillLink]['Desc']];
+                            $Description = $LanguageMap_en[$Active_Skill_Hero[$SkillLink]['Desc']];
                         }
                     }
                     if (empty($Name)) continue;
-                    if (in_array(str_replace("+","",$LanguageMap_en[$Pokemon_Talent_Old[$TalentId]['TalentName']]),$DisamArray)){
-                        $SkillName = $LanguageMap_en[$Pokemon_Talent_Old[$TalentId]['TalentName']]." ($Name)";
-                        if (strpos($SkillName,"+")!== false){
-                            $SkillName = str_replace("+","",$LanguageMap_en[$Pokemon_Talent_Old[$TalentId]['TalentName']])." ($Name)+";
-                        }
+                    if (in_array(str_replace("+","",$LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']]),$DisamArray)){
+                        $SkillName = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']]." ($Name)";
                     } else {
-                        if (!empty($Pokemon_Talent_Old[$TalentId])){
-                            $SkillName = $LanguageMap_en[$Pokemon_Talent_Old[$TalentId]['TalentName']];
+                        if (!empty($Pokemon_Talent[$TalentId])){
+                            $SkillName = $LanguageMap_en[$Pokemon_Talent[$TalentId]['TalentName']];
                         } else {
                             $SkillName = "Unknown";
                         }
@@ -341,21 +322,21 @@ class Pokemon_Hero_New implements ParseInterface
                     $AffectRange = "0";
                     if (!empty($Active_Skill_Hero[$SkillLink]['AffectRange'])){
                         $AffectRange = $Active_Skill_Hero[$SkillLink]['AffectRange'] / 1000;
-                    } elseif (!empty($Active_Skill_Hero_Old[$SkillLink]['AffectRange'])) {
-                        $AffectRange = $Active_Skill_Hero_Old[$SkillLink]['AffectRange'] / 1000;
+                    } elseif (!empty($Active_Skill_Hero[$SkillLink]['AffectRange'])) {
+                        $AffectRange = $Active_Skill_Hero[$SkillLink]['AffectRange'] / 1000;
                     }
                     $Base_Skill = "";
                     $Base_Skill_Icon = "";
                     $BaseSkillID = round($SkillLink, -1);
                     if (($Type !== "Base") || ($Type !== "Passive") || ($Type !== "Unite Move")){
-                        if (!empty($Active_Skill_Hero_Old[$BaseSkillID])){
-                            $Base_Skill = $LanguageMap_en[$Active_Skill_Hero_Old[$BaseSkillID]['Name']];
-                            $Base_Skill_Icon = $Active_Skill_Hero_Old[$BaseSkillID]['IconPath'];
+                        if (!empty($Active_Skill_Hero[$BaseSkillID])){
+                            $Base_Skill = $LanguageMap_en[$Active_Skill_Hero[$BaseSkillID]['Name']];
+                            $Base_Skill_Icon = $Active_Skill_Hero[$BaseSkillID]['IconPath'];
                         }
                     }
-                    if (!empty($Active_Skill_Hero_Old[$BaseSkillID])){
-                        if ($Active_Skill_Hero_Old[$BaseSkillID]['SkillLogo'][0] !== 0){
-                            $IconEffectType = $LanguageMap_en[$SkillLogo[$Active_Skill_Hero_Old[$BaseSkillID]['SkillLogo'][0]]['Name']];
+                    if (!empty($Active_Skill_Hero[$BaseSkillID])){
+                        if ($Active_Skill_Hero[$BaseSkillID]['SkillLogo'][0] !== 0){
+                            $IconEffectType = $LanguageMap_en[$SkillLogo[$Active_Skill_Hero[$BaseSkillID]['SkillLogo'][0]]['Name']];
                         } else {
                             $IconEffectType = "Unknown";
                         }
@@ -374,6 +355,7 @@ class Pokemon_Hero_New implements ParseInterface
                     $SkillString .= "{{Pokemon Skill\n";
                     $SkillString .= "$Released\n";
                     $SkillString .= "|Name = $SkillName\n";
+                    $SkillString .= "|LastUpdate = $Version\n";
                     $SkillString .= "|Pokemon = $Name\n";
                     $SkillString .= "|Icon = $IconPath\n";
                     $SkillString .= "|Type = $IconEffectType\n";
@@ -427,15 +409,15 @@ class Pokemon_Hero_New implements ParseInterface
                     $Moves .= "|$SubTitle = $MoveName\n";
                 }
             }
-            $Name = $LanguageMap_en[$Pokemon_Base_Old[$id]['NameRemark']];
+            $Name = $Pokemon_Base[$id]['EnglishName'];
             $PkID = $Base['PokemonId'];
-            $Category = $LanguageMap_en[$Pokemon_Base_Old[$id]['Category']];
-            $Height = $LanguageMap_en[$Pokemon_Base_Old[$id]['Height']];
-            $Difficulty = $LanguageMap_en[$Pokemon_Base_Old[$id]['Tag'][1]];
-            $Tag1 = $LanguageMap_en[$Pokemon_Base_Old[$id]['Tag'][0]];
-            $OccupationTypeDesc = $LanguageMap_en[$Pokemon_Base_Old[$id]['OccupationTypeDesc']];
-            $Obtain = $LanguageMap_en[$Pokemon_Base_Old[$id]['GetDesc']];
-            $Weight = $LanguageMap_en[$Pokemon_Base_Old[$id]['Weight']];
+            $Category = "";
+            $Height = "";
+            $Difficulty = $LanguageMap_en[$Pokemon_Base[$id]['Tag'][1]];
+            $Tag1 = $LanguageMap_en[$Pokemon_Base[$id]['Tag'][0]];
+            $OccupationTypeDesc = $LanguageMap_en[$Pokemon_Base[$id]['OccupationTypeDesc']];
+            $Obtain = $LanguageMap_en[$Pokemon_Base[$id]['GetDesc']];
+            $Weight = "";
             switch ($Base['BranchRecommend'][0]) {
                 case 1:
                     $Lane = "Top";
@@ -489,9 +471,9 @@ class Pokemon_Hero_New implements ParseInterface
             $BaseSpecAttack = $Pokemon_Hero[$MainUnitId]['BaseSpecAttack'];
             //Rates
             $BaseSupportEnergyRate = $Pokemon_Hero[$MainUnitId]['BaseSupportEnergyRate'] / 1000 ."s";
-            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / 1000 ."s";
+            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['AttackFrequency'] / 1000 ."s";
             $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
-            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / $PropertyNoDiv;
+            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitId]['AttackFrequency'] / $PropertyNoDiv;
 
             $CardIcon = $Base['PokemonCard']; //Stone Icon (Shop)
             $IconArray[] = $CardIcon;
@@ -502,6 +484,17 @@ class Pokemon_Hero_New implements ParseInterface
                     $evonum = $n + 2;
                     $Evo[] = "|Evolution_$evonum Level = $Level";
                 }
+            }
+            //evolution if any
+            foreach($Pokemon_Hero_Evolution[$MainUnitId] as $Evolution){
+                $Evonum = $Evolution['EvolutionOrder'];
+                //$EvoName = $LanguageMap_en[$Evolution['PokemonName']];
+                $NameExp = explode("_",$Evolution['SmallIconName']);//temp
+                $EvoName = end($NameExp);//temp
+                $EvoIcon = $Evolution['PortraitName'];
+                $IconArray[] = $EvoIcon;
+                $Evo[] = "|Evolution_$Evonum Name = $EvoName";
+                $Evo[] = "|Evolution_$Evonum Portrait = $EvoIcon";
             }
             $Evo = array_unique($Evo);
             $EvoOut = implode("\n",$Evo);
@@ -636,6 +629,7 @@ class Pokemon_Hero_New implements ParseInterface
             $OutputString .= "'''$Name'''\n";
             $OutputString .= "{{Pokemon Hero\n";
             $OutputString .= "|PokeDex = $PkID\n";
+            $OutputString .= "|LastUpdate = $Version\n";
             $OutputString .= "|Name = $Name\n";
             $OutputString .= "|Type = $Category\n";
             $OutputString .= "|Size = $Height\n";
@@ -691,9 +685,9 @@ class Pokemon_Hero_New implements ParseInterface
         }
         
         // (optional) finish progress bar
-        $this->saveExtra("Output\Pokemon_Hero.txt",implode("\n\n",$Output));
-        $this->saveExtra("Output\Pokemon_Skill.txt",implode("\n\n",$SkillArray));
-        $this->saveExtra("Output\Pokemon_Growth.txt",implode("\n\n",$StatsTables));
+        $this->saveExtra("Pokemon_Hero.txt",implode("\n\n",$Output));
+        $this->saveExtra("Pokemon_Skill.txt",implode("\n\n",$SkillArray));
+        $this->saveExtra("Pokemon_Growth.txt",implode("\n\n",$StatsTables));
         //$this->saveExtra("Output\Pokemon_Hero.txt",implode("\n\n",$Output));
 
         // save

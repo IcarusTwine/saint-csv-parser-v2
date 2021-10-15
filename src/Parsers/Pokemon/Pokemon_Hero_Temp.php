@@ -486,9 +486,9 @@ class Pokemon_Hero_Temp implements ParseInterface
             $BaseSpecAttack = $Pokemon_Hero[$MainUnitId]['BaseSpecAttack'];
             //Rates
             $BaseSupportEnergyRate = $Pokemon_Hero[$MainUnitId]['BaseSupportEnergyRate'] / 1000 ."s";
-            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / 1000 ."s";
+            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['AttackFrequency'] / 1000 ."s";
             $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
-            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / $PropertyNoDiv;
+            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitId]['AttackFrequency'] / $PropertyNoDiv;
 
             $CardIcon = $Base['PokemonCard']; //Stone Icon (Shop)
             $IconArray[] = $CardIcon;

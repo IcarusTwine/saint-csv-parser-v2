@@ -50,12 +50,6 @@ trait PokemonParseTrait
 
         $handle = file_get_contents($filename); 
         $LanguageMap = json_decode($handle,true);
-        //$LanguageMapExp = explode("\n",$handle);
-        //foreach($LanguageMapExp as $Line){
-        //    if (empty($Line)) break;
-        //    $Explode = explode(" = ",$Line);
-        //    $LanguageMap[$Explode[0]] = $Explode[1]; 
-        //}
         return $LanguageMap;
     }
     public function copyImages($IconArray,$SubFolder)
@@ -84,8 +78,8 @@ trait PokemonParseTrait
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Sprite/$value.png")){
-                    copy("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Texture2D/$value.png")){
+                    copy("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
                     var_dump($value." - Missing");
@@ -141,6 +135,9 @@ trait PokemonParseTrait
         $Resources = str_replace("cache","Resources",$ini['Cache']);
         $Version = $this->getVer();
         $folder = "$Cache\Pokemon_Unite\\$Version/";
+        if (!is_dir($folder)) {
+            mkdir($folder, 0777, true);
+        }
         $fileopen = fopen("{$folder}{$filename}", 'w');
         $pathtext = "{$folder}{$filename}";
         fwrite($fileopen, $SourceData);
