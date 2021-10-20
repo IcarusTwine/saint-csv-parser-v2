@@ -78,8 +78,8 @@ trait PokemonParseTrait
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Texture2D/$value.png")){
-                    copy("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Texture2D/$value.png")){
+                    copy("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
                     var_dump($value." - Missing");
@@ -114,8 +114,8 @@ trait PokemonParseTrait
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Sprite/$value.png")){
-                    copy("C:\Users\jonso\Desktop\pokemonproto\\1.2.1.5\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Sprite/$value.png")){
+                    copy("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Sprite/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
                     var_dump($value." - Missing");

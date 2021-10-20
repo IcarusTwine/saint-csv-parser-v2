@@ -416,7 +416,7 @@ class Pokemon_Hero_New implements ParseInterface
             $Difficulty = $LanguageMap_en[$Pokemon_Base[$id]['Tag'][1]];
             $Tag1 = $LanguageMap_en[$Pokemon_Base[$id]['Tag'][0]];
             $OccupationTypeDesc = $LanguageMap_en[$Pokemon_Base[$id]['OccupationTypeDesc']];
-            $Obtain = $LanguageMap_en[$Pokemon_Base[$id]['GetDesc']];
+            $Obtain = "";//$LanguageMap_en[$Pokemon_Base[$id]['GetDesc']];
             $Weight = "";
             switch ($Base['BranchRecommend'][0]) {
                 case 1:
