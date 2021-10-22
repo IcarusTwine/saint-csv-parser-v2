@@ -15,10 +15,11 @@ class Pokemon_Avatar_Base implements ParseInterface
     public function parse()
     {
         $IconArray = [];
+        $Version = $this->getVer();
         // grab CSV files we want to use
-        $Pokemon_Avatar_Base = $this->json('Pokemon_Avatar_Base');
-        $Pokemon_Base = $this->json('Pokemon_Base',"DexNo2");
-        $LanguageMap_en = $this->languagemap("en");
+        $Pokemon_Avatar_Base = $this->json("$Version/Pokemon_Avatar_Base");
+        $Pokemon_Base = $this->json("$Version/Pokemon_Base");
+        $LanguageMap_en = $this->languagemap("English");
         // loop through data
         foreach ($Pokemon_Avatar_Base as $id => $Avatar) {
             $Name = $LanguageMap_en[$Avatar['Name']];
@@ -42,7 +43,7 @@ class Pokemon_Avatar_Base implements ParseInterface
             $this->copyImages($IconArray,"Pokemon_Avatar_Base");
         }
         // (optional) finish progress bar
-        $this->saveExtra("Output\Pokemon_Avatar_Base.txt",implode("\n\n",$Output));
+        $this->saveExtra("Pokemon_Avatar_Base.txt",implode("\n\n",$Output));
 
         // save
         $this->io->text('Saving data ...');

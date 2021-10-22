@@ -46,11 +46,15 @@ trait PokemonParseTrait
     {
         $ini = parse_ini_file('src/Parsers/config.ini');
         $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $filename = "$Resources\PokemonUniteApi\ProtoApi\\1.2.1.4\language_map_output\languagemap_$lang.json";
+        $Version = $ini['PokePatch'];
+        $filename = "E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/$Version\output/LanguageMap\LanguageMap_$lang.json";
 
         $handle = file_get_contents($filename); 
         $LanguageMap = json_decode($handle,true);
         return $LanguageMap;
+    }
+    function timesplit($Time){
+        return "".$Time[3]."/".$Time[2]."/".$Time[0]."".$Time[1]."";
     }
     public function copyImages($IconArray,$SubFolder)
     {
@@ -78,8 +82,8 @@ trait PokemonParseTrait
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Texture2D/$value.png")){
-                    copy("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/$Version\output\Texture2D/$value.png")){
+                    copy("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/$Version\output\Texture2D/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
                     var_dump($value." - Missing");
@@ -114,8 +118,8 @@ trait PokemonParseTrait
                     mkdir($IconOutputDirectory, 0777, true);
                 }
                 // copy the input icon to the output filename
-                if(file_exists("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Sprite/$value.png")){
-                    copy("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/1.2.1.7\output\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/$Version\output\Sprite/$value.png")){
+                    copy("E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/$Version\output\Sprite/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
                     $MissingIconArray[] = $value;
                     var_dump($value." - Missing");
@@ -513,7 +517,107 @@ trait PokemonParseTrait
             break;
         }
     }
+    /**
+     * getOccupationTypeEnum
+     */
+    public function getOccupationTypeEnum($num)
+    {
+        switch ($num) {
+            case 0:
+                return "Invalid";
+            break;
+            case 1:
+                return "Warrior";
+            break;
+            case 2:
+                return "Master";
+            break;
+            case 3:
+                return "Archer";
+            break;
+            case 4:
+                return "Tank";
+            break;
+            case 5:
+                return "Assassin";
+            break;
+            case 6:
+                return "Supporter";
+            break;
+            case 7:
+                return "All-Rounder";
+            break;
+            case 8:
+                return "Attacker";
+            break;
+            case 9:
+                return "Defender";
+            break;
+            case 10:
+                return "Speedster";
+            break;
+            case 11:
+                return "Max";
+            break;
+        }
+    }
     
+    /**
+     * getAvatarSlotTypeEnum
+     */
+    public function getAvatarSlotTypeEnum($num)
+    {
+        switch ($num) {
+            case 0:
+                return "Invalid";
+            break;
+            case 1:
+                return "Top";
+            break;
+            case 2:
+                return "Outerwear";
+            break;
+            case 3:
+                return "Bottom";
+            break;
+            case 4:
+                return "Backpack";
+            break;
+            case 5:
+                return "Hand";
+            break;
+            case 6:
+                return "Eye";
+            break;
+            case 7:
+                return "Hat";
+            break;
+            case 8:
+                return "Socks";
+            break;
+            case 9:
+                return "Foot";
+            break;
+            case 10:
+                return "Suit";
+            break;
+            case 11:
+                return "Head";
+            break;
+            case 12:
+                return "Hair";
+            break;
+            case 13:
+                return "Haircolor";
+            break;
+            case 14:
+                return "Bodysuit";
+            break;
+            case 15:
+                return "Headwear";
+            break;
+        }
+    }
     /**
      * Property Names
      */

@@ -16,16 +16,16 @@ class LotteryReward implements ParseInterface
     {
         // grab CSV files we want to use
         $Version = $this->getVer();
-        $LanguageMap_en = $this->languagemap("en");
+        $LanguageMap_en = $this->languagemap("English");
 
-        $LotteryReward = $this->json("/1.1.1/LotteryReward");
+        $LotteryReward = $this->json("/$Version/LotteryReward");
         //$LotteryReward = $this->json("/$Version/LotteryReward");
         $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
-        $OutSideItem_Base_New = $this->json("/1.1.1/OutSideItem_Base");
+        $OutSideItem_Base_New = $this->json("/$Version/OutSideItem_Base");
         $AvatarItem = $this->json("/$Version/AvatarItem");
-        $AvatarItem_New = $this->json("/1.1.1/AvatarItem");
+        $AvatarItem_New = $this->json("$Version/AvatarItem");
         $Pokemon_Avatar_Base = $this->json("/$Version/Pokemon_Avatar_Base");
-        $Pokemon_Avatar_Base_New = $this->json("/1.1.1/Pokemon_Avatar_Base");
+        $Pokemon_Avatar_Base_New = $this->json("/$Version/Pokemon_Avatar_Base");
 
         // (optional) start a progress bar
         $IconArray = [];
@@ -72,7 +72,7 @@ class LotteryReward implements ParseInterface
                 $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if (empty($ItemName)) {
-                $ItemName = $ItemDetail;
+                $ItemName = "";
             }
             $String = "<div>\n";
             $String .= "{{Pokemon LotteryReward\n";
@@ -96,7 +96,7 @@ class LotteryReward implements ParseInterface
             $this->copyImages($IconArray,"LotteryReward");
         }
         // (optional) finish progress bar
-        $this->saveExtra("Output\LotteryReward.txt",implode("\n",$Output));
+        $this->saveExtra("LotteryReward.txt",implode("\n",$Output));
 
         // save
         $this->io->text('Saving data ...');
