@@ -16,39 +16,53 @@ class Shop implements ParseInterface
     {
         // grab CSV files we want to use
         $Version = $this->getVer();
-        $LanguageMap_en = $this->languagemap("en");
+        $LanguageMap_en = $this->languagemap("English");
 
-        $Shop = $this->json("$Version/Shop");
+        $Shop = $this->json("Shop.group.1");
+        $ClientTagRaw = $this->json("ClientTag");
+        foreach($ClientTagRaw as $data){
+            $Tag = $data['InGameKey'];
+            $ClientTag[$Tag] = $data;
+        }
 
         // (optional) start a progress bar
         $IconArray = [];
         //get evolutions array
         // loop through data
         foreach ($Shop as $id => $Item) {
-            if (strlen($LanguageMap_en[$Item['ShopName']]) < 2) continue;
-            $Name = $LanguageMap_en[$Item['ShopName']];
+            if (empty($Item['ShopName'])) continue;
+            $Name = $this->getLangTag($Item['ShopName'],$LanguageMap_en,$ClientTag);
+            foreach($Item['ShopNameParameter'] as $i => $Param){
+                if (empty($Param)) continue;
+                $Name = str_replace("{{$i}}",$Param,$Name);
+            }
+            $Time = date("Ymdhis");
+            if ($Item['OffTime'] < $Time) continue;
             $ShopType = $Item['ShopType'];
             $Costs = [];
-            if ($Item['IsPokeCoinsBuy'] === true){
-                $Costs[] = "{{!}}AeosCoin = ".$Item['PokeCoinsBuy'];
+            if (!empty($Item['IsPokeCoinsBuy'])){
+                $Costs[] = "{{!}}TicketCost = ".$Item['PokeCoinsBuy'];
             }
-            if ($Item['IsCookiesBuy'] === true){
-                $Costs[] = "{{!}}GemsCost = ".$Item['CookiesBuy'];
+            if (!empty($Item['IsCookiesBuy'])){
+                $Costs[] = "{{!}}AeosCoin = ".$Item['CookiesBuy'];
             }
-            if ($Item['IsCouponsBuy'] === true){
-                $Costs[] = "{{!}}TicketCost = ".$Item['CouponsBuy'];
+            if (!empty($Item['IsCouponsBuy'])){
+                $Costs[] = "{{!}}GemsCost = ".$Item['CouponsBuy'];
             }
-            if ($Item['IsBuyMixPay'] === true){
+            if (!empty($Item['IsBuyMixPay'])){
                 $Costs[] = "{{!}}IsBuyMixPay = true";
             }
             $Cost = implode("",$Costs);
-            $BuyLimitNum = "{{!}}BuyLimit = ".$Item['BuyLimitNum'];
-            var_dump($Item['BuyLimitNum']);
-            if ($Item['BuyLimitNum'] === 0){
+            if (!empty($Item['BuyLimitNum'])){
+                $LimitType = $this->PB_ENUM_RES_BUY_LIMIT_TYPE($Item['BuyLimitType']);
+                $BuyLimitNum = "{{!}}BuyLimit = ".$Item['BuyLimitNum']." $LimitType";
+            } else {
                 $BuyLimitNum = "";
             }
             $IsHot = "";
-            if ($Item['IsHot'] === true){
+            $HotStart = "";
+            $HotEnd = "";
+            if (!empty($Item['IsHot'])){
                 // if this exists then category it for featured
                 $IsHot = "{{!}}IsHot = yes"; 
                 $HotIcons = [];
@@ -58,7 +72,12 @@ class Shop implements ParseInterface
                     $IconArray[] = $HotIcon;
                 }
                 $IsHot .= "{{!}}HotIcons = ".implode(",",$HotIcons);
+                $HotStart = "{{!}}|SaleOn = ". $this->timesplit($Item['HotStartTime']);
+                $HotEnd = "{{!}}|SaleOff = ".  $this->timesplit($Item['HotEndTime']);
             }
+            //offers
+            $ShopStart = $this->timesplit($Item['OnTime']);
+            $ShopEnd = $this->timesplit($Item['OffTime']);
             switch ($ShopType) {
                 case 1:
                     $ShopName = "Aeos Emporium";
@@ -70,6 +89,10 @@ class Shop implements ParseInterface
                     $Output[$ShopName][$SubShop][] = "$Cost";
                     $Output[$ShopName][$SubShop][] = "$BuyLimitNum";
                     $Output[$ShopName][$SubShop][] = "$IsHot";
+                    $Output[$ShopName][$SubShop][] = "{{!}}|Open = $ShopStart";
+                    $Output[$ShopName][$SubShop][] = "{{!}}|Close = $ShopEnd";
+                    $Output[$ShopName][$SubShop][] = "$HotStart";
+                    $Output[$ShopName][$SubShop][] = "$HotEnd";
                     $Output[$ShopName][$SubShop][] = "}}\n";
                     $Output[$ShopName][$SubShop][] = "\n";
                 break;
@@ -158,7 +181,7 @@ class Shop implements ParseInterface
             $FinalOutput[] = "{{-start-}}";
             $FinalOutput[] = "'''$ShopsName'''";
             $FinalOutput[] = "{{Shop";
-            $FinalOutput[] = "    |Name = Unite Battle Committee";
+            $FinalOutput[] = "    |Name = $ShopsName";
             $FinalOutput[] = "    |Shop = $ShopsName";
             $FinalOutput[] = "{{#tag:tabber|";
             foreach ($data as $SubsName => $SubData){
@@ -177,10 +200,10 @@ class Shop implements ParseInterface
         }
         //$Output[] = $String;
         if (!empty($IconArray)) {
-            $this->copyImages($IconArray,"Shop");
+            $this->getImages($IconArray,"Shop");
         }
         // (optional) finish progress bar
-        $this->saveExtra("Output\Shop.txt",implode("\n\n",$FinalOutput));
+        $this->saveExtra("Shop.txt",implode("\n\n",$FinalOutput));
 
         // save
         $this->io->text('Saving data ...');

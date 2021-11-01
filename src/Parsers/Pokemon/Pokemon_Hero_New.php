@@ -17,20 +17,24 @@ class Pokemon_Hero_New implements ParseInterface
         $Version = $this->getVer();
         // grab CSV files we want to use
         $LanguageMap_en = $this->languagemap("English");
-        $Pokemon_Base = $this->json("/$Version/Pokemon_Base");
-        $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
-        $Pokemon_Hero = $this->json("/$Version/Pokemon_Hero");
-        $Talent_Plan = $this->json("/$Version/Talent_Plan");
-        $Pokemon_Talent = $this->json("/$Version/Pokemon_Talent");
-        $Pokemon_Hero_Evolution = $this->json("/$Version/Pokemon_Hero_Evolution");
-        $Active_Skill_Hero = $this->json("/$Version/Active_Skill_Hero");
-        $Passive_skill = $this->json("/$Version/Passive_skill");
-        $Pokemon_StatGrowth = $this->json("/$Version/Pokemon_StatGrowth");
-        $SkillEffect_Group_Hero = $this->json("/$Version/SkillEffect_Group_Hero");
-        $FortifiedNormalAttack = $this->json("/$Version/FortifiedNormalAttack");
-        $SkillLogo = $this->json("/$Version/SkillLogo");
-        $InherentPropertyDesc = $this->json("/$Version/InherentPropertyDesc");
-        $ClientTagRaw = $this->json("/$Version/ClientTag");
+        $Pokemon_Base = $this->json("Pokemon_Base");
+        $OutSideItem_Base = $this->json("OutSideItem_Base");
+        $Pokemon_Hero = $this->json("Pokemon_Hero");
+        $Talent_Plan_Raw = $this->json("Talent_Plan");
+        foreach($Talent_Plan_Raw as $id => $data){
+            $Key = $data['GroupId'];
+            $Talent_Plan[$Key][$id] = $data;
+        }
+        $Pokemon_Talent = $this->json("Pokemon_Talent");
+        $Pokemon_Hero_Evolution = $this->json("Pokemon_Hero_Evolution");
+        $Active_Skill_Hero = $this->json("Active_Skill_Hero");
+        $Passive_skill = $this->json("Passive_skill");
+        $Pokemon_StatGrowth = $this->json("Pokemon_StatGrowth");
+        $SkillEffect_Group_Hero = $this->json("SkillEffect_Group_Hero");
+        $FortifiedNormalAttack = $this->json("FortifiedNormalAttack");
+        $SkillLogo = $this->json("SkillLogo");
+        $InherentPropertyDesc = $this->json("InherentPropertyDesc");
+        $ClientTagRaw = $this->json("ClientTag");
         foreach($ClientTagRaw as $data){
             $Tag = $data['InGameKey'];
             $ClientTag[$Tag] = $data;
@@ -72,10 +76,6 @@ class Pokemon_Hero_New implements ParseInterface
             } else {
                 $NameRemark = $LanguageMap_en[$Base['NameRemark']];
             }
-            $Released = "";
-            if ($Base['HideInBox'] === true){
-                $Released = "|Unreleased = yes";
-            }
             $Tags = "";
             foreach($Base['Tag'] as $i => $Tag){
                 $No = $i + 1;
@@ -89,25 +89,36 @@ class Pokemon_Hero_New implements ParseInterface
             foreach($PassiveIDGroup as $PassiveID){
                 if ($PassiveID === 0) continue;
                 $PassiveData = $Passive_skill[$PassiveID];
-                $PassiveName = $LanguageMap_en[$PassiveData['Name']];
                 if (empty($PassiveData['Name'])) continue;
+                $PassiveName = $LanguageMap_en[$PassiveData['Name']];
                 $PassiveDesc = $LanguageMap_en[$PassiveData['Desc']];
                 $PassiveIcon = $PassiveData['IconPath'];
-                $PassiveCD = $PassiveData['PassiveColdDown'];
+                $PassiveCD = "";
+                if (!Empty($PassiveData['PassiveColdDown'])){
+                    $PassiveCD = $PassiveData['PassiveColdDown'];
+                }
                 $PassiveSkillId = $PassiveData['PassiveSkillId'];
                 $RefOut = [];
                 foreach($PassiveData['RefEffectGroupIds'] as $RefEffectID){
                     if ($RefEffectID === 0) continue;
                     if (empty($SkillEffect_Group_Hero[$RefEffectID])) continue;
                     $RefEffect = $SkillEffect_Group_Hero[$RefEffectID];
-                    if ($RefEffect['Duration'] > 0){
+                    if (!empty($RefEffect['Duration'])){
                         $Duration = " for : ".$RefEffect['Duration'] / 1000 ."s";
                     } else {
                         $Duration = "";
                     }
                     foreach($RefEffect['SkillEffect'] as $SkillEffect){
-                        if ($SkillEffect['Type'] === 0) continue;
-                        $RefOut[] = $this->getSkillEffect($SkillEffect['Type'], $SkillEffect, $RefEffect['SubEffectType'],$RefEffect['GrowType'])."$Duration";
+                        if (empty($SkillEffect['Type'])) continue;
+                        $SubEff = "";
+                        if (!empty($RefEffect['subEffectType'])){
+                            $SubEff = $RefEffect['subEffectType'];
+                        }
+                        $GrowType = "";
+                        if (!empty($RefEffect['GrowType'])){
+                            $GrowType = $RefEffect['GrowType'];
+                        }
+                        $RefOut[] = $this->getSkillEffect($SkillEffect['Type'], $SkillEffect, $SubEff,$GrowType,$Duration);
                     }
                 }
                 $RefImp = implode("\n",$RefOut);
@@ -365,9 +376,9 @@ class Pokemon_Hero_New implements ParseInterface
             $BaseSpecAttack = $Pokemon_Hero[$MainUnitId]['BaseSpecAttack'];
             //Rates
             $BaseSupportEnergyRate = $Pokemon_Hero[$MainUnitId]['BaseSupportEnergyRate'] / 1000 ."s";
-            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['AttackFrequency'] / 1000 ."s";
+            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / 1000 ."s";
             $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
-            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitId]['AttackFrequency'] / $PropertyNoDiv;
+            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / $PropertyNoDiv;
 
             $CardIcon = $Base['PokemonCard']; //Stone Icon (Shop)
             $DefaultHeldItem = [];
@@ -568,12 +579,12 @@ class Pokemon_Hero_New implements ParseInterface
         //if (!empty($SkillIconArray)) {
         //    $this->copyImages($SkillIconArray,"Pokemon_Skill");
         //}
-        
+        //https://image.pokemon-unitepgame.com/Default/Pokemon/Growth_Whole/
         // (optional) finish progress bar
         $this->saveExtra("Pokemon_Hero.txt",implode("\n\n",$Output));
         $this->saveExtra("Pokemon_Skill.txt",implode("\n\n",$SkillArray));
         //$this->saveExtra("Pokemon_Growth.txt",implode("\n\n",$StatsTables));
-        //$this->saveExtra("Output\Pokemon_Hero.txt",implode("\n\n",$Output));
+        $this->saveExtra("Pokemon_Hero.txt",implode("\n\n",$Output));
 
         // save
         $this->io->text('Saving data ...');

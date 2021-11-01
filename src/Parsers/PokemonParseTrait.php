@@ -13,6 +13,7 @@ use Monolog\Handler\StreamHandler;
 use PDO;
 use Symfony\Component\VarDumper\VarDumper;
 
+
 trait PokemonParseTrait
 {
     /** @var SymfonyStyle */
@@ -29,8 +30,9 @@ trait PokemonParseTrait
     public function json($filename,$key = "")
     {
         $ini = parse_ini_file('src/Parsers/config.ini');
-        $Resources = str_replace("cache","Resources",$ini['Cache']);
-        $JSON = json_decode(file_get_contents("$Resources\PokemonUniteApi\ProtoApi/$filename.json"),true); 
+        $Resources = $ini['PokePath'];
+        $Version = $ini['PokePatch'];
+        $JSON = json_decode(file_get_contents("$Resources/$Version\output\Databins_JSON/databin_$filename.json"),true); 
         
         foreach($JSON as $id => $data){
             if (!empty($key)){
@@ -45,17 +47,18 @@ trait PokemonParseTrait
     public function languagemap($lang)
     {
         $ini = parse_ini_file('src/Parsers/config.ini');
-        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $Resources = $ini['PokePath'];
         $Version = $ini['PokePatch'];
-        $filename = "E:\Users\user\Desktop\FF14 Wiki GE\Pokemon Unite Versions/$Version\output/LanguageMap\LanguageMap_$lang.json";
 
-        $handle = file_get_contents($filename); 
+        $handle = file_get_contents("$Resources/$Version\output\LanguageMap/LanguageMap_$lang.json"); 
         $LanguageMap = json_decode($handle,true);
         return $LanguageMap;
     }
-    function timesplit($Time){
+    function timesplit($Timeraw){
+        $Time = str_split($Timeraw,2);
         return "".$Time[3]."/".$Time[2]."/".$Time[0]."".$Time[1]."";
     }
+
     public function copyImages($IconArray,$SubFolder)
     {
         $ini = parse_ini_file('src/Parsers/config.ini');
@@ -125,6 +128,110 @@ trait PokemonParseTrait
                     var_dump($value." - Missing");
                 }
             }
+        }
+        return null;
+    }
+    public function getImagesURL($Imagename){
+        $URL = "https://image.pokemon-unitepgame.com/Default/";
+        switch (true) {
+            case (stripos($Imagename,"t_Banner")!==false):
+                return "$URL/Mall/Banner/";
+            break;
+            case (stripos($Imagename,"t_Bag_")!==false):
+                return "$URL/Mall/Player/Bag/";
+            break;
+            case (stripos($Imagename,"t_Bottom")!==false):
+                return "$URL/Mall/Player/Bottom/";
+            break;
+            case (stripos($Imagename,"t_Foot")!==false):
+                return "$URL/Mall/Player/Foot/";
+            break;
+            case (stripos($Imagename,"t_Hair")!==false):
+                return "$URL/Mall/Player/Hair/";
+            break;
+            case (stripos($Imagename,"t_Suit")!==false):
+                return "$URL/Mall/Player/Suit/";
+            break;
+            case (stripos($Imagename,"t_Hand")!==false):
+                return "$URL/Mall/Player/Hand/";
+            break;
+            case (stripos($Imagename,"t_Hat")!==false):
+                return "$URL/Mall/Player/Hat/";
+            break;
+            case (stripos($Imagename,"t_Outerwear")!==false):
+                return "$URL/Mall/Player/Outerwear/";
+            break;
+            case (stripos($Imagename,"t_Socks")!==false):
+                return "$URL/Mall/Player/Socks/";
+            break;
+            case (stripos($Imagename,"t_Top")!==false):
+                return "$URL/Mall/Player/Top/";
+            break;
+            case (stripos($Imagename,"t_Growth_Whole")!==false):
+                return "$URL/Pokemon/Grwoth_Whole/";
+            break;
+            case (stripos($Imagename,"t_Tachie")!==false):
+                return "$URL/Pokemon/Tachie/";
+            break;
+            
+            default:
+                return "";
+            break;
+        }
+    }
+    public function getImages($IconArray,$SubFolder)
+    {
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $output = str_replace("cache","output",$ini['Cache']);
+        $PokePath = $ini['PokePath'];
+        $Version = $this->getVer();
+        $CheckDir = "$output\Pokemon_Unite/$Version/Images/$SubFolder/";
+        if (!is_dir($CheckDir)) {
+            mkdir($CheckDir, 0777, true);
+        }
+        $this->io->text('Copying Images ...');
+        $i = 0;
+        $IconArray = array_unique($IconArray);
+        $IconArrayCount = count($IconArray);
+        foreach ($IconArray as $value){
+            $i++;
+            $console = new ConsoleOutput();
+            $console = $console->section();
+            if (!file_exists("$output\Pokemon_Unite/$Version/Images/$SubFolder/$value.png")) {
+                // ensure output directory exists
+                $console->overwrite(" Saving Icon $value -> $i / $IconArrayCount");
+                $IconOutputDirectory = "$output\Pokemon_Unite/$Version/Images/$SubFolder/";
+                if (!is_dir($IconOutputDirectory)) {
+                    mkdir($IconOutputDirectory, 0777, true);
+                }
+                // copy the input icon to the output filename
+                //TODO: Add sprites
+                if(file_exists("$PokePath/1.2.1.8\output\Sprite/$value.png")){
+                    copy("$PokePath/1.2.1.8\output\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                } elseif(file_exists("$PokePath/$Version\output\Preload_CDN/$value.png")){
+                    copy("$PokePath/$Version\output\Preload_CDN/$value.png", $IconOutputDirectory."/$value.png");
+                } else {
+                    $URLRaw = $this->getImagesURL($value);
+                    $URL = $URLRaw."$value.png";
+                    $console->overwrite(" DOWNLOADING Icon $value -> $i / $IconArrayCount from $URL");
+                    if (!empty($URLRaw)){
+                        $headers = get_headers($URL, true);
+                        if (!empty($headers['Content-Length'])){
+                            file_put_contents($IconOutputDirectory."/$value.png", file_get_contents($URL));
+                            copy($IconOutputDirectory."/$value.png", "$PokePath/$Version\output\Preload_CDN/$value.png");
+                        } else {
+                            $console->overwrite("ICON $value is missing URL Tag");
+                            $MissingIconArray[] = $value;
+                        }
+                    } else {
+                        $console->overwrite("ICON $value is missing URL Tag");
+                        $MissingIconArray[] = $value;
+                    }
+                }
+            }
+        }
+        if (!empty($MissingIconArray)){
+            var_dump($value." - Missing");
         }
         return null;
     }
@@ -616,6 +723,38 @@ trait PokemonParseTrait
             case 15:
                 return "Headwear";
             break;
+        }
+    }
+    /**
+     * Check if name is in client  tag or languagemap
+     */
+    public function getLangTag($Name, $LanguageMap, $ClientTag){
+        if (!empty($ClientTag[$Name])){
+            $LangMapName = $LanguageMap[$ClientTag[$Name]['MsKey']];
+            if (strpos($LangMapName,"{0}") !== false){
+                $Tag0 = $LanguageMap[$ClientTag[$Name]["TagId"][0]];
+                $LangMapName = str_replace("{0}",$Tag0,$LangMapName);
+            }
+            if (strpos($LangMapName,"{1}") !== false){
+                $Tag0 = $LanguageMap[$ClientTag[$Name]["TagId"][1]];
+                $LangMapName = str_replace("{1}",$Tag0,$LangMapName);
+            }
+            if (strpos($LangMapName,"{2}") !== false){
+                $Tag0 = $LanguageMap[$ClientTag[$Name]["TagId"][2]];
+                $LangMapName = str_replace("{2}",$Tag0,$LangMapName);
+            }
+            if (strpos($LangMapName,"{3}") !== false){
+                $Tag0 = $LanguageMap[$ClientTag[$Name]["TagId"][3]];
+                $LangMapName = str_replace("{3}",$Tag0,$LangMapName);
+            }
+            if (strpos($LangMapName,"{Link}") !== false){
+                $Tag0 = $LanguageMap[$ClientTag[$Name]["TagId"][0]];
+                $LangMapName = str_replace("{Link}",$Tag0,$LangMapName);
+            }
+            return $LangMapName;
+        }
+        if (!empty($LanguageMap[$Name])){
+            return $LanguageMap[$Name];
         }
     }
     /**
@@ -1355,6 +1494,7 @@ trait PokemonParseTrait
                 return "";
             break;
         }
+
 //         PB_SkillFunc_Type_PhysHurt
 // PB_SkillFunc_Type_MagicHurt
 // PB_SkillFunc_Type_RealHurt
@@ -1440,4 +1580,112 @@ trait PokemonParseTrait
 // !PB_SkillFunc_Type_TransferDamage
 
     }
+    /** ENUMS */
+    public function PB_ENUM_RES_SHOP_TYPE($Num){
+        $Enum = array(
+            0 => "Invalid",
+            1 => "Avatar",
+            2 => "Candys",
+            3 => "Paster",
+            4 => "BeautyShop",
+            5 => "GeneralStore",
+            6 => "GiftStore",
+            7 => "GemStore",
+            8 => "Suit",
+            9 => "FragmentAvatar",
+            10 => "FragmentPaster",
+            11 => "GiftPack",
+        );
+        return $Enum[$Num];
+    }
+    
+    public function PB_ENUM_RES_OUTSIDEITEM_TYPE($Num){
+        $Enum = array(
+            0 => "Invalid",
+            1 => "Common",
+            2 => "Chest",
+            3 => "Cookies",
+            4 => "Pokecoins",
+            5 => "Coupons",
+            6 => "License",
+            7 => "Bpexp",
+            8 => "Acntexp",
+            9 => "Pasterfragment",
+            10 => "Avatarfragment",
+            11 => "Held Item",
+            12 => "Traineritem",
+            13 => "Renamecard",
+            14 => "Optionalchest",
+            15 => "Voucher",
+            16 => "Pokemonavatarvoucher",
+            17 => "Energyaccelerate",
+            18 => "Energypaycapacity",
+            19 => "Pastertimelimited",
+            20 => "LimitedPokemonLicense",
+            21 => "Avatartimelimited",
+            22 => "Multibuff",
+            23 => "Activationcode",
+            24 => "Pokemontimelimited",
+            25 => "HeldItemMax"
+        );
+        return $Enum[$Num];
+    }
+    
+    public function PB_ENUM_RES_OUTSIDEITEM_QUALITY($Num){
+        $Enum = array(
+            0 => "Invalid",
+            1 => "White",
+            2 => "Green",
+            3 => "Blue",
+            4 => "Purple",
+        );
+        return $Enum[$Num];
+    }
+    
+    public function PB_ENUM_RES_OUTSIDEITEM_CATEGORY($Num){
+        $Enum = array(
+            0 => "Invalid",
+            1 => "Candy",
+            2 => "Consume",
+            3 => "Giftpack",
+            4 => "Other",
+            5 => "Held Item",
+            6 => "Trainer Item",
+        );
+        return $Enum[$Num];
+    }
+
+    public function PB_ENUM_RES_AVATAR_SLOT_TYPE($Num){
+        $Enum = array(
+            0 => "Invalid",
+            1 => "Shirt",
+            2 => "Jackets",
+            3 => "Bottoms",
+            4 => "Bag",
+            5 => "Gloves",
+            6 => "Pupil",
+            7 => "Hat",
+            8 => "Socks",
+            9 => "Shoes",
+            10 => "Suit",
+            11 => "Face",
+            12 => "Hair",
+            13 => "Hair Color",
+            14 => "Overalls",
+            15 => "Headwear",
+        );
+        return $Enum[$Num];
+    }
+
+    public function PB_ENUM_RES_BUY_LIMIT_TYPE($Num){
+        $Enum = array(
+            0 => "Invalid",
+            1 => "a day.",
+            2 => "a week.",
+            3 => "",
+            4 => "Max",
+        );
+        return $Enum[$Num];
+    }
+
 }

@@ -16,11 +16,16 @@ class HeldItemLevelUpDesign implements ParseInterface
     {
         // grab CSV files we want to use
         $Version = $this->getVer();
-        $LanguageMap_en = $this->languagemap("en");
+        $LanguageMap_en = $this->languagemap("English");
 
-        $HeldItemLevelUpDesign = $this->json("$Version/HeldItemLevelUpDesign");
-        $SkillEffect_Group_Monster = $this->json("$Version/SkillEffect_Group_Monster");
-        $InherentPropertyDesc = $this->json("$Version/InherentPropertyDesc");
+        $HeldItemLevelUpDesign = $this->json("HeldItemLevelUpDesign");
+        $SkillEffect_Group_Monster = $this->json("SkillEffect_Group_Monster");
+        $InherentPropertyDesc = $this->json("InherentPropertyDesc");
+        $ClientTagRaw = $this->json("ClientTag");
+        foreach($ClientTagRaw as $data){
+            $Tag = $data['InGameKey'];
+            $ClientTag[$Tag] = $data;
+        }
 
         // (optional) start a progress bar
         $IconArray = [];
