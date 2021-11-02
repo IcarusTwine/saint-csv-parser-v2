@@ -132,7 +132,7 @@ trait PokemonParseTrait
         return null;
     }
     public function getImagesURL($Imagename){
-        $URL = "https://image.pokemon-unitepgame.com/Default/";
+        $URL = "https://image.pokemon-unitepgame.com/Default";
         switch (true) {
             case (stripos($Imagename,"t_Banner")!==false):
                 return "$URL/Mall/Banner/";
@@ -168,7 +168,7 @@ trait PokemonParseTrait
                 return "$URL/Mall/Player/Top/";
             break;
             case (stripos($Imagename,"t_Growth_Whole")!==false):
-                return "$URL/Pokemon/Grwoth_Whole/";
+                return "$URL/Pokemon/Growth_Whole/";
             break;
             case (stripos($Imagename,"t_Tachie")!==false):
                 return "$URL/Pokemon/Tachie/";
@@ -216,7 +216,7 @@ trait PokemonParseTrait
                     $console->overwrite(" DOWNLOADING Icon $value -> $i / $IconArrayCount from $URL");
                     if (!empty($URLRaw)){
                         $headers = get_headers($URL, true);
-                        if (!empty($headers['Content-Length'])){
+                        if (strpos($headers[0],"404") == false){
                             file_put_contents($IconOutputDirectory."/$value.png", file_get_contents($URL));
                             copy($IconOutputDirectory."/$value.png", "$PokePath/$Version\output\Preload_CDN/$value.png");
                         } else {
@@ -231,7 +231,7 @@ trait PokemonParseTrait
             }
         }
         if (!empty($MissingIconArray)){
-            var_dump($value." - Missing");
+            var_dump($value." - MISSING FROM ALL SOURCES");
         }
         return null;
     }
