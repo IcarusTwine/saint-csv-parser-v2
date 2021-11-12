@@ -69,6 +69,8 @@ class Pokemon_Hero_New implements ParseInterface
             "Tackle+",
             "Sand Attack+",
             "Defense Curl+",
+            "Razor Leaf",
+            "Razor Leaf+",
         );
 
 
@@ -188,36 +190,71 @@ class Pokemon_Hero_New implements ParseInterface
                     } else {
                         continue;
                     }
-
+                    $SkillID = $TalentData['ActiveSkill'];
+                    $Range = $Active_Skill_Hero[$TalentData['ActiveSkill']]['IndicatorRange'] / 1000;
+                    $AffectRange = "0";
+                    if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'])){
+                        $AffectRange = $Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'] / 1000;
+                    }
+                    $Description = $this->getLangTag($Active_Skill_Hero[$TalentData['ActiveSkill']]['Desc'], $LanguageMap_en,$ClientTag);
+                    $CDTime = "0";
+                    if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['CDTime'])){
+                        $CDTime = $Active_Skill_Hero[$TalentData['ActiveSkill']]['CDTime'] / 1000;
+                    }
+                    $RefOut = [];
+                    foreach($Active_Skill_Hero[$TalentData['ActiveSkill']]['RefEffectGroupIds'] as $RefEffectID){
+                        if ($RefEffectID === 0) continue;
+                        if (empty($SkillEffect_Group_Hero[$RefEffectID])) continue;
+                        $RefEffect = $SkillEffect_Group_Hero[$RefEffectID];
+                        if (!empty($RefEffect['Duration'])){
+                            $Duration = " for : ".$RefEffect['Duration'] / 1000 ."s";
+                        } else {
+                            $Duration = "";
+                        }
+                        foreach($RefEffect['SkillEffect'] as $SkillEffect){
+                            if (empty($SkillEffect['Type'])) continue;
+                            $SubEff = "";
+                            if (!empty($RefEffect['subEffectType'])){
+                                $SubEff = $RefEffect['subEffectType'];
+                            }
+                            $GrowType = "";
+                            if (!empty($RefEffect['GrowType'])){
+                                $GrowType = $RefEffect['GrowType'];
+                            }
+                            $RefOut[] = $this->getSkillEffect($SkillEffect['Type'], $SkillEffect, $SubEff,$GrowType,$Duration);
+                        }
+                    }
+                    $SkillLogo_Type = $this->getLangTag($SkillLogo[$Active_Skill_Hero[$TalentData['ActiveSkill']]['SkillLogo'][0]]['Name'], $LanguageMap_en,$ClientTag);
                     $SkillString = "";
                     $SkillString .= "{{-start-}}\n";
                     $SkillString .= "'''$SkillName'''\n";
                     $SkillString .= "{{Pokemon Skill\n";
                     // $SkillString .= "$Released\n";
-                    // $SkillString .= "|Name = $SkillName\n";
+                    $SkillString .= "|Name = $SkillName\n";
                     // // FIX THIS  .= "|LastUpdate = $Version\n";
-                    // $SkillString .= "|Pokemon = $NameRemark\n";
-                    // $SkillString .= "|Icon = $IconPath\n";
-                    // $SkillString .= "|Type = $IconEffectType\n";
-                    // $SkillString .= "|Slot = $Slot\n";
-                    // $SkillString .= "|Icon_Tutorial = $TutIcon\n";
-                    // $SkillString .= "|Level = $TriggerLevel\n";
-                    // $SkillString .= "\n";
-                     $SkillString .= "|MoveType = $Type\n";
+                    $SkillString .= "|Pokemon = $NameRemark\n";
+                    $SkillString .= "|Icon = $IconPath\n";
+                    $SkillString .= "|Type = $SkillLogo_Type\n";
+                    //$SkillString .= "|Slot = $Slot\n";
+                    //$SkillString .= "|Icon_Tutorial = $TutIcon\n";
+                    $SkillString .= "|Level = $TriggerLevel\n";
+                    $SkillString .= "\n";
+                    $SkillString .= "|MoveType = $Type\n";
                     // $SkillString .= "|Target_Type = \n";
-                    // $SkillString .= "|Range = ".$Range."m\n";
-                    // $SkillString .= "|EffectRange = ".$AffectRange."m\n";
-                    // $SkillString .= "|Follow_Range = ".$MaxFollowDis."m\n";
-                    // $SkillString .= "|Description = $Description\n";
-                    // $SkillString .= "|Cooldown = ".$CDTime."s\n";
+                    $SkillString .= "|Range = ".$Range."m\n";
+                    $SkillString .= "|EffectRange = ".$AffectRange."m\n";
+                    //$SkillString .= "|Follow_Range = ".$MaxFollowDis."m\n";
+                    $SkillString .= "|Description = $Description\n";
+                    $SkillString .= "|Cooldown = ".$CDTime."s\n";
                     // $SkillString .= "|SkillID = $SkillLink\n";
                     // $SkillString .= "|PreviousSkillID = $PreviousSkillID\n";
                     // $SkillString .= "|Base_Skill = $Base_Skill\n";
                     // $SkillString .= "|Base_Skill_Icon  = $Base_Skill_Icon\n";
-                    // $SkillString .= "|RefStats =\n". implode("\n\n",$RefForm)."\n\n";
+                    $SkillString .= "|RefStats =\n". implode("\n\n",$RefOut)."\n\n";
                     //'$SkillString .= "|Desc = $SimpleDesc\n";
                     //$SkillString .= "|Property = $Property\n";
                     //$SkillString .= implode("\n",$RefStatOut)."\n";
+                    $SkillString .= "|ID = $SkillID\n";
                     $SkillString .= "}}\n";
                     $SkillString .= "{{-stop-}}\n";
                     $SkillArray[] = $SkillString;

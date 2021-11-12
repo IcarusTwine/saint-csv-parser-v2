@@ -1245,15 +1245,16 @@ class Quest2 implements ParseInterface
             }
 
 
-            $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
-            if (!empty($QuestFormat["Rewards"])){
-                foreach($QuestFormat["Rewards"] as $i){
-                    $LuaRewards[] = $i;
-                }
-            }
-            if (!empty($QuestFormat["Undefined"])){
-                $UndefinedArray[$LuaFile] = $QuestFormat["Undefined"];
-            }
+            // $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
+            // if (!empty($QuestFormat["Rewards"])){
+            //     foreach($QuestFormat["Rewards"] as $i){
+            //         $LuaRewards[] = $i;
+            //     }
+            // }
+            // if (!empty($QuestFormat["Undefined"])){
+            //     $UndefinedArray[$LuaFile] = $QuestFormat["Undefined"];
+            // }
+            $LuaFormat = $this->getLuaQuest3($LuaFile,$ArgArray,$QuestData,$CSVData);
             $HowToOut = "";
             if (!empty($HowToArray)){
                 $HowToOut = "|Unlocks Active Help = ".implode(",",array_unique($HowToArray));
@@ -1326,7 +1327,7 @@ class Quest2 implements ParseInterface
             //$QuestOutput .= "{{-start-}}\n";
             $QuestOutput .= "'''Loremonger:".$Quest["Name"]."$Addon'''\n";
             $QuestOutput .= "{{Check Loremonger}}\n";
-            $QuestOutput .= $QuestFormat['Lore']."\n";
+            $QuestOutput .= "$LuaFormat\n";
             $QuestOutput .= "{{-stop-}}\n";
             //$QuestOutput .= "{{-start-}}\n";
             //$QuestOutput .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
@@ -1359,7 +1360,7 @@ class Quest2 implements ParseInterface
         }
         $FinalOutInit = implode($FinalOutputInit);
         $this->saveExtra("_InitQuestNotes.txt",$FinalOutInit);
-        //$FinalOut = implode($FinalOutput);
+        $FinalOut = implode($FinalOutput);
         $SymbolChecklistOut = implode("\n",$SymbolChecklist);
         $QuestBattleChecklistOut = implode("\n",$QuestBattleChecklist);
         //$CheckList = implode("\n",$newlist);

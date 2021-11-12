@@ -1228,7 +1228,188 @@ trait CsvParseTrait
         $ifdata['pos'] = $_pos;
         return $ifdata;
     }
-    
+    /**
+     * Format dialogue for Quest Loremonger
+     */
+    public function getLuaQuest3($LuaName, $ArgArray, $QuestData, $CSVData) {
+        $Output = [];
+        $ENpcResidentCsv = $CSVData["ENpcResidentCsv"];
+        $ENpcBaseCsv = $CSVData["ENpcBaseCsv"];
+        $ScreenImageCsv = $CSVData["ScreenImageCsv"];
+        $HowToCsv = $CSVData["HowToCsv"];
+        $LogMessageCsv =$CSVData["LogMessageCsv"];
+        $BGMCsv = $CSVData["BGMCsv"];
+        $SECsv = $CSVData["SECsv"];
+        $LGBArray = $CSVData["LGBArray"];
+        $BadNames = $CSVData["BadNames"];
+        $LevelCsv = $CSVData["LevelCsv"];
+        $ArgArray["BGM_MUSIC_NO_MUSIC"] = "1";
+        $ArgArray["BGM_MUSIC_EVENT_MEETING"] = "19";
+        $IconArray = [];
+        $Luafolder = substr(explode('_', $LuaName)[1], 0, 3);
+        $debug = true;
+        $console = new ConsoleOutput();
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $Resources = str_replace("cache","Resources",$ini['Cache']);
+        $LuaFile = "$Resources/game_script/quest/{$Luafolder}/{$LuaName}.lua"; 
+        $folder = substr(explode('_', $LuaName)[1], 0, 3);
+        $textdata = $this->csv("quest/{$folder}/{$LuaName}");
+        $CsvTextArray = [];
+        foreach ($textdata->data as $key => $textdataCsv) {
+            $command = $textdataCsv["unknown_1"];
+            if(!empty($textdataCsv["unknown_2"])){
+                $argument = $textdataCsv["unknown_2"];
+                $CsvTextArray[$command] = $argument;
+            }
+        }
+        $codesolid = file_get_contents($LuaFile);
+        $codeexp = explode("L0_2.",$codesolid);
+        //get all scenes
+        $SceneArray = [];
+        foreach($codeexp as $chunks){
+            $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$chunks)))));
+            if (strpos($_lua[0],"OnScene") === false) continue;
+            if (preg_match('/OnScene(.*?)\(+/', $_lua[0], $match) == 1) {
+                $SceneNo = ltrim($match[1], '0');
+                if (empty($SceneNo)){
+                    $SceneNo = "0";
+                }
+                $SceneArray[] = $SceneNo;
+            }
+        }
+        $LastScene = end($SceneArray);
+        //potential names
+        foreach($ArgArray as $Arg){
+            if ($Arg > 1000000 && $Arg < 2000000){
+                $FullNameKey = str_replace(" ","",strtoupper($ENpcResidentCsv->at($Arg)['Singular']));
+                $PotentialNames[$FullNameKey] = $Arg;
+            }
+        }
+        $MenuStart = false;
+        foreach($codeexp as $chunk){
+            //tidy code up (explode then remove linebreaks, tabs)
+            $code = $chunk;
+            $_lua = explode("\n", trim(preg_replace('/\t+/', '', str_replace("\r","",str_replace("  ","",$code)))));
+            //get total lines for while
+            $_lines = count($_lua);
+            //set pos to the start
+            $_pos = 0;
+            $end = false;
+            if (strpos($_lua[0],"OnScene") === false) continue;
+            $ObjectArray = [];
+            $ObjectArray["L0_1"] = "Ignore";
+            $Speaker = "";
+            if($_pos < $_lines){
+                while($end === false) {
+                    if($_pos >= $_lines){
+                        break;
+                    };
+                    $Target = "";
+                    //get scene number
+                    if (strpos($_lua[$_pos],"OnScene")!==false){
+                        if (preg_match('/OnScene(.*?) +/', $_lua[$_pos], $match) == 1) {
+                            $SceneNo = ltrim($match[1], '0');
+                            if (empty($SceneNo)){
+                                $SceneNo = "0";
+                            }
+                        }                        
+                    }
+                    if (strpos($_lua[$_pos],"Menu")!==false){
+                        $Output[] = "}}Manual : {{color|red|Insert the correct Q & A's below into a table<br>then delete me";
+                        $Speaker = "";
+                    }
+                    if (strpos($_lua[$_pos],"QuestAccepted")!==false){
+                        $Output[] = "}}{{Loremnarrator|dialog=[[File:120001_hr1.png|820px|Quest Accepted]]";
+                    }
+                    if (strpos($_lua[$_pos],"QuestCompleted")!==false){
+                        $Output[] = "}}{{Loremnarrator|dialog=[[File:120002.png|820px|Quest Completed]]";
+                    }
+                    if (strpos($_lua[$_pos],"BeginCutScene")!==false){
+                        $Output[] = "}}{{LoremCS|start";
+                    }
+                    if (strpos($_lua[$_pos],"EndCutScene")!==false){
+                        $Output[] = "}}{{LoremCS|end";
+                    }
+                    if (strpos($_lua[$_pos],".TEXT_")!==false){
+                        $Text = explode(".",$_lua[$_pos])[1];
+                        $Speakercheck = explode("_",$Text)[3];
+                        $Find = $Speakercheck;
+                        //first search full name
+                        $TargetNameFound = false;
+                        $TargetNameSearch = $Speakercheck;
+                        foreach($PotentialNames as $PotentialName => $RealID){
+                            if ($TargetNameSearch === $PotentialName){
+                                $TargetNameFound = true;
+                                $Speakercheck = $PotentialName;
+                            }
+                        }
+                        //if the name is stil not found
+                        if ($TargetNameFound === false) {
+                            $TargetNameSearch = substr($Find, 0, 4);
+                            foreach($PotentialNames as $PotentialName => $RealID){
+                                if ($TargetNameSearch === $PotentialName){
+                                    $Speakercheck = $PotentialName;
+                                    $TargetNameFound = true;
+                                }
+                            }
+                        }
+                        //if the name is stil not found
+                        if ($TargetNameFound === false) {
+                            $TargetNameSearch = substr($Find, -6);
+                            foreach($PotentialNames as $PotentialName => $RealID){
+                                if (stripos($PotentialName,$TargetNameSearch) !== false){
+                                    $Speakercheck = $PotentialName;
+                                    $TargetNameFound = true;
+                                }
+                            }
+                        }
+                        if ($TargetNameFound === false) {
+                            $Speakercheck = $Speakercheck;
+                        }
+                        
+                        if ($Speakercheck === $Speaker){
+                            $Output[] = "----";
+                        } else {
+                            //new speaker
+                            $Speaker = $Speakercheck;
+                            $SpeakerFix = preg_replace('/[0-9]+/', '', $Speaker);
+                            $SpeakerFix = ucfirst(strtolower($SpeakerFix));
+                            if ($SpeakerFix === "Q"){
+                                $SpeakerFix = "Question?";
+                            }
+                            if ($SpeakerFix === "A"){
+                                $SpeakerFix = "Answer";
+                            }
+                            if ($SpeakerFix === "System"){
+                                $Output[] = "}}{{Loremsystemtalk|dialog=";
+                            } elseif (!empty($CsvTextArray[$Text])) {
+                                if (preg_match('/\(\-(.*?)\-\)+/', $CsvTextArray[$Text], $match) == 1) {
+                                    $Output[] = "}}{{LoremSPquote|$SpeakerFix|link=y|";
+                                } else {
+                                    $Output[] = "}}{{Loremquote|$SpeakerFix|link=y|";
+                                }
+                            }
+                        }
+                        if (!empty($CsvTextArray[$Text])) {
+                            if (preg_match('/\(\-(.*?)\-\)+/', $CsvTextArray[$Text], $match) == 1) {
+                                $Output[] = str_replace($match[0],"",$CsvTextArray[$Text]);
+                            } else {
+                                $Output[] = $CsvTextArray[$Text];
+                            }
+                        }
+                    }
+
+                    $_pos++;
+                }
+            }
+        }
+        if (!empty($Output)){
+            $Output[0] = str_replace("}}{{","{{",$Output[0]);
+            return str_replace("\n}}","}}",implode("\n",$Output)."\n}}");
+        } else {
+            return "empty";
+        }
+    }
     
     /**
      * Format dialogue for Quest Loremonger
@@ -1502,8 +1683,11 @@ trait CsvParseTrait
                             }
                             if ($Function === "CreateCharacter"){
                                 $ExpVar = explode(" = ",$_lua[$_pos]);
-                                $ObjectArray[$ExpVar[0]] = $ArgArray[$Variables[1]];
+                                if (!empty($ArgArray[$Variables[1]])){
+                                    $ObjectArray[$ExpVar[0]] = $ArgArray[$Variables[1]];
+                                }
                             }
+                            $NewCharacter = "";
                             if ($Function === "BindCharacter"){
                                 $ExpVar = explode(" = ",$_lua[$_pos]);
                                 if ($Variables[1] > 1030000){//level
@@ -1707,6 +1891,8 @@ trait CsvParseTrait
                                 //var_dump($Line['Variables']);
                                 if ($SpeakerId === "Target"){
                                     $Speaker = "";
+                                }elseif ($SpeakerId === "player"){
+                                    $Speaker = "Player";
                                 } else {
                                     $Speaker = $this->NameFormat($SpeakerId, $ENpcResidentCsv, $ENpcBaseCsv, $LGBArray["PlaceName"][$SpeakerId], $LGBArray, $BadNames)['Name'];
                                 }
@@ -1721,6 +1907,10 @@ trait CsvParseTrait
             if ($MenuCheck === false){
                 switch ($Line["Function"]) {
                     case 'Talk':
+                        if (strpos($Line['Variables'][3],"[")!== false){
+                            $Line['Variables'][3] = str_replace("]","",explode("[",$Line['Variables'][3])[1]);
+                        }
+                        if (empty($CsvTextArray[$Line['Variables'][3]])) continue; //TODO: NEED TO FIX
                         $LinedArray .= $CsvTextArray[$Line['Variables'][3]]."\n----\n";
                     break;
                     case 'QuestAccepted':
@@ -1781,6 +1971,7 @@ trait CsvParseTrait
                     break;
                     case 'LogMessage':
                     case 'LogMessageContentOpen': // need to check
+                        if (empty($Line['Variables'][1])) continue;
                         if (!empty($ArgArray[$Line['Variables'][1]])){
                             $LogMessage = $LogMessageCsv->at($ArgArray[$Line['Variables'][1]])['Text'];
                             if(strpos($LogMessage,"<") !== false){
@@ -1789,20 +1980,20 @@ trait CsvParseTrait
                             $LinedArray .= "{{Loremlogmessage|dialog=$LogMessage}}\n";
                         }
                     break;
-                    case 'Menu':
-                        if ($Line["Speaker"] != "If(End)"){
-                            if ($MenuCheck === false) {
-                                $MenuCheck = true;
-                                $ResponseNo = 1;
-                                $TempQuestion = $Line["Variables"][1];
-                                $MenuArray["Question"] = $CsvTextArray[$TempQuestion];
-                                foreach(range(2,99) as $i){
-                                    if (empty($Line["Variables"][$i])) break;
-                                    $MenuArray["Answers"][] = $CsvTextArray[$Line["Variables"][$i]];
-                                }
-                            }
-                        }
-                    break;
+                    //case 'Menu':
+                    //    if ($Line["Speaker"] != "If(End)"){
+                    //        if ($MenuCheck === false) {
+                    //            $MenuCheck = true;
+                    //            $ResponseNo = 1;
+                    //            $TempQuestion = $Line["Variables"][1];
+                    //            $MenuArray["Question"] = $CsvTextArray[$TempQuestion];
+                    //            foreach(range(2,99) as $i){
+                    //                if (empty($Line["Variables"][$i])) break;
+                    //                $MenuArray["Answers"][] = $CsvTextArray[$Line["Variables"][$i]];
+                    //            }
+                    //        }
+                    //    }
+                    //break;
                     default:
                         $LinedArray .= $Line["Function"]."\n----\n";
                         $UndefinedFunction[] = $Line["Function"];

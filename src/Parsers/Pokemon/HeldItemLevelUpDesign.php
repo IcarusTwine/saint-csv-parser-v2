@@ -18,7 +18,12 @@ class HeldItemLevelUpDesign implements ParseInterface
         $Version = $this->getVer();
         $LanguageMap_en = $this->languagemap("English");
 
-        $HeldItemLevelUpDesign = $this->json("HeldItemLevelUpDesign");
+        $HeldItemLevelUpDesignraw = $this->json("HeldItemLevelUpDesign");
+        foreach($HeldItemLevelUpDesignraw as $data){
+            $Tag = $data['GroupId'];
+            $Tag2 = $data['Level'];
+            $HeldItemLevelUpDesign[$Tag][$Tag2] = $data;
+        }
         $SkillEffect_Group_Monster = $this->json("SkillEffect_Group_Monster");
         $InherentPropertyDesc = $this->json("InherentPropertyDesc");
         $ClientTagRaw = $this->json("ClientTag");
