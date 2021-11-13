@@ -1339,7 +1339,7 @@ class Quest2 implements ParseInterface
             //$QuestOutput .= "|Notes =\n";
             //$QuestOutput .= "}}\n";
             //$QuestOutput .= "{{-stop-}}\n";
-
+            if ($LuaFormat === "empty") continue;
             if (strpos($QuestOutput,"<")!== false){
                 $SymbolChecklist[] = "".$Quest["Name"]."".$Addon."";
             }

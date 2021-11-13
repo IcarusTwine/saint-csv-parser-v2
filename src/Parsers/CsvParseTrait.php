@@ -1319,16 +1319,16 @@ trait CsvParseTrait
                         $Speaker = "";
                     }
                     if (strpos($_lua[$_pos],"QuestAccepted")!==false){
-                        $Output[] = "}}{{Loremnarrator|dialog=[[File:120001_hr1.png|820px|Quest Accepted]]";
+                        $Output[] = "}}\n{{Loremnarrator|dialog=[[File:120001_hr1.png|820px|Quest Accepted]]";
                     }
                     if (strpos($_lua[$_pos],"QuestCompleted")!==false){
-                        $Output[] = "}}{{Loremnarrator|dialog=[[File:120002.png|820px|Quest Completed]]";
+                        $Output[] = "}}\n{{Loremnarrator|dialog=[[File:120002.png|820px|Quest Completed]]";
                     }
                     if (strpos($_lua[$_pos],"BeginCutScene")!==false){
-                        $Output[] = "}}{{LoremCS|start";
+                        $Output[] = "}}\n{{LoremCS|start";
                     }
                     if (strpos($_lua[$_pos],"EndCutScene")!==false){
-                        $Output[] = "}}{{LoremCS|end";
+                        $Output[] = "}}\n{{LoremCS|end";
                     }
                     if (strpos($_lua[$_pos],".TEXT_")!==false){
                         $Text = explode(".",$_lua[$_pos])[1];
@@ -1381,12 +1381,12 @@ trait CsvParseTrait
                                 $SpeakerFix = "Answer";
                             }
                             if ($SpeakerFix === "System"){
-                                $Output[] = "}}{{Loremsystemtalk|dialog=";
+                                $Output[] = "}}\n{{Loremsystemtalk|dialog=";
                             } elseif (!empty($CsvTextArray[$Text])) {
                                 if (preg_match('/\(\-(.*?)\-\)+/', $CsvTextArray[$Text], $match) == 1) {
-                                    $Output[] = "}}{{LoremSPquote|$SpeakerFix|link=y|";
+                                    $Output[] = "}}\n{{LoremSPquote|$SpeakerFix|link=y|";
                                 } else {
-                                    $Output[] = "}}{{Loremquote|$SpeakerFix|link=y|";
+                                    $Output[] = "}}\n{{Loremquote|$SpeakerFix|link=y|";
                                 }
                             }
                         }
@@ -1403,9 +1403,18 @@ trait CsvParseTrait
                 }
             }
         }
+        
+        $QuestStartLocation = $QuestData["QuestStartLocation"];
+        $Previous1 = $QuestData["Previous1"];
+        $Previous2 = $QuestData["Previous2"];
+        $QuestName = $QuestData["Name"];
         if (!empty($Output)){
             $Output[0] = str_replace("}}{{","{{",$Output[0]);
-            return str_replace("\n}}","}}",implode("\n",$Output)."\n}}");
+            $OutText = "<noinclude>
+            {{Lorempageturn|prev=$Previous1|prev2=$Previous2|next=}}
+            {{Loremquestheader|$QuestName|Mined=X|Summary=}}</noinclude>
+            {{LoremLoc|Location=$QuestStartLocation";
+            return "$OutText".str_replace("\n}}","}}",implode("\n",$Output)."\n}}");
         } else {
             return "empty";
         }

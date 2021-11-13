@@ -347,116 +347,116 @@ class Pokemon_Hero_New implements ParseInterface
             $ReccomendedEquipOut = implode("\n",$DefaultHeldItem);
             $Evo = implode("\n",$EvolutionLevels);
            
-            // $StatId = $Pokemon_Hero[$MainUnitId]['StatId'];
-            // if (!empty($Pokemon_StatGrowth[$StatId])){
+            $StatId = $Pokemon_Hero[$MainUnitId]['StatId'];
+            if (!empty($Pokemon_StatGrowth[$StatId])){
 
-            //     $StatTable = [];
-            //     $StatTable[] = "{{-start-}}";
-            //     $StatTable[] = "'''$Name/Growth'''";
-            //     $StatTable[] = "{| class=\"wikitable\"";
-            //     $HP = $BaseHp;
-            //     $HPRecovery = $BaseHpRecover;
-            //     $Attack = $BaseAttack;
-            //     $Def = $BaseDef;
-            //     $SpAtk = $BaseSpecAttack;
-            //     $SpDef = $BaseSpecDef;
-            //     $AtkSpeed = $BaseAttackFrequency;
-            //     $Speed = $BaseMoveSpeed;
-            //     $CritHitPer = 0;
-            //     $CritHitDm = 0;
-            //     $CD = 0;
-            //     $StatTable[] = "! Level !!HP!!HP Recovery!!Attack!!Def!!Sp.Atk!!Sp.Def!!Attack Speed!!Speed!!Crit-Hit %!!Cooldown";
+                $StatTable = [];
+                $StatTable[] = "{{-start-}}";
+                $StatTable[] = "'''$NameRemark/Growth'''";
+                $StatTable[] = "{| class=\"wikitable\"";
+                $HP = $BaseHp;
+                $HPRecovery = $BaseHpRecover;
+                $Attack = $BaseAttack;
+                $Def = $BaseDef;
+                $SpAtk = $BaseSpecAttack;
+                $SpDef = $BaseSpecDef;
+                $AtkSpeed = $BaseAttackFrequency;
+                $Speed = $BaseMoveSpeed;
+                $CritHitPer = 0;
+                $CritHitDm = 0;
+                $CD = 0;
+                $StatTable[] = "! Level !!HP!!HP Recovery!!Attack!!Def!!Sp.Atk!!Sp.Def!!Attack Speed!!Speed!!Crit-Hit %!!Cooldown";
 
-            //     foreach($Pokemon_StatGrowth[$StatId] as $StatGrowth){
+                foreach($Pokemon_StatGrowth[$StatId] as $StatGrowth){
 
-            //         $PropertyNoDiv = $InherentPropertyDesc[1]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[1]['AllowFloatNum'] === false){
-            //         $HP = floor($HP + $StatGrowth['Property'][0] / $PropertyNoDiv);
-            //         } else {
-            //             $HP = $HP + $StatGrowth['Property'][0] / $PropertyNoDiv;
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[1]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[1]['AllowFloatNum'])){
+                    $HP = floor($HP + $StatGrowth['Property'][0] / $PropertyNoDiv);
+                    } else {
+                        $HP = $HP + $StatGrowth['Property'][0] / $PropertyNoDiv;
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[2]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[2]['AllowFloatNum'] === false){
-            //             $HPRecovery = floor($HPRecovery + $StatGrowth['Property'][1] / $PropertyNoDiv);
-            //         } else {
-            //             $HPRecovery = $HPRecovery + $StatGrowth['Property'][1] / $PropertyNoDiv;
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[2]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[2]['AllowFloatNum'])){
+                        $HPRecovery = floor($HPRecovery + $StatGrowth['Property'][1] / $PropertyNoDiv);
+                    } else {
+                        $HPRecovery = $HPRecovery + $StatGrowth['Property'][1] / $PropertyNoDiv;
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[3]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[3]['AllowFloatNum'] === false){
-            //             $Attack = floor($Attack + $StatGrowth['Property'][2] / $PropertyNoDiv);
-            //         } else {
-            //             $Attack = $Attack + $StatGrowth['Property'][2] / $PropertyNoDiv;
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[3]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[3]['AllowFloatNum'])){
+                        $Attack = floor($Attack + $StatGrowth['Property'][2] / $PropertyNoDiv);
+                    } else {
+                        $Attack = $Attack + $StatGrowth['Property'][2] / $PropertyNoDiv;
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[4]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[4]['AllowFloatNum'] === false){
-            //             $Def = floor($Def + $StatGrowth['Property'][3] / $PropertyNoDiv);
-            //         }else {
-            //             $Def = $Def + $StatGrowth['Property'][3] / $PropertyNoDiv;
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[4]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[4]['AllowFloatNum'])){
+                        $Def = floor($Def + $StatGrowth['Property'][3] / $PropertyNoDiv);
+                    }else {
+                        $Def = $Def + $StatGrowth['Property'][3] / $PropertyNoDiv;
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[5]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[5]['AllowFloatNum'] === false){
-            //             $SpAtk = floor($SpAtk + $StatGrowth['Property'][4] / $PropertyNoDiv);
-            //         } else {
-            //             $SpAtk = $SpAtk + $StatGrowth['Property'][4] / $PropertyNoDiv;
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[5]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[5]['AllowFloatNum'])){
+                        $SpAtk = floor($SpAtk + $StatGrowth['Property'][4] / $PropertyNoDiv);
+                    } else {
+                        $SpAtk = $SpAtk + $StatGrowth['Property'][4] / $PropertyNoDiv;
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[6]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[6]['AllowFloatNum'] === false){
-            //             $SpDef = floor($SpDef + $StatGrowth['Property'][5] / $PropertyNoDiv);
-            //         } else {
-            //             $SpDef = $SpDef + $StatGrowth['Property'][5] / $PropertyNoDiv;
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[6]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[6]['AllowFloatNum'])){
+                        $SpDef = floor($SpDef + $StatGrowth['Property'][5] / $PropertyNoDiv);
+                    } else {
+                        $SpDef = $SpDef + $StatGrowth['Property'][5] / $PropertyNoDiv;
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[7]['AllowFloatNum'] === false){
-            //             $AtkSpeed = floor($AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv));
-            //         } else {
-            //             $AtkSpeed = $AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv);
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[7]['AllowFloatNum'])){
+                        $AtkSpeed = floor($AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv));
+                    } else {
+                        $AtkSpeed = $AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv);
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[8]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[8]['AllowFloatNum'] === false){
-            //             $Speed = floor($Speed + ($StatGrowth['Property'][7] / $PropertyNoDiv));
-            //         } else {
-            //             $Speed = $Speed + ($StatGrowth['Property'][7] / $PropertyNoDiv);
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[8]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[8]['AllowFloatNum'])){
+                        $Speed = floor($Speed + ($StatGrowth['Property'][7] / $PropertyNoDiv));
+                    } else {
+                        $Speed = $Speed + ($StatGrowth['Property'][7] / $PropertyNoDiv);
+                    }
     
                     
-            //         $PropertyNoDiv = $InherentPropertyDesc[14]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[14]['AllowFloatNum'] === false){
-            //             $CritHitPer = floor($CritHitPer + $StatGrowth['Property'][13] / $PropertyNoDiv); // / 100
-            //         } else {
-            //             $CritHitPer = $CritHitPer + $StatGrowth['Property'][13] / $PropertyNoDiv; // / 100
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[14]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[14]['AllowFloatNum'])){
+                        $CritHitPer = floor($CritHitPer + $StatGrowth['Property'][13] / $PropertyNoDiv); // / 100
+                    } else {
+                        $CritHitPer = $CritHitPer + $StatGrowth['Property'][13] / $PropertyNoDiv; // / 100
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[15]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[15]['AllowFloatNum'] === false){
-            //             $CritHitDm = floor($CritHitDm + $StatGrowth['Property'][14] / $PropertyNoDiv);
-            //         } else {
-            //             $CritHitDm = $CritHitDm + $StatGrowth['Property'][14] / $PropertyNoDiv;
-            //         }
+                    $PropertyNoDiv = $InherentPropertyDesc[15]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[15]['AllowFloatNum'])){
+                        $CritHitDm = floor($CritHitDm + $StatGrowth['Property'][14] / $PropertyNoDiv);
+                    } else {
+                        $CritHitDm = $CritHitDm + $StatGrowth['Property'][14] / $PropertyNoDiv;
+                    }
     
-            //         $PropertyNoDiv = $InherentPropertyDesc[17]['FormatDivisor'];
-            //         if ($InherentPropertyDesc[17]['AllowFloatNum'] === false){
-            //             $CD = $CD + $StatGrowth['Property'][16] / $PropertyNoDiv; // / 1000
-            //         } else {
-            //             $CD = floor($CD + $StatGrowth['Property'][16] / $PropertyNoDiv); // / 1000
-            //         }
-            //         //$AtkSpeed_S =  round($BaseAttackFrequency / ($AtkSpeed / 100) / 100, 2) ."s";
-            //         //$AtkSpeed_S = $BaseAttackFrequency * abs(($AtkSpeed - 200) / 10000) ."s";
-            //         $AtkSpeed_S = ($BaseAttackFrequency - ($AtkSpeed - 100)) / 100 ."s";
-            //         $Speed_M = $Speed / 100 ."m/s";
-            //         $StatTable[] = "|-";
-            //         $StatTable[] = "|".$StatGrowth['Level']."||$HP||$HPRecovery/s||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed."% ({$AtkSpeed_S})||$Speed ($Speed_M)||".$CritHitPer."%||-".$CD."%";
-            //     }
-            //     $StatTable[] = "|}";
-            //     $StatTable[] = "{{-stop-}}";
-            //     $StatsTables[] = implode("\n",$StatTable);
-            // }
+                    $PropertyNoDiv = $InherentPropertyDesc[17]['FormatDivisor'];
+                    if (!empty($InherentPropertyDesc[17]['AllowFloatNum'])) {
+                        $CD = $CD + $StatGrowth['Property'][16] / $PropertyNoDiv; // / 1000
+                    } else {
+                        $CD = floor($CD + $StatGrowth['Property'][16] / $PropertyNoDiv); // / 1000
+                    }
+                    //$AtkSpeed_S =  round($BaseAttackFrequency / ($AtkSpeed / 100) / 100, 2) ."s";
+                    //$AtkSpeed_S = $BaseAttackFrequency * abs(($AtkSpeed - 200) / 10000) ."s";
+                    $AtkSpeed_S = ($BaseAttackFrequency - ($AtkSpeed - 100)) / 100 ."s";
+                    $Speed_M = $Speed / 100 ."m/s";
+                    $StatTable[] = "|-";
+                    $StatTable[] = "|".$StatGrowth['Level']."||$HP||".$HPRecovery / 4 ."/s||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed."% ({$AtkSpeed_S})||$Speed ($Speed_M)||".$CritHitPer."%||-".$CD."%";
+                }
+                $StatTable[] = "|}";
+                $StatTable[] = "{{-stop-}}";
+                $StatsTables[] = implode("\n",$StatTable);
+            }
 
             $OutputString = "";
             if ($Patch === true){
@@ -525,7 +525,7 @@ class Pokemon_Hero_New implements ParseInterface
         // (optional) finish progress bar
         $this->saveExtra("Pokemon_Hero.txt",implode("\n\n",$Output));
         $this->saveExtra("Pokemon_Skill.txt",implode("\n\n",$SkillArray));
-        //$this->saveExtra("Pokemon_Growth.txt",implode("\n\n",$StatsTables));
+        $this->saveExtra("Pokemon_Growth.txt",implode("\n\n",$StatsTables));
         $this->saveExtra("Pokemon_Hero.txt",implode("\n\n",$Output));
 
         // save

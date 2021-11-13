@@ -17,15 +17,20 @@ class LotteryReward implements ParseInterface
         // grab CSV files we want to use
         $Version = $this->getVer();
         $LanguageMap_en = $this->languagemap("English");
+        $ClientTagRaw = $this->json("ClientTag");
+        foreach($ClientTagRaw as $data){
+            $Tag = $data['InGameKey'];
+            $ClientTag[$Tag] = $data;
+        }
 
-        $LotteryReward = $this->json("/$Version/LotteryReward");
+        $LotteryReward = $this->json("LotteryReward");
         //$LotteryReward = $this->json("/$Version/LotteryReward");
-        $OutSideItem_Base = $this->json("/$Version/OutSideItem_Base");
-        $OutSideItem_Base_New = $this->json("/$Version/OutSideItem_Base");
-        $AvatarItem = $this->json("/$Version/AvatarItem");
-        $AvatarItem_New = $this->json("$Version/AvatarItem");
-        $Pokemon_Avatar_Base = $this->json("/$Version/Pokemon_Avatar_Base");
-        $Pokemon_Avatar_Base_New = $this->json("/$Version/Pokemon_Avatar_Base");
+        $OutSideItem_Base = $this->json("OutSideItem_Base");
+        $OutSideItem_Base_New = $this->json("OutSideItem_Base");
+        $AvatarItem = $this->json("AvatarItem");
+        $AvatarItem_New = $this->json("AvatarItem");
+        $Pokemon_Avatar_Base = $this->json("Pokemon_Avatar_Base");
+        $Pokemon_Avatar_Base_New = $this->json("Pokemon_Avatar_Base");
 
         // (optional) start a progress bar
         $IconArray = [];
@@ -39,36 +44,36 @@ class LotteryReward implements ParseInterface
             $ResourceId = $Lottery['ResourceId'];
             $ItemName = "";
             if ($ResourceId > 1 && $ResourceId < 999999){
-                $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemName = $this->getLangTag($OutSideItem_Base[$ResourceId]['OutSideItemName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1000000001 && $ResourceId < 1000000100){
-                $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemName = $this->getLangTag($OutSideItem_Base[$ResourceId]['OutSideItemName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1000000101 && $ResourceId < 1000000201){
-                $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemName = $this->getLangTag($OutSideItem_Base[$ResourceId]['OutSideItemName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1002000001 && $ResourceId < 1004000000){
-                $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemName = $this->getLangTag($OutSideItem_Base[$ResourceId]['OutSideItemName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1004000001 && $ResourceId < 1006000000){
                 if (empty($AvatarItem[$ResourceId])) continue;
-                $ItemName = $LanguageMap_en[$AvatarItem[$ResourceId]['AvatarName']];
+                $ItemName = $this->getLangTag($AvatarItem[$ResourceId]['AvatarName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $AvatarItem_New[$ResourceId]["AvatarPrefabMale"][0];
             }
             if ($ResourceId > 1006000001 && $ResourceId < 1007000000){
-                $ItemName = $LanguageMap_en[$Pokemon_Avatar_Base[$ResourceId]['PokemonAvatarName']];
+                $ItemName = $this->getLangTag($Pokemon_Avatar_Base[$ResourceId]['PokemonAvatarName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $Pokemon_Avatar_Base_New[$ResourceId]["InsideAvatar"][0];
             }
             if ($ResourceId > 1007000001 && $ResourceId < 1007001000){
-                $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemName = $this->getLangTag($OutSideItem_Base[$ResourceId]['OutSideItemName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if ($ResourceId > 1007001001 && $ResourceId < 1007011001){
-                $ItemName = $LanguageMap_en[$OutSideItem_Base[$ResourceId]['OutSideItemName']];
+                $ItemName = $this->getLangTag($OutSideItem_Base[$ResourceId]['OutSideItemName'],$LanguageMap_en,$ClientTag);
                 $ItemDetail = $OutSideItem_Base_New[$ResourceId]["OutSideItemDetail"];
             }
             if (empty($ItemName)) {
