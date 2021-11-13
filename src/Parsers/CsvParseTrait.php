@@ -429,12 +429,10 @@ trait CsvParseTrait
             case "housing enthusiast":
             case "Hunt billmaster":
             case "hunter-scholar":
-            case "hunter-scholar":
             case "Imperial centurion":
             case "Imperial deserter":
             case "independent armorer":
             case "independent armorfitter":
-            case "independent arms mender":
             case "independent arms mender":
             case "independent mender":
             case "independent merchant":
@@ -448,7 +446,6 @@ trait CsvParseTrait
             case "materia melder":
             case "material supplier":
             case "mender":
-            case "minion enthusiast":
             case "OIC administrator":
             case "OIC officer of arms":
             case "OIC quartermaster":
@@ -541,7 +538,6 @@ trait CsvParseTrait
                         case 'expedition scholar':
                         case 'traveling merchant':
                         case 'seasoned adventurer':
-                        case "journeyman salvager":
                         case "Sultansworn elite":
                         case "suspicious Coerthan":
                         case "Keeper of the Entwined Serpents":
@@ -564,22 +560,15 @@ trait CsvParseTrait
             case "untrustworthy illusionist":
             case "unusual illusionist":
             case "Yellow Moon admirer":
-            case "royal seneschal":
             case "royal servant":
-            case "saint's little helper":
             case "Moonfire marine":
             case "Moonfire Faire chaperone":
-            case "enthralling illusionist":
             case "unsavory illusionist":
             case "malevolent mummer":
             case "long-haired pirate":
             case "Gold Saucer attendant":
-            case 'Yellow Moon admirer':
-            case 'tournament registrar':
             case 'Little Yang':
             case 'Little Yin':
-            case 'inu doshin':
-            case 'inu doshin':
             case 'Ethelia':
             case 'campaign attendant':
             case 'well-informed adventurer':
@@ -660,9 +649,7 @@ trait CsvParseTrait
             case "expedition artisan":
             case "expedition scholar":
             case "spoils collector":
-            case "spoils collector":
             case "Resistance supplier":
-            case "recompense officer":
             case "arrivals attendant":
             case "Faire crier":
                 $oldzone = array("Ul'dah - Steps of Nald",
