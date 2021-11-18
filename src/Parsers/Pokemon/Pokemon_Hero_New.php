@@ -39,6 +39,11 @@ class Pokemon_Hero_New implements ParseInterface
             $Tag = $data['InGameKey'];
             $ClientTag[$Tag] = $data;
         }
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $output = str_replace("cache","output",$ini['Cache']);
+        $PokePath = $ini['PokePath'];
+        $Version = $this->getVer();
+        $VerDer = "$PokePath/$Version/output/";
 
         // (optional) start a progress bar
         $IconArray = [];
@@ -76,7 +81,13 @@ class Pokemon_Hero_New implements ParseInterface
 
         $Patch = false;
 
-
+        $AGEIGNORE = array(
+            "LMSkillCDTriggerTick",
+            "LMPlaySoundTick",
+            "LMRemoveBulletTick",
+            "LMSpawnBulletTick",
+            "SetAttackDirDuration",
+        );
 
         // loop through data
         $PokemonMoveList = [];
@@ -192,6 +203,43 @@ class Pokemon_Hero_New implements ParseInterface
                     }
                     $SkillID = $TalentData['ActiveSkill'];
                     $Range = $Active_Skill_Hero[$TalentData['ActiveSkill']]['IndicatorRange'] / 1000;
+                    $AGEPath = $Active_Skill_Hero[$TalentData['ActiveSkill']]['AGEActionPath'];
+                    $AgeData = json_decode(file_get_contents("$VerDer/AGE/{$AGEPath}_pbb.json"),true);
+                    $AgeOut = [];
+                    if (empty($AgeData['Tracks'])){
+                        var_dump($AGEPath);
+                    } else {
+                        foreach($AgeData['Tracks'] as $TrackNo => $Track){
+                            $EventType = $Track['EventType'];
+                            $AgeString = "";
+                            if (in_array($EventType,$AGEIGNORE)) continue;
+                            $TrackEvents = $Track['TrackEvents'][0];
+                            switch ($EventType) {
+                                case 'LMSetBehaviourModeTick':
+                                    if (!empty($TrackEvents["TargetId"])){
+                                        //$AgeString .= "TargetId = ".$TrackEvents["TargetId"]."\n";
+                                    }
+                                    if (!empty($TrackEvents["StopMove"])){
+                                        $AgeString .= "Stop_Move = true\n";
+                                    }
+                                    if (!empty($TrackEvents["DelayStopCurSkill"])){
+                                        $AgeString .= "DelayStopCurSkill = ".$TrackEvents["DelayStopCurSkill"]."\n";
+                                    }
+                                    if (!empty($TrackEvents["DeadControl"])){
+                                        $AgeString .= "DeadControl = ".$TrackEvents["DeadControl"]."\n";
+                                    }
+                                    if (!empty($TrackEvents["InterruptAutoAtk"])){
+                                        $AgeString .= "Interrupt_Auto_Atk = true\n";
+                                    }
+                                    $AgeOut[] = $AgeString;
+                                break;
+                                
+                                default:
+                                    $AgeOut[] = $EventType;
+                                break;
+                            }
+                        }
+                    }
                     $AffectRange = "0";
                     if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'])){
                         $AffectRange = $Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'] / 1000;
@@ -255,6 +303,13 @@ class Pokemon_Hero_New implements ParseInterface
                     //$SkillString .= "|Property = $Property\n";
                     //$SkillString .= implode("\n",$RefStatOut)."\n";
                     $SkillString .= "|ID = $SkillID\n";
+                    $SkillString .= "\n";
+                    $SkillString .= "\n";
+                    $SkillString .= "TEMP:\n";
+                    $SkillString .= "|AGE = $AGEPath\n";
+                    $SkillString .= "|AGEOut = ".implode("\n",$AgeOut)."\n";
+                    $SkillString .= "\n";
+                    $SkillString .= "\n";
                     $SkillString .= "}}\n";
                     $SkillString .= "{{-stop-}}\n";
                     $SkillArray[] = $SkillString;
@@ -333,9 +388,11 @@ class Pokemon_Hero_New implements ParseInterface
             $BaseSpecAttack = $Pokemon_Hero[$MainUnitId]['BaseSpecAttack'];
             //Rates
             $BaseSupportEnergyRate = $Pokemon_Hero[$MainUnitId]['BaseSupportEnergyRate'] / 1000 ."s";
-            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / 1000 ."s";
+            $AttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'];
+            $AttackDelay = $Active_Skill_Hero[$Pokemon_Hero[$MainUnitId]['NormalSkillId']]['CDTime'];
+
+
             $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
-            $BaseAttackFrequency = $Pokemon_Hero[$MainUnitId]['NormalAttackFrequency'] / $PropertyNoDiv;
 
             $CardIcon = $Base['PokemonCard']; //Stone Icon (Shop)
             $DefaultHeldItem = [];
@@ -360,7 +417,7 @@ class Pokemon_Hero_New implements ParseInterface
                 $Def = $BaseDef;
                 $SpAtk = $BaseSpecAttack;
                 $SpDef = $BaseSpecDef;
-                $AtkSpeed = $BaseAttackFrequency;
+                $AtkSpeed = $AttackFrequency;
                 $Speed = $BaseMoveSpeed;
                 $CritHitPer = 0;
                 $CritHitDm = 0;
@@ -410,12 +467,10 @@ class Pokemon_Hero_New implements ParseInterface
                     } else {
                         $SpDef = $SpDef + $StatGrowth['Property'][5] / $PropertyNoDiv;
                     }
-    
-                    $PropertyNoDiv = $InherentPropertyDesc[7]['FormatDivisor'];
-                    if (!empty($InherentPropertyDesc[7]['AllowFloatNum'])){
-                        $AtkSpeed = floor($AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv));
+                    if ($StatGrowth['Level'] === 1){
+                        $AtkSpeed = $AtkSpeed + 0;
                     } else {
-                        $AtkSpeed = $AtkSpeed + ($StatGrowth['Property'][6] / $PropertyNoDiv);
+                        $AtkSpeed = $AtkSpeed + $StatGrowth['Property'][6];
                     }
     
                     $PropertyNoDiv = $InherentPropertyDesc[8]['FormatDivisor'];
@@ -446,12 +501,10 @@ class Pokemon_Hero_New implements ParseInterface
                     } else {
                         $CD = floor($CD + $StatGrowth['Property'][16] / $PropertyNoDiv); // / 1000
                     }
-                    //$AtkSpeed_S =  round($BaseAttackFrequency / ($AtkSpeed / 100) / 100, 2) ."s";
-                    //$AtkSpeed_S = $BaseAttackFrequency * abs(($AtkSpeed - 200) / 10000) ."s";
-                    $AtkSpeed_S = ($BaseAttackFrequency - ($AtkSpeed - 100)) / 100 ."s";
+                    $AtkSpeed_S = floor(($AttackDelay * $AttackFrequency) / $AtkSpeed) / 1000;
                     $Speed_M = $Speed / 100 ."m/s";
                     $StatTable[] = "|-";
-                    $StatTable[] = "|".$StatGrowth['Level']."||$HP||".$HPRecovery / 4 ."/s||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed."% ({$AtkSpeed_S})||$Speed ($Speed_M)||".$CritHitPer."%||-".$CD."%";
+                    $StatTable[] = "|".$StatGrowth['Level']."||$HP||".$HPRecovery / 4 ."/s||$Attack||$Def||$SpAtk||$SpDef||".$AtkSpeed / 100 ."% ({$AtkSpeed_S})||$Speed ($Speed_M)||".$CritHitPer."%||-".$CD."%";
                 }
                 $StatTable[] = "|}";
                 $StatTable[] = "{{-stop-}}";
@@ -488,7 +541,7 @@ class Pokemon_Hero_New implements ParseInterface
             $OutputString .= "|Base_SpDef = $BaseSpecDef\n"; 
             $OutputString .= "|Base_Speed = ".$BaseMoveSpeed / 100 ."m/s\n";
             $OutputString .= "|Base_HPRecover = $BaseHpRecover/s\n";
-            $OutputString .= "|Base_AtkSpeed = $BaseAttackFrequency%\n";
+            $OutputString .= "|Base_AtkSpeed = ".$AttackFrequency / 100 ."%\n";
             $OutputString .= "\n";
             $OutputString .= "\n";
             $OutputString .= "|LicenseIcon = $CardIcon.png\n";
@@ -520,7 +573,7 @@ class Pokemon_Hero_New implements ParseInterface
         //https://image.pokemon-unitepgame.com/Default/Pokemon/Growth_Whole/
         
         if (!empty($IconArray)) {
-            $this->getImages($IconArray,"PokemonMain");
+        //    $this->getImages($IconArray,"PokemonMain");
         }
         // (optional) finish progress bar
         $this->saveExtra("Pokemon_Hero.txt",implode("\n\n",$Output));

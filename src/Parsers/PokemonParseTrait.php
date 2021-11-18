@@ -134,6 +134,9 @@ trait PokemonParseTrait
     public function getImagesURL($Imagename){
         $URL = "https://image.pokemon-unitepgame.com/Default";
         switch (true) {
+            // /Activity/Notice/
+            // /Activity/ActivityCenter/
+            // /ShareGet/PokemonGet/
             case (stripos($Imagename,"t_Banner")!==false):
                 return "$URL/Mall/Banner/";
             break;
@@ -206,8 +209,10 @@ trait PokemonParseTrait
                 }
                 // copy the input icon to the output filename
                 //TODO: Add sprites
-                if(file_exists("$PokePath/1.2.1.8\output\Sprite/$value.png")){
-                    copy("$PokePath/1.2.1.8\output\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                if(file_exists("$PokePath/$Version\output\Sprite/$value.png")){
+                    copy("$PokePath/$Version\output\Sprite/$value.png", $IconOutputDirectory."/$value.png");
+                } elseif(file_exists("$PokePath/$Version\output\Texture2D/$value.png")){
+                    copy("$PokePath/$Version\output\Sprite/$value.png", $IconOutputDirectory."/$value.png");
                 } elseif(file_exists("$PokePath/$Version\output\Preload_CDN/$value.png")){
                     copy("$PokePath/$Version\output\Preload_CDN/$value.png", $IconOutputDirectory."/$value.png");
                 } else {
@@ -1131,7 +1136,7 @@ trait PokemonParseTrait
                         var_dump("Type is = $type");
                     break;
                 };
-                return "Increase Def & Sp. Def by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
+                return "Increase Sp. Def by:\n<br><code style=\"background-color:rgba(0, 0, 0, 0.4);color:white;white-space: pre;\">{{Color|style=bold|white|".$Para."}}$GrowExtra</code>";
                 
             break;
             case 22: //PB_SkillFunc_Type_DecResist
