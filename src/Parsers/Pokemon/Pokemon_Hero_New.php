@@ -77,6 +77,19 @@ class Pokemon_Hero_New implements ParseInterface
             "Razor Leaf",
             "Razor Leaf+",
         );
+        $AGEARRAY = array (
+            "",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5",
+        );
 
 
         $Patch = false;
@@ -94,6 +107,7 @@ class Pokemon_Hero_New implements ParseInterface
         foreach ($Pokemon_Base as $id => $Base) {
             $EvolutionLevels = [];
             if ($id === 999999) continue;
+            if ($id != 724) continue;
             $MainUnitId = $Base['MainUnitId'];
             $TalentGroupId = $Pokemon_Hero[$MainUnitId]['TalentGroupId'];
             if (!empty($ClientTag[$Base['NameRemark']])){
@@ -176,12 +190,22 @@ class Pokemon_Hero_New implements ParseInterface
             }
             $SetSkillArray = [];
             $EvoNo = 1;
+            $EvoImage = $Base['OneStageImage'];
+            $IconArray[] = $EvoImage;
             $EvolutionLevels[] = "|Evolution_$EvoNo Level = 1";
+            $EvolutionLevels[] = "|Evolution_$EvoNo Portrait = $EvoImage";
             foreach ($Talent_Plan[$TalentGroupId] as $Talent) {
                 if ($Talent['ChooseType'] === 3) continue; // reserve exp pool
                 if ($Talent['ChooseType'] === 4) { //evolutions
                     $EvoNo++;
+                    $TalentId = $Talent['TalentId'];
+                    $TalentData = $Pokemon_Talent[$TalentId];
                     $TriggerLevel = $Talent['TriggerLevel'];
+                    if (!empty($TalentData['IconPath'])){
+                        $EvoImage = $TalentData['IconPath'];
+                        $IconArray[] = $EvoImage;
+                        $EvolutionLevels[] = "|Evolution_$EvoNo Portrait =  ".$EvoImage;
+                    }
                     $EvolutionLevels[] = "|Evolution_$EvoNo Level = ".$TriggerLevel;
                 } else {
                     $TalentId = $Talent['TalentId'];
@@ -204,74 +228,115 @@ class Pokemon_Hero_New implements ParseInterface
                     $SkillID = $TalentData['ActiveSkill'];
                     $Range = $Active_Skill_Hero[$TalentData['ActiveSkill']]['IndicatorRange'] / 1000;
                     $AGEPath = $Active_Skill_Hero[$TalentData['ActiveSkill']]['AGEActionPath'];
-                    $AgeData = json_decode(file_get_contents("$VerDer/AGE/{$AGEPath}_pbb.json"),true);
-                    $AgeOut = [];
-                    if (empty($AgeData['Tracks'])){
-                        var_dump($AGEPath);
-                    } else {
-                        foreach($AgeData['Tracks'] as $TrackNo => $Track){
-                            $EventType = $Track['EventType'];
-                            $AgeString = "";
-                            if (in_array($EventType,$AGEIGNORE)) continue;
-                            $TrackEvents = $Track['TrackEvents'][0];
-                            switch ($EventType) {
-                                case 'LMSetBehaviourModeTick':
-                                    if (!empty($TrackEvents["TargetId"])){
-                                        //$AgeString .= "TargetId = ".$TrackEvents["TargetId"]."\n";
-                                    }
-                                    if (!empty($TrackEvents["StopMove"])){
-                                        $AgeString .= "Stop_Move = true\n";
-                                    }
-                                    if (!empty($TrackEvents["DelayStopCurSkill"])){
-                                        $AgeString .= "DelayStopCurSkill = ".$TrackEvents["DelayStopCurSkill"]."\n";
-                                    }
-                                    if (!empty($TrackEvents["DeadControl"])){
-                                        $AgeString .= "DeadControl = ".$TrackEvents["DeadControl"]."\n";
-                                    }
-                                    if (!empty($TrackEvents["InterruptAutoAtk"])){
-                                        $AgeString .= "Interrupt_Auto_Atk = true\n";
-                                    }
-                                    $AgeOut[] = $AgeString;
-                                break;
-                                
-                                default:
-                                    $AgeOut[] = $EventType;
-                                break;
-                            }
-                        }
-                    }
-                    $AffectRange = "0";
-                    if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'])){
-                        $AffectRange = $Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'] / 1000;
-                    }
-                    $Description = $this->getLangTag($Active_Skill_Hero[$TalentData['ActiveSkill']]['Desc'], $LanguageMap_en,$ClientTag);
-                    $CDTime = "0";
-                    if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['CDTime'])){
-                        $CDTime = $Active_Skill_Hero[$TalentData['ActiveSkill']]['CDTime'] / 1000;
-                    }
                     $RefOut = [];
-                    foreach($Active_Skill_Hero[$TalentData['ActiveSkill']]['RefEffectGroupIds'] as $RefEffectID){
-                        if ($RefEffectID === 0) continue;
-                        if (empty($SkillEffect_Group_Hero[$RefEffectID])) continue;
-                        $RefEffect = $SkillEffect_Group_Hero[$RefEffectID];
-                        if (!empty($RefEffect['Duration'])){
-                            $Duration = " for : ".$RefEffect['Duration'] / 1000 ."s";
+                    $RefIDs = "";
+                    $AgeOut = [];
+                    foreach($AGEARRAY as $Add){
+                        $AGEPATHADD = "$AGEPath$Add";
+                        if (!file_exists("$VerDer/AGE/{$AGEPATHADD}_pbb.json")) continue;
+                        $AgeData = json_decode(file_get_contents("$VerDer/AGE/{$AGEPATHADD}_pbb.json"),true);
+                        if (empty($AgeData['Tracks'])){
+                            var_dump($AGEPath);
                         } else {
-                            $Duration = "";
+                            foreach($Active_Skill_Hero[$TalentData['ActiveSkill']]['RefEffectGroupIds'] as $RefEffectID){
+                                if ($RefEffectID === 0) continue;
+                                $RefIDs[] = $RefEffectID;
+                            }
+                            foreach($AgeData['Tracks'] as $TrackNo => $Track){
+                                $EventType = $Track['EventType'];
+                                $AgeString = "";
+                                $TrackEvents = $Track['TrackEvents'][0];
+                                switch ($EventType) {
+                                    case 'LMSetBehaviourModeTick':
+                                        if (!empty($TrackEvents["TargetId"])){
+                                            //$AgeString .= "TargetId = ".$TrackEvents["TargetId"]."\n";
+                                        }
+                                        if (!empty($TrackEvents["StopMove"])){
+                                            $AgeString .= "|Stop_Move = true\n";
+                                        }
+                                        if (!empty($TrackEvents["DelayStopCurSkill"])){
+                                            $AgeString .= "|DelayStopCurSkill = ".$TrackEvents["DelayStopCurSkill"]."\n";
+                                        }
+                                        if (!empty($TrackEvents["DeadControl"])){
+                                            $AgeString .= "|DeadControl = ".$TrackEvents["DeadControl"]."\n";
+                                        }
+                                        if (!empty($TrackEvents["InterruptAutoAtk"])){
+                                            $AgeString .= "|Interrupt_Auto_Atk = true\n";
+                                        }
+                                        $AgeOut[] = $AgeString;
+                                    break;
+                                    case 'LMSpawnBulletTick':
+                                        if (!empty($TrackEvents['ActionName'])){
+                                            $NewAgePath = $TrackEvents['ActionName'];
+                                            $NewAgeData = json_decode(file_get_contents("$VerDer/AGE/{$NewAgePath}_pbb.json"),true);
+                                            $RefIDs .= $this->getSkillRefs($NewAgeData, $Active_Skill_Hero).",";
+                                        }
+                                    break;
+                                    case 'LMChangeSkillTick':
+                                        if (!empty($TrackEvents['MChangeSkill1ID'])){
+                                            $MChangeSkill1ID = $TrackEvents['MChangeSkill1ID'];
+                                            foreach($Active_Skill_Hero[$MChangeSkill1ID]['RefEffectGroupIds'] as $RefID){
+                                                if ($RefID === 0) continue;
+                                                $RefIDs .= $RefID.",";
+                                            }
+                                        }
+                                    break;
+                                    case 'LMHitTriggerTick':
+                                        foreach(range(1,3) as $i){
+                                            if ($TrackEvents["SelfSkillCombineID$i"] !== "-1"){
+                                                $MChangeSkill1ID = $TrackEvents["SelfSkillCombineID$i"];
+                                                $RefIDs .= $MChangeSkill1ID.",";
+                                            }
+                                        }
+                                    break;
+                                    case 'LMRemoveBuffTick':
+                                        if (!empty($TrackEvents['BuffId'])){
+                                            $BuffId = $TrackEvents['BuffId'];
+                                            $RefIDs .= $BuffId.",";
+                                        }
+                                    break;
+                                    
+                                    default:
+                                        //$AgeOut[] = $EventType;
+                                    break;
+                                }
+                            }
                         }
-                        foreach($RefEffect['SkillEffect'] as $SkillEffect){
-                            if (empty($SkillEffect['Type'])) continue;
-                            $SubEff = "";
-                            if (!empty($RefEffect['subEffectType'])){
-                                $SubEff = $RefEffect['subEffectType'];
+                        var_dump($RefIDs);
+                        $AffectRange = "0";
+                        if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'])){
+                            $AffectRange = $Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'] / 1000;
+                        }
+                        $Description = $this->getLangTag($Active_Skill_Hero[$TalentData['ActiveSkill']]['Desc'], $LanguageMap_en,$ClientTag);
+                        $CDTime = "0";
+                        if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['CDTime'])){
+                            $CDTime = $Active_Skill_Hero[$TalentData['ActiveSkill']]['CDTime'] / 1000;
+                        }
+                        $RefIDExps = explode(",",$RefIDs);
+                        $RefIDExps = array_unique($RefIDExps);
+                        foreach($RefIDExps as $RefEffectID){
+                            if (empty($SkillEffect_Group_Hero[$RefEffectID])) continue;
+                            $RefEffect = $SkillEffect_Group_Hero[$RefEffectID];
+                            if (!empty($RefEffect['Duration'])){
+                                $Duration = " for : ".$RefEffect['Duration'] / 1000 ."s";
+                            } else {
+                                $Duration = "";
                             }
-                            $GrowType = "";
-                            if (!empty($RefEffect['GrowType'])){
-                                $GrowType = $RefEffect['GrowType'];
+                            foreach($RefEffect['SkillEffect'] as $SkillEffect){
+                                if (empty($SkillEffect['Type'])) continue;
+                                $SubEff = "";
+                                if (!empty($RefEffect['subEffectType'])){
+                                    $SubEff = $RefEffect['subEffectType'];
+                                }
+                                $GrowType = "";
+                                if (!empty($RefEffect['GrowType'])){
+                                    $GrowType = $RefEffect['GrowType'];
+                                }
+                                $RefOut[] = $this->getSkillEffect($SkillEffect['Type'], $SkillEffect, $SubEff,$GrowType,$Duration);
                             }
-                            $RefOut[] = $this->getSkillEffect($SkillEffect['Type'], $SkillEffect, $SubEff,$GrowType,$Duration);
                         }
                     }
+                    $RefOut = array_unique($RefOut);
                     $SkillLogo_Type = $this->getLangTag($SkillLogo[$Active_Skill_Hero[$TalentData['ActiveSkill']]['SkillLogo'][0]]['Name'], $LanguageMap_en,$ClientTag);
                     $SkillString = "";
                     $SkillString .= "{{-start-}}\n";
@@ -305,9 +370,9 @@ class Pokemon_Hero_New implements ParseInterface
                     $SkillString .= "|ID = $SkillID\n";
                     $SkillString .= "\n";
                     $SkillString .= "\n";
-                    $SkillString .= "TEMP:\n";
+                    //$SkillString .= "TEMP:\n";
                     $SkillString .= "|AGE = $AGEPath\n";
-                    $SkillString .= "|AGEOut = ".implode("\n",$AgeOut)."\n";
+                    $SkillString .= "".implode("\n",$AgeOut)."\n";
                     $SkillString .= "\n";
                     $SkillString .= "\n";
                     $SkillString .= "}}\n";
@@ -344,8 +409,8 @@ class Pokemon_Hero_New implements ParseInterface
             }
             $Moves = array_unique($Moves);
             foreach($Pokemon_Hero_Evolution[$MainUnitId] as $EvoID => $EvoData){
-                $EvolutionLevels[] = "|Evolution_$EvoID Portrait = ".$EvoData['PortraitName'];
-                $IconArray[] = $EvoData['PortraitName'];
+                //$EvolutionLevels[] = "".$EvoData['PortraitName'];
+                //$IconArray[] = $EvoData['PortraitName'];
                 $EvoName = $this->getLangTag($EvoData['PokemonName'],$LanguageMap_en,$ClientTag);
                 $EvolutionLevels[] = "|Evolution_$EvoID Name = $EvoName";
             }
@@ -573,7 +638,7 @@ class Pokemon_Hero_New implements ParseInterface
         //https://image.pokemon-unitepgame.com/Default/Pokemon/Growth_Whole/
         
         if (!empty($IconArray)) {
-        //    $this->getImages($IconArray,"PokemonMain");
+            $this->getImages($IconArray,"PokemonMain");
         }
         // (optional) finish progress bar
         $this->saveExtra("Pokemon_Hero.txt",implode("\n\n",$Output));

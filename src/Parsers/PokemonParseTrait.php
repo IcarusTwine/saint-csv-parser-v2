@@ -731,6 +731,85 @@ trait PokemonParseTrait
         }
     }
     /**
+     * Flatten Arrays
+     */
+    public function flatten(array $array) {
+        $return = array();
+        array_walk_recursive($array, function($a) use (&$return) { $return[] = $a; });
+        return $return;
+    }
+    /**
+     * ProduceRefIDs
+     */
+    public function getSkillRefs($AgeData, $Active_Skill_Hero){
+        $RefIDs = "";
+        $ini = parse_ini_file('src/Parsers/config.ini');
+        $PokePath = $ini['PokePath'];
+        $Version = $this->getVer();
+        $VerDer = "$PokePath/$Version/output/";
+        foreach($AgeData['Tracks'] as $TrackNo => $Track){
+            $EventType = $Track['EventType'];
+            $AgeString = "";
+            $TrackEvents = $Track['TrackEvents'][0];
+            switch ($EventType) {
+                case 'LMSetBehaviourModeTick':
+                    if (!empty($TrackEvents["TargetId"])){
+                        //$AgeString .= "TargetId = ".$TrackEvents["TargetId"]."\n";
+                    }
+                    if (!empty($TrackEvents["StopMove"])){
+                        $AgeString .= "|Stop_Move = true\n";
+                    }
+                    if (!empty($TrackEvents["DelayStopCurSkill"])){
+                        $AgeString .= "|DelayStopCurSkill = ".$TrackEvents["DelayStopCurSkill"]."\n";
+                    }
+                    if (!empty($TrackEvents["DeadControl"])){
+                        $AgeString .= "|DeadControl = ".$TrackEvents["DeadControl"]."\n";
+                    }
+                    if (!empty($TrackEvents["InterruptAutoAtk"])){
+                        $AgeString .= "|Interrupt_Auto_Atk = true\n";
+                    }
+                    $AgeOut[] = $AgeString;
+                break;
+                case 'LMSpawnBulletTick':
+                    if (!empty($TrackEvents['ActionName'])){
+                        $NewAgePath = $TrackEvents['ActionName'];
+                        $NewAgeData = json_decode(file_get_contents("$VerDer/AGE/{$NewAgePath}_pbb.json"),true);
+                        $RefIDs .= $this->getSkillRefs($NewAgeData, $Active_Skill_Hero).",";
+                    }
+                break;
+                case 'LMChangeSkillTick':
+                    if (!empty($TrackEvents['MChangeSkill1ID'])){
+                        $MChangeSkill1ID = $TrackEvents['MChangeSkill1ID'];
+                        foreach($Active_Skill_Hero[$MChangeSkill1ID]['RefEffectGroupIds'] as $RefID){
+                            if ($RefID === 0) continue;
+                            $RefIDs .= $RefID.",";
+                        }
+                    }
+                break;
+                case 'LMHitTriggerTick':
+                    foreach(range(1,3) as $i){
+                        if ($TrackEvents["SelfSkillCombineID$i"] !== "-1"){
+                            $MChangeSkill1ID = $TrackEvents["SelfSkillCombineID$i"];
+                            $RefIDs .= $MChangeSkill1ID.",";
+                        }
+                    }
+                break;
+                case 'LMRemoveBuffTick':
+                    if (!empty($TrackEvents['BuffId'])){
+                        $BuffId = $TrackEvents['BuffId'];
+                        $RefIDs .= $BuffId.",";
+                    }
+                break;
+                
+                default:
+                    //$AgeOut[] = $EventType;
+                break;
+            }
+        }
+        var_dump($RefIDs);
+        return $RefIDs;
+    }
+    /**
      * Check if name is in client  tag or languagemap
      */
     public function getLangTag($Name, $LanguageMap, $ClientTag){
@@ -760,6 +839,193 @@ trait PokemonParseTrait
         }
         if (!empty($LanguageMap[$Name])){
             return $LanguageMap[$Name];
+        }
+    }
+    /**
+     * Property Names
+     */
+    public function getSkillEffectBase($type, $i, $SubType = "",$GrowType){
+        $GrowExtra = "";
+        if ($GrowType === "ExpLevel"){
+            $GrowExtra = " + (".$i['GrowPara'][1]." x (Level -1) )";
+        }
+        $Param0 = $i['Para'][0];
+        switch ($type) {
+            case 1: //PB_SkillFunc_Type_PhysHurt
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Enemy Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    case 6: //???
+                        $Para = implode(",",$i['Para']).", ???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                        var_dump("Type is = $type");
+                    break;
+                };
+                return "Damage: $Para + (".$i['Para'][2] / 100 ."% * [Atk])$GrowExtra";
+            break;
+            case 15: //PB_SkillFunc_Type_IncAtk
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                        var_dump("Type is = $type");
+                    break;
+                };
+                return "Increase Attack by:$Para$GrowExtra";
+                
+            break;
+            case 18: //PB_SkillFunc_Type_DecDefend
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                        var_dump("Type is = $type");
+                    break;
+                };
+                return "Decrease Targets Def by:$Para$GrowExtra";
+                
+            break;
+            case 32: //PB_SkillFunc_Type_DamageGain
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                        var_dump("Type is = $type");
+                    break;
+                };
+                return "Damage Increase by:$Para$GrowExtra";
+                
+            break;
+            case 5: //PB_SkillFunc_Type_IncAtkSpeed
+                switch ($Param0) {
+                    case 1: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 2: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 3: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                        var_dump("Type is = $type");
+                    break;
+                };
+                return "Increase Attack Speed by:$Para$GrowExtra";
+                
+            break;
+            
+            case 7: //PB_SkillFunc_Type_IncMoveSpeed
+                switch ($Param0) {
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                        var_dump("Type is = $type");
+                    break;
+                };
+                return "Increase Movement Speed by:$Para$GrowExtra";
+                
+            break;
+            
+            case 8: //PB_SkillFunc_Type_DecMoveSpeed
+                switch ($Param0) {
+                    case 0: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 1: //constant
+                        $Para = $i['Para'][1]."";
+                    break;
+                    case 2: //Percent
+                        $Para = $i['Para'][1] / 100 ."%";
+                    break;
+                    case 4: //Max HP
+                        $Para = $i['Para'][1]."% of Max HP";
+                    break;
+                    case 5: //???
+                        $Para = $i['Para'][1]."???";
+                    break;
+                    
+                    default:
+                        var_dump("Param0 is = $Param0");
+                        var_dump("Type is = $type");
+                    break;
+                };
+                return "Decrease Move Speed by:$Para$GrowExtra";
+                
+            break;
+            default:
+                return "Other Type - $type";
+                return "";
+            break;
         }
     }
     /**
