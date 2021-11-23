@@ -53,7 +53,7 @@ class PokemonRSBFinder implements ParseInterface
                     if (!empty($Skill['GrowType'])){
                         $GrowType = $this->getGrowType($Skill['GrowType']);
                     }
-                    $RefOut[$ActionPath][] = $this->getSkillEffectBase($SkillEffect['Type'], $SkillEffect, $SubEff,$GrowType,$Duration);
+                    $RefOut[$ActionPath][] = $this->getSkillEffect($SkillEffect['Type'], $SkillEffect, $SubEff,$GrowType,$Duration);
                 }
             }
             if (empty($ActionPath)) continue;

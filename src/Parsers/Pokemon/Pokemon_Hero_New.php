@@ -302,7 +302,6 @@ class Pokemon_Hero_New implements ParseInterface
                                 }
                             }
                         }
-                        var_dump($RefIDs);
                         $AffectRange = "0";
                         if (!empty($Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'])){
                             $AffectRange = $Active_Skill_Hero[$TalentData['ActiveSkill']]['AffectRange'] / 1000;
@@ -349,7 +348,7 @@ class Pokemon_Hero_New implements ParseInterface
                     $SkillString .= "|Icon = $IconPath\n";
                     $SkillString .= "|Type = $SkillLogo_Type\n";
                     //$SkillString .= "|Slot = $Slot\n";
-                    //$SkillString .= "|Icon_Tutorial = $TutIcon\n";
+                    $SkillString .= "|Icon_Tutorial = $DescImgPath\n";
                     $SkillString .= "|Level = $TriggerLevel\n";
                     $SkillString .= "\n";
                     $SkillString .= "|MoveType = $Type\n";
