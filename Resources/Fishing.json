@@ -13127,7 +13127,7 @@
     ],
     "4915": [
         {
-            "FishName": "Mahi-Mahi",
+            "FishName": "Mahi-mahi",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "135",
@@ -39111,6 +39111,3322 @@
             }
         }
     ],
+    "36385": [
+        {
+            "FishName": "Pecten",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Scholar's Harbor",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1074",
+                "py": "1518",
+                "cx": 11.7,
+                "cy": 16.2,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36386": [
+        {
+            "FishName": "Northern Herring",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Scholar's Harbor",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1074",
+                "py": "1518",
+                "cx": 11.7,
+                "cy": 16.2,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36387": [
+        {
+            "FishName": "Dog-faced Puffer",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Scholar's Harbor",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1074",
+                "py": "1518",
+                "cx": 11.7,
+                "cy": 16.2,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36388": [
+        {
+            "FishName": "Cobalt Chromis",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Scholar's Harbor",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1074",
+                "py": "1518",
+                "cx": 11.7,
+                "cy": 16.2,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36389": [
+        {
+            "FishName": "Guitarfish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Scholar's Harbor",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1074",
+                "py": "1518",
+                "cx": 11.7,
+                "cy": 16.2,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36390": [
+        {
+            "FishName": "Astacus",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Oinops",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1024",
+                "py": "732",
+                "cx": 11.2,
+                "cy": 8.3,
+                "Radius": "2100"
+            }
+        },
+        {
+            "FishName": "Astacus",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Reflecting Pool",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "670",
+                "py": "980",
+                "cx": 7.7,
+                "cy": 10.8,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36392": [
+        {
+            "FishName": "Peacock Bass",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Oinops",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1024",
+                "py": "732",
+                "cx": 11.2,
+                "cy": 8.3,
+                "Radius": "2100"
+            }
+        }
+    ],
+    "36393": [
+        {
+            "FishName": "Academician",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Oinops",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1024",
+                "py": "732",
+                "cx": 11.2,
+                "cy": 8.3,
+                "Radius": "2100"
+            }
+        }
+    ],
+    "36394": [
+        {
+            "FishName": "Swordspine Snook",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Oinops",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1024",
+                "py": "732",
+                "cx": 11.2,
+                "cy": 8.3,
+                "Radius": "2100"
+            }
+        }
+    ],
+    "36395": [
+        {
+            "FishName": "Ponderer",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Reflecting Pool",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "670",
+                "py": "980",
+                "cx": 7.7,
+                "cy": 10.8,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36396": [
+        {
+            "FishName": "Tidal Dahlia",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Reflecting Pool",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "670",
+                "py": "980",
+                "cx": 7.7,
+                "cy": 10.8,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36397": [
+        {
+            "FishName": "Butterfly Fry",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "831",
+                "py": "221",
+                "cx": 17.6,
+                "cy": 5.4,
+                "Radius": "450"
+            }
+        },
+        {
+            "FishName": "Butterfly Fry",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "878",
+                "py": "496",
+                "cx": 18.6,
+                "cy": 10.9,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Butterfly Fry",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1561",
+                "py": "409",
+                "cx": 32.2,
+                "cy": 9.2,
+                "Radius": "450"
+            }
+        },
+        {
+            "FishName": "Butterfly Fry",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1366",
+                "py": "726",
+                "cx": 28.3,
+                "cy": 15.5,
+                "Radius": "1800"
+            }
+        },
+        {
+            "FishName": "Butterfly Fry",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Deepmoat",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "972",
+                "py": "756",
+                "cx": 20.4,
+                "cy": 16.1,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36399": [
+        {
+            "FishName": "Topminnow",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "831",
+                "py": "221",
+                "cx": 17.6,
+                "cy": 5.4,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36400": [
+        {
+            "FishName": "Tessera",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "831",
+                "py": "221",
+                "cx": 17.6,
+                "cy": 5.4,
+                "Radius": "450"
+            }
+        }
+    ],
+    "35604": [
+        {
+            "FishName": "Giant Aetherlouse",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "831",
+                "py": "221",
+                "cx": 17.6,
+                "cy": 5.4,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36402": [
+        {
+            "FishName": "Fat Snook",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "831",
+                "py": "221",
+                "cx": 17.6,
+                "cy": 5.4,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36403": [
+        {
+            "FishName": "Prochilodus Luminosus",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "878",
+                "py": "496",
+                "cx": 18.6,
+                "cy": 10.9,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36398": [
+        {
+            "FishName": "Xenocypris",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "878",
+                "py": "496",
+                "cx": 18.6,
+                "cy": 10.9,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Xenocypris",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1561",
+                "py": "409",
+                "cx": 32.2,
+                "cy": 9.2,
+                "Radius": "450"
+            }
+        },
+        {
+            "FishName": "Xenocypris",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1366",
+                "py": "726",
+                "cx": 28.3,
+                "cy": 15.5,
+                "Radius": "1800"
+            }
+        },
+        {
+            "FishName": "Xenocypris",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Deepmoat",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "972",
+                "py": "756",
+                "cx": 20.4,
+                "cy": 16.1,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36404": [
+        {
+            "FishName": "Mesonauta",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "878",
+                "py": "496",
+                "cx": 18.6,
+                "cy": 10.9,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36405": [
+        {
+            "FishName": "Greengill Salmon",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "878",
+                "py": "496",
+                "cx": 18.6,
+                "cy": 10.9,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36407": [
+        {
+            "FishName": "Raiamas",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1561",
+                "py": "409",
+                "cx": 32.2,
+                "cy": 9.2,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36408": [
+        {
+            "FishName": "Red Bowfin",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1561",
+                "py": "409",
+                "cx": 32.2,
+                "cy": 9.2,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36409": [
+        {
+            "FishName": "Macrobrachium Lar",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1366",
+                "py": "726",
+                "cx": 28.3,
+                "cy": 15.5,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36410": [
+        {
+            "FishName": "Blowgun",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1366",
+                "py": "726",
+                "cx": 28.3,
+                "cy": 15.5,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36411": [
+        {
+            "FishName": "Darksteel Knifefish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1366",
+                "py": "726",
+                "cx": 28.3,
+                "cy": 15.5,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36412": [
+        {
+            "FishName": "Astacus Aetherius",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Deepmoat",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "972",
+                "py": "756",
+                "cx": 20.4,
+                "cy": 16.1,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36414": [
+        {
+            "FishName": "Labyrinthos Tilapia",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Deepmoat",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "972",
+                "py": "756",
+                "cx": 20.4,
+                "cy": 16.1,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36415": [
+        {
+            "FishName": "Trunkblessed",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "963",
+                "Name": "Radz-at-Han"
+            },
+            "Map": "694",
+            "PlaceName": "Meghaduta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "459",
+                "py": "989",
+                "cx": 5.6,
+                "cy": 10.9,
+                "Radius": "1350"
+            }
+        }
+    ],
+    "36417": [
+        {
+            "FishName": "Seema Duta",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "963",
+                "Name": "Radz-at-Han"
+            },
+            "Map": "694",
+            "PlaceName": "Meghaduta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "459",
+                "py": "989",
+                "cx": 5.6,
+                "cy": 10.9,
+                "Radius": "1350"
+            }
+        }
+    ],
+    "36418": [
+        {
+            "FishName": "Longear Sunfish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "963",
+                "Name": "Radz-at-Han"
+            },
+            "Map": "694",
+            "PlaceName": "Meghaduta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "459",
+                "py": "989",
+                "cx": 5.6,
+                "cy": 10.9,
+                "Radius": "1350"
+            }
+        }
+    ],
+    "36419": [
+        {
+            "FishName": "Silver Characin",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "963",
+                "Name": "Radz-at-Han"
+            },
+            "Map": "694",
+            "PlaceName": "Meghaduta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "459",
+                "py": "989",
+                "cx": 5.6,
+                "cy": 10.9,
+                "Radius": "1350"
+            }
+        }
+    ],
+    "36420": [
+        {
+            "FishName": "Thavnairian Goby",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Yedlihmad",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "1228",
+                "py": "1764",
+                "cx": 25.6,
+                "cy": 36.3,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Thavnairian Goby",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        },
+        {
+            "FishName": "Thavnairian Goby",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "438",
+                "py": "1090",
+                "cx": 9.8,
+                "cy": 22.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36421": [
+        {
+            "FishName": "Qeyiq Sole",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Yedlihmad",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "1228",
+                "py": "1764",
+                "cx": 25.6,
+                "cy": 36.3,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Qeyiq Sole",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        },
+        {
+            "FishName": "Qeyiq Sole",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "438",
+                "py": "1090",
+                "cx": 9.8,
+                "cy": 22.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36422": [
+        {
+            "FishName": "Gwl Crab",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Yedlihmad",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "1228",
+                "py": "1764",
+                "cx": 25.6,
+                "cy": 36.3,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36423": [
+        {
+            "FishName": "Pantherscale Grouper",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Yedlihmad",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "1228",
+                "py": "1764",
+                "cx": 25.6,
+                "cy": 36.3,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36425": [
+        {
+            "FishName": "Fate's Design",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36426": [
+        {
+            "FishName": "Shadowdart Sardine",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36427": [
+        {
+            "FishName": "Paksa Fish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "35605": [
+        {
+            "FishName": "Garjana Wrasse",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "438",
+                "py": "1090",
+                "cx": 9.8,
+                "cy": 22.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36430": [
+        {
+            "FishName": "Golden Barramundi",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "438",
+                "py": "1090",
+                "cx": 9.8,
+                "cy": 22.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36431": [
+        {
+            "FishName": "Kadjaya's Castaway",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Giantsgall Grounds",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "998",
+                "py": "360",
+                "cx": 21,
+                "cy": 8.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36432": [
+        {
+            "FishName": "Marid Frog",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Giantsgall Grounds",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "998",
+                "py": "360",
+                "cx": 21,
+                "cy": 8.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36434": [
+        {
+            "FishName": "Bluegill",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Giantsgall Grounds",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "998",
+                "py": "360",
+                "cx": 21,
+                "cy": 8.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36435": [
+        {
+            "FishName": "Bronze Pipira",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Giantsgall Grounds",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "998",
+                "py": "360",
+                "cx": 21,
+                "cy": 8.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36436": [
+        {
+            "FishName": "Green Swordtail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Wakeful Torana",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1500",
+                "py": "419",
+                "cx": 31,
+                "cy": 9.4,
+                "Radius": "1350"
+            }
+        },
+        {
+            "FishName": "Green Swordtail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Ksiroda",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1478",
+                "py": "1018",
+                "cx": 30.6,
+                "cy": 21.4,
+                "Radius": "1200"
+            }
+        },
+        {
+            "FishName": "Green Swordtail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Pavana's Remorse",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1149",
+                "py": "675",
+                "cx": 24,
+                "cy": 14.5,
+                "Radius": "450"
+            }
+        },
+        {
+            "FishName": "Green Swordtail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1161",
+                "py": "1187",
+                "cx": 24.2,
+                "cy": 24.7,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36438": [
+        {
+            "FishName": "Ksirapayin",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Wakeful Torana",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1500",
+                "py": "419",
+                "cx": 31,
+                "cy": 9.4,
+                "Radius": "1350"
+            }
+        },
+        {
+            "FishName": "Ksirapayin",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Ksiroda",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1478",
+                "py": "1018",
+                "cx": 30.6,
+                "cy": 21.4,
+                "Radius": "1200"
+            }
+        }
+    ],
+    "36439": [
+        {
+            "FishName": "Wakeful Watcher",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Wakeful Torana",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1500",
+                "py": "419",
+                "cx": 31,
+                "cy": 9.4,
+                "Radius": "1350"
+            }
+        }
+    ],
+    "36440": [
+        {
+            "FishName": "Red Drum",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Wakeful Torana",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1500",
+                "py": "419",
+                "cx": 31,
+                "cy": 9.4,
+                "Radius": "1350"
+            }
+        }
+    ],
+    "36441": [
+        {
+            "FishName": "Forgeflame",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Ksiroda",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1478",
+                "py": "1018",
+                "cx": 30.6,
+                "cy": 21.4,
+                "Radius": "1200"
+            }
+        }
+    ],
+    "36442": [
+        {
+            "FishName": "Bicuda",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Ksiroda",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1478",
+                "py": "1018",
+                "cx": 30.6,
+                "cy": 21.4,
+                "Radius": "1200"
+            }
+        }
+    ],
+    "36443": [
+        {
+            "FishName": "Radzbalik",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Pavana's Remorse",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1149",
+                "py": "675",
+                "cx": 24,
+                "cy": 14.5,
+                "Radius": "450"
+            }
+        },
+        {
+            "FishName": "Radzbalik",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1161",
+                "py": "1187",
+                "cx": 24.2,
+                "cy": 24.7,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36444": [
+        {
+            "FishName": "Half-moon Betta",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Pavana's Remorse",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1149",
+                "py": "675",
+                "cx": 24,
+                "cy": 14.5,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36446": [
+        {
+            "FishName": "Banana Eel",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Pavana's Remorse",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1149",
+                "py": "675",
+                "cx": 24,
+                "cy": 14.5,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36447": [
+        {
+            "FishName": "Handy Hamsa",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1161",
+                "py": "1187",
+                "cx": 24.2,
+                "cy": 24.7,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36448": [
+        {
+            "FishName": "Flowerhorn",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1161",
+                "py": "1187",
+                "cx": 24.2,
+                "cy": 24.7,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36449": [
+        {
+            "FishName": "Thavnairian Caiman",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1161",
+                "py": "1187",
+                "cx": 24.2,
+                "cy": 24.7,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36450": [
+        {
+            "FishName": "Fiery Goby",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Perfumed Tides",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "322",
+                "py": "328",
+                "cx": 7.4,
+                "cy": 7.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36451": [
+        {
+            "FishName": "Puff-paya",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Perfumed Tides",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "322",
+                "py": "328",
+                "cx": 7.4,
+                "cy": 7.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36452": [
+        {
+            "FishName": "Narunnairian Octopus",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Perfumed Tides",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "322",
+                "py": "328",
+                "cx": 7.4,
+                "cy": 7.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36453": [
+        {
+            "FishName": "Roosterfish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Perfumed Tides",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "322",
+                "py": "328",
+                "cx": 7.4,
+                "cy": 7.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36454": [
+        {
+            "FishName": "Basilosaurus",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Perfumed Tides",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "322",
+                "py": "328",
+                "cx": 7.4,
+                "cy": 7.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "35606": [
+        {
+            "FishName": "Garlean Clam",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Eblan Thaw",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "True",
+            "Position": {
+                "px": "504",
+                "py": "1484",
+                "cx": 11.1,
+                "cy": 30.7,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Garlean Clam",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Stainless Course",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "False",
+            "Position": {
+                "px": "1100",
+                "py": "408",
+                "cx": 23,
+                "cy": 9.2,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36457": [
+        {
+            "FishName": "Animulus",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Eblan Thaw",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "True",
+            "Position": {
+                "px": "504",
+                "py": "1484",
+                "cx": 11.1,
+                "cy": 30.7,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36456": [
+        {
+            "FishName": "Eblan Trout",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Eblan Thaw",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "True",
+            "Position": {
+                "px": "504",
+                "py": "1484",
+                "cx": 11.1,
+                "cy": 30.7,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Eblan Trout",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Stainless Course",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "False",
+            "Position": {
+                "px": "1100",
+                "py": "408",
+                "cx": 23,
+                "cy": 9.2,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36458": [
+        {
+            "FishName": "Cerule Core",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Eblan Thaw",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "True",
+            "Position": {
+                "px": "504",
+                "py": "1484",
+                "cx": 11.1,
+                "cy": 30.7,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36459": [
+        {
+            "FishName": "Icepike",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Eblan Thaw",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "True",
+            "Position": {
+                "px": "504",
+                "py": "1484",
+                "cx": 11.1,
+                "cy": 30.7,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36460": [
+        {
+            "FishName": "Dark Crown",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Stainless Course",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "False",
+            "Position": {
+                "px": "1100",
+                "py": "408",
+                "cx": 23,
+                "cy": 9.2,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36461": [
+        {
+            "FishName": "Imperial Pleco",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Stainless Course",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "False",
+            "Position": {
+                "px": "1100",
+                "py": "408",
+                "cx": 23,
+                "cy": 9.2,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36462": [
+        {
+            "FishName": "Bluetail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Stainless Course",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "False",
+            "Position": {
+                "px": "1100",
+                "py": "408",
+                "cx": 23,
+                "cy": 9.2,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36463": [
+        {
+            "FishName": "Star-blue Guppy",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "Greatest Endsvale",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1578",
+                "py": "494",
+                "cx": 32.6,
+                "cy": 10.9,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36465": [
+        {
+            "FishName": "Lunar Cichlid",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "Greatest Endsvale",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1578",
+                "py": "494",
+                "cx": 32.6,
+                "cy": 10.9,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36466": [
+        {
+            "FishName": "Teareye",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "Greatest Endsvale",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1578",
+                "py": "494",
+                "cx": 32.6,
+                "cy": 10.9,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36467": [
+        {
+            "FishName": "Replipirarucu",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "Greatest Endsvale",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1578",
+                "py": "494",
+                "cx": 32.6,
+                "cy": 10.9,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "36468": [
+        {
+            "FishName": "Feverfish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Chlorophospond",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "1498",
+                "py": "1560",
+                "cx": 31,
+                "cy": 32.2,
+                "Radius": "300"
+            }
+        },
+        {
+            "FishName": "Feverfish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Frozen Fissure",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1090",
+                "py": "1538",
+                "cx": 22.8,
+                "cy": 31.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36470": [
+        {
+            "FishName": "Calicia",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Chlorophospond",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "1498",
+                "py": "1560",
+                "cx": 31,
+                "cy": 32.2,
+                "Radius": "300"
+            }
+        },
+        {
+            "FishName": "Calicia",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Frozen Fissure",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1090",
+                "py": "1538",
+                "cx": 22.8,
+                "cy": 31.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36471": [
+        {
+            "FishName": "Protomyke #987",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Chlorophospond",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "1498",
+                "py": "1560",
+                "cx": 31,
+                "cy": 32.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36472": [
+        {
+            "FishName": "Lunar Deathworm",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Chlorophospond",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "1498",
+                "py": "1560",
+                "cx": 31,
+                "cy": 32.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36473": [
+        {
+            "FishName": "Fleeting Brand",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Frozen Fissure",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1090",
+                "py": "1538",
+                "cx": 22.8,
+                "cy": 31.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36475": [
+        {
+            "FishName": "Regotoise",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Frozen Fissure",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1090",
+                "py": "1538",
+                "cx": 22.8,
+                "cy": 31.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36476": [
+        {
+            "FishName": "Isle Skipper",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Rumination's Ramble",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "86",
+            "Rare": "False",
+            "Position": {
+                "px": "508",
+                "py": "876",
+                "cx": 11.2,
+                "cy": 18.5,
+                "Radius": "1800"
+            }
+        },
+        {
+            "FishName": "Isle Skipper",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "The Lower Hungering Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1202",
+                "py": "440",
+                "cx": 25,
+                "cy": 9.8,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Isle Skipper",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Lethe",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1634",
+                "py": "762",
+                "cx": 33.7,
+                "cy": 16.2,
+                "Radius": "1500"
+            }
+        }
+    ],
+    "36478": [
+        {
+            "FishName": "Albino Loach",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Rumination's Ramble",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "86",
+            "Rare": "False",
+            "Position": {
+                "px": "508",
+                "py": "876",
+                "cx": 11.2,
+                "cy": 18.5,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36477": [
+        {
+            "FishName": "Iribainion",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Rumination's Ramble",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "86",
+            "Rare": "False",
+            "Position": {
+                "px": "508",
+                "py": "876",
+                "cx": 11.2,
+                "cy": 18.5,
+                "Radius": "1800"
+            }
+        },
+        {
+            "FishName": "Iribainion",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "The Lower Hungering Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1202",
+                "py": "440",
+                "cx": 25,
+                "cy": 9.8,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Iribainion",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Lethe",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1634",
+                "py": "762",
+                "cx": 33.7,
+                "cy": 16.2,
+                "Radius": "1500"
+            }
+        }
+    ],
+    "36479": [
+        {
+            "FishName": "Golden Shiner",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Rumination's Ramble",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "86",
+            "Rare": "False",
+            "Position": {
+                "px": "508",
+                "py": "876",
+                "cx": 11.2,
+                "cy": 18.5,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36480": [
+        {
+            "FishName": "Mangar",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Rumination's Ramble",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "86",
+            "Rare": "False",
+            "Position": {
+                "px": "508",
+                "py": "876",
+                "cx": 11.2,
+                "cy": 18.5,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "36481": [
+        {
+            "FishName": "Dermogenys",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "The Lower Hungering Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1202",
+                "py": "440",
+                "cx": 25,
+                "cy": 9.8,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36485": [
+        {
+            "FishName": "Colossoma",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "The Lower Hungering Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1202",
+                "py": "440",
+                "cx": 25,
+                "cy": 9.8,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36484": [
+        {
+            "FishName": "Antheia",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Lethe",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1634",
+                "py": "762",
+                "cx": 33.7,
+                "cy": 16.2,
+                "Radius": "1500"
+            }
+        }
+    ],
+    "35607": [
+        {
+            "FishName": "Smaragdos",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Lethe",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1634",
+                "py": "762",
+                "cx": 33.7,
+                "cy": 16.2,
+                "Radius": "1500"
+            }
+        }
+    ],
+    "36487": [
+        {
+            "FishName": "Superstring",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b3",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "88",
+            "Rare": "False",
+            "Position": {
+                "px": "994",
+                "py": "1756",
+                "cx": 20.9,
+                "cy": 36.1,
+                "Radius": "300"
+            }
+        },
+        {
+            "FishName": "Superstring",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "426",
+                "py": "1476",
+                "cx": 9.5,
+                "cy": 30.5,
+                "Radius": "300"
+            }
+        },
+        {
+            "FishName": "Superstring",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "298",
+                "py": "1062",
+                "cx": 7,
+                "cy": 22.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36489": [
+        {
+            "FishName": "Vacuum Shrimp",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b3",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "88",
+            "Rare": "False",
+            "Position": {
+                "px": "994",
+                "py": "1756",
+                "cx": 20.9,
+                "cy": 36.1,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36488": [
+        {
+            "FishName": "Star Eater",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b3",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "88",
+            "Rare": "False",
+            "Position": {
+                "px": "994",
+                "py": "1756",
+                "cx": 20.9,
+                "cy": 36.1,
+                "Radius": "300"
+            }
+        },
+        {
+            "FishName": "Star Eater",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "426",
+                "py": "1476",
+                "cx": 9.5,
+                "cy": 30.5,
+                "Radius": "300"
+            }
+        },
+        {
+            "FishName": "Star Eater",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "298",
+                "py": "1062",
+                "cx": 7,
+                "cy": 22.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36491": [
+        {
+            "FishName": "Cosmic Noise",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b3",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "88",
+            "Rare": "False",
+            "Position": {
+                "px": "994",
+                "py": "1756",
+                "cx": 20.9,
+                "cy": 36.1,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36492": [
+        {
+            "FishName": "Glassfish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "426",
+                "py": "1476",
+                "cx": 9.5,
+                "cy": 30.5,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36494": [
+        {
+            "FishName": "Foun Myhk",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "426",
+                "py": "1476",
+                "cx": 9.5,
+                "cy": 30.5,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36495": [
+        {
+            "FishName": "Dragonscale",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "298",
+                "py": "1062",
+                "cx": 7,
+                "cy": 22.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36496": [
+        {
+            "FishName": "Ypup\u00eeara",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "298",
+                "py": "1062",
+                "cx": 7,
+                "cy": 22.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36497": [
+        {
+            "FishName": "Eehs Forhnesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "298",
+                "py": "1062",
+                "cx": 7,
+                "cy": 22.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36503": [
+        {
+            "FishName": "Protoflesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "The Wellspring of Regret",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "698",
+                "py": "528",
+                "cx": 15,
+                "cy": 11.6,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Protoflesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Elegeia",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1079",
+                "py": "389",
+                "cx": 22.6,
+                "cy": 8.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36499": [
+        {
+            "FishName": "Katoptron",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "The Wellspring of Regret",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "698",
+                "py": "528",
+                "cx": 15,
+                "cy": 11.6,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Katoptron",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Elegeia",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1079",
+                "py": "389",
+                "cx": 22.6,
+                "cy": 8.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36501": [
+        {
+            "FishName": "Comet Tail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "The Wellspring of Regret",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "698",
+                "py": "528",
+                "cx": 15,
+                "cy": 11.6,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36502": [
+        {
+            "FishName": "Aoide",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "The Wellspring of Regret",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "698",
+                "py": "528",
+                "cx": 15,
+                "cy": 11.6,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36505": [
+        {
+            "FishName": "Wandering Starscale",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Elegeia",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1079",
+                "py": "389",
+                "cx": 22.6,
+                "cy": 8.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36506": [
+        {
+            "FishName": "Wormhole Worm",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Wormhole Worm",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Wormhole Worm",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36507": [
+        {
+            "FishName": "Unidentified Flying Biomass II",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Unidentified Flying Biomass II",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Unidentified Flying Biomass II",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36509": [
+        {
+            "FishName": "Sophos Deka-okto",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36510": [
+        {
+            "FishName": "Class Twenty-four",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36511": [
+        {
+            "FishName": "Terrifyingway",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36512": [
+        {
+            "FishName": "Alien Mertone",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36513": [
+        {
+            "FishName": "Monster Carrot",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36508": [
+        {
+            "FishName": "Triaina",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Triaina",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36514": [
+        {
+            "FishName": "Argonaut",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36515": [
+        {
+            "FishName": "Echinos",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36516": [
+        {
+            "FishName": "Space Bishop",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36517": [
+        {
+            "FishName": "Alyketos",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36518": [
+        {
+            "FishName": "Horizon Event",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36519": [
+        {
+            "FishName": "E.B.E.-9318",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36520": [
+        {
+            "FishName": "Unbegotten",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36521": [
+        {
+            "FishName": "Phallaina ",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
     "29994": [
         {
             "FishName": "Grade 2 Skybuilders' Cloudskipper",
@@ -46341,6 +49657,1618 @@
                 "py": "1403",
                 "cx": 5.7,
                 "cy": 29.1,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36522": [
+        {
+            "FishName": "Thavnairian Cucumber",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "694",
+                "py": "1792",
+                "cx": 14.9,
+                "cy": 36.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36523": [
+        {
+            "FishName": "Spiny King Crab",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "694",
+                "py": "1792",
+                "cx": 14.9,
+                "cy": 36.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36524": [
+        {
+            "FishName": "Thavnairian Eel",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "694",
+                "py": "1792",
+                "cx": 14.9,
+                "cy": 36.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36525": [
+        {
+            "FishName": "Gilled Topknot",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "694",
+                "py": "1792",
+                "cx": 14.9,
+                "cy": 36.8,
+                "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Gilled Topknot",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Outer Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "292",
+                "py": "1764",
+                "cx": 6.8,
+                "cy": 36.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36526": [
+        {
+            "FishName": "Purusa Fish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "694",
+                "py": "1792",
+                "cx": 14.9,
+                "cy": 36.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36527": [
+        {
+            "FishName": "Giantsgall Jaw",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "694",
+                "py": "1792",
+                "cx": 14.9,
+                "cy": 36.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36548": [
+        {
+            "FishName": "Coffer Shell",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "125",
+                "cx": 28.2,
+                "cy": 3.5,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36549": [
+        {
+            "FishName": "Onihige",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "125",
+                "cx": 28.2,
+                "cy": 3.5,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36550": [
+        {
+            "FishName": "Onokoro Carp",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "125",
+                "cx": 28.2,
+                "cy": 3.5,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36551": [
+        {
+            "FishName": "Ruby-spotted Crab",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "125",
+                "cx": 28.2,
+                "cy": 3.5,
+                "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Ruby-spotted Crab",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northwestern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "1119",
+                "py": "115",
+                "cx": 23.4,
+                "cy": 3.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36552": [
+        {
+            "FishName": "Marrow-eater",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "125",
+                "cx": 28.2,
+                "cy": 3.5,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36553": [
+        {
+            "FishName": "Cloudy Catshark",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "125",
+                "cx": 28.2,
+                "cy": 3.5,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36554": [
+        {
+            "FishName": "Red Gurnard",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Isari Slope",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "500",
+                "py": "644",
+                "cx": 11,
+                "cy": 13.9,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36555": [
+        {
+            "FishName": "Dream Pickle",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Isari Slope",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "500",
+                "py": "644",
+                "cx": 11,
+                "cy": 13.9,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Dream Pickle",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northwestern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "1119",
+                "py": "115",
+                "cx": 23.4,
+                "cy": 3.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36556": [
+        {
+            "FishName": "Ruby Haddock",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Isari Slope",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "500",
+                "py": "644",
+                "cx": 11,
+                "cy": 13.9,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36557": [
+        {
+            "FishName": "Crown Fish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Isari Slope",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "500",
+                "py": "644",
+                "cx": 11,
+                "cy": 13.9,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Crown Fish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northwestern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "1119",
+                "py": "115",
+                "cx": 23.4,
+                "cy": 3.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36558": [
+        {
+            "FishName": "Sword of Isari ",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Isari Slope",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "500",
+                "py": "644",
+                "cx": 11,
+                "cy": 13.9,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36559": [
+        {
+            "FishName": "Blue Shark",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Isari Slope",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "500",
+                "py": "644",
+                "cx": 11,
+                "cy": 13.9,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Blue Shark",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northwestern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "1119",
+                "py": "115",
+                "cx": 23.4,
+                "cy": 3.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36560": [
+        {
+            "FishName": "Barb of Exile",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Exile",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "1015",
+                "cx": 28.2,
+                "cy": 21.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36561": [
+        {
+            "FishName": "Smooth Lumpfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Exile",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "1015",
+                "cx": 28.2,
+                "cy": 21.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36562": [
+        {
+            "FishName": "Hells' Cap",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Exile",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "1015",
+                "cx": 28.2,
+                "cy": 21.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36563": [
+        {
+            "FishName": "Keeled Fugu",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Exile",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "1015",
+                "cx": 28.2,
+                "cy": 21.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36564": [
+        {
+            "FishName": "Eastern Seerfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Exile",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "1015",
+                "cx": 28.2,
+                "cy": 21.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36565": [
+        {
+            "FishName": "False Fusilier",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Exile",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "1015",
+                "cx": 28.2,
+                "cy": 21.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36568": [
+        {
+            "FishName": "Othardian Wrasse",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Exile",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1361",
+                "py": "1015",
+                "cx": 28.2,
+                "cy": 21.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36528": [
+        {
+            "FishName": "Akyaali Sardine",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Western Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "367",
+                "py": "1639",
+                "cx": 8.3,
+                "cy": 33.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36529": [
+        {
+            "FishName": "Spicy Pickle",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Western Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "367",
+                "py": "1639",
+                "cx": 8.3,
+                "cy": 33.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36530": [
+        {
+            "FishName": "Mayavahana",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Western Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "367",
+                "py": "1639",
+                "cx": 8.3,
+                "cy": 33.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36531": [
+        {
+            "FishName": "Hedonfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Western Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "367",
+                "py": "1639",
+                "cx": 8.3,
+                "cy": 33.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36532": [
+        {
+            "FishName": "Satrap Trapfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Western Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "367",
+                "py": "1639",
+                "cx": 8.3,
+                "cy": 33.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36533": [
+        {
+            "FishName": "Blue Marlin",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Western Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "367",
+                "py": "1639",
+                "cx": 8.3,
+                "cy": 33.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36534": [
+        {
+            "FishName": "Satrap's Whisper",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "183",
+                "py": "1389",
+                "cx": 4.7,
+                "cy": 28.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36537": [
+        {
+            "FishName": "Meyhane Reveler",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "183",
+                "py": "1389",
+                "cx": 4.7,
+                "cy": 28.8,
+                "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Meyhane Reveler",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Outer Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "292",
+                "py": "1764",
+                "cx": 6.8,
+                "cy": 36.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36536": [
+        {
+            "FishName": "Shallows Cod",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "183",
+                "py": "1389",
+                "cx": 4.7,
+                "cy": 28.8,
+                "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Shallows Cod",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Outer Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "292",
+                "py": "1764",
+                "cx": 6.8,
+                "cy": 36.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36539": [
+        {
+            "FishName": "Rasa Fish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "183",
+                "py": "1389",
+                "cx": 4.7,
+                "cy": 28.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36538": [
+        {
+            "FishName": "Daemir's Alloy",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "183",
+                "py": "1389",
+                "cx": 4.7,
+                "cy": 28.8,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36547": [
+        {
+            "FishName": "Dusky Shark",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Southern Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "183",
+                "py": "1389",
+                "cx": 4.7,
+                "cy": 28.8,
+                "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Dusky Shark",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Outer Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "292",
+                "py": "1764",
+                "cx": 6.8,
+                "cy": 36.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36540": [
+        {
+            "FishName": "Agama's Palm",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1165",
+                "py": "1188",
+                "cx": 24.3,
+                "cy": 24.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36541": [
+        {
+            "FishName": "Rummy-nosed Tetra",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1165",
+                "py": "1188",
+                "cx": 24.3,
+                "cy": 24.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36542": [
+        {
+            "FishName": "Monksblade",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1165",
+                "py": "1188",
+                "cx": 24.3,
+                "cy": 24.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36543": [
+        {
+            "FishName": "Atamra Cichlid",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1165",
+                "py": "1188",
+                "cx": 24.3,
+                "cy": 24.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36544": [
+        {
+            "FishName": "Root of Maya",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1165",
+                "py": "1188",
+                "cx": 24.3,
+                "cy": 24.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36545": [
+        {
+            "FishName": "Floral Snakehead",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1165",
+                "py": "1188",
+                "cx": 24.3,
+                "cy": 24.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36566": [
+        {
+            "FishName": "Skipping Stone",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northeastern Bekko",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1812",
+                "py": "563",
+                "cx": 37.2,
+                "cy": 12.3,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36567": [
+        {
+            "FishName": "Red-spotted Blenny",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northeastern Bekko",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1812",
+                "py": "563",
+                "cx": 37.2,
+                "cy": 12.3,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36571": [
+        {
+            "FishName": "Deepbody Boarfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northeastern Bekko",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1812",
+                "py": "563",
+                "cx": 37.2,
+                "cy": 12.3,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36569": [
+        {
+            "FishName": "Grey Mullet",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northeastern Bekko",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1812",
+                "py": "563",
+                "cx": 37.2,
+                "cy": 12.3,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36570": [
+        {
+            "FishName": "Prayer Cushion",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northeastern Bekko",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1812",
+                "py": "563",
+                "cx": 37.2,
+                "cy": 12.3,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36581": [
+        {
+            "FishName": "Uzumaki",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northeastern Bekko",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1812",
+                "py": "563",
+                "cx": 37.2,
+                "cy": 12.3,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36580": [
+        {
+            "FishName": "Kitefin Shark",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northeastern Bekko",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1812",
+                "py": "563",
+                "cx": 37.2,
+                "cy": 12.3,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36572": [
+        {
+            "FishName": "Jointed Razorfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Eastern Barrier Isle",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1937",
+                "py": "1532",
+                "cx": 39.7,
+                "cy": 31.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36575": [
+        {
+            "FishName": "Mini Yasha",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Eastern Barrier Isle",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1937",
+                "py": "1532",
+                "cx": 39.7,
+                "cy": 31.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36574": [
+        {
+            "FishName": "Righteye Flounder",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Eastern Barrier Isle",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1937",
+                "py": "1532",
+                "cx": 39.7,
+                "cy": 31.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36577": [
+        {
+            "FishName": "Othardian Lumpsucker",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Eastern Barrier Isle",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1937",
+                "py": "1532",
+                "cx": 39.7,
+                "cy": 31.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36576": [
+        {
+            "FishName": "Sawshark",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Eastern Barrier Isle",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1937",
+                "py": "1532",
+                "cx": 39.7,
+                "cy": 31.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36579": [
+        {
+            "FishName": "Bluefin Trevally",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Eastern Barrier Isle",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1937",
+                "py": "1532",
+                "cx": 39.7,
+                "cy": 31.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36582": [
+        {
+            "FishName": "Natron Puffer",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Loch Seld Northeastern Lakebed",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1099",
+                "py": "844",
+                "cx": 23,
+                "cy": 17.9,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36583": [
+        {
+            "FishName": "Diamond Dagger",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Loch Seld Northeastern Lakebed",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1099",
+                "py": "844",
+                "cx": 23,
+                "cy": 17.9,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36584": [
+        {
+            "FishName": "Queenly Fan",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Loch Seld Northeastern Lakebed",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1099",
+                "py": "844",
+                "cx": 23,
+                "cy": 17.9,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36585": [
+        {
+            "FishName": "Pale Panther",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Loch Seld Northeastern Lakebed",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1099",
+                "py": "844",
+                "cx": 23,
+                "cy": 17.9,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36586": [
+        {
+            "FishName": "Saltsquid",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Loch Seld Northeastern Lakebed",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1099",
+                "py": "844",
+                "cx": 23,
+                "cy": 17.9,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36587": [
+        {
+            "FishName": "Platinum Hammerhead",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Loch Seld Northeastern Lakebed",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1099",
+                "py": "844",
+                "cx": 23,
+                "cy": 17.9,
+                "Radius": "750"
+            }
+        }
+    ],
+    "36578": [
+        {
+            "FishName": "Shogun's Kabuto",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northwestern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "1119",
+                "py": "115",
+                "cx": 23.4,
+                "cy": 3.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36573": [
+        {
+            "FishName": "Pipefish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Northwestern Onokoro",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "1119",
+                "py": "115",
+                "cx": 23.4,
+                "cy": 3.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36546": [
+        {
+            "FishName": "Xiphactinus",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Outer Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "292",
+                "py": "1764",
+                "cx": 6.8,
+                "cy": 36.3,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36535": [
+        {
+            "FishName": "Tebqeyiq Smelt",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Outer Akyaali",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "True",
+            "Position": {
+                "px": "292",
+                "py": "1764",
+                "cx": 6.8,
+                "cy": 36.3,
                 "Radius": "300"
             }
         }

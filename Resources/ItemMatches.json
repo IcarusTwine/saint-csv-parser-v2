@@ -7878,7 +7878,7 @@
         "1": "Replica Allagan Boots of Healing"
     },
     "3951": {
-        "1": "Replica Heavy Allagan Flanchard"
+        "1": "Replica Heavy Allagan Sollerets"
     },
     "3952": {
         "1": "Replica Allagan Boots of Casting"
@@ -11345,7 +11345,8 @@
     "4435": {
         "1": "Boarskin Ring",
         "2": "Direwolf Ring of Slaying",
-        "3": "Direwolf Ring of Aiming"
+        "3": "Direwolf Ring of Aiming",
+        "4": "Blitzring"
     },
     "4436": {
         "0": "Dated Malachite Ring",
@@ -11921,7 +11922,8 @@
     "4482": {
         "0": "Goatskin Ring",
         "2": "Direwolf Ring of Slaying",
-        "3": "Direwolf Ring of Aiming"
+        "3": "Direwolf Ring of Aiming",
+        "4": "Blitzring"
     },
     "4483": {
         "0": "Dated Silver Ring",
@@ -13780,12 +13782,14 @@
     "6933": {
         "0": "Goatskin Ring",
         "1": "Boarskin Ring",
-        "3": "Direwolf Ring of Aiming"
+        "3": "Direwolf Ring of Aiming",
+        "4": "Blitzring"
     },
     "6934": {
         "0": "Goatskin Ring",
         "1": "Boarskin Ring",
-        "2": "Direwolf Ring of Slaying"
+        "2": "Direwolf Ring of Slaying",
+        "4": "Blitzring"
     },
     "6935": {
         "0": "Dated Silver Ring",
@@ -27015,7 +27019,7 @@
         "0": "Heavy Allagan Cuisses"
     },
     "13808": {
-        "0": "Heavy Allagan Flanchard"
+        "0": "Heavy Allagan Sollerets"
     },
     "13809": {
         "0": "Allagan Visor of Maiming"
@@ -60521,34 +60525,34 @@
         "3": "Heirloom Necklace of Healing"
     },
     "32630": {
-        "1": "Heirloom Armlets of Slaying",
-        "2": "Heirloom Armlets of Aiming",
-        "3": "Heirloom Armlets of Healing",
-        "4": "Heirloom Armlets of Casting"
+        "1": "Heirloom Amulet of Slaying",
+        "2": "Heirloom Amulet of Aiming",
+        "3": "Heirloom Amulet of Healing",
+        "4": "Heirloom Amulet of Casting"
     },
     "32631": {
-        "0": "Heirloom Armlets of Fending",
-        "2": "Heirloom Armlets of Aiming",
-        "3": "Heirloom Armlets of Healing",
-        "4": "Heirloom Armlets of Casting"
+        "0": "Heirloom Amulet of Fending",
+        "2": "Heirloom Amulet of Aiming",
+        "3": "Heirloom Amulet of Healing",
+        "4": "Heirloom Amulet of Casting"
     },
     "32632": {
-        "0": "Heirloom Armlets of Fending",
-        "1": "Heirloom Armlets of Slaying",
-        "3": "Heirloom Armlets of Healing",
-        "4": "Heirloom Armlets of Casting"
+        "0": "Heirloom Amulet of Fending",
+        "1": "Heirloom Amulet of Slaying",
+        "3": "Heirloom Amulet of Healing",
+        "4": "Heirloom Amulet of Casting"
     },
     "32633": {
-        "0": "Heirloom Armlets of Fending",
-        "1": "Heirloom Armlets of Slaying",
-        "2": "Heirloom Armlets of Aiming",
-        "4": "Heirloom Armlets of Casting"
+        "0": "Heirloom Amulet of Fending",
+        "1": "Heirloom Amulet of Slaying",
+        "2": "Heirloom Amulet of Aiming",
+        "4": "Heirloom Amulet of Casting"
     },
     "32634": {
-        "0": "Heirloom Armlets of Fending",
-        "1": "Heirloom Armlets of Slaying",
-        "2": "Heirloom Armlets of Aiming",
-        "3": "Heirloom Armlets of Healing"
+        "0": "Heirloom Amulet of Fending",
+        "1": "Heirloom Amulet of Slaying",
+        "2": "Heirloom Amulet of Aiming",
+        "3": "Heirloom Amulet of Healing"
     },
     "32635": {
         "1": "Heirloom Ring of Slaying",
@@ -60680,7 +60684,7 @@
         "1": "Replica Augmented Law's Order Manatrigger"
     },
     "32685": {
-        "1": "Replaced Augmented Law's Order Chakrams"
+        "1": "Replica Augmented Law's Order Chakrams"
     },
     "32687": {
         "0": "Honorbound Recollection"
@@ -61842,5 +61846,1643 @@
     },
     "33837": {
         "0": "Blade's Euphoria"
+    },
+    "34135": {
+        "1": "Ametrine Earrings of Slaying",
+        "2": "Ametrine Earrings of Aiming",
+        "3": "Ametrine Earrings of Healing",
+        "4": "Ametrine Earrings of Casting"
+    },
+    "34136": {
+        "0": "Ametrine Earrings of Fending",
+        "2": "Ametrine Earrings of Aiming",
+        "3": "Ametrine Earrings of Healing",
+        "4": "Ametrine Earrings of Casting"
+    },
+    "34137": {
+        "0": "Ametrine Earrings of Fending",
+        "1": "Ametrine Earrings of Slaying",
+        "3": "Ametrine Earrings of Healing",
+        "4": "Ametrine Earrings of Casting"
+    },
+    "34138": {
+        "0": "Ametrine Earrings of Fending",
+        "1": "Ametrine Earrings of Slaying",
+        "2": "Ametrine Earrings of Aiming",
+        "4": "Ametrine Earrings of Casting"
+    },
+    "34139": {
+        "0": "Ametrine Earrings of Fending",
+        "1": "Ametrine Earrings of Slaying",
+        "2": "Ametrine Earrings of Aiming",
+        "3": "Ametrine Earrings of Healing"
+    },
+    "34140": {
+        "1": "Ametrine Choker of Slaying",
+        "2": "Ametrine Choker of Aiming",
+        "3": "Ametrine Choker of Healing",
+        "4": "Ametrine Choker of Casting"
+    },
+    "34141": {
+        "0": "Ametrine Choker of Fending",
+        "2": "Ametrine Choker of Aiming",
+        "3": "Ametrine Choker of Healing",
+        "4": "Ametrine Choker of Casting"
+    },
+    "34142": {
+        "0": "Ametrine Choker of Fending",
+        "1": "Ametrine Choker of Slaying",
+        "3": "Ametrine Choker of Healing",
+        "4": "Ametrine Choker of Casting"
+    },
+    "34143": {
+        "0": "Ametrine Choker of Fending",
+        "1": "Ametrine Choker of Slaying",
+        "2": "Ametrine Choker of Aiming",
+        "4": "Ametrine Choker of Casting"
+    },
+    "34144": {
+        "0": "Ametrine Choker of Fending",
+        "1": "Ametrine Choker of Slaying",
+        "2": "Ametrine Choker of Aiming",
+        "3": "Ametrine Choker of Healing"
+    },
+    "34145": {
+        "1": "Ametrine Bracelet of Slaying",
+        "2": "Ametrine Bracelet of Aiming",
+        "3": "Ametrine Bracelet of Healing",
+        "4": "Ametrine Bracelet of Casting"
+    },
+    "34146": {
+        "0": "Ametrine Bracelet of Fending",
+        "2": "Ametrine Bracelet of Aiming",
+        "3": "Ametrine Bracelet of Healing",
+        "4": "Ametrine Bracelet of Casting"
+    },
+    "34147": {
+        "0": "Ametrine Bracelet of Fending",
+        "1": "Ametrine Bracelet of Slaying",
+        "3": "Ametrine Bracelet of Healing",
+        "4": "Ametrine Bracelet of Casting"
+    },
+    "34148": {
+        "0": "Ametrine Bracelet of Fending",
+        "1": "Ametrine Bracelet of Slaying",
+        "2": "Ametrine Bracelet of Aiming",
+        "4": "Ametrine Bracelet of Casting"
+    },
+    "34149": {
+        "0": "Ametrine Bracelet of Fending",
+        "1": "Ametrine Bracelet of Slaying",
+        "2": "Ametrine Bracelet of Aiming",
+        "3": "Ametrine Bracelet of Healing"
+    },
+    "34150": {
+        "1": "Ametrine Ring of Slaying",
+        "2": "Ametrine Ring of Aiming",
+        "3": "Ametrine Ring of Healing",
+        "4": "Ametrine Ring of Casting"
+    },
+    "34151": {
+        "0": "Ametrine Ring of Fending",
+        "2": "Ametrine Ring of Aiming",
+        "3": "Ametrine Ring of Healing",
+        "4": "Ametrine Ring of Casting"
+    },
+    "34152": {
+        "0": "Ametrine Ring of Fending",
+        "1": "Ametrine Ring of Slaying",
+        "3": "Ametrine Ring of Healing",
+        "4": "Ametrine Ring of Casting"
+    },
+    "34153": {
+        "0": "Ametrine Ring of Fending",
+        "1": "Ametrine Ring of Slaying",
+        "2": "Ametrine Ring of Aiming",
+        "4": "Ametrine Ring of Casting"
+    },
+    "34154": {
+        "0": "Ametrine Ring of Fending",
+        "1": "Ametrine Ring of Slaying",
+        "2": "Ametrine Ring of Aiming",
+        "3": "Ametrine Ring of Healing"
+    },
+    "34210": {
+        "1": "Manusya Earrings of Slaying",
+        "2": "Manusya Earrings of Aiming",
+        "3": "Manusya Earrings of Healing",
+        "4": "Manusya Earrings of Casting"
+    },
+    "34211": {
+        "0": "Manusya Earrings of Fending",
+        "2": "Manusya Earrings of Aiming",
+        "3": "Manusya Earrings of Healing",
+        "4": "Manusya Earrings of Casting"
+    },
+    "34212": {
+        "0": "Manusya Earrings of Fending",
+        "1": "Manusya Earrings of Slaying",
+        "3": "Manusya Earrings of Healing",
+        "4": "Manusya Earrings of Casting"
+    },
+    "34213": {
+        "0": "Manusya Earrings of Fending",
+        "1": "Manusya Earrings of Slaying",
+        "2": "Manusya Earrings of Aiming",
+        "4": "Manusya Earrings of Casting"
+    },
+    "34214": {
+        "0": "Manusya Earrings of Fending",
+        "1": "Manusya Earrings of Slaying",
+        "2": "Manusya Earrings of Aiming",
+        "3": "Manusya Earrings of Healing"
+    },
+    "34215": {
+        "1": "Manusya Choker of Slaying",
+        "2": "Manusya Choker of Aiming",
+        "3": "Manusya Choker of Healing",
+        "4": "Manusya Choker of Casting"
+    },
+    "34216": {
+        "0": "Manusya Choker of Fending",
+        "2": "Manusya Choker of Aiming",
+        "3": "Manusya Choker of Healing",
+        "4": "Manusya Choker of Casting"
+    },
+    "34217": {
+        "0": "Manusya Choker of Fending",
+        "1": "Manusya Choker of Slaying",
+        "3": "Manusya Choker of Healing",
+        "4": "Manusya Choker of Casting"
+    },
+    "34218": {
+        "0": "Manusya Choker of Fending",
+        "1": "Manusya Choker of Slaying",
+        "2": "Manusya Choker of Aiming",
+        "4": "Manusya Choker of Casting"
+    },
+    "34219": {
+        "0": "Manusya Choker of Fending",
+        "1": "Manusya Choker of Slaying",
+        "2": "Manusya Choker of Aiming",
+        "3": "Manusya Choker of Healing"
+    },
+    "34220": {
+        "1": "Manusya Amulet of Slaying",
+        "2": "Manusya Amulet of Aiming",
+        "3": "Manusya Amulet of Healing",
+        "4": "Manusya Amulet of Casting"
+    },
+    "34221": {
+        "0": "Manusya Amulet of Fending",
+        "2": "Manusya Amulet of Aiming",
+        "3": "Manusya Amulet of Healing",
+        "4": "Manusya Amulet of Casting"
+    },
+    "34222": {
+        "0": "Manusya Amulet of Fending",
+        "1": "Manusya Amulet of Slaying",
+        "3": "Manusya Amulet of Healing",
+        "4": "Manusya Amulet of Casting"
+    },
+    "34223": {
+        "0": "Manusya Amulet of Fending",
+        "1": "Manusya Amulet of Slaying",
+        "2": "Manusya Amulet of Aiming",
+        "4": "Manusya Amulet of Casting"
+    },
+    "34224": {
+        "0": "Manusya Amulet of Fending",
+        "1": "Manusya Amulet of Slaying",
+        "2": "Manusya Amulet of Aiming",
+        "3": "Manusya Amulet of Healing"
+    },
+    "34225": {
+        "1": "Manusya Ring of Slaying",
+        "2": "Manusya Ring of Aiming",
+        "3": "Manusya Ring of Healing",
+        "4": "Manusya Ring of Casting"
+    },
+    "34226": {
+        "0": "Manusya Ring of Fending",
+        "2": "Manusya Ring of Aiming",
+        "3": "Manusya Ring of Healing",
+        "4": "Manusya Ring of Casting"
+    },
+    "34227": {
+        "0": "Manusya Ring of Fending",
+        "1": "Manusya Ring of Slaying",
+        "3": "Manusya Ring of Healing",
+        "4": "Manusya Ring of Casting"
+    },
+    "34228": {
+        "0": "Manusya Ring of Fending",
+        "1": "Manusya Ring of Slaying",
+        "2": "Manusya Ring of Aiming",
+        "4": "Manusya Ring of Casting"
+    },
+    "34229": {
+        "0": "Manusya Ring of Fending",
+        "1": "Manusya Ring of Slaying",
+        "2": "Manusya Ring of Aiming",
+        "3": "Manusya Ring of Healing"
+    },
+    "34285": {
+        "1": "Palm Ear Cuffs of Slaying",
+        "2": "Palm Ear Cuffs of Aiming",
+        "3": "Palm Ear Cuffs of Healing",
+        "4": "Palm Ear Cuffs of Casting"
+    },
+    "34286": {
+        "0": "Palm Ear Cuffs of Fending",
+        "2": "Palm Ear Cuffs of Aiming",
+        "3": "Palm Ear Cuffs of Healing",
+        "4": "Palm Ear Cuffs of Casting"
+    },
+    "34287": {
+        "0": "Palm Ear Cuffs of Fending",
+        "1": "Palm Ear Cuffs of Slaying",
+        "3": "Palm Ear Cuffs of Healing",
+        "4": "Palm Ear Cuffs of Casting"
+    },
+    "34288": {
+        "0": "Palm Ear Cuffs of Fending",
+        "1": "Palm Ear Cuffs of Slaying",
+        "2": "Palm Ear Cuffs of Aiming",
+        "4": "Palm Ear Cuffs of Casting"
+    },
+    "34289": {
+        "0": "Palm Ear Cuffs of Fending",
+        "1": "Palm Ear Cuffs of Slaying",
+        "2": "Palm Ear Cuffs of Aiming",
+        "3": "Palm Ear Cuffs of Healing"
+    },
+    "34290": {
+        "1": "Pewter Choker of Slaying",
+        "2": "Pewter Choker of Aiming",
+        "3": "Pewter Choker of Healing",
+        "4": "Pewter Choker of Casting"
+    },
+    "34291": {
+        "0": "Pewter Choker of Fending",
+        "2": "Pewter Choker of Aiming",
+        "3": "Pewter Choker of Healing",
+        "4": "Pewter Choker of Casting"
+    },
+    "34292": {
+        "0": "Pewter Choker of Fending",
+        "1": "Pewter Choker of Slaying",
+        "3": "Pewter Choker of Healing",
+        "4": "Pewter Choker of Casting"
+    },
+    "34293": {
+        "0": "Pewter Choker of Fending",
+        "1": "Pewter Choker of Slaying",
+        "2": "Pewter Choker of Aiming",
+        "4": "Pewter Choker of Casting"
+    },
+    "34294": {
+        "0": "Pewter Choker of Fending",
+        "1": "Pewter Choker of Slaying",
+        "2": "Pewter Choker of Aiming",
+        "3": "Pewter Choker of Healing"
+    },
+    "34295": {
+        "1": "Palm Bracelets of Slaying",
+        "2": "Palm Bracelets of Aiming",
+        "3": "Palm Bracelets of Healing",
+        "4": "Palm Bracelets of Casting"
+    },
+    "34296": {
+        "0": "Palm Bracelets of Fending",
+        "2": "Palm Bracelets of Aiming",
+        "3": "Palm Bracelets of Healing",
+        "4": "Palm Bracelets of Casting"
+    },
+    "34297": {
+        "0": "Palm Bracelets of Fending",
+        "1": "Palm Bracelets of Slaying",
+        "3": "Palm Bracelets of Healing",
+        "4": "Palm Bracelets of Casting"
+    },
+    "34298": {
+        "0": "Palm Bracelets of Fending",
+        "1": "Palm Bracelets of Slaying",
+        "2": "Palm Bracelets of Aiming",
+        "4": "Palm Bracelets of Casting"
+    },
+    "34299": {
+        "0": "Palm Bracelets of Fending",
+        "1": "Palm Bracelets of Slaying",
+        "2": "Palm Bracelets of Aiming",
+        "3": "Palm Bracelets of Healing"
+    },
+    "34300": {
+        "1": "Pewter Ring of Slaying",
+        "2": "Pewter Ring of Aiming",
+        "3": "Pewter Ring of Healing",
+        "4": "Pewter Ring of Casting"
+    },
+    "34301": {
+        "0": "Pewter Ring of Fending",
+        "2": "Pewter Ring of Aiming",
+        "3": "Pewter Ring of Healing",
+        "4": "Pewter Ring of Casting"
+    },
+    "34302": {
+        "0": "Pewter Ring of Fending",
+        "1": "Pewter Ring of Slaying",
+        "3": "Pewter Ring of Healing",
+        "4": "Pewter Ring of Casting"
+    },
+    "34303": {
+        "0": "Pewter Ring of Fending",
+        "1": "Pewter Ring of Slaying",
+        "2": "Pewter Ring of Aiming",
+        "4": "Pewter Ring of Casting"
+    },
+    "34304": {
+        "0": "Pewter Ring of Fending",
+        "1": "Pewter Ring of Slaying",
+        "2": "Pewter Ring of Aiming",
+        "3": "Pewter Ring of Healing"
+    },
+    "34360": {
+        "1": "Imperial Earring of Slaying",
+        "2": "Imperial Earring of Aiming",
+        "3": "Imperial Earring of Healing",
+        "4": "Imperial Earring of Casting"
+    },
+    "34361": {
+        "0": "Imperial Earring of Fending",
+        "2": "Imperial Earring of Aiming",
+        "3": "Imperial Earring of Healing",
+        "4": "Imperial Earring of Casting"
+    },
+    "34362": {
+        "0": "Imperial Earring of Fending",
+        "1": "Imperial Earring of Slaying",
+        "3": "Imperial Earring of Healing",
+        "4": "Imperial Earring of Casting"
+    },
+    "34363": {
+        "0": "Imperial Earring of Fending",
+        "1": "Imperial Earring of Slaying",
+        "2": "Imperial Earring of Aiming",
+        "4": "Imperial Earring of Casting"
+    },
+    "34364": {
+        "0": "Imperial Earring of Fending",
+        "1": "Imperial Earring of Slaying",
+        "2": "Imperial Earring of Aiming",
+        "3": "Imperial Earring of Healing"
+    },
+    "34365": {
+        "1": "Imperial Choker of Slaying",
+        "2": "Imperial Choker of Aiming",
+        "3": "Imperial Choker of Healing",
+        "4": "Imperial Choker of Casting"
+    },
+    "34366": {
+        "0": "Imperial Choker of Fending",
+        "2": "Imperial Choker of Aiming",
+        "3": "Imperial Choker of Healing",
+        "4": "Imperial Choker of Casting"
+    },
+    "34367": {
+        "0": "Imperial Choker of Fending",
+        "1": "Imperial Choker of Slaying",
+        "3": "Imperial Choker of Healing",
+        "4": "Imperial Choker of Casting"
+    },
+    "34368": {
+        "0": "Imperial Choker of Fending",
+        "1": "Imperial Choker of Slaying",
+        "2": "Imperial Choker of Aiming",
+        "4": "Imperial Choker of Casting"
+    },
+    "34369": {
+        "0": "Imperial Choker of Fending",
+        "1": "Imperial Choker of Slaying",
+        "2": "Imperial Choker of Aiming",
+        "3": "Imperial Choker of Healing"
+    },
+    "34370": {
+        "1": "Imperial Bracelet of Slaying",
+        "2": "Imperial Bracelet of Aiming",
+        "3": "Imperial Bracelet of Healing",
+        "4": "Imperial Bracelet of Casting"
+    },
+    "34371": {
+        "0": "Imperial Bracelet of Fending",
+        "2": "Imperial Bracelet of Aiming",
+        "3": "Imperial Bracelet of Healing",
+        "4": "Imperial Bracelet of Casting"
+    },
+    "34372": {
+        "0": "Imperial Bracelet of Fending",
+        "1": "Imperial Bracelet of Slaying",
+        "3": "Imperial Bracelet of Healing",
+        "4": "Imperial Bracelet of Casting"
+    },
+    "34373": {
+        "0": "Imperial Bracelet of Fending",
+        "1": "Imperial Bracelet of Slaying",
+        "2": "Imperial Bracelet of Aiming",
+        "4": "Imperial Bracelet of Casting"
+    },
+    "34374": {
+        "0": "Imperial Bracelet of Fending",
+        "1": "Imperial Bracelet of Slaying",
+        "2": "Imperial Bracelet of Aiming",
+        "3": "Imperial Bracelet of Healing"
+    },
+    "34375": {
+        "1": "Imperial Ring of Slaying",
+        "2": "Imperial Ring of Aiming",
+        "3": "Imperial Ring of Healing",
+        "4": "Imperial Ring of Casting"
+    },
+    "34376": {
+        "0": "Imperial Ring of Fending",
+        "2": "Imperial Ring of Aiming",
+        "3": "Imperial Ring of Healing",
+        "4": "Imperial Ring of Casting"
+    },
+    "34377": {
+        "0": "Imperial Ring of Fending",
+        "1": "Imperial Ring of Slaying",
+        "3": "Imperial Ring of Healing",
+        "4": "Imperial Ring of Casting"
+    },
+    "34378": {
+        "0": "Imperial Ring of Fending",
+        "1": "Imperial Ring of Slaying",
+        "2": "Imperial Ring of Aiming",
+        "4": "Imperial Ring of Casting"
+    },
+    "34379": {
+        "0": "Imperial Ring of Fending",
+        "1": "Imperial Ring of Slaying",
+        "2": "Imperial Ring of Aiming",
+        "3": "Imperial Ring of Healing"
+    },
+    "34435": {
+        "1": "Phrygian Ear Cuffs of Slaying",
+        "2": "Phrygian Ear Cuffs of Aiming",
+        "3": "Phrygian Ear Cuffs of Healing",
+        "4": "Phrygian Ear Cuffs of Casting"
+    },
+    "34436": {
+        "0": "Phrygian Ear Cuffs of Fending",
+        "2": "Phrygian Ear Cuffs of Aiming",
+        "3": "Phrygian Ear Cuffs of Healing",
+        "4": "Phrygian Ear Cuffs of Casting"
+    },
+    "34437": {
+        "0": "Phrygian Ear Cuffs of Fending",
+        "1": "Phrygian Ear Cuffs of Slaying",
+        "3": "Phrygian Ear Cuffs of Healing",
+        "4": "Phrygian Ear Cuffs of Casting"
+    },
+    "34438": {
+        "0": "Phrygian Ear Cuffs of Fending",
+        "1": "Phrygian Ear Cuffs of Slaying",
+        "2": "Phrygian Ear Cuffs of Aiming",
+        "4": "Phrygian Ear Cuffs of Casting"
+    },
+    "34439": {
+        "0": "Phrygian Ear Cuffs of Fending",
+        "1": "Phrygian Ear Cuffs of Slaying",
+        "2": "Phrygian Ear Cuffs of Aiming",
+        "3": "Phrygian Ear Cuffs of Healing"
+    },
+    "34440": {
+        "1": "Phrygian Choker of Slaying",
+        "2": "Phrygian Choker of Aiming",
+        "3": "Phrygian Choker of Healing",
+        "4": "Phrygian Choker of Casting"
+    },
+    "34441": {
+        "0": "Phrygian Choker of Fending",
+        "2": "Phrygian Choker of Aiming",
+        "3": "Phrygian Choker of Healing",
+        "4": "Phrygian Choker of Casting"
+    },
+    "34442": {
+        "0": "Phrygian Choker of Fending",
+        "1": "Phrygian Choker of Slaying",
+        "3": "Phrygian Choker of Healing",
+        "4": "Phrygian Choker of Casting"
+    },
+    "34443": {
+        "0": "Phrygian Choker of Fending",
+        "1": "Phrygian Choker of Slaying",
+        "2": "Phrygian Choker of Aiming",
+        "4": "Phrygian Choker of Casting"
+    },
+    "34444": {
+        "0": "Phrygian Choker of Fending",
+        "1": "Phrygian Choker of Slaying",
+        "2": "Phrygian Choker of Aiming",
+        "3": "Phrygian Choker of Healing"
+    },
+    "34445": {
+        "1": "Bismuth Bracelet of Slaying",
+        "2": "Bismuth Bracelet of Aiming",
+        "3": "Bismuth Bracelet of Healing",
+        "4": "Bismuth Bracelet of Casting"
+    },
+    "34446": {
+        "0": "Bismuth Bracelet of Fending",
+        "2": "Bismuth Bracelet of Aiming",
+        "3": "Bismuth Bracelet of Healing",
+        "4": "Bismuth Bracelet of Casting"
+    },
+    "34447": {
+        "0": "Bismuth Bracelet of Fending",
+        "1": "Bismuth Bracelet of Slaying",
+        "3": "Bismuth Bracelet of Healing",
+        "4": "Bismuth Bracelet of Casting"
+    },
+    "34448": {
+        "0": "Bismuth Bracelet of Fending",
+        "1": "Bismuth Bracelet of Slaying",
+        "2": "Bismuth Bracelet of Aiming",
+        "4": "Bismuth Bracelet of Casting"
+    },
+    "34449": {
+        "0": "Bismuth Bracelet of Fending",
+        "1": "Bismuth Bracelet of Slaying",
+        "2": "Bismuth Bracelet of Aiming",
+        "3": "Bismuth Bracelet of Healing"
+    },
+    "34450": {
+        "1": "Bismuth Ring of Slaying",
+        "2": "Bismuth Ring of Aiming",
+        "3": "Bismuth Ring of Healing",
+        "4": "Bismuth Ring of Casting"
+    },
+    "34451": {
+        "0": "Bismuth Ring of Fending",
+        "2": "Bismuth Ring of Aiming",
+        "3": "Bismuth Ring of Healing",
+        "4": "Bismuth Ring of Casting"
+    },
+    "34452": {
+        "0": "Bismuth Ring of Fending",
+        "1": "Bismuth Ring of Slaying",
+        "3": "Bismuth Ring of Healing",
+        "4": "Bismuth Ring of Casting"
+    },
+    "34453": {
+        "0": "Bismuth Ring of Fending",
+        "1": "Bismuth Ring of Slaying",
+        "2": "Bismuth Ring of Aiming",
+        "4": "Bismuth Ring of Casting"
+    },
+    "34454": {
+        "0": "Bismuth Ring of Fending",
+        "1": "Bismuth Ring of Slaying",
+        "2": "Bismuth Ring of Aiming",
+        "3": "Bismuth Ring of Healing"
+    },
+    "34510": {
+        "1": "Palaka Earrings of Slaying",
+        "2": "Palaka Earrings of Aiming",
+        "3": "Palaka Earrings of Healing",
+        "4": "Palaka Earrings of Casting"
+    },
+    "34511": {
+        "0": "Palaka Earrings of Fending",
+        "2": "Palaka Earrings of Aiming",
+        "3": "Palaka Earrings of Healing",
+        "4": "Palaka Earrings of Casting"
+    },
+    "34512": {
+        "0": "Palaka Earrings of Fending",
+        "1": "Palaka Earrings of Slaying",
+        "3": "Palaka Earrings of Healing",
+        "4": "Palaka Earrings of Casting"
+    },
+    "34513": {
+        "0": "Palaka Earrings of Fending",
+        "1": "Palaka Earrings of Slaying",
+        "2": "Palaka Earrings of Aiming",
+        "4": "Palaka Earrings of Casting"
+    },
+    "34514": {
+        "0": "Palaka Earrings of Fending",
+        "1": "Palaka Earrings of Slaying",
+        "2": "Palaka Earrings of Aiming",
+        "3": "Palaka Earrings of Healing"
+    },
+    "34515": {
+        "1": "Palaka Choker of Slaying",
+        "2": "Palaka Choker of Aiming",
+        "3": "Palaka Choker of Healing",
+        "4": "Palaka Choker of Casting"
+    },
+    "34516": {
+        "0": "Palaka Choker of Fending",
+        "2": "Palaka Choker of Aiming",
+        "3": "Palaka Choker of Healing",
+        "4": "Palaka Choker of Casting"
+    },
+    "34517": {
+        "0": "Palaka Choker of Fending",
+        "1": "Palaka Choker of Slaying",
+        "3": "Palaka Choker of Healing",
+        "4": "Palaka Choker of Casting"
+    },
+    "34518": {
+        "0": "Palaka Choker of Fending",
+        "1": "Palaka Choker of Slaying",
+        "2": "Palaka Choker of Aiming",
+        "4": "Palaka Choker of Casting"
+    },
+    "34519": {
+        "0": "Palaka Choker of Fending",
+        "1": "Palaka Choker of Slaying",
+        "2": "Palaka Choker of Aiming",
+        "3": "Palaka Choker of Healing"
+    },
+    "34520": {
+        "1": "Palaka Bracelet of Slaying",
+        "2": "Palaka Bracelet of Aiming",
+        "3": "Palaka Bracelet of Healing",
+        "4": "Palaka Bracelet of Casting"
+    },
+    "34521": {
+        "0": "Palaka Bracelet of Fending",
+        "2": "Palaka Bracelet of Aiming",
+        "3": "Palaka Bracelet of Healing",
+        "4": "Palaka Bracelet of Casting"
+    },
+    "34522": {
+        "0": "Palaka Bracelet of Fending",
+        "1": "Palaka Bracelet of Slaying",
+        "3": "Palaka Bracelet of Healing",
+        "4": "Palaka Bracelet of Casting"
+    },
+    "34523": {
+        "0": "Palaka Bracelet of Fending",
+        "1": "Palaka Bracelet of Slaying",
+        "2": "Palaka Bracelet of Aiming",
+        "4": "Palaka Bracelet of Casting"
+    },
+    "34524": {
+        "0": "Palaka Bracelet of Fending",
+        "1": "Palaka Bracelet of Slaying",
+        "2": "Palaka Bracelet of Aiming",
+        "3": "Palaka Bracelet of Healing"
+    },
+    "34525": {
+        "1": "Palaka Ring of Slaying",
+        "2": "Palaka Ring of Aiming",
+        "3": "Palaka Ring of Healing",
+        "4": "Palaka Ring of Casting"
+    },
+    "34526": {
+        "0": "Palaka Ring of Fending",
+        "2": "Palaka Ring of Aiming",
+        "3": "Palaka Ring of Healing",
+        "4": "Palaka Ring of Casting"
+    },
+    "34527": {
+        "0": "Palaka Ring of Fending",
+        "1": "Palaka Ring of Slaying",
+        "3": "Palaka Ring of Healing",
+        "4": "Palaka Ring of Casting"
+    },
+    "34528": {
+        "0": "Palaka Ring of Fending",
+        "1": "Palaka Ring of Slaying",
+        "2": "Palaka Ring of Aiming",
+        "4": "Palaka Ring of Casting"
+    },
+    "34529": {
+        "0": "Palaka Ring of Fending",
+        "1": "Palaka Ring of Slaying",
+        "2": "Palaka Ring of Aiming",
+        "3": "Palaka Ring of Healing"
+    },
+    "34585": {
+        "1": "Blue Zircon Earrings of Slaying",
+        "2": "Blue Zircon Earrings of Aiming",
+        "3": "Blue Zircon Earrings of Healing",
+        "4": "Blue Zircon Earrings of Casting"
+    },
+    "34586": {
+        "0": "Blue Zircon Earrings of Fending ",
+        "2": "Blue Zircon Earrings of Aiming",
+        "3": "Blue Zircon Earrings of Healing",
+        "4": "Blue Zircon Earrings of Casting"
+    },
+    "34587": {
+        "0": "Blue Zircon Earrings of Fending ",
+        "1": "Blue Zircon Earrings of Slaying",
+        "3": "Blue Zircon Earrings of Healing",
+        "4": "Blue Zircon Earrings of Casting"
+    },
+    "34588": {
+        "0": "Blue Zircon Earrings of Fending ",
+        "1": "Blue Zircon Earrings of Slaying",
+        "2": "Blue Zircon Earrings of Aiming",
+        "4": "Blue Zircon Earrings of Casting"
+    },
+    "34589": {
+        "0": "Blue Zircon Earrings of Fending ",
+        "1": "Blue Zircon Earrings of Slaying",
+        "2": "Blue Zircon Earrings of Aiming",
+        "3": "Blue Zircon Earrings of Healing"
+    },
+    "34590": {
+        "1": "Ironwood Choker of Slaying",
+        "2": "Ironwood Choker of Aiming",
+        "3": "Ironwood Choker of Healing",
+        "4": "Ironwood Choker of Casting"
+    },
+    "34591": {
+        "0": "Ironwood Choker of Fending",
+        "2": "Ironwood Choker of Aiming",
+        "3": "Ironwood Choker of Healing",
+        "4": "Ironwood Choker of Casting"
+    },
+    "34592": {
+        "0": "Ironwood Choker of Fending",
+        "1": "Ironwood Choker of Slaying",
+        "3": "Ironwood Choker of Healing",
+        "4": "Ironwood Choker of Casting"
+    },
+    "34593": {
+        "0": "Ironwood Choker of Fending",
+        "1": "Ironwood Choker of Slaying",
+        "2": "Ironwood Choker of Aiming",
+        "4": "Ironwood Choker of Casting"
+    },
+    "34594": {
+        "0": "Ironwood Choker of Fending",
+        "1": "Ironwood Choker of Slaying",
+        "2": "Ironwood Choker of Aiming",
+        "3": "Ironwood Choker of Healing"
+    },
+    "34595": {
+        "1": "Blue Zircon Bracelet of Slaying",
+        "2": "Blue Zircon Bracelet of Aiming",
+        "3": "Blue Zircon Bracelet of Healing",
+        "4": "Blue Zircon Bracelet of Casting"
+    },
+    "34596": {
+        "0": "Blue Zircon Bracelet of Fending",
+        "2": "Blue Zircon Bracelet of Aiming",
+        "3": "Blue Zircon Bracelet of Healing",
+        "4": "Blue Zircon Bracelet of Casting"
+    },
+    "34597": {
+        "0": "Blue Zircon Bracelet of Fending",
+        "1": "Blue Zircon Bracelet of Slaying",
+        "3": "Blue Zircon Bracelet of Healing",
+        "4": "Blue Zircon Bracelet of Casting"
+    },
+    "34598": {
+        "0": "Blue Zircon Bracelet of Fending",
+        "1": "Blue Zircon Bracelet of Slaying",
+        "2": "Blue Zircon Bracelet of Aiming",
+        "4": "Blue Zircon Bracelet of Casting"
+    },
+    "34599": {
+        "0": "Blue Zircon Bracelet of Fending",
+        "1": "Blue Zircon Bracelet of Slaying",
+        "2": "Blue Zircon Bracelet of Aiming",
+        "3": "Blue Zircon Bracelet of Healing"
+    },
+    "34600": {
+        "1": "Blue Zircon Ring of Slaying",
+        "2": "Blue Zircon Ring of Aiming",
+        "3": "Blue Zircon Ring of Healing",
+        "4": "Blue Zircon Ring of Casting"
+    },
+    "34601": {
+        "0": "Blue Zircon Ring of Fending",
+        "2": "Blue Zircon Ring of Aiming",
+        "3": "Blue Zircon Ring of Healing",
+        "4": "Blue Zircon Ring of Casting"
+    },
+    "34602": {
+        "0": "Blue Zircon Ring of Fending",
+        "1": "Blue Zircon Ring of Slaying",
+        "3": "Blue Zircon Ring of Healing",
+        "4": "Blue Zircon Ring of Casting"
+    },
+    "34603": {
+        "0": "Blue Zircon Ring of Fending",
+        "1": "Blue Zircon Ring of Slaying",
+        "2": "Blue Zircon Ring of Aiming",
+        "4": "Blue Zircon Ring of Casting"
+    },
+    "34604": {
+        "0": "Blue Zircon Ring of Fending",
+        "1": "Blue Zircon Ring of Slaying",
+        "2": "Blue Zircon Ring of Aiming",
+        "3": "Blue Zircon Ring of Healing"
+    },
+    "34660": {
+        "1": "Ktiseos Earring of Slaying",
+        "2": "Ktiseos Earring of Aiming",
+        "3": "Ktiseos Earring of Healing",
+        "4": "Ktiseos Earring of Casting"
+    },
+    "34661": {
+        "0": "Ktiseos Earring of Fending",
+        "2": "Ktiseos Earring of Aiming",
+        "3": "Ktiseos Earring of Healing",
+        "4": "Ktiseos Earring of Casting"
+    },
+    "34662": {
+        "0": "Ktiseos Earring of Fending",
+        "1": "Ktiseos Earring of Slaying",
+        "3": "Ktiseos Earring of Healing",
+        "4": "Ktiseos Earring of Casting"
+    },
+    "34663": {
+        "0": "Ktiseos Earring of Fending",
+        "1": "Ktiseos Earring of Slaying",
+        "2": "Ktiseos Earring of Aiming",
+        "4": "Ktiseos Earring of Casting"
+    },
+    "34664": {
+        "0": "Ktiseos Earring of Fending",
+        "1": "Ktiseos Earring of Slaying",
+        "2": "Ktiseos Earring of Aiming",
+        "3": "Ktiseos Earring of Healing"
+    },
+    "34665": {
+        "1": "Ktiseos Choker of Slaying",
+        "2": "Ktiseos Choker of Aiming",
+        "3": "Ktiseos Choker of Healing",
+        "4": "Ktiseos Choker of Casting"
+    },
+    "34666": {
+        "0": "Ktiseos Choker of Fending",
+        "2": "Ktiseos Choker of Aiming",
+        "3": "Ktiseos Choker of Healing",
+        "4": "Ktiseos Choker of Casting"
+    },
+    "34667": {
+        "0": "Ktiseos Choker of Fending",
+        "1": "Ktiseos Choker of Slaying",
+        "3": "Ktiseos Choker of Healing",
+        "4": "Ktiseos Choker of Casting"
+    },
+    "34668": {
+        "0": "Ktiseos Choker of Fending",
+        "1": "Ktiseos Choker of Slaying",
+        "2": "Ktiseos Choker of Aiming",
+        "4": "Ktiseos Choker of Casting"
+    },
+    "34669": {
+        "0": "Ktiseos Choker of Fending",
+        "1": "Ktiseos Choker of Slaying",
+        "2": "Ktiseos Choker of Aiming",
+        "3": "Ktiseos Choker of Healing"
+    },
+    "34670": {
+        "1": "Ktiseos Bracelet of Slaying",
+        "2": "Ktiseos Bracelet of Aiming",
+        "3": "Ktiseos Bracelet of Healing",
+        "4": "Ktiseos Bracelet of Casting"
+    },
+    "34671": {
+        "0": "Ktiseos Bracelet of Fending",
+        "2": "Ktiseos Bracelet of Aiming",
+        "3": "Ktiseos Bracelet of Healing",
+        "4": "Ktiseos Bracelet of Casting"
+    },
+    "34672": {
+        "0": "Ktiseos Bracelet of Fending",
+        "1": "Ktiseos Bracelet of Slaying",
+        "3": "Ktiseos Bracelet of Healing",
+        "4": "Ktiseos Bracelet of Casting"
+    },
+    "34673": {
+        "0": "Ktiseos Bracelet of Fending",
+        "1": "Ktiseos Bracelet of Slaying",
+        "2": "Ktiseos Bracelet of Aiming",
+        "4": "Ktiseos Bracelet of Casting"
+    },
+    "34674": {
+        "0": "Ktiseos Bracelet of Fending",
+        "1": "Ktiseos Bracelet of Slaying",
+        "2": "Ktiseos Bracelet of Aiming",
+        "3": "Ktiseos Bracelet of Healing"
+    },
+    "34675": {
+        "1": "Ktiseos Ring of Slaying",
+        "2": "Ktiseos Ring of Aiming",
+        "3": "Ktiseos Ring of Healing",
+        "4": "Ktiseos Ring of Casting"
+    },
+    "34676": {
+        "0": "Ktiseos Ring of Fending",
+        "2": "Ktiseos Ring of Aiming",
+        "3": "Ktiseos Ring of Healing",
+        "4": "Ktiseos Ring of Casting"
+    },
+    "34677": {
+        "0": "Ktiseos Ring of Fending",
+        "1": "Ktiseos Ring of Slaying",
+        "3": "Ktiseos Ring of Healing",
+        "4": "Ktiseos Ring of Casting"
+    },
+    "34678": {
+        "0": "Ktiseos Ring of Fending",
+        "1": "Ktiseos Ring of Slaying",
+        "2": "Ktiseos Ring of Aiming",
+        "4": "Ktiseos Ring of Casting"
+    },
+    "34679": {
+        "0": "Ktiseos Ring of Fending",
+        "1": "Ktiseos Ring of Slaying",
+        "2": "Ktiseos Ring of Aiming",
+        "3": "Ktiseos Ring of Healing"
+    },
+    "34735": {
+        "1": "Star Quartz Earrings of Slaying",
+        "2": "Star Quartz Earrings of Aiming",
+        "3": "Star Quartz Earrings of Healing",
+        "4": "Star Quartz Earrings of Casting"
+    },
+    "34736": {
+        "0": "Star Quartz Earrings of Fending",
+        "2": "Star Quartz Earrings of Aiming",
+        "3": "Star Quartz Earrings of Healing",
+        "4": "Star Quartz Earrings of Casting"
+    },
+    "34737": {
+        "0": "Star Quartz Earrings of Fending",
+        "1": "Star Quartz Earrings of Slaying",
+        "3": "Star Quartz Earrings of Healing",
+        "4": "Star Quartz Earrings of Casting"
+    },
+    "34738": {
+        "0": "Star Quartz Earrings of Fending",
+        "1": "Star Quartz Earrings of Slaying",
+        "2": "Star Quartz Earrings of Aiming",
+        "4": "Star Quartz Earrings of Casting"
+    },
+    "34739": {
+        "0": "Star Quartz Earrings of Fending",
+        "1": "Star Quartz Earrings of Slaying",
+        "2": "Star Quartz Earrings of Aiming",
+        "3": "Star Quartz Earrings of Healing"
+    },
+    "34740": {
+        "1": "Star Quartz Choker of Slaying",
+        "2": "Star Quartz Choker of Aiming",
+        "3": "Star Quartz Choker of Healing",
+        "4": "Star Quartz Choker of Casting"
+    },
+    "34741": {
+        "0": "Star Quartz Choker of Fending",
+        "2": "Star Quartz Choker of Aiming",
+        "3": "Star Quartz Choker of Healing",
+        "4": "Star Quartz Choker of Casting"
+    },
+    "34742": {
+        "0": "Star Quartz Choker of Fending",
+        "1": "Star Quartz Choker of Slaying",
+        "3": "Star Quartz Choker of Healing",
+        "4": "Star Quartz Choker of Casting"
+    },
+    "34743": {
+        "0": "Star Quartz Choker of Fending",
+        "1": "Star Quartz Choker of Slaying",
+        "2": "Star Quartz Choker of Aiming",
+        "4": "Star Quartz Choker of Casting"
+    },
+    "34744": {
+        "0": "Star Quartz Choker of Fending",
+        "1": "Star Quartz Choker of Slaying",
+        "2": "Star Quartz Choker of Aiming",
+        "3": "Star Quartz Choker of Healing"
+    },
+    "34745": {
+        "1": "Star Quartz Wristband of Slaying",
+        "2": "Star Quartz Wristband of Aiming",
+        "3": "Star Quartz Wristband of Healing",
+        "4": "Star Quartz Wristband of Casting"
+    },
+    "34746": {
+        "0": "Star Quartz Wristband of Fending",
+        "2": "Star Quartz Wristband of Aiming",
+        "3": "Star Quartz Wristband of Healing",
+        "4": "Star Quartz Wristband of Casting"
+    },
+    "34747": {
+        "0": "Star Quartz Wristband of Fending",
+        "1": "Star Quartz Wristband of Slaying",
+        "3": "Star Quartz Wristband of Healing",
+        "4": "Star Quartz Wristband of Casting"
+    },
+    "34748": {
+        "0": "Star Quartz Wristband of Fending",
+        "1": "Star Quartz Wristband of Slaying",
+        "2": "Star Quartz Wristband of Aiming",
+        "4": "Star Quartz Wristband of Casting"
+    },
+    "34749": {
+        "0": "Star Quartz Wristband of Fending",
+        "1": "Star Quartz Wristband of Slaying",
+        "2": "Star Quartz Wristband of Aiming",
+        "3": "Star Quartz Wristband of Healing"
+    },
+    "34750": {
+        "1": "Star Quartz Ring of Slaying",
+        "2": "Star Quartz Ring of Aiming",
+        "3": "Star Quartz Ring of Healing",
+        "4": "Star Quartz Ring of Casting"
+    },
+    "34751": {
+        "0": "Star Quartz Ring of Fending",
+        "2": "Star Quartz Ring of Aiming",
+        "3": "Star Quartz Ring of Healing",
+        "4": "Star Quartz Ring of Casting"
+    },
+    "34752": {
+        "0": "Star Quartz Ring of Fending",
+        "1": "Star Quartz Ring of Slaying",
+        "3": "Star Quartz Ring of Healing",
+        "4": "Star Quartz Ring of Casting"
+    },
+    "34753": {
+        "0": "Star Quartz Ring of Fending",
+        "1": "Star Quartz Ring of Slaying",
+        "2": "Star Quartz Ring of Aiming",
+        "4": "Star Quartz Ring of Casting"
+    },
+    "34754": {
+        "0": "Star Quartz Ring of Fending",
+        "1": "Star Quartz Ring of Slaying",
+        "2": "Star Quartz Ring of Aiming",
+        "3": "Star Quartz Ring of Healing"
+    },
+    "34810": {
+        "1": "Etheirys Earring of Slaying",
+        "2": "Etheirys Earring of Aiming",
+        "3": "Etheirys Earring of Healing",
+        "4": "Etheirys Earring of Casting"
+    },
+    "34811": {
+        "0": "Etheirys Earring of Fending",
+        "2": "Etheirys Earring of Aiming",
+        "3": "Etheirys Earring of Healing",
+        "4": "Etheirys Earring of Casting"
+    },
+    "34812": {
+        "0": "Etheirys Earring of Fending",
+        "1": "Etheirys Earring of Slaying",
+        "3": "Etheirys Earring of Healing",
+        "4": "Etheirys Earring of Casting"
+    },
+    "34813": {
+        "0": "Etheirys Earring of Fending",
+        "1": "Etheirys Earring of Slaying",
+        "2": "Etheirys Earring of Aiming",
+        "4": "Etheirys Earring of Casting"
+    },
+    "34814": {
+        "0": "Etheirys Earring of Fending",
+        "1": "Etheirys Earring of Slaying",
+        "2": "Etheirys Earring of Aiming",
+        "3": "Etheirys Earring of Healing"
+    },
+    "34815": {
+        "1": "Etheirys Choker of Slaying",
+        "2": "Etheirys Choker of Aiming",
+        "3": "Etheirys Choker of Healing",
+        "4": "Etheirys Choker of Casting"
+    },
+    "34816": {
+        "0": "Etheirys Choker of Fending",
+        "2": "Etheirys Choker of Aiming",
+        "3": "Etheirys Choker of Healing",
+        "4": "Etheirys Choker of Casting"
+    },
+    "34817": {
+        "0": "Etheirys Choker of Fending",
+        "1": "Etheirys Choker of Slaying",
+        "3": "Etheirys Choker of Healing",
+        "4": "Etheirys Choker of Casting"
+    },
+    "34818": {
+        "0": "Etheirys Choker of Fending",
+        "1": "Etheirys Choker of Slaying",
+        "2": "Etheirys Choker of Aiming",
+        "4": "Etheirys Choker of Casting"
+    },
+    "34819": {
+        "0": "Etheirys Choker of Fending",
+        "1": "Etheirys Choker of Slaying",
+        "2": "Etheirys Choker of Aiming",
+        "3": "Etheirys Choker of Healing"
+    },
+    "34820": {
+        "1": "Etheirys Bracelet of Slaying",
+        "2": "Etheirys Bracelet of Aiming",
+        "3": "Etheirys Bracelet of Healing",
+        "4": "Etheirys Bracelet of Casting"
+    },
+    "34821": {
+        "0": "Etheirys Bracelet of Fending",
+        "2": "Etheirys Bracelet of Aiming",
+        "3": "Etheirys Bracelet of Healing",
+        "4": "Etheirys Bracelet of Casting"
+    },
+    "34822": {
+        "0": "Etheirys Bracelet of Fending",
+        "1": "Etheirys Bracelet of Slaying",
+        "3": "Etheirys Bracelet of Healing",
+        "4": "Etheirys Bracelet of Casting"
+    },
+    "34823": {
+        "0": "Etheirys Bracelet of Fending",
+        "1": "Etheirys Bracelet of Slaying",
+        "2": "Etheirys Bracelet of Aiming",
+        "4": "Etheirys Bracelet of Casting"
+    },
+    "34824": {
+        "0": "Etheirys Bracelet of Fending",
+        "1": "Etheirys Bracelet of Slaying",
+        "2": "Etheirys Bracelet of Aiming",
+        "3": "Etheirys Bracelet of Healing"
+    },
+    "34825": {
+        "1": "Etheirys Ring of Slaying",
+        "2": "Etheirys Ring of Aiming",
+        "3": "Etheirys Ring of Healing",
+        "4": "Etheirys Ring of Casting"
+    },
+    "34826": {
+        "0": "Etheirys Ring of Fending",
+        "2": "Etheirys Ring of Aiming",
+        "3": "Etheirys Ring of Healing",
+        "4": "Etheirys Ring of Casting"
+    },
+    "34827": {
+        "0": "Etheirys Ring of Fending",
+        "1": "Etheirys Ring of Slaying",
+        "3": "Etheirys Ring of Healing",
+        "4": "Etheirys Ring of Casting"
+    },
+    "34828": {
+        "0": "Etheirys Ring of Fending",
+        "1": "Etheirys Ring of Slaying",
+        "2": "Etheirys Ring of Aiming",
+        "4": "Etheirys Ring of Casting"
+    },
+    "34829": {
+        "0": "Etheirys Ring of Fending",
+        "1": "Etheirys Ring of Slaying",
+        "2": "Etheirys Ring of Aiming",
+        "3": "Etheirys Ring of Healing"
+    },
+    "34830": {
+        "1": "The Last Earring of Slaying",
+        "2": "The Last Earring of Aiming",
+        "3": "The Last Earring of Healing",
+        "4": "The Last Earring of Casting"
+    },
+    "34831": {
+        "0": "The Last Earring of Fending",
+        "2": "The Last Earring of Aiming",
+        "3": "The Last Earring of Healing",
+        "4": "The Last Earring of Casting"
+    },
+    "34832": {
+        "0": "The Last Earring of Fending",
+        "1": "The Last Earring of Slaying",
+        "3": "The Last Earring of Healing",
+        "4": "The Last Earring of Casting"
+    },
+    "34833": {
+        "0": "The Last Earring of Fending",
+        "1": "The Last Earring of Slaying",
+        "2": "The Last Earring of Aiming",
+        "4": "The Last Earring of Casting"
+    },
+    "34834": {
+        "0": "The Last Earring of Fending",
+        "1": "The Last Earring of Slaying",
+        "2": "The Last Earring of Aiming",
+        "3": "The Last Earring of Healing"
+    },
+    "34835": {
+        "1": "The Last Necklace of Slaying",
+        "2": "The Last Necklace of Aiming",
+        "3": "The Last Necklace of Healing",
+        "4": "The Last Necklace of Casting"
+    },
+    "34836": {
+        "0": "The Last Necklace of Fending",
+        "2": "The Last Necklace of Aiming",
+        "3": "The Last Necklace of Healing",
+        "4": "The Last Necklace of Casting"
+    },
+    "34837": {
+        "0": "The Last Necklace of Fending",
+        "1": "The Last Necklace of Slaying",
+        "3": "The Last Necklace of Healing",
+        "4": "The Last Necklace of Casting"
+    },
+    "34838": {
+        "0": "The Last Necklace of Fending",
+        "1": "The Last Necklace of Slaying",
+        "2": "The Last Necklace of Aiming",
+        "4": "The Last Necklace of Casting"
+    },
+    "34839": {
+        "0": "The Last Necklace of Fending",
+        "1": "The Last Necklace of Slaying",
+        "2": "The Last Necklace of Aiming",
+        "3": "The Last Necklace of Healing"
+    },
+    "34840": {
+        "1": "The Last Bracelet of Slaying",
+        "2": "The Last Bracelet of Aiming",
+        "3": "The Last Bracelet of Healing",
+        "4": "The Last Bracelet of Casting"
+    },
+    "34841": {
+        "0": "The Last Bracelet of Fending",
+        "2": "The Last Bracelet of Aiming",
+        "3": "The Last Bracelet of Healing",
+        "4": "The Last Bracelet of Casting"
+    },
+    "34842": {
+        "0": "The Last Bracelet of Fending",
+        "1": "The Last Bracelet of Slaying",
+        "3": "The Last Bracelet of Healing",
+        "4": "The Last Bracelet of Casting"
+    },
+    "34843": {
+        "0": "The Last Bracelet of Fending",
+        "1": "The Last Bracelet of Slaying",
+        "2": "The Last Bracelet of Aiming",
+        "4": "The Last Bracelet of Casting"
+    },
+    "34844": {
+        "0": "The Last Bracelet of Fending",
+        "1": "The Last Bracelet of Slaying",
+        "2": "The Last Bracelet of Aiming",
+        "3": "The Last Bracelet of Healing"
+    },
+    "34845": {
+        "1": "The Last Ring of Slaying",
+        "2": "The Last Ring of Aiming",
+        "3": "The Last Ring of Healing",
+        "4": "The Last Ring of Casting"
+    },
+    "34846": {
+        "0": "The Last Ring of Fending",
+        "2": "The Last Ring of Aiming",
+        "3": "The Last Ring of Healing",
+        "4": "The Last Ring of Casting"
+    },
+    "34847": {
+        "0": "The Last Ring of Fending",
+        "1": "The Last Ring of Slaying",
+        "3": "The Last Ring of Healing",
+        "4": "The Last Ring of Casting"
+    },
+    "34848": {
+        "0": "The Last Ring of Fending",
+        "1": "The Last Ring of Slaying",
+        "2": "The Last Ring of Aiming",
+        "4": "The Last Ring of Casting"
+    },
+    "34849": {
+        "0": "The Last Ring of Fending",
+        "1": "The Last Ring of Slaying",
+        "2": "The Last Ring of Aiming",
+        "3": "The Last Ring of Healing"
+    },
+    "34905": {
+        "1": "Moonward Earring of Slaying",
+        "2": "Moonward Earring of Aiming",
+        "3": "Moonward Earring of Healing",
+        "4": "Moonward Earring of Casting"
+    },
+    "34906": {
+        "0": "Moonward Earring of Fending",
+        "2": "Moonward Earring of Aiming",
+        "3": "Moonward Earring of Healing",
+        "4": "Moonward Earring of Casting"
+    },
+    "34907": {
+        "0": "Moonward Earring of Fending",
+        "1": "Moonward Earring of Slaying",
+        "3": "Moonward Earring of Healing",
+        "4": "Moonward Earring of Casting"
+    },
+    "34908": {
+        "0": "Moonward Earring of Fending",
+        "1": "Moonward Earring of Slaying",
+        "2": "Moonward Earring of Aiming",
+        "4": "Moonward Earring of Casting"
+    },
+    "34909": {
+        "0": "Moonward Earring of Fending",
+        "1": "Moonward Earring of Slaying",
+        "2": "Moonward Earring of Aiming",
+        "3": "Moonward Earring of Healing"
+    },
+    "34910": {
+        "1": "Moonward Necklace of Slaying",
+        "2": "Moonward Necklace of Aiming",
+        "3": "Moonward Necklace of Healing",
+        "4": "Moonward Necklace of Casting"
+    },
+    "34911": {
+        "0": "Moonward Necklace of Fending",
+        "2": "Moonward Necklace of Aiming",
+        "3": "Moonward Necklace of Healing",
+        "4": "Moonward Necklace of Casting"
+    },
+    "34912": {
+        "0": "Moonward Necklace of Fending",
+        "1": "Moonward Necklace of Slaying",
+        "3": "Moonward Necklace of Healing",
+        "4": "Moonward Necklace of Casting"
+    },
+    "34913": {
+        "0": "Moonward Necklace of Fending",
+        "1": "Moonward Necklace of Slaying",
+        "2": "Moonward Necklace of Aiming",
+        "4": "Moonward Necklace of Casting"
+    },
+    "34914": {
+        "0": "Moonward Necklace of Fending",
+        "1": "Moonward Necklace of Slaying",
+        "2": "Moonward Necklace of Aiming",
+        "3": "Moonward Necklace of Healing"
+    },
+    "34915": {
+        "1": "Moonward Bracelet of Slaying",
+        "2": "Moonward Bracelet of Aiming",
+        "3": "Moonward Bracelet of Healing",
+        "4": "Moonward Bracelet of Casting"
+    },
+    "34916": {
+        "0": "Moonward Bracelet of Fending",
+        "2": "Moonward Bracelet of Aiming",
+        "3": "Moonward Bracelet of Healing",
+        "4": "Moonward Bracelet of Casting"
+    },
+    "34917": {
+        "0": "Moonward Bracelet of Fending",
+        "1": "Moonward Bracelet of Slaying",
+        "3": "Moonward Bracelet of Healing",
+        "4": "Moonward Bracelet of Casting"
+    },
+    "34918": {
+        "0": "Moonward Bracelet of Fending",
+        "1": "Moonward Bracelet of Slaying",
+        "2": "Moonward Bracelet of Aiming",
+        "4": "Moonward Bracelet of Casting"
+    },
+    "34919": {
+        "0": "Moonward Bracelet of Fending",
+        "1": "Moonward Bracelet of Slaying",
+        "2": "Moonward Bracelet of Aiming",
+        "3": "Moonward Bracelet of Healing"
+    },
+    "34920": {
+        "1": "Moonward Ring of Slaying",
+        "2": "Moonward Ring of Aiming",
+        "3": "Moonward Ring of Healing",
+        "4": "Moonward Ring of Casting"
+    },
+    "34921": {
+        "0": "Moonward Ring of Fending",
+        "2": "Moonward Ring of Aiming",
+        "3": "Moonward Ring of Healing",
+        "4": "Moonward Ring of Casting"
+    },
+    "34922": {
+        "0": "Moonward Ring of Fending",
+        "1": "Moonward Ring of Slaying",
+        "3": "Moonward Ring of Healing",
+        "4": "Moonward Ring of Casting"
+    },
+    "34923": {
+        "0": "Moonward Ring of Fending",
+        "1": "Moonward Ring of Slaying",
+        "2": "Moonward Ring of Aiming",
+        "4": "Moonward Ring of Casting"
+    },
+    "34924": {
+        "0": "Moonward Ring of Fending",
+        "1": "Moonward Ring of Slaying",
+        "2": "Moonward Ring of Aiming",
+        "3": "Moonward Ring of Healing"
+    },
+    "34945": {
+        "1": "Eternal Dark Earrings of Slaying",
+        "2": "Eternal Dark Earrings of Aiming",
+        "3": "Eternal Dark Earrings of Healing",
+        "4": "Eternal Dark Earrings of Casting"
+    },
+    "34946": {
+        "0": "Eternal Dark Earrings of Fending",
+        "2": "Eternal Dark Earrings of Aiming",
+        "3": "Eternal Dark Earrings of Healing",
+        "4": "Eternal Dark Earrings of Casting"
+    },
+    "34947": {
+        "0": "Eternal Dark Earrings of Fending",
+        "1": "Eternal Dark Earrings of Slaying",
+        "3": "Eternal Dark Earrings of Healing",
+        "4": "Eternal Dark Earrings of Casting"
+    },
+    "34948": {
+        "0": "Eternal Dark Earrings of Fending",
+        "1": "Eternal Dark Earrings of Slaying",
+        "2": "Eternal Dark Earrings of Aiming",
+        "4": "Eternal Dark Earrings of Casting"
+    },
+    "34949": {
+        "0": "Eternal Dark Earrings of Fending",
+        "1": "Eternal Dark Earrings of Slaying",
+        "2": "Eternal Dark Earrings of Aiming",
+        "3": "Eternal Dark Earrings of Healing"
+    },
+    "34950": {
+        "1": "Eternal Dark Necklace of Slaying",
+        "2": "Eternal Dark Necklace of Aiming",
+        "3": "Eternal Dark Necklace of Healing",
+        "4": "Eternal Dark Necklace of Casting"
+    },
+    "34951": {
+        "0": "Eternal Dark Necklace of Fending",
+        "2": "Eternal Dark Necklace of Aiming",
+        "3": "Eternal Dark Necklace of Healing",
+        "4": "Eternal Dark Necklace of Casting"
+    },
+    "34952": {
+        "0": "Eternal Dark Necklace of Fending",
+        "1": "Eternal Dark Necklace of Slaying",
+        "3": "Eternal Dark Necklace of Healing",
+        "4": "Eternal Dark Necklace of Casting"
+    },
+    "34953": {
+        "0": "Eternal Dark Necklace of Fending",
+        "1": "Eternal Dark Necklace of Slaying",
+        "2": "Eternal Dark Necklace of Aiming",
+        "4": "Eternal Dark Necklace of Casting"
+    },
+    "34954": {
+        "0": "Eternal Dark Necklace of Fending",
+        "1": "Eternal Dark Necklace of Slaying",
+        "2": "Eternal Dark Necklace of Aiming",
+        "3": "Eternal Dark Necklace of Healing"
+    },
+    "34955": {
+        "1": "Eternal Dark Bracelets of Slaying",
+        "2": "Eternal Dark Bracelets of Aiming",
+        "3": "Eternal Dark Bracelets of Healing",
+        "4": "Eternal Dark Bracelets of Casting"
+    },
+    "34956": {
+        "0": "Eternal Dark Bracelets of Fending",
+        "2": "Eternal Dark Bracelets of Aiming",
+        "3": "Eternal Dark Bracelets of Healing",
+        "4": "Eternal Dark Bracelets of Casting"
+    },
+    "34957": {
+        "0": "Eternal Dark Bracelets of Fending",
+        "1": "Eternal Dark Bracelets of Slaying",
+        "3": "Eternal Dark Bracelets of Healing",
+        "4": "Eternal Dark Bracelets of Casting"
+    },
+    "34958": {
+        "0": "Eternal Dark Bracelets of Fending",
+        "1": "Eternal Dark Bracelets of Slaying",
+        "2": "Eternal Dark Bracelets of Aiming",
+        "4": "Eternal Dark Bracelets of Casting"
+    },
+    "34959": {
+        "0": "Eternal Dark Bracelets of Fending",
+        "1": "Eternal Dark Bracelets of Slaying",
+        "2": "Eternal Dark Bracelets of Aiming",
+        "3": "Eternal Dark Bracelets of Healing"
+    },
+    "34960": {
+        "1": "Eternal Dark Ring of Slaying",
+        "2": "Eternal Dark Ring of Aiming",
+        "3": "Eternal Dark Ring of Healing",
+        "4": "Eternal Dark Ring of Casting"
+    },
+    "34961": {
+        "0": "Eternal Dark Ring of Fending",
+        "2": "Eternal Dark Ring of Aiming",
+        "3": "Eternal Dark Ring of Healing",
+        "4": "Eternal Dark Ring of Casting"
+    },
+    "34962": {
+        "0": "Eternal Dark Ring of Fending",
+        "1": "Eternal Dark Ring of Slaying",
+        "3": "Eternal Dark Ring of Healing",
+        "4": "Eternal Dark Ring of Casting"
+    },
+    "34963": {
+        "0": "Eternal Dark Ring of Fending",
+        "1": "Eternal Dark Ring of Slaying",
+        "2": "Eternal Dark Ring of Aiming",
+        "4": "Eternal Dark Ring of Casting"
+    },
+    "34964": {
+        "0": "Eternal Dark Ring of Fending",
+        "1": "Eternal Dark Ring of Slaying",
+        "2": "Eternal Dark Ring of Aiming",
+        "3": "Eternal Dark Ring of Healing"
+    },
+    "35760": {
+        "1": "Demon Slicer"
+    },
+    "35778": {
+        "1": "Horkos"
+    },
+    "36015": {
+        "1": "Therapeutes's Spectacles"
+    },
+    "36016": {
+        "1": "Therapeutes's Chasuble"
+    },
+    "36017": {
+        "1": "Therapeutes's Gloves"
+    },
+    "36018": {
+        "1": "Therapeutes's Waistwrap"
+    },
+    "36019": {
+        "1": "Therapeutes's Boots"
+    },
+    "36020": {
+        "1": "Harvester's Blinder"
+    },
+    "36021": {
+        "1": "Harvester's Coat"
+    },
+    "36022": {
+        "1": "Harvester's Dressing"
+    },
+    "36023": {
+        "1": "Harvester's Trousers"
+    },
+    "36024": {
+        "1": "Harvester's Boots"
+    },
+    "36121": {
+        "0": "Goatskin Ring",
+        "1": "Boarskin Ring",
+        "2": "Direwolf Ring of Slaying",
+        "3": "Direwolf Ring of Aiming"
+    },
+    "36643": {
+        "0": "Deepgold War Scythe"
+    },
+    "36644": {
+        "0": "Muzhik Blinder"
+    },
+    "36645": {
+        "0": "Muzhik Coat"
+    },
+    "36646": {
+        "0": "Muzhik Field Dressing"
+    },
+    "36647": {
+        "0": "Muzhik Trousers"
+    },
+    "36648": {
+        "0": "Muzhik Boots"
+    },
+    "36649": {
+        "0": "Stonegold Milpreves"
+    },
+    "36650": {
+        "0": "Bookwyrm's Spectacles"
+    },
+    "36651": {
+        "0": "Bookwyrm's Chasuble"
+    },
+    "36652": {
+        "0": "Bookwyrm's Gloves"
+    },
+    "36653": {
+        "0": "Bookwyrm's Waistwrap"
+    },
+    "36654": {
+        "0": "Bookwyrm's Boots"
     }
 }
