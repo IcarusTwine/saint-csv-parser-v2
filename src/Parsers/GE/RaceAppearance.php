@@ -122,12 +122,12 @@ class RaceAppearance implements ParseInterface
                     $paintCode = 2850;
                 break;
                 case 15: // Rava
-                    $tribeCode = 1500;
-                    $paintCode = 2900;
+                    $tribeCode = ($isMale == "true") ? 1600 : 1700;
+                    $paintCode = ($isMale == "true") ? 3400 : 3450;
                 break;
                 case 16: // Veena
-                    $tribeCode = 1500;
-                    $paintCode = 2950;
+                    $tribeCode = ($isMale == "true") ? 1600 : 1700;
+                    $paintCode = ($isMale == "true") ? 3500 : 3550;
                 break;
             }
             $PaintToRange = ($paintCode + 50);

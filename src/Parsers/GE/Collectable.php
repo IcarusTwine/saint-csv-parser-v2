@@ -105,7 +105,11 @@ class Collectable implements ParseInterface
                     //gather rewards script 
                     if ($RewardType === "1") {
                         $RewardSheetLink = $CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopRewardScrip'];
-                        $Currency = $ItemCsv->at($CurrencyArray[$CollectablesShopRewardScripCsv->at($RewardSheetLink)['Currency']])['Name'];
+                        if (empty($CurrencyArray[$CollectablesShopRewardScripCsv->at($RewardSheetLink)['Currency']])){
+                            $Currency = "null";
+                        } else {
+                            $Currency = $ItemCsv->at($CurrencyArray[$CollectablesShopRewardScripCsv->at($RewardSheetLink)['Currency']])['Name'];
+                        }
                         $LowReward = $CollectablesShopRewardScripCsv->at($RewardSheetLink)['LowReward'];
                         $MidReward = $CollectablesShopRewardScripCsv->at($RewardSheetLink)['MidReward'];
                         $HighReward = $CollectablesShopRewardScripCsv->at($RewardSheetLink)['HighReward'];

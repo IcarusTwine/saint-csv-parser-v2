@@ -1262,7 +1262,7 @@ class Quest2 implements ParseInterface
             $NewVariablesImp = implode($NewVariables);
             $MiscRewards = "|Misc Reward = ".implode(",",$LuaRewards);
             $QuestOutput = "{{-start-}}\n";
-            $QuestOutput .= "$HeaderUnknown";
+            //$QuestOutput .= "$HeaderUnknown";
             $QuestOutput .= "'''".$Quest["Name"]."$Addon'''\n";
             $QuestOutput .= "{{ARR Infobox Quest2\n";
             $QuestOutput .= "|Patch = $PatchFixed\n";

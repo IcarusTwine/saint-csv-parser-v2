@@ -81,8 +81,12 @@ class FishParameter implements ParseInterface
                 22 => "Gig{{!}}Small Gig Head",
                 23 => "Gig{{!}}Normal Gig Head",
                 24 => "Gig{{!}}Large Gig Head",
-                25 => null,
-                26 => null,
+                25 => "Gig{{!}}Small Gig Head",
+                26 => "Gig{{!}}Normal Gig Head",
+                27 => "Gig{{!}}Large Gig Head",
+                28 => "Space",
+                29 => null,
+                30 => null,
             ];
             $Level = $GatheringItemLevelConvertTableCsv->at($fish['GatheringItemLevel'])['GatheringItemLevel'];
             $Star = str_repeat("{{Star}}", $GatheringItemLevelConvertTableCsv->at($fish['GatheringItemLevel'])['Stars']);

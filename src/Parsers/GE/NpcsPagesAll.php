@@ -1360,7 +1360,7 @@ class NpcsPagesAll implements ParseInterface
                     break;
                 case 15: // Rava
                 case 16: // Veena
-                    $tribeCode = 1500;
+                    $tribeCode = ($isMale == "true") ? 1600 : 1700;
                     $headIconIndex = 5;
                     $earIconIndex = 14;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
@@ -1463,6 +1463,8 @@ class NpcsPagesAll implements ParseInterface
                 case 10: // Hellsguard
                 case 11: // Raen
                 case 12: // Xaela
+                case 15: // Rava
+                case 16: // Veena
                     $tribeOffset = $baseRowKey + (($tribeKey - 1) * 100);
                     $FacePaintCustomizeIndex = ($isMale == "true") ? $tribeOffset : $tribeOffset + 50;
                     break;
@@ -1472,12 +1474,6 @@ class NpcsPagesAll implements ParseInterface
                     break;
                 case 14: // The Lost
                     $FacePaintCustomizeIndex = 2850;
-                    break;
-                case 15: // Rava
-                    $FacePaintCustomizeIndex = 2900;
-                    break;
-                case 16: // Veena
-                    $FacePaintCustomizeIndex = 2950;
                     break;
             }
             //Face Paint Color

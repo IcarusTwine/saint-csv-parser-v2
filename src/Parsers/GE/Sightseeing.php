@@ -84,6 +84,10 @@ class Sightseeing implements ParseInterface
                 $number1 = $id-2162891;
                 $expansion = "\n| Expansion   = Shadowbringers";
                 $expansionshort = "SHB";
+            } elseif (($id >= 2162937) && $id <= 2162982) {
+                $number1 = $id-2162936;
+                $expansion = "\n| Expansion   = Endwalker";
+                $expansionshort = "EW";
             } else {
                 $number1 = "\n| Expansion   = ERROR: INVALID SIGHTSEEING LOG NUMBER";
             }
