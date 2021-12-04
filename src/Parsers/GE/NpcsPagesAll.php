@@ -190,9 +190,9 @@ class NpcsPagesAll implements ParseInterface
                         $AssetType = $Object->AssetType;
                         if ($AssetType != 43) continue;
                         if ($Object->Object->PlaceNameEnabled == 0) continue;
-                        $x = $Object->Transform->Translation->x;
-                        $y = $Object->Transform->Translation->z;
-                        $z = $Object->Transform->Translation->y;
+                        $x = $Object->Transform->Translation->X;
+                        $y = $Object->Transform->Translation->Z;
+                        $z = $Object->Transform->Translation->Y;
                         $NpcLocX = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["X"];
                         $NpcLocY = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["Y"];
                         $NpcLocZ = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["Y"];
@@ -283,9 +283,9 @@ class NpcsPagesAll implements ParseInterface
                         $y = "";
                         if ($AssetType == 8) {
                             $BaseId = "". $Object->Object->ParentData->ParentData->BaseId ."";
-                            $x = $Object->Transform->Translation->x;
-                            $y = $Object->Transform->Translation->z;
-                            $z = $Object->Transform->Translation->y;
+                            $x = $Object->Transform->Translation->X;
+                            $y = $Object->Transform->Translation->Z;
+                            $z = $Object->Transform->Translation->Y;
                             $NPCID = $BaseId;
                             if (empty($NpcFestivalQuestArray[$NPCID])){
                                 if(!empty($Festival)){

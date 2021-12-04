@@ -135,6 +135,7 @@ class Items implements ParseInterface
                     ucwords(strtolower($ClassJobCsv->at($item['ClassJob{Repair}'])['Name'])) ."\n$DesynthArrayOutput\n}}";
                 if ($Bot == "true") {
                     $DesynthTop = "{{-start-}}\n'''$Name/Desynth'''\n$DesynthText{{-stop-}}";
+                    $DesynthTop = "";
                 } else {
                     $DesynthTop = "http://ffxiv.gamerescape.com/wiki/$Name/Desynth\n$DesynthText";
                 }

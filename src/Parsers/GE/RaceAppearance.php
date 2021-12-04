@@ -67,59 +67,59 @@ class RaceAppearance implements ParseInterface
             {
                 case 1: // Midlander
                     $tribeCode = ($isMale == "true") ? 0 : 100;
-                    $paintCode = ($isMale == "true") ? 1600 : 1650;
+                    $paintCode = ($isMale == "true") ? 2000 : 2050;
                     break;
                 case 2: // Highlander
                     $tribeCode = ($isMale == "true") ? 200 : 300;
-                    $paintCode = ($isMale == "true") ? 1700 : 1750;
+                    $paintCode = ($isMale == "true") ? 2100 : 2150;
                     break;
                 case 3: // Wildwood
                     $tribeCode = ($isMale == "true") ? 400 : 500;
-                    $paintCode = ($isMale == "true") ? 1800 : 1850;
+                    $paintCode = ($isMale == "true") ? 2200 : 2250;
                 break;
                 case 4: // Duskwight
                     $tribeCode = ($isMale == "true") ? 400 : 500;
-                    $paintCode = ($isMale == "true") ? 1900 : 1950;
+                    $paintCode = ($isMale == "true") ? 2300 : 2350;
                 break;
                 case 5: // Plainsfolks
                     $tribeCode = ($isMale == "true") ? 600 : 700;
-                    $paintCode = ($isMale == "true") ? 2000 : 2050;
+                    $paintCode = ($isMale == "true") ? 2400 : 2450;
                 break;
                 case 6: // Dunesfolk
                     $tribeCode = ($isMale == "true") ? 600 : 700;
-                    $paintCode = ($isMale == "true") ? 2100 : 2150;
+                    $paintCode = ($isMale == "true") ? 2500 : 2550;
                 break;
                 case 7: // Seeker of the Sun
                     $tribeCode = ($isMale == "true") ? 800 : 900;
-                    $paintCode = ($isMale == "true") ? 2200 : 2250;
+                    $paintCode = ($isMale == "true") ? 2600 : 2650;
                 break;
                 case 8: // Keeper of the Moon
                     $tribeCode = ($isMale == "true") ? 800 : 900;
-                    $paintCode = ($isMale == "true") ? 2300 : 2350;
+                    $paintCode = ($isMale == "true") ? 2700 : 2750;
                 break;
                 case 9: // Sea Wolf
                     $tribeCode = ($isMale == "true") ? 1000 : 1100;
-                    $paintCode = ($isMale == "true") ? 2400 : 2450;
+                    $paintCode = ($isMale == "true") ? 2800 : 2850;
                 break;
                 case 10: // Hellsguard
                     $tribeCode = ($isMale == "true") ? 1000 : 1100;
-                    $paintCode = ($isMale == "true") ? 2500 : 2550;
+                    $paintCode = ($isMale == "true") ? 2900 : 2950;
                 break;
                 case 11: // Raen
                     $tribeCode = ($isMale == "true") ? 1200 : 1300;
-                    $paintCode = ($isMale == "true") ? 2600 : 2650;
+                    $paintCode = ($isMale == "true") ? 3000 : 3050;
                 break;
                 case 12: // Xaela
                     $tribeCode = ($isMale == "true") ? 1200 : 1300;
-                    $paintCode = ($isMale == "true") ? 2700 : 2750;
+                    $paintCode = ($isMale == "true") ? 3100 : 3150;
                 break;
                 case 13: // Helions
                     $tribeCode = 1400;
-                    $paintCode = 2800;
+                    $paintCode = 3200;
                 break;
                 case 14: // The Lost
                     $tribeCode = 1400;
-                    $paintCode = 2850;
+                    $paintCode = 3300;
                 break;
                 case 15: // Rava
                     $tribeCode = ($isMale == "true") ? 1600 : 1700;

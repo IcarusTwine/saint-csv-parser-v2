@@ -191,8 +191,8 @@ trait CsvParseTrait
                         $AssetType = $Object->AssetType;
                         if ($AssetType != 43) continue;
                         if ($Object->Object->PlaceNameEnabled == 0) continue;
-                        $x = $Object->Transform->Translation->x;
-                        $y = $Object->Transform->Translation->z;
+                        $x = $Object->Transform->Translation->X;
+                        $y = $Object->Transform->Translation->Z;
                         $NpcLocX = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["X"];
                         $NpcLocY = $this->GetLGBPos($x, $y, $id, $TerritoryTypeCsv, $MapCsv)["Y"];
                         $PlaceName = $PlaceNameCsv->at($Object->Object->PlaceNameSpot)['Name'];
@@ -272,8 +272,8 @@ trait CsvParseTrait
                         $y = "";
                         if ($AssetType == 8) {
                             $BaseId = "". $Object->Object->ParentData->ParentData->BaseId ."";
-                            $x = $Object->Transform->Translation->x;
-                            $y = $Object->Transform->Translation->z;
+                            $x = $Object->Transform->Translation->X;
+                            $y = $Object->Transform->Translation->Z;
                             $NPCID = $BaseId;
                             if (empty($NpcFestivalQuestArray[$NPCID])){
                                 if(!empty($Festival)){

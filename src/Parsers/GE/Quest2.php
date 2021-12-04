@@ -1254,6 +1254,12 @@ class Quest2 implements ParseInterface
             // if (!empty($QuestFormat["Undefined"])){
             //     $UndefinedArray[$LuaFile] = $QuestFormat["Undefined"];
             // }
+            if($PatchFixed === "x.x") continue;
+            $CommentString = "<!-- 
+
+            The data on this page is automatically generated and should not be touched. If you believe something on this page is no longer accurate, please contact someone from the Wiki Admin Team on Discord. Biography, Notes and other player generated data is located at ".$Quest["Name"]."$Addon/Notes
+            
+        -->";
             $LuaFormat = $this->getLuaQuest3($LuaFile,$ArgArray,$QuestData,$CSVData);
             $HowToOut = "";
             if (!empty($HowToArray)){
@@ -1262,9 +1268,14 @@ class Quest2 implements ParseInterface
             $NewVariablesImp = implode($NewVariables);
             $MiscRewards = "|Misc Reward = ".implode(",",$LuaRewards);
             $QuestOutput = "{{-start-}}\n";
+            $QuestOutput .= "'''".$Quest["Name"]."$Addon/Patch'''\n";
+            $QuestOutput .= "$PatchFixed\n";
+            $QuestOutput .= "{{-stop-}}\n";
             //$QuestOutput .= "$HeaderUnknown";
+            $QuestOutput .= "{{-start-}}\n";
             $QuestOutput .= "'''".$Quest["Name"]."$Addon'''\n";
-            $QuestOutput .= "{{ARR Infobox Quest2\n";
+            $QuestOutput .= "{{ARR Infobox Quest\n";
+            $QuestOutput .= "$CommentString\n";
             $QuestOutput .= "|Patch = $PatchFixed\n";
             $QuestOutput .= "|Expansion = $Expansion\n";
             $QuestOutput .= "|Name = ".$Quest["Name"]."$Addon\n";
@@ -1320,25 +1331,25 @@ class Quest2 implements ParseInterface
             $QuestOutput .= "\n";
             $QuestOutput .= "}}\n";
             $QuestOutput .= "{{-stop-}}\n";
-            $QuestOutput .= "{{-start-}}\n";
-            $QuestOutput .= "'''".$Quest["Name"]."$Addon/NPCs'''\n";
-            $QuestOutput .= implode("\n",$NPCSubPagesArray)."\n";
-            $QuestOutput .= "{{-stop-}}\n";
-            $QuestOutput .= "{{-start-}}\n";
-            $QuestOutput .= "'''Loremonger:".$Quest["Name"]."$Addon'''\n";
-            $QuestOutput .= "{{Check Loremonger}}\n";
-            $QuestOutput .= "$LuaFormat\n";
-            $QuestOutput .= "{{-stop-}}\n";
-            $QuestOutput .= "{{-start-}}\n";
-            $QuestOutput .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
-            $QuestOutput .= "{{Player Quest Data\n";
-            $QuestOutput .= "|Name = {{subst:BASEPAGENAME}}\n";
-            $QuestOutput .= "|Miscellaneous Requirement =\n";
-            $QuestOutput .= "|Miscellaneous Reward =\n";
-            $QuestOutput .= "|Disambig =\n";
-            $QuestOutput .= "|Notes =\n";
-            $QuestOutput .= "}}\n";
-            $QuestOutput .= "{{-stop-}}\n";
+            // $QuestOutput .= "{{-start-}}\n";
+            // $QuestOutput .= "'''".$Quest["Name"]."$Addon/NPCs'''\n";
+            // $QuestOutput .= implode("\n",$NPCSubPagesArray)."\n";
+            // $QuestOutput .= "{{-stop-}}\n";
+            // $QuestOutput .= "{{-start-}}\n";
+            // $QuestOutput .= "'''Loremonger:".$Quest["Name"]."$Addon'''\n";
+            // $QuestOutput .= "{{Check Loremonger}}\n";
+            // $QuestOutput .= "$LuaFormat\n";
+            // $QuestOutput .= "{{-stop-}}\n";
+            // $QuestOutput .= "{{-start-}}\n";
+            // $QuestOutput .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
+            // $QuestOutput .= "{{Player Quest Data\n";
+            // $QuestOutput .= "|Name = {{subst:BASEPAGENAME}}\n";
+            // $QuestOutput .= "|Miscellaneous Requirement =\n";
+            // $QuestOutput .= "|Miscellaneous Reward =\n";
+            // $QuestOutput .= "|Disambig =\n";
+            // $QuestOutput .= "|Notes =\n";
+            // $QuestOutput .= "}}\n";
+            // $QuestOutput .= "{{-stop-}}\n";
             if ($LuaFormat === "empty") continue;
             if (strpos($QuestOutput,"<")!== false){
                 $SymbolChecklist[] = "".$Quest["Name"]."".$Addon."";
