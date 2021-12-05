@@ -358,7 +358,7 @@ class Quest2 implements ParseInterface
             $LuaRewards = [];
             $ItemArrayNames = [];
             //if (($id < 69590) || ($id > 69592)) continue; // next event
-            //if ($id != 69576) continue;
+            //if ($id != 66073) continue;
             $Addon = "";
             if (isset($QuestAdditions[$id])){
                 $Addon = $QuestAdditions[$id];
@@ -1157,7 +1157,7 @@ class Quest2 implements ParseInterface
                     }
                 }
                 if (stripos($Argument,"ITEM") !== false){
-                    if (stripos($Argument,"RITEM") == false){
+                    if (stripos($Argument,"RITEM") !== false){
 
                     } else {
                         $ItemArray[] = array(

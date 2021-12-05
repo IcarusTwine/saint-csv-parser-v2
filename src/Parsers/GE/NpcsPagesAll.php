@@ -1448,7 +1448,7 @@ class NpcsPagesAll implements ParseInterface
             }
             //Face Paint
             //get facepaint keys based on gender/race
-            $baseRowKey = 1600;
+            $baseRowKey = 2000;
             switch ($tribeKey)
             {
                 case 1: // Midlander
@@ -1467,7 +1467,7 @@ class NpcsPagesAll implements ParseInterface
                 case 16: // Veena
                     $tribeOffset = $baseRowKey + (($tribeKey - 1) * 100);
                     $FacePaintCustomizeIndex = ($isMale == "true") ? $tribeOffset : $tribeOffset + 50;
-                    break;
+                break;
 
                 case 13: // Helions
                     $FacePaintCustomizeIndex = 2800;

@@ -256,6 +256,7 @@ $ColorStateEnum[3] = "ColorStateReset";
 //
     $LineStyleEnum[1] = "Red";
     $LineStyleEnum[2] = "Blue";
+    $LineStyleEnum[3] = "Purple";
 //
     //public enum GimmickType
     //{
@@ -628,6 +629,7 @@ $ColorStateEnum[3] = "ColorStateReset";
             $this->io->progressAdvance();
             //STARTBOT
             //if ($id != 141) continue;
+            if (empty($PatchNumber[$id])) continue;
             $DataArray = [];
             $fishingspotarray = [];
             if (!empty($FishingSpotArray[$id])) {
@@ -1159,8 +1161,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     $Radius = "";
 
                                     if ($AssetType === 3){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1215,8 +1217,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     }
                                     
                                     if ($AssetType === 4){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1263,8 +1265,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     }
                                     
                                     if ($AssetType === 6){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1314,8 +1316,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     }
                                     
                                     if ($AssetType === 7){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1360,8 +1362,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     }
 
                                     if ($AssetType === 8){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1498,13 +1500,13 @@ $ColorStateEnum[3] = "ColorStateReset";
 
                                     if ($AssetType === 13){
                                         $polypoints = "";
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1576,8 +1578,8 @@ $ColorStateEnum[3] = "ColorStateReset";
 
                                     
                                     if ($AssetType === 16){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1621,9 +1623,9 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     
                                     if ($AssetType === 40){
                                         $Type = "Circle";
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x  * $c2;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
+                                        $xscale = $Object->Transform->Scale->X  * $c2;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1667,13 +1669,13 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     }
                                     
                                     if ($AssetType === 41){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1745,13 +1747,13 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     
                                     if ($AssetType === 43){
                                         if ($Object->Object->PlaceNameEnabled === 0) continue;
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -1842,8 +1844,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     
                                     if ($AssetType === 45){
                                         //TODO FIX EOBJ, Names breaking for some reason?
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $BaseId = $Object->Object->ParentData->BaseId;
                                         $EobjName = "";
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
@@ -2405,8 +2407,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     
                                     
                                     if ($AssetType === 47){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -2450,8 +2452,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                 
                                     
                                     if ($AssetType === 49){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -2530,23 +2532,23 @@ $ColorStateEnum[3] = "ColorStateReset";
                                             //<label>InstanceID:</label>
                                             //<input type="text"  value="'.$InstanceID.'"><br>
                                             //<label>PosX:</label>
-                                            //<input type="text" value="'.$Object->Transform->Translation->x.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Translation->X.'"><br>
                                             //<label>PosY:</label>
-                                            //<input type="text" value="'.$Object->Transform->Translation->y.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Translation->Y.'"><br>
                                             //<label>PosZ:</label>
-                                            //<input type="text" value="'.$Object->Transform->Translation->z.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Translation->Z.'"><br>
                                             //<label>RotX:</label>
-                                            //<input type="text" value="'.$Object->Transform->Rotation->x.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Rotation->X.'"><br>
                                             //<label>RotY:</label>
-                                            //<input type="text" value="'.$Object->Transform->Rotation->y.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Rotation->Y.'"><br>
                                             //<label>RotZ:</label>
-                                            //<input type="text" value="'.$Object->Transform->Rotation->z.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Rotation->Z.'"><br>
                                             //<label>ScaleX:</label>
-                                            //<input type="text" value="'.$Object->Transform->Scale->x.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Scale->X.'"><br>
                                             //<label>ScaleY:</label>
-                                            //<input type="text" value="'.$Object->Transform->Scale->y.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Scale->Y.'"><br>
                                             //<label>ScaleZ:</label>
-                                            //<input type="text" value="'.$Object->Transform->Scale->z.'"><br>
+                                            //<input type="text" value="'.$Object->Transform->Scale->Z.'"><br>
                                             //<label>Asset type:</label>
                                             //<input type="text" value="'.$AssetTypeEnums[$AssetType].'"><br>
                                             //<label>Festival ID:</label>
@@ -2580,11 +2582,11 @@ $ColorStateEnum[3] = "ColorStateReset";
                                                 )
                                             );
                                         } else {
-                                            $xscale = $Object->Transform->Scale->x;
-                                            $zscale = $Object->Transform->Scale->z;
-                                            $rotationy = $Object->Transform->Rotation->y;
-                                            $rotationx = $Object->Transform->Rotation->x;
-                                            $rotationz = $Object->Transform->Rotation->z;
+                                            $xscale = $Object->Transform->Scale->X;
+                                            $zscale = $Object->Transform->Scale->Z;
+                                            $rotationy = $Object->Transform->Rotation->Y;
+                                            $rotationx = $Object->Transform->Rotation->X;
+                                            $rotationz = $Object->Transform->Rotation->Z;
                                             $DataArray["InstanceID"] = $InstanceID;
                                             $DataArray["LayerName"] = $LayerName;
                                             $DataArray["AssetType"] = $AssetTypeEnums[$AssetType];
@@ -2652,16 +2654,16 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         }
                                     }
                                     if ($AssetType === 57){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $PopupText = $AssetTypeEnums[$AssetType];
                                         $DataArray["InstanceID"] = $InstanceID;
                                         $DataArray["LayerName"] = $LayerName;
@@ -2712,16 +2714,16 @@ $ColorStateEnum[3] = "ColorStateReset";
 
                                     
                                     if ($AssetType === 59){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $PopupText = $AssetTypeEnums[$AssetType];
                                         $DataArray["InstanceID"] = $InstanceID;
                                         $DataArray["LayerName"] = $LayerName;
@@ -2773,16 +2775,16 @@ $ColorStateEnum[3] = "ColorStateReset";
 
                                     
                                     if ($AssetType === 65){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $PopupText = $AssetTypeEnums[$AssetType];
                                         $DataArray["InstanceID"] = $InstanceID;
                                         $DataArray["LayerName"] = $LayerName;
@@ -2796,8 +2798,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                         $xsave = $x;
                                         $ysave = $y;
                                         foreach($ControlPointsArray as $ControlPoints) {
-                                            $PointX = $ControlPoints->Translation->x;
-                                            $PointY = $ControlPoints->Translation->z;
+                                            $PointX = $ControlPoints->Translation->X;
+                                            $PointY = $ControlPoints->Translation->Z;
                                             $PointXnew = $xsave + $PointX;
                                             $PointYnew = $ysave + $PointY;
                                             $PointPos = $this->GetLGBPosArrm($PointXnew, $PointYnew, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
@@ -2849,8 +2851,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     }
                                     
                                     if ($AssetType === 68){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -2901,8 +2903,8 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     
                                     
                                     if ($AssetType === 69){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -2953,13 +2955,13 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     }
                                     
                                     if ($AssetType === 71){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];
@@ -3031,13 +3033,13 @@ $ColorStateEnum[3] = "ColorStateReset";
                                     
                                     
                                     if ($AssetType === 72){
-                                        $x = $Object->Transform->Translation->x;
-                                        $y = $Object->Transform->Translation->z;
-                                        $xscale = $Object->Transform->Scale->x;
-                                        $zscale = $Object->Transform->Scale->z;
-                                        $rotationy = $Object->Transform->Rotation->y;
-                                        $rotationx = $Object->Transform->Rotation->x;
-                                        $rotationz = $Object->Transform->Rotation->z;
+                                        $x = $Object->Transform->Translation->X;
+                                        $y = $Object->Transform->Translation->Z;
+                                        $xscale = $Object->Transform->Scale->X;
+                                        $zscale = $Object->Transform->Scale->Z;
+                                        $rotationy = $Object->Transform->Rotation->Y;
+                                        $rotationx = $Object->Transform->Rotation->X;
+                                        $rotationz = $Object->Transform->Rotation->Z;
                                         $XandY = $this->GetLGBPosArrm($x, $y, $id, $TerritoryTypeCsv, $MapCsv, $newMapId);
                                         $PX = $XandY["PX"];
                                         $PY = $XandY["PY"];

@@ -778,8 +778,11 @@ trait CsvParseTrait
     /**
      * Generate X and Y for LGB/LEVEL Locations for ARRM3
      */
-    public function GetLGBPosArrm($x, $y, $TerritoryID, $TerritoryTypeCsv, $MapCsv, $MapId) {
+    public function GetLGBPosArrm($x, $y, $TerritoryID, $TerritoryTypeCsv, $MapCsv, $MapId = 0) {
         $mapLink = $MapId;
+        if ($MapId === 0){
+            $mapLink = $TerritoryTypeCsv->at($TerritoryID)['Map'];
+        }
         if (!empty($x)) {
             $scale = $MapCsv->at($mapLink)['SizeFactor'];
         } else {
@@ -2464,9 +2467,18 @@ trait CsvParseTrait
                         $AchivementRequired = "|Requires Achievement = ". $AchievementCsv->at($SpecialShopCsv->at($SpecialShopID)["AchievementUnlock[$specialshopc]"])["Name"];
                     }
                     $SpecialShopCostArray = [];
+                    $CurrencyArray = $this->GetCurrency();
                     foreach(range(0,2) as $specialshope) {
                         if (!empty($ItemCsv->at($SpecialShopCsv->at($SpecialShopID)["Item{Cost}[$specialshopc][$specialshope]"])['Name'])) {
-                            $ItemCost = $ItemCsv->at($SpecialShopCsv->at($SpecialShopID)["Item{Cost}[$specialshopc][$specialshope]"])['Name'];
+                            if ($SpecialShopCsv->at($SpecialShopID)["UseCurrencyType"] === "16"){
+                                if (!empty($CurrencyArray[$SpecialShopCsv->at($SpecialShopID)["Item{Cost}[$specialshopc][$specialshope]"]])){
+                                    $ItemCost = $ItemCsv->at($CurrencyArray[$SpecialShopCsv->at($SpecialShopID)["Item{Cost}[$specialshopc][$specialshope]"]])['Name'];
+                                } else {
+                                    $ItemCost = $ItemCsv->at($SpecialShopCsv->at($SpecialShopID)["Item{Cost}[$specialshopc][$specialshope]"])['Name'];
+                                }
+                            } else {
+                                $ItemCost = $ItemCsv->at($SpecialShopCsv->at($SpecialShopID)["Item{Cost}[$specialshopc][$specialshope]"])['Name'];
+                            }
                             $ItemCostAmount = $SpecialShopCsv->at($SpecialShopID)["Count{Cost}[$specialshopc][$specialshope]"];
                             $ItemCostHQ = "";
                             switch ($SpecialShopCsv->at($SpecialShopID)["HQ{Cost}[$specialshopc][$specialshope]"]) {
@@ -3582,12 +3594,12 @@ trait CsvParseTrait
     private function GetCurrency()
     {
         $CurencyArray[1] = 10309;
-        $CurencyArray[2] = 17833;
+        $CurencyArray[2] = 25199;
         $CurencyArray[3] = 10311;
-        $CurencyArray[4] = 17834;
+        $CurencyArray[4] = 25200;
         $CurencyArray[5] = 10307;
-        $CurencyArray[6] = 25199;
-        $CurencyArray[7] = 25200;
+        $CurencyArray[6] = 33913;
+        $CurencyArray[7] = 33914;
         $CurencyArray[8] = 21072;
         $CurencyArray[9] = 21073;
         $CurencyArray[10] = 21074;

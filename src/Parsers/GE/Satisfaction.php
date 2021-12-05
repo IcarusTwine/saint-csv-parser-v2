@@ -92,16 +92,16 @@ class Satisfaction implements ParseInterface
         
                     switch ($yellowtypenumber) {
                         case 2:
-                            $yellowtype = "Yellow Crafters' Scrip";
-                            break;
-                        case 4:
-                            $yellowtype = "Yellow Gatherers' Scrip";
-                            break;
-                        case 6:
                             $yellowtype = "White Crafters' Scrip";
                             break;
-                        case 7:
+                        case 4:
                             $yellowtype = "White Gatherers' Scrip";
+                            break;
+                        case 6:
+                            $yellowtype = "Purple Crafters' Scrip";
+                            break;
+                        case 7:
+                            $yellowtype = "Purple Gatherers' Scrip";
                             break;
                         default:
                             $yellowtype = false;
@@ -110,16 +110,16 @@ class Satisfaction implements ParseInterface
 
                     switch ($whitetypenumber) {
                         case 2:
-                            $whitetype = "Yellow Crafters' Scrip";
-                            break;
-                        case 4:
-                            $whitetype = "Yellow Gatherers' Scrip";
-                            break;
-                        case 6:
                             $whitetype = "White Crafters' Scrip";
                             break;
-                        case 7:
+                        case 4:
                             $whitetype = "White Gatherers' Scrip";
+                            break;
+                        case 6:
+                            $whitetype = "Purple Crafters' Scrip";
+                            break;
+                        case 7:
+                            $whitetype = "Purple Gatherers' Scrip";
                             break;
                         default:
                             $whitetype = false;
@@ -141,14 +141,14 @@ class Satisfaction implements ParseInterface
                     $OutputString .= "|Gil Low = $gillow\n";
                     $OutputString .= "|Gil Mid = $gilmid\n";
                     $OutputString .= "|Gil High = $gilhigh\n";
-                    $OutputString .= "|Yellow Type = $yellowtype\n";
-                    $OutputString .= "|Yellow Low = $yellowlow\n";
-                    $OutputString .= "|Yellow Mid = $yellowmid\n";
-                    $OutputString .= "|Yellow High = $yellowhigh\n";
-                    $OutputString .= "|White Type = $whitetype\n";
-                    $OutputString .= "|White Low = $whitelow\n";
-                    $OutputString .= "|White Mid = $whitemid\n";
-                    $OutputString .= "|White High = $whitehigh\n";
+                    $OutputString .= "|White Type = $yellowtype\n";
+                    $OutputString .= "|White Low = $yellowlow\n";
+                    $OutputString .= "|White Mid = $yellowmid\n";
+                    $OutputString .= "|White High = $yellowhigh\n";
+                    $OutputString .= "|Purple Type = $whitetype\n";
+                    $OutputString .= "|Purple Low = $whitelow\n";
+                    $OutputString .= "|Purple Mid = $whitemid\n";
+                    $OutputString .= "|Purple High = $whitehigh\n";
                     $OutputString .= "}}";
                     $Array[$Name][] = $OutputString;
                 }
