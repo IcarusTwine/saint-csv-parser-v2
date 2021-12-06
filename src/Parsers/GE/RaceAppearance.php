@@ -157,6 +157,7 @@ class RaceAppearance implements ParseInterface
             }
 
         }
+        var_dump($OutArray['Viera']['Rava']['Male']);
         foreach($OutArray as $Race => $data1){
             //race
             $OutputArray[] = "{{-start-}}\n";

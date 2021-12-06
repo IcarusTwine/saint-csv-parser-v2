@@ -1016,6 +1016,7 @@ trait CsvParseTrait
         return "{{-start-}}
         '''$NpcName/$FuncDataValue/TripleTriad'''
         {{TripleTriadTemplate
+        |Name = {{subst:ROOTPAGENAME}}
         |Fee = $Fee
         |RegionalRules = $RegionalRules
         |Rules = $Rules
