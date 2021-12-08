@@ -344,6 +344,9 @@ class Quest2 implements ParseInterface
         $CSVData["BadNames"] = $BadNames;
         $IconArray = [];
         $UndefinedArray = [];
+        $FinalOutputInit = [];
+        $QuestBattleChecklist = [];
+        $ListenerNPCMaps = [];
         $QuestOutputNPCS = "";
         $this->io->progressStart($QuestCsv->total);
         foreach ($QuestCsv->data as $id => $Quest) {
@@ -357,8 +360,8 @@ class Quest2 implements ParseInterface
             $ItemArray = [];
             $LuaRewards = [];
             $ItemArrayNames = [];
-            //if (($id < 69590) || ($id > 69592)) continue; // next event
-            //if ($id != 66073) continue;
+            //if (($id != 69707) || ($id != 69710) || ($id != 69706)|| ($id != 69711)) continue; // next event
+            if ($id != 69711) continue;
             $Addon = "";
             if (isset($QuestAdditions[$id])){
                 $Addon = $QuestAdditions[$id];
@@ -464,7 +467,7 @@ class Quest2 implements ParseInterface
                         $NPCSTRING .="    | Sublocation = \n";
                         $NPCSTRING .="    | CutsceneNPC = x\n";
                         $NPCSTRING .="  }}\n{{-stop-}}";
-                          $ListenerNPCMaps[] = $NPCSTRING;
+                        $ListenerNPCMaps[] = $NPCSTRING;
                     }
                 }
             }
@@ -627,6 +630,9 @@ class Quest2 implements ParseInterface
             $QuestSubType = $JournalGenreCsv->at($Quest['JournalGenre'])['Name'];
             if ($Quest['JournalGenre'] )
             $QuestSection = $JournalSectionCsv->at($JournalCategoryCsv->at($JournalGenreCsv->at($Quest['JournalGenre'])['JournalCategory'])['JournalSection'])['Name'];
+            if (empty($QuestSection)){
+                $QuestSection = "";
+            }
             $EventIcon = $Quest['Icon{Special}'];
             if (empty($Quest['Icon{Special}'])){
                 $EventIcon = $EventIconTypeCsv->at($Quest['EventIconType'])['NpcIcon{Available}'] + 1;
@@ -1243,6 +1249,7 @@ class Quest2 implements ParseInterface
             if ($PatchFixed === "2.1"){
                 $PatchFixed = "2.0";
             }
+            $PatchFixed = "6.0"; //DELETE ME
 
 
             // $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);
@@ -1254,7 +1261,7 @@ class Quest2 implements ParseInterface
             // if (!empty($QuestFormat["Undefined"])){
             //     $UndefinedArray[$LuaFile] = $QuestFormat["Undefined"];
             // }
-            if($PatchFixed === "x.x") continue;
+            //if($PatchFixed === "x.x") continue;
             $CommentString = "<!-- 
 
             The data on this page is automatically generated and should not be touched. If you believe something on this page is no longer accurate, please contact someone from the Wiki Admin Team on Discord. Biography, Notes and other player generated data is located at ".$Quest["Name"]."$Addon/Notes
@@ -1331,26 +1338,26 @@ class Quest2 implements ParseInterface
             $QuestOutput .= "\n";
             $QuestOutput .= "}}\n";
             $QuestOutput .= "{{-stop-}}\n";
-            // $QuestOutput .= "{{-start-}}\n";
-            // $QuestOutput .= "'''".$Quest["Name"]."$Addon/NPCs'''\n";
-            // $QuestOutput .= implode("\n",$NPCSubPagesArray)."\n";
-            // $QuestOutput .= "{{-stop-}}\n";
-            // $QuestOutput .= "{{-start-}}\n";
-            // $QuestOutput .= "'''Loremonger:".$Quest["Name"]."$Addon'''\n";
-            // $QuestOutput .= "{{Check Loremonger}}\n";
-            // $QuestOutput .= "$LuaFormat\n";
-            // $QuestOutput .= "{{-stop-}}\n";
-            // $QuestOutput .= "{{-start-}}\n";
-            // $QuestOutput .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
-            // $QuestOutput .= "{{Player Quest Data\n";
-            // $QuestOutput .= "|Name = {{subst:BASEPAGENAME}}\n";
-            // $QuestOutput .= "|Miscellaneous Requirement =\n";
-            // $QuestOutput .= "|Miscellaneous Reward =\n";
-            // $QuestOutput .= "|Disambig =\n";
-            // $QuestOutput .= "|Notes =\n";
-            // $QuestOutput .= "}}\n";
-            // $QuestOutput .= "{{-stop-}}\n";
-            if ($LuaFormat === "empty") continue;
+             $QuestOutput .= "{{-start-}}\n";
+             $QuestOutput .= "'''".$Quest["Name"]."$Addon/NPCs'''\n";
+             $QuestOutput .= implode("\n",$NPCSubPagesArray)."\n";
+             $QuestOutput .= "{{-stop-}}\n";
+             $QuestOutput .= "{{-start-}}\n";
+             $QuestOutput .= "'''Loremonger:".$Quest["Name"]."$Addon'''\n";
+             $QuestOutput .= "{{Check Loremonger}}\n";
+             $QuestOutput .= "$LuaFormat\n";
+             $QuestOutput .= "{{-stop-}}\n";
+             $QuestOutput .= "{{-start-}}\n";
+             $QuestOutput .= "'''".$Quest["Name"]."$Addon/Notes'''\n";
+             $QuestOutput .= "{{Player Quest Data\n";
+             $QuestOutput .= "|Name = {{subst:BASEPAGENAME}}\n";
+             $QuestOutput .= "|Miscellaneous Requirement =\n";
+             $QuestOutput .= "|Miscellaneous Reward =\n";
+             $QuestOutput .= "|Disambig =\n";
+             $QuestOutput .= "|Notes =\n";
+             $QuestOutput .= "}}\n";
+             $QuestOutput .= "{{-stop-}}\n";
+            //if ($LuaFormat === "empty") continue;
             if (strpos($QuestOutput,"<")!== false){
                 $SymbolChecklist[] = "".$Quest["Name"]."".$Addon."";
             }

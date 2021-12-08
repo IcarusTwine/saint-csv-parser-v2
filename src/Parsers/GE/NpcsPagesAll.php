@@ -88,6 +88,7 @@ class NpcsPagesAll implements ParseInterface
         $GCRankGridaniaMaleTextCsv = $this->csv("GCRankGridaniaMaleText");
         $GCRankLimsaMaleTextCsv = $this->csv("GCRankLimsaMaleText");
         $GCRankUldahMaleTextCsv = $this->csv("GCRankUldahMaleText");
+        $FateShopCsv = $this->csv("FateShop");
 
         $NpcNameArray = [];
         $NpcMainPage = [];
@@ -424,6 +425,13 @@ class NpcsPagesAll implements ParseInterface
 
 
         $PorterArray = [];
+        $TotalItems = [];
+        $GetPorterArray = [];
+        $GetTripleTriadArray = [];
+        $ShopOutputArray = [];
+        $ShopDialogueArray = [];
+        $DialogueArray = [];
+        $WarpPagesArray = [];
         //data constructor
         $this->io->text('Generating NPC Data ...');
         $this->io->progressStart($ENpcResidentCsv->total);
@@ -504,6 +512,19 @@ class NpcsPagesAll implements ParseInterface
             $ChocoboTaxiCheck = [];
             $TripleTriadCheck = [];
             $GetPorterArray = [];
+
+            
+            //FATE SHOP
+            if (!empty($FateShopCsv->at($id)['SpecialShop[0]'])){
+                foreach(range(0,1) as $i){
+                    $ShopID = $FateShopCsv->at($id)["SpecialShop[$i]"];
+                    if ($ShopID === "0") continue;
+                    $FuncShop = $this->getShop($NameFormatted, "SpecialShop", $ItemCsv, $AchievementCsv, $QuestCsv, $SpecialShopCsv, $ShopID, $DefaultTalkCsv, $GilShopCsv, $GilShopItemCsv, $NpcPlaceName, $CoordLocation,"");
+                    $ShopCheck[] = $FuncShop["Name"].",";
+                    $ShopOutputArray[] = $FuncShop["Shop"];
+                    $TotalItems[$NameFormatted][] = $FuncShop["Number"];
+                }
+            }
             foreach(range(0,31) as $i) {
                 if ($ENpcBaseCsv->at($id)["ENpcData[$i]"] == 0) continue;
                 if (empty($ENpcBaseCsv->at($id)["ENpcData[$i]"])) continue;
