@@ -66,6 +66,15 @@ class Actions implements ParseInterface
             $index = $Action['id'];
             $Patch = $PatchNumber[$id];
             $Name = $Action['Name'];
+            $isPvP = $Action['IsPvP'];
+            switch ($isPvP) {
+              case 'False':
+                $PvP = "";
+              break;
+              case 'True':
+                $PvP = " (PvP)";
+              break;
+            }
 
             //commenting this code out. Will need to uncomment out the '{name}' code at bottom if $Name actually needs using
             /*if ($Bot == "true") {
@@ -81,7 +90,6 @@ class Actions implements ParseInterface
             } elseif ($Action['ClassJob'] !== "-1") {
               $npcif = "";
             }
-
             $ClassJobLong = ucwords(strtolower($ClassJobCsv->at($Action['ClassJob'])['Name']));
             $ClassJobShort = str_replace(" ",",",$ClassJobCategoryCsv->at($Action['ClassJobCategory'])['Name']);
             $Level = $Action['ClassJobLevel'];
@@ -130,7 +138,8 @@ class Actions implements ParseInterface
               $TemplateSwitch = "{{Mount Action";
               $AffinitySwitch = "|Acquired = Mount\n";
             }
-            $IconArray[$Name] = $Action['Icon'];
+            $IconName = "$Name$PvP";
+            $IconArray[$IconName] = $Action['Icon'];
 
             // Save some data
             $data = [
@@ -138,7 +147,7 @@ class Actions implements ParseInterface
                 //'{bottom}' => $Bottom,
                 '{patch}' => $Patch,
                 //'{name}' => $Name,
-                '{name}' => $Action['Name'],
+                '{name}' => $Action['Name']."$PvP",
                 '{type}' => $Type,
                 '{AffinitySwitch}' => $AffinitySwitch,
                 '{range}' => $Range,
