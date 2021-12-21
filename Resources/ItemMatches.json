@@ -52790,7 +52790,7 @@
     },
     "26447": {
         "1": "Ornate Facet Mail of Fending",
-        "2": "Augmented Suit of Facet Mail of Fending"
+        "2": "Augmented Facet Mail of Fending"
     },
     "26448": {
         "1": "Augmented Facet Gauntlets of Fending"
@@ -52806,7 +52806,7 @@
     },
     "26453": {
         "1": "Ornate Facet Mail of Maiming",
-        "2": "Augmented Suit of Facet Mail of Maiming"
+        "2": "Augmented Facet Mail of Maiming"
     },
     "26454": {
         "1": "Augmented Facet Gauntlets of Maiming"
@@ -53119,11 +53119,11 @@
     },
     "26811": {
         "0": "Facet Mail of Fending",
-        "2": "Augmented Suit of Facet Mail of Fending"
+        "2": "Augmented Facet Mail of Fending"
     },
     "26812": {
         "0": "Facet Mail of Maiming",
-        "2": "Augmented Suit of Facet Mail of Maiming"
+        "2": "Augmented Facet Mail of Maiming"
     },
     "26813": {
         "0": "Facet Cyclas of Striking",
@@ -63406,6 +63406,126 @@
         "1": "Eternal Dark Ring of Slaying",
         "2": "Eternal Dark Ring of Aiming",
         "3": "Eternal Dark Ring of Healing"
+    },
+    "35000": {
+        "1": "Limbo Earrings of Slaying",
+        "2": "Limbo Earrings of Aiming",
+        "3": "Limbo Earrings of Healing",
+        "4": "Limbo Earrings of Casting"
+    },
+    "35001": {
+        "0": "Limbo Earrings of Fending",
+        "2": "Limbo Earrings of Aiming",
+        "3": "Limbo Earrings of Healing",
+        "4": "Limbo Earrings of Casting"
+    },
+    "35002": {
+        "0": "Limbo Earrings of Fending",
+        "1": "Limbo Earrings of Slaying",
+        "3": "Limbo Earrings of Healing",
+        "4": "Limbo Earrings of Casting"
+    },
+    "35003": {
+        "0": "Limbo Earrings of Fending",
+        "1": "Limbo Earrings of Slaying",
+        "2": "Limbo Earrings of Aiming",
+        "4": "Limbo Earrings of Casting"
+    },
+    "35004": {
+        "0": "Limbo Earrings of Fending",
+        "1": "Limbo Earrings of Slaying",
+        "2": "Limbo Earrings of Aiming",
+        "3": "Limbo Earrings of Healing"
+    },
+    "35005": {
+        "1": "Limbo Necklace of Slaying",
+        "2": "Limbo Necklace of Aiming",
+        "3": "Limbo Necklace of Healing",
+        "4": "Limbo Necklace of Casting"
+    },
+    "35006": {
+        "0": "Limbo Necklace of Fending",
+        "2": "Limbo Necklace of Aiming",
+        "3": "Limbo Necklace of Healing",
+        "4": "Limbo Necklace of Casting"
+    },
+    "35007": {
+        "0": "Limbo Necklace of Fending",
+        "1": "Limbo Necklace of Slaying",
+        "3": "Limbo Necklace of Healing",
+        "4": "Limbo Necklace of Casting"
+    },
+    "35008": {
+        "0": "Limbo Necklace of Fending",
+        "1": "Limbo Necklace of Slaying",
+        "2": "Limbo Necklace of Aiming",
+        "4": "Limbo Necklace of Casting"
+    },
+    "35009": {
+        "0": "Limbo Necklace of Fending",
+        "1": "Limbo Necklace of Slaying",
+        "2": "Limbo Necklace of Aiming",
+        "3": "Limbo Necklace of Healing"
+    },
+    "35010": {
+        "1": "Limbo Amulet of Slaying",
+        "2": "Limbo Amulet of Aiming",
+        "3": "Limbo Amulet of Healing",
+        "4": "Limbo Amulet of Casting"
+    },
+    "35011": {
+        "0": "Limbo Amulet of Fending",
+        "2": "Limbo Amulet of Aiming",
+        "3": "Limbo Amulet of Healing",
+        "4": "Limbo Amulet of Casting"
+    },
+    "35012": {
+        "0": "Limbo Amulet of Fending",
+        "1": "Limbo Amulet of Slaying",
+        "3": "Limbo Amulet of Healing",
+        "4": "Limbo Amulet of Casting"
+    },
+    "35013": {
+        "0": "Limbo Amulet of Fending",
+        "1": "Limbo Amulet of Slaying",
+        "2": "Limbo Amulet of Aiming",
+        "4": "Limbo Amulet of Casting"
+    },
+    "35014": {
+        "0": "Limbo Amulet of Fending",
+        "1": "Limbo Amulet of Slaying",
+        "2": "Limbo Amulet of Aiming",
+        "3": "Limbo Amulet of Healing"
+    },
+    "35015": {
+        "1": "Limbo Ring of Slaying",
+        "2": "Limbo Ring of Aiming",
+        "3": "Limbo Ring of Healing",
+        "4": "Limbo Ring of Casting"
+    },
+    "35016": {
+        "0": "Limbo Ring of Fending",
+        "2": "Limbo Ring of Aiming",
+        "3": "Limbo Ring of Healing",
+        "4": "Limbo Ring of Casting"
+    },
+    "35017": {
+        "0": "Limbo Ring of Fending",
+        "1": "Limbo Ring of Slaying",
+        "3": "Limbo Ring of Healing",
+        "4": "Limbo Ring of Casting"
+    },
+    "35018": {
+        "0": "Limbo Ring of Fending",
+        "1": "Limbo Ring of Slaying",
+        "2": "Limbo Ring of Aiming",
+        "4": "Limbo Ring of Casting"
+    },
+    "35019": {
+        "0": "Limbo Ring of Fending",
+        "1": "Limbo Ring of Slaying",
+        "2": "Limbo Ring of Aiming",
+        "3": "Limbo Ring of Healing"
     },
     "35760": {
         "1": "Demon Slicer"
