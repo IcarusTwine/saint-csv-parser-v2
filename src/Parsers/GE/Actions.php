@@ -86,10 +86,9 @@ class Actions implements ParseInterface
             };*/
             //add "NPC SKILL" if it's an npc so we can sort
             if ($Action['ClassJob'] == "-1") {
-              $npcif = "|Player Allowed = False";
-            } elseif ($Action['ClassJob'] !== "-1") {
-              $npcif = "";
+              continue;
             }
+
             $ClassJobLong = ucwords(strtolower($ClassJobCsv->at($Action['ClassJob'])['Name']));
             $ClassJobShort = str_replace(" ",",",$ClassJobCategoryCsv->at($Action['ClassJobCategory'])['Name']);
             $Level = $Action['ClassJobLevel'];
