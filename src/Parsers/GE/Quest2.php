@@ -361,7 +361,7 @@ class Quest2 implements ParseInterface
             $LuaRewards = [];
             $ItemArrayNames = [];
             //if (($id != 69707) || ($id != 69710) || ($id != 69706)|| ($id != 69711)) continue; // next event
-            if ($id != 69711) continue;
+            //if ($id != 69711) continue;
             $Addon = "";
             if (isset($QuestAdditions[$id])){
                 $Addon = $QuestAdditions[$id];
@@ -738,16 +738,16 @@ class Quest2 implements ParseInterface
             if (!empty($CraftActionData[$id])){
                 $NewVariables[] = "|Action Reward = ".$CraftActionData[$id]."\n";
             }
-            if (!empty($DawnQuestAnnounceData[$id])){
-                $Content = $ContentFinderConditionCsv->at($DawnContentCsv->at($DawnQuestAnnounceData[$id]['Content'])['Content'])['Name'];
-                $DawnNpcs = [];
-                foreach(range(0,5) as $i){
-                    if (empty($ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'])) continue;
-                    $DawnNpcs[] = $ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'];
-                }
-                //$NewVariables[] = "|Allows Trust Content = ".$Content."\n";
-                $NewVariables[] = "|Allows Trust Npcs = ".implode(",",$DawnNpcs)."\n";
-            }
+            // if (!empty($DawnQuestAnnounceData[$id])){
+            //     $Content = $ContentFinderConditionCsv->at($DawnQuestAnnounceData[$id]['Content'])['Name'];
+            //     $DawnNpcs = [];
+            //     foreach(range(0,5) as $i){
+            //         if (empty($ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'])) continue;
+            //         $DawnNpcs[] = $ENpcResidentCsv->at($DawnQuestAnnounceData[$id]["ENPC[$i]"])['Singular'];
+            //     }
+            //     //$NewVariables[] = "|Allows Trust Content = ".$Content."\n";
+            //     $NewVariables[] = "|Allows Trust Npcs = ".implode(",",$DawnNpcs)."\n";
+            // }
             if (!empty($DescriptionData[$id])){
                 $HowToArray[] = "".$DescriptionData[$id]."";
             }
