@@ -360,7 +360,7 @@ class EquipmentImageBot implements ParseInterface
         $MaleOutput .= "EOP\n";
         $MaleOutput .= "$AllFeetItems$AllMaleFeetItems\n";
         $MaleOutput .= "EOP\n";
-        $MaleOutput .= "EOF\n\n------------------------------------\n\n";
+        $MaleOutput .= "EOF\n\n--------------FEMALE--------------\n\n";
 
         $FemaleOutput = "$AllHeadItems$AllFemaleHeadItems\n";
         $FemaleOutput .= "EOP\n";

@@ -54,10 +54,10 @@ class Retainer implements ParseInterface
             switch ($ClassJobRaw) {
                 case "17": //min
                 case "18": //btn
-                    $ClassSwitch = "Gathering{DoL}";
+                    $ClassSwitch = "Perception{DoL}";
                 break;
                 case "19": //fsh
-                    $ClassSwitch = "Gathering{FSH}";
+                    $ClassSwitch = "Perception{FSH}";
                 break;
                 case "34": //DoW
                     $ClassSwitch = "ItemLevel{DoW}";
@@ -65,10 +65,12 @@ class Retainer implements ParseInterface
             }
             $ItemLevelParam1 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[0]"];
             $ItemLevelParam2 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[1]"];
+            $ItemLevelParam3 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[2]"];
+            $ItemLevelParam4 = $RetainerTaskParameterCsv->at($RetainerTaskParameter)[$ClassSwitch."[3]"];
             $Experience = $Task['Experience'];
             $RequiredItemLevel = $Task['RequiredItemLevel'];
             $RequiredGathering = $Task["RequiredGathering"];
-            foreach(range(0,2) as $a){
+            foreach(range(0,4) as $a){
                 if (empty($RetainerTaskNormalCsv->at($TaskParam)["Quantity[$a]"])) continue;
                 $Quantity[] = $RetainerTaskNormalCsv->at($TaskParam)["Quantity[$a]"];
             }
@@ -78,18 +80,20 @@ class Retainer implements ParseInterface
             $Quantity1 = $Quantity[0];
             $Quantity2 = $Quantity[1];
             $Quantity3 = $Quantity[2];
+            $Quantity4 = $Quantity[3];
+            $Quantity5 = $Quantity[4];
             switch ($ClassJobRaw) {
                 case "17": //min
-                    $MINArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
+                    $MINArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|Quantity4=$Quantity4|Quantity4Min=$ItemLevelParam3|Quantity5=$Quantity5|Quantity5Min=$ItemLevelParam4|XP=$Experience}}";
                 break;
                 case "18": //btn
-                    $BTNArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
+                    $BTNArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|Quantity4=$Quantity4|Quantity4Min=$ItemLevelParam3|Quantity5=$Quantity5|Quantity5Min=$ItemLevelParam4|XP=$Experience}}";
                 break;
                 case "19": //fsh
-                    $FSHArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
+                    $FSHArray[] = "{{Venturehuntrow|Level=$RetainerLevel|Min Stat=$RequiredGathering|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredGathering|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|Quantity4=$Quantity4|Quantity4Min=$ItemLevelParam3|Quantity5=$Quantity5|Quantity5Min=$ItemLevelParam4|XP=$Experience}}";
                 break;
                 case "34": //DoW
-                    $DOWArray[] = "{{Venturehuntingrow|Level=$RetainerLevel|Min Stat=$RequiredItemLevel|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredItemLevel|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|XP=$Experience}}";
+                    $DOWArray[] = "{{Venturehuntingrow|Level=$RetainerLevel|Min Stat=$RequiredItemLevel|Item=$ItemName|Quantity1=$Quantity1|Quantity1Min=$RequiredItemLevel|Quantity2=$Quantity2|Quantity2Min=$ItemLevelParam1|Quantity3=$Quantity3|Quantity3Min=$ItemLevelParam2|Quantity4=$Quantity4|Quantity4Min=$ItemLevelParam3|Quantity5=$Quantity5|Quantity5Min=$ItemLevelParam4|XP=$Experience}}";
                 break;
             }
 
