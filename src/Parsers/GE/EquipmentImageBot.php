@@ -178,6 +178,12 @@ class EquipmentImageBot implements ParseInterface
                         case '107'://DNC
                             $DNCArray[] = $Name;
                         break;
+                        case '180'://RPR
+                            $RPRArray[] = $Name;
+                        break;
+                        case '181'://SGE
+                            $SGEArray[] = $Name;
+                        break;
                         case '10'://SMN/SCH
                         case '98':
                             $SMNArray[] = $Name;
@@ -306,6 +312,13 @@ class EquipmentImageBot implements ParseInterface
         if (!empty($GNBArray)) {$GNBOut = "\nEOP\n'106\n".$GNBOut;}
         $DNCOut = implode("\n", $DNCArray);
         if (!empty($DNCArray)) {$DNCOut = "\nEOP\n'107\n".$DNCOut;}
+        
+        $RPROut = implode("\n", $RPRArray);
+        if (!empty($RPRArray)) {$RPROut = "\nEOP\n'106\n".$RPROut;}
+        $SGEOut = implode("\n", $SGEArray);
+        if (!empty($SGEArray)) {$SGEOut = "\nEOP\n'107\n".$SGEOut;}
+
+
         $SMNOut = implode("\n", $SMNArray);
         if (!empty($SMNArray)) {$SMNOut = "\nEOP\n'98\n".$SMNOut;}
         $NeckOut = implode("\n", $NecklaceArray);
@@ -317,7 +330,7 @@ class EquipmentImageBot implements ParseInterface
         $RingOut = implode("\n", $RingArray);
         if (!empty($RingOut)) {$RingOut = "\nEOP\n'43\n".$RingOut;}
         //construct weaponstring:
-        $WeaponOutput = "$MNKOut$OneHandOut$WAROut$BRDOut$DRGOut$OneHandBLMOut$BLMOut$OneHandWHMOut$WHMOut$SHLDOut$NINOut$DRKOut$MCHOut$ASTOut$SAMOut$RDMOut$GNBOut$DNCOut$SMNOut\nEOP\nEOF";
+        $WeaponOutput = "$MNKOut$OneHandOut$WAROut$BRDOut$DRGOut$OneHandBLMOut$BLMOut$OneHandWHMOut$WHMOut$SHLDOut$NINOut$DRKOut$MCHOut$ASTOut$SAMOut$RDMOut$GNBOut$DNCOut$SMNOut$RPROut$SGEOut\nEOP\nEOF";
         $AccOutput = "$NeckOut$EarOut$BraceletOut$RingOut";
         $AllHeadItems = implode("\n", $AllHeadArray);
         $AllBodyItems = implode("\n", $AllBodyArray);
