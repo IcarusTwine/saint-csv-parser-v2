@@ -67,10 +67,10 @@ class StartUp implements ParseInterface
         $MainDir = str_replace("cache","",$ini['Cache']);
         $PreviousVer = $ini['PreviousVer'];
         if ($GameVer != $PatchID) {
-            $console->writeln("<error>WARNING: Game version and SaintCoinach version differ</error>");
+            $console->writeln("<error>WARNING: Game version and SaintCoinach version differ.</error>");
             $console->writeln("Game Version is: <fg=black;bg=yellow> $PatchID </>");
             $console->writeln("Version set in SaintCoinach is : <fg=black;bg=yellow> $GameVer </>\n");
-            $console->writeln("Do you wish to change GameVer from <fg=white;bg=red> $GameVer </> to <fg=black;bg=green> $PatchID </> in SaintCoinach?\n");
+            $console->writeln("Do you wish to change GameVer from <fg=white;bg=red> $GameVer </> to <fg=black;bg=green> $PatchID </> in SaintCoinach?\n</>");
             $console->writeln("(yes/no)");
             $handle = fopen ("php://stdin","r");
             $line = fgets($handle);
@@ -98,7 +98,7 @@ class StartUp implements ParseInterface
         fclose($handle);
         $console->writeln("The current set <error>Previous Patch</error> in config.ini is: <fg=black;bg=yellow> $PreviousVer </>");
         $console->writeln("<question>If this is correct then please press any key</question>");
-        $console->writeln("<question>If this needs changing then please change it at config.ini and then press anykey</question>");
+        $console->writeln("<question>If this needs changing then please change it at config.ini and then press any key</question>");
         $handle2 = fopen ("php://stdin","r");
         $line2 = fgets($handle2);
         if(trim($line) !== 'no'){
