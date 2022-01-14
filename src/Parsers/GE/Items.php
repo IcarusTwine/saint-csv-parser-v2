@@ -29,7 +29,7 @@ class Items implements ParseInterface
         // if I want to use pywikibot to create these pages, this should be true. Otherwise if I want to create pages
         // manually, set to false
         $Bot = "true";
-        $oldcount = 0;
+
         // grab CSV files we want to use
         $ItemCsv = $this->csv("Item");
         $TripleTriadCardCsv = $this->csv("TripleTriadCard");
@@ -135,7 +135,7 @@ class Items implements ParseInterface
                     ucwords(strtolower($ClassJobCsv->at($item['ClassJob{Repair}'])['Name'])) ."\n$DesynthArrayOutput\n}}";
                 if ($Bot == "true") {
                     $DesynthTop = "{{-start-}}\n'''$Name/Desynth'''\n$DesynthText{{-stop-}}";
-                    $DesynthTop = "";
+                    $DesynthTop .= "";
                 } else {
                     $DesynthTop = "http://ffxiv.gamerescape.com/wiki/$Name/Desynth\n$DesynthText";
                 }
