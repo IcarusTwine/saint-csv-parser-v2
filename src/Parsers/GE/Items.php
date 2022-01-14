@@ -116,11 +116,21 @@ class Items implements ParseInterface
             }
 
             if ($item['Desynth'] != 0) {
-                //var_dump($DesynthItemBase);
-                foreach(range(0,13) as $a) {
+                foreach(range(0,9) as $a) {
                     $b = $a + 1;
+                    if ($b === 1){
+                        $DesynthItemArray[] = "<!--Please add crafting components below-->";
+                    }
+                    if ($b === 7){
+                        $DesynthItemArray[] = "<!--Please add Demimateria and Allagan Pieces below-->";
+                    }
+                    if ($b === 9){
+                        $DesynthItemArray[] = "<!--Please add Shards, Crystals and Clusters below, the minimum of these should always be 1-->";
+                    }
                     if (empty($DesynthArray["$id"][$a])) {
-                        if ($b <= 6) {
+                        if ($b === 10) {
+                            $DesynthItemArray[] = "|Result $b       = \n|Result $b Amount= ";
+                        } else {
                             $DesynthItemArray[] = "|Result $b        = \n|Result $b Amount = ";
                         }
                     } else {
