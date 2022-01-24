@@ -77,7 +77,6 @@ class FATEs implements ParseInterface
             }
             $Name = $Fate['Name'];
             $LevelLow = $Fate['ClassJobLevel'];
-            $LevelHigh = $Fate['ClassJobLevel{Max}'];
             $Description = $Fate['Description'];
             $Output .= "{{-start-}}\n";
             $Output .= "'''$Name'''\n";
@@ -87,7 +86,7 @@ class FATEs implements ParseInterface
             $Output .= "    |Location = $TeriName\n";
             $Output .= "    |Coordinates = $Location\n";
             $Output .= "    \n";
-            $Output .= "    |Level = $LevelLow-$LevelHigh\n";
+            $Output .= "    |Level = $LevelLow\n";
             $Output .= "    \n";
             $Output .= "    |Type = \n";
             $Output .= "    \n";
