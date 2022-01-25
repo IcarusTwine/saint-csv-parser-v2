@@ -41,4 +41,6 @@ php bin/console app:parse:csv GE:NpcsPagesAll
 php bin/console app:parse:csv GE:Orchestrion
 php bin/console app:parse:csv GE:NamingConventions
 php bin/console app:parse:csv GE:Quest2
+php bin/console app:parse:csv GE:FATEs
+php bin/console app:parse:csv GE:CurrentMaps
 pause
