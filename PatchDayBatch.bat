@@ -1,5 +1,6 @@
 @echo off
 php bin/console app:parse:csv GE:PatchPopulate
+php bin/console app:parse:csv GE:LuaExporter
 php bin/console app:parse:csv GE:Achievement
 php bin/console app:parse:csv GE:Festival
 php bin/console app:parse:csv GE:ActiveHelp
@@ -14,7 +15,6 @@ php bin/console app:parse:csv GE:EquipmentImageBot
 php bin/console app:parse:csv GE:ItemChange
 php bin/console app:parse:csv GE:Items
 php bin/console app:parse:csv GE:KhloeShop
-php bin/console app:parse:csv GE:LuaExporter
 php bin/console app:parse:csv GE:Minions
 php bin/console app:parse:csv GE:Mounts
 ::php bin/console app:parse:csv GE:Quests
