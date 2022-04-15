@@ -107,7 +107,7 @@ class StartUp implements ParseInterface
         $SaintCommands = array(
             //"rawexd",
             "maps",
-            "uihd"
+            //"uihd"
         );
         $console->writeln("<question>Run ".implode(",",$SaintCommands)."?</question>");
         $console->writeln("(yes/no)\n");

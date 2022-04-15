@@ -102,7 +102,7 @@
         "1": "Bronze Knuckles"
     },
     "127": {
-        "1": "Hard Leather Cesti",
+        "1": "Goatskin Cesti",
         "2": "Aetherial Hard Leather Cesti"
     },
     "128": {
@@ -2912,7 +2912,7 @@
     },
     "1689": {
         "0": "Dated Dodoskin Cesti",
-        "1": "Hard Leather Cesti"
+        "1": "Goatskin Cesti"
     },
     "1690": {
         "0": "Dated Bone Hora",
@@ -7639,7 +7639,7 @@
         "2": "Velveteen Dress Shoes"
     },
     "3833": {
-        "1": "Aetherial Steelclad Boots"
+        "1": "Aetherial Steel-clad Boots"
     },
     "3834": {
         "0": "Steel-plated Jackboots"
@@ -30227,15 +30227,23 @@
     "16106": {
         "1": "Makai Manhandler's Facemask",
         "2": "Common Makai Mauler's Facemask",
-        "3": "Common Makai Manhandler's Facemask"
+        "3": "Common Makai Manhandler's Facemask",
+        "4": "Makai Harbinger's Facemask",
+        "5": "Makai Harrower's Facemask",
+        "6": "Common Makai Harbinger's Facemask",
+        "7": "Common Makai Harrower's Facemask"
     },
     "16107": {
-        "1": "Common Makai Mauler's Oilskin"
+        "1": "Common Makai Mauler's Oilskin",
+        "2": "Makai Harbinger's Battlegarb",
+        "3": "Common Makai Harbinger's Battlegarb"
     },
     "16108": {
         "1": "Makai Priest's Fingerless Gloves",
         "2": "Common Makai Mauler's Fingerless Gloves",
-        "3": "Common Makai Priest's Fingerless Gloves"
+        "3": "Common Makai Priest's Fingerless Gloves",
+        "4": "Makai Harbinger's Fingerless Gloves",
+        "5": "Common Makai Harbinger's Fingerless Gloves"
     },
     "16109": {
         "1": "Makai Marksman's Slops",
@@ -30244,7 +30252,11 @@
         "4": "Common Makai Mauler's Leggings",
         "5": "Common Makai Marksman's Slops",
         "6": "Common Makai Sun Guide's Slops",
-        "7": "Common Makai Priest's Slops"
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "16110": {
         "1": "Makai Marksman's Boots",
@@ -30253,22 +30265,36 @@
         "4": "Common Makai Mauler's Boots",
         "5": "Common Makai Marksman's Boots",
         "6": "Common Makai Sun Guide's Boots",
-        "7": "Common Makai Priest's Boots"
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "16111": {
         "0": "Makai Mauler's Facemask",
         "2": "Common Makai Mauler's Facemask",
-        "3": "Common Makai Manhandler's Facemask"
+        "3": "Common Makai Manhandler's Facemask",
+        "4": "Makai Harbinger's Facemask",
+        "5": "Makai Harrower's Facemask",
+        "6": "Common Makai Harbinger's Facemask",
+        "7": "Common Makai Harrower's Facemask"
     },
     "16112": {
-        "1": "Common Makai Manhandler's Jerkin"
+        "1": "Common Makai Manhandler's Jerkin",
+        "2": "Makai Harrower's Jerkin",
+        "3": "Common Makai Harrower's Jerkin"
     },
     "16113": {
         "1": "Makai Markswoman's Fingerless Gloves",
         "2": "Makai Priestess's Fingerless Gloves",
         "3": "Common Makai Manhandler's Fingerless Gloves",
         "4": "Common Makai Markswoman's Fingerless Gloves",
-        "5": "Common Makai Priestess's Fingerless Gloves"
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
     },
     "16114": {
         "1": "Makai Markswoman's Quartertights",
@@ -30277,23 +30303,37 @@
         "4": "Common Makai Manhandler's Quartertights",
         "5": "Common Makai Markswoman's Quartertights",
         "6": "Common Makai Moon Guide's Quartertights",
-        "7": "Common Makai Priestess's Skirt"
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "16115": {
         "1": "Makai Markswoman's Longboots",
         "2": "Makai Moon Guide's Longboots",
         "3": "Common Makai Manhandler's Longboots",
         "4": "Common Makai Markswoman's Longboots",
-        "5": "Common Makai Moon Guide's Longboots"
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
     },
     "16116": {
-        "1": "Common Makai Marksman's Eyepatch"
+        "1": "Common Makai Marksman's Eyepatch",
+        "2": "Makai Vanguard's Monocle",
+        "3": "Common Makai Vanguard's Monocle"
     },
     "16117": {
-        "1": "Common Makai Marksman's Battlegarb"
+        "1": "Common Makai Marksman's Battlegarb",
+        "2": "Makai Vanguard's Battlegarb",
+        "3": "Common Makai Vanguard's Battlegarb"
     },
     "16118": {
-        "1": "Common Makai Marksman's Fingerless Gloves"
+        "1": "Common Makai Marksman's Fingerless Gloves",
+        "2": "Makai Vanguard's Fingerless Gloves",
+        "3": "Common Makai Vanguard's Fingerless Gloves"
     },
     "16119": {
         "0": "Makai Mauler's Leggings",
@@ -30302,7 +30342,11 @@
         "4": "Common Makai Mauler's Leggings",
         "5": "Common Makai Marksman's Slops",
         "6": "Common Makai Sun Guide's Slops",
-        "7": "Common Makai Priest's Slops"
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "16120": {
         "0": "Makai Mauler's Boots",
@@ -30311,20 +30355,32 @@
         "4": "Common Makai Mauler's Boots",
         "5": "Common Makai Marksman's Boots",
         "6": "Common Makai Sun Guide's Boots",
-        "7": "Common Makai Priest's Boots"
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "16121": {
-        "1": "Common Makai Markswoman's Ribbon"
+        "1": "Common Makai Markswoman's Ribbon",
+        "2": "Makai Vanbreaker's Ribbon",
+        "3": "Common Makai Vanbreaker's Ribbon"
     },
     "16122": {
-        "1": "Common Makai Markswoman's Battledress"
+        "1": "Common Makai Markswoman's Battledress",
+        "2": "Makai Vanbreaker's Battledress",
+        "3": "Common Makai Vanbreaker's Battledress"
     },
     "16123": {
         "0": "Makai Manhandler's Fingerless Gloves",
         "2": "Makai Priestess's Fingerless Gloves",
         "3": "Common Makai Manhandler's Fingerless Gloves",
         "4": "Common Makai Markswoman's Fingerless Gloves",
-        "5": "Common Makai Priestess's Fingerless Gloves"
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
     },
     "16124": {
         "0": "Makai Manhandler's Quartertights",
@@ -30333,14 +30389,22 @@
         "4": "Common Makai Manhandler's Quartertights",
         "5": "Common Makai Markswoman's Quartertights",
         "6": "Common Makai Moon Guide's Quartertights",
-        "7": "Common Makai Priestess's Skirt"
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "16125": {
         "0": "Makai Manhandler's Longboots",
         "2": "Makai Moon Guide's Longboots",
         "3": "Common Makai Manhandler's Longboots",
         "4": "Common Makai Markswoman's Longboots",
-        "5": "Common Makai Moon Guide's Longboots"
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
     },
     "16126": {
         "1": "Common Makai Sun Guide's Circlet"
@@ -30358,7 +30422,11 @@
         "4": "Common Makai Mauler's Leggings",
         "5": "Common Makai Marksman's Slops",
         "6": "Common Makai Sun Guide's Slops",
-        "7": "Common Makai Priest's Slops"
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "16130": {
         "0": "Makai Mauler's Boots",
@@ -30367,7 +30435,11 @@
         "4": "Common Makai Mauler's Boots",
         "5": "Common Makai Marksman's Boots",
         "6": "Common Makai Sun Guide's Boots",
-        "7": "Common Makai Priest's Boots"
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "16131": {
         "1": "Common Makai Moon Guide's Circlet"
@@ -30385,14 +30457,22 @@
         "4": "Common Makai Manhandler's Quartertights",
         "5": "Common Makai Markswoman's Quartertights",
         "6": "Common Makai Moon Guide's Quartertights",
-        "7": "Common Makai Priestess's Skirt"
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "16135": {
         "0": "Makai Manhandler's Longboots",
         "1": "Makai Markswoman's Longboots",
         "3": "Common Makai Manhandler's Longboots",
         "4": "Common Makai Markswoman's Longboots",
-        "5": "Common Makai Moon Guide's Longboots"
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
     },
     "16136": {
         "1": "Makai Priestess's Headdress",
@@ -30405,7 +30485,9 @@
     "16138": {
         "0": "Makai Mauler's Fingerless Gloves",
         "2": "Common Makai Mauler's Fingerless Gloves",
-        "3": "Common Makai Priest's Fingerless Gloves"
+        "3": "Common Makai Priest's Fingerless Gloves",
+        "4": "Makai Harbinger's Fingerless Gloves",
+        "5": "Common Makai Harbinger's Fingerless Gloves"
     },
     "16139": {
         "0": "Makai Mauler's Leggings",
@@ -30414,7 +30496,11 @@
         "4": "Common Makai Mauler's Leggings",
         "5": "Common Makai Marksman's Slops",
         "6": "Common Makai Sun Guide's Slops",
-        "7": "Common Makai Priest's Slops"
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "16140": {
         "0": "Makai Mauler's Boots",
@@ -30423,7 +30509,11 @@
         "4": "Common Makai Mauler's Boots",
         "5": "Common Makai Marksman's Boots",
         "6": "Common Makai Sun Guide's Boots",
-        "7": "Common Makai Priest's Boots"
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "16141": {
         "0": "Makai Priest's Coronet",
@@ -30438,7 +30528,11 @@
         "1": "Makai Markswoman's Fingerless Gloves",
         "3": "Common Makai Manhandler's Fingerless Gloves",
         "4": "Common Makai Markswoman's Fingerless Gloves",
-        "5": "Common Makai Priestess's Fingerless Gloves"
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
     },
     "16144": {
         "0": "Makai Manhandler's Quartertights",
@@ -30447,7 +30541,11 @@
         "4": "Common Makai Manhandler's Quartertights",
         "5": "Common Makai Markswoman's Quartertights",
         "6": "Common Makai Moon Guide's Quartertights",
-        "7": "Common Makai Priestess's Skirt"
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "16145": {
         "1": "Common Makai Priestess's Longboots"
@@ -33407,15 +33505,23 @@
     "17204": {
         "0": "Makai Mauler's Facemask",
         "1": "Makai Manhandler's Facemask",
-        "3": "Common Makai Manhandler's Facemask"
+        "3": "Common Makai Manhandler's Facemask",
+        "4": "Makai Harbinger's Facemask",
+        "5": "Makai Harrower's Facemask",
+        "6": "Common Makai Harbinger's Facemask",
+        "7": "Common Makai Harrower's Facemask"
     },
     "17205": {
-        "0": "Makai Mauler's Oilskin"
+        "0": "Makai Mauler's Oilskin",
+        "2": "Makai Harbinger's Battlegarb",
+        "3": "Common Makai Harbinger's Battlegarb"
     },
     "17206": {
         "0": "Makai Mauler's Fingerless Gloves",
         "1": "Makai Priest's Fingerless Gloves",
-        "3": "Common Makai Priest's Fingerless Gloves"
+        "3": "Common Makai Priest's Fingerless Gloves",
+        "4": "Makai Harbinger's Fingerless Gloves",
+        "5": "Common Makai Harbinger's Fingerless Gloves"
     },
     "17207": {
         "0": "Makai Mauler's Leggings",
@@ -33424,7 +33530,11 @@
         "3": "Makai Priest's Slops",
         "5": "Common Makai Marksman's Slops",
         "6": "Common Makai Sun Guide's Slops",
-        "7": "Common Makai Priest's Slops"
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "17208": {
         "0": "Makai Mauler's Boots",
@@ -33433,22 +33543,36 @@
         "3": "Makai Priest's Boots",
         "5": "Common Makai Marksman's Boots",
         "6": "Common Makai Sun Guide's Boots",
-        "7": "Common Makai Priest's Boots"
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "17209": {
         "0": "Makai Mauler's Facemask",
         "1": "Makai Manhandler's Facemask",
-        "2": "Common Makai Mauler's Facemask"
+        "2": "Common Makai Mauler's Facemask",
+        "4": "Makai Harbinger's Facemask",
+        "5": "Makai Harrower's Facemask",
+        "6": "Common Makai Harbinger's Facemask",
+        "7": "Common Makai Harrower's Facemask"
     },
     "17210": {
-        "0": "Makai Manhandler's Jerkin"
+        "0": "Makai Manhandler's Jerkin",
+        "2": "Makai Harrower's Jerkin",
+        "3": "Common Makai Harrower's Jerkin"
     },
     "17211": {
         "0": "Makai Manhandler's Fingerless Gloves",
         "1": "Makai Markswoman's Fingerless Gloves",
         "2": "Makai Priestess's Fingerless Gloves",
         "4": "Common Makai Markswoman's Fingerless Gloves",
-        "5": "Common Makai Priestess's Fingerless Gloves"
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
     },
     "17212": {
         "0": "Makai Manhandler's Quartertights",
@@ -33457,23 +33581,37 @@
         "3": "Makai Priestess's Skirt",
         "5": "Common Makai Markswoman's Quartertights",
         "6": "Common Makai Moon Guide's Quartertights",
-        "7": "Common Makai Priestess's Skirt"
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "17213": {
         "0": "Makai Manhandler's Longboots",
         "1": "Makai Markswoman's Longboots",
         "2": "Makai Moon Guide's Longboots",
         "4": "Common Makai Markswoman's Longboots",
-        "5": "Common Makai Moon Guide's Longboots"
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
     },
     "17214": {
-        "0": "Makai Marksman's Eyepatch"
+        "0": "Makai Marksman's Eyepatch",
+        "2": "Makai Vanguard's Monocle",
+        "3": "Common Makai Vanguard's Monocle"
     },
     "17215": {
-        "0": "Makai Marksman's Battlegarb"
+        "0": "Makai Marksman's Battlegarb",
+        "2": "Makai Vanguard's Battlegarb",
+        "3": "Common Makai Vanguard's Battlegarb"
     },
     "17216": {
-        "0": "Makai Marksman's Fingerless Gloves"
+        "0": "Makai Marksman's Fingerless Gloves",
+        "2": "Makai Vanguard's Fingerless Gloves",
+        "3": "Common Makai Vanguard's Fingerless Gloves"
     },
     "17217": {
         "0": "Makai Mauler's Leggings",
@@ -33482,7 +33620,11 @@
         "3": "Makai Priest's Slops",
         "4": "Common Makai Mauler's Leggings",
         "6": "Common Makai Sun Guide's Slops",
-        "7": "Common Makai Priest's Slops"
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "17218": {
         "0": "Makai Mauler's Boots",
@@ -33491,20 +33633,32 @@
         "3": "Makai Priest's Boots",
         "4": "Common Makai Mauler's Boots",
         "6": "Common Makai Sun Guide's Boots",
-        "7": "Common Makai Priest's Boots"
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "17219": {
-        "0": "Makai Markswoman's Ribbon"
+        "0": "Makai Markswoman's Ribbon",
+        "2": "Makai Vanbreaker's Ribbon",
+        "3": "Common Makai Vanbreaker's Ribbon"
     },
     "17220": {
-        "0": "Makai Markswoman's Battledress"
+        "0": "Makai Markswoman's Battledress",
+        "2": "Makai Vanbreaker's Battledress",
+        "3": "Common Makai Vanbreaker's Battledress"
     },
     "17221": {
         "0": "Makai Manhandler's Fingerless Gloves",
         "1": "Makai Markswoman's Fingerless Gloves",
         "2": "Makai Priestess's Fingerless Gloves",
         "3": "Common Makai Manhandler's Fingerless Gloves",
-        "5": "Common Makai Priestess's Fingerless Gloves"
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
     },
     "17222": {
         "0": "Makai Manhandler's Quartertights",
@@ -33513,14 +33667,22 @@
         "3": "Makai Priestess's Skirt",
         "4": "Common Makai Manhandler's Quartertights",
         "6": "Common Makai Moon Guide's Quartertights",
-        "7": "Common Makai Priestess's Skirt"
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "17223": {
         "0": "Makai Manhandler's Longboots",
         "1": "Makai Markswoman's Longboots",
         "2": "Makai Moon Guide's Longboots",
         "3": "Common Makai Manhandler's Longboots",
-        "5": "Common Makai Moon Guide's Longboots"
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
     },
     "17224": {
         "0": "Makai Sun Guide's Circlet"
@@ -33538,7 +33700,11 @@
         "3": "Makai Priest's Slops",
         "4": "Common Makai Mauler's Leggings",
         "5": "Common Makai Marksman's Slops",
-        "7": "Common Makai Priest's Slops"
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "17228": {
         "0": "Makai Mauler's Boots",
@@ -33547,7 +33713,11 @@
         "3": "Makai Priest's Boots",
         "4": "Common Makai Mauler's Boots",
         "5": "Common Makai Marksman's Boots",
-        "7": "Common Makai Priest's Boots"
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "17229": {
         "0": "Makai Moon Guide's Circlet"
@@ -33565,14 +33735,22 @@
         "3": "Makai Priestess's Skirt",
         "4": "Common Makai Manhandler's Quartertights",
         "5": "Common Makai Markswoman's Quartertights",
-        "7": "Common Makai Priestess's Skirt"
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "17233": {
         "0": "Makai Manhandler's Longboots",
         "1": "Makai Markswoman's Longboots",
         "2": "Makai Moon Guide's Longboots",
         "3": "Common Makai Manhandler's Longboots",
-        "4": "Common Makai Markswoman's Longboots"
+        "4": "Common Makai Markswoman's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
     },
     "17234": {
         "0": "Makai Priest's Coronet",
@@ -33585,7 +33763,9 @@
     "17236": {
         "0": "Makai Mauler's Fingerless Gloves",
         "1": "Makai Priest's Fingerless Gloves",
-        "2": "Common Makai Mauler's Fingerless Gloves"
+        "2": "Common Makai Mauler's Fingerless Gloves",
+        "4": "Makai Harbinger's Fingerless Gloves",
+        "5": "Common Makai Harbinger's Fingerless Gloves"
     },
     "17237": {
         "0": "Makai Mauler's Leggings",
@@ -33594,7 +33774,11 @@
         "3": "Makai Priest's Slops",
         "4": "Common Makai Mauler's Leggings",
         "5": "Common Makai Marksman's Slops",
-        "6": "Common Makai Sun Guide's Slops"
+        "6": "Common Makai Sun Guide's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
     },
     "17238": {
         "0": "Makai Mauler's Boots",
@@ -33603,7 +33787,11 @@
         "3": "Makai Priest's Boots",
         "4": "Common Makai Mauler's Boots",
         "5": "Common Makai Marksman's Boots",
-        "6": "Common Makai Sun Guide's Boots"
+        "6": "Common Makai Sun Guide's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
     },
     "17239": {
         "0": "Makai Priest's Coronet",
@@ -33618,7 +33806,11 @@
         "1": "Makai Markswoman's Fingerless Gloves",
         "2": "Makai Priestess's Fingerless Gloves",
         "3": "Common Makai Manhandler's Fingerless Gloves",
-        "4": "Common Makai Markswoman's Fingerless Gloves"
+        "4": "Common Makai Markswoman's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
     },
     "17242": {
         "0": "Makai Manhandler's Quartertights",
@@ -33627,7 +33819,11 @@
         "3": "Makai Priestess's Skirt",
         "4": "Common Makai Manhandler's Quartertights",
         "5": "Common Makai Markswoman's Quartertights",
-        "6": "Common Makai Moon Guide's Quartertights"
+        "6": "Common Makai Moon Guide's Quartertights",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
     },
     "17243": {
         "0": "Makai Priestess's Longboots"
@@ -58622,6 +58818,39 @@
         "0": "Enchufla",
         "1": "Augmented Enchufla"
     },
+    "31714": {
+        "1": "Skybuilders' Saw Replica"
+    },
+    "31715": {
+        "1": "Skybuilders' Cross-pein Hammer Replica"
+    },
+    "31716": {
+        "1": "Skybuilders' Raising Hammer Replica"
+    },
+    "31717": {
+        "1": "Skybuilders' Lapidary Hammer Replica"
+    },
+    "31718": {
+        "1": "Skybuilders' Round Knife Replica"
+    },
+    "31719": {
+        "1": "Skybuilders' Needle Replica"
+    },
+    "31720": {
+        "1": "Skybuilders' Alembic Replica"
+    },
+    "31721": {
+        "1": "Skybuilders' Frypan Replica"
+    },
+    "31722": {
+        "1": "Skybuilders' Hatchet Replica"
+    },
+    "31723": {
+        "1": "Skybuilders' Pickaxe Replica"
+    },
+    "31724": {
+        "1": "Skybuilders' Fishing Rod Replica"
+    },
     "31725": {
         "0": "Skysung Saw"
     },
@@ -63423,7 +63652,7 @@
         "1": "Asphodelos Boots of Fending"
     },
     "34970": {
-        "1": "Asphodelos Faceguard of Maiming"
+        "1": "Asphodelos Face Guard of Maiming"
     },
     "34971": {
         "1": "Asphodelos Himation of Maiming"
@@ -63438,7 +63667,7 @@
         "1": "Asphodelos Shoes of Maiming"
     },
     "34975": {
-        "1": "Asphodelos Faceguard of Striking"
+        "1": "Asphodelos Face Guard of Striking"
     },
     "34976": {
         "1": "Asphodelos Himation of Striking"
@@ -63732,146 +63961,394 @@
         "8": "Asphodelos Ring of Healing",
         "9": "Asphodelos Ring of Casting"
     },
+    "35020": {
+        "1": "Augmented Classical Longsword"
+    },
+    "35021": {
+        "1": "Augmented Classical Tonfa"
+    },
+    "35022": {
+        "1": "Augmented Classical Battleaxe"
+    },
+    "35023": {
+        "1": "Augmented Classical Spear"
+    },
+    "35024": {
+        "1": "Augmented Classical Cavalry Bow"
+    },
+    "35025": {
+        "1": "Augmented Classical Daggers"
+    },
+    "35026": {
+        "1": "Augmented Classical Greatsword"
+    },
+    "35027": {
+        "1": "Augmented Classical Handgonne"
+    },
+    "35028": {
+        "1": "Augmented Classical Cane"
+    },
+    "35029": {
+        "1": "Augmented Classical Longpole"
+    },
+    "35030": {
+        "1": "Augmented Classical Index"
+    },
+    "35031": {
+        "1": "Augmented Classical Codex"
+    },
+    "35032": {
+        "1": "Augmented Classical Torquetum"
+    },
+    "35033": {
+        "1": "Augmented Classical Samurai Blade"
+    },
+    "35034": {
+        "1": "Augmented Classical Smallsword"
+    },
+    "35035": {
+        "1": "Augmented Classical Gunblade"
+    },
+    "35036": {
+        "1": "Augmented Classical Chakrams"
+    },
+    "35037": {
+        "1": "Augmented Classical Milpreves"
+    },
+    "35038": {
+        "1": "Augmented Classical War Scythe"
+    },
+    "35040": {
+        "1": "Augmented Classical Hoplomachus's Headgear"
+    },
     "35041": {
-        "1": "Ornate Classical Hoplomachus's Lorica"
+        "1": "Ornate Classical Hoplomachus's Lorica",
+        "2": "Augmented Classical Hoplomachus's Lorica"
+    },
+    "35042": {
+        "1": "Augmented Classical Hoplomachus's Manicae"
+    },
+    "35043": {
+        "1": "Augmented Classical Hoplomachus's Loincloth"
+    },
+    "35044": {
+        "1": "Augmented Classical Hoplomachus's Greaves"
+    },
+    "35045": {
+        "1": "Augmented Classical Eques's Headgear"
     },
     "35046": {
-        "1": "Ornate Classical Eques's Chiton"
+        "1": "Ornate Classical Eques's Chiton",
+        "2": "Augmented Classical Eques's Chiton"
+    },
+    "35047": {
+        "1": "Augmented Classical Eques's Manicae"
+    },
+    "35048": {
+        "1": "Augmented Classical Eques's Loincloth"
+    },
+    "35049": {
+        "1": "Augmented Classical Eques's Caligae"
+    },
+    "35050": {
+        "1": "Augmented Classical Secutor's Mask"
     },
     "35051": {
-        "1": "Ornate Classical Secutor's Lorica"
+        "1": "Ornate Classical Secutor's Lorica",
+        "2": "Augmented Classical Secutor's Lorica"
+    },
+    "35052": {
+        "1": "Augmented Classical Secutor's Manicae"
+    },
+    "35053": {
+        "1": "Augmented Classical Secutor's Loincloth"
+    },
+    "35054": {
+        "1": "Augmented Classical Secutor's Caligae"
+    },
+    "35055": {
+        "1": "Augmented Classical Sagittarius's Headband"
     },
     "35056": {
-        "1": "Ornate Classical Sagittarius's Chiton"
+        "1": "Ornate Classical Sagittarius's Chiton",
+        "2": "Augmented Classical Sagittarius's Chiton"
+    },
+    "35057": {
+        "1": "Augmented Classical Sagittarius's Wrist Torque"
+    },
+    "35058": {
+        "1": "Augmented Classical Sagittarius's Loincloth"
+    },
+    "35059": {
+        "1": "Augmented Classical Sagittarius's Caligae"
+    },
+    "35060": {
+        "1": "Augmented Classical Dimachaerius's Mask"
     },
     "35061": {
-        "1": "Ornate Classical Dimachaerius's Lorica"
+        "1": "Ornate Classical Dimachaerius's Lorica",
+        "2": "Augmented Classical Dimachaerius's Lorica"
+    },
+    "35062": {
+        "1": "Augmented Classical Dimachaerius's Manicae"
+    },
+    "35063": {
+        "1": "Augmented Classical Dimachaerius's Loincloth"
+    },
+    "35064": {
+        "1": "Augmented Classical Dimachaerius's Caligae"
+    },
+    "35065": {
+        "1": "Augmented Classical Medicus's Laurel Wreath"
     },
     "35066": {
-        "1": "Ornate Classical Medicus's Chiton"
+        "1": "Ornate Classical Medicus's Chiton",
+        "2": "Augmented Classical Medicus's Chiton"
+    },
+    "35067": {
+        "1": "Augmented Classical Medicus's Wrist Torque"
+    },
+    "35068": {
+        "1": "Augmented Classical Medicus's Loincloth"
+    },
+    "35069": {
+        "1": "Augmented Classical Medicus's Caligae"
+    },
+    "35070": {
+        "1": "Augmented Classical Signifer's Horns"
     },
     "35071": {
-        "1": "Ornate Classical Signifer's Chiton"
+        "1": "Ornate Classical Signifer's Chiton",
+        "2": "Augmented Classical Signifer's Chiton"
+    },
+    "35072": {
+        "1": "Augmented Classical Signifer's Fingerless Gloves"
+    },
+    "35073": {
+        "1": "Augmented Classical Signifer's Culottes"
+    },
+    "35074": {
+        "1": "Augmented Classical Signifer's Caligae"
     },
     "35075": {
         "1": "Classical Earrings of Slaying",
         "2": "Classical Earrings of Aiming",
         "3": "Classical Earrings of Healing",
-        "4": "Classical Earrings of Casting"
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
     },
     "35076": {
         "0": "Classical Earrings of Fending",
         "2": "Classical Earrings of Aiming",
         "3": "Classical Earrings of Healing",
-        "4": "Classical Earrings of Casting"
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
     },
     "35077": {
         "0": "Classical Earrings of Fending",
         "1": "Classical Earrings of Slaying",
         "3": "Classical Earrings of Healing",
-        "4": "Classical Earrings of Casting"
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
     },
     "35078": {
         "0": "Classical Earrings of Fending",
         "1": "Classical Earrings of Slaying",
         "2": "Classical Earrings of Aiming",
-        "4": "Classical Earrings of Casting"
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
     },
     "35079": {
         "0": "Classical Earrings of Fending",
         "1": "Classical Earrings of Slaying",
         "2": "Classical Earrings of Aiming",
-        "3": "Classical Earrings of Healing"
+        "3": "Classical Earrings of Healing",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
     },
     "35080": {
         "1": "Classical Choker of Slaying",
         "2": "Classical Choker of Aiming",
         "3": "Classical Choker of Healing",
-        "4": "Classical Choker of Casting"
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
     },
     "35081": {
         "0": "Classical Choker of Fending",
         "2": "Classical Choker of Aiming",
         "3": "Classical Choker of Healing",
-        "4": "Classical Choker of Casting"
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
     },
     "35082": {
         "0": "Classical Choker of Fending",
         "1": "Classical Choker of Slaying",
         "3": "Classical Choker of Healing",
-        "4": "Classical Choker of Casting"
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
     },
     "35083": {
         "0": "Classical Choker of Fending",
         "1": "Classical Choker of Slaying",
         "2": "Classical Choker of Aiming",
-        "4": "Classical Choker of Casting"
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
     },
     "35084": {
         "0": "Classical Choker of Fending",
         "1": "Classical Choker of Slaying",
         "2": "Classical Choker of Aiming",
-        "3": "Classical Choker of Healing"
+        "3": "Classical Choker of Healing",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
     },
     "35085": {
         "1": "Classical Wristband of Slaying",
         "2": "Classical Wristband of Aiming",
         "3": "Classical Wristband of Healing",
-        "4": "Classical Wristband of Casting"
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
     },
     "35086": {
         "0": "Classical Wristband of Fending",
         "2": "Classical Wristband of Aiming",
         "3": "Classical Wristband of Healing",
-        "4": "Classical Wristband of Casting"
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
     },
     "35087": {
         "0": "Classical Wristband of Fending",
         "1": "Classical Wristband of Slaying",
         "3": "Classical Wristband of Healing",
-        "4": "Classical Wristband of Casting"
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
     },
     "35088": {
         "0": "Classical Wristband of Fending",
         "1": "Classical Wristband of Slaying",
         "2": "Classical Wristband of Aiming",
-        "4": "Classical Wristband of Casting"
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
     },
     "35089": {
         "0": "Classical Wristband of Fending",
         "1": "Classical Wristband of Slaying",
         "2": "Classical Wristband of Aiming",
-        "3": "Classical Wristband of Healing"
+        "3": "Classical Wristband of Healing",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
     },
     "35090": {
         "1": "Classical Ring of Slaying",
         "2": "Classical Ring of Aiming",
         "3": "Classical Ring of Healing",
-        "4": "Classical Ring of Casting"
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
     },
     "35091": {
         "0": "Classical Ring of Fending",
         "2": "Classical Ring of Aiming",
         "3": "Classical Ring of Healing",
-        "4": "Classical Ring of Casting"
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
     },
     "35092": {
         "0": "Classical Ring of Fending",
         "1": "Classical Ring of Slaying",
         "3": "Classical Ring of Healing",
-        "4": "Classical Ring of Casting"
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
     },
     "35093": {
         "0": "Classical Ring of Fending",
         "1": "Classical Ring of Slaying",
         "2": "Classical Ring of Aiming",
-        "4": "Classical Ring of Casting"
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
     },
     "35094": {
         "0": "Classical Ring of Fending",
         "1": "Classical Ring of Slaying",
         "2": "Classical Ring of Aiming",
-        "3": "Classical Ring of Healing"
+        "3": "Classical Ring of Healing",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
     },
     "35095": {
         "1": "Augmented Radiant's Bastard Sword"
@@ -64653,7 +65130,7 @@
         "0": "Limbo Boots of Fending"
     },
     "35270": {
-        "0": "Limbo Faceguard of Maiming"
+        "0": "Limbo Face Guard of Maiming"
     },
     "35271": {
         "0": "Limbo Himation of Maiming"
@@ -64668,7 +65145,7 @@
         "0": "Limbo Shoes of Maiming"
     },
     "35275": {
-        "0": "Limbo Faceguard of Striking"
+        "0": "Limbo Face Guard of Striking"
     },
     "35276": {
         "0": "Limbo Himation of Striking"
@@ -64999,25 +65476,32 @@
         "1": "Harvester's Boots"
     },
     "36029": {
-        "0": "Classical Hoplomachus's Lorica"
+        "0": "Classical Hoplomachus's Lorica",
+        "2": "Augmented Classical Hoplomachus's Lorica"
     },
     "36030": {
-        "0": "Classical Eques's Chiton"
+        "0": "Classical Eques's Chiton",
+        "2": "Augmented Classical Eques's Chiton"
     },
     "36031": {
-        "0": "Classical Secutor's Lorica"
+        "0": "Classical Secutor's Lorica",
+        "2": "Augmented Classical Secutor's Lorica"
     },
     "36032": {
-        "0": "Classical Sagittarius's Chiton"
+        "0": "Classical Sagittarius's Chiton",
+        "2": "Augmented Classical Sagittarius's Chiton"
     },
     "36033": {
-        "0": "Classical Dimachaerius's Lorica"
+        "0": "Classical Dimachaerius's Lorica",
+        "2": "Augmented Classical Dimachaerius's Lorica"
     },
     "36034": {
-        "0": "Classical Medicus's Chiton"
+        "0": "Classical Medicus's Chiton",
+        "2": "Augmented Classical Medicus's Chiton"
     },
     "36035": {
-        "0": "Classical Signifer's Chiton"
+        "0": "Classical Signifer's Chiton",
+        "2": "Augmented Classical Signifer's Chiton"
     },
     "36121": {
         "0": "Goatskin Ring",
@@ -65060,5 +65544,911 @@
     },
     "36654": {
         "0": "Bookwyrm's Boots"
+    },
+    "36718": {
+        "0": "Classical Longsword"
+    },
+    "36719": {
+        "0": "Classical Tonfa"
+    },
+    "36720": {
+        "0": "Classical Battleaxe"
+    },
+    "36721": {
+        "0": "Classical Spear"
+    },
+    "36722": {
+        "0": "Classical Cavalry Bow"
+    },
+    "36723": {
+        "0": "Classical Daggers"
+    },
+    "36724": {
+        "0": "Classical Greatsword"
+    },
+    "36725": {
+        "0": "Classical Handgonne"
+    },
+    "36726": {
+        "0": "Classical Cane"
+    },
+    "36727": {
+        "0": "Classical Longpole"
+    },
+    "36728": {
+        "0": "Classical Index"
+    },
+    "36729": {
+        "0": "Classical Codex"
+    },
+    "36730": {
+        "0": "Classical Torquetum"
+    },
+    "36731": {
+        "0": "Classical Samurai Blade"
+    },
+    "36732": {
+        "0": "Classical Smallsword"
+    },
+    "36733": {
+        "0": "Classical Gunblade"
+    },
+    "36734": {
+        "0": "Classical Chakrams"
+    },
+    "36735": {
+        "0": "Classical Milpreves"
+    },
+    "36736": {
+        "0": "Classical War Scythe"
+    },
+    "36738": {
+        "0": "Classical Hoplomachus's Headgear"
+    },
+    "36739": {
+        "0": "Classical Hoplomachus's Lorica",
+        "1": "Ornate Classical Hoplomachus's Lorica"
+    },
+    "36740": {
+        "0": "Classical Hoplomachus's Manicae"
+    },
+    "36741": {
+        "0": "Classical Hoplomachus's Loincloth"
+    },
+    "36742": {
+        "0": "Classical Hoplomachus's Greaves"
+    },
+    "36743": {
+        "0": "Classical Eques's Headgear"
+    },
+    "36744": {
+        "0": "Classical Eques's Chiton",
+        "1": "Ornate Classical Eques's Chiton"
+    },
+    "36745": {
+        "0": "Classical Eques's Manicae"
+    },
+    "36746": {
+        "0": "Classical Eques's Loincloth"
+    },
+    "36747": {
+        "0": "Classical Eques's Caligae"
+    },
+    "36748": {
+        "0": "Classical Secutor's Mask"
+    },
+    "36749": {
+        "0": "Classical Secutor's Lorica",
+        "1": "Ornate Classical Secutor's Lorica"
+    },
+    "36750": {
+        "0": "Classical Secutor's Manicae"
+    },
+    "36751": {
+        "0": "Classical Secutor's Loincloth"
+    },
+    "36752": {
+        "0": "Classical Secutor's Caligae"
+    },
+    "36753": {
+        "0": "Classical Sagittarius's Headband"
+    },
+    "36754": {
+        "0": "Classical Sagittarius's Chiton",
+        "1": "Ornate Classical Sagittarius's Chiton"
+    },
+    "36755": {
+        "0": "Classical Sagittarius's Wrist Torque"
+    },
+    "36756": {
+        "0": "Classical Sagittarius's Loincloth"
+    },
+    "36757": {
+        "0": "Classical Sagittarius's Caligae"
+    },
+    "36758": {
+        "0": "Classical Dimachaerius's Mask"
+    },
+    "36759": {
+        "0": "Classical Dimachaerius's Lorica",
+        "1": "Ornate Classical Dimachaerius's Lorica"
+    },
+    "36760": {
+        "0": "Classical Dimachaerius's Manicae"
+    },
+    "36761": {
+        "0": "Classical Dimachaerius's Loincloth"
+    },
+    "36762": {
+        "0": "Classical Dimachaerius's Caligae"
+    },
+    "36763": {
+        "0": "Classical Medicus's Laurel Wreath"
+    },
+    "36764": {
+        "0": "Classical Medicus's Chiton",
+        "1": "Ornate Classical Medicus's Chiton"
+    },
+    "36765": {
+        "0": "Classical Medicus's Wrist Torque"
+    },
+    "36766": {
+        "0": "Classical Medicus's Loincloth"
+    },
+    "36767": {
+        "0": "Classical Medicus's Caligae"
+    },
+    "36768": {
+        "0": "Classical Signifer's Horns"
+    },
+    "36769": {
+        "0": "Classical Signifer's Chiton",
+        "1": "Ornate Classical Signifer's Chiton"
+    },
+    "36770": {
+        "0": "Classical Signifer's Fingerless Gloves"
+    },
+    "36771": {
+        "0": "Classical Signifer's Culottes"
+    },
+    "36772": {
+        "0": "Classical Signifer's Caligae"
+    },
+    "36773": {
+        "0": "Classical Earrings of Fending",
+        "1": "Classical Earrings of Slaying",
+        "2": "Classical Earrings of Aiming",
+        "3": "Classical Earrings of Healing",
+        "4": "Classical Earrings of Casting",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
+    },
+    "36774": {
+        "0": "Classical Earrings of Fending",
+        "1": "Classical Earrings of Slaying",
+        "2": "Classical Earrings of Aiming",
+        "3": "Classical Earrings of Healing",
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
+    },
+    "36775": {
+        "0": "Classical Earrings of Fending",
+        "1": "Classical Earrings of Slaying",
+        "2": "Classical Earrings of Aiming",
+        "3": "Classical Earrings of Healing",
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "8": "Augmented Classical Earrings of Healing",
+        "9": "Augmented Classical Earrings of Casting"
+    },
+    "36776": {
+        "0": "Classical Earrings of Fending",
+        "1": "Classical Earrings of Slaying",
+        "2": "Classical Earrings of Aiming",
+        "3": "Classical Earrings of Healing",
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "9": "Augmented Classical Earrings of Casting"
+    },
+    "36777": {
+        "0": "Classical Earrings of Fending",
+        "1": "Classical Earrings of Slaying",
+        "2": "Classical Earrings of Aiming",
+        "3": "Classical Earrings of Healing",
+        "4": "Classical Earrings of Casting",
+        "5": "Augmented Classical Earrings of Fending",
+        "6": "Augmented Classical Earrings of Slaying",
+        "7": "Augmented Classical Earrings of Aiming",
+        "8": "Augmented Classical Earrings of Healing"
+    },
+    "36778": {
+        "0": "Classical Choker of Fending",
+        "1": "Classical Choker of Slaying",
+        "2": "Classical Choker of Aiming",
+        "3": "Classical Choker of Healing",
+        "4": "Classical Choker of Casting",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
+    },
+    "36779": {
+        "0": "Classical Choker of Fending",
+        "1": "Classical Choker of Slaying",
+        "2": "Classical Choker of Aiming",
+        "3": "Classical Choker of Healing",
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
+    },
+    "36780": {
+        "0": "Classical Choker of Fending",
+        "1": "Classical Choker of Slaying",
+        "2": "Classical Choker of Aiming",
+        "3": "Classical Choker of Healing",
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "8": "Augmented Classical Choker of Healing",
+        "9": "Augmented Classical Choker of Casting"
+    },
+    "36781": {
+        "0": "Classical Choker of Fending",
+        "1": "Classical Choker of Slaying",
+        "2": "Classical Choker of Aiming",
+        "3": "Classical Choker of Healing",
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "9": "Augmented Classical Choker of Casting"
+    },
+    "36782": {
+        "0": "Classical Choker of Fending",
+        "1": "Classical Choker of Slaying",
+        "2": "Classical Choker of Aiming",
+        "3": "Classical Choker of Healing",
+        "4": "Classical Choker of Casting",
+        "5": "Augmented Classical Choker of Fending",
+        "6": "Augmented Classical Choker of Slaying",
+        "7": "Augmented Classical Choker of Aiming",
+        "8": "Augmented Classical Choker of Healing"
+    },
+    "36783": {
+        "0": "Classical Wristband of Fending",
+        "1": "Classical Wristband of Slaying",
+        "2": "Classical Wristband of Aiming",
+        "3": "Classical Wristband of Healing",
+        "4": "Classical Wristband of Casting",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
+    },
+    "36784": {
+        "0": "Classical Wristband of Fending",
+        "1": "Classical Wristband of Slaying",
+        "2": "Classical Wristband of Aiming",
+        "3": "Classical Wristband of Healing",
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
+    },
+    "36785": {
+        "0": "Classical Wristband of Fending",
+        "1": "Classical Wristband of Slaying",
+        "2": "Classical Wristband of Aiming",
+        "3": "Classical Wristband of Healing",
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "8": "Augmented Classical Wristband of Healing",
+        "9": "Augmented Classical Wristband of Casting"
+    },
+    "36786": {
+        "0": "Classical Wristband of Fending",
+        "1": "Classical Wristband of Slaying",
+        "2": "Classical Wristband of Aiming",
+        "3": "Classical Wristband of Healing",
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "9": "Augmented Classical Wristband of Casting"
+    },
+    "36787": {
+        "0": "Classical Wristband of Fending",
+        "1": "Classical Wristband of Slaying",
+        "2": "Classical Wristband of Aiming",
+        "3": "Classical Wristband of Healing",
+        "4": "Classical Wristband of Casting",
+        "5": "Augmented Classical Wristband of Fending",
+        "6": "Augmented Classical Wristband of Slaying",
+        "7": "Augmented Classical Wristband of Aiming",
+        "8": "Augmented Classical Wristband of Healing"
+    },
+    "36788": {
+        "0": "Classical Ring of Fending",
+        "1": "Classical Ring of Slaying",
+        "2": "Classical Ring of Aiming",
+        "3": "Classical Ring of Healing",
+        "4": "Classical Ring of Casting",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
+    },
+    "36789": {
+        "0": "Classical Ring of Fending",
+        "1": "Classical Ring of Slaying",
+        "2": "Classical Ring of Aiming",
+        "3": "Classical Ring of Healing",
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
+    },
+    "36790": {
+        "0": "Classical Ring of Fending",
+        "1": "Classical Ring of Slaying",
+        "2": "Classical Ring of Aiming",
+        "3": "Classical Ring of Healing",
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "8": "Augmented Classical Ring of Healing",
+        "9": "Augmented Classical Ring of Casting"
+    },
+    "36791": {
+        "0": "Classical Ring of Fending",
+        "1": "Classical Ring of Slaying",
+        "2": "Classical Ring of Aiming",
+        "3": "Classical Ring of Healing",
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "9": "Augmented Classical Ring of Casting"
+    },
+    "36792": {
+        "0": "Classical Ring of Fending",
+        "1": "Classical Ring of Slaying",
+        "2": "Classical Ring of Aiming",
+        "3": "Classical Ring of Healing",
+        "4": "Classical Ring of Casting",
+        "5": "Augmented Classical Ring of Fending",
+        "6": "Augmented Classical Ring of Slaying",
+        "7": "Augmented Classical Ring of Aiming",
+        "8": "Augmented Classical Ring of Healing"
+    },
+    "36795": {
+        "0": "Skybuilders' Saw"
+    },
+    "36796": {
+        "0": "Skybuilders' Cross-pein Hammer"
+    },
+    "36797": {
+        "0": "Skybuilders' Raising Hammer"
+    },
+    "36798": {
+        "0": "Skybuilders' Lapidary Hammer"
+    },
+    "36799": {
+        "0": "Skybuilders' Round Knife"
+    },
+    "36800": {
+        "0": "Skybuilders' Needle"
+    },
+    "36801": {
+        "0": "Skybuilders' Alembic"
+    },
+    "36802": {
+        "0": "Skybuilders' Frypan"
+    },
+    "36803": {
+        "0": "Skybuilders' Hatchet"
+    },
+    "36804": {
+        "0": "Skybuilders' Pickaxe"
+    },
+    "36805": {
+        "0": "Skybuilders' Fishing Rod"
+    },
+    "37208": {
+        "1": "Darbar Earrings of Slaying",
+        "2": "Darbar Earrings of Aiming",
+        "3": "Darbar Earrings of Healing",
+        "4": "Darbar Earrings of Casting"
+    },
+    "37209": {
+        "0": "Darbar Earrings of Fending",
+        "2": "Darbar Earrings of Aiming",
+        "3": "Darbar Earrings of Healing",
+        "4": "Darbar Earrings of Casting"
+    },
+    "37210": {
+        "0": "Darbar Earrings of Fending",
+        "1": "Darbar Earrings of Slaying",
+        "3": "Darbar Earrings of Healing",
+        "4": "Darbar Earrings of Casting"
+    },
+    "37211": {
+        "0": "Darbar Earrings of Fending",
+        "1": "Darbar Earrings of Slaying",
+        "2": "Darbar Earrings of Aiming",
+        "4": "Darbar Earrings of Casting"
+    },
+    "37212": {
+        "0": "Darbar Earrings of Fending",
+        "1": "Darbar Earrings of Slaying",
+        "2": "Darbar Earrings of Aiming",
+        "3": "Darbar Earrings of Healing"
+    },
+    "37213": {
+        "1": "Darbar Necklace of Slaying",
+        "2": "Darbar Necklace of Aiming",
+        "3": "Darbar Necklace of Healing",
+        "4": "Darbar Necklace of Casting"
+    },
+    "37214": {
+        "0": "Darbar Necklace of Fending",
+        "2": "Darbar Necklace of Aiming",
+        "3": "Darbar Necklace of Healing",
+        "4": "Darbar Necklace of Casting"
+    },
+    "37215": {
+        "0": "Darbar Necklace of Fending",
+        "1": "Darbar Necklace of Slaying",
+        "3": "Darbar Necklace of Healing",
+        "4": "Darbar Necklace of Casting"
+    },
+    "37216": {
+        "0": "Darbar Necklace of Fending",
+        "1": "Darbar Necklace of Slaying",
+        "2": "Darbar Necklace of Aiming",
+        "4": "Darbar Necklace of Casting"
+    },
+    "37217": {
+        "0": "Darbar Necklace of Fending",
+        "1": "Darbar Necklace of Slaying",
+        "2": "Darbar Necklace of Aiming",
+        "3": "Darbar Necklace of Healing"
+    },
+    "37218": {
+        "1": "Darbar Bracelet of Slaying",
+        "2": "Darbar Bracelet of Aiming",
+        "3": "Darbar Bracelet of Healing",
+        "4": "Darbar Bracelet of Casting"
+    },
+    "37219": {
+        "0": "Darbar Bracelet of Fending",
+        "2": "Darbar Bracelet of Aiming",
+        "3": "Darbar Bracelet of Healing",
+        "4": "Darbar Bracelet of Casting"
+    },
+    "37220": {
+        "0": "Darbar Bracelet of Fending",
+        "1": "Darbar Bracelet of Slaying",
+        "3": "Darbar Bracelet of Healing",
+        "4": "Darbar Bracelet of Casting"
+    },
+    "37221": {
+        "0": "Darbar Bracelet of Fending",
+        "1": "Darbar Bracelet of Slaying",
+        "2": "Darbar Bracelet of Aiming",
+        "4": "Darbar Bracelet of Casting"
+    },
+    "37222": {
+        "0": "Darbar Bracelet of Fending",
+        "1": "Darbar Bracelet of Slaying",
+        "2": "Darbar Bracelet of Aiming",
+        "3": "Darbar Bracelet of Healing"
+    },
+    "37223": {
+        "1": "Darbar Ring of Slaying",
+        "2": "Darbar Ring of Aiming",
+        "3": "Darbar Ring of Healing",
+        "4": "Darbar Ring of Casting"
+    },
+    "37224": {
+        "0": "Darbar Ring of Fending",
+        "2": "Darbar Ring of Aiming",
+        "3": "Darbar Ring of Healing",
+        "4": "Darbar Ring of Casting"
+    },
+    "37225": {
+        "0": "Darbar Ring of Fending",
+        "1": "Darbar Ring of Slaying",
+        "3": "Darbar Ring of Healing",
+        "4": "Darbar Ring of Casting"
+    },
+    "37226": {
+        "0": "Darbar Ring of Fending",
+        "1": "Darbar Ring of Slaying",
+        "2": "Darbar Ring of Aiming",
+        "4": "Darbar Ring of Casting"
+    },
+    "37227": {
+        "0": "Darbar Ring of Fending",
+        "1": "Darbar Ring of Slaying",
+        "2": "Darbar Ring of Aiming",
+        "3": "Darbar Ring of Healing"
+    },
+    "37442": {
+        "0": "Makai Marksman's Eyepatch",
+        "1": "Common Makai Marksman's Eyepatch",
+        "3": "Common Makai Vanguard's Monocle"
+    },
+    "37443": {
+        "0": "Makai Marksman's Battlegarb",
+        "1": "Common Makai Marksman's Battlegarb",
+        "3": "Common Makai Vanguard's Battlegarb"
+    },
+    "37444": {
+        "0": "Makai Marksman's Fingerless Gloves",
+        "1": "Common Makai Marksman's Fingerless Gloves",
+        "3": "Common Makai Vanguard's Fingerless Gloves"
+    },
+    "37445": {
+        "0": "Makai Mauler's Leggings",
+        "1": "Makai Marksman's Slops",
+        "2": "Makai Sun Guide's Slops",
+        "3": "Makai Priest's Slops",
+        "4": "Common Makai Mauler's Leggings",
+        "5": "Common Makai Marksman's Slops",
+        "6": "Common Makai Sun Guide's Slops",
+        "7": "Common Makai Priest's Slops",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
+    },
+    "37446": {
+        "0": "Makai Mauler's Boots",
+        "1": "Makai Marksman's Boots",
+        "2": "Makai Sun Guide's Boots",
+        "3": "Makai Priest's Boots",
+        "4": "Common Makai Mauler's Boots",
+        "5": "Common Makai Marksman's Boots",
+        "6": "Common Makai Sun Guide's Boots",
+        "7": "Common Makai Priest's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
+    },
+    "37447": {
+        "0": "Makai Markswoman's Ribbon",
+        "1": "Common Makai Markswoman's Ribbon",
+        "3": "Common Makai Vanbreaker's Ribbon"
+    },
+    "37448": {
+        "0": "Makai Markswoman's Battledress",
+        "1": "Common Makai Markswoman's Battledress",
+        "3": "Common Makai Vanbreaker's Battledress"
+    },
+    "37449": {
+        "0": "Makai Manhandler's Fingerless Gloves",
+        "1": "Makai Markswoman's Fingerless Gloves",
+        "2": "Makai Priestess's Fingerless Gloves",
+        "3": "Common Makai Manhandler's Fingerless Gloves",
+        "4": "Common Makai Markswoman's Fingerless Gloves",
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
+    },
+    "37450": {
+        "0": "Makai Manhandler's Quartertights",
+        "1": "Makai Markswoman's Quartertights",
+        "2": "Makai Moon Guide's Quartertights",
+        "3": "Makai Priestess's Skirt",
+        "4": "Common Makai Manhandler's Quartertights",
+        "5": "Common Makai Markswoman's Quartertights",
+        "6": "Common Makai Moon Guide's Quartertights",
+        "7": "Common Makai Priestess's Skirt",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
+    },
+    "37451": {
+        "0": "Makai Manhandler's Longboots",
+        "1": "Makai Markswoman's Longboots",
+        "2": "Makai Moon Guide's Longboots",
+        "3": "Common Makai Manhandler's Longboots",
+        "4": "Common Makai Markswoman's Longboots",
+        "5": "Common Makai Moon Guide's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
+    },
+    "37452": {
+        "0": "Makai Mauler's Facemask",
+        "1": "Makai Manhandler's Facemask",
+        "2": "Common Makai Mauler's Facemask",
+        "3": "Common Makai Manhandler's Facemask",
+        "5": "Makai Harrower's Facemask",
+        "6": "Common Makai Harbinger's Facemask",
+        "7": "Common Makai Harrower's Facemask"
+    },
+    "37453": {
+        "0": "Makai Mauler's Oilskin",
+        "1": "Common Makai Mauler's Oilskin",
+        "3": "Common Makai Harbinger's Battlegarb"
+    },
+    "37454": {
+        "0": "Makai Mauler's Fingerless Gloves",
+        "1": "Makai Priest's Fingerless Gloves",
+        "2": "Common Makai Mauler's Fingerless Gloves",
+        "3": "Common Makai Priest's Fingerless Gloves",
+        "5": "Common Makai Harbinger's Fingerless Gloves"
+    },
+    "37455": {
+        "0": "Makai Mauler's Leggings",
+        "1": "Makai Marksman's Slops",
+        "2": "Makai Sun Guide's Slops",
+        "3": "Makai Priest's Slops",
+        "4": "Common Makai Mauler's Leggings",
+        "5": "Common Makai Marksman's Slops",
+        "6": "Common Makai Sun Guide's Slops",
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "10": "Common Makai Vanguard's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
+    },
+    "37456": {
+        "0": "Makai Mauler's Boots",
+        "1": "Makai Marksman's Boots",
+        "2": "Makai Sun Guide's Boots",
+        "3": "Makai Priest's Boots",
+        "4": "Common Makai Mauler's Boots",
+        "5": "Common Makai Marksman's Boots",
+        "6": "Common Makai Sun Guide's Boots",
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "10": "Common Makai Vanguard's Boots",
+        "11": "Common Makai Harbinger's Boots"
+    },
+    "37457": {
+        "0": "Makai Mauler's Facemask",
+        "1": "Makai Manhandler's Facemask",
+        "2": "Common Makai Mauler's Facemask",
+        "3": "Common Makai Manhandler's Facemask",
+        "4": "Makai Harbinger's Facemask",
+        "6": "Common Makai Harbinger's Facemask",
+        "7": "Common Makai Harrower's Facemask"
+    },
+    "37458": {
+        "0": "Makai Manhandler's Jerkin",
+        "1": "Common Makai Manhandler's Jerkin",
+        "3": "Common Makai Harrower's Jerkin"
+    },
+    "37459": {
+        "0": "Makai Manhandler's Fingerless Gloves",
+        "1": "Makai Markswoman's Fingerless Gloves",
+        "2": "Makai Priestess's Fingerless Gloves",
+        "3": "Common Makai Manhandler's Fingerless Gloves",
+        "4": "Common Makai Markswoman's Fingerless Gloves",
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
+    },
+    "37460": {
+        "0": "Makai Manhandler's Quartertights",
+        "1": "Makai Markswoman's Quartertights",
+        "2": "Makai Moon Guide's Quartertights",
+        "3": "Makai Priestess's Skirt",
+        "4": "Common Makai Manhandler's Quartertights",
+        "5": "Common Makai Markswoman's Quartertights",
+        "6": "Common Makai Moon Guide's Quartertights",
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
+    },
+    "37461": {
+        "0": "Makai Manhandler's Longboots",
+        "1": "Makai Markswoman's Longboots",
+        "2": "Makai Moon Guide's Longboots",
+        "3": "Common Makai Manhandler's Longboots",
+        "4": "Common Makai Markswoman's Longboots",
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots",
+        "9": "Common Makai Harrower's Longboots"
+    },
+    "37462": {
+        "0": "Makai Marksman's Eyepatch",
+        "1": "Common Makai Marksman's Eyepatch",
+        "2": "Makai Vanguard's Monocle"
+    },
+    "37463": {
+        "0": "Makai Marksman's Battlegarb",
+        "1": "Common Makai Marksman's Battlegarb",
+        "2": "Makai Vanguard's Battlegarb"
+    },
+    "37464": {
+        "0": "Makai Marksman's Fingerless Gloves",
+        "1": "Common Makai Marksman's Fingerless Gloves",
+        "2": "Makai Vanguard's Fingerless Gloves"
+    },
+    "37465": {
+        "0": "Makai Mauler's Leggings",
+        "1": "Makai Marksman's Slops",
+        "2": "Makai Sun Guide's Slops",
+        "3": "Makai Priest's Slops",
+        "4": "Common Makai Mauler's Leggings",
+        "5": "Common Makai Marksman's Slops",
+        "6": "Common Makai Sun Guide's Slops",
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "11": "Common Makai Harbinger's Leggings"
+    },
+    "37466": {
+        "0": "Makai Mauler's Boots",
+        "1": "Makai Marksman's Boots",
+        "2": "Makai Sun Guide's Boots",
+        "3": "Makai Priest's Boots",
+        "4": "Common Makai Mauler's Boots",
+        "5": "Common Makai Marksman's Boots",
+        "6": "Common Makai Sun Guide's Boots",
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "11": "Common Makai Harbinger's Boots"
+    },
+    "37467": {
+        "0": "Makai Markswoman's Ribbon",
+        "1": "Common Makai Markswoman's Ribbon",
+        "2": "Makai Vanbreaker's Ribbon"
+    },
+    "37468": {
+        "0": "Makai Markswoman's Battledress",
+        "1": "Common Makai Markswoman's Battledress",
+        "2": "Makai Vanbreaker's Battledress"
+    },
+    "37469": {
+        "0": "Makai Manhandler's Fingerless Gloves",
+        "1": "Makai Markswoman's Fingerless Gloves",
+        "2": "Makai Priestess's Fingerless Gloves",
+        "3": "Common Makai Manhandler's Fingerless Gloves",
+        "4": "Common Makai Markswoman's Fingerless Gloves",
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "9": "Common Makai Harrower's Fingerless Gloves"
+    },
+    "37470": {
+        "0": "Makai Manhandler's Quartertights",
+        "1": "Makai Markswoman's Quartertights",
+        "2": "Makai Moon Guide's Quartertights",
+        "3": "Makai Priestess's Skirt",
+        "4": "Common Makai Manhandler's Quartertights",
+        "5": "Common Makai Markswoman's Quartertights",
+        "6": "Common Makai Moon Guide's Quartertights",
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "11": "Common Makai Harrower's Quartertights"
+    },
+    "37471": {
+        "0": "Makai Manhandler's Longboots",
+        "1": "Makai Markswoman's Longboots",
+        "2": "Makai Moon Guide's Longboots",
+        "3": "Common Makai Manhandler's Longboots",
+        "4": "Common Makai Markswoman's Longboots",
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "9": "Common Makai Harrower's Longboots"
+    },
+    "37472": {
+        "0": "Makai Mauler's Facemask",
+        "1": "Makai Manhandler's Facemask",
+        "2": "Common Makai Mauler's Facemask",
+        "3": "Common Makai Manhandler's Facemask",
+        "4": "Makai Harbinger's Facemask",
+        "5": "Makai Harrower's Facemask",
+        "7": "Common Makai Harrower's Facemask"
+    },
+    "37473": {
+        "0": "Makai Mauler's Oilskin",
+        "1": "Common Makai Mauler's Oilskin",
+        "2": "Makai Harbinger's Battlegarb"
+    },
+    "37474": {
+        "0": "Makai Mauler's Fingerless Gloves",
+        "1": "Makai Priest's Fingerless Gloves",
+        "2": "Common Makai Mauler's Fingerless Gloves",
+        "3": "Common Makai Priest's Fingerless Gloves",
+        "4": "Makai Harbinger's Fingerless Gloves"
+    },
+    "37475": {
+        "0": "Makai Mauler's Leggings",
+        "1": "Makai Marksman's Slops",
+        "2": "Makai Sun Guide's Slops",
+        "3": "Makai Priest's Slops",
+        "4": "Common Makai Mauler's Leggings",
+        "5": "Common Makai Marksman's Slops",
+        "6": "Common Makai Sun Guide's Slops",
+        "7": "Common Makai Priest's Slops",
+        "8": "Makai Vanguard's Leggings",
+        "9": "Makai Harbinger's Leggings",
+        "10": "Common Makai Vanguard's Leggings"
+    },
+    "37476": {
+        "0": "Makai Mauler's Boots",
+        "1": "Makai Marksman's Boots",
+        "2": "Makai Sun Guide's Boots",
+        "3": "Makai Priest's Boots",
+        "4": "Common Makai Mauler's Boots",
+        "5": "Common Makai Marksman's Boots",
+        "6": "Common Makai Sun Guide's Boots",
+        "7": "Common Makai Priest's Boots",
+        "8": "Makai Vanguard's Boots",
+        "9": "Makai Harbinger's Boots",
+        "10": "Common Makai Vanguard's Boots"
+    },
+    "37477": {
+        "0": "Makai Mauler's Facemask",
+        "1": "Makai Manhandler's Facemask",
+        "2": "Common Makai Mauler's Facemask",
+        "3": "Common Makai Manhandler's Facemask",
+        "4": "Makai Harbinger's Facemask",
+        "5": "Makai Harrower's Facemask",
+        "6": "Common Makai Harbinger's Facemask"
+    },
+    "37478": {
+        "0": "Makai Manhandler's Jerkin",
+        "1": "Common Makai Manhandler's Jerkin",
+        "2": "Makai Harrower's Jerkin"
+    },
+    "37479": {
+        "0": "Makai Manhandler's Fingerless Gloves",
+        "1": "Makai Markswoman's Fingerless Gloves",
+        "2": "Makai Priestess's Fingerless Gloves",
+        "3": "Common Makai Manhandler's Fingerless Gloves",
+        "4": "Common Makai Markswoman's Fingerless Gloves",
+        "5": "Common Makai Priestess's Fingerless Gloves",
+        "6": "Makai Vanbreaker's Fingerless Gloves",
+        "7": "Makai Harrower's Fingerless Gloves",
+        "8": "Common Makai Vanbreaker's Fingerless Gloves"
+    },
+    "37480": {
+        "0": "Makai Manhandler's Quartertights",
+        "1": "Makai Markswoman's Quartertights",
+        "2": "Makai Moon Guide's Quartertights",
+        "3": "Makai Priestess's Skirt",
+        "4": "Common Makai Manhandler's Quartertights",
+        "5": "Common Makai Markswoman's Quartertights",
+        "6": "Common Makai Moon Guide's Quartertights",
+        "7": "Common Makai Priestess's Skirt",
+        "8": "Makai Vanbreaker's Quartertights",
+        "9": "Makai Harrower's Quartertights",
+        "10": "Common Makai Vanbreaker's Quartertights"
+    },
+    "37481": {
+        "0": "Makai Manhandler's Longboots",
+        "1": "Makai Markswoman's Longboots",
+        "2": "Makai Moon Guide's Longboots",
+        "3": "Common Makai Manhandler's Longboots",
+        "4": "Common Makai Markswoman's Longboots",
+        "5": "Common Makai Moon Guide's Longboots",
+        "6": "Makai Vanbreaker's Longboots",
+        "7": "Makai Harrower's Longboots",
+        "8": "Common Makai Vanbreaker's Longboots"
     }
 }

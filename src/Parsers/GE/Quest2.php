@@ -78,8 +78,6 @@ class Quest2 implements ParseInterface
         $AozActionCsv = $this->csv("AozAction");
         $CollectablesShopCsv = $this->csv("CollectablesShop");
         $CraftActionCsv = $this->csv("CraftAction");
-        $DawnQuestAnnounceCsv = $this->csv("DawnQuestAnnounce");
-        $DawnContentCsv = $this->csv("DawnContent");
         $DescriptionPageCsv = $this->csv("DescriptionPage");
         $DpsChallengeCsv = $this->csv("DpsChallenge");
         $DpsChallengeOfficerCsv = $this->csv("DpsChallengeOfficer");
@@ -238,11 +236,6 @@ class Quest2 implements ParseInterface
             if (empty($QuestNumber)) continue;
             $Variable = $SheetData['Name'];
             $CraftActionData[$QuestNumber] = $Variable;
-        }
-        foreach($DawnQuestAnnounceCsv->data as $id => $SheetData) {
-            $QuestNumber = $SheetData["Quest"];
-            if (empty($QuestNumber)) continue;
-            $DawnQuestAnnounceData[$QuestNumber] = $SheetData;
         }
         foreach($DescriptionCsv->data as $id => $SheetData) {
             $QuestNumber = $SheetData["Quest"];

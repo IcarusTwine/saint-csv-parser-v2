@@ -162,7 +162,7 @@ class Leves implements ParseInterface
                 19 => "Ingenuity (Guildleve)",
                 20 => "Contentment",
                 21 => "Promptitude",
-                22 => "Prudence",
+                22 => "Prudence (Levequest)",
                 23 => "Resolve",
                 24 => "Ambition",
                 25 => "Benevolence",

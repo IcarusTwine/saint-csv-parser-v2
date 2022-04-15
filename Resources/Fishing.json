@@ -22425,6 +22425,28 @@
             }
         }
     ],
+    "36662": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "400",
+                "Name": "The Churning Mists"
+            },
+            "Map": "214",
+            "PlaceName": "Greensward",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "54",
+            "Rare": "False",
+            "Position": {
+                "px": "368",
+                "py": "1584",
+                "cx": 8.4,
+                "cy": 32.7,
+                "Radius": "600"
+            }
+        }
+    ],
     "12742": [
         {
             "FishName": "Dravanian Squeaker",
@@ -39221,6 +39243,28 @@
             }
         }
     ],
+    "36679": [
+        {
+            "FishName": "Aetherolectric Guitarfish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Scholar's Harbor",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1074",
+                "py": "1518",
+                "cx": 11.7,
+                "cy": 16.2,
+                "Radius": "2400"
+            }
+        }
+    ],
     "36390": [
         {
             "FishName": "Astacus",
@@ -39544,6 +39588,28 @@
     "36402": [
         {
             "FishName": "Fat Snook",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "831",
+                "py": "221",
+                "cx": 17.6,
+                "cy": 5.4,
+                "Radius": "450"
+            }
+        }
+    ],
+    "36680": [
+        {
+            "FishName": "Jumbo Snook",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "956",
@@ -39953,6 +40019,28 @@
             }
         }
     ],
+    "36681": [
+        {
+            "FishName": "Earful",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "963",
+                "Name": "Radz-at-Han"
+            },
+            "Map": "694",
+            "PlaceName": "Meghaduta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "459",
+                "py": "989",
+                "cx": 5.6,
+                "cy": 10.9,
+                "Radius": "1350"
+            }
+        }
+    ],
     "36420": [
         {
             "FishName": "Thavnairian Goby",
@@ -40187,6 +40275,28 @@
             }
         }
     ],
+    "36663": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        }
+    ],
     "35605": [
         {
             "FishName": "Garjana Wrasse",
@@ -40300,6 +40410,28 @@
     "36435": [
         {
             "FishName": "Bronze Pipira",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Giantsgall Grounds",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "998",
+                "py": "360",
+                "cx": 21,
+                "cy": 8.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "36682": [
+        {
+            "FishName": "Hippo Frog",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -40512,6 +40644,28 @@
     "36442": [
         {
             "FishName": "Bicuda",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Ksiroda",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1478",
+                "py": "1018",
+                "cx": 30.6,
+                "cy": 21.4,
+                "Radius": "1200"
+            }
+        }
+    ],
+    "36660": [
+        {
+            "FishName": "",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -40793,6 +40947,28 @@
             }
         }
     ],
+    "36686": [
+        {
+            "FishName": "Thavnairian Calamari",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Perfumed Tides",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "322",
+                "py": "328",
+                "cx": 7.4,
+                "cy": 7.6,
+                "Radius": "900"
+            }
+        }
+    ],
     "35606": [
         {
             "FishName": "Garlean Clam",
@@ -40924,6 +41100,28 @@
     "36459": [
         {
             "FishName": "Icepike",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Eblan Thaw",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "True",
+            "Position": {
+                "px": "504",
+                "py": "1484",
+                "cx": 11.1,
+                "cy": 30.7,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36683": [
+        {
+            "FishName": "Rimepike",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "958",
@@ -41759,6 +41957,28 @@
             }
         }
     ],
+    "36684": [
+        {
+            "FishName": "Foun Ahlm",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "426",
+                "py": "1476",
+                "cx": 9.5,
+                "cy": 30.5,
+                "Radius": "300"
+            }
+        }
+    ],
     "36495": [
         {
             "FishName": "Dragonscale",
@@ -42190,6 +42410,28 @@
     "36513": [
         {
             "FishName": "Monster Carrot",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 18",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "89",
+            "Rare": "False",
+            "Position": {
+                "px": "212",
+                "py": "1706",
+                "cx": 5.2,
+                "cy": 35.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "36685": [
+        {
+            "FishName": "Forbiddingway",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "960",

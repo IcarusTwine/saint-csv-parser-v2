@@ -3476,8 +3476,8 @@ trait CsvParseTrait
         $data = preg_replace("/\\<UIForeground\\>[^<]+\\<\\/UIForeground\\>|\\<UIGlow\\>[^<]+\\<\\/UIGlow\\>|\\<72\\>[^<]+\\<\\/72\\>|\\<73\\>[^<]+\\<\\/73\\>/","",$data);
         //regex to add a % to the end of [[EXP Bonus]] gear
         $data = preg_replace("/(\\[\\[EXP Bonus\\]\\] \\+\d+)/", "$1%", $data);
-        $data = str_replace("= False\n", "= No\n", $data);
-        $data = str_replace("= True\n", "= Yes\n", $data);
+        // $data = str_replace("= False\n", "= No\n", $data);
+        // $data = str_replace("= True\n", "= Yes\n", $data);
         $data = str_replace("|Section = Class & Job Quests", "|Section = Class and Job Quests", $data);
         $data = preg_replace("/(Survey target areas.|Gather items at all the specified locations.)\nEvaluation Bonus:\n(\d+)～ \\+(\d+)%\n(\d+)～ \\+(\d+)%\n(\d+)～  \\+(\d+)%/", "\n*$1\n*Evaluation Bonus:\n**$2～ +$3%\n**$4～ +$5%\n**$6～  +$7%", $data);
 
@@ -3489,10 +3489,10 @@ trait CsvParseTrait
      */
     public function saveExtra($filename, $SourceData, $dontformat = false, $CustomPath = false, $Pokemon = false)
     {   
-        if ($dontformat = true){
+        if ($dontformat === true){
             $data = $SourceData;
         }
-        if ($dontformat = false){
+        if ($dontformat === false){
             $data = $this->GEformat($SourceData);
         }
         $ini = parse_ini_file('config.ini');

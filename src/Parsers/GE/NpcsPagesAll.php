@@ -1305,14 +1305,15 @@ class NpcsPagesAll implements ParseInterface
             {
                 case 1: // Midlander
                     $tribeCode = ($isMale == "true") ? 0 : 100;
-                    $headIconIndex = ($isMale == "true") ? 5 : 6;
+                    $headIconIndex = ($isMale == "true") ? 2 : 3;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $IconArray[] = $headIcon;
                     $extraIcons = "|Face = ". $headIcon .".png". $warning ."";
+                    var_dump("SubMenuParam[$headIconIndex][$BaseFaceCalc]");
                     break;
                 case 2: // Highlander
                     $tribeCode = ($isMale == "true") ? 200 : 300;
-                    $headIconIndex = ($isMale == "true") ? 5 : 6;
+                    $headIconIndex = ($isMale == "true") ? 2 : 3;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $IconArray[] = $headIcon;
                     $extraIcons = "|Face = ". $headIcon .".png". $warning ."";
@@ -1320,7 +1321,7 @@ class NpcsPagesAll implements ParseInterface
                 case 3: // Wildwood
                 case 4: // Duskwight
                     $tribeCode = ($isMale == "true") ? 400 : 500;
-                    $headIconIndex = ($isMale == "true") ? 4 : 5;
+                    $headIconIndex = ($isMale == "true") ? 1 : 2;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $EarShape = $extraFeatureShape;
                     $IconArray[] = $headIcon;
@@ -1329,7 +1330,7 @@ class NpcsPagesAll implements ParseInterface
                 case 5: // Plainsfolks
                 case 6: // Dunesfolk
                     $tribeCode = ($isMale == "true") ? 600 : 700;
-                    $headIconIndex = ($isMale == "true") ? 4 : 5;
+                    $headIconIndex = ($isMale == "true") ? 1 : 2;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $EarShape = $extraFeatureShape;
                     $IconArray[] = $headIcon;
@@ -1338,8 +1339,8 @@ class NpcsPagesAll implements ParseInterface
                 case 7: // Seeker of the Sun
                 case 8: // Keeper of the Moon
                     $tribeCode = ($isMale == "true") ? 800 : 900;
-                    $headIconIndex = ($isMale == "true") ? 6 : 7;
-                    $tailIconIndex = ($isMale == "true") ? 2 : 3;
+                    $headIconIndex = ($isMale == "true") ? 3 : 4;
+                    $tailIconIndex = ($isMale == "true") ? 1 : 2;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $tailIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$tailIconIndex][$tailOrEarShape]"];
                     $IconArray[] = $headIcon;
@@ -1349,7 +1350,7 @@ class NpcsPagesAll implements ParseInterface
                 case 9: // Sea Wolf
                 case 10: // Hellsguard
                     $tribeCode = ($isMale == "true") ? 1000 : 1100;
-                    $headIconIndex = ($isMale == "true") ? 5 : 6;
+                    $headIconIndex = ($isMale == "true") ? 2 : 3;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $IconArray[] = $headIcon;
                     $extraIcons = "|Face = ". $headIcon .".png". $warning ."";
@@ -1357,8 +1358,8 @@ class NpcsPagesAll implements ParseInterface
                 case 11: // Raen
                 case 12: // Xaela
                     $tribeCode = ($isMale == "true") ? 1200 : 1300;
-                    $headIconIndex = ($isMale == "true") ? 6 : 7;
-                    $tailIconIndex = ($isMale == "true") ? 2 : 3;
+                    $headIconIndex = ($isMale == "true") ? 3 : 4;
+                    $tailIconIndex = ($isMale == "true") ? 1 : 2;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $tailIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$tailIconIndex][$tailOrEarShape]"];
                     $IconArray[] = $headIcon;
@@ -1371,8 +1372,8 @@ class NpcsPagesAll implements ParseInterface
                 case 13: // Helions
                 case 14: // The Lost
                     $tribeCode = 1400;
-                    $furIconIndex = 2;
-                    $tailIconIndex = 4;
+                    $furIconIndex = 3;
+                    $tailIconIndex = 1;
                     $furIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$furIconIndex][$BaseFaceCalc]"];
                     $IconArray[] = $furIcon;
                     $tailIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$tailIconIndex][$tailOrEarShape]"];
@@ -1382,8 +1383,8 @@ class NpcsPagesAll implements ParseInterface
                 case 15: // Rava
                 case 16: // Veena
                     $tribeCode = ($isMale == "true") ? 1600 : 1700;
-                    $headIconIndex = 5;
-                    $earIconIndex = 14;
+                    $headIconIndex = ($isMale == "true") ? 1 : 2;
+                    $earIconIndex = ($isMale == "true") ? 13 : 14;
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $IconArray[] = $headIcon;
                     $earIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$earIconIndex][$tailOrEarShape]"];
@@ -1411,9 +1412,14 @@ class NpcsPagesAll implements ParseInterface
                 $hairStyleBase = 1;
                 $warningHair = "\n|Custom Hair = yes";
             }
-            $hairStyleRaw = $hairStyles[$tribeCode][$hairStyleBase];
-            $hairStyleIcon = "".$hairStyleRaw['Icon'] .".png".$warningHair ."";
-            $IconArray[] = $hairStyleRaw['Icon'];
+            if (empty($hairStyles[$tribeCode][$hairStyleBase])){
+                $warningHair = "\n|Custom Hair = yes";
+                $hairStyleIcon = "0.png";
+            } else {
+                $hairStyleRaw = $hairStyles[$tribeCode][$hairStyleBase];
+                $hairStyleIcon = "".$hairStyleRaw['Icon'] .".png".$warningHair ."";
+                $IconArray[] = $hairStyleRaw['Icon'];
+            }
             //Skin Colour
             $listIndex = ($tribeKey * 2 + $GenderValue) * 5 + 3;
             $skinIndex = $listIndex * 256;
