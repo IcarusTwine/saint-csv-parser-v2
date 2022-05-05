@@ -70,7 +70,7 @@ class AkatsukiNotes implements ParseInterface
             '''$NoteName (Unending Codex)'''
             {{Unending Codex
                 |Name = $Name
-                |Icon = $Icon
+                |Image = $Icon
                 |Quest = $Quest
                 |Note_Name = $NoteName
                 |Title = $SubTitle1
