@@ -60,9 +60,9 @@ class StartUp implements ParseInterface
         // grab CSV files we want to use
         $ini = parse_ini_file('src/Parsers/config.ini');
         $MainPath = $ini['MainPath'];
-        $PatchID = file_get_contents("". $MainPath ."\game\\ffxivgame.ver");
+        $PatchID = str_replace(" ","",file_get_contents("". $MainPath ."\game\\ffxivgame.ver"));
         $SaintPath = $ini['SaintPath'];
-        $GameVer = file_get_contents("$SaintPath/Definitions/game.ver");
+        $GameVer = str_replace(" ","",file_get_contents("$SaintPath/Definitions/game.ver"));
         $Resources = str_replace("cache","Resources",$ini['Cache']);
         $MainDir = str_replace("cache","",$ini['Cache']);
         $PreviousVer = $ini['PreviousVer'];

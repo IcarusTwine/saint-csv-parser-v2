@@ -22427,7 +22427,7 @@
     ],
     "36662": [
         {
-            "FishName": "",
+            "FishName": "Holier-than Mogpom",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "400",
@@ -40277,7 +40277,7 @@
     ],
     "36663": [
         {
-            "FishName": "",
+            "FishName": "Chalky Coral",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -40665,7 +40665,7 @@
     ],
     "36660": [
         {
-            "FishName": "",
+            "FishName": "Seedtoad",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -47457,6 +47457,26 @@
                 "cy": 18.6,
                 "Radius": "600"
             }
+        },
+        {
+            "FishName": "Moondisc",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Southwestern Loch Seld",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "975",
+                "py": "1398",
+                "cx": 20.5,
+                "cy": 29,
+                "Radius": "600"
+            }
         }
     ],
     "20195": [
@@ -47779,6 +47799,26 @@
                 "cy": 28,
                 "Radius": "600"
             }
+        },
+        {
+            "FishName": "King's Mantle",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Southwestern Loch Seld",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "975",
+                "py": "1398",
+                "cx": 20.5,
+                "cy": 29,
+                "Radius": "600"
+            }
         }
     ],
     "20207": [
@@ -47821,6 +47861,26 @@
                 "py": "1350",
                 "cx": 24.6,
                 "cy": 28,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Carpenter Crab",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Southwestern Loch Seld",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "975",
+                "py": "1398",
+                "cx": 20.5,
+                "cy": 29,
                 "Radius": "600"
             }
         }
@@ -50227,6 +50287,26 @@
                 "cy": 13.9,
                 "Radius": "600"
             }
+        },
+        {
+            "FishName": "Red Gurnard",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "The Anemone Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1136",
+                "py": "1319",
+                "cx": 23.7,
+                "cy": 27.4,
+                "Radius": "600"
+            }
         }
     ],
     "36555": [
@@ -50289,6 +50369,26 @@
                 "py": "644",
                 "cx": 11,
                 "cy": 13.9,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Ruby Haddock",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "The Anemone Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1136",
+                "py": "1319",
+                "cx": 23.7,
+                "cy": 27.4,
                 "Radius": "600"
             }
         }
@@ -50506,6 +50606,26 @@
                 "cx": 28.2,
                 "cy": 21.3,
                 "Radius": "900"
+            }
+        },
+        {
+            "FishName": "Eastern Seerfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "The Anemone Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1136",
+                "py": "1319",
+                "cx": 23.7,
+                "cy": 27.4,
+                "Radius": "600"
             }
         }
     ],
@@ -51512,6 +51632,50 @@
                 "cx": 6.8,
                 "cy": 36.3,
                 "Radius": "300"
+            }
+        }
+    ],
+    "36659": [
+        {
+            "FishName": "Inksquid",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "621",
+                "Name": "The Lochs"
+            },
+            "Map": "369",
+            "PlaceName": "Southwestern Loch Seld",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "975",
+                "py": "1398",
+                "cx": 20.5,
+                "cy": 29,
+                "Radius": "600"
+            }
+        }
+    ],
+    "36661": [
+        {
+            "FishName": "Auroral Clam",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "The Anemone Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1136",
+                "py": "1319",
+                "cx": 23.7,
+                "cy": 27.4,
+                "Radius": "600"
             }
         }
     ]
