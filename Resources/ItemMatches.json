@@ -66450,5 +66450,1701 @@
         "6": "Makai Vanbreaker's Longboots",
         "7": "Makai Harrower's Longboots",
         "8": "Common Makai Vanbreaker's Longboots"
+    },
+    "37763": {
+        "1": "Ornate Rinascita Cuirass of Fending"
+    },
+    "37768": {
+        "1": "Ornate Rinascita Cuirass of Maiming"
+    },
+    "37773": {
+        "1": "Ornate Rinascita Jacket of Striking"
+    },
+    "37778": {
+        "1": "Ornate Rinascita Jacket of Aiming"
+    },
+    "37783": {
+        "1": "Ornate Rinascita Jacket of Scouting"
+    },
+    "37788": {
+        "1": "Ornate Rinascita Coat of Healing"
+    },
+    "37793": {
+        "1": "Ornate Rinascita Coat of Casting"
+    },
+    "37797": {
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting"
+    },
+    "37798": {
+        "0": "Rinascita Earring of Fending",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting"
+    },
+    "37799": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting"
+    },
+    "37800": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "4": "Rinascita Earring of Casting"
+    },
+    "37801": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing"
+    },
+    "37802": {
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting"
+    },
+    "37803": {
+        "0": "Rinascita Necklace of Fending",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting"
+    },
+    "37804": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting"
+    },
+    "37805": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "4": "Rinascita Necklace of Casting"
+    },
+    "37806": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing"
+    },
+    "37807": {
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting"
+    },
+    "37808": {
+        "0": "Rinascita Bracelet of Fending",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting"
+    },
+    "37809": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting"
+    },
+    "37810": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "4": "Rinascita Bracelet of Casting"
+    },
+    "37811": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing"
+    },
+    "37812": {
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting"
+    },
+    "37813": {
+        "0": "Rinascita Ring of Fending",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting"
+    },
+    "37814": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting"
+    },
+    "37815": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "4": "Rinascita Ring of Casting"
+    },
+    "37816": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing"
+    },
+    "37876": {
+        "1": "Abyssos Helm of Fending"
+    },
+    "37877": {
+        "1": "Abyssos Cuirass of Fending"
+    },
+    "37878": {
+        "1": "Abyssos Gauntlets of Fending"
+    },
+    "37879": {
+        "1": "Abyssos Hose of Fending"
+    },
+    "37880": {
+        "1": "Abyssos Sollerets of Fending"
+    },
+    "37881": {
+        "1": "Abyssos Helm of Maiming"
+    },
+    "37882": {
+        "1": "Abyssos Cuirass of Maiming"
+    },
+    "37883": {
+        "1": "Abyssos Gauntlets of Maiming"
+    },
+    "37884": {
+        "1": "Abyssos Hose of Maiming"
+    },
+    "37885": {
+        "1": "Abyssos Sollerets of Maiming"
+    },
+    "37886": {
+        "1": "Abyssos Hood of Striking"
+    },
+    "37887": {
+        "1": "Abyssos Acton of Striking"
+    },
+    "37888": {
+        "1": "Abyssos Armguards of Striking"
+    },
+    "37889": {
+        "1": "Abyssos Brais of Striking"
+    },
+    "37890": {
+        "1": "Abyssos Boots of Striking"
+    },
+    "37891": {
+        "1": "Abyssos Mask of Aiming"
+    },
+    "37892": {
+        "1": "Abyssos Coat of Aiming"
+    },
+    "37893": {
+        "1": "Abyssos Gloves of Aiming"
+    },
+    "37894": {
+        "1": "Abyssos Tights of Aiming"
+    },
+    "37895": {
+        "1": "Abyssos Thighboots of Aiming"
+    },
+    "37896": {
+        "1": "Abyssos Mask of Scouting"
+    },
+    "37897": {
+        "1": "Abyssos Coat of Scouting"
+    },
+    "37898": {
+        "1": "Abyssos Gloves of Scouting"
+    },
+    "37899": {
+        "1": "Abyssos Tights of Scouting"
+    },
+    "37900": {
+        "1": "Abyssos Thighboots of Scouting"
+    },
+    "37901": {
+        "1": "Abyssos Helm of Healing"
+    },
+    "37902": {
+        "1": "Abyssos Surcoat of Healing"
+    },
+    "37903": {
+        "1": "Abyssos Armguards of Healing"
+    },
+    "37904": {
+        "1": "Abyssos Culottes of Healing"
+    },
+    "37905": {
+        "1": "Abyssos Boots of Healing"
+    },
+    "37906": {
+        "1": "Abyssos Helm of Casting"
+    },
+    "37907": {
+        "1": "Abyssos Surcoat of Casting"
+    },
+    "37908": {
+        "1": "Abyssos Armguards of Casting"
+    },
+    "37909": {
+        "1": "Abyssos Culottes of Casting"
+    },
+    "37910": {
+        "1": "Abyssos Boots of Casting"
+    },
+    "37911": {
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "37912": {
+        "0": "Purgatory Earrings of Fending",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "37913": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "37914": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "37915": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "37916": {
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "37917": {
+        "0": "Purgatory Choker of Fending",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "37918": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "37919": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "37920": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "37921": {
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "37922": {
+        "0": "Purgatory Amulet of Fending",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "37923": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "37924": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "37925": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "37926": {
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "37927": {
+        "0": "Purgatory Ring of Fending",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "37928": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "37929": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "37930": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "37931": {
+        "1": "Augmented Lunar Envoy's Longsword"
+    },
+    "37932": {
+        "1": "Augmented Lunar Envoy's Sainti"
+    },
+    "37933": {
+        "1": "Augmented Lunar Envoy's Bardiche"
+    },
+    "37934": {
+        "1": "Augmented Lunar Envoy's Bident"
+    },
+    "37935": {
+        "1": "Augmented Lunar Envoy's Composite Bow"
+    },
+    "37936": {
+        "1": "Augmented Lunar Envoy's Stilettos"
+    },
+    "37937": {
+        "1": "Augmented Lunar Envoy's Greatsword"
+    },
+    "37938": {
+        "1": "Augmented Lunar Envoy's Handgonne"
+    },
+    "37939": {
+        "1": "Augmented Lunar Envoy's Wand"
+    },
+    "37940": {
+        "1": "Augmented Lunar Envoy's Staff"
+    },
+    "37941": {
+        "1": "Augmented Lunar Envoy's Grimoire"
+    },
+    "37942": {
+        "1": "Augmented Lunar Envoy's Codex"
+    },
+    "37943": {
+        "1": "Augmented Lunar Envoy's Astrometer"
+    },
+    "37944": {
+        "1": "Augmented Lunar Envoy's Blade"
+    },
+    "37945": {
+        "1": "Augmented Lunar Envoy's Smallsword"
+    },
+    "37946": {
+        "1": "Augmented Lunar Envoy's Gunblade"
+    },
+    "37947": {
+        "1": "Augmented Lunar Envoy's Tathlums"
+    },
+    "37948": {
+        "1": "Augmented Lunar Envoy's Wings"
+    },
+    "37949": {
+        "1": "Augmented Lunar Envoy's War Sickle"
+    },
+    "37951": {
+        "1": "Augmented Lunar Envoy's Face Guard of Fending"
+    },
+    "37952": {
+        "1": "Augmented Lunar Envoy's Jacket of Fending"
+    },
+    "37953": {
+        "1": "Augmented Lunar Envoy's Gloves of Fending"
+    },
+    "37954": {
+        "1": "Augmented Lunar Envoy's Trousers of Fending"
+    },
+    "37955": {
+        "1": "Augmented Lunar Envoy's Boots of Fending"
+    },
+    "37956": {
+        "1": "Augmented Lunar Envoy's Turban of Maiming"
+    },
+    "37957": {
+        "1": "Augmented Lunar Envoy's Gambison of Maiming"
+    },
+    "37958": {
+        "1": "Augmented Lunar Envoy's Fingerless Gloves of Maiming"
+    },
+    "37959": {
+        "1": "Augmented Lunar Envoy's Trousers of Maiming"
+    },
+    "37960": {
+        "1": "Augmented Lunar Envoy's Thighboots of Maiming"
+    },
+    "37961": {
+        "1": "Augmented Lunar Envoy's Face Guard of Striking"
+    },
+    "37962": {
+        "1": "Augmented Lunar Envoy's Jacket of Striking"
+    },
+    "37963": {
+        "1": "Augmented Lunar Envoy's Gloves of Striking"
+    },
+    "37964": {
+        "1": "Augmented Lunar Envoy's Trousers of Striking"
+    },
+    "37965": {
+        "1": "Augmented Lunar Envoy's Boots of Striking"
+    },
+    "37966": {
+        "1": "Augmented Lunar Envoy's Face Guard of Aiming"
+    },
+    "37967": {
+        "1": "Augmented Lunar Envoy's Gambison of Aiming"
+    },
+    "37968": {
+        "1": "Augmented Lunar Envoy's Fingerless Gloves of Aiming"
+    },
+    "37969": {
+        "1": "Augmented Lunar Envoy's Trousers of Aiming"
+    },
+    "37970": {
+        "1": "Augmented Lunar Envoy's Thighboots of Aiming"
+    },
+    "37971": {
+        "1": "Augmented Lunar Envoy's Turban of Scouting"
+    },
+    "37972": {
+        "1": "Augmented Lunar Envoy's Gambison of Scouting"
+    },
+    "37973": {
+        "1": "Augmented Lunar Envoy's Gloves of Scouting"
+    },
+    "37974": {
+        "1": "Augmented Lunar Envoy's Trousers of Scouting"
+    },
+    "37975": {
+        "1": "Augmented Lunar Envoy's Boots of Scouting"
+    },
+    "37976": {
+        "1": "Augmented Lunar Envoy's Hairpin of Healing"
+    },
+    "37977": {
+        "1": "Augmented Lunar Envoy's Justaucorps of Healing"
+    },
+    "37978": {
+        "1": "Augmented Lunar Envoy's Gloves of Healing"
+    },
+    "37979": {
+        "1": "Augmented Lunar Envoy's Longkilt of Healing"
+    },
+    "37980": {
+        "1": "Augmented Lunar Envoy's Boots of Healing"
+    },
+    "37981": {
+        "1": "Augmented Lunar Envoy's Hairpin of Casting"
+    },
+    "37982": {
+        "1": "Augmented Lunar Envoy's Justaucorps of Casting"
+    },
+    "37983": {
+        "1": "Augmented Lunar Envoy's Gloves of Casting"
+    },
+    "37984": {
+        "1": "Augmented Lunar Envoy's Longkilt of Casting"
+    },
+    "37985": {
+        "1": "Augmented Lunar Envoy's Boots of Casting"
+    },
+    "37986": {
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "37987": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "37988": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "37989": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "37990": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "37991": {
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "37992": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "37993": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "37994": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "37995": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "37996": {
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "37997": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "37998": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "37999": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "38000": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "38001": {
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38002": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38003": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38004": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38005": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38006": {
+        "0": "Lunar Envoy's Longsword"
+    },
+    "38007": {
+        "0": "Lunar Envoy's Sainti"
+    },
+    "38008": {
+        "0": "Lunar Envoy's Bardiche"
+    },
+    "38009": {
+        "0": "Lunar Envoy's Bident"
+    },
+    "38010": {
+        "0": "Lunar Envoy's Composite Bow"
+    },
+    "38011": {
+        "0": "Lunar Envoy's Stilettos"
+    },
+    "38012": {
+        "0": "Lunar Envoy's Greatsword"
+    },
+    "38013": {
+        "0": "Lunar Envoy's Handgonne"
+    },
+    "38014": {
+        "0": "Lunar Envoy's Wand"
+    },
+    "38015": {
+        "0": "Lunar Envoy's Staff"
+    },
+    "38016": {
+        "0": "Lunar Envoy's Grimoire"
+    },
+    "38017": {
+        "0": "Lunar Envoy's Codex"
+    },
+    "38018": {
+        "0": "Lunar Envoy's Astrometer"
+    },
+    "38019": {
+        "0": "Lunar Envoy's Blade"
+    },
+    "38020": {
+        "0": "Lunar Envoy's Smallsword"
+    },
+    "38021": {
+        "0": "Lunar Envoy's Gunblade"
+    },
+    "38022": {
+        "0": "Lunar Envoy's Tathlums"
+    },
+    "38023": {
+        "0": "Lunar Envoy's Wings"
+    },
+    "38024": {
+        "0": "Lunar Envoy's War Sickle"
+    },
+    "38026": {
+        "0": "Lunar Envoy's Face Guard of Fending"
+    },
+    "38027": {
+        "0": "Lunar Envoy's Jacket of Fending"
+    },
+    "38028": {
+        "0": "Lunar Envoy's Gloves of Fending"
+    },
+    "38029": {
+        "0": "Lunar Envoy's Trousers of Fending"
+    },
+    "38030": {
+        "0": "Lunar Envoy's Boots of Fending"
+    },
+    "38031": {
+        "0": "Lunar Envoy's Turban of Maiming"
+    },
+    "38032": {
+        "0": "Lunar Envoy's Gambison of Maiming"
+    },
+    "38033": {
+        "0": "Lunar Envoy's Fingerless Gloves of Maiming"
+    },
+    "38034": {
+        "0": "Lunar Envoy's Trousers of Maiming"
+    },
+    "38035": {
+        "0": "Lunar Envoy's Thighboots of Maiming"
+    },
+    "38036": {
+        "0": "Lunar Envoy's Face Guard of Striking"
+    },
+    "38037": {
+        "0": "Lunar Envoy's Jacket of Striking"
+    },
+    "38038": {
+        "0": "Lunar Envoy's Gloves of Striking"
+    },
+    "38039": {
+        "0": "Lunar Envoy's Trousers of Striking"
+    },
+    "38040": {
+        "0": "Lunar Envoy's Boots of Striking"
+    },
+    "38041": {
+        "0": "Lunar Envoy's Face Guard of Aiming"
+    },
+    "38042": {
+        "0": "Lunar Envoy's Gambison of Aiming"
+    },
+    "38043": {
+        "0": "Lunar Envoy's Fingerless Gloves of Aiming"
+    },
+    "38044": {
+        "0": "Lunar Envoy's Trousers of Aiming"
+    },
+    "38045": {
+        "0": "Lunar Envoy's Thighboots of Aiming"
+    },
+    "38046": {
+        "0": "Lunar Envoy's Turban of Scouting"
+    },
+    "38047": {
+        "0": "Lunar Envoy's Gambison of Scouting"
+    },
+    "38048": {
+        "0": "Lunar Envoy's Gloves of Scouting"
+    },
+    "38049": {
+        "0": "Lunar Envoy's Trousers of Scouting"
+    },
+    "38050": {
+        "0": "Lunar Envoy's Boots of Scouting"
+    },
+    "38051": {
+        "0": "Lunar Envoy's Hairpin of Healing"
+    },
+    "38052": {
+        "0": "Lunar Envoy's Justaucorps of Healing"
+    },
+    "38053": {
+        "0": "Lunar Envoy's Gloves of Healing"
+    },
+    "38054": {
+        "0": "Lunar Envoy's Longkilt of Healing"
+    },
+    "38055": {
+        "0": "Lunar Envoy's Boots of Healing"
+    },
+    "38056": {
+        "0": "Lunar Envoy's Hairpin of Casting"
+    },
+    "38057": {
+        "0": "Lunar Envoy's Justaucorps of Casting"
+    },
+    "38058": {
+        "0": "Lunar Envoy's Gloves of Casting"
+    },
+    "38059": {
+        "0": "Lunar Envoy's Longkilt of Casting"
+    },
+    "38060": {
+        "0": "Lunar Envoy's Boots of Casting"
+    },
+    "38061": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "38062": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "38063": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "8": "Augmented Lunar Envoy's Earring of Healing",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "38064": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "9": "Augmented Lunar Envoy's Earring of Casting"
+    },
+    "38065": {
+        "0": "Lunar Envoy's Earring of Fending",
+        "1": "Lunar Envoy's Earring of Slaying",
+        "2": "Lunar Envoy's Earring of Aiming",
+        "3": "Lunar Envoy's Earring of Healing",
+        "4": "Lunar Envoy's Earring of Casting",
+        "5": "Augmented Lunar Envoy's Earring of Fending",
+        "6": "Augmented Lunar Envoy's Earring of Slaying",
+        "7": "Augmented Lunar Envoy's Earring of Aiming",
+        "8": "Augmented Lunar Envoy's Earring of Healing"
+    },
+    "38066": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "38067": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "38068": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "8": "Augmented Lunar Envoy's Necklace of Healing",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "38069": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "9": "Augmented Lunar Envoy's Necklace of Casting"
+    },
+    "38070": {
+        "0": "Lunar Envoy's Necklace of Fending",
+        "1": "Lunar Envoy's Necklace of Slaying",
+        "2": "Lunar Envoy's Necklace of Aiming",
+        "3": "Lunar Envoy's Necklace of Healing",
+        "4": "Lunar Envoy's Necklace of Casting",
+        "5": "Augmented Lunar Envoy's Necklace of Fending",
+        "6": "Augmented Lunar Envoy's Necklace of Slaying",
+        "7": "Augmented Lunar Envoy's Necklace of Aiming",
+        "8": "Augmented Lunar Envoy's Necklace of Healing"
+    },
+    "38071": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "38072": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "38073": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "38074": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "9": "Augmented Lunar Envoy's Bracelets of Casting"
+    },
+    "38075": {
+        "0": "Lunar Envoy's Bracelets of Fending",
+        "1": "Lunar Envoy's Bracelets of Slaying",
+        "2": "Lunar Envoy's Bracelets of Aiming",
+        "3": "Lunar Envoy's Bracelets of Healing",
+        "4": "Lunar Envoy's Bracelets of Casting",
+        "5": "Augmented Lunar Envoy's Bracelets of Fending",
+        "6": "Augmented Lunar Envoy's Bracelets of Slaying",
+        "7": "Augmented Lunar Envoy's Bracelets of Aiming",
+        "8": "Augmented Lunar Envoy's Bracelets of Healing"
+    },
+    "38076": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38077": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38078": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "8": "Augmented Lunar Envoy's Ring of Healing",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38079": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "9": "Augmented Lunar Envoy's Ring of Casting"
+    },
+    "38080": {
+        "0": "Lunar Envoy's Ring of Fending",
+        "1": "Lunar Envoy's Ring of Slaying",
+        "2": "Lunar Envoy's Ring of Aiming",
+        "3": "Lunar Envoy's Ring of Healing",
+        "4": "Lunar Envoy's Ring of Casting",
+        "5": "Augmented Lunar Envoy's Ring of Fending",
+        "6": "Augmented Lunar Envoy's Ring of Slaying",
+        "7": "Augmented Lunar Envoy's Ring of Aiming",
+        "8": "Augmented Lunar Envoy's Ring of Healing"
+    },
+    "38101": {
+        "0": "Purgatory Helm of Fending"
+    },
+    "38102": {
+        "0": "Purgatory Cuirass of Fending"
+    },
+    "38103": {
+        "0": "Purgatory Gauntlets of Fending"
+    },
+    "38104": {
+        "0": "Purgatory Hose of Fending"
+    },
+    "38105": {
+        "0": "Purgatory Sollerets of Fending"
+    },
+    "38106": {
+        "0": "Purgatory Helm of Maiming"
+    },
+    "38107": {
+        "0": "Purgatory Cuirass of Maiming"
+    },
+    "38108": {
+        "0": "Purgatory Gauntlets of Maiming"
+    },
+    "38109": {
+        "0": "Purgatory Hose of Maiming"
+    },
+    "38110": {
+        "0": "Purgatory Sollerets of Maiming"
+    },
+    "38111": {
+        "0": "Purgatory Hood of Striking"
+    },
+    "38112": {
+        "0": "Purgatory Acton of Striking"
+    },
+    "38113": {
+        "0": "Purgatory Armguards of Striking"
+    },
+    "38114": {
+        "0": "Purgatory Brais of Striking"
+    },
+    "38115": {
+        "0": "Purgatory Boots of Striking"
+    },
+    "38116": {
+        "0": "Purgatory Mask of Aiming"
+    },
+    "38117": {
+        "0": "Purgatory Coat of Aiming"
+    },
+    "38118": {
+        "0": "Purgatory Gloves of Aiming"
+    },
+    "38119": {
+        "0": "Purgatory Tights of Aiming"
+    },
+    "38120": {
+        "0": "Purgatory Thighboots of Aiming"
+    },
+    "38121": {
+        "0": "Purgatory Mask of Scouting"
+    },
+    "38122": {
+        "0": "Purgatory Coat of Scouting"
+    },
+    "38123": {
+        "0": "Purgatory Gloves of Scouting"
+    },
+    "38124": {
+        "0": "Purgatory Tights of Scouting"
+    },
+    "38125": {
+        "0": "Purgatory Thighboots of Scouting"
+    },
+    "38126": {
+        "0": "Purgatory Helm of Healing"
+    },
+    "38127": {
+        "0": "Purgatory Surcoat of Healing"
+    },
+    "38128": {
+        "0": "Purgatory Armguards of Healing"
+    },
+    "38129": {
+        "0": "Purgatory Culottes of Healing"
+    },
+    "38130": {
+        "0": "Purgatory Boots of Healing"
+    },
+    "38131": {
+        "0": "Purgatory Helm of Casting"
+    },
+    "38132": {
+        "0": "Purgatory Surcoat of Casting"
+    },
+    "38133": {
+        "0": "Purgatory Armguards of Casting"
+    },
+    "38134": {
+        "0": "Purgatory Culottes of Casting"
+    },
+    "38135": {
+        "0": "Purgatory Boots of Casting"
+    },
+    "38136": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "38137": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "38138": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "8": "Abyssos Earrings of Healing",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "38139": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "9": "Abyssos Earrings of Casting"
+    },
+    "38140": {
+        "0": "Purgatory Earrings of Fending",
+        "1": "Purgatory Earrings of Slaying",
+        "2": "Purgatory Earrings of Aiming",
+        "3": "Purgatory Earrings of Healing",
+        "4": "Purgatory Earrings of Casting",
+        "5": "Abyssos Earrings of Fending",
+        "6": "Abyssos Earrings of Slaying",
+        "7": "Abyssos Earrings of Aiming",
+        "8": "Abyssos Earrings of Healing"
+    },
+    "38141": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "38142": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "38143": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "8": "Abyssos Choker of Healing",
+        "9": "Abyssos Choker of Casting"
+    },
+    "38144": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "9": "Abyssos Choker of Casting"
+    },
+    "38145": {
+        "0": "Purgatory Choker of Fending",
+        "1": "Purgatory Choker of Slaying",
+        "2": "Purgatory Choker of Aiming",
+        "3": "Purgatory Choker of Healing",
+        "4": "Purgatory Choker of Casting",
+        "5": "Abyssos Choker of Fending",
+        "6": "Abyssos Choker of Slaying",
+        "7": "Abyssos Choker of Aiming",
+        "8": "Abyssos Choker of Healing"
+    },
+    "38146": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "38147": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "38148": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "8": "Abyssos Amulet of Healing",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "38149": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "9": "Abyssos Amulet of Casting"
+    },
+    "38150": {
+        "0": "Purgatory Amulet of Fending",
+        "1": "Purgatory Amulet of Slaying",
+        "2": "Purgatory Amulet of Aiming",
+        "3": "Purgatory Amulet of Healing",
+        "4": "Purgatory Amulet of Casting",
+        "5": "Abyssos Amulet of Fending",
+        "6": "Abyssos Amulet of Slaying",
+        "7": "Abyssos Amulet of Aiming",
+        "8": "Abyssos Amulet of Healing"
+    },
+    "38151": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "38152": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "38153": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "8": "Abyssos Ring of Healing",
+        "9": "Abyssos Ring of Casting"
+    },
+    "38154": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "9": "Abyssos Ring of Casting"
+    },
+    "38155": {
+        "0": "Purgatory Ring of Fending",
+        "1": "Purgatory Ring of Slaying",
+        "2": "Purgatory Ring of Aiming",
+        "3": "Purgatory Ring of Healing",
+        "4": "Purgatory Ring of Casting",
+        "5": "Abyssos Ring of Fending",
+        "6": "Abyssos Ring of Slaying",
+        "7": "Abyssos Ring of Aiming",
+        "8": "Abyssos Ring of Healing"
+    },
+    "38191": {
+        "1": "Troian Earrings of Slaying",
+        "2": "Troian Earrings of Aiming",
+        "3": "Troian Earrings of Healing",
+        "4": "Troian Earrings of Casting"
+    },
+    "38192": {
+        "0": "Troian Earrings of Fending",
+        "2": "Troian Earrings of Aiming",
+        "3": "Troian Earrings of Healing",
+        "4": "Troian Earrings of Casting"
+    },
+    "38193": {
+        "0": "Troian Earrings of Fending",
+        "1": "Troian Earrings of Slaying",
+        "3": "Troian Earrings of Healing",
+        "4": "Troian Earrings of Casting"
+    },
+    "38194": {
+        "0": "Troian Earrings of Fending",
+        "1": "Troian Earrings of Slaying",
+        "2": "Troian Earrings of Aiming",
+        "4": "Troian Earrings of Casting"
+    },
+    "38195": {
+        "0": "Troian Earrings of Fending",
+        "1": "Troian Earrings of Slaying",
+        "2": "Troian Earrings of Aiming",
+        "3": "Troian Earrings of Healing"
+    },
+    "38196": {
+        "1": "Troian Choker of Slaying",
+        "2": "Troian Choker of Aiming",
+        "3": "Troian Choker of Healing",
+        "4": "Troian Choker of Casting"
+    },
+    "38197": {
+        "0": "Troian Choker of Fending",
+        "2": "Troian Choker of Aiming",
+        "3": "Troian Choker of Healing",
+        "4": "Troian Choker of Casting"
+    },
+    "38198": {
+        "0": "Troian Choker of Fending",
+        "1": "Troian Choker of Slaying",
+        "3": "Troian Choker of Healing",
+        "4": "Troian Choker of Casting"
+    },
+    "38199": {
+        "0": "Troian Choker of Fending",
+        "1": "Troian Choker of Slaying",
+        "2": "Troian Choker of Aiming",
+        "4": "Troian Choker of Casting"
+    },
+    "38200": {
+        "0": "Troian Choker of Fending",
+        "1": "Troian Choker of Slaying",
+        "2": "Troian Choker of Aiming",
+        "3": "Troian Choker of Healing"
+    },
+    "38201": {
+        "1": "Troian Bracelet of Slaying",
+        "2": "Troian Bracelet of Aiming",
+        "3": "Troian Bracelet of Healing",
+        "4": "Troian Bracelet of Casting"
+    },
+    "38202": {
+        "0": "Troian Bracelet of Fending",
+        "2": "Troian Bracelet of Aiming",
+        "3": "Troian Bracelet of Healing",
+        "4": "Troian Bracelet of Casting"
+    },
+    "38203": {
+        "0": "Troian Bracelet of Fending",
+        "1": "Troian Bracelet of Slaying",
+        "3": "Troian Bracelet of Healing",
+        "4": "Troian Bracelet of Casting"
+    },
+    "38204": {
+        "0": "Troian Bracelet of Fending",
+        "1": "Troian Bracelet of Slaying",
+        "2": "Troian Bracelet of Aiming",
+        "4": "Troian Bracelet of Casting"
+    },
+    "38205": {
+        "0": "Troian Bracelet of Fending",
+        "1": "Troian Bracelet of Slaying",
+        "2": "Troian Bracelet of Aiming",
+        "3": "Troian Bracelet of Healing"
+    },
+    "38206": {
+        "1": "Troian Ring of Slaying",
+        "2": "Troian Ring of Aiming",
+        "3": "Troian Ring of Healing",
+        "4": "Troian Ring of Casting"
+    },
+    "38207": {
+        "0": "Troian Ring of Fending",
+        "2": "Troian Ring of Aiming",
+        "3": "Troian Ring of Healing",
+        "4": "Troian Ring of Casting"
+    },
+    "38208": {
+        "0": "Troian Ring of Fending",
+        "1": "Troian Ring of Slaying",
+        "3": "Troian Ring of Healing",
+        "4": "Troian Ring of Casting"
+    },
+    "38209": {
+        "0": "Troian Ring of Fending",
+        "1": "Troian Ring of Slaying",
+        "2": "Troian Ring of Aiming",
+        "4": "Troian Ring of Casting"
+    },
+    "38210": {
+        "0": "Troian Ring of Fending",
+        "1": "Troian Ring of Slaying",
+        "2": "Troian Ring of Aiming",
+        "3": "Troian Ring of Healing"
+    },
+    "38421": {
+        "0": "Rinascita Cuirass of Fending"
+    },
+    "38422": {
+        "0": "Rinascita Cuirass of Maiming"
+    },
+    "38423": {
+        "0": "Rinascita Jacket of Striking"
+    },
+    "38424": {
+        "0": "Rinascita Jacket of Aiming"
+    },
+    "38425": {
+        "0": "Rinascita Jacket of Scouting"
+    },
+    "38426": {
+        "0": "Rinascita Coat of Healing"
+    },
+    "38427": {
+        "0": "Rinascita Coat of Casting"
     }
 }

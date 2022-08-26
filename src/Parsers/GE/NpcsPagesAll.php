@@ -1309,7 +1309,7 @@ class NpcsPagesAll implements ParseInterface
                     $headIcon = $CharaMakeTypeCsv->at($tribeKeyCalc)["SubMenuParam[$headIconIndex][$BaseFaceCalc]"];
                     $IconArray[] = $headIcon;
                     $extraIcons = "|Face = ". $headIcon .".png". $warning ."";
-                    var_dump("SubMenuParam[$headIconIndex][$BaseFaceCalc]");
+                    // var_dump("SubMenuParam[$headIconIndex][$BaseFaceCalc]");
                     break;
                 case 2: // Highlander
                     $tribeCode = ($isMale == "true") ? 200 : 300;

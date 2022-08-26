@@ -39373,6 +39373,28 @@
             }
         }
     ],
+    "37845": [
+        {
+            "FishName": "Greatsword Snook",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Oinops",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1024",
+                "py": "732",
+                "cx": 11.2,
+                "cy": 8.3,
+                "Radius": "2100"
+            }
+        }
+    ],
     "36395": [
         {
             "FishName": "Ponderer",
@@ -39821,6 +39843,28 @@
             }
         }
     ],
+    "37846": [
+        {
+            "FishName": "Swampsucker Bowfin",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Unmoved Source Beta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "1561",
+                "py": "409",
+                "cx": 32.2,
+                "cy": 9.2,
+                "Radius": "450"
+            }
+        }
+    ],
     "36409": [
         {
             "FishName": "Macrobrachium Lar",
@@ -40190,6 +40234,28 @@
     "36423": [
         {
             "FishName": "Pantherscale Grouper",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Yedlihmad",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "1228",
+                "py": "1764",
+                "cx": 25.6,
+                "cy": 36.3,
+                "Radius": "600"
+            }
+        }
+    ],
+    "37847": [
+        {
+            "FishName": "Lale Crab",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -40685,6 +40751,28 @@
             }
         }
     ],
+    "37848": [
+        {
+            "FishName": "Bigcuda",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Ksiroda",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1478",
+                "py": "1018",
+                "cx": 30.6,
+                "cy": 21.4,
+                "Radius": "1200"
+            }
+        }
+    ],
     "36443": [
         {
             "FishName": "Radzbalik",
@@ -40818,6 +40906,28 @@
     "36449": [
         {
             "FishName": "Thavnairian Caiman",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1161",
+                "py": "1187",
+                "cx": 24.2,
+                "cy": 24.7,
+                "Radius": "750"
+            }
+        }
+    ],
+    "37697": [
+        {
+            "FishName": "Mayashell",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -41207,6 +41317,28 @@
             }
         }
     ],
+    "37849": [
+        {
+            "FishName": "Sovereign Shadow",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Stainless Course",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "False",
+            "Position": {
+                "px": "1100",
+                "py": "408",
+                "cx": 23,
+                "cy": 9.2,
+                "Radius": "1800"
+            }
+        }
+    ],
     "36463": [
         {
             "FishName": "Star-blue Guppy",
@@ -41276,6 +41408,28 @@
     "36467": [
         {
             "FishName": "Replipirarucu",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "Greatest Endsvale",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1578",
+                "py": "494",
+                "cx": 32.6,
+                "cy": 10.9,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "37850": [
+        {
+            "FishName": "Disappirarucu",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "959",
@@ -41638,6 +41792,28 @@
     "36480": [
         {
             "FishName": "Mangar",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Rumination's Ramble",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "86",
+            "Rare": "False",
+            "Position": {
+                "px": "508",
+                "py": "876",
+                "cx": 11.2,
+                "cy": 18.5,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "37853": [
+        {
+            "FishName": "Planetes",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "961",
@@ -42173,6 +42349,28 @@
             }
         }
     ],
+    "37851": [
+        {
+            "FishName": "Starscryer",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "The Wellspring of Regret",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "698",
+                "py": "528",
+                "cx": 15,
+                "cy": 11.6,
+                "Radius": "600"
+            }
+        }
+    ],
     "36505": [
         {
             "FishName": "Wandering Starscale",
@@ -42562,6 +42760,28 @@
     "36517": [
         {
             "FishName": "Alyketos",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "1824",
+                "py": "406",
+                "cx": 37.5,
+                "cy": 9.1,
+                "Radius": "900"
+            }
+        }
+    ],
+    "37852": [
+        {
+            "FishName": "Argonauta argo",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "960",
@@ -47466,7 +47686,7 @@
                 "Name": "The Lochs"
             },
             "Map": "369",
-            "PlaceName": "Southwestern Loch Seld",
+            "PlaceName": "Loch Seld Southwestern Lakebed",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "85",
             "ShadowNode": "False",
@@ -47808,7 +48028,7 @@
                 "Name": "The Lochs"
             },
             "Map": "369",
-            "PlaceName": "Southwestern Loch Seld",
+            "PlaceName": "Loch Seld Southwestern Lakebed",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "85",
             "ShadowNode": "False",
@@ -47872,7 +48092,7 @@
                 "Name": "The Lochs"
             },
             "Map": "369",
-            "PlaceName": "Southwestern Loch Seld",
+            "PlaceName": "Loch Seld Southwestern Lakebed",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "85",
             "ShadowNode": "False",
@@ -50247,7 +50467,7 @@
     ],
     "36553": [
         {
-            "FishName": "Cloudy Catshark",
+            "FishName": "Cloudy Cat Shark",
             "Type": "SpearFishing",
             "TerritoryType": {
                 "id": "613",
@@ -51644,7 +51864,7 @@
                 "Name": "The Lochs"
             },
             "Map": "369",
-            "PlaceName": "Southwestern Loch Seld",
+            "PlaceName": "Loch Seld Southwestern Lakebed",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "85",
             "ShadowNode": "False",
