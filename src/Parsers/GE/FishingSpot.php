@@ -393,6 +393,7 @@ class FishingSpot implements ParseInterface
             }
             $OutString .= "}}\n";
             $OutString .= "$NavBoxOutput\n";
+            $OutString .= "{{Fishing Maps}}\n";
             $OutString .= "{{-stop-}}\n";
             $FinalOutputArray[] = $OutString;
         }

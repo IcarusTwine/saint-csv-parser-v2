@@ -24,8 +24,6 @@ class FishParameter implements ParseInterface
 |PrimeLocations = {location}
 |Bait =
 |Fishing Log Description = {description}
-|AquariumType =
-|AquariumSize ={folklore}
 }}{{-stop-}}";
 
     public function parse()
