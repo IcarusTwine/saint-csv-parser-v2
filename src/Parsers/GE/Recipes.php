@@ -17,18 +17,19 @@ class Recipes implements ParseInterface
     const WIKI_FORMAT = "{{-start-}}
 '''{result}/Recipe/{skill}'''
 {{ARR Infobox Recipe
-|Recipe ID                      = {index}
-|Result                         = {result}{resultcount}{unlockbook}{specialist}
-|Primary Skill                  = {skill}
-|Primary Skill Level            = {level}
-|Recipe Level                   = {recipelevel}
-|Durability                     = {durability}
-|Difficulty                     = {difficulty}
-|Quality                        = {quality}{maxquality}{requiredcrafts}{requiredcontrol}
-|Quick Synthesis                = {quicksynth}{quicksynthcrafts}{quicksynthcontrol}{status}{equipment}{Special}{ingredient1}{ingredient2}
-|Quality Required for Synthesis = {QualityRequired}
-|Expert Recipe                  = {isExpert}
-|HQ Uncraftable                 = {CanHQ}
+|Recipe ID                          = {index}
+|Result                             = {result}{resultcount}{unlockbook}{specialist}
+|Primary Skill                      = {skill}
+|Primary Skill Level                = {level}
+|Recipe Level                       = {recipelevel}
+|Durability                         = {durability}
+|Difficulty                         = {difficulty}
+|Quality                            = {quality}{maxquality}{requiredcrafts}{requiredcontrol}
+|Quick Synthesis                    = {quicksynth}{quicksynthcrafts}{quicksynthcontrol}{status}{equipment}{Special}{ingredient1}{ingredient2}
+|Quality Required for Synthesis     = {QualityRequired}
+|Expert Recipe                      = {isExpert}
+|HQ Uncraftable                     = {CanHQ}
+|Always Synthesized as Collectable  = {AlwaysCollectable}
 {ingredients}
 }}{{-stop-}}";
 
@@ -203,8 +204,12 @@ class Recipes implements ParseInterface
             $RequiredQuality = $recipe['RequiredQuality'];
             $isExpert = $recipe['IsExpert'];
             $CanHQ = "False";
-            if ($recipe['CanHQ'] === "False"){
+            if ($recipe['CanHq'] === "False"){
                 $CanHQ = "True";
+            }
+            $AlwaysCollectable = "False";
+            if ($ItemCsv->at($ResultItemID)['AlwaysCollectable'] === "True"){
+                $AlwaysCollectable = "True";
             }
             // Save some data
             $data = [
@@ -234,6 +239,7 @@ class Recipes implements ParseInterface
                 '{QualityRequired}' => $RequiredQuality,
                 '{isExpert}' => $isExpert, 
                 '{CanHQ}' => $CanHQ, 
+                '{AlwaysCollectable}' => $AlwaysCollectable, 
                 
             ];
 
