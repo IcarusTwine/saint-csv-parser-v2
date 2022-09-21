@@ -17,15 +17,18 @@ class Recipes implements ParseInterface
     const WIKI_FORMAT = "{{-start-}}
 '''{result}/Recipe/{skill}'''
 {{ARR Infobox Recipe
-|Recipe ID           = {index}
-|Result              = {result}{resultcount}{unlockbook}{specialist}
-|Primary Skill       = {skill}
-|Primary Skill Level = {level}
-|Recipe Level        = {recipelevel}
-|Durability          = {durability}
-|Difficulty          = {difficulty}
-|Quality             = {quality}{maxquality}{requiredcrafts}{requiredcontrol}
-|Quick Synthesis     = {quicksynth}{quicksynthcrafts}{quicksynthcontrol}{status}{equipment}{Special}{ingredient1}{ingredient2}
+|Recipe ID                      = {index}
+|Result                         = {result}{resultcount}{unlockbook}{specialist}
+|Primary Skill                  = {skill}
+|Primary Skill Level            = {level}
+|Recipe Level                   = {recipelevel}
+|Durability                     = {durability}
+|Difficulty                     = {difficulty}
+|Quality                        = {quality}{maxquality}{requiredcrafts}{requiredcontrol}
+|Quick Synthesis                = {quicksynth}{quicksynthcrafts}{quicksynthcontrol}{status}{equipment}{Special}{ingredient1}{ingredient2}
+|Quality Required for Synthesis = {QualityRequired}
+|Expert Recipe                  = {isExpert}
+|HQ Uncraftable                 = {CanHQ}
 {ingredients}
 }}{{-stop-}}";
 
@@ -197,7 +200,12 @@ class Recipes implements ParseInterface
                 }
             }
             $Ingredients = implode("\n", $Ingredients);
-
+            $RequiredQuality = $recipe['RequiredQuality'];
+            $isExpert = $recipe['IsExpert'];
+            $CanHQ = "False";
+            if ($recipe['CanHQ'] === "False"){
+                $CanHQ = "True";
+            }
             // Save some data
             $data = [
                 '{index}' => $recipe['id'],
@@ -223,6 +231,10 @@ class Recipes implements ParseInterface
                 '{ingredient2}' => ($recipe['Item{Ingredient}[9]'] > 0) ? "\n|Ingredient 2        = ". $ItemCsv->at($recipe['Item{Ingredient}[9]'])['Name'] ."\n|Ingredient 2 Amount = ". $recipe['Amount{Ingredient}[9]'] : "",
                 '{ingredients}' => $Ingredients,
                 '{Special}' => $SpecialString,
+                '{QualityRequired}' => $RequiredQuality,
+                '{isExpert}' => $isExpert, 
+                '{CanHQ}' => $CanHQ, 
+                
             ];
 
             // format using Gamer Escape formatter and add to data array
