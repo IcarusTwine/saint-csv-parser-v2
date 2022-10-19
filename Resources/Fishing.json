@@ -42232,7 +42232,7 @@
             "Map": "699",
             "PlaceName": "The Wellspring of Regret",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "698",
@@ -42250,9 +42250,9 @@
                 "Name": "Ultima Thule"
             },
             "Map": "699",
-            "PlaceName": "Elegeia",
+            "PlaceName": "Abode of the Ea",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "1079",
@@ -42260,6 +42260,106 @@
                 "cx": 22.6,
                 "cy": 8.8,
                 "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Protoflesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Fields",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1069",
+                "py": "1141",
+                "cx": 6.3,
+                "cy": 6.7,
+                "Radius": "200"
+            }
+        },
+        {
+            "FishName": "Protoflesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Seas \u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1141",
+                "py": "821",
+                "cx": 6.7,
+                "cy": 5.1,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Protoflesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Seas \u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1172",
+                "py": "627",
+                "cx": 6.9,
+                "cy": 4.1,
+                "Radius": "200"
+            }
+        },
+        {
+            "FishName": "Protoflesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Playgrounds \u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "861",
+                "py": "1136",
+                "cx": 5.3,
+                "cy": 6.7,
+                "Radius": "800"
+            }
+        },
+        {
+            "FishName": "Protoflesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Playgrounds \u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "736",
+                "py": "1370",
+                "cx": 4.7,
+                "cy": 7.9,
+                "Radius": "800"
             }
         }
     ],
@@ -42274,7 +42374,7 @@
             "Map": "699",
             "PlaceName": "The Wellspring of Regret",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "698",
@@ -42292,9 +42392,9 @@
                 "Name": "Ultima Thule"
             },
             "Map": "699",
-            "PlaceName": "Elegeia",
+            "PlaceName": "Abode of the Ea",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "1079",
@@ -42302,6 +42402,46 @@
                 "cx": 22.6,
                 "cy": 8.8,
                 "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Katoptron",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Seas \u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1141",
+                "py": "821",
+                "cx": 6.7,
+                "cy": 5.1,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Katoptron",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Playgrounds \u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "736",
+                "py": "1370",
+                "cx": 4.7,
+                "cy": 7.9,
+                "Radius": "800"
             }
         }
     ],
@@ -42316,7 +42456,7 @@
             "Map": "699",
             "PlaceName": "The Wellspring of Regret",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "698",
@@ -42324,6 +42464,46 @@
                 "cx": 15,
                 "cy": 11.6,
                 "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Comet Tail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Fields",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1069",
+                "py": "1141",
+                "cx": 6.3,
+                "cy": 6.7,
+                "Radius": "200"
+            }
+        },
+        {
+            "FishName": "Comet Tail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Seas \u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1172",
+                "py": "627",
+                "cx": 6.9,
+                "cy": 4.1,
+                "Radius": "200"
             }
         }
     ],
@@ -42338,7 +42518,7 @@
             "Map": "699",
             "PlaceName": "The Wellspring of Regret",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "698",
@@ -42360,7 +42540,7 @@
             "Map": "699",
             "PlaceName": "The Wellspring of Regret",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "698",
@@ -42380,9 +42560,9 @@
                 "Name": "Ultima Thule"
             },
             "Map": "699",
-            "PlaceName": "Elegeia",
+            "PlaceName": "Abode of the Ea",
             "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
+            "GatheringLevel": "84",
             "Rare": "False",
             "Position": {
                 "px": "1079",
@@ -42390,6 +42570,46 @@
                 "cx": 22.6,
                 "cy": 8.8,
                 "Radius": "750"
+            }
+        },
+        {
+            "FishName": "Wandering Starscale",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Playgrounds \u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "861",
+                "py": "1136",
+                "cx": 5.3,
+                "cy": 6.7,
+                "Radius": "800"
+            }
+        },
+        {
+            "FishName": "Wandering Starscale",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1073",
+                "Name": "Elysion"
+            },
+            "Map": "795",
+            "PlaceName": "Elysian Playgrounds \u03b2",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "736",
+                "py": "1370",
+                "cx": 4.7,
+                "cy": 7.9,
+                "Radius": "800"
             }
         }
     ],
