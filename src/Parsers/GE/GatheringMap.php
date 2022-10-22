@@ -46,10 +46,10 @@ class GatheringMap implements ParseInterface
             $Type = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringType'])['Name'];
             $TerritoryType = $GatheringPointCsv->at($GatheringPointRaw)['TerritoryType'];
             $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringType'])['Icon{Main}'];
-            $IsLimited = $GatheringPointBaseCsv->at($GatheringPointBaseRaw)['IsLimited'];
-            if ($IsLimited === "True") {
-                $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringType'])['Icon{Off}'];
-            }
+            // $IsLimited = $GatheringPointBaseCsv->at($GatheringPointBaseRaw)['IsLimited'];
+            // if ($IsLimited === "True") {
+            //     $Icon = $GatheringTypeCsv->at($GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringType'])['Icon{Off}'];
+            // }
             $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
             $GatheringLevel = $GatheringPointBaseCsv->at($GatheringPointBaseRaw)['GatheringLevel'];
             $XRaw = $ExportedGatheringPointCsv->at($GatheringPointBaseRaw)['X'];
@@ -58,13 +58,13 @@ class GatheringMap implements ParseInterface
             $Y = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["PY"] * 3.9;
             $CX = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["X"];
             $CY = $this->GetLGBPos($XRaw, $YRaw, $TerritoryType, $TerritoryTypeCsv, $MapCsv)["Y"];
-            $Radius = $ExportedGatheringPointCsv->at($GatheringPointBaseRaw)['unknown_5'];
+            $Radius = $ExportedGatheringPointCsv->at($GatheringPointBaseRaw)['Radius'];
             $NodeCountAmt = 0;
             $SpotArray[$TerritoryType][$ItemName]['X'][] = $X;
             $SpotArray[$TerritoryType][$ItemName]['Y'][] = $Y;
             $SpotArray[$TerritoryType][$ItemName]['Radius'][] = $Radius;
             $SpotArray[$TerritoryType][$ItemName]['Level'][] = $GatheringLevel;
-            $SpotArray[$TerritoryType][$ItemName]['Rare'][] = $IsLimited;
+            // $SpotArray[$TerritoryType][$ItemName]['Rare'][] = $IsLimited;
             $SpotArray[$TerritoryType][$ItemName]['Type'][] = $Type;
             $SpotArray[$TerritoryType][$ItemName]['Count'][] = $NodeCountAmt;
             
@@ -78,7 +78,7 @@ class GatheringMap implements ParseInterface
                 'Icon' => "0".$Icon."_hr1.png",
                 'Map' => $Map,
                 'GatheringLevel' => $GatheringLevel,
-                'IsLimited' => $IsLimited,
+                // 'IsLimited' => $IsLimited,
                 'Position' => array(
                     'px' => $X,
                     'py' => $Y,
