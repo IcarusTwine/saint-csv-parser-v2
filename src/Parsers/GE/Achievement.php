@@ -161,7 +161,7 @@ class Achievement implements ParseInterface
                     //sprintf('- copy <info>%s</info> to <info>%s</info>', $questIcon, $questiconFileName));
 
                     // copy the input icon to the output filename
-                    copy($InputIcon, $IconFileName);
+                    // copy($InputIcon, $IconFileName);
                 }
             }
 
