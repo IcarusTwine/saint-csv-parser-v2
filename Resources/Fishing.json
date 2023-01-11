@@ -31819,6 +31819,28 @@
             }
         }
     ],
+    "38792": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "813",
+                "Name": "Lakeland"
+            },
+            "Map": "491",
+            "PlaceName": "The Source",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "71",
+            "Rare": "False",
+            "Position": {
+                "px": "585",
+                "py": "1430",
+                "cx": 12.7,
+                "cy": 29.6,
+                "Radius": "1500"
+            }
+        }
+    ],
     "28067": [
         {
             "FishName": "The Unforgiven",
@@ -32763,6 +32785,28 @@
             }
         }
     ],
+    "38793": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "814",
+                "Name": "Kholusia"
+            },
+            "Map": "492",
+            "PlaceName": "Seagazer Shoals",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "75",
+            "Rare": "True",
+            "Position": {
+                "px": "790",
+                "py": "1740",
+                "cx": 16.8,
+                "cy": 35.8,
+                "Radius": "600"
+            }
+        }
+    ],
     "33319": [
         {
             "FishName": "Shadeshifter",
@@ -32876,6 +32920,28 @@
     "27456": [
         {
             "FishName": "Henodus",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "814",
+                "Name": "Kholusia"
+            },
+            "Map": "492",
+            "PlaceName": "The Eastern Kholusian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "72",
+            "Rare": "False",
+            "Position": {
+                "px": "1710",
+                "py": "1740",
+                "cx": 35.2,
+                "cy": 35.8,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "38810": [
+        {
+            "FishName": "Ondo Kelp",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "814",
@@ -33754,6 +33820,28 @@
     "28191": [
         {
             "FishName": "Faeshine Clam",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "816",
+                "Name": "Il Mheg"
+            },
+            "Map": "494",
+            "PlaceName": "Handmirror Lake",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "73",
+            "Rare": "False",
+            "Position": {
+                "px": "165",
+                "py": "1065",
+                "cx": 4.3,
+                "cy": 22.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "38798": [
+        {
+            "FishName": "",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "816",
@@ -34664,6 +34752,28 @@
     "27491": [
         {
             "FishName": "Eryops",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "817",
+                "Name": "The Rak'tika Greatwood"
+            },
+            "Map": "495",
+            "PlaceName": "Lake Tusi Mek'ta",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "70",
+            "Rare": "False",
+            "Position": {
+                "px": "320",
+                "py": "1385",
+                "cx": 7.4,
+                "cy": 28.7,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "38799": [
+        {
+            "FishName": "",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "817",
@@ -35921,6 +36031,28 @@
             }
         }
     ],
+    "38812": [
+        {
+            "FishName": "Purpure Cod",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "818",
+                "Name": "The Tempest"
+            },
+            "Map": "496",
+            "PlaceName": "Purpure",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "79",
+            "Rare": "False",
+            "Position": {
+                "px": "1630",
+                "py": "1480",
+                "cx": 33.6,
+                "cy": 30.6,
+                "Radius": "600"
+            }
+        }
+    ],
     "28072": [
         {
             "FishName": "Starchaser",
@@ -35990,6 +36122,28 @@
     "27515": [
         {
             "FishName": "Predator",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "818",
+                "Name": "The Tempest"
+            },
+            "Map": "496",
+            "PlaceName": "The Norvrandt Slope",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "1400",
+                "py": "695",
+                "cx": 29,
+                "cy": 14.9,
+                "Radius": "900"
+            }
+        }
+    ],
+    "38814": [
+        {
+            "FishName": "Il Lydha",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "818",
@@ -39439,6 +39593,28 @@
             }
         }
     ],
+    "38830": [
+        {
+            "FishName": "Catastrophizer",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "962",
+                "Name": "Old Sharlayan"
+            },
+            "Map": "693",
+            "PlaceName": "Reflecting Pool",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "80",
+            "Rare": "False",
+            "Position": {
+                "px": "670",
+                "py": "980",
+                "cx": 7.7,
+                "cy": 10.8,
+                "Radius": "300"
+            }
+        }
+    ],
     "36397": [
         {
             "FishName": "Butterfly Fry",
@@ -39780,6 +39956,28 @@
     "36405": [
         {
             "FishName": "Greengill Salmon",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "The Mover Alpha",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "878",
+                "py": "496",
+                "cx": 18.6,
+                "cy": 10.9,
+                "Radius": "900"
+            }
+        }
+    ],
+    "38831": [
+        {
+            "FishName": "Mossgill Salmon",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "956",
@@ -40363,6 +40561,28 @@
             }
         }
     ],
+    "38935": [
+        {
+            "FishName": "Jhinga",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        }
+    ],
     "35605": [
         {
             "FishName": "Garjana Wrasse",
@@ -40388,6 +40608,28 @@
     "36430": [
         {
             "FishName": "Golden Barramundi",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "438",
+                "py": "1090",
+                "cx": 9.8,
+                "cy": 22.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38832": [
+        {
+            "FishName": "Vidyutvat Wrasse",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -40840,6 +41082,28 @@
     "36446": [
         {
             "FishName": "Banana Eel",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "Pavana's Remorse",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1149",
+                "py": "675",
+                "cx": 24,
+                "cy": 14.5,
+                "Radius": "450"
+            }
+        }
+    ],
+    "38833": [
+        {
+            "FishName": "Browned Banana Eel",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -41621,6 +41885,28 @@
             }
         }
     ],
+    "38834": [
+        {
+            "FishName": "Frozen Regotoise",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Frozen Fissure",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1090",
+                "py": "1538",
+                "cx": 22.8,
+                "cy": 31.8,
+                "Radius": "600"
+            }
+        }
+    ],
     "36476": [
         {
             "FishName": "Isle Skipper",
@@ -41877,6 +42163,28 @@
             }
         }
     ],
+    "39240": [
+        {
+            "FishName": "Phyllinos",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "The Lower Hungering Gardens",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1202",
+                "py": "440",
+                "cx": 25,
+                "cy": 9.8,
+                "Radius": "900"
+            }
+        }
+    ],
     "36484": [
         {
             "FishName": "Antheia",
@@ -41902,6 +42210,28 @@
     "35607": [
         {
             "FishName": "Smaragdos",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Lethe",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1634",
+                "py": "762",
+                "cx": 33.7,
+                "cy": 16.2,
+                "Radius": "1500"
+            }
+        }
+    ],
+    "38836": [
+        {
+            "FishName": "Antheian Dahlia",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "961",
@@ -42070,6 +42400,28 @@
     "36491": [
         {
             "FishName": "Cosmic Noise",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b3",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "88",
+            "Rare": "False",
+            "Position": {
+                "px": "994",
+                "py": "1756",
+                "cx": 20.9,
+                "cy": 36.1,
+                "Radius": "300"
+            }
+        }
+    ],
+    "38835": [
+        {
+            "FishName": "Cosmic Haze",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "960",
@@ -48603,6 +48955,26 @@
                 "cy": 32.2,
                 "Radius": "800"
             }
+        },
+        {
+            "FishName": "Grey Carp",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "813",
+                "Name": "Lakeland"
+            },
+            "Map": "491",
+            "PlaceName": "Southwestern Isle of Ken",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "264",
+                "py": "1807",
+                "cx": 6.3,
+                "cy": 37.1,
+                "Radius": "800"
+            }
         }
     ],
     "27523": [
@@ -48665,6 +49037,26 @@
                 "py": "1562",
                 "cx": 7.5,
                 "cy": 32.2,
+                "Radius": "800"
+            }
+        },
+        {
+            "FishName": "Lakethistle",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "813",
+                "Name": "Lakeland"
+            },
+            "Map": "491",
+            "PlaceName": "Southwestern Isle of Ken",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "264",
+                "py": "1807",
+                "cx": 6.3,
+                "cy": 37.1,
                 "Radius": "800"
             }
         }
@@ -48751,6 +49143,26 @@
                 "py": "1562",
                 "cx": 7.5,
                 "cy": 32.2,
+                "Radius": "800"
+            }
+        },
+        {
+            "FishName": "Wardenfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "813",
+                "Name": "Lakeland"
+            },
+            "Map": "491",
+            "PlaceName": "Southwestern Isle of Ken",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "264",
+                "py": "1807",
+                "cx": 6.3,
+                "cy": 37.1,
                 "Radius": "800"
             }
         }
@@ -49171,6 +49583,26 @@
                 "cy": 25.5,
                 "Radius": "800"
             }
+        },
+        {
+            "FishName": "Bedskipper",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "816",
+                "Name": "Il Mheg"
+            },
+            "Map": "494",
+            "PlaceName": "The House of the First Light",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "728",
+                "py": "803",
+                "cx": 15.6,
+                "cy": 17.1,
+                "Radius": "600"
+            }
         }
     ],
     "27550": [
@@ -49387,6 +49819,26 @@
                 "cy": 29.1,
                 "Radius": "800"
             }
+        },
+        {
+            "FishName": "Queensgown",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "816",
+                "Name": "Il Mheg"
+            },
+            "Map": "494",
+            "PlaceName": "The House of the First Light",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "728",
+                "py": "803",
+                "cx": 15.6,
+                "cy": 17.1,
+                "Radius": "600"
+            }
         }
     ],
     "27558": [
@@ -49472,6 +49924,26 @@
                 "cx": 30.1,
                 "cy": 29.1,
                 "Radius": "800"
+            }
+        },
+        {
+            "FishName": "Measan Deala",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "816",
+                "Name": "Il Mheg"
+            },
+            "Map": "494",
+            "PlaceName": "The House of the First Light",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "728",
+                "py": "803",
+                "cx": 15.6,
+                "cy": 17.1,
+                "Radius": "600"
             }
         }
     ],
@@ -52115,6 +52587,182 @@
                 "py": "1319",
                 "cx": 23.7,
                 "cy": 27.4,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38811": [
+        {
+            "FishName": "Ken Kiln",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "813",
+                "Name": "Lakeland"
+            },
+            "Map": "491",
+            "PlaceName": "Southwestern Isle of Ken",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "264",
+                "py": "1807",
+                "cx": 6.3,
+                "cy": 37.1,
+                "Radius": "800"
+            }
+        }
+    ],
+    "38813": [
+        {
+            "FishName": "Glorianda's Tear",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "816",
+                "Name": "Il Mheg"
+            },
+            "Map": "494",
+            "PlaceName": "The House of the First Light",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "728",
+                "py": "803",
+                "cx": 15.6,
+                "cy": 17.1,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38939": [
+        {
+            "FishName": "Verdigris Guppy",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northeast Bronze Lake",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1185",
+                "py": "1023",
+                "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38837": [
+        {
+            "FishName": "Lakeskipper",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northeast Bronze Lake",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1185",
+                "py": "1023",
+                "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38838": [
+        {
+            "FishName": "Bronze Eel",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northeast Bronze Lake",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1185",
+                "py": "1023",
+                "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38839": [
+        {
+            "FishName": "Striped Peacock Bass",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northeast Bronze Lake",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1185",
+                "py": "1023",
+                "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38840": [
+        {
+            "FishName": "Bronze Trout",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northeast Bronze Lake",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1185",
+                "py": "1023",
+                "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        }
+    ],
+    "38841": [
+        {
+            "FishName": "Nosceasaur",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northeast Bronze Lake",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "1185",
+                "py": "1023",
+                "cx": 24.7,
+                "cy": 21.5,
                 "Radius": "600"
             }
         }

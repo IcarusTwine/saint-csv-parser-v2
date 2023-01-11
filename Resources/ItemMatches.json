@@ -66451,146 +66451,394 @@
         "7": "Makai Harrower's Longboots",
         "8": "Common Makai Vanbreaker's Longboots"
     },
+    "37742": {
+        "1": "Augmented Rinascita Sword"
+    },
+    "37743": {
+        "1": "Augmented Rinascita Knuckles"
+    },
+    "37744": {
+        "1": "Augmented Rinascita Labrys"
+    },
+    "37745": {
+        "1": "Augmented Rinascita Spear"
+    },
+    "37746": {
+        "1": "Augmented Rinascita Composite Bow"
+    },
+    "37747": {
+        "1": "Augmented Rinascita Daggers"
+    },
+    "37748": {
+        "1": "Augmented Rinascita Greatsword"
+    },
+    "37749": {
+        "1": "Augmented Rinascita Culverin"
+    },
+    "37750": {
+        "1": "Augmented Rinascita Cane"
+    },
+    "37751": {
+        "1": "Augmented Rinascita Rod"
+    },
+    "37752": {
+        "1": "Augmented Rinascita Index"
+    },
+    "37753": {
+        "1": "Augmented Rinascita Codex"
+    },
+    "37754": {
+        "1": "Augmented Rinascita Planisphere"
+    },
+    "37755": {
+        "1": "Augmented Rinascita Samurai Blade"
+    },
+    "37756": {
+        "1": "Augmented Rinascita Rapier"
+    },
+    "37757": {
+        "1": "Augmented Rinascita Manatrigger"
+    },
+    "37758": {
+        "1": "Augmented Rinascita War Quoits"
+    },
+    "37759": {
+        "1": "Augmented Rinascita Pendulums"
+    },
+    "37760": {
+        "1": "Augmented Rinascita Zaghnal"
+    },
+    "37762": {
+        "1": "Augmented Rinascita Helm of Fending"
+    },
     "37763": {
-        "1": "Ornate Rinascita Cuirass of Fending"
+        "1": "Ornate Rinascita Cuirass of Fending",
+        "2": "Augmented Rinascita Cuirass of Fending"
+    },
+    "37764": {
+        "1": "Augmented Rinascita Vambraces of Fending"
+    },
+    "37765": {
+        "1": "Augmented Rinascita Poleyns of Fending"
+    },
+    "37766": {
+        "1": "Augmented Rinascita Sabatons of Fending"
+    },
+    "37767": {
+        "1": "Augmented Rinascita Helm of Maiming"
     },
     "37768": {
-        "1": "Ornate Rinascita Cuirass of Maiming"
+        "1": "Ornate Rinascita Cuirass of Maiming",
+        "2": "Augmented Rinascita Cuirass of Maiming"
+    },
+    "37769": {
+        "1": "Augmented Rinascita Vambraces of Maiming"
+    },
+    "37770": {
+        "1": "Augmented Rinascita Poleyns of Maiming"
+    },
+    "37771": {
+        "1": "Augmented Rinascita Sabatons of Maiming"
+    },
+    "37772": {
+        "1": "Augmented Rinascita Hood of Striking"
     },
     "37773": {
-        "1": "Ornate Rinascita Jacket of Striking"
+        "1": "Ornate Rinascita Jacket of Striking",
+        "2": "Augmented Rinascita Jacket of Striking"
+    },
+    "37774": {
+        "1": "Augmented Rinascita Armguards of Striking"
+    },
+    "37775": {
+        "1": "Augmented Rinascita Poleyns of Striking"
+    },
+    "37776": {
+        "1": "Augmented Rinascita Shoes of Striking"
+    },
+    "37777": {
+        "1": "Augmented Rinascita Beret of Aiming"
     },
     "37778": {
-        "1": "Ornate Rinascita Jacket of Aiming"
+        "1": "Ornate Rinascita Jacket of Aiming",
+        "2": "Augmented Rinascita Jacket of Aiming"
+    },
+    "37779": {
+        "1": "Augmented Rinascita Gloves of Aiming"
+    },
+    "37780": {
+        "1": "Augmented Rinascita Poleyns of Aiming"
+    },
+    "37781": {
+        "1": "Augmented Rinascita Sabatons of Aiming"
+    },
+    "37782": {
+        "1": "Augmented Rinascita Hood of Scouting"
     },
     "37783": {
-        "1": "Ornate Rinascita Jacket of Scouting"
+        "1": "Ornate Rinascita Jacket of Scouting",
+        "2": "Augmented Rinascita Jacket of Scouting"
+    },
+    "37784": {
+        "1": "Augmented Rinascita Armguards of Scouting"
+    },
+    "37785": {
+        "1": "Augmented Rinascita Poleyns of Scouting"
+    },
+    "37786": {
+        "1": "Augmented Rinascita Sabatons of Scouting"
+    },
+    "37787": {
+        "1": "Augmented Rinascita Beret of Healing"
     },
     "37788": {
-        "1": "Ornate Rinascita Coat of Healing"
+        "1": "Ornate Rinascita Coat of Healing",
+        "2": "Augmented Rinascita Coat of Healing"
+    },
+    "37789": {
+        "1": "Augmented Rinascita Gloves of Healing"
+    },
+    "37790": {
+        "1": "Augmented Rinascita Poleyns of Healing"
+    },
+    "37791": {
+        "1": "Augmented Rinascita Shoes of Healing"
+    },
+    "37792": {
+        "1": "Augmented Rinascita Hood of Casting"
     },
     "37793": {
-        "1": "Ornate Rinascita Coat of Casting"
+        "1": "Ornate Rinascita Coat of Casting",
+        "2": "Augmented Rinascita Coat of Casting"
+    },
+    "37794": {
+        "1": "Augmented Rinascita Armguards of Casting"
+    },
+    "37795": {
+        "1": "Augmented Rinascita Poleyns of Casting"
+    },
+    "37796": {
+        "1": "Augmented Rinascita Shoes of Casting"
     },
     "37797": {
         "1": "Rinascita Earring of Slaying",
         "2": "Rinascita Earring of Aiming",
         "3": "Rinascita Earring of Healing",
-        "4": "Rinascita Earring of Casting"
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
     },
     "37798": {
         "0": "Rinascita Earring of Fending",
         "2": "Rinascita Earring of Aiming",
         "3": "Rinascita Earring of Healing",
-        "4": "Rinascita Earring of Casting"
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
     },
     "37799": {
         "0": "Rinascita Earring of Fending",
         "1": "Rinascita Earring of Slaying",
         "3": "Rinascita Earring of Healing",
-        "4": "Rinascita Earring of Casting"
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
     },
     "37800": {
         "0": "Rinascita Earring of Fending",
         "1": "Rinascita Earring of Slaying",
         "2": "Rinascita Earring of Aiming",
-        "4": "Rinascita Earring of Casting"
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
     },
     "37801": {
         "0": "Rinascita Earring of Fending",
         "1": "Rinascita Earring of Slaying",
         "2": "Rinascita Earring of Aiming",
-        "3": "Rinascita Earring of Healing"
+        "3": "Rinascita Earring of Healing",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
     },
     "37802": {
         "1": "Rinascita Necklace of Slaying",
         "2": "Rinascita Necklace of Aiming",
         "3": "Rinascita Necklace of Healing",
-        "4": "Rinascita Necklace of Casting"
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
     },
     "37803": {
         "0": "Rinascita Necklace of Fending",
         "2": "Rinascita Necklace of Aiming",
         "3": "Rinascita Necklace of Healing",
-        "4": "Rinascita Necklace of Casting"
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
     },
     "37804": {
         "0": "Rinascita Necklace of Fending",
         "1": "Rinascita Necklace of Slaying",
         "3": "Rinascita Necklace of Healing",
-        "4": "Rinascita Necklace of Casting"
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
     },
     "37805": {
         "0": "Rinascita Necklace of Fending",
         "1": "Rinascita Necklace of Slaying",
         "2": "Rinascita Necklace of Aiming",
-        "4": "Rinascita Necklace of Casting"
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
     },
     "37806": {
         "0": "Rinascita Necklace of Fending",
         "1": "Rinascita Necklace of Slaying",
         "2": "Rinascita Necklace of Aiming",
-        "3": "Rinascita Necklace of Healing"
+        "3": "Rinascita Necklace of Healing",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
     },
     "37807": {
         "1": "Rinascita Bracelet of Slaying",
         "2": "Rinascita Bracelet of Aiming",
         "3": "Rinascita Bracelet of Healing",
-        "4": "Rinascita Bracelet of Casting"
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
     },
     "37808": {
         "0": "Rinascita Bracelet of Fending",
         "2": "Rinascita Bracelet of Aiming",
         "3": "Rinascita Bracelet of Healing",
-        "4": "Rinascita Bracelet of Casting"
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
     },
     "37809": {
         "0": "Rinascita Bracelet of Fending",
         "1": "Rinascita Bracelet of Slaying",
         "3": "Rinascita Bracelet of Healing",
-        "4": "Rinascita Bracelet of Casting"
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
     },
     "37810": {
         "0": "Rinascita Bracelet of Fending",
         "1": "Rinascita Bracelet of Slaying",
         "2": "Rinascita Bracelet of Aiming",
-        "4": "Rinascita Bracelet of Casting"
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
     },
     "37811": {
         "0": "Rinascita Bracelet of Fending",
         "1": "Rinascita Bracelet of Slaying",
         "2": "Rinascita Bracelet of Aiming",
-        "3": "Rinascita Bracelet of Healing"
+        "3": "Rinascita Bracelet of Healing",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
     },
     "37812": {
         "1": "Rinascita Ring of Slaying",
         "2": "Rinascita Ring of Aiming",
         "3": "Rinascita Ring of Healing",
-        "4": "Rinascita Ring of Casting"
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
     },
     "37813": {
         "0": "Rinascita Ring of Fending",
         "2": "Rinascita Ring of Aiming",
         "3": "Rinascita Ring of Healing",
-        "4": "Rinascita Ring of Casting"
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
     },
     "37814": {
         "0": "Rinascita Ring of Fending",
         "1": "Rinascita Ring of Slaying",
         "3": "Rinascita Ring of Healing",
-        "4": "Rinascita Ring of Casting"
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
     },
     "37815": {
         "0": "Rinascita Ring of Fending",
         "1": "Rinascita Ring of Slaying",
         "2": "Rinascita Ring of Aiming",
-        "4": "Rinascita Ring of Casting"
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
     },
     "37816": {
         "0": "Rinascita Ring of Fending",
         "1": "Rinascita Ring of Slaying",
         "2": "Rinascita Ring of Aiming",
-        "3": "Rinascita Ring of Healing"
+        "3": "Rinascita Ring of Healing",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
     },
     "37876": {
         "1": "Abyssos Helm of Fending"
@@ -68127,24 +68375,540 @@
         "3": "Troian Ring of Healing"
     },
     "38421": {
-        "0": "Rinascita Cuirass of Fending"
+        "0": "Rinascita Cuirass of Fending",
+        "2": "Augmented Rinascita Cuirass of Fending"
     },
     "38422": {
-        "0": "Rinascita Cuirass of Maiming"
+        "0": "Rinascita Cuirass of Maiming",
+        "2": "Augmented Rinascita Cuirass of Maiming"
     },
     "38423": {
-        "0": "Rinascita Jacket of Striking"
+        "0": "Rinascita Jacket of Striking",
+        "2": "Augmented Rinascita Jacket of Striking"
     },
     "38424": {
-        "0": "Rinascita Jacket of Aiming"
+        "0": "Rinascita Jacket of Aiming",
+        "2": "Augmented Rinascita Jacket of Aiming"
     },
     "38425": {
-        "0": "Rinascita Jacket of Scouting"
+        "0": "Rinascita Jacket of Scouting",
+        "2": "Augmented Rinascita Jacket of Scouting"
     },
     "38426": {
-        "0": "Rinascita Coat of Healing"
+        "0": "Rinascita Coat of Healing",
+        "2": "Augmented Rinascita Coat of Healing"
     },
     "38427": {
-        "0": "Rinascita Coat of Casting"
+        "0": "Rinascita Coat of Casting",
+        "2": "Augmented Rinascita Coat of Casting"
+    },
+    "38992": {
+        "1": "Manalis Earrings of Slaying",
+        "2": "Manalis Earrings of Aiming",
+        "3": "Manalis Earrings of Healing",
+        "4": "Manalis Earrings of Casting"
+    },
+    "38993": {
+        "0": "Manalis Earrings of Fending",
+        "2": "Manalis Earrings of Aiming",
+        "3": "Manalis Earrings of Healing",
+        "4": "Manalis Earrings of Casting"
+    },
+    "38994": {
+        "0": "Manalis Earrings of Fending",
+        "1": "Manalis Earrings of Slaying",
+        "3": "Manalis Earrings of Healing",
+        "4": "Manalis Earrings of Casting"
+    },
+    "38995": {
+        "0": "Manalis Earrings of Fending",
+        "1": "Manalis Earrings of Slaying",
+        "2": "Manalis Earrings of Aiming",
+        "4": "Manalis Earrings of Casting"
+    },
+    "38996": {
+        "0": "Manalis Earrings of Fending",
+        "1": "Manalis Earrings of Slaying",
+        "2": "Manalis Earrings of Aiming",
+        "3": "Manalis Earrings of Healing"
+    },
+    "38997": {
+        "1": "Manalis Choker of Slaying",
+        "2": "Manalis Choker of Aiming",
+        "3": "Manalis Choker of Healing",
+        "4": "Manalis Choker of Casting"
+    },
+    "38998": {
+        "0": "Manalis Choker of Fending",
+        "2": "Manalis Choker of Aiming",
+        "3": "Manalis Choker of Healing",
+        "4": "Manalis Choker of Casting"
+    },
+    "38999": {
+        "0": "Manalis Choker of Fending",
+        "1": "Manalis Choker of Slaying",
+        "3": "Manalis Choker of Healing",
+        "4": "Manalis Choker of Casting"
+    },
+    "39000": {
+        "0": "Manalis Choker of Fending",
+        "1": "Manalis Choker of Slaying",
+        "2": "Manalis Choker of Aiming",
+        "4": "Manalis Choker of Casting"
+    },
+    "39001": {
+        "0": "Manalis Choker of Fending",
+        "1": "Manalis Choker of Slaying",
+        "2": "Manalis Choker of Aiming",
+        "3": "Manalis Choker of Healing"
+    },
+    "39002": {
+        "1": "Manalis Wristband of Slaying",
+        "2": "Manalis Wristband of Aiming",
+        "3": "Manalis Wristband of Healing",
+        "4": "Manalis Wristband of Casting"
+    },
+    "39003": {
+        "0": "Manalis Wristband of Fending",
+        "2": "Manalis Wristband of Aiming",
+        "3": "Manalis Wristband of Healing",
+        "4": "Manalis Wristband of Casting"
+    },
+    "39004": {
+        "0": "Manalis Wristband of Fending",
+        "1": "Manalis Wristband of Slaying",
+        "3": "Manalis Wristband of Healing",
+        "4": "Manalis Wristband of Casting"
+    },
+    "39005": {
+        "0": "Manalis Wristband of Fending",
+        "1": "Manalis Wristband of Slaying",
+        "2": "Manalis Wristband of Aiming",
+        "4": "Manalis Wristband of Casting"
+    },
+    "39006": {
+        "0": "Manalis Wristband of Fending",
+        "1": "Manalis Wristband of Slaying",
+        "2": "Manalis Wristband of Aiming",
+        "3": "Manalis Wristband of Healing"
+    },
+    "39007": {
+        "1": "Manalis Ring of Slaying",
+        "2": "Manalis Ring of Aiming",
+        "3": "Manalis Ring of Healing",
+        "4": "Manalis Ring of Casting"
+    },
+    "39008": {
+        "0": "Manalis Ring of Fending",
+        "2": "Manalis Ring of Aiming",
+        "3": "Manalis Ring of Healing",
+        "4": "Manalis Ring of Casting"
+    },
+    "39009": {
+        "0": "Manalis Ring of Fending",
+        "1": "Manalis Ring of Slaying",
+        "3": "Manalis Ring of Healing",
+        "4": "Manalis Ring of Casting"
+    },
+    "39010": {
+        "0": "Manalis Ring of Fending",
+        "1": "Manalis Ring of Slaying",
+        "2": "Manalis Ring of Aiming",
+        "4": "Manalis Ring of Casting"
+    },
+    "39011": {
+        "0": "Manalis Ring of Fending",
+        "1": "Manalis Ring of Slaying",
+        "2": "Manalis Ring of Aiming",
+        "3": "Manalis Ring of Healing"
+    },
+    "39012": {
+        "0": "Rinascita Sword"
+    },
+    "39013": {
+        "0": "Rinascita Knuckles"
+    },
+    "39014": {
+        "0": "Rinascita Labrys"
+    },
+    "39015": {
+        "0": "Rinascita Spear"
+    },
+    "39016": {
+        "0": "Rinascita Composite Bow"
+    },
+    "39017": {
+        "0": "Rinascita Daggers"
+    },
+    "39018": {
+        "0": "Rinascita Greatsword"
+    },
+    "39019": {
+        "0": "Rinascita Culverin"
+    },
+    "39020": {
+        "0": "Rinascita Cane"
+    },
+    "39021": {
+        "0": "Rinascita Rod"
+    },
+    "39022": {
+        "0": "Rinascita Index"
+    },
+    "39023": {
+        "0": "Rinascita Codex"
+    },
+    "39024": {
+        "0": "Rinascita Planisphere"
+    },
+    "39025": {
+        "0": "Rinascita Samurai Blade"
+    },
+    "39026": {
+        "0": "Rinascita Rapier"
+    },
+    "39027": {
+        "0": "Rinascita Manatrigger"
+    },
+    "39028": {
+        "0": "Rinascita War Quoits"
+    },
+    "39029": {
+        "0": "Rinascita Pendulums"
+    },
+    "39030": {
+        "0": "Rinascita Zaghnal"
+    },
+    "39032": {
+        "0": "Rinascita Helm of Fending"
+    },
+    "39033": {
+        "0": "Rinascita Cuirass of Fending",
+        "1": "Ornate Rinascita Cuirass of Fending"
+    },
+    "39034": {
+        "0": "Rinascita Vambraces of Fending"
+    },
+    "39035": {
+        "0": "Rinascita Poleyns of Fending"
+    },
+    "39036": {
+        "0": "Rinascita Sabatons of Fending"
+    },
+    "39037": {
+        "0": "Rinascita Helm of Maiming"
+    },
+    "39038": {
+        "0": "Rinascita Cuirass of Maiming",
+        "1": "Ornate Rinascita Cuirass of Maiming"
+    },
+    "39039": {
+        "0": "Rinascita Vambraces of Maiming"
+    },
+    "39040": {
+        "0": "Rinascita Poleyns of Maiming"
+    },
+    "39041": {
+        "0": "Rinascita Sabatons of Maiming"
+    },
+    "39042": {
+        "0": "Rinascita Hood of Striking"
+    },
+    "39043": {
+        "0": "Rinascita Jacket of Striking",
+        "1": "Ornate Rinascita Jacket of Striking"
+    },
+    "39044": {
+        "0": "Rinascita Armguards of Striking"
+    },
+    "39045": {
+        "0": "Rinascita Poleyns of Striking"
+    },
+    "39046": {
+        "0": "Rinascita Shoes of Striking"
+    },
+    "39047": {
+        "0": "Rinascita Beret of Aiming"
+    },
+    "39048": {
+        "0": "Rinascita Jacket of Aiming",
+        "1": "Ornate Rinascita Jacket of Aiming"
+    },
+    "39049": {
+        "0": "Rinascita Gloves of Aiming"
+    },
+    "39050": {
+        "0": "Rinascita Poleyns of Aiming"
+    },
+    "39051": {
+        "0": "Rinascita Sabatons of Aiming"
+    },
+    "39052": {
+        "0": "Rinascita Hood of Scouting"
+    },
+    "39053": {
+        "0": "Rinascita Jacket of Scouting",
+        "1": "Ornate Rinascita Jacket of Scouting"
+    },
+    "39054": {
+        "0": "Rinascita Armguards of Scouting"
+    },
+    "39055": {
+        "0": "Rinascita Poleyns of Scouting"
+    },
+    "39056": {
+        "0": "Rinascita Sabatons of Scouting"
+    },
+    "39057": {
+        "0": "Rinascita Beret of Healing"
+    },
+    "39058": {
+        "0": "Rinascita Coat of Healing",
+        "1": "Ornate Rinascita Coat of Healing"
+    },
+    "39059": {
+        "0": "Rinascita Gloves of Healing"
+    },
+    "39060": {
+        "0": "Rinascita Poleyns of Healing"
+    },
+    "39061": {
+        "0": "Rinascita Shoes of Healing"
+    },
+    "39062": {
+        "0": "Rinascita Hood of Casting"
+    },
+    "39063": {
+        "0": "Rinascita Coat of Casting",
+        "1": "Ornate Rinascita Coat of Casting"
+    },
+    "39064": {
+        "0": "Rinascita Armguards of Casting"
+    },
+    "39065": {
+        "0": "Rinascita Poleyns of Casting"
+    },
+    "39066": {
+        "0": "Rinascita Shoes of Casting"
+    },
+    "39067": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
+    },
+    "39068": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
+    },
+    "39069": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "8": "Augmented Rinascita Earring of Healing",
+        "9": "Augmented Rinascita Earring of Casting"
+    },
+    "39070": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "9": "Augmented Rinascita Earring of Casting"
+    },
+    "39071": {
+        "0": "Rinascita Earring of Fending",
+        "1": "Rinascita Earring of Slaying",
+        "2": "Rinascita Earring of Aiming",
+        "3": "Rinascita Earring of Healing",
+        "4": "Rinascita Earring of Casting",
+        "5": "Augmented Rinascita Earring of Fending",
+        "6": "Augmented Rinascita Earring of Slaying",
+        "7": "Augmented Rinascita Earring of Aiming",
+        "8": "Augmented Rinascita Earring of Healing"
+    },
+    "39072": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
+    },
+    "39073": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
+    },
+    "39074": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "8": "Augmented Rinascita Necklace of Healing",
+        "9": "Augmented Rinascita Necklace of Casting"
+    },
+    "39075": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "9": "Augmented Rinascita Necklace of Casting"
+    },
+    "39076": {
+        "0": "Rinascita Necklace of Fending",
+        "1": "Rinascita Necklace of Slaying",
+        "2": "Rinascita Necklace of Aiming",
+        "3": "Rinascita Necklace of Healing",
+        "4": "Rinascita Necklace of Casting",
+        "5": "Augmented Rinascita Necklace of Fending",
+        "6": "Augmented Rinascita Necklace of Slaying",
+        "7": "Augmented Rinascita Necklace of Aiming",
+        "8": "Augmented Rinascita Necklace of Healing"
+    },
+    "39077": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
+    },
+    "39078": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
+    },
+    "39079": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "8": "Augmented Rinascita Bracelet of Healing",
+        "9": "Augmented Rinascita Bracelet of Casting"
+    },
+    "39080": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "9": "Augmented Rinascita Bracelet of Casting"
+    },
+    "39081": {
+        "0": "Rinascita Bracelet of Fending",
+        "1": "Rinascita Bracelet of Slaying",
+        "2": "Rinascita Bracelet of Aiming",
+        "3": "Rinascita Bracelet of Healing",
+        "4": "Rinascita Bracelet of Casting",
+        "5": "Augmented Rinascita Bracelet of Fending",
+        "6": "Augmented Rinascita Bracelet of Slaying",
+        "7": "Augmented Rinascita Bracelet of Aiming",
+        "8": "Augmented Rinascita Bracelet of Healing"
+    },
+    "39082": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
+    },
+    "39083": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
+    },
+    "39084": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "8": "Augmented Rinascita Ring of Healing",
+        "9": "Augmented Rinascita Ring of Casting"
+    },
+    "39085": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "9": "Augmented Rinascita Ring of Casting"
+    },
+    "39086": {
+        "0": "Rinascita Ring of Fending",
+        "1": "Rinascita Ring of Slaying",
+        "2": "Rinascita Ring of Aiming",
+        "3": "Rinascita Ring of Healing",
+        "4": "Rinascita Ring of Casting",
+        "5": "Augmented Rinascita Ring of Fending",
+        "6": "Augmented Rinascita Ring of Slaying",
+        "7": "Augmented Rinascita Ring of Aiming",
+        "8": "Augmented Rinascita Ring of Healing"
     }
 }
