@@ -42,7 +42,7 @@ php bin/console app:parse:csv GE:Orchestrion
 php bin/console app:parse:csv GE:NamingConventions
 php bin/console app:parse:csv GE:Quest2
 php bin/console app:parse:csv GE:FATEs
-php bin/console app:parse:csv GE:CurrentMaps
+@REM php bin/console app:parse:csv GE:CurrentMaps
 php bin/console app:parse:csv GE:MainCommandIcons
 php bin/console app:parse:csv GE:SurveyRecord
 pause
