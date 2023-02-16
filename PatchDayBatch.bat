@@ -45,4 +45,6 @@ php bin/console app:parse:csv GE:FATEs
 @REM php bin/console app:parse:csv GE:CurrentMaps
 php bin/console app:parse:csv GE:MainCommandIcons
 php bin/console app:parse:csv GE:SurveyRecord
+php bin/console app:parse:csv GE:AkatsukiNotes
+php bin/console app:parse:csv GE:NewGamePlus
 pause
