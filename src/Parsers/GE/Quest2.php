@@ -592,7 +592,7 @@ class Quest2 implements ParseInterface
             
             //Produce ToDo Array
             foreach(range(0,23) as $i){
-                if (empty($Quest["ToDoMainLocation[$i]"])) break;
+                if (empty($Quest["ToDoLocation[$i]"])) break;
                 $ToDoChildArray = [];
                 foreach(range(0,6) as $a){
                     if (empty($Quest["ToDoChildLocation[$i][$a]"])) break;
@@ -604,7 +604,7 @@ class Quest2 implements ParseInterface
                 }
                 $ToDoArray[$i] = array(
                     "Task" => $ToDoSeqArray[$i],
-                    "ToDoMainLocation" => $Quest["ToDoMainLocation[$i]"],
+                    "ToDoMainLocation" => $Quest["ToDoLocation[$i]"],
                     "ToDoChildLocation" => $ToDoChildArray,
                     "ToDoCompleteSeq" => $Quest["ToDoCompleteSeq[$i]"],
                     "ToDoQty" => $Quest["ToDoQty[$i]"],
