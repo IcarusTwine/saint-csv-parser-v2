@@ -31821,7 +31821,7 @@
     ],
     "38792": [
         {
-            "FishName": "",
+            "FishName": "Platinum Seahorse",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "813",
@@ -32787,7 +32787,7 @@
     ],
     "38793": [
         {
-            "FishName": "",
+            "FishName": "Clavekeeper",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "814",
@@ -33841,7 +33841,7 @@
     ],
     "38798": [
         {
-            "FishName": "",
+            "FishName": "Mirror Image",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "816",
@@ -34773,7 +34773,7 @@
     ],
     "38799": [
         {
-            "FishName": "",
+            "FishName": "Spangled Pirarucu",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "817",

@@ -65439,6 +65439,50 @@
         "7": "Asphodelos Ring of Aiming",
         "8": "Asphodelos Ring of Healing"
     },
+    "35468": {
+        "1": "Splendorous Saw",
+        "2": "Augmented Splendorous Saw"
+    },
+    "35469": {
+        "1": "Splendorous Cross-pein Hammer",
+        "2": "Augmented Splendorous Cross-pein Hammer"
+    },
+    "35470": {
+        "1": "Splendorous Raising Hammer",
+        "2": "Augmented Splendorous Raising Hammer"
+    },
+    "35471": {
+        "1": "Splendorous Mallet",
+        "2": "Augmented Splendorous Mallet"
+    },
+    "35472": {
+        "1": "Splendorous Knife",
+        "2": "Augmented Splendorous Knife"
+    },
+    "35473": {
+        "1": "Splendorous Needle",
+        "2": "Augmented Splendorous Needle"
+    },
+    "35474": {
+        "1": "Splendorous Alembic",
+        "2": "Augmented Splendorous Alembic"
+    },
+    "35475": {
+        "1": "Splendorous Frypan",
+        "2": "Augmented Splendorous Frypan"
+    },
+    "35476": {
+        "1": "Splendorous Pickaxe",
+        "2": "Augmented Splendorous Pickaxe"
+    },
+    "35477": {
+        "1": "Splendorous Hatchet",
+        "2": "Augmented Splendorous Hatchet"
+    },
+    "35478": {
+        "1": "Splendorous Fishing Rod",
+        "2": "Augmented Splendorous Fishing Rod"
+    },
     "35760": {
         "1": "Demon Slicer"
     },
@@ -68374,6 +68418,63 @@
         "2": "Troian Ring of Aiming",
         "3": "Troian Ring of Healing"
     },
+    "38400": {
+        "1": "Manderville Sword Replica"
+    },
+    "38401": {
+        "1": "Replica Manderville Knuckles"
+    },
+    "38402": {
+        "1": "Manderville Axe Replica"
+    },
+    "38403": {
+        "1": "Manderville Spear Replica"
+    },
+    "38404": {
+        "1": "Manderville Harp Bow Replica"
+    },
+    "38405": {
+        "1": "Replica Manderville Knives"
+    },
+    "38406": {
+        "1": "Manderville Zweihander Replica"
+    },
+    "38407": {
+        "1": "Manderville Revolver Replica"
+    },
+    "38408": {
+        "1": "Manderville Cane Replica"
+    },
+    "38409": {
+        "1": "Manderville Rod Replica"
+    },
+    "38410": {
+        "1": "Manderville Index Replica"
+    },
+    "38411": {
+        "1": "Manderville Codex Replica"
+    },
+    "38412": {
+        "1": "Manderville Torquetum Replica"
+    },
+    "38413": {
+        "1": "Manderville Samurai Blade Replica"
+    },
+    "38414": {
+        "1": "Manderville Rapier Replica"
+    },
+    "38415": {
+        "1": "Manderville Gunblade Replica"
+    },
+    "38416": {
+        "1": "Replica Manderville Chakrams"
+    },
+    "38417": {
+        "1": "Replica Manderville Milpreves"
+    },
+    "38418": {
+        "1": "Manderville Scythe Replica"
+    },
     "38421": {
         "0": "Rinascita Cuirass of Fending",
         "2": "Augmented Rinascita Cuirass of Fending"
@@ -68401,6 +68502,94 @@
     "38427": {
         "0": "Rinascita Coat of Casting",
         "2": "Augmented Rinascita Coat of Casting"
+    },
+    "38715": {
+        "0": "Millsoph's Saw",
+        "2": "Augmented Splendorous Saw"
+    },
+    "38716": {
+        "0": "Forgesoph's Hammer",
+        "2": "Augmented Splendorous Cross-pein Hammer"
+    },
+    "38717": {
+        "0": "Hammersoph's Beetle",
+        "2": "Augmented Splendorous Raising Hammer"
+    },
+    "38718": {
+        "0": "Gemsoph's Mallet",
+        "2": "Augmented Splendorous Mallet"
+    },
+    "38719": {
+        "0": "Hidesoph's Knife",
+        "2": "Augmented Splendorous Knife"
+    },
+    "38720": {
+        "0": "Boltsoph's Needle",
+        "2": "Augmented Splendorous Needle"
+    },
+    "38721": {
+        "0": "Cauldronsoph's Alembic",
+        "2": "Augmented Splendorous Alembic"
+    },
+    "38722": {
+        "0": "Galleysoph's Frypan",
+        "2": "Augmented Splendorous Frypan"
+    },
+    "38723": {
+        "0": "Minesoph's Pickaxe",
+        "2": "Augmented Splendorous Pickaxe"
+    },
+    "38724": {
+        "0": "Fieldsoph's Hatchet",
+        "2": "Augmented Splendorous Hatchet"
+    },
+    "38725": {
+        "0": "Tacklesoph's Rod",
+        "2": "Augmented Splendorous Fishing Rod"
+    },
+    "38726": {
+        "0": "Millsoph's Saw",
+        "1": "Splendorous Saw"
+    },
+    "38727": {
+        "0": "Forgesoph's Hammer",
+        "1": "Splendorous Cross-pein Hammer"
+    },
+    "38728": {
+        "0": "Hammersoph's Beetle",
+        "1": "Splendorous Raising Hammer"
+    },
+    "38729": {
+        "0": "Gemsoph's Mallet",
+        "1": "Splendorous Mallet"
+    },
+    "38730": {
+        "0": "Hidesoph's Knife",
+        "1": "Splendorous Knife"
+    },
+    "38731": {
+        "0": "Boltsoph's Needle",
+        "1": "Splendorous Needle"
+    },
+    "38732": {
+        "0": "Cauldronsoph's Alembic",
+        "1": "Splendorous Alembic"
+    },
+    "38733": {
+        "0": "Galleysoph's Frypan",
+        "1": "Splendorous Frypan"
+    },
+    "38734": {
+        "0": "Minesoph's Pickaxe",
+        "1": "Splendorous Pickaxe"
+    },
+    "38735": {
+        "0": "Fieldsoph's Hatchet",
+        "1": "Splendorous Hatchet"
+    },
+    "38736": {
+        "0": "Tacklesoph's Rod",
+        "1": "Splendorous Fishing Rod"
     },
     "38992": {
         "1": "Manalis Earrings of Slaying",
@@ -68910,5 +69099,62 @@
         "6": "Augmented Rinascita Ring of Slaying",
         "7": "Augmented Rinascita Ring of Aiming",
         "8": "Augmented Rinascita Ring of Healing"
+    },
+    "39329": {
+        "0": "Manderville Sword"
+    },
+    "39330": {
+        "0": "Manderville Knuckles"
+    },
+    "39331": {
+        "0": "Manderville Axe"
+    },
+    "39332": {
+        "0": "Manderville Spear"
+    },
+    "39333": {
+        "0": "Manderville Harp Bow"
+    },
+    "39334": {
+        "0": "Manderville Knives"
+    },
+    "39335": {
+        "0": "Manderville Zweihander"
+    },
+    "39336": {
+        "0": "Manderville Revolver"
+    },
+    "39337": {
+        "0": "Manderville Cane"
+    },
+    "39338": {
+        "0": "Manderville Rod"
+    },
+    "39339": {
+        "0": "Manderville Index"
+    },
+    "39340": {
+        "0": "Manderville Codex"
+    },
+    "39341": {
+        "0": "Manderville Torquetum"
+    },
+    "39342": {
+        "0": "Manderville Samurai Blade"
+    },
+    "39343": {
+        "0": "Manderville Rapier"
+    },
+    "39344": {
+        "0": "Manderville Gunblade"
+    },
+    "39345": {
+        "0": "Manderville Chakrams"
+    },
+    "39346": {
+        "0": "Manderville Milpreves"
+    },
+    "39347": {
+        "0": "Manderville Scythe"
     }
 }

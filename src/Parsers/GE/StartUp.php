@@ -21,7 +21,6 @@ class StartUp implements ParseInterface
     public function parse()
     {
         include (dirname(__DIR__) . '/Paths.php');
-        $MapCsv = $this->csv('Map');
         function recurseCopy($src,$dst, $childFolder='') { 
 
             $dir = opendir($src); 
@@ -60,7 +59,7 @@ class StartUp implements ParseInterface
         // grab CSV files we want to use
         $ini = parse_ini_file('src/Parsers/config.ini');
         $MainPath = $ini['MainPath'];
-        $PatchID = str_replace(" ","",file_get_contents("". $MainPath ."\game\\ffxivgame.ver"));
+        $PatchID = str_replace(array(" ","\n"),"",file_get_contents("". $MainPath ."\game\\ffxivgame.ver"));
         $SaintPath = $ini['SaintPath'];
         $GameVer = str_replace(" ","",file_get_contents("$SaintPath/Definitions/game.ver"));
         $Resources = str_replace("cache","Resources",$ini['Cache']);
@@ -104,6 +103,18 @@ class StartUp implements ParseInterface
         if(trim($line) !== 'no'){
         }
         fclose($handle2);
+
+        $CachePath = $ini['Cache']."/$PatchID/rawexd";
+        $src = "$SaintPath/$PatchID/rawexd";
+        $console->writeln("<question>Copy from $src to $CachePath ? (yes/no)</question>");
+        $handle = fopen ("php://stdin","r");
+        $line = fgets($handle);
+        if(trim($line) === 'yes'){
+            $console->writeln("Copying to cache/\n");
+            recurseCopy($src, $CachePath);
+        }
+        fclose($handle);
+        
         $SaintCommands = array(
             //"rawexd",
             "maps",
@@ -150,6 +161,8 @@ class StartUp implements ParseInterface
         $console->writeln("(yes/no)\n");
         $handle = fopen ("php://stdin","r");
         $line = fgets($handle);
+        
+        $MapCsv = $this->csv('Map');
         if(trim($line) === 'yes'){
             $console->writeln("Running...");
             foreach ($MapCsv->data as $id => $Map) {
