@@ -592,11 +592,11 @@ class Quest2 implements ParseInterface
             
             //Produce ToDo Array
             foreach(range(0,23) as $i){
-                if (empty($Quest["ToDoLocation[$i]"])) break;
+                if (empty($Quest["ToDoLocation[$i][0]"])) break;
                 $ToDoChildArray = [];
-                foreach(range(0,6) as $a){
-                    if (empty($Quest["ToDoChildLocation[$i][$a]"])) break;
-                    $ToDoChildArray[$i][$a][] = $Quest["ToDoChildLocation[$i][$a]"];
+                foreach(range(0,7) as $a){
+                    if (empty($Quest["ToDoLocation[$i][$a]"])) break;
+                    $ToDoChildArray[$i][$a][] = $Quest["ToDoLocation[$i][$a]"];
                 }
                 $Sequence = $Quest["ToDoCompleteSeq[$i]"];
                 if ($Sequence === "255"){
@@ -604,8 +604,7 @@ class Quest2 implements ParseInterface
                 }
                 $ToDoArray[$i] = array(
                     "Task" => $ToDoSeqArray[$i],
-                    "ToDoMainLocation" => $Quest["ToDoLocation[$i]"],
-                    "ToDoChildLocation" => $ToDoChildArray,
+                    "ToDoMainLocation" => $ToDoChildArray,
                     "ToDoCompleteSeq" => $Quest["ToDoCompleteSeq[$i]"],
                     "ToDoQty" => $Quest["ToDoQty[$i]"],
                     "CountableNum" => $Quest["CountableNum[$i]"]
@@ -1112,8 +1111,8 @@ class Quest2 implements ParseInterface
                     $RewardArray[] = "|QuestReward $ItemCount Job = ".$Item["Job"];
                 }
                 if ($Item["Count"] == 0) {
-                    var_dump($QuestName);
-                    var_dump($Item['Item']);
+                    // var_dump($QuestName);
+                    // var_dump($Item['Item']);
                 }
                 if ($Item["Count"] > 1){
                     $RewardArray[] = "|QuestReward $ItemCount Count = ".$Item["Count"];
@@ -1130,8 +1129,8 @@ class Quest2 implements ParseInterface
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount = ".$Item["Item"];
                 }
                 if ($Item["Count"] == 0) {
-                    var_dump($QuestName);
-                    var_dump($Item['Item']);
+                    // var_dump($QuestName);
+                    // var_dump($Item['Item']);
                 }
                 if ($Item["Count"] > 1){
                     $RewardArray[] = "|QuestRewardOption $OptionItemCount Count = ".$Item["Count"];
