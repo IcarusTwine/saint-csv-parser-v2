@@ -56,7 +56,11 @@ class BlueMageContent implements ParseInterface
             $OrderID = str_pad($ContentID, 2, '0', STR_PAD_LEFT);
             $ContentImage = $Content['Image'].".png";
             $RequiredLevel = $Content['ClassJobLevel{Required}'];
-            $RequiredQuest = $QuestCsv->at($Content['UnlockQuest'])['Name'];
+            if ($QuestCsv->at($Content['UnlockQuest']) === false){
+                $RequiredQuest = "";
+            } else {
+                $RequiredQuest = $QuestCsv->at($Content['UnlockQuest'])['Name'];
+            }
 
             $GilReward = $AOZContentCsv->at($ContentID)['GilReward'];
             $AlliedSealsReward = $AOZContentCsv->at($ContentID)['AlliedSealsReward'];

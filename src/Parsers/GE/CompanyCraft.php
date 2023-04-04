@@ -100,7 +100,6 @@ class CompanyCraft implements ParseInterface
                 $CompanyCraftPartRaw = $CompanyCraftSequence["CompanyCraftPart[$a]"];
                 if ($CompanyCraftPartRaw == 0) continue;
                 $PhaseSwitch = "Phase";
-                $CompanyCraftTypeCsv->at($CompanyCraftPartRaw)['Name'];
                 $CompanyCraftTypeRaw = $CompanyCraftPartCsv->at($CompanyCraftPartRaw)['CompanyCraftType'];
                 $bSwitch = FALSE;
                 switch ($CompanyCraftTypeRaw) {

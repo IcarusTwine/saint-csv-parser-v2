@@ -1,50 +1,46 @@
 @echo off
-php bin/console app:parse:csv GE:PatchPopulate
-php bin/console app:parse:csv GE:LuaExporter
-php bin/console app:parse:csv GE:Achievement
-php bin/console app:parse:csv GE:Festival
-php bin/console app:parse:csv GE:ActiveHelp
-php bin/console app:parse:csv GE:BNPCGenerate
-php bin/console app:parse:csv GE:Actions
-php bin/console app:parse:csv GE:AquariumFish
-php bin/console app:parse:csv GE:Collectable
-php bin/console app:parse:csv GE:CompanyCraft
-php bin/console app:parse:csv GE:RaceAppearance
-php bin/console app:parse:csv GE:FishingSpot
-php bin/console app:parse:csv GE:EquipmentImageBot
-php bin/console app:parse:csv GE:ItemChange
-php bin/console app:parse:csv GE:Items
-php bin/console app:parse:csv GE:KhloeShop
-php bin/console app:parse:csv GE:Minions
-php bin/console app:parse:csv GE:Mounts
-::php bin/console app:parse:csv GE:Quests
-php bin/console app:parse:csv GE:Retainer
-php bin/console app:parse:csv GE:RetainerEXP
-php bin/console app:parse:csv GE:Satisfaction
-php bin/console app:parse:csv GE:Emotes
-php bin/console app:parse:csv GE:SatisfactionTable
-php bin/console app:parse:csv GE:SpecialShop
-php bin/console app:parse:csv GE:TripleTriad
-php bin/console app:parse:csv GE:MYCItems
-php bin/console app:parse:csv GE:MYCWarResultNotebook
-php bin/console app:parse:csv GE:Translator
-php bin/console app:parse:csv GE:FishParameter
-php bin/console app:parse:csv GE:Instances
-php bin/console app:parse:csv GE:KeyItems
-php bin/console app:parse:csv GE:RaceAbility
-php bin/console app:parse:csv GE:Recipes
-php bin/console app:parse:csv GE:Sightseeing
-php bin/console app:parse:csv GE:Spearfish
-php bin/console app:parse:csv GE:Storable
-php bin/console app:parse:csv GE:BlueMageContent
-php bin/console app:parse:csv GE:NpcsPagesAll
-php bin/console app:parse:csv GE:Orchestrion
-php bin/console app:parse:csv GE:NamingConventions
-php bin/console app:parse:csv GE:Quest2
-php bin/console app:parse:csv GE:FATEs
-@REM php bin/console app:parse:csv GE:CurrentMaps
-php bin/console app:parse:csv GE:MainCommandIcons
-php bin/console app:parse:csv GE:SurveyRecord
-php bin/console app:parse:csv GE:AkatsukiNotes
+@REM php bin/console app:parse:csv GE:PatchPopulate
+@REM php bin/console app:parse:csv GE:LuaExporter
+@REM php bin/console app:parse:csv GE:Achievement
+@REM php bin/console app:parse:csv GE:Festival
+@REM php bin/console app:parse:csv GE:ActiveHelp
+@REM php bin/console app:parse:csv GE:BNPCGenerate
+@REM php bin/console app:parse:csv GE:Actions
+@REM php bin/console app:parse:csv GE:AquariumFish
+@REM php bin/console app:parse:csv GE:Collectable
+@REM php bin/console app:parse:csv GE:CompanyCraft
+@REM php bin/console app:parse:csv GE:RaceAppearance
+@REM php bin/console app:parse:csv GE:FishingSpot
+@REM php bin/console app:parse:csv GE:EquipmentImageBot
+@REM php bin/console app:parse:csv GE:ItemChange
+@REM php bin/console app:parse:csv GE:Items
+@REM php bin/console app:parse:csv GE:KhloeShop
+@REM php bin/console app:parse:csv GE:Minions
+@REM php bin/console app:parse:csv GE:Mounts
+@REM php bin/console app:parse:csv GE:Retainer
+@REM php bin/console app:parse:csv GE:RetainerEXP
+@REM php bin/console app:parse:csv GE:Satisfaction
+@REM php bin/console app:parse:csv GE:Emotes
+@REM php bin/console app:parse:csv GE:SatisfactionTable
+@REM php bin/console app:parse:csv GE:TripleTriad
+@REM php bin/console app:parse:csv GE:MYCItems
+@REM php bin/console app:parse:csv GE:MYCWarResultNotebook
+@REM php bin/console app:parse:csv GE:Translator
+@REM php bin/console app:parse:csv GE:FishParameter
+@REM php bin/console app:parse:csv GE:KeyItems
+@REM php bin/console app:parse:csv GE:RaceAbility
+@REM php bin/console app:parse:csv GE:Recipes
+@REM php bin/console app:parse:csv GE:Sightseeing
+@REM php bin/console app:parse:csv GE:Spearfish
+@REM php bin/console app:parse:csv GE:Storable
+@REM php bin/console app:parse:csv GE:BlueMageContent
+@REM php bin/console app:parse:csv GE:NpcsPagesAll
+@REM php bin/console app:parse:csv GE:Orchestrion
+@REM php bin/console app:parse:csv GE:NamingConventions
+@REM php bin/console app:parse:csv GE:Quest2
+@REM php bin/console app:parse:csv GE:FATEs
+@REM php bin/console app:parse:csv GE:MainCommandIcons
+@REM php bin/console app:parse:csv GE:SurveyRecord
+@REM php bin/console app:parse:csv GE:AkatsukiNotes
 php bin/console app:parse:csv GE:NewGamePlus
 pause

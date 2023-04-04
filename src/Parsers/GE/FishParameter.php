@@ -34,6 +34,7 @@ class FishParameter implements ParseInterface
         $ItemCsv = $this->csv('Item');
         $FishParameterCsv = $this->csv('FishParameter');
         $TerritoryTypeCsv = $this->csv('TerritoryType');
+        $FishingSpotCsv = $this->csv('FishingSpot');
         $PlaceNameCsv = $this->csv('PlaceName');
         $GatheringItemLevelConvertTableCsv = $this->csv('GatheringItemLevelConvertTable');
         $GatheringSubCategoryCsv = $this->csv('GatheringSubCategory');
@@ -51,8 +52,7 @@ class FishParameter implements ParseInterface
             }
 
             $Name = str_replace("#", "", ($ItemCsv->at($fish['Item'])['Name']));
-            $Territory = $TerritoryTypeCsv->at($fish['TerritoryType'])['PlaceName'];
-            $Location = $PlaceNameCsv->at($Territory)['Name'];
+            $Location = $PlaceNameCsv->at($FishingSpotCsv->at($fish['FishingSpot'])['PlaceName'])['Name'];
             $Fishtype = [
                 0 => "Coastlines",
                 1 => "Deep Sea",

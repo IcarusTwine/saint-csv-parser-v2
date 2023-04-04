@@ -83,6 +83,7 @@ class Achievement implements ParseInterface
                 $questkeyname = $QuestCsv->at($Achievement["Key"])['Name'];
                 $description = str_ireplace($questkeyname, "[[". $questkeyname ."]]", $description);
                 foreach (range(0, 7) as $i) {
+                    if ($Achievement["Data[$i]"] === "0") continue;
                     $questname = $QuestCsv->at($Achievement["Data[$i]"])['Name'];
                     $description = str_ireplace($questname, "[[". $questname ."]]", $description);
                 }

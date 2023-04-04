@@ -43,18 +43,18 @@ class SurveyRecord implements ParseInterface
         foreach ($VVDRouteData->data as $id => $VVD) {
             $contentid = $VVD['unknown_1'];
             $e = explode(".",$id);
-            $seriesName = $VVDNotebookSeries->at($e[0])['unknown_1'];
+            $seriesName = $VVDNotebookSeries->at($e[0])['Name'];
             $series[$contentid] = $seriesName;
         }
         // loop through data
         foreach ($VVDNotebookContents->data as $id => $VVD) {
             $this->io->progressAdvance();
-            if(empty($VVD['unknown_4'])) continue;
+            if(empty($VVD['Description'])) continue;
             $Patch = $PatchNumber[$id];
-            $icon = $VVD['unknown_1'];
-            $image = $VVD['unknown_2'];
-            $Name = $VVD['unknown_3'];
-            $Description = $VVD['unknown_4'];
+            $icon = $VVD['Icon'];
+            $image = $VVD['Image'];
+            $Name = $VVD['Name'];
+            $Description = $VVD['Description'];
             $title = $series[$id];
             if (!empty($icon)) {
                 if (!file_exists($this->getOutputFolder() ."/$PatchID/SurveyRecordIcons/$icon.png")) {

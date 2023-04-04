@@ -36,8 +36,16 @@ class NewGamePlus implements ParseInterface
         $OutputArray = [];
         foreach ($QuestRedoCsv->data as $id => $QuestRedo) {
             $Chapter = $QuestRedo['Chapter'];
-            $FinalQuest = $QuestCsv->at($QuestRedo['FinalQuest'])['Name'];
-            $StartQuest = $QuestCsv->at($QuestRedo['Quest[0]'])['Name'];
+            if ($QuestCsv->at($QuestRedo['FinalQuest']) === false){
+                $FinalQuest = "";
+            } else {
+                $FinalQuest = $QuestCsv->at($QuestRedo['FinalQuest'])['Name'];
+            }
+            if ($QuestCsv->at($QuestRedo['Quest[0]']) === false){
+                $StartQuest = "";
+            } else {
+                $StartQuest = $QuestCsv->at($QuestRedo['Quest[0]'])['Name'];
+            }
             if (empty($QuestArray[$Chapter]['StartQuest'])){
                 $QuestArray[$Chapter]['StartQuest'] = $StartQuest;
             }
@@ -45,6 +53,7 @@ class NewGamePlus implements ParseInterface
                 if ($QuestRedo['unknown_2'] !== "0"){
                     $QuestRedirect = $QuestRedo['unknown_2'];
                     foreach(range(0,31) as $i){
+                        if ($QuestRedoCsv->at($QuestRedirect) === false) break;
                         if (empty($QuestCsv->at($QuestRedoCsv->at($QuestRedirect)["Quest[$i]"])['Name'])) break;
                         $FinalQuest = $QuestCsv->at($QuestRedoCsv->at($QuestRedirect)["Quest[$i]"])['Name'];
                     }

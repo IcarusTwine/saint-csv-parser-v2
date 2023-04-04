@@ -38,8 +38,11 @@ class SatisfactionTable implements ParseInterface
         foreach ($SatisfactionNpcCsv->data as $id => $Npc) {
             // ---------------------------------------------------------
             $this->io->progressAdvance();
-
-            $Name = $ENpcResidentCsv->at($Npc['Npc'])['Singular'];
+            if ($ENpcResidentCsv->at($Npc['Npc']) === false){
+                $Name = "";
+            } else {
+                $Name = $ENpcResidentCsv->at($Npc['Npc'])['Singular'];
+            }
             $OutputRanks = [];
             foreach(range(1,4) as $a) {
                 $Satisfaction = $Npc["Satisfaction{Required}[$a]"];

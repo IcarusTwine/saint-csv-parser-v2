@@ -62,6 +62,7 @@ class FishingSpot implements ParseInterface
             $Location = $PlaceNameCsv->at($fishingspot['PlaceName'])['Name'];
             $PlaceName = $fishingspot['PlaceName'];
             $TerritoryType = $fishingspot['TerritoryType'];
+            if ($TerritoryTypeCsv->at($TerritoryType) === false) continue;
             $Map = $TerritoryTypeCsv->at($TerritoryType)['Map'];
             $X = $fishingspot['X'];
             $Y = $fishingspot['Z'];

@@ -44,6 +44,7 @@ class Retainer implements ParseInterface
             $this->io->progressAdvance();
             $Quantity = [];
             $TaskParam = $Task["Task"];
+            if ($RetainerTaskNormalCsv->at($TaskParam) === false) continue;
             $ItemName = $ItemCsv->at($RetainerTaskNormalCsv->at($TaskParam)['Item'])['Name'];
             if (empty($ItemName)) continue;
             $IsRandom = $Task["IsRandom"];

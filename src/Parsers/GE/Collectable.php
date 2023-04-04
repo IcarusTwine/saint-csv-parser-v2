@@ -90,6 +90,7 @@ class Collectable implements ParseInterface
                 $ShopItemID = $Shop["ShopItems[$i]"];
                 foreach(range(0,999) as $b) {
                     $SubDataValue = "". $ShopItemID .".". $b ."";
+                    if($SubDataValue = "0.0") break;
                     if (empty($ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'])) break;
                     $Group = $CollectablesShopItemGroupCsv->at($CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopItemGroup'])['Name'];
                     $Item = $ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'];

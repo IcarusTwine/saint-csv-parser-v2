@@ -37,6 +37,8 @@ class Satisfaction implements ParseInterface
             $this->io->progressAdvance();
             if ($Level['Type'] != 8) continue;
             $NPCID = $Level['Object'];
+            if ($TerritoryTypeCsv->at($Level['Territory']) === false) continue;
+            if ($PlaceNameCsv->at($TerritoryTypeCsv->at($Level['Territory'])['PlaceName']) === false) continue;
             $LGBArray[$NPCID] = array(
                 'Location' => $PlaceNameCsv->at($TerritoryTypeCsv->at($Level['Territory'])['PlaceName'])['Name']
             );
@@ -57,6 +59,7 @@ class Satisfaction implements ParseInterface
             //---------------------------------------------------------------------------------
 
             // skip ones without a name
+            if($ENpcResidentCsv->at($supplynpc['Npc']) === false) continue;
             $Npc = $ENpcResidentCsv->at($supplynpc['Npc'])['Singular'];
             $NpcId = $supplynpc['Npc'];
             // get the NPC name
@@ -64,6 +67,8 @@ class Satisfaction implements ParseInterface
             foreach(range(1,5) as $a) {
                 foreach(range(0,20) as $b) {
                     $SubDataValue = "". $supplynpc["SupplyIndex[$a]"] .".". $b ."";
+                    
+                    if($SatisfactionSupplyCsv->at($SubDataValue) === false) continue;
                     if (empty($ItemCsv->at($SatisfactionSupplyCsv->at($SubDataValue)['Item'])['Name'])) break;
                     $Name = $ItemCsv->at($SatisfactionSupplyCsv->at($SubDataValue)['Item'])['Name'];
                     if(empty($LGBArray[$NpcId]['Location'])){

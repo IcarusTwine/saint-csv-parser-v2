@@ -60,7 +60,11 @@ class Emotes implements ParseInterface
             $Name = $Emote['Name'];
             $Patch = $PatchNumber[$id];
             $Type = $EmoteCategoryCsv->at($Emote['EmoteCategory'])['Name'];
-            $Description = $TextCommandCsv->at($Emote['TextCommand'])['Description'];
+            if ($TextCommandCsv->at($Emote['TextCommand']) === false){
+                $Description = "";
+            } else {
+                $Description = $TextCommandCsv->at($Emote['TextCommand'])['Description'];
+            }
             
             //commands
             $Commands = [];

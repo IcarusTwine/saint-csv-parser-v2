@@ -518,11 +518,13 @@ class Quest2 implements ParseInterface
             $QuestOutputNPCS .= "{{-stop-}}\n";
             //make small map
             $NPCStartId = "|Issuing NPC Map = ".$Quest["Issuer{Start}"];
+            if ($LevelCsv->at($Quest["Issuer{Location}"]) === false) continue;
             $x = $LevelCsv->at($Quest["Issuer{Location}"])['X'];
             $y = $LevelCsv->at($Quest["Issuer{Location}"])['Z'];
             $TerritoryID = $LevelCsv->at($Quest["Issuer{Location}"])['Territory'];
             $MapId = $LevelCsv->at($Quest["Issuer{Location}"])['Map'];
             $StarterPos = $this->GetLGBPosArrm($x, $y, $TerritoryID, $TerritoryTypeCsv, $MapCsv, $MapId);
+            if ($TerritoryTypeCsv->at($TerritoryID) === false) continue;
             $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($TerritoryID)['PlaceName'])['Name'];
             $NpcMapCodeName = $TerritoryTypeCsv->at($TerritoryID)['Name'];
             $MapID = $TerritoryTypeCsv->at($TerritoryID)['Map'];
@@ -627,7 +629,11 @@ class Quest2 implements ParseInterface
             }
             $EventIcon = $Quest['Icon{Special}'];
             if (empty($Quest['Icon{Special}'])){
-                $EventIcon = $EventIconTypeCsv->at($Quest['EventIconType'])['NpcIcon{Available}'] + 1;
+                if ($EventIconTypeCsv->at($Quest['EventIconType']) === false){
+                    $EventIcon = "";
+                } else {
+                    $EventIcon = $EventIconTypeCsv->at($Quest['EventIconType'])['NpcIcon{Available}'] + 1;
+                }
             }
             $IconType = sprintf("%06d", $EventIcon);
             $IconArray[] = $EventIcon;
@@ -862,6 +868,7 @@ class Quest2 implements ParseInterface
             $QuestData["Previous2"] = "";
             foreach(range(0,2) as $i){
                 if (empty($Quest["PreviousQuest[$i]"])) continue;
+                if ($QuestCsv->at($Quest["PreviousQuest[$i]"]) === false) continue;
                 $PrevQuestName = str_replace(",","&#44;",$QuestCsv->at($Quest["PreviousQuest[$i]"])['Name'])."$Addon";
                 if ($i === 0) {
                     $QuestData["Previous1"] = $PrevQuestName;
@@ -1193,6 +1200,7 @@ class Quest2 implements ParseInterface
 
                 }
                 if ($value['Type'] === "EOBJECT"){
+                    if ($EObjNameCsv->at($value['Value']) === false) continue;
                     if ($EObjNameCsv->at($value['Value'])['Singular'] === "Destination") continue;
                     if (!empty($EObjNameCsv->at($value['Value'])['Singular'])) {
                         $ObjectArrayNames[] = str_replace(",","",ucwords($EObjNameCsv->at($value['Value'])['Singular']));

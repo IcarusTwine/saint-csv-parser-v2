@@ -52,6 +52,9 @@ class Spearfish implements ParseInterface
             }
 
             $Name = str_replace("#", "", ($ItemCsv->at($Spear['Item'])['Name']));
+            if ($TerritoryTypeCsv->at($Spear['TerritoryType']) === false){
+                // TO FIX 
+            }
             $Territory = $TerritoryTypeCsv->at($Spear['TerritoryType'])['PlaceName'];
             $SpearLocation = $PlaceNameCsv->at($Territory)['Name'];
             $SpearfishType = [

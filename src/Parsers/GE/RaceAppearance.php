@@ -133,6 +133,7 @@ class RaceAppearance implements ParseInterface
             $PaintToRange = ($paintCode + 50);
             foreach(range($paintCode,$PaintToRange) as $i) {
                 $FacePaintGrab = [];
+                if ($CharaMakeCustomizeCsv->at($i) === false) continue;
                 if ($CharaMakeCustomizeCsv->at($i)['FeatureID'] == "0") continue;
                 $FacePaintGrab['id'] = $CharaMakeCustomizeCsv->at($i)['id'];
                 $FacePaintGrab['FeatureID'] = $CharaMakeCustomizeCsv->at($i)['FeatureID'];

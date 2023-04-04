@@ -1272,6 +1272,7 @@ trait CsvParseTrait
         //potential names
         foreach($ArgArray as $Arg){
             if ($Arg > 1000000 && $Arg < 2000000){
+                if ($ENpcResidentCsv->at($Arg) === false) continue;
                 $FullNameKey = str_replace(" ","",strtoupper($ENpcResidentCsv->at($Arg)['Singular']));
                 $PotentialNames[$FullNameKey] = $Arg;
             }
