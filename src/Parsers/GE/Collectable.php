@@ -207,12 +207,12 @@ class Collectable implements ParseInterface
         // switch to a section so we can overwrite
         $console = $console->section();
 
+        $HWDCollectable = [];
         foreach ($HWDCrafterSupplyCsv->data as $id => $item) {
             //---------------------------------------------------------------------------------
             // Actual code definition begins below!
             //---------------------------------------------------------------------------------
 
-            $HWDCollectable = [];
             $HWDClass = false;
             $id = $item['id'];
 
@@ -251,34 +251,39 @@ class Collectable implements ParseInterface
                     $HWDCurrency = "Skybuilders' Scrip";
                     $HWDPhase = $HWDCraftersupplyTermCsv->at($item["TermName[$i]"])["Name"];
                     $HWDBaseCollect = $item["BaseCollectable{Rating}[$i]"];
-                    $HWDBaseScrip = $HWDCrafterSupplyRewardCsv->at($item["BaseCollectable{Reward}[$i]"])["ScriptReward{Amount}"];
-                    $HWDBaseEXP = $HWDCrafterSupplyRewardCsv->at($item["BaseCollectable{Reward}[$i]"])["ExpReward"];
+                    $HWDBaseScrip = $HWDCrafterSupplyRewardCsv->at($item["BaseCollectable{Reward}[PostPhase][$i]"])["ScriptReward{Amount}"];
+                    $HWDBaseEXP = $HWDCrafterSupplyRewardCsv->at($item["BaseCollectable{Reward}[PostPhase][$i]"])["ExpReward"];
                     $HWDBonus1Collect = $item["MidCollectable{Rating}[$i]"];
-                    $HWDBonus1Scrip = $HWDCrafterSupplyRewardCsv->at($item["MidCollectable{Reward}[$i]"])["ScriptReward{Amount}"];
-                    $HWDBonus1EXP = $HWDCrafterSupplyRewardCsv->at($item["MidCollectable{Reward}[$i]"])["ExpReward"];
+                    $HWDBonus1Scrip = $HWDCrafterSupplyRewardCsv->at($item["MidCollectable{Reward}[PostPhase][$i]"])["ScriptReward{Amount}"];
+                    $HWDBonus1EXP = $HWDCrafterSupplyRewardCsv->at($item["MidCollectable{Reward}[PostPhase][$i]"])["ExpReward"];
                     $HWDBonus2Collect = $item["HighCollectable{Rating}[$i]"];
-                    $HWDBonus2Scrip = $HWDCrafterSupplyRewardCsv->at($item["HighCollectable{Reward}[$i]"])["ScriptReward{Amount}"];
-                    $HWDBonus2EXP = $HWDCrafterSupplyRewardCsv->at($item["HighCollectable{Reward}[$i]"])["ExpReward"];
+                    $HWDBonus2Scrip = $HWDCrafterSupplyRewardCsv->at($item["HighCollectable{Reward}[PostPhase][$i]"])["ScriptReward{Amount}"];
+                    $HWDBonus2EXP = $HWDCrafterSupplyRewardCsv->at($item["HighCollectable{Reward}[PostPhase][$i]"])["ExpReward"];
+
+                    $HWDBasePoints = $HWDCrafterSupplyRewardCsv->at($item["BaseCollectable{Reward}[PostPhase][$i]"])[" Points"];
+                    $HWDBonus1Points = $HWDCrafterSupplyRewardCsv->at($item["MidCollectable{Reward}[PostPhase][$i]"])[" Points"];
+                    $HWDBonus2Points = $HWDCrafterSupplyRewardCsv->at($item["HighCollectable{Reward}[PostPhase][$i]"])[" Points"];
+
                     $HWDstring = "{{-start-}}\n'''". $HWDName ."/Collectable'''\n{{ARR Infobox Collectable\n";
-                    $HWDstring .= "|Class = ". $HWDClass ."\n|Level = ". $HWDLevel ."\n|Name = ". $HWDName ."\n|Scrip = ". $HWDCurrency ."\n|Phase = ". $HWDPhase ."\n";
-                    $HWDstring .= "|Base = ". $HWDBaseCollect ."\n|Base Scrip = ". $HWDBaseScrip ."\n|Base EXP = ". $HWDBaseEXP ."\n";
-                    $HWDstring .= "|Bonus1 = ". $HWDBonus1Collect ."\n|Bonus1 Scrip = ". $HWDBonus1Scrip ."\n|Bonus1 EXP = ". $HWDBonus1EXP ."\n";
-                    $HWDstring .= "|Bonus2 = ". $HWDBonus2Collect ."\n|Bonus2 Scrip = ". $HWDBonus2Scrip ."\n|Bonus2 EXP = ". $HWDBonus2EXP ."\n}}{{-stop-}}";
+                    $HWDstring .= "|Class = ". $HWDClass ."\n|Level = ". $HWDLevel ."\n|Name = ". $HWDName ."\n|Reward = ". $HWDCurrency ."\n|Phase = ". $HWDPhase ."\n";
+                    $HWDstring .= "|Base = ". $HWDBaseCollect ."\n|Base Reward = ". $HWDBaseScrip ."\n|Base EXP = ". $HWDBaseEXP ."\n|Base Points = ". $HWDBasePoints ."\n";
+                    $HWDstring .= "|Bonus1 = ". $HWDBonus1Collect ."\n|Bonus1 Reward = ". $HWDBonus1Scrip ."\n|Bonus1 EXP = ". $HWDBonus1EXP ."\n|Bonus1 Points = ". $HWDBonus1Points ."\n";
+                    $HWDstring .= "|Bonus2 = ". $HWDBonus2Collect ."\n|Bonus2 Reward = ". $HWDBonus2Scrip ."\n|Bonus2 EXP = ". $HWDBonus2EXP ."\n|Bonus2 Points = ". $HWDBonus2Points ."\n}}{{-stop-}}";
                     $HWDCollectable[] = $HWDstring;
                 }
             }
-
-            $HWDCollectable = implode("\n", $HWDCollectable);
-
-            //---------------------------------------------------------------------------------
-
-            $data = [
-                '{Collectable}' => $HWDCollectable,
-            ];
-
-            // format using Gamer Escape formatter and add to data array
-            $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
         }
+
+        $HWDCollectable = implode("\n", $HWDCollectable);
+
+        //---------------------------------------------------------------------------------
+
+        $data = [
+            '{Collectable}' => $HWDCollectable,
+        ];
+
+        // format using Gamer Escape formatter and add to data array
+        $this->data[] = GeFormatter::format(self::WIKI_FORMAT, $data);
         $this->saveExtra("HWDCollectables.txt", $HWDCollectable);
         //// save our data to the filename: GeCollectWiki.txt
         //$console->overwrite(" > Completed HWDCrafter ID: {$id}");
