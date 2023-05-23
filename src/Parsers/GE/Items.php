@@ -78,7 +78,7 @@ class Items implements ParseInterface
         // loop through data
         foreach ($ItemCsv->data as $id => $item) {
             $this->io->progressAdvance();
-
+            if ($id === 0) continue;
             // skip ones without a name
             if (empty($item['Name'])) continue;
             //if ($item['ItemSpecialBonus'] !== "8") continue;
@@ -383,7 +383,7 @@ class Items implements ParseInterface
                         if (!empty($item["BaseParam{Special}[$i]"])) {
                             $ParamName = str_replace(" ", "_", $BaseParamCsv->at($item["BaseParam{Special}[$i]"])['Name']);
                             $SetBonus[0] = "\n";
-                            $SetBonus[] = "| Eureka $ParamName = +". str_replace("-", null, $item["BaseParamValue{Special}[$i]"]);
+                            $SetBonus[] = "| Eureka $ParamName = +". str_replace("-", "", $item["BaseParamValue{Special}[$i]"]);
                         }
                     }
                     break;
@@ -393,7 +393,7 @@ class Items implements ParseInterface
                             if (!empty($item["BaseParam{Special}[$i]"])) {
                                 $ParamName = str_replace(" ", "_", $BaseParamCsv->at($item["BaseParam{Special}[$i]"])['Name']);
                                 $SetBonus[0] = "\n";
-                                $SetBonus[] = "| Bozja $ParamName = +" . str_replace("-", null, $item["BaseParamValue{Special}[$i]"]);
+                                $SetBonus[] = "| Bozja $ParamName = +" . str_replace("-", "", $item["BaseParamValue{Special}[$i]"]);
                             }
                         }
                     break;

@@ -95,6 +95,7 @@ class EquipmentImageBot implements ParseInterface
         $SGEOut = "";
         foreach ($ItemCsv->data as $id => $Item) {
             // ---------------------------------------------------------
+            if ($id === 0) continue;
             $this->io->progressAdvance();
             if (empty($Item['Name'])) continue;
             if ($PatchNumber[$id] != $Patch) continue;

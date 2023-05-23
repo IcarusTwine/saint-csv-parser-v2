@@ -208,6 +208,7 @@ class Collectable implements ParseInterface
         $console = $console->section();
 
         $HWDCollectable = [];
+        $Sells3 = [];
         foreach ($HWDCrafterSupplyCsv->data as $id => $item) {
             //---------------------------------------------------------------------------------
             // Actual code definition begins below!
@@ -268,7 +269,21 @@ class Collectable implements ParseInterface
                     $HWDstring .= "|Class = ". $HWDClass ."\n|Level = ". $HWDLevel ."\n|Name = ". $HWDName ."\n|Reward = ". $HWDCurrency ."\n|Phase = ". $HWDPhase ."\n";
                     $HWDstring .= "|Base = ". $HWDBaseCollect ."\n|Base Reward = ". $HWDBaseScrip ."\n|Base EXP = ". $HWDBaseEXP ."\n|Base Points = ". $HWDBasePoints ."\n";
                     $HWDstring .= "|Bonus1 = ". $HWDBonus1Collect ."\n|Bonus1 Reward = ". $HWDBonus1Scrip ."\n|Bonus1 EXP = ". $HWDBonus1EXP ."\n|Bonus1 Points = ". $HWDBonus1Points ."\n";
-                    $HWDstring .= "|Bonus2 = ". $HWDBonus2Collect ."\n|Bonus2 Reward = ". $HWDBonus2Scrip ."\n|Bonus2 EXP = ". $HWDBonus2EXP ."\n|Bonus2 Points = ". $HWDBonus2Points ."\n}}{{-stop-}}";
+                    $HWDstring .= "|Bonus2 = ". $HWDBonus2Collect ."\n|Bonus2 Reward = ". $HWDBonus2Scrip ."\n|Bonus2 EXP = ". $HWDBonus2EXP ."\n|Bonus2 Points = ". $HWDBonus2Points ."\n}}\n";
+
+                    if ($HWDBasePoints === "0"){
+                        $add0 = "";
+                        $add1 = "";
+                        $add2 = "";
+                    } else {
+                        $add0 = "|Additional=Skyward Point|AdditionalQuantity=$HWDBasePoints";
+                        $add1 = "|Additional=Skyward Point|AdditionalQuantity=$HWDBonus1Points";
+                        $add2 = "|Additional=Skyward Point|AdditionalQuantity=$HWDBonus2Points";
+                    }
+                    $Sells3[$HWDPhase][$HWDClass][] = "{{Sells3|$HWDCurrency|Quantity=$HWDBaseScrip|Cost1=$HWDName|Count1=1|Collectable=$HWDBaseCollect - ". $HWDBonus1Collect - 1 ."$add0}}\n";
+                    $Sells3[$HWDPhase][$HWDClass][] = "{{Sells3|$HWDCurrency|Quantity=$HWDBonus1Scrip|Cost1=$HWDName|Count1=1|Collectable=". $HWDBonus1Collect ." - ". $HWDBonus2Collect - 1 ."$add1}}\n";
+                    $Sells3[$HWDPhase][$HWDClass][] = "{{Sells3|$HWDCurrency|Quantity=$HWDBonus2Scrip|Cost1=$HWDName|Count1=1|Collectable=". $HWDBonus2Collect."+$add2}}\n";
+                    $HWDstring .= "{{-stop-}}\n";
                     $HWDCollectable[] = $HWDstring;
                 }
             }
@@ -294,5 +309,15 @@ class Collectable implements ParseInterface
         //    ['Filename', 'Data Count', 'File Size'],
         //    $info
         //);
+        $sellsOut = "";
+        foreach($Sells3 as $phase => $a){
+            $sellsOut .= "======================================$phase===============================\n";
+            foreach($a as $class => $b){
+                $sellsOut .= "-----------------------------$class-----------------------------\n";
+                $sellsOut .= implode($b);
+            }
+            $sellsOut .= "################################################################################\n\n";
+        }
+        file_put_contents("./HWDSells3.txt",$sellsOut);
     }//
 }
