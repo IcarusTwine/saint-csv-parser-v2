@@ -69156,5 +69156,1725 @@
     },
     "39347": {
         "0": "Manderville Scythe"
+    },
+    "39651": {
+        "1": "Ornate Diadochos Jacket of Fending"
+    },
+    "39656": {
+        "1": "Ornate Diadochos Jacket of Maiming"
+    },
+    "39661": {
+        "1": "Ornate Diadochos Jacket of Striking"
+    },
+    "39666": {
+        "1": "Ornate Diadochos Jacket of Aiming"
+    },
+    "39671": {
+        "1": "Ornate Diadochos Jacket of Scouting"
+    },
+    "39676": {
+        "1": "Ornate Diadochos Coat of Healing"
+    },
+    "39681": {
+        "1": "Ornate Diadochos Coat of Casting"
+    },
+    "39685": {
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting"
+    },
+    "39686": {
+        "0": "Diadochos Earring of Fending",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting"
+    },
+    "39687": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting"
+    },
+    "39688": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "4": "Diadochos Earring of Casting"
+    },
+    "39689": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing"
+    },
+    "39690": {
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting"
+    },
+    "39691": {
+        "0": "Diadochos Choker of Fending",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting"
+    },
+    "39692": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting"
+    },
+    "39693": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "4": "Diadochos Choker of Casting"
+    },
+    "39694": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing"
+    },
+    "39695": {
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting"
+    },
+    "39696": {
+        "0": "Diadochos Wristband of Fending",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting"
+    },
+    "39697": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting"
+    },
+    "39698": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "4": "Diadochos Wristband of Casting"
+    },
+    "39699": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing"
+    },
+    "39700": {
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting"
+    },
+    "39701": {
+        "0": "Diadochos Ring of Fending",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting"
+    },
+    "39702": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting"
+    },
+    "39703": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "4": "Diadochos Ring of Casting"
+    },
+    "39704": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing"
+    },
+    "39856": {
+        "1": "Natural Afflatus Earrings"
+    },
+    "39857": {
+        "1": "Natural Afflatus Necklace"
+    },
+    "39858": {
+        "1": "Natural Afflatus Wristband"
+    },
+    "39859": {
+        "1": "Natural Afflatus Ring"
+    },
+    "39860": {
+        "0": "Artful Afflatus Earrings"
+    },
+    "39861": {
+        "0": "Artful Afflatus Necklace"
+    },
+    "39862": {
+        "0": "Artful Afflatus Bracelet"
+    },
+    "39863": {
+        "0": "Artful Afflatus Ring"
+    },
+    "39960": {
+        "1": "Ascension Face Guard of Fending"
+    },
+    "39961": {
+        "1": "Ascension Mail of Fending"
+    },
+    "39962": {
+        "1": "Ascension Gauntlets of Fending"
+    },
+    "39963": {
+        "1": "Ascension Hose of Fending"
+    },
+    "39964": {
+        "1": "Ascension Sollerets of Fending"
+    },
+    "39965": {
+        "1": "Ascension Face Guard of Maiming"
+    },
+    "39966": {
+        "1": "Ascension Mail of Maiming"
+    },
+    "39967": {
+        "1": "Ascension Gauntlets of Maiming"
+    },
+    "39968": {
+        "1": "Ascension Hose of Maiming"
+    },
+    "39969": {
+        "1": "Ascension Sollerets of Maiming"
+    },
+    "39970": {
+        "1": "Ascension Hat of Striking"
+    },
+    "39971": {
+        "1": "Ascension Cloak of Striking"
+    },
+    "39972": {
+        "1": "Ascension Gloves of Striking"
+    },
+    "39973": {
+        "1": "Ascension Hose of Striking"
+    },
+    "39974": {
+        "1": "Ascension Sabatons of Striking"
+    },
+    "39975": {
+        "1": "Ascension Hat of Aiming"
+    },
+    "39976": {
+        "1": "Ascension Cloak of Aiming"
+    },
+    "39977": {
+        "1": "Ascension Gloves of Aiming"
+    },
+    "39978": {
+        "1": "Ascension Hose of Aiming"
+    },
+    "39979": {
+        "1": "Ascension Sabatons of Aiming"
+    },
+    "39980": {
+        "1": "Ascension Hat of Scouting"
+    },
+    "39981": {
+        "1": "Ascension Cloak of Scouting"
+    },
+    "39982": {
+        "1": "Ascension Gloves of Scouting"
+    },
+    "39983": {
+        "1": "Ascension Hose of Scouting"
+    },
+    "39984": {
+        "1": "Ascension Sabatons of Scouting"
+    },
+    "39985": {
+        "1": "Ascension Turban of Healing"
+    },
+    "39986": {
+        "1": "Ascension Robe of Healing"
+    },
+    "39987": {
+        "1": "Ascension Gloves of Healing"
+    },
+    "39988": {
+        "1": "Ascension Longkilt of Healing"
+    },
+    "39989": {
+        "1": "Ascension Sandals of Healing"
+    },
+    "39990": {
+        "1": "Ascension Turban of Casting"
+    },
+    "39991": {
+        "1": "Ascension Robe of Casting"
+    },
+    "39992": {
+        "1": "Ascension Gloves of Casting"
+    },
+    "39993": {
+        "1": "Ascension Longkilt of Casting"
+    },
+    "39994": {
+        "1": "Ascension Sandals of Casting"
+    },
+    "39995": {
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "39996": {
+        "0": "Anabaseios Earring of Fending",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "39997": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "39998": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "39999": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "40000": {
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40001": {
+        "0": "Anabaseios Necklace of Fending",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40002": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40003": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40004": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40005": {
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40006": {
+        "0": "Anabaseios Bracelet of Fending",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40007": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40008": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40009": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40010": {
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40011": {
+        "0": "Anabaseios Ring of Fending",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40012": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40013": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40014": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40015": {
+        "1": "Augmented Polaris Point"
+    },
+    "40016": {
+        "1": "Augmented Dragon's Beard Fists"
+    },
+    "40017": {
+        "1": "Augmented Wrathgrinder"
+    },
+    "40018": {
+        "1": "Augmented Night's Wolf"
+    },
+    "40019": {
+        "1": "Augmented Bluebird's Nest"
+    },
+    "40020": {
+        "1": "Augmented Shinobi Knives"
+    },
+    "40021": {
+        "1": "Augmented Blood Rapture"
+    },
+    "40022": {
+        "1": "Augmented Vit\u00f3ria do Povo"
+    },
+    "40023": {
+        "1": "Augmented Bunny's Crescent"
+    },
+    "40024": {
+        "1": "Augmented Ignis Malus"
+    },
+    "40025": {
+        "1": "Augmented Encounter in Lilies"
+    },
+    "40026": {
+        "1": "Augmented Faerie Fancy"
+    },
+    "40027": {
+        "1": "Augmented Star Gazer"
+    },
+    "40028": {
+        "1": "Augmented Higan Shigan"
+    },
+    "40029": {
+        "1": "Augmented Lamplight Crook"
+    },
+    "40030": {
+        "1": "Augmented Cerberus Fang"
+    },
+    "40031": {
+        "1": "Augmented Twin Moons"
+    },
+    "40032": {
+        "1": "Augmented Isnae Phis"
+    },
+    "40033": {
+        "1": "Augmented Avatar's Scythe"
+    },
+    "40035": {
+        "1": "Augmented Credendum Circlet of Fending"
+    },
+    "40036": {
+        "1": "Augmented Credendum Cuirass of Fending"
+    },
+    "40037": {
+        "1": "Augmented Credendum Gauntlets of Fending"
+    },
+    "40038": {
+        "1": "Augmented Credendum Breeches of Fending"
+    },
+    "40039": {
+        "1": "Augmented Credendum Sollerets of Fending"
+    },
+    "40040": {
+        "1": "Augmented Credendum Circlet of Maiming"
+    },
+    "40041": {
+        "1": "Augmented Credendum Cuirass of Maiming"
+    },
+    "40042": {
+        "1": "Augmented Credendum Gauntlets of Maiming"
+    },
+    "40043": {
+        "1": "Augmented Credendum Breeches of Maiming"
+    },
+    "40044": {
+        "1": "Augmented Credendum Sollerets of Maiming"
+    },
+    "40045": {
+        "1": "Augmented Credendum Blinder of Striking"
+    },
+    "40046": {
+        "1": "Augmented Credendum Corselet of Striking"
+    },
+    "40047": {
+        "1": "Augmented Credendum Armguards of Striking"
+    },
+    "40048": {
+        "1": "Augmented Credendum Trousers of Striking"
+    },
+    "40049": {
+        "1": "Augmented Credendum Longboots of Striking"
+    },
+    "40050": {
+        "1": "Augmented Credendum Hat of Aiming"
+    },
+    "40051": {
+        "1": "Augmented Credendum Mail of Aiming"
+    },
+    "40052": {
+        "1": "Augmented Credendum Halfgloves of Aiming"
+    },
+    "40053": {
+        "1": "Augmented Credendum Hose of Aiming"
+    },
+    "40054": {
+        "1": "Augmented Credendum Shoes of Aiming"
+    },
+    "40055": {
+        "1": "Augmented Credendum Blinder of Scouting"
+    },
+    "40056": {
+        "1": "Augmented Credendum Corselet of Scouting"
+    },
+    "40057": {
+        "1": "Augmented Credendum Armguards of Scouting"
+    },
+    "40058": {
+        "1": "Augmented Credendum Trousers of Scouting"
+    },
+    "40059": {
+        "1": "Augmented Credendum Longboots of Scouting"
+    },
+    "40060": {
+        "1": "Augmented Credendum Circlet of Healing"
+    },
+    "40061": {
+        "1": "Augmented Credendum Surcoat of Healing"
+    },
+    "40062": {
+        "1": "Augmented Credendum Gauntlets of Healing"
+    },
+    "40063": {
+        "1": "Augmented Credendum Hose of Healing"
+    },
+    "40064": {
+        "1": "Augmented Credendum Sollerets of Healing"
+    },
+    "40065": {
+        "1": "Augmented Credendum Circlet of Casting"
+    },
+    "40066": {
+        "1": "Augmented Credendum Surcoat of Casting"
+    },
+    "40067": {
+        "1": "Augmented Credendum Gauntlets of Casting"
+    },
+    "40068": {
+        "1": "Augmented Credendum Hose of Casting"
+    },
+    "40069": {
+        "1": "Augmented Credendum Sollerets of Casting"
+    },
+    "40070": {
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40071": {
+        "0": "Credendum Earrings of Fending",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40072": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40073": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40074": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40075": {
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40076": {
+        "0": "Credendum Necklace of Fending",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40077": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40078": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40079": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40080": {
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40081": {
+        "0": "Credendum Bracelets of Fending",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40082": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40083": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40084": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40085": {
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40086": {
+        "0": "Credendum Ring of Fending",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40087": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40088": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40089": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40090": {
+        "0": "Polaris Point"
+    },
+    "40091": {
+        "0": "Dragon's Beard Fists"
+    },
+    "40092": {
+        "0": "Wrathgrinder"
+    },
+    "40093": {
+        "0": "Night's Wolf"
+    },
+    "40094": {
+        "0": "Bluebird's Nest"
+    },
+    "40095": {
+        "0": "Shinobi Knives"
+    },
+    "40096": {
+        "0": "Blood Rapture"
+    },
+    "40097": {
+        "0": "Vit\u00f3ria do Povo"
+    },
+    "40098": {
+        "0": "Bunny's Crescent"
+    },
+    "40099": {
+        "0": "Ignis Malus"
+    },
+    "40100": {
+        "0": "Encounter in Lilies"
+    },
+    "40101": {
+        "0": "Faerie Fancy"
+    },
+    "40102": {
+        "0": "Star Gazer"
+    },
+    "40103": {
+        "0": "Higan Shigan"
+    },
+    "40104": {
+        "0": "Lamplight Crook"
+    },
+    "40105": {
+        "0": "Cerberus Fang"
+    },
+    "40106": {
+        "0": "Twin Moons"
+    },
+    "40107": {
+        "0": "Isnae Phis"
+    },
+    "40108": {
+        "0": "Avatar's Scythe"
+    },
+    "40110": {
+        "0": "Credendum Circlet of Fending"
+    },
+    "40111": {
+        "0": "Credendum Cuirass of Fending"
+    },
+    "40112": {
+        "0": "Credendum Gauntlets of Fending"
+    },
+    "40113": {
+        "0": "Credendum Breeches of Fending"
+    },
+    "40114": {
+        "0": "Credendum Sollerets of Fending"
+    },
+    "40115": {
+        "0": "Credendum Circlet of Maiming"
+    },
+    "40116": {
+        "0": "Credendum Cuirass of Maiming"
+    },
+    "40117": {
+        "0": "Credendum Gauntlets of Maiming"
+    },
+    "40118": {
+        "0": "Credendum Breeches of Maiming"
+    },
+    "40119": {
+        "0": "Credendum Sollerets of Maiming"
+    },
+    "40120": {
+        "0": "Credendum Blinder of Striking"
+    },
+    "40121": {
+        "0": "Credendum Corselet of Striking"
+    },
+    "40122": {
+        "0": "Credendum Armguards of Striking"
+    },
+    "40123": {
+        "0": "Credendum Trousers of Striking"
+    },
+    "40124": {
+        "0": "Credendum Longboots of Striking"
+    },
+    "40125": {
+        "0": "Credendum Hat of Aiming"
+    },
+    "40126": {
+        "0": "Credendum Mail of Aiming"
+    },
+    "40127": {
+        "0": "Credendum Halfgloves of Aiming"
+    },
+    "40128": {
+        "0": "Credendum Hose of Aiming"
+    },
+    "40129": {
+        "0": "Credendum Shoes of Aiming"
+    },
+    "40130": {
+        "0": "Credendum Blinder of Scouting"
+    },
+    "40131": {
+        "0": "Credendum Corselet of Scouting"
+    },
+    "40132": {
+        "0": "Credendum Armguards of Scouting"
+    },
+    "40133": {
+        "0": "Credendum Trousers of Scouting"
+    },
+    "40134": {
+        "0": "Credendum Longboots of Scouting"
+    },
+    "40135": {
+        "0": "Credendum Circlet of Healing"
+    },
+    "40136": {
+        "0": "Credendum Surcoat of Healing"
+    },
+    "40137": {
+        "0": "Credendum Gauntlets of Healing"
+    },
+    "40138": {
+        "0": "Credendum Hose of Healing"
+    },
+    "40139": {
+        "0": "Credendum Sollerets of Healing"
+    },
+    "40140": {
+        "0": "Credendum Circlet of Casting"
+    },
+    "40141": {
+        "0": "Credendum Surcoat of Casting"
+    },
+    "40142": {
+        "0": "Credendum Gauntlets of Casting"
+    },
+    "40143": {
+        "0": "Credendum Hose of Casting"
+    },
+    "40144": {
+        "0": "Credendum Sollerets of Casting"
+    },
+    "40145": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40146": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40147": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "8": "Augmented Credendum Earrings of Healing",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40148": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "9": "Augmented Credendum Earrings of Casting"
+    },
+    "40149": {
+        "0": "Credendum Earrings of Fending",
+        "1": "Credendum Earrings of Slaying",
+        "2": "Credendum Earrings of Aiming",
+        "3": "Credendum Earrings of Healing",
+        "4": "Credendum Earrings of Casting",
+        "5": "Augmented Credendum Earrings of Fending",
+        "6": "Augmented Credendum Earrings of Slaying",
+        "7": "Augmented Credendum Earrings of Aiming",
+        "8": "Augmented Credendum Earrings of Healing"
+    },
+    "40150": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40151": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40152": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "8": "Augmented Credendum Necklace of Healing",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40153": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "9": "Augmented Credendum Necklace of Casting"
+    },
+    "40154": {
+        "0": "Credendum Necklace of Fending",
+        "1": "Credendum Necklace of Slaying",
+        "2": "Credendum Necklace of Aiming",
+        "3": "Credendum Necklace of Healing",
+        "4": "Credendum Necklace of Casting",
+        "5": "Augmented Credendum Necklace of Fending",
+        "6": "Augmented Credendum Necklace of Slaying",
+        "7": "Augmented Credendum Necklace of Aiming",
+        "8": "Augmented Credendum Necklace of Healing"
+    },
+    "40155": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40156": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40157": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "8": "Augmented Credendum Bracelets of Healing",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40158": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "9": "Augmented Credendum Bracelets of Casting"
+    },
+    "40159": {
+        "0": "Credendum Bracelets of Fending",
+        "1": "Credendum Bracelets of Slaying",
+        "2": "Credendum Bracelets of Aiming",
+        "3": "Credendum Bracelets of Healing",
+        "4": "Credendum Bracelets of Casting",
+        "5": "Augmented Credendum Bracelets of Fending",
+        "6": "Augmented Credendum Bracelets of Slaying",
+        "7": "Augmented Credendum Bracelets of Aiming",
+        "8": "Augmented Credendum Bracelets of Healing"
+    },
+    "40160": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40161": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40162": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "8": "Augmented Credendum Ring of Healing",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40163": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "9": "Augmented Credendum Ring of Casting"
+    },
+    "40164": {
+        "0": "Credendum Ring of Fending",
+        "1": "Credendum Ring of Slaying",
+        "2": "Credendum Ring of Aiming",
+        "3": "Credendum Ring of Healing",
+        "4": "Credendum Ring of Casting",
+        "5": "Augmented Credendum Ring of Fending",
+        "6": "Augmented Credendum Ring of Slaying",
+        "7": "Augmented Credendum Ring of Aiming",
+        "8": "Augmented Credendum Ring of Healing"
+    },
+    "40185": {
+        "0": "Anabaseios Face Guard of Fending"
+    },
+    "40186": {
+        "0": "Anabaseios Mail of Fending"
+    },
+    "40187": {
+        "0": "Anabaseios Gauntlets of Fending"
+    },
+    "40188": {
+        "0": "Anabaseios Hose of Fending"
+    },
+    "40189": {
+        "0": "Anabaseios Sollerets of Fending"
+    },
+    "40190": {
+        "0": "Anabaseios Face Guard of Maiming"
+    },
+    "40191": {
+        "0": "Anabaseios Mail of Maiming"
+    },
+    "40192": {
+        "0": "Anabaseios Gauntlets of Maiming"
+    },
+    "40193": {
+        "0": "Anabaseios Hose of Maiming"
+    },
+    "40194": {
+        "0": "Anabaseios Sollerets of Maiming"
+    },
+    "40195": {
+        "0": "Anabaseios Hat of Striking"
+    },
+    "40196": {
+        "0": "Anabaseios Cloak of Striking"
+    },
+    "40197": {
+        "0": "Anabaseios Gloves of Striking"
+    },
+    "40198": {
+        "0": "Anabaseios Hose of Striking"
+    },
+    "40199": {
+        "0": "Anabaseios Sabatons of Striking"
+    },
+    "40200": {
+        "0": "Anabaseios Hat of Aiming"
+    },
+    "40201": {
+        "0": "Anabaseios Cloak of Aiming"
+    },
+    "40202": {
+        "0": "Anabaseios Gloves of Aiming"
+    },
+    "40203": {
+        "0": "Anabaseios Hose of Aiming"
+    },
+    "40204": {
+        "0": "Anabaseios Sabatons of Aiming"
+    },
+    "40205": {
+        "0": "Anabaseios Hat of Scouting"
+    },
+    "40206": {
+        "0": "Anabaseios Cloak of Scouting"
+    },
+    "40207": {
+        "0": "Anabaseios Gloves of Scouting"
+    },
+    "40208": {
+        "0": "Anabaseios Hose of Scouting"
+    },
+    "40209": {
+        "0": "Anabaseios Sabatons of Scouting"
+    },
+    "40210": {
+        "0": "Anabaseios Turban of Healing"
+    },
+    "40211": {
+        "0": "Anabaseios Robe of Healing"
+    },
+    "40212": {
+        "0": "Anabaseios Gloves of Healing"
+    },
+    "40213": {
+        "0": "Anabaseios Longkilt of Healing"
+    },
+    "40214": {
+        "0": "Anabaseios Sandals of Healing"
+    },
+    "40215": {
+        "0": "Anabaseios Turban of Casting"
+    },
+    "40216": {
+        "0": "Anabaseios Robe of Casting"
+    },
+    "40217": {
+        "0": "Anabaseios Gloves of Casting"
+    },
+    "40218": {
+        "0": "Anabaseios Longkilt of Casting"
+    },
+    "40219": {
+        "0": "Anabaseios Sandals of Casting"
+    },
+    "40220": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "40221": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "40222": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "8": "Ascension Earring of Healing",
+        "9": "Ascension Earring of Casting"
+    },
+    "40223": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "9": "Ascension Earring of Casting"
+    },
+    "40224": {
+        "0": "Anabaseios Earring of Fending",
+        "1": "Anabaseios Earring of Slaying",
+        "2": "Anabaseios Earring of Aiming",
+        "3": "Anabaseios Earring of Healing",
+        "4": "Anabaseios Earring of Casting",
+        "5": "Ascension Earring of Fending",
+        "6": "Ascension Earring of Slaying",
+        "7": "Ascension Earring of Aiming",
+        "8": "Ascension Earring of Healing"
+    },
+    "40225": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40226": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40227": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "8": "Ascension Necklace of Healing",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40228": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "9": "Ascension Necklace of Casting"
+    },
+    "40229": {
+        "0": "Anabaseios Necklace of Fending",
+        "1": "Anabaseios Necklace of Slaying",
+        "2": "Anabaseios Necklace of Aiming",
+        "3": "Anabaseios Necklace of Healing",
+        "4": "Anabaseios Necklace of Casting",
+        "5": "Ascension Necklace of Fending",
+        "6": "Ascension Necklace of Slaying",
+        "7": "Ascension Necklace of Aiming",
+        "8": "Ascension Necklace of Healing"
+    },
+    "40230": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40231": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40232": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "8": "Ascension Bracelet of Healing",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40233": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "9": "Ascension Bracelet of Casting"
+    },
+    "40234": {
+        "0": "Anabaseios Bracelet of Fending",
+        "1": "Anabaseios Bracelet of Slaying",
+        "2": "Anabaseios Bracelet of Aiming",
+        "3": "Anabaseios Bracelet of Healing",
+        "4": "Anabaseios Bracelet of Casting",
+        "5": "Ascension Bracelet of Fending",
+        "6": "Ascension Bracelet of Slaying",
+        "7": "Ascension Bracelet of Aiming",
+        "8": "Ascension Bracelet of Healing"
+    },
+    "40235": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40236": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40237": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "8": "Ascension Ring of Healing",
+        "9": "Ascension Ring of Casting"
+    },
+    "40238": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "9": "Ascension Ring of Casting"
+    },
+    "40239": {
+        "0": "Anabaseios Ring of Fending",
+        "1": "Anabaseios Ring of Slaying",
+        "2": "Anabaseios Ring of Aiming",
+        "3": "Anabaseios Ring of Healing",
+        "4": "Anabaseios Ring of Casting",
+        "5": "Ascension Ring of Fending",
+        "6": "Ascension Ring of Slaying",
+        "7": "Ascension Ring of Aiming",
+        "8": "Ascension Ring of Healing"
+    },
+    "40275": {
+        "1": "Distance Earring of Slaying",
+        "2": "Distance Earring of Aiming",
+        "3": "Distance Earring of Healing",
+        "4": "Distance Earring of Casting"
+    },
+    "40276": {
+        "0": "Distance Earring of Fending",
+        "2": "Distance Earring of Aiming",
+        "3": "Distance Earring of Healing",
+        "4": "Distance Earring of Casting"
+    },
+    "40277": {
+        "0": "Distance Earring of Fending",
+        "1": "Distance Earring of Slaying",
+        "3": "Distance Earring of Healing",
+        "4": "Distance Earring of Casting"
+    },
+    "40278": {
+        "0": "Distance Earring of Fending",
+        "1": "Distance Earring of Slaying",
+        "2": "Distance Earring of Aiming",
+        "4": "Distance Earring of Casting"
+    },
+    "40279": {
+        "0": "Distance Earring of Fending",
+        "1": "Distance Earring of Slaying",
+        "2": "Distance Earring of Aiming",
+        "3": "Distance Earring of Healing"
+    },
+    "40280": {
+        "1": "Distance Choker of Slaying",
+        "2": "Distance Choker of Aiming",
+        "3": "Distance Choker of Healing",
+        "4": "Distance Choker of Casting"
+    },
+    "40281": {
+        "0": "Distance Choker of Fending",
+        "2": "Distance Choker of Aiming",
+        "3": "Distance Choker of Healing",
+        "4": "Distance Choker of Casting"
+    },
+    "40282": {
+        "0": "Distance Choker of Fending",
+        "1": "Distance Choker of Slaying",
+        "3": "Distance Choker of Healing",
+        "4": "Distance Choker of Casting"
+    },
+    "40283": {
+        "0": "Distance Choker of Fending",
+        "1": "Distance Choker of Slaying",
+        "2": "Distance Choker of Aiming",
+        "4": "Distance Choker of Casting"
+    },
+    "40284": {
+        "0": "Distance Choker of Fending",
+        "1": "Distance Choker of Slaying",
+        "2": "Distance Choker of Aiming",
+        "3": "Distance Choker of Healing"
+    },
+    "40285": {
+        "1": "Distance Bracelet of Slaying",
+        "2": "Distance Bracelet of Aiming",
+        "3": "Distance Bracelet of Healing",
+        "4": "Distance Bracelet of Casting"
+    },
+    "40286": {
+        "0": "Distance Bracelet of Fending",
+        "2": "Distance Bracelet of Aiming",
+        "3": "Distance Bracelet of Healing",
+        "4": "Distance Bracelet of Casting"
+    },
+    "40287": {
+        "0": "Distance Bracelet of Fending",
+        "1": "Distance Bracelet of Slaying",
+        "3": "Distance Bracelet of Healing",
+        "4": "Distance Bracelet of Casting"
+    },
+    "40288": {
+        "0": "Distance Bracelet of Fending",
+        "1": "Distance Bracelet of Slaying",
+        "2": "Distance Bracelet of Aiming",
+        "4": "Distance Bracelet of Casting"
+    },
+    "40289": {
+        "0": "Distance Bracelet of Fending",
+        "1": "Distance Bracelet of Slaying",
+        "2": "Distance Bracelet of Aiming",
+        "3": "Distance Bracelet of Healing"
+    },
+    "40290": {
+        "1": "Distance Ring of Slaying",
+        "2": "Distance Ring of Aiming",
+        "3": "Distance Ring of Healing",
+        "4": "Distance Ring of Casting"
+    },
+    "40291": {
+        "0": "Distance Ring of Fending",
+        "2": "Distance Ring of Aiming",
+        "3": "Distance Ring of Healing",
+        "4": "Distance Ring of Casting"
+    },
+    "40292": {
+        "0": "Distance Ring of Fending",
+        "1": "Distance Ring of Slaying",
+        "3": "Distance Ring of Healing",
+        "4": "Distance Ring of Casting"
+    },
+    "40293": {
+        "0": "Distance Ring of Fending",
+        "1": "Distance Ring of Slaying",
+        "2": "Distance Ring of Aiming",
+        "4": "Distance Ring of Casting"
+    },
+    "40294": {
+        "0": "Distance Ring of Fending",
+        "1": "Distance Ring of Slaying",
+        "2": "Distance Ring of Aiming",
+        "3": "Distance Ring of Healing"
+    },
+    "40613": {
+        "0": "Diadochos Jacket of Fending"
+    },
+    "40614": {
+        "0": "Diadochos Jacket of Maiming"
+    },
+    "40615": {
+        "0": "Diadochos Jacket of Striking"
+    },
+    "40616": {
+        "0": "Diadochos Jacket of Aiming"
+    },
+    "40617": {
+        "0": "Diadochos Jacket of Scouting"
+    },
+    "40618": {
+        "0": "Diadochos Coat of Healing"
+    },
+    "40619": {
+        "0": "Diadochos Coat of Casting"
     }
 }
