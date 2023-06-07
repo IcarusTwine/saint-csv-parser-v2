@@ -28,12 +28,6 @@ class NpcsPagesAll implements ParseInterface
         $CustomTalkCsv = $this->csv('CustomTalk');
         $CustomTalkNestHandlersCsv = $this->csv('CustomTalkNestHandlers');
         $HowToCsv = $this->csv('HowTo');
-        $HowToCategoryCsv = $this->csv('HowToCategory');
-        $HowToPageCsv = $this->csv('HowToPage');
-        $JingleCsv = $this->csv('Jingle');
-        $ScreenImageCsv = $this->csv('ScreenImage');
-        $GatheringLeveCsv = $this->csv('GatheringLeve');
-        $GatheringLeveRuleCsv = $this->csv('GatheringLeveRule');
         $EventItemCsv = $this->csv('EventItem');
         $ItemCsv = $this->csv('Item');
         $GilShopCsv = $this->csv('GilShop');
@@ -48,30 +42,22 @@ class NpcsPagesAll implements ParseInterface
         $GuildLeveAssignmentCsv = $this->csv('GuildLeveAssignment');
         $GuildLeveAssignmentTalkCsv = $this->csv('GuildLeveAssignmentTalk');
         $GCShopCsv = $this->csv('GCShop');
-        $GrandCompanyCsv = $this->csv('GrandCompany');
-        $LogMessageCsv = $this->csv('LogMessage');
         $SpecialShopCsv = $this->csv('SpecialShop');
         $SwitchTalkVariationCsv = $this->csv('SwitchTalkVariation');
         $TripleTriadCardCsv = $this->csv('TripleTriadCard');
         $TripleTriadCsv = $this->csv('TripleTriad');
         $TripleTriadRuleCsv = $this->csv('TripleTriadRule');
         $FCCShopCsv = $this->csv('FccShop');
-        $DpsChallengeOfficerCsv = $this->csv('DpsChallengeOfficer');
-        $DpsChallengeCsv = $this->csv('DpsChallenge');
         $TopicSelectCsv = $this->csv('TopicSelect');
         $PreHandlerCsv = $this->csv('PreHandler');
         $InclusionShopCsv = $this->csv('InclusionShop');
         $InclusionShopCategoryCsv = $this->csv('InclusionShopCategory');
         $InclusionShopSeriesCsv = $this->csv('InclusionShopSeries');
-        $DisposalShopCsv = $this->csv('DisposalShop');
-        $DisposalShopItemCsv = $this->csv('DisposalShopItem');
         $DescriptionCsv = $this->csv('Description');
-        $ClassJobCategoryCsv = $this->csv('ClassJobCategory');
         $BalloonCsv = $this->csv('Balloon');
         $BehaviourCsv = $this->csv('Behavior');
         $TribeCsv = $this->csv('Tribe');
         $RaceCsv = $this->csv('Race');
-        $LeveStringCsv = $this->csv('LeveString');
         $WarpCsv = $this->csv('Warp');
         $WarpConditionCsv = $this->csv('WarpCondition');
         $TerritoryTypeCsv = $this->csv('TerritoryType');
@@ -82,7 +68,6 @@ class NpcsPagesAll implements ParseInterface
         $CharaMakeTypeCsv = $this->csv('CharaMakeType');
         $NpcEquipCsv = $this->csv('NpcEquip');
         $StainCsv = $this->csv('Stain');
-        $BNpcNameCsv = $this->csv("BNpcName");
         $GCScripShopCategoryCsv = $this->csv("GCScripShopCategory");
         $GCScripShopItemCsv = $this->csv("GCScripShopItem");
         $GCRankGridaniaMaleTextCsv = $this->csv("GCRankGridaniaMaleText");
@@ -138,6 +123,7 @@ class NpcsPagesAll implements ParseInterface
             }
             foreach(range(0,99) as $i) {
                 $SubValue = $key.".".$i;
+                if ($GCScripShopItemCsv->at($SubValue) === false) break;
                 if (empty($ItemCsv->at($GCScripShopItemCsv->at($SubValue)['Item'])['Name'])) break;
                 $Item = $ItemCsv->at($GCScripShopItemCsv->at($SubValue)['Item'])['Name'];
                 $Tier = $GCScripShopCategory['Tier'];
@@ -463,35 +449,38 @@ class NpcsPagesAll implements ParseInterface
             $sub = "";
             $NpcPlaceName = "";
             if (!empty($LGBArray[$id]['x'])) {
-                $MapX = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["X"];
-                $MapY = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["Y"];
-                $MapXPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PX"];
-                $MapYPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PY"];
+                if (!empty($LGBArray[$id]['Territory'])){
+                    $MapX = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["X"];
+                    $MapY = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["Y"];
+                    $MapXPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PX"];
+                    $MapYPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PY"];
 
-                $CoordLocation = "". $MapX ."-". $MapY ."";
-                $SubLocation = $subLocation;
-                $NpcPlaceName = $SubLocation;
-                $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['PlaceName'])['Name'];
-                $NpcMapCodeName = $TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['Name'];
-                $MapID = $TerritoryTypeCsv->at($LGBArray[$id]['id'])['Map'];
-                if ($MapCsv->at($MapID)["PlaceName{Sub}"] > 0) {
-                    $sub = " - ".$PlaceNameCsv->at($MapCsv->at($MapID)["PlaceName{Sub}"])['Name']."";
-                } elseif ($MapCsv->at($MapID)["PlaceName"] > 0) {
-                    $sub = "";
-                }
-                $code = substr($NpcMapCodeName, 0, 4);
-                if ($code == "z3e2") {
-                    $NpcPlaceName = "The Prima Vista Tiring Room";
-                }
-                if ($code == "f1d9") {
-                    $NpcPlaceName = "The Haunted Manor";
-                }
-                if (empty($NpcPlaceName)) {
-                    if (!empty($MapName)){
-                        $NpcPlaceName = $MapName;
+                    $CoordLocation = "". $MapX ."-". $MapY ."";
+                    $SubLocation = $subLocation;
+                    $NpcPlaceName = $SubLocation;
+                    $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['PlaceName'])['Name'];
+                    $NpcMapCodeName = $TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['Name'];
+                    if (empty($NpcMapCodeName)) continue;
+                    $MapID = $TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['Map'];
+                    if ($MapCsv->at($MapID)["PlaceName{Sub}"] > 0) {
+                        $sub = " - ".$PlaceNameCsv->at($MapCsv->at($MapID)["PlaceName{Sub}"])['Name']."";
+                    } elseif ($MapCsv->at($MapID)["PlaceName"] > 0) {
+                        $sub = "";
                     }
-                    if (empty($MapName)){
-                        $NpcPlaceName = "";
+                    $code = substr($NpcMapCodeName, 0, 4);
+                    if ($code == "z3e2") {
+                        $NpcPlaceName = "The Prima Vista Tiring Room";
+                    }
+                    if ($code == "f1d9") {
+                        $NpcPlaceName = "The Haunted Manor";
+                    }
+                    if (empty($NpcPlaceName)) {
+                        if (!empty($MapName)){
+                            $NpcPlaceName = $MapName;
+                        }
+                        if (empty($MapName)){
+                            $NpcPlaceName = "";
+                        }
                     }
                 }
             }
@@ -1906,70 +1895,73 @@ class NpcsPagesAll implements ParseInterface
             //produce map
             $MapOutputString = "";
             $sub = "";
-            if (!empty($LGBArray[$id]['x'])) {
-                $MapX = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["X"];
-                $MapY = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["Y"];
-                $MapXPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PX"];
-                $MapYPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PY"];
+            if (!empty($LGBArray[$id]['Territory'])){
+                if (!empty($LGBArray[$id]['x'])) {
+                    $MapX = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["X"];
+                    $MapY = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["Y"];
+                    $MapXPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PX"];
+                    $MapYPix = $this->GetLGBPos($LGBArray[$id]['x'], $LGBArray[$id]['y'], $LGBArray[$id]['Territory'], $TerritoryTypeCsv, $MapCsv)["PY"];
 
-                $SubLocation = $subLocation;
-                $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['PlaceName'])['Name'];
-                $NpcMapCodeName = $TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['Name'];
-                $MapID = $TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['Map'];
-                if ($MapCsv->at($MapID)["PlaceName{Sub}"] > 0) {
-                    $sub = " - ".$PlaceNameCsv->at($MapCsv->at($MapID)["PlaceName{Sub}"])['Name']."";
-                } elseif ($MapCsv->at($MapID)["PlaceName"] > 0) {
-                    $sub = "";
+                    $SubLocation = $subLocation;
+                    $MapName = $PlaceNameCsv->at($TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['PlaceName'])['Name'];
+                    $NpcMapCodeName = $TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['Name'];
+                    if (empty($NpcMapCodeName)) continue;
+                    $MapID = $TerritoryTypeCsv->at($LGBArray[$id]['Territory'])['Map'];
+                    if ($MapCsv->at($MapID)["PlaceName{Sub}"] > 0) {
+                        $sub = " - ".$PlaceNameCsv->at($MapCsv->at($MapID)["PlaceName{Sub}"])['Name']."";
+                    } elseif ($MapCsv->at($MapID)["PlaceName"] > 0) {
+                        $sub = "";
+                    }
+                    $code = substr($NpcMapCodeName, 0, 4);
+                    if ($code == "z3e2") {
+                        $MapName = "The Prima Vista Tiring Room";
+                    }
+                    if ($code == "f1d9") {
+                        $MapName = "The Haunted Manor";
+                    }
+                    $BasePlaceName = "$code - {$MapName}{$sub}";
+                    if ($subLocation === "Airship Landing"){
+                        $SubLocation = "Airship Landing ($MapName)"; 
+                    }
+                    if ($subLocation === "Castrum Oriens"){
+                        $SubLocation = "Castrum Oriens ($MapName)"; 
+                    }
+                    if ($subLocation === "The Solar"){
+                        $SubLocation = "The Solar ($MapName)"; 
+                    }
+        
+                    $LevelID = $LGBArray[$id]['id'];
+                    $Patch = $PatchNumber[$id];
+                    $MapFestival = "";
+                    $FestivalID = $LGBArray[$id]["festivalID"];
+                    if (!empty($LGBArray[$id]["festivalID"])) {
+                        $FesitvalName = $FestivalArray[$FestivalID];
+                        $MapFestival = "  | Event = ". str_replace("_", " (", $FesitvalName). ")\n";
+                    }
+                    $QuestIssuer = "";
+                    if (!empty($Issuers[$id])){
+                        $QuestIssuer = "  | Issuer = ".str_replace("","",$Issuers[$id])."\n";
+                    }
+                    //MapOutput = 
+                    $MapOutputString = "{{-start-}}\n'''". $NameFormatted ."/Map/". $id ."'''\n";
+                    $MapOutputString .= "{{NPCMap\n";
+                    $MapOutputString .= "  | base = $BasePlaceName.png\n";
+                    $MapOutputString .= "  | float_link = $NameFormatted\n";
+                    $MapOutputString .= "  | float_caption = $NameFormatted\n";
+                    $MapOutputString .= "  | float_caption_coordinates = (x:". $MapX .", y:". $MapY .")\n";
+                    $MapOutputString .= "  | x = $MapXPix\n";
+                    $MapOutputString .= "  | y = $MapYPix\n";
+                    $MapOutputString .= "  | zone = $MapName\n";
+                    $MapOutputString .= "  | level_id = $LevelID\n";
+                    $MapOutputString .= "  | npc_id = $id\n";
+                    $MapOutputString .= "$QuestIssuer";
+                    $MapOutputString .= "  | patch = $Patch\n";
+                    $MapOutputString .= "  | Sublocation = $SubLocation\n";
+                    $MapOutputString .= "$MapFestival";
+                    $MapOutputString .= "}}{{MapUpdate}}\n";
+                    $MapOutputString .= "{{-stop-}}\n";
+                    $MapArray[] = $MapOutputString;
                 }
-                $code = substr($NpcMapCodeName, 0, 4);
-                if ($code == "z3e2") {
-                    $MapName = "The Prima Vista Tiring Room";
-                }
-                if ($code == "f1d9") {
-                    $MapName = "The Haunted Manor";
-                }
-                $BasePlaceName = "$code - {$MapName}{$sub}";
-                if ($subLocation === "Airship Landing"){
-                    $SubLocation = "Airship Landing ($MapName)"; 
-                }
-                if ($subLocation === "Castrum Oriens"){
-                    $SubLocation = "Castrum Oriens ($MapName)"; 
-                }
-                if ($subLocation === "The Solar"){
-                    $SubLocation = "The Solar ($MapName)"; 
-                }
-    
-                $LevelID = $LGBArray[$id]['id'];
-                $Patch = $PatchNumber[$id];
-                $MapFestival = "";
-                $FestivalID = $LGBArray[$id]["festivalID"];
-                if (!empty($LGBArray[$id]["festivalID"])) {
-                    $FesitvalName = $FestivalArray[$FestivalID];
-                    $MapFestival = "  | Event = ". str_replace("_", " (", $FesitvalName). ")\n";
-                }
-                $QuestIssuer = "";
-                if (!empty($Issuers[$id])){
-                    $QuestIssuer = "  | Issuer = ".str_replace("","",$Issuers[$id])."\n";
-                }
-                //MapOutput = 
-                $MapOutputString = "{{-start-}}\n'''". $NameFormatted ."/Map/". $id ."'''\n";
-                $MapOutputString .= "{{NPCMap\n";
-                $MapOutputString .= "  | base = $BasePlaceName.png\n";
-                $MapOutputString .= "  | float_link = $NameFormatted\n";
-                $MapOutputString .= "  | float_caption = $NameFormatted\n";
-                $MapOutputString .= "  | float_caption_coordinates = (x:". $MapX .", y:". $MapY .")\n";
-                $MapOutputString .= "  | x = $MapXPix\n";
-                $MapOutputString .= "  | y = $MapYPix\n";
-                $MapOutputString .= "  | zone = $MapName\n";
-                $MapOutputString .= "  | level_id = $LevelID\n";
-                $MapOutputString .= "  | npc_id = $id\n";
-                $MapOutputString .= "$QuestIssuer";
-                $MapOutputString .= "  | patch = $Patch\n";
-                $MapOutputString .= "  | Sublocation = $SubLocation\n";
-                $MapOutputString .= "$MapFestival";
-                $MapOutputString .= "}}{{MapUpdate}}\n";
-                $MapOutputString .= "{{-stop-}}\n";
-                $MapArray[] = $MapOutputString;
             }
             $ShopItemsTotalNo = null;
             if (!empty($ShopItemsNumber[$NameFormatted])) {

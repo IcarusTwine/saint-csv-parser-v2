@@ -2648,6 +2648,7 @@ trait CsvParseTrait
                     $CountCheck = false;
                     foreach(range(0,999) as $e) {
                         $SubDataValue = "". $ShopItemID .".". $e ."";
+                        if ($CollectablesShopItemCsv->at($SubDataValue) === false) break;
                         if (empty($ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'])) break;
                         $countarray[] = $e;
                     }
@@ -2659,6 +2660,7 @@ trait CsvParseTrait
                     foreach(range(0,999) as $b) {
                         $number = $b + 1;
                         $SubDataValue = "". $ShopItemID .".". $b ."";
+                        if ($CollectablesShopItemCsv->at($SubDataValue) === false) break;
                         $GroupID = $CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopItemGroup'];
                         if (empty($ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'])) break;
                         $Item = $ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'];
@@ -2896,6 +2898,7 @@ trait CsvParseTrait
                 $ShopOutput["Dialogue"] = $DialogueOutput;
                 foreach(range(0,50) as $b) {
                     $GilShopSubArray = "". $DataValue . "." . $b ."";
+                    if ($GilShopItemCsv->at($GilShopSubArray) === false) break;
                     if (!empty($ItemCsv->at($GilShopItemCsv->at($GilShopSubArray)["Item"])["Name"])) {
                         $GilShopSellsItem = $ItemCsv->at($GilShopItemCsv->at($GilShopSubArray)["Item"])["Name"];
                         $GilShopSellsItemCost = $ItemCsv->at($GilShopItemCsv->at($GilShopSubArray)["Item"])["Price{Mid}"];
