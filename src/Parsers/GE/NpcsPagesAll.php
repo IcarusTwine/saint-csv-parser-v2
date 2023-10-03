@@ -543,7 +543,7 @@ class NpcsPagesAll implements ParseInterface
                                     $QuestText = "RequiredQuest{". $b ."}";
                                 break;
                                 case 3:
-                                    $QuestText = "DRequiredQuest{". $b ."}";
+                                    $QuestText = "RequiredQuest{". $b ."}";
                                 break;
                             }
                             if (empty($QuestCsv->at($WarpConditionCsv->at($Condition)[$QuestText])['Name'])) continue;

@@ -76,8 +76,8 @@ class TripleTriad implements ParseInterface
             };
 
             // Icon copying
-            $LargeIcon = (82100 + $TripleTriad['id']);
-            $SmallIcon = (82500 + $TripleTriad['id']);
+            $LargeIcon = (87000 + $TripleTriad['id']);
+            $SmallIcon = (88000 + $TripleTriad['id']);
             // ensure output directory exists
             $TriadIconoutputDirectory = $this->getOutputFolder() . "/$PatchID/TripleTriadIcons";
             // if it doesn't exist, make it

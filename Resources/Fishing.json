@@ -31513,7 +31513,7 @@
     ],
     "39810": [
         {
-            "FishName": "",
+            "FishName": "Forgiven Melancholy",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "813",
@@ -31895,7 +31895,7 @@
     ],
     "39815": [
         {
-            "FishName": "",
+            "FishName": "Oil Slick",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "814",
@@ -33173,7 +33173,7 @@
     ],
     "39809": [
         {
-            "FishName": "",
+            "FishName": "Gold Dustfish",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "815",
@@ -34046,6 +34046,50 @@
     "27480": [
         {
             "FishName": "Golden Lobster",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "816",
+                "Name": "Il Mheg"
+            },
+            "Map": "494",
+            "PlaceName": "Saint Fathric's Temple",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "74",
+            "Rare": "False",
+            "Position": {
+                "px": "1695",
+                "py": "1265",
+                "cx": 34.9,
+                "cy": 26.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "41300": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "816",
+                "Name": "Il Mheg"
+            },
+            "Map": "494",
+            "PlaceName": "Saint Fathric's Temple",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "74",
+            "Rare": "False",
+            "Position": {
+                "px": "1695",
+                "py": "1265",
+                "cx": 34.9,
+                "cy": 26.3,
+                "Radius": "900"
+            }
+        }
+    ],
+    "41301": [
+        {
+            "FishName": "",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "816",
@@ -35485,7 +35529,7 @@
     ],
     "39816": [
         {
-            "FishName": "",
+            "FishName": "Gonzalo's Grace",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "818",
@@ -37590,6 +37634,72 @@
                 "cx": 6.1,
                 "cy": 6.1,
                 "Radius": "300"
+            }
+        }
+    ],
+    "41302": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "817",
+                "Name": "The Rak'tika Greatwood"
+            },
+            "Map": "495",
+            "PlaceName": "Mjrl's Tears",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "70",
+            "Rare": "False",
+            "Position": {
+                "px": "1250",
+                "py": "1785",
+                "cx": 26,
+                "cy": 36.7,
+                "Radius": "600"
+            }
+        }
+    ],
+    "41298": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "817",
+                "Name": "The Rak'tika Greatwood"
+            },
+            "Map": "495",
+            "PlaceName": "Mjrl's Tears",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "70",
+            "Rare": "False",
+            "Position": {
+                "px": "1250",
+                "py": "1785",
+                "cx": 26,
+                "cy": 36.7,
+                "Radius": "600"
+            }
+        }
+    ],
+    "41299": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "817",
+                "Name": "The Rak'tika Greatwood"
+            },
+            "Map": "495",
+            "PlaceName": "Mjrl's Tears",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "70",
+            "Rare": "False",
+            "Position": {
+                "px": "1250",
+                "py": "1785",
+                "cx": 26,
+                "cy": 36.7,
+                "Radius": "600"
             }
         }
     ],
@@ -39865,6 +39975,50 @@
             }
         }
     ],
+    "41401": [
+        {
+            "FishName": "Circuit Tilapia",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Deepmoat",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "972",
+                "py": "756",
+                "cx": 20.4,
+                "cy": 16.1,
+                "Radius": "600"
+            }
+        }
+    ],
+    "41407": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "956",
+                "Name": "Labyrinthos"
+            },
+            "Map": "695",
+            "PlaceName": "Deepmoat",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "972",
+                "py": "756",
+                "cx": 20.4,
+                "cy": 16.1,
+                "Radius": "600"
+            }
+        }
+    ],
     "36415": [
         {
             "FishName": "Trunkblessed",
@@ -40275,6 +40429,28 @@
             }
         }
     ],
+    "41402": [
+        {
+            "FishName": "Durdina Fish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Thavnairian Coast",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "81",
+            "Rare": "False",
+            "Position": {
+                "px": "428",
+                "py": "1618",
+                "cx": 9.6,
+                "cy": 33.4,
+                "Radius": "1800"
+            }
+        }
+    ],
     "35605": [
         {
             "FishName": "Garjana Wrasse",
@@ -40300,6 +40476,28 @@
     "36430": [
         {
             "FishName": "Golden Barramundi",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Great Runoff",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "82",
+            "Rare": "False",
+            "Position": {
+                "px": "438",
+                "py": "1090",
+                "cx": 9.8,
+                "cy": 22.8,
+                "Radius": "600"
+            }
+        }
+    ],
+    "41061": [
+        {
+            "FishName": "Sarikuyruk",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -40925,6 +41123,28 @@
             }
         }
     ],
+    "41403": [
+        {
+            "FishName": "Mayaman",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Font of Maya",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "False",
+            "Position": {
+                "px": "1161",
+                "py": "1187",
+                "cx": 24.2,
+                "cy": 24.7,
+                "Radius": "750"
+            }
+        }
+    ],
     "36450": [
         {
             "FishName": "Fiery Goby",
@@ -41060,6 +41280,28 @@
     "39881": [
         {
             "FishName": "Basilosaurus Rex",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "957",
+                "Name": "Thavnair"
+            },
+            "Map": "696",
+            "PlaceName": "The Perfumed Tides",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "322",
+                "py": "328",
+                "cx": 7.4,
+                "cy": 7.6,
+                "Radius": "900"
+            }
+        }
+    ],
+    "41408": [
+        {
+            "FishName": "",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -41251,6 +41493,28 @@
             }
         }
     ],
+    "41409": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Eblan Thaw",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "True",
+            "Position": {
+                "px": "504",
+                "py": "1484",
+                "cx": 11.1,
+                "cy": 30.7,
+                "Radius": "600"
+            }
+        }
+    ],
     "36460": [
         {
             "FishName": "Dark Crown",
@@ -41298,6 +41562,28 @@
     "36462": [
         {
             "FishName": "Bluetail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "958",
+                "Name": "Garlemald"
+            },
+            "Map": "697",
+            "PlaceName": "The Stainless Course",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "83",
+            "Rare": "False",
+            "Position": {
+                "px": "1100",
+                "py": "408",
+                "cx": 23,
+                "cy": 9.2,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "41059": [
+        {
+            "FishName": "Kitty Herring",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "958",
@@ -41408,6 +41694,28 @@
     "36467": [
         {
             "FishName": "Replipirarucu",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "Greatest Endsvale",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1578",
+                "py": "494",
+                "cx": 32.6,
+                "cy": 10.9,
+                "Radius": "2400"
+            }
+        }
+    ],
+    "41058": [
+        {
+            "FishName": "Ossicula",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "959",
@@ -41558,6 +41866,50 @@
     "36472": [
         {
             "FishName": "Lunar Deathworm",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Chlorophospond",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "1498",
+                "py": "1560",
+                "cx": 31,
+                "cy": 32.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "41404": [
+        {
+            "FishName": "Chlorophos Deathworm",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "959",
+                "Name": "Mare Lamentorum"
+            },
+            "Map": "698",
+            "PlaceName": "The Chlorophospond",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "85",
+            "Rare": "True",
+            "Position": {
+                "px": "1498",
+                "py": "1560",
+                "cx": 31,
+                "cy": 32.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "41411": [
+        {
+            "FishName": "",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "959",
@@ -42009,6 +42361,28 @@
             }
         }
     ],
+    "41410": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "961",
+                "Name": "Elpis"
+            },
+            "Map": "700",
+            "PlaceName": "Lethe",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "87",
+            "Rare": "False",
+            "Position": {
+                "px": "1634",
+                "py": "762",
+                "cx": 33.7,
+                "cy": 16.2,
+                "Radius": "1500"
+            }
+        }
+    ],
     "36487": [
         {
             "FishName": "Superstring",
@@ -42312,6 +42686,28 @@
     "36497": [
         {
             "FishName": "Eehs Forhnesh",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Apohelos 18-\u03b1",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "298",
+                "py": "1062",
+                "cx": 7,
+                "cy": 22.2,
+                "Radius": "300"
+            }
+        }
+    ],
+    "41419": [
+        {
+            "FishName": "Stargilt Lobster",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "960",
@@ -42742,6 +43138,28 @@
                 "cx": 4.7,
                 "cy": 7.9,
                 "Radius": "800"
+            }
+        }
+    ],
+    "41405": [
+        {
+            "FishName": "Starscale Ephemeris",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Abode of the Ea",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "84",
+            "Rare": "False",
+            "Position": {
+                "px": "1079",
+                "py": "389",
+                "cx": 22.6,
+                "cy": 8.8,
+                "Radius": "750"
             }
         }
     ],
@@ -43241,6 +43659,50 @@
             }
         }
     ],
+    "41406": [
+        {
+            "FishName": "E.B.E.-852738",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
+    "41412": [
+        {
+            "FishName": "",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "960",
+                "Name": "Ultima Thule"
+            },
+            "Map": "699",
+            "PlaceName": "Limne 3-\u03b2",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "True",
+            "Position": {
+                "px": "1202",
+                "py": "808",
+                "cx": 25,
+                "cy": 17.2,
+                "Radius": "600"
+            }
+        }
+    ],
     "40524": [
         {
             "FishName": "Deepshade Sardine",
@@ -43617,7 +44079,7 @@
     ],
     "40538": [
         {
-            "FishName": "Jade Shrimp",
+            "FishName": "Jade Mantis Shrimp",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "900",
@@ -44231,9 +44693,9 @@
             }
         }
     ],
-    "40565": [
+    "40566": [
         {
-            "FishName": "Shisui Goby",
+            "FishName": "Sanbaso",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "900",
@@ -44253,9 +44715,9 @@
             }
         }
     ],
-    "40566": [
+    "40565": [
         {
-            "FishName": "Sanbaso",
+            "FishName": "Shisui Goby",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "900",
@@ -45190,2368 +45652,6 @@
                 "cx": 39.2,
                 "cy": 2.8,
                 "Radius": "300"
-            }
-        }
-    ],
-    "0": [
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Ruby Price Depths",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1578",
-                "py": "1434",
-                "cx": 32.6,
-                "cy": 29.7,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Ruby Price Depths",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1578",
-                "py": "1434",
-                "cx": 32.6,
-                "cy": 29.7,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Tamamizu",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1344",
-                "py": "516",
-                "cx": 27.9,
-                "cy": 11.3,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Tamamizu",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1344",
-                "py": "516",
-                "cx": 27.9,
-                "cy": 11.3,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Sui\u2013no\u2013Sato",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "828",
-                "py": "964",
-                "cx": 17.6,
-                "cy": 20.3,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Sui\u2013no\u2013Sato",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "828",
-                "py": "964",
-                "cx": 17.6,
-                "cy": 20.3,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The <Emphasis>Adventure<\/Emphasis>",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "768",
-                "py": "1180",
-                "cx": 16.4,
-                "cy": 24.6,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The <Emphasis>Adventure<\/Emphasis>",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "768",
-                "py": "1180",
-                "cx": 16.4,
-                "cy": 24.6,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Shisui of the Violet Tides",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "192",
-                "py": "1802",
-                "cx": 4.8,
-                "cy": 37,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Shisui of the Violet Tides",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "192",
-                "py": "1802",
-                "cx": 4.8,
-                "cy": 37,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The <Emphasis>Kobayashi Maru<\/Emphasis>",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1892",
-                "py": "264",
-                "cx": 38.8,
-                "cy": 6.3,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The One River Southwestern Riverbeds",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "704",
-                "py": "1824",
-                "cx": 15.1,
-                "cy": 37.5,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The One River Southwestern Riverbeds",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "704",
-                "py": "1824",
-                "cx": 15.1,
-                "cy": 37.5,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The One River Southern Riverbeds",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1022",
-                "py": "1782",
-                "cx": 21.4,
-                "cy": 36.6,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The One River Southern Riverbeds",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1022",
-                "py": "1782",
-                "cx": 21.4,
-                "cy": 36.6,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "Imperial Hypersonic Assault Craft L-XXIII",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1688",
-                "py": "1776",
-                "cx": 34.8,
-                "cy": 36.5,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "Imperial Hypersonic Assault Craft L-XXIII",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "65",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1688",
-                "py": "1776",
-                "cx": 34.8,
-                "cy": 36.5,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The Sunken Junk",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "444",
-                "py": "1660",
-                "cx": 9.9,
-                "cy": 34.2,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The Sunken Junk",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "444",
-                "py": "1660",
-                "cx": 9.9,
-                "cy": 34.2,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The Dragon's Struggle",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "496",
-                "py": "484",
-                "cx": 10.9,
-                "cy": 10.7,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The Dragon's Struggle",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "496",
-                "py": "484",
-                "cx": 10.9,
-                "cy": 10.7,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "622",
-                "Name": "The Azim Steppe"
-            },
-            "Map": "372",
-            "PlaceName": "Azim Khaat Western Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "900",
-                "py": "1100",
-                "cx": 19,
-                "cy": 23,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "622",
-                "Name": "The Azim Steppe"
-            },
-            "Map": "372",
-            "PlaceName": "Azim Khaat Western Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "900",
-                "py": "1100",
-                "cx": 19,
-                "cy": 23,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "622",
-                "Name": "The Azim Steppe"
-            },
-            "Map": "372",
-            "PlaceName": "Azim Khaat Eastern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1100",
-                "py": "1100",
-                "cx": 23,
-                "cy": 23,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "622",
-                "Name": "The Azim Steppe"
-            },
-            "Map": "372",
-            "PlaceName": "Azim Khaat Eastern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1100",
-                "py": "1100",
-                "cx": 23,
-                "cy": 23,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Northwestern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "644",
-                "py": "880",
-                "cx": 13.9,
-                "cy": 18.6,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Northwestern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "644",
-                "py": "880",
-                "cx": 13.9,
-                "cy": 18.6,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Central Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1115",
-                "py": "1190",
-                "cx": 23.3,
-                "cy": 24.8,
-                "Radius": "850"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Central Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1115",
-                "py": "1190",
-                "cx": 23.3,
-                "cy": 24.8,
-                "Radius": "850"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Southeastern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1180",
-                "py": "1350",
-                "cx": 24.6,
-                "cy": 28,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Southeastern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1180",
-                "py": "1350",
-                "cx": 24.6,
-                "cy": 28,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Northeast Source",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "656",
-                "py": "1506",
-                "cx": 14.1,
-                "cy": 31.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Northeast Source",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "656",
-                "py": "1506",
-                "cx": 14.1,
-                "cy": 31.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "The Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "324",
-                "py": "1562",
-                "cx": 7.5,
-                "cy": 32.2,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "The Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "324",
-                "py": "1562",
-                "cx": 7.5,
-                "cy": 32.2,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Southeast Source",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "646",
-                "py": "1824",
-                "cx": 13.9,
-                "cy": 37.5,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Southeast Source",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "646",
-                "py": "1824",
-                "cx": 13.9,
-                "cy": 37.5,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "North Lyhe Ghiah",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "968",
-                "py": "620",
-                "cx": 20.4,
-                "cy": 13.4,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "North Lyhe Ghiah",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "968",
-                "py": "620",
-                "cx": 20.4,
-                "cy": 13.4,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "Deepwood Swim",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "934",
-                "py": "1046",
-                "cx": 19.7,
-                "cy": 21.9,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "Deepwood Swim",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "934",
-                "py": "1046",
-                "cx": 19.7,
-                "cy": 21.9,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "Central Longmirror Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1224",
-                "py": "1224",
-                "cx": 25.5,
-                "cy": 25.5,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "Central Longmirror Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1224",
-                "py": "1224",
-                "cx": 25.5,
-                "cy": 25.5,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "Thysm Lran",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1456",
-                "py": "1404",
-                "cx": 30.1,
-                "cy": 29.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "Thysm Lran",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1456",
-                "py": "1404",
-                "cx": 30.1,
-                "cy": 29.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "South Longmirror Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1412",
-                "py": "1784",
-                "cx": 29.2,
-                "cy": 36.7,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "South Longmirror Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1412",
-                "py": "1784",
-                "cx": 29.2,
-                "cy": 36.7,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "North Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "216",
-                "py": "1234",
-                "cx": 5.3,
-                "cy": 25.7,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "North Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "216",
-                "py": "1234",
-                "cx": 5.3,
-                "cy": 25.7,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "The Covered Halls of Dwatl",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "424",
-                "py": "1444",
-                "cx": 9.5,
-                "cy": 29.9,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "The Covered Halls of Dwatl",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "424",
-                "py": "1444",
-                "cx": 9.5,
-                "cy": 29.9,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Central Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "265",
-                "py": "1335",
-                "cx": 6.3,
-                "cy": 27.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Central Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "265",
-                "py": "1335",
-                "cx": 6.3,
-                "cy": 27.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Central Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "265",
-                "py": "1335",
-                "cx": 6.3,
-                "cy": 27.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Central Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "265",
-                "py": "1335",
-                "cx": 6.3,
-                "cy": 27.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Central Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "265",
-                "py": "1335",
-                "cx": 6.3,
-                "cy": 27.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Central Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "265",
-                "py": "1335",
-                "cx": 6.3,
-                "cy": 27.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "South Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "185",
-                "py": "1465",
-                "cx": 4.7,
-                "cy": 30.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "South Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "185",
-                "py": "1465",
-                "cx": 4.7,
-                "cy": 30.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "South Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "185",
-                "py": "1465",
-                "cx": 4.7,
-                "cy": 30.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "South Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "185",
-                "py": "1465",
-                "cx": 4.7,
-                "cy": 30.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "South Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "185",
-                "py": "1465",
-                "cx": 4.7,
-                "cy": 30.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "South Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "185",
-                "py": "1465",
-                "cx": 4.7,
-                "cy": 30.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The Eastern Ruby Sea",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1961",
-                "py": "433",
-                "cx": 40.2,
-                "cy": 9.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "<Emphasis>Kobayashi Maru<\/Emphasis>'s Northern Wake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1911",
-                "py": "89",
-                "cx": 39.2,
-                "cy": 2.8,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "<Emphasis>Kobayashi Maru<\/Emphasis>'s Northern Wake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1911",
-                "py": "89",
-                "cx": 39.2,
-                "cy": 2.8,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The Sunken Junk's South Side",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "501",
-                "py": "1839",
-                "cx": 11,
-                "cy": 37.8,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "614",
-                "Name": "Yanxia"
-            },
-            "Map": "354",
-            "PlaceName": "The Sunken Junk's South Side",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "501",
-                "py": "1839",
-                "cx": 11,
-                "cy": 37.8,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "622",
-                "Name": "The Azim Steppe"
-            },
-            "Map": "372",
-            "PlaceName": "Azim Khaat Southern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1034",
-                "py": "1211",
-                "cx": 21.7,
-                "cy": 25.2,
-                "Radius": "225"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "622",
-                "Name": "The Azim Steppe"
-            },
-            "Map": "372",
-            "PlaceName": "Azim Khaat Southern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1034",
-                "py": "1211",
-                "cx": 21.7,
-                "cy": 25.2,
-                "Radius": "225"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Deep Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1056",
-                "py": "1194",
-                "cx": 22.1,
-                "cy": 24.9,
-                "Radius": "225"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Deep Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "70",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1056",
-                "py": "1194",
-                "cx": 22.1,
-                "cy": 24.9,
-                "Radius": "225"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Eastern Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "560",
-                "py": "1757",
-                "cx": 12.2,
-                "cy": 36.1,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Eastern Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "75",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "560",
-                "py": "1757",
-                "cx": 12.2,
-                "cy": 36.1,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "East Longmirror Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1450",
-                "py": "1183",
-                "cx": 30,
-                "cy": 24.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "East Longmirror Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1450",
-                "py": "1183",
-                "cx": 30,
-                "cy": 24.7,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Deep Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "234",
-                "py": "1403",
-                "cx": 5.7,
-                "cy": 29.1,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "817",
-                "Name": "The Rak'tika Greatwood"
-            },
-            "Map": "495",
-            "PlaceName": "Deep Lake Tusi Mek'ta",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "80",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "234",
-                "py": "1403",
-                "cx": 5.7,
-                "cy": 29.1,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Southern Akyaali",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "694",
-                "py": "1792",
-                "cx": 14.9,
-                "cy": 36.8,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Southern Akyaali",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "694",
-                "py": "1792",
-                "cx": 14.9,
-                "cy": 36.8,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Northern Onokoro",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1361",
-                "py": "125",
-                "cx": 28.2,
-                "cy": 3.5,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Northern Onokoro",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1361",
-                "py": "125",
-                "cx": 28.2,
-                "cy": 3.5,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Isari Slope",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "500",
-                "py": "644",
-                "cx": 11,
-                "cy": 13.9,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Isari Slope",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "500",
-                "py": "644",
-                "cx": 11,
-                "cy": 13.9,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Exile",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1361",
-                "py": "1015",
-                "cx": 28.2,
-                "cy": 21.3,
-                "Radius": "900"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Western Akyaali",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "367",
-                "py": "1639",
-                "cx": 8.3,
-                "cy": 33.8,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Western Akyaali",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "367",
-                "py": "1639",
-                "cx": 8.3,
-                "cy": 33.8,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Southern Great Runoff",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "183",
-                "py": "1389",
-                "cx": 4.7,
-                "cy": 28.8,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Southern Great Runoff",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "183",
-                "py": "1389",
-                "cx": 4.7,
-                "cy": 28.8,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "The Font of Maya",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1165",
-                "py": "1188",
-                "cx": 24.3,
-                "cy": 24.8,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "The Font of Maya",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1165",
-                "py": "1188",
-                "cx": 24.3,
-                "cy": 24.8,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Northeastern Bekko",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1812",
-                "py": "563",
-                "cx": 37.2,
-                "cy": 12.3,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Eastern Barrier Isle",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1937",
-                "py": "1532",
-                "cx": 39.7,
-                "cy": 31.6,
-                "Radius": "900"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Eastern Barrier Isle",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1937",
-                "py": "1532",
-                "cx": 39.7,
-                "cy": 31.6,
-                "Radius": "900"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Northeastern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1099",
-                "py": "844",
-                "cx": 23,
-                "cy": 17.9,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Northeastern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1099",
-                "py": "844",
-                "cx": 23,
-                "cy": 17.9,
-                "Radius": "750"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Northwestern Onokoro",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1119",
-                "py": "115",
-                "cx": 23.4,
-                "cy": 3.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "Northwestern Onokoro",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "1119",
-                "py": "115",
-                "cx": 23.4,
-                "cy": 3.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Outer Akyaali",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "292",
-                "py": "1764",
-                "cx": 6.8,
-                "cy": 36.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "957",
-                "Name": "Thavnair"
-            },
-            "Map": "696",
-            "PlaceName": "Outer Akyaali",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "True",
-            "Position": {
-                "px": "292",
-                "py": "1764",
-                "cx": 6.8,
-                "cy": 36.3,
-                "Radius": "300"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Southwestern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "975",
-                "py": "1398",
-                "cx": 20.5,
-                "cy": 29,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Southwestern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "975",
-                "py": "1398",
-                "cx": 20.5,
-                "cy": 29,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Southwestern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "975",
-                "py": "1398",
-                "cx": 20.5,
-                "cy": 29,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "621",
-                "Name": "The Lochs"
-            },
-            "Map": "369",
-            "PlaceName": "Loch Seld Southwestern Lakebed",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "975",
-                "py": "1398",
-                "cx": 20.5,
-                "cy": 29,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The Anemone Gardens",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1136",
-                "py": "1319",
-                "cx": 23.7,
-                "cy": 27.4,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The Anemone Gardens",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1136",
-                "py": "1319",
-                "cx": 23.7,
-                "cy": 27.4,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The Anemone Gardens",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1136",
-                "py": "1319",
-                "cx": 23.7,
-                "cy": 27.4,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "613",
-                "Name": "The Ruby Sea"
-            },
-            "Map": "371",
-            "PlaceName": "The Anemone Gardens",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1136",
-                "py": "1319",
-                "cx": 23.7,
-                "cy": 27.4,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Southwestern Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "264",
-                "py": "1807",
-                "cx": 6.3,
-                "cy": 37.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Southwestern Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "264",
-                "py": "1807",
-                "cx": 6.3,
-                "cy": 37.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Southwestern Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "264",
-                "py": "1807",
-                "cx": 6.3,
-                "cy": 37.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "813",
-                "Name": "Lakeland"
-            },
-            "Map": "491",
-            "PlaceName": "Southwestern Isle of Ken",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "264",
-                "py": "1807",
-                "cx": 6.3,
-                "cy": 37.1,
-                "Radius": "800"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "The House of the First Light",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "728",
-                "py": "803",
-                "cx": 15.6,
-                "cy": 17.1,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "The House of the First Light",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "728",
-                "py": "803",
-                "cx": 15.6,
-                "cy": 17.1,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "The House of the First Light",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "728",
-                "py": "803",
-                "cx": 15.6,
-                "cy": 17.1,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "816",
-                "Name": "Il Mheg"
-            },
-            "Map": "494",
-            "PlaceName": "The House of the First Light",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "85",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "728",
-                "py": "803",
-                "cx": 15.6,
-                "cy": 17.1,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "139",
-                "Name": "Upper La Noscea"
-            },
-            "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1185",
-                "py": "1023",
-                "cx": 24.7,
-                "cy": 21.5,
-                "Radius": "600"
-            }
-        },
-        {
-            "FishName": "Diadochos Sword",
-            "Type": "SpearFishing",
-            "TerritoryType": {
-                "id": "139",
-                "Name": "Upper La Noscea"
-            },
-            "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
-            "Icon": "060445_hr1.png",
-            "GatheringLevel": "90",
-            "ShadowNode": "False",
-            "Position": {
-                "px": "1185",
-                "py": "1023",
-                "cx": 24.7,
-                "cy": 21.5,
-                "Radius": "600"
             }
         }
     ],
@@ -52245,6 +50345,26 @@
                 "cy": 3.5,
                 "Radius": "750"
             }
+        },
+        {
+            "FishName": "Coffer Shell",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Saibai Cavern",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "910",
+                "py": "620",
+                "cx": 19.2,
+                "cy": 13.4,
+                "Radius": "600"
+            }
         }
     ],
     "36549": [
@@ -52501,6 +50621,26 @@
                 "cy": 27.4,
                 "Radius": "600"
             }
+        },
+        {
+            "FishName": "Ruby Haddock",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Saibai Cavern",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "910",
+                "py": "620",
+                "cx": 19.2,
+                "cy": 13.4,
+                "Radius": "600"
+            }
         }
     ],
     "36557": [
@@ -52735,6 +50875,26 @@
                 "py": "1319",
                 "cx": 23.7,
                 "cy": 27.4,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Eastern Seerfish",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Saibai Cavern",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "910",
+                "py": "620",
+                "cx": 19.2,
+                "cy": 13.4,
                 "Radius": "600"
             }
         }
@@ -53842,7 +52002,7 @@
                 "Name": "Upper La Noscea"
             },
             "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
+            "PlaceName": "Northeast Bronze Lake Depths",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "90",
             "ShadowNode": "False",
@@ -53864,7 +52024,7 @@
                 "Name": "Upper La Noscea"
             },
             "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
+            "PlaceName": "Northeast Bronze Lake Depths",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "90",
             "ShadowNode": "False",
@@ -53872,6 +52032,26 @@
                 "px": "1185",
                 "py": "1023",
                 "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Lakeskipper",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northwest Bronze Lake Depths",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "900",
+                "py": "1025",
+                "cx": 19,
                 "cy": 21.5,
                 "Radius": "600"
             }
@@ -53886,7 +52066,7 @@
                 "Name": "Upper La Noscea"
             },
             "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
+            "PlaceName": "Northeast Bronze Lake Depths",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "90",
             "ShadowNode": "False",
@@ -53894,6 +52074,26 @@
                 "px": "1185",
                 "py": "1023",
                 "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Bronze Eel",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northwest Bronze Lake Depths",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "900",
+                "py": "1025",
+                "cx": 19,
                 "cy": 21.5,
                 "Radius": "600"
             }
@@ -53908,7 +52108,7 @@
                 "Name": "Upper La Noscea"
             },
             "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
+            "PlaceName": "Northeast Bronze Lake Depths",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "90",
             "ShadowNode": "False",
@@ -53930,7 +52130,7 @@
                 "Name": "Upper La Noscea"
             },
             "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
+            "PlaceName": "Northeast Bronze Lake Depths",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "90",
             "ShadowNode": "False",
@@ -53938,6 +52138,26 @@
                 "px": "1185",
                 "py": "1023",
                 "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        },
+        {
+            "FishName": "Bronze Trout",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northwest Bronze Lake Depths",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "900",
+                "py": "1025",
+                "cx": 19,
                 "cy": 21.5,
                 "Radius": "600"
             }
@@ -53952,7 +52172,7 @@
                 "Name": "Upper La Noscea"
             },
             "Map": "19",
-            "PlaceName": "Northeast Bronze Lake",
+            "PlaceName": "Northeast Bronze Lake Depths",
             "Icon": "060445_hr1.png",
             "GatheringLevel": "90",
             "ShadowNode": "False",
@@ -53960,6 +52180,50 @@
                 "px": "1185",
                 "py": "1023",
                 "cx": 24.7,
+                "cy": 21.5,
+                "Radius": "600"
+            }
+        }
+    ],
+    "41060": [
+        {
+            "FishName": "Empyreal Spiral",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "613",
+                "Name": "The Ruby Sea"
+            },
+            "Map": "371",
+            "PlaceName": "Saibai Cavern",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "85",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "910",
+                "py": "620",
+                "cx": 19.2,
+                "cy": 13.4,
+                "Radius": "600"
+            }
+        }
+    ],
+    "41062": [
+        {
+            "FishName": "Opal Tetra",
+            "Type": "SpearFishing",
+            "TerritoryType": {
+                "id": "139",
+                "Name": "Upper La Noscea"
+            },
+            "Map": "19",
+            "PlaceName": "Northwest Bronze Lake Depths",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "ShadowNode": "False",
+            "Position": {
+                "px": "900",
+                "py": "1025",
+                "cx": 19,
                 "cy": 21.5,
                 "Radius": "600"
             }

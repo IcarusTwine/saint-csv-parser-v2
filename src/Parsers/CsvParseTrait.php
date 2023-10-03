@@ -2896,7 +2896,7 @@ trait CsvParseTrait
                 }
 
                 $ShopOutput["Dialogue"] = $DialogueOutput;
-                foreach(range(0,50) as $b) {
+                foreach(range(0,999) as $b) {
                     $GilShopSubArray = "". $DataValue . "." . $b ."";
                     if ($GilShopItemCsv->at($GilShopSubArray) === false) break;
                     if (!empty($ItemCsv->at($GilShopItemCsv->at($GilShopSubArray)["Item"])["Name"])) {

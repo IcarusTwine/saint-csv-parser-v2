@@ -20185,6 +20185,9 @@
         "2": "Chrysolite Ring of Aiming",
         "3": "Chrysolite Ring of Healing"
     },
+    "11240": {
+        "1": "Crystarium Prodigy's Hose"
+    },
     "11448": {
         "1": "Gordian Armet of Fending"
     },
@@ -68591,6 +68594,39 @@
         "0": "Tacklesoph's Rod",
         "1": "Splendorous Fishing Rod"
     },
+    "38737": {
+        "1": "Replica Crystalline Saw"
+    },
+    "38738": {
+        "1": "Replica Crystalline Cross-pein Hammer"
+    },
+    "38739": {
+        "1": "Replica Crystalline Raising Hammer"
+    },
+    "38740": {
+        "1": "Replica Crystalline Mallet"
+    },
+    "38741": {
+        "1": "Replica Crystalline Round Knife"
+    },
+    "38742": {
+        "1": "Replica Crystalline Needle"
+    },
+    "38743": {
+        "1": "Replica Crystalline Alembic"
+    },
+    "38744": {
+        "1": "Replica Crystalline Frypan"
+    },
+    "38745": {
+        "1": "Replica Crystalline Pickaxe"
+    },
+    "38746": {
+        "1": "Replica Crystalline Hatchet"
+    },
+    "38747": {
+        "1": "Replica Crystalline Fishing Rod"
+    },
     "38992": {
         "1": "Manalis Earrings of Slaying",
         "2": "Manalis Earrings of Aiming",
@@ -69100,6 +69136,63 @@
         "7": "Augmented Rinascita Ring of Aiming",
         "8": "Augmented Rinascita Ring of Healing"
     },
+    "39144": {
+        "1": "Amazing Manderville Sword Replica"
+    },
+    "39145": {
+        "1": "Replica Amazing Manderville Knuckles"
+    },
+    "39146": {
+        "1": "Amazing Manderville Axe Replica"
+    },
+    "39147": {
+        "1": "Amazing Manderville Spear Replica"
+    },
+    "39148": {
+        "1": "Amazing Manderville Harp Bow Replica"
+    },
+    "39149": {
+        "1": "Replica Amazing Manderville Knives"
+    },
+    "39150": {
+        "1": "Amazing Manderville Zweihander Replica"
+    },
+    "39151": {
+        "1": "Amazing Manderville Revolver Replica"
+    },
+    "39152": {
+        "1": "Amazing Manderville Cane Replica"
+    },
+    "39153": {
+        "1": "Amazing Manderville Rod Replica"
+    },
+    "39154": {
+        "1": "Amazing Manderville Index Replica"
+    },
+    "39155": {
+        "1": "Amazing Manderville Codex Replica"
+    },
+    "39156": {
+        "1": "Amazing Manderville Torquetum Replica"
+    },
+    "39157": {
+        "1": "Amazing Manderville Samurai Blade Replica"
+    },
+    "39158": {
+        "1": "Amazing Manderville Rapier Replica"
+    },
+    "39159": {
+        "1": "Amazing Manderville Gunblade Replica"
+    },
+    "39160": {
+        "1": "Replica Amazing Manderville Chakrams"
+    },
+    "39161": {
+        "1": "Replica Amazing Manderville Milpreves"
+    },
+    "39162": {
+        "1": "Amazing Manderville Scythe Replica"
+    },
     "39329": {
         "0": "Manderville Sword"
     },
@@ -69157,146 +69250,427 @@
     "39347": {
         "0": "Manderville Scythe"
     },
+    "39630": {
+        "1": "Augmented Diadochos Sword"
+    },
+    "39631": {
+        "1": "Augmented Diadochos Knuckles"
+    },
+    "39632": {
+        "1": "Augmented Diadochos War Axe"
+    },
+    "39633": {
+        "1": "Augmented Diadochos Spear"
+    },
+    "39634": {
+        "1": "Augmented Diadochos Compound Bow"
+    },
+    "39635": {
+        "1": "Augmented Diadochos Main Gauches"
+    },
+    "39636": {
+        "1": "Augmented Diadochos Greatsword"
+    },
+    "39637": {
+        "1": "Augmented Diadochos Revolver"
+    },
+    "39638": {
+        "1": "Augmented Diadochos Cane"
+    },
+    "39639": {
+        "1": "Augmented Diadochos Rod"
+    },
+    "39640": {
+        "1": "Augmented Diadochos Index"
+    },
+    "39641": {
+        "1": "Augmented Diadochos Codex"
+    },
+    "39642": {
+        "1": "Augmented Diadochos Planisphere"
+    },
+    "39643": {
+        "1": "Augmented Diadochos Blade"
+    },
+    "39644": {
+        "1": "Augmented Diadochos Smallsword"
+    },
+    "39645": {
+        "1": "Augmented Diadochos Gunblade"
+    },
+    "39646": {
+        "1": "Augmented Diadochos Chakrams"
+    },
+    "39647": {
+        "1": "Augmented Diadochos Wings"
+    },
+    "39648": {
+        "1": "Augmented Diadochos Zaghnal"
+    },
+    "39650": {
+        "1": "Augmented Diadochos Headband of Fending"
+    },
     "39651": {
-        "1": "Ornate Diadochos Jacket of Fending"
+        "1": "Ornate Diadochos Jacket of Fending",
+        "2": "Augmented Diadochos Jacket of Fending"
+    },
+    "39652": {
+        "1": "Augmented Diadochos Halfgloves of Fending"
+    },
+    "39653": {
+        "1": "Augmented Diadochos Poleyns of Fending"
+    },
+    "39654": {
+        "1": "Augmented Diadochos Boots of Fending"
+    },
+    "39655": {
+        "1": "Augmented Diadochos Headband of Maiming"
     },
     "39656": {
-        "1": "Ornate Diadochos Jacket of Maiming"
+        "1": "Ornate Diadochos Jacket of Maiming",
+        "2": "Augmented Diadochos Jacket of Maiming"
+    },
+    "39657": {
+        "1": "Augmented Diadochos Halfgloves of Maiming"
+    },
+    "39658": {
+        "1": "Augmented Diadochos Poleyns of Maiming"
+    },
+    "39659": {
+        "1": "Augmented Diadochos Boots of Maiming"
+    },
+    "39660": {
+        "1": "Augmented Diadochos Headband of Striking"
     },
     "39661": {
-        "1": "Ornate Diadochos Jacket of Striking"
+        "1": "Ornate Diadochos Jacket of Striking",
+        "2": "Augmented Diadochos Jacket of Striking"
+    },
+    "39662": {
+        "1": "Augmented Diadochos Gloves of Striking"
+    },
+    "39663": {
+        "1": "Augmented Diadochos Bottoms of Striking"
+    },
+    "39664": {
+        "1": "Augmented Diadochos Shoes of Striking"
+    },
+    "39665": {
+        "1": "Augmented Diadochos Headband of Aiming"
     },
     "39666": {
-        "1": "Ornate Diadochos Jacket of Aiming"
+        "1": "Ornate Diadochos Jacket of Aiming",
+        "2": "Augmented Diadochos Jacket of Aiming"
+    },
+    "39667": {
+        "1": "Augmented Diadochos Halfgloves of Aiming"
+    },
+    "39668": {
+        "1": "Augmented Diadochos Poleyns of Aiming"
+    },
+    "39669": {
+        "1": "Augmented Diadochos Boots of Aiming"
+    },
+    "39670": {
+        "1": "Augmented Diadochos Headband of Scouting"
     },
     "39671": {
-        "1": "Ornate Diadochos Jacket of Scouting"
+        "1": "Ornate Diadochos Jacket of Scouting",
+        "2": "Augmented Diadochos Jacket of Scouting"
+    },
+    "39672": {
+        "1": "Augmented Diadochos Gloves of Scouting"
+    },
+    "39673": {
+        "1": "Augmented Diadochos Bottoms of Scouting"
+    },
+    "39674": {
+        "1": "Augmented Diadochos Shoes of Scouting"
+    },
+    "39675": {
+        "1": "Augmented Diadochos Beret of Healing"
     },
     "39676": {
-        "1": "Ornate Diadochos Coat of Healing"
+        "1": "Ornate Diadochos Coat of Healing",
+        "2": "Augmented Diadochos Coat of Healing"
+    },
+    "39677": {
+        "1": "Augmented Diadochos Armlets of Healing"
+    },
+    "39678": {
+        "1": "Augmented Diadochos Bottoms of Healing"
+    },
+    "39679": {
+        "1": "Augmented Diadochos Boots of Healing"
+    },
+    "39680": {
+        "1": "Augmented Diadochos Beret of Casting"
     },
     "39681": {
-        "1": "Ornate Diadochos Coat of Casting"
+        "1": "Ornate Diadochos Coat of Casting",
+        "2": "Augmented Diadochos Coat of Casting"
+    },
+    "39682": {
+        "1": "Augmented Diadochos Armlets of Casting"
+    },
+    "39683": {
+        "1": "Augmented Diadochos Bottoms of Casting"
+    },
+    "39684": {
+        "1": "Augmented Diadochos Boots of Casting"
     },
     "39685": {
         "1": "Diadochos Earring of Slaying",
         "2": "Diadochos Earring of Aiming",
         "3": "Diadochos Earring of Healing",
-        "4": "Diadochos Earring of Casting"
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
     },
     "39686": {
         "0": "Diadochos Earring of Fending",
         "2": "Diadochos Earring of Aiming",
         "3": "Diadochos Earring of Healing",
-        "4": "Diadochos Earring of Casting"
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
     },
     "39687": {
         "0": "Diadochos Earring of Fending",
         "1": "Diadochos Earring of Slaying",
         "3": "Diadochos Earring of Healing",
-        "4": "Diadochos Earring of Casting"
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
     },
     "39688": {
         "0": "Diadochos Earring of Fending",
         "1": "Diadochos Earring of Slaying",
         "2": "Diadochos Earring of Aiming",
-        "4": "Diadochos Earring of Casting"
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
     },
     "39689": {
         "0": "Diadochos Earring of Fending",
         "1": "Diadochos Earring of Slaying",
         "2": "Diadochos Earring of Aiming",
-        "3": "Diadochos Earring of Healing"
+        "3": "Diadochos Earring of Healing",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
     },
     "39690": {
         "1": "Diadochos Choker of Slaying",
         "2": "Diadochos Choker of Aiming",
         "3": "Diadochos Choker of Healing",
-        "4": "Diadochos Choker of Casting"
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
     },
     "39691": {
         "0": "Diadochos Choker of Fending",
         "2": "Diadochos Choker of Aiming",
         "3": "Diadochos Choker of Healing",
-        "4": "Diadochos Choker of Casting"
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
     },
     "39692": {
         "0": "Diadochos Choker of Fending",
         "1": "Diadochos Choker of Slaying",
         "3": "Diadochos Choker of Healing",
-        "4": "Diadochos Choker of Casting"
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
     },
     "39693": {
         "0": "Diadochos Choker of Fending",
         "1": "Diadochos Choker of Slaying",
         "2": "Diadochos Choker of Aiming",
-        "4": "Diadochos Choker of Casting"
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
     },
     "39694": {
         "0": "Diadochos Choker of Fending",
         "1": "Diadochos Choker of Slaying",
         "2": "Diadochos Choker of Aiming",
-        "3": "Diadochos Choker of Healing"
+        "3": "Diadochos Choker of Healing",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
     },
     "39695": {
         "1": "Diadochos Wristband of Slaying",
         "2": "Diadochos Wristband of Aiming",
         "3": "Diadochos Wristband of Healing",
-        "4": "Diadochos Wristband of Casting"
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
     },
     "39696": {
         "0": "Diadochos Wristband of Fending",
         "2": "Diadochos Wristband of Aiming",
         "3": "Diadochos Wristband of Healing",
-        "4": "Diadochos Wristband of Casting"
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
     },
     "39697": {
         "0": "Diadochos Wristband of Fending",
         "1": "Diadochos Wristband of Slaying",
         "3": "Diadochos Wristband of Healing",
-        "4": "Diadochos Wristband of Casting"
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
     },
     "39698": {
         "0": "Diadochos Wristband of Fending",
         "1": "Diadochos Wristband of Slaying",
         "2": "Diadochos Wristband of Aiming",
-        "4": "Diadochos Wristband of Casting"
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
     },
     "39699": {
         "0": "Diadochos Wristband of Fending",
         "1": "Diadochos Wristband of Slaying",
         "2": "Diadochos Wristband of Aiming",
-        "3": "Diadochos Wristband of Healing"
+        "3": "Diadochos Wristband of Healing",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
     },
     "39700": {
         "1": "Diadochos Ring of Slaying",
         "2": "Diadochos Ring of Aiming",
         "3": "Diadochos Ring of Healing",
-        "4": "Diadochos Ring of Casting"
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
     },
     "39701": {
         "0": "Diadochos Ring of Fending",
         "2": "Diadochos Ring of Aiming",
         "3": "Diadochos Ring of Healing",
-        "4": "Diadochos Ring of Casting"
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
     },
     "39702": {
         "0": "Diadochos Ring of Fending",
         "1": "Diadochos Ring of Slaying",
         "3": "Diadochos Ring of Healing",
-        "4": "Diadochos Ring of Casting"
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
     },
     "39703": {
         "0": "Diadochos Ring of Fending",
         "1": "Diadochos Ring of Slaying",
         "2": "Diadochos Ring of Aiming",
-        "4": "Diadochos Ring of Casting"
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
     },
     "39704": {
         "0": "Diadochos Ring of Fending",
         "1": "Diadochos Ring of Slaying",
         "2": "Diadochos Ring of Aiming",
-        "3": "Diadochos Ring of Healing"
+        "3": "Diadochos Ring of Healing",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
+    },
+    "39754": {
+        "0": "Crystalline Saw"
+    },
+    "39755": {
+        "0": "Crystalline Cross-pein Hammer"
+    },
+    "39756": {
+        "0": "Crystalline Raising Hammer"
+    },
+    "39757": {
+        "0": "Crystalline Mallet"
+    },
+    "39758": {
+        "0": "Crystalline Round Knife"
+    },
+    "39759": {
+        "0": "Crystalline Needle"
+    },
+    "39760": {
+        "0": "Crystalline Alembic"
+    },
+    "39761": {
+        "0": "Crystalline Frypan"
+    },
+    "39762": {
+        "0": "Crystalline Pickaxe"
+    },
+    "39763": {
+        "0": "Crystalline Hatchet"
+    },
+    "39764": {
+        "0": "Crystalline Fishing Rod"
     },
     "39856": {
         "1": "Natural Afflatus Earrings"
@@ -70856,25 +71230,601 @@
         "2": "Distance Ring of Aiming",
         "3": "Distance Ring of Healing"
     },
+    "40323": {
+        "0": "Amazing Manderville Sword"
+    },
+    "40324": {
+        "0": "Amazing Manderville Knuckles"
+    },
+    "40325": {
+        "0": "Amazing Manderville Axe"
+    },
+    "40326": {
+        "0": "Amazing Manderville Spear"
+    },
+    "40327": {
+        "0": "Amazing Manderville Harp Bow"
+    },
+    "40328": {
+        "0": "Amazing Manderville Knives"
+    },
+    "40329": {
+        "0": "Amazing Manderville Zweihander"
+    },
+    "40330": {
+        "0": "Amazing Manderville Revolver"
+    },
+    "40331": {
+        "0": "Amazing Manderville Cane"
+    },
+    "40332": {
+        "0": "Amazing Manderville Rod"
+    },
+    "40333": {
+        "0": "Amazing Manderville Index"
+    },
+    "40334": {
+        "0": "Amazing Manderville Codex"
+    },
+    "40335": {
+        "0": "Amazing Manderville Torquetum"
+    },
+    "40336": {
+        "0": "Amazing Manderville Samurai Blade"
+    },
+    "40337": {
+        "0": "Amazing Manderville Rapier"
+    },
+    "40338": {
+        "0": "Amazing Manderville Gunblade"
+    },
+    "40339": {
+        "0": "Amazing Manderville Chakrams"
+    },
+    "40340": {
+        "0": "Amazing Manderville Milpreves"
+    },
+    "40341": {
+        "0": "Amazing Manderville Scythe"
+    },
     "40613": {
-        "0": "Diadochos Jacket of Fending"
+        "0": "Diadochos Jacket of Fending",
+        "2": "Augmented Diadochos Jacket of Fending"
     },
     "40614": {
-        "0": "Diadochos Jacket of Maiming"
+        "0": "Diadochos Jacket of Maiming",
+        "2": "Augmented Diadochos Jacket of Maiming"
     },
     "40615": {
-        "0": "Diadochos Jacket of Striking"
+        "0": "Diadochos Jacket of Striking",
+        "2": "Augmented Diadochos Jacket of Striking"
     },
     "40616": {
-        "0": "Diadochos Jacket of Aiming"
+        "0": "Diadochos Jacket of Aiming",
+        "2": "Augmented Diadochos Jacket of Aiming"
     },
     "40617": {
-        "0": "Diadochos Jacket of Scouting"
+        "0": "Diadochos Jacket of Scouting",
+        "2": "Augmented Diadochos Jacket of Scouting"
     },
     "40618": {
-        "0": "Diadochos Coat of Healing"
+        "0": "Diadochos Coat of Healing",
+        "2": "Augmented Diadochos Coat of Healing"
     },
     "40619": {
-        "0": "Diadochos Coat of Casting"
+        "0": "Diadochos Coat of Casting",
+        "2": "Augmented Diadochos Coat of Casting"
+    },
+    "40800": {
+        "1": "Voidmoon Ear Cuffs of Slaying",
+        "2": "Voidmoon Ear Cuffs of Aiming",
+        "3": "Voidmoon Ear Cuffs of Healing",
+        "4": "Voidmoon Ear Cuffs of Casting"
+    },
+    "40801": {
+        "0": "Voidmoon Ear Cuffs of Fending",
+        "2": "Voidmoon Ear Cuffs of Aiming",
+        "3": "Voidmoon Ear Cuffs of Healing",
+        "4": "Voidmoon Ear Cuffs of Casting"
+    },
+    "40802": {
+        "0": "Voidmoon Ear Cuffs of Fending",
+        "1": "Voidmoon Ear Cuffs of Slaying",
+        "3": "Voidmoon Ear Cuffs of Healing",
+        "4": "Voidmoon Ear Cuffs of Casting"
+    },
+    "40803": {
+        "0": "Voidmoon Ear Cuffs of Fending",
+        "1": "Voidmoon Ear Cuffs of Slaying",
+        "2": "Voidmoon Ear Cuffs of Aiming",
+        "4": "Voidmoon Ear Cuffs of Casting"
+    },
+    "40804": {
+        "0": "Voidmoon Ear Cuffs of Fending",
+        "1": "Voidmoon Ear Cuffs of Slaying",
+        "2": "Voidmoon Ear Cuffs of Aiming",
+        "3": "Voidmoon Ear Cuffs of Healing"
+    },
+    "40805": {
+        "1": "Voidmoon Necklace of Slaying",
+        "2": "Voidmoon Necklace of Aiming",
+        "3": "Voidmoon Necklace of Healing",
+        "4": "Voidmoon Necklace of Casting"
+    },
+    "40806": {
+        "0": "Voidmoon Necklace of Fending",
+        "2": "Voidmoon Necklace of Aiming",
+        "3": "Voidmoon Necklace of Healing",
+        "4": "Voidmoon Necklace of Casting"
+    },
+    "40807": {
+        "0": "Voidmoon Necklace of Fending",
+        "1": "Voidmoon Necklace of Slaying",
+        "3": "Voidmoon Necklace of Healing",
+        "4": "Voidmoon Necklace of Casting"
+    },
+    "40808": {
+        "0": "Voidmoon Necklace of Fending",
+        "1": "Voidmoon Necklace of Slaying",
+        "2": "Voidmoon Necklace of Aiming",
+        "4": "Voidmoon Necklace of Casting"
+    },
+    "40809": {
+        "0": "Voidmoon Necklace of Fending",
+        "1": "Voidmoon Necklace of Slaying",
+        "2": "Voidmoon Necklace of Aiming",
+        "3": "Voidmoon Necklace of Healing"
+    },
+    "40810": {
+        "1": "Voidmoon Bracelets of Slaying",
+        "2": "Voidmoon Bracelets of Aiming",
+        "3": "Voidmoon Bracelets of Healing",
+        "4": "Voidmoon Bracelets of Casting"
+    },
+    "40811": {
+        "0": "Voidmoon Bracelets of Fending",
+        "2": "Voidmoon Bracelets of Aiming",
+        "3": "Voidmoon Bracelets of Healing",
+        "4": "Voidmoon Bracelets of Casting"
+    },
+    "40812": {
+        "0": "Voidmoon Bracelets of Fending",
+        "1": "Voidmoon Bracelets of Slaying",
+        "3": "Voidmoon Bracelets of Healing",
+        "4": "Voidmoon Bracelets of Casting"
+    },
+    "40813": {
+        "0": "Voidmoon Bracelets of Fending",
+        "1": "Voidmoon Bracelets of Slaying",
+        "2": "Voidmoon Bracelets of Aiming",
+        "4": "Voidmoon Bracelets of Casting"
+    },
+    "40814": {
+        "0": "Voidmoon Bracelets of Fending",
+        "1": "Voidmoon Bracelets of Slaying",
+        "2": "Voidmoon Bracelets of Aiming",
+        "3": "Voidmoon Bracelets of Healing"
+    },
+    "40815": {
+        "1": "Voidmoon Ring of Slaying",
+        "2": "Voidmoon Ring of Aiming",
+        "3": "Voidmoon Ring of Healing",
+        "4": "Voidmoon Ring of Casting"
+    },
+    "40816": {
+        "0": "Voidmoon Ring of Fending",
+        "2": "Voidmoon Ring of Aiming",
+        "3": "Voidmoon Ring of Healing",
+        "4": "Voidmoon Ring of Casting"
+    },
+    "40817": {
+        "0": "Voidmoon Ring of Fending",
+        "1": "Voidmoon Ring of Slaying",
+        "3": "Voidmoon Ring of Healing",
+        "4": "Voidmoon Ring of Casting"
+    },
+    "40818": {
+        "0": "Voidmoon Ring of Fending",
+        "1": "Voidmoon Ring of Slaying",
+        "2": "Voidmoon Ring of Aiming",
+        "4": "Voidmoon Ring of Casting"
+    },
+    "40819": {
+        "0": "Voidmoon Ring of Fending",
+        "1": "Voidmoon Ring of Slaying",
+        "2": "Voidmoon Ring of Aiming",
+        "3": "Voidmoon Ring of Healing"
+    },
+    "40820": {
+        "0": "Diadochos Sword"
+    },
+    "40821": {
+        "0": "Diadochos Knuckles"
+    },
+    "40822": {
+        "0": "Diadochos War Axe"
+    },
+    "40823": {
+        "0": "Diadochos Spear"
+    },
+    "40824": {
+        "0": "Diadochos Compound Bow"
+    },
+    "40825": {
+        "0": "Diadochos Main Gauches"
+    },
+    "40826": {
+        "0": "Diadochos Greatsword"
+    },
+    "40827": {
+        "0": "Diadochos Revolver"
+    },
+    "40828": {
+        "0": "Diadochos Cane"
+    },
+    "40829": {
+        "0": "Diadochos Rod"
+    },
+    "40830": {
+        "0": "Diadochos Index"
+    },
+    "40831": {
+        "0": "Diadochos Codex"
+    },
+    "40832": {
+        "0": "Diadochos Planisphere"
+    },
+    "40833": {
+        "0": "Diadochos Blade"
+    },
+    "40834": {
+        "0": "Diadochos Smallsword"
+    },
+    "40835": {
+        "0": "Diadochos Gunblade"
+    },
+    "40836": {
+        "0": "Diadochos Chakrams"
+    },
+    "40837": {
+        "0": "Diadochos Wings"
+    },
+    "40838": {
+        "0": "Diadochos Zaghnal"
+    },
+    "40840": {
+        "0": "Diadochos Headband of Fending"
+    },
+    "40841": {
+        "0": "Diadochos Jacket of Fending",
+        "1": "Ornate Diadochos Jacket of Fending"
+    },
+    "40842": {
+        "0": "Diadochos Halfgloves of Fending"
+    },
+    "40843": {
+        "0": "Diadochos Poleyns of Fending"
+    },
+    "40844": {
+        "0": "Diadochos Boots of Fending"
+    },
+    "40845": {
+        "0": "Diadochos Headband of Maiming"
+    },
+    "40846": {
+        "0": "Diadochos Jacket of Maiming",
+        "1": "Ornate Diadochos Jacket of Maiming"
+    },
+    "40847": {
+        "0": "Diadochos Halfgloves of Maiming"
+    },
+    "40848": {
+        "0": "Diadochos Poleyns of Maiming"
+    },
+    "40849": {
+        "0": "Diadochos Boots of Maiming"
+    },
+    "40850": {
+        "0": "Diadochos Headband of Striking"
+    },
+    "40851": {
+        "0": "Diadochos Jacket of Striking",
+        "1": "Ornate Diadochos Jacket of Striking"
+    },
+    "40852": {
+        "0": "Diadochos Gloves of Striking"
+    },
+    "40853": {
+        "0": "Diadochos Bottoms of Striking"
+    },
+    "40854": {
+        "0": "Diadochos Shoes of Striking"
+    },
+    "40855": {
+        "0": "Diadochos Headband of Aiming"
+    },
+    "40856": {
+        "0": "Diadochos Jacket of Aiming",
+        "1": "Ornate Diadochos Jacket of Aiming"
+    },
+    "40857": {
+        "0": "Diadochos Halfgloves of Aiming"
+    },
+    "40858": {
+        "0": "Diadochos Poleyns of Aiming"
+    },
+    "40859": {
+        "0": "Diadochos Boots of Aiming"
+    },
+    "40860": {
+        "0": "Diadochos Headband of Scouting"
+    },
+    "40861": {
+        "0": "Diadochos Jacket of Scouting",
+        "1": "Ornate Diadochos Jacket of Scouting"
+    },
+    "40862": {
+        "0": "Diadochos Gloves of Scouting"
+    },
+    "40863": {
+        "0": "Diadochos Bottoms of Scouting"
+    },
+    "40864": {
+        "0": "Diadochos Shoes of Scouting"
+    },
+    "40865": {
+        "0": "Diadochos Beret of Healing"
+    },
+    "40866": {
+        "0": "Diadochos Coat of Healing",
+        "1": "Ornate Diadochos Coat of Healing"
+    },
+    "40867": {
+        "0": "Diadochos Armlets of Healing"
+    },
+    "40868": {
+        "0": "Diadochos Bottoms of Healing"
+    },
+    "40869": {
+        "0": "Diadochos Boots of Healing"
+    },
+    "40870": {
+        "0": "Diadochos Beret of Casting"
+    },
+    "40871": {
+        "0": "Diadochos Coat of Casting",
+        "1": "Ornate Diadochos Coat of Casting"
+    },
+    "40872": {
+        "0": "Diadochos Armlets of Casting"
+    },
+    "40873": {
+        "0": "Diadochos Bottoms of Casting"
+    },
+    "40874": {
+        "0": "Diadochos Boots of Casting"
+    },
+    "40875": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
+    },
+    "40876": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
+    },
+    "40877": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "8": "Augmented Diadochos Earring of Healing",
+        "9": "Augmented Diadochos Earring of Casting"
+    },
+    "40878": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "9": "Augmented Diadochos Earring of Casting"
+    },
+    "40879": {
+        "0": "Diadochos Earring of Fending",
+        "1": "Diadochos Earring of Slaying",
+        "2": "Diadochos Earring of Aiming",
+        "3": "Diadochos Earring of Healing",
+        "4": "Diadochos Earring of Casting",
+        "5": "Augmented Diadochos Earring of Fending",
+        "6": "Augmented Diadochos Earring of Slaying",
+        "7": "Augmented Diadochos Earring of Aiming",
+        "8": "Augmented Diadochos Earring of Healing"
+    },
+    "40880": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
+    },
+    "40881": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
+    },
+    "40882": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "8": "Augmented Diadochos Choker of Healing",
+        "9": "Augmented Diadochos Choker of Casting"
+    },
+    "40883": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "9": "Augmented Diadochos Choker of Casting"
+    },
+    "40884": {
+        "0": "Diadochos Choker of Fending",
+        "1": "Diadochos Choker of Slaying",
+        "2": "Diadochos Choker of Aiming",
+        "3": "Diadochos Choker of Healing",
+        "4": "Diadochos Choker of Casting",
+        "5": "Augmented Diadochos Choker of Fending",
+        "6": "Augmented Diadochos Choker of Slaying",
+        "7": "Augmented Diadochos Choker of Aiming",
+        "8": "Augmented Diadochos Choker of Healing"
+    },
+    "40885": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
+    },
+    "40886": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
+    },
+    "40887": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "8": "Augmented Diadochos Wristband of Healing",
+        "9": "Augmented Diadochos Wristband of Casting"
+    },
+    "40888": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "9": "Augmented Diadochos Wristband of Casting"
+    },
+    "40889": {
+        "0": "Diadochos Wristband of Fending",
+        "1": "Diadochos Wristband of Slaying",
+        "2": "Diadochos Wristband of Aiming",
+        "3": "Diadochos Wristband of Healing",
+        "4": "Diadochos Wristband of Casting",
+        "5": "Augmented Diadochos Wristband of Fending",
+        "6": "Augmented Diadochos Wristband of Slaying",
+        "7": "Augmented Diadochos Wristband of Aiming",
+        "8": "Augmented Diadochos Wristband of Healing"
+    },
+    "40890": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
+    },
+    "40891": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
+    },
+    "40892": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "8": "Augmented Diadochos Ring of Healing",
+        "9": "Augmented Diadochos Ring of Casting"
+    },
+    "40893": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "9": "Augmented Diadochos Ring of Casting"
+    },
+    "40894": {
+        "0": "Diadochos Ring of Fending",
+        "1": "Diadochos Ring of Slaying",
+        "2": "Diadochos Ring of Aiming",
+        "3": "Diadochos Ring of Healing",
+        "4": "Diadochos Ring of Casting",
+        "5": "Augmented Diadochos Ring of Fending",
+        "6": "Augmented Diadochos Ring of Slaying",
+        "7": "Augmented Diadochos Ring of Aiming",
+        "8": "Augmented Diadochos Ring of Healing"
+    },
+    "41574": {
+        "0": "Orthodox Trousers of Striking"
     }
 }
