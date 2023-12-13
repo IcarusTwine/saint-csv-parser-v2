@@ -17,6 +17,7 @@ class TripleTriad implements ParseInterface
 | Name = {Name}
 | Patch = {Patch}
 | Index = {Index}
+| Priority = {Priority}
 | Rarity = {Rarity}{Family}
 | Requires = {Name} Card
 | ValueTop    = {ValueTop}
@@ -94,13 +95,20 @@ class TripleTriad implements ParseInterface
             // actually copy the icons
             copy($LargeIconPath, $LargeIconFileName);
             copy($SmallIconPath, $SmallIconFileName);
-
+            $UIPriority = $TripleTriadCardResidentCsv->at($TripleTriad['id'])['UIPriority'];
+            $Order = $TripleTriadCardResidentCsv->at($TripleTriad['id'])['Order'];
+            if ($UIPriority == 5){
+                $Pri = "Ex.";
+            } else {
+                $Pri = "No.";
+            }
             // Save some data
             $data = [
                 '{Top}' => $Top,
                 '{Name}' => $Name,
                 '{Patch}' => $Patch,
-                '{Index}' => $TripleTriad['id'],
+                '{Index}' => $Order,
+                '{Priority}' => $Pri,
                 '{Rarity}' => $Rarity,
                 '{Family}' => ($TripleTriadCardResidentCsv->at($TripleTriad['id'])['TripleTriadCardType'] > 0)
                     ? "\n| Family = ". $Family : "\n| Family =",

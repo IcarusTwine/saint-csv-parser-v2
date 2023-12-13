@@ -63,7 +63,7 @@ class LuaExporter implements ParseInterface
             $console->overwrite(" Extract -> $LuaPath -> $i / $Total");
             shell_exec("cd $SaintPath && SaintCoinach.Cmd.exe \"$MainPath\" \"raw game_script/$LuaPath.luab\"");
             $console->overwrite(" Convert -> $LuaPath -> $i / $Total");
-            shell_exec("cd $Resources && java -jar unluac.jar $SaintPath/$PatchID/game_script/$LuaPath.luab > $Resources/game_script/$LuaPath.lua");
+            shell_exec("cd $Resources && java -jar unluac.jar \"$SaintPath/$PatchID/game_script/$LuaPath.luab\" > \"$Resources/game_script/$LuaPath.lua\"");
         }
         if (!empty($LuaArrayUnique)) {
             var_dump("New Lua files : ".implode("\n",$LuaArrayUnique));

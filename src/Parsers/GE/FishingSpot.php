@@ -273,7 +273,7 @@ class FishingSpot implements ParseInterface
                 $MapString .= "| collapse = \n";
                 $MapString .= "| base = $BasePlaceName.png\n";
                 $MapString .= "| base_width = 682px\n";
-                $MapString .= "| base_style = float: left\n";
+                $MapString .= "| base_style = \n";
                 $MapString .= "| base_alt = \n";
                 $MapString .= "| base_caption = \n";
                 $MapString .= "| base_link = \n";

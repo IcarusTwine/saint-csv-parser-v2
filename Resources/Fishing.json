@@ -34067,7 +34067,7 @@
     ],
     "41300": [
         {
-            "FishName": "",
+            "FishName": "Little Bounty",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "816",
@@ -34089,7 +34089,7 @@
     ],
     "41301": [
         {
-            "FishName": "",
+            "FishName": "Saint Fathric's Face",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "816",
@@ -37639,7 +37639,7 @@
     ],
     "41302": [
         {
-            "FishName": "",
+            "FishName": "Golding",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "817",
@@ -37661,7 +37661,7 @@
     ],
     "41298": [
         {
-            "FishName": "",
+            "FishName": "Deadwood Shadow",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "817",
@@ -37683,7 +37683,7 @@
     ],
     "41299": [
         {
-            "FishName": "",
+            "FishName": "Ronkan Bullion",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "817",

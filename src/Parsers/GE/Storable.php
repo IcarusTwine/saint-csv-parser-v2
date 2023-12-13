@@ -255,7 +255,9 @@ Glamour Accessories=
 
         // grab CSV files we want to use
         $CabinetCsv = $this->csv('Cabinet');
+        $CabinetCategoryCsv = $this->csv('CabinetCategory');
         $ItemCsv = $this->csv('Item');
+        $AddonCsv = $this->csv('Addon');
         // (optional) start a progress bar
         $this->io->progressStart($CabinetCsv->total);
 
@@ -263,7 +265,8 @@ Glamour Accessories=
         $outputarray = [];
         foreach ($CabinetCsv->data as $id => $CabinetData) {
             if (empty($ItemCsv->at($CabinetData['Item'])['Name'])) continue;
-            $outputarray[] = "{{Storable|". $ItemCsv->at($CabinetData['Item'])['Name'] ."}}";
+            $CabinetCategory = $AddonCsv->at($CabinetCategoryCsv->at($CabinetData['Category'])['Category'])['Text'];
+            $outputarray[] = "{{Storable|". $ItemCsv->at($CabinetData['Item'])['Name'] ."|Category $CabinetCategory}}";
         }
         $output = implode("\n", $outputarray);
         // Save some data

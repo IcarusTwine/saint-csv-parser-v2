@@ -69639,6 +69639,72 @@
         "8": "Augmented Diadochos Ring of Healing",
         "9": "Augmented Diadochos Ring of Casting"
     },
+    "39732": {
+        "1": "Chora-Zoi's Crystalline Saw Replica"
+    },
+    "39733": {
+        "1": "Chora-Zoi's Crystalline Cross-pein Hammer Replica"
+    },
+    "39734": {
+        "1": "Chora-Zoi's Crystalline Raising Hammer Replica"
+    },
+    "39735": {
+        "1": "Chora-Zoi's Crystalline Mallet Replica"
+    },
+    "39736": {
+        "1": "Chora-Zoi's Crystalline Round Knife Replica"
+    },
+    "39737": {
+        "1": "Chora-Zoi's Crystalline Needle Replica"
+    },
+    "39738": {
+        "1": "Chora-Zoi's Crystalline Alembic Replica"
+    },
+    "39739": {
+        "1": "Chora-Zoi's Crystalline Frypan Replica"
+    },
+    "39740": {
+        "1": "Chora-Zoi's Crystalline Pickaxe Replica"
+    },
+    "39741": {
+        "1": "Chora-Zoi's Crystalline Hatchet Replica"
+    },
+    "39742": {
+        "1": "Chora-Zoi's Crystalline Fishing Rod Replica"
+    },
+    "39743": {
+        "1": "Brilliant Saw Replica"
+    },
+    "39744": {
+        "1": "Brilliant Cross-pein Hammer Replica"
+    },
+    "39745": {
+        "1": "Brilliant Raising Hammer Replica"
+    },
+    "39746": {
+        "1": "Brilliant Mallet Replica"
+    },
+    "39747": {
+        "1": "Brilliant Round Knife Replica"
+    },
+    "39748": {
+        "1": "Brilliant Needle Replica"
+    },
+    "39749": {
+        "1": "Brilliant Alembic Replica"
+    },
+    "39750": {
+        "1": "Brilliant Frypan Replica"
+    },
+    "39751": {
+        "1": "Brilliant Pickaxe Replica"
+    },
+    "39752": {
+        "1": "Brilliant Hatchet Replica"
+    },
+    "39753": {
+        "1": "Brilliant Fishing Rod Replica"
+    },
     "39754": {
         "0": "Crystalline Saw"
     },
@@ -71823,6 +71889,204 @@
         "6": "Augmented Diadochos Ring of Slaying",
         "7": "Augmented Diadochos Ring of Aiming",
         "8": "Augmented Diadochos Ring of Healing"
+    },
+    "41180": {
+        "1": "Vrandtic Visionary's Saw Replica"
+    },
+    "41181": {
+        "1": "Vrandtic Visionary's Cross-pein Hammer Replica"
+    },
+    "41182": {
+        "1": "Vrandtic Visionary's Raising Hammer Replica"
+    },
+    "41183": {
+        "1": "Vrandtic Visionary's Mallet Replica"
+    },
+    "41184": {
+        "1": "Vrandtic Visionary's Round Knife Replica"
+    },
+    "41185": {
+        "1": "Vrandtic Visionary's Needle Replica"
+    },
+    "41186": {
+        "1": "Vrandtic Visionary's Alembic Replica"
+    },
+    "41187": {
+        "1": "Vrandtic Visionary's Frypan Replica"
+    },
+    "41188": {
+        "1": "Vrandtic Visionary's Pickaxe Replica"
+    },
+    "41189": {
+        "1": "Vrandtic Visionary's Hatchet Replica"
+    },
+    "41190": {
+        "1": "Vrandtic Visionary's Fishing Rod Replica"
+    },
+    "41191": {
+        "1": "Lodestar Saw Replica"
+    },
+    "41192": {
+        "1": "Lodestar Cross-pein Hammer Replica"
+    },
+    "41193": {
+        "1": "Lodestar Raising Hammer Replica"
+    },
+    "41194": {
+        "1": "Lodestar Mallet Replica"
+    },
+    "41195": {
+        "1": "Lodestar Round Knife Replica"
+    },
+    "41196": {
+        "1": "Lodestar Needle Replica"
+    },
+    "41197": {
+        "1": "Lodestar Alembic Replica"
+    },
+    "41198": {
+        "1": "Lodestar Frypan Replica"
+    },
+    "41199": {
+        "1": "Lodestar Pickaxe Replica"
+    },
+    "41200": {
+        "1": "Lodestar Hatchet Replica"
+    },
+    "41201": {
+        "1": "Lodestar Fishing Rod Replica"
+    },
+    "41202": {
+        "0": "Chora-Zoi's Crystalline Saw"
+    },
+    "41203": {
+        "0": "Chora-Zoi's Crystalline Cross-pein Hammer"
+    },
+    "41204": {
+        "0": "Chora-Zoi's Crystalline Raising Hammer"
+    },
+    "41205": {
+        "0": "Chora-Zoi's Crystalline Mallet"
+    },
+    "41206": {
+        "0": "Chora-Zoi's Crystalline Round Knife"
+    },
+    "41207": {
+        "0": "Chora-Zoi's Crystalline Needle"
+    },
+    "41208": {
+        "0": "Chora-Zoi's Crystalline Alembic"
+    },
+    "41209": {
+        "0": "Chora-Zoi's Crystalline Frypan"
+    },
+    "41210": {
+        "0": "Chora-Zoi's Crystalline Pickaxe"
+    },
+    "41211": {
+        "0": "Chora-Zoi's Crystalline Hatchet"
+    },
+    "41212": {
+        "0": "Chora-Zoi's Crystalline Fishing Rod"
+    },
+    "41213": {
+        "0": "Brilliant Saw"
+    },
+    "41214": {
+        "0": "Brilliant Cross-pein Hammer"
+    },
+    "41215": {
+        "0": "Brilliant Raising Hammer"
+    },
+    "41216": {
+        "0": "Brilliant Mallet"
+    },
+    "41217": {
+        "0": "Brilliant Round Knife"
+    },
+    "41218": {
+        "0": "Brilliant Needle"
+    },
+    "41219": {
+        "0": "Brilliant Alembic"
+    },
+    "41220": {
+        "0": "Brilliant Frypan"
+    },
+    "41221": {
+        "0": "Brilliant Pickaxe"
+    },
+    "41222": {
+        "0": "Brilliant Hatchet"
+    },
+    "41223": {
+        "0": "Brilliant Fishing Rod"
+    },
+    "41224": {
+        "0": "Vrandtic Visionary's Saw"
+    },
+    "41225": {
+        "0": "Vrandtic Visionary's Cross-pein Hammer"
+    },
+    "41226": {
+        "0": "Vrandtic Visionary's Raising Hammer"
+    },
+    "41227": {
+        "0": "Vrandtic Visionary's Mallet"
+    },
+    "41228": {
+        "0": "Vrandtic Visionary's Round Knife"
+    },
+    "41229": {
+        "0": "Vrandtic Visionary's Needle"
+    },
+    "41230": {
+        "0": "Vrandtic Visionary's Alembic"
+    },
+    "41231": {
+        "0": "Vrandtic Visionary's Frypan"
+    },
+    "41232": {
+        "0": "Vrandtic Visionary's Pickaxe"
+    },
+    "41233": {
+        "0": "Vrandtic Visionary's Hatchet"
+    },
+    "41234": {
+        "0": "Vrandtic Visionary's Fishing Rod"
+    },
+    "41235": {
+        "0": "Lodestar Saw"
+    },
+    "41236": {
+        "0": "Lodestar Cross-pein Hammer"
+    },
+    "41237": {
+        "0": "Lodestar Raising Hammer"
+    },
+    "41238": {
+        "0": "Lodestar Mallet"
+    },
+    "41239": {
+        "0": "Lodestar Round Knife"
+    },
+    "41240": {
+        "0": "Lodestar Needle"
+    },
+    "41241": {
+        "0": "Lodestar Alembic"
+    },
+    "41242": {
+        "0": "Lodestar Frypan"
+    },
+    "41243": {
+        "0": "Lodestar Pickaxe"
+    },
+    "41244": {
+        "0": "Lodestar Hatchet"
+    },
+    "41245": {
+        "0": "Lodestar Fishing Rod"
     },
     "41574": {
         "0": "Orthodox Trousers of Striking"
