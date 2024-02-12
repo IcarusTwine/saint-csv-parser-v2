@@ -69762,6 +69762,63 @@
     "39863": {
         "0": "Artful Afflatus Ring"
     },
+    "39920": {
+        "1": "Majestic Manderville Sword Replica"
+    },
+    "39921": {
+        "1": "Replica Majestic Manderville Fists"
+    },
+    "39922": {
+        "1": "Majestic Manderville Bardiche Replica"
+    },
+    "39923": {
+        "1": "Majestic Manderville Spear Replica"
+    },
+    "39924": {
+        "1": "Majestic Manderville Harp Bow Replica"
+    },
+    "39925": {
+        "1": "Replica Majestic Manderville Knives"
+    },
+    "39926": {
+        "1": "Majestic Manderville Greatsword Replica"
+    },
+    "39927": {
+        "1": "Majestic Manderville Pistol Replica"
+    },
+    "39928": {
+        "1": "Majestic Manderville Wand Replica"
+    },
+    "39929": {
+        "1": "Majestic Manderville Staff Replica"
+    },
+    "39930": {
+        "1": "Majestic Manderville Index Replica"
+    },
+    "39931": {
+        "1": "Majestic Manderville Codex Replica"
+    },
+    "39932": {
+        "1": "Majestic Manderville Orrery Replica"
+    },
+    "39933": {
+        "1": "Majestic Manderville Samurai Blade Replica"
+    },
+    "39934": {
+        "1": "Majestic Manderville Degen Replica"
+    },
+    "39935": {
+        "1": "Majestic Manderville Bayonet Replica"
+    },
+    "39936": {
+        "1": "Replica Majestic Manderville Chakrams"
+    },
+    "39937": {
+        "1": "Replica Majestic Manderville Wings"
+    },
+    "39938": {
+        "1": "Majestic Manderville War Scythe Replica"
+    },
     "39960": {
         "1": "Ascension Face Guard of Fending"
     },
@@ -71889,6 +71946,177 @@
         "6": "Augmented Diadochos Ring of Slaying",
         "7": "Augmented Diadochos Ring of Aiming",
         "8": "Augmented Diadochos Ring of Healing"
+    },
+    "40932": {
+        "1": "Mandervillous Falchion Replica"
+    },
+    "40933": {
+        "1": "Replica Mandervillous Fists"
+    },
+    "40934": {
+        "1": "Mandervillous Battleaxe Replica"
+    },
+    "40935": {
+        "1": "Mandervillous Trident Replica"
+    },
+    "40936": {
+        "1": "Mandervillous Compound Bow Replica"
+    },
+    "40937": {
+        "1": "Replica Mandervillous Knives"
+    },
+    "40938": {
+        "1": "Mandervillous Greatsword Replica"
+    },
+    "40939": {
+        "1": "Mandervillous Revolver Replica"
+    },
+    "40940": {
+        "1": "Mandervillous Cane Replica"
+    },
+    "40941": {
+        "1": "Mandervillous Rod Replica"
+    },
+    "40942": {
+        "1": "Mandervillous Index Replica"
+    },
+    "40943": {
+        "1": "Mandervillous Codex Replica"
+    },
+    "40944": {
+        "1": "Mandervillous Torquetum Replica"
+    },
+    "40945": {
+        "1": "Mandervillous Samurai Blade Replica"
+    },
+    "40946": {
+        "1": "Mandervillous Rapier Replica"
+    },
+    "40947": {
+        "1": "Mandervillous Gunblade Replica"
+    },
+    "40948": {
+        "1": "Replica Mandervillous Chakrams"
+    },
+    "40949": {
+        "1": "Replica Mandervillous Wings"
+    },
+    "40950": {
+        "1": "Mandervillous Zaghnal Replica"
+    },
+    "40952": {
+        "0": "Majestic Manderville Sword"
+    },
+    "40953": {
+        "0": "Majestic Manderville Fists"
+    },
+    "40954": {
+        "0": "Majestic Manderville Bardiche"
+    },
+    "40955": {
+        "0": "Majestic Manderville Spear"
+    },
+    "40956": {
+        "0": "Majestic Manderville Harp Bow"
+    },
+    "40957": {
+        "0": "Majestic Manderville Knives"
+    },
+    "40958": {
+        "0": "Majestic Manderville Greatsword"
+    },
+    "40959": {
+        "0": "Majestic Manderville Pistol"
+    },
+    "40960": {
+        "0": "Majestic Manderville Wand"
+    },
+    "40961": {
+        "0": "Majestic Manderville Staff"
+    },
+    "40962": {
+        "0": "Majestic Manderville Index"
+    },
+    "40963": {
+        "0": "Majestic Manderville Codex"
+    },
+    "40964": {
+        "0": "Majestic Manderville Orrery"
+    },
+    "40965": {
+        "0": "Majestic Manderville Samurai Blade"
+    },
+    "40966": {
+        "0": "Majestic Manderville Degen"
+    },
+    "40967": {
+        "0": "Majestic Manderville Bayonet"
+    },
+    "40968": {
+        "0": "Majestic Manderville Chakrams"
+    },
+    "40969": {
+        "0": "Majestic Manderville Wings"
+    },
+    "40970": {
+        "0": "Majestic Manderville War Scythe"
+    },
+    "40992": {
+        "0": "Mandervillous Falchion"
+    },
+    "40993": {
+        "0": "Mandervillous Fists"
+    },
+    "40994": {
+        "0": "Mandervillous Battleaxe"
+    },
+    "40995": {
+        "0": "Mandervillous Trident"
+    },
+    "40996": {
+        "0": "Mandervillous Compound Bow"
+    },
+    "40997": {
+        "0": "Mandervillous Knives"
+    },
+    "40998": {
+        "0": "Mandervillous Greatsword"
+    },
+    "40999": {
+        "0": "Mandervillous Revolver"
+    },
+    "41000": {
+        "0": "Mandervillous Cane"
+    },
+    "41001": {
+        "0": "Mandervillous Rod"
+    },
+    "41002": {
+        "0": "Mandervillous Index"
+    },
+    "41003": {
+        "0": "Mandervillous Codex"
+    },
+    "41004": {
+        "0": "Mandervillous Torquetum"
+    },
+    "41005": {
+        "0": "Mandervillous Samurai Blade"
+    },
+    "41006": {
+        "0": "Mandervillous Rapier"
+    },
+    "41007": {
+        "0": "Mandervillous Gunblade"
+    },
+    "41008": {
+        "0": "Mandervillous Chakrams"
+    },
+    "41009": {
+        "0": "Mandervillous Wings"
+    },
+    "41010": {
+        "0": "Mandervillous Zaghnal"
     },
     "41180": {
         "1": "Vrandtic Visionary's Saw Replica"

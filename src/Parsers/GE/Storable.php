@@ -266,7 +266,7 @@ Glamour Accessories=
         foreach ($CabinetCsv->data as $id => $CabinetData) {
             if (empty($ItemCsv->at($CabinetData['Item'])['Name'])) continue;
             $CabinetCategory = $AddonCsv->at($CabinetCategoryCsv->at($CabinetData['Category'])['Category'])['Text'];
-            $outputarray[] = "{{Storable|". $ItemCsv->at($CabinetData['Item'])['Name'] ."|Category $CabinetCategory}}";
+            $outputarray[] = "{{Storable|". $ItemCsv->at($CabinetData['Item'])['Name'] ."|Category=$CabinetCategory}}";
         }
         $output = implode("\n", $outputarray);
         // Save some data

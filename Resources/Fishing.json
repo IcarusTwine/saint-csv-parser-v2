@@ -39999,7 +39999,7 @@
     ],
     "41407": [
         {
-            "FishName": "",
+            "FishName": "Hyphalosaurus",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "956",
@@ -41301,7 +41301,7 @@
     ],
     "41408": [
         {
-            "FishName": "",
+            "FishName": "Gharlichthys",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "957",
@@ -41495,7 +41495,7 @@
     ],
     "41409": [
         {
-            "FishName": "",
+            "FishName": "Snowy Parexus",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "958",
@@ -41909,7 +41909,7 @@
     ],
     "41411": [
         {
-            "FishName": "",
+            "FishName": "Lopoceras Elegans",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "959",
@@ -42363,7 +42363,7 @@
     ],
     "41410": [
         {
-            "FishName": "",
+            "FishName": "Furcacauda",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "961",
@@ -43683,7 +43683,7 @@
     ],
     "41412": [
         {
-            "FishName": "",
+            "FishName": "Sidereal Whale",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "960",
