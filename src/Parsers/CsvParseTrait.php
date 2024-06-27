@@ -2500,6 +2500,7 @@ trait CsvParseTrait
                         }
                     }
                     $SpecialShopCostOutput = implode("", $SpecialShopCostArray);
+					$Category = Null;
                     foreach(range(0,1) as $specialshopb) {
                         if (empty($ItemCsv->at($SpecialShopCsv->at($SpecialShopID)["Item{Receive}[$specialshopc][$specialshopb]"])['Name'])) continue;
                         $number = $specialshopc + 1;
@@ -2525,24 +2526,26 @@ trait CsvParseTrait
                         }
                     }
                     $ItemInput = implode("", $ItemInputArray);
-                    switch ($Category) {
-                        case 1:
-                            $WeaponArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
-                        break;
-                        case 2:
-                            $ArmorArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
-                        break;
-                        case 3:
-                            $AccessoryArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
-                        break;
-                        case 0:
-                        case 4:
-                            $OtherArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
-                        break;
-                        default:
-                            $OtherArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
-                        break;
-                    }
+					if ($Category != Null){
+						switch ($Category) {
+							case 1:
+								$WeaponArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
+							break;
+							case 2:
+								$ArmorArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
+							break;
+							case 3:
+								$AccessoryArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
+							break;
+							case 0:
+							case 4:
+								$OtherArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
+							break;
+							default:
+								$OtherArray[] = "{{Sells3|$ItemInput$SpecialShopCostOutput$AchivementRequired$QuestRequired}}";
+							break;
+						}
+					}
                 }
                 asort($WeaponArray);
                 asort($ArmorArray);

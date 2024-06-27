@@ -604,13 +604,15 @@ class Quest2 implements ParseInterface
                 if ($Sequence === "255"){
                     $Sequence = $LastSeq;
                 }
-                $ToDoArray[$i] = array(
-                    "Task" => $ToDoSeqArray[$i],
-                    "ToDoMainLocation" => $ToDoChildArray,
-                    "ToDoCompleteSeq" => $Quest["ToDoCompleteSeq[$i]"],
-                    "ToDoQty" => $Quest["ToDoQty[$i]"],
-                    "CountableNum" => $Quest["CountableNum[$i]"]
-                );
+				if (!empty($ToDoSeqArray[$i])){
+					$ToDoArray[$i] = array(
+						"Task" => $ToDoSeqArray[$i],
+						"ToDoMainLocation" => $ToDoChildArray,
+						"ToDoCompleteSeq" => $Quest["ToDoCompleteSeq[$i]"],
+						"ToDoQty" => $Quest["ToDoQty[$i]"],
+						"CountableNum" => $Quest["CountableNum[$i]"]
+					);
+				}
             }
             //----------Produce Quest Data--------------//
 

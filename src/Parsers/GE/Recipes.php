@@ -199,8 +199,10 @@ class Recipes implements ParseInterface
             $Ingredients = [];
             foreach(range(0,7) as $i) {
                 if(!empty($recipe["Item{Ingredient}[$i]"])) {
-                    $Ingredients[] = "|Ingredient ". ($i+3) ."        = ". $ItemCsv->at($recipe["Item{Ingredient}[$i]"])['Name'];
-                    $Ingredients[] .= "|Ingredient ". ($i+3) ." Amount = ". $recipe["Amount{Ingredient}[$i]"];
+					if ($ItemCsv->at($recipe["Item{Ingredient}[$i]"]) != false){
+						$Ingredients[] = "|Ingredient ". ($i+3) ."        = ". $ItemCsv->at($recipe["Item{Ingredient}[$i]"])['Name'];
+						$Ingredients[] .= "|Ingredient ". ($i+3) ." Amount = ". $recipe["Amount{Ingredient}[$i]"];
+					}
                 }
             }
             $Ingredients = implode("\n", $Ingredients);
@@ -235,8 +237,8 @@ class Recipes implements ParseInterface
                 '{quicksynth}' => ($recipe['CanQuickSynth'] == "True") ? 'Yes' : 'No',
                 '{quicksynthcrafts}' => ($recipe['QuickSynthCraftsmanship'] > 0) ? "\n|Quick Synthesis Craftsmanship = ". $recipe['QuickSynthCraftsmanship'] : "",
                 '{quicksynthcontrol}' => ($recipe['QuickSynthControl'] > 0) ? "\n|Quick Synthesis Control = ". $recipe['QuickSynthControl'] : "",
-                '{ingredient1}' => "\n|Ingredient 1        = ". $ItemCsv->at($recipe['Item{Ingredient}[8]'])['Name'] ."\n|Ingredient 1 Amount = ". $recipe['Amount{Ingredient}[8]'],
-                '{ingredient2}' => ($recipe['Item{Ingredient}[9]'] > 0) ? "\n|Ingredient 2        = ". $ItemCsv->at($recipe['Item{Ingredient}[9]'])['Name'] ."\n|Ingredient 2 Amount = ". $recipe['Amount{Ingredient}[9]'] : "",
+                // '{ingredient1}' => "\n|Ingredient 1        = ". $ItemCsv->at($recipe['Item{Ingredient}[8]'])['Name'] ."\n|Ingredient 1 Amount = ". $recipe['Amount{Ingredient}[8]'],
+                // '{ingredient2}' => ($recipe['Item{Ingredient}[9]'] > 0) ? "\n|Ingredient 2        = ". $ItemCsv->at($recipe['Item{Ingredient}[9]'])['Name'] ."\n|Ingredient 2 Amount = ". $recipe['Amount{Ingredient}[9]'] : "",
                 '{ingredients}' => $Ingredients,
                 '{Special}' => $SpecialString,
                 '{QualityRequired}' => $RequiredQuality,

@@ -242,10 +242,10 @@ class Items implements ParseInterface
                     break;
                 case 11; case 34; case 35;
                     $Crest = "\n| Crest Allowed  = ". $item['IsCrestWorthy'];
-                    $Dye = "\n| Dye Allowed    = ". $item['IsDyeable'];
+                    $Dye = "\n| Dye Allowed    = ". $item['DyeCount'];
                     break;
                 default:
-                    $Dye = "\n| Dye Allowed    = ". $item['IsDyeable'];
+                    $Dye = "\n| Dye Allowed    = ". $item['DyeCount'];
                     break;
             }
 

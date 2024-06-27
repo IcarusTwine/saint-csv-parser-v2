@@ -2048,7 +2048,6 @@ class NpcsPagesAll implements ParseInterface
             }
             $NotRewriteHeight = $ENpcBaseCsv->at($id)['NotRewriteHeight'];
             $DefaultBalloon = $ENpcBaseCsv->at($id)['DefaultBalloon'];
-            $Unknown94 = $ENpcBaseCsv->at($id)['unknown_95'];
             $DebugOut[] = "$id / $NameFormatted\nEventHandler = $EventHandler\n
             Important = $Important\n
             Unknown62 = $Unknown62\n
@@ -2058,7 +2057,6 @@ class NpcsPagesAll implements ParseInterface
             BalloonOut = $BalloonOut\n
             NotRewriteHeight = $NotRewriteHeight\n
             DefaultBalloon = $DefaultBalloon\n
-            Unknown94 = $Unknown94\n
             ";
             $Npcarray2[$NameFormatted][0] = "{{-start-}}\n'''". $NameFormatted ."'''
             {{Infobox NPC
