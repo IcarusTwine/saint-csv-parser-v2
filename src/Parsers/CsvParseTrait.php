@@ -152,15 +152,17 @@ trait CsvParseTrait
      * Get Patch Data
      */
     public function getPatch($FileName) {
-        if (!file_exists("Patch/$FileName.json")) { 
-            $this->io->text(" WARNING: There is no $FileName.json to get patch data from");
-            exit();
-        }
-        if (file_exists("Patch/$FileName.json")) { 
-            $jdata = file_get_contents("Patch/$FileName.json");
-            $PatchArray = json_decode($jdata, true);
-            return $PatchArray;
-        }
+		$patchlist = json_decode(file_get_contents("https://raw.githubusercontent.com/xivapi/ffxiv-datamining-patches/master/patchlist.json"),true);
+		$PatchList = [];
+		foreach ($patchlist as $key => $value) {
+			$PatchList[$value['ID']] = $value;
+		}
+		$PatchArray = json_decode(file_get_contents("https://raw.githubusercontent.com/xivapi/ffxiv-datamining-patches/master/patchdata/$FileName.json"));
+		$patchOutput = [];
+		foreach ($PatchArray as $key => $value) {
+			$patchOutput[$key] = $PatchList[$value]['Version'];
+		}
+		return $patchOutput;
     }
     /**
      * Get LGB Array

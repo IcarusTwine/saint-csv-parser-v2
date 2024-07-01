@@ -153,9 +153,10 @@ class Items implements ParseInterface
 
             // change the top and bottom code of item output depending on if I want to bot the pages up or not
             if ($Bot == "true") {
-                $Top = "{{-start-}}\n'''$Name/Patch'''\n$Patch\n<noinclude>[[Category:Patch Subpages]]</noinclude>\n{{-stop-}}{{-start-}}\n'''$Name'''\n";
-                //$Top = "{{-start-}}\n'''$Name'''\n";
-                $Bottom = "{{-stop-}}$DesynthTop";
+                // $Top = "{{-start-}}\n'''$Name/Patch'''\n$Patch\n<noinclude>[[Category:Patch Subpages]]</noinclude>\n{{-stop-}}{{-start-}}\n'''$Name'''\n";
+                $Top = "{{-start-}}\n'''$Name'''\n";
+                // $Bottom = "{{-stop-}}$DesynthTop";
+				$Bottom = "{{-stop-}}";
             } else {
                 $Top = "http://ffxiv.gamerescape.com/wiki/$Name?action=edit\n";
                 $Bottom = $DesynthTop;

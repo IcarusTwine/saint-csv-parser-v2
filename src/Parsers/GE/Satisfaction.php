@@ -97,16 +97,16 @@ class Satisfaction implements ParseInterface
         
                     switch ($yellowtypenumber) {
                         case 2:
-                            $yellowtype = "White Crafters' Scrip";
+                            $yellowtype = "Crafter";
                             break;
                         case 4:
-                            $yellowtype = "White Gatherers' Scrip";
+                            $yellowtype = "Gatherer";
                             break;
                         case 6:
-                            $yellowtype = "Purple Crafters' Scrip";
+                            $yellowtype = "Crafter";
                             break;
                         case 7:
-                            $yellowtype = "Purple Gatherers' Scrip";
+                            $yellowtype = "Gatherer";
                             break;
                         default:
                             $yellowtype = false;
@@ -115,16 +115,16 @@ class Satisfaction implements ParseInterface
 
                     switch ($whitetypenumber) {
                         case 2:
-                            $whitetype = "White Crafters' Scrip";
+                            $whitetype = "Crafter";
                             break;
                         case 4:
-                            $whitetype = "White Gatherers' Scrip";
+                            $whitetype = "Gatherer";
                             break;
                         case 6:
-                            $whitetype = "Purple Crafters' Scrip";
+                            $whitetype = "Crafter";
                             break;
                         case 7:
-                            $whitetype = "Purple Gatherers' Scrip";
+                            $whitetype = "Gatherer";
                             break;
                         default:
                             $whitetype = false;
@@ -146,14 +146,14 @@ class Satisfaction implements ParseInterface
                     $OutputString .= "|Gil Low = $gillow\n";
                     $OutputString .= "|Gil Mid = $gilmid\n";
                     $OutputString .= "|Gil High = $gilhigh\n";
-                    $OutputString .= "|White Type = $yellowtype\n";
-                    $OutputString .= "|White Low = $yellowlow\n";
-                    $OutputString .= "|White Mid = $yellowmid\n";
-                    $OutputString .= "|White High = $yellowhigh\n";
-                    $OutputString .= "|Purple Type = $whitetype\n";
-                    $OutputString .= "|Purple Low = $whitelow\n";
-                    $OutputString .= "|Purple Mid = $whitemid\n";
-                    $OutputString .= "|Purple High = $whitehigh\n";
+                    $OutputString .= "|Type = $yellowtype\n";
+                    $OutputString .= "|Lowscrip Low = $yellowlow\n";
+                    $OutputString .= "|Lowscrip Mid = $yellowmid\n";
+                    $OutputString .= "|Lowscrip High = $yellowhigh\n";
+                    $OutputString .= "|Type = $whitetype\n";
+                    $OutputString .= "|Highscrip Low = $whitelow\n";
+                    $OutputString .= "|Highscrip Mid = $whitemid\n";
+                    $OutputString .= "|Highscrip High = $whitehigh\n";
                     $OutputString .= "}}";
                     $Array[$Name][] = $OutputString;
                 }

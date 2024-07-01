@@ -1248,10 +1248,8 @@ class Quest2 implements ParseInterface
             $NpcsInvolved = implode(",",$NpcsInvolved);
 
             $PatchFixed = $PatchNumber[$id];
-            if ($PatchFixed === "2.1"){
-                $PatchFixed = "2.0";
-            }
-            $PatchFixed = "6.0"; //DELETE ME
+			
+			// if ($PatchFixed != '7.0') continue;
 
 
             // $QuestFormat =  $this->getLuaQuest($LuaFile, $ArgArray, $ListenerArray, $ToDoArray, $QuestData, $CSVData);

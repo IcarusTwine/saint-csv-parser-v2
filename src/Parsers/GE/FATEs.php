@@ -61,8 +61,11 @@ class FATEs implements ParseInterface
         $Output = "";
         foreach ($FateCsv->data as $id => $Fate) {
             if (empty($Fate['Name'])) continue;
-			if (empty($PatchNumber[$id])) continue;
-            $Patch = $PatchNumber[$id];
+			if (empty($PatchNumber[$id])){
+				$Patch = "0.0";
+			} else {
+				$Patch = $PatchNumber[$id];
+			}
             $FateLoc = $Fate['Location'];
             if ($FateLoc === "0"){
                 $Location = "";
