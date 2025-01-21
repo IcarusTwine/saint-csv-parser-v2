@@ -149,15 +149,18 @@ class FishingSpot implements ParseInterface
                 22 => "Gig{{!}}Small Gig Head",
                 23 => "Gig{{!}}Normal Gig Head",
                 24 => "Gig{{!}}Large Gig Head",
-                25 => null,
-                26 => null,
             ];
 
             // Save some data
+			if (empty($Watertype[$fishingspot['FishingSpotCategory']])){
+				$water_type_temp = $fishingspot['FishingSpotCategory'];
+			} else {
+				$water_type_temp = $Watertype[$fishingspot['FishingSpotCategory']];
+			}
             $data = [
                 '{name}' => $Location,
                 '{level}' => $fishingspot['GatheringLevel'],
-                '{water}' => $Watertype[$fishingspot['FishingSpotCategory']],
+                '{water}' => $water_type_temp,
                 '{fish}' => implode("\n", $Fish),
             ];
 

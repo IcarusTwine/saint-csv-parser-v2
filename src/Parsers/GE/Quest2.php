@@ -659,10 +659,12 @@ class Quest2 implements ParseInterface
             $Expansion = $ExVersionCsv->at($Quest["Expansion"])['Name'];
             $Event = "";
             if (!empty($Quest["Festival"])){
-                $splitfes = explode("_", $FestivaldecodeJdata[$Quest["Festival"]]);
-                $fesYear = $splitfes[1];
-                $Addition = " ($splitfes[1])";
-                $Event = $splitfes[0]."".$Addition;
+				if (!empty($FestivaldecodeJdata[$Quest["Festival"]])){
+					$splitfes = explode("_", $FestivaldecodeJdata[$Quest["Festival"]]);
+					$fesYear = $splitfes[1];
+					$Addition = " ($splitfes[1])";
+					$Event = $splitfes[0]."".$Addition;
+				}
             }
             $DeliveryQuest = "";
             //if (!empty($Quest["DeliveryQuest"])){

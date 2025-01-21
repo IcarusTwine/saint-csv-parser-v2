@@ -73881,6 +73881,1827 @@
         "2": "Resilient Ring of Aiming",
         "3": "Resilient Ring of Healing"
     },
+    "42815": {
+        "1": "Dark Horse Champion's Bandana of Fending"
+    },
+    "42816": {
+        "1": "Dark Horse Champion's Coat of Fending"
+    },
+    "42817": {
+        "1": "Dark Horse Champion's Halfgloves of Fending"
+    },
+    "42818": {
+        "1": "Dark Horse Champion's Breeches of Fending"
+    },
+    "42819": {
+        "1": "Dark Horse Champion's Greaves of Fending"
+    },
+    "42820": {
+        "1": "Dark Horse Champion's Bandana of Maiming"
+    },
+    "42821": {
+        "1": "Dark Horse Champion's Coat of Maiming"
+    },
+    "42822": {
+        "1": "Dark Horse Champion's Halfgloves of Maiming"
+    },
+    "42823": {
+        "1": "Dark Horse Champion's Breeches of Maiming"
+    },
+    "42824": {
+        "1": "Dark Horse Champion's Greaves of Maiming"
+    },
+    "42825": {
+        "1": "Dark Horse Champion's Hood of Striking"
+    },
+    "42826": {
+        "1": "Dark Horse Champion's Coat of Striking"
+    },
+    "42827": {
+        "1": "Dark Horse Champion's Gloves of Striking"
+    },
+    "42828": {
+        "1": "Dark Horse Champion's Brais of Striking"
+    },
+    "42829": {
+        "1": "Dark Horse Champion's Boots of Striking"
+    },
+    "42830": {
+        "1": "Dark Horse Champion's Mask of Aiming"
+    },
+    "42831": {
+        "1": "Dark Horse Champion's Jacket of Aiming"
+    },
+    "42832": {
+        "1": "Dark Horse Champion's Gloves of Aiming"
+    },
+    "42833": {
+        "1": "Dark Horse Champion's Brais of Aiming"
+    },
+    "42834": {
+        "1": "Dark Horse Champion's Boots of Aiming"
+    },
+    "42835": {
+        "1": "Dark Horse Champion's Hood of Scouting"
+    },
+    "42836": {
+        "1": "Dark Horse Champion's Coat of Scouting"
+    },
+    "42837": {
+        "1": "Dark Horse Champion's Gloves of Scouting"
+    },
+    "42838": {
+        "1": "Dark Horse Champion's Brais of Scouting"
+    },
+    "42839": {
+        "1": "Dark Horse Champion's Boots of Scouting"
+    },
+    "42840": {
+        "1": "Dark Horse Champion's Hat of Healing"
+    },
+    "42841": {
+        "1": "Dark Horse Champion's Coat of Healing"
+    },
+    "42842": {
+        "1": "Dark Horse Champion's Halfgloves of Healing"
+    },
+    "42843": {
+        "1": "Dark Horse Champion's Brais of Healing"
+    },
+    "42844": {
+        "1": "Dark Horse Champion's Shoes of Healing"
+    },
+    "42845": {
+        "1": "Dark Horse Champion's Hat of Casting"
+    },
+    "42846": {
+        "1": "Dark Horse Champion's Coat of Casting"
+    },
+    "42847": {
+        "1": "Dark Horse Champion's Halfgloves of Casting"
+    },
+    "42848": {
+        "1": "Dark Horse Champion's Brais of Casting"
+    },
+    "42849": {
+        "1": "Dark Horse Champion's Shoes of Casting"
+    },
+    "42850": {
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "42851": {
+        "0": "Light-heavy Earring of Fending",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "42852": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "42853": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "42854": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "42855": {
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "42856": {
+        "0": "Light-heavy Choker of Fending",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "42857": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "42858": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "42859": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "42860": {
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "42861": {
+        "0": "Light-heavy Bangle of Fending",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "42862": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "42863": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "42864": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "42865": {
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "42866": {
+        "0": "Light-heavy Ring of Fending",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "42867": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "42868": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "42869": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "42870": {
+        "1": "Augmented Archeo Kingdom Broadsword"
+    },
+    "42871": {
+        "1": "Augmented Archeo Kingdom Patas"
+    },
+    "42872": {
+        "1": "Augmented Archeo Kingdom Labrys"
+    },
+    "42873": {
+        "1": "Augmented Archeo Kingdom Partisan"
+    },
+    "42874": {
+        "1": "Augmented Archeo Kingdom Bow"
+    },
+    "42875": {
+        "1": "Augmented Archeo Kingdom Candelarod"
+    },
+    "42876": {
+        "1": "Augmented Archeo Kingdom Scepter"
+    },
+    "42877": {
+        "1": "Augmented Archeo Kingdom Index"
+    },
+    "42878": {
+        "1": "Augmented Archeo Kingdom Codex"
+    },
+    "42879": {
+        "1": "Augmented Archeo Kingdom Daggers"
+    },
+    "42880": {
+        "1": "Augmented Archeo Kingdom Claymore"
+    },
+    "42881": {
+        "1": "Augmented Archeo Kingdom Culverin"
+    },
+    "42882": {
+        "1": "Augmented Archeo Kingdom Planisphere"
+    },
+    "42883": {
+        "1": "Augmented Archeo Kingdom Samurai Blade"
+    },
+    "42884": {
+        "1": "Augmented Archeo Kingdom Tuck"
+    },
+    "42885": {
+        "1": "Augmented Archeo Kingdom Gunblade"
+    },
+    "42886": {
+        "1": "Augmented Archeo Kingdom Chakrams"
+    },
+    "42887": {
+        "1": "Augmented Archeo Kingdom Sickle"
+    },
+    "42888": {
+        "1": "Augmented Archeo Kingdom Milpreves"
+    },
+    "42889": {
+        "1": "Augmented Archeo Kingdom Twinfangs"
+    },
+    "42890": {
+        "1": "Augmented Archeo Kingdom Round Brush"
+    },
+    "42892": {
+        "1": "Augmented Archeo Kingdom Helm of Fending"
+    },
+    "42893": {
+        "1": "Ornate Archeo Kingdom Cuirass of Fending",
+        "2": "Augmented Archeo Kingdom Cuirass of Fending"
+    },
+    "42894": {
+        "1": "Augmented Archeo Kingdom Vambraces of Fending"
+    },
+    "42895": {
+        "1": "Augmented Archeo Kingdom Poleyns of Fending"
+    },
+    "42896": {
+        "1": "Augmented Archeo Kingdom Sabatons of Fending"
+    },
+    "42897": {
+        "1": "Augmented Archeo Kingdom Helm of Maiming"
+    },
+    "42898": {
+        "1": "Ornate Archeo Kingdom Cuirass of Maiming",
+        "2": "Augmented Archeo Kingdom Cuirass of Maiming"
+    },
+    "42899": {
+        "1": "Augmented Archeo Kingdom Vambraces of Maiming"
+    },
+    "42900": {
+        "1": "Augmented Archeo Kingdom Poleyns of Maiming"
+    },
+    "42901": {
+        "1": "Augmented Archeo Kingdom Sabatons of Maiming"
+    },
+    "42902": {
+        "1": "Augmented Archeo Kingdom Hood of Striking"
+    },
+    "42903": {
+        "1": "Ornate Archeo Kingdom Jacket of Striking",
+        "2": "Augmented Archeo Kingdom Jacket of Striking"
+    },
+    "42904": {
+        "1": "Augmented Archeo Kingdom Armguards of Striking"
+    },
+    "42905": {
+        "1": "Augmented Archeo Kingdom Poleyns of Striking"
+    },
+    "42906": {
+        "1": "Augmented Archeo Kingdom Shoes of Striking"
+    },
+    "42907": {
+        "1": "Augmented Archeo Kingdom Beret of Aiming"
+    },
+    "42908": {
+        "1": "Ornate Archeo Kingdom Jacket of Aiming",
+        "2": "Augmented Archeo Kingdom Jacket of Aiming"
+    },
+    "42909": {
+        "1": "Augmented Archeo Kingdom Gloves of Aiming"
+    },
+    "42910": {
+        "1": "Augmented Archeo Kingdom Poleyns of Aiming"
+    },
+    "42911": {
+        "1": "Augmented Archeo Kingdom Sabatons of Aiming"
+    },
+    "42912": {
+        "1": "Augmented Archeo Kingdom Hood of Scouting"
+    },
+    "42913": {
+        "1": "Ornate Archeo Kingdom Jacket of Scouting",
+        "2": "Augmented Archeo Kingdom Jacket of Scouting"
+    },
+    "42914": {
+        "1": "Augmented Archeo Kingdom Armguards of Scouting"
+    },
+    "42915": {
+        "1": "Augmented Archeo Kingdom Poleyns of Scouting"
+    },
+    "42916": {
+        "1": "Augmented Archeo Kingdom Sabatons of Scouting"
+    },
+    "42917": {
+        "1": "Augmented Archeo Kingdom Beret of Healing"
+    },
+    "42918": {
+        "1": "Ornate Archeo Kingdom Coat of Healing",
+        "2": "Augmented Archeo Kingdom Coat of Healing"
+    },
+    "42919": {
+        "1": "Augmented Archeo Kingdom Gloves of Healing"
+    },
+    "42920": {
+        "1": "Augmented Archeo Kingdom Poleyns of Healing"
+    },
+    "42921": {
+        "1": "Augmented Archeo Kingdom Shoes of Healing"
+    },
+    "42922": {
+        "1": "Augmented Archeo Kingdom Hood of Casting"
+    },
+    "42923": {
+        "1": "Ornate Archeo Kingdom Coat of Casting",
+        "2": "Augmented Archeo Kingdom Coat of Casting"
+    },
+    "42924": {
+        "1": "Augmented Archeo Kingdom Armguards of Casting"
+    },
+    "42925": {
+        "1": "Augmented Archeo Kingdom Poleyns of Casting"
+    },
+    "42926": {
+        "1": "Augmented Archeo Kingdom Shoes of Casting"
+    },
+    "42927": {
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "42928": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "42929": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "42930": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "42931": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "42932": {
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "42933": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "42934": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "42935": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "42936": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "42937": {
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "42938": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "42939": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "42940": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "42941": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "42942": {
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "42943": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "42944": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "42945": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "42946": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "42947": {
+        "1": "Augmented Quetzalli Longsword"
+    },
+    "42948": {
+        "1": "Augmented Quetzalli Patas"
+    },
+    "42949": {
+        "1": "Augmented Quetzalli Bardiche"
+    },
+    "42950": {
+        "1": "Augmented Quetzalli Spear"
+    },
+    "42951": {
+        "1": "Augmented Quetzalli Longbow"
+    },
+    "42952": {
+        "1": "Augmented Quetzalli Cane"
+    },
+    "42953": {
+        "1": "Augmented Quetzalli Rod"
+    },
+    "42954": {
+        "1": "Augmented Quetzalli Chronicle"
+    },
+    "42955": {
+        "1": "Augmented Quetzalli Counsel"
+    },
+    "42956": {
+        "1": "Augmented Quetzalli Knives"
+    },
+    "42957": {
+        "1": "Augmented Quetzalli Greatsword"
+    },
+    "42958": {
+        "1": "Augmented Quetzalli Handgonne"
+    },
+    "42959": {
+        "1": "Augmented Quetzalli Star Globe"
+    },
+    "42960": {
+        "1": "Augmented Quetzalli Blade"
+    },
+    "42961": {
+        "1": "Augmented Quetzalli Rapier"
+    },
+    "42962": {
+        "1": "Augmented Quetzalli Bayonet"
+    },
+    "42963": {
+        "1": "Augmented Quetzalli Chakrams"
+    },
+    "42964": {
+        "1": "Augmented Quetzalli War Scythe"
+    },
+    "42965": {
+        "1": "Augmented Quetzalli Wings"
+    },
+    "42966": {
+        "1": "Augmented Quetzalli Twinfangs"
+    },
+    "42967": {
+        "1": "Augmented Quetzalli Round Brush"
+    },
+    "42969": {
+        "1": "Augmented Quetzalli Helm of Fending"
+    },
+    "42970": {
+        "1": "Augmented Quetzalli Mail of Fending"
+    },
+    "42971": {
+        "1": "Augmented Quetzalli Gauntlets of Fending"
+    },
+    "42972": {
+        "1": "Augmented Quetzalli Brais of Fending"
+    },
+    "42973": {
+        "1": "Augmented Quetzalli Sollerets of Fending"
+    },
+    "42974": {
+        "1": "Augmented Quetzalli Helm of Maiming"
+    },
+    "42975": {
+        "1": "Augmented Quetzalli Mail of Maiming"
+    },
+    "42976": {
+        "1": "Augmented Quetzalli Gauntlets of Maiming"
+    },
+    "42977": {
+        "1": "Augmented Quetzalli Brais of Maiming"
+    },
+    "42978": {
+        "1": "Augmented Quetzalli Sollerets of Maiming"
+    },
+    "42979": {
+        "1": "Augmented Quetzalli Visor of Striking"
+    },
+    "42980": {
+        "1": "Augmented Quetzalli Jacket of Striking"
+    },
+    "42981": {
+        "1": "Augmented Quetzalli Vambraces of Striking"
+    },
+    "42982": {
+        "1": "Augmented Quetzalli Breeches of Striking"
+    },
+    "42983": {
+        "1": "Augmented Quetzalli Leggings of Striking"
+    },
+    "42984": {
+        "1": "Augmented Quetzalli Visor of Aiming"
+    },
+    "42985": {
+        "1": "Augmented Quetzalli Jacket of Aiming"
+    },
+    "42986": {
+        "1": "Augmented Quetzalli Vambraces of Aiming"
+    },
+    "42987": {
+        "1": "Augmented Quetzalli Breeches of Aiming"
+    },
+    "42988": {
+        "1": "Augmented Quetzalli Leggings of Aiming"
+    },
+    "42989": {
+        "1": "Augmented Quetzalli Visor of Scouting"
+    },
+    "42990": {
+        "1": "Augmented Quetzalli Jacket of Scouting"
+    },
+    "42991": {
+        "1": "Augmented Quetzalli Vambraces of Scouting"
+    },
+    "42992": {
+        "1": "Augmented Quetzalli Breeches of Scouting"
+    },
+    "42993": {
+        "1": "Augmented Quetzalli Leggings of Scouting"
+    },
+    "42994": {
+        "1": "Augmented Quetzalli Hood of Healing"
+    },
+    "42995": {
+        "1": "Augmented Quetzalli Robe of Healing"
+    },
+    "42996": {
+        "1": "Augmented Quetzalli Gloves of Healing"
+    },
+    "42997": {
+        "1": "Augmented Quetzalli Hose of Healing"
+    },
+    "42998": {
+        "1": "Augmented Quetzalli Shoes of Healing"
+    },
+    "42999": {
+        "1": "Augmented Quetzalli Hood of Casting"
+    },
+    "43000": {
+        "1": "Augmented Quetzalli Robe of Casting"
+    },
+    "43001": {
+        "1": "Augmented Quetzalli Gloves of Casting"
+    },
+    "43002": {
+        "1": "Augmented Quetzalli Hose of Casting"
+    },
+    "43003": {
+        "1": "Augmented Quetzalli Shoes of Casting"
+    },
+    "43004": {
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43005": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43006": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43007": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43008": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43009": {
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43010": {
+        "0": "Quetzalli Necklace of Fending",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43011": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43012": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43013": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43014": {
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43015": {
+        "0": "Quetzalli Bracelets of Fending",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43016": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43017": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43018": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43019": {
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43020": {
+        "0": "Quetzalli Ring of Fending",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43021": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43022": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43023": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43024": {
+        "0": "Quetzalli Longsword"
+    },
+    "43025": {
+        "0": "Quetzalli Patas"
+    },
+    "43026": {
+        "0": "Quetzalli Bardiche"
+    },
+    "43027": {
+        "0": "Quetzalli Spear"
+    },
+    "43028": {
+        "0": "Quetzalli Longbow"
+    },
+    "43029": {
+        "0": "Quetzalli Cane"
+    },
+    "43030": {
+        "0": "Quetzalli Rod"
+    },
+    "43031": {
+        "0": "Quetzalli Chronicle"
+    },
+    "43032": {
+        "0": "Quetzalli Counsel"
+    },
+    "43033": {
+        "0": "Quetzalli Knives"
+    },
+    "43034": {
+        "0": "Quetzalli Greatsword"
+    },
+    "43035": {
+        "0": "Quetzalli Handgonne"
+    },
+    "43036": {
+        "0": "Quetzalli Star Globe"
+    },
+    "43037": {
+        "0": "Quetzalli Blade"
+    },
+    "43038": {
+        "0": "Quetzalli Rapier"
+    },
+    "43039": {
+        "0": "Quetzalli Bayonet"
+    },
+    "43040": {
+        "0": "Quetzalli Chakrams"
+    },
+    "43041": {
+        "0": "Quetzalli War Scythe"
+    },
+    "43042": {
+        "0": "Quetzalli Wings"
+    },
+    "43043": {
+        "0": "Quetzalli Twinfangs"
+    },
+    "43044": {
+        "0": "Quetzalli Round Brush"
+    },
+    "43046": {
+        "0": "Quetzalli Helm of Fending"
+    },
+    "43047": {
+        "0": "Quetzalli Mail of Fending"
+    },
+    "43048": {
+        "0": "Quetzalli Gauntlets of Fending"
+    },
+    "43049": {
+        "0": "Quetzalli Brais of Fending"
+    },
+    "43050": {
+        "0": "Quetzalli Sollerets of Fending"
+    },
+    "43051": {
+        "0": "Quetzalli Helm of Maiming"
+    },
+    "43052": {
+        "0": "Quetzalli Mail of Maiming"
+    },
+    "43053": {
+        "0": "Quetzalli Gauntlets of Maiming"
+    },
+    "43054": {
+        "0": "Quetzalli Brais of Maiming"
+    },
+    "43055": {
+        "0": "Quetzalli Sollerets of Maiming"
+    },
+    "43056": {
+        "0": "Quetzalli Visor of Striking"
+    },
+    "43057": {
+        "0": "Quetzalli Jacket of Striking"
+    },
+    "43058": {
+        "0": "Quetzalli Vambraces of Striking"
+    },
+    "43059": {
+        "0": "Quetzalli Breeches of Striking"
+    },
+    "43060": {
+        "0": "Quetzalli Leggings of Striking"
+    },
+    "43061": {
+        "0": "Quetzalli Visor of Aiming"
+    },
+    "43062": {
+        "0": "Quetzalli Jacket of Aiming"
+    },
+    "43063": {
+        "0": "Quetzalli Vambraces of Aiming"
+    },
+    "43064": {
+        "0": "Quetzalli Breeches of Aiming"
+    },
+    "43065": {
+        "0": "Quetzalli Leggings of Aiming"
+    },
+    "43066": {
+        "0": "Quetzalli Visor of Scouting"
+    },
+    "43067": {
+        "0": "Quetzalli Jacket of Scouting"
+    },
+    "43068": {
+        "0": "Quetzalli Vambraces of Scouting"
+    },
+    "43069": {
+        "0": "Quetzalli Breeches of Scouting"
+    },
+    "43070": {
+        "0": "Quetzalli Leggings of Scouting"
+    },
+    "43071": {
+        "0": "Quetzalli Hood of Healing"
+    },
+    "43072": {
+        "0": "Quetzalli Robe of Healing"
+    },
+    "43073": {
+        "0": "Quetzalli Gloves of Healing"
+    },
+    "43074": {
+        "0": "Quetzalli Hose of Healing"
+    },
+    "43075": {
+        "0": "Quetzalli Shoes of Healing"
+    },
+    "43076": {
+        "0": "Quetzalli Hood of Casting"
+    },
+    "43077": {
+        "0": "Quetzalli Robe of Casting"
+    },
+    "43078": {
+        "0": "Quetzalli Gloves of Casting"
+    },
+    "43079": {
+        "0": "Quetzalli Hose of Casting"
+    },
+    "43080": {
+        "0": "Quetzalli Shoes of Casting"
+    },
+    "43081": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43082": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43083": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43084": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "9": "Augmented Quetzalli Ear Cuffs of Casting"
+    },
+    "43085": {
+        "0": "Quetzalli Ear Cuffs of Fending",
+        "1": "Quetzalli Ear Cuffs of Slaying",
+        "2": "Quetzalli Ear Cuffs of Aiming",
+        "3": "Quetzalli Ear Cuffs of Healing",
+        "4": "Quetzalli Ear Cuffs of Casting",
+        "5": "Augmented Quetzalli Ear Cuffs of Fending",
+        "6": "Augmented Quetzalli Ear Cuffs of Slaying",
+        "7": "Augmented Quetzalli Ear Cuffs of Aiming",
+        "8": "Augmented Quetzalli Ear Cuffs of Healing"
+    },
+    "43086": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43087": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43088": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "8": "Augmented Quetzalli Necklace of Healing",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43089": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "9": "Augmented Quetzalli Necklace of Casting"
+    },
+    "43090": {
+        "0": "Quetzalli Necklace of Fending",
+        "1": "Quetzalli Necklace of Slaying",
+        "2": "Quetzalli Necklace of Aiming",
+        "3": "Quetzalli Necklace of Healing",
+        "4": "Quetzalli Necklace of Casting",
+        "5": "Augmented Quetzalli Necklace of Fending",
+        "6": "Augmented Quetzalli Necklace of Slaying",
+        "7": "Augmented Quetzalli Necklace of Aiming",
+        "8": "Augmented Quetzalli Necklace of Healing"
+    },
+    "43091": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43092": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43093": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "8": "Augmented Quetzalli Bracelets of Healing",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43094": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "9": "Augmented Quetzalli Bracelets of Casting"
+    },
+    "43095": {
+        "0": "Quetzalli Bracelets of Fending",
+        "1": "Quetzalli Bracelets of Slaying",
+        "2": "Quetzalli Bracelets of Aiming",
+        "3": "Quetzalli Bracelets of Healing",
+        "4": "Quetzalli Bracelets of Casting",
+        "5": "Augmented Quetzalli Bracelets of Fending",
+        "6": "Augmented Quetzalli Bracelets of Slaying",
+        "7": "Augmented Quetzalli Bracelets of Aiming",
+        "8": "Augmented Quetzalli Bracelets of Healing"
+    },
+    "43096": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43097": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43098": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "8": "Augmented Quetzalli Ring of Healing",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43099": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "9": "Augmented Quetzalli Ring of Casting"
+    },
+    "43100": {
+        "0": "Quetzalli Ring of Fending",
+        "1": "Quetzalli Ring of Slaying",
+        "2": "Quetzalli Ring of Aiming",
+        "3": "Quetzalli Ring of Healing",
+        "4": "Quetzalli Ring of Casting",
+        "5": "Augmented Quetzalli Ring of Fending",
+        "6": "Augmented Quetzalli Ring of Slaying",
+        "7": "Augmented Quetzalli Ring of Aiming",
+        "8": "Augmented Quetzalli Ring of Healing"
+    },
+    "43123": {
+        "0": "Light-heavy Bandana of Fending"
+    },
+    "43124": {
+        "0": "Light-heavy Coat of Fending"
+    },
+    "43125": {
+        "0": "Light-heavy Halfgloves of Fending"
+    },
+    "43126": {
+        "0": "Light-heavy Breeches of Fending"
+    },
+    "43127": {
+        "0": "Light-heavy Greaves of Fending"
+    },
+    "43128": {
+        "0": "Light-heavy Bandana of Maiming"
+    },
+    "43129": {
+        "0": "Light-heavy Coat of Maiming"
+    },
+    "43130": {
+        "0": "Light-heavy Halfgloves of Maiming"
+    },
+    "43131": {
+        "0": "Light-heavy Breeches of Maiming"
+    },
+    "43132": {
+        "0": "Light-heavy Greaves of Maiming"
+    },
+    "43133": {
+        "0": "Light-heavy Hood of Striking"
+    },
+    "43134": {
+        "0": "Light-heavy Coat of Striking"
+    },
+    "43135": {
+        "0": "Light-heavy Gloves of Striking"
+    },
+    "43136": {
+        "0": "Light-heavy Brais of Striking"
+    },
+    "43137": {
+        "0": "Light-heavy Boots of Striking"
+    },
+    "43138": {
+        "0": "Light-heavy Mask of Aiming"
+    },
+    "43139": {
+        "0": "Light-heavy Jacket of Aiming"
+    },
+    "43140": {
+        "0": "Light-heavy Gloves of Aiming"
+    },
+    "43141": {
+        "0": "Light-heavy Brais of Aiming"
+    },
+    "43142": {
+        "0": "Light-heavy Boots of Aiming"
+    },
+    "43143": {
+        "0": "Light-heavy Hood of Scouting"
+    },
+    "43144": {
+        "0": "Light-heavy Coat of Scouting"
+    },
+    "43145": {
+        "0": "Light-heavy Gloves of Scouting"
+    },
+    "43146": {
+        "0": "Light-heavy Brais of Scouting"
+    },
+    "43147": {
+        "0": "Light-heavy Boots of Scouting"
+    },
+    "43148": {
+        "0": "Light-heavy Hat of Healing"
+    },
+    "43149": {
+        "0": "Light-heavy Coat of Healing"
+    },
+    "43150": {
+        "0": "Light-heavy Halfgloves of Healing"
+    },
+    "43151": {
+        "0": "Light-heavy Brais of Healing"
+    },
+    "43152": {
+        "0": "Light-heavy Shoes of Healing"
+    },
+    "43153": {
+        "0": "Light-heavy Hat of Casting"
+    },
+    "43154": {
+        "0": "Light-heavy Coat of Casting"
+    },
+    "43155": {
+        "0": "Light-heavy Halfgloves of Casting"
+    },
+    "43156": {
+        "0": "Light-heavy Brais of Casting"
+    },
+    "43157": {
+        "0": "Light-heavy Shoes of Casting"
+    },
+    "43158": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "43159": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "43160": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "8": "Dark Horse Champion's Earring of Healing",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "43161": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "9": "Dark Horse Champion's Earring of Casting"
+    },
+    "43162": {
+        "0": "Light-heavy Earring of Fending",
+        "1": "Light-heavy Earring of Slaying",
+        "2": "Light-heavy Earring of Aiming",
+        "3": "Light-heavy Earring of Healing",
+        "4": "Light-heavy Earring of Casting",
+        "5": "Dark Horse Champion's Earring of Fending",
+        "6": "Dark Horse Champion's Earring of Slaying",
+        "7": "Dark Horse Champion's Earring of Aiming",
+        "8": "Dark Horse Champion's Earring of Healing"
+    },
+    "43163": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "43164": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "43165": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "8": "Dark Horse Champion's Choker of Healing",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "43166": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "9": "Dark Horse Champion's Choker of Casting"
+    },
+    "43167": {
+        "0": "Light-heavy Choker of Fending",
+        "1": "Light-heavy Choker of Slaying",
+        "2": "Light-heavy Choker of Aiming",
+        "3": "Light-heavy Choker of Healing",
+        "4": "Light-heavy Choker of Casting",
+        "5": "Dark Horse Champion's Choker of Fending",
+        "6": "Dark Horse Champion's Choker of Slaying",
+        "7": "Dark Horse Champion's Choker of Aiming",
+        "8": "Dark Horse Champion's Choker of Healing"
+    },
+    "43168": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "43169": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "43170": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "8": "Dark Horse Champion's Bangle of Healing",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "43171": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "9": "Dark Horse Champion's Bangle of Casting"
+    },
+    "43172": {
+        "0": "Light-heavy Bangle of Fending",
+        "1": "Light-heavy Bangle of Slaying",
+        "2": "Light-heavy Bangle of Aiming",
+        "3": "Light-heavy Bangle of Healing",
+        "4": "Light-heavy Bangle of Casting",
+        "5": "Dark Horse Champion's Bangle of Fending",
+        "6": "Dark Horse Champion's Bangle of Slaying",
+        "7": "Dark Horse Champion's Bangle of Aiming",
+        "8": "Dark Horse Champion's Bangle of Healing"
+    },
+    "43173": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "43174": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "43175": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "8": "Dark Horse Champion's Ring of Healing",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "43176": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "9": "Dark Horse Champion's Ring of Casting"
+    },
+    "43177": {
+        "0": "Light-heavy Ring of Fending",
+        "1": "Light-heavy Ring of Slaying",
+        "2": "Light-heavy Ring of Aiming",
+        "3": "Light-heavy Ring of Healing",
+        "4": "Light-heavy Ring of Casting",
+        "5": "Dark Horse Champion's Ring of Fending",
+        "6": "Dark Horse Champion's Ring of Slaying",
+        "7": "Dark Horse Champion's Ring of Aiming",
+        "8": "Dark Horse Champion's Ring of Healing"
+    },
     "43178": {
         "1": "Snakebite Headband"
     },
@@ -73946,5 +75767,548 @@
     },
     "43199": {
         "0": "Weathered Painter's Pattens"
+    },
+    "43946": {
+        "0": "Archeo Kingdom Cuirass of Fending",
+        "2": "Augmented Archeo Kingdom Cuirass of Fending"
+    },
+    "43947": {
+        "0": "Archeo Kingdom Cuirass of Maiming",
+        "2": "Augmented Archeo Kingdom Cuirass of Maiming"
+    },
+    "43948": {
+        "0": "Archeo Kingdom Jacket of Striking",
+        "2": "Augmented Archeo Kingdom Jacket of Striking"
+    },
+    "43949": {
+        "0": "Archeo Kingdom Jacket of Aiming",
+        "2": "Augmented Archeo Kingdom Jacket of Aiming"
+    },
+    "43950": {
+        "0": "Archeo Kingdom Jacket of Scouting",
+        "2": "Augmented Archeo Kingdom Jacket of Scouting"
+    },
+    "43951": {
+        "0": "Archeo Kingdom Coat of Healing",
+        "2": "Augmented Archeo Kingdom Coat of Healing"
+    },
+    "43952": {
+        "0": "Archeo Kingdom Coat of Casting",
+        "2": "Augmented Archeo Kingdom Coat of Casting"
+    },
+    "44585": {
+        "1": "Yuweyawata Earrings of Slaying",
+        "2": "Yuweyawata Earrings of Aiming",
+        "3": "Yuweyawata Earrings of Healing",
+        "4": "Yuweyawata Earrings of Casting"
+    },
+    "44586": {
+        "0": "Yuweyawata Earrings of Fending",
+        "2": "Yuweyawata Earrings of Aiming",
+        "3": "Yuweyawata Earrings of Healing",
+        "4": "Yuweyawata Earrings of Casting"
+    },
+    "44587": {
+        "0": "Yuweyawata Earrings of Fending",
+        "1": "Yuweyawata Earrings of Slaying",
+        "3": "Yuweyawata Earrings of Healing",
+        "4": "Yuweyawata Earrings of Casting"
+    },
+    "44588": {
+        "0": "Yuweyawata Earrings of Fending",
+        "1": "Yuweyawata Earrings of Slaying",
+        "2": "Yuweyawata Earrings of Aiming",
+        "4": "Yuweyawata Earrings of Casting"
+    },
+    "44589": {
+        "0": "Yuweyawata Earrings of Fending",
+        "1": "Yuweyawata Earrings of Slaying",
+        "2": "Yuweyawata Earrings of Aiming",
+        "3": "Yuweyawata Earrings of Healing"
+    },
+    "44590": {
+        "1": "Yuweyawata Necklace of Slaying",
+        "2": "Yuweyawata Necklace of Aiming",
+        "3": "Yuweyawata Necklace of Healing",
+        "4": "Yuweyawata Necklace of Casting"
+    },
+    "44591": {
+        "0": "Yuweyawata Necklace of Fending",
+        "2": "Yuweyawata Necklace of Aiming",
+        "3": "Yuweyawata Necklace of Healing",
+        "4": "Yuweyawata Necklace of Casting"
+    },
+    "44592": {
+        "0": "Yuweyawata Necklace of Fending",
+        "1": "Yuweyawata Necklace of Slaying",
+        "3": "Yuweyawata Necklace of Healing",
+        "4": "Yuweyawata Necklace of Casting"
+    },
+    "44593": {
+        "0": "Yuweyawata Necklace of Fending",
+        "1": "Yuweyawata Necklace of Slaying",
+        "2": "Yuweyawata Necklace of Aiming",
+        "4": "Yuweyawata Necklace of Casting"
+    },
+    "44594": {
+        "0": "Yuweyawata Necklace of Fending",
+        "1": "Yuweyawata Necklace of Slaying",
+        "2": "Yuweyawata Necklace of Aiming",
+        "3": "Yuweyawata Necklace of Healing"
+    },
+    "44595": {
+        "1": "Yuweyawata Amulet of Slaying",
+        "2": "Yuweyawata Amulet of Aiming",
+        "3": "Yuweyawata Amulet of Healing",
+        "4": "Yuweyawata Amulet of Casting"
+    },
+    "44596": {
+        "0": "Yuweyawata Amulet of Fending",
+        "2": "Yuweyawata Amulet of Aiming",
+        "3": "Yuweyawata Amulet of Healing",
+        "4": "Yuweyawata Amulet of Casting"
+    },
+    "44597": {
+        "0": "Yuweyawata Amulet of Fending",
+        "1": "Yuweyawata Amulet of Slaying",
+        "3": "Yuweyawata Amulet of Healing",
+        "4": "Yuweyawata Amulet of Casting"
+    },
+    "44598": {
+        "0": "Yuweyawata Amulet of Fending",
+        "1": "Yuweyawata Amulet of Slaying",
+        "2": "Yuweyawata Amulet of Aiming",
+        "4": "Yuweyawata Amulet of Casting"
+    },
+    "44599": {
+        "0": "Yuweyawata Amulet of Fending",
+        "1": "Yuweyawata Amulet of Slaying",
+        "2": "Yuweyawata Amulet of Aiming",
+        "3": "Yuweyawata Amulet of Healing"
+    },
+    "44600": {
+        "1": "Yuweyawata Ring of Slaying",
+        "2": "Yuweyawata Ring of Aiming",
+        "3": "Yuweyawata Ring of Healing",
+        "4": "Yuweyawata Ring of Casting"
+    },
+    "44601": {
+        "0": "Yuweyawata Ring of Fending",
+        "2": "Yuweyawata Ring of Aiming",
+        "3": "Yuweyawata Ring of Healing",
+        "4": "Yuweyawata Ring of Casting"
+    },
+    "44602": {
+        "0": "Yuweyawata Ring of Fending",
+        "1": "Yuweyawata Ring of Slaying",
+        "3": "Yuweyawata Ring of Healing",
+        "4": "Yuweyawata Ring of Casting"
+    },
+    "44603": {
+        "0": "Yuweyawata Ring of Fending",
+        "1": "Yuweyawata Ring of Slaying",
+        "2": "Yuweyawata Ring of Aiming",
+        "4": "Yuweyawata Ring of Casting"
+    },
+    "44604": {
+        "0": "Yuweyawata Ring of Fending",
+        "1": "Yuweyawata Ring of Slaying",
+        "2": "Yuweyawata Ring of Aiming",
+        "3": "Yuweyawata Ring of Healing"
+    },
+    "44744": {
+        "0": "Archeo Kingdom Broadsword"
+    },
+    "44745": {
+        "0": "Archeo Kingdom Patas"
+    },
+    "44746": {
+        "0": "Archeo Kingdom Labrys"
+    },
+    "44747": {
+        "0": "Archeo Kingdom Partisan"
+    },
+    "44748": {
+        "0": "Archeo Kingdom Bow"
+    },
+    "44749": {
+        "0": "Archeo Kingdom Candelarod"
+    },
+    "44750": {
+        "0": "Archeo Kingdom Scepter"
+    },
+    "44751": {
+        "0": "Archeo Kingdom Index"
+    },
+    "44752": {
+        "0": "Archeo Kingdom Codex"
+    },
+    "44753": {
+        "0": "Archeo Kingdom Daggers"
+    },
+    "44754": {
+        "0": "Archeo Kingdom Claymore"
+    },
+    "44755": {
+        "0": "Archeo Kingdom Culverin"
+    },
+    "44756": {
+        "0": "Archeo Kingdom Planisphere"
+    },
+    "44757": {
+        "0": "Archeo Kingdom Samurai Blade"
+    },
+    "44758": {
+        "0": "Archeo Kingdom Tuck"
+    },
+    "44759": {
+        "0": "Archeo Kingdom Gunblade"
+    },
+    "44760": {
+        "0": "Archeo Kingdom Chakrams"
+    },
+    "44761": {
+        "0": "Archeo Kingdom Sickle"
+    },
+    "44762": {
+        "0": "Archeo Kingdom Milpreves"
+    },
+    "44763": {
+        "0": "Archeo Kingdom Twinfangs"
+    },
+    "44764": {
+        "0": "Archeo Kingdom Round Brush"
+    },
+    "44766": {
+        "0": "Archeo Kingdom Helm of Fending"
+    },
+    "44767": {
+        "0": "Archeo Kingdom Cuirass of Fending",
+        "1": "Ornate Archeo Kingdom Cuirass of Fending"
+    },
+    "44768": {
+        "0": "Archeo Kingdom Vambraces of Fending"
+    },
+    "44769": {
+        "0": "Archeo Kingdom Poleyns of Fending"
+    },
+    "44770": {
+        "0": "Archeo Kingdom Sabatons of Fending"
+    },
+    "44771": {
+        "0": "Archeo Kingdom Helm of Maiming"
+    },
+    "44772": {
+        "0": "Archeo Kingdom Cuirass of Maiming",
+        "1": "Ornate Archeo Kingdom Cuirass of Maiming"
+    },
+    "44773": {
+        "0": "Archeo Kingdom Vambraces of Maiming"
+    },
+    "44774": {
+        "0": "Archeo Kingdom Poleyns of Maiming"
+    },
+    "44775": {
+        "0": "Archeo Kingdom Sabatons of Maiming"
+    },
+    "44776": {
+        "0": "Archeo Kingdom Hood of Striking"
+    },
+    "44777": {
+        "0": "Archeo Kingdom Jacket of Striking",
+        "1": "Ornate Archeo Kingdom Jacket of Striking"
+    },
+    "44778": {
+        "0": "Archeo Kingdom Armguards of Striking"
+    },
+    "44779": {
+        "0": "Archeo Kingdom Poleyns of Striking"
+    },
+    "44780": {
+        "0": "Archeo Kingdom Shoes of Striking"
+    },
+    "44781": {
+        "0": "Archeo Kingdom Beret of Aiming"
+    },
+    "44782": {
+        "0": "Archeo Kingdom Jacket of Aiming",
+        "1": "Ornate Archeo Kingdom Jacket of Aiming"
+    },
+    "44783": {
+        "0": "Archeo Kingdom Gloves of Aiming"
+    },
+    "44784": {
+        "0": "Archeo Kingdom Poleyns of Aiming"
+    },
+    "44785": {
+        "0": "Archeo Kingdom Sabatons of Aiming"
+    },
+    "44786": {
+        "0": "Archeo Kingdom Hood of Scouting"
+    },
+    "44787": {
+        "0": "Archeo Kingdom Jacket of Scouting",
+        "1": "Ornate Archeo Kingdom Jacket of Scouting"
+    },
+    "44788": {
+        "0": "Archeo Kingdom Armguards of Scouting"
+    },
+    "44789": {
+        "0": "Archeo Kingdom Poleyns of Scouting"
+    },
+    "44790": {
+        "0": "Archeo Kingdom Sabatons of Scouting"
+    },
+    "44791": {
+        "0": "Archeo Kingdom Beret of Healing"
+    },
+    "44792": {
+        "0": "Archeo Kingdom Coat of Healing",
+        "1": "Ornate Archeo Kingdom Coat of Healing"
+    },
+    "44793": {
+        "0": "Archeo Kingdom Gloves of Healing"
+    },
+    "44794": {
+        "0": "Archeo Kingdom Poleyns of Healing"
+    },
+    "44795": {
+        "0": "Archeo Kingdom Shoes of Healing"
+    },
+    "44796": {
+        "0": "Archeo Kingdom Hood of Casting"
+    },
+    "44797": {
+        "0": "Archeo Kingdom Coat of Casting",
+        "1": "Ornate Archeo Kingdom Coat of Casting"
+    },
+    "44798": {
+        "0": "Archeo Kingdom Armguards of Casting"
+    },
+    "44799": {
+        "0": "Archeo Kingdom Poleyns of Casting"
+    },
+    "44800": {
+        "0": "Archeo Kingdom Shoes of Casting"
+    },
+    "44801": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "44802": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "44803": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "8": "Augmented Archeo Kingdom Earrings of Healing",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "44804": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "9": "Augmented Archeo Kingdom Earrings of Casting"
+    },
+    "44805": {
+        "0": "Archeo Kingdom Earrings of Fending",
+        "1": "Archeo Kingdom Earrings of Slaying",
+        "2": "Archeo Kingdom Earrings of Aiming",
+        "3": "Archeo Kingdom Earrings of Healing",
+        "4": "Archeo Kingdom Earrings of Casting",
+        "5": "Augmented Archeo Kingdom Earrings of Fending",
+        "6": "Augmented Archeo Kingdom Earrings of Slaying",
+        "7": "Augmented Archeo Kingdom Earrings of Aiming",
+        "8": "Augmented Archeo Kingdom Earrings of Healing"
+    },
+    "44806": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "44807": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "44808": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "8": "Augmented Archeo Kingdom Choker of Healing",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "44809": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "9": "Augmented Archeo Kingdom Choker of Casting"
+    },
+    "44810": {
+        "0": "Archeo Kingdom Choker of Fending",
+        "1": "Archeo Kingdom Choker of Slaying",
+        "2": "Archeo Kingdom Choker of Aiming",
+        "3": "Archeo Kingdom Choker of Healing",
+        "4": "Archeo Kingdom Choker of Casting",
+        "5": "Augmented Archeo Kingdom Choker of Fending",
+        "6": "Augmented Archeo Kingdom Choker of Slaying",
+        "7": "Augmented Archeo Kingdom Choker of Aiming",
+        "8": "Augmented Archeo Kingdom Choker of Healing"
+    },
+    "44811": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "44812": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "44813": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "8": "Augmented Archeo Kingdom Wristband of Healing",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "44814": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "9": "Augmented Archeo Kingdom Wristband of Casting"
+    },
+    "44815": {
+        "0": "Archeo Kingdom Wristband of Fending",
+        "1": "Archeo Kingdom Wristband of Slaying",
+        "2": "Archeo Kingdom Wristband of Aiming",
+        "3": "Archeo Kingdom Wristband of Healing",
+        "4": "Archeo Kingdom Wristband of Casting",
+        "5": "Augmented Archeo Kingdom Wristband of Fending",
+        "6": "Augmented Archeo Kingdom Wristband of Slaying",
+        "7": "Augmented Archeo Kingdom Wristband of Aiming",
+        "8": "Augmented Archeo Kingdom Wristband of Healing"
+    },
+    "44816": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "44817": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "44818": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "8": "Augmented Archeo Kingdom Ring of Healing",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "44819": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "9": "Augmented Archeo Kingdom Ring of Casting"
+    },
+    "44820": {
+        "0": "Archeo Kingdom Ring of Fending",
+        "1": "Archeo Kingdom Ring of Slaying",
+        "2": "Archeo Kingdom Ring of Aiming",
+        "3": "Archeo Kingdom Ring of Healing",
+        "4": "Archeo Kingdom Ring of Casting",
+        "5": "Augmented Archeo Kingdom Ring of Fending",
+        "6": "Augmented Archeo Kingdom Ring of Slaying",
+        "7": "Augmented Archeo Kingdom Ring of Aiming",
+        "8": "Augmented Archeo Kingdom Ring of Healing"
     }
 }

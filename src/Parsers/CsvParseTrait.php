@@ -582,17 +582,21 @@ trait CsvParseTrait
                 if (!empty($PlaceNameLocation)) {
                     if (!empty($LGBArray[$NPCID]['festivalID'])) {
                         $FestivalNameAddition = $LGBArray[$NPCID]['festivalID'];
-                        $splitfes = explode("_", $FestivaldecodeJdata[$FestivalNameAddition]);
-                        $fesYear = $splitfes[1];
-                        $PLAddition = " ($splitfes[1]) ($PlaceNameLocation)";
+						if (!empty($FestivaldecodeJdata[$FestivalNameAddition])){
+							$splitfes = explode("_", $FestivaldecodeJdata[$FestivalNameAddition]);
+							$fesYear = $splitfes[1];
+							$PLAddition = " ($splitfes[1]) ($PlaceNameLocation)";
+						}
                     }
                 }
                 if (empty($PlaceNameLocation)){
                     if (!empty($LGBArray[$NPCID]['festivalID'])) {
                         $FestivalNameAddition = $LGBArray[$NPCID]['festivalID'];
-                        $splitfes = explode("_", $FestivaldecodeJdata[$FestivalNameAddition]);
-                        $fesYear = $splitfes[1];
-                        $PLAddition = " ($splitfes[1])";
+						if (!empty($FestivaldecodeJdata[$FestivalNameAddition])){
+							$splitfes = explode("_", $FestivaldecodeJdata[$FestivalNameAddition]);
+							$fesYear = $splitfes[1];
+							$PLAddition = " ($splitfes[1])";
+						}
                     }
                 }
             break;
@@ -3604,12 +3608,12 @@ trait CsvParseTrait
     private function GetCurrency()
     {
         $CurencyArray[1] = 10309;
-        $CurencyArray[2] = 25199;
+        $CurencyArray[2] = 33913;
         $CurencyArray[3] = 10311;
-        $CurencyArray[4] = 25200;
+        $CurencyArray[4] = 33914;
         $CurencyArray[5] = 10307;
-        $CurencyArray[6] = 33913;
-        $CurencyArray[7] = 33914;
+        $CurencyArray[6] = 41784;
+        $CurencyArray[7] = 41785;
         $CurencyArray[8] = 21072;
         $CurencyArray[9] = 21073;
         $CurencyArray[10] = 21074;

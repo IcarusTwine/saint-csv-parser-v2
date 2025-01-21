@@ -4,6 +4,7 @@ namespace App\Parsers\GE;
 
 use App\Parsers\CsvParseTrait;
 use App\Parsers\ParseInterface;
+use PDO;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 /**
@@ -1935,8 +1936,10 @@ class NpcsPagesAll implements ParseInterface
                     $MapFestival = "";
                     $FestivalID = $LGBArray[$id]["festivalID"];
                     if (!empty($LGBArray[$id]["festivalID"])) {
-                        $FesitvalName = $FestivalArray[$FestivalID];
-                        $MapFestival = "  | Event = ". str_replace("_", " (", $FesitvalName). ")\n";
+						if (!empty($FestivalArray[$FestivalID])){
+							$FesitvalName = $FestivalArray[$FestivalID];
+							$MapFestival = "  | Event = ". str_replace("_", " (", $FesitvalName). ")\n";
+						}
                     }
                     $QuestIssuer = "";
                     if (!empty($Issuers[$id])){
@@ -1977,8 +1980,10 @@ class NpcsPagesAll implements ParseInterface
             //check festival
             $FestivalNPC = "";
             if (!empty($LGBArray[$id]["festivalID"])) {
-                $FesitvalName = $FestivalArray[$FestivalID];
-                $FestivalNPC = "\n    | Event = ". str_replace("_", " (", $FesitvalName). ")";
+				if (!empty($FestivalArray[$FestivalID])){
+					$FesitvalName = $FestivalArray[$FestivalID];
+					$FestivalNPC = "\n    | Event = ". str_replace("_", " (", $FesitvalName). ")";
+				}
             }
 
             $dataout = implode("\n", $datarray);

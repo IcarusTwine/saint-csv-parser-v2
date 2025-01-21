@@ -43,14 +43,18 @@ class KeyItems implements ParseInterface
             $this->io->progressAdvance();
 
             // skip ones without a name
-            if (empty($eventitem['Name']) || (empty($eventitem['Quest']))) {
+            if (empty($eventitem['Name'])) {
                 continue;
             }
             $Patch = $PatchNumber[$id];
 
             // set Quest name to the $quest variable
-            $quest = strip_tags($QuestCsv->at($eventitem['Quest'])['Name']);
-            $quest = str_replace(" ", "", $quest);
+			if ($eventitem['Quest'] === "0"){
+				$quest = "x";
+			} else {
+				$quest = strip_tags($QuestCsv->at($eventitem['Quest'])['Name']);
+				$quest = str_replace(" ", "", $quest);
+			}
 
             // grab the proper icon number to use for the folder name
             if (!empty($eventitem['Icon'])) {

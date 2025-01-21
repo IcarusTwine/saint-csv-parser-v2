@@ -217,6 +217,7 @@ class Recipes implements ParseInterface
                 $AlwaysCollectable = "True";
             }
             // Save some data
+			
             $data = [
                 '{index}' => $recipe['id'],
                 '{result}' => $ItemCsv->at($recipe['Item{Result}'])['Name'],
@@ -230,7 +231,7 @@ class Recipes implements ParseInterface
                 '{difficulty}' => floor($RecipeLevelCsv->at($recipe['RecipeLevelTable'])['Difficulty']*($recipe['DifficultyFactor'])/100),
                 '{quality}' => floor($RecipeLevelCsv->at($recipe['RecipeLevelTable'])['Quality']*($recipe['QualityFactor'])/100),
                 '{maxquality}' => $recipe['MaterialQualityFactor'] ? "\n|Max Initial Quality = ". $recipe['MaterialQualityFactor'] : "",
-                '{status}' => ($recipe['Status{Required}'] > 0) ? "\n|Status Required     = ". $StatusCsv->at($recipe['Status{Required}'])['Name'] : "",
+                // '{status}' => ($recipe['Status{Required}'] > 0) ? "\n|Status Required     = ". $StatusCsv->at(intval($recipe['Status{Required}']))['Name'] : "",
                 '{equipment}' => ($recipe['Item{Required}'] > 0) ? "\n|Equipment Required  = ". $ItemCsv->at($recipe['Item{Required}'])['Name'] : "",
                 '{requiredcrafts}' => ($recipe['RequiredCraftsmanship'] > 0) ? "\n|Craftsmanship Required = ". $recipe['RequiredCraftsmanship'] : "",
                 '{requiredcontrol}' => ($recipe['RequiredControl'] > 0) ? "\n|Control Required    = ". $recipe['RequiredControl'] : "",

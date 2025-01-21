@@ -90,13 +90,15 @@ class Collectable implements ParseInterface
                 $ShopItemID = $Shop["ShopItems[$i]"];
                 foreach(range(0,999) as $b) {
                     $SubDataValue = "". $ShopItemID .".". $b ."";
-                    if($SubDataValue = "0.0") break;
-                    if (empty($ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'])) break;
+                    if($SubDataValue === "0.0") break;
+					if ($CollectablesShopItemCsv->at($SubDataValue) === false) break;
+                    if ($ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'] === false) break;
                     $Group = $CollectablesShopItemGroupCsv->at($CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopItemGroup'])['Name'];
                     $Item = $ItemCsv->at($CollectablesShopItemCsv->at($SubDataValue)['Item'])['Name'];
                     $LevelMin = $CollectablesShopItemCsv->at($SubDataValue)['LevelMin'];
                     $LevelMax = $CollectablesShopItemCsv->at($SubDataValue)['LevelMax'];
                     $LowCollect = $CollectablesShopRefineCsv->at($CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopRefine'])['LowCollectability'];
+					if ($LowCollect === "0") continue;
                     $MidCollect = $CollectablesShopRefineCsv->at($CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopRefine'])['MidCollectability'];
                     $HighCollect = $CollectablesShopRefineCsv->at($CollectablesShopItemCsv->at($SubDataValue)['CollectablesShopRefine'])['HighCollectability'];
                     if ($HighCollect === "0") {
@@ -252,6 +254,7 @@ class Collectable implements ParseInterface
                     $HWDCurrency = "Skybuilders' Scrip";
                     $HWDPhase = $HWDCraftersupplyTermCsv->at($item["TermName[$i]"])["Name"];
                     $HWDBaseCollect = $item["BaseCollectable{Rating}[$i]"];
+					if ($HWDBaseCollect === "0") continue;
                     $HWDBaseScrip = $HWDCrafterSupplyRewardCsv->at($item["BaseCollectable{Reward}[PostPhase][$i]"])["ScriptReward{Amount}"];
                     $HWDBaseEXP = $HWDCrafterSupplyRewardCsv->at($item["BaseCollectable{Reward}[PostPhase][$i]"])["ExpReward"];
                     $HWDBonus1Collect = $item["MidCollectable{Rating}[$i]"];

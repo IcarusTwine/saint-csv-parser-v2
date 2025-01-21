@@ -45529,6 +45529,28 @@
             }
         }
     ],
+    "44339": [
+        {
+            "FishName": "Icuvlo's Barter",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1185",
+                "Name": "Tuliyollal"
+            },
+            "Map": "855",
+            "PlaceName": "Downripple",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "734",
+                "py": "860",
+                "cx": 9.2,
+                "cy": 10.6,
+                "Radius": "300"
+            }
+        }
+    ],
     "43667": [
         {
             "FishName": "Reasonscale Silverside",
@@ -45640,6 +45662,28 @@
     "43671": [
         {
             "FishName": "Permit",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1185",
+                "Name": "Tuliyollal"
+            },
+            "Map": "855",
+            "PlaceName": "The For'ard Cabins",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "90",
+            "Rare": "False",
+            "Position": {
+                "px": "833",
+                "py": "1679",
+                "cx": 10.3,
+                "cy": 19.7,
+                "Radius": "1000"
+            }
+        }
+    ],
+    "44336": [
+        {
+            "FishName": "Inktopus",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1185",
@@ -45838,6 +45882,28 @@
     "43679": [
         {
             "FishName": "Yok Huy Stonecutter",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1187",
+                "Name": "Urqopacha"
+            },
+            "Map": "857",
+            "PlaceName": "Sunken Stars",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "91",
+            "Rare": "False",
+            "Position": {
+                "px": "967",
+                "py": "1328",
+                "cx": 20.3,
+                "cy": 27.6,
+                "Radius": "400"
+            }
+        }
+    ],
+    "44340": [
+        {
+            "FishName": "Moongripper",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1187",
@@ -46267,6 +46333,28 @@
             }
         }
     ],
+    "44334": [
+        {
+            "FishName": "Oily Ropefish",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1188",
+                "Name": "Kozama'uka"
+            },
+            "Map": "858",
+            "PlaceName": "Bopo'uihih",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "92",
+            "Rare": "False",
+            "Position": {
+                "px": "482",
+                "py": "570",
+                "cx": 10.6,
+                "cy": 12.4,
+                "Radius": "1500"
+            }
+        }
+    ],
     "43694": [
         {
             "FishName": "Plattershell",
@@ -46292,6 +46380,28 @@
     "43904": [
         {
             "FishName": "Yok Huy Pleco",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1188",
+                "Name": "Kozama'uka"
+            },
+            "Map": "858",
+            "PlaceName": "Waters Hanu",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "91",
+            "Rare": "False",
+            "Position": {
+                "px": "1096",
+                "py": "596",
+                "cx": 22.9,
+                "cy": 12.9,
+                "Radius": "1200"
+            }
+        }
+    ],
+    "44341": [
+        {
+            "FishName": "Cazuela Crab",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1188",
@@ -46765,6 +46875,28 @@
             }
         }
     ],
+    "44337": [
+        {
+            "FishName": "Honeycomb Sponge",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1188",
+                "Name": "Kozama'uka"
+            },
+            "Map": "858",
+            "PlaceName": "Miyakabek'zoma",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "94",
+            "Rare": "False",
+            "Position": {
+                "px": "672",
+                "py": "1381",
+                "cx": 14.4,
+                "cy": 28.6,
+                "Radius": "2000"
+            }
+        }
+    ],
     "43712": [
         {
             "FishName": "Spotted Stingray",
@@ -46999,6 +47131,28 @@
             }
         }
     ],
+    "44343": [
+        {
+            "FishName": "Ilyon Asoh Cichlid",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1189",
+                "Name": "Yak T'el"
+            },
+            "Map": "859",
+            "PlaceName": "Xd'aa Talat Tsoly",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "93",
+            "Rare": "False",
+            "Position": {
+                "px": "359",
+                "py": "543",
+                "cx": 8.2,
+                "cy": 11.9,
+                "Radius": "600"
+            }
+        }
+    ],
     "43719": [
         {
             "FishName": "Iq Br'aax Sailfin",
@@ -47068,6 +47222,28 @@
     "43722": [
         {
             "FishName": "Mirror Carp",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1189",
+                "Name": "Yak T'el"
+            },
+            "Map": "859",
+            "PlaceName": "Yak Awak Tsoly",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "94",
+            "Rare": "False",
+            "Position": {
+                "px": "906",
+                "py": "389",
+                "cx": 19.1,
+                "cy": 8.8,
+                "Radius": "800"
+            }
+        }
+    ],
+    "44335": [
+        {
+            "FishName": "Yak Awak Core",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1189",
@@ -47731,6 +47907,28 @@
             }
         }
     ],
+    "44338": [
+        {
+            "FishName": "Cenote Oyster",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1189",
+                "Name": "Yak T'el"
+            },
+            "Map": "859",
+            "PlaceName": "Bitterbark Cenote",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "95",
+            "Rare": "False",
+            "Position": {
+                "px": "1222",
+                "py": "1898",
+                "cx": 25.4,
+                "cy": 39,
+                "Radius": "800"
+            }
+        }
+    ],
     "43745": [
         {
             "FishName": "Ut'ohmu Tiika",
@@ -47822,6 +48020,28 @@
     "43749": [
         {
             "FishName": "Chain Shark",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1189",
+                "Name": "Yak T'el"
+            },
+            "Map": "859",
+            "PlaceName": "Xty'iinbek Tsoly",
+            "Icon": "060930_hr1.png",
+            "GatheringLevel": "97",
+            "Rare": "True",
+            "Position": {
+                "px": "1793",
+                "py": "1243",
+                "cx": 36.9,
+                "cy": 25.9,
+                "Radius": "800"
+            }
+        }
+    ],
+    "44342": [
+        {
+            "FishName": "Stardust Sleeper",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1189",
@@ -47950,6 +48170,28 @@
     "43753": [
         {
             "FishName": "Shaaloani Salmon",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1190",
+                "Name": "Shaaloani"
+            },
+            "Map": "860",
+            "PlaceName": "Niikwerepi",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "95",
+            "Rare": "False",
+            "Position": {
+                "px": "1438",
+                "py": "318",
+                "cx": 29.8,
+                "cy": 7.4,
+                "Radius": "600"
+            }
+        }
+    ],
+    "44345": [
+        {
+            "FishName": "Hwittayoanaan Cichlid",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1190",
@@ -48253,6 +48495,28 @@
             }
         }
     ],
+    "44347": [
+        {
+            "FishName": "Cloudsail",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1190",
+                "Name": "Shaaloani"
+            },
+            "Map": "860",
+            "PlaceName": "Eastbound Zorgor",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "96",
+            "Rare": "False",
+            "Position": {
+                "px": "1603",
+                "py": "1860",
+                "cx": 33.1,
+                "cy": 38.2,
+                "Radius": "1000"
+            }
+        }
+    ],
     "43765": [
         {
             "FishName": "Heritage Loach",
@@ -48406,6 +48670,28 @@
     "43770": [
         {
             "FishName": "Driftdowns Trout",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1191",
+                "Name": "Heritage Found"
+            },
+            "Map": "861",
+            "PlaceName": "The Driftdowns",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "97",
+            "Rare": "False",
+            "Position": {
+                "px": "605",
+                "py": "818",
+                "cx": 13.1,
+                "cy": 17.4,
+                "Radius": "1500"
+            }
+        }
+    ],
+    "44346": [
+        {
+            "FishName": "Thunderswift Trout",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1191",
@@ -48664,6 +48950,28 @@
     "43779": [
         {
             "FishName": "Mosaic Loach",
+            "Type": "Fishing",
+            "TerritoryType": {
+                "id": "1186",
+                "Name": "Solution Nine"
+            },
+            "Map": "856",
+            "PlaceName": "Residential Sector",
+            "Icon": "060445_hr1.png",
+            "GatheringLevel": "98",
+            "Rare": "False",
+            "Position": {
+                "px": "499",
+                "py": "1505",
+                "cx": 6.5,
+                "cy": 17.7,
+                "Radius": "1800"
+            }
+        }
+    ],
+    "44344": [
+        {
+            "FishName": "Pixel Loach",
             "Type": "Fishing",
             "TerritoryType": {
                 "id": "1186",

@@ -58,7 +58,11 @@ class Emotes implements ParseInterface
             $this->io->progressAdvance();
             if (empty($Emote['Name'])) continue;
             $Name = $Emote['Name'];
-            $Patch = $PatchNumber[$id];
+			if (!empty($PatchNumber[$id])){
+				$Patch = $PatchNumber[$id];
+			} else{
+				$Patch = 0.0;
+			}
             $Type = $EmoteCategoryCsv->at($Emote['EmoteCategory'])['Name'];
             if ($TextCommandCsv->at($Emote['TextCommand']) === false){
                 $Description = "";

@@ -82,7 +82,11 @@ class Items implements ParseInterface
             // skip ones without a name
             if (empty($item['Name'])) continue;
             //if ($item['ItemSpecialBonus'] !== "8") continue;
-            $Patch = $PatchNumber[$id];
+			if (!empty($PatchNumber[$id])){
+				$Patch = $PatchNumber[$id];
+			} else{
+				$Patch = 0.0;
+			}
 
             // grab item ui category for this item
             $itemUiCategory = $ItemUiCategoryCsv->at($item['ItemUICategory']);
@@ -153,10 +157,10 @@ class Items implements ParseInterface
 
             // change the top and bottom code of item output depending on if I want to bot the pages up or not
             if ($Bot == "true") {
-                // $Top = "{{-start-}}\n'''$Name/Patch'''\n$Patch\n<noinclude>[[Category:Patch Subpages]]</noinclude>\n{{-stop-}}{{-start-}}\n'''$Name'''\n";
-                $Top = "{{-start-}}\n'''$Name'''\n";
-                // $Bottom = "{{-stop-}}$DesynthTop";
-				$Bottom = "{{-stop-}}";
+                $Top = "{{-start-}}\n'''$Name/Patch'''\n$Patch\n<noinclude>[[Category:Patch Subpages]]</noinclude>\n{{-stop-}}{{-start-}}\n'''$Name'''\n";
+                // $Top = "{{-start-}}\n'''$Name'''\n";
+                $Bottom = "{{-stop-}}$DesynthTop";
+				// $Bottom = "{{-stop-}}";
             } else {
                 $Top = "http://ffxiv.gamerescape.com/wiki/$Name?action=edit\n";
                 $Bottom = $DesynthTop;

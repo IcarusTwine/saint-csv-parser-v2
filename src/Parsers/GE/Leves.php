@@ -70,14 +70,14 @@ class Leves implements ParseInterface
         $GatheringPointCsv = $this->csv('GatheringPoint');
         $GatheringPointBaseCsv = $this->csv('GatheringPointBase');
         $GatheringItemCsv = $this->csv('GatheringItem');
-        $LevemetePatchCsv = $this->csv('LevemetePatch');
+        // $LevemetePatchCsv = $this->csv('LevemetePatch');
         //$CompanyLeveCsv = $this->csv('CompanyLeve');
         //$CompanyLeveRuleCsv = $this->csv('CompanyLeveRule');
 
         // (optional) start a progress bar
         $this->io->progressStart($LeveCsv->total);
         
-        $this->PatchCheck($Patch, "Leve", $LeveCsv);
+        // $this->PatchCheck($Patch, "Leve", $LeveCsv);
         $PatchNumber = $this->getPatch("Leve");
 
         // if I want to use pywikibot to create these pages, this should be true. Otherwise if I want to create pages
@@ -101,7 +101,7 @@ class Leves implements ParseInterface
             //fordebug
 
             //get the Patch and Issuing NPC from a separate file called LevemetePatch.csv which was custom made
-            $Npc = $LevemetePatchCsv->at($leve['Name'])['Levemete'];
+            // $Npc = $LevemetePatchCsv->at($leve['Name'])['Levemete'];
 
             //Test to see wtf is going on with patch numbers
             //echo "Patch = $PatchFile -- $Npc -- $Patch\n";
@@ -430,8 +430,14 @@ class Leves implements ParseInterface
                         foreach(range(0,3) as $routes) {
                         	foreach(range(0,11) as $points) {
                         		foreach(range(0,7) as $pointsItems) {
-                        			if (!empty($EventItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($GatheringPointCsv->at($GatheringLeveRouteCsv->at($GatheringLeveCsv->at($leve['DataId'])["Route[$routes]"])["GatheringPoint[$points]"])['GatheringPointBase'])["Item[$pointsItems]"])['Item'])['Name']))
-                        			$gatheringItemArray[] = $EventItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($GatheringPointCsv->at($GatheringLeveRouteCsv->at($GatheringLeveCsv->at($leve['DataId'])["Route[$routes]"])["GatheringPoint[$points]"])['GatheringPointBase'])["Item[$pointsItems]"])['Item'])['Name'];
+									if ($pointsItems != 0){
+										if ($GatheringLeveCsv->at($leve['DataId']) != false){
+											if ($GatheringLeveRouteCsv->at($GatheringLeveCsv->at($leve['DataId'])["Route[$routes]"])["GatheringPoint[$points]"] != false){
+												if (!empty($EventItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($GatheringPointCsv->at($GatheringLeveRouteCsv->at($GatheringLeveCsv->at($leve['DataId'])["Route[$routes]"])["GatheringPoint[$points]"])['GatheringPointBase'])["Item[$pointsItems]"])['Item'])['Name']))
+												$gatheringItemArray[] = $EventItemCsv->at($GatheringItemCsv->at($GatheringPointBaseCsv->at($GatheringPointCsv->at($GatheringLeveRouteCsv->at($GatheringLeveCsv->at($leve['DataId'])["Route[$routes]"])["GatheringPoint[$points]"])['GatheringPointBase'])["Item[$pointsItems]"])['Item'])['Name'];
+											}
+										}
+									}
                         		}
                         	}
                         }
@@ -566,7 +572,11 @@ class Leves implements ParseInterface
             $PlaceNameStart = $PlaceNameCsv->at($leve['PlaceName{Start}'])['Name'];
 
             $LevelObject = $LevelCsv->at($LevelMete)['Object'];
-            $ObjectName = ucwords(strtolower($ENpcResidentCsv->at($LevelObject)['Singular']));
+			if ($LevelObject != 0){
+				$ObjectName = ucwords(strtolower($ENpcResidentCsv->at($LevelObject)['Singular']));
+			} else {
+				$ObjectName = "";
+			}
 
             $Map[] = "\n|LeveMeteID = ". $LevelMete ."\n|levelX = ". $LevelX ."\n|levelY = ". $LevelY ."\n". $LevelTeriString ."|levelObject = ". $LevelObject ."\n|ENpcName = ". $ObjectName;
 
@@ -625,13 +635,19 @@ class Leves implements ParseInterface
             }*/
 
             // Save some data
+			if (!empty($guildtype[$leve['LeveVfx']])){
+				$gtype = $guildtype[$leve['LeveVfx']];
+			} else {
+				$gtype = "x";
+			}
+			if ($Patch != "7.0") continue;
             $data = [
                 '{Top}' => $Top,
                 '{patch}' => $Patch,
                 '{index}' => $leve['id'],
                 '{name}' => $leve['Name'],
                 '{level}' => $leve['ClassJobLevel'],
-                '{guildtype}' => $guildtype[$leve['LeveVfx']],
+                '{guildtype}' => $gtype,
                 '{duration}' => ($leve['TimeLimit'] > 0) ? "\n|Leve Duration      = ". $leve['TimeLimit'] : "",
                 '{levetype}' => $levetype,
                 '{seals}' => $grandcompany ? "\n|SealsReward =  <!-- Raw number, no commas. Delete if not needed -->" : "",
@@ -644,7 +660,7 @@ class Leves implements ParseInterface
                 '{description}' => "\n\n|Description = ". $leve['Description'],
                 '{exp}' => ($leve['ExpReward'] > 0) ? $leve['ExpReward'] : "{{Information Needed}}",
                 '{gil}' => ($leve['GilReward'] > 0) ? $leve['GilReward'] : "{{Information Needed}}",
-                '{npc}' => "\n\n|Issuing NPC = $Npc",
+                '{npc}' => "\n\n|Issuing NPC = x",
                 '{client}' => $LeveClientCsv->at($leve['LeveClient'])['Name'],
                 '{npcinvolve}' => $NpcName,
                 '{mobinvolve}' => $MobsInvolvedArr ? "\n|Mobs Involved  = $MobsInvolvedArr\n|Wanted Target  = <!-- Usually found during Battlecraft leves -->" : "",
